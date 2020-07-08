@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="FR">
+	<head>
+		<meta charset="utf-8">
+		<title>Communauté de Communes Montaigne Montravel Gurson</title>
+		<meta name="description" content="Bienvenue sur le site officiel de la Communauté de Communes Montaigne Montravel Gurson. Dans le cadre de l'enquête publique, retrouvez toute la documentation relative à notre Plan Local d'Urbanisme intercommunal.">
+		<base href="https://www.cdcmontaignemontravelgurson.fr/">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+		<link rel="icon" type="image/png" href="img/icone.png">
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/icone.ico" /><![endif]-->
+		<!--==============================js pour slider=================================-->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="css/slide.css" type="text/css" media="all">
+		<script src="../js/bjqs-1.3.min.js"></script>
+	</head>
+	<body>
+		<div id="cookies-barre">Ce site utilise des cookies afin d'améliorer votre expérience utilisateur. <a href="mentions-legales.html#cookies">En savoir plus</a><br><button id="cookies-ok" type="button" class="cookies-fermer" onclick="cookies_onclick()">×</button></div>
+		<div id="fond-gris" onclick="menu_main_hide_tous();" style="display:none"></div>
+		<!--============================ Header =============================-->
+		<header>
+			<div class="grid">
+				<div class="row">
+					<div class="col col-12">
+						<div class="nav-top">
+							<ul class="top">
+								<li id="nav1"><a href="annuaire.html">Annuaire</a></li>
+								<li id="nav1"><a href="agenda.html">Agenda</a></li>
+								<li id="nav1"><a href="actualites.html">Actualités</a></li>
+								<li id="nav1"><a href="contacts.html">Contactez-nous</a></li>
+								<li id="nav1"><a href="plan-site.html">Plan du site</a></li>
+							</ul>
+							<!--
+								<div class="reseaux-sociaux">
+								    Suivez-nous
+								    <a href=""><img src="img/picto-facebook.png"></a>
+								    <a href=""><img src="img/picto-link.png"></a>
+								    <a href=""><img src="img/picto-google.png"></a>
+								</div>
+								--><button class="menu-btn" id="menu-btn">≡</button></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<div class="logo-container">
+							<div class="col col-7">
+								<div class="logo"><a href="index.html"><img src="img/logo-mmg.svg"></a></div>
+							</div>
+							<div class="col col-5">
+								<div class="header-bloc-right">
+									<div class="barre-search">
+										<form id="recherche-form" name="recherche-form" action="resultats.html" method="POST"></form>
+										<div class="search-input-container"><input id="search" placeholder="Rechercher..." value="" name="recherche" type="text"> <button class="btn-recherche" title="Lancer la recherche" type="submit"> </button></div>
+									</div>
+									<!--
+										<div class="form-line" id="form-line-annuaire">
+										    <div class="form-group">
+										        <select id="ui-select-native-change" class="ui-select-native" name="matiere" onchange=" sscat_change()" ;="">
+										            <option value="0" selected="">Sur la commune de</option>
+										            <option value="71">...</option>
+										            <option value="72">...</option>
+										            <option value="73">...</option>
+										        </select>
+										    </div>
+										    <div class="form-group">
+										        <select class="ui-select-native" name="matiere" onchange=" sscat_change()" ;="">
+										            <option value="0" selected="">Mon besoin</option>
+										            <option value="71">...</option>
+										            <option value="72">...</option>
+										        </select>
+										    </div>
+										</div>
+										-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<nav class="menu-main">
+							<ul class="menu-main__level-1">
+								<li id="li-menu-level1"><a onclick="menu_main_show('cdc');" class="li-first" id="active"> <span class="titre-nav">La CDC <img src="img/back-select.png"></span> </a>
+									<div class="menu-main__drop" id="cdc" style="display:none">
+										<div class="menu-main__drop-container"><button class="menu-main__drop-close" onclick="menu_main_hide('cdc');"><span class="ghost">close menu</span></button>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav"> Bienvenue </a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="presentation.html">Présentation</a></li>
+														<li class="li-second  "><a href="communes.html">Les communes</a></li>
+														<li class="li-second  "><a href="commissions.html">Les commissions</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav"> Organisation </a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="elus.html">Les élus du Conseil Communautaire</a></li>
+														<li class="li-second  "><a href="conseils-communautaires.html">Documents</a></li>
+													</ul>
+												</div>
+											</div>
+											<!--
+												<div class="menu-main__col">
+												    <div class="menu-main__section"> <a href="" id="titre-sous-nav"> Administratif </a>
+												        <ul class="menu-main__section-links">
+												            <li class="li-second  "> <a href="">Les comptes rendus</a> </li>
+												            <li class="li-second  "> <a href="">Le budget</a> </li>
+												            <li class="li-second  "> <a href="">Autres documents</a> </li>
+												        </ul>
+												    </div>
+												</div>
+												-->
+										</div>
+									</div>
+								</li>
+								<li id="li-menu-level1"><a onclick="menu_main_show('projets');" class="li-first"> <span class="titre-nav">Les projets <img src="img/back-select.png"></span> </a>
+									<div class="menu-main__drop" id="projets" style="display:none">
+										<div class="menu-main__drop-container"><button class="menu-main__drop-close" onclick="menu_main_hide('projets');"><span class="ghost">close menu</span></button>
+											<!--
+												<div class="menu-main__col">
+												    <div class="menu-main__section"> <a href="" id="titre-sous-nav"> Réalisés </a>
+												        <ul class="menu-main__section-links">
+												-->
+											<!--
+												</ul>
+												</div>
+												</div>
+												-->
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav"> En cours </a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="plui.html">Le PLUi</a></li>
+														<li class="li-second  "><a href="terrain.html">Terrain multi-sport</a></li>
+														<li class="li-second  "><a href="ec-assainissement.html">Assainissement collectif</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!-- <li id="li-menu-level1"><a class="li-first" id="li-first-inactif"><span class="titre-nav">La vie</span></a>
+								</li> -->
+								<li id="li-menu-level1"><a onclick="menu_main_show('vie');" class="li-first"> <span class="titre-nav">La vie<img src="img/back-select.png"></span> </a>
+									<div class="menu-main__drop" id="vie" style="display:none">
+										<div class="menu-main__drop-container"><button class="menu-main__drop-close" onclick="menu_main_hide('vie');"><span class="ghost">close menu</span></button>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav">Enfance et jeunesse</a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="jeunesse.html">La commission</a></li>
+														<li class="li-second  "><a href="i-terrain.html">Les terrains multi-sport</a></li>
+														<li class="li-second  "><a href="base-loisir.html">Accueil de loisirs</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav">Environnement</a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="dechets.html">Tri et déchets</a></li>
+														<li class="li-second  "><a href="nuisibles.html">Lutte anti-nuisibles</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav">Social</a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="msante.html">Maison de santé</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<!--<li id="li-menu-level1"><a class="li-first" id="li-first-inactif"><span class="titre-nav">Développer</span></a>
+								</li>-->
+								<li id="li-menu-level1"><a onclick="menu_main_show('developper');" class="li-first"> <span class="titre-nav">Développer<img src="img/back-select.png"></span> </a>
+									<div class="menu-main__drop" id="developper" style="display:none">
+										<div class="menu-main__drop-container"><button class="menu-main__drop-close" onclick="menu_main_hide('developper');"><span class="ghost">close menu</span></button>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav">Entreprendre</a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="ecopole.html">Ecopole</a></li>
+													</ul>
+												</div>
+											</div>
+											<!-- <div class="menu-main__col">
+									                <div class="menu-main__section"> <a href="" id="titre-sous-nav">Travailler</a>
+									                    <ul class="menu-main__section-links">
+									                       									                    </ul>
+									                </div>
+									            </div>-->
+										</div>
+									</div>
+								</li>
+								<!--<li id="li-menu-level1"><a class="li-first" id="li-first-inactif"><span class="titre-nav">Découvrir</span></a>
+								</li>-->
+								<li id="li-menu-level1"><a onclick="menu_main_show('decouvrir');" class="li-first"> <span class="titre-nav">Découvrir <img src="img/back-select.png"></span> </a>
+									<div class="menu-main__drop" id="decouvrir" style="display:none">
+										<div class="menu-main__drop-container"><button class="menu-main__drop-close" onclick="menu_main_hide('decouvrir');"><span class="ghost">close menu</span></button>
+											<div class="menu-main__col">
+												<div class="menu-main__section"><a href="" id="titre-sous-nav"> Tourisme </a>
+													<ul class="menu-main__section-links">
+														<li class="li-second  "><a href="agenda.html">Agenda</a></li>
+														<li class="li-second  "><a href="dordogne.html">Dordogne Périgord tourisme</a></li>
+													</ul>
+												</div>
+											</div>
+											<!-- <div class="menu-main__col">
+									                <div class="menu-main__section"> <a href="" id="titre-sous-nav"> Offices de tourisme </a>
+									                    <ul class="menu-main__section-links">
+									                        <li class="li-second  "> <a href="">Menu 1</a> </li>
+									                        <li class="li-second  "> <a href="">Menu 2</a> </li>
+									                    </ul>
+									                </div>
+									            </div>-->
+										</div>
+									</div>
+								</li>
+								<li id="li-menu-level1"><a class="li-first" href="contacts.html"><span class="titre-nav">Contacts</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--========================= contenu principal ==========================-->
+		<div class="grid">
+			<div class="principal">
+				<div class="row">
+					<div class="col col-12">
+						<div id="banner-fade">
+							<ul class="bjqs">
+								<li><img src="upload/images/agenda.jpg" alt="Agenda des manifestations">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Agenda des manifestations</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Retrouvez l'ensemble des rendez-vous de vos communes</div><a href="agenda.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeaumontpeyroux.jpg" alt="Montpeyroux">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Montpeyroux</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Vue sur les côteaux</div><a href="index.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/panneauterrain.jpg" alt="Saint Géraud de Corps">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Saint Géraud de Corps</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Terrain multisports</div><a href="index.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeauecopole.jpg" alt="Vélines">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Vélines</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Pépinière et hôtel d'entreprise ECOPOLE</div><a href="ecopole.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeaugare.jpg" alt="Vélines">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Vélines</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Quai de la gare</div><a href="index.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeaumaisonsante.jpg" alt="Vélines">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Vélines</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Maison de santé</div><a href="msante.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeauvelines.jpg" alt="Vélines">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Vélines</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">
+												<p>Rond point des Réaux</p>
+											</div><a href="index.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/stseurin.jpg" alt="Saint Seurin de Prats">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Saint Seurin de Prats</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">Aménagement des abords de la mairie</div><a href="plui.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/stademontcaret.jpg" alt="Montcaret">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Montcaret</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">
+												<p>Stade de football</p>
+											</div><a href="plui.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeaupommier.jpg" alt="Saint Seurin de Prats">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Saint Seurin de Prats</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">
+												<p>Culture de pommiers</p>
+											</div><a href="index.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+								<li><img src="upload/images/bandeauriviere.jpg" alt="Saint Seurin de Prats">
+									<div class="caption-slide">
+										<div class="caption-slide-container">
+											<div class="caption-categorie"><a href="">Saint Seurin de Prats</a><br><img src="img/border-titre-caption.png" id="caption-fiche-commune-img"></div>
+											<div class="caption-contenu">
+												<p>Rivière Dordogne</p>
+											</div><a href="dordogne.html" class="plus-infos"><span>+</span></a></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<script class="secret-source">
+jQuery(document).ready(function ($) {
+$('#banner-fade').bjqs({
+height: '660',
+width: '1920',
+responsive: true
+});
+});
+				</script>
+				<div class="row">
+					<div class="col col-12">
+						<div class="container-msg-accueil">
+							<h3>Bienvenue</h3>
+							<div class="message-accueil">
+								<p> </p>Le site de la Communauté de Communes Montaigne Montravel Gurson va peu à peu se développer. <br> Nous vous souhaitons une bonne visite.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<div class="ligne-actu">
+							<div class="row">
+								<div class="col col-12">
+									<h3>Actualités</h3>
+									<div class="col col-6">
+										<div class="bloc-actu">
+											<h4>3 juillet 2020, Programme Été actif 2020 au Lac de Gurson</h4>
+											<div class="bloc-actu-contenu">Programme 2020</div><a href="programme-ete-actif-2020-au-lac-de-gurson.html?article=2678">Lire la suite</a></div>
+									</div>
+									<div class="col col-6">
+										<div class="bloc-actu">
+											<h4>2 juillet 2020, SMD3 : Vente de composteurs</h4>
+											<div class="bloc-actu-contenu">Depuis le 13 Mai, le SMD3 a recommencé la distribution de composteurs aux particuliers.   Ci-dessous l'organisation et les moyens mis en place :    Distribution tous les mercredis de 13h à 16h30 UNIQUEMENT sur RDV en....</div><a href="smd3-vente-de-composteurs.html?article=2675">Lire la suite</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-12">
+									<div class="ligne-btn">
+										<div class="btn"><a href="actualites.html">Toutes les actualités</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<div class="acces-rapides-position">
+							<div class="acces-rapides">
+								<div class="acces-rapides-titre">
+									<h3>Accès rapides</h3>
+								</div>
+								<div class="row">
+									<div class="col col-12">
+										<div class="acces-rapides-container">
+											<div class="col col-2">
+												<div class="acces"><a href="https://www.cdcmontaignemontravelgurson.fr/communes.html" target="_blank"><img src="upload/images/picto-communes.svg" alt="Les communes"><h4>Les communes</h4></a></div>
+											</div>
+											<div class="col col-2">
+												<div class="acces"><a href="https://cdcmontaignemontravelgurson.fr/annuaire.html" target="_blank"><img src="upload/images/picto-annuaire.svg" alt="Annuaire"><h4>Annuaire</h4></a></div>
+											</div>
+											<div class="col col-2">
+												<div class="acces"><a href="https://www.cdcmontaignemontravelgurson.fr/accueil-de-loisirs/accueil.html" target="_blank"><img src="upload/images/picto-accueil.svg" alt="Accueil de loisirs"><h4>Accueil de loisirs</h4></a></div>
+											</div>
+											<div class="col col-2">
+												<div class="acces"><a href="ecopole.html"><img src="upload/images/picto-ecopole.svg" alt="Ecopole"><h4>Ecopole</h4></a></div>
+											</div>
+											<div class="col col-2">
+												<div class="acces"><a href="msante.html"><img src="upload/images/picto-sante.svg" alt="Maison de santé"><h4>Maison de santé</h4></a></div>
+											</div>
+											<div class="col col-2">
+												<div class="acces"><a href="dechets.html"><img src="upload/images/picto-ustom.svg" alt="Tri et déchets"><h4>Tri et déchets</h4></a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<div class="container-bleu">
+							<div class="ligne-bloc-agenda">
+								<h3>Agenda</h3>
+								<div class="row">
+									<div class="col col-3">
+										<div class="bloc-agenda"><img src="upload/images/marche-gourmand-9.jpg">
+											<h4>3 juillet 2020<br>au<br>4 septembre 2020</h4>
+											<div class="bloc-agenda-contenu">
+												<h5>MARCHÉ GOURMAND LES VENDREDIS</h5>
+												<div class="agenda-commune">Villefranche de Lonchat</div>
+												<h6>Organisateur : La Goulue</h6><br><a href="marche-gourmand-les-vendredis.html?agenda=2475">Lire la suite </a></div>
+										</div>
+									</div>
+									<div class="smartphone-none">
+										<div class="col col-3">
+											<div class="bloc-agenda"><img src="upload/images/marche-gourmand-st-meard-titre-2.jpg">
+												<h4>11 juillet 2020</h4>
+												<div class="bloc-agenda-contenu">
+													<h5>MARCHE GOURMAND</h5>
+													<div class="agenda-commune">Saint-Meard de Gurson</div>
+													<h6>Organisateur :</h6><br><a href="marche-gourmand.html?agenda=2481">Lire la suite </a></div>
+											</div>
+										</div>
+										<div class="col col-3">
+											<div class="bloc-agenda"><img src="upload/images/marche-gourmand-7.jpg">
+												<h4>11 juillet 2020</h4>
+												<div class="bloc-agenda-contenu">
+													<h5>MARCHÉ GOURMAND</h5>
+													<div class="agenda-commune">Saint-Seurin de Prats</div>
+													<h6>Organisateur : Ape Rpi Montcaret/Saint-Seurin-de-Prats</h6><br><a href="marche-gourmand.html?agenda=2482">Lire la suite </a></div>
+											</div>
+										</div>
+										<div class="col col-3">
+											<div class="bloc-agenda"><img src="upload/images/marche-gourmand-8.jpg">
+												<h4>11 juillet 2020</h4>
+												<div class="bloc-agenda-contenu">
+													<h5>MARCHÉ GOURMAND</h5>
+													<div class="agenda-commune">Fougueyrolles</div>
+													<h6>Organisateur : Lou Guérol Festoi</h6><br><a href="marche-gourmand.html?agenda=2483">Lire la suite </a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ligne-btn">
+									<div class="btn" id="btn-toher"><a href="agenda.html">Tous les évènements</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-12">
+						<div class="bloc-tags">
+							<div class="bloc-tags-container" id="bloc-tag-actu">
+								<h3>Tags</h3>
+								<div class="ligne-tag"><span id="bloc-nom-tag"><a href="resultats.html?recherche=Covid%2019">Covid 19</a></span> <span id="bloc-nom-tag"><a href="resultats.html?recherche=Crise%20sanitaire">Crise sanitaire</a></span> <span id="bloc-nom-tag"><a href="resultats.html?recherche=Plans%20de%20zonage">Plan de zonage</a></span> <span id="bloc-nom-tag"><a href="resultats.html?recherche=PLUi">PLUi</a></span> <span id="bloc-nom-tag"><a href="resultats.html?recherche=Enqu%C3%AAte%20publique">Enquête publique</a></span> <span id="bloc-nom-tag"><a href="resultats.html?recherche=Conseil%20communautaire">Conseil communautaire</a></span></div>
+								<div class="ligne-tag"><span id="bloc-nom-tag"><a href="resultats.html?recherche=Environnement">Environnement</a></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--========================= footer ==========================-->
+	<footer>
+		<div class="footer">
+			<div class="row">
+				<div class="col col-12">
+					<div class="footer-container">
+						<div class="col col-4">
+							<div class="bloc-infos-contacts">
+								<h4>CDC</h4>
+								<p><strong>Secrétariat et administration :</strong></p>
+								<p>Communauté de Communes<br> Montaigne Montravel et Gurson<br> La Grand Font<br> 24610 Villefranche de Lonchat</p>
+								<p><span style="font-size:16px"><em><strong>Siège social </strong>: 6 Place Mairie, 24230 Vélines</em></span></p>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="bloc-acces-liens">
+								<h4>Accès</h4>
+								<ul class="">
+									<li id="nav1"><a href="plan-site.html">Plan du site</a></li>
+									<li id="nav1"><a href="mentions-legales.html">Mentions légales</a></li>
+									<li id="nav1"><a href="accessibilite.html">Accessibilité</a></li>
+									<li id="nav1"><a href="contacts.html">Contacts</a></li>
+									<li id="nav1"><a href="cookies.html">Gestion des cookies</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="bloc-btn">
+								<div class="btn-footer"><a href="contacts.html">Contactez-nous</a></div>
+								<div class="btn-footer"><a href="lettre-inscrit.html">S'inscrire à la lettre d'infos</a></div>
+								<!--
+									<div class="reseaux-sociaux-footer">
+									    <span><a href=""><img src="img/picto-facebook.png"></a></span>
+									    <span><a href=""><img src="img/picto-link.png"></a></span>
+									    <span><a href=""><img src="img/picto-google.png"></a></span>
+									</div>
+									-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-mentions">
+			<div class="row">
+				<div class="col col-12">
+					<div class="footer-container">
+						<div class="ligne-contacts">Communauté de Communes Montaigne Montravel et Gurson - Tous droits réservés - <a href="mentions-legales.html">Mentions légales</a><br> - <a href="admin_.html">Administrateur </a> - Site réalisé par <a href="http://www.all-web.fr/" target="_blank">All Web Création</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/nav1.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72216218-16"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72216218-16');
+	</script>
+</html>
