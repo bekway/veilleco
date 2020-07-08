@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]--><!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]--><!--[if IE 8]>        <html class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]--><!--[if gt IE 8]>     <html class="no-js" lang="fr-FR"> <![endif]--><!--[if gte IE 7]>     <html class="no-js all-ie" lang="fr-FR"> <![endif]--><html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Le bureau et le conseil communautaire</title>
+		<meta name="description" content="Découvrez les organes décisionnaires du Pays des Herbiers.">
+		<link rel="shortcut icon" type="image/png" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/images/favicon.png">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/images/favicon.ico">
+		<link rel="apple-touch-icon" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/images/favicon-iphone.png">
+		<link rel="dns-prefetch" href="//www.paysdesherbiers.fr">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="stylesheet" id="validate-engine-css-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css" type="text/css" media="all">
+		<link rel="stylesheet" id="colorbox-theme2-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="leaflet-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.paysdesherbiers.fr/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="gravity_form_style_perso-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/style-gravity-forms.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-info-bulle-plan-interactif-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="plan-interactif-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-plan-interactif/css/style-plan-interactif.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="context-actualites-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-actualites/css/style-context-actualites.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="creasit-agenda-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="context-agenda-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-agenda/public/css/style-context-agenda.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="context-annuaire-contacts-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-annuaire-contacts/css/style-context-annuaire-contacts.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="css-fenetre-information-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-fenetre-information/css/styles-fenetre-information.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="gdrf-public-styles-css" href="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-rgpd/public/css/public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="reset-css" href="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/css/creasit-reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="dashicons-css" href="https://www.paysdesherbiers.fr/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dflip-css" href="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="themify-icons-css" href="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-recherche-css" href="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/css/style-recherche.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="solution-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="1024-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/responsive-1200.css" type="text/css" media="screen and (max-width: 1200px)">
+		<link rel="stylesheet" id="768-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/responsive-768.css" type="text/css" media="screen and (max-width: 768px)">
+		<link rel="stylesheet" id="480-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/responsive-480.css" type="text/css" media="screen and (max-width: 480px)">
+		<link rel="stylesheet" id="print-css" href="https://www.paysdesherbiers.fr/wp-content/themes/ccph/css/print.css" type="text/css" media="print">
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"true","colorboxPreloading":"false","colorboxOverlayClose":"true","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.paysdesherbiers.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-nl.js"></script>
+		<link rel="https://api.w.org/" href="https://www.paysdesherbiers.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.paysdesherbiers.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.paysdesherbiers.fr/wp-includes/wlwmanifest.xml">
+		<link rel="canonical" href="https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/">
+		<link rel="shortlink" href="https://www.paysdesherbiers.fr/?p=4395">
+		<link rel="alternate" type="application/rss+xml" href="https://www.paysdesherbiers.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+		<link rel="alternate" type="application/rss+xml" href="https://www.paysdesherbiers.fr/feed/?post_type=post" title="Flux RSS des actualités">
+		<link rel="alternate" type="application/rss+xml" href="https://www.paysdesherbiers.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+		<link rel="alternate" type="application/rss+xml" href="https://www.paysdesherbiers.fr/feed/?post_type=contacts" title="Flux RSS de l'annuaire de contact">
+		<link rel="alternate" type="application/rss+xml" href="https://www.paysdesherbiers.fr/feed/?post_type=navigation_profils" title="Flux RSS des différents profils">
+		<script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.paysdesherbiers.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "93d41eb90b";
+        
+		</script>
+		<script type="application/javascript">
+			var dFlipLocation = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		
+		</script>
+		<meta property="og:title" content="Le bureau et le conseil communautaire ">
+		<meta property="og:description" content="Découvrez les organes décisionnaires du Pays des Herbiers.">
+		<meta property="og:url" content="https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/">
+		<meta property="og:image" content="https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire.png">
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.paysdesherbiers.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+	</head>
+	<body class="page-template-default page page-id-4395 unknown">
+		<div class="btn-scroll-top"><a href="#" class="scroll-top" title="Retour en haut de la page">Retour en haut de la page</a></div>
+		<header id="header">
+			<div class="top-header clearfix">
+				<div class="center"><a href="https://www.paysdesherbiers.fr" class="logo" title="Logo de la commune"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="202.3px" height="159.8px" viewbox="0 0 202.3 159.8" style="enable-background:new 0 0 202.3 159.8;" xml:space="preserve"><defs></defs><g id="LogoHEADER_1_"><path class="st0" d="M65.9,60.7l1.3-7.4h5.3l1.3,7.4h6.4l-6.5-33.8H66l-6.6,33.8H65.9z M69.8,35.3l2,13.6h-4.1L69.8,35.3z
+                             M85.8,47.2L79,26.8h6.5l3.8,11.9l3.3-11.9H99l-6.5,20.4v13.4h-6.6V47.2z M111.1,55.1c0.4-0.5,0.5-1.2,0.5-2c0-1.3-0.3-2.5-0.9-3.4
+                            c-0.6-0.9-1.5-2-2.8-3.1l-3.5-3c-1.4-1.3-2.5-2.5-3.2-3.8c-0.7-1.3-1.1-2.9-1.1-4.8c0-2.8,0.8-4.9,2.5-6.4c1.6-1.5,3.9-2.2,6.8-2.2
+                            c3,0,5.1,0.9,6.3,2.7c1.2,1.8,1.9,4,2,6.7l-6,0.9c-0.1-1.8-0.3-3.1-0.6-3.9c-0.3-0.9-1-1.3-2-1.3c-0.8,0-1.4,0.3-1.9,0.8
+                            c-0.4,0.6-0.6,1.2-0.6,2c0,1.1,0.3,2.1,0.8,2.8c0.5,0.8,1.3,1.6,2.3,2.5l3.4,3c1.6,1.5,2.9,3,3.8,4.6c0.9,1.5,1.4,3.4,1.4,5.5
+                            c0,1.6-0.4,3.1-1.1,4.3c-0.7,1.3-1.7,2.3-3.1,3c-1.3,0.7-2.8,1.1-4.6,1.1c-3.1,0-5.5-0.9-7-2.6c-1.6-1.7-2.4-4.4-2.5-8l5.9-1
+                            c0.1,2.1,0.4,3.7,0.9,4.7c0.5,1,1.4,1.5,2.4,1.5C110.2,55.9,110.8,55.6,111.1,55.1z M53.5,63.7h6.9v33.8h-6.9V82.5h-6v15h-6.9
+                            l0-33.8h6.9v13.8h6V63.7z M79,92.9l1.3,4.7H65.5V63.7l14.7,0L79,68.5h-6.7v9h6.1v4.8h-6.1v10.6L79,92.9z M157.6,92.9l1.3,4.7h-14.8
+                            V63.8h14.7l-1.2,4.8h-6.7v9h6.1v4.8h-6.1v10.6H157.6z M132.3,75.1l6.9-1.6v24.1h-6.9V75.1z M132.3,63.7h6.9v6.5l-6.9,1.6
+                            L132.3,63.7z M202.3,89.7c0,1.6-0.4,3.1-1.1,4.3c-0.7,1.3-1.7,2.3-3.1,3c-1.3,0.7-2.8,1.1-4.6,1.1c-3.1,0-5.5-0.9-7-2.6
+                            c-1.6-1.7-2.4-4.4-2.5-8l5.9-1c0.1,2.1,0.4,3.7,0.9,4.7c0.5,1,1.4,1.5,2.4,1.5c0.8,0,1.4-0.3,1.8-0.8c0.4-0.5,0.5-1.2,0.5-2
+                            c0-1.3-0.3-2.5-0.9-3.4c-0.6-0.9-1.5-2-2.8-3.1l-3.5-3c-1.4-1.3-2.5-2.5-3.2-3.8c-0.7-1.3-1.1-2.9-1.1-4.8c0-2.8,0.8-4.9,2.5-6.4
+                            c1.6-1.5,3.9-2.2,6.8-2.2c3,0,5.1,0.9,6.3,2.7c1.2,1.8,1.9,4,2,6.7l-6,0.9c-0.1-1.8-0.3-3.1-0.6-3.9c-0.3-0.9-1-1.3-2-1.3
+                            c-0.8,0-1.4,0.3-1.9,0.8c-0.4,0.6-0.6,1.2-0.6,2c0,1.1,0.3,2.1,0.8,2.8c0.5,0.8,1.3,1.6,2.3,2.5l3.4,3c1.6,1.5,2.9,3,3.8,4.6
+                            C201.9,85.7,202.3,87.6,202.3,89.7z M103.6,72.7c0-3.3-0.9-5.6-2.8-6.9c-1.8-1.3-4.6-2-8.2-2h-8.8v33.8h6.9V86.4
+                            c0,0,1.4-0.4,3.2-1.3l3.1,12.5h7.1l-4.6-16.3C101.8,79.2,103.6,76.3,103.6,72.7z M96.2,77c-1.9,2.3-5.5,3.5-5.5,3.5v-12h2.4
+                            c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7C97.2,74.9,96.8,76.2,96.2,77z M181.9,72.7c0-3.3-0.9-5.6-2.8-6.9
+                            c-1.8-1.3-4.6-2-8.2-2h-8.8v33.8h6.9V86.4c0,0,1.4-0.4,3.2-1.3l3.1,12.5h7.1l-4.6-16.3C180.1,79.2,181.9,76.3,181.9,72.7z
+                             M174.5,77c-1.9,2.3-5.5,3.5-5.5,3.5v-12h2.4c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7C175.5,74.9,175.1,76.2,174.5,77z
+                             M123.8,78.6c2-1.6,3.4-3.7,3.4-6.4c0-3.2-0.9-5.4-2.7-6.6c-1.8-1.2-4.4-1.8-7.6-1.8h-8.6v33.8h10.1c3.2,0,5.6-0.8,7.3-2.4
+                            c1.7-1.6,2.5-4,2.5-7.3C128.2,83.3,126.2,80.3,123.8,78.6z M115.1,68.5h1.3c1.6,0,2.9,0.3,3.6,1c0.8,0.7,1.2,1.7,1.2,3.2
+                            c0,4-6.1,5.2-6.1,5.2V68.5z M120.6,91.5c-0.7,0.8-1.9,1.3-3.5,1.3h-2V82.4c1.1-0.2,2.5-0.6,3.9-1.1c1.7,0.9,2.7,4.5,2.7,6.2
+                            C121.6,89.3,121.3,90.7,120.6,91.5z M135.1,58.8c1.1-1.3,1.6-3.3,1.6-6v-9c0-2.6-0.5-4.4-1.6-5.6c-1.1-1.2-3-1.8-5.6-1.8h-5.3v24.5
+                            h5.6C132.2,60.8,134,60.1,135.1,58.8z M133.3,52.2c0,1.6-0.1,2.8-0.2,3.6c-0.1,0.8-0.5,1.4-1,1.9s-1.4,0.7-2.6,0.7h-1.9V38.9h1.8
+                            c1.1,0,2,0.2,2.5,0.5c0.5,0.4,0.9,0.9,1.1,1.6c0.2,0.7,0.3,1.8,0.3,3.2V52.2z M149,60.8h-9.5V36.3h9.5l-0.9,2.5h-5.2V47h4.9v2.4
+                            h-4.9v9h5.2L149,60.8z M162.2,55.2c0,1.8-0.5,3.2-1.6,4.3c-1.1,1-2.5,1.6-4.2,1.6c-2.1,0-3.6-0.6-4.7-1.9c-1.1-1.3-1.7-3-1.8-5.2
+                            l3-0.8c0.1,1.6,0.4,2.8,0.9,3.8c0.5,1,1.4,1.5,2.6,1.5c0.9,0,1.6-0.2,2-0.7c0.5-0.5,0.7-1.2,0.7-2.1c0-1-0.2-1.8-0.6-2.5
+                            c-0.4-0.7-1.1-1.4-2-2.3l-4.1-3.6c-0.8-0.7-1.4-1.5-1.8-2.4c-0.4-0.8-0.6-1.8-0.6-3c0-1.8,0.5-3.2,1.6-4.2c1-1,2.5-1.5,4.3-1.5
+                            c1.9,0,3.3,0.5,4.3,1.5c0.9,1,1.5,2.6,1.7,4.8l-2.9,0.8c-0.1-1.4-0.4-2.5-0.8-3.3c-0.4-0.8-1.2-1.2-2.2-1.2c-2,0-2.9,0.9-2.9,2.7
+                            c0,0.7,0.1,1.3,0.4,1.8c0.2,0.5,0.7,1,1.2,1.5l4.1,3.6c1.1,1,1.9,2,2.6,3.1C161.9,52.6,162.2,53.9,162.2,55.2z M47.4,49.5
+                            c0,0,6.5-3,8.8-5.1s4.1-5,4.1-8.6c0-3.3-0.9-5.6-2.8-6.9c-1.8-1.3-4.6-2-8.2-2h-8.8v33.8h6.9V49.5z M47.4,31.5h2.4
+                            c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7c0,1.7-0.3,2.9-1,3.7c-1.9,2.3-5.5,3.5-5.5,3.5V31.5z"></path><path class="st1" d="M81.2,101.8h7v30c-2.2,2.3-4.6,4.6-7,6.8V101.8z M67.7,22.2h7V0h-7V22.2z M94.8,124.4c3.3-4.3,5.9-8.4,7-12.2
+                            v-10.4h-7V124.4z M81.2,22.2h7V0h-7V22.2z M54.1,22.2h7V0h-7V22.2z M54.1,159.4c1.8-1.1,4.2-2.6,7-4.6v-53h-7V159.4z M67.7,150
+                            c2.3-1.7,4.6-3.6,7-5.6v-42.6h-7V150z M27.1,146c2.4,1.9,4.7,3.6,7,5.2V0h-7V146z M40.6,155.7c2.8,1.8,5.2,3.2,7,4.1v-58h-7V155.7z
+                             M40.6,22.2h7V0h-7V22.2z M94.8,0v22.2h7V0H94.8z M0,114.4c1.3,4,3.8,8.1,7,12.2V0H0V114.4z M13.5,134c2.2,2.3,4.6,4.5,7,6.6V0h-7
+                            V134z"></path></g></svg> </a>
+					<div class="tools">
+						<ul class="menu-top">
+							<li><a href="/" title="Accueil">Accueil</a></li>
+							<li><a href="https://www.paysdesherbiers.fr/systeme/accessibilite/" title="Accessibilité">Accessibilité</a></li>
+							<li><a href="https://www.paysdesherbiers.fr/systeme/flux-rss/" class="fluxrss-top" title="Flux RSS">Flux RSS</a></li>
+							<li><a href="https://www.paysdesherbiers.fr/systeme/nous-contacter/" title="Nous contacter">Nous contacter</a></li>
+						</ul>
+						<div class="search toggle-search c-search-form_open all-link">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.3px" height="14.4px" viewbox="0 0 14.3 14.4" style="enable-background:new 0 0 14.3 14.4;" xml:space="preserve">
+								<path id="search_1_" d="M13.9,12l-3-3c0.6-0.9,0.9-2,0.9-3.1C11.8,2.6,9.2,0,5.9,0C2.6,0,0,2.6,0,5.9c0,3.3,2.6,5.9,5.9,5.9
+                        C7,11.8,8.1,11.5,9,11l3,3c0.5,0.5,1.4,0.5,2,0C14.5,13.4,14.5,12.5,13.9,12z M1.8,5.9c0-2.3,1.8-4.1,4.1-4.1S10,3.6,10,5.9
+                        S8.2,10,5.9,10S1.8,8.2,1.8,5.9z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="menu-wrapper clearfix">
+					<div class="toggleMenu"><span class="icon-menu"></span><span class="menu">Menu</span></div>
+					<div class="menu-menu-principal-container">
+						<ul id="menu-menu-principal" class="main-menu clearfix">
+							<li id="menu-item-24497" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-24497 item-1"><span title="Intercommunalité">Intercommunalité</span>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-7056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7056 item-2"><span title="Le territoire">Le territoire</span></li>
+										<li id="menu-item-7057" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7057 item-2"><a title="Situation géographique" href="https://www.paysdesherbiers.fr/situation-geographique/">Situation géographique</a></li>
+										<li id="menu-item-7058" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7058 item-2"><a title="Le territoire en quelques chiffres" href="https://www.paysdesherbiers.fr/le-territoire-en-quelques-chiffres/">Le territoire en quelques chiffres</a></li>
+										<li id="menu-item-7059" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7059 item-2"><a title="Les 8 communes" href="https://www.paysdesherbiers.fr/listes/les-8-communes/">Les 8 communes</a></li>
+										<li id="menu-item-7060" class="children-2 menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7060 item-2"><a title="Plan interactif" href="https://www.paysdesherbiers.fr/systeme/plan-interactif/">Plan interactif</a></li>
+										<li id="menu-item-7022" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7022 item-2"><span title="Présentation">Présentation</span></li>
+										<li id="menu-item-26163" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-26163 item-2"><a title="Projet de territoire" href="https://www.paysdesherbiers.fr/projet-de-territoire/">Projet de territoire</a></li>
+										<li id="menu-item-7061" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7061 item-2"><a title="Le principe de l'intercommunalité" href="https://www.paysdesherbiers.fr/le-role-de-lintercommunalite/">Le principe de l’intercommunalité</a></li>
+										<li id="menu-item-12660" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-12660 item-2"><a title="Les compétences" href="https://www.paysdesherbiers.fr/les-competences/">Les compétences</a></li>
+										<li id="menu-item-7063" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7063 item-2"><a title="Les labels, prix et récompenses" href="https://www.paysdesherbiers.fr/les-labels-prix-et-recompenses/">Les labels, prix et récompenses</a></li>
+										<li id="menu-item-7065" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7065 item-2"><a title="Lettre d'information interne" href="#" onclick="return false;">Lettre d’information interne</a></li>
+										<li id="menu-item-7069" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-7069 item-2"><span title="Les élus">Les élus</span></li>
+										<li id="menu-item-7070" class="children-2 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4395 current_page_item menu-item-7070 item-2"><a title="Le bureau et le conseil communautaire" href="https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/">Le bureau et le conseil communautaire</a></li>
+										<li id="menu-item-7072" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7072 item-2"><a title="Les commissions" href="https://www.paysdesherbiers.fr/listes/les-commissions/">Les commissions</a></li>
+										<li id="menu-item-29502" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-29502 item-2"><a title="Affichage légal" href="https://www.paysdesherbiers.fr/affichage-legal/">Affichage légal</a></li>
+										<li id="menu-item-7073" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7073 item-2"><a title="Le mot des groupes" href="https://www.paysdesherbiers.fr/le-mot-des-groupes/">Le mot des groupes</a></li>
+										<li id="menu-item-24795" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24795 item-2"><a title="Elus : informations intercommunales" href="https://www.paysdesherbiers.fr/elus-informations-intercommunales/">Elus : informations intercommunales</a></li>
+										<li id="menu-item-7074" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7074 item-2"><span title="Le fonctionnement">Le fonctionnement</span></li>
+										<li id="menu-item-7076" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7076 item-2"><a title="L'organisation des services" href="https://www.paysdesherbiers.fr/listes/lorganisation-des-services/">L’organisation des services</a></li>
+										<li id="menu-item-7289" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7289 item-2"><a title="Le budget" href="https://www.paysdesherbiers.fr/le-budget/">Le budget</a></li>
+										<li id="menu-item-14091" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-14091 item-2"><a title="Le bâtiment" href="https://www.paysdesherbiers.fr/communaute-de-communes/">Le bâtiment</a></li>
+										<li id="menu-item-28719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28719 item-2"><a title="Recrutement" href="https://www.paysdesherbiers.fr/recrutement/">Recrutement</a></li>
+										<li id="menu-item-7078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7078 item-2"><a title="Espace Presse" href="https://www.paysdesherbiers.fr/espace-presse-2/">Espace Presse</a></li>
+										<li id="menu-item-7079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7079 item-2"><a title="Marchés publics" href="https://www.paysdesherbiers.fr/marches-publics/">Marchés publics</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+							<li id="menu-item-24498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24498 item-2"><span title="Famille">Famille</span>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-7842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7842 item-3"><span title="Enfance / Jeunesse">Enfance / Jeunesse</span></li>
+										<li id="menu-item-28309" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-28309 item-3"><a title='Guichet unique "modes de garde"' href="https://www.paysdesherbiers.fr/guiche-unique-modes-de-garde/">Guichet unique « modes de garde »</a></li>
+										<li id="menu-item-7016" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7016 item-3"><a title="Relais Assistantes Maternelles" href="https://www.paysdesherbiers.fr/relais-assistantes-maternelles/">Relais Assistantes Maternelles</a></li>
+										<li id="menu-item-7017" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7017 item-3"><a title="Crèches d'entreprises" href="https://www.paysdesherbiers.fr/creches-d%c2%92entreprises/">Crèches d’entreprises</a></li>
+										<li id="menu-item-24899" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24899 item-3"><a title="Grandir en famille : tout un programme" href="https://www.paysdesherbiers.fr/grandir-en-famille-programme-des-animations/">Grandir en famille : tout un programme</a></li>
+										<li id="menu-item-24512" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24512 item-3"><a title="Cafés parents" href="https://www.paysdesherbiers.fr/cafes-parents-etre-parent-parlons-en/">Cafés parents</a></li>
+										<li id="menu-item-24981" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24981 item-3"><a title="Passeport du civisme" href="https://www.paysdesherbiers.fr/passeport-du-civisme/">Passeport du civisme</a></li>
+										<li id="menu-item-7019" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7019 item-3"><a title="Adolescents : prévention et aide à l’éducation" href="https://www.paysdesherbiers.fr/la-maison-departementale-des-adolescents/">Adolescents : prévention et aide à l’éducation</a></li>
+										<li id="menu-item-7102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7102 item-3"><span title="Aînés">Aînés</span></li>
+										<li id="menu-item-26305" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-26305 item-3"><a title="Centre Intercommunal d'Action Sociale" href="https://www.paysdesherbiers.fr/centre-intercommunal-daction-sociale/">Centre Intercommunal d’Action Sociale</a></li>
+										<li id="menu-item-29433" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-29433 item-3"><a title="Prévention et animation pour les seniors" href="https://www.paysdesherbiers.fr/prevention-et-animation-pour-les-seniors/">Prévention et animation pour les seniors</a></li>
+										<li id="menu-item-29436" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-29436 item-3"><a title="Animations pour les seniors" href="https://www.paysdesherbiers.fr/listes/animations-pour-les-seniors/">Animations pour les seniors</a></li>
+										<li id="menu-item-28804" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-28804 item-3"><a title="Visite de convivialité" href="https://www.paysdesherbiers.fr/visite-de-convivialite/">Visite de convivialité</a></li>
+										<li id="menu-item-7104" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7104 item-3"><a title="Le service de transport solidaire" href="https://www.paysdesherbiers.fr/transport-solidaire/">Le service de transport solidaire</a></li>
+										<li id="menu-item-7105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7105 item-3"><a title="Epicerie solidaire" href="https://www.paysdesherbiers.fr/epicerie-solidaire/">Epicerie solidaire</a></li>
+										<li id="menu-item-7101" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7101 item-3"><a title="Se déplacer" href="https://www.paysdesherbiers.fr/listes/se-deplacer/">Se déplacer</a></li>
+										<li id="menu-item-19552" class="menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-has-children menu-item-19552 item-3"><a title="Guide des droits et démarches" href="https://www.paysdesherbiers.fr/services-publics/guichet-virtuel/">Guide des droits et démarches</a></li>
+										<li id="menu-item-19551" class="children-2 menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-19551 item-3"><a title="Droits et démarches pour les particuliers" href="https://www.paysdesherbiers.fr/services-publics/droits-et-demarches-pour-les-particuliers/">Droits et démarches pour les particuliers</a></li>
+										<li id="menu-item-19549" class="children-2 menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-19549 item-3"><a title="Démarches administratives pour les professionnels et les indépendants" href="https://www.paysdesherbiers.fr/services-publics/demarches-administratives-pour-les-professionnels-et-les-independants/">Démarches administratives pour les professionnels et les indépendants</a></li>
+										<li id="menu-item-19550" class="children-2 menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-19550 item-3"><a title="Démarches administratives pour les associations" href="https://www.paysdesherbiers.fr/services-publics/demarches-administratives-pour-les-associations/">Démarches administratives pour les associations</a></li>
+										<li id="menu-item-2974" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-2974 item-3"><a title="Plan interactif" href="https://www.paysdesherbiers.fr/systeme/plan-interactif/">Plan interactif</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+							<li id="menu-item-24668" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-24668 item-3"><a title="Habitat-urbanisme" href="https://www.paysdesherbiers.fr/listes/le-plan-local-durbanisme-intercommunal/">Habitat-urbanisme</a>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-24669" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24669 item-4"><a title="Je construis" href="https://www.paysdesherbiers.fr/listes/je-construis/">Je construis</a></li>
+										<li id="menu-item-24670" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24670 item-4"><a title="Je rénove" href="https://www.paysdesherbiers.fr/listes/je-renove/">Je rénove</a></li>
+										<li id="menu-item-24671" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24671 item-4"><a title="Je cherche un logement" href="https://www.paysdesherbiers.fr/listes/je-cherche-un-logement/">Je cherche un logement</a></li>
+										<li id="menu-item-24704" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24704 item-4"><a title="Plan Local d’Urbanisme" href="https://www.paysdesherbiers.fr/listes/modifications-des-plu/">Plan Local d’Urbanisme</a></li>
+										<li id="menu-item-24672" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24672 item-4"><a title="Plan Local d’Urbanisme Intercommunal" href="https://www.paysdesherbiers.fr/listes/plan-local-durbanisme-intercommunal/">Plan Local d’Urbanisme Intercommunal</a></li>
+										<li id="menu-item-24673" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-24673 item-4"><a title="Politique de l'habitat" href="https://www.paysdesherbiers.fr/listes/politique-de-lhabitat/">Politique de l’habitat</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+							<li id="menu-item-24500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24500 item-4"><span title="LOISIRS-TOURISME">LOISIRS-TOURISME</span>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-7168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7168 item-5"><span title="Se cultiver, se former">Se cultiver, se former</span></li>
+										<li id="menu-item-7177" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7177 item-5"><a title="Le Réseau des bibliothèques" href="https://www.paysdesherbiers.fr/listes/le-reseau-des-bibliotheques/">Le Réseau des bibliothèques</a></li>
+										<li id="menu-item-7184" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7184 item-5"><a title="Programmation jeune public" href="https://www.paysdesherbiers.fr/programmation-jeune-public/">Programmation jeune public</a></li>
+										<li id="menu-item-24903" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24903 item-5"><a title="Espace numérique" href="https://www.paysdesherbiers.fr/espace-numerique/">Espace numérique</a></li>
+										<li id="menu-item-7162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7162 item-5"><span title="Découvrir">Découvrir</span></li>
+										<li id="menu-item-7166" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7166 item-5"><a title="Office de tourisme" href="https://www.paysdesherbiers.fr/office-de-tourisme/">Office de tourisme</a></li>
+										<li id="menu-item-7167" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7167 item-5"><a title="Visiter le Pays des Herbiers" href="https://www.paysdesherbiers.fr/visiter-le-pays-des-herbiers/">Visiter le Pays des Herbiers</a></li>
+										<li id="menu-item-7163" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7163 item-5"><a title="Balades et randonnées" href="https://www.paysdesherbiers.fr/circuits-de-randonnees/">Balades et randonnées</a></li>
+										<li id="menu-item-30014" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-30014 item-5"><a title="Geocaching" href="https://www.paysdesherbiers.fr/geocaching/">Geocaching</a></li>
+										<li id="menu-item-8900" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8900 item-5"><a title="Des communes à découvrir" href="https://www.paysdesherbiers.fr/des-communes-a-decouvrir/">Des communes à découvrir</a></li>
+										<li id="menu-item-7165" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7165 item-5"><a title="Jumelage du Pays des Herbiers" href="https://www.paysdesherbiers.fr/comite-de-jumelage/">Jumelage du Pays des Herbiers</a></li>
+										<li id="menu-item-7164" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7164 item-5"><a title="Association L'Héritage" href="https://www.paysdesherbiers.fr/association-lheritage/">Association L’Héritage</a></li>
+										<li id="menu-item-7189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7189 item-5"><span title="Se divertir">Se divertir</span></li>
+										<li id="menu-item-7190" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7190 item-5"><a title="Sortir sur le territoire" href="https://www.paysdesherbiers.fr/les-centres-culturels-et-les-lieux-de-sorties/">Sortir sur le territoire</a></li>
+										<li id="menu-item-7191" class="children-2 menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7191 item-5"><a title="Agenda" href="https://www.paysdesherbiers.fr/systeme/agenda/">Agenda</a></li>
+										<li id="menu-item-7193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7193 item-5"><span title="Faire du sport">Faire du sport</span></li>
+										<li id="menu-item-7194" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7194 item-5"><a title="Equipements sportifs" href="https://www.paysdesherbiers.fr/listes/equipements-sportifs/">Equipements sportifs</a></li>
+										<li id="menu-item-14222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14222 item-5"><a title="Vie associative" href="https://www.paysdesherbiers.fr/vie-associative/">Vie associative</a></li>
+										<li id="menu-item-24109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24109 item-5"><a title="Le Très Haut Débit, une réalité dès 2018" href="https://www.paysdesherbiers.fr/le-tres-haut-debit-internet/">Le Très Haut Débit, une réalité dès 2018</a></li>
+										<li id="menu-item-24108" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-24108 item-5"><a title="Plan interactif" href="https://www.paysdesherbiers.fr/systeme/plan-interactif/">Plan interactif</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+							<li id="menu-item-24501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24501 item-5"><span title="ENVIRONNEMENT">ENVIRONNEMENT</span>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-28142" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-28142 item-6"><a title="Trier ses déchets" href="https://www.paysdesherbiers.fr/listes/trier-ses-dechets/">Trier ses déchets</a></li>
+										<li id="menu-item-26336" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-26336 item-6"><a title="Se déplacer" href="https://www.paysdesherbiers.fr/listes/se-deplacer/">Se déplacer</a></li>
+										<li id="menu-item-7257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7257 item-6"><span title="Le développement durable">Le développement durable</span></li>
+										<li id="menu-item-7258" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7258 item-6"><a title="Qu'est-ce que c'est ?" href="https://www.paysdesherbiers.fr/le-developpement-durable/">Qu’est-ce que c’est ?</a></li>
+										<li id="menu-item-7905" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7905 item-6"><a title="Forum d'avenir" href="https://www.paysdesherbiers.fr/forum-davenir/">Forum d’avenir</a></li>
+										<li id="menu-item-18841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18841 item-6"><a title="Plan Climat Air Énergie Territorial (PCAET)" href="https://www.paysdesherbiers.fr/plan-climat-air-energie-territorial/">Plan Climat Air Énergie Territorial (PCAET)</a></li>
+										<li id="menu-item-12646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12646 item-6"><a title="Territoire à énergie positive pour la croissance verte" href="https://www.paysdesherbiers.fr/territoire-a-energie-positive-pour-la-croissance-verte/">Territoire à énergie positive pour la croissance verte</a></li>
+										<li id="menu-item-7269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7269 item-6"><span title="Vivre sainement">Vivre sainement</span></li>
+										<li id="menu-item-7275" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7275 item-6"><a title="Manger local" href="https://www.paysdesherbiers.fr/manger-local/">Manger local</a></li>
+										<li id="menu-item-7278" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7278 item-6"><a title="Jardinage au naturel" href="https://www.paysdesherbiers.fr/jardinage-au-naturel/">Jardinage au naturel</a></li>
+										<li id="menu-item-27046" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-27046 item-6"><a title="Plantation de haies" href="https://www.paysdesherbiers.fr/une-haie-a-planter-le-pays-des-herbiers-vous-aide/">Plantation de haies</a></li>
+										<li id="menu-item-10688" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-10688 item-6"><a title="Qualité de l’air" href="https://www.paysdesherbiers.fr/qualite-de-lair/">Qualité de l’air</a></li>
+										<li id="menu-item-7099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7099 item-6"><a title="Lutter contre les nuisibles" href="https://www.paysdesherbiers.fr/lutter-contre-les-nuisibles/">Lutter contre les nuisibles</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+							<li id="menu-item-24502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24502 item-6"><span title="ECONOMIE">ECONOMIE</span>
+								<div class="sub-menu">
+									<ul class="bloc-menu-left">
+										<li id="menu-item-7117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7117 item-7"><span title="Le territoire">Le territoire</span></li>
+										<li id="menu-item-7154" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7154 item-7"><a title="Les chiffres clé de l&#146;'économie" href="https://www.paysdesherbiers.fr/les-chiffres-cle-de-l%c2%92economie/">Les chiffres clé de l&#146;’économie</a></li>
+										<li id="menu-item-26733" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-26733 item-7"><a title="Annuaire de contacts" href="https://www.paysdesherbiers.fr/listes/annuaire-de-contacts/">Annuaire de contacts</a></li>
+										<li id="menu-item-7844" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7844 item-7"><a title="Les rendez-vous économiques" href="https://www.paysdesherbiers.fr/listes/les-rencontres-economiques/">Les rendez-vous économiques</a></li>
+										<li id="menu-item-7155" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7155 item-7"><a title="Liens utiles" href="https://www.paysdesherbiers.fr/liens-utiles/">Liens utiles</a></li>
+										<li id="menu-item-7140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7140 item-7"><span title="Entreprendre">Entreprendre</span></li>
+										<li id="menu-item-26549" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-26549 item-7"><a title="Les zones économiques" target="_blank" href="https://www.lesherbiers-developpement.com/les-zones-economiques">Les zones économiques</a></li>
+										<li id="menu-item-16615" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-16615 item-7"><a title="ZAC de la Souchais et Ekho Sud" href="https://www.paysdesherbiers.fr/zac-de-la-souchais-et-ekho-sud/">ZAC de la Souchais et Ekho Sud</a></li>
+										<li id="menu-item-26700" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-26700 item-7"><a title="Le Paddock, votre espace de coworking" href="https://www.lesherbiers-developpement.com/le-paddock-votre-espace-de-coworking/">Le Paddock, votre espace de coworking</a></li>
+										<li id="menu-item-7153" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7153 item-7"><a title="GreenTech : concentré d’innovations" href="https://www.paysdesherbiers.fr/green-tech/">GreenTech : concentré d’innovations</a></li>
+										<li id="menu-item-7160" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7160 item-7"><a title="Etudions votre projet" href="https://www.paysdesherbiers.fr/etudions-votre-projet/">Etudions votre projet</a></li>
+										<li id="menu-item-24548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24548 item-7"><span title="Subventions">Subventions</span></li>
+										<li id="menu-item-21454" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-21454 item-7"><a title="Programme d'aides à l'investissement des entreprises" href="https://www.paysdesherbiers.fr/programme-daides-a-linvestissement-des-entreprises/">Programme d’aides à l’investissement des entreprises</a></li>
+										<li id="menu-item-24549" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-24549 item-7"><a title="Opération façades – vitrines" href="https://www.paysdesherbiers.fr/operation-facades-vitrines/">Opération façades – vitrines</a></li>
+										<li id="menu-item-7161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7161 item-7"><a title="Site économique" target="_blank" href="https://www.lesherbiers-developpement.com">Site économique</a></li>
+										<li id="menu-item-10393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10393 item-7"><a title="Le Très Haut Débit" href="https://www.paysdesherbiers.fr/le-tres-haut-debit-internet/">Le Très Haut Débit</a></li>
+									</ul>
+									<ul class="bloc-menu-middle"></ul>
+									<ul class="bloc-menu-right"></ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="overlay-menu"></div>
+		</header>
+		<div class="c-search-main recherche-autocompletion">
+			<!-- <h2>Recherche</h2> --><button class="c-search-form_close o-toggle" type="button"></button>
+			<div class="c-search-main_container">
+				<form action="/" class="c-search-form">
+					<div class="c-search-form_wrap">
+						<div class="c-search-form_input-wrap">
+							<form method="get" id="searchform" action="https://www.paysdesherbiers.fr/">
+								<div><input type="text" class="rechercher" placeholder="Rechercher..." name="s" id="s"> <button type="submit" id="searchsubmit"><span>OK</span></button></div>
+							</form>
+						</div>
+						<div class="c-search-loader">
+							<div class="c-search-loader_line"></div>
+						</div>
+					</div>
+				</form>
+				<div class="c-search-results"></div>
+			</div>
+		</div>
+		<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+		<div id="wrapper" class="clearfix">
+			<div class="center">
+				<div class="image-breadcrumb">
+					<div class="wrapper-breadcrumb clearfix">
+						<div id="breadcrumbs">
+							<!--cdlPosition-->
+							<div class="vous-etes-ici">VOUS ÊTES ICI :</div>
+							<div><span><a title="Accueil" href="https://www.paysdesherbiers.fr" class="lien-accueil-breadcrumb">Accueil</a></span><span class="sep">•</span><span class="post-title no-underline">Intercommunalité</span><span class="sep">•</span><span class="post-title no-underline">Les élus</span><span class="sep">•</span><span class="post-title">Le bureau et le conseil communautaire</span></div>
+							<!--/cdlPosition-->
+						</div>
+					</div>
+					<div class="imagealaune-publication"><span class="helper"></span> <a href="https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire.png" class="imagealaune"> <img width="922" height="361" src="https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire.png" class="attachment-imagealaune size-imagealaune colorbox-4395  wp-post-image" alt="" srcset="https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire.png 922w, https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire-300x117.png 300w, https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire-768x301.png 768w, https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire-600x235.png 600w, https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire-311x122.png 311w, https://www.paysdesherbiers.fr/medias/2020/06/2020_06-conseil-communautaire-120x47.png 120w" sizes="(max-width: 922px) 100vw, 922px"> </a></div>
+				</div>
+				<div id="primary" role="main" class="fleft affichage-savoir-plus">
+					<section class="header-page clearfix">
+						<h1 class="entry-title">Le bureau et le conseil communautaire</h1>
+						<div class="introduction">
+							<p>Découvrez les organes décisionnaires du Pays des Herbiers.</p>
+						</div>
+					</section>
+					<article id="post-4395" class="post-4395 page type-page status-publish has-post-thumbnail hentry">
+						<div class="entry-content">
+							<h2>Mandature 2020-2026</h2>
+							<p>Depuis les élections municipales de mars 2014, les conseillers communautaires sont désignés au suffrage universel direct, dans chaque commune de plus de 1 000 habitants.</p>
+							<p>Sur le bulletin de vote figurent désormais les candidats au conseil municipal de la commune, et parmi eux les délégués communautaires qui représentent la commune à l’échelon intercommunal.</p>
+							<h3>Le bureau</h3>
+							<p>Il est composé de la Présidente Véronique Besse et de 8 vice-présidents.</p>
+							<p>C’est une instance de décision, d’examen et d’arbitrage des projets.</p>
+							<p>Il prépare les décisions et s’assure que chaque projet respecte l’intérêt communautaire.</p>
+							<p> </p>
+							<h3>Le conseil communautaire</h3>
+							<p>Le conseil communautaire, organe délibérant de l’intercommunalité, compte 37 conseillers communautaires.</p>
+							<p>Ils discutent et votent les délibérations en séance publique.</p>
+							<h4>Vos élus</h4>
+							<p align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/conseil.jpg"><img class="size-large wp-image-29888 aligncenter colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/conseil-1024x683.jpg" alt="" width="1024" height="683" srcset="https://www.paysdesherbiers.fr/medias/2020/06/conseil-1024x683.jpg 1024w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-300x200.jpg 300w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-768x512.jpg 768w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-600x400.jpg 600w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-1536x1024.jpg 1536w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-2048x1366.jpg 2048w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-293x194.jpg 293w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-311x207.jpg 311w, https://www.paysdesherbiers.fr/medias/2020/06/conseil-120x80.jpg 120w" sizes="(max-width: 1024px) 100vw, 1024px"></a></p>
+							<h4></h4>
+							<h4></h4>
+							<h4>La présidente et les vice-présidents</h4>
+							<table class=" htmtableborders" style="display: table;" border="0" frame="void" rules="none" cellspacing="1" cellpadding="1">
+								<tbody>
+									<tr>
+										<td>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Besse.png"><img class="alignleft size-full wp-image-29903 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Besse.png" alt="" width="182" height="225" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Besse.png 182w, https://www.paysdesherbiers.fr/medias/2020/06/Besse-120x148.png 120w" sizes="(max-width: 182px) 100vw, 182px"></a></div>
+										</td>
+										<td> Véronique BESSE, Présidente
+											<p>Maire des Herbiers</p>
+										</td>
+										<td>
+											<div align="center">
+												<h4><a href="https://www.paysdesherbiers.fr/medias/2020/06/Garin.png"><img class="alignleft size-full wp-image-29910 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Garin.png" alt="" width="197" height="219" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Garin.png 197w, https://www.paysdesherbiers.fr/medias/2020/06/Garin-120x133.png 120w" sizes="(max-width: 197px) 100vw, 197px"></a></h4>
+											</div>
+										</td>
+										<td>Bénédicte GARDIN, 1re vice-présidente
+											<p>Maire de Saint-Paul-en-Pareds</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Phlipart.png"><img class="alignleft size-full wp-image-29927 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Phlipart.png" alt="" width="178" height="249" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Phlipart.png 178w, https://www.paysdesherbiers.fr/medias/2020/06/Phlipart-120x168.png 120w" sizes="(max-width: 178px) 100vw, 178px"></a></div>
+											</div>
+										</td>
+										<td>Roselyne PHLIPART, 2e vice-présidente
+											<p>Maire de Vendrennes</p>
+										</td>
+										<td>
+											<div align="center">
+												<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Launay.png"><img class="alignleft size-full wp-image-29917 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Launay.png" alt="" width="204" height="268" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Launay.png 204w, https://www.paysdesherbiers.fr/medias/2020/06/Launay-120x158.png 120w" sizes="(max-width: 204px) 100vw, 204px"></a></div>
+											</div>
+										</td>
+										<td> 
+											<p>Jean-Louis LAUNAY, 3e vice-président</p>
+											<p>Maire des Epesses</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center"></div>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Mandin.png"><img class="alignleft size-full wp-image-29922 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Mandin.png" alt="" width="192" height="218" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Mandin.png 192w, https://www.paysdesherbiers.fr/medias/2020/06/Mandin-120x136.png 120w" sizes="(max-width: 192px) 100vw, 192px"></a></div>
+										</td>
+										<td> 
+											<p>Patrick MANDIN, 4e vice-président</p>
+											<p>Maire de Mouchamps</p>
+											<p> </p>
+										</td>
+										<td>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Gauthier.png"><img class="alignleft size-full wp-image-29911 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Gauthier.png" alt="" width="175" height="224" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Gauthier.png 175w, https://www.paysdesherbiers.fr/medias/2020/06/Gauthier-120x154.png 120w" sizes="(max-width: 175px) 100vw, 175px"></a></div>
+										</td>
+										<td>Franck GAUTHIER, 5e vice-président
+											<p>Maire de Beaurepaire</p>
+											<p> </p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">
+												<p><a href="https://www.paysdesherbiers.fr/medias/2020/06/Rondeau.png"><img class="alignleft size-full wp-image-29932 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Rondeau.png" alt="" width="199" height="262" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Rondeau.png 199w, https://www.paysdesherbiers.fr/medias/2020/06/Rondeau-120x158.png 120w" sizes="(max-width: 199px) 100vw, 199px"></a></p>
+											</div>
+										</td>
+										<td> 
+											<p>Landry RONDEAU, 6e vice-président</p>
+											<p>Maire de Mesnard-la-Barotière</p>
+											<p> </p>
+										</td>
+										<td>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Bertrand.png"><img class="alignleft size-full wp-image-29902 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Bertrand.png" alt="" width="195" height="245" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Bertrand.png 195w, https://www.paysdesherbiers.fr/medias/2020/06/Bertrand-120x151.png 120w" sizes="(max-width: 195px) 100vw, 195px"></a></div>
+										</td>
+										<td>Patrice BERTRAND, 7e vice-président
+											<p>Maire de Saint-Mars-la-Réorthe</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Hogard.png"><img class="alignleft size-full wp-image-29915 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Hogard.png" alt="" width="198" height="266" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Hogard.png 198w, https://www.paysdesherbiers.fr/medias/2020/06/Hogard-120x161.png 120w" sizes="(max-width: 198px) 100vw, 198px"></a>
+											<p align="center"></p>
+										</td>
+										<td>Christophe HOGARD , 8e vice-président
+											<p>1er adjoint de la Ville des Herbiers</p>
+											<p> </p>
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+							<p> </p>
+							<h4>Les conseillers communautaires</h4>
+							<table class=" htmtableborders" style="display: table;" border="0" width="939" frame="void" rules="none" cellspacing="1" cellpadding="1">
+								<tbody>
+									<tr>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Boisseleau.png"><img class="alignleft size-full wp-image-29904 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Boisseleau.png" alt="" width="192" height="232" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Boisseleau.png 192w, https://www.paysdesherbiers.fr/medias/2020/06/Boisseleau-120x145.png 120w" sizes="(max-width: 192px) 100vw, 192px"></a></td>
+										<td>Angélique BOISSELEAU – Les Herbiers</td>
+										<td align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Bouancheau.png"><img class="alignleft size-full wp-image-29905 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Bouancheau.png" alt="" width="199" height="212" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Bouancheau.png 199w, https://www.paysdesherbiers.fr/medias/2020/06/Bouancheau-120x128.png 120w" sizes="(max-width: 199px) 100vw, 199px"></a></td>
+										<td>Patrice BOUANCHEAU – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Briand.png"><img class="alignleft size-full wp-image-29907 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Briand.png" alt="" width="196" height="227" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Briand.png 196w, https://www.paysdesherbiers.fr/medias/2020/06/Briand-120x139.png 120w" sizes="(max-width: 196px) 100vw, 196px"></a></div>
+										</td>
+										<td>Roger BRIAND – Les Herbiers</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Charrier-fontenit.png"><img class="alignleft size-full wp-image-29908 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Charrier-fontenit.png" alt="" width="183" height="233" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Charrier-fontenit.png 183w, https://www.paysdesherbiers.fr/medias/2020/06/Charrier-fontenit-120x153.png 120w" sizes="(max-width: 183px) 100vw, 183px"></a></div>
+										</td>
+										<td>Isabelle CHARRIER-FONTENIT – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Chenais.png"><img class="alignleft size-full wp-image-29909 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Chenais.png" alt="" width="205" height="226" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Chenais.png 205w, https://www.paysdesherbiers.fr/medias/2020/06/Chenais-120x132.png 120w" sizes="(max-width: 205px) 100vw, 205px"></a></div>
+										</td>
+										<td>Hélène CHENAIS – Les Herbiers</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Girard.png"><img class="alignleft size-full wp-image-29912 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Girard.png" alt="" width="193" height="230" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Girard.png 193w, https://www.paysdesherbiers.fr/medias/2020/06/Girard-120x143.png 120w" sizes="(max-width: 193px) 100vw, 193px"></a></div>
+										</td>
+										<td>Jean-Marie GIRARD – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Grimaud.png"><img class="alignleft size-full wp-image-29914 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Grimaud.png" alt="" width="197" height="238" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Grimaud.png 197w, https://www.paysdesherbiers.fr/medias/2020/06/Grimaud-120x145.png 120w" sizes="(max-width: 197px) 100vw, 197px"></a></div>
+										</td>
+										<td>Jean-Marie GRIMAUD – Les Herbiers</td>
+										<td>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Loiseau.png"><img class="alignleft size-full wp-image-29919 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Loiseau.png" alt="" width="208" height="266" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Loiseau.png 208w, https://www.paysdesherbiers.fr/medias/2020/06/Loiseau-120x153.png 120w" sizes="(max-width: 208px) 100vw, 208px"></a></div>
+										</td>
+										<td>Magali LOISEAU – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Merlet.png"><img class="alignleft size-full wp-image-29924 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Merlet.png" alt="" width="168" height="209" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Merlet.png 168w, https://www.paysdesherbiers.fr/medias/2020/06/Merlet-120x149.png 120w" sizes="(max-width: 168px) 100vw, 168px"></a></td>
+										<td>Jean-Yves MERLET – Les Herbiers</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Pineau.png"><img class="alignleft size-full wp-image-29928 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Pineau.png" alt="" width="168" height="212" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Pineau.png 168w, https://www.paysdesherbiers.fr/medias/2020/06/Pineau-120x151.png 120w" sizes="(max-width: 168px) 100vw, 168px"></a></div>
+										</td>
+										<td>Odile PINEAU – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Remigereau.png"><img class="alignleft size-full wp-image-29930 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Remigereau.png" alt="" width="190" height="224" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Remigereau.png 190w, https://www.paysdesherbiers.fr/medias/2020/06/Remigereau-120x141.png 120w" sizes="(max-width: 190px) 100vw, 190px"></a></div>
+										</td>
+										<td>Angélique REMIGEREAU – Les Herbiers</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/siaudeau.png"><img class="alignleft size-full wp-image-29933 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/siaudeau.png" alt="" width="228" height="253" srcset="https://www.paysdesherbiers.fr/medias/2020/06/siaudeau.png 228w, https://www.paysdesherbiers.fr/medias/2020/06/siaudeau-120x133.png 120w" sizes="(max-width: 228px) 100vw, 228px"></a></div>
+										</td>
+										<td>Estelle SIAUDEAU – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Soulard.png"><img class="alignleft size-full wp-image-29935 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Soulard.png" alt="" width="175" height="249" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Soulard.png 175w, https://www.paysdesherbiers.fr/medias/2020/06/Soulard-111x158.png 111w, https://www.paysdesherbiers.fr/medias/2020/06/Soulard-120x171.png 120w" sizes="(max-width: 175px) 100vw, 175px"></a></div>
+										</td>
+										<td>Luc SOULARD – Les Herbiers</td>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Mariel-Godard.png"><img class="alignleft size-full wp-image-29923 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Mariel-Godard.png" alt="" width="190" height="215" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Mariel-Godard.png 190w, https://www.paysdesherbiers.fr/medias/2020/06/Mariel-Godard-120x136.png 120w" sizes="(max-width: 190px) 100vw, 190px"></a></td>
+										<td>Julie MARIEL-GODARD – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Liard.png"><img class="alignleft size-full wp-image-29918 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Liard.png" alt="" width="183" height="247" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Liard.png 183w, https://www.paysdesherbiers.fr/medias/2020/06/Liard-120x162.png 120w" sizes="(max-width: 183px) 100vw, 183px"></a></div>
+										</td>
+										<td>Joseph LIARD – Les Herbiers</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Turbe.png"><img class="alignleft size-full wp-image-29936 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Turbe.png" alt="" width="205" height="257" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Turbe.png 205w, https://www.paysdesherbiers.fr/medias/2020/06/Turbe-120x150.png 120w" sizes="(max-width: 205px) 100vw, 205px"></a></div>
+										</td>
+										<td>Aurélie TURBE – Les Herbiers</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Loizeau.png"><img class="alignleft size-full wp-image-29920 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Loizeau.png" alt="" width="181" height="244" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Loizeau.png 181w, https://www.paysdesherbiers.fr/medias/2020/06/Loizeau-120x162.png 120w" sizes="(max-width: 181px) 100vw, 181px"></a></div>
+										</td>
+										<td>Sabine LOIZEAU – Mouchamps</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Lumeau.png"><img class="alignleft size-full wp-image-29921 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Lumeau.png" alt="" width="193" height="232" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Lumeau.png 193w, https://www.paysdesherbiers.fr/medias/2020/06/Lumeau-120x144.png 120w" sizes="(max-width: 193px) 100vw, 193px"></a></div>
+										</td>
+										<td>Jean-Michel LUMEAU – Mouchamps</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Sionneau.png"><img class="alignleft size-full wp-image-29934 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Sionneau.png" alt="" width="180" height="227" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Sionneau.png 180w, https://www.paysdesherbiers.fr/medias/2020/06/Sionneau-120x151.png 120w" sizes="(max-width: 180px) 100vw, 180px"></a></div>
+										</td>
+										<td>Sophie SIONNEAU – Mouchamps</td>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Albert.png"><img class="alignleft size-full wp-image-29900 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Albert.png" alt="" width="163" height="192" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Albert.png 163w, https://www.paysdesherbiers.fr/medias/2020/06/Albert-120x141.png 120w" sizes="(max-width: 163px) 100vw, 163px"></a></td>
+										<td>Philippe ALBERT – Les Epesses</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center"></div>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Peltier.png"><img class="alignleft size-full wp-image-29926 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Peltier.png" alt="" width="159" height="196" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Peltier.png 159w, https://www.paysdesherbiers.fr/medias/2020/06/Peltier-120x148.png 120w" sizes="(max-width: 159px) 100vw, 159px"></a></div>
+										</td>
+										<td>Stéphanie PELTIER – Les Epesses</td>
+										<td>
+											<div align="center"></div>
+											<div align="center"></div>
+											<div align="center"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Poingt-gaska.png"><img class="alignleft size-full wp-image-29929 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Poingt-gaska.png" alt="" width="151" height="196" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Poingt-gaska.png 151w, https://www.paysdesherbiers.fr/medias/2020/06/Poingt-gaska-120x156.png 120w" sizes="(max-width: 151px) 100vw, 151px"></a></div>
+											<div align="center"></div>
+											<div align="center"></div>
+										</td>
+										<td>Hélène POINGT-GASKA- Les Epesses</td>
+									</tr>
+									<tr>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Branger.png"><img class="alignleft size-full wp-image-29906 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Branger.png" alt="" width="202" height="237" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Branger.png 202w, https://www.paysdesherbiers.fr/medias/2020/06/Branger-120x141.png 120w" sizes="(max-width: 202px) 100vw, 202px"></a></div>
+										</td>
+										<td>Elodie BRANGER – Beaurepaire</td>
+										<td>
+											<div align="center">  <a href="https://www.paysdesherbiers.fr/medias/2020/06/Rimbaud.png"><img class="alignleft size-full wp-image-29931 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Rimbaud.png" alt="" width="181" height="250" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Rimbaud.png 181w, https://www.paysdesherbiers.fr/medias/2020/06/Rimbaud-120x166.png 120w" sizes="(max-width: 181px) 100vw, 181px"></a></div>
+										</td>
+										<td>David RIMBAUD – Beaurepaire</td>
+									</tr>
+									<tr>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Lallemand.png"><img class="alignleft size-full wp-image-29916 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Lallemand.png" alt="" width="212" height="209" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Lallemand.png 212w, https://www.paysdesherbiers.fr/medias/2020/06/Lallemand-102x102.png 102w, https://www.paysdesherbiers.fr/medias/2020/06/Lallemand-104x104.png 104w, https://www.paysdesherbiers.fr/medias/2020/06/Lallemand-55x55.png 55w, https://www.paysdesherbiers.fr/medias/2020/06/Lallemand-120x118.png 120w" sizes="(max-width: 212px) 100vw, 212px"></a></td>
+										<td>Pascal LALLEMAND – Vendrennes</td>
+										<td><a href="https://www.paysdesherbiers.fr/medias/2020/06/Beaune.png"><img class="alignleft size-full wp-image-29901 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Beaune.png" alt="" width="178" height="228" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Beaune.png 178w, https://www.paysdesherbiers.fr/medias/2020/06/Beaune-120x154.png 120w" sizes="(max-width: 178px) 100vw, 178px"></a></td>
+										<td>Alexandra BEAUNE – Mesnard-la-Barotière</td>
+									</tr>
+									<tr>
+										<td rowspan="1"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Grelet.png"><img class="alignleft size-full wp-image-29913 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Grelet.png" alt="" width="195" height="244" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Grelet.png 195w, https://www.paysdesherbiers.fr/medias/2020/06/Grelet-120x150.png 120w" sizes="(max-width: 195px) 100vw, 195px"></a></td>
+										<td rowspan="1">Nicolas GRELET – Saint-Paul-en-Pareds</td>
+										<td rowspan="1"><a href="https://www.paysdesherbiers.fr/medias/2020/06/Pasquier.png"><img class="alignleft size-full wp-image-29925 colorbox-4395" src="https://www.paysdesherbiers.fr/medias/2020/06/Pasquier.png" alt="" width="186" height="223" srcset="https://www.paysdesherbiers.fr/medias/2020/06/Pasquier.png 186w, https://www.paysdesherbiers.fr/medias/2020/06/Pasquier-120x144.png 120w" sizes="(max-width: 186px) 100vw, 186px"></a></td>
+										<td rowspan="1">Laydie PASQUIER – Saint-Mars-la-Réorthe</td>
+									</tr>
+								</tbody>
+							</table>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<div class="clearfix"></div>
+						</div>
+						<script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=fr&key=AIzaSyDnZQGmlG7d25U2FgbTu8VQXgcWOmU7RpU"></script>
+						<script src="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-plan-interactif/js/MarkerClusterer.js"></script>
+					</article>
+				</div>
+				<div id="secondary" role="complementary">
+					<section>
+						<div class="bloc-context telechargements">
+							<h3>Téléchargements</h3>
+							<div>
+								<ul>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2019/01/PV-Conseil-19.12.2018.pdf" target="_blank">PV Conseil 19 décembre 2018</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2018/11/181017-PV-Conseil-communautaire-site.pdf" target="_blank">PV Conseil 17 octobre 2018</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2018/09/180711-PV-CONSEIL-11-Juillet.pdf" target="_blank">PV Conseil 11 Juillet 2018</a></li>
+									<li><a href="" target="_blank"></a></li>
+									<li><a href="" target="_blank"></a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2019/05/190410-PV-Conseil-communautaire-10.04.19-1.pdf" target="_blank">PV Conseil 10 avril 2019</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2019/03/190227-PV-Conseil-27.02.2019.pdf" target="_blank">PV Conseil 27 février 2019</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2019/10/190710-PV-Conseil-communautaire-10.07.19.pdf" target="_blank">PV Conseil 10 juillet 2019</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2019/11/191009-PV-Conseil-communautaire-9-10-19-V2.pdf" target="_blank">PV Conseil 9 octobre 2019</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2020/01/191204-PV-Conseil-communataire-site.pdf" target="_blank">PV Conseil 4 décembre 2019</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2020/03/200212-PV-Conseil-communataire-12-02-2020.pdf" target="_blank">PV conseil 12 février 2020</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2020/03/200304-PV-Conseil-4-mars-2020.pdf" target="_blank">PV conseil 4 mars 2020</a></li>
+									<li><a href="https://www.paysdesherbiers.fr/medias/2020/06/200605-PV-Conseil-5-juin-2020.pdf" target="_blank">PV Conseil 5 juin 2020</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!--end #wrapper -->
+		<footer class="site-footer">
+			<div class="partage-social-media center">
+				<div class="partage">
+					<ul class="liste-reseaux">
+						<li><a class="rs-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Facebook"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg> </a></li>
+						<li><a class="rs-twitter" href="https://twitter.com/share?url=https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/&text=Le%20bureau%20et%20le%20conseil%20communautaire" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Twitter"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg> </a></li>
+						<li><a class="rs-mail" href="mailto:?subject=Le%20bureau%20et%20le%20conseil%20communautaire%20-%20Communaut%C3%A9%20de%20Communes%20du%20Pays%20des%20Herbiers&body=https://www.paysdesherbiers.fr/le-bureau-et-le-conseil-communautaire/" title="Envoyer par mail"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.7px" height="8px" viewbox="0 0 11.7 8" style="overflow:scroll;enable-background:new 0 0 	11.7 8;" xml:space="preserve"><path id="mail_1_" d="M7.8,4.2l3.9-3.7v7.1L7.8,4.2z M11.2,0H0.5l5.4,5.1L11.2,0z M0,0.4v7.1l3.9-3.4L0,0.4z 	M5.8,6L4.4,4.6L0.5,8 h10.7L7.3,4.6L5.8,6z"></path></svg> </a></li>
+						<li><a class="rs-imprimer" href="javascript:window.print()" title="Imprimer"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-print-4" title="Imprimer" alt="Imprimer" class="at-icon at-icon-print"><title id="at-svg-print-4">Imprimer</title><g><path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path></g></svg> </a></li>
+					</ul>
+				</div>
+				<p>Partager cette page sur :</p>
+			</div>
+			<div class="acces-rapide">
+				<div class="center">
+					<ul class="liste-acces-rapide">
+						<li class="item-acces-rapide"><a class="annuaire" href="https://www.paysdesherbiers.fr/systeme/annuaire-de-contacts/" title="Annuaire de contact"> <div class="icone-acces-rapide"><span class="bg-cercle hvr-radial-out"> <span class="picto hvr-grow"></span> </span></div> <div class="nom-acces-rapide">Annuaire <br>de contacts</div> </a></li>
+						<li class="item-acces-rapide"><a class="subventions" href="https://www.paysdesherbiers.fr/subventions/" title="Les subventions"> <div class="icone-acces-rapide"><span class="bg-cercle hvr-radial-out"> <span class="picto hvr-grow"></span> </span></div> <div class="nom-acces-rapide">Les <br>subventions</div> </a></li>
+						<li class="item-acces-rapide"><a class="bibliotheques" href="https://www.paysdesherbiers.fr/listes/le-plan-local-durbanisme-intercommunal/" title="Habitat & urbanisme"> <div class="icone-acces-rapide"><span class="bg-cercle hvr-radial-out"> <span class="picto hvr-grow"></span> </span></div> <div class="nom-acces-rapide">Habitat<br> Urbanisme</div> </a></li>
+						<li class="item-acces-rapide"><a class="publications" href="https://www.paysdesherbiers.fr/listes/nos-publications/" title="Nos publications"> <div class="icone-acces-rapide"><span class="bg-cercle hvr-radial-out"> <span class="picto hvr-grow"></span> </span></div> <div class="nom-acces-rapide">Nos <br>publications</div> </a></li>
+						<li class="item-acces-rapide"><a class="redevance" href="https://www.paysdesherbiers.fr/redevance-incitative-2/" title="Redevance incitative"> <div class="icone-acces-rapide"><span class="bg-cercle hvr-radial-out"> <span class="picto hvr-grow"></span> </span></div> <div class="nom-acces-rapide">Redevance <br>incitative</div> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-top">
+				<div class="center">
+					<ul class="autres-sites clearfix">
+						<li><span class="titre-liste">Autres <br>sites</span></li>
+						<li class="ot"><a href="http://www.ot-lesherbiers.fr/" target="_blank"><span class="picto-lien"></span><span class="texte-lien">Office <br>de tourisme</span></a></li>
+						<li class="eco"><a href="http://www.lesherbiers-developpement.com/"><span class="picto-lien"></span><span class="texte-lien">Portail <br>économique</span></a></li>
+						<li class="biblio"><a href="http://www.bibliothequesdupaysdesherbiers.net/bibliothequesdupaysdesherbiers.net/index/index/id_profil/1" target="_blank"><span class="picto-lien"></span><span class="texte-lien">Portail des <br>bibliothèques</span></a></li>
+						<li class="piscine"><a href="https://www.paysdesherbiers.fr/piscine-2/"><span class="picto-lien"></span><span class="texte-lien">Centre <br>aquatique</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom clearfix">
+				<div class="center">
+					<div class="contact-horaires">
+						<div class="contact">
+							<p class="nom">Communauté de communes du Pays des Herbiers</p>
+							<p>6 rue du Tourniquet</p>
+							<p><span>85500</span> <span> Les Herbiers</span></p>
+							<p><span>Tél :</span> <span>02 51 66 82 27</span></p><a href="https://www.paysdesherbiers.fr/systeme/nous-contacter/" title="Nous écrire">Nous écrire</a></div>
+						<div class="horaires">
+							<p class="nom">horaires d'ouverture</p>
+							<p>Accueil téléphonique du lundi au vendredi de 9h à 12h et de 14h à 18h / Accueil physique sur RDV uniquement</p>
+						</div>
+					</div>
+					<div class="logo-footer">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="284.6px" height="174.1px" viewbox="0 0 284.6 174.1" style="enable-background:new 0 0 284.6 174.1;" xml:space="preserve">
+							<defs></defs>
+							<g id="LogoFOOTER">
+								<path class="st0" d="M154.7,111.6V101h6.1v-4.8h-6.1v-9h6.7l1.2-4.8h-14.7v33.8h14.8l-1.3-4.7H154.7z M185.9,91.4
+                                c0-3.3-0.9-5.6-2.8-6.9c-1.8-1.3-4.6-2-8.2-2h-8.8v33.8h6.9v-11.2c0,0,1.4-0.4,3.2-1.3l3.1,12.5h7.1l-4.6-16.3
+                                C184.1,97.9,185.9,95,185.9,91.4z M178.5,95.7c-1.9,2.3-5.5,3.5-5.5,3.5v-12h2.4c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7
+                                C179.5,93.6,179.1,94.9,178.5,95.7z M135.8,96.2h-6V82.4h-6.9l0,33.8h6.9v-15h6v15.1h6.9V82.4h-6.9V96.2z M206.1,97.3
+                                c2-1.6,3.4-3.7,3.4-6.4c0-3.2-0.9-5.4-2.7-6.6c-1.8-1.2-4.4-1.8-7.6-1.8h-8.6v33.8h10.1c3.2,0,5.6-0.8,7.3-2.4
+                                c1.7-1.6,2.5-4,2.5-7.3C210.5,102,208.5,99,206.1,97.3z M197.4,87.2h1.3c1.6,0,2.9,0.3,3.6,1c0.8,0.7,1.2,1.7,1.2,3.2
+                                c0,4-6.1,5.2-6.1,5.2V87.2z M202.9,110.2c-0.7,0.8-1.9,1.3-3.5,1.3h-2v-10.4c1.1-0.2,2.5-0.6,3.9-1.1c1.7,0.9,2.7,4.5,2.7,6.2
+                                C203.9,108,203.6,109.4,202.9,110.2z M283.3,102.9c-0.9-1.5-2.2-3.1-3.8-4.6l-3.4-3c-1-0.9-1.8-1.8-2.3-2.5
+                                c-0.5-0.8-0.8-1.7-0.8-2.8c0-0.8,0.2-1.5,0.6-2c0.4-0.6,1.1-0.8,1.9-0.8c1,0,1.6,0.4,2,1.3c0.3,0.9,0.5,2.2,0.6,3.9l6-0.9
+                                c-0.2-2.7-0.8-5-2-6.7c-1.2-1.8-3.3-2.7-6.3-2.7c-2.9,0-5.2,0.7-6.8,2.2c-1.6,1.5-2.5,3.6-2.5,6.4c0,1.9,0.4,3.5,1.1,4.8
+                                c0.7,1.3,1.8,2.5,3.2,3.8l3.5,3c1.3,1.1,2.2,2.1,2.8,3.1c0.6,0.9,0.9,2.1,0.9,3.4c0,0.8-0.2,1.5-0.5,2c-0.4,0.5-0.9,0.8-1.8,0.8
+                                c-1.1,0-1.9-0.5-2.4-1.5c-0.5-1-0.8-2.6-0.9-4.7l-5.9,1c0.1,3.6,1,6.2,2.5,8c1.6,1.7,3.9,2.6,7,2.6c1.7,0,3.3-0.4,4.6-1.1
+                                c1.3-0.7,2.3-1.7,3.1-3c0.7-1.3,1.1-2.7,1.1-4.3C284.6,106.3,284.2,104.4,283.3,102.9z M264.2,91.4c0-3.3-0.9-5.6-2.8-6.9
+                                c-1.8-1.3-4.6-2-8.2-2h-8.8v33.8h6.9v-11.2c0,0,1.4-0.4,3.2-1.3l3.1,12.5h7.1l-4.6-16.3C262.4,97.9,264.2,95,264.2,91.4z
+                                 M256.8,95.7c-1.9,2.3-5.5,3.5-5.5,3.5v-12h2.4c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7C257.8,93.6,257.4,94.9,256.8,95.7z
+                                 M214.6,90.5l6.9-1.6v-6.5h-6.9L214.6,90.5z M214.6,116.3h6.9V92.1l-6.9,1.6V116.3z M233.2,111.6V101h6.1v-4.8h-6.1v-9h6.7l1.2-4.8
+                                h-14.7v33.8l14.8,0l-1.3-4.7H233.2z M87,82.9h-5.3v33.8h5.6c2.5,0,4.3-0.7,5.4-2c1.1-1.3,1.6-3.3,1.6-6V90.4c0-2.6-0.5-4.4-1.6-5.6
+                                C91.5,83.5,89.6,82.9,87,82.9z M90.8,108c0,1.6-0.1,2.8-0.2,3.6c-0.1,0.8-0.5,1.4-1,1.9s-1.4,0.7-2.6,0.7h-1.9V85.4h1.8
+                                c1.1,0,2,0.2,2.5,0.5c0.5,0.4,0.9,0.9,1.1,1.6c0.2,0.7,0.3,1.8,0.3,3.2V108z M109.9,88c0-1.8,1-2.7,2.9-2.7c1.1,0,1.8,0.4,2.2,1.2
+                                c0.4,0.8,0.8,3.5,0.9,4.9l2.9-0.8c-0.2-2.2-0.5-5-1.8-6.4c-0.9-1.1-2.4-1.5-4.3-1.5c-1.8,0-3.3,0.5-4.3,1.5c-1,1-1.6,2.4-1.6,4.2
+                                c0,4.6,2.8,7.7,5.1,11.8c1.9,3.4,4,7.1,4,11.5c0,0.9-0.2,1.6-0.7,2.1c-0.5,0.5-1.1,0.7-2,0.7c-1.2,0-2-0.5-2.6-1.5
+                                c-0.5-1-0.8-4.4-0.9-6l-3,0.8c0.1,2.2,0.3,5.4,1.8,7.4c1,1.3,2.6,1.9,4.7,1.9c1.7,0,3.1-0.5,4.2-1.6c1.1-1,1.6-2.5,1.6-4.3
+                                c0-5-2.3-9-4.7-13.3C112.3,94.4,109.9,91.5,109.9,88z M100.3,114.2V99.8h4.9v-2.4h-4.9v-12h5.2l0.9-2.5h-9.5v33.8h9.5l-0.9-2.4
+                                H100.3z M17,84.9c-1.8-1.3-4.6-2-8.2-2H0v33.8l6.9,0v-11.2c0,0,6.5-3,8.8-5.1s4.1-5,4.1-8.6C19.8,88.6,18.8,86.3,17,84.9z
+                                 M12.3,96.1c-1.9,2.3-5.5,3.5-5.5,3.5v-12h2.4c1.5,0,2.6,0.4,3.2,1.2c0.6,0.8,0.9,2,0.9,3.7C13.3,94.1,13,95.3,12.3,96.1z
+                                 M25.4,82.9l-6.6,33.8h6.5l1.3-7.4h5.3l1.3,7.4h6.4L33,82.9H25.4z M27.2,105.1l2-13.6l2,13.6H27.2z M76.5,103.4
+                                c-0.9-1.5-2.2-3.1-3.8-4.6l-3.4-3c-1-0.9-1.8-1.8-2.3-2.5c-0.5-0.8-0.8-1.7-0.8-2.8c0-0.8,0.2-1.5,0.6-2c0.4-0.6,1.1-0.8,1.9-0.8
+                                c1,0,1.6,0.4,2,1.3c0.3,0.9,0.5,2.2,0.6,3.9l6-0.9c-0.2-2.7-0.8-5-2-6.7c-1.2-1.8-3.3-2.7-6.3-2.7c-2.9,0-5.2,0.7-6.8,2.2
+                                c-1.6,1.5-2.5,3.6-2.5,6.4c0,1.9,0.4,3.5,1.1,4.8c0.7,1.3,1.8,2.5,3.2,3.8l3.5,3c1.3,1.1,2.2,2.1,2.8,3.1c0.6,0.9,0.9,2.1,0.9,3.4
+                                c0,0.8-0.2,1.5-0.5,2c-0.4,0.5-0.9,0.8-1.8,0.8c-1.1,0-1.9-0.5-2.4-1.5c-0.5-1-0.8-2.6-0.9-4.7l-5.9,1c0.1,3.6,1,6.2,2.5,8
+                                c1.6,1.7,3.9,2.6,7,2.6c1.7,0,3.3-0.4,4.6-1.1c1.3-0.7,2.3-1.7,3.1-3c0.7-1.3,1.1-2.7,1.1-4.3C77.8,106.7,77.4,104.9,76.5,103.4z
+                                 M48.7,94.8l-3.8-11.9h-6.5l6.8,20.4v13.4h6.6v-13.4l6.5-20.4h-6.3L48.7,94.8z"></path>
+								<path class="st1" d="M172.7,121.8h7v24.4c-2.2,2.3-4.6,4.6-7,6.8V121.8z M166.1,18.4c-2.3,1.3-4.7,2.5-7,3.7v56.2h7V18.4z
+                                 M186.2,138.7c3.3-4.3,5.9-8.4,7-12.2v-4.7h-7V138.7z M179.7,10.1c-2.3,1.6-4.7,3.1-7,4.5v63.7h7V10.1z M152.6,25.2
+                                c-2.4,1.1-4.7,2.1-7,3v50h7V25.2z M145.6,173.7c1.8-1.1,4.2-2.6,7-4.6v-47.4h-7V173.7z M159.1,164.3c2.3-1.7,4.6-3.6,7-5.6v-36.9
+                                h-7V164.3z M118.5,121.8v38.6c2.4,1.9,4.7,3.6,7,5.2v-43.8H118.5z M125.5,78.3V35.2c-2.4,0.7-4.7,1.3-7,1.8v41.3H125.5z M132,170
+                                c2.8,1.8,5.2,3.2,7,4.1v-52.3h-7V170z M132,78.3h7V30.8c-2.4,0.9-4.7,1.7-7,2.4V78.3z M186.2,78.3h7V0c-2.3,1.9-4.7,3.7-7,5.5V78.3
+                                z M91.4,121.8v6.9c1.3,4,3.8,8.1,7,12.2v-19.1L91.4,121.8z M98.4,78.3V40.7c-2.5,0.3-4.9,0.6-7,0.7v36.8L98.4,78.3z M105,121.8
+                                v26.6c2.2,2.3,4.6,4.5,7,6.6v-33.2H105z M112,78.3V38.5c-2.4,0.5-4.8,0.9-7,1.3v38.5H112z"></path>
+							</g>
+						</svg>
+					</div>
+					<div class="labels">
+						<p>Labels et applications</p><a href="https://www.paysdesherbiers.fr/circuits-de-randonnees/" title="Circuits de randonnées" style="background-image:url(https://www.paysdesherbiers.fr/medias/2015/09/FooterLabel1.jpg);"></a><a href="https://www.paysdesherbiers.fr/territoire-a-energie-positive-pour-la-croissance-verte/" title="Territoire à énergie positive pour la croissance verte" style="background-image:url(https://www.paysdesherbiers.fr/medias/2018/08/14168_tepcv_carre_nom-meem-court_CMJN.jpg);"></a><a href="https://www.paysdesherbiers.fr/mouchamps-est-une-petite-cite-de-caractere/" title="Mouchamps est une «Petite Cité de Caractère»" style="background-image:url(https://www.paysdesherbiers.fr/medias/2016/01/LOGO-PCC-RVB.jpg);"></a></div>
+				</div>
+			</div>
+			<div class="footer-menus">
+				<div class="center">
+					<ul class="menu-villes-cc clearfix">
+						<li><a href="https://www.paysdesherbiers.fr/beaurepaire-2/">Beaurepaire</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/les-epesses-2/">Les Epesses</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/les-herbiers-2/">Les Herbiers</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/mesnard-la-barotiere-2/">Mesnard-la-Barotière</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/mouchamps-2/">Mouchamps</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/saint-mars-la-reorthe-2/">Saint-Mars-la-Réorthe</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/saint-paul-en-pareds-2/">Saint-Paul-en-Pareds</a></li>
+						<li><a href="https://www.paysdesherbiers.fr/vendrennes-2/">Vendrennes</a></li>
+					</ul>
+					<div class="menu-social">
+						<ul>
+							<li class="facebook"><a href="https://www.facebook.com/PaysDesHerbiers/" target="_blank" title="Page Facebook de la communauté de communes du Pays des Herbiers"> Facebook </a></li>
+							<li class="flickr"><a href="https://www.instagram.com/paysdesherbiers/" target="_blank" title="Les photos de la Communauté de communes du Pays des Herbiers sur Instagram"> Instagram </a></li>
+						</ul>
+						<ul>
+							<li class="youtube"><a href="https://www.youtube.com/channel/UCvp7BoX6AOXG0hlQrApnJYw" target="_blank" title="Les vidéos de la Communauté de communes du Pays des Herbiers sur Youtube"> Youtube </a></li>
+							<li class="linkedin">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.7px" height="66.7px" viewbox="0 0 66.7 66.7" style="enable-background:new 0 0 66.7 66.7;" xml:space="preserve">
+									<g id="Linkedin_x5F_bleu_1_">
+										<path id="fond_1_" class="st0" d="M54.7,66.7H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h42.7c6.6,0,12,5.4,12,12v42.7
+									C66.7,61.3,61.3,66.7,54.7,66.7z"></path>
+										<path id="in_1_" class="st1" d="M59.7,37.3v18.5H48.9V38.6c0-4.3-1.5-7.3-5.4-7.3c-3,0-4.7,2-5.5,3.9c-0.3,0.7-0.4,1.6-0.4,2.6v18
+									H26.9c0,0,0.1-29.2,0-32.3h10.7v4.6c0,0-0.1,0.1-0.1,0.1h0.1v-0.1c1.4-2.2,4-5.3,9.7-5.3C54.4,22.8,59.7,27.4,59.7,37.3L59.7,37.3z
+									M15.7,8c-3.7,0-6.1,2.4-6.1,5.6c0,3.1,2.3,5.6,5.9,5.6h0.1c3.7,0,6.1-2.5,6.1-5.6C21.6,10.4,19.4,8,15.7,8L15.7,8z M10.3,55.8H21
+									V23.6H10.3V55.8z M10.3,55.8"></path>
+									</g>
+								</svg><a href="https://www.linkedin.com/company/paysdesherbiers/" target="_blank" title="Page Linkedin de la Communauté de communes du Pays des Herbiers"> Linkedin </a></li>
+						</ul>
+					</div>
+					<div class="menu-footer clearfix">
+						<div class="menu-menu-footer-container">
+							<ul id="menu-menu-footer" class="footer-menu">
+								<li id="menu-item-2943" class="imprimer menu-item menu-item-type-custom menu-item-object-custom menu-item-2943 item-1"><a href="javascript:window.print()" title="Imprimer">Imprimer</a></li>
+								<li id="menu-item-2988" class="haut-de-page menu-item menu-item-type-custom menu-item-object-custom menu-item-2988 item-2">
+									<script type="application/javascript">jQuery(function($){jQuery("a.scroll-top-footer").click(function(){jQuery(document).scrollTop();});});</script><a href="#" title="Haut de page" class="no-cursor scroll-top-footer">Haut de page</a></li>
+								<li id="menu-item-2940" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-2940 item-3"><a title="Plan du site" href="https://www.paysdesherbiers.fr/systeme/plan-du-site/">Plan du site</a></li>
+								<li id="menu-item-2941" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-2941 item-4"><a title="Mentions Légales" href="https://www.paysdesherbiers.fr/systeme/mentions-legales/">Mentions Légales</a></li>
+								<li id="menu-item-2942" class="agence-creasit menu-item menu-item-type-custom menu-item-object-custom menu-item-2942 item-5"><a href="http://www.creasit.fr/" title="Agence Creasit" target="_blank">©‎ Creasit</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		
+		</script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/ui/core.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/ui/widget.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/ui/position.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/ui/menu.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+		<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-url.min.js">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.paysdesherbiers.fr/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js">' + 'ipt>' );
+		</script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/dist/dom-ready.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/dist/a11y.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/recherche.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/ccph/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="https://www.paysdesherbiers.fr/wp-content/themes/ccph/js/scripts.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.paysdesherbiers.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+		</script>
+		<noscript>
+			<p><img src="//www.paysdesherbiers.fr/piwik/piwik.php?idsite=1" style="border:0;" alt=""></p>
+		</noscript>
+		<!-- End Piwik Code -->
+	</body>
+</html>
