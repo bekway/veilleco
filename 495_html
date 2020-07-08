@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"0fa81f7255",applicationID:"9251801"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<meta name="description" content="Toute l'actualité d'Annemasse Agglo : son territoire, ses femmes et ses hommes, ses actions et projets...">
+		<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="canonical" href="https://www.annemasse-agglo.fr/infos-et-loisirs/actualites">
+		<link rel="shortlink" href="https://www.annemasse-agglo.fr/node/15">
+		<link rel="revision" href="https://www.annemasse-agglo.fr/infos-et-loisirs/actualites">
+		<title>Actualités | Annemasse Agglo</title>
+		<link rel="shortcut icon" href="/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+		<link href="https://fonts.googleapis.com/css?family=Exo:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/themes/annemasse/css/themify-icons.css">
+		<link rel="stylesheet" type="text/css" href="/themes/annemasse/css/font-awesome.min.css">
+		<link rel="stylesheet" media="all" href="/sites/default/files/css/css_cSJ0itZdOI_sO8XY7z8fZr5aTmElZONe9u2yT7C15VQ.css">
+		<link rel="stylesheet" media="all" href="/sites/default/files/css/css_yPd3judUcrqx7pcpsIqRRUmQfv1Wsk2S91Z4tFKG4DI.css">
+		<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+		<!-- Twitter universal website tag code -->
+		<script>
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+            },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+                a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            // Insert Twitter Pixel ID and Standard Event data below
+            twq('init','nz332');
+            twq('track','PageView');
+        
+		</script>
+		<!-- End Twitter universal website tag code -->
+	</head>
+	<body><a href="#main-content" class="visually-hidden focusable"> Aller au contenu principal </a>
+		<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+			<div class="layout-container">
+				<div class="top-links">
+					<div class="text-right"><a class="scrollH1" href="#">Contenu de la page</a> <a href="/accessibilite">Accessibilité</a> <a href="/contact">Contact</a></div>
+				</div>
+				<div id="alerte">
+					<div class="container text-center"><span class="fa fa-times" aria-hidden="true"></span>
+						<p><span class="black">En direct</span> <span class="text">La collecte du mardi 14 juillet 2020 est rattrapée au mercredi 15 juillet 2020</span> <a href="https://www.annemasse-agglo.fr/infos-et-loisirs/actualites/jour-ferie-du-14-juillet-collecte-des-dechets-et-dechetteries">Lire l'info</a></p>
+					</div>
+				</div>
+				<header role="banner">
+					<div class="burger"><span class="fa fa-bars" aria-hidden="true"></span> <span>Menu</span></div>
+					<menu id="menu">
+						<div class="top">
+							<div class="bkg-white"><span class="close-menu"> <span class="ti-close" aria-hidden="true"></span> Fermer </span></div>
+						</div>
+						<aside><span class="close-menu ti-close" aria-hidden="true"></span>
+							<div class="links"><a href="/services-et-demarches" class="services"> <img src="/themes/annemasse/images/icons/icon-services.png" alt=""> </a> <a href="/actions-et-projets" class="actions"> <img src="/themes/annemasse/images/icons/icon-actions.png" alt=""> </a> <a href="/agglo-et-territoire" class="agglo"> <img src="/themes/annemasse/images/icons/icon-agglo.png" alt=""> </a> <a href="/infos-et-loisirs" class="informations"> <img src="/themes/annemasse/images/icons/icon-informations.png" alt=""> </a> <a href="/partenaires-et-pros" class="partenaires"> <img src="/themes/annemasse/images/icons/icon-partenaires.png" alt=""> </a></div>
+						</aside>
+						<div class="panel depth-1">
+							<div class="links"><a href="/services-et-demarches" class="services hasDepth"> Services et démarches </a> <a href="/actions-et-projets" class="actions hasDepth"> Actions et projets </a> <a href="/agglo-et-territoire" class="agglo hasDepth"> L'Agglo et le territoire </a> <a href="/infos-et-loisirs" class="informations hasDepth"> Infos et loisirs </a> <a href="/partenaires-et-pros" class="partenaires hasDepth"> Partenaires et pros </a></div>
+							<div class="box">
+								<div class="complementary">
+									<p class="title">Vous recherchez certainement...</p><a href="https://www.annemasse-agglo.fr/contact" class="bouton">Contacter l'Agglo</a>
+									<div class="clearfix"></div><a href="https://www.annemasse-agglo.fr/partenaires-et-pros/marches-publics" class="bouton">Marchés publics</a>
+									<div class="clearfix"></div><a href="https://www.annemasse-agglo.fr/services-et-demarches/dechets/vignette-dechetteries" class="bouton">Vignettes d'accès aux déchetteries</a>
+									<div class="clearfix"></div>
+								</div>
+								<p class="title">Contacter l’agglo</p>
+								<p>Tél. +33 (0)4 50 87 83 00</p><a href="/contact" class="bouton-contact-enveloppe"> <span class="fa fa-envelope-o" aria-hidden="true"></span> Contacter l’AGGLO </a></div>
+						</div>
+						<div class="panel services depth-2">
+							<p class="close-panel"><strong> Services et démarches </strong></p><a href="/services-et-demarches/eau-et-assainissement" class="eau-et-assainissement hasDepth"> Eau et assainissement </a> <a href="/services-et-demarches/dechets" class="dechets hasDepth"> Déchets </a> <a href="/services-et-demarches/logement" class="logement hasDepth"> Logement </a> <a href="/services-et-demarches/transports" class="transports"> Transports </a> <a href="/services-et-demarches/reseau-intermede" class="intermede-le-reseau-des-bibliotheques"> Intermède, le réseau des bibliothèques </a> <a href="/services-et-demarches/accueil-personnes-agees" class="accueil-des-personnes-agees"> Accueil des personnes âgées </a> <a href="/services-et-demarches/accueil-enfants-loisirs" class="accueil-des-enfants-en-centre-de-loisirs"> Accueil des enfants en centre de loisirs </a> <a href="/services-et-demarches/accueil-personnes-sans-residence-stable" class="accueil-des-personnes-sans-residence-stable"> Accueil des personnes sans résidence stable </a> <a href="/services-et-demarches/maison-justice-droit" class="maison-de-justice-et-du-droit"> Maison de Justice et du Droit </a> <a href="/services-et-demarches/cite-metiers" class="cite-des-metiers"> Cité des Métiers </a> <a href="/services-et-demarches/fibre-optique" class="fibre-optique-et-tres-haut-debit"> Fibre optique et très haut débit </a> <a href="/services-et-demarches/archives" class="archives"> Archives </a></div>
+						<div class="panel services eau-et-assainissement depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Eau et assainissement</strong> <a href="/services-et-demarches/eau-et-assainissement" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/services-et-demarches/eau-et-assainissement/payer-facture-eau">Payer une facture d'eau</a> <a href="/services-et-demarches/eau-et-assainissement/contrat-eau">Contrat d’eau</a> <a href="/services-et-demarches/eau-et-assainissement/compteur-eau">Compteur d’eau</a> <a href="/services-et-demarches/eau-et-assainissement/assainissement">Assainissement</a></div>
+							</div>
+						</div>
+						<div class="panel services dechets depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Déchets</strong> <a href="/services-et-demarches/dechets" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/services-et-demarches/dechets/jours-de-collecte">Jours de collecte des ordures ménagères et des bacs jaunes de tri</a> <a href="/services-et-demarches/dechets/se-procurer-un-conteneur-bac-jaune-composteur">Se procurer un bac à ordures ménagères, un bac jaune de tri ou un composteur</a> <a href="/services-et-demarches/dechets/vignette-dechetteries">Faire une demande de vignette d'accès en déchetteries</a> <a href="/services-et-demarches/dechets/lieux-horaires-dechetteries">Lieux et horaires des déchetteries</a> <a href="/services-et-demarches/dechets/consignes-de-tri">Consignes de tri</a> <a href="/services-et-demarches/dechets/carte-points-apport-volontaire">Localisation des points d’apport volontaire</a> <a href="/services-et-demarches/dechets/reduction-des-dechets">Réduire ses déchets grâce au compostage</a> <a href="/services-et-demarches/dechets/obtenir-son-kit-zero-dechet">Obtenir son kit zéro déchet</a></div>
+							</div>
+						</div>
+						<div class="panel services logement depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Logement</strong> <a href="/services-et-demarches/logement" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/logement-abordable">Logement abordable, pour acheter à prix accessible sur l'agglomération</a> <a href="/services-et-demarches/logement/informer-problematiques-logement">S’informer sur les problématiques du logement</a> <a href="/services-et-demarches/logement/demande-logement-social">Faire une demande de logement social</a> <a href="/services-et-demarches/logement/regenero">Rénover son logement avec REGENERO</a> <a href="/services-et-demarches/logement/prime-chauffage-bois">Changer mon poêle avec la Prime Chauffage Bois</a> <a href="/services-et-demarches/logement/chaud-dedans">Rénover ma copropriété avec "Chaud dedans !"</a> <a href="/services-et-demarches/logement/signaler-logement-insalubre">Signaler mon logement comme insalubre</a></div>
+							</div>
+						</div>
+						<div class="panel services transports depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Transports</strong> <a href="/services-et-demarches/transports" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services intermede-le-reseau-des-bibliotheques depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Intermède, le réseau des bibliothèques</strong> <a href="/services-et-demarches/reseau-intermede" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services accueil-des-personnes-agees depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Accueil des personnes âgées</strong> <a href="/services-et-demarches/accueil-personnes-agees" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services accueil-des-enfants-en-centre-de-loisirs depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Accueil des enfants en centre de loisirs</strong> <a href="/services-et-demarches/accueil-enfants-loisirs" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services accueil-des-personnes-sans-residence-stable depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Accueil des personnes sans résidence stable</strong> <a href="/services-et-demarches/accueil-personnes-sans-residence-stable" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services maison-de-justice-et-du-droit depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Maison de Justice et du Droit</strong> <a href="/services-et-demarches/maison-justice-droit" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services cite-des-metiers depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Cité des Métiers</strong> <a href="/services-et-demarches/cite-metiers" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services fibre-optique-et-tres-haut-debit depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Fibre optique et très haut débit</strong> <a href="/services-et-demarches/fibre-optique" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel services archives depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Services et démarches </span> <strong>Archives</strong> <a href="/services-et-demarches/archives" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel actions depth-2">
+							<p class="close-panel"><strong> Actions et projets </strong></p><a href="/actions-et-projets#cat-5" class="amenager-la-ville hasDepth"> Aménager la ville </a> <a href="/actions-et-projets#cat-2" class="se-deplacer hasDepth"> Se déplacer </a> <a href="/actions-et-projets#cat-7" class="preserver-l-environnement hasDepth"> Préserver l'environnement </a> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-7" class="renforcer-l-acces-a-la-culture hasDepth"> Renforcer l'accès à la culture </a> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-3" class="se-loger hasDepth"> Se loger </a> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-8" class="soutenir-l-economie hasDepth"> Soutenir l'économie </a> <a href="/actions-et-projets#cat-9" class="se-former hasDepth"> Se former </a> <a href="/actions-et-projets#cat-4" class="etre-solidaire hasDepth"> Etre solidaire </a></div>
+						<div class="panel actions amenager-la-ville depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Aménager la ville</strong> <a href="/actions-et-projets#cat-5" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/amenager-la-ville/ecoquartier-etoile-annemasse-geneve">L’écoquartier Etoile</a> <a href="/actions-et-projets/amenager-la-ville/revision-scot">La révision du schéma de cohérence territoriale (SCOT)</a> <a href="/actions-et-projets/college">Construction d'un nouveau collège</a> <a href="/actions-et-projets/amenager-la-ville/npru">Le nouveau programme de renouvellement urbain (NPRU) Perrier – Livron – Château-Rouge</a> <a href="/actions-et-projets/amenager-la-ville/rlpi">Le règlement local de publicité intercommunal (RLPI)</a> <a href="/actions-et-projets/amenager-la-ville/telepherique-saleve">Téléphérique du Salève : un nouveau visage pour l’équipement phare du territoire</a></div>
+							</div>
+						</div>
+						<div class="panel actions se-deplacer depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Se déplacer</strong> <a href="/actions-et-projets#cat-2" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/se-deplacer/bhns-tango">Le bus à haut niveau de service Tango</a> <a href="/actions-et-projets/se-deplacer/voie-verte-grand-geneve">La voie verte du Grand Genève</a> <a href="/actions-et-projets/se-deplacer/tram-annemasse-geneve">Le Tram Annemasse-Genève</a> <a href="/actions-et-projets/se-deplacer/parkings-relais">Les parkings relais P+R</a> <a href="/actions-et-projets/se-deplacer/nouvelle-gare-annemasse">La nouvelle gare d’Annemasse</a> <a href="/actions-et-projets/se-deplacer/leman-express">Le Léman Express (CEVA)</a> <a href="/actions-et-projets/maison-mobilite-tourisme">La Maison de la Mobilité et du Tourisme</a> <a href="/actions-et-projets/viarhona">La ViaRhôna</a></div>
+							</div>
+						</div>
+						<div class="panel actions preserver-l-environnement depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Préserver l'environnement</strong> <a href="/actions-et-projets#cat-7" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/preserver-environnement/usine-depollution-azote">Usine de dépollution des eaux : traitement de l’azote</a></div>
+							</div>
+						</div>
+						<div class="panel actions renforcer-l-acces-a-la-culture depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Renforcer l'accès à la culture</strong> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-7" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/renforcer-acces-culture/mise-reseau-bibliotheques">La mise en réseau des bibliothèques</a> <a href="/actions-et-projets/renforcer-acces-culture/conservatoire-de-musique">Le conservatoire de musique</a> <a href="/actions-et-projets/renforcer-acces-culture/archipel-butor">L’héritage de Michel Butor : une maison d'écrivain et un manoir des livres</a></div>
+							</div>
+						</div>
+						<div class="panel actions se-loger depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Se loger</strong> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-3" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/se-loger/maison-habitat">La Maison de l’Habitat</a></div>
+							</div>
+						</div>
+						<div class="panel actions soutenir-l-economie depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Soutenir l'économie</strong> <a href="http://annemasse-agglo.fr/actions-et-projets#cat-8" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/soutenir-economie/projet-agricole">Projet agricole</a> <a href="/actions-et-projets/soutenir-economie/espace-claudius-vuargnoz">Espace Claudius Vuargnoz</a></div>
+							</div>
+						</div>
+						<div class="panel actions se-former depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Se former</strong> <a href="/actions-et-projets#cat-9" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/se-former/grand-forma">Grand Forma, pôle de formation</a></div>
+							</div>
+						</div>
+						<div class="panel actions etre-solidaire depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Actions et projets </span> <strong>Etre solidaire</strong> <a href="/actions-et-projets#cat-4" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/actions-et-projets/maison-des-solidarites">Le Pôle des solidarités</a></div>
+							</div>
+						</div>
+						<div class="panel agglo depth-2">
+							<p class="close-panel"><strong> L'Agglo et le territoire </strong></p><a href="/agglo-et-territoire/decouverte-du-territoire" class="decouverte-du-territoire"> Découverte du territoire </a> <a href="/agglo-et-territoire/missions-et-competences" class="missions-et-competences"> Missions et compétences </a> <a href="/agglo-et-territoire/projet-territoire" class="projet-de-territoire"> Projet de territoire </a> <a href="/agglo-et-territoire/documents-cadre" class="documents-cadre"> Documents cadre </a> <a href="/agglo-et-territoire/budget" class="budget"> Budget </a> <a href="/agglo-et-territoire/organisation-politique" class="organisation-politique"> Organisation politique </a> <a href="/agglo-et-territoire/organisation-administrative" class="organisation-administrative"> Organisation administrative </a> <a href="/agglo-et-territoire/offres-emploi" class="offres-d-emploi"> Offres d'emploi </a> <a href="/agglo-et-territoire/deliberations" class="deliberations-et-autres-documents-des-instances"> Délibérations et autres documents des instances </a> <a href="/je-participe" class="je-participe"> Je participe ! </a></div>
+						<div class="panel agglo decouverte-du-territoire depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Découverte du territoire</strong> <a href="/agglo-et-territoire/decouverte-du-territoire" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo missions-et-competences depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Missions et compétences</strong> <a href="/agglo-et-territoire/missions-et-competences" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo projet-de-territoire depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Projet de territoire</strong> <a href="/agglo-et-territoire/projet-territoire" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo documents-cadre depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Documents cadre</strong> <a href="/agglo-et-territoire/documents-cadre" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo budget depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Budget</strong> <a href="/agglo-et-territoire/budget" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo organisation-politique depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Organisation politique</strong> <a href="/agglo-et-territoire/organisation-politique" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo organisation-administrative depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Organisation administrative</strong> <a href="/agglo-et-territoire/organisation-administrative" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo offres-d-emploi depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Offres d'emploi</strong> <a href="/agglo-et-territoire/offres-emploi" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo deliberations-et-autres-documents-des-instances depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Délibérations et autres documents des instances</strong> <a href="/agglo-et-territoire/deliberations" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel agglo je-participe depth-3">
+							<div class="box">
+								<p class="close-panel"><span> L'Agglo et le territoire </span> <strong>Je participe !</strong> <a href="/je-participe" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel informations depth-2">
+							<p class="close-panel"><strong> Infos et loisirs </strong></p><a href="/infos-et-loisirs/dossiers-thematiques" class="dossiers-thematiques"> Dossiers thématiques </a> <a href="/infos-et-loisirs/agenda" class="agenda"> Agenda </a> <a href="/infos-et-loisirs/actualites" class="actualites"> Actualités </a> <a href="/infos-et-loisirs/lieux-de-loisirs" class="lieux-de-loisirs-intercommunaux"> Lieux de loisirs intercommunaux </a></div>
+						<div class="panel informations dossiers-thematiques depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Infos et loisirs </span> <strong>Dossiers thématiques</strong> <a href="/infos-et-loisirs/dossiers-thematiques" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel informations agenda depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Infos et loisirs </span> <strong>Agenda</strong> <a href="/infos-et-loisirs/agenda" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel informations actualites depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Infos et loisirs </span> <strong>Actualités</strong> <a href="/infos-et-loisirs/actualites" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel informations lieux-de-loisirs-intercommunaux depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Infos et loisirs </span> <strong>Lieux de loisirs intercommunaux</strong> <a href="/infos-et-loisirs/lieux-de-loisirs" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel partenaires depth-2">
+							<p class="close-panel"><strong> Partenaires et pros </strong></p><a href="/partenaires-et-pros/marches-publics" class="marches-publics-d-annemasse-agglo"> Marchés publics d’Annemasse Agglo </a> <a href="/partenaires-et-pros/entreprises-et-commerces" class="entreprises-et-commerces hasDepth"> Entreprises et commerces </a> <a href="/partenaires-et-pros/professionnels-habitat" class="professionnels-de-l-habitat"> Professionnels de l'habitat </a> <a href="/partenaires-et-pros/associations" class="associations"> Associations </a> <a href="/partenaires-et-pros/organisations-pros-solidarite-internationale" class="organisations-et-professionnels-de-la-solidarite-internationale"> Organisations et professionnels de la solidarité internationale </a></div>
+						<div class="panel partenaires marches-publics-d-annemasse-agglo depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Partenaires et pros </span> <strong>Marchés publics d’Annemasse Agglo</strong> <a href="/partenaires-et-pros/marches-publics" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel partenaires entreprises-et-commerces depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Partenaires et pros </span> <strong>Entreprises et commerces</strong> <a href="/partenaires-et-pros/entreprises-et-commerces" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"><a href="/partenaires-et-pros/entreprises-et-commerces/se-faire-accompagner">Se faire accompagner dans son projet d’entreprise</a> <a href="/partenaires-et-pros/entreprises-et-commerces/dechets">Gérer ses déchets en tant que professionnel</a> <a href="/partenaires-et-pros/entreprises-et-commerces/eau-et-assainissement">Gérer ses contrats d’eau et d’assainissement en tant que professionnel</a> <a href="/partenaires-et-pros/entreprises-et-commerces/devenir-partenaire-solidarite-internationale">Devenir partenaire d’un projet de solidarité internationale</a> <a href="/partenaires-et-pros/entreprises-et-commerces/fibre-pro">Se raccorder à la fibre en tant que professionnel</a></div>
+							</div>
+						</div>
+						<div class="panel partenaires professionnels-de-l-habitat depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Partenaires et pros </span> <strong>Professionnels de l'habitat</strong> <a href="/partenaires-et-pros/professionnels-habitat" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel partenaires associations depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Partenaires et pros </span> <strong>Associations</strong> <a href="/partenaires-et-pros/associations" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+						<div class="panel partenaires organisations-et-professionnels-de-la-solidarite-internationale depth-3">
+							<div class="box">
+								<p class="close-panel"><span> Partenaires et pros </span> <strong>Organisations et professionnels de la solidarité internationale</strong> <a href="/partenaires-et-pros/organisations-pros-solidarite-internationale" class="bouton-gris-reverse no-radius small-padding">Voir la page</a></p>
+								<div class="links"></div>
+							</div>
+						</div>
+					</menu><a href="/"> <figure id="logo"><img src="/themes/annemasse/images/logo.png" alt="Annemasse Agglo"><figcaption>Annemasse<br>Les Voirons Agglomération</figcaption></figure> </a>
+					<form action="/rechercher/" method="GET" class="search"><input id="search-box" name="keys" type="text" placeholder="Rechercher"> <span class="activeSearch"></span> <button type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
+						<div id="search-suggestions">
+							<div class="entete">
+								<p>Résultats les plus pertinents</p>
+							</div>
+							<script id="suggestion-template" type="text/x-custom-template">
+        <a class="suggestion">
+          <p>
+          <span>
+        
+      
+							</script>
+						</div>
+					</form>
+				</header>
+				<div>
+					<div data-drupal-messages-fallback class="hidden"></div>
+				</div>
+				<main role="main"><a id="main-content" tabindex="-1"></a>
+					<div class="layout-content">
+						<div>
+							<div id="block-annemasse-content">
+								<article class="blog list">
+									<figure class="bandeau simple"><img src="https://www.annemasse-agglo.fr/sites/default/files/2017-07/DIVERS_2017_BandeauActualites_sebra.jpg" alt=""></figure>
+									<div class="container">
+										<div class="breadcrumb">
+											<div class="breadcrumb-item"><a href="/">Accueil</a></div>
+											<div class="breadcrumb-item"><a href="/infos-et-loisirs">Infos et loisirs</a></div>
+											<div class="breadcrumb-item active">Actualités</div>
+										</div>
+										<h1>Actualités</h1>
+										<div class="bloc-social"><span class="trame"></span>
+											<p>Partager:</p><a href="https://www.facebook.com/sharer/sharer.php?caption=Actualit%C3%A9s&u=https://www.annemasse-agglo.fr/infos-et-loisirs/actualites" target="_blank" class="facebook"><span class="ti-facebook"></span>Facebook</a> <a href="https://twitter.com/home?status=Actualit%C3%A9s%20https://www.annemasse-agglo.fr/infos-et-loisirs/actualites%20via%20@AnnemasseAgglo" target="_blank" class="twitter"><span class="ti-twitter-alt"></span>Twitter</a> <span class="trame"></span> <a href="javascript:window.print();" class="print"><span class="ti-printer"></span>Imprimer</a> <a href="mailto:?subject=Un%20ami%20vous%20recommande%20un%20article%20sur%20annemasse-agglo.fr&body=Bonjour,%20Un%20ami%20vous%20recommande%20un%20article%20sur%20annemasse-agglo.fr%20:%20Actualit%C3%A9s%20-%20https://www.annemasse-agglo.fr/infos-et-loisirs/actualites%20Bien%20cordialement,%20Annemasse%20Agglo" class="email"><span class="ti-email"></span>Envoyer par email</a></div>
+										<div class="paragraph paragraph--type--liste-elements paragraph--view-mode--default">
+											<div class="js-view-dom-id-ae99a624512f6ec4ee6c0fabf34ee0a249fa025655d61ccb661140190153cc5b">
+												<form class="views-exposed-form" data-drupal-selector="views-exposed-form-liste-des-actualites-default" action="/rss-actualites" method="get" id="views-exposed-form-liste-des-actualites-default" accept-charset="UTF-8">
+													<div class="filters">
+														<p>Filtrer par :</p><a href="?" class="  class=" all>Toutes</a> <a href="?field_actualite_categorie_value=Mobilit%C3%A9" class="  class=">Mobilité</a> <a href="?field_actualite_categorie_value=D%C3%A9chets" class="  class=">Déchets</a> <a href="?field_actualite_categorie_value=Eau%20et%20assainissement" class="  class=">Eau et assainissement</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles" class="active  class=">Infos institutionnelles</a> <a href="?field_actualite_categorie_value=Travaux" class="  class=">Travaux</a> <a href="?field_actualite_categorie_value=Habitat" class="  class=">Habitat</a> <a href="?field_actualite_categorie_value=Am%C3%A9nagement%20du%20territoire" class="  class=">Aménagement du territoire</a> <a href="?field_actualite_categorie_value=D%C3%A9veloppement%20durable" class="  class=">Développement durable</a> <a href="?field_actualite_categorie_value=Solidarit%C3%A9s" class="  class=">Solidarités</a> <a href="?field_actualite_categorie_value=Economie" class="  class=">Economie</a> <a href="?field_actualite_categorie_value=Culture" class="  class=">Culture</a> <a href="?field_actualite_categorie_value=Sport" class="  class=">Sport</a></div>
+												</form>
+												<div class="news row">
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/la-distribution-de-masques-sachevera-le-27-juin"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-06/MASQUE-POUR-ACTU-SITE-AA.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/la-distribution-de-masques-sachevera-le-27-juin"> <p class="title">La distribution de masques s'achèvera le 27 juin</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">17 juin 2020</p>
+														<div class="desc">
+															<p>La distribution des masques commandés par Annemasse Agglo continue dans les pharmacies partenaires jusqu’au samedi 27 juin. L’occasion pour les habitants de l’agglomération de se procurer des masques de qualité et à bas prix. L'opération, qui a débuté le 30 avril, a connu plusieurs vagues de distribution, elle s’achèvera ainsi dans quelques jours.</p>
+														</div><a href="/infos-et-loisirs/actualites/la-distribution-de-masques-sachevera-le-27-juin"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/nouvelle-distribution-de-masques"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-05/MASQUE-POUR-ACTU-SITE-AA.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/nouvelle-distribution-de-masques"> <p class="title">Nouvelle distribution de masques</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">03 juin 2020</p>
+														<div class="desc">
+															<p>La distribution de ses masques continue dans les pharmacies partenaires afin que les habitants du territoire puissent également disposer facilement de masques de qualité et à bas prix. Ces masques sont disponibles en pharmacie depuis le mercredi 27 mai après-midi. </p>
+														</div><a href="/infos-et-loisirs/actualites/nouvelle-distribution-de-masques"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/le-president-de-lagglo-sexprime-ce-lundi-18-mai"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-05/vignette-actu-site-AA_1.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/le-president-de-lagglo-sexprime-ce-lundi-18-mai"> <p class="title">Le président de l'Agglo s'exprime ce lundi 18 mai</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">18 mai 2020</p>
+														<div class="desc">
+															<p>Comme chaque semaine, retrouvez le Président d'Annemasse Agglo en vidéo pour faire le point sur la situation dans le contexte du COVID 19. </p>
+														</div><a href="/infos-et-loisirs/actualites/le-president-de-lagglo-sexprime-ce-lundi-18-mai"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/avec-les-beaux-jours-les-randonnees-sont-au-coeur-des-activites"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-05/vignette%20actu%20rando.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/avec-les-beaux-jours-les-randonnees-sont-au-coeur-des-activites"> <p class="title">Avec les beaux jours, les randonnées sont au cœur des activités</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">18 mai 2020</p>
+														<div class="desc">
+															<p>Avec la fin du confinement et les beaux jours qui arrivent, vous êtes nombreux à vous être tournés vers la randonnée pour prendre l'air, et vous avez bien raison !</p>
+														</div><a href="/infos-et-loisirs/actualites/avec-les-beaux-jours-les-randonnees-sont-au-coeur-des-activites"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/90-000-masques-pour-les-habitants-dannemasse-agglo"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-04/MASQUE-POUR-ACTU-SITE-AA.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/90-000-masques-pour-les-habitants-dannemasse-agglo"> <p class="title">90 000 masques pour les habitants d'Annemasse Agglo</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">12 mai 2020</p>
+														<div class="desc">
+															<p>Annemasse Agglo a passé commande de 90 000 masques de catégorie 2 pour préparer ses habitants au déconfinement. Matériel de protection essentiel pour limiter la propagation du virus Covid-19, une première vague de distribution de 10 000 masques a déjà été réalisée le 30 avril dans les pharmacies partenaires de l’opération.</p>
+														</div><a href="/infos-et-loisirs/actualites/90-000-masques-pour-les-habitants-dannemasse-agglo"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+													<div class="col-md-4 col-sm-6 col-xs-12 details"><a href="/infos-et-loisirs/actualites/le-president-dannemasse-agglo-sexprime-ce-lundi-11-mai"> <figure><img class="img-responsive" src="https://www.annemasse-agglo.fr/sites/default/files/2020-05/vignette-actu-site-AA_0.jpg" alt=""></figure> </a> <a href="/infos-et-loisirs/actualites/le-president-dannemasse-agglo-sexprime-ce-lundi-11-mai"> <p class="title">Le Président d'Annemasse Agglo s'exprime ce lundi 11 mai</p> </a> <a href="/infos-et-loisirs/actualites?field_actualite_categorie_value=Infos%20institutionnelles" class="categ">Infos institutionnelles</a>
+														<p class="date">11 mai 2020</p>
+														<div class="desc">
+															<p>Comme chaque semaine, retrouvez le Président d'Annemasse Agglo en vidéo pour faire le point sur la situation dans le contexte du COVID 19.</p>
+														</div><a href="/infos-et-loisirs/actualites/le-president-dannemasse-agglo-sexprime-ce-lundi-11-mai"><span class="ti-angle-right"></span>Lire l’actualité</a></div>
+												</div>
+												<div class="pagination"><span>1</span> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=1">2</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=2">3</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=3">4</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=4">5</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=5">6</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=6">7</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=7">8</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=8">9</a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=1" class="next"><span class="ti-angle-right"></span></a> <a href="?field_actualite_categorie_value=Infos%20institutionnelles&page=8" class="last"><span class="ti-angle-double-right"></span></a></div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="scrollTop" tooltip="Haut de page"></div>
+					</div>
+				</main>
+				<div class="cookie">
+					<p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies. Ces derniers assurant le bon fonctionnement de nos services. <a class="linkcookie" target="_blank" href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser">En savoir plus</a></p><span id="closecookie"></span></div>
+				<footer role="contentinfo">
+					<div class="container first-part">
+						<div class="col-md-12">
+							<hgroup class="row">
+								<div class="col-md-8 left">
+									<p class="h3 bordered-bottom full-size">Contacter l’Agglo</p>
+								</div>
+								<div class="col-md-4 right">
+									<p class="h3 bordered-bottom full-size">Newsletter</p>
+								</div>
+							</hgroup>
+							<p><strong>Accueil public : </strong>du lundi au vendredi de 8h30 à 12h et de 13h30 à 17h</p>
+							<div class="content row">
+								<div class="col-md-8 left">
+									<div class="infos">
+										<div class="box">
+											<p class="title"><strong>Annemasse - Les Voirons Agglomération</strong></p>
+											<address>11 avenue Emile Zola<br> BP 225<br> 74105 Annemasse Cedex</address>
+											<div class="contact"><a href="tel:+33450878300">Tél. +33 (0)4 50 87 83 00</a>
+												<div class="clearfix"></div><a href="tel:+33450878322">Fax. +33 (0)4 50 87 83 22</a>
+												<div class="clearfix"></div><a href="/contact" class="bouton-contact-enveloppe"> <span class="fa fa-envelope-o" aria-hidden="true"></span> Contacter l'agglo </a></div>
+										</div><span class="separator"></span>
+										<div class="box"><a href="https://www.google.fr/maps/search/Annemasse+Agglo/@46.196474,6.231609,14z" target="_blank"> <span class="ti-angle-right"></span> Venir à l'Agglo </a></div>
+									</div>
+								</div>
+								<div class="col-md-4 right">
+									<div id="mc_embed_signup" class="newsletter text-center">
+										<form action="//annemasse-agglo.us3.list-manage.com/subscribe/post?u=88835249e4d8d7aa10fb49736&id=d03b80041d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+											<p>Inscrivez-vous à la newsletter</p>
+											<div id="mc_embed_signup_scroll"><input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="mon email" required>
+												<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+												<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_88835249e4d8d7aa10fb49736_d03b80041d" tabindex="-1" value=""></div>
+												<div class="clear"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="bouton-blanc no-radius"></div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="share"><a href="https://twitter.com/annemasseagglo" target="_blank"><span class="ti-twitter-alt"></span>Twitter</a> <a href="https://www.facebook.com/Annemasse-Agglo-105139910215138/" target="_blank"><span class="ti-facebook"></span>Facebook</a> <a href="https://www.linkedin.com/company/annemasse-agglo" target="_blank"><span class="ti-linkedin"></span>LinkedIn</a> <a href="https://www.instagram.com/annemasseagglo/?hl=fr" target="_blank"><span class="ti-instagram"></span>Instagram</a></div>
+						</div>
+					</div>
+					<div class="last-part">
+						<div class="container text-center"><a href="/accessibilite" data-drupal-link-system-path="node/30">Accessibilité</a> <a href="/contact" data-drupal-link-system-path="contact">Contact</a> <a href="/plan-du-site" data-drupal-link-system-path="sitemap">Plan du site</a> <a href="/mentions-legales" data-drupal-link-system-path="node/31">Mentions légales</a></div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.1/jquery.once.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="/themes/annemasse/bootstrap/js/dist/carousel.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/bootstrap/js/dist/modal.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/bootstrap/js/dist/tab.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/bootstrap/js/dist/util.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/underscore.min.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/pagination.min.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/slick.min.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/jquery.caption.min.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/js.cookies.js?v=0.1.7"></script>
+		<script src="/themes/annemasse/js/script.js?v=0.1.7"></script>
+		<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-12366652-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    
+		</script>
+		<!-- Facebook Pixel Code -->
+		<script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '444344539089040'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=444344539089040&ev=PageView&noscript=1"></noscript>
+		<!-- End Facebook Pixel Code -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K24MW2N');
+		</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K24MW2N" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<!-- LinkedIn Tag -->
+		<script type="text/javascript">
+        _linkedin_data_partner_id = "117153";
+    
+		</script>
+		<script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);})();
+    
+		</script>
+		<noscript><img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=117153&fmt=gif"></noscript>
+		<!-- LinkedIn Tag End -->
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"0fa81f7255","applicationID":"9251801","transactionName":"MhBSZQoZCxZUBRFbXAtacVIMEQoLGiIXR0MEGWxfFxwAOXYJC0ZBChlcVAokKwpRAzNbVhI2X18MCgoJWQMXHw0THFVG","queueTime":0,"applicationTime":222,"atts":"HldRE0IDGBg=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script>
+	</body>
+</html>
