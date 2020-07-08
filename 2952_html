@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if lt IE 7]>     <html class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]--><!--[if IE 7]>        <html class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]--><!--[if IE 8]>        <html class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]--><!--[if gt IE 8]>     <html class="no-js" lang="fr-FR"> <![endif]--><!--[if gte IE 7]>     <html class="no-js all-ie" lang="fr-FR"> <![endif]--><html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Comptes-rendus du Conseil Municipal</title>
+		<meta name="description" content="Le conseil municipal se réunit une fois par mois, chaque premier lundi du mois. Les réunions sont ouvertes au public. Le compte-rendu des conseils municipaux est consultable sur le site et affiché en mairie.">
+		<link rel="shortcut icon" type="image/png" href="https://www.domloup.fr/wp-content/themes/domloup/images/favicon.png">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.domloup.fr/wp-content/themes/domloup/images/favicon.ico">
+		<link rel="apple-touch-icon" href="https://www.domloup.fr/wp-content/themes/domloup/images/favicon-iphone.png">
+		<link rel="dns-prefetch" href="//www.domloup.fr">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="stylesheet" id="colorbox-theme2-css" href="https://www.domloup.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="leaflet-css" href="https://www.domloup.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.domloup.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.domloup.fr/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="creasit-agenda-css" href="https://www.domloup.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="context-agenda-css" href="https://www.domloup.fr/wp-content/plugins/creasit-agenda/public/css/style-context-agenda.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-info-bulle-plan-interactif-css" href="https://www.domloup.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="plan-interactif-css" href="https://www.domloup.fr/wp-content/plugins/creasit-plan-interactif/css/style-plan-interactif.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="context-actualites-css" href="https://www.domloup.fr/wp-content/plugins/creasit-actualites/css/style-context-actualites.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="context-annuaire-contacts-css" href="https://www.domloup.fr/wp-content/plugins/creasit-annuaire-contacts/css/style-context-annuaire-contacts.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="gdrf-public-styles-css" href="https://www.domloup.fr/wp-content/plugins/creasit-rgpd/public/css/public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="reset-css" href="https://www.domloup.fr/wp-content/themes/noyau/assets/css/creasit-reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="dashicons-css" href="https://www.domloup.fr/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dflip-css" href="https://www.domloup.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="themify-icons-css" href="https://www.domloup.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-recherche-css" href="https://www.domloup.fr/wp-content/themes/noyau/assets/css/style-recherche.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="solution-css" href="https://www.domloup.fr/wp-content/themes/domloup/css/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="1024-css" href="https://www.domloup.fr/wp-content/themes/domloup/css/responsive-1024.css" type="text/css" media="screen and (max-width: 1024px)">
+		<link rel="stylesheet" id="768-css" href="https://www.domloup.fr/wp-content/themes/domloup/css/responsive-768.css" type="text/css" media="screen and (max-width: 768px)">
+		<link rel="stylesheet" id="480-css" href="https://www.domloup.fr/wp-content/themes/domloup/css/responsive-480.css" type="text/css" media="screen and (max-width: 480px)">
+		<link rel="stylesheet" id="print-css" href="https://www.domloup.fr/wp-content/themes/domloup/css/print.css" type="text/css" media="print">
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"false","colorboxPreloading":"false","colorboxOverlayClose":"false","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.domloup.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js"></script>
+		<link rel="https://api.w.org/" href="https://www.domloup.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.domloup.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.domloup.fr/wp-includes/wlwmanifest.xml">
+		<link rel="canonical" href="https://www.domloup.fr/comptes-rendus-du-conseil-municipal/">
+		<link rel="shortlink" href="https://www.domloup.fr/?p=3279">
+		<link rel="alternate" type="application/rss+xml" href="https://www.domloup.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+		<link rel="alternate" type="application/rss+xml" href="https://www.domloup.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+		<link rel="alternate" type="application/rss+xml" href="https://www.domloup.fr/feed/?post_type=post" title="Flux RSS des actualités">
+		<link rel="alternate" type="application/rss+xml" href="https://www.domloup.fr/feed/?post_type=contacts" title="Flux RSS de l'annuaire de contact">
+		<script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.domloup.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "7a8d9fca43";
+        
+		</script>
+		<script type="application/javascript">
+			var dFlipLocation = "https://www.domloup.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.domloup.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.domloup.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.domloup.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.domloup.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.domloup.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		
+		</script>
+		<meta property="og:title" content="Comptes-rendus du Conseil Municipal ">
+		<meta property="og:description" content="Le conseil municipal se réunit une fois par mois, chaque premier lundi du mois. 
+Les réunions sont ouvertes au public. 
+Les prochaines dates : Lundi 8 juin & lundi 29 juin (séance publique pour le vote du budget 2020)
+Le compte-rendu des conseils municipaux est consultable sur le site et affiché en mairie.">
+		<meta property="og:url" content="https://www.domloup.fr/comptes-rendus-du-conseil-municipal/">
+		<meta property="og:image" content="https://www.domloup.fr/medias/sites/3/2016/11/Re&#769;union-de-travail.jpg">
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.domloup.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+	</head>
+	<body class="page-template-default page page-id-3279 unknown">
+		<div class="div-fixe-right">
+			<div class="partage">
+				<ul class="liste-reseaux">
+					<li><a class="rs-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.domloup.fr/comptes-rendus-du-conseil-municipal/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Facebook"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg> </a></li>
+					<li><a class="rs-twitter" href="https://twitter.com/share?url=https://www.domloup.fr/comptes-rendus-du-conseil-municipal/&text=Comptes-rendus%20du%20Conseil%20Municipal" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Twitter"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg> </a></li>
+					<li><a class="rs-mail" href="mailto:?subject=Comptes-rendus%20du%20Conseil%20Municipal%20-%20Domloup%20(35)&body=https://www.domloup.fr/comptes-rendus-du-conseil-municipal/" title="Envoyer par mail"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.7px" height="8px" viewbox="0 0 11.7 8" style="overflow:scroll;enable-background:new 0 0 	11.7 8;" xml:space="preserve"><path id="mail_1_" d="M7.8,4.2l3.9-3.7v7.1L7.8,4.2z M11.2,0H0.5l5.4,5.1L11.2,0z M0,0.4v7.1l3.9-3.4L0,0.4z 	M5.8,6L4.4,4.6L0.5,8 h10.7L7.3,4.6L5.8,6z"></path></svg> </a></li>
+					<li><a class="rs-imprimer" href="javascript:window.print()" title="Imprimer"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-print-4" title="Imprimer" alt="Imprimer" class="at-icon at-icon-print"><title id="at-svg-print-4">Imprimer</title><g><path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path></g></svg> </a></li>
+				</ul>
+			</div>
+		</div>
+		<header id="header">
+			<div class="center">
+				<div class="top-header"><a href="https://www.domloup.fr" class="logo" title="Commune de Domloup"> <span>Commune de</span> <span class="nom-commune">Domloup</span> </a>
+					<div class="right-top-header">
+						<div class="sous-menu-wrapper">
+							<ul>
+								<li class="accueil"><a href="https://www.domloup.fr" title="Accueil">Accueil</a></li>
+								<li><a href="https://www.domloup.fr/systeme/accessibilite/" title="Accessibilité">Accessibilité</a></li>
+								<li class="flux-rss"><a href="https://www.domloup.fr/systeme/flux-rss/" title="Flux rss">Flux rss</a></li>
+								<li><a href="https://www.domloup.fr/systeme/nous-contacter/" title="Contact">Contact</a></li>
+							</ul>
+						</div>
+						<div class="search">
+							<form role="search" method="get" id="searchform" action="https://www.domloup.fr/">
+								<div><input type="text" class="rechercher" placeholder="Rechercher..." name="s" id="s"> <button type="submit" id="searchsubmit"><span>OK</span></button></div>
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="bottom-header">
+					<div class="menu-wrapper">
+						<div class="toggleMenu"><span class="icon-menu">Icone menu</span><span class="menu">Menu</span></div>
+						<!--cdlNav partie="1"-->
+						<div class="menu-menu-principal-container">
+							<ul id="menu-menu-principal" class="main-menu">
+								<li id="menu-item-3009" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-3009 item-1"><span title="MAIRIE">MAIRIE</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3432" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3432 item-2"><a title="CONSEIL MUNICIPAL" href="https://www.domloup.fr/listes/le-conseil-municipal/">CONSEIL MUNICIPAL</a></li>
+											<li id="menu-item-3240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3240 item-2"><a title="Organigramme" href="https://www.domloup.fr/les-services-municipaux/">SERVICES MUNICIPAUX</a></li>
+											<li id="menu-item-3438" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste current-menu-ancestor current-menu-parent menu-item-has-children menu-item-3438 item-2"><a title="PUBLICATIONS" href="https://www.domloup.fr/listes/les-publications/">PUBLICATIONS</a></li>
+											<li id="menu-item-3319" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3319 item-2"><a title="Bulletins municipaux" href="https://www.domloup.fr/bulletins-municipaux/">Bulletins municipaux</a></li>
+											<li id="menu-item-4761" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4761 item-2"><a title="Arrêtés municipaux et préfectoraux" href="https://www.domloup.fr/arretes-municipaux-et-prefectoraux/">Arrêtés municipaux et préfectoraux</a></li>
+											<li id="menu-item-3320" class="children-2 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3279 current_page_item menu-item-3320 item-2"><a title="Comptes-rendus du Conseil Municipal" href="https://www.domloup.fr/comptes-rendus-du-conseil-municipal/">Comptes-rendus du Conseil Municipal</a></li>
+											<li id="menu-item-7529" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7529 item-2"><a title="DÉMARCHES ADMINISTRATIVES" href="https://www.domloup.fr/listes/demarches-administratives/">DÉMARCHES ADMINISTRATIVES</a></li>
+											<li id="menu-item-7198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7198 item-2"><a title="ÉLECTIONS" href="https://www.domloup.fr/elections/">ÉLECTIONS</a></li>
+											<li id="menu-item-7544" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-7544 item-2"><a title="ÉQUIPEMENTS COMMUNAUX" href="https://www.domloup.fr/listes/les-salles-communales/">ÉQUIPEMENTS COMMUNAUX</a></li>
+											<li id="menu-item-3266" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3266 item-2"><a title="Les équipements communaux" href="https://www.domloup.fr/listes/equipements-communaux/">Les équipements communaux</a></li>
+											<li id="menu-item-7542" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7542 item-2"><a title="Louer une salle" href="https://www.domloup.fr/louer-une-salle/">Louer une salle</a></li>
+											<li id="menu-item-8229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8229 item-2"><a title="PROJETS EN COURS" href="https://www.domloup.fr/projets-en-cours/">PROJETS EN COURS</a></li>
+											<li id="menu-item-9893" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-9893 item-2"><a title="LE PAYS DE CHATEAUGIRON COMMUNAUTE" href="https://www.domloup.fr/listes/le-pays-de-chateaugiron-communaute/">LE PAYS DE CHATEAUGIRON COMMUNAUTE</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3010 item-2"><span title="Cadre de vie">Cadre de vie</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3448" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3448 item-3"><a title="PRÉSENTATION DE LA COMMUNE" href="https://www.domloup.fr/listes/presentation-de-la-commune/">PRÉSENTATION DE LA COMMUNE</a></li>
+											<li id="menu-item-4171" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-4171 item-3"><a title="URBANISME" href="https://www.domloup.fr/listes/urbanisme/">URBANISME</a></li>
+											<li id="menu-item-4173" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4173 item-3"><a title="Règles d'urbanisme" href="https://www.domloup.fr/regles-durbanisme/">Règles d’urbanisme</a></li>
+											<li id="menu-item-4174" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4174 item-3"><a title="Approbation PLU – Modification n°2" href="https://www.domloup.fr/approbation-plu-modification-n2/">Approbation PLU – Modification n°2</a></li>
+											<li id="menu-item-4250" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-4250 item-3"><a title="SCOT" target="_blank" href="http://www.paysderennes.fr/-Organisation-du-territoire-aujourd-.html">SCOT</a></li>
+											<li id="menu-item-7304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7304 item-3"><a title="HABITAT" href="https://www.domloup.fr/habitat/">HABITAT</a></li>
+											<li id="menu-item-8503" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8503 item-3"><a title="Primo-accédants : devenir propriétaire" href="https://www.domloup.fr/primo-accedants-devenir-proprietaire/">Primo-accédants : devenir propriétaire</a></li>
+											<li id="menu-item-8654" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8654 item-3"><a title="Économies d'énergie" href="https://www.domloup.fr/economies-denergie/">Économies d’énergie</a></li>
+											<li id="menu-item-10312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10312 item-3"><a title="Réfection de la route de Noyal-sur-Vilaine" href="https://www.domloup.fr/refection-de-la-route-de-noyal-sur-vilaine/">Réfection de la route de Noyal-sur-Vilaine</a></li>
+											<li id="menu-item-8439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8439 item-3"><a title="Zéro phyto" href="https://www.domloup.fr/loi-labbe-zero-phyto/">ENVIRONNEMENT</a></li>
+											<li id="menu-item-10034" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-10034 item-3"><a title="Ville 4 fleurs" href="https://www.domloup.fr/ville-4-fleurs/">Ville 4 fleurs</a></li>
+											<li id="menu-item-8431" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8431 item-3"><a title="LOI LABBÉ - Pour les particuliers" href="https://www.domloup.fr/loi-labbe/">LOI LABBÉ – Pour les particuliers</a></li>
+											<li id="menu-item-8284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8284 item-3"><a title="« À la source du Blosne »" href="https://www.domloup.fr/circuit-de-randonnee/">Circuit de randonnée</a></li>
+											<li id="menu-item-7315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7315 item-3"><a title="TRANSPORTS" href="https://www.domloup.fr/transports/">TRANSPORTS</a></li>
+											<li id="menu-item-8492" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8492 item-3"><a title="Transport scolaire Breizhgo" href="https://www.domloup.fr/transport-scolaire/">Transport scolaire Breizhgo</a></li>
+											<li id="menu-item-8498" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8498 item-3"><a title="Cars : des lignes directes vers Rennes" href="https://www.domloup.fr/cars-des-lignes-directes-vers-rennes/">Cars : des lignes directes vers Rennes</a></li>
+											<li id="menu-item-3683" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3683 item-3"><a title="GESTION DES DÉCHETS" href="https://www.domloup.fr/listes/vie-pratique/">GESTION DES DÉCHETS</a></li>
+											<li id="menu-item-8040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8040 item-3"><a title="OBJETS TROUVÉS OU PERDUS" href="https://www.domloup.fr/objets-trouves-ou-perdus/">OBJETS TROUVÉS OU PERDUS</a></li>
+											<li id="menu-item-8035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8035 item-3"><a title="ANIMAUX PERDUS OU ERRANTS" href="https://www.domloup.fr/animaux-perdus-ou-errants/">ANIMAUX PERDUS OU ERRANTS</a></li>
+											<li id="menu-item-4652" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-4652 item-3"><a title="ANNUAIRE DES ARTISANS, COMMERCANTS ET ENTREPRISES" href="https://www.domloup.fr/listes/commerces-et-entreprises/">ANNUAIRE DES ARTISANS, COMMERCANTS ET ENTREPRISES</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3011" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3011 item-3"><span title="VIVRE ET GRANDIR">VIVRE ET GRANDIR</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-8240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8240 item-4"><a title="LE PÔLE ENFANCE-PROJET EN COURS" href="https://www.domloup.fr/le-pole-enfance-projet-en-cours/">LE PÔLE ENFANCE-PROJET EN COURS</a></li>
+											<li id="menu-item-8248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8248 item-4"><a title="PROJET ÉDUCATIF LOCAL" href="https://www.domloup.fr/projets-educatifs-et-pedagogiques/">PROJET ÉDUCATIF LOCAL</a></li>
+											<li id="menu-item-10079" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-10079 item-4"><a title="SIPE, PMI,  modes de garde…" href="https://www.domloup.fr/listes/services-petite-enfance/">SERVICES PETITE ENFANCE</a></li>
+											<li id="menu-item-3510" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3510 item-4"><a title="ÉCOLES" href="https://www.domloup.fr/listes/vie-scolaire/">ÉCOLES</a></li>
+											<li id="menu-item-8833" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8833 item-4"><a title="École publique Jean de La Fontaine" href="https://www.domloup.fr/ecole-publique-jean-de-la-fontaine-2/">École publique Jean de La Fontaine</a></li>
+											<li id="menu-item-3606" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3606 item-4"><a title="École privée Sainte Jeanne d'Arc" href="https://www.domloup.fr/ecole-privee-sainte-jeanne-darc/">École privée Sainte Jeanne d’Arc</a></li>
+											<li id="menu-item-10070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10070 item-4"><a title="#" href="#" onclick="return false;">SERVICES ENFANCE-JEUNESSE</a></li>
+											<li id="menu-item-10076" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-10076 item-4"><a title="Inscriptions et utilisation des services" href="https://www.domloup.fr/listes/les-procedures-dutilisation-des-services/">Inscriptions et utilisation des services</a></li>
+											<li id="menu-item-3609" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-3609 item-4"><a title="Restaurant municipal" href="https://www.domloup.fr/restaurant-municipal/">Restaurant municipal</a></li>
+											<li id="menu-item-4775" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-4775 item-4"><a title="Pédibus" href="https://www.domloup.fr/pedibus/">Pédibus</a></li>
+											<li id="menu-item-9233" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-9233 item-4"><a title="ACCES PORTAIL FAMILLE" target="_blank" href="https://domloup.portail-familles.net/">ACCES PORTAIL FAMILLE</a></li>
+											<li id="menu-item-3513" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3513 item-4"><a title="SERVICES PÉRISCOLAIRES" href="https://www.domloup.fr/listes/vie-periscolaire/">SERVICES PÉRISCOLAIRES</a></li>
+											<li id="menu-item-8251" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-8251 item-4"><a title="SERVICES EXTRASCOLAIRES" href="https://www.domloup.fr/listes/vie-extrascolaire/">SERVICES EXTRASCOLAIRES</a></li>
+											<li id="menu-item-9163" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-9163 item-4"><a title="Service Enfance – 2 à 12 ans" href="https://www.domloup.fr/service-enfance-2-a-12-ans/">Service Enfance – 2 à 12 ans</a></li>
+											<li id="menu-item-9169" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-9169 item-4"><a title="Service Jeunesse – 9 à 17 ans" href="https://www.domloup.fr/service-jeunesse-9-a-17-ans/">Service Jeunesse – 9 à 17 ans</a></li>
+											<li id="menu-item-9420" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-9420 item-4"><a title="SENIORS" href="https://www.domloup.fr/listes/seniors/">SENIORS</a></li>
+											<li id="menu-item-9954" class="children-2 menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-9954 item-4"><a title="ANIMATIONS ET FESTIVITES" href="https://www.domloup.fr/listes/animations-et-festivites/">ANIMATIONS ET FESTIVITES</a></li>
+											<li id="menu-item-8347" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8347 item-4"><a title="Portage repas" href="https://www.domloup.fr/portage-repas/">Portage repas</a></li>
+											<li id="menu-item-10316" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-10316 item-4"><a title="Les Aînés_ Pendant le confinement" href="https://www.domloup.fr/les-aines/">Les Aînés_ Pendant le confinement</a></li>
+											<li id="menu-item-9002" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-9002 item-4"><a title="La maison Helena – projet en cours" href="https://www.domloup.fr/la-maison-helena-projet-en-cours-2/">La maison Helena – projet en cours</a></li>
+											<li id="menu-item-8999" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8999 item-4"><a title="Le lotissement des aînés – projet en cours" href="https://www.domloup.fr/le-lotissement-des-aines-projet-en-cours/">Le lotissement des aînés – projet en cours</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-8664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8664 item-4"><a title="Solidarité" href="#" onclick="return false;">Solidarité</a>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-10083" class="menu-item menu-item-type-post_type menu-item-object-contacts menu-item-10083 item-5"><a title="Clic Alli’âges – Centre local d’information et coordination – Aide aux personnes âgées et handicapées" target="_blank" href="https://www.domloup.fr/contacts/clic-alliages-centre-local-dinformation-et-coordination-aide-aux-personnes-agees-et-handicapees/">Clic Alli’âges – Centre local d’information et coordination – Aide aux personnes âgées et handicapées</a></li>
+											<li id="menu-item-8092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8092 item-5"><a title="Café des aidants" href="https://www.domloup.fr/cafe-des-aidants/">Café des aidants</a></li>
+											<li id="menu-item-8332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8332 item-5"><a title="ÉPI'COM ÉPICERIE SOCIALE INTERCOMMUNALE" href="https://www.domloup.fr/epicerie-sociale-epicom/">ÉPI’COM ÉPICERIE SOCIALE INTERCOMMUNALE</a></li>
+											<li id="menu-item-8291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8291 item-5"><a title="Logement jeunes actifs mobiles" href="https://www.domloup.fr/logement-jeunes-actifs-mobiles/">Logement jeunes actifs mobiles</a></li>
+											<li id="menu-item-8310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8310 item-5"><a title="Repair Café" href="https://www.domloup.fr/repair-cafe/">Repair Café</a></li>
+											<li id="menu-item-8484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8484 item-5"><a title="Les vacances, un droit pour tous" href="https://www.domloup.fr/les-vacances-un-droit-pour-tous/">Les vacances, un droit pour tous</a></li>
+											<li id="menu-item-3716" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3716 item-5"><a title="SERVICES SOCIAUX" href="https://www.domloup.fr/listes/services-sociaux/">SERVICES SOCIAUX</a></li>
+											<li id="menu-item-8041" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8041 item-5"><a title="Centre communal d'action sociale (CCAS)" href="https://www.domloup.fr/ccas/">Centre communal d’action sociale (CCAS)</a></li>
+											<li id="menu-item-7265" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7265 item-5"><a title="ADMR (Aide à Domicile en Milieu Rural)" href="https://www.domloup.fr/admr-aide-a-domicile-en-milieu-rural/">ADMR (Aide à Domicile en Milieu Rural)</a></li>
+											<li id="menu-item-8328" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8328 item-5"><a title="La mission locale (16-25 ans)" href="https://www.domloup.fr/la-mission-locale-16-25-ans/">La mission locale (16-25 ans)</a></li>
+											<li id="menu-item-7268" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7268 item-5"><a title="Service d'information petite enfance (SIPE)" href="https://www.domloup.fr/service-dinformation-petite-enfance/">Service d’information petite enfance (SIPE)</a></li>
+											<li id="menu-item-7264" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7264 item-5"><a title="Centre départemental d'action sociale (CDAS)" href="https://www.domloup.fr/centre-departemental-daction-sociale-cdas/">Centre départemental d’action sociale (CDAS)</a></li>
+											<li id="menu-item-7267" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7267 item-5"><a title="PMI (Protection Maternelle et Infantile)" href="https://www.domloup.fr/pmi-protection-maternelle-et-infantile/">PMI (Protection Maternelle et Infantile)</a></li>
+											<li id="menu-item-7266" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7266 item-5"><a title="Point accueil emploi (PAE)" href="https://www.domloup.fr/point-accueil-emploi/">Point accueil emploi (PAE)</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3012" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3012 item-5"><span title="SE DIVERTIR">SE DIVERTIR</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3013 item-6"><span title="CULTURE" target="_blank">CULTURE</span></li>
+											<li id="menu-item-8333" class="children-2 menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-8333 item-6"><a title="Agenda des manifestations" href="https://www.domloup.fr/systeme/agenda/">Agenda des manifestations</a></li>
+											<li id="menu-item-7473" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-7473 item-6"><a title="Saison culturelle" href="https://www.domloup.fr/saison-culturelle/">Saison culturelle</a></li>
+											<li id="menu-item-8278" class="children-2 menu-item menu-item-type-post_type menu-item-object-contacts menu-item-8278 item-6"><a title="École de musique Paul Le Flem" href="https://www.domloup.fr/contacts/ecole-de-musique-paul-le-flem/">École de musique Paul Le Flem</a></li>
+											<li id="menu-item-3995" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-3995 item-6"><span title="TOURISME ET PATRIMOINE">TOURISME ET PATRIMOINE</span></li>
+											<li id="menu-item-8488" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-8488 item-6"><a title="Office du tourisme du Pays de Chateaugiron" target="_blank" href="https://www.domloup.fr/destination-pays-de-chateaugiron/">Office du tourisme du Pays de Chateaugiron</a></li>
+											<li id="menu-item-3996" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-3996 item-6"><a title="Circuit du patrimoine de Domloup" target="_blank" href="https://www.tourisme.paysdechateaugiron.bzh/medias/sites/5/2018/10/CDP-Domloup-08.2018-WEB-1.pdf">Circuit du patrimoine de Domloup</a></li>
+											<li id="menu-item-3820" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3820 item-6"><a title="L’Envolée" href="https://www.domloup.fr/listes/mediatheque/">Médiathèque</a></li>
+											<li id="menu-item-9234" class="children-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-9234 item-6"><a title="LE RÉSEAU DES MÉDIATHÈQUES" target="_blank" href="http://www.mediatheques-payschateaugiron.fr/">LE RÉSEAU DES MÉDIATHÈQUES</a></li>
+											<li id="menu-item-3836" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-has-children menu-item-3836 item-6"><a title="VIE ASSOCIATIVE" href="https://www.domloup.fr/listes/associations/">VIE ASSOCIATIVE</a></li>
+											<li id="menu-item-10578" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-10578 item-6"><a title="Vie associative de Domloup-Actualité" href="https://www.domloup.fr/vie-associative-de-domloup-actualite/">Vie associative de Domloup-Actualité</a></li>
+											<li id="menu-item-10579" class="children-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-10579 item-6"><a title="Mémo sur l'organisation d' un événement" href="https://www.domloup.fr/memo-sur-lorganisation-d-un-evenement/">Mémo sur l’organisation d’ un événement</a></li>
+											<li id="menu-item-10445" class="children-2 menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-10445 item-6"><a title="Démarches administratives pour les associations" href="https://www.domloup.fr/services-publics/demarches-administratives-pour-les-associations/">Démarches administratives pour les associations</a></li>
+											<li id="menu-item-10577" class="children-2 menu-item menu-item-type-taxonomy menu-item-object-categories menu-item-10577 item-6"><a title="Annuaire des associations" href="https://www.domloup.fr/categories/associations/">Annuaire des associations</a></li>
+											<li id="menu-item-10576" class="children-2 menu-item menu-item-type-taxonomy menu-item-object-agenda_categorie menu-item-10576 item-6"><a title="Evénements à venir" href="https://www.domloup.fr/categorie-agenda/culture/associations/">Evénements à venir</a></li>
+											<li id="menu-item-8305" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-8305 item-6"><a title="LES ÉQUIPEMENTS COMMUNAUX" href="https://www.domloup.fr/listes/les-salles-communales/">LES ÉQUIPEMENTS COMMUNAUX</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-4985" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-4985 item-6"><a title="Nous contacter" href="https://www.domloup.fr/systeme/nous-contacter/">Nous contacter</a></li>
+							</ul>
+						</div>
+						<!--/cdlNav-->
+						<div style="clear:both"></div>
+					</div>
+					<div class="overlay-menu"></div>
+				</div>
+			</div>
+		</header>
+		<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+	<![endif]-->
+		<div id="wrapper">
+			<!--cdlBloc ordre="3"-->
+			<div class="bandeau-publications"><img src="https://www.domloup.fr/medias/sites/3/2016/03/default2-1.jpg" alt="Bandeau de la page 'Comptes-rendus du Conseil Municipal"></div>
+			<div class="center" style="z-index:1;">
+				<div id="primary" role="main" class="fleft affichage-savoir-plus">
+					<div class="top-publication">
+						<div class="wrapper-breadcrumb">
+							<div id="breadcrumbs">
+								<!--cdlPosition-->
+								<div class="vous-etes-ici">VOUS ÊTES ICI :</div>
+								<div><span><a title="Accueil" href="https://www.domloup.fr" class="lien-accueil-breadcrumb">Accueil</a></span><span class="sep"></span><span class="post-title no-underline">MAIRIE</span><span class="sep"></span><span><a href="https://www.domloup.fr/listes/les-publications/" title="PUBLICATIONS">PUBLICATIONS</a></span><span class="sep"></span><span class="post-title">Comptes-rendus du Conseil Municipal</span></div>
+								<!--/cdlPosition-->
+							</div>
+						</div>
+						<section class="header-page">
+							<div class="bloc-context imagealaune">
+								<div><a href="https://www.domloup.fr/medias/sites/3/2016/11/Re%CC%81union-de-travail.jpg" class="imagealaune"> <img width="280" height="217" src="https://www.domloup.fr/medias/sites/3/2016/11/Re%CC%81union-de-travail-280x217.jpg" class="attachment-imagealaune size-imagealaune colorbox-3279  wp-post-image" alt=""> </a></div>
+							</div>
+							<h1 class="entry-title">Comptes-rendus du Conseil Municipal</h1>
+							<div class="clearfix"></div>
+							<div class="introduction">
+								<p>Le conseil municipal se réunit une fois par mois, chaque premier lundi du mois. <br> Les réunions sont ouvertes au public. <br> Les prochaines dates : Lundi 8 juin & lundi 29 juin (séance publique pour le vote du budget 2020)<br> Le compte-rendu des conseils municipaux est consultable sur le site et affiché en mairie.</p>
+							</div>
+						</section>
+					</div>
+					<article id="post-3279" class="post-3279 page type-page status-publish has-post-thumbnail hentry">
+						<div class="entry-content">
+							<div class="vignettes-album"><a href="https://www.domloup.fr/albums/comptes-rendus-du-conseil-municipal/" title="Voir Comptes-rendus du Conseil Municipal"> <p class="format-document"><span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="7.7px" height="9.9px" viewbox="0 0 7.7 9.9" style="overflow:scroll;enable-background:new 0 0 7.7 9.9;" xml:space="preserve"><path d="M6,6.5V5.7H1.6v0.7H6z M6,8V7.3H1.6V8H6z M0.9,1h2.2v3.6h3.6V9H0.9V1z M3.8,1l2.9,2.9H3.8V1z M0,0v9.9h7.7v-6L3.8,0H0z"></path></svg> </span> <span class="les-formats">pdf</span></p> <div class="apercus"><span class="img-al imageune-al apercu-0" style="background-image:url(https://www.domloup.fr/medias/sites/3/miniature-pdf/miniature-compte-rendu-cm-du-08-juin-2020.jpg)"></span><span class="img-al imageune-al apercu-1" style="background-image:url(https://www.domloup.fr/medias/sites/3/miniature-pdf/miniature-compte-rendu-cm-du-25-mai-2020.jpg)"></span><span class="img-al imageune-al apercu-2" style="background-image:url(https://www.domloup.fr/medias/sites/3/miniature-pdf/miniature-compte-rendu-cm-du-6-mars-2020.jpg)"></span> <span class="img-al imageune-al apercu-3"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="12px" height="12px" viewbox="0 0 12 12" style="overflow:scroll;enable-background:new 0 0 12 12;" xml:space="preserve"><polygon class="st1" points="9.5,5.5 6.5,5.5 6.5,2.5 5.5,2.5 5.5,5.5 2.5,5.5 2.5,6.5 5.5,6.5 5.5,9.5 6.5,9.5 6.5,6.5 9.5,6.5 "></polygon></svg> </span></div> <span class="articles-content"> <span class="titre h4">Comptes-rendus du Conseil Municipal</span><span class="introduction">Retrouvez les comptes rendus récents</span> <span class="lire-la-suite"> <!--[if gte IE 9]><!--> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="12px" height="12px" viewbox="0 0 12 12" style="overflow:scroll;enable-background:new 0 0 12 12;" xml:space="preserve"><circle class="st0" cx="6" cy="6" r="5.5" stroke-width="1" stroke-miterlimit="10"></circle><polygon class="st1" points="9.5,5.5 6.5,5.5 6.5,2.5 5.5,2.5 5.5,5.5 2.5,5.5 2.5,6.5 5.5,6.5 5.5,9.5 6.5,9.5 6.5,6.5 9.5,6.5 "></polygon></svg> <!--<![endif]--> <!--[if lte IE 8]>
+						<span class="ie-plus"></span>
+					<![endif]--> </span> </span> </a></div>
+							<h2>2020</h2>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/07/Compte-rendu-CM-du-08-juin-2020.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 08 juin 2020</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/06/Compte-rendu-CM-du-25-mai-2020.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 25 mai 2020</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/06/Compte-rendu-CM-du-6-mars-2020.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 6 mars 2020</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/06/Compte-rendu-CM-du-10-fe%CC%81vrier-2020.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 10 fe&#769;vrier 2020</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/02/Compte-rendu-CM-du-13-janvier-2020.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 13 janvier 2020</a></p>
+							<h2>2019</h2>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2020/01/Compte-rendu-CM-du-2-de%CC%81cembre-2019.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 2 décembre 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/12/Compte-rendu-CM-du-4-novembre-2019.pdf" target="_blank" rel="noopener noreferrer">Compte rendu CM du 4 novembre 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/11/Compte-rendu-CM-du-7-octobre-2019.pdf" target="_blank" rel="noopener noreferrer">Compte rendu du 7 octobre 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/10/Compte-rendu-CM-09-sept-19.pdf" target="_blank" rel="noopener noreferrer">Compte rendu du lundi 09 septembre 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/09/Compte-rendu-se%CC%81ance-CM-du-5-juillet-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du vendredi 5 juillet 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/09/Compte-rendu-se%CC%81ance-CM-du-1er-juillet-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 1<sup>er</sup> juillet 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/07/Compte-rendu-se%CC%81ance-CM-du-11-juin-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du mardi 11 juin 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/07/Compte-rendu-se%CC%81ance-CM-du-6-mai-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 6 mai 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/07/Compte-rendu-se%CC%81ance-CM-du-1er-avril-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 1<sup>er</sup> avril 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/07/Compte-rendu-CM-1er-mars-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du vendredi 1<sup>er</sup> mars 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/03/Compte-Rendu-CM-04-fe%CC%81vrier-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 4 février 2019</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/01/Compte-Rendu-CM-14-janvier-2019.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 14 janvier 2019</a></p>
+							<h2>2018</h2>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/01/Compte-Rendu-CM-3-de%CC%81cembre-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 3 de&#769;cembre 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2019/01/Compte-Rendu-CM-12-novembre-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du lundi 12 novembre 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/12/Compte-Rendu-CM-12-novembre-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 12 novembre 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/11/Compte-Rendu-CM-15-octobre-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 15 octobre 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/10/Compte-Rendu-CM-10-septembre-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 10 septembre 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/10/Compte-Rendu-CM-6-juillet-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 6 juillet 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/07/Compte-Rendu-CM-4-juin-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 4 juin 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/06/Compte-Rendu-CM-14-mai-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 14 mai 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/05/Compte-Rendu-CM-16-avril-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 16 avril 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/04/Compte-Rendu-CM-19-mars-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 19 mars 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/03/Compte-Rendu-CM-9-fevrier-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 9 février 2018</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/02/Compte-Rendu-CM-8-janvier-2018.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 8 janvier 2018</a></p>
+							<h2>2017</h2>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/01/Compte-Rendu-CM-21-decembre-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 21 décembre 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2018/01/Compte-Rendu-CM-4-decembre-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 4 décembre 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/12/Compte-Rendu-CM-6-novembre-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 6 novembre 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/11/Compte-Rendu-CM-2-octobre.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 6 octobre 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/10/Compte-Rendu-CM-4-septembre.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 4 septembre 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/10/Compte-Rendu-CM-7-juillet.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 7 juillet 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/07/Compte-Rendu-CM-19-juin.docx" target="_blank" rel="noopener noreferrer">Compte-rendu du 19 juin 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/06/Compte-Rendu-CM-9-mai-2017.docx" target="_blank" rel="noopener noreferrer">Compte-rendu du 9 mai 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/05/Compte-Rendu-CM-3-avril-2017.docx" target="_blank" rel="noopener noreferrer">Compte-rendu du 3 avril 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/04/Compte-Rendu-CM-6-mars-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 6 mars 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/03/Compte-Rendu-CM-3-fevrier-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 3 février 2017</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/02/Compte-Rendu-CM-9-janvier-2017.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 9 janvier 2017</a></p>
+							<h2>2016</h2>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2017/01/Compte-Rendu-CM-5-decembre-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 5 décembre 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/12/Compte-Rendu-CM-7-novembre-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 7 novembre 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/12/Compte-rendu-3-octobre-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 3 octobre 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/12/Compte-rendu-5-septembre-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 5 septembre 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/09/Compte-4-juillet-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du </a><a href="https://www.domloup.fr/medias/sites/3/2016/09/Compte-4-juillet-2016.pdf" target="_blank" rel="noopener noreferrer">4 juillet 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/09/Compte-6-juin-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 6 juin 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/09/Compte-rendu-9-mai-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 9 mai 2016</a></p>
+							<p><a href="https://www.domloup.fr/medias/sites/3/2016/09/Compte-rendu-4-avril-2016.pdf" target="_blank" rel="noopener noreferrer">Compte-rendu du 4 avril 2016</a></p>
+							<p> </p>
+							<p> </p>
+							<div class="clearfix"></div>
+						</div>
+						<script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=fr&key=AIzaSyCKouQVTEJYiGhdOVf5YInnDyp3DwqM_IE"></script>
+						<script src="https://www.domloup.fr/wp-content/plugins/creasit-plan-interactif/js/MarkerClusterer.js"></script>
+					</article>
+				</div>
+				<div id="secondary" role="complementary">
+					<section>
+						<div class="bloc-context imagealaune">
+							<div><a href="https://www.domloup.fr/medias/sites/3/2016/11/Re%CC%81union-de-travail.jpg" class="imagealaune"> <img width="280" height="217" src="https://www.domloup.fr/medias/sites/3/2016/11/Re%CC%81union-de-travail-280x217.jpg" class="attachment-imagealaune size-imagealaune colorbox-3279  wp-post-image" alt=""> </a></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<footer class="site-footer">
+			<div class="top-footer">
+				<div class="center">
+					<div class="right-bloc-footer">
+						<h4><a href="https://www.domloup.fr/systeme/kiosque/" title="Voir tous les documents">Le kiosque</a></h4>
+						<p>Découvrez toutes nos publications</p>
+						<div class="wrapper-kiosque">
+							<div class="kiosque-slide">
+								<div class="img-une"><a href="https://www.domloup.fr/medias/sites/3/2020/04/Domloup_AMI_juin2020-vweb.pdf" target="_blank" class="min-publi"> <img src="https://www.domloup.fr/medias/sites/3/miniature-pdf/miniature-domloup_ami_juin2020-vweb-111x158.jpg" alt="Bulletin municipal"> </a></div><a href="https://www.domloup.fr/medias/sites/3/2020/04/Domloup_AMI_juin2020-vweb.pdf" target="_blank"><h5>Bulletin municipal</h5></a>
+								<h6>juin-juillet 2020</h6>
+							</div>
+						</div>
+					</div>
+					<div class="left-bloc-footer">
+						<div class="wrapper-480-footer">
+							<h4>Zoom sur...</h4>
+						</div>
+						<div class="zoom-sur">
+							<h5>Voyage seniors 2020</h5>
+							<p>Les différents CCAS du territoire, avec le partenariat de l’ANCV, proposent et organisent un séjour, destiné aux seniors.Cette année c'est à Port-Manech en Finistère Sud que nous vous emmènerons du 26 septembre au 3 octobre....</p><a href="https://www.domloup.fr/voyage-seniors/" title="Lire la suite">> lire la suite</a></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="center">
+					<div class="coordonnees-infos"><img src="https://www.domloup.fr/wp-content/themes/domloup/images/FooterLogo.png" alt="Logo du footer de la CC">
+						<p class="nom-ville">Mairie de Domloup</p>
+						<p>Allée de l'étang</p>
+						<p>35410 Domloup</p>
+						<p>Tél. : 02 99 37 42 09</p><a href="https://www.domloup.fr/contacts/mairie/" class="horaire-ouverture">Horaires d'ouverture</a> <a href="https://www.domloup.fr/systeme/nous-contacter/" class="nous-ecrire">Nous contacter</a></div>
+					<div class="menu-menu-footer-container">
+						<ul id="menu-menu-footer" class="footer-menu">
+							<li id="menu-item-3003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3003 item-1"><a title="Accueil" href="/">Accueil</a></li>
+							<li id="menu-item-3004" class="imprimer menu-item menu-item-type-custom menu-item-object-custom menu-item-3004 item-2"><a href="javascript:window.print()" title="Imprimer">Imprimer</a></li>
+							<li id="menu-item-3005" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3005 item-3"><a title="Plan du site" href="https://www.domloup.fr/systeme/plan-du-site/">Plan du site</a></li>
+							<li id="menu-item-3006" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3006 item-4"><a title="Mentions Légales" href="https://www.domloup.fr/systeme/mentions-legales/">Mentions Légales</a></li>
+							<li id="menu-item-3007" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3007 item-5"><a title="Crédits" href="https://www.domloup.fr/systeme/credits/">Crédits</a></li>
+							<li id="menu-item-3008" class="agence-creasit menu-item menu-item-type-custom menu-item-object-custom menu-item-3008 item-6"><a href="http://www.creasit.fr/" title="Agence Creasit" target="_blank">© Creasit</a></li>
+						</ul>
+					</div>
+					<div class="ville-cc-footer"><a href="http://www.cc-payschateaugiron.fr/" title="Voir le site du Pays de Châteaugiron" target="_blank">Pays de Châteaugiron</a>
+						<!-- <a href="http://www.commune-chance-35.fr/" title="Voir le site de la ville de Chancé" target="_blank">Chancé</a> --><a href="http://www.ville-chateaugiron.fr/" title="Voir le site de la ville de Châteaugiron" target="_blank">Châteaugiron</a> <a href="http://www.ville-noyalsurvilaine.fr/" title="Voir le site de la ville de Noyal-sur-Vilaine" target="_blank">Noyal-sur-Vilaine</a> <a href="http://village.osse.free.fr/" title="Voir le site de la ville de Ossé" target="_blank">Ossé</a>
+						<!-- <a href="http://www.pire-sur-seiche.fr/" title="Voir le site de la ville de Piré-sur-Seiche" target="_blank">Piré-sur-Seiche</a> --><a href="http://www.pire-chance.fr/" title="Voir le site de la ville de Piré-Chancé" target="_blank">Piré-Chancé</a> <a href="http://www.saintaubindupavail.com/" title="Voir le site de la ville de Saint-Aubin-du-Pavail" target="_blank">Saint-Aubin-du-Pavail</a> <a href="http://www.ville-servonsurvilaine.fr/" title="Voir le site de la ville de Servon-sur-Vilaine" target="_blank">Servon-sur-Vilaine</a></div>
+				</div>
+			</div>
+		</footer>
+		<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		
+		</script>
+		<link rel="stylesheet" id="styles-albums-css" href="https://www.domloup.fr/wp-content/plugins/creasit-albums/admin/css/styles-albums.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="styles-lien-album-css" href="https://www.domloup.fr/wp-content/plugins/creasit-albums/admin/css/styles-lien-album.css" type="text/css" media="screen">
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/ui/core.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/ui/widget.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/ui/position.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/ui/menu.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+		<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-url.min.js">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.domloup.fr/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js">' + 'ipt>' );
+		</script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/dist/dom-ready.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/dist/a11y.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/domloup/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="https://www.domloup.fr/wp-content/themes/domloup/js/scripts.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.domloup.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+		</script>
+		<noscript><img src="//www.domloup.fr/piwik/piwik.php?idsite=4" style="border:0;" alt=""></noscript>
+		<!-- End Piwik Code -->
+		<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</body>
+</html>
