@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<script>
+            var frzScriptsToPreload = document.createDocumentFragment();
+            var frzScriptsToPreloadUrls = ["https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js","https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/JavaScript/bootstrap.min.js?1484650647&frz-v=137","https://www.niortagglo.fr/typo3temp/compressor/merged-93648d4f8329d78c5dfcd8bda441e5f6.js?1594152692&frz-v=137","https://www.niortagglo.fr/typo3temp/compressor/merged-339a0d2bc5fd4437345e3c7f01135cfc.js?1554311021&frz-v=137"];
+            frzScriptsToPreloadUrls.forEach(function (script) {
+              var preload = document.createElement('link');
+              preload.setAttribute('rel', 'preload');
+              preload.setAttribute('href', script);
+              preload.setAttribute('as', 'script');
+              preload.setAttribute('importance', 'low');
+              frzScriptsToPreload.appendChild(preload)
+            });
+		</script>
+		<script>
+            (function () {
+              document.head.appendChild(frzScriptsToPreload);
+            })();
+		</script>
+		<script>frzSpeedIndexRatio=10;BOOMR_lstart = new Date().getTime();</script>
+		<meta charset="utf-8">
+		<base href="https://www.niortagglo.fr/">
+		<link rel="shortcut icon" href="https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/Icons/favicon_can.png?frz-v=137" type="image/png">
+		<title>Délibérations</title>
+		<meta name="generator" content="TYPO3 CMS">
+		<link rel="stylesheet" type="text/css" href="https://www.niortagglo.fr/typo3temp/compressor/merged-d5cf8717738f198c969d23c695620d71.css?1594152699&frz-v=137" media="all">
+		<script>fstrz=!0;;FRZ_GLOBAL_CUSTOMER_KEY="4184";BOOMR_GLOBAL_CONFIG = {beacon_url: "http://www.niortagglo.fr/fstrz/r/stats-euwest1.fzcdn.net/beacon"};(function(){if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url="http://www.niortagglo.fr/fstrz/r/stats-euwest1.fzcdn.net/boomerang-1.650.0.1574759547.0.min.js";var where=document.currentScript||document.getElementsByTagName("script")[0],promoted=!1,LOADER_TIMEOUT=3e3;window.addEventListener?window.addEventListener("load",boomerangSaveLoadTime,!1):window.attachEvent&&window.attachEvent("onload",boomerangSaveLoadTime);var win=window;"performance"in win&&win.performance&&win.performance.timing&&win.performance.timing.loadEventStart||"complete"===document.readyState?boomerangLoad():win.addEventListener?win.addEventListener("load",windowOnLoad,!1):win.attachEvent&&win.attachEvent("onload",windowOnLoad)}function promote(){if(!promoted){var script=document.createElement("script");script.id="boomr-scr-as",script.src=window.BOOMR.url,script.async=!0,where.parentNode.appendChild(script),promoted=!0}}function iframeLoader(wasFallback){promoted=!0;var dom,doc=document,bootstrap,iframe,iframeStyle,win=window;if(window.BOOMR.snippetMethod=wasFallback?"if":"i",bootstrap=function(parent,scriptId){var script=doc.createElement("script");script.id=scriptId||"boomr-if-as",script.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),(parent=parent||doc.body).appendChild(script)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]./))return window.BOOMR.snippetMethod="s",void bootstrap(where.parentNode,"boomr-async");(iframe=document.createElement("IFRAME")).src="about:blank",iframe.title="",iframe.role="presentation",iframe.loading="eager",(iframeStyle=(iframe.frameElement||iframe).style).width=0,iframeStyle.height=0,iframeStyle.border=0,iframeStyle.display="none",where.parentNode.appendChild(iframe);try{win=iframe.contentWindow,doc=win.document.open()}catch(e){dom=document.domain,iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);",win=iframe.contentWindow,doc=win.document.open()}dom?(doc._boomrl=function(){this.domain=dom,bootstrap()},doc.write("<body onload='document._boomrl();'>")):(win._boomrl=function(){bootstrap()},win.addEventListener?win.addEventListener("load",win._boomrl,!1):win.attachEvent&&win.attachEvent("onload",win._boomrl)),doc.close()}function boomerangLoad(){var link=document.createElement("link");link.relList&&"function"==typeof link.relList.supports&&link.relList.supports("preload")&&"as"in link?(window.BOOMR.snippetMethod="p",link.href=window.BOOMR.url,link.rel="preload",link.as="script",link.addEventListener("load",promote),link.addEventListener("error",(function(){iframeLoader(!0)})),setTimeout((function(){promoted||iframeLoader(!0)}),LOADER_TIMEOUT),BOOMR_lstart=(new Date).getTime(),where.parentNode.appendChild(link)):iframeLoader(!1)}function boomerangSaveLoadTime(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}function windowOnLoad(e){boomerangSaveLoadTime(e),setTimeout(boomerangLoad,0)}})();</script>
+		<script type="text/frzjs" frz_orig_src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" orig_index="0"></script>
+		<script type="text/frzjs" frz_orig_src="https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/JavaScript/bootstrap.min.js?1484650647&frz-v=137" orig_index="1"></script>
+		<script type="text/frzjs" frz_orig_src="https://www.niortagglo.fr/typo3temp/compressor/merged-93648d4f8329d78c5dfcd8bda441e5f6.js?1594152692&frz-v=137" orig_index="2"></script>
+		<meta property="og:image" content="http://www.niortagglo.fr/fileadmin/CAN/agglo/deliberations_agglo_c_BDerbord.JPG">
+		<script type="application/ld+json">{
+                "@context" : "http://schema.org",
+                "@type"    : "Organization",
+                "name"     : "Communauté d'Agglomération du Niortais",
+"alternateName" : "NiortAgglo",
+"telephone" : "( 33 5) 17 38 79 00",
+ "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Niort, France",
+    "postalCode": "79000",
+    "streetAddress": "140 rue des Equarts"},
+                "url"      : "https://www.niortagglo.fr/",
+                "logo"     : "https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/Img/niortagglo.jpg","sameAs" : ["https://www.facebook.com/NiortAgglo","https://www.youtube.com/channel/UC16RQnlIoaJDdnRQkdRwVZA","https://twitter.com/NiortAgglo"]}
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/Icons/favicon_can.png?frz-v=137" type="image/png">
+		<meta name="DCTERMS.title" content="Délibérations">
+		<meta name="copyright" content="© Communauté d'Agglomération du Niortais">
+		<meta name="DCTERMS.rights" content="© Communauté d'Agglomération du Niortais">
+		<link rev="made" href="mailto:agglo@agglo-niort.fr">
+		<meta http-equiv="reply-to" content="agglo@agglo-niort.fr">
+		<meta name="author" content="Communauté d'Agglomération du Niortais - service communication">
+		<meta name="DCTERMS.creator" content="Communauté d'Agglomération du Niortais - service communication">
+		<meta name="DCTERMS.publisher" content="Communauté d'Agglomération du Niortais">
+		<meta name="date" content="2019-09-24T14:11:33+02:00">
+		<meta name="DCTERMS.date" content="2019-09-24T14:11:33+02:00">
+		<meta name="robots" content="index,follow">
+		<meta name="ICBM" content="46.3239736, -0.4643687000000227">
+		<meta name="geo.position" content="46.3239736;-0.4643687000000227">
+		<meta name="geo.region" content="FR">
+		<meta name="geo.placename" content="Niort">
+		<link rel="start" href="http://www.niortagglo.fr/fr/lagglo/conseil-dagglomeration/calendrier-des-seances/index.html">
+		<link rel="prev" href="http://www.niortagglo.fr/fr/lagglo/conseil-dagglomeration/calendrier-des-seances/index.html">
+		<link rel="next" href="http://www.niortagglo.fr/fr/lagglo/conseil-dagglomeration/recueil-des-actes-administratifs/index.html">
+		<link rel="canonical" href="https://www.niortagglo.fr/fr/lagglo/conseil-dagglomeration/deliberations/index.html">
+		<meta property="og:title" content="Délibérations">
+		<meta property="og:type" content="article">
+		<meta property="og:email" content="agglo@agglo-niort.fr">
+		<meta property="og:latitude" content="46.3239736">
+		<meta property="og:longitude" content="-0.4643687000000227">
+		<meta property="og:locality" content="Niort">
+		<meta property="og:region" content="FR">
+	</head>
+	<body>
+		<div id="headerna">
+			<div class="hiddenSkip"><a class="skip-link" href="#contenu">Aller au contenu</a></div>
+			<div id="mainNav" class="container firstcontainer">
+				<div class="row">
+					<div class="col-md-12 col-xs-12 headernavcan text-center-md headercan"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MenuNavigationTop" aria-expanded="false"> <span class="sr-only">Ouvrir le menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="/fr/index.html"><img src="https://www.niortagglo.fr/typo3conf/ext/templateniortagglo/Ressources/Public/Icons/niortagglo.svg?frz-v=137" alt="Niort Agglo, Agglomération du Niortais" style="width:400px;max-width:60%"></a></div>
+				</div>
+			</div>
+			<div class="colormainNavi">
+				<div id="mainNavi" class="container firstcontainer">
+					<div class="row" id="navbar">
+						<div class="col-md-10 col-xs-12 ">
+							<nav class="navbar navbar-default" role="navigation">
+								<div class="container-fluid">
+									<div class="navbar-header"></div>
+									<div id="MenuNavigationTop" class="navbar-collapse collapse yamm" style="font-size:1.2em">
+										<ul class="nav navbar-nav cg">
+											<li class="active dropdown yamm-fw" id="Menu16094"><a href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="caret"></span> L'Agglo</a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="row collage">
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12021" title="Les 40 communes" href="/fr/lagglo/les-40-communes/index.html"> Les 40 communes </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12256" title="Les élus" href="/fr/lagglo/les-elus/index.html"> Les élus </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16076" title="Portrait de territoire" href="/fr/lagglo/portrait-de-territoire/index.html"> Portrait de territoire </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16204" title="Conseil d'agglomération" href="/fr/lagglo/conseil-dagglomeration/index.html"> Conseil d'agglomération </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Calendrier des séances" href="/fr/lagglo/conseil-dagglomeration/calendrier-des-seances/index.html"> Calendrier des séances </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Délibérations" href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html"> Délibérations </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Recueil des actes administratifs" href="/fr/lagglo/conseil-dagglomeration/recueil-des-actes-administratifs/index.html"> Recueil des actes administratifs </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16095" title="Compétences et politiques publiques" href="/fr/lagglo/competences-et-politiques-publiques/index.html"> Compétences et politiques publiques </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16262" title="L'Agglomération à l'horizon 2030" href="/fr/lagglo/lagglomeration-a-lhorizon-2030/index.html"> L'Agglomération à l'horizon 2030 </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12013" title="Annuaire des services" href="/fr/lagglo/annuaire-des-services/index.html"> Annuaire des services </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12267" title="Budget" href="/fr/lagglo/budget/budget-2020/index.html"> Budget </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12412" title="Tarifs" href="/fr/lagglo/tarifs/index.html"> Tarifs </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12389" title="Je paie mes factures en ligne" href="/fr/lagglo/je-paie-mes-factures-en-ligne/index.html"> Je paie mes factures en ligne </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16096" title="Aide et conseil aux communes" href="/fr/lagglo/aide-et-conseil-aux-communes/index.html"> Aide et conseil aux communes </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Soutien au commerce rural" href="/fr/lagglo/aide-et-conseil-aux-communes/soutien-au-commerce-rural/index.html"> Soutien au commerce rural </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Conseil en énergie partagé" href="/fr/lagglo/aide-et-conseil-aux-communes/conseil-en-energie-partage/index.html"> Conseil en énergie partagé </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Fonds communautaire du patrimoine" href="/fr/lagglo/aide-et-conseil-aux-communes/fonds-communautaire-du-patrimoine/index.html"> Fonds communautaire du patrimoine </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12014" title="Conseil de développement" href="/fr/lagglo/conseil-de-developpement/index.html"> Conseil de développement </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12220" title="Appels à candidatures" href="/fr/lagglo/appels-a-candidatures/index.html"> Appels à candidatures </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12003" title="Marchés publics" href="/fr/lagglo/marches-publics/index.html"> Marchés publics </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid15611" title="Plan vigipirate" href="/fr/lagglo/plan-vigipirate/index.html"> Plan vigipirate </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16629" title="Lettre d'information de Niort Agglo" href="/fr/sortir-visiter/lettre-dinformation-de-niort-agglo/index.html"> Lettre d'information de Niort Agglo </a></div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class=" dropdown yamm-fw" id="Menu16097"><a href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="caret"></span> Habiter, étudier</a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="row collage">
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABkDAREAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAwAEBQYIB//EAC4QAAEDAwEECAcAAAAAAAAAAAECAwQABREGBxIhMRMUFRYzQVFxNFZhgZKhsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC97XtUdoTX7G0w30MR5JLwUclQTxGOWOP6oFb9q06FAjRU2uMtLDaWgovKBISAM8vpQReznVZsN4W2thtTE95CXVlZBbGcZHrzoNA5HqKDOF70tehqiXA6Lr08gyFlg53gok73HHnQVx5pbDzjTyShxtRSpJ5gg4IoJhOlrv2hAhyIiozs1W6wXiAFcM8xmg6v3Z1h8wRvwVQVbaRe51i2hyJNsfDLyoraCopCuHHyNAKBoyNd9FyNSSZj/W1tvSFISE7pUCr+4oGOmNRXK+6z06m5yA8GH8NgISnGUn09qDQFAzleL9qArfwp9jQAZ8VPvQPqD//Z" width="25" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12150" title="Habitat" href="/fr/habiter-etudier/habitat/index.html"> Habitat </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Accéder à la propriété" href="/fr/habiter-etudier/habitat/acceder-a-la-propriete/index.html"> Accéder à la propriété </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Aides à l'amélioration de logements anciens (Opah)" href="/fr/habiter-etudier/habitat/aides-a-lamelioration-de-logements-anciens-opah/index.html"> Aides à l'amélioration de logements anciens (Opah) </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Conseils pour la rénovation énergétique (Act'e)" href="/fr/habiter-etudier/habitat/conseils-pour-la-renovation-energetique-acte/index.html"> Conseils pour la rénovation énergétique (Act'e) </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Permis de louer" href="/fr/habiter-etudier/habitat/permis-de-louer/index.html"> Permis de louer </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABgDAREAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwYHAQX/xAAtEAAABAQDBgYDAAAAAAAAAAABAgMRAAQGFAcSEwUVFiGhsTE0QVFhcjVx0v/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC0TlRVRKKCjNpU+gqz5FJoCmYfVhNAI+7dqZn3vJeL/lC/1APEnUVUTagIyiVPrqs+ROaAxmD1YDQCviuD1e3vLph1NAD4LNxPue+K9tcaul0Z4AmFANV4B7S6ncsBuLACWrgMIcrdMQ+eZoAXGh+J98WJXtrfS1Rb9u3SALhQAmq7MAC1uoI/HMsB1sZvMbN+p+4QE1gKVgz5jaf1J3GA/9k=" width="24" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12420" title="Déchets ménagers" href="/fr/habiter-etudier/dechets-menagers/index.html"> Déchets ménagers </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Contactez-nous" href="/fr/habiter-etudier/dechets-menagers/contactez-nous/index.html"> Contactez-nous </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Je trie mes déchets" href="/fr/habiter-etudier/dechets-menagers/je-trie-mes-dechets/index.html"> Je trie mes déchets </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Je jette mes déchets" href="/fr/habiter-etudier/dechets-menagers/je-jette-mes-dechets/index.html"> Je jette mes déchets </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Je valorise mes biodéchets" href="/fr/habiter-etudier/dechets-menagers/je-valorise-mes-biodechets/index.html"> Je valorise mes biodéchets </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Je réduis mes déchets" href="/fr/habiter-etudier/dechets-menagers/je-reduis-mes-dechets/index.html"> Je réduis mes déchets </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Services par commune" href="/fr/habiter-etudier/dechets-menagers/services-par-commune/index.html"> Services par commune </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Redevances et tarifs" href="/fr/habiter-etudier/dechets-menagers/redevances-et-tarifs/index.html"> Redevances et tarifs </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid17435" title="Eau potable" href="/fr/habiter-etudier/eau-potable/index.html"> Eau potable </a></div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABkDAREAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAABQYHAAECBP/EADAQAAEDAwICBQ0AAAAAAAAAAAECAwQABQYRIRITBzFVk9EUFRYzNEFRYXSBobGz/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALQyHpFsdxQ9brpZJchlDm6eYlIKknY6gg0EUx2/43a58iU/Yn3XEy+dDKXd2EDThTurQkHX40Fv4fl9vyhDgiBxqQyAVsugcQB6iCNiKCS0A6sYsa1FSrRBKlHUksp1P4oNei9i7HgdwnwoIX0c4rdbHlNwlTIqGIbqFpaKXEnrXqBoDttQWbQZQeW4zG4jKeJxpLzquWwhxfCHHCDokH56UAEKZ5FIekrcYHEoLuocmlSYag2NAgH3HbbbroFvP9p7Tg9+nxoE6AXJPX2f65H6VQFzfZss+38xQc0H/9k=" width="25" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12115" title="Assainissement" href="/fr/habiter-etudier/assainissement/index.html"> Assainissement </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="L'assainissement collectif" href="/fr/habiter-etudier/assainissement/lassainissement-collectif/index.html"> L'assainissement collectif </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="L'assainissement non-collectif" href="/fr/habiter-etudier/assainissement/lassainissement-non-collectif/index.html"> L'assainissement non-collectif </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Redevances et tarifs" href="/fr/habiter-etudier/assainissement/redevances-et-tarifs/index.html"> Redevances et tarifs </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABwDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQYHBP/EAC4QAAEDAwICCAcBAAAAAAAAAAECAwUABBEGIRIiExcxNEFRYXQHFEJUgZKT0f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDWtd3CNU3cFbQ92lbFyt1IUriSjjTjtGM7b+HjQHdWMv8Ad2P7K/ygPnNGSenbAyT11bkNLSB0KlcQJOARtQae9rCDs3VW95IJRct4S4ktrOFY9BQSE7aWWj5jTQDj6rRhx91SlcyubHlj0oHuseBH1XX8DQT+utYxU1p12zslPl5S0EcbRSNjk70D15oCMk7py+fuLtLr+FqCFJwDgdm1AZ8VLpyOl4G/Q0hzoC4oBwZSTy7GgnJfTmo52QckzEpa+ZCVhCHEgAYGO05z55oOecdlYyAtdPSMayxlfStuDClr5jtttnJx54xQbdbghhsEYISAR+KAzUvc2PcIoFqAmb75F+4oF6D/2Q==" width="28" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12064" title="Transports et déplacements" href="/fr/habiter-etudier/transports-et-deplacements/index.html"> Transports et déplacements </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Bus en accès libre : top départ !" href="/fr/habiter-etudier/transports-et-deplacements/bus-en-acces-libre-top-depart/index.html"> Bus en accès libre : top départ ! </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZAB8DAREAAhEBAxEB/8QAGwAAAgEFAAAAAAAAAAAAAAAABgcAAQIDBAX/xAAvEAABAgUCAwcDBQAAAAAAAAABAgMABAUGERIxByGBFBUiQVFxkRM2Q2FydKGy/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AH/ct90Wg6m3H+0zY/AxhRB/U7DrAKm5OJNaqxU3KOd3S3klhXjPuvf4xAbVtcUKrTtDVUSKhLjlqUdLoHvsevzANW3bwo1fSBJzSUv4yph3wLHQ79IBRWvZ8hW7TcqU3U+75hM0pgOO4LauSdIOcHJJ3zAc2uWNXKSkuqle1yu4flT9ROPXG46iAy0awK7UUB11hMhLbl2bVoGPbf8AqAYVs8MaIhhqamptdT1pylTatDRB8xpOT8wFlvU+SvHh7NydNlU0hpU2SEoJcGpJSrJz68h0gB2Wtu+7Yf00hS3mAeQZdSpsj9iyMdICps+9LlmAquTCmGc8+0OggeyEnEA3qBTU0iiyVPQ4XEyzSWgsjBVgbwA7wr+2nf5j3+oAx84CCAkB/9k=" width="31" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid15433" title="Enseignement supérieur" href="/fr/habiter-etudier/enseignement-superieur/niort-sup/index.html?no_cache=1"> Enseignement supérieur </a></div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABkDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgcFCP/EADQQAAEDAwIEAgUNAAAAAAAAAAECAwQABREGEhMhMWEVQQcWFyKxMjM0NlVyc4GRkqHB0f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDpHV9wftWm502Lt47KAUbhkZyB0/Ogjj9lkTL0wh24weNOQZRd4uEIJ5kKPke1BVvR/dZV3sSnpym1vNvrZ3IGAQnGD/NAloJXqjWi7vpeU2m0SGYsg8JElSwU7gc46deVBgtR45vFsSdMPrQqLuVF3nMk4+dHbzoNXReqnLJZZjLdofktMvKedcQsANBXIA8u1Bs+1GH9myf3poJ266x6uNN+JvKeD5JgkHhpHP389M/7QLbXYpMvSqNQ+NTUSY8dzhhJ+QlORtCs5A5UBK2vsi13QO3R6M6tA2sIyUyTzyFHt/dBm4Pf9KCoyPpDv3z8aBXbvqkv8Jz4mgH+VAkoP//Z" width="25" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid15637" title="Urbanisme" href="/fr/habiter-etudier/urbanisme/index.html"> Urbanisme </a></div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZACoDAREAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAABAYDBQcAAf/EAC4QAAEDAwMCAwcFAAAAAAAAAAECAwQABREGEiEHMRMUUTI1QXFzdLEWNmGBsv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDQeukl43i3xfFV5cMFzw88birGcetAj2bTl3vTLjtrguSW21bFKSpIwe+OSKAmNo+/yXpLTFseW5HWG3UhaBsVjOPa9CO1B5G0ff5MiSwxbHVuxlBDyQtA2KIBA5V6EdqCquMGVbJrkScypiS3jehRBIyMjsSOxFBbM6x1Ayy203dJIQhISkbs4A4FAy9bH2n9QQlMOtuJEbBKFBQ9o+lBQaW1lcdMxXo9vRGUh1e9XioKjnGPgRQGwOot4hSp0hlqGVzHA65ubOAQkJ459BQdA6iXiDMnyWWoZcmuB1zc2cAhITxz6CgXL7dX71dX7hLDaX3iCoNjCeABwP6oAKDZeo3T/wA35R/TUFptxOUOtN7W0kdwr5/CgULnA/RcC3omWmJJucsLcdXLSXENpCsBCQCBnHJP80Ek7RE67sQbnp+3eHFmMB1bJdADS8kEJ3clJwCPnQRXK3nRdtgCdaYsm5y963FS0lxtpIOAhIBAz8SaCSZoubeokC66ftoajzGd7jHiYDSwog7d3O04yKBxidJbWYjJlSZYkbE+JtUMbsc447ZoNLNBnXWz3Hb/ALkfigfbd7vi/ST+BQInWv8AbkT7kfigeLR7qh/RR/kUBlB//9k=" width="42" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid15196" title="Gens du voyage" href="/fr/habiter-etudier/gens-du-voyage/index.html"> Gens du voyage </a></div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZAB0DAREAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAABQEEBgcIA//EADAQAAEDAwIDBgQHAAAAAAAAAAECAwQABREGEgcTIRUxQVFhkSJxgaE0NnN0scHC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANN3u5sWe1SZ8tWGWEFR8yfAD1J6UER4XsXCW3Pv9zddC7k5vbY3HYlA7jju9AfIetAys8uRpXiBKtVxfddt91VzozzqiohZ8CT7e1BZNBnbWaL6zfFWC4XR+ckrbKOYrCFlQGDj5kj6UDyO1rRF3dsjFydRJitBZQJACEoA6YOPKgEz0ahudj7XnTFyIcV7lhTjoKkLz4DHy60Ew0XbdUamtKpw1LKjIDpbSlXxbsAdfvj6UHTjIwmDqeyXYoKkEbV48disj7KPtQBWdbw29bXC9GK+WJMfkpbyNwOMZNAHb1EwnREuyFlznvSeeHMjaBnOKC7uHcHs/RdqZIwpTXNUPVZ3f3QRjjr+XoH7n/JoKRoFHeKDWMH8FH/TT/FB/9k=" width="29" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid15422" title="Marchés et producteurs locaux" href="/fr/habiter-etudier/marches-et-producteurs-locaux/index.html"> Marchés et producteurs locaux </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Producteurs et commerçants des Halles de Niort" href="/fr/habiter-etudier/marches-et-producteurs-locaux/producteurs-et-commercants-des-halles-de-niort/index.html"> Producteurs et commerçants des Halles de Niort </a></li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class=" dropdown yamm-fw" id="Menu16098"><a href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="caret"></span> Sortir, visiter</a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="row collage">
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABkDAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAABQYHBP/EADIQAAEDAwEEBQ0BAAAAAAAAAAECBAUAAwYREiExczI1NrGyExQWIjRBVGF1kZKj4fD/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKVYZsJ6JlpOfkrluUtruAW1XAnyWnRSEHiNd39oNkLh8c8wpEnebuC+U3XdCRdICiNdnd89BQCWkdFtMMRNNZRdqZR6yQi6AQva6Gzx4f7SgL+l2U/A/qoHGbxiFdqvv3LGz5yEKUbpB01A4lI3GgQreTvEISlGW2QkAAARpAA/GgcMbxuFds2UpcbN3Tu4kXDfFsoStWvS2OA+1A3UGWV6sd8lfhNBG45KS1itUp3xLwnd79blQU/Aux8VyB3mqD9BllerHfJX4TQR2O9lifpDzvuVBTcC7HxXIHeaoP0H/9k=" width="25" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid16099" title="Patrimoine et musées" href="/fr/sortir-visiter/patrimoine-et-musees/index.html"> Patrimoine et musées </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Parc Naturel Régional du Marais Poitevin" href="/fr/sortir-visiter/patrimoine-et-musees/parc-naturel-regional-du-marais-poitevin/index.html"> Parc Naturel Régional du Marais Poitevin </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Musée du Donjon" href="/fr/sortir-visiter/patrimoine-et-musees/musee-du-donjon/index.html"> Musée du Donjon </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Musée Bernard d’Agesci" href="/fr/sortir-visiter/patrimoine-et-musees/musee-bernard-dagesci/index.html"> Musée Bernard d’Agesci </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Château du Coudray-Salbart" href="/fr/sortir-visiter/patrimoine-et-musees/chateau-du-coudray-salbart/index.html"> Château du Coudray-Salbart </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Château de Mursay" href="/fr/sortir-visiter/patrimoine-et-musees/chateau-de-mursay/index.html"> Château de Mursay </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Pass’Patrimoine" href="/fr/sortir-visiter/patrimoine-et-musees/passpatrimoine/index.html"> Pass’Patrimoine </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Les patrimoines de l'agglomération" href="/fr/sortir-visiter/patrimoine-et-musees/patrimoine-de-lagglomeration/index.html?no_cache=1"> Les patrimoines de l'agglomération </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZACEDAREAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABwEDBAUGAAj/xAA3EAACAQMCAwMFEQAAAAAAAAABAgMABAUGERIhcQcxQRMiNkKRFhcjNDdRU2FicnSBk7HC0fH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APVNBndd32Txmmrm7wqI1zFsx4l4uFPWIHiRQDXA2mqtc2rXLaiENvHJwMisVZTyO/Cm35b0BmtIzDbxRvIZHRArO3exA7z1oHqBCwCkkgADfc0A61n2lWONWSzxKx393zVnPOFOp9boPbQCLB5y9wuUW+spjEeMNIi8ldd+akeIqgx4pdWT67N3JI3uekHGoLLweTK7qAO/i3IqDf8AP6vZQCTUurMVmZ3s8xc5nF28RIaCNABPsfE9/OgpJn0LOiJPi8rjY9vg7kA+f1+eg6ObRAntWOIyy2Ubgm8bfaQ/bHiOlBtpO07DpNw2tnf3FonJp4ofNUdP8oJ3vj4D6af9E/3QVnab8exn3/5UEvtI9E4eq0DmT+TUfhxQJoX0Mn6P+1Bj6D//2Q==" width="33" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12121" title="Piscines" href="/fr/sortir-visiter/piscines/index.html"> Piscines </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Remboursement exceptionnel des activités aquatiques" href="/fr/sortir-visiter/piscines/remboursement-exceptionnel-des-activites-aquatiques/index.html"> Remboursement exceptionnel des activités aquatiques </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Pré-Leroy à Niort" href="/fr/sortir-visiter/piscines/pre-leroy-a-niort/index.html"> Pré-Leroy à Niort </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Champommier à Niort" href="/fr/sortir-visiter/piscines/champommier-a-niort/index.html"> Champommier à Niort </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Les Fraignes à Chauray" href="/fr/sortir-visiter/piscines/les-fraignes-a-chauray/index.html"> Les Fraignes à Chauray </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Les Colliberts à Mauzé-sur-le-Mignon" href="/fr/sortir-visiter/piscines/les-colliberts-a-mauze-sur-le-mignon/index.html"> Les Colliberts à Mauzé-sur-le-Mignon </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Jean Thébault à Magné" href="/fr/sortir-visiter/piscines/jean-thebault-a-magne/index.html"> Jean Thébault à Magné </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Châtelet à Sansais-La-Garette" href="/fr/sortir-visiter/piscines/chatelet-a-sansais-la-garette/index.html"> Châtelet à Sansais-La-Garette </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Cours et activités" href="/fr/sortir-visiter/piscines/cours-et-activites/index.html"> Cours et activités </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Horaires baignades" href="/fr/sortir-visiter/piscines/horaires-baignades/index.html"> Horaires baignades </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Tarifs et Ma Carte" href="/fr/sortir-visiter/piscines/tarifs-et-ma-carte/index.html"> Tarifs et Ma Carte </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABcDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgACBP/EACMQAAECBQQDAQAAAAAAAAAAAAEAAgMEBzFxBTV0sRE2gbL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AfUyJOuTxJJJkopJOWoBwsMINMc5jg5ji1wsQfBQLqY71O8GL21APFhhBIGFMd6neDF7agHiwwgkDWnnsup8WP+ggFCwwg69K3CF96KD/2Q==" width="23" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12070" title="Médiathèques" href="/fr/sortir-visiter/mediatheques/index.html"> Médiathèques </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Le réseau des médiathèques" href="/fr/sortir-visiter/mediatheques/le-reseau-des-mediatheques/index.html"> Le réseau des médiathèques </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Consulter, emprunter" href="/fr/sortir-visiter/mediatheques/consulter-emprunter/index.html"> Consulter, emprunter </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Services en ligne" href="/fr/sortir-visiter/mediatheques/services-en-ligne-cantalogue/index.html"> Services en ligne </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Les animations" href="/fr/sortir-visiter/mediatheques/les-animations/index.html"> Les animations </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZACMDAREAAhEBAxEB/8QAGwABAAICAwAAAAAAAAAAAAAABQIGBAcAAwj/xAAzEAABAwIEAgcGBwAAAAAAAAABAgMEBREABhIhBzETIjZRYXGxMjVyc4GhQXSRorLw8f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD1TgCMy1uNl+kPT5hulFglANitR5JH95b4DWdBzbTJubHMw1VVRp6Q2GAkKLzBOm2kkJBHfpta+98BeuH1Wfq1HeckNuNoaeLbHS36RTWlKm1LJO5KVDf8cBacBoiJxPrDNedlSgH4KiQIhARoTfayrcx3m9/QDeIWb1Zplxww24xCYT1W1kElZ5qNvoP9wDmUM+UeiZabpcikvOlWovEaVJdJO5IPPawsRyGAx80cQjKVqy6iRT1OIQ28okA6UElOmx29pQPhbALUXio8zS47dQiqkSkpst1O2vc2NvK2AMVUsg1N912dS50B8KKj0aiQ4e6wOx+g88BwVXIElCY7tCnRGTcIkJUSoeJ6xv8AfAQFWyHGBYaoE2VHvpckuLIX5gatvtgJKmcPqe4kxafOqS1day1KCW/CxIv+h88BlM1Hh042FmBPYJ36O6ur+84B3ir77oPzhgHOJnYSX8IwHbkfsBE/Ln0OArfBb2ap80+uAHzr2on/ABj+IwH/2Q==" width="35" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12122" title="Bases nautiques" href="/fr/sortir-visiter/bases-nautiques/index.html"> Bases nautiques </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Base nautique du Lidon" href="/fr/sortir-visiter/bases-nautiques/base-nautique-du-lidon/index.html"> Base nautique du Lidon </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Base nautique de Noron" href="/fr/sortir-visiter/bases-nautiques/base-nautique-de-noron/index.html"> Base nautique de Noron </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16448" title="Patinoire" href="/fr/sortir-visiter/patinoire/index.html"> Patinoire </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Horaires, animations" href="/fr/sortir-visiter/patinoire/horaires-animations/index.html"> Horaires, animations </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Tarifs et abonnements" href="/fr/sortir-visiter/patinoire/tarifs-et-abonnements/index.html"> Tarifs et abonnements </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Découvrir l'équipement" href="/fr/sortir-visiter/patinoire/decouvrir-lequipement/index.html"> Découvrir l'équipement </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABkDAREAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABQYHAwT/xAA1EAAABAQCBgUNAAAAAAAAAAABAgMEAAUGEQcSEyExQWFxFUJRVdEUFiMyMzQ2c3WTlLGz/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AK9WmKculOkayXI/ehcBPf0RB59YeAauMBH3VXztzOCzQ81WK8J6hinsUgdgF2W4b994Co0Zi22daNrUgEbrbAdJ+zNxMHV5hcOUBRvOCT96sfvl8YBQoWSyxw9qfyiXtFMk1VITMkUcpQALAGrUHAIDsmy1Osnbho2p4r94gTOok2ZFECBa4AYw2KGqACVm2lD7DZKbMZW2amcaBUlkigcoGOXVcOdoB96DlXdjH8YnhAAMPxEHdWCAZh6WWsHbqCADMkqvmEtqR2kwQl0yduEyJprbNGUuUwhe+u2/YO6A2rCXKSrCZtL1xAyrYrZI4l2CIHLe0BRIBQw99+qr6ur+ggHKATcWvgl185H+gQDdAf/Z" width="25" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12080" title="Conservatoire danse et musique" href="/fr/sortir-visiter/conservatoire-danse-et-musique/index.html"> Conservatoire danse et musique </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Le conservatoire en ligne" href="/fr/sortir-visiter/conservatoire-danse-et-musique/portes-ouvertes-en-ligne/index.html"> Le conservatoire en ligne </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Agenda" href="/fr/sortir-visiter/conservatoire-danse-et-musique/agenda/index.html"> Agenda </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Sites de Niort" href="/fr/sortir-visiter/conservatoire-danse-et-musique/sites-de-niort/index.html"> Sites de Niort </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Site Jean Deré - Chauray" href="/fr/sortir-visiter/conservatoire-danse-et-musique/site-jean-dere-chauray/index.html"> Site Jean Deré - Chauray </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Site Désiré Martin-Beaulieu - Vouillé" href="/fr/sortir-visiter/conservatoire-danse-et-musique/site-desire-martin-beaulieu-vouille/index.html"> Site Désiré Martin-Beaulieu - Vouillé </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Enseignement danse et musique" href="/fr/sortir-visiter/conservatoire-danse-et-musique/enseignement-danse-et-musique/index.html"> Enseignement danse et musique </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Locations et prêts" href="/fr/sortir-visiter/conservatoire-danse-et-musique/locations-et-prets/index.html"> Locations et prêts </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Inscriptions et tarifs" href="/fr/sortir-visiter/conservatoire-danse-et-musique/inscriptions-et-tarifs/index.html"> Inscriptions et tarifs </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Auditions d'élèves" href="/fr/sortir-visiter/conservatoire-danse-et-musique/auditions-deleves/index.html"> Auditions d'élèves </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Sites" href="/fr/sortir-visiter/conservatoire-danse-et-musique/etablissements/index.html"> Sites </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZABwDAREAAhEBAxEB/8QAHAABAAAHAQAAAAAAAAAAAAAABwABAgMEBQgG/8QALRAAAQMDAwIBDQAAAAAAAAAAAQIDBAAFEQYxYQcSExUhIjIzNkFCUXORsuH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6poMa4TI9viOSpbqWmGxlSlHagB9ea5lX99ceGtbFsBwEZwXOVccUG80QzrQ2FtVtdQiIVEtiRvjA2zsP7QKt1vFvtLaV3KWzHSo4HiKxmgLuqLdxvVu8qQJ7EuyNn2bBPo/DKvrQWOnXT5Ust3O+NlMYYU1HUPOvlXHFAzNIShtKW0hKEjAAGMCg596sylStaS0B3xGmUoQgA57T2jI/OaD2vRuyzI1vnO3BhSYkkp7GnU+tj5sGgTgAAAAMDagnQC2i/fmb99f7GgZ07CgqoIoP//Z" width="28" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12095" title="Ecole d'arts plastiques" href="/fr/sortir-visiter/ecole-darts-plastiques/index.html"> Ecole d'arts plastiques </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="S'inscrire" href="/fr/sortir-visiter/ecole-darts-plastiques/sinscrire/index.html"> S'inscrire </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Site Pablo-Picasso à Niort" href="/fr/sortir-visiter/ecole-darts-plastiques/site-pablo-picasso-a-niort/index.html"> Site Pablo-Picasso à Niort </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Site Camille-Claudel à Échiré" href="/fr/sortir-visiter/ecole-darts-plastiques/site-camille-claudel-a-echire/index.html"> Site Camille-Claudel à Échiré </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Site de Saint-Hilaire-la-Palud" href="/fr/sortir-visiter/ecole-darts-plastiques/site-de-saint-hilaire-la-palud/index.html"> Site de Saint-Hilaire-la-Palud </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu">
+																<div class="row">
+																	<div class="col-md-12 text-align-left hidden-xs hidden-sm"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAZACMDAREAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABgAEBQcIAQP/xAA0EAACAQIEAwUECwEAAAAAAAABAgMEBQAGBxESEyEVMWFxoUGBkbEWIiQ0NVFTcnSCssH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Atu7awWellmioKOqrXjYqHJVI38Qdydv64AYuGst1kb7BbaOnX280tKfiCvywA3X6iZprg6tdZIkbuWBFQjwBA39cBHVZzLwR3Ot7XKxMGSrm5hCHfYEOe474DT1orRcLTRVq9FqYEmAPs4lB/wC4DOwtdip89XqizLUVNDQQyS8kwAkk8Y4BsFboVJOAKKB8lqS1iyjd7zInTmGJnRvPqf8AOAIqCozWAq2HJdrs0bdS87rt71XhPpgIrPFDmabL9f8ASXMdpghCcxaGFFHNK/WChmAbckdwJwBDptmOjXJFqStnUTxo0ZH5BXZV9AMAC6jVUuV9VO1oYYp2kiWZY5QShJQxnu8V388A3bUfOV4bl2uNEde9aKkMh28jxYDnYuo19HHObmI5OhWao5KgeKFht7hgHdBo3d5W3r7hR06H9Pikbfy2A9cAYW7SeyQUUUVVVVk86g8ciSGMMd/YvXb44Dy1g/Ess/yH+QwFhWv7hD+0YB1gFgFgP//Z" width="35" height="25" alt=""></div>
+																</div><a class="MenNiv2 pageid12410" title="Ma carte, chèques loisirs" href="/fr/sortir-visiter/ma-carte-cheques-loisirs/index.html"> Ma carte, chèques loisirs </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16190" title="Agenda" href="/fr/sortir-visiter/agenda/index.html"> Agenda </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16102" title="Lettre d'information de Niort Agglo" href="/fr/sortir-visiter/lettre-dinformation-de-niort-agglo/index.html"> Lettre d'information de Niort Agglo </a></div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class=" dropdown yamm-fw" id="Menu12254"><a href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="caret"></span> Investir, entreprendre</a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="row collage">
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid17602" title="Fonds de Soutien de Proximité Niort Agglo - COVID 19" href="/fr/investir-entreprendre/fonds-de-soutien-de-proximite-niort-agglo-covid-19/index.html"> Fonds de Soutien de Proximité Niort Agglo - COVID 19 </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid17570" title="Covid-19 : Mesures en faveur des entreprises" href="/fr/investir-entreprendre/covid-19-mesures-en-faveur-des-entreprises/index.html"> Covid-19 : Mesures en faveur des entreprises </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12429" title="Les filières économiques" href="/fr/investir-entreprendre/les-filieres-economiques/index.html"> Les filières économiques </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Assurances et gestion du risque" href="/fr/investir-entreprendre/les-filieres-economiques/assurances-et-gestion-du-risque/index.html"> Assurances et gestion du risque </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Economie Sociale et Solidaire (ESS)" href="/fr/investir-entreprendre/les-filieres-economiques/economie-sociale-et-solidaire-ess/index.html"> Economie Sociale et Solidaire (ESS) </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Numérique" href="/fr/investir-entreprendre/les-filieres-economiques/numerique/index.html"> Numérique </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Transports et logistique" href="/fr/investir-entreprendre/les-filieres-economiques/transports-et-logistique/index.html"> Transports et logistique </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Industrie" href="/fr/investir-entreprendre/les-filieres-economiques/industrie/index.html"> Industrie </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Commerce" href="/fr/investir-entreprendre/les-filieres-economiques/commerce/index.html"> Commerce </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Tourisme" href="/fr/investir-entreprendre/les-filieres-economiques/tourisme/index.html"> Tourisme </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Agriculture" href="/fr/investir-entreprendre/les-filieres-economiques/agriculture/index.html"> Agriculture </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12419" title="Immobilier d'entreprises" href="/fr/investir-entreprendre/immobilier-dentreprises/index.html"> Immobilier d'entreprises </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Pépinière d’entreprises du Niortais" href="/fr/investir-entreprendre/immobilier-dentreprises/pepiniere-dentreprises-du-niortais/index.html"> Pépinière d’entreprises du Niortais </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Ateliers-relais" href="/fr/investir-entreprendre/immobilier-dentreprises/ateliers-relais/index.html"> Ateliers-relais </a></li>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Locaux professionnels vacants" href="/fr/investir-entreprendre/immobilier-dentreprises/locaux-professionnels-vacants/index.html"> Locaux professionnels vacants </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid15987" title="Parcs et zones d’activités économiques" href="/fr/investir-entreprendre/parcs-et-zones-dactivites-economiques/index.html"> Parcs et zones d’activités économiques </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Aménagement de la ZAC des Chéracles" href="/fr/investir-entreprendre/parcs-et-zones-dactivites-economiques/amenagement-de-la-zac-des-cheracles/index.html"> Aménagement de la ZAC des Chéracles </a></li>
+																</ul>
+															</div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12036" title="Accompagnement des entreprises" href="/fr/investir-entreprendre/accompagnement-des-entreprises/index.html"> Accompagnement des entreprises </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid12026" title="Taxe de séjour" href="/fr/investir-entreprendre/taxe-de-sejour/index.html"> Taxe de séjour </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid15989" title="Taxe locale pour la publicité extérieure" href="/fr/investir-entreprendre/taxe-locale-pour-la-publicite-exterieure/index.html"> Taxe locale pour la publicité extérieure </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16688" title="L'emploi sur le territoire de NiortAgglo" href="/fr/investir-entreprendre/lemploi-sur-le-territoire-de-niortagglo/index.html"> L'emploi sur le territoire de NiortAgglo </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16850" title="L'emploi sur le territoire du Pôle métropolitain Centre-Atlantique" href="/fr/investir-entreprendre/lemploi-sur-le-territoire-du-pole-metropolitain-centre-atlantique/index.html"> L'emploi sur le territoire du Pôle métropolitain Centre-Atlantique </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid17104" title="Cvthèque Niort Agglo" href="/fr/investir-entreprendre/cvtheque-niort-agglo/index.html"> Cvthèque Niort Agglo </a>
+																<ul>
+																	<li class="LiMenNiv3"><a class="MenNiv3" title="Créer un compte entreprise" href="/fr/investir-entreprendre/cvtheque-niort-agglo/creer-un-compte-entreprise/index.html"> Créer un compte entreprise </a></li>
+																</ul>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class=" dropdown yamm-fw" id="Menu16103"><a href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="caret"></span> Grands projets</a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="row collage">
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16653" title="La médiathèque Pierre-Moinot" href="/fr/grands-projets/la-mediatheque-pierre-moinot/index.html"> La médiathèque Pierre-Moinot </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16654" title="Le Conservatoire" href="/fr/grands-projets/le-conservatoire/index.html"> Le Conservatoire </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16655" title="La piscine Pré-Leroy" href="/fr/grands-projets/la-piscine-pre-leroy/index.html"> La piscine Pré-Leroy </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16375" title="Démantèlement de l'incinérateur de la déchèterie de Souché" href="/fr/grands-projets/demantelement-de-lincinerateur-de-la-decheterie-de-souche/index.html"> Démantèlement de l'incinérateur de la déchèterie de Souché </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16120" title="Médiathèque Pierre-Henri Mitard à Usseau" href="/fr/grands-projets/mediatheque-pierre-henri-mitard-a-usseau/index.html"> Médiathèque Pierre-Henri Mitard à Usseau </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16123" title="Parc résidentiel de loisirs au Vanneau-Irleau" href="/fr/grands-projets/parc-residentiel-de-loisirs-au-vanneau-irleau/index.html"> Parc résidentiel de loisirs au Vanneau-Irleau </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16206" title="Déchèterie du Vallon d'Arty à Niort" href="/fr/grands-projets/decheterie-du-vallon-darty-a-niort/index.html"> Déchèterie du Vallon d'Arty à Niort </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16396" title="Projet Pôle Gare Niort-Atlantique" href="/fr/grands-projets/projet-pole-gare-niort-atlantique/index.html"> Projet Pôle Gare Niort-Atlantique </a></div>
+															<div class="col-sm-4 ChildMenu"><a class="MenNiv2 pageid16468" title="Aménagement du complexe sportif de la Venise Verte" href="/fr/grands-projets/amenagement-du-complexe-sportif-de-la-venise-verte/index.html"> Aménagement du complexe sportif de la Venise Verte </a></div>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="glyphicon glyphicon-search"></i></a>
+												<ul class="dropdown-menu ">
+													<li class="grid-demo">
+														<div class="col-md-12 ">
+															<form method="get" action="/fr/recherche/index.html?tx__%5Bcontroller%5D=Standard&cHash=87504ecad37a706d54e1d6041909f51e">
+																<div><input type="hidden" name="__referrer[@extension]" value=""> <input type="hidden" name="__referrer[@controller]" value="Standard"> <input type="hidden" name="__referrer[@action]" value="index"> <input type="hidden" name="__referrer[arguments]" value="YTowOnt9307b792a4bdf1e68488d59c21fb62aee310e15a2"> <input type="hidden" name="__referrer[@request]" value='a:3:{s:10:"@extension";N;s:11:"@controller";s:8:"Standard";s:7:"@action";s:5:"index";}4beb57a01168e9dcd9978380443ecc0c7d8f026a'> <input type="hidden" name="__trustedProperties" value="a:0:{}081033da5d075b7beb6f13c5f9614bb53c553e51"></div>
+																<fieldset>
+																	<div class="input-group"><label style="display: none" for="tx-solr-search-q-pi-search2">Rechercher sur le site</label> <input id="tx-solr-search-q-pi-search2" name="q" type="text" class="form-control" placeholder="Recherche">
+																		<div class="input-group-btn"><button class="btn btn-default" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></div>
+																	</div>
+																</fieldset>
+															</form>
+														</div>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<div class="col-md-2 hidden-xs hidden-sm text-center-md socialheader">
+							<div class="row ">
+								<div class="col-md-3   text-center-md"><a href="https://twitter.com/@NiortAgglo" target="_blank" title="Compte officiel de la Communauté d'Agglomération du Niortais sur Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+								<div class="col-md-3  text-center-md"><a href="https://www.facebook.com/NiortAgglo/" target="_blank" title="Page officielle de la Communauté d'Agglomération du Niortais sur Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+								<div class="col-md-3  text-center-md"><a href="https://www.instagram.com/niortagglo/" target="_blank" title="Compte officiel Instagram de NiortAgglo"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+								<div class="col-md-3  text-center-md"><a href="https://www.youtube.com/channel/UC16RQnlIoaJDdnRQkdRwVZA" title="Compte officiel de la Communauté d'Agglomération du Niortais sur Youtube" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="firstcontainer">
+			<div class="breadcrumb-section ">
+				<div class="container">
+					<ol class="breadcrumb hidden-xs hidden-sm col-md-10">
+						<li class=""><a title="Niort Agglo" href="/fr/index.html"> Niort Agglo </a></li>
+						<li class=""><a title="L'Agglo" href="/fr/lagglo/index.html"> L'Agglo </a></li>
+						<li class=""><a title="Conseil d'agglomération" href="/fr/lagglo/conseil-dagglomeration/index.html"> Conseil d'agglomération </a></li>
+						<li class="active">Délibérations</li>
+					</ol>
+					<ul id="socialsharebutton" class="col-md-2">
+						<li><button type="button" data-toggle="collapse" data-target="#socialsharebar"><i class="fa fa-share-alt" aria-hidden="true"></i></button></li>
+						<li><i style="padding:0" onclick="window.print();" class="btn fa fa-print" aria-hidden="true"></i></li>
+					</ul><br>
+					<div class="breadcrumb">
+						<div id="xvox_core"><a accesskey="L" id="xvox_listen_link" title="Ecouter la page" href="https://core.xvox.fr?voice=Aurelie&language=fr-FR&idContent=readthis&idPlayer=xvox_player"> <img id="xvox_listen_btn_img" src="data:image/png;base64,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" alt="Ecouter la page"> <img id="xvox_listen_arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABFBAMAAAAmz9zMAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUxpcZiZmZiZmZiZmZiZmZiZmZiZmZiZmZiZmUB5o5iZmUd8ooqUm3eNnWOGn1SAoc4viiQAAAAJdFJOUwCfuxzgNWFSeKPFTMUAAAEvSURBVEjHtdbPDYIwFMdxR3AEE6LxyA7GOyMYJ2CdhghquNCDA5iyACMwAnECw0EDyL++9v2aYM+fkHyhpW91lsTar6glybWl6EPoK6rlmqCZoFZ5g2ksPZSK+u6jNCqOKBW5PKGUKDPSWHthRqqXmalWZqZamYXOy2x0VmajszIrnZZZ6bTMTidlDB2XMVS8hzKOjso4Oipj6VDG076Mp30ZQH9lAP2WhSjtyiDalkG0LcNoUhxQKpT0USrKDUyf1z88NZcBSJtvu/R7dfha+B5Q8M5K8P2KnwKHs4Wf2K4JoM1OXfqf5fAnxP+vQxNHR00creAbxuHewm9DlYYgTQoPvbkreB7Ap4wIn11UGoBUazLTCp7eLtSomYFNpvn1pTcZp2KPmoqpWTvdUfIDuIdELkalQh0AAAAASUVORK5CYII=" alt="Ecouter la page"> </a>
+							<div id="xvox_player"></div>
+						</div>
+					</div>
+					<div data-social-share-privacy="true" class="collapse" id="socialsharebar"></div>
+				</div>
+			</div>
+			<div class="addmargin rs_preserve" id="readthis">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Délibérations</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="firstimage col-md-12"><img src="https://www.niortagglo.fr/fileadmin/_processed_/b/a/csm_deliberations_agglo_c_BDerbord_95bc78ffb5.jpg?frz-v=137" srcset="https://www.niortagglo.fr/fileadmin/_processed_/b/a/csm_deliberations_agglo_c_BDerbord_95bc78ffb5.jpg?frz-v=137 1025w, https://www.niortagglo.fr/fileadmin/_processed_/b/a/csm_deliberations_agglo_c_BDerbord_c9e945f272.jpg?frz-v=137 800w, https://www.niortagglo.fr/fileadmin/_processed_/b/a/csm_deliberations_agglo_c_BDerbord_31d4d8f2c0.jpg?frz-v=137 600w, https://www.niortagglo.fr/fileadmin/_processed_/b/a/csm_deliberations_agglo_c_BDerbord_715dcd2b5e.jpg?frz-v=137 500w" sizes="(min-width: 1025px) 1025px,(max-width: 1024px) 100vw" alt="Délibérations"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div id="c132642">
+							<div class="ce-textpic ce-center ce-above">
+								<div class="ce-bodytext">
+									<p>Le conseil d’agglomération se réunit environ huit fois par an pour voter les délibérations. Les séances sont publiques. <br><br>L’ensemble des délibérations adoptées par le conseil d’agglomération sont consultables en ligne et auprès du secrétariat des assemblées.</p>
+								</div>
+							</div>
+						</div>
+						<div id="c132650">
+							<div class="tx-conseildelib">
+								<div class="panel-group" style="width:100%">
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2020">Année 2020</a></h3>
+										</div>
+										<div id="collapse2020" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 16 juin 2020" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-16-06-2020/index.html"> Séance du conseil du 16 juin </a></li>
+												<li><a title="Séance du 10 février 2020" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-10-02-2020/index.html"> Séance du conseil du 10 février </a></li>
+												<li><a title="Séance du 20 janvier 2020" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-20-01-2020/index.html"> Séance du conseil du 20 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2019">Année 2019</a></h3>
+										</div>
+										<div id="collapse2019" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 16 décembre 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-16-12-2019/index.html"> Séance du conseil du 16 décembre </a></li>
+												<li><a title="Séance du 18 novembre 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-18-11-2019/index.html"> Séance du conseil du 18 novembre </a></li>
+												<li><a title="Séance du 23 septembre 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-23-09-2019-1/index.html"> Séance du conseil du 23 septembre </a></li>
+												<li><a title="Séance du 8 juillet 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-08-07-2019/index.html"> Séance du conseil du 08 juillet </a></li>
+												<li><a title="Séance du 27 mai 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-27-05-2019/index.html"> Séance du conseil du 27 mai </a></li>
+												<li><a title="Séance du 8 avril 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-08-04-2019/index.html"> Séance du conseil du 08 avril </a></li>
+												<li><a title="Séance du 4 mars 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-04-03-2019/index.html"> Séance du conseil du 04 mars </a></li>
+												<li><a title="Séance du 28 janvier 2019" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-28-01-2019/index.html"> Séance du conseil du 28 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2018">Année 2018</a></h3>
+										</div>
+										<div id="collapse2018" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 10 décembre 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-10-12-2018/index.html"> Séance du conseil du 10 décembre </a></li>
+												<li><a title="Séance du 5 novembre 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-05-11-2018/index.html"> Séance du conseil du 05 novembre </a></li>
+												<li><a title="Séance du 24 septembre 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-24-09-2018/index.html"> Séance du conseil du 24 septembre </a></li>
+												<li><a title="Séance du 25 juin 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-06-2018/index.html"> Séance du conseil du 25 juin </a></li>
+												<li><a title="Séance du 28 mai 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-28-05-2018/index.html"> Séance du conseil du 28 mai </a></li>
+												<li><a title="Séance du 9 avril 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-09-04-2018/index.html"> Séance du conseil du 09 avril </a></li>
+												<li><a title="Séance du 12 mars 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-12-03-2018/index.html"> Séance du conseil du 12 mars </a></li>
+												<li><a title="Séance du 29 janvier 2018" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-29-01-2018/index.html"> Séance du conseil du 29 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2017">Année 2017</a></h3>
+										</div>
+										<div id="collapse2017" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 21 décembre 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-21-12-2017/index.html"> Séance du conseil du 21 décembre </a></li>
+												<li><a title="Séance du 11 décembre 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-11-12-2017/index.html"> Séance du conseil du 11 décembre </a></li>
+												<li><a title="Séance du 20 novembre 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-20-11-2017/index.html"> Séance du conseil du 20 novembre </a></li>
+												<li><a title="Séance du 25 septembre 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-09-2017/index.html"> Séance du conseil du 25 septembre </a></li>
+												<li><a title="Séance du 26 juin 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-26-06-2017/index.html"> Séance du conseil du 26 juin </a></li>
+												<li><a title="Séance du 29 mai 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-29-05-2017/index.html"> Séance du conseil du 29 mai </a></li>
+												<li><a title="Séance du 10/04/2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-10-04-2017/index.html"> Séance du conseil du 10 avril </a></li>
+												<li><a title="Séance du 06 mars 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-06-03-2017/index.html"> Séance du conseil du 06 mars </a></li>
+												<li><a title="Séance du 30 janvier 2017" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-30-01-2017/index.html"> Séance du conseil du 30 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2016">Année 2016</a></h3>
+										</div>
+										<div id="collapse2016" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 08 décembre 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-08-12-2016/index.html"> Séance du conseil du 08 décembre </a></li>
+												<li><a title="Séance du 21 novembre 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-21-11-2016/index.html"> Séance du conseil du 21 novembre </a></li>
+												<li><a title="Séance du 17 octobre 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-17-10-2016/index.html"> Séance du conseil du 17 octobre </a></li>
+												<li><a title="Séance du 26 septembre 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-26-09-2016/index.html"> Séance du conseil du 26 septembre </a></li>
+												<li><a title="Séance du 27 juin 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-27-06-2016/index.html"> Séance du conseil du 27 juin </a></li>
+												<li><a title="Séance du 30 mai 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-30-05-2016/index.html"> Séance du conseil du 30 mai </a></li>
+												<li><a title="Séance du 11 avril 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-11-04-2016/index.html"> Séance du conseil du 11 avril </a></li>
+												<li><a title="Séance du 14 mars 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-14-03-2016/index.html"> Séance du conseil du 14 mars </a></li>
+												<li><a title="Séance du 25 janvier 2016" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-01-2016/index.html"> Séance du conseil du 25 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2015">Année 2015</a></h3>
+										</div>
+										<div id="collapse2015" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 14 décembre 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-14-12-2015/index.html"> Séance du conseil du 14 décembre </a></li>
+												<li><a title="Séance du 26 octobre 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-26-10-2015/index.html"> Séance du conseil du 26 octobre </a></li>
+												<li><a title="Séance du 16 novembre 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-16-10-2015/index.html"> Séance du conseil du 16 octobre </a></li>
+												<li><a title="Séance du 28 septembre 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-28-09-2015/index.html"> Séance du conseil du 28 septembre </a></li>
+												<li><a title="Séance du 25 juin 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-06-2015/index.html"> Séance du conseil du 25 juin </a></li>
+												<li><a title="Séance du 01 juin 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-01-06-2015/index.html"> Séance du conseil du 01 juin </a></li>
+												<li><a title="Séance du 13 avril 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-13-04-2015/index.html"> Séance du conseil du 13 avril </a></li>
+												<li><a title="Séance du 16 mars 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-16-03-2015/index.html"> Séance du conseil du 16 mars </a></li>
+												<li><a title="Séance du 26 janvier 2015" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-26-01-2015/index.html"> Séance du conseil du 26 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2014">Année 2014</a></h3>
+										</div>
+										<div id="collapse2014" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 15 décembre 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-15-12-2014/index.html"> Séance du conseil du 15 décembre </a></li>
+												<li><a title="Séance du 20 octobre 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-20-10-2014/index.html"> Séance du conseil du 20 octobre </a></li>
+												<li><a title="Séance du 17 novembre 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-17-10-2014/index.html"> Séance du conseil du 17 octobre </a></li>
+												<li><a title="Séance du 22 septembre 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-22-09-2014/index.html"> Séance du conseil du 22 septembre </a></li>
+												<li><a title="Séance du 30 juin 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-30-06-2014/index.html"> Séance du conseil du 30 juin </a></li>
+												<li><a title="Séance du 19 mai 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-19-05-2014/index.html"> Séance du conseil du 19 mai </a></li>
+												<li><a title="Séance du 28 avril 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-28-04-2014/index.html"> Séance du conseil du 28 avril </a></li>
+												<li><a title="Séance du 14 avril 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-14-04-2014/index.html"> Séance du conseil du 14 avril </a></li>
+												<li><a title="Séance du 17 mars 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-17-03-2014/index.html"> Séance du conseil du 17 mars </a></li>
+												<li><a title="Séance du 24 janvier 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-24-01-2014/index.html"> Séance du conseil du 24 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2013">Année 2013</a></h3>
+										</div>
+										<div id="collapse2013" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 16 décembre 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-16-12-2013/index.html"> Séance du conseil du 16 décembre </a></li>
+												<li><a title="Séance du  25 novembre 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-11-2013/index.html"> Séance du conseil du 25 novembre </a></li>
+												<li><a title="Séance du 21 octobre 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-21-10-2013/index.html"> Séance du conseil du 21 octobre </a></li>
+												<li><a title="Séance du 23 septembre 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-23-09-2013/index.html"> Séance du conseil du 23 septembre </a></li>
+												<li><a title="Séance du 24 juin 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-24-06-2013/index.html"> Séance du conseil du 24 juin </a></li>
+												<li><a title="Séance du 27 mai 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-27-05-2013/index.html"> Séance du conseil du 27 mai </a></li>
+												<li><a title="Séance du 15 avril 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-15-04-2013/index.html"> Séance du conseil du 15 avril </a></li>
+												<li><a title="Séance du 25 mars 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-25-03-2013/index.html"> Séance du conseil du 25 mars </a></li>
+												<li><a title="Séance du 28 janvier 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-28-01-2013/index.html"> Séance du conseil du 28 janvier </a></li>
+												<li><a title="Séance du 14 janvier 2013" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-14-01-2013/index.html"> Séance du conseil du 14 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="panel panel-default accordeon ">
+										<div class="panel-heading">
+											<h3 class="panel-title" style="width:100%;clear:both"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2012">Année 2012</a></h3>
+										</div>
+										<div id="collapse2012" class="panel-collapse collapse">
+											<ul>
+												<li><a title="Séance du 17 décembre 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-17-12-2012/index.html"> Séance du conseil du 17 décembre </a></li>
+												<li><a title="Séance du 26 novembre 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-26-10-2012/index.html"> Séance du conseil du 26 octobre </a></li>
+												<li><a title="Séance du 22 octobre 2012 " href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-22-10-2012/index.html"> Séance du conseil du 22 octobre </a></li>
+												<li><a title="Séance du 24 septembre 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-24-09-2012/index.html"> Séance du conseil du 24 septembre </a></li>
+												<li><a title="Séance du 2 juillet 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-02-07-2012/index.html"> Séance du conseil du 02 juillet </a></li>
+												<li><a title="Séance du 4 juin 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-04-06-2012/index.html"> Séance du conseil du 04 juin </a></li>
+												<li><a title="Séance du 5 avril 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-05-04-2012/index.html"> Séance du conseil du 05 avril </a></li>
+												<li><a title="Séance du 12 mars 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-12-03-2012/index.html"> Séance du conseil du 12 mars </a></li>
+												<li><a title="Séance du 24 février 2014" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-24-02-2012/index.html"> Séance du conseil du 24 février </a></li>
+												<li><a title="Séance du 23 janvier 2012" href="/fr/lagglo/conseil-dagglomeration/deliberations/seance-du-conseil-dagglomeration/cm-23-01-2012/index.html"> Séance du conseil du 23 janvier </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<aside class="menuasideright dropdown">
+							<div class="asidemenutitle collapsed" data-toggle="collapse" data-target="#menuasideright"><span class="asidemenu">Menu</span>
+								<h2><span class="title">Conseil d'agglomération</span></h2>
+							</div>
+							<ul id="menuasideright" aria-expanded="true" class="collapse">
+								<li><a href="/fr/lagglo/conseil-dagglomeration/calendrier-des-seances/index.html">Calendrier des séances</a></li>
+								<li class="level-one-act">Délibérations</li>
+								<li><a href="/fr/lagglo/conseil-dagglomeration/recueil-des-actes-administratifs/index.html">Recueil des actes administratifs</a></li>
+							</ul>
+						</aside>
+						<div class="asiderightcan list">
+							<div id="c132777">
+								<div class="tx-ttaddress-pi1">
+									<div class="module-sidebar">
+										<h2 class="module-titre"><i class="fa fa-user"></i> Contact</h2>
+										<div class="card" itemscope="" itemtype="http://schema.org/Organization"><a href="/fr/lagglo/conseil-dagglomeration/index.html" itemprop="url"><span class="poste name" itemprop="name">Assemblées - Affaires juridiques</span></a>
+											<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span class="street-address adresse" itemprop="streetAddress">140 rue des Equarts<br> CS28770 </span> <span class="postal-code code-postal" itemprop="postalCode">79027</span> <span class="locality ville" itemprop="addressLocality">Niort</span>, <span class="region" itemprop="addressRegion">Cedex</span>, <span class="carte"><a class="fancybox.iframe" href="http://maps.google.com/?output=embed&f=q&source=s_q&hl=fr&geocode=&q=140+rue+des+Equarts++CS28770++79027+Niort" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a></span></p>
+											<p>Tél : <span class="tel" itemprop="telephone">05 17 38 79 24</span><br> <i class="fa fa-envelope" aria-hidden="true"></i> :<a href="mailto:assemblees@agglo-niort.fr" itemprop="email">assemblees@agglo-niort.fr</a><br></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<footer>
+				<div class="container text-center">
+					<hr>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="col-md-4 col-md-offset-2 col-xs-12 col-xs-offset-0 text-left-md">
+								<div class="adrfooter">
+									<h1 title="Communauté d'Agglomération du Niortais">Niort Agglo</h1>
+									<address>140‚ rue des Equarts CS28770 <br>79027 NIORT CEDEX <br>T : 05 17 38 79 00</address>
+									<h2>Horaires d'ouverture de l'accueil :</h2>
+									<ul>
+										<li>du lundi au vendredi de 8h30 à 12h30 et 13h30 à 17h</li>
+									</ul>
+									<p><a href="/fr/acces-directs/contactez-nous/index.html">Nous contacter</a></p>
+								</div>
+							</div>
+							<div class="col-md-3 col-xs-12 text-left-md linkfooter">
+								<h1>Nos partenaires</h1>
+								<ul>
+									<li><a href="http://www.parc-marais-poitevin.fr/">+ Parc Naturel Régional du Marais Poitevin</a></li>
+									<li><a href="http://www.niortmaraispoitevin.com/">+ Office du tourisme Niort - Marais Poitevin</a></li>
+									<li><a href="https://www.tanlib.com/">+ Tanlib</a></li>
+									<li><a href="https://www.niort-numeric.fr/">+ Niort Numéric</a></li>
+									<li><a href="http://www.regardsnoirs.niort.fr/" title="Festival du polar Regards Noirs du 30 janvier au 2 février 2019 à Niort">+ Regards Noirs</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-2 col-md-offset-10"><a id="back-to-top" href="/fr/lagglo/conseil-dagglomeration/deliberations/index.html#top" class="btn btn-default" title="Cliquez pour retourner en haut de la page"><span class="glyphicon glyphicon-chevron-up"></span><br>HAUT</a></div>
+						<div class="col-lg-12 footerjaune">
+							<ul class="nav nav-pills nav-justified">
+								<li><a style="font-size:0.9em" href="/">©Communauté d'Agglomération du Niortais</a></li>
+								<li><a href="/fr/acces-directs/mentions-legales/index.html">Mentions légales</a></li>
+								<li><a href="/fr/acces-directs/accessibilite/index.html">Accessibilité</a></li>
+								<li><a href="/fr/acces-directs/logo-de-la-can/index.html">Logo</a></li>
+								<li><a href="/fr/acces-directs/presse/index.html">Presse</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="text/frzjs" frz_orig_src="https://www.niortagglo.fr/typo3temp/compressor/merged-339a0d2bc5fd4437345e3c7f01135cfc.js?1554311021&frz-v=137" orig_index="3"></script>
+		<script>
+        window.frzDeferJSRequestIdleCallback = false;
+        window.frzDeferJSEarlyFetchAsyncScript = false;
+        window.frzDeferJSLongTask = 40;
+		</script>
+		<script src="/fstrz/defer-c7021b8349436532aa266cca2967f815.js"></script>
+	</body>
+</html>
