@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="Communauté de communes Quercy Bouriane">
+		<base href="http://www.laccqb.fr/">
+		<script language="javascript" src="jscript/jquery.js" type="application/javascript"></script>
+		<script language="javascript" src="jscript/jquery-custom.js" type="application/javascript"></script>
+		<script language="javascript" src="jscript/function.js" type="application/javascript"></script>
+		<script language="JavaScript" src="jscript/infobulle.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="jscript/lightbox/shadowbox.css">
+		<script type="text/javascript" src="jscript/lightbox/shadowbox.js"></script>
+		<script type="text/javascript" language="javascript">
+Shadowbox.init({
+	language:"fr",
+	 players:  ['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv']
+})
+		</script>
+		<script language="javascript" type="application/javascript">
+	$(document).ready(function() {
+					});	
+				
+		</script>
+		<script language="javascript">
+var taille=100;
+var taille_original=100;
+var limite = 40;
+	function size_plus()
+	{
+		taille = (taille+10);
+		if(taille>eval(taille_original+limite))
+		{
+			taille = (taille-10);
+		}
+		$('body').css('font-size',taille+'%');
+	}
+	
+	function size_moins()
+	{
+		taille = (taille-10);
+		if(taille<eval(taille_original-limite))
+		{
+			taille = (taille+10);
+		}
+		$('body').css('font-size',taille+'%');
+	}
+		</script>
+		<!-- include jQuery library -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<!-- include Cycle plugin -->
+		<script type="text/javascript" src="jscript/jquery.cycle.all.latest.js"></script>
+		<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade'
+	});
+});
+		</script>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/jquery-custom.css" rel="stylesheet" type="text/css">
+	</head>
+	<body onload="MM_preloadImages('images/menu1ON_01.png','images/menu1ON_02.png','images/menu1ON_03.png','images/menu1ON_04.png','images/menu1ON_05.png','images/menu1ON_06.png','images/menu1ON_07.png')">
+		<table width="988" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td height="244" valign="bottom">
+					<div class="slideshow" style="width:988px; height:244px;"><span class="slideshow" style="width:988px; height:244px;"><a href="index.php"><img src="imgmaj/3/siege-01.jpg" alt="" title="" border="0"></a></span> <span class="slideshow" style="width:988px; height:244px;"><a href="index.php"><img src="imgmaj/3/ban.jpg" alt="Voeux 2020" title="Voeux 2020" border="0"></a></span> <span class="slideshow" style="width:988px; height:244px;"><a href="index.php"><img src="imgmaj/3/bandeau-02.jpg" alt="" title="" border="0"></a></span></div>
+				</td>
+			</tr>
+			<tr>
+				<td background="images/center.jpg">
+					<table width="988" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<div class="menu" align="center">
+									<table id="Tableau_01" width="974" height="27" border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td><a href="presentation.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','images/menu1ON_01.png',1)"><img src="images/menu1_01.png" name="Image10" width="132" height="27" border="0"></a></td>
+											<td><a href="economie-sur-le-territoire.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','images/menu1ON_02.png',1)"><img src="images/menu1_02.png" name="Image11" width="142" height="27" border="0"></a></td>
+											<td><a href="jeunesse.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image12','','images/menu1ON_03.png',1)"><img src="images/menu1_03.png" name="Image12" width="102" height="27" border="0"></a></td>
+											<td><a href="sites-touristiques.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image13','','images/menu1ON_04.png',1)"><img src="images/menu1_04.png" name="Image13" width="110" height="27" border="0"></a></td>
+											<td><a href="renovation-bibliotheque.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image14','','images/menu1ON_05.png',1)"><img src="images/menu1_05.png" name="Image14" width="96" height="27" border="0"></a></td>
+											<td><a href="ecopole-cougnac.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image15','','images/menu1ON_06.png',1)"><img src="images/menu1_06.png" name="Image15" width="227" height="27" border="0"></a></td>
+											<td><a href="contact.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image16','','images/menu1ON_07.png',1)"><img src="images/menu1_07.png" name="Image16" width="165" height="27" border="0"></a></td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="15%" bgcolor="#ADADAD" valign="top"><img src="images/186.jpg" width="186" height="8">
+											<div class="menugauche">
+												<div class="titre_gros puce_rose">CCQB</div>
+												<div class="ul_rose">
+													<ul class="niveau2">
+														<li class="sousmenu"><a href="presentation.php">Présentation</a></li>
+														<li class="sousmenu"><a href="newsletter.php">Newsletter</a></li>
+														<li class="sousmenu"><a href="le-territoire.php">Le territoire</a></li>
+														<li class="sousmenu"><a href="les-competences.php">Les compétences de la CCQB</a></li>
+														<li class="sousmenu"><a href="les-elus.php">Les élus</a></li>
+														<li class="sousmenu"><a href="plan-de-mandat.php">Plan de mandat</a></li>
+														<li class="sousmenu"><a href="organigramme.php">Organigramme</a></li>
+														<li class="sousmenu"><a href="arretes-et-deliberations.php">Arrêtés et délibérations</a></li>
+														<li class="sousmenu"><a href="bilan-d-activites.php">Bilans d'activités</a></li>
+														<li class="sousmenu"><a href="marches-publics.php">Marchés publics</a></li>
+														<li class="sousmenu"><a href="journal-dinformation.php">Journal d'information de la CCQB</a></li>
+													</ul>
+												</div>
+											</div>
+											<table width="100%" border="0" cellspacing="0" cellpadding="3">
+												<tr>
+													<td>
+														<form method="post" action="recherche.php" id="form" name="form">
+															<table width="4%" border="0" align="center" cellpadding="3" cellspacing="0">
+																<tr>
+																	<td colspan="2"><span class="search">Recherche :</span></td>
+																</tr>
+																<tr>
+																	<td width="70%"><label> <input name="recherche" type="text" id="recherche" onkeyup="lookup(this.value);" size="15" autocomplete="off"> <input type="hidden" name="recherche_id" id="recherche_id"> </label></td>
+																	<td width="30%"><img src="images/ok.jpg" width="35" height="25" style="cursor:pointer;" onclick="$('#form').submit();"></td>
+																</tr>
+															</table>
+														</form>
+													</td>
+												</tr>
+											</table><br>
+											<table width="173" height="137" border="0" align="center" cellpadding="0" cellspacing="0" id="Tableau_">
+												<tr>
+													<td><a href="actu.php"><img src="images/littlebox_01.png" width="84" height="69" alt=""></a></td>
+													<td><a href="agenda.php"><img src="images/littlebox_02.png" width="89" height="69" alt=""></a></td>
+												</tr>
+												<tr>
+													<td><a href="liens.php"><img src="images/littlebox_03.png" width="84" height="68" alt=""></a></td>
+													<td><a href="associations.php"><img src="images/littlebox_04.png" width="89" height="68" alt=""></a></td>
+												</tr>
+												<tr>
+													<td><a href="http://www.tourisme-gourdon.com/" target="_blank"><img src="images/littlebox_05.png" width="89" height="68" alt=""></a></td>
+													<td><a href="http://www.quercybouriane.com/" target="_blank"><img src="images/littlebox_06.png" width="89" height="68" alt=""></a></td>
+												</tr>
+												<tr>
+													<td><a href="http://www.maisondupiage.fr" target="_blank"><img src="images/littlebox_07.png" width="89" height="68" alt=""></a></td>
+													<td> </td>
+												</tr>
+											</table><br>
+											<table width="173" border="0" align="center" cellpadding="0" cellspacing="0">
+												<tr>
+													<td valign="top">
+														<p><span class="onki">La Communauté de communes Quercy Bouriane</span><br> <span class="oili">98 avenue Gambetta<br> 46300 Gourdon</span></p>
+														<p class="oili">Tél : 05 65 37 23 70<br> Fax : 05 65 37 21 30<br> Email : ccqb@wanadoo.fr</p>
+													</td>
+												</tr>
+											</table>
+											<p align="right"><img src="images/ccqb.png" width="151" height="82"><br></p>
+											<table width="100%" border="0" cellspacing="0" cellpadding="5">
+												<tr>
+													<td><a href="carte.php" rel="shadowbox[];width=765;height=745;"><img src="images/map.png" width="164" height="33"></a></td>
+												</tr>
+												<tr>
+													<td><a href="fiche.php?commune=19">- Anglars-Nozac</a><br><a href="fiche.php?commune=10">- Concorès</a><br><a href="fiche.php?commune=16">- Fajoles</a><br><a href="fiche.php?commune=4">- Gourdon</a><br><a href="fiche.php?commune=13">- Lamothe-Cassel</a><br><a href="fiche.php?commune=20">- Le Vigan</a><br><a href="fiche.php?commune=17">- Milhac</a><br><a href="fiche.php?commune=14">- Montamel</a><br><a href="fiche.php?commune=3">- Payrignac</a><br><a href="fiche.php?commune=12">- Peyrilles</a><br><a href="fiche.php?commune=18">- Rouffilhac</a><br><a href="fiche.php?commune=9">- Saint-Chamarand</a><br><a href="fiche.php?commune=2">- Saint-Cirq-Madelon</a><br><a href="fiche.php?commune=7">- Saint-Cirq-Souillaguet</a><br><a href="fiche.php?commune=8">- Saint-Clair</a><br><a href="fiche.php?commune=11">- Saint-Germain-du-Bel-Air</a><br><a href="fiche.php?commune=5">- Saint-Projet</a><br><a href="fiche.php?commune=6">- Soucirac</a><br><a href="fiche.php?commune=21">- Ussel</a><br><a href="fiche.php?commune=15">- Uzech les Oules</a><br></td>
+												</tr>
+											</table>
+										</td>
+										<td width="85%" valign="top" class="rose" style="padding-left:30px; padding-right:20px">
+											<table width="735" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td width="645" class="titre_gros" style="font-size:14px; letter-spacing:0px;" valign="bottom"><a href="index.php" style="color:#666666;">Accueil</a> > <a href="presentation.php" style="color:#666666;">CCQB</a> > Arrêtés et délibérations</td>
+													<td width="30"><a href="javascript:size_moins();"><img src="images/petit_a.png" border="0"></a> <a href="javascript:size_plus();"><img src="images/grand_a.png" border="0"></a></td>
+													<!-- <td width="30"><img src="images/eveloppe.png" /></td>-->
+													<td width="30"><a href="javascript:print();"><img src="images/imprimante.png" border="0"></a></td>
+												</tr>
+												<tr>
+													<td colspan="4"><img src="images/menuhaut.jpg"></td>
+												</tr>
+											</table>
+											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+												<tr>
+													<td>
+														<h1 style="text-align: left;"><strong>Conseils communautaires - Délibérations</strong></h1>
+														<p> </p>
+														<table style="width: 585px; height: 687px;" border="0">
+															<tbody>
+																<tr>
+																	<td> </td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2020</span></strong></p>
+																		<p><a title="Délibérations 10 Février 2020" href="http://www.laccqb.fr/imgmaj/3/deliberations-10022020.pdf" target="_blank"><strong><span class="textegris"><strong><span class="rose">10 Février</span></strong></span></strong></a></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 9 Mars 2020" href="http://www.laccqb.fr/imgmaj/3/deliberations-09032020.pdf" target="_blank">9 Mars</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 8 Juin 2020" href="http://www.laccqb.fr/imgmaj/3/deliberations-08062020.pdf" target="_blank">8 Juin</a><br></span></strong></span></strong></p>
+																	</td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2019</span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 6 Février 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-06022019.pdf" target="_blank">6 Février</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 27 Mars 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-27032019.pdf" target="_blank">27 Mars</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 10 Avril 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-10042019.pdf" target="_blank">10 Avril</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 23 Mai 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-23052019.pdf" target="_blank">23 Mai</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 3 Juillet 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-03072019.pdf" target="_blank">3 Juillet</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 7 Octobre 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-07102019.pdf" target="_blank">7 Octobre</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 9 Décembre 2019" href="http://www.laccqb.fr/imgmaj/3/deliberations-09122019.pdf" target="_blank">9 Décembre</a><br></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><br></span></strong></span></strong></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2018</span></strong></p>
+																		<p><a title="Délibérations 31 Janvier 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-31-01-2018.pdf" target="_blank"><strong><span class="textegris"><strong><span class="rose">31 Janvier</span></strong></span></strong></a></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 28 Mars 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-28-03-18.pdf" target="_blank">28 Mars</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 11 Avril 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-11-04-2018.pdf" target="_blank">11 Avril</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 6 Juin 2018" href="http://www.laccqb.fr/imgmaj/3/deliberation-06-06-18.pdf" target="_blank">6 Juin</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 4 Juillet 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-04-07-18.pdf" target="_blank">4 Juillet</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 17 Octobre 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-17-10-2018.pdf" target="_blank">17 Octobre</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 5 Décembre 2018" href="http://www.laccqb.fr/imgmaj/3/deliberations-05-12-2018.pdf" target="_blank">5 Décembre</a><br></span></strong></span></strong></p>
+																	</td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2017</span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 13012017" href="http://www.laccqb.fr/imgmaj/3/deliberations-13-01-17.pdf" target="_blank">13 Janvier</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 15022017" href="http://www.laccqb.fr/imgmaj/3/deliberations-15-02-17.pdf" target="_blank">15 Février</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 29 Mars 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-29-03-2017.pdf" target="_blank">29 Mars</a><br></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 12 Avril 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-12-04-2017.pdf" target="_blank">12 Avril</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 31 Mai 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-31-05-2017.pdf" target="_blank">31 Mai</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 28 Juin 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-28-06-17.pdf" target="_blank">28 Juin</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 20 Septembre 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-20-09-17.pdf" target="_blank">20 Septembre</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 18 Octobre 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-18-10-2017.pdf" target="_blank">18 Octobre</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 6 Décembre 2017" href="http://www.laccqb.fr/imgmaj/3/deliberations-06-12-17.pdf" target="_blank">6 Décembre</a><br></span></strong></span></strong></p>
+																	</td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2016</span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 10022016" href="http://www.laccqb.fr/imgmaj/3/deliberations-10-02-16.pdf" target="_blank">10 Février</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations du 23032016" href="http://www.laccqb.fr/imgmaj/3/deliberations-23-03-16.pdf" target="_blank">23 Mars</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="délibérations 11042016" href="http://www.laccqb.fr/imgmaj/3/deliberations-11-04-16.pdf" target="_blank">11 Avril</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 01062016" href="http://www.laccqb.fr/imgmaj/3/deliberations-01-06-16.pdf" target="_blank">1er juin</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 06072016" href="http://www.laccqb.fr/imgmaj/3/deliberations-06-07-16.pdf" target="_blank">6 Juillet</a></span></strong></span></strong></p>
+																		<p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 12102016" href="http://www.laccqb.fr/imgmaj/3/deliberations-12-10-16.pdf" target="_blank">12 Octobre</a></span></strong></span></strong></p><strong><span class="textegris"><strong><span class="rose"><a title="Délibérations 07122016" href="http://www.laccqb.fr/imgmaj/3/deliberations-7-12-16.pdf" target="_blank">7 Décembre</a></span></strong></span></strong></td>
+																</tr>
+																<tr>
+																	<td>
+																		<p class="textegris"><strong>Délibérations 2015</strong></p>
+																		<p><strong><strong><a title="delibérations 11022015" href="http://www.laccqb.fr/imgmaj/3/deliberations-11-02-15.pdf" target="_blank">11 Février</a></strong></strong><strong><span class="rose"> </span></strong></p>
+																		<p><a title="délibérations 18 mars 2015" href="http://www.laccqb.fr/imgmaj/3/deliberations-18-03-15.pdf" target="_blank"><strong><span class="rose">18 Mars</span></strong></a></p>
+																		<p><strong><span class="rose"><a title="délibérations 14 avril 2015" href="http://www.laccqb.fr/imgmaj/3/deliberations-15-04-15.pdf" target="_blank">15 Avril</a></span></strong></p>
+																		<p><strong><span class="rose"><a title="débération du 27 Mai 2015" href="http://www.laccqb.fr/imgmaj/3/deliberations-27-05-15.pdf" target="_blank">27 Mai</a></span></strong></p>
+																		<p><strong><span class="rose"><a title="Délibérations 8072015" href="http://www.laccqb.fr/imgmaj/3/deliberations-8-7-15.pdf" target="_blank">8 Juillet</a></span></strong></p>
+																		<p><strong><span class="rose"><a title="Délibérations 14102015" href="http://www.laccqb.fr/imgmaj/3/deliberations-14-10-2015.pdf" target="_blank">14 Octobre</a></span></strong></p>
+																		<p><strong><span class="rose"><a title="Délibérations 30112015" href="http://www.laccqb.fr/imgmaj/3/deliberations-30-11-2015.pdf" target="_blank">30 Novembre</a></span></strong></p>
+																	</td>
+																	<td>
+																		<p class="textegris"><strong><strong>Délibérations 2014</strong></strong></p>
+																		<p class="textegris"><a title="Délibérations 5032014" href="http://www.laccqb.fr/imgmaj/3/deliberations-5-3-2014.pdf" target="_blank"><strong><strong> </strong><span class="rose">5 mars </span></strong></a></p>
+																		<p class="textegris"><a title="delib 16 avril" href="http://www.laccqb.fr/imgmaj/3/deliberations-16-4-2014.pdf" target="_blank"><span class="rose"><strong>16 Avril</strong></span></a></p>
+																		<p class="textegris"><a title="delib 23 avril" href="http://www.laccqb.fr/imgmaj/3/deliberations-23-4-2014.pdf" target="_blank"><span class="rose"><strong>23 Avril</strong></span></a></p>
+																		<p class="textegris"><a title="delib 30 avril" href="http://www.laccqb.fr/imgmaj/3/deliberations-30-4-2014.pdf" target="_blank"><span class="rose"><strong><span class="rose"><strong>30 Avril</strong></span></strong></span></a></p>
+																		<p class="textegris"><a title="délib 2 juillet 2014" href="http://www.laccqb.fr/imgmaj/3/deliberations-2-7-14.pdf" target="_blank"><strong>2 Juillet</strong></a></p>
+																		<p><a title="delibération 6102014" href="http://www.laccqb.fr/imgmaj/3/deliberations-6-10-2014.pdf" target="_blank"><span class="rose"><strong><span class="rose"><strong>6 Octobre</strong></span></strong></span></a></p>
+																		<p><span class="rose"><strong><span class="rose"><strong><a title="delib 17112014" href="http://www.laccqb.fr/imgmaj/3/deliberations-17-11-2014.pdf" target="_blank">17 Novembre</a></strong></span></strong></span></p><span class="rose"><strong><span class="rose"><strong><a title="Délibérations 15122014" href="http://www.laccqb.fr/imgmaj/3/deliberations-15-12-2014.pdf" target="_blank">15 Décembre</a></strong></span></strong></span></td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2013</span></strong></p>
+																		<p><strong><span class="textegris"><a title="Délibérations 30 janvier 2013" href="http://www.laccqb.fr/imgmaj/3/deliberations-30-01-2013.pdf" target="_blank"><span class="rose">30 janvier</span></a></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="délibérations 27032013" href="http://www.laccqb.fr/imgmaj/3/delib-version-definitive-27-03-2013.pdf" target="_blank">27 mars</a></span></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="delibérations 10 avril 2013" href="http://www.laccqb.fr/imgmaj/3/deliberations-10-04-2013-version-definitive.pdf" target="_blank">10 avril</a></span></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="Délibérations 29052013" href="http://www.laccqb.fr/imgmaj/3/deliberations-29-05-2013-pdf.pdf" target="_blank">29 mai</a></span></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="Délibérations 3 juillet 2013" href="http://www.laccqb.fr/imgmaj/3/deliberations-03-07-2013-1.pdf" target="_blank">3 juillet</a></span></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="délibérations 20092013" href="http://www.laccqb.fr/imgmaj/3/deliberations-20-09-2013.pdf" target="_blank">20 septembre</a></span></span></strong></p>
+																		<p><strong><span class="textegris"><span class="rose"><a title="Délibérations 23102013" href="http://www.laccqb.fr/imgmaj/3/deliberations-23-10-2013.pdf" target="_blank">23 octobre</a></span></span></strong></p>
+																		<p class="textegris"><strong><span class="textegris"><span class="rose"><a title="délibérations 02122013" href="http://www.laccqb.fr/imgmaj/3/deliberations-2-12-2013.pdf" target="_blank">2 décembre</a></span></span></strong></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<p><strong class="textegris">Délibérations 2012</strong></p>
+																		<p><strong class="textegris"><a title="Délibérations du 27 janvier 2012" href="http://www.laccqb.fr/imgmaj/3/deliberations-27-01-2012.pdf" target="_blank">27 janvier</a></strong></p>
+																		<p><strong class="textegris"><a title="Délibérations du 11 avril 2012" href="http://www.laccqb.fr/imgmaj/3/deliberations-11-04-2012.pdf" target="_blank">11 avril</a></strong></p>
+																		<p><strong class="textegris"><a title="Délibérations du 23 Mai 2012" href="http://www.laccqb.fr/imgmaj/3/deliberations-23-05-2012.pdf" target="_blank">23 mai</a></strong></p>
+																		<p><strong class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-05-09-2012.pdf" target="_blank">5 septembre</a></strong></p>
+																		<p><strong class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-24-10-2012.pdf" target="_blank">24 octobre</a></strong></p><strong class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-05-12-2012.pdf" target="_blank">5 décembre</a></strong></td>
+																	<td>
+																		<p class="textegris"><strong>Délibérations 2011</strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-09-02-2011.pdf" target="_blank">09 février</a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-23-03-2011.pdf" target="_blank">23 mars</a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-20-04-2011.pdf" target="_blank">20 avril</a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-27-05-2011.pdf" target="_blank">27mai </a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-08-07-2011.pdf" target="_blank">08 juillet</a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-21-09-2011.pdf" target="_blank">21 septembre</a></strong></p>
+																		<p class="textegris"><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-26-10-2011.pdf" target="_blank">26 octobre</a></strong></p><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-16-12-2011.pdf" target="_blank">16 décembre</a></strong><br>
+																		<p class="textegris"> </p>
+																	</td>
+																	<td>
+																		<p><strong><span class="textegris">Délibérations 2010</span></strong></p>
+																		<p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-10-02-2010.pdf" target="_blank">10 février </a></span></strong></p>
+																		<p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-17-03-2010.pdf" target="_blank">17 mars</a></span></strong></p>
+																		<p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-14-04-2010.pdf" target="_blank">14 avril</a></span></strong></p>
+																		<p><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-26-05-2010.pdf" target="_blank">26 mai</a></strong></p>
+																		<p><strong><a href="http://www.laccqb.fr/imgmaj/3/deliberations-02-07-2010.pdf" target="_blank">2 juillet</a><br></strong></p>
+																		<p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-01-09-2010.pdf" target="_blank">1er septembre </a></span></strong></p>
+																		<p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-27-10-2010.pdf" target="_blank">27 octobre</a></span></strong></p><strong><span class="textegris"><a href="http://www.laccqb.fr/imgmaj/3/deliberations-15-12-2010.pdf" target="_blank">15 décembre</a></span></strong><br>
+																		<p> </p>
+																		<p> </p>
+																		<p> </p>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td><img src="images/bas.jpg" alt="" width="988" height="109"></td>
+			</tr>
+		</table>
+		<div align="center"><br> Mentions légales - Contact - Plan du site - Goodies - Site accessible aux malvoyants</div>
+	</body>
+</html>
