@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" dir="ltr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is based on t3_gabarit_basic
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="https://www.communauteduconfluent.com">
+		<link rel="shortcut icon" href="/fileadmin/Collectivites/CC_CCP/Ressources/favicon.png" type="image/png">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index,follow">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="google" content="notranslate">
+		<meta property="og:title" content="Comptes rendus des Conseils">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/bootstrap_package/Resources/Public/Css/ionicons.min.css?1529061949" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_60c89eb700bbe0d7b25066018a82b5b4a02db6c1.css?1560864202" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/rx_shariff/Resources/Public/Css/shariff.complete.css?1528365253" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_6f9745c5900a4c0bae0a9e896e8cf1036c356d42.css?1560864204" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_2a13c3e8cdc0d135370381b5dbde43dc5d72c806.css?1560864203" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_496be80685773ba5589cc0bc974782681d9ccc73.css?1562598031" media="all">
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/modernizr.min.js?1529061949" type="text/javascript" async="async"></script>
+		<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,-2);
+		}
+		
+
+/*]]>*/
+		</script>
+		<link rel="prev" href="/la-communaute/elus-et-gouvernance/">
+		<title>Comptes rendus des Conseils - Communauté des communes du Confluent et des Coteaux de Prayssas</title>
+		<meta name="description" content="">
+		<link rel="canonical" href="https://www.communauteduconfluent.com/la-communaute/comptes-rendus-des-conseils/?L=0">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Comptes rendus des Conseils">
+		<meta property="og:url" content="https://www.communauteduconfluent.com/la-communaute/comptes-rendus-des-conseils/?L=0">
+		<meta property="og:site_name" content="Communauté des communes du Confluent et des Coteaux de Prayssas">
+		<meta name="twitter:card" content="summary">
+	</head>
+	<body id="p95" class="page-95 pagelevel-2 language-0 backendlayout-subnavigation_left layout-default">
+		<meta name="format-detection" content="telephone=no">
+		<div id="wrapper">
+			<div class="overlay"></div>
+			<div id="top"></div>
+			<div class="body-bg body-bg-top">
+				<div id="page-content-wrapper"><a class="sr-only sr-only-focusable" href="#content"><span>Aller au contenu principal</span></a>
+					<header class="navbar navbar-default navbar-static-top">
+						<div class="container-fluid">
+							<div class="navbar-header navbar-header-main"><a class="navbar-brand navbar-brand-image" href="/"><img class="navbar-brand-logo-normal" src="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" alt=" logo" height="160" width="172"><img class="navbar-brand-logo-inverted" src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/BootstrapPackageInverted.svg" alt=" logo" height="160" width="172"></a><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="navbar-header-border-bottom"></span></div>
+							<nav class="navbar-collapse collapse" role="navigation">
+								<ul class="nav navbar-nav navbar-main">
+									<li class=" "><a href="/" title="Accueil"><span class="navbar-item-icon"><img src="/fileadmin/Collectivites/CC_CCP/Ressources/ico_vide.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Accueil</span><span class="bar"></span></a></li>
+									<li class="active dropdown dropdown-hover"><a href="/la-communaute/territoire-et-communes/" title="La communauté" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/5/4/csm_plume_8ee021c814.png" width="20" height="20" alt=""></span><span class="navbar-item-text">La communauté</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Territoire et communes" href="/la-communaute/territoire-et-communes/"><span class="navbar-item-text">Territoire et communes</span></a></li>
+											<li class=" "><a title="Missions et compétences" href="/la-communaute/missions-et-competences/"><span class="navbar-item-text">Missions et compétences</span></a></li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Elus et Gouvernance</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="Présentation" href="/la-communaute/elus-et-gouvernance/elus-et-gouvernance/"><span class="navbar-item-text">Présentation</span></a></li>
+													<li class=""><a title="Composition du Bureau" href="/la-communaute/elus-et-gouvernance/composition-du-bureau/"><span class="navbar-item-text">Composition du Bureau</span></a></li>
+													<li class=""><a title="Composition des Commissions" href="/la-communaute/elus-et-gouvernance/composition-des-commissions/"><span class="navbar-item-text">Composition des Commissions</span></a></li>
+												</ul>
+											</li>
+											<li class="active "><a title="Comptes rendus des Conseils" href="/la-communaute/comptes-rendus-des-conseils/"><span class="navbar-item-text">Comptes rendus des Conseils <span class="sr-only">(current)</span></span></a></li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/amenagement/presentation/" title="Aménagement de l’espace" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/2/8/csm_maison_8103859c60.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Aménagement de l’espace</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Présentation" href="/amenagement/presentation/"><span class="navbar-item-text">Présentation</span></a></li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Documents d'urbanisme et planification</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="La démarche" href="/amenagement/urbanisme/urbanisme/"><span class="navbar-item-text">La démarche</span></a></li>
+													<li class=""><a title="PLUi" href="/amenagement/urbanisme/plui/"><span class="navbar-item-text">PLUi</span></a></li>
+													<li class=""><a title="Documents communaux" href="/amenagement/urbanisme/documentscommunaux/"><span class="navbar-item-text">Documents communaux</span></a></li>
+												</ul>
+											</li>
+											<li class=" "><a title="Projet d'aménagement" href="/amenagement/amenagementzac3/"><span class="navbar-item-text">Projet d'aménagement</span></a></li>
+											<li class=" "><a title="Consultation / Avis d'enquête publique" href="/amenagement/avisdenquetepubliqueportantsurleprojetderevisiongeneraleduplanlocaldurbanismeintercommunala10communesdescoteauxdeprayssasdulundi05novembreaumercredi05decembre2018inclusregistredematerialiseetdossiermisaenque/"><span class="navbar-item-text">Consultation / Avis d'enquête publique</span></a></li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Autorisation d’urbanisme</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="La démarche" href="/amenagement/voirie/voirie/"><span class="navbar-item-text">La démarche</span></a></li>
+													<li class=""><a title="Mon projet" href="/amenagement/voirie/lestypesdedossierstraites/"><span class="navbar-item-text">Mon projet</span></a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/economie/accueil-et-informations/" title="Économie" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/b/b/csm_graphique_1ba43de3ea.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Économie</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Accueil et informations" href="/economie/accueil-et-informations/"><span class="navbar-item-text">Accueil et informations</span></a></li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Pôle d'activités de la Confluence</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="Présentation" href="/economie/poleconfluence/presentation-pole/"><span class="navbar-item-text">Présentation</span></a></li>
+													<li class=""><a title="Les Entreprises" href="/economie/poleconfluence/anuaire-entreprises/"><span class="navbar-item-text">Les Entreprises</span></a></li>
+												</ul>
+											</li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Dispositifs d'aides aux entreprises</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="Présentation" href="/economie/dispositif-daides-aux-entreprises/dispositif-daides-aux-entreprises/"><span class="navbar-item-text">Présentation</span></a></li>
+													<li class=""><a title="Initiative Lot-et-Garonne" href="/economie/dispositif-daides-aux-entreprises/initiative-lot-et-garonne/"><span class="navbar-item-text">Initiative Lot-et-Garonne</span></a></li>
+													<li class=""><a title="FISAC" href="/economie/dispositif-daides-aux-entreprises/fisac/"><span class="navbar-item-text">FISAC</span></a></li>
+												</ul>
+											</li>
+											<li class=" "><a title="Agriculture" href="/economie/agriculture/"><span class="navbar-item-text">Agriculture</span></a></li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/interventionstechniques/actualites/" title="Interventions Techniques" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/d/9/csm_travaux_d755ebefe0.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Interventions Techniques</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="La voirie" href="/interventionstechniques/actualites/"><span class="navbar-item-text">La voirie</span></a></li>
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">GEMAPI</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="Présentation" href="/interventionstechniques/gemapi/presentation/"><span class="navbar-item-text">Présentation</span></a></li>
+													<li class=""><a title="Etat d'avancement" href="/interventionstechniques/gemapi/actualites/"><span class="navbar-item-text">Etat d'avancement</span></a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/transitionenergetique/transitionenergetique/" title="Transition énergétique" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/3/e/csm_ampoule_1e916d6103.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Transition énergétique</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Présentation" href="/transitionenergetique/transitionenergetique/"><span class="navbar-item-text">Présentation</span></a></li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/habitat/vvvvv/" title="Habitat" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/e/f/csm_picto-bilan-ec3acc281nergec3acc281tique_84a7977279.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Habitat</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Le guichet unique de l'habitat" href="/habitat/vvvvv/"><span class="navbar-item-text">Le guichet unique de l'habitat</span></a></li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/tourisme/presentation/" title="Tourisme" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/d/c/csm_map_55fca3d981.png" width="20" height="20" alt=""></span><span class="navbar-item-text">Tourisme</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" "><a title="Point Info Tourisme" href="/tourisme/presentation/"><span class="navbar-item-text">Point Info Tourisme</span></a></li>
+											<li class=" "><a title="En ce moment sur le territoire" href="/tourisme/tourisme/"><span class="navbar-item-text">En ce moment sur le territoire</span></a></li>
+											<li class=" "><a title="Professionnels du Tourisme" href="/tourisme/fete-de-la-science/"><span class="navbar-item-text">Professionnels du Tourisme</span></a></li>
+										</ul>
+									</li>
+									<li class=" dropdown dropdown-hover"><a href="/actionsociale/enfance/enfance/" title="ACTION SOCIALE" class="dropdown-link"><span class="navbar-item-icon"><img src="/fileadmin/_processed_/a/5/csm_picto1_108d83c358.png" width="20" height="20" alt=""></span><span class="navbar-item-text">ACTION SOCIALE</span><b class="caret"></b><span class="bar"></span></a>
+										<ul class="dropdown-menu">
+											<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Enfance</span></a>
+												<ul class="dropdown-menu">
+													<li class=""><a title="RAMEP" href="/actionsociale/enfance/enfance/"><span class="navbar-item-text">RAMEP</span></a></li>
+													<li class=""><a title="Ateliers d'éveil / Actualités" href="/actionsociale/enfance/actualites/"><span class="navbar-item-text">Ateliers d'éveil / Actualités</span></a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</header><button type="button" class="hamburger is-closed" data-toggle="offcanvas"><span class="sr-only">Toggle navigation</span><span aria-hidden="true" class="glyphicon glyphicon-menu-left"></span><span>Accès Direct</span></button>
+					<!-- Sidebar -->
+					<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+						<ul class="nav sidebar-nav">
+							<li class="sidebar-brand">Accès Direct</li>
+							<li class=" "><a href="/toutes-les-actualites/" title="Actualités"><span class="navbar-item-text">Actualités</span><span class="bar"></span></a></li>
+							<li class=" "><a href="/economie/poleconfluence/presentation-pole/" title="Pôle d'activités de la Confluence"><span class="navbar-item-text">Pôle d'activités de la Confluence</span><span class="bar"></span></a></li>
+							<li class=" "><a href="/economie/dispositif-daides-aux-entreprises/dispositif-daides-aux-entreprises/" title="Aides aux entreprises"><span class="navbar-item-text">Aides aux entreprises</span><span class="bar"></span></a></li>
+							<li class=" "><a href="/habitat/vvvvv/" title="Guiche unique de l'habitat"><span class="navbar-item-text">Guiche unique de l'habitat</span><span class="bar"></span></a></li>
+							<li class=" "><a href="/actionsociale/enfance/actualites/" title="Programme RAM"><span class="navbar-item-text">Programme RAM</span><span class="bar"></span></a></li>
+							<li class=" "><a href="/amenagement/urbanisme/documentscommunaux/" title="Documents communaux - Urbanisme"><span class="navbar-item-text">Documents communaux - Urbanisme</span><span class="bar"></span></a></li>
+						</ul>
+					</nav>
+					<!-- /#sidebar-wrapper -->
+					<div aria-labelledby="breadcrumb" role="navigation" class="breadcrumb-section hidden-xs hidden-sm">
+						<div class="container">
+							<p class="sr-only" id="breadcrumb">You are here:</p>
+							<ol class="breadcrumb">
+								<li class=""><a href="/" title="Accueil"><span>Accueil</span></a></li>
+								<li class=""><a href="/la-communaute/territoire-et-communes/" title="La communauté"><span>La communauté</span></a></li>
+								<li class="active"><span>Comptes rendus des Conseils</span></li>
+							</ol>
+						</div>
+					</div>
+					<div id="content" class="main-section">
+						<!--TYPO3SEARCH_begin-->
+						<div class="section section-default">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3 subnav-wrap">
+										<nav class="hidden-print hidden-xs hidden-sm" role="navigation">
+											<ul class="nav nav-sidebar">
+												<li class=""><a href="/la-communaute/territoire-et-communes/" title="Territoire et communes"><span>Territoire et communes</span></a></li>
+												<li class=""><a href="/la-communaute/missions-et-competences/" title="Missions et compétences"><span>Missions et compétences</span></a></li>
+												<li class=""><a href="/la-communaute/elus-et-gouvernance/elus-et-gouvernance/" title="Elus et Gouvernance"><span>Elus et Gouvernance</span></a></li>
+												<li class="active"><a href="/la-communaute/comptes-rendus-des-conseils/" title="Comptes rendus des Conseils"><span>Comptes rendus des Conseils</span></a></li>
+											</ul>
+										</nav>
+									</div>
+									<main class="col-md-9 maincontent-wrap" role="main">
+										<div id="c155" class="frame frame-default frame-type-text frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none">
+											<div class="frame-container">
+												<div class="frame-inner">
+													<header>
+														<h2 class="element-header ">Procés Verbaux des conseils communautaires</h2>
+													</header>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2020/Seance_du_27_fevrier_2020.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 27 février 2020 au format PDF (706 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2020/Seance_du_28_janvier_2020.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 28 janvier 2020 au format PDF (409 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance_du_4_decembre_2019__01.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 4 décembre 2019 au format PDF (893 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance_du_24_octobre_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 24 octobre 2019 au format PDF (952 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance_du_25_septembre_2019_.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 25 septembre 2019 au format PDF (835 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/PV_seance_du_11_07_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 11 juillet 2019 au format PDF (1 Mo)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/PV_seance_du_24_06_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 24 juin 2019 au format PDF (388 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/PV_seance_du_23_05_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 23 Mai 2019 au format PDF (567 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance_du_11_avril_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 11 Avril 2019 au format PDF (642 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance_du_14_mars_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 14 Mars 2019 au format PDF (411 Ko)</a></p>
+													<p><a href="/fileadmin/Collectivites/CC_CCP/Documents/PV/2019/Seance__du_14_fevrier_2019.pdf" title="(nouvelle fenêtre)" target="_blank">Séance du 14 Février 2019 au format PDF (853 Ko)</a></p>
+												</div>
+											</div>
+										</div>
+									</main>
+								</div>
+							</div>
+						</div>
+						<!--TYPO3SEARCH_end-->
+					</div>
+					<footer>
+						<section class="section footer-section footer-section-special">
+							<div class="container-fluid">
+								<div class="unClic"></div>
+							</div>
+						</section>
+						<section class="section footer-section footer-section-content">
+							<div class="container">
+								<div class="section-row">
+									<div class="section-column footer-section-content-column-left"><a id="c151"></a>
+										<div class="gallery-row row">
+											<div class="gallery-item col-xs-12">
+												<figure class="image"><img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" data-large="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" data-medium="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" data-small="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" data-extrasmall="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" title="" alt="" class="lazyload" data-preload="false">
+													<noscript><img src="/fileadmin/Collectivites/CC_CCP/Ressources/logo_transparent_246x210_cb.png" title="" alt=""></noscript>
+												</figure>
+											</div>
+										</div>
+									</div>
+									<div class="section-column footer-section-content-column-middle"><a id="c146"></a>
+										<p><strong><span class="text-uppercase">Communauté de communes du Confluent et des Coteaux de Prayssas </span></strong><br><em>Siège social : Rue Racine - Saint-Côme - 47190 AIGUILLON - FRANCE</em></p>
+										<p><strong>SIEGE ADMINISTRATIF :<br> Avenue du 11 Novembre<br> 47190 AIGUILLON - FRANCE</strong></p>
+										<p>Téléphone : 05.53.79.81.15<br> Email : secretariat@ccconfluent.fr</p>
+									</div>
+									<div class="section-column footer-section-content-column-right"><a id="c152"></a>
+										<p>Horaires d'ouverture du lundi au vendredi:</p>
+										<ul class="list-normal">
+											<li>de 09h à 12h</li>
+											<li>de 13h30 à 17h</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="section section-small footer-section footer-section-meta">
+							<div class="container">
+								<div class="frame frame-small default meta">
+									<ul id="meta_menu" class="meta-menu">
+										<li><a href="/pied-de-page/mentions-legales/" title="Mentions légales"><span>Mentions légales</span></a></li>
+										<li><a href="/pied-de-page/accessibilite/" title="Accessibilité"><span>Accessibilité</span></a></li>
+										<li><a href="/pied-de-page/plan-du-site/" title="Plan du site"><span>Plan du site</span></a></li>
+									</ul>
+								</div><img class="siteresponsive" src="/typo3conf/ext/t3_gabarit_basic/Resources/Public/Images/responsive.png" alt="Ce site web s'adapte aux différents supports." height="64" width="64">
+								<div class="frame frame-small default copyright">
+									<p><span>© <a href="http://www.cdg47.fr" target="_blank">CDG47</a>  2020</span></p>
+								</div>
+							</div>
+						</section>
+					</footer>
+					<!-- Matomo -->
+					<script type="text/javascript">
+		  var _paq = _paq || [];
+		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u="//admin.numerique47.fr/analytics/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '83']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		
+					</script>
+					<!-- End Matomo Code -->]]><a class="scroll-top" title="Scroll to top" href="/la-communaute/comptes-rendus-des-conseils/#top"><span class="scroll-top-icon"></span></a></div>
+			</div>
+		</div>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/jquery.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/initialisation.js?1531827183" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/vticker.min.js?1531827183" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/jquery.responsiveimages.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/bootstrap.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe-ui-default.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/hammer.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.swipe.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.popover.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.stickyheader.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.smoothscroll.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.lightbox.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.navbar.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/rx_shariff/Resources/Public/JavaScript/shariff.min.js?1528365253" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_gabarit_basic/Resources/Public/Js/addon.js?1552658443" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_gabarit_basic/Resources/Public/js/weather.js" type="text/javascript"></script>
+	</body>
+</html>
