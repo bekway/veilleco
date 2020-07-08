@@ -1,0 +1,1083 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><?xml version="1.0" encoding="utf-8"?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+	<head>
+		<base href="https://www.beynost.fr/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Beynost, commune, Ain">
+		<meta name="description" content="Site de la commune de Beynost">
+		<title>Comptes rendus 2018</title>
+		<link href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018?format=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+		<link href="/templates/beynost/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/media/com_docman/css/site.css?1321b4a1" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_back_to_top/css/default.css" rel="stylesheet" type="text/css">
+		<link href="/media/mod_showplus/css/showplus.css" rel="stylesheet" type="text/css">
+		<link href="/media/mod_showplus/css/showplusx.min.css" rel="stylesheet" type="text/css">
+		<link href="https://www.beynost.fr/plugins/system/fmalertcookies/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="https://www.beynost.fr/plugins/system/fmalertcookies/assets/css/custom.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+#showplus_images_bandeauhaut .showplusx-previous, #showplus_images_bandeauhaut .showplusx-next { display:none; }
+#showplus_images_bandeauhaut > .showplusx-slideshow { width:980px; height:203px; }
+#showplus_images_bandeauhaut .showplusx-animation-in, #showplus_images_bandeauhaut .showplusx-animation-out { animation-timing-function:linear; animation-duration:800ms; }
+#showplus_images_bandeauhaut .showplusx-animation-show { animation-duration:3000ms; }
+
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"4d612ec3049c4bcd56eca49613b34958","system.paths":{"root":"","base":""}}</script>
+		<script src="/media/jui/js/jquery.min.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/koowa.kquery.js?04e0c297" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/min/modernizr.js?04e0c297" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/min/kui-initialize.js?04e0c297" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/min/koowa.js?04e0c297" type="text/javascript"></script>
+		<script src="/media/com_docman/js/footable.js?1321b4a1" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-core.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/system/js/core.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-more.js?ab6d976aa22aba006db79410f6ea7d6e" type="text/javascript"></script>
+		<script src="/media/mod_showplus/js/showplusx.min.js" type="text/javascript" defer></script>
+		<script type="text/javascript">
+kQuery(function($) {
+                $('.docman_track_download').on('click', function() {
+                    var el = $(this);
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'Download', {
+                            'event_category': 'DOCman',
+                            'event_label': el.data('title'),
+                            'name': el.data('title'),
+                            'value': parseInt(el.data('id'), 10)
+                        });
+                    }
+                    else if (typeof window.GoogleAnalyticsObject !== 'undefined' && typeof window[window.GoogleAnalyticsObject] !== 'undefined') {
+                        window[window.GoogleAnalyticsObject]('send', 'event', 'DOCman', 'Download', el.data('title'), parseInt(el.data('id'), 10));
+                    } 
+                    else if (typeof _gaq !== 'undefined' && typeof _gat !== 'undefined') {
+                        if (_gat._getTrackers().length) {
+                            _gaq.push(function() {
+                                var tracker = _gat._getTrackers()[0];
+                                tracker._trackEvent('DOCman', 'Download', el.data('title'), parseInt(el.data('id'), 10));
+                            });
+                        }
+                    }
+                });
+
+                if (typeof _paq !== 'undefined') {
+                    _paq.push(['setDownloadClasses', 'docman_track_download']);
+                    _paq.push(['trackPageView']);
+                }
+            });kQuery(function($) {
+    $('.k-js-documents-table').footable({
+        toggleSelector: '.footable-toggle',
+        breakpoints: {
+            phone: 400,
+            tablet: 600,
+            desktop: 800
+        }
+    }).bind('footable_row_detail_updated', function(event) {
+        var container = event.detail;
+
+        container.find('.btn-mini').addClass('btn-small').removeClass('btn-mini');
+
+        container.find('.footable-row-detail-value').css('display', 'inline-block');
+
+        container.find('.footable-row-detail-name').css('display', 'inline-block')
+            .each(function() {
+                var $this = $(this);
+
+                if ($.trim($this.text()) == '') {
+                    $this.remove();
+                }
+            });
+
+    });
+
+});kQuery(function($) {
+        var addHiddenFields = function(button) {
+            var field, i = 0, fields = ['.k-js-tag-search', '.k-js-category-search'];
+
+            for (; i < fields.length; i++) {
+                field = $(fields[i]);
+
+                if (field.length && !field.val()) {
+                    var input = $('<input type="hidden" />')
+                        .attr('name', field.attr('name').replace('[]', ''))
+                        .val('');
+
+                    $(button[0].form).append(input);
+                }
+            }
+        };
+
+        $('.k-js-search-submit').click(function() {
+            addHiddenFields($(this));
+        });
+
+        $('.k-js-search-reset').click(function(event) {
+            event.preventDefault();
+
+            var button = $(this),
+                form   = button[0].form;
+
+            $('.k-filters')
+                .find('input:not(:checkbox), textarea').val('').end()
+                .find('select').val(null).trigger('change');
+
+            addHiddenFields(button);
+
+            $(form).append($('<input type="hidden" />').val('1')
+                .attr('name', 'filter[reset]'));
+
+            form.submit();
+        });
+    });jQuery.noConflict();
+	jQuery(document).ready(function() {
+		jQuery('#backtotop').click(function() {
+				jQuery('body,html').animate({scrollTop:0},800);
+		});	
+	});document.addEventListener('DOMContentLoaded', function () {document.documentElement.classList.add('showplus-js');var container = document.getElementById('showplus_images_bandeauhaut');var slideshow = new ShowPlusXSlideshow(container, {"defaults":{"target":"_self"},"items":[{"src":"\/images\/bandeauhaut\/image01.jpg","thumbsrc":"\/cache\/thumbs\/d08af72e6409857844c8458c31c61efa.jpg"},{"src":"\/images\/bandeauhaut\/image02.jpg","thumbsrc":"\/cache\/thumbs\/75972726055fad6700fe494dc7bb9791.jpg"},{"src":"\/images\/bandeauhaut\/image03.jpg","thumbsrc":"\/cache\/thumbs\/59249f18129cadb95ae8c7c3667eaf9e.jpg"},{"src":"\/images\/bandeauhaut\/image04.jpg","thumbsrc":"\/cache\/thumbs\/6a7faeb77c3a8fc091ddc2a87ccaa0d8.jpg"},{"src":"\/images\/bandeauhaut\/image05.jpg","thumbsrc":"\/cache\/thumbs\/fc7401c6756665fdc029d74b2f2c2676.jpg"},{"src":"\/images\/bandeauhaut\/image06.jpg","thumbsrc":"\/cache\/thumbs\/571fa08f5e7d7f2d82701ffaa6658712.jpg"},{"src":"\/images\/bandeauhaut\/image07.jpg","thumbsrc":"\/cache\/thumbs\/100ec403ba8e55af0b8634df951b1209.jpg"},{"src":"\/images\/bandeauhaut\/image09.jpg","thumbsrc":"\/cache\/thumbs\/22bc4f766073e29bfa5814ad93415237.jpg"}],"effects":["fade"]});});
+		</script>
+		<!-- start - swMenuFree 10_J2.5-J3.0 javascript and CSS links -->
+		<script type="text/javascript" src="https://www.beynost.fr/modules/mod_swmenufree/js/jquery.js"></script>
+		<script type="text/javascript" src="https://www.beynost.fr/modules/mod_swmenufree/js/curvycorners.src.js"></script>
+		<style type="text/css">
+<!--
+.swmenufree {
+ padding-top: 0px ;
+ padding-right: 0px ;
+ padding-bottom: 0px ;
+ padding-left: 5px ;
+ background-image: none;
+ position:relative; 
+ top: 0px  ; 
+ left: 0px; 
+ list-style: none ; 
+ display:inline-block ; 
+ width:auto; 
+}
+.swmenufree li{
+ display: block; 
+ padding: 0 0 0px 0; 
+ position:relative ; 
+ margin-top: 2px ;
+ margin-bottom: 2px ;
+}
+.swmenufree-trigger ,
+.swmenufree a {
+ padding-top: 9px ;
+ padding-right: 27px ;
+ padding-bottom: 9px ;
+ padding-left: 24px ;
+ font-size: 15px  ; 
+ font-family: Tahoma, Arial, sans-serif;
+ text-align: left  ; 
+ font-weight: bold  ; 
+ font-style: normal ;
+ text-decoration: none ;
+ text-transform: none ;
+ display: block; 
+ white-space: nowrap; 
+ position: relative; 
+ background-image: none;
+ border-radius: 15px 0 15px 0 ;
+ -moz-border-radius:  15px 0 15px 0 ;
+ -webkit-border-top-left-radius: 15px; 
+ -webkit-border-bottom-right-radius: 15px; 
+}
+.swmenufree  li:last-child > a{
+}
+.swmenufree-trigger:hover,
+.swmenufree li:hover > a{
+ background-image: none;
+}
+.swmenufree-trigger:hover,
+*html .swmenufree li a:hover {
+ background-image: none;
+}
+.swmenufree-trigger.sw_opened,
+.swmenufree  .sw_parent.sw_opened,
+.swmenufree li.sw_active a {
+ background-image: none;
+ color: #1D1D63  ; 
+ position: relative; 
+}
+.swmenufree li:hover > ul{
+ margin:0px 0 0 0px ; 
+ visibility:visible;
+ opacity:1 ;
+ height:auto; 
+ width:auto; 
+}
+.swmenufree ul{
+ list-style:none ;
+ margin:0 0 0 10px ; 
+ left:100% ; 
+ top:0px ; 
+ visibility:hidden;
+ position:absolute ;
+ z-index:9999; 
+ opacity:0;
+ transition: opacity 0.267s ;
+ background-image: none;
+ padding-top:0px;
+ padding-right:0px;
+ padding-bottom:0px;
+ padding-left:0px;
+ box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+ }
+.swmenufree ul li{
+ float:none ;
+ margin-top:0px;
+ margin-right:0px;
+ margin-bottom:0px;
+ margin-left:0px;
+ padding: 0 0 0px 0; 
+ display:block;
+}
+.swmenufree ul ul{
+ left:0px ; 
+ top:0px ; 
+ left:100% ; 
+ margin: 0 0 0 10px ; 
+}
+.swmenufree li.sw_active ul li a ,
+.swmenufree ul li a {
+ padding-top: 9px ;
+ padding-right: 28px ;
+ padding-bottom: 10px ;
+ padding-left: 15px ;
+ font-size: 12px  ; 
+ font-family: Tahoma, Arial, sans-serif; 
+ text-align: left  ; 
+ font-weight: normal  ; 
+ font-style: normal ;
+ text-decoration: none ;
+ text-transform: none ;
+ display: block; 
+ float:none; 
+ white-space: nowrap ; 
+ background-color: #42ADFF ; 
+ background-image: none;
+ color: #F0F9FC  ; 
+ border-top-width:0;
+ border-top-style:none;
+ border-right-width:0;
+ border-right-style:none;
+ border-bottom-width:0;
+ border-bottom-style:none;
+ border-left-width:0;
+ border-left-style:none;
+ width:auto; 
+ height:auto; 
+ line-height:1; 
+ border-radius: 0 0 0 0 ;
+ -moz-border-radius:  0 0 0 0 ;
+ box-shadow:none;
+ -moz-box-shadow:none;
+ -webkit-box-shadow:none;
+ text-shadow:none;
+ -moz-text-shadow:none;
+ -webkit-text-shadow:none;
+ opacity:1 ;
+}
+.swmenufree li.sw_active ul li:first-child > a ,
+.swmenufree ul li:first-child > a{
+}
+.swmenufree li.sw_active ul li:last-child:first-child > a ,
+.swmenufree ul li:last-child:first-child > a{
+}
+.swmenufree li.sw_active ul li:last-child > a ,
+.swmenufree ul li:last-child > a{
+}
+*html .swmenufree ul a{ /* IE6 */  
+}
+*:first-child+html .swmenufree ul a{ /* IE7 */ 
+}
+.swmenufree li.sw_active ul li a:hover ,
+.swmenufree ul a:hover {
+ background-color: #E6E612  ; 
+ background-image: none;
+ color: #1E2120  ; 
+}
+.swmenufree li.sw_active ul li:hover > a ,
+.swmenufree ul li:hover > a {
+ background-color: #E6E612  ; 
+ background-image: none;
+ color: #1E2120  ; 
+}
+.swmenufree ul li > a.sw_parent.sw_opened  ,
+.swmenufree li.sw_active ul li > a.sw_opened ,
+.swmenufree li.sw_active ul li.sw_active > a {
+ background-color: #F9FF47  ; 
+ background-image: none;
+ color: #121212  ; 
+}
+* html .swmenufree             { zoom: 1; } /* IE6 */
+*:first-child+html .swmenufree { zoom: 1; } /* IE7 */
+.swmenufree li:hover > a img.seq2,
+.swmenufree li.sw_active a img.seq2,
+.swmenufree li.sw_active ul li > a img.seq1,
+.swmenufree li.sw_active ul li:hover > a img.seq2,
+.swmenufree img.seq1
+{
+ display:    inline; 
+}
+.swmenufree img.seq2,
+.swmenufree li.sw_active  a img.seq1,
+.swmenufree li.sw_active ul li:hover > a img.seq1,
+.swmenufree li.sw_active ul li > a img.seq2,
+.swmenufree li:hover > a img.seq1
+{
+ display:   none; 
+}
+.swmenufree-trigger {
+ display: none;
+ cursor:pointer;
+}
+.swmenufree .sw_icon {
+ display: none;
+ cursor:pointer;
+}
+@media screen and (max-width: 522px) {
+.swmenufree-wrap {
+ position:relative;
+}
+.swmenufree-wrap * {
+ box-sizing:border-box;
+}
+.swmenufree .sw_indicator {
+ display: none;
+}
+.swmenufree ul .sw_indicator {
+ display: none;
+}
+.swmenufree .sw_icon {
+ display: block;
+ cursor:pointer;
+}
+.swmenufree{
+ width:auto; 
+ z-index:1; 
+ position:relative; 
+ margin:0; 
+ display: block; 
+ overflow:hidden; 
+ left:0 !important; 
+ box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius: 0;
+ -moz-border-radius:  0;
+ -webkit-border-top-left-radius: 0; 
+ -webkit-border-top-right-radius: 0; 
+ -webkit-border-bottom-right-radius: 0; 
+ -webkit-border-bottom-left-radius: 0; 
+ border:none;
+  padding:0;
+ }
+.swmenufree a{
+ float:none; 
+ position:relative; 
+ margin:0; 
+ display: block; 
+ box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius: 0;
+ -moz-border-radius:  0;
+ -webkit-border-top-left-radius: 0; 
+ -webkit-border-top-right-radius: 0; 
+ -webkit-border-bottom-right-radius: 0; 
+ -webkit-border-bottom-left-radius: 0; 
+ border:none;
+ }
+.swmenufree li:hover > a{
+ background-image: none;
+}
+.swmenufree ul{
+ position:relative; 
+ visibility:visible; 
+ margin:0 !important; 
+ margin-left:0px !important; 
+ left:0 !important; 
+ width:auto; 
+ opacity:1; 
+ display:none; 
+ box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius: 0;
+ -moz-border-radius:  0;
+ -webkit-border-top-left-radius: 0; 
+ -webkit-border-top-right-radius: 0; 
+ -webkit-border-bottom-right-radius: 0; 
+ -webkit-border-bottom-left-radius: 0; 
+ border:none;
+  padding:0;
+ }
+.swmenufree  li.sw_active ul li:hover  a,
+.swmenufree  ul li:hover  a{
+ background-color: #42ADFF ; 
+ background-image: none;
+}
+.swmenufree ul ul{
+ display:none; 
+}
+.swmenufree li {
+ position:relative; 
+ width:100%; 
+ display:block; 
+ margin:0;
+ }
+.swmenufree ul li {
+ margin:0 !important;
+ }
+@media screen and (min-width: 522px) {
+.swmenufree-wrap,
+.swmenufree ul,
+.swmenufree  {
+}
+}
+.swmenufree ul li:last-child  a,
+.swmenufree ul li:first-child  a,
+.swmenufree li.sw_active ul li a,
+.swmenufree ul li a{
+ box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  border-radius: 0;
+ -moz-border-radius:  0;
+ -webkit-border-top-left-radius: 0; 
+ -webkit-border-top-right-radius: 0; 
+ -webkit-border-bottom-right-radius: 0; 
+ -webkit-border-bottom-left-radius: 0; 
+ border:none;
+ }
+.swmenufree-trigger.sw_opened img.seq3,
+.swmenufree-trigger   img.seq4,
+.swmenufree   img.seq4,
+.swmenufree  .sw_opened img.seq3{
+ display:none;
+}
+.swmenufree-trigger.sw_opened img.seq4,
+.swmenufree   img.seq3,
+.swmenufree  .sw_opened img.seq4{
+ display:inline;
+}
+}
+.swmenufree {
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree a {
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li a:hover{
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+*html .swmenufree li a:hover {
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active a {
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree ul{
+ -pie-background:none ;
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul a ,
+.swmenufree  ul li  a {
+ -pie-background:none ;
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul li:first-child > a ,
+.swmenufree ul li:first-child > a{
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul li:last-child:first-child > a ,
+.swmenufree ul li:last-child:first-child > a{
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul li:last-child > a ,
+.swmenufree ul li:last-child > a{
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul li a:hover ,
+.swmenufree ul a:hover {
+ -pie-background:none ;
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree li.sw_active ul li:hover > a ,
+.swmenufree ul li:hover > a {
+ -pie-background:none ;
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+.swmenufree ul li > a.sw_parent.sw_opened  ,
+.swmenufree li.sw_active ul li > a.sw_opened ,
+.swmenufree li.sw_active ul li.sw_active > a {
+ -pie-background:none ;
+ behavior: url(https://www.beynost.fr/modules/mod_swmenufree/helpers/PIE.php);
+}
+#swmenufree96{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree97{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree109{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree95{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree84{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree122{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree78{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree79{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree80{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree81{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree113{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree114{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree83{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree82{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree85{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree91{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree92{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree93{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree94{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree125{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree130{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree34{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree58{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree126{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree71{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree72{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree73{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree75{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree76{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree77{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree131{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree134{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree74{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree61{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree116{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree67{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree69{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree70{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree86{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree119{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree118{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree63{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree123{
+background-color: #80AFB7 !important;
+
+}
+#swmenufree64{
+background-color: #80AFB7 !important;
+
+}
+
+-->
+		</style>
+		<!--end swmenufree CSS and Javascript-->
+		<link rel="stylesheet" href="/templates/beynost/css/template.css" type="text/css">
+	</head>
+	<body class="">
+		<div id="all">
+			<!-- dbut tout le site -->
+			<div id="header">
+				<!-- dbut haut de page -->
+				<div id="headeravant">
+					<!-- dbut avant haut de page -->
+					<h1 id="logo">
+						<!-- logo --><a href="http://www.beynost.fr" alt="retour à la page d'accueil du site de Beynost" title="retour à la page d'accueil du site de Beynost"> </a></h1>
+					<div id="header1">
+						<!-- partie au dessus du menu -->
+					</div>
+					<div id="header2">
+						<!-- partie au dessus du logo ccmp -->
+					</div>
+					<div id="logoccmp">
+						<!-- logo ccmp --><a href="http://www.cc-miribel.fr" alt="lien vers le site de la CCMP" title="lien vers le site de la CCMP"> </a></div>
+					<div id="headermenu">
+						<!-- dbut menu haut -->
+						<div class="module">
+							<div>
+								<div>
+									<div>
+										<ul class="nav menu-nav mod-list">
+											<li class="item-28"><a href="/decouvrir-beynost">Découvrir Beynost</a></li>
+											<li class="item-29"><a href="/beynost-pratique">Beynost Pratique</a></li>
+											<li class="item-30"><a href="/vie-associative">Vie associative</a></li>
+											<li class="item-89"><a href="/marches-publics">Marchés publics</a></li>
+											<li class="item-194 current active"><a href="/documents-telechargeables2">Documents téléchargeables</a></li>
+											<li class="item-18"><a href="/magazines-de-la-commune">Magazines de Beynost</a></li>
+											<li class="item-55"><a href="/espace-presse">Espace Presse</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fin avant haut de page -->
+				<div id="headerfond">
+					<!-- dbut fond haut de page -->
+					<div class="module">
+						<div>
+							<div>
+								<div>
+									<div id="showplus_images_bandeauhaut" class="showplus-container showplus-center">
+										<ul class="showplus-slideshow">
+											<li id="showplus_images_bandeauhaut:1"><img src="/images/bandeauhaut/image01.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:2"><img src="/images/bandeauhaut/image02.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:3"><img src="/images/bandeauhaut/image03.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:4"><img src="/images/bandeauhaut/image04.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:5"><img src="/images/bandeauhaut/image05.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:6"><img src="/images/bandeauhaut/image06.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:7"><img src="/images/bandeauhaut/image07.jpg" alt=""></li>
+											<li id="showplus_images_bandeauhaut:8"><img src="/images/bandeauhaut/image09.jpg" alt=""></li>
+											<li class="showplus-default"><img src="/images/bandeauhaut/image01.jpg" alt=""></li>
+										</ul>
+										<p class="showplus-pager"><a href="#showplus_images_bandeauhaut:1">1</a> | <a href="#showplus_images_bandeauhaut:2">2</a> | <a href="#showplus_images_bandeauhaut:3">3</a> | <a href="#showplus_images_bandeauhaut:4">4</a> | <a href="#showplus_images_bandeauhaut:5">5</a> | <a href="#showplus_images_bandeauhaut:6">6</a> | <a href="#showplus_images_bandeauhaut:7">7</a> | <a href="#showplus_images_bandeauhaut:8">8</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fin fond haut de page -->
+			</div>
+			<!-- fin haut de page -->
+			<div id="container">
+				<!-- dbut partie principale -->
+				<div id="toplink">
+					<!-- dbut lien haut de page -->
+					<div class="module">
+						<div>
+							<div>
+								<div>
+									<div class="moduletable_inner backtotop_wrp"><span id="backtotop" class="backtotop">Haut de page</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fin lien haut de page  -->
+				<div id="left">
+					<!-- dbut partie gauche -->
+					<div id="leftmenu">
+						<!-- dbut menu gauche -->
+						<div class="module">
+							<div>
+								<div>
+									<div>
+										<!--swmenufree10.6_J2.5-3+ css3menu by http://www.swmenufree.com-->
+										<div class="swmenufree-wrap" align="left">
+											<ul class="swmenufree">
+												<li><a class="sw_parent" id="swmenufree27" href="javascript:void(0);">Mairie</a>
+													<ul id="swmenufree27-sub">
+														<li><a id="swmenufree96" href="/mairie-27/le-conseil-municipal">Le Conseil Municipal</a></li>
+														<li><a id="swmenufree97" href="/mairie-27/les-services-municipaux">Les services municipaux</a></li>
+														<li><a id="swmenufree109" href="/mairie-27/etat-civil">Etat civil</a></li>
+														<li><a id="swmenufree95" href="/mairie-27/relais-de-quartier">Relais de quartier</a></li>
+														<li><a id="swmenufree84" href="/mairie-27/la-mairie-recrute">La Mairie recrute</a></li>
+														<li><a id="swmenufree122" href="/mairie-27/marches-publics">Marchés publics</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree37" href="javascript:void(0);">Enfance, jeunesse et vie scolaire</a>
+													<ul id="swmenufree37-sub">
+														<li><a class="sw_parent" id="swmenufree78" href="/enfance-jeunesse-et-vie-scolaire/pole-petite-enfance-les-acrobates">Pôle petite enfance les acrobates</a>
+															<ul id="swmenufree78-sub">
+																<li><a id="swmenufree79" href="/enfance-jeunesse-et-vie-scolaire/pole-petite-enfance-les-acrobates/eetablissement-daccueil-du-jeune-enfan-eaje">Etablissement d'accueil du jeune enfant (EAJE)</a></li>
+																<li><a id="swmenufree80" href="/enfance-jeunesse-et-vie-scolaire/pole-petite-enfance-les-acrobates/relais-assistante-maternelle-ram">Relais assistantes maternelles (RAM)</a></li>
+															</ul>
+														</li>
+														<li><a id="swmenufree81" href="/enfance-jeunesse-et-vie-scolaire/ecole-primaire-des-sources">Ecole primaire des sources</a></li>
+														<li><a id="swmenufree113" href="/enfance-jeunesse-et-vie-scolaire/restaurant-scolaire">Restaurant scolaire</a></li>
+														<li><a id="swmenufree114" href="/enfance-jeunesse-et-vie-scolaire/periscolaire">Périscolaire</a></li>
+														<li><a id="swmenufree83" href="/enfance-jeunesse-et-vie-scolaire/club-ados">Club Ados</a></li>
+														<li><a id="swmenufree82" href="/enfance-jeunesse-et-vie-scolaire/college-louis-armstrong">Collège Louis Armstrong</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree2" href="javascript:void(0);">Action sociale</a>
+													<ul id="swmenufree2-sub">
+														<li><a id="swmenufree85" href="/action-sociale/le-ccas">Le CCAS</a></li>
+														<li><a id="swmenufree91" href="/action-sociale/seniors">Séniors</a></li>
+														<li><a id="swmenufree92" href="/action-sociale/sante-et-aide-a-domicile">Santé et aide à domicile</a></li>
+														<li><a id="swmenufree93" href="/action-sociale/famille-et-jeunesse">Famille et jeunesse</a></li>
+														<li><a id="swmenufree94" href="/action-sociale/solidarite">Solidarité</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree50" href="javascript:void(0);">Urbanisme, environnement & Cadre de vie</a>
+													<ul id="swmenufree50-sub">
+														<li><a class="sw_parent" id="swmenufree125" href="javascript:void(0);">Urbanisme</a>
+															<ul id="swmenufree125-sub">
+																<li><a id="swmenufree130" href="/urbanisme-environnement-a-cadre-de-vie/urbanisme-environnement-a-cadre-de-vie/plan-local-durbanisme-plu">Plan Local d'Urbanisme (PLU)</a></li>
+																<li><a id="swmenufree34" href="/urbanisme-environnement-a-cadre-de-vie/urbanisme-environnement-a-cadre-de-vie/construire-a-beynost">Construire à Beynost</a></li>
+																<li><a id="swmenufree58" href="/urbanisme-environnement-a-cadre-de-vie/urbanisme-environnement-a-cadre-de-vie/le-droit-de-preemption-urbain">Le droit de préemption urbain</a></li>
+															</ul>
+														</li>
+														<li><a class="sw_parent" id="swmenufree126" href="javascript:void(0);">Environnement & Cadre de vie</a>
+															<ul id="swmenufree126-sub">
+																<li><a id="swmenufree71" href="/urbanisme-environnement-a-cadre-de-vie/environnement/beynost-un-patrimoine-naturel-a-preserver">Beynost : un patrimoine naturel à préserver</a></li>
+																<li><a id="swmenufree72" href="/urbanisme-environnement-a-cadre-de-vie/environnement/plan-de-prevention-des-risques-naturels-pprn">Plan de Prévention des Risques Naturels (PPRN)</a></li>
+																<li><a id="swmenufree73" href="/urbanisme-environnement-a-cadre-de-vie/environnement/autres-risques-lies-a-lenvironnement">Autres risques liés à l'environnement</a></li>
+																<li><a id="swmenufree75" href="/urbanisme-environnement-a-cadre-de-vie/environnement/gestion-de-leau">Gestion de l'eau</a></li>
+																<li><a id="swmenufree76" href="/urbanisme-environnement-a-cadre-de-vie/environnement/collecte-et-tri-des-dechets-menagers">Collecte et tri des déchets ménagers</a></li>
+																<li><a id="swmenufree77" href="/urbanisme-environnement-a-cadre-de-vie/environnement/prevention-et-lutte-contre-les-nuisances">Prévention et lutte contre les nuisances</a></li>
+																<li><a id="swmenufree131" href="/urbanisme-environnement-a-cadre-de-vie/environnement/taxe-locale-sur-la-publicite-exterieure-tlpe">Taxe locale sur la publicité extérieure (TLPE)</a></li>
+																<li><a id="swmenufree134" href="/urbanisme-environnement-a-cadre-de-vie/environnement/risques-majeurs">Risques majeurs</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree41" href="javascript:void(0);">Aménagement & Travaux</a>
+													<ul id="swmenufree41-sub">
+														<li><a id="swmenufree74" href="/amenagement-a-travaux/espaces-verts-et-fleurissement">Espaces verts et fleurissement</a></li>
+														<li><a id="swmenufree61" href="/amenagement-a-travaux/projets-damenagement">Projets d'aménagement</a></li>
+														<li><a id="swmenufree116" href="/amenagement-a-travaux/realisations-et-travaux-en-cours">Réalisations et travaux en cours</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree48" href="javascript:void(0);">Prévention & Sécurité</a>
+													<ul id="swmenufree48-sub">
+														<li><a id="swmenufree67" href="/web-links/police-municipale">Police municipale</a></li>
+														<li><a id="swmenufree69" href="/web-links/centre-de-premiere-intervention">Centre de Première Intervention</a></li>
+														<li><a id="swmenufree70" href="/web-links/campagnes-de-prevention">Campagnes de prévention</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree49" href="javascript:void(0);">Patrimoine & Vie culturelle</a>
+													<ul id="swmenufree49-sub">
+														<li><a id="swmenufree86" href="/patrimoine-a-vie-culturelle/de-lhistoire-au-patrimoine">De l'histoire au patrimoine</a></li>
+														<li><a id="swmenufree119" href="/patrimoine-a-vie-culturelle/action-culturelle-communale">Action culturelle communale</a></li>
+														<li><a id="swmenufree118" href="/vie-associative">Vie associative</a></li>
+													</ul>
+												</li>
+												<li><a class="sw_parent" id="swmenufree56" href="javascript:void(0);">Loisirs & Sports</a>
+													<ul id="swmenufree56-sub">
+														<li><a id="swmenufree63" href="/loisirs-et-sports/sites-et-infrastructures-communaux">Sites et infrastructures communaux</a></li>
+														<li><a id="swmenufree123" href="/loisirs-et-sports/autres-sites-sur-le-territoire-communal">Autres sites sur le territoire communal</a></li>
+														<li><a id="swmenufree64" href="/vie-associative">Vie associative</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<script type="text/javascript">
+<!--
+jQuery('.swmenufree .sw_parent').click( function(){
+if(jQuery(window).width() <= 522){
+jQuery('#'+this.id).attr( 'href','javascript:void(0)');
+jQuery('#'+this.id).next().slideToggle(200,function(){
+if(jQuery('#'+this.id).css('display')=='block'){jQuery('#'+this.id).prev().addClass('sw_opened')}else{jQuery('#'+this.id).prev().removeClass('sw_opened')}
+});
+//alert(p_height);
+}
+});
+//-->
+										</script>
+										<script type="text/javascript">
+										</script>
+										<!--end swmenufree menu module-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- fin menu gauche -->
+					<div id="contact">
+						<!-- dbut menu contact -->
+					</div>
+					<!-- fin menu contact -->
+				</div>
+				<!-- fin partie gauche -->
+				<div id="main" class="large">
+					<!-- dbut partie centrale -->
+					<div class="k-ui-ltr  k-ui-namespace com_docman">
+						<!--[if lte IE 8 ]><div class="old-ie"><![endif]-->
+						<div class="docman_table_layout docman_table_layout--default">
+							<div class="back"><a href="/documents-telechargeables2"> Accueil des documents téléchargeables</a></div>
+							<div class="docman_category">
+								<h3 class="koowa_header"><span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> Comptes rendus 2018 </span> </span> </span></h3>
+							</div>
+							<form action="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018" method="get" class="-koowa-grid koowa_table_list">
+								<div class="docman_block">
+									<h3 class="koowa_header">Documents</h3>
+								</div>
+								<table class="table table-striped koowa_table koowa_table--documents k-js-documents-table">
+									<thead style="display: none">
+										<tr>
+											<th width="1%" data-toggle="true" class="k-table-data--toggle">Toggle</th>
+											<th>Titre</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="docman_item" data-document="f59a1ad1-5c9c-4c14-be4a-536bfbf0dd09" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1132-compte-rendu-du-19-fevrier/file" title="compte rendu du 19 février.pdf" class="docman_track_download" data-title="01 - CR 19022018" data-id="1132"><span itemprop="name">01 - CR 19022018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:1290"'> <span class="detail-label">(1290 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="14d1dc27-2786-406b-a1fb-61ecc325ceb2" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1136-02-cr-du-20032018/file" title="CM du 20 Mars 2018.pdf" class="docman_track_download" data-title="02 - CR 20032018" data-id="1136"><span itemprop="name">02 - CR 20032018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:1174"'> <span class="detail-label">(1174 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="6a742415-fbd8-4827-8494-4cd109f5901a" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1153-03-cr-03042018/file" title="CM du 3 Avril 2018.pdf" class="docman_track_download" data-title="03 - CR 03042018" data-id="1153"><span itemprop="name">03 - CR 03042018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:766"'> <span class="detail-label">(766 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="6362969f-0f88-4a3f-8529-96e7914a0db1" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1161-cm-du-4-juin-2018/file" title="CM du 4 Juin 2018.pdf" class="docman_track_download" data-title="04 - CR 04062018" data-id="1161"><span itemprop="name">04 - CR 04062018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:1631"'> <span class="detail-label">(1631 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="043fd3b3-5efc-4425-bece-99a489b30e7d" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1167-05-cr-10072018/file" title="CM du 10 Juillet 2018.pdf" class="docman_track_download" data-title="05 - CR 10072018" data-id="1167"><span itemprop="name">05 - CR 10072018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:1165"'> <span class="detail-label">(1165 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="eaa9df5a-c2b2-4a0d-af57-8c71471fa90a" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1177-06-cr-27092018/file" title="06 - CR 27092018.pdf" class="docman_track_download" data-title="06 - CR 27092018" data-id="1177"><span itemprop="name">06 - CR 27092018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:929"'> <span class="detail-label">(929 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="f0ada13f-da9d-4230-9a89-704b675995ee" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1199-cm-25-10-2018/file" title="CM 25 10 2018.pdf" class="docman_track_download" data-title="07 - CR 25102018" data-id="1199"><span itemprop="name">07 - CR 25102018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:833"'> <span class="detail-label">(833 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="739178d5-5fcd-4837-b447-3f43ca08eef3" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1202-cr-cm-du-15-nov-2018/file" title="CR CM du 15 Nov 2018.pdf" class="docman_track_download" data-title="08 - CR 15112018" data-id="1202"><span itemprop="name">08 - CR 15112018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:622"'> <span class="detail-label">(622 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+										<tr class="docman_item" data-document="9f252249-058e-4f5e-9acb-b5e8abbbb2cf" itemscope itemtype="http://schema.org/CreativeWork">
+											<td class="k-table-data--toggle"></td>
+											<td>
+												<meta itemprop="contentUrl" content=""><span class="koowa_header"> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/documents-telechargeables2/mairie/le-conseil-municipal/comptes-rendus-2018/1208-12-cm-du-18-dec-2018/file" title="12 CM du 18 Déc 2018.pdf" class="docman_track_download" data-title="09 - CR 18122018" data-id="1208"><span itemprop="name">09 - CR 18122018</span><!--
+                                        --> <!--
+                                    --></a> <meta itemprop="interactionCount" content='”UserDownloads:610"'> <span class="detail-label">(610 téléchargements)</span> <span class="label label-danger label-important">Populaires</span> </span> </span> </span> </span></td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="k-pagination"></div>
+							</form>
+						</div>
+						<!--[if lte IE 8 ]></div><![endif]-->
+					</div>
+				</div>
+				<!-- fin partie centrale -->
+				<div id="right">
+					<!-- dbut partie droite -->
+					<div id="right1">
+						<!-- dbut partie droite 1 -->
+					</div>
+					<!-- fin partie droite 1 -->
+					<div id="crcm">
+						<!-- dbut partie droite 2 -->
+					</div>
+					<!-- fin partie droite 2 -->
+					<div id="right2">
+						<!-- dbut partie droite 3 -->
+					</div>
+					<!-- fin partie droite 3 -->
+				</div>
+				<!-- fin partie droite-->
+			</div>
+			<!-- fin partie principale  -->
+			<div style="clear: both;"></div>
+			<div id="footer">
+				<!-- dbut pied de page -->
+				<div id="footermenu">
+					<!-- dbut menu de pied de page -->
+					<div class="module_menu">
+						<div>
+							<div>
+								<div>
+									<ul class="nav menu mod-list">
+										<li class="item-133"><a href="/actualites">Actualités</a></li>
+										<li class="item-40"><a href="/plan-du-site">Plan du site</a></li>
+										<li class="item-38"><a href="/mentions-legales">Mentions légales</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fin menu de pied de page -->
+				<div id="copyright">
+					<!-- dbut copyright -->
+					<div class="module">
+						<div>
+							<div>
+								<div>
+									<div>Copyright © 2020 Beynost - Tous droits réservés</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fin copyright -->
+			</div>
+			<!-- fin pied de page -->
+		</div>
+		<!-- fin tout le site -->
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3692418-8");
+pageTracker._trackPageview();
+} catch(err) {}
+		</script>
+		<!--googleoff: all-->
+		<div class="cadre_alert_cookies" id="cadre_alert_cookies" style="opacity:1;text-align:center;position:fixed;z-index:10000;left: 0;right: 0;bottom: 0; margin:0px;">
+			<div class="cadre_inner_alert_cookies" style="display: inline-block;width: 100%;margin:auto;max-width:100%;background-color: #ffffff;border: 1px solid #a0c07c;">
+				<div class="cadre_inner_texte_alert_cookies" style="display: inline-block;padding:10px;color: #000000">
+					<div class="cadre_texte pull-left">Nous utilisons des cookies pour améliorer votre expérience de navigation.<br>En continuant votre visite sans modifier vos paramètres, vous acceptez l'utilisation de ces cookies.</div>
+					<div class="cadre_bouton pull-left">
+						<div class="pull-left  col-sm-6 btn_close" style="margin:0;text-align:right"><button onclick="CloseCadreAlertCookie();" style="background:#a0c07c;color:#000000" class="btn   popup-modal-dismiss">OK</button></div>
+						<div class="pull-left  col-sm-6 btn_readmore" style="margin:0;text-align:right"><a style="background:#a0c07c;color:#000000" class="btn   read_more" href="/mentions-legales">En savoir plus</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--googleon: all-->
+		<script type="text/javascript">/*<![CDATA[*/var name = "fmalertcookies" + "=";var ca = document.cookie.split(";");var acceptCookie = false;for(var i=0; i<ca.length; i++) {var c = ca[i];while (c.charAt(0)==" ") c = c.substring(1);if (c.indexOf(name) == 0){ acceptCookie = true; document.getElementById("cadre_alert_cookies").style.display="none";}}if(!acceptCookie) { ;for(var i=0; i<ca.length; i++) {var c1 = ca[i];document.cookie= c1+'; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';}}var d = new Date();d.setTime(d.getTime() + (30*(24*60*60*1000)));var expires_cookie = "expires="+d.toUTCString();function CloseCadreAlertCookie(){document.getElementById('cadre_alert_cookies').style.display='none'; document.cookie='fmalertcookies=true; '+expires_cookie+'; path=/';}/*]]>*/</script>
+	</body>
+</html>
