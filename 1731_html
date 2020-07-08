@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html class="no-js" lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="IMG/siteon0.jpg?1530655200">
+		<link rel="alternate" type="application/rss+xml" title="Syndiquer tout le site" href="spip.php?page=backend">
+		<script type="text/javascript">/* <![CDATA[ */
+var box_settings = {tt_img:true,sel_g:"a[type='image/jpeg'],a[type='image/png'],a[type='image/gif'],.tuiles.diaporama > .tuile > a",sel_c:".mediabox",trans:"elastic",speed:"200",ssSpeed:"2500",maxW:"90%",maxH:"90%",minW:"400px",minH:"",opa:"0.9",str_ssStart:"Diaporama",str_ssStop:"Arrêter",str_cur:"{current}/{total}",str_prev:"Précédent",str_next:"Suivant",str_close:"Fermer",splash_url:""};
+var box_settings_splash_width = "600px";
+var box_settings_splash_height = "90%";
+var box_settings_iframe = true;
+/* ]]> */
+		</script>
+		<!-- insert_head_css -->
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/ui/jquery-ui.css">
+		<link rel="stylesheet" href="plugins-dist/mediabox/colorbox/black-striped/colorbox.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/porte_plume/css/barre_outils.css?1576848323">
+		<link rel="stylesheet" type="text/css" media="all" href="local/cache-css/cssdyn-css_barre_outils_icones_css-2948d0b7.css?1580898850">
+		<link rel="stylesheet" href="plugins/auto/portail74/public/squelettes/css/albums.css" type="text/css">
+		<script src="prive/javascript/jquery.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/jquery-migrate-3.0.1.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.form.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.autosave.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.placeholder-label.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/ajaxCallback.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/js.cookie.js?1576848320" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.cookie.js?1576848320" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery-ui.js?1576848324" type="text/javascript"></script>
+		<!-- insert_head -->
+		<script src="plugins-dist/mediabox/javascript/jquery.colorbox.js?1576848325" type="text/javascript"></script>
+		<script src="plugins-dist/mediabox/javascript/spip.mediabox.js?1576848325" type="text/javascript"></script>
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.markitup_pour_spip.js?1576848323"></script>
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.previsu_spip.js?1576848323"></script>
+		<script type="text/javascript" src="local/cache-js/jsdyn-javascript_porte_plume_start_js-4da0e2fc.js?1580898850"></script>
+		<!-- début de : ckeditor_insert_head -->
+		<script type="application/javascript" src="https://www.usses-et-rhone.fr/lib/ckeditor/ckeditor.js"></script>
+		<script type="application/javascript">CKEDITOR.config.jqueryOverrideVal=true;</script>
+		<script type="application/javascript" src="https://www.usses-et-rhone.fr/lib/ckeditor/adapters/jquery.js"></script>
+		<script type="application/javascript" src="local/cache-js/jsdyn-ckeditor4spip_js-c27b1384.js?1580898850"></script>
+		<script type="application/javascript">
+$(document).ready(function(){
+	function loadCKEditor() {
+		// la configuration de ckeditor :
+		CKEDITOR.ckeditorpath="https:\/\/www.usses-et-rhone.fr\/lib\/ckeditor\/ckeditor.js";
+		CKEDITOR.spipurl="https:\/\/www.usses-et-rhone.fr\/spip.php";
+		CKEDITOR.ckpreferedversion='3.6.5';
+		CKEDITOR.ckeditmode='spip';
+		CKEDITOR.ckConfig = {"minwidth":488,"vignette":200,"filebrowserSpipdocBrowseUrl":"https:\/\/www.usses-et-rhone.fr\/spip.php?page=select_documents","format_tags":"h3;pre","format_h3":{"element":"h3","attributes":{"class":"spip"}},"format_pre":{"element":"pre","attributes":{"class":"spip"}},"forcePasteAsPlainText":true,"toolbar_SpipFull":[["Cut","Copy","Paste","PasteText"],["SpellChecker","Scayt"],["Undo","Redo"],["Find","Replace"],["SelectAll","RemoveFormat"],["Bold","Italic","Underline","Strike"],"\/",["Subscript","Superscript"],["NumberedList","BulletedList","Outdent","Indent"],["JustifyLeft","JustifyCenter","JustifyRight","JustifyBlock"],["Spip","Link","Unlink","Anchor"],"\/",["SpipModeles"],["Table","HorizontalRule","SpecialChar"],"\/",["Styles","Format","Font","FontSize"],["TextColor","BGColor"],"\/",["Maximize","About"]],"toolbar_SpipBasic":[["Cut","Copy","PasteText","-","Bold","Italic","Underline","-","NumberedList","BulletedList","-","Spip","Link","Unlink","-","About"]],"toolbar":"SpipFull","uiColor":"#eee","language":"fr","contentsCss":["https:\/\/www.usses-et-rhone.fr\/prive\/spip_style.css","https:\/\/www.usses-et-rhone.fr\/plugins\/auto\/ckeditor\/v0.17.1\/css\/cked-editor.css"],"font_names":"serif;sans serif;monospace;cursive;fantasy","filebrowserBrowseUrl":"https:\/\/www.usses-et-rhone.fr\/spip.php?page=filebrowser&type=files","filebrowserImageBrowseLinkUrl":"https:\/\/www.usses-et-rhone.fr\/spip.php?page=filebrowser&type=files","filebrowserImageBrowseUrl":"https:\/\/www.usses-et-rhone.fr\/spip.php?page=filebrowser&type=images","filebrowserFlashBrowseUrl":"https:\/\/www.usses-et-rhone.fr\/spip.php?page=filebrowser&type=flash","filebrowserUploadUrl":null,"filebrowserImageUploadUrl":null,"filebrowserFlashUploadUrl":null,"filebrowserWindowWidth":682,"filebrowserWindowHeight":500,"extraPlugins":"spip,spipmodeles","loadExtraPlugins":{"spip":"https:\/\/www.usses-et-rhone.fr\/plugins\/auto\/ckeditor\/v0.17.1\/ckeditor-plugin\/spip\/","spipmodeles":"https:\/\/www.usses-et-rhone.fr\/plugins\/auto\/ckeditor\/v0.17.1\/ckeditor-plugin\/spipmodeles\/"},"colorButton_enableMore":false,"height":500,"scayt_autoStartup":false,"scayt_sLang":"fr_FR","resize_enabled":true,"entities":false,"skin":"kama","enterMode":1,"shiftEnterMode":2,"stylesCombo_stylesSet":"spip-styles:https:\/\/www.usses-et-rhone.fr\/spip.php?page=spip-styles","removeDialogTabs":"link:advanced","fontSize_sizes":"8\/8px;9\/9px;10\/10px;11\/11px;12\/12px;14\/14px;16\/16px;18\/18px;20\/20px;22\/22px;24\/24px;26\/26px;28\/28px;36\/36px;48\/48px;72\/72px","dialog_startupFocusTab":true,"readOnly":false,"spip_contexte":{"id":null,"type":null},"forceEnterMode":true,"removePlugins":"blockquote,div,docprops,flash,iframe,image,newpage,pagebreak,pastefromword,placeholder,preview,print,save,showblocks,smiley,sourcearea,templates,uicolor,forms"};
+
+		var ajaxload=[{"0":"#formulaire_forum textarea[name=texte]","1":"Basic","3":"54c01556b8a644870e0ec01f26dd1541"},{"0":"textarea.crayon-active","1":"Full","3":"1c62eb7851e9eaf12196e323a2b31960"}];
+		CKEDITOR.instances = [] ; // normalement aucune instances de CKEDITOR n'est valide à cet instant, on les vide.
+		fullInitCKEDITOR(ajaxload) ;
+	}
+
+	if(typeof onAjaxLoad == 'function') onAjaxLoad(loadCKEditor);
+	loadCKEditor();
+}) ;
+
+		</script>
+		<!-- fin de : ckeditor_insert_head -->
+		<!-- Debut CS -->
+		<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/* Par defaut : enveloppe_mails = -1 */
+
+/*]]>*/-->
+		</style>
+		<!-- Fin CS -->
+		<!-- Debut CS -->
+		<script type="text/javascript"><!--
+var cs_prive=window.location.pathname.match(/\/ecrire\/$/)!=null;
+jQuery.fn.cs_todo=function(){return this.not('.cs_done').addClass('cs_done');};
+var cs_init = function() {
+	/* optimisation : 'IF(1)' */ if(!cs_prive) jQuery("a.spip_out,a.spip_url,a.spip_glossaire",this).attr("target", "_blank"); 
+}
+if(typeof onAjaxLoad=='function') onAjaxLoad(cs_init);
+if(window.jQuery) {
+var cs_sel_jQuery='';
+var cs_CookiePlugin="prive/javascript/jquery.cookie.js";
+jQuery(document).ready(function(){
+	cs_init.apply(document);
+});
+}
+// -->
+		</script>
+		<!-- Fin CS -->
+		<link href="plugins/auto/portail74/public/squelettes/css/normalize.css" rel="stylesheet">
+		<link href="plugins/auto/portail74/public/squelettes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="plugins/auto/portail74/public/squelettes/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		<script src="plugins/auto/portail74/public/squelettes/js/hoverIntent.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/superfish.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/jquery.cycle2.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/jquery.cycle2.carousel.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/modernizr-2.8.3.min.js"></script>
+		<link href="spip.php?page=portail74.css" rel="stylesheet">
+		<script src="plugins/auto/portail74/public/squelettes/js/portail74.js" type="text/javascript"></script>
+		<title>Conseils communautaires - Communauté de Communes Usses et Rhône</title>
+		<meta name="description" content="Retrouvez ici tous les comptes-rendus des conseils communautaires.">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1><a href="Francais"> <img class="spip_logo spip_logos" alt="" src="local/cache-vignettes/L148xH100/siteon0-8d67f.jpg?1580898850" width="148" height="100"> <span> <strong>Communauté de Communes Usses et Rhône</strong> <em>Entre Usses et Rhône</em> </span> </a></h1>
+				<div class="haut">
+					<form action="spip.php?page=recherche" method="get" class="formrecherche formulaire_spip"><input name="page" value="recherche" type="hidden"> <input type="text" class="text" size="80" accesskey="4" autocapitalize="off" autocorrect="off" name="recherche" id="recherche" placeholder="Rechercher" value=""> <button type="submit" class="button"> <span class="glyphicon glyphicon-search"></span> <span class="text">Recherche</span> </button></form>
+				</div>
+				<nav class="header">
+					<h2>Navigation</h2><span class="sommaire_button"></span>
+					<ul class="sommaire">
+						<li class="accueil off"><a href="Francais" class="off premier"> <span class="glyphicon glyphicon-home"></span> <span class="text"> Accueil </span> </a></li>
+						<li class="on current"><a href="CCUR" class="on current pere"> <strong> CCUR </strong> </a>
+							<ul>
+								<li class="off"><a href="Documents-d-Orientations" class="off  pere"> <span> Documents d’Orientations Budgétaires </span> </a></li>
+								<li class="off"><a href="Presentation" class="off"> <span> Présentation </span> </a></li>
+								<li class="off"><a href="Statuts-et-Interet-communautaire" class="off"> <span> Statuts et Intérêt communautaire </span> </a></li>
+								<li class="off"><a href="Rapports-d-activites" class="off"> <span> Rapports d’activités </span> </a></li>
+								<li class="off"><a href="Organisation" class="off"> <span> Organigramme des élus </span> </a></li>
+								<li class="on current"><a href="Conseils-communautaires-238" class="on"> <strong> Conseils communautaires </strong> </a></li>
+								<li class="off"><a href="Bulletins-intercommunaux" class="off"> <span> Bulletins intercommunaux </span> </a></li>
+								<li class="off"><a href="26-communes-membres" class="off"> <span> 26 communes membres </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Social" class="off pere"> <span> Vie quotidienne </span> </a>
+							<ul>
+								<li class="off"><a href="Transport" class="off  pere"> <span> Transports </span> </a>
+									<ul>
+										<li class="off"><a href="Inscription-Transports-scolaires" class="off"> <span> Inscription Transports scolaires </span> </a></li>
+										<li class="off"><a href="Scolaires" class="off"> <span> Scolaires </span> </a></li>
+										<li class="off"><a href="Publics" class="off"> <span> Publics </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Petite-enfance-36" class="off  pere"> <span> Petite enfance </span> </a>
+									<ul>
+										<li class="off"><a href="Multi-accueils-Creches" class="off"> <span> Multi-accueils / Crèches </span> </a></li>
+										<li class="off"><a href="Bebe-bus-Karapat" class="off"> <span> Bébé-bus (Karapat) </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Jeunesse-32" class="off  pere"> <span> Jeunesse </span> </a>
+									<ul>
+										<li class="off"><a href="Centres-de-loisirs" class="off"> <span> Centres de loisirs </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Seniors-55" class="off  pere"> <span> Séniors </span> </a>
+									<ul>
+										<li class="off"><a href="ADMR" class="off"> <span> Aide à la personne </span> </a></li>
+										<li class="off"><a href="EHPADS" class="off"> <span> EHPAD </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Sante" class="off  pere"> <span> Santé </span> </a>
+									<ul>
+										<li class="off"><a href="Annuaire-des-professions-de-sante" class="off"> <span> Annuaire des professions de santé </span> </a></li>
+										<li class="off"><a href="Maison-de-Vie-1-Semine" class="off"> <span> Maison de Vie 1 (Semine) </span> </a></li>
+										<li class="off"><a href="Maison-de-Vie-2-Semine" class="off"> <span> Maison de Vie 2 (Semine) </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Offres-d-emploi-251" class="off"> <span> Offres d’emploi </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Environnement" class="off pere"> <span> Environnement </span> </a>
+							<ul>
+								<li class="off"><a href="Assainissement-des-eaux-usees" class="off  pere"> <span> Assainissement des eaux usées </span> </a>
+									<ul>
+										<li class="off"><a href="Collectif" class="off"> <span> Collectif </span> </a></li>
+										<li class="off"><a href="Non-Collectif" class="off"> <span> Non Collectif </span> </a></li>
+										<li class="off"><a href="Revision-du-Zonage-d" class="off"> <span> Révision du Zonage d’Assainissement des Eaux Usées </span> </a></li>
+										<li class="off"><a href="Projet-de-zonage-par-communes" class="off"> <span> Projet de zonage par communes - Plans </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Partenaires" class="off  pere"> <span> Nos partenaires </span> </a>
+									<ul>
+										<li class="off"><a href="Mediation-de-l-eau" class="off"> <span> Médiation de l’eau </span> </a></li>
+										<li class="off"><a href="Agence-de-l-eau-RMC" class="off"> <span> Agence de l’eau RMC </span> </a></li>
+										<li class="off"><a href="Asters" class="off"> <span> Asters </span> </a></li>
+										<li class="off"><a href="France-Nature-Environnement" class="off"> <span> France Nature Environnement Auvergne-Rhône-Alpes (ex-FRAPNA) </span> </a></li>
+										<li class="off"><a href="SMECRU" class="off"> <span> SMECRU </span> </a></li>
+										<li class="off"><a href="Syndicat-Vuache" class="off"> <span> Syndicat Vuache </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Exoneration-de-la-TEOM" class="off"> <span> Exonération de la TEOM </span> </a></li>
+								<li class="off"><a href="collecte-et-traitement-des-dechets" class="off"> <span> Collecte et traitement des déchets </span> </a></li>
+								<li class="off"><a href="Conservation-et-protection-de-la" class="off"> <span> Milieux naturels et zones humides </span> </a></li>
+								<li class="off"><a href="Milieux-aquatiques-et-Prevention" class="off"> <span> Milieux aquatiques et prévention des inondations - GEMAPI </span> </a></li>
+								<li class="off"><a href="Reseau-Natura-2000" class="off"> <span> Réseau Natura 2000 </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Territoire" class="off pere"> <span> Territoire </span> </a>
+							<ul>
+								<li class="off"><a href="SCOT-65" class="off  pere"> <span> SCOT </span> </a>
+									<ul>
+										<li class="off"><a href="Le-SCoT" class="off"> <span> SCoT Usses et Rhône </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Territoire-PLUi" class="off  pere"> <span> PLUi - Plan Local d’Urbanisme Intercommunal </span> </a>
+									<ul>
+										<li class="off"><a href="Definition" class="off"> <span> PLUi, qu’est-ce-que c’est ? </span> </a></li>
+										<li class="off"><a href="PLUi-du-Pays-de-Seyssel" class="off"> <span> PLUi du Pays de Seyssel </span> </a></li>
+										<li class="off"><a href="Plan-Local-d-Urbanisme-416" class="off"> <span> PLUi de la Semine </span> </a></li>
+										<li class="off"><a href="Plan-Local-d-Urbanisme" class="off"> <span> PLUi du Val des Usses </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Enquetes-publiques" class="off  pere"> <span> Enquêtes publiques </span> </a>
+									<ul>
+										<li class="off"><a href="PLUi-de-la-Semine" class="off"> <span> PLUi de la Semine </span> </a></li>
+										<li class="off"><a href="30-PLUi-du-Pays-de-Seyssel" class="off"> <span> PLUi du Pays de Seyssel </span> </a></li>
+										<li class="off"><a href="PLUi-du-Val-des-Usses" class="off"> <span> PLUi du Val des Usses </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="CAUE" class="off  pere"> <span> CAUE </span> </a>
+									<ul>
+										<li class="off"><a href="Conseil-architectural-gratuit-CAUE" class="off"> <span> Conseil architectural gratuit - CAUE </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Habitat" class="off  pere"> <span> Habitat </span> </a>
+									<ul>
+										<li class="off"><a href="La-politique-communautaire" class="off"> <span> La politique communautaire </span> </a></li>
+										<li class="off"><a href="Le-Contrat-de-Ruralite" class="off"> <span> Les aides de l’Anah </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Chartes-et-contrats" class="off  pere"> <span> Chartes et contrats </span> </a>
+									<ul>
+										<li class="off"><a href="Charte-de-2010-230" class="off"> <span> Charte de 2010 </span> </a></li>
+										<li class="off"><a href="Contrat-de-ruralite-231" class="off"> <span> Contrat de ruralité </span> </a></li>
+										<li class="off"><a href="Contrat-Ambition-Region-232" class="off"> <span> Contrat Ambition Région </span> </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="off"><a href="Economie" class="off pere"> <span> Économie </span> </a>
+							<ul>
+								<li class="off"><a href="Zones-d-Activites-Economiques" class="off  pere"> <span> Zones d’Activités Economiques (ZAE) </span> </a>
+									<ul>
+										<li class="off"><a href="Vue-generale" class="off"> <span> Vue générale </span> </a></li>
+										<li class="off"><a href="ZAE-des-Bonnets-Musieges" class="off"> <span> Bonnets (Musièges) </span> </a></li>
+										<li class="off"><a href="ZAE-de-la-Culaz-Challonges" class="off"> <span> Culaz (Challonges) </span> </a></li>
+										<li class="off"><a href="ZAE-des-Iles-Nord" class="off"> <span> Iles-Nord (Seyssel) </span> </a></li>
+										<li class="off"><a href="Iles-Sud-Seyssel" class="off"> <span> Iles-Sud (Seyssel) </span> </a></li>
+										<li class="off"><a href="ZAE-de-Maboez-Corbonod" class="off"> <span> Maboez (Corbonod) </span> </a></li>
+										<li class="off"><a href="ZAE-de-Montauban-Seyssel" class="off"> <span> Montauban (Seyssel) </span> </a></li>
+										<li class="off"><a href="ZAE-de-Pont-Rouge-Usinens" class="off"> <span> Pont-Rouge (Usinens) </span> </a></li>
+										<li class="off"><a href="ZAE-de-la-Semine-Semine" class="off"> <span> Semine </span> </a></li>
+										<li class="off"><a href="ZAE-du-Vieux-Moulin-Musieges" class="off"> <span> Vieux Moulin (Musièges) </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Annuaire-des-entreprises" class="off"> <span> UCAPL (Union de professionnels) </span> </a></li>
+								<li class="off"><a href="Les-locaux-et-surfaces-disponibles" class="off"> <span> Soutien aux entreprises </span> </a></li>
+								<li class="off"><a href="Le-soutien-aux-entreprises" class="off"> <span> Agriculture </span> </a></li>
+								<li class="off"><a href="L-agriculture" class="off"> <span> Programme Leader </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Loisirs" class="off pere"> <span> Activités </span> </a>
+							<ul>
+								<li class="off"><a href="Zones-de-loisirs" class="off  pere"> <span> Sports et loisirs </span> </a>
+									<ul>
+										<li class="off"><a href="Base-de-loisirs-de-la-Semine" class="off"> <span> Base de loisirs de la Semine </span> </a></li>
+										<li class="off"><a href="Base-de-loisirs-de-Seyssel-211" class="off"> <span> Base aqualoisirs de Seyssel </span> </a></li>
+										<li class="off"><a href="Domaine-nordique-215" class="off"> <span> Domaine nordique de Sur Lyand </span> </a></li>
+										<li class="off"><a href="Chemins-de-randonnee-213" class="off"> <span> Chemins de randonnée </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Culture-et-patrimoine" class="off  pere"> <span> Culture et patrimoine </span> </a>
+									<ul>
+										<li class="off"><a href="Cinemas-51" class="off  pere"> <span> Cinémas </span> </a></li>
+										<li class="off"><a href="Musees-218" class="off"> <span> Musées </span> </a></li>
+										<li class="off"><a href="Theatres" class="off"> <span> Musiques </span> </a></li>
+										<li class="off"><a href="Sites-a-visiter" class="off"> <span> Sites à visiter </span> </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="off"><a href="Contacts-37" class="off pere"> <span> Contact </span> </a>
+							<ul>
+								<li class="off"><a href="Contact-233" class="off"> <span> Nous contacter </span> </a></li>
+								<li class="off"><a href="Adresses-Horaires" class="off"> <span> Adresses/Horaires </span> </a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="slide_list"></div>
+			</div>
+		</header>
+		<article>
+			<!-- debut_surligneconditionnel -->
+			<header class="entete">
+				<p class="container arborescence"><strong>Vous êtes ici : </strong> <a href="Francais">Accueil</a> > <a href="CCUR">CCUR </a> > <em>Conseils communautaires </em></p>
+				<div class="container">
+					<h2><span class="crayon article-titre-238 ">Conseils communautaires </span></h2>
+				</div>
+			</header>
+			<section class="contenu">
+				<div class="container">
+					<div class="crayon article-texte-238 texte">
+						<p><span class="spip_document_1711 spip_documents spip_documents_center"><img src="local/cache-vignettes/L477xH315/report_cc_a_date_ulterieure-2-edf31.png?1585741268" width="477" height="315" alt=""></span><br class="autobr">  <br class="autobr">  </p>
+						<h3><span><span style="color:#008000;">Tous les comptes-rendus :</span> </span></h3>
+						<ul class="spip">
+							<li><a href="https://www.usses-et-rhone.fr/IMG/pdf/2020-02-25-_compte-rendu.pdf">25 février 2020</a></li>
+							<li><a href="https://www.usses-et-rhone.fr/IMG/pdf/2020-02-11-compte-rendu.pdf">11 février 2020</a></li>
+							<li><a href="https://www.usses-et-rhone.fr/IMG/pdf/2020-01-14_compte-rendu.pdf">14 janvier 2020</a></li>
+							<li><a href="https://www.usses-et-rhone.fr/IMG/pdf/2019-12-10-_compte-rendu.pdf">10 décembre 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-11-18_compte_rendu.pdf" class="spip_out" rel="external">18 novembre 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-10-08-_compte-rendu.pdf" class="spip_out" rel="external">8 octobre 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-09-10_compte_rendu.pdf" class="spip_out" rel="external">10 septembre 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-07-09_compte_rendu.pdf" class="spip_out" rel="external">9 juillet 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-06-11_compte_rendu.pdf" class="spip_out" rel="external">11 juin 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-05-14_compte_rendu.pdf" class="spip_out" rel="external">14 mai 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-04-09_compte-rendu-3.pdf" class="spip_out" rel="external">9 avril 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-03-12_compte-rendu.pdf" class="spip_out" rel="external">12 mars 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-02-19_compte-rendu.pdf" class="spip_out" rel="external">19 février 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2019-01-15_compte-rendu.pdf" class="spip_out" rel="external">15 janvier 2019</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-12-11_compte_rendu.pdf" class="spip_out" rel="external">11 décembre 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-11-13_compte_rendu.pdf" class="spip_out" rel="external">11 novembre 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-10-09_compte_rendu.pdf" class="spip_out" rel="external">9 octobre 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-09-11_compte_rendu.pdf" class="spip_out" rel="external">11 septembre 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-08-21_compte_rendu.pdf" class="spip_out" rel="external">21 août 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-07-24_compte_rendu.pdf" class="spip_out" rel="external">24 juillet 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-06-12_compte_rendu.pdf" class="spip_out" rel="external">12 juin 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-05-15_compte_rendu.pdf" class="spip_out" rel="external">15 mai 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-04-10_compte-rendu.pdf" class="spip_out" rel="external">10 avril 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-03-13-compte-rendu.pdf" class="spip_out" rel="external">13 mars 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/2018-02-13-compte-rendu.pdf" class="spip_out" rel="external">13 février 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil18janvier2018.pdf" class="spip_out" rel="external">18 janvier 2018</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterendu18decembre_2017.pdf" class="spip_out" rel="external">18 décembre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterendudu12decembre2017.pdf" class="spip_out" rel="external">12 décembre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenducc05decembre_2017.pdf" class="spip_out" rel="external">5 décembre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil26octobre2017.pdf" class="spip_out" rel="external">26 octobre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil10octobre2017.pdf" class="spip_out" rel="external">10 octobre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil26septembre2017.pdf" class="spip_out" rel="external">26 septembre 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil11_juillet2017.pdf" class="spip_out" rel="external">11 juillet 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil23juin2017.pdf" class="spip_out" rel="external">23 juin 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenducc16_mai2017.pdf" class="spip_out" rel="external">16 mai 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil11avril2017.pdf" class="spip_out" rel="external">11 avril 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterendu28_mars.pdf" class="spip_out" rel="external">28 mars 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil14mars2017.pdf" class="spip_out" rel="external">14 mars 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil13fevrier2017.pdf" class="spip_out" rel="external">13 février 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil03fevrier2017.pdf" class="spip_out" rel="external">3 février 2017</a></li>
+							<li><a href="http://www.usses-et-rhone.fr/IMG/pdf/compterenduconseil27janvier2017.pdf" class="spip_out" rel="external">27 Janvier 2017</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- finde_surligneconditionnel-->
+		</article>
+		<footer>
+			<div class="container">
+				<div class="liste_elements row">
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Francais"> <span class="text"> Accueil </span> </a></h3>
+						<ul class="plan">
+							<li class="off"><a href="Mentions-Legales"> <span> Mentions Légales </span> </a></li>
+							<li class="off"><a href="Espace-intranet"> <span> Espace intranet </span> </a></li>
+							<li class="off"><a href="spip.php?page=recherche&lang=fr"> <span> Rechercher </span> </a></li>
+							<li class="off"><a href="spip.php?page=plan&lang=fr"> <span> Plan du site </span> </a></li>
+							<li class="admin off"><a href="http://www.usses-et-rhone.fr/ecrire/"> <span> Espace privé </span> </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre on"><a href="CCUR"> <strong> CCUR </strong> </a></h3>
+						<ul class="plan">
+							<li><a href="Documents-d-Orientations">Documents d’Orientations Budgétaires </a></li>
+							<li><a href="Presentation">Présentation </a></li>
+							<li><a href="Statuts-et-Interet-communautaire">Statuts et Intérêt communautaire </a></li>
+							<li><a href="Rapports-d-activites">Rapports d’activités </a></li>
+							<li><a href="Organisation">Organigramme des élus </a></li>
+							<li><a href="Conseils-communautaires-238">Conseils communautaires </a></li>
+							<li><a href="Bulletins-intercommunaux">Bulletins intercommunaux </a></li>
+							<li><a href="26-communes-membres">26 communes membres </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Social"> <span> Vie quotidienne </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Transport">Transports </a></li>
+							<li><a href="Petite-enfance-36">Petite enfance </a></li>
+							<li><a href="Jeunesse-32">Jeunesse </a></li>
+							<li><a href="Seniors-55">Séniors </a></li>
+							<li><a href="Sante">Santé </a></li>
+							<li><a href="Offres-d-emploi-251">Offres d’emploi </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Environnement"> <span> Environnement </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Assainissement-des-eaux-usees">Assainissement des eaux usées </a></li>
+							<li><a href="Partenaires">Nos partenaires </a></li>
+							<li><a href="Exoneration-de-la-TEOM">Exonération de la TEOM </a></li>
+							<li><a href="collecte-et-traitement-des-dechets">Collecte et traitement des déchets </a></li>
+							<li><a href="Conservation-et-protection-de-la">Milieux naturels et zones humides </a></li>
+							<li><a href="Milieux-aquatiques-et-Prevention">Milieux aquatiques et prévention des inondations - GEMAPI </a></li>
+							<li><a href="Reseau-Natura-2000">Réseau Natura 2000 </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Territoire"> <span> Territoire </span> </a></h3>
+						<ul class="plan">
+							<li><a href="SCOT-65">SCOT </a></li>
+							<li><a href="Territoire-PLUi">PLUi - Plan Local d’Urbanisme Intercommunal </a></li>
+							<li><a href="Enquetes-publiques">Enquêtes publiques </a></li>
+							<li><a href="CAUE">CAUE </a></li>
+							<li><a href="Habitat">Habitat </a></li>
+							<li><a href="Chartes-et-contrats">Chartes et contrats </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Economie"> <span> Économie </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Zones-d-Activites-Economiques">Zones d’Activités Economiques (ZAE) </a></li>
+							<li><a href="Annuaire-des-entreprises">UCAPL (Union de professionnels) </a></li>
+							<li><a href="Les-locaux-et-surfaces-disponibles">Soutien aux entreprises </a></li>
+							<li><a href="Le-soutien-aux-entreprises">Agriculture </a></li>
+							<li><a href="L-agriculture">Programme Leader </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Loisirs"> <span> Activités </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Zones-de-loisirs">Sports et loisirs </a></li>
+							<li><a href="Culture-et-patrimoine">Culture et patrimoine </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Contacts-37"> <span> Contact </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Contact-233">Nous contacter </a></li>
+							<li><a href="Adresses-Horaires">Adresses/Horaires </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
