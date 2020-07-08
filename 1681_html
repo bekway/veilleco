@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<title>Les compte-rendus du conseil - Bienvenue</title>
+		<link rel="icon" type="image/png" href="/favicons/portal1505_favicon.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" lang="fr" content="Les compte-rendus du conseil">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V5_v/css/main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V5_v/css/V5_v_main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V5_v/css/menu.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V5_v/css/jqtransform.css" media="all">
+		<!--[if IE 6]>
+    <link href="/static/embedded/commons-themes/themes/V5_v/css/ie6_styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/embedded/commons-themes/themes/V5_v/js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">DD_belatedPNG.fix('.png');</script>
+<![endif]-->
+		<!--[if IE]>
+  <link href="/static/embedded/commons-themes/themes/V5_v/css/ie_styles.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+		<link rel="stylesheet" type="text/css" href="/static/layouts/classic/classic_V5_v.css" media="all">
+		<!-- Custom css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/static/css/custom-front.css" media="all">
+		<!-- personalization custom css -->
+		<link rel="stylesheet" type="text/css" href="/customThemes/V5_v/customCss/customThemePortal1505.css" media="all">
+		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.validation.min.js"></script>
+		<script type="text/javascript" src="/static/js/js.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.diaporousel.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.lightbox-0.5.css" media="all">
+		<link media="screen and (max-width: 640px)" href="/static/css/mobile.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/cookie.css" media="all">
+		<script type="text/javascript">
+$(function(){
+    $('.form_styled').jqTransform({imgPath:'/static/embedded/commons-themes/themes/V5_v/images/'});
+    $('.form_styled').jqTransform({imgPath:'/static/layouts/classic/images/'});
+    $('img').each(function () {
+    	if($(this).parents('a').size() == 0) {
+    		$(this).wrap("<a href='" + $(this).attr("src").replace(new RegExp("(.*)(?:/\.)(.[^/]+)(?:\_[omst])(\.[a-zA-Z]*)$"), "$1/$2$3") + "' />");
+    	}
+    });
+
+    if (-1 != -1) {
+	    $('img').click(function () {
+	    	setTimeout(function () {
+	    		correction();
+	    	}, 2000);
+	    });
+	    function correction() {
+	     	$('img').each(function () {
+	       		if($(this).attr("src").indexOf('lightbox-btn') != -1) {
+	       			$(this).attr("src","../../"+$(this).attr("src"));
+	       		}
+	        });
+	    };
+    }
+
+	$("a[href$='.png']").lightBox();
+	$("a[href$='.jpg']").lightBox();
+	$("a[href$='.gif']").lightBox();
+ 	$("a[href$='.swf']").lightBox();
+ 	$('.eb_carrousel').diaporousel();
+ 	/* Specific JS for theme V6h made by CRB */
+ 	});
+		</script>
+		<!-- Fixes Displaying agenda BUG -->
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.custom.css" media="all">
+	</head>
+	<body>
+		<div id="global" class="png">
+			<div id="topandmiddle" class="png">
+				<div id="bg_tandm">
+					<!-- Header -->
+					<div id="top" class="png">
+						<div id="bandeau">
+							<h1><a id="headLink" title="Aller à la page d'accueil du site officiel de Bienvenue" href="https://www.cc-laclayette-chauffailles-en-brionnais.fr"> Bienvenue </a></h1>
+							<p class="accroche">Site officiel de la Communauté de communes</p>
+						</div>
+						<div id="accessibility">
+							<p><span><a href="#paragraphe">Aller au contenu</a></span>  <span><a href="#nav">Aller à la navigation</a></span></p> 
+							<div id="fullTextSearch">
+								<form id="fullTextSearchDirectoryForm" name="SearchDirectoryForm" method="post" enctype="multipart/form-data" action="https://www.cc-laclayette-chauffailles-en-brionnais.fr/all/search"><input type="text" id="fullTextSearchQuery" name="fullTextSearchQuery" maxlength="128" size="17" value="Rechercher" class="defaultText" onblur="this.value = this.value || 'Rechercher'; this.style.color = '#6D6D6D';" onfocus="if(this.value=='Rechercher') {this.value='';} this.style.color = '#666';"> <input type="image" id="fullTextSearch" value="Rechercher" src="/static/images/loupe_16x16.png"></form>
+							</div>
+						</div>
+						<div id="visuel_top"></div>
+						<ul id="nav" class="png">
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/communaute-de-communes" id="bt_nav_1" class="png" title="Communauté de communes"><span class="png">Communauté de communes </span></a>
+								<ul>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/les-elus-communautaires" title="Les élus communautaires"><span> Les élus communautaires </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/les-compte-rendus-du-conseil" title="Les compte-rendus du conseil"><span> Les compte-rendus du con... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/les-competences" title="Les compétences"><span> Les compétences </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/le-budget" title="Le budget"><span> Le budget </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/les-services-communautaires" title="Les services communautaires"><span> Les services communautaires </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/le-paiement-en-ligne-et-le-prelevement-automatique" title="Le paiement en ligne et le prélèvement automatique"><span> Le paiement en ligne et ... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/recueil-des-actes-administratifs" title="Recueil des actes administratifs"><span> Recueil des actes admini... </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/economie" id="bt_nav_2" class="png" title="Economie"><span class="png">Economie </span></a>
+								<ul>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/zones-d-activites" title="Zones d'activités"><span> Zones d'activités </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/espace-de-coworking-" title="Espace de Coworking "><span> Espace de Coworking </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/agriculture" title="Agriculture"><span> Agriculture </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/urbanisme-plui" id="bt_nav_3" class="png" title="Urbanisme PLUi"><span class="png">Urbanisme PLUi </span></a></li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/environnement" id="bt_nav_4" class="png" title="Environnement"><span class="png">Environnement </span></a>
+								<ul>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/dechets-menagers" title="Déchets ménagers"><span> Déchets ménagers </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/dechetteries-et-plateformes-dechets-verts" title="Déchetteries et plateformes déchets verts"><span> Déchetteries et platefor... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/riviere-et-qualite-de-l-eau-" title="Rivière et qualité de l'eau "><span> Rivière et qualité de l'... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/tepcv" title="TEPCV"><span> TEPCV </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/tourisme" id="bt_nav_5" class="png" title="Tourisme"><span class="png">Tourisme </span></a></li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/action-sociale" id="bt_nav_6" class="png" title="Action sociale"><span class="png">Action sociale </span></a>
+								<ul>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/enfance-jeunesse-famille" title="Enfance jeunesse famille"><span> Enfance jeunesse famille </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/conseil-communautaire-jeunes" title="Conseil communautaire jeunes"><span> Conseil communautaire je... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/portage-de-repas" title="Portage de repas"><span> Portage de repas </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/culture" id="bt_nav_7" class="png" title="Culture"><span class="png">Culture </span></a>
+								<ul>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/le-reseau-sous-dun-les-bibliotheques-" title="Le Réseau Sous Dun... les bibliothèques !"><span> Le Réseau Sous Dun... le... </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/ecole-de-musique" title="Ecole de musique"><span> Ecole de musique </span></a></li>
+									<li><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/saison-culturelle-" title="Saison culturelle "><span> Saison culturelle </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/sports-et-loisirs" id="bt_nav_8" class="png" title="Sports et loisirs"><span class="png">Sports et loisirs </span></a></li>
+						</ul>
+					</div>
+					<!-- /#top -->
+					<hr>
+					<!-- Partie centrale -->
+					<div id="middle" class="png">
+						<p id="lastEdit"></p>
+						<div id="bg_degrade" class="png">
+							<div id="bg_main" class="png">
+								<div id="sideandcontent">
+									<div id="breadcrumb_navigation"><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr" title="Accueil"><u>Accueil</u></a> » <a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/communaute-de-communes" title="Les 29 communes">Communauté de communes</a> » <span class="current_page">Les compte-rendus du conseil</span></div>
+									<div id="bg_content" class="png">
+										<div id="content">
+											<div class="paragraphe" id="paragraphe">
+												<h2>Les compte-rendus du conseil</h2>
+												<div class="txt_bloc">
+													<h2><span style="color: #99cc00;">2020</span></h2>
+													<ul>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20200625-1411--CR_conseil-cr-conseil-2020_06_16.pdf"><span style="color: #0000ff; text-decoration: underline;">Compte-rendu du conseil de communauté du 16 juin 2020</span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20200309-1554--CR_conseil-cr-conseil-2020_03_02.pdf"><span style="color: #0000ff; text-decoration: underline;">Compte-rendu du conseil de communauté du 2 mars 2020</span></a></li>
+														<li><span style="color: #0000ff; text-decoration: underline;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20200123-1729--Communaute_de_communes-cr-conseil-2020_01_16.pdf"><span style="color: #0000ff; text-decoration: underline;">Compte-rendu du conseil de communauté du 16 janvier 2020</span></a></span></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20200214-1302--CR_conseil-cr-conseil-2020_02_06-.pdf">Compte-rendu du conseil de communauté du 6 février 2020</a></li>
+													</ul>
+													<h2><span style="color: #99cc00;">2019</span></h2>
+													<ul style="list-style-type: circle;">
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190125-1330--CR_conseil-cr-conseil-2019_01_15_vd.pdf" target="_blank"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 15 janvier 2019</span></a></span></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190215-0941--CR_conseil-cr-conseil-2019_02_07.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 07 février 2019</span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190311-1419--CR_conseil-cr-conseil-2019_02_28.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 28 février 2019</span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190415-1532--CR_conseil-cr_conseil_2019_04_04.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 04 avril 2019 </span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190620-1522--CR_conseil-cr-conseil-2019_06_06-2.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 06 juin 2019</span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20190712-1635--cr-conseil-2019_07_04.pdf"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 04 juillet 2019</span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20191008-1319--CR_conseil-cr-conseil-2019_09-24.pdf"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 24 septembre 2019</span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20191220-1354--CR_conseil-cr-conseil-2019_12_12.pdf"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte rendu du conseil de communauté du 12 décembre 2019</span></span></span></span></a></li>
+													</ul>
+													<h2> <span style="color: #99cc00;">2018</span></h2>
+													<ul style="list-style-type: circle;">
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/cr-conseil-2018_01_18.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 18 janvier 2018</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20180309-0933--cr-conseil-2018_03_01.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 1er mars 2018</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20180416-0904--CR_conseil-conseil-2018_04_05-cr.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 5 avril 2018</span></a></span></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20180608-1457--Communaute_de_communes-cr-conseil-2018_05_31.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 31 mai 2018</span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20180713-1554--CR_conseil-cr_conseil_2018_07_04-vd.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 04 juillet 2018</span></span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20181006-1135--CR_conseil-cr-conseil-2018_09_26-.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 26 septembre 2018</span></span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20181123-0934--CR_conseil-cr-conseil-2018_11_14-.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 14 novembre 2018</span></span></span></span></span></span></span></span></span></span></a></li>
+														<li><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/links/20181214-1509--CR_conseil-cr-conseil-2018_12_06.pdf" target="_blank"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #0000ff;"><span style="color: #99cc00;"><span style="color: #0000ff;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 6 décembre 2018</span></span></span></span></span></span></span></span></span></span></a></li>
+													</ul>
+													<h2><span style="color: #99cc00;">2017</span></h2>
+													<ul style="list-style-type: circle;">
+														<li> <span style="color: #993300;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-conseil-2017_01_10.pdf"><span style="color: #993300;"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 10 janvier 2017</span></span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-conseil-2017_01_23.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 23 janvier 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-conseil-2017_02_09.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 9 février 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/2017_03_02-cr-conseil.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 2 mars 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-conseil-2017_04_06--vd.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 6 avril 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"> <a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-2017_06_12.pdf" target="_blank"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 12 juin 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/CR_conseil/cr-conseil-2017_09_26.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 26 septembre 2017</span></a></span></li>
+														<li><span style="color: #0000ff;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal1505/conseil-2017_11_14-cr.pdf"><span style="color: #0000ff;">Compte-rendu du conseil de communauté du 30 novembre 2017</span></a></span></li>
+													</ul>
+													<h6> </h6>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p> </p>
+													<p style="text-align: center;"> </p>
+													<p> </p>
+													<p>
+														<script>// <![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105335522-1', 'auto');
+  ga('send', 'pageview');
+// ]]>
+														</script>
+													</p>
+												</div>
+											</div>
+											<div id="social-nw-btns"></div>
+										</div>
+									</div>
+								</div>
+								<div id="sidebar_right"></div>
+							</div>
+						</div>
+					</div>
+					<!-- /#middle -->
+				</div>
+			</div>
+			<div id="footer" class="png">
+				<div id="bg_footer">
+					<!-- Footer -->
+					<div id="bottom" class="png"><a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/contact">Nous contacter</a>    |    <a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/mentions-legales">Mentions légales</a>    |    <a href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/site-accessible">Site accessible</a></div>
+					<!-- /#bottom -->
+				</div>
+			</div>
+		</div>
+		<!-- /#global -->
+		<div id="sliding-popup" class="sliding-popup-bottom popup_cookie" style="height: auto; width: 100%; bottom: 0px;">
+			<div class="hidden-print popup-content info popup_cookie">
+				<div id="popup-text" class="popup_cookie">
+					<p class="popup_cookie">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins statistiques. <a class="popup_cookie" href="https://www.cc-laclayette-chauffailles-en-brionnais.fr/mentions-legales">Cliquez ici pour en savoir plus.</a></p>
+				</div>
+			</div>
+			<div id="sliding-popup-delete" class="popup_cookie"></div>
+		</div>
+		<script type="text/javascript">
+    $(document).ready(function() {
+         if (Cookies.get('cookie-agreed')) {
+            $('#sliding-popup').hide();
+         } else {
+            Cookies.set('cookie-agreed', 'true');
+         }
+    });
+
+    $('#sliding-popup-delete').click(function() {
+        $('#sliding-popup').slideUp('slow');
+    });
+		</script>
+	</body>
+</html>
