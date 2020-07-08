@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<link rel="shortcut icon" href="https://www.grandnancy.eu/typo3conf/ext/dsit_configuration/Resources/Public/Images/favicon.jpg" type="image/jpeg">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta http-equiv="X-UA-Compatible" content="IE=10">
+		<meta name="og:title" content="Enquêtes publiques">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7CMontserrat:400,400i,700%7CYantramanav:400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.grandnancy.eu/typo3temp/assets/compressed/merged-e49223a1edce131f609e0429dc3e0d5f.css?1585217841" media="all">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<title>Enquêtes publiques — Métropole du Grand Nancy.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+		<meta name="rubriqueURL" content="pub_legales">
+		<link rel="manifest" href="https://www.grandnancy.eu/typo3conf/ext/dsit_configuration/Resources/Public/Json/manifest.json">
+		<meta name="site" content="Métropole">
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="header_menu row">
+					<div class="col-12">
+						<div class="row" id="header">
+							<div class="col-lg-9 col-6" id="logo_svg"><a href="/"><img class="logo" src="/typo3conf/ext/dsit_configuration/Resources/Public/Images/logo_metropole_couleur.svg" alt="logo métropole du Grand-Nancy" style="border:0px;"></a></div>
+							<div class="d-none d-lg-block col-lg-3 align-items-center d-print-none justify-content-end" id="RS_header_desk">
+								<div class="row nancy_votre_place">
+									<div class="col-12"><a href="https://place-a-nancy.fr/" alt="Nancy votre place est ici" target="_blank"><img src="/typo3conf/ext/dsit_configuration/Resources/Public/Images/logo_nancy_votre_place_gris.svg" alt="Nancy votre place est ici"></a></div>
+								</div>
+								<div class="row">
+									<div class="col-12"><a href="https://www.facebook.com/metropolegrandnancy/" target="_blank" title="facebook"><i class="fab fa-facebook-f RS" aria-hidden="true"></i></a> <a href="https://twitter.com/Grand_Nancy" target="_blank" title="twitter"><i class="fab fa-twitter RS" aria-hidden="true"></i></a> <a href="https://www.instagram.com/metropolegrandnancy/" target="_blank" title="instagram"><i class="fab fa-instagram RS" aria-hidden="true"></i></a> <a href="https://fr.linkedin.com/company/communaut-urbaine-du-grand-nancy" target="_blank" title="linkedin"><i class="fab fa-linkedin-in RS" aria-hidden="true"></i></a> <a href="https://www.youtube.com/user/CuGrandNancy" target="_blank"><i class="fab fa-youtube RS" aria-hidden="true"></i></a></div>
+								</div>
+							</div>
+							<div class="d-lg-none col-6 text-right pull-right nopadding d-print-none">
+								<div class="icone_menu"><i id="icone_menu_ouvert" class="fa fa-bars " aria-hidden="true"></i> <i id="icone_menu_fermer" class="fa fa-times" aria-hidden="true"></i></div>
+								<div class="icone_menu_recherche "><a href="https://recherche.grandnancy.eu/prod/" title="recherche"><i id="icone_recherche" class="fa fa-search" aria-hidden="true"></i></a></div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row d-print-none">
+								<nav id="menu_desk" class="header_menu_desk col-md-12 d-none d-lg-block">
+									<ul class="nav nav-pills nav-fill">
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Métropole</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/decouvrir-la-metropole/">Découvrir la Métropole</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/organisation-politique/">Organisation politique</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/organisation-administrative/">Organisation administrative</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/partenariats/">Partenariats</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/relations-internationales/">Relations internationales</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/democratie-participative/">Démocratie participative</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/nouvelle-intelligence-des-territoires/">Nouvelle intelligence des territoires</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/des-hommes-et-des-arbres-les-racines-de-demain/">« Des Hommes et des Arbres, les racines de demain »</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/fondation-lotharingie/">Fondation Lotharingie</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/publications-legales/deliberations/">Délibérations</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/offres-demploi/">Offres d'emploi</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/publications-legales/marches-publics/">Marchés publics</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/publications-legales/documents-budgetaires/">Budget</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/magazines/">Magazines</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Construire l'avenir</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/projet-metropolitain/">Projet métropolitain</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/nouveau-tramway-lessentiel-du-projet/">Nouveau Tramway : l'essentiel du projet</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/nancy-grand-coeur/">Nancy Grand Cœur</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/grand-nancy-thermal/">Grand Nancy Thermal</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/artem/">Artem</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/technopole-henri-poincare/">Technopôle Henri-Poincaré</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/territoires-a-enjeux/">Territoires à enjeux</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/rives-de-meurthe/">Rives de Meurthe</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/construire-lavenir/reservoir-deau-richard-pouille/">Réservoir d'eau Richard-Pouille</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Se déplacer</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/en-transports-en-commun/">En transports en commun</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/a-velo/">À vélo</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/a-pied/">À pied</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/autopartage/">Autopartage</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/electromobilites/">Électromobilités</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/circulation-et-stationnement/">Circulation et stationnement</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/se-deplacer/dispositif-critair/">Dispositif Crit'Air</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vivre & habiter</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/sante/">Santé</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/habitat/">Habitat</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/eau/">Eau</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/dechets/">Déchets</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/voirie/">Voirie</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/universite/">Université</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/urbanisme/">Urbanisme</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/qualite-de-lair/">Qualité de l'air</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/environnement/">Environnement</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/primes-energie/">Primes énergie</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Discriminations/PTPLCD.pdf" target="_blank">Prévention & lutte contre les discriminations</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/handicap/">Handicap</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/haut-debit/">Haut débit</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/chauffage-urbain/">Chauffage urbain</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/pension-animale/">Pension animale</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/vivre-habiter/crematorium/">Crématorium</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Entreprendre & innover</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/covid-19-la-metropole-et-ses-communes-soutiennent-les-acteurs-economiques/">Covid-19 : La métropole et ses communes soutiennent les acteurs économiques</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/ecosysteme-dentreprises/">Écosystème d'entreprises</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/secteurs-strategiques/">Secteurs stratégiques</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/innovation/">Innovation</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/reseaux-territoriaux-dentreprises/">Réseaux territoriaux d'entreprises</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/foncier-et-immobilier-economiques/">Foncier et immobilier économiques</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/attractivite-et-tourisme/">Attractivité et tourisme</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/appel-a-projets-transition-ecologique-et-solidaire/">Appel à projets transition écologique et solidaire</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/demarche-technopolitaine/">Démarche technopolitaine</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/universite-et-recherche/">Université et recherche</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/la-metropole/des-hommes-et-des-arbres-les-racines-de-demain/">« Des Hommes et des Arbres, les racines de demain »</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/entreprendre-innover/emploi/">Emploi</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+										<li role="presentation" class="menu_desk_niv_1 dropdown nav-item"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sortir & découvrir</a>
+											<ul class="menu_desk_list_niv_2 dropdown-menu dropdown-menu-right">
+												<li class="bloc_titre_dropdown"><i class="fa fa-close text-right" aria-hidden="true"></i></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/sortir-decouvrir/piscines/">Piscines</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/sortir-decouvrir/musees-et-jardins/">Musées et jardins</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/sortir-decouvrir/espaces-de-nature/">Espaces de nature</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/sortir-decouvrir/sports-et-loisirs/">Sports et loisirs</a></li>
+												<li class="dropdown-item"><a href="https://www.grandnancy.eu/sortir-decouvrir/conservatoire/">Conservatoire</a></li>
+											</ul>
+											<hr class="d-none d-md-block hr_menu_desk">
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<nav id="menu" class="col-sm-12 d-lg-none">
+						<div class="niv_1">La Métropole<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/decouvrir-la-metropole/">Découvrir la Métropole</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/organisation-politique/">Organisation politique</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/organisation-administrative/">Organisation administrative</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/partenariats/">Partenariats</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/relations-internationales/">Relations internationales</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/democratie-participative/">Démocratie participative</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/nouvelle-intelligence-des-territoires/">Nouvelle intelligence des territoires</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/des-hommes-et-des-arbres-les-racines-de-demain/">« Des Hommes et des Arbres, les racines de demain »</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/fondation-lotharingie/">Fondation Lotharingie</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/publications-legales/deliberations/">Délibérations</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/offres-demploi/">Offres d'emploi</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/publications-legales/marches-publics/">Marchés publics</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/publications-legales/documents-budgetaires/">Budget</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/magazines/">Magazines</a></div>
+						</div>
+						<div class="niv_1">Construire l'avenir<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/projet-metropolitain/">Projet métropolitain</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/nouveau-tramway-lessentiel-du-projet/">Nouveau Tramway : l'essentiel du projet</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/nancy-grand-coeur/">Nancy Grand Cœur</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/grand-nancy-thermal/">Grand Nancy Thermal</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/artem/">Artem</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/technopole-henri-poincare/">Technopôle Henri-Poincaré</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/territoires-a-enjeux/">Territoires à enjeux</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/rives-de-meurthe/">Rives de Meurthe</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/construire-lavenir/reservoir-deau-richard-pouille/">Réservoir d'eau Richard-Pouille</a></div>
+						</div>
+						<div class="niv_1">Se déplacer<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/en-transports-en-commun/">En transports en commun</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/a-velo/">À vélo</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/a-pied/">À pied</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/autopartage/">Autopartage</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/electromobilites/">Électromobilités</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/circulation-et-stationnement/">Circulation et stationnement</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/se-deplacer/dispositif-critair/">Dispositif Crit'Air</a></div>
+						</div>
+						<div class="niv_1">Vivre & habiter<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/sante/">Santé</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/habitat/">Habitat</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/eau/">Eau</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/dechets/">Déchets</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/voirie/">Voirie</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/universite/">Université</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/urbanisme/">Urbanisme</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/qualite-de-lair/">Qualité de l'air</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/environnement/">Environnement</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/primes-energie/">Primes énergie</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Discriminations/PTPLCD.pdf" target="_blank">Prévention & lutte contre les discriminations</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/handicap/">Handicap</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/haut-debit/">Haut débit</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/chauffage-urbain/">Chauffage urbain</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/pension-animale/">Pension animale</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/vivre-habiter/crematorium/">Crématorium</a></div>
+						</div>
+						<div class="niv_1">Entreprendre & innover<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/covid-19-la-metropole-et-ses-communes-soutiennent-les-acteurs-economiques/">Covid-19 : La métropole et ses communes soutiennent les acteurs économiques</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/ecosysteme-dentreprises/">Écosystème d'entreprises</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/secteurs-strategiques/">Secteurs stratégiques</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/innovation/">Innovation</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/reseaux-territoriaux-dentreprises/">Réseaux territoriaux d'entreprises</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/foncier-et-immobilier-economiques/">Foncier et immobilier économiques</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/attractivite-et-tourisme/">Attractivité et tourisme</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/appel-a-projets-transition-ecologique-et-solidaire/">Appel à projets transition écologique et solidaire</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/demarche-technopolitaine/">Démarche technopolitaine</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/universite-et-recherche/">Université et recherche</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/la-metropole/des-hommes-et-des-arbres-les-racines-de-demain/">« Des Hommes et des Arbres, les racines de demain »</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/entreprendre-innover/emploi/">Emploi</a></div>
+						</div>
+						<div class="niv_1">Sortir & découvrir<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+						<div class="div_niv_2">
+							<div class="niv_2"><a href="https://www.grandnancy.eu/sortir-decouvrir/piscines/">Piscines</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/sortir-decouvrir/musees-et-jardins/">Musées et jardins</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/sortir-decouvrir/espaces-de-nature/">Espaces de nature</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/sortir-decouvrir/sports-et-loisirs/">Sports et loisirs</a></div>
+							<div class="niv_2"><a href="https://www.grandnancy.eu/sortir-decouvrir/conservatoire/">Conservatoire</a></div>
+						</div>
+						<div class="reseaux_sociaux">
+							<div class="container">
+								<div class="row">
+									<div class="col-auto"><a href="https://www.facebook.com/metropolegrandnancy/" target="_blank"><i class="fab fa-facebook-f RS" aria-hidden="true"></i></a> <a href="https://fr.linkedin.com/company/communaut-urbaine-du-grand-nancy" target="_blank"><i class="fab fa-linkedin-in RS" aria-hidden="true"></i></a> <a href="https://www.instagram.com/metropolegrandnancy/" target="_blank"><i class="fab fa-instagram RS" aria-hidden="true"></i></a> <a href="https://twitter.com/Grand_Nancy" target="_blank"><i class="fab fa-twitter RS" aria-hidden="true"></i></a> <a href="https://www.youtube.com/user/CuGrandNancy" target="_blank"><i class="fab fa-youtube RS" aria-hidden="true"></i></a></div>
+									<div class="col nancy_votre_place"><a href="https://place-a-nancy.fr/" alt="Nancy votre place est ici" target="_blank"><img class="nancy_votre_place2" src="/typo3conf/ext/dsit_configuration/Resources/Public/Images/logo_nancy_site_2_B.svg" alt="Nancy votre place est ici"></a></div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- ALERTE -->
+				<!--TYPO3SEARCH_end-->
+				<!-- <div class="no-news-found"> -->
+				<!-- Aucune actualité disponible. -->
+				<!-- </div> -->
+				<!--TYPO3SEARCH_begin-->
+				<!-- ALERTE -->
+			</div>
+		</header>
+		<div id="content" class="container-fluid">
+			<main>
+				<!-- SOUS MENU MOBILE -->
+				<div class="row d-lg-none separation_sousmenu_content d-print-none" id="sousmenu">
+					<div class="col-12">
+						<div class="row sousmenu_niv_2_selected" id="sousmenu_niv_2">
+							<div class="col-12"><a href="https://www.grandnancy.eu/publications-legales/enquetes-publiques/">Enquêtes publiques</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- FIN SOUS MENU MOBILE -->
+				<!-- BREADCRUMB -->
+				<div class="row d-none d-lg-block d-print-none" id="breadcrumb">
+					<div class="col-lg-12">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="https://www.grandnancy.eu/accueil/" title="Accueil">Accueil</a></li>
+								<li class="breadcrumb-item active" aria-current="page"><a href="https://www.grandnancy.eu/publications-legales/enquetes-publiques/" title="Enquêtes publiques">Enquêtes publiques</a></li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<!-- FIN BREADCRUMB -->
+				<div class="row" id="parent_subcontent">
+					<!-- SI TEST RECHERCHE -->
+					<div class="col-lg-4 d-none d-lg-block sticky-top" id="sub_content">
+						<div class="row" id="formulaire_recherche_contenu">
+							<div class="col-12">
+								<form enctype="multipart/form-data" method="get" class="form-inline" id="recherchecontenu" action="https://recherche.grandnancy.eu/prod">
+									<div class="form-group">
+										<div class="input-group"><input placeholder="Votre recherche..." class="form-control" id="recherchecontenu-input_recherche_contenu" type="text" name="q">
+											<div class="input-group-btn"><button class="btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i></button></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12"></div>
+						</div>
+						<div class="row">
+							<div class="col-12"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="sommaire">
+									<ul>
+										<li><a href="https://www.grandnancy.eu/publications-legales/enquetes-publiques/#c1559">URBANISME</a></li>
+										<li><a href="https://www.grandnancy.eu/publications-legales/enquetes-publiques/#c1932">DOMAINE PUBLIC</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12"></div>
+						</div>
+						<div class="row  partage_RS d-print-none">
+							<div class="col-12">
+								<p><a title="Partager sur Facebook" href="#" onclick="return fbs_click()" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> <a title="Partager sur Twitter" href="https://twitter.com/share?related=Grand_Nancy&text=A%C2%A0lire%C2%A0chez%C2%A0@Grand_Nancy%C2%A0:" target="popup" onclick="ouvre('http://twitter.com/share?related=Grand_Nancy&text=A lire chez @Grand_Nancy :');return false"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<!-- <i class="fa fa-envelope" aria-hidden="true"></i> --><i class="fas fa-print" aria-hidden="true" onclick="print();"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-8" id="main_content" role="main">
+						<article>
+							<!-- si news on n'affiche pas le titre -->
+							<!--  -->
+							<!-- TITRE -->
+							<div class="row">
+								<div class="col-12">
+									<h1>Enquêtes publiques</h1>
+									<hr class="titre_h1">
+								</div>
+							</div>
+							<!-- FIN TITRE -->
+							<!--  -->
+							<div id="content_main" class="row">
+								<div class="col-12">
+									<div id="c1559" class="frame frame-default frame-type-header frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">URBANISME</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1943" class="frame frame-default frame-type-div frame-layout-0">
+										<hr class="ce-div">
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2569" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">RÉVISION DU PLAN DE SAUVEGARDE ET DE MISE EN VALEUR DU SITE PATRIMONIAL REMARQUABLE DE NANCY</h2>
+											</div>
+										</div>
+										<h3>En application de l'arrêté préfectoral du 8 août 2019,  l'enquête  publique s'est déroulée du mardi 17 septembre à 8h00 au vendredi 18 octobre à 19h00. Vous trouverez ci-dessous :</h3>
+										<p><strong>     - le rapport d'enquête publique du commissaire-enquêteur,</strong></p>
+										<p><strong>     - les conclusions et l'avis du commissaire-enquêteur,</strong></p>
+										<p><strong>     - les annexes au rapport d'enquête publique du commissaire-enquêteur</strong></p>
+										<p>Ces documents sont également consultables :</p>
+										<p>- à la Préfecture de Meurthe -et-Moselle (bureau des procédures environnementales) et sur le site Internet  à l'adresse suivante : <a href="http://www.meurthe-et-moselle.gouv.fr" target="_blank">www.meurthe-et-moselle.gouv.fr</a> - Rubriques "Politiques Publiques" -  "Enquêtes publiques" - "Retrouver une enquête publique"</p>
+										<p>- à la Métropole du Grand Nancy (Bâtiment Chalnot - Direction de l'Urbanisme et de l'Ecologie Urbaine) : du lundi au vendredi de 9h00 à 12h00 et de 14h00 à 17h00</p>
+										<p>- à la Mairie de Nancy (Hôtel de ville - Direction de l'Urbanisme Réglementaire)  : du lundi au vendredi de 9h00 à 12h00 et de 14h00 à 17h00</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2694" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/PSMV/20180518/1_PSMV_Nancy_rapport_CE.pdf"><span class="ce-uploads-fileName">1_PSMV_Nancy_rapport_CE.pdf</span></a><span class="ce-uploads-filesize">8 Mo</span>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/PSMV/20180518/2_PSMV_Nancy_conclusions_et_avis_CE.pdf"><span class="ce-uploads-fileName">2_PSMV_Nancy_conclusions_et_avis_CE.pdf</span></a><span class="ce-uploads-filesize">2 Mo</span>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/PSMV/20180518/3_PSMV_Nancy_annexes_CE.pdf"><span class="ce-uploads-fileName">3_PSMV_Nancy_annexes_CE.pdf</span></a><span class="ce-uploads-filesize">17 Mo</span>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2752" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE VANDOEUVRE-LES-NANCY</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 2 décembre 2019 à 10h au 2 janvier 2020 à 17h30.</strong></p>
+										<p>Dossier approuvé le 31 janvier 2020.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2755" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/VANDOEUVRE/Deliberation_appro.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberation_appro.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/VANDOEUVRE/Rapport_du_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2732" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE LUDRES</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 4 novembre 2019 à 10h au 5 décembre 2019 à 17h30.</strong></p>
+										<p>Dossier approuvé le 31 janvier 2020.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2742" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LUDRES2/Deliberation_appro.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberation_appro.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LUDRES2/Rapport_du_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2677" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE HOUDEMONT</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 11 septembre 2019 à 10h au 11 octobre 2019 à 17h30.</strong></p>
+										<p>Dossier approuvé le 20 décembre 2019.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2678" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/HOUDEMONT_2019/DELC_2019-12-21_6_DELC_2019-12-20_6_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_HOUDEMONT.PDF" target="_blank"><span class="ce-uploads-fileName">DELC_2019-12-21_6_DELC_2019-12-20_6_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_HOUDEMONT.PDF</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/HOUDEMONT_2019/Rapport_du_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2679" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE JARVILLE-LA-MALGRANGE</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 24 septembre 2019 à 10h au 24 octobre 2019 à 17h.</strong></p>
+										<p>Dossier approuvé le 20 décembre 2019.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2680" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/JARVILLE_2019/Delib_appro.pdf" target="_blank"><span class="ce-uploads-fileName">Delib_appro.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/JARVILLE_2019/Rapport_du_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2681" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE LAXOU</h2>
+											</div>
+										</div>
+										<p><strong>Enquête réalisée du 9 septembre 2019 à 10h au 11 octobre 2019 à 18h30.</strong></p>
+										<p>Dossier approuvé le 20 décembre 2019.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2682" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LAXOU_2019/DELC_2019-12-21_8_DELC_2019-12-20_8_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_LAXOU.PDF" target="_blank"><span class="ce-uploads-fileName">DELC_2019-12-21_8_DELC_2019-12-20_8_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_LAXOU.PDF</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LAXOU_2019/Rapport_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2683" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE MAXEVILLE</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 17 septembre 2019 à 10h au 17 octobre 2019 à 17h.</strong></p>
+										<p>Dossier approuvé le 20 décembre 2019.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2685" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/MAXEVILLE_2019/DELC_2019-12-21_9_DELC_2019-12-20_9_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_MAXEVILLE.PDF" target="_blank"><span class="ce-uploads-fileName">DELC_2019-12-21_9_DELC_2019-12-20_9_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_MAXEVILLE.PDF</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/MAXEVILLE_2019/Rapport_du_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2686" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE SAULXURES-LES-NANCY</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 16 septembre 2019 à 17h au 16 octobre 2019 à 16h.</strong></p>
+										<p>Dossier approuvé le 20 décembre 2019.</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le P.L.U. modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2689" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/SAULXURES_2019/DELC_2019-12-21_10_DELC_2019-12-20_10_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_SAULXURES-LES-N.PDF" target="_blank"><span class="ce-uploads-fileName">DELC_2019-12-21_10_DELC_2019-12-20_10_APPROBATION_DE_LA_MODIFICATION_DU_P_L_U_DE_SAULXURES-LES-N.PDF</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/SAULXURES_2019/Rapport_commissaire_enqueteur.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_commissaire_enqueteur.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2654" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">ENQUÊTE PUBLIQUE UNIQUE PORTANT SUR LE CONTOURNEMENT DE MALZÉVILLE</h2>
+											</div>
+										</div>
+										<h3>En application de l'arrêté préfectoral du 8 octobre 2019,  l'enquête publique s'est déroulée <strong>du mardi 29 octobre 2019 au vendredi 29 novembre inclus.</strong></h3>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2656" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2019-10-08_Enquete_-_Arrete_prefectoral.pdf" target="_blank"><span class="ce-uploads-fileName">Arrêté préfectoral</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2019-10-08_Enquete_-_Avis_d_ouverture.pdf" target="_blank"><span class="ce-uploads-fileName">Avis d'ouverture de l'enquête Public</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2020_01_Rapport_Enquete_Malzeville_contournement.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport de l'enquête publique - CONTOURNEMENT DE MALZÉVILLE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2020_01_Conclusions_et_avis_Amenagement.pdf" target="_blank"><span class="ce-uploads-fileName">Conclusions et avis d'aménagements - CONTOURNEMENT DE MALZÉVILLE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2020_01_Conclusions_et_avis_Autorisation_environnementale_Copie.pdf" target="_blank"><span class="ce-uploads-fileName">Conclusions et avis Autorisation environnementale - CONTOURNEMENT DE MALZÉVILLE</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2655" class="frame frame-default frame-type-div frame-layout-0">
+										<hr class="ce-div">
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2515" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION SIMPLIFIEE DU P.L.U. DE MALZEVILLE</h2>
+											</div>
+										</div>
+										<p><strong>Consultation du public réalisée du 12 juin 2019 au 12 juillet 2019 inclus</strong></p>
+										<p>Dossier approuvé le 20 septembre 2019</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le PLU modifié</a></p>
+										<p> </p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2600" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/MS_MALZEVILLE/Deliberations_appro_CM_Mazeville.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberations_appro_CM_Mazeville.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2513" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">DECLARATION DE PROJET PORTANT MISE EN COMPATIBILITE DU P.L.U. DE LUDRES</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 18 mai 2019 à 10h au 19 juin 2019 à 16h</strong></p>
+										<p>Dossier approuvé le 20 septembre 2019</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le PLU modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2514" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LUDRES_2019_APPRO/Deliberations_appro_CM_DP_Ludres.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberations_appro_CM_DP_Ludres.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/LUDRES_2019_APPRO/Rapport_CE.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_CE.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2511" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE NANCY</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 3 juin 2019 à 12h au 4 juillet 2019 à 11h</strong></p>
+										<p>Dossier approuvé le 20 septembre 2019</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le PLU modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2512" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/NANCY_2019_APPRO/Deliberation_appro_CM_Nancy.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberation_appro_CM_Nancy.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/NANCY_2019_APPRO/RAPPORT_FINAL_ENQUETE_MODIF_PLU_NANCY_2019.pdf" target="_blank"><span class="ce-uploads-fileName">RAPPORT_FINAL_ENQUETE_MODIF_PLU_NANCY_2019.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2478" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/DELB_2019-06-29_7_DELB_2019-06-28_7_APPROBATION_DE_LA_MODIFICATION_SIMPLIFIEE_DU_P_L_U_DE_SEICHA.PDF" target="_blank"><span class="ce-uploads-fileName">DELB_2019-06-29_7_DELB_2019-06-28_7_APPROBATION_DE_LA_MODIFICATION_SIMPLIFIEE_DU_P_L_U_DE_SEICHA.PDF</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2431" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE TOMBLAINE</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 17 décembre 2018 à 14h00 au 19 janvier 2019 à 12h00</strong></p>
+										<p>Dossier approuvé le 20 septembre 2019</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" target="_blank">Consulter le PLU modifié</a></p>
+										<p> </p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2476" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/TOMBLAINE_2019_APPRO/Deliberation_approbation.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberation_approbation.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/TOMBLAINE_2019_APPRO/RAPPORT_PLU_TOMBLAINE_8__06__19.pdf" target="_blank"><span class="ce-uploads-fileName">RAPPORT_PLU_TOMBLAINE_8__06__19.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2260" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">MODIFICATION DU P.L.U. DE FLEVILLE-DEVANT-NANCY</h2>
+											</div>
+										</div>
+										<p><strong>Enquête publique réalisée du 17 décembre 2018 à 14h00 au 19 janvier 2019 à 12h00</strong></p>
+										<p>Dossier approuvé le 20 septembre 2019</p>
+										<p class="bouton"><a href="https://sig.grand-nancy.org/PLU/" title="site du PLU de la Métropole du Grand Nancy" target="_Blank">Consulter le PLU modifié</a></p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2430" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/FLEVILLE_2018_APPRO/Deliberation_approbation2.pdf" target="_blank"><span class="ce-uploads-fileName">Deliberation_approbation2.pdf</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/VIVRE_ET_HABITER/Urbanisme/2019/FLEVILLE_2018_APPRO/Rapport_du_commissaire_enqueteur.pdf" target="_blank"><span class="ce-uploads-fileName">Rapport_du_commissaire_enqueteur.pdf</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1941" class="frame frame-default frame-type-div frame-layout-0">
+										<hr class="ce-div">
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1932" class="frame frame-default frame-type-header frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">DOMAINE PUBLIC</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1942" class="frame frame-default frame-type-div frame-layout-0">
+										<hr class="ce-div">
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2628" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">classement d’office à Tomblaine de l’allée Albert Camus, les « Villas de Tomblaine » parcelle AR n°21, diverses parcelles et leurs réseaux</h2>
+											</div>
+										</div>
+										<p>La Métropole du Grand Nancy a prescrit l'ouverture de l'enquête publique relative au classement d’office dans le domaine public routier métropolitain de l’allée Albert Camus, diverses parcelles, les « Villas de Tomblaine » parcelle AR n°21, et leurs réseaux sur le territoire de la commune de Tomblaine.<br>  <br> A cet effet, M Jean-Marie VOIRIOT a été désigné par M. le Président de la Métropole comme commissaire enquêteur.</p>
+										<p>L'enquête se déroulera <strong>en mairie de Tomblaine ainsi qu’au siège social de la Métropole du lundi 4 au mercredi 20 novembre 2019 inclus</strong>, aux jours et heures habituels d’ouverture de chaque collectivité, où chacun pourra prendre connaissance du dossier et, soit consigner ses observations sur les registres d'enquête, soit les faire parvenir par écrit au commissaire enquêteur avant la fin de l’enquête.</p>
+										<p>Le commissaire enquêteur recevra en mairie de Tomblaine</p>
+										<p><strong>les lundi 4 novembre de 10 à 12 h et mercredi 20 novembre de 15 à 17 h.</strong></p>
+										<p>Son rapport et ses conclusions, transmis au Président de la Métropole dans un délai de trente jours à l'expiration de l'enquête, seront tenus à la disposition du public à la Métropole pendant un an. Les personnes intéressées pourront en obtenir communication.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2629" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/2019_10_22-Dossier_d_enquete_publique_-_Allee_Albert_Camus__Tomblaine.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique - Allée Albert Camus à Tomblaine</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2333" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - des espaces communs du lotissement Beausite et de diverses parcelles à LUDRES</h2>
+											</div>
+										</div>
+										<p>L’enquête se déroulera à la mairie de Ludres, ainsi qu’au siège de la Métropole du Grand Nancy, du mercredi 5 au vendredi 21 juin 2019 inclus, aux jours et heures habituels d’ouverture au public de chaque collectivité, où chacun pourra prendre connaissance du dossier et soit consigner ses observations sur les registres d’enquête, soit les adresser par écrit au commissaire enquêteur à la mairie de Ludres.</p>
+										<p>L’intégralité du dossier d'enquête publique est consultable sur le site internet de la Métropole du Grand Nancy.</p>
+										<p>Le commissaire enquêteur recevra en mairie<br> •    Mercredi 5 juin de 13 à 15 heures<br> •    Vendredi 21 juin de 15 à 17 heures</p>
+										<p>Son rapport et ses conclusions seront tenus à la disposition du public pendant un an, dès leur transmission à la Métropole du Grand Nancy, <br>  </p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2429" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2019_06_EP_Ludres_Beausite.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique - Ludres - Beausite</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2266" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - Allée Saint-Exupéry et diverses parcelles à ESSEY LES NANCY</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête aura lieu du 18 mars au 3 avril 2019 inclus  en mairie d'Essey-lès-Nancy et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p>Le commissaire enquêteur, sera présent pour sa permanence en mairie d'Essey-lès-Nancy  </p>
+										<ul>
+											<li>le lundi 18 mars de 10h à 12h </li>
+											<li>mercredi 3 avril de 15h à 17h.</li>
+										</ul>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2059" class="frame frame-default frame-type-text frame-layout-10">
+										<div class="row infos-pratiques">
+											<div class="col-12 nopadding">
+												<h4>Infos pratiques</h4>
+												<p class="bouton"><a href="https://www.grandnancy.eu/formulaires/guichet-des-formulaires/formulaires-denquetes-publiques-et-concertations/formulaire-de-contact-domanialite-032019-essey-les-nancy/">Envoyer votre contribution au commissaire enquêteur</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2267" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2019_03_ESSEY/2019_03_ESSEY_EP.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique - Essey-lès-Nancy - Allée St Exupéry et parcelles</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2019_03_ESSEY/Rapport_d_enquete_-_allee_St_Exupery_a_Essey-les-Nancy.pdf"><span class="ce-uploads-fileName">Rapport d'enquête publique - Essey-lès-Nancy - Allée St Exupéry et parcelles</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2051" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - LOTISSEMENTS ANCIENS A SAULXURES LES NANCY</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête aura lieu du 26 novembre au 11 décembre 2018 inclus  en mairie de Saulxures-lès-Nancy et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p> M. Francis Gérard, commissaire enquêteur, sera présent pour sa permanence en mairie de Saulxures-lès-Nancy  </p>
+										<ul>
+											<li>le lundi 26 novembre de 9h à 11h </li>
+											<li>mardi 11 décembre de 14h à 16h.</li>
+										</ul>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c2052" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Arrete-enquete.pdf"><span class="ce-uploads-fileName">Arrêté Enquête publique - Lotissements Saulxures_les_Nancy</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/MGN_ENQUETE_PUBLIQUE_LES_HAMEAUX_ET_PRARUPT.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique Les Hameaux</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Plan_Les_Hameaux.pdf"><span class="ce-uploads-fileName">Plan des Hameaux</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/MGN_ENQUETE_PUBLIQUE_LES_HAUTS_JARDINS.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique Les Hauts Jardins</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Plan_Les_Hauts_Jardins.pdf"><span class="ce-uploads-fileName">Plan des Hauts Jardins</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/MGN_ENQUETE_PUBLIQUE_CLOS_DES_SAULES.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique Le Clos des Saules</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Plan_Le_Clos_des_Saules.pdf"><span class="ce-uploads-fileName">Plan Le Clos des Saules</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/MGN_ENQUETE_PUBLIQUE_CLOS_DE_LA_FORET.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique Le Clos de la Forêt</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Plan_Le_Clos_de_la_Foret.pdf"><span class="ce-uploads-fileName">Plan le Clos de la Forêt</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/MGN_ENQUETE_PUBLIQUE_LE_HAMEAU_DU_SAULX.pdf"><span class="ce-uploads-fileName">Dossier d'enquête publique Le Hameau du Saulx</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Plan_Le_Hameau_du_Saulx.pdf"><span class="ce-uploads-fileName">Plan le Hameau de Saulx</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_12_SAULXURES_LES_NANCY/Rapport_d_enquete_-_lotissements_anciens_a_Saulxures.pdf"><span class="ce-uploads-fileName">Rapport d'enquête - Lotissements anciens à Saulxures-lès-Nancy</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1933" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - RUE DU ROUSSILLON A VANDOEUVRE LES NANCY</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête se tiendra du lundi 24 septembre au mardi 9 octobre 2018 inclus en mairie de Vandoeuvre-lès-Nancy et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p>Le Commissaire Enquêteur recevra en Mairie de Vandoeuvre-lès-Nancy les</p>
+										<p><strong>- Lundi 24 septembre de 15h à 17h</strong></p>
+										<p><strong>- Mardi 9 octobre de 10h à 12h</strong></p>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1934" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_09_VANDOEUVRE/Arrete_1257.pdf"><span class="ce-uploads-fileName">DOMAINE PUBLIC - CLASSEMENT D'OFFICE - RUE DU ROUSSILLON A VANDOEUVRE LES NANCY - ENQUETE PUBLIQUE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_09_VANDOEUVRE/Plan_Roussillon.pdf"><span class="ce-uploads-fileName">PLAN ROUSSILLON</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1935" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - LOTISSEMENT DE MANONCHAMPS A FLEVILLE DEVANT NANCY</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête se tiendra du jeudi 20 septembre au lundi 8 octobre 2018 inclus en mairie de Fléville-devant-Nancy et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p>Le Commissaire Enquêteur recevra en Mairie de Fleville-devant-Nancy les</p>
+										<p><strong>- Jeudi 20 septembre de 10h à 12h</strong></p>
+										<p><strong>- Lundi 8 octobre de 15h à 17h</strong></p>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1936" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_09_FLEVILLE/Arrete_DOMANIA_1259.pdf"><span class="ce-uploads-fileName">DOMAINE PUBLIC - CLASSEMENT D'OFFICE - LOTISSEMENT DE MANONCHAMPS A FLEVILLE DEVANT NANCY - ENQUETE PUBLIQUE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_09_FLEVILLE/Plan_Manonchamps.pdf"><span class="ce-uploads-fileName">PLAN MANONCHAN</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1937" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - LOTISSEMENT VARIN CHAMPS ET MANONPRE A SEICHAMPS</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête se tiendra du lundi 15 octobre au mercredi 31 octobre 2018 inclus en mairie de Seichamps et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p>Le Commissaire Enquêteur recevra en Mairie de Seichamps les</p>
+										<p><strong>- Lundi 15 octobre de 14h à 16h</strong></p>
+										<p><strong>- Mercredi 31 octobre de 15h30 à 17h30</strong></p>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1938" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_SEICHAMPS/DOMANIA_1265.pdf"><span class="ce-uploads-fileName">DOMAINE PUBLIC - CLASSEMENT D'OFFICE - LOTISSEMENT VARIN CHAMPS ET MANONPRE A SEICHAMPS - ENQUETE PUBLIQUE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_SEICHAMPS/Plan_Manonpre.pdf"><span class="ce-uploads-fileName">PLAN MANONPRE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_SEICHAMPS/Plan_Varin_Champs.pdf"><span class="ce-uploads-fileName">PLAN VARIN CHAMPS</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_SEICHAMPS/Rapport_d_enquete_-_Lotissements_Varin_Champs_et_Manompre_a_Seichamps.pdf"><span class="ce-uploads-fileName">Rapport d'Enquête publique - Lotissements Varin Champs et Manonpré</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1939" class="frame frame-default frame-type-text frame-layout-0">
+										<div class="row">
+											<div class="col-12">
+												<h2 class="">CLASSEMENT D'OFFICE - RUE JEAN-JACQUES ROUSSEAU A TOMBLAINE</h2>
+											</div>
+										</div>
+										<p><strong>L'enquête se tiendra du lundi 15 octobre au mardi 30 octobre 2018 inclus en mairie de Tomblaine et au siège de la Métropole du Grand Nancy.</strong></p>
+										<p>Le Commissaire Enquêteur recevra en Mairie de Tomblaine les</p>
+										<p><strong>- Lundi 15 octobre de 10h à 12h</strong></p>
+										<p><strong>- Mardi 30 octobre de 15h à 17h</strong></p>
+										<p>Le public pourra, en outre, adresser ses observations écrites à Monsieur le Commissaire Enquêteur pendant toute la durée de l'enquête publique.</p>
+									</div>
+								</div>
+								<div class="col-12">
+									<div id="c1940" class="frame frame-default frame-type-uploads frame-layout-14">
+										<div class="row documents">
+											<div class="col-12 bloc-documents">
+												<h4 class="">Documents</h4>
+												<ul>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_TOMBLAINE/DOMANIA_1266.pdf"><span class="ce-uploads-fileName">CLASSEMENT D'OFFICE - RUE JEAN-JACQUES ROUSSEAU A TOMBLAINE</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_TOMBLAINE/Plan_JJ_ROUSSEAU.pdf"><span class="ce-uploads-fileName">PLAN JEAN-JACQUES ROUSSEAU</span></a>
+														<!-- </div> -->
+													</li>
+													<li>
+														<!-- <div> --><a href="https://www.grandnancy.eu/fileadmin/fichiers/_PUBLICATIONS_LEGALES/ENQUETES_PUBLIQUES/DOMANIALITE/2018_10_TOMBLAINE/Rapport_d_enquete_-_rue_Jean_Jacques_Rousseau_a_Tomblaine.pdf"><span class="ce-uploads-fileName">Rapport d'enquete_-_rue_Jean_Jacques_Rousseau</span></a>
+														<!-- </div> -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row  partage_RS d-lg-none d-print-none">
+								<div class="col-12">
+									<p><a title="Partager sur Facebook" href="#" onclick="return fbs_click()" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> <a title="Partager sur Twitter" href="https://twitter.com/share?related=Grand_Nancy&text=A%C2%A0lire%C2%A0chez%C2%A0@Grand_Nancy%C2%A0:" target="popup" onclick="ouvre('http://twitter.com/share?related=Grand_Nancy&text=A lire chez @Grand_Nancy :');return false"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+										<!-- <i class="fa fa-envelope" aria-hidden="true"></i> --><i class="fas fa-print" aria-hidden="true" onclick="print();"></i></p>
+								</div>
+							</div>
+							<div class="clearer"></div>
+						</article>
+						<div class="d-none d-md-block" id="clearer_sticky"> </div>
+					</div>
+				</div>
+				<div class="row" id="news_liees">
+					<div class="col-12">
+						<!--TYPO3SEARCH_end-->
+						<!-- ACTU UNE -->
+						<!-- ACTU HOME -->
+						<!-- NEWS LIEES -->
+						<div class="container">
+							<div class="row">
+								<!--
+	=====================
+		Partials/List/Item_actu_lie.html
+-->
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="card">
+										<div class="card-img-top"><a title="Le Conseil métropolitain prochainement installé" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1480&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=199af24a583fb945f115083d6a75dfe2"> <picture><source media="(max-width: 767px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/c/f/csm_2020_07_06_Actu-conseil_78e63a26d1.jpg "><source media="(min-width: 768px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/c/f/csm_2020_07_06_Actu-conseil_dcae5476a7.jpg,
+                                                                           https://www.grandnancy.eu/fileadmin/_processed_/c/f/csm_2020_07_06_Actu-conseil_35b3f64368.jpg 2x"><img src="https://www.grandnancy.eu/fileadmin/_processed_/c/f/csm_2020_07_06_Actu-conseil_80d06ed030.jpg" class="" title="" alt="" style="width:100%;height:auto;"></source></source></picture> </a></div>
+										<div class="card-body"><a title="Le Conseil métropolitain prochainement installé" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1480&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=199af24a583fb945f115083d6a75dfe2"> <p class="card-title" itemprop="headline">Le Conseil métropolitain prochainement installé</p> <div class="card-text"><p>À l’issue des élections municipales 2020, les vingt communes de la Métropole du Grand Nancy ont installé leur conseil municipal. Les vingt maires ont...</p></div> </a></div>
+									</div>
+								</div>
+								<hr class="d-none d-md-block">
+								<!--
+	=====================
+		Partials/List/Item_actu_lie.html
+-->
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="card">
+										<div class="card-img-top"><a title="Ouverture de la plateforme e-commerce métropolitaine achetez-grandnancy.fr" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1439&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=9080f48187504649a7305f171cb497d8"> <picture><source media="(max-width: 767px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/0/e/csm_2020_06_24_Soutien-commercants_d9f2282fe6.jpg "><source media="(min-width: 768px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/0/e/csm_2020_06_24_Soutien-commercants_f36ce80627.jpg,
+                                                                           https://www.grandnancy.eu/fileadmin/_processed_/0/e/csm_2020_06_24_Soutien-commercants_61364c5efc.jpg 2x"><img src="https://www.grandnancy.eu/fileadmin/_processed_/0/e/csm_2020_06_24_Soutien-commercants_4887405c6e.jpg" class="" title="" alt="" style="width:100%;height:auto;"></source></source></picture> </a></div>
+										<div class="card-body"><a title="Ouverture de la plateforme e-commerce métropolitaine achetez-grandnancy.fr" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1439&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=9080f48187504649a7305f171cb497d8"> <p class="card-title" itemprop="headline">Ouverture de la plateforme e-commerce métropolitaine achetez-grandnancy.fr</p> <div class="card-text"><p>Le Grand Nancy et ses 20 communes soutiennent les commerçants et artisans locaux touchés par la crise sanitaire. Facilitez vos achats en ligne à côté...</p></div> </a></div>
+									</div>
+								</div>
+								<hr class="d-none d-md-block">
+								<!--
+	=====================
+		Partials/List/Item_actu_lie.html
+-->
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="card">
+										<div class="card-img-top"><a title="L'Aqua Pôle du Grand Nancy se met à l'heure d'été" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1459&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=77f918f792ff2bd018e8cff405af29e6"> <picture><source media="(max-width: 767px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/e/8/csm_2606_Aqua-pole-vf_decbff25da.jpg "><source media="(min-width: 768px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/e/8/csm_2606_Aqua-pole-vf_0b56780926.jpg,
+                                                                           https://www.grandnancy.eu/fileadmin/_processed_/e/8/csm_2606_Aqua-pole-vf_12708e505b.jpg 2x"><img src="https://www.grandnancy.eu/fileadmin/_processed_/e/8/csm_2606_Aqua-pole-vf_5350b85ba7.jpg" class="" title="" alt="" style="width:100%;height:auto;"></source></source></picture> </a></div>
+										<div class="card-body"><a title="L'Aqua Pôle du Grand Nancy se met à l'heure d'été" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1459&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=77f918f792ff2bd018e8cff405af29e6"> <p class="card-title" itemprop="headline">L'Aqua Pôle du Grand Nancy se met à l'heure d'été</p> <div class="card-text"><p>Les piscines de l'Aqua Pôle du Grand Nancy se mettent à l'heure d'été. Consultez le programme pour connaître les activités proposées et toutes les...</p></div> </a></div>
+									</div>
+								</div>
+								<hr class="d-none d-md-block">
+								<!--
+	=====================
+		Partials/List/Item_actu_lie.html
+-->
+								<div class="col-12 col-md-6 col-lg-3">
+									<div class="card">
+										<div class="card-img-top"><a title="Covid-19 et CPTS de la Métropole : des opérations de dépistage grand public et sans ordonnance" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=109c3166aad059062eccc7549d697f4d"> <picture><source media="(max-width: 767px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/2/9/csm_2020_06_25_CPTS_3ee11af490.jpg "><source media="(min-width: 768px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/2/9/csm_2020_06_25_CPTS_523ec48e1a.jpg,
+                                                                           https://www.grandnancy.eu/fileadmin/_processed_/2/9/csm_2020_06_25_CPTS_3c5933eac4.jpg 2x"><img src="https://www.grandnancy.eu/fileadmin/_processed_/2/9/csm_2020_06_25_CPTS_97e11e0393.jpg" class="" title="" alt="" style="width:100%;height:auto;"></source></source></picture> </a></div>
+										<div class="card-body"><a title="Covid-19 et CPTS de la Métropole : des opérations de dépistage grand public et sans ordonnance" href="https://www.grandnancy.eu/evenements/details-evenement/?tx_news_pi1%5Bnews%5D=1445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=109c3166aad059062eccc7549d697f4d"> <p class="card-title" itemprop="headline">Covid-19 et CPTS de la Métropole : des opérations de dépistage grand public et sans ordonnance</p> <div class="card-text"><p>À travers son Contrat Local de Santé (CLS) de 2e génération, la Métropole accompagne et soutient les professionnel(le)s de santé dans cette crise sans...</p></div> </a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- NEWS SPECIFIQUE -->
+						<!-- AGENDA HOME -->
+						<!-- ACTUS LIST -->
+						<!-- AGENDAS LIST -->
+						<!-- PRESSES LIST -->
+						<!-- ALLO ALERTE -->
+						<!-- NEWS IMPORTANTES -->
+						<!-- NEWS ARCHIVES -->
+						<!-- ARCHIVES ACTUS LIST -->
+						<!-- ARCHIVES ACTUS LIST LIGHT -->
+						<!--TYPO3SEARCH_begin-->
+					</div>
+				</div>
+			</main>
+		</div>
+		<!-- container -->
+		<footer class="d-print-none">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row d-print-none">
+						<div class="col-12"><a href="#sousmenu" title="Haut de page"><i class="fas fa-arrow-circle-up fa-3x" aria-hidden="true" id="hautDePage"></i></a></div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-4 order-1">
+							<!-- <div class="row "> -->
+							<!-- <div  id="footer_contact"> -->
+							<!--  -->
+							<!-- <hr class="d-none d-lg-block"> -->
+							<!-- </div> -->
+							<!-- </div> -->
+							<div class="row ">
+								<div id="footer_contact">
+									<div class="col-12">
+										<div id="c6" class="frame frame-default frame-type-text frame-layout-0">
+											<div class="row">
+												<div class="col-12">
+													<h2 class="">Contact</h2>
+												</div>
+											</div>
+											<p><strong>MÉTROPOLE DU GRAND NANCY</strong><br> 22-24, viaduc Kennedy<br> CO 80036<br> 54035 NANCY cedex.</p>
+											<p>Ouvert du lundi au vendredi<br> de 8h à 18h</p>
+											<p class="footer_bouton"><a href="https://www.grandnancy.eu/formulaires/guichet-des-formulaires/">Nous écrire</a></p>
+										</div>
+									</div>
+									<hr class="d-none d-lg-block">
+								</div>
+							</div>
+							<div class="row ">
+								<div id="footer_applications" class="pt-0">
+									<div class="col-12">
+										<div id="c10" class="frame frame-default frame-type-image frame-layout-0">
+											<div class="row">
+												<div class="col-12">
+													<h2 class="">Téléchargez l'application</h2>
+												</div>
+											</div>
+											<div class="ce-image ce-left ce-above">
+												<figure><a href="http://www2.g-ny.org/"><img src="https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_147881f0ec.png" sizes="(min-width: 992px) 714px, 100vw" srcset="https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_147881f0ec.png 360w, 
+                https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_2dc9af00e5.png 715w,
+                https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_389392e22f.png 1200w" class="" title="" alt="G-Ny" style="width:100%;height:auto;"><!-- <picture> --><!-- <source media="(max-width: 767px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_147881f0ec.png 360w,  --><!-- https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_6accc952d2.png 640w"> --><!-- <source media="(min-width: 768px)" srcset="https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_447f4cab02.png 992w, --><!-- https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_ed5594ce96.png 1428w"> --><!-- <img src="https://www.grandnancy.eu/fileadmin/_processed_/2/b/csm_gny_v01_147881f0ec.png 360w" class="mr-3 "  title="" alt="G-Ny" style="width:100%;height:auto;"/> --><!-- </picture> --></a></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 order-2 order-md-3 order-lg-2">
+							<div class="row ">
+								<div id="footer_acces">
+									<div class="col-12">
+										<div id="c995" class="frame frame-default frame-type-menu_pages frame-layout-0">
+											<div class="row">
+												<div class="col-12">
+													<h2 class="">Accès direct</h2>
+												</div>
+											</div>
+											<ul>
+												<li><a href="https://www.grandnancy.eu/publications-legales/deliberations/" title="Délibérations"><span>Délibérations</span></a></li>
+												<li><a href="https://www.grandnancy.eu/la-metropole/magazines/#c1607" title="Rapports d'activité"><span>Rapports d'activité</span></a></li>
+												<li><a href="https://www.grandnancy.eu/publications-legales/enquetes-publiques/" title="Enquêtes publiques"><span>Enquêtes publiques</span></a></li>
+												<li><a href="https://www.grandnancy.eu/publications-legales/marches-publics/" title="Marchés publics"><span>Marchés publics</span></a></li>
+												<li><a href="https://www.grandnancy.eu/publications-legales/documents-budgetaires/" title="Documents budgétaires"><span>Documents budgétaires</span></a></li>
+												<li><a href="https://www.grandnancy.eu/publications-legales/encheres-citoyennes-en-ligne/" title="Enchères citoyennes en ligne"><span>Enchères citoyennes en ligne</span></a></li>
+												<li><a href="https://www.grandnancy.eu/publications-legales/teledeclaration-taxe-de-sejour/" title="Télédéclaration Taxe de séjour"><span>Télédéclaration Taxe de séjour</span></a></li>
+												<li><a href="https://www.grandnancy.eu/la-metropole/magazines/" title="Magazines"><span>Magazines</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 order-3 order-md-2 order-lg-3">
+							<div class="row ">
+								<div id="footer_rs">
+									<div class="col-12">
+										<div id="c9" class="frame frame-default frame-type-html frame-layout-0">
+											<h2>Suivez-nous</h2>
+											<div class="reseaux_sociaux"><a href="http://www.facebook.com/metropolegrandnancy/" target="_blank"><i class="fab fa-facebook-f RS" aria-hidden="true"></i></a><a href="https://fr.linkedin.com/company/communaut-urbaine-du-grand-nancy" target="_blank"><i class="fab fa-linkedin-in RS" aria-hidden="true"></i></a><a href="https://www.instagram.com/metropolegrandnancy/" target="_blank"><i class="fab fa-instagram RS" aria-hidden="true"></i></a><a href="https://twitter.com/Grand_Nancy" target="_blank"><i class="fab fa-twitter RS" aria-hidden="true"></i></a><a href="https://www.youtube.com/user/CuGrandNancy" target="_blank"><i class="fab fa-youtube RS" aria-hidden="true"></i></a>
+												<p class="footer_bouton"><a href="/la-metropole/magazines/inscription-newsletter/">Inscrivez-vous à la newsletter</a></p>
+											</div>
+										</div>
+									</div>
+									<hr class="d-none d-lg-block">
+								</div>
+							</div>
+							<div class="row">
+								<div id="footer_nancy_votre_place">
+									<div class="col-12">
+										<div id="c2306" class="frame frame-default frame-type-html frame-layout-0"><a href="https://place-a-nancy.fr/" alt="Nancy votre place est ici" target="_blank"><img src="/typo3conf/ext/dsit_configuration/Resources/Public/Images/logo_nancy_site_2_B.svg" alt="Nancy votre place est ici"></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- second_footer -->
+			<div class="container-fluid" id="second_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul>
+								<li><a href="https://www.grandnancy.eu/publications/presse/">Presse</a></li>
+								<li><a href="https://www.grandnancy.eu/pied-de-page/publications-legales/">Publications légales</a></li>
+								<li><a href="https://www.grandnancy.eu/pied-de-page/plan-du-site/">Plan du site</a></li>
+								<li><a href="https://www.grandnancy.eu/pied-de-page/mentions-legales/">Mentions légales</a></li>
+								<li><a href="https://www.grandnancy.eu/pied-de-page/les-autres-sites-de-la-metropole/">Les autres sites de la Métropole</a></li>
+								<li><a href="https://www.grandnancy.eu/la-metropole/offres-demploi/">Offres d'emploi</a></li>
+								<li><a href="https://www.grandnancy.eu/pied-de-page/logo/">Logo</a></li>
+								<li><a href="#" onclick="tarteaucitron.userInterface.openPanel();return false;">Gestion cookies et services</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- second_footer -->
+		</footer>
+		<!-- footer -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="text/javascript" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script src="https://www.grandnancy.eu/typo3conf/ext/dsit_configuration/Resources/Public/JavaScript/chrono.js?1562072313" type="text/javascript"></script>
+		<script src="https://www.grandnancy.eu/typo3conf/ext/dsit_configuration/Resources/Public/JavaScript/script.js?1593090652" type="text/javascript"></script>
+		<script src="https://www.grandnancy.eu/typo3conf/ext/dsit_configuration/Resources/Public/JavaScript/autocompletion_grand-nancy.js?1562072313" type="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/17bcdc1f70.js" type="text/javascript"></script>
+		<script src="/typo3conf/ext/dsit_configuration/Resources/Public/JavaScript/tarteaucitron/tarteaucitron.js?v=1.2"></script>
+		<script>tarteaucitron.init({"hashtag":"#tarteaucitron","highPrivacy":true,"AcceptAllCta":true,"orientation":"bottom","adblocker":false,"showAlertSmall":false,"cookieslist":false,"removeCredit":false});</script>
+		<script>tarteaucitron.user.analyticsUa='UA-12353647-2';tarteaucitron.user.analyticsMore=function(){};(tarteaucitron.job=tarteaucitron.job||[]).push('analytics');(tarteaucitron.job=tarteaucitron.job||[]).push('calameo');(tarteaucitron.job=tarteaucitron.job||[]).push('youtube');(tarteaucitron.job=tarteaucitron.job||[]).push('facebook');(tarteaucitron.job=tarteaucitron.job||[]).push('twitter');tarteaucitron.user.facebookpixelId='339094676680010';tarteaucitron.user.facebookpixelMore=function(){};(tarteaucitron.job=tarteaucitron.job||[]).push('facebookpixel');tarteaucitron.user.hotjarId=1366428;tarteaucitron.user.HotjarSv=6;(tarteaucitron.job=tarteaucitron.job||[]).push('hotjar');</script>
+	</body>
+</html>
