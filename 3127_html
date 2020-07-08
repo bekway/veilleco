@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+	<!-- <HEAD> -->
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" garbage>
+		<link href="//fonts.googleapis.com/css?family=Source%20Sans%20Pro%7CMandali%7CPalanquin%20Dark" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			html,body,h5,h6{font-family: 'Source Sans Pro', sans-serif!important;}
+			h1{font-family: 'Mandali', sans-serif!important;}
+			h2, h3, h4{font-family: 'Palanquin Dark', sans-serif!important;}
+		
+		</style>
+		<base href="https://www.ccov.fr/">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="communauté de commune, ouest vosgien, neufchâteau, ccov">
+		<meta name="x-ua-compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Site de la communauté de commune de l'ouest vosgien">
+		<title>CCOV</title>
+		<link href="/?format=feed&type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+		<link href="/?format=feed&type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+		<link href="/images/icones/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/media/com_icagenda/css/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css">
+		<link href="/plugins/content/responsive-tables/responsive-tables.css" rel="stylesheet" type="text/css">
+		<link href="/media/modals/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/css/jcemediabox.css?1d12bb5a40100bbd1841bfc0e498ce7b" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/themes/standard/css/style.css?50fba48f56052a048c5cf30829163e4d" rel="stylesheet" type="text/css">
+		<link href="/templates/admairiev3/css/material.min.css" rel="stylesheet" type="text/css">
+		<link href="/templates/admairiev3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="/templates/admairiev3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="/media/com_icagenda/icicons/style.css" rel="stylesheet" type="text/css">
+		<link href="/components/com_icagenda/themes/packs/default/css/default_module.css" rel="stylesheet" type="text/css">
+		<link href="https://ccov.fr/modules/mod_news_pro_gk5/interface/css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://ccov.fr/modules/mod_news_pro_gk5/tmpl/portal_modes/new_news_header/style.css" rel="stylesheet" type="text/css">
+		<link href="/components/com_roksprocket/layouts/features/themes/slideshow2/slideshow2.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+.menu-top{
+padding-left:10%;
+padding-right:10%;
+padding-top:3%;
+}
+#adslide {
+display: none;
+}
+#slideshow .block.col-lg-12.col-md-12.col-sm-12 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.home_caledrier{
+padding-bottom: 15px!important;
+}
+.aside > .moduletable{
+padding-left: 5%;
+}
+.mdl-button{
+    background: rgb(196,86,176)!important;
+}
+.mdl-button:hover{
+background: rgb(255,137,0)!important;
+}
+/*datepicker add event icagenda*/
+.ui-datepicker .ui-datepicker-buttonpane button{
+background: rgb(196, 86, 176);
+}
+/*accordion*/
+.ui-accordion-header{
+color: #fafafa;
+background:#ff8900;
+border-radius: 2px;
+cursor: pointer;
+line-height: 1.5!important;
+}
+#maternelle{
+background:#5cd820!important;
+}
+#secondaire{
+background:#f4b512!important;
+}
+#superieur{
+background:#ceb29c!important;
+}
+.ui-accordion-header:hover, .ui-accordion-header::selection{
+box-shadow: 1px 1px 4px 1px #999;
+}
+.ui-accordion-content{
+height: auto!important;
+box-shadow: 1px 2px 6px 0px #999;
+}
+#accordion{
+height: auto !important;
+}
+.accordion{
+height: auto !important;
+}
+/* actualité neuf accueil*/
+.gkImage1 .gkTitle, .gkImage2 .gkTitle , .gkImage3 .gkTitle , .gkImage4 .gkTitle , .gkImage5 .gkTitle{
+background: rgba(196, 86, 176, 0.75)!important;
+bottom: 0;
+font-weight: 400;
+left: 0;
+max-width: 100%;
+padding-left:5px;
+    right: 0;
+}
+/* affichage liste*/
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.wrap    { 
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}  
+.wrap a{
+text-align: center;
+padding: 5px;
+margin: 5px;
+width: 175px;
+height: 80px!important;
+color: #fafafa!important;
+background:#ff8900e8!important;
+font-weight: 700;
+}
+.wrap a:hover{
+box-shadow: 0px 0px 3px 3px rgb(255, 137, 0);
+}
+-webkit-transition: box-shadow 0.2s ease-out;
+}
+-moz-transition: box-shadow 0.2s ease-out;
+}
+-o-transition: box-shadow 0.2s ease-out;
+}
+transition: box-shadow 0.2s ease-out;
+}
+
+}
+.wrap a:hover p {
+color:#333;
+}
+.wrap a:hover h4{
+font-weight: bold;
+}
+
+.wrap a i:before {
+color: #777;
+font-size: 14px;
+}
+.wrap li:hover :before {
+}
+
+.neo {
+text-decoration: none;
+padding: 10px;
+font-family: arial;
+font-size: 3em;
+color: #FFFFFF;
+background-color: #000000;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border: 2px solid #000000;
+box-shadow: 2px 3px 12px #444444;
+-webkit-box-shadow: 2px 3px 12px #444444;
+-moz-box-shadow: 2px 3px 12px #444444;
+}
+
+
+.neo:hover {
+padding: 10px;
+border: 2px solid #ffffff;
+box-shadow: 3px 4px 14px #000000;
+-webkit-box-shadow: 3px 4px 14px #000000;
+-moz-box-shadow: 3px 4px 14px #000000;
+}
+
+.form{
+text-decoration: none;
+padding: 10px;
+font-family: arial;
+font-size: 3em;
+color: #FFFFFF;
+background-color: #000000;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border: 2px solid #000000;
+box-shadow: 2px 3px 12px #444444;
+-webkit-box-shadow: 2px 3px 12px #444444;
+-moz-box-shadow: 2px 3px 12px #444444;
+}
+
+
+.form:hover {
+padding: 10px;
+border: 2px solid #ccc;
+box-shadow: 6px 9px 9px 0px#000000;
+-webkit-box-shadow: 6px 9px 9px 0px #000000;
+-moz-box-shadow: 6px 9px 9px 0px #000000;
+}
+
+.alert-primary {
+color: #004085;
+background-color: #cce5ff;
+border-color: #b8daff;
+}
+
+@media screen and (min-width:1250px){
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:1249px){
+
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+
+}
+
+@media screen and (max-width:480px){
+
+
+
+	#ictip a.close {
+		padding-right:15px;
+	}
+
+}
+div.mod_search128 input[type="search"]{ width:auto; }
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"9179ece8da0aaae19822b3f72fa6e019","system.paths":{"root":"","base":""}}</script>
+		<script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="/media/system/js/caption.js?8780c6f628c0f3bb3ec42967e9e0d941" type="text/javascript"></script>
+		<script src="/media/jui/js/bootstrap.min.js?8780c6f628c0f3bb3ec42967e9e0d941" type="text/javascript"></script>
+		<script src="/media/k2/assets/js/k2.frontend.js?v=2.8.0&sitepath=/" type="text/javascript"></script>
+		<script src="/media/modals/js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+		<script src="/media/modals/js/jquery.colorbox-min.js" type="text/javascript"></script>
+		<script src="/media/modals/js/script.min.js?v=9.3.0" type="text/javascript"></script>
+		<script src="/plugins/system/jcemediabox/js/jcemediabox.js?0c56fee23edfcb9fbdfe257623c5280e" type="text/javascript"></script>
+		<script src="/templates/admairiev3/js/min/material-min.js" type="text/javascript" defer></script>
+		<script src="/templates/admairiev3/js/min/modernizr-2.8.3-min.js" type="text/javascript" defer></script>
+		<script src="/templates/admairiev3/js/min/jquery.slides-min.js" type="text/javascript" defer></script>
+		<script src="/templates/admairiev3/js/min/jquery.FlexSlider-min.js" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-core.js?8780c6f628c0f3bb3ec42967e9e0d941" type="text/javascript"></script>
+		<script src="/media/system/js/core.js?8780c6f628c0f3bb3ec42967e9e0d941" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-more.js?8780c6f628c0f3bb3ec42967e9e0d941" type="text/javascript"></script>
+		<script src="https://ccov.fr/modules/mod_news_pro_gk5/interface/scripts/engine.mootools.js" type="text/javascript"></script>
+		<script src="https://ccov.fr/modules/mod_news_pro_gk5/tmpl/portal_modes/new_news_header/script.mootools.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/assets/js/mootools-mobile.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/assets/js/rokmediaqueries.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/assets/js/roksprocket.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/assets/js/moofx.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/layouts/features/assets/js/features.js" type="text/javascript"></script>
+		<script src="/components/com_roksprocket/layouts/features/themes/slideshow2/slideshow2.js" type="text/javascript"></script>
+		<script src="/media/system/js/html5fallback.js" type="text/javascript"></script>
+		<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+ var modals_class = 'modal_link'; var modals_defaults = { opacity: '0.8',width: '1250',height: '100%',maxWidth: '1250',maxHeight: '900',current: '{current} / {total}',previous: 'précédent',next: 'suivant',close: 'fermer',xhrError: 'This content failed to load.',imgError: 'This image failed to load.' }; 
+JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"}); (function ($) {
+ jQuery(document).ready(function($){
+$(".slides > li").switchClass("col-md-4","col-sm-4");
+ });
+    })(jQuery);if (typeof RokSprocket == 'undefined') RokSprocket = {};
+Object.merge(RokSprocket, {
+	SiteURL: 'https://ccov.fr/',
+	CurrentURL: 'https://ccov.fr/',
+	AjaxURL: 'https://ccov.fr/index.php?option=com_roksprocket&task=ajax&format=raw&ItemId=101'
+});
+window.addEvent('domready', function(){
+		RokSprocket.instances.slideshow2 = new RokSprocket.Slideshow2();
+});
+window.addEvent('domready', function(){
+	RokSprocket.instances.slideshow2.attach(181, '{"animation":"crossfade","autoplay":"1","delay":"5"}');
+});
+window.addEvent('load', function(){
+   var overridden = false;
+   if (!overridden && window.G5 && window.G5.offcanvas){
+       var mod = document.getElement('[data-slideshow2="181"]');
+       mod.addEvents({
+           touchstart: function(){ window.G5.offcanvas.detach(); },
+           touchend: function(){ window.G5.offcanvas.attach(); }
+       });
+       overridden = true;
+   };
+});
+
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="/templates/admairiev3/css/adtemplate.css" type="text/css">
+		<link rel="stylesheet" href="/templates/admairiev3/css/preset.php?colorlien=%23c456b0&colorhover=%23ff8900&accesrapide=110&accesrapideactif=1&colorfooter=%233a434a&colorbackground=%23ededed&colornavbar=%23ab189f&list_menu=%7B%22iditem%22%3A%5B%22101%22%2C%22108%22%2C%22109%22%2C%22457%22%2C%22458%22%2C%22110%22%5D%2C%22colorthemmenu%22%3A%5B%22%2399e026%22%2C%22%2399e026%22%2C%22%2399e026%22%2C%22%2399e026%22%2C%22%2399e026%22%2C%22%2399e026%22%5D%7D&taillenav=22&paddingnav=15px+20px&choiximgbackground=&repeatbackground=no-repeat&positionbackground=left+top&attachmentbackground=initial&imgbackground=0" type="text/css" media="all">
+		<!--[if lte IE 8]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+					<style>
+				{behavior:url(/templates/admairiev3/js/PIE.htc);}
+			</style>
+			<![endif]-->
+		<style>
+	@media screen and(min-width:768px){.container, .sousmenu{width:750px!important;}}
+	@media screen and(min-width:992px){.container, .sousmneu{width:970px!important;}}
+	@media (min-width:1200px){.container, .sousmenu{width:1250px!important;}}
+		</style>
+		<script></script>
+		<script type="text/javascript">	
+    	function showMenu(){
+	        document.getElementById("offcanvas").style.transform='none';
+	        document.getElementById("offcanvas").style.webkitTransform='none';
+	        document.getElementById("hidemenu").style.display='block';
+	    }
+	    function hideMenu(){
+	        document.getElementById("offcanvas").style.transform='translateX(-100%)';
+	        document.getElementById("offcanvas").style.webkitTransform='translateX(-100%)';
+	        document.getElementById("hidemenu").style.display='none';
+	    }
+   
+		</script>
+	</head>
+	<script src="/media/jui/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" garbage>
+	<!--map-->
+	<link href="/media/jui/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+	<script src="/media/jui/js/jquery.vmap.js"></script>
+	<script src="/media/jui/js/map_ov.js"></script>
+	<script src="/media/jui/js/jquery.vmap.colorsFrance.js"></script>
+	<!-- </HEAD> -->
+	<script type="text/javascript" defer> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98217593-1', 'auto');
+  ga('send', 'pageview');
+  
+	</script>
+	<body style="background:">
+		<div id="hidemenu"><a href="javascript:hideMenu()"></a></div>
+		<div id="offcanvas" class="menumobile">
+			<ul class="nav menu">
+				<li class="item-101 current active deeper parent"><a href="/"><i></i>CCOV</a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-142 divider deeper parent"><span class="separator ">Vie institutionnelle</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-547"><a href="/communaute-de-communes/ccov/vie-institutionelle/presentation"><i></i>Présentation</a></li>
+										<li class="item-481"><a href="/communaute-de-communes/ccov/vie-institutionelle/les-elus"><i></i>Les élus</a></li>
+										<li class="item-482"><a href="/communaute-de-communes/ccov/vie-institutionelle/finances"><i></i>Finances</a></li>
+										<li class="item-483"><a href="/communaute-de-communes/ccov/vie-institutionelle/compte-rendus-des-conseils"><i></i>Compte-rendus des conseils</a></li>
+										<li class="item-484"><a href="/communaute-de-communes/ccov/vie-institutionelle/rapport-d-activite"><i></i>Rapport d'activité</a></li>
+										<li class="item-500"><a href="/communaute-de-communes/ccov/vie-institutionelle/marches-publics"><i></i>Marchés publics</a></li>
+										<li class="item-828"><a href="/communaute-de-communes/ccov/vie-institutionelle/mentions-legales"><i></i>Mentions légales</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-147 divider deeper parent"><span class="separator ">Les services</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-485"><a href="/communaute-de-communes/ccov/les-services/organigramme"><i></i>Organigramme</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-486 divider deeper parent"><span class="separator ">Tourisme</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-663"><a href="http://www.tourisme-ouest-vosges.fr/" target="_blank"><i></i><span>Office de Tourisme</span></a></li>
+										<li class="item-488"><a href="/communaute-de-communes/ccov/hebergements-touristiques/aires-de-camping-cars"><i></i>Aires de camping-cars</a></li>
+										<li class="item-489"><a href="/communaute-de-communes/ccov/hebergements-touristiques/taxes-de-sejour"><i></i>Taxes de séjour </a></li>
+										<li class="item-664"><a href="/communaute-de-communes/ccov/hebergements-touristiques/souscription"><i></i>Souscriptions publiques en cours </a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-152 divider deeper parent"><span class="separator ">Rivières, paysages et espaces naturels</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-548"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/les-rivieres"><i></i>Les rivières </a></li>
+										<li class="item-549"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/espaces-naturels"><i></i>Espaces naturels</a></li>
+										<li class="item-817"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/paysages"><i></i>Paysages</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-137 divider deeper parent"><span class="separator ">Les communes</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-138"><a href="/communaute-de-communes/ccov/les-communes/carte-des-communes"><i></i>Carte des communes</a></li>
+									</div>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-108 deeper parent"><a href="#"><i></i><span>Vie quotidienne</span></a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-165 divider deeper parent"><span class="separator ">Habitat</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-490"><a href="/communaute-de-communes/vie-quotidienne/habitat/p-i-g"><i></i>Habiter Mieux</a></li>
+										<li class="item-695"><a href="/communaute-de-communes/vie-quotidienne/habitat/programme-de-valorisation-du-patrimoine"><i></i>Valorisation du patrimoine</a></li>
+										<li class="item-542"><a href="/communaute-de-communes/vie-quotidienne/habitat/terrain-a-construire"><i></i>Terrains à construire</a></li>
+										<li class="item-839"><a href="/communaute-de-communes/vie-quotidienne/habitat/etude-sur-les-mobilites"><i></i>Etude sur les mobilités</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-157 divider deeper parent"><span class="separator ">Urbanisme</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-494"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/service-d-instruction"><i></i>Instruction du droit des sols </a></li>
+										<li class="item-493"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/plu-intercommunal"><i></i>PLU intercommunal</a></li>
+										<li class="item-693"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/p-s-m-v"><i></i>Plan de Sauvegarde et de Mise en Valeur </a></li>
+										<li class="item-495"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/documents-d-urbanisme"><i></i>Documents d'urbanisme</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-170 divider deeper parent"><span class="separator ">Les marchés</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-499"><a href="/communaute-de-communes/vie-quotidienne/les-marches/les-marches-couverts"><i></i>Marchés</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-171 divider deeper parent"><span class="separator ">Cadre de vie</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-501"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/portage-de-repas"><i></i>Portage de repas</a></li>
+										<li class="item-502"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/maison-de-sante"><i></i>Maison de santé</a></li>
+										<li class="item-503"><a href="#"><i></i><span>Accueil des gens du voyage</span></a></li>
+										<li class="item-692"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/aides-au-transport"><i></i>Aides au transport </a></li>
+										<li class="item-765"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/subvention-vae"><i></i>Subvention VAE</a></li>
+										<li class="item-824"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/contrat-local-de-sante"><i></i>Contrat local de santé</a></li>
+										<li class="item-825"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/maison-de-service-au-public"><i></i>Maison de Services au Public</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-174 deeper parent"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage"><i class="separator"></i><span>Déchets et recyclage </span></a>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-753"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/service-dechets"><i></i>Objectifs du service déchets et règlement </a></li>
+										<li class="item-496"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/calendriers-de-collecte"><i></i>Calendriers de collecte</a></li>
+										<li class="item-497"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/decheteries"><i></i>Les déchèteries</a></li>
+										<li class="item-498"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/sac-jaune"><i></i>Comment trier mes sacs jaunes ?</a></li>
+										<li class="item-798"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/le-tri-des-textiles"><i></i>Le tri des textiles</a></li>
+										<li class="item-799"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/le-tri-du-verre"><i></i>Le tri du verre</a></li>
+										<li class="item-800"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/acheter-un-composteur"><i></i>Acheter un composteur à 25€</a></li>
+										<li class="item-801"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/subvention-poulailler"><i></i>Subvention poulailler </a></li>
+										<li class="item-838"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/covid-19-vos-plus-beaux-messages-de-soutien"><i></i>Déchèteries : ouvertes sur rdv (1160 créneaux par semaine)</a></li>
+										<li class="item-841"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/reduire-mes-dechets-verts"><i></i>Réduire mes déchets verts</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-806 divider deeper parent"><span class="separator ">Risques naturels et technologiques</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-807"><a href="/communaute-de-communes/vie-quotidienne/risques-naturels-et-technologiques/risques-majeurs"><i></i>Risques majeurs</a></li>
+									</div>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-109 deeper parent"><a href="#"><i></i><span>Jeunesse</span></a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-179 divider deeper parent"><span class="separator ">Petite enfance</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-504"><a href="/communaute-de-communes/jeunesse/petite-enfance/creche-et-multi-accueil"><i></i>Crèche et multi-accueil </a></li>
+										<li class="item-505"><a href="/communaute-de-communes/jeunesse/petite-enfance/ram"><i></i>RAM</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-183 divider deeper parent"><span class="separator ">Scolaire</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-506"><a href="/communaute-de-communes/jeunesse/scolaire/ecole-maternelle-et-elementaire"><i></i>Ecoles maternelles et élémentaires</a></li>
+										<li class="item-507"><a href="/communaute-de-communes/jeunesse/scolaire/enseignement-secondaire"><i></i>Enseignement secondaire</a></li>
+										<li class="item-508"><a href="/communaute-de-communes/jeunesse/scolaire/enseignement-superieur"><i></i>Enseignement supérieur</a></li>
+										<li class="item-509"><a href="/communaute-de-communes/jeunesse/scolaire/formation-continue"><i></i>Formation continue</a></li>
+										<li class="item-833"><a href="/communaute-de-communes/jeunesse/scolaire/menus-du-restaurant-scolaire-de-l-ile-verte"><i></i>Menus du restaurant scolaire de l’île Verte</a></li>
+										<li class="item-840"><a href="/communaute-de-communes/jeunesse/scolaire/inscriptions-scolaires"><i></i>Inscriptions scolaires</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-510 divider deeper parent"><span class="separator ">Périscolaire </span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-511"><a href="/communaute-de-communes/jeunesse/periscolaire/neufchateau"><i></i>Neufchâteau</a></li>
+										<li class="item-512"><a href="#"><i></i><span>Liffol-le-Grand</span></a></li>
+										<li class="item-513"><a href="#"><i></i><span>Martigny-les-Gerbonvaux</span></a></li>
+										<li class="item-766"><a href="/communaute-de-communes/jeunesse/periscolaire/autres-communes"><i></i>Autres communes</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-188 divider deeper parent"><span class="separator ">Loisirs</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-514"><a href="/communaute-de-communes/jeunesse/loisirs/tickets-sport"><i></i>Tickets sports</a></li>
+										<li class="item-515"><a href="/communaute-de-communes/jeunesse/loisirs/m-c-l"><i></i>M.C.L</a></li>
+										<li class="item-516"><a href="/communaute-de-communes/jeunesse/loisirs/centre-social"><i></i>Centre social</a></li>
+										<li class="item-517"><a href="/communaute-de-communes/jeunesse/loisirs/centre-de-loisirs-alsm"><i></i>Centre de loisirs ALSH</a></li>
+									</div>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-457 deeper parent"><a href="#"><i></i><span>Activités</span></a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-477 divider deeper parent"><span class="separator ">Equipements culturels</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-518"><a href="/communaute-de-communes/activites/equipements-culturels/le-trait-d-union"><i></i>Le Trait d'Union - Espace Culturel F. Mitterrand</a></li>
+										<li class="item-767"><a href="/communaute-de-communes/activites/equipements-culturels/scene-ernest-lambert"><i></i>La Scène - Théâtre Ernest Lambert</a></li>
+										<li class="item-810"><a href="/communaute-de-communes/activites/equipements-culturels/neopolis"><i></i>Cinéma Néopolis</a></li>
+										<li class="item-519"><a href="/communaute-de-communes/activites/equipements-culturels/ecole-de-musique"><i></i>Ecoles de musiques</a></li>
+										<li class="item-520"><a href="/communaute-de-communes/activites/equipements-culturels/reseau-de-bibliotheque"><i></i>Réseau de bibliothèques</a></li>
+										<li class="item-521"><a href="/communaute-de-communes/activites/equipements-culturels/le-scala"><i></i>Le Scala</a></li>
+										<li class="item-522"><a href="/communaute-de-communes/activites/equipements-culturels/centre-culturel-domremy-la-pucelle"><i></i>Centre culturel Domremy-La-Pucelle</a></li>
+										<li class="item-861"><a href="/communaute-de-communes/activites/equipements-culturels/la-mallette-numerique"><i></i>La mallette numérique</a></li>
+										<li class="item-862"><a href="/communaute-de-communes/activites/equipements-culturels/le-bibliodrive"><i></i>Le bibliodrive</a></li>
+										<li class="item-863"><a href="/communaute-de-communes/activites/equipements-culturels/nouveaux-locaux-bibliotheque-liffol-le-grand"><i></i>Nouveaux locaux bibliothèque Liffol-le-Grand</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-478 divider deeper parent"><span class="separator ">Equipements sportifs</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-523"><a href="/communaute-de-communes/activites/equipements-sportifs/piscine"><i></i>Piscine</a></li>
+										<li class="item-524"><a href="/communaute-de-communes/activites/equipements-sportifs/cosec-et-gymnase"><i></i>COSEC et gymnase</a></li>
+										<li class="item-525"><a href="/communaute-de-communes/activites/equipements-sportifs/stades-de-football"><i></i>Stades de football</a></li>
+										<li class="item-526"><a href="/communaute-de-communes/activites/equipements-sportifs/terrains-de-tennis"><i></i>Terrains de tennis</a></li>
+										<li class="item-527"><a href="/communaute-de-communes/activites/equipements-sportifs/skate-park"><i></i>Skate park</a></li>
+										<li class="item-528"><a href="/communaute-de-communes/activites/equipements-sportifs/parcours-de-sante"><i></i>Parcours de santé</a></li>
+										<li class="item-529"><a href="/communaute-de-communes/activites/equipements-sportifs/centre-equestre"><i></i>Centre équestre</a></li>
+										<li class="item-530"><a href="#"><i></i><span>Les terrains de pétanques</span></a></li>
+										<li class="item-531"><a href="#"><i></i><span>Microsite de la Maladière</span></a></li>
+										<li class="item-532"><a href="/communaute-de-communes/activites/equipements-sportifs/dojo"><i></i>Dojo</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-479 divider deeper parent"><span class="separator ">Randonnées et sites à découvrir</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-754"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/la-meuse-a-velo"><i></i>La Meuse à Vélo</a></li>
+										<li class="item-534"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/autour-de-neufchateau"><i></i>Randonnée pédestre</a></li>
+										<li class="item-755"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/les-vergeres-2"><i></i>Coteaux calcaires </a></li>
+										<li class="item-536"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/le-site-de-l-abreuvoir"><i></i>Le site de l'abreuvoir</a></li>
+										<li class="item-537"><a href="http://www.tourisme-ouest-vosges.fr/circuits-velos/#cdf_id_circuit=7614"><i></i><span>Les vergères</span></a></li>
+									</div>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-458 deeper parent"><a href="#"><i></i><span>Développement économique</span></a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-544 divider deeper parent"><span class="separator ">Le territoire</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-538"><a href="/communaute-de-communes/developpement-economique/le-territoire/les-filieres-presentes-sur-le-territoire"><i></i>Les filières présentes sur le territoire</a></li>
+										<li class="item-539"><a href="/communaute-de-communes/developpement-economique/le-territoire/les-zones-d-activites"><i></i>Les zones d'activités</a></li>
+										<li class="item-543"><a href="/communaute-de-communes/developpement-economique/le-territoire/vie-entrepreuneur"><i></i>Ma vie d'entrepreneur</a></li>
+										<li class="item-834"><a href="/communaute-de-communes/developpement-economique/le-territoire/consommons-local"><i></i>Consommons local</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-772 divider deeper parent"><span class="separator ">Services aux entreprises</span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-540"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/service-dev-eco-ccov"><i></i>Soutien aux entreprises</a></li>
+										<li class="item-541"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/les-locaux-disponibles"><i></i>Locaux et terrains disponibles</a></li>
+										<li class="item-773"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/coworking"><i></i>Espace de travail partagé-coworking</a></li>
+										<li class="item-808"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/boutique-a-essai"><i></i>Opération boutique à l'essai</a></li>
+									</div>
+								</ul>
+							</li>
+							<li class="item-545 divider deeper parent"><span class="separator ">Liens utiles </span>
+								<ul class="nav-child unstyled small">
+									<div class="sousmenu">
+										<li class="item-776"><a href="/communaute-de-communes/developpement-economique/liens-utiles/demarche-marches-publics"><i></i>Démarche marchés publics</a></li>
+										<li class="item-809"><a href="/communaute-de-communes/developpement-economique/liens-utiles/contacts"><i></i>Contacts</a></li>
+									</div>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-110 deeper parent"><a href="#"><i class="rapide"></i><span>Accès rapide</span></a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-197"><a href="/neufchateau/acces-rapide/etat-civil"><i class="fa fa-book"></i><span>Etat-civil</span></a></li>
+							<li class="item-770"><a href="/communaute-de-communes/acces-rapide/etat-civil-en-mairie-2"><i class="fa fa-newspaper-o"></i><span>Inscription à la newsletter</span></a></li>
+							<li class="item-676"><a href="/neufchateau/vie-quotidienne/police/les-missions#documents"><i class="fa fa-user"></i><span>Carte d'identité</span></a></li>
+							<li class="item-629"><a href="/communaute-de-communes/acces-rapide/agenda"><i class="fa fa-calendar"></i><span>Agenda</span></a></li>
+							<li class="item-665"><a href="/communaute-de-communes/ccov/les-communes/carte-des-communes"><i class="fa fa-map-signs"></i><span>Les communes</span></a></li>
+							<li class="item-204"><a href="/communaute-de-communes/acces-rapide/contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+						</div>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<header>
+			<div class="container">
+				<div class="col-md-5">
+					<h1><a id="logo_header" href="/index.php"> <img style="width:autopx; height:autopx;margin-top: 40px; " src="/images/com_com/images/logo/logo_transweb.png" alt="CCOV"> </a></h1>
+				</div>
+				<div class="col-md-7">
+					<div id="top" class="navbar-inverse col-md-10 col-md-offset-2 ">
+						<div class="" style="padding-left: 10%;">
+							<div class="row">
+								<div class="social col-md-6">
+									<div class="menusocial"><span class="facebook"><a href="https://www.facebook.com/CCOVInfos/%20" target="_blank"><i class="fa fa-facebook"></i></a></span></div>
+								</div>
+								<div class="search mod_search128">
+									<form action="/" method="post" class="form-inline"><label for="mod-search-searchword" class="element-invisible">recherche</label> <input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" size="20" placeholder="Recherche..."> <button class="button btn btn-primary" onclick="this.form.searchword.focus();">OK</button> <input type="hidden" name="task" value="search"> <input type="hidden" name="option" value="com_search"> <input type="hidden" name="Itemid" value="101"></form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row menu-top">
+						<h3 style=" text-align:center; padding-bottom: 3%">Rejoignez ici votre site</h3>
+						<div><a class="mdl-button mdl-button--raised mdl-button--colored col-xs-12 col-md-6 col-lg-5 col-lg-offset-1" style="background: rgb(191, 39, 208)!important;text-decoration:none;" href="http://www.ccov.fr">CCOV</a> <a class="mdl-button mdl-button--raised mdl-button--colored col-xs-12 col-md-6 col-lg-5" style="background: rgb(27, 137, 250)!important;text-decoration:none;" href="http://www.ccov.fr/neufchateau">Neufchâteau</a> <a class="mdl-button mdl-button--raised mdl-button--colored col-xs-12 col-md-12 col-lg-10 col-lg-offset-1" style="background: rgb(255, 137, 0)!important;text-decoration:none; " href="https://www.ccov.fr/communaute-de-communes/ccov/les-communes/carte-des-communes">Autres communes</a>
+							<!--                    <a class="mdl-button mdl-button--raised mdl-button--colored col-xs-12 col-md-6 col-lg-5" style="background: #62d61a !important;text-decoration:none; " href="http://www.ville-chatenois88.fr/" target="_blank">châtenois</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="wrap">
+				<!--Navigation-->
+				<div id="navigation">
+					<div class="navbar navbar-default" role="navigation">
+						<div class="container">
+							<div class="navbar-collapse ">
+								<nav class="navigation" role="navigation"><a href="javascript:showMenu();" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"> <div id="nav-icon1"><span></span> <span></span> <span></span></div> </a>
+									<ul class="nav menu">
+										<li class="item-101 current active deeper parent"><a href="/"><i></i>CCOV</a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-142 divider deeper parent"><span class="separator ">Vie institutionnelle</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-547"><a href="/communaute-de-communes/ccov/vie-institutionelle/presentation"><i></i>Présentation</a></li>
+																<li class="item-481"><a href="/communaute-de-communes/ccov/vie-institutionelle/les-elus"><i></i>Les élus</a></li>
+																<li class="item-482"><a href="/communaute-de-communes/ccov/vie-institutionelle/finances"><i></i>Finances</a></li>
+																<li class="item-483"><a href="/communaute-de-communes/ccov/vie-institutionelle/compte-rendus-des-conseils"><i></i>Compte-rendus des conseils</a></li>
+																<li class="item-484"><a href="/communaute-de-communes/ccov/vie-institutionelle/rapport-d-activite"><i></i>Rapport d'activité</a></li>
+																<li class="item-500"><a href="/communaute-de-communes/ccov/vie-institutionelle/marches-publics"><i></i>Marchés publics</a></li>
+																<li class="item-828"><a href="/communaute-de-communes/ccov/vie-institutionelle/mentions-legales"><i></i>Mentions légales</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-147 divider deeper parent"><span class="separator ">Les services</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-485"><a href="/communaute-de-communes/ccov/les-services/organigramme"><i></i>Organigramme</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-486 divider deeper parent"><span class="separator ">Tourisme</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-663"><a href="http://www.tourisme-ouest-vosges.fr/" target="_blank"><i></i><span>Office de Tourisme</span></a></li>
+																<li class="item-488"><a href="/communaute-de-communes/ccov/hebergements-touristiques/aires-de-camping-cars"><i></i>Aires de camping-cars</a></li>
+																<li class="item-489"><a href="/communaute-de-communes/ccov/hebergements-touristiques/taxes-de-sejour"><i></i>Taxes de séjour </a></li>
+																<li class="item-664"><a href="/communaute-de-communes/ccov/hebergements-touristiques/souscription"><i></i>Souscriptions publiques en cours </a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-152 divider deeper parent"><span class="separator ">Rivières, paysages et espaces naturels</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-548"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/les-rivieres"><i></i>Les rivières </a></li>
+																<li class="item-549"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/espaces-naturels"><i></i>Espaces naturels</a></li>
+																<li class="item-817"><a href="/communaute-de-communes/ccov/rivieres-et-espaces-naturels/paysages"><i></i>Paysages</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-137 divider deeper parent"><span class="separator ">Les communes</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-138"><a href="/communaute-de-communes/ccov/les-communes/carte-des-communes"><i></i>Carte des communes</a></li>
+															</div>
+														</ul>
+													</li>
+												</div>
+											</ul>
+										</li>
+										<li class="item-108 deeper parent"><a href="#"><i></i><span>Vie quotidienne</span></a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-165 divider deeper parent"><span class="separator ">Habitat</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-490"><a href="/communaute-de-communes/vie-quotidienne/habitat/p-i-g"><i></i>Habiter Mieux</a></li>
+																<li class="item-695"><a href="/communaute-de-communes/vie-quotidienne/habitat/programme-de-valorisation-du-patrimoine"><i></i>Valorisation du patrimoine</a></li>
+																<li class="item-542"><a href="/communaute-de-communes/vie-quotidienne/habitat/terrain-a-construire"><i></i>Terrains à construire</a></li>
+																<li class="item-839"><a href="/communaute-de-communes/vie-quotidienne/habitat/etude-sur-les-mobilites"><i></i>Etude sur les mobilités</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-157 divider deeper parent"><span class="separator ">Urbanisme</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-494"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/service-d-instruction"><i></i>Instruction du droit des sols </a></li>
+																<li class="item-493"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/plu-intercommunal"><i></i>PLU intercommunal</a></li>
+																<li class="item-693"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/p-s-m-v"><i></i>Plan de Sauvegarde et de Mise en Valeur </a></li>
+																<li class="item-495"><a href="/communaute-de-communes/vie-quotidienne/urbanisme-et-environnement/documents-d-urbanisme"><i></i>Documents d'urbanisme</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-170 divider deeper parent"><span class="separator ">Les marchés</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-499"><a href="/communaute-de-communes/vie-quotidienne/les-marches/les-marches-couverts"><i></i>Marchés</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-171 divider deeper parent"><span class="separator ">Cadre de vie</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-501"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/portage-de-repas"><i></i>Portage de repas</a></li>
+																<li class="item-502"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/maison-de-sante"><i></i>Maison de santé</a></li>
+																<li class="item-503"><a href="#"><i></i><span>Accueil des gens du voyage</span></a></li>
+																<li class="item-692"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/aides-au-transport"><i></i>Aides au transport </a></li>
+																<li class="item-765"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/subvention-vae"><i></i>Subvention VAE</a></li>
+																<li class="item-824"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/contrat-local-de-sante"><i></i>Contrat local de santé</a></li>
+																<li class="item-825"><a href="/communaute-de-communes/vie-quotidienne/cadre-de-vie/maison-de-service-au-public"><i></i>Maison de Services au Public</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-174 deeper parent"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage"><i class="separator"></i><span>Déchets et recyclage </span></a>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-753"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/service-dechets"><i></i>Objectifs du service déchets et règlement </a></li>
+																<li class="item-496"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/calendriers-de-collecte"><i></i>Calendriers de collecte</a></li>
+																<li class="item-497"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/decheteries"><i></i>Les déchèteries</a></li>
+																<li class="item-498"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/sac-jaune"><i></i>Comment trier mes sacs jaunes ?</a></li>
+																<li class="item-798"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/le-tri-des-textiles"><i></i>Le tri des textiles</a></li>
+																<li class="item-799"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/le-tri-du-verre"><i></i>Le tri du verre</a></li>
+																<li class="item-800"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/acheter-un-composteur"><i></i>Acheter un composteur à 25€</a></li>
+																<li class="item-801"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/subvention-poulailler"><i></i>Subvention poulailler </a></li>
+																<li class="item-838"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/covid-19-vos-plus-beaux-messages-de-soutien"><i></i>Déchèteries : ouvertes sur rdv (1160 créneaux par semaine)</a></li>
+																<li class="item-841"><a href="/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/reduire-mes-dechets-verts"><i></i>Réduire mes déchets verts</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-806 divider deeper parent"><span class="separator ">Risques naturels et technologiques</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-807"><a href="/communaute-de-communes/vie-quotidienne/risques-naturels-et-technologiques/risques-majeurs"><i></i>Risques majeurs</a></li>
+															</div>
+														</ul>
+													</li>
+												</div>
+											</ul>
+										</li>
+										<li class="item-109 deeper parent"><a href="#"><i></i><span>Jeunesse</span></a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-179 divider deeper parent"><span class="separator ">Petite enfance</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-504"><a href="/communaute-de-communes/jeunesse/petite-enfance/creche-et-multi-accueil"><i></i>Crèche et multi-accueil </a></li>
+																<li class="item-505"><a href="/communaute-de-communes/jeunesse/petite-enfance/ram"><i></i>RAM</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-183 divider deeper parent"><span class="separator ">Scolaire</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-506"><a href="/communaute-de-communes/jeunesse/scolaire/ecole-maternelle-et-elementaire"><i></i>Ecoles maternelles et élémentaires</a></li>
+																<li class="item-507"><a href="/communaute-de-communes/jeunesse/scolaire/enseignement-secondaire"><i></i>Enseignement secondaire</a></li>
+																<li class="item-508"><a href="/communaute-de-communes/jeunesse/scolaire/enseignement-superieur"><i></i>Enseignement supérieur</a></li>
+																<li class="item-509"><a href="/communaute-de-communes/jeunesse/scolaire/formation-continue"><i></i>Formation continue</a></li>
+																<li class="item-833"><a href="/communaute-de-communes/jeunesse/scolaire/menus-du-restaurant-scolaire-de-l-ile-verte"><i></i>Menus du restaurant scolaire de l’île Verte</a></li>
+																<li class="item-840"><a href="/communaute-de-communes/jeunesse/scolaire/inscriptions-scolaires"><i></i>Inscriptions scolaires</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-510 divider deeper parent"><span class="separator ">Périscolaire </span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-511"><a href="/communaute-de-communes/jeunesse/periscolaire/neufchateau"><i></i>Neufchâteau</a></li>
+																<li class="item-512"><a href="#"><i></i><span>Liffol-le-Grand</span></a></li>
+																<li class="item-513"><a href="#"><i></i><span>Martigny-les-Gerbonvaux</span></a></li>
+																<li class="item-766"><a href="/communaute-de-communes/jeunesse/periscolaire/autres-communes"><i></i>Autres communes</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-188 divider deeper parent"><span class="separator ">Loisirs</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-514"><a href="/communaute-de-communes/jeunesse/loisirs/tickets-sport"><i></i>Tickets sports</a></li>
+																<li class="item-515"><a href="/communaute-de-communes/jeunesse/loisirs/m-c-l"><i></i>M.C.L</a></li>
+																<li class="item-516"><a href="/communaute-de-communes/jeunesse/loisirs/centre-social"><i></i>Centre social</a></li>
+																<li class="item-517"><a href="/communaute-de-communes/jeunesse/loisirs/centre-de-loisirs-alsm"><i></i>Centre de loisirs ALSH</a></li>
+															</div>
+														</ul>
+													</li>
+												</div>
+											</ul>
+										</li>
+										<li class="item-457 deeper parent"><a href="#"><i></i><span>Activités</span></a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-477 divider deeper parent"><span class="separator ">Equipements culturels</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-518"><a href="/communaute-de-communes/activites/equipements-culturels/le-trait-d-union"><i></i>Le Trait d'Union - Espace Culturel F. Mitterrand</a></li>
+																<li class="item-767"><a href="/communaute-de-communes/activites/equipements-culturels/scene-ernest-lambert"><i></i>La Scène - Théâtre Ernest Lambert</a></li>
+																<li class="item-810"><a href="/communaute-de-communes/activites/equipements-culturels/neopolis"><i></i>Cinéma Néopolis</a></li>
+																<li class="item-519"><a href="/communaute-de-communes/activites/equipements-culturels/ecole-de-musique"><i></i>Ecoles de musiques</a></li>
+																<li class="item-520"><a href="/communaute-de-communes/activites/equipements-culturels/reseau-de-bibliotheque"><i></i>Réseau de bibliothèques</a></li>
+																<li class="item-521"><a href="/communaute-de-communes/activites/equipements-culturels/le-scala"><i></i>Le Scala</a></li>
+																<li class="item-522"><a href="/communaute-de-communes/activites/equipements-culturels/centre-culturel-domremy-la-pucelle"><i></i>Centre culturel Domremy-La-Pucelle</a></li>
+																<li class="item-861"><a href="/communaute-de-communes/activites/equipements-culturels/la-mallette-numerique"><i></i>La mallette numérique</a></li>
+																<li class="item-862"><a href="/communaute-de-communes/activites/equipements-culturels/le-bibliodrive"><i></i>Le bibliodrive</a></li>
+																<li class="item-863"><a href="/communaute-de-communes/activites/equipements-culturels/nouveaux-locaux-bibliotheque-liffol-le-grand"><i></i>Nouveaux locaux bibliothèque Liffol-le-Grand</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-478 divider deeper parent"><span class="separator ">Equipements sportifs</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-523"><a href="/communaute-de-communes/activites/equipements-sportifs/piscine"><i></i>Piscine</a></li>
+																<li class="item-524"><a href="/communaute-de-communes/activites/equipements-sportifs/cosec-et-gymnase"><i></i>COSEC et gymnase</a></li>
+																<li class="item-525"><a href="/communaute-de-communes/activites/equipements-sportifs/stades-de-football"><i></i>Stades de football</a></li>
+																<li class="item-526"><a href="/communaute-de-communes/activites/equipements-sportifs/terrains-de-tennis"><i></i>Terrains de tennis</a></li>
+																<li class="item-527"><a href="/communaute-de-communes/activites/equipements-sportifs/skate-park"><i></i>Skate park</a></li>
+																<li class="item-528"><a href="/communaute-de-communes/activites/equipements-sportifs/parcours-de-sante"><i></i>Parcours de santé</a></li>
+																<li class="item-529"><a href="/communaute-de-communes/activites/equipements-sportifs/centre-equestre"><i></i>Centre équestre</a></li>
+																<li class="item-530"><a href="#"><i></i><span>Les terrains de pétanques</span></a></li>
+																<li class="item-531"><a href="#"><i></i><span>Microsite de la Maladière</span></a></li>
+																<li class="item-532"><a href="/communaute-de-communes/activites/equipements-sportifs/dojo"><i></i>Dojo</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-479 divider deeper parent"><span class="separator ">Randonnées et sites à découvrir</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-754"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/la-meuse-a-velo"><i></i>La Meuse à Vélo</a></li>
+																<li class="item-534"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/autour-de-neufchateau"><i></i>Randonnée pédestre</a></li>
+																<li class="item-755"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/les-vergeres-2"><i></i>Coteaux calcaires </a></li>
+																<li class="item-536"><a href="/communaute-de-communes/activites/randonnees-et-sites-a-decouvrir/le-site-de-l-abreuvoir"><i></i>Le site de l'abreuvoir</a></li>
+																<li class="item-537"><a href="http://www.tourisme-ouest-vosges.fr/circuits-velos/#cdf_id_circuit=7614"><i></i><span>Les vergères</span></a></li>
+															</div>
+														</ul>
+													</li>
+												</div>
+											</ul>
+										</li>
+										<li class="item-458 deeper parent"><a href="#"><i></i><span>Développement économique</span></a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-544 divider deeper parent"><span class="separator ">Le territoire</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-538"><a href="/communaute-de-communes/developpement-economique/le-territoire/les-filieres-presentes-sur-le-territoire"><i></i>Les filières présentes sur le territoire</a></li>
+																<li class="item-539"><a href="/communaute-de-communes/developpement-economique/le-territoire/les-zones-d-activites"><i></i>Les zones d'activités</a></li>
+																<li class="item-543"><a href="/communaute-de-communes/developpement-economique/le-territoire/vie-entrepreuneur"><i></i>Ma vie d'entrepreneur</a></li>
+																<li class="item-834"><a href="/communaute-de-communes/developpement-economique/le-territoire/consommons-local"><i></i>Consommons local</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-772 divider deeper parent"><span class="separator ">Services aux entreprises</span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-540"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/service-dev-eco-ccov"><i></i>Soutien aux entreprises</a></li>
+																<li class="item-541"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/les-locaux-disponibles"><i></i>Locaux et terrains disponibles</a></li>
+																<li class="item-773"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/coworking"><i></i>Espace de travail partagé-coworking</a></li>
+																<li class="item-808"><a href="/communaute-de-communes/developpement-economique/services-aux-entreprises/boutique-a-essai"><i></i>Opération boutique à l'essai</a></li>
+															</div>
+														</ul>
+													</li>
+													<li class="item-545 divider deeper parent"><span class="separator ">Liens utiles </span>
+														<ul class="nav-child unstyled small">
+															<div class="sousmenu">
+																<li class="item-776"><a href="/communaute-de-communes/developpement-economique/liens-utiles/demarche-marches-publics"><i></i>Démarche marchés publics</a></li>
+																<li class="item-809"><a href="/communaute-de-communes/developpement-economique/liens-utiles/contacts"><i></i>Contacts</a></li>
+															</div>
+														</ul>
+													</li>
+												</div>
+											</ul>
+										</li>
+										<li class="item-110 deeper parent"><a href="#"><i class="rapide"></i><span>Accès rapide</span></a>
+											<ul class="nav-child unstyled small">
+												<div class="sousmenu">
+													<li class="item-197"><a href="/neufchateau/acces-rapide/etat-civil"><i class="fa fa-book"></i><span>Etat-civil</span></a></li>
+													<li class="item-770"><a href="/communaute-de-communes/acces-rapide/etat-civil-en-mairie-2"><i class="fa fa-newspaper-o"></i><span>Inscription à la newsletter</span></a></li>
+													<li class="item-676"><a href="/neufchateau/vie-quotidienne/police/les-missions#documents"><i class="fa fa-user"></i><span>Carte d'identité</span></a></li>
+													<li class="item-629"><a href="/communaute-de-communes/acces-rapide/agenda"><i class="fa fa-calendar"></i><span>Agenda</span></a></li>
+													<li class="item-665"><a href="/communaute-de-communes/ccov/les-communes/carte-des-communes"><i class="fa fa-map-signs"></i><span>Les communes</span></a></li>
+													<li class="item-204"><a href="/communaute-de-communes/acces-rapide/contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+												</div>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slideshow">
+				<div class="block col-lg-12 col-md-12 col-sm-12  ">
+					<div class="moduletable">
+						<div class="module-content">
+							<div class="sprocket-features layout-slideshow2 " data-slideshow2="181">
+								<ul class="sprocket-features-img-list">
+									<li class="sprocket-features-index-1">
+										<div class="sprocket-features-img-container" data-slideshow2-image><a href="https://www.ccov.fr/communaute-de-communes/ccov/actu/1027-projet-hebma-enquete-et-reunions-publiques"><img src="/cache/mod_roksprocket/50ebdd21e6b05f32ae3dffc7c35a1d4d_490_0.jpg" alt="Participez à l'enquête et/ou aux réunions publiques" style="max-width: 100%; height: auto;"></a></div>
+										<div class="sprocket-features-content" data-slideshow2-content>
+											<div class="sprocket-features-padding">
+												<h2 class="sprocket-features-title">Participez à l'enquête et/ou aux réunions publiques</h2>
+												<div class="sprocket-features-desc">En savoir plus <a href="https://www.ccov.fr/communaute-de-communes/ccov/actu/1027-projet-hebma-enquete-et-reunions-publiques" class="readon">Lire la suite</a></div>
+											</div>
+										</div>
+									</li>
+									<li class="sprocket-features-index-2">
+										<div class="sprocket-features-img-container" data-slideshow2-image><a href="https://www.ccov.fr/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/decheteries"><img src="/cache/mod_roksprocket/320c0422da9a9da6cb99ea90773fe944_490_0.jpg" alt="Réouverture des déchèteries sans Rdv" style="max-width: 100%; height: auto;"></a></div>
+										<div class="sprocket-features-content" data-slideshow2-content>
+											<div class="sprocket-features-padding">
+												<h2 class="sprocket-features-title">Réouverture des déchèteries sans Rdv</h2>
+												<div class="sprocket-features-desc">En savoir plus <a href="https://www.ccov.fr/communaute-de-communes/vie-quotidienne/dechets-et-recyclage/decheteries" class="readon">Lire la suite</a></div>
+											</div>
+										</div>
+									</li>
+									<li class="sprocket-features-index-3">
+										<div class="sprocket-features-img-container" data-slideshow2-image><a href="https://www.neopolis-cinema.fr/"><img src="/cache/mod_roksprocket/e74c114359dd637651012be810e36336_490_0.png" alt="Réouverture de Néopolis" style="max-width: 100%; height: auto;"></a></div>
+										<div class="sprocket-features-content" data-slideshow2-content>
+											<div class="sprocket-features-padding">
+												<h2 class="sprocket-features-title">Réouverture de Néopolis</h2>
+												<div class="sprocket-features-desc"><a href="https://www.neopolis-cinema.fr/" class="readon">Lire la suite</a></div>
+											</div>
+										</div>
+									</li>
+									<li class="sprocket-features-index-4">
+										<div class="sprocket-features-img-container" data-slideshow2-image><a href="https://www.ccov.fr/communaute-de-communes/activites/equipements-sportifs/piscine"><img src="/cache/mod_roksprocket/e9b5794282148c6285e823f4cd76c131_490_0.jpg" alt="Le grand et le petit bassin vous attendent !" style="max-width: 100%; height: auto;"></a></div>
+										<div class="sprocket-features-content" data-slideshow2-content>
+											<div class="sprocket-features-padding">
+												<h2 class="sprocket-features-title">Le grand et le petit bassin vous attendent !</h2>
+												<div class="sprocket-features-desc">Nouveaux horaires <a href="https://www.ccov.fr/communaute-de-communes/activites/equipements-sportifs/piscine" class="readon">Lire la suite</a></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="sprocket-features-arrows"><span class="arrow next" data-slideshow2-next></span> <span class="arrow prev" data-slideshow2-previous></span></div>
+								<div class="sprocket-features-pagination">
+									<ul>
+										<li class="active" data-slideshow2-pagination="1"><span>1</span></li>
+										<li data-slideshow2-pagination="2"><span>2</span></li>
+										<li data-slideshow2-pagination="3"><span>3</span></li>
+										<li data-slideshow2-pagination="4"><span>4</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clr"></div>
+			<div id="adslide">
+				<div class="slide_inslide" style="width:100%;  margin:0 auto;">
+					<div id="diapo">
+						<div id="slideshow">
+							<div id="slides">
+								<div id="sld1" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_traitdunion_lite.jpg" alt=""></div>
+								<div id="sld2" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_domremyenmai_lite.jpg" alt=""></div>
+								<div id="sld3" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_rollainville_lite.jpg" alt=""></div>
+								<div id="sld4" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_domremyenma2i_lite.jpg" alt=""></div>
+								<div id="sld5" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_soulosse_lite.jpg" alt=""></div>
+								<div id="sld6" class="linkdiapo">
+									<div class="blockinfo">
+										<div class="infoslide">
+											<h2 class="slidetitre link link--takiri"><br><span></span></h2>
+										</div>
+									</div><img src="/images/thumb_diapo/thum_maisonnatale_lite.jpg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>	 
+    jQuery(function() {
+      jQuery('#slides').slidesjs({
+	              width: 1920,
+        height: 465,
+        	        navigation: {
+	      active: 0,
+          effect: "fade"
+        },
+        pagination: {
+	      active: 0,
+          effect: "fade"
+        },
+           play: {
+                active: false,
+                effect: "fade",
+                interval: 5e3,
+                auto: !0,
+                swap: !0,
+                pauseOnHover: !1,
+                restartDelay: 2500
+            },
+        effect: {
+          fade: {
+            speed: 3500          },
+          slide: {
+            speed: 3500          }
+        }
+      });
+    });
+  
+			</script>
+		</header>
+		<!-- Content -->
+		<div id="content">
+			<section class="container">
+				<div id="main" class="row show-grid">
+					<!-- Left -->
+					<!-- Component -->
+					<article id="container" class="col-md-8 col-sm-12  " style="padding: 0;">
+						<div id="content-top">
+							<div class="row">
+								<div class="block col-lg-12 col-md-12 col-sm-12 _agenda ">
+									<div class="moduletable">
+										<div class="module-title">
+											<h3 class="title"><a href="/communaute-de-communes/acces-rapide/agenda">Les événements</a></h3>
+										</div>
+										<div class="module-content">
+											<div class="nspMain _agenda" id="nsp-nsp-147" data-config="{
+				'animation_speed': 400,
+				'animation_interval': 5000,
+				'animation_function': 'Fx.Transitions.Expo.easeIn',
+				'news_column': 3,
+				'news_rows': 1,
+				'links_columns_amount': 0,
+				'links_amount': 0
+			}">
+												<div class="nspArts bottom" style="width:100%;">
+													<div class="nspArtScroll1">
+														<div class="nspArtScroll2 nspPages3">
+															<div class="nspArtPage active nspCol3 ">
+																<div class="nspArt col-md-4 ">
+																	<p class="nspInfo nspInfo1 tleft fnone">11 Juil</p>
+																	<div class="center tcenter fnone"><a href="/communaute-de-communes/acces-rapide/agenda/387-conseil-communautaire" class="nspImageWrapper tcenter fnone" style="margin:0 0 0 0;" target="_self"><img class="nspImage" src="https://ccov.fr/modules/mod_news_pro_gk5/cache/AnneB.reunionnsp-147.jpg" alt="" style="width:225px;height:165px;"></a></div>
+																	<h5 class="nspHeader tleft fnone has-image"><a href="/communaute-de-communes/acces-rapide/agenda/387-conseil-communautaire" title="Conseil Communautaire" target="_self">Conseil Communautaire</a></h5>
+																</div>
+																<div class="nspArt col-md-4 ">
+																	<p class="nspInfo nspInfo1 tleft fnone">12 Juil</p>
+																	<div class="center tcenter fnone"><a href="/communaute-de-communes/acces-rapide/agenda/256-grand-bric-a-brac-solidaire" class="nspImageWrapper tcenter fnone" style="margin:0 0 0 0;" target="_self"><img class="nspImage" src="https://ccov.fr/modules/mod_news_pro_gk5/cache/bric_brac_JUIN_2020-page-001nsp-147.jpg" alt="" style="width:225px;height:165px;"></a></div>
+																	<h5 class="nspHeader tleft fnone has-image"><a href="/communaute-de-communes/acces-rapide/agenda/256-grand-bric-a-brac-solidaire" title="Bric à Brac Solidaire" target="_self">Bric à Brac Solidaire</a></h5>
+																</div>
+																<div class="nspArt col-md-4 ">
+																	<p class="nspInfo nspInfo1 tleft fnone">27 Sep</p>
+																	<div class="center tcenter fnone"><a href="/communaute-de-communes/acces-rapide/agenda/673-vide-jardin-d-automne-du-ccas" class="nspImageWrapper tcenter fnone" style="margin:0 0 0 0;" target="_self"><img class="nspImage" src="https://ccov.fr/modules/mod_news_pro_gk5/cache/icagenda.frontend.images.affiche-videjardin-septembre-2020-mininsp-147.png" alt="" style="width:225px;height:165px;"></a></div>
+																	<h5 class="nspHeader tleft fnone has-image"><a href="/communaute-de-communes/acces-rapide/agenda/673-vide-jardin-d-automne-du-ccas" title="Vide-Jardin d'automne du CCAS" target="_self">Vide-Jardin d'automne du CCAS</a></h5>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block col-lg-12 col-md-12 col-sm-12 _actu ">
+									<div class="moduletable">
+										<div class="module-title">
+											<h3 class="title"><a href="/communaute-de-communes/ccov/actualites">Les actualités</a></h3>
+										</div>
+										<div class="module-content">
+											<div class="gkNspPM gkNspPM-NewNewsHeader" id="nsp-174" data-layout="main_2rows_2rows">
+												<div class="gkImagesWrapper">
+													<div class="gkImage gkImage1">
+														<div class="gkImageArea" style="background-image: url('https://ccov.fr/modules/mod_news_pro_gk5/cache/AnneB.Meuse_crue_Coussey_2nsp-174.jpg');"></div>
+														<h2 class="gkTitle"><a href="/communaute-de-communes/ccov/actu/1027-projet-hebma-enquete-et-reunions-publiques">PROJET HEBMA : Enquête et réunions publiques </a></h2>
+													</div>
+													<div class="gkImage gkImage2">
+														<div class="gkImageArea" style="background-image: url('https://ccov.fr/modules/mod_news_pro_gk5/cache/au-fil-de-lété_story_réseaux-sociaux1-638x300nsp-174.png');"></div>
+														<h2 class="gkTitle"><a href="/communaute-de-communes/ccov/actu/1026-cap-a-l-ouest-visitez-l-ouest-des-vosges">Cap à l'ouest : visitez l'ouest des vosges</a></h2>
+													</div>
+													<div class="gkImage gkImage3">
+														<div class="gkImageArea" style="background-image: url('https://ccov.fr/modules/mod_news_pro_gk5/cache/AnneB.3746235nsp-174.jpg');"></div>
+														<h2 class="gkTitle"><a href="/communaute-de-communes/ccov/actu/1025-decheteries-acces-sans-rdv-des-le-01-07">Déchèteries : accès sans rdv </a></h2>
+													</div>
+													<div class="gkImage gkImage4">
+														<div class="gkImageArea" style="background-image: url('https://ccov.fr/modules/mod_news_pro_gk5/cache/AnneB.bib_liffol_ouverturensp-174.jpg');"></div>
+														<h2 class="gkTitle"><a href="/communaute-de-communes/ccov/actu/1024-reouverture-des-bibliotheques-des-le-6-juillet">Réouverture des bibliothèques dès le 6 juillet</a></h2>
+													</div>
+													<div class="gkImage gkImage5">
+														<div class="gkImageArea" style="background-image: url('https://ccov.fr/images/AnneB/piscine%20ouverte.jpg');"></div>
+														<h2 class="gkTitle"><a href="/communaute-de-communes/ccov/actu/1021-reouverture-de-la-piscine-protocole-sanitaire-renforce">La piscine, en toute sécurité !</a></h2>
+													</div>
+													<div class="gkBlankImage"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAAClCAYAAACqepoAAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVR4nO3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE4DRNcAAbIQl8UAAAAASUVORK5CYII=" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Page d'accueil caché ou non  -->
+						<div id="content-bottom">
+							<div class="row">
+								<div class="block col-lg-12 col-md-12 col-sm-12  ">
+									<div class="moduletable">
+										<div class="module-title">
+											<h3 class="title">le ccov actu</h3>
+										</div>
+										<div class="module-content">
+											<div id="adpublication" class="flexslider ">
+												<div class="bloc  row">
+													<ul class="slides  bloc1">
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="https://www.calameo.com/read/003387190b398972cff9d"><img src="/images/com_com/ccov_actu/couvccov5_2.jpg" alt="couvccov5 2"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="https://fr.calameo.com/read/003387190eb50ae3a1658" target="_blank" rel="noopener"><img src="/images/com_com/ccov_actu/couv_4.jpg" alt="couv 4"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="https://fr.calameo.com/read/003387190362d95b8ccf1" target="_blank" rel="noopener"><img src="/images/com_com/ccov_actu/ccov-3-1.jpg" alt="ccov 3 1"></a></p>
+														</li>
+													</ul>
+													<ul class="slides  bloc2">
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="https://fr.calameo.com/read/003387190891a6d876e73" target="_blank" rel="noopener noreferrer"><img src="/images/com_com/ccov_actu/ccovactu2.jpg" alt="ccovactu2"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="https://fr.calameo.com/read/0033871907c4ff3369d5e" target="_blank" rel="noopener noreferrer"><img src="/images/com_com/ccov_actu/ccov01.jpg" alt="ccov01"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/0033871900cad4c8183bb" target="_blank" rel="noopener noreferrer"><img src="/images/com_com/ccov_actu/couv-012.jpg" alt="couv 012"></a></p>
+														</li>
+													</ul>
+													<ul class="slides  bloc3">
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/00338719078c1fcd70e59"><img src="/images/com_com/ccov_actu/CCBN10-web-1.jpg" alt="CCBN10 web 1"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/00338719075356d11c2b1"><img src="/images/com_com/ccov_actu/CCBN-ActuN-9web2-1.jpg" alt="CCBN ActuN 9web2 1"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/00338719067a97f69b3eb"><img src="/images/com_com/ccov_actu/CCBN-8_web-1.jpg" alt="CCBN 8 web 1"></a></p>
+														</li>
+													</ul>
+													<ul class="slides  bloc4">
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/003387190486efda2cdad"><img src="/images/com_com/ccov_actu/CCBN7web-1.jpg" alt="CCBN7web 1"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/0033871907320a3c943cd"><img src="/images/com_com/ccov_actu/ccbn6-web-1.jpg" alt="ccbn6 web 1"></a></p>
+														</li>
+														<li class="col-md-4">
+															<!--
+-->
+															<!-- Utilise l'image d'intro (Lien sur image plus titre en dessous) ou la première image de corps de text (Pas de lien sur l'image et titre au dessus) -->
+															<p><a href="http://fr.calameo.com/read/003387190dd72a30ea7d7"><img src="/images/com_com/ccov_actu/ccbnactu05web2-1.jpg" alt="ccbnactu05web2 1"></a></p>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery('.flexslider').flexslider({
+        animation: "slide",
+    });
+});
+											</script>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- Right -->
+					<div id="right" class="col-md-4 col-sm-12">
+						<div class="block col-lg-12 col-md-12 col-sm-12 home_caledrier ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h3 class="title"><a href="/communaute-de-communes/acces-rapide/agenda">Calendrier</a></h3>
+								</div>
+								<div class="module-content">
+									<!-- iCagenda - Calendar -->
+									<div tabindex="0" id="ic-calendar-163" class="">
+										<!-- Calendar -->
+										<div class="default iccalendar home_caledrier" style=" color:#050505; background-color:#f3f2f0;" id="163">
+											<div id="mod_iccalendar_163">
+												<div class="icagenda_header"></div>
+												<div class="icnav"><a id="ic-prev-year" class="backicY icagendabtn_163" href="https://www.ccov.fr/?iccaldate=2019-07-1" rel="nofollow"><span style="height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px;" title="">Année précédente</span><span class="iCicon iCicon-backicY"></span></a><a id="ic-prev-month" class="backic icagendabtn_163" href="https://www.ccov.fr/?iccaldate=2020-6-1" rel="nofollow"><span style="height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px;" title="">Mois précédent</span><span class="iCicon iCicon-backic"></span></a><a id="ic-next-year" class="nexticY icagendabtn_163" href="https://www.ccov.fr/?iccaldate=2021-07-1" rel="nofollow"><span style="height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px;" title="">Année suivante</span><span class="iCicon iCicon-nexticY"></span></a><a id="ic-next-month" class="nextic icagendabtn_163" href="https://www.ccov.fr/?iccaldate=2020-8-1" rel="nofollow"><span style="height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px;" title="">Mois suivant</span><span class="iCicon iCicon-nextic"></span></a>
+													<div class="titleic">Juillet 2020</div>
+												</div>
+												<div style="clear:both"></div>
+												<table id="icagenda_calendar" class="ic-table" style="width:100%;">
+													<thead>
+														<tr>
+															<th style="width:14.2857143%;background: ;">Lun</th>
+															<th style="width:14.2857143%;background: ;">Mar</th>
+															<th style="width:14.2857143%;background: ;">Mer</th>
+															<th style="width:14.2857143%;background: ;">Jeu</th>
+															<th style="width:14.2857143%;background: ;">Ven</th>
+															<th style="width:14.2857143%;background: ;">Sam</th>
+															<th style="width:14.2857143%;background: ;">Dim</th>
+														</tr>
+													</thead>
+													<tr>
+														<td colspan="2"></td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-01">1</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-02">2</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-03">3</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-04">4</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-05">5</div>
+														</td>
+													</tr>
+													<tr>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-06">6</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-07">7</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Today" data-cal-date="2020-07-08">8</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-09">9</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-10">10</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="icevent " style="background:#a17b00 !important;"><a href="#" rel="nofollow" tabindex="0"> <div class="style_Day ic-dark" data-cal-date="2020-07-11">11</div> </a>
+																<div class="spanEv">
+																	<div class="ictip-event"><a href="/communaute-de-communes/acces-rapide/agenda/387-conseil-communautaire?date=2020-07-11-08-30"> <div class="linkTo"><div class="ictip-img"><span style="background: #a17b00;" class="img"><img src="/images/icagenda/thumbs/themes/ic_small_w100h100q80_reunion.jpg" alt=""></span></div><div class="ictip-event-title titletip">Conseil Communautaire</div><div class="ictip-info ic-clearfix"><div class="ictip-location">Salle des fêtes, Châtenois</div></div></div> </a></div>
+																</div>
+																<div class="date ictip-date"><span class="ictip-date-lbl"> Date : </span> <span class="ictip-date-format"> 11 Juil 2020 </span></div>
+															</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="icevent " style="background:#884dd1 !important;"><a href="#" rel="nofollow" tabindex="0"> <div class="style_Day ic-bright" data-cal-date="2020-07-12">12</div> </a>
+																<div class="spanEv">
+																	<div class="ictip-event"><a href="/communaute-de-communes/acces-rapide/agenda/256-grand-bric-a-brac-solidaire"> <div class="linkTo"><div class="ictip-img"><span style="background: #884dd1;" class="img"><img src="/images/icagenda/thumbs/themes/ic_small_w100h100q80_bric-brac-juin-2020-page-001.jpg" alt=""></span></div><div class="ictip-event-title titletip">Bric à Brac Solidaire</div><div class="ictip-info ic-clearfix"><div class="ictip-location">Point de Vente de l'Association Emmaüs 88</div><div class="ictip-desc">l'Association Emmaüs 88 organise son Grand Bric à Brac solidaire Port du Masque OBLIGATOIRE, respect des gestes</div></div></div> </a></div>
+																</div>
+																<div class="date ictip-date"><span class="ictip-date-lbl"> Date : </span> <span class="ictip-date-format"> 12 Juil 2020 </span></div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-13">13</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-14">14</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-15">15</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-16">16</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-17">17</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-18">18</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-19">19</div>
+														</td>
+													</tr>
+													<tr>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-20">20</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-21">21</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-22">22</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-23">23</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-24">24</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-25">25</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-26">26</div>
+														</td>
+													</tr>
+													<tr>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-27">27</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-28">28</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-29">29</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-30">30</div>
+														</td>
+														<td style="background: ;">
+															<!-- Day Pop-up -->
+															<div class="no-event style_Day" data-cal-date="2020-07-31">31</div>
+														</td>
+														<td colspan="2"></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<script type="text/javascript">
+(function($){
+	var icmouse = 'click';
+	var mouseout = '1';
+	var icclasstip = '.icevent a';
+	var icclass = '.iccalendar';
+	var position = 'left';
+	var posmiddle = 'top';
+	var modid = '163';
+	var modidid = '#163';
+	var icagendabtn = '.icagendabtn_163';
+	var mod_iccalendar = '#mod_iccalendar_163';
+	var template = '.default';
+	var loading = 'chargement...';
+	var closetxt = 'Fermer';
+	var tip_type = '1';
+	var tipwidth = 600;
+	var smallwidththreshold = 481;
+	var verticaloffset = 60;
+	var css_position = '';
+	var mobile_min_width = 320;
+	var extra_css = '';
+
+	$(document).on('click touchend', icagendabtn, function(e){		e.preventDefault();
+
+		url=$(this).attr('href');
+
+		$(modidid).html('<div class="icloading_box"><div style="text-align:center;">' + loading + '<\/div><div class="icloading_img"><\/div><\/div>').load(url + ' ' + mod_iccalendar, function(){$('#mod_iccalendar_163').highlightToday();});
+
+	});
+
+	// Calendar Keyboard Accessibility (experimental, since 3.5.14)
+	if (typeof first_mod === 'undefined') {
+		$i = '1';
+		first_mod = modid;
+		first_nb = $i;
+		nb_mod = $i;
+	} else {
+		$i = (typeof $i === 'undefined') ? '2' : ++$i;
+		nb_mod = $i;
+	}
+
+	$('#ic-calendar-'+modid).addClass('ic-'+nb_mod);
+
+	$(document).keydown(function(e){
+
+		// ctrl+alt+C : focus on first Calendar module
+		if (e.ctrlKey && e.altKey && e.keyCode == 67) {
+			$('#ic-calendar-'+first_mod).focus();
+		}
+
+		// ctrl+alt+N : focus on Next calendar module
+		if (e.ctrlKey && e.altKey && e.keyCode == 78) {
+			if ($('#ic-calendar-'+modid).is(':focus')) {
+				activ = $('#ic-calendar-'+modid).attr('class');
+				act = activ.split('-');
+				act = act[1];
+				next = ++act;
+			}
+			mod_class = $('#ic-calendar-'+modid).attr('class');
+			if ($('.ic-'+next).length == 0) next = 1;
+			if (mod_class == 'ic-'+next) $('.ic-'+next).focus();
+		}
+
+		// On focused calendar module
+		if ($('#ic-calendar-'+modid).is(':focus')){
+			switch (e.keyCode) {
+				case 37:
+					// Left arrow pressed
+					url = $('#ic-calendar-'+modid+' #ic-prev-month').attr('href');
+					break;
+				case 38:
+					// Top arrow pressed
+					url = $('#ic-calendar-'+modid+' #ic-next-year').attr('href');
+					break;
+				case 39:
+					// Right arrow pressed
+					url = $('#ic-calendar-'+modid+' #ic-next-month').attr('href');
+					break;
+				case 40:
+					// Top arrow pressed
+					url = $('#ic-calendar-'+modid+' #ic-prev-year').attr('href');
+					break;
+			}
+
+			if ((!e.shiftKey && (e.keyCode == 37 || e.keyCode == 39)) ||
+				(e.shiftKey && (e.keyCode == 38 || e.keyCode == 40))) {
+				$(modidid).html('<div class="icloading_box"><div style="text-align:center;">' + loading + '<\/div><div class="icloading_img"><\/div><\/div>').load(url + ' ' + mod_iccalendar, function(){$('#mod_iccalendar_163').highlightToday();});
+			}
+
+//			if ($(modidid+' '+icclasstip).is(':focus') && e.keyCode == 13){
+//				var icmouse = "click";
+//			}
+		}
+	});
+
+	if (tip_type=='2') {	$(document).on(icmouse, this, function(e){
+		e.preventDefault();
+
+		$(".iCaTip").tipTip({maxWidth: "400", defaultPosition: "top", edgeOffset: 1, activation:"hover", keepAlive: true});
+	});
+	}
+
+	if (tip_type=='1') {		$view_width=$(window).width();		if($view_width<smallwidththreshold){			icmouse='click touchend';
+		}
+
+		$(document).on(icmouse, modidid+' '+icclasstip, function(e){
+			$view_height=$(window).height();			$view_width=$(window).width();			e.preventDefault();
+			$('#ictip').remove();
+			$parent=$(this).parent();
+			$tip=$($parent).children(modidid+' .spanEv').html();
+
+			if ($view_width < smallwidththreshold)
+			{
+								css_position = 'fixed';
+				$width_px = Math.max(mobile_min_width,$view_width); 				$width = '100%';
+				$pos = '0px';
+				$top = '0px';
+				extra_css='border:0;border-radius:0;height:100%;box-shadow:none;margin:0px;padding:10px;min-width:'+mobile_min_width+'px;overflow-y:scroll;padding:0;';			}
+			else
+			{
+				css_position = 'absolute';
+				$width_px = Math.min($view_width, tipwidth);
+				$width = $width_px+'px';
+
+								switch(position) {
+					case 'left':
+						$pos=Math.max(0,$(modidid).offset().left-$width_px-45)+'px';
+						break;
+					case 'right':
+						$pos=Math.max(0,Math.min($view_width-$width_px,$(modidid).offset().left+$(modidid).width()+10))+'px';
+						break;
+					default:						$pos=Math.ceil(($view_width-$width_px)/2)+'px';
+						break;
+				}
+
+								if (posmiddle === 'top')
+				{
+					$top = Math.max(0,$(modidid).offset().top-verticaloffset)+'px';				}
+				else
+				{
+					$top = Math.max(0,$(modidid).offset().top+$(modidid).height()-verticaloffset)+'px';				}
+			}
+
+
+			$('body').append('<div style="display:block; position:'+css_position+'; width:'+$width+'; left:'+$pos+'; top:'+$top+';'+extra_css+'" id="ictip"> '+$(this).parent().children('.date').html()+'<a class="close" style="cursor: pointer;"><div style="display:block; width:auto; height:50px; text-align:right;">' + closetxt + '<\/div><span class="clr">'+$tip+'<\/div>');
+
+			// Tooltip Keyboard Accessibility (experimental, since 3.5.14)
+			$(document).keydown(function(e){
+				//	Shift : focus on tooltip events
+				if ($('.icevent a').is(':focus') && e.keyCode == 16){
+					$('.ictip-event a').focus();
+				}
+				//	esc : close tooltip
+				if (($('.ictip-event a').is(':focus') || $('.icevent a').is(':focus')) && e.keyCode == 27){
+					e.preventDefault();
+					$('#ictip').remove();
+				}
+			});
+
+			// Close Tooltip
+			$(document).on('click touchend', '.close', function(e){
+				e.preventDefault();
+				$('#ictip').remove();
+				$(document)
+			});
+
+			if (mouseout == '1')
+			{
+				$('#ictip')
+					.mouseout(function() {
+//						$( "div:first", this ).text( "mouse out" );
+						$('#ictip').stop(true).fadeOut(300);
+					})
+					.mouseover(function() {
+//						$( "div:first", this ).text( "mouse over" );
+						$('#ictip').stop(true).fadeIn(300);
+					});
+			}
+		});
+	}
+
+}) (jQuery);
+									</script>
+								</div>
+							</div>
+						</div>
+						<div class="block col-lg-12 col-md-12 col-sm-12 aside ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h3 class="title">Annuaire</h3>
+								</div>
+								<div class="module-content">
+									<ul class="nav menu">
+										<li class="item-129"><a href="/neufchateau/a-votre-service/vie-municipal/les-services-a-la-population"><i class="fa fa-book"></i><span>Etat civil</span></a></li>
+										<li class="item-130"><a href="/communaute-de-communes/activites/equipements-sportifs/piscine"><i class="fa fa-tint"></i><span>Piscine</span></a></li>
+										<li class="item-131"><a href="/communaute-de-communes/activites/equipements-culturels/le-trait-d-union"><i class="fa fa-universal-access"></i><span>Trait d'Union / Scène E.Lambert</span></a></li>
+										<li class="item-132"><a href="/decheteries"><i class="fa fa-trash"></i><span>Déchèteries</span></a></li>
+										<li class="item-133"><a href="/presse-et-partenaires"><i class="fa fa-newspaper-o"></i><span>Presse et partenaires</span></a></li>
+										<li class="item-134"><a href="/communaute-de-communes/ccov/vie-institutionelle/les-marches-publics"><i class="fa fa-shopping-bag"></i><span>Marchés publics</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="block col-lg-12 col-md-12 col-sm-12 aside ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h3 class="title">A découvrir</h3>
+								</div>
+								<div class="module-content">
+									<ul class="nav menu">
+										<li class="item-123"><a href="/communaute-de-communes/ccov/video"><i class="fa fa-video-camera"></i><span>Vidéo</span></a></li>
+										<li class="item-124"><a href="/communaute-de-communes/ccov/hebergements-touristiques/taxes-de-sejour"><i class="fa fa-bed"></i><span>Taxes de séjour </span></a></li>
+										<li class="item-125"><a href="https://fr.calameo.com/read/0033871905875b6e1a91c" target="_blank"><i class="fa fa-info-circle"></i><span>Saison culturelle</span></a></li>
+										<li class="item-126"><a href="/communaute-de-communes/vie-quotidienne/habitat/p-i-g"><i class="fa fa-users"></i><span>P.I.G</span></a></li>
+										<li class="item-127"><a href="http://www.tourisme-ouest-vosges.fr/"><i class="fa fa-sun-o"></i><span>Sortir</span></a></li>
+										<li class="item-631"><a href="/communaute-de-communes/acces-rapide/agenda"><i class="fa fa-calendar"></i><span>Agenda</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="block col-lg-12 col-md-12 col-sm-12 aside ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h3 class="title">Entreprise</h3>
+								</div>
+								<div class="module-content">
+									<ul class="nav menu">
+										<li class="item-811"><a href="/ma-vie-d-entrepreneur"><i class="glyphicon glyphicon-stats"></i><span>Ma vie d'entrepreneur</span></a></li>
+										<li class="item-812"><a href="/boutique-a-l-essai"><i class="glyphicon glyphicon-piggy-bank"></i><span>Soutien aux entreprises</span></a></li>
+										<li class="item-813"><a href="/coworking"><i class="fa fa-comments-o"></i><span>Coworking</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="block col-lg-12 col-md-12 col-sm-12  ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h3 class="title">Météo de Neufchateau</h3>
+								</div>
+								<div class="module-content">
+									<div class="custom">
+										<p><img style="margin-left: auto;margin-right: auto;display: block;" src="https://www.tameteo.com/wimages/fotocec02cb500e62c4ea7b573c2b72dc872.png"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Fin Content -->
+		</div>
+		<div id="push"></div>
+		<!-- footer -->
+		<footer>
+			<div class="footertop">
+				<div class="container">
+					<div class="row">
+						<div id="logofooter" class="col-xs-3 "><img src="/images/com_com/images/logo/logoccov2017_blanc.png" alt="CCOV"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="infofooter">
+								<div class="col-sm-4 infofooter bloc1">
+									<div class="row">
+										<h4>Communauté de Communes de l'Ouest Vosgien</h4>
+										<p><i class="fa fa-map-marker" style="height: 6px; padding-top: 21px;"></i><span class="col-xs-10 col-xs-offset-1">2 Bis, Avenue François de Neufchâteau</span><span class="col-xs-10 col-xs-offset-1">88300 Neufchâteau</span></p>
+										<p><i class="fa fa-phone" style="height: 6px;padding-top: 21px;"></i><span class="col-xs-10 col-xs-offset-1">03 29 94 08 77</span></p>
+										<p><i class="fa fa-envelope" style="height: 6px;padding-top: 21px;"></i><span class="col-xs-10 col-xs-offset-1"><a href="/communaute-de-communes/acces-rapide/contact" title="Envoyez-nous un email">Envoyez-nous un email</a></span></p>
+									</div>
+								</div>
+								<div class="col-sm-4 infofooter bloc2">
+									<h4>Horaires d'ouverture</h4>
+									<p>Du lundi au vendredi</p>
+									<p>8h-12h / 13h30 – 17h30</p>
+									<!--        <p>Bureau de Châtenois</br>-->
+									<!--        Adresse: 2 rue sous l'Eglise</br>-->
+									<!--        Horaires: Les matins de 8h30 à 12h</br>-->
+									<!--        et le vendredi après midi de 13h à 17h</br>-->
+									<!--       Tel: 03 29 94 55 61</p>-->
+								</div>
+								<div class="col-sm-4 bloc3">
+									<h4>Bureau de Châtenois</h4>
+									<p></p>
+									<p></p>
+									<p><b>Adresse:</b> 2 rue sous l'Eglise</p>
+									<p><b>Horaires:</b> Les matins du mardi au jeudi : de 9h à 12h et le vendredi toute la journée : 9h à 12h et 13h30 à 17h</p>
+									<p><b>Tel:</b> 03 29 94 55 61</p><span> SUIVEZ-NOUS </span>
+									<div class="social">
+										<div class="menusocial"><span class="facebook"><a href="https://www.facebook.com/CCOVInfos/%20" target="_blank"><i class="fa fa-facebook"></i></a></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div id="infopartenaire">
+							<style type="text/css">
+		
+					li.logo_ser {background:url(/images/partenaires/service-public.png) no-repeat;}
+					
+					li.logo_ser:hover {background:url(/images/partenaires/service-public_hover.png) no-repeat;} 
+					
+					li.logo_uni {background:url(/images/partenaires/unicef.png) no-repeat;}
+					
+					li.logo_uni:hover {background:url(/images/partenaires/unicef_hover.png) no-repeat;} 
+					
+					li.logo_don {background:url(/images/partenaires/don_sang.png) no-repeat;}
+					
+					li.logo_don:hover {background:url(/images/partenaires/don_sang_hover.png) no-repeat;} 
+					
+					li.logo_vil {background:url(/images/partenaires/ville-internet.png) no-repeat;}
+					
+					li.logo_vil:hover {background:url(/images/partenaires/ville-internet_hover.png) no-repeat;} 
+					
+					li.logo_ade {background:url(/images/partenaires/goute-eau.png) no-repeat;}
+					
+					li.logo_ade:hover {background:url(/images/partenaires/goute-eau_hover.png) no-repeat;} 
+					
+					li.logo_AMF {background:url(/images/partenaires/amf.png) no-repeat;}
+					
+					li.logo_AMF:hover {background:url(/images/partenaires/amf_hover.png) no-repeat;} 
+						
+							</style>
+							<ul>
+								<li class="logo_ser" style="width:302px; height:44px;"><a href="https://www.service-public.fr" title="service-public.fr" target="_blank"></a></li>
+								<li class="logo_uni" style="width:129px; height:45px;"><a href="https://www.unicef.fr" title="unicef" target="_blank"></a></li>
+								<li class="logo_don" style="width:50px; height:53px;"><a href="https://dondesang.efs.sante.fr" title="dondesang" target="_blank"></a></li>
+								<li class="logo_vil" style="width:106px; height:56px;"><a href="http://www.villes-internet.net/" title="villes-internet" target="_blank"></a></li>
+								<li class="logo_ade" style="width:57px; height:51px;"><a href="http://www.ademe.fr/" title="ademe" target="_blank"></a></li>
+								<li class="logo_AMF" style="width:127px; height:48px;"><a href="http://www.amf.asso.fr/" title="AMF" target="_blank"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--<div id="footer" class="well">
+				<div class="container" >
+					<div class="row">
+						 
+					</div>
+				</div>
+			</div>
+		 // -->
+			<div id="copyright">
+				<p><a href="/communaute-de-communes/acces-rapide/contact" title="contactez-nous">Contact</a> | Copyright 2020 CCOV | Conception : CCOV | <a href="#" title="Mentions légales">Mentions légales</a></p>
+			</div>
+		</footer><a href="#" class="back-to-top"><i class="fa fa-angle-left fa-rotate-90"></i> </a>
+		<style type="text/css">
+	#adcookies { display:none; top:0; background:#ff8900}
+		</style>
+		<script type="text/javascript">
+		function SetCookie(c_name,value,expiredays)
+		{
+			var exdate=new Date()
+			exdate.setDate(exdate.getDate()+expiredays)
+			document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+		}
+		function hideMessage(){
+			SetCookie('eucookie','eucookie',365*10);
+			document.getElementById("adcookies").style.display="none";
+		}
+		</script>
+		<div id="adcookies">
+			<p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement de notre site et de ses services. <a id="more" href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" title="Information sur les cookies" target="_blank">En savoir plus</a> <a id="removecookie">J'ai bien compris</a></p>
+		</div>
+		<script type="text/javascript">
+		if( document.cookie.indexOf("eucookie") ===-1 ){
+			document.getElementById("adcookies").style.display="block";
+		}
+		var rc = document.getElementById("removecookie");
+  		rc.onclick = hideMessage;
+		</script>
+		<script type="text/javascript" src="/templates/admairiev3/js//template.js" async></script>
+	</body>
+</html>
