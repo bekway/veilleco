@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr-FR">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<link rel="shortcut icon" href="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+		<title>Documentation</title>
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="robots" content="index,follow">
+		<meta name="google" content="notranslate">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Css/cookies-message.min.css?1511456508" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Css/main.min.css?1543056741" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Css/typo3.css?1581087666" media="all">
+		<!--[if IE 9]>
+			<link rel="stylesheet" type="text/css" href="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Css/ie9.css?1511456508" media="all">
+			<![endif]-->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97476095-1', 'auto');
+  ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- header -->
+			<header class="main common">
+				<section class="mainnav"><a class="logo" href="/" title="Site officiel de la Communauté de Communes Châteaubriant-Derval ©"> <img src="/fileadmin/images/logos/logo-anim.gif" alt="Chateaubriand Derval, Communauté de Communes" role="image logo"> </a> <a class="economie" href="/espace-economie/" title="Espace économie"> <img src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/img/entreprendre-et-reussir.png" alt="Espace économie" role="navigation"> <span>Espace économie</span> </a> <a class="services" href="/espace-services/" title="Espace services"> <img src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/img/vivre-et-sepanouir.png" alt="Espace services" role="navigation"> <span>Espace services</span> </a> <a class="tourisme" href="/espace-tourisme/" title="Espace tourisme (Ouvre le lien dans une nouvelle fenêtre)" target="_blank"> <img src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/img/decouvrir-et-se-divertir.png" alt="Espace tourisme" role="navigation"> <span>Espace tourisme</span> </a>
+					<h1 class="mobile">Communauté<br>de communes</h1><a href="#" class="hamburger is-closed"><span></span></a></section>
+				<!--top bar option + recherche-->
+				<section class="params">
+					<div class="fontsize"><a href="#" class="regular" data-size="regular" title="">a</a> <a href="#" class="big1" data-size="big1" title="">a</a> <a href="#" class="big2" data-size="big2" title="">a</a></div><a href="/plan-du-site/" title="Plan du site | Châteaubriant-Derval" class="site">Plan du site</a><a href="/accessibilite/" title="Accessibilité | Châteaubriant-Derval" class="site">Accessibilité</a>
+					<form id="search" method="get" action="/resultats-de-la-recherche/">
+						<fieldset><input type="text" name="tx_kesearch_pi1[sword]" placeholder="Votre recherche">
+							<!-- hidden fields --><input id="kesearchpagenumber" type="hidden" name="tx_kesearch_pi1[page]" value="1"> <input id="resetFilters" type="hidden" name="tx_kesearch_pi1[resetFilters]" value="0"> <input id="sortByField" type="hidden" name="tx_kesearch_pi1[sortByField]" value=""> <input id="sortByDir" type="hidden" name="tx_kesearch_pi1[sortByDir]" value="asc">
+							<!-- .hidden fields --><button type="submit" onclick="submitForm();">Rechercher</button></fieldset>
+					</form>
+				</section>
+				<!-- nav mobile -->
+				<section class="subnav">
+					<div class="accueil rub">
+						<ul class="page">
+							<li><a href="/">Accueil</a></li>
+						</ul>
+					</div>
+					<div class="economie rub">
+						<ul class="page">
+							<li><a href="#">Espace économie</a></li>
+						</ul>
+						<ul class="innernav">
+							<li class="mobile"><a href="/espace-economie/">Accueil</a></li>
+							<li><a href="/espace-economie/actualite/" title="Actualité">Actualité</a></li>
+							<li><a href="/espace-economie/agenda/" title="Agenda | Châteaubriant-Derval">Agenda</a></li>
+							<li><a href="/espace-economie/nos-atouts/" title="Nos atouts">Nos atouts</a></li>
+							<li data-level="1"><a href="#">Vivre et travailler</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/vie-pratique/etablissements-scolaires/" title="Établissements scolaires | Châteaubriant-Derval"><span>Établissements scolaires</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/formation/" title="Formation"><span>Formation</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/sante/" title="Santé"><span>Santé</span></a></li>
+									<li data-level="2"><a href="/espace-economie/vivre-et-travailler/marches-publics/" title="Marchés publics"><span>Marchés publics</span></a></li>
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/emploi/" title="Emploi"><span>Emploi</span></a></li>
+									<li data-level="2"><a href="/espace-economie/vivre-et-travailler/vie-associative/" title="Vie associative"><span>Vie associative</span></a></li>
+								</ul>
+							</li>
+							<li><a href="/espace-economie/le-quai-des-entrepreneurs/" title="Le quai des entrepreneurs">Le quai des entrepreneurs</a></li>
+							<li data-level="1"><a href="#">Installer mon entreprise</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-economie/installer-mon-entreprise/offres-immobilieres/" title="Offres immobilières"><span>Offres immobilières</span></a></li>
+									<li data-level="2"><a href="/espace-economie/installer-mon-entreprise/offres-foncieres/" title="Offres foncières"><span>Offres foncières</span></a></li>
+									<li data-level="2"><a href="/espace-economie/installer-mon-entreprise/aides-a-linstallation/" title="Aides à l'installation"><span>Aides à l'installation</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Filières d'excellence</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/agriculture/" title="Agriculture"><span>Agriculture</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/logistique/" title="Logistique"><span>Logistique</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/industrie/" title="Industrie"><span>Industrie</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/environnement/" title="Environnement"><span>Environnement</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/partenariats/" title="Partenariats"><span>Partenariats</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/artisanat/" title="Artisanat"><span>Artisanat</span></a></li>
+									<li data-level="2"><a href="/espace-economie/filieres-dexcellence/services-et-reseaux/" title="Services et réseaux"><span>Services et réseaux</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="services rub">
+						<ul class="page">
+							<li><a href="#">Espace services</a></li>
+						</ul>
+						<ul class="innernav">
+							<li class="mobile"><a href="/espace-services/">Accueil</a></li>
+							<li><a href="/espace-services/actualite/" title="Actualité">Actualité</a></li>
+							<li><a href="/espace-services/agenda/" title="Agenda">Agenda</a></li>
+							<li data-level="1"><a href="#">Communauté de Communes</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/presentation/" title="Présentation"><span>Présentation</span></a></li>
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/elus/" title="Élus"><span>Élus</span></a></li>
+									<li data-level="2"><a href="/documentation/" target="/documentation/" title="Documentation"><span>Documentation</span></a></li>
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/scot/" title="SCoT"><span>SCoT</span></a></li>
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/marches-publics/" title="Marchés publics"><span>Marchés publics</span></a></li>
+									<li data-level="2"><a href="/espace-services/communaute-de-communes/emploi/" title="Emploi"><span>Emploi</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Enfance/Jeunesse</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/accueil-collectif/" title="Accueil collectif"><span>Accueil collectif</span></a></li>
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/accueil-individuel/" title="Accueil individuel"><span>Accueil individuel</span></a></li>
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/mercredi/" title="Mercredi"><span>Mercredi</span></a></li>
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/petites-vacances/" title="Petites vacances"><span>Petites vacances</span></a></li>
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/grandes-vacances/" title="Grandes vacances"><span>Grandes vacances</span></a></li>
+									<li data-level="2"><a href="/espace-services/enfancejeunesse/bourse-projets-jeunes/" title="Bourse Projets Jeunes"><span>Bourse Projets Jeunes</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Culture</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/culture/conservatoire/" title="Sous-titre"><span>Conservatoire</span></a></li>
+									<li data-level="2"><a href="/espace-services/culture/lecture-publique/" title="Lecture publique"><span>Lecture publique</span></a></li>
+									<li data-level="2"><a href="/espace-services/culture/vie-artistique/" title="Vie artistique"><span>Vie artistique</span></a></li>
+									<li data-level="2"><a href="/espace-services/culture/equipements-culturels/" title="Equipements culturels"><span>Equipements culturels</span></a></li>
+									<li data-level="2"><a href="/espace-services/culture/vie-associative/" title="Vie associative"><span>Vie associative</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Sports/Loisirs</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/sportsloisirs/espaces-aquatiques/" title="Espaces aquatiques"><span>Espaces aquatiques</span></a></li>
+									<li data-level="2"><a href="/espace-services/sportsloisirs/patinoire/" title="Patinoire"><span>Patinoire</span></a></li>
+									<li data-level="2"><a href="/espace-services/sportsloisirs/terrains-de-sport/" title="Terrains de sport"><span>Terrains de sport</span></a></li>
+									<li data-level="2"><a href="/espace-services/sportsloisirs/ludotheque/" title="Ludothèque"><span>Ludothèque</span></a></li>
+									<li data-level="2"><a href="/espace-services/sportsloisirs/randonnees/" title="Randonnées"><span>Randonnées</span></a></li>
+									<li data-level="2"><a href="/espace-services/sportsloisirs/vie-associative/" title="Vie associative"><span>Vie associative</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Vie pratique</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/vie-pratique/logement-habitat/" title="Logement / Habitat"><span>Logement / Habitat</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/mobilite/" title="Mobilité"><span>Mobilité</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/maison-des-aidants/" title="Maison des Aidants"><span>Maison des Aidants</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/vie-sociale/" title="Vie sociale"><span>Vie sociale</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/services-publics/" title="Services publics"><span>Services publics</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/etablissements-scolaires/" title="Établissements scolaires"><span>Établissements scolaires</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/formation/" title="Formation"><span>Formation</span></a></li>
+									<li data-level="2"><a href="/espace-services/vie-pratique/sante/" title="Santé"><span>Santé</span></a></li>
+								</ul>
+							</li>
+							<li data-level="1"><a href="#">Environnement</a>
+								<ul class="sub">
+									<li data-level="2"><a href="/espace-services/environnement/collecte-des-dechets/" title="Collecte des déchets"><span>Collecte des déchets</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/dechetteries/" title="Déchetteries"><span>Déchetteries</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/plan-climat-air-energie/" title="Plan Climat Air Energie"><span>Plan Climat Air Energie</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/declics/" title="Déclics"><span>Déclics</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/guide-du-tri/" title="Guide du tri"><span>Guide du tri</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/prevention-des-dechets/" title="Prévention des déchets"><span>Prévention des déchets</span></a></li>
+									<li data-level="2"><a href="/espace-services/environnement/assainissement-spanc/" title="Assainissement - Spanc"><span>Assainissement - Spanc</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="tourisme rub">
+						<ul class="page">
+							<li><a href="/espace-tourisme/">Espace tourisme</a></li>
+						</ul>
+					</div><a href="#" id="closeNav"></a></section>
+			</header>
+			<section id="main">
+				<section class="breadcrumb">
+					<ul>
+						<li><a href="/" title="Accueil">Accueil</a></li>
+						<li><a href="/documentation/" title="Doc">Documentation</a></li>
+					</ul>
+				</section>
+				<div class="actu-container documents">
+					<section class="actu-headers">
+						<hgroup>
+							<h1>Documentation</h1>
+						</hgroup>
+					</section>
+					<div id="c38" class="frame frame-default frame-type-textmedia frame-layout-0">
+						<div class="ce-textpic ce-center ce-above">
+							<div class="ce-bodytext">
+								<p>Les différents documents édités par la Communauté de Communes Châteaubriant - Derval sont progressivement mis en ligne. Pour toute demande spécifique, nous vous invitons à nous contacter par <a href="mailto:communication@cc-chateaubriant-derval.fr" title="communication@cc-chateaubriant-derval.fr">email</a>.</p>
+								<p> </p>
+								<hr>
+								<p><b>Magazine intercommunal</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__16_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #16</a> : mars 2020</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__15_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #15</a> : janvier 2020</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__14_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #14 :</a> novembre 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_n13_-_Basse_def.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #13</a> : septembre 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_N__12_BD.pdf" target="_blank">C le Mag #12</a> : mai 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__11_BD.pdf">C le Mag #11</a> : mars 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__10_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #10</a> : janvier 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_9_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #9</a> : novembre 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_8_septembre_2018.pdf" target="_blank">C le Mag #8</a>: septembre 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__7_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #7</a> : mai 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/c_le_mag_6_web.pdf" target="_blank">C le Mag #6</a> : mars 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG__5_web.pdf" target="_blank">C le Mag #5</a> : janvier 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_N__4_web.pdf" target="_blank">C le Mag #4</a> : novembre 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/C_LE_MAG_N__3_web.pdf" target="_blank">C le Mag #3</a> : septembre 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/CLEMAG_02_mai_2017.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #2</a> : mai 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_le_Mag/CLEMAG_01_mars_2017.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C le Mag #1</a> : mars 2017</li>
+								</ul>
+								<hr>
+								<p><b>Agenda intercommunal</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__19_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #19</a> : mars/avril 2020</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__18_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #18</a> : janvier/février 2020</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA_17_nov.dec.2019.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #17</a> : novembre/décembre 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__16_BD.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #16</a> : septembre/octobre 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__15_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #15</a> : juillet/août 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__14_web.pdf" target="_blank">C l'agenda #14</a> : mai/juin 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__13_web.pdf">C l'agenda #13 </a>: mars/avril 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA_12_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #12</a> : janvier/février 2019</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__11_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #11</a> : novembre/décembre 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA_10.pdf" target="_blank">C l'agenda #10</a> : septembre/octobre 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__9_web.pdf" target="_blank">C l'agenda #9</a> : juillet/août 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__8_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #8</a> : mai/juin 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__7_web.pdf" target="_blank">C l'agenda #7</a> : mars/avril 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__6_web.pdf" target="_blank">C l'agenda #6</a> : janvier/février 2018</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__5_web.pdf" target="_blank">C l'agenda #5</a> : novembre/décembre 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__4_web.pdf" target="_blank">C l'agenda #4</a> : septembre/octobre 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/C_L_AGENDA__3_web.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #3</a> : juillet/août 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/CLAGENDA_02_mai_2017.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #2</a> : mai/juin 2017</li>
+									<li><a href="/fileadmin/documents/PDF/C_l_Agenda/CLAGENDA_01_mars_2017.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">C l'agenda #1</a> : mars/avril 2017</li>
+								</ul>
+								<hr>
+								<p><b>Programmes d'animations thématiques</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/Enfance_Jeunesse/Carnet_de_Voyages_ete_2020_def.pdf" target="_blank">Carnet de Voyages</a> (été 2020)</li>
+									<li><a href="/fileadmin/documents/PDF/Enfance_Jeunesse/Fiche_sanitaire_2020.docx" title="Ouverture dans une nouvelle fenêtre" target="_blank">Fiche de renseignements / Fiche sanitaire</a> (été 2020)</li>
+									<li><a href="/fileadmin/documents/PDF/Enfance_Jeunesse/CARNET_ACTIVITES_CCCD_avril_2020.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Carnet d'activités 3-12 ans</a> (avril 2020)</li>
+								</ul>
+								<hr>
+								<p><b>Dépliants de présentation thématiques</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/Espaces_aquatiques/Fiches_AquaChoisel_2020_2021_v1.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">AquaChoisel à Châteaubriant</a> (2020/2021)</li>
+									<li><a href="/fileadmin/documents/PDF/Developpement_local_eco/Offre_de_formations.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Offres de formations locales</a>(2019-2020)</li>
+									<li>C'Bus à Châteaubriant : <a href="/fileadmin/documents/PDF/Transport/Fiches_horaires_et_plan_C_bus_240220.pdf" title="Ouverture dans une nouvelle fenêtre">Plan de circulation et horaires</a> (2020)</li>
+									<li>Multi-accueils intercommunaux : <a href="/fileadmin/documents/PDF/Enfance_Jeunesse/Dossier_inscription_multi_accueil.pdf" target="_blank">dossier d'inscription</a> (2019)</li>
+									<li><a href="/fileadmin/documents/PDF/Developpement_local_eco/Flyer_Espace_coworking_2019.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Quai des Entrepreneurs</a> (2019)</li>
+								</ul>
+								<hr>
+								<p><b>Conseil Communautaire - Année 2020</b></p>
+								<ul>
+									<li>24 juin 2020 : <a href="/fileadmin/documents/PDF/Conseils_2020/Compte_rendu_Conseil_Communautaire_d_installation_du_4_juin_2020.pdf" target="_blank">Compte-rendu du Conseil du 4 juin 2020</a> - <a href="/fileadmin/documents/PDF/Conseils_2020/Compte_rendu_du_Conseil_Communautaire_du_13_fevrier_2020.pdf" target="_blank">Compte-rendu du Conseil du 13 février 2020</a> - <a href="/fileadmin/documents/PDF/Conseils_2020/Deliberations_Conseil_Communautaire_24_juin_2020.pdf" target="_blank">Délibérations</a> - <a href="/fileadmin/documents/PDF/Conseils_2020/035_-_Annexe_Projet_reglement_interieur.pdf" target="_blank">Règlement intérieur</a></li>
+									<li>4 juin 2020 : <a href="/fileadmin/documents/PDF/Conseils_2020/Deliberations_04_06_2020.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations</a></li>
+									<li>13 février 2020 : <a href="/fileadmin/documents/PDF/Conseils_2020/Deliberation_Conseil_Communautaire_du_13_fevrier_2020.pdf" title="ouverture dans une nouvelle fenêtre" target="_blank">Délibérations</a> - <a href="/fileadmin/documents/PDF/Conseils_2020/Note_CA_2019_et_BP_2020.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Comptes administratifs 2019 et Budget primitif 2020</a></li>
+								</ul>
+								<hr>
+								<p><b>Conseil Communautaire - Année 2019</b></p>
+								<ul>
+									<li>17 décembre 2019 : <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_1_PLH_diagnostic_cc_Chateaubriant-Derval_27_juin_2019.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Annexe 1 PLH Diagnostic</a>/ <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_2_PLH_orientations_cc_Chateaubriant-Derval_27_juin_2019.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Annexe 2 PLH Orientations</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_3_PLH_actions_cc_Chateaubriant-Derval_27_juin_2019.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Annexe 3 PLH Actions</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Annexe_DOB_2020.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Annexe ébat d'orientation budgétaire</a> /<a href="/fileadmin/documents/PDF/Conseils_2019/Deliberations_du_17_12_19.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Délibérations</a> /<a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_du_conseil_communautaire_du_17_12_2019.pdf"> Compte-rendu</a></li>
+								</ul>
+								<ul>
+									<li><span style="font-weight: normal;">14 novembre 2019 : <span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_du_14_novembre_2019.pdf">compte-rendu </a>/ </span><a href="/fileadmin/documents/PDF/Conseils_2019/Ordre_du_jour_14_novembre_2019_.pdf">Ordre du jour</a> </span><span style="font-weight: normal;">/<a href="/fileadmin/documents/PDF/Conseils_2019/Deliberations_14_novembre_2019.pdf"> Délibérations </a>/ <a href="/fileadmin/documents/PDF/Conseils_2019/116_-_Annexe_rapport_d_activites_Politique_de_la_ville.pdf">Annexe rapport d'activité Politique de la Ville</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/118_-_Annexe_1_Convention_OPAH_2020-2024_cc_Chateaubriant-Derval_061119.pdf">Annexe 1 Convention OPAH 2020-2024</a></span></li>
+									<li>26 septembre 2019 : <a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_conseil_communautaire_du_26_septembre_2019.pdf">compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Ordre_du_Jour_26_septembre_2019_pdf.pdf">Ordre du jour </a>/ Délibérations <a href="/fileadmin/documents/PDF/Conseils_2019/conseil_communautaire_du_26_septembre_-_volet_Finances_-_personnel_-_administration_generale_.pdf">Finances, personnel et administration générale</a> / Délibérations <a href="/fileadmin/documents/PDF/Conseils_2019/conseil_communautaire_du_26_septembre_-_volet_Economie_-_Emploi_-_Formation__.pdf">Economie, emploi, Formation</a> / Délibérations volet <a href="/fileadmin/documents/PDF/Conseils_2019/conseil_communautaire_du_26_septembre_-_volet_Action_sociale_sante_et_culture_.pdf">Action sociale, santé et culture </a>/ Délibérations <a href="/fileadmin/documents/PDF/Conseils_2019/conseil_communautaire_du_26_septembre_-_volet_environnement_.pdf">volet Environnement </a>/ Délibérations <a href="/fileadmin/documents/PDF/Conseils_2019/conseil_communautaire_du_26_septembre_-_volet_Amenagement_du_territoire_et_mobilites.pdf">volet aménagement du territoire et mobilités. </a></li>
+									<li>27 juin 2019 : <a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_Conseil_Communautaire_du_27_juin_2019.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Deliberation_CC_27_06_2019.pdf" target="_blank">Délibérations</a> / Convention cadre pluriannuelle <a href="/fileadmin/documents/PDF/Conseils_2019/057_-_Annexe_avenant_convention_cadre_Action_Coeur_de_Ville.pdf" target="_blank">"Action Coeur de Ville"</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Rapport_activites_CCCD_2018.pdf" target="_blank">Rapport d'activités de la CCCD 2018</a> /  Rapport d'activités du service de prévention et de gestion des déchets - <a href="/fileadmin/documents/PDF/Conseils_2019/069_-_Annexe_Rapport_2018_PPT_CHBT.pdf" target="_blank">secteur du Castelbriantais - Année 2018</a> / Rapport d'activités du service de prévention et de gestion des déchets -<a href="/fileadmin/documents/PDF/Conseils_2019/070_-_Annexe_Rapport_2018_PPT_DERVAL.pdf" target="_blank"> secteur de Derval - Année 2018</a> / Rapport de la Délégation de Service Public pour l'espace aquatique de Derval <a href="/fileadmin/documents/PDF/Conseils_2019/072_-_Annexe_1_rapport_DSP_Espace_Aquatique_Derval.pdf" target="_blank">Annexe 1</a> - <a href="/fileadmin/documents/PDF/Conseils_2019/072_-_Annexe_2_rapport_DSP_Espace_Aquatique_Derval.pdf" target="_blank">Annexe 2</a> - <a href="/fileadmin/documents/PDF/Conseils_2019/072_-_Annexe_3_rapport_DSP_Espace_Aquatique_Derval.pdf" target="_blank">Annexe 3</a> / Rapport annuel 2018 - <a href="/fileadmin/documents/PDF/Conseils_2019/073_-_Annexe_CRA_2018_ANC_CC_Castelbriantais.pdf" target="_blank">SPANC du Castelbriantais</a> / Rapport annuel 2018 -<a href="/fileadmin/documents/PDF/Conseils_2019/074_-_Annexe_RPQS_SPANC_Derval_2018_v3.pdf" target="_blank"> SPANC du Secteur de Derval</a> / Programme Local de l'Habitat <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_1_PLH_diagnostic_cc_Chateaubriant-Derval_27_juin_2019.pdf" target="_blank">Annexe 1</a> - <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_2_PLH_orientations_cc_Chateaubriant-Derval_27_juin_2019.pdf" target="_blank">Annexe 2</a> - <a href="/fileadmin/documents/PDF/Conseils_2019/079-_Annexe_3_PLH_actions_cc_Chateaubriant-Derval_27_juin_2019.pdf" target="_blank">Annexe 3</a> / Charte <a href="/fileadmin/documents/PDF/Conseils_2019/077_-_Annexe_2_Convention_eie_charte_ademe.pdf" target="_blank">Espace Info Energie</a></li>
+									<li>4 avril 2019 : <a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_conseil_communautaire_du_4_avril_2019.pdf" target="_blank">compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Deliberation_CC_4_avril_2019.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/CA_2018_et_BP_2019.pdf" target="_blank"> Note explicative : budgets primitifs 2019<span style="color: rgb(51, 51, 51);"><br></span></a></li>
+									<li>28 février 2019 : <a href="/fileadmin/documents/PDF/Conseils_2019/Conseil_Communautaire_du_28_fevrier_2019.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/014_-_Annexe_rapport_egalite_H_F_31_dec_2018.pdf" target="_blank">Rapport d'égalité hommes - femmes au 31 décembre 2018 </a>/ <a href="/fileadmin/documents/PDF/Conseils_2019/DOB_Conseil_Communautaire_version_def.pdf" target="_blank">Débat d'Orientations Budgétaires année 2019</a> / <a href="/fileadmin/documents/PDF/Conseils_2019/Compte_rendu_28_fevrier.pdf">Compte-rendu</a></li>
+								</ul>
+								<hr>
+								<p><b>Conseil Communautaire - Année 2018</b></p>
+								<ul>
+									<li>18 décembre 2018 : <a href="/fileadmin/documents/PDF/Conseils_2018/Deliberations_decembre_2018.zip">Délibérations </a>/ <a href="/fileadmin/documents/PDF/Conseils_2018/ADOPTION_du_Scot.zip">Adoption du Scot </a>/<a href="/fileadmin/documents/PDF/Conseils_2018/ADOPTION_du_Scot__bis_.zip">Adoption du Scot (bis</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/Compte_rendu_du_18_decembre_2018.pdf">Compte-rendu</a></li>
+									<li>27 septembre 2018 : <a href="/fileadmin/documents/PDF/Conseils_2018/conseil_communautaire_du_27_septembre.zip">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/107_-_Delib_approbation_pcaet.pdf">Approbation du PCAET</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/096_-_Rapport_sur_la_Politique_de_la_ville.pdf">Rapport sur le quartier prioritaire Ville de Châteaubriant</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/Compte_Rendu_Conseil_Communautaire_du_27_septembre_2018.pdf" title="ouvrir dans une nouvelle fenêtre" target="_blank">Compte-rendu</a></li>
+									<li>28 juin 2018 : <a href="/fileadmin/documents/PDF/Conseils_2018/Deliberations_Conseil_Communautaire_28_juin_2018.pdf" target="_blank">Délibérations et annexes - bilan activités du SPANC - Bilan d'activités du Sictom de l'ex-castelbriantais</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/BILAN_CCCD_2017_-_BD.pdf" target="_blank">Bilan d'activités de la CCCD</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/COMPTE_RENDU_conseil_communuatire_28_juin.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Compte-rendu</a></li>
+									<li>12 avril 2018 : <a href="/fileadmin/documents/PDF/Conseils_2018/Conseil_Communautaire_12.04.18.zip" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/Compte_rendu_12_04_2018.pdf" target="_blank">Compte-rendu</a></li>
+									<li>22 février 2018 : <a href="/fileadmin/documents/PDF/Conseils_2018/Conseil_Communautaire_-_22_fevrier_2018.pdf" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/CR_CC_220218.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Compte-rendu</a></li>
+								</ul>
+								<hr>
+								<p><b>Conseil Communautaire - Année 2017</b></p>
+								<ul>
+									<li>14 décembre 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/De__libe__ration_du_14_decembre_2017_reduit.pdf" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2018/Compte_rendu_du_14_decembre.pdf" target="_blank">Compte-rendu</a></li>
+									<li>7 novembre 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/Deliberations_du_Conseil_Communautaire_du_7_novembre_2017.pdf" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Compte_rendu_conseil_communautaire_du_7_novembre_2017.pdf" target="_blank">Compte-rendu</a><span style="font-weight: normal;"> </span></li>
+									<li>26 septembre 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/De__libe__rations_Conseil_Communautaire_du_26_septembre_2017_service_Communication.pdf" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Compte_Rendu_conseil_communautaire_du_26_septembre_2017.pdf" target="_blank">Compte-rendu</a></li>
+									<li>29 juin 2017 :<a href="/fileadmin/documents/PDF/Conseils_2017/Bilan_activites_2016_-_Castelbriantais.pdf" target="_blank">Bilan d'activités 2016 de la Communauté de Communes du Castelbriantais</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Bilan_activites_2016_-_secteur_de_Derval.pdf" target="_blank">Rapport d'activité du Secteur de Derval </a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/Compte_rendu_29_juin_2017.pdf" target="_blank">Compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Deliberations_et_pieces_jointes_du_conseil_communautaire_du_29_06_2017.pdf" target="_blank">Délibérations et annexes</a></li>
+									<li>2 mai 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/Compte_rendu_Conseil_Communautaire_du_02_05_2017.pdf" target="_blank">compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Deliberations_du_2_mai_2017.pdf" target="_blank">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/BILAN_2016__SPANC_Castelbriantais_avec_annexes.pdf" target="_blank">Service Assainissement Non Collectif Castelbriantais - Bilan 2016</a></li>
+									<li>28 mars 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/Conseil_Communautaire_du_28_mars_-_Deliberations_et_annexes.pdf">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Compte-rendu_du_Conseil_Communautaire_du_28_mars_2017.pdf" target="_blank">Compte-rendu</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_budget_principal-_Conseil_Communautaire_du_28_mars_2017.pdf">Budget Principal 2017</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_Immobilier_d_entreprises-Conseil_Communautaire_du_28_mars_2017.pdf">BP 2017-immobilier d'entreprises </a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_Office_de_tourisme_intercommunal-Conseil_Communautaire_du_28_mars_2017.pdf">BP 2017 - office de tourisme</a> /<a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_Ordures_menageres_SICTOM-Conseil_Communautaire_du_28_mars_2017.pdf"> BP 2017- Ordures ménagères</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_REOM-Conseil_Communautaire_du_28_mars_2017.pdf">BP 2017- REOM </a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_SPANC-Conseil_Communautaire_du_28_mars_2017.pdf">BP 2017-SPANC</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/BP_2017_zones_d_activites_economiquesConseil_Communautaire_du_28_mars_2017.pdf">BP 2017-Zones d'activités économiques</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_budget_principal-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016- budget principal Ex-Communauté de Communes du Castelbriantais</a> / <span style="font-weight: normal;"> <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_immobilier_d_entreprises-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016- ex Communauté de Communes du Castelbriantais- immobilier d'entreprises</a> / </span><span style="font-weight: normal;"> <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_Office_de_tourisme_intercommunal-Conseil_Communautaire_du_28_mars_2017_.pdf">CA 2016- ex Communauté de Communes du Castelbriantais- office de tourisme </a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_SICTOM-Conseil_Communautaire_du_28_mars_2017.pdf">C</a></span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_SICTOM-Conseil_Communautaire_du_28_mars_2017.pdf">A 2016- ex Communauté de Communes du Castelbriantais- Sictom</a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_SPANC-Conseil_Communautaire_du_28_mars_2017.pdf">C</a></span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_SPANC-Conseil_Communautaire_du_28_mars_2017.pdf">A 2016- ex Communauté de Communes du Castelbriantais- SPANC </a>/ <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_Zones_d_activites_economiques-Conseil_Communautaire_du_28_mars_2017.pdf">C</a></span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCC_Zones_d_activites_economiques-Conseil_Communautaire_du_28_mars_2017.pdf">A 2016- ex Communauté de Communes du Castelbriantais- zone d'activités</a> /<span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_Budget_principal-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - Budget Principal</a> / </span> <a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_Assainissement-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - Assainissement</a> / </span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_Ateliers_relais-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - Ateliers relais</a> / </span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_Ordures_menageres-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - ordures ménagères</a> / </span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_SPANC-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - SPANC</a> / </span><span style="font-weight: normal;"><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_ex_CCSD_Zones_d_activites_economiques-Conseil_Communautaire_du_28_mars_2017.pdf">CA 2016 ex Communauté de Communes du Secteur de Derval - Zones d'activités économiques </a>/ </span><a href="/fileadmin/documents/PDF/Conseils_2017/CA_2016_PETR-Conseil_Communautaire_du_28_mars_2017_.pdf">CA 2016 PETR-Conseil Communautaire du 28 mars 2017 </a></li>
+									<li>24 janvier 2017 :  <a href="/fileadmin/documents/PDF/Conseils_2017/Conseil_communautaire_du_24_janvier_2017_-_Deliberations_et_annexes.pdf">Délibérations et annexes</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Compte-rendu_du_Conseil_Communautaire_du_24_janvier_2017.pdf" target="_blank">Compte-rendu</a></li>
+									<li>5 janvier 2017 : <a href="/fileadmin/documents/PDF/Conseils_2017/Deliberations_du_5_janvier_2017.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2017/Compte-rendu_du_Conseil_Communautaire_du_5_janvier_2017.pdf" target="_blank">Compte-rendu</a></li>
+								</ul>
+								<hr>
+								<p><b>Conseil Communautaire - Année 2016</b></p>
+								<ul>
+									<li>20 décembre 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_20_12_2016_2344.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>6 décembre 2016 (CC du Castelbriantais) : <a href="/fileadmin/documents/PDF/Conseils_2016/Deliberations_du_6_decembre_2016_-_Communaute_de_Communes_du_Castelbriantais.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2016/6_decembre_2016_-_Compte-rendu_du_Conseil_Communautaire_CCC.pdf" target="_blank">Compte-rendu</a></li>
+									<li>29 novembre 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_29_11_2016_2335.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>15 novembre 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_15_11_2016_2333.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>4 octobre 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_04_10_2016_2327.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>29 septembre 2016<span style="font-weight: normal;"> (CC du Castelbriantais)</span> : <a href="/fileadmin/documents/PDF/Conseils_2016/Deliberations_du_29_septembre_2016_-_Communaute_de_Communes_du_Castelbriantais.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2016/29_septembre_2016_-_Compte-rendu_du_Conseil_Communautaire_CCC.pdf" target="_blank">Compte-rendu</a></li>
+									<li>28 juin 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_28_06_2016_2304.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>16 juin 2016<span style="font-weight: normal;"> (CC du Castelbriantais)</span> : <a href="/fileadmin/documents/PDF/Conseils_2016/Deliberations_du_16_juin_2016_-_Communaute_de_Communes_du_Castelbriantais.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2016/16_juin_2016_-_Compte-rendu_du_Conseil_Communautaire_CCC.pdf" target="_blank">Compte-rendu</a></li>
+									<li>31 mai 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_31_05_2016_2269.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>26 avril 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_26_04_2016_2262.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>29 mars 2016<span style="font-weight: normal;"> (CC du Castelbriantais)</span> : <a href="/fileadmin/documents/PDF/Conseils_2016/Deliberations_du_29_mars_2016_-_Communaute_de_Communes_du_Castelbriantais.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2016/29_mars_2016_-_Compte-rendu_du_Conseil_Communautaire_CCC.pdf" target="_blank">Compte-rendu</a></li>
+									<li>29 mars 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_29_03_2016_2247.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>8 mars 2016<span style="font-weight: normal;"> (CC du Castelbriantais) </span>: <a href="/fileadmin/documents/PDF/Conseils_2016/Deliberations_du_8_mars_2016_-_Communaute_de_Communes_du_Castelbriantais.pdf" target="_blank">Délibérations</a> / <a href="/fileadmin/documents/PDF/Conseils_2016/8_mars_2016_-_Compte-rendu_du_Conseil_Communautaire_CCC.pdf" target="_blank">Compte-rendu</a></li>
+									<li>23 février 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_23_02_2016_2249.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+									<li>26 janvier 2016 (CC du secteur de Derval) : <a href="/fileadmin/documents/PDF/Conseils_2016/cr_cc_26_01_2016_2248.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Délibérations et compte-rendu</a></li>
+								</ul>
+								<hr>
+								<p><b>Registre des subventions aux associations</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/Subventions_CCCD/Subventions_CCC_2016.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Subventions versées en 2016 par la CC du Castelbriantais</a></li>
+									<li><a href="/fileadmin/documents/PDF/Subventions_CCCD/Subventions_CCSD_2016.pdf" title="Ouverture dans une nouvelle fenêtre" target="_blank">Subventions versées en 2016 par la CC du secteur de Derval</a></li>
+									<li><a href="/fileadmin/documents/PDF/Subventions_CCCD/Subventions_CCCD_2017.pdf" target="_blank">Subventions versées en 2017</a></li>
+									<li><a href="/fileadmin/documents/PDF/Subventions_CCCD/Subventions_annee_2018_Tableau.pdf">Subventions versées en 2018</a></li>
+								</ul>
+								<hr>
+								<p><b>Programme européen Leader 2014/2020</b></p>
+								<ul>
+									<li><a href="/fileadmin/documents/PDF/Developpement_local_eco/Fiches_Action_LEADER.zip" title="Ouverture dans une nouvelle fenêtre" target="_blank">Fiches action</a></li>
+								</ul>
+								<p>  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- page_content -->
+			</section>
+		</div>
+		<!-- /.container -->
+		<!-- map -->
+		<!-- footer -->
+		<footer>
+			<section class="footer-breadcrumb">
+				<div class="container">
+					<div><a href="/" class="accueil" title="Accueil"> <span>Accueil</span> </a></div>
+					<div><a href="/espace-economie/" class="economie" title="Espace économie"> <span>Espace économie</span> </a></div>
+					<div><a href="/espace-services/" class="services" title="Espace services"> <span>Espace services</span> </a></div>
+					<div><a href="/espace-tourisme/" class="tourisme" title="Espace tourisme"> <span>Espace tourisme</span> </a></div>
+				</div>
+			</section>
+			<section class="top">
+				<div class="container">
+					<article>
+						<h4><span style="color:#1d1d1d">A propos de la</span><br> communauté de communes</h4>
+						<div class="logo"><a href="/" title="Communauté de communes" target="_top"><img src="/fileadmin/images/logos/logo-footer.png" alt="" title="Communauté de communes"></a>
+							<p>Bienvenue sur le site officiel de la Communauté de communes Chateaubriant-Derval</p><br></div>
+					</article>
+					<article>
+						<h4><span style="color:#1d1d1d">C</span> la newsletter !</h4>
+						<div class="tx-powermail">
+							<div class="form">
+								<form data-parsley-validate="data-parsley-validate" data-validate="html5" enctype="multipart/form-data" name="field" class="powermail_form powermail_form_2 newsletter  " id="newsletter" action="/documentation/?tx_powermail_pi1%5Baction%5D=create&tx_powermail_pi1%5Bcontroller%5D=Form&cHash=7e331874ab34f5cbdce9695562b7f4da" method="post">
+									<div><input type="hidden" name="tx_powermail_pi1[__referrer][@extension]" value="Powermail"> <input type="hidden" name="tx_powermail_pi1[__referrer][@vendor]" value="In2code"> <input type="hidden" name="tx_powermail_pi1[__referrer][@controller]" value="Form"> <input type="hidden" name="tx_powermail_pi1[__referrer][@action]" value="form"> <input type="hidden" name="tx_powermail_pi1[__referrer][arguments]" value="YTowOnt91b6f9e08ce3e65412ade13785b53936da07b8ab3"> <input type="hidden" name="tx_powermail_pi1[__referrer][@request]" value='a:4:{s:10:"@extension";s:9:"Powermail";s:11:"@controller";s:4:"Form";s:7:"@action";s:4:"form";s:7:"@vendor";s:7:"In2code";}e1f8d5f38166686a089a363588283ef853bc48c9'> <input type="hidden" name="tx_powermail_pi1[__trustedProperties]" value='a:2:{s:5:"field";a:1:{s:8:"courriel";i:1;}s:4:"mail";a:1:{s:4:"form";i:1;}}3419e853c50a861911b365be7aa7b1accb544dc1'></div>
+									<fieldset><input required="required" data-parsley-required-message="Ce champ doit être rempli !" data-parsley-trigger="change" data-parsley-error-message="Cette adresse email n'est pas valide !" placeholder="Votre adresse email" class="powermail_input  " id="powermail_field_courriel" type="email" name="tx_powermail_pi1[field][courriel]" value=""> <button class="g-recaptcha" data-sitekey="" data-callback="YourOnSubmitFn"> Go </button></fieldset><input class="powermail_form_uid" type="hidden" name="tx_powermail_pi1[mail][form]" value="2"></form>
+							</div>
+						</div>
+					</article>
+					<article>
+						<h4>retrouvez-nous <span style="color:#1d1d1d">sur :</span>)</h4>
+						<ul class="socials-networks">
+							<li><a href="https://www.facebook.com/Chateaubriant.Derval" title="Facebook (ce lien s'ouvre dans une nouvelle fenêtre)" target="_blank" class="facebook">Facebook</a></li>
+							<li><a href="https://twitter.com/ChbtDerval" title="Twitter (ce lien s'ouvre dans une nouvelle fenêtre)" target="_blank" class="twitter">Twitter</a></li>
+							<li><a href="https://www.youtube.com/channel/UCIU22uQzRR1DR8PlRaSnVvA" title="Ouverture dans une nouvelle fenêtre" target="_blank" class="youtube">YouTube</a></li>
+							<li><a href="https://www.linkedin.com/company/cc-chateaubriant-derval/" title="Ouverture dans une nouvelle fenêtre" target="_blank" class="linkedin">LinkedIn</a></li>
+						</ul>
+					</article>
+				</div>
+			</section>
+			<section class="bottom">
+				<div class="container">
+					<div class="links"><a href="/faq/" title="FAQ">FAQ</a><a href="/contact/" title="Contact">Contact</a><a href="/plan-du-site/" title="Plan du site | Châteaubriant-Derval">Plan du site</a><a href="/documentation/" title="Doc">Documentation</a><a href="/mentions-legales/" title="Mentions légales">Mentions légales</a><a href="/accessibilite/" title="Accessibilité | Châteaubriant-Derval">Accessibilité</a></div>
+					<div class="links"><span>Site officiel de la Communauté de Communes Châteaubriant-Derval ©</span> <span><a href="/" title="Site officiel de la Communauté de Communes Châteaubriant-Derval" class="site">cc-chateaubriant-derval.fr</a></span></div>
+					<p class="legal">Conformément à la loi française n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous pouvez vous opposer à cette transmission, ainsi qu'exercer vos droits d'accès, de rectification et de suppression des données vous concernant en adressant un courrier auprès de :</p>
+					<p class="contacts">Communauté de Communes Châteaubriant-Derval | 5 rue Gabriel Delatour, 44110 CHÂTEAUBRIANT | 02 28 04 06 33 | E-Mail : <a title="email" href="mailto:communication@cc-chateaubriant-derval.fr">> communication@cc-chateaubriant-derval.fr</a></p>
+				</div>
+			</section>
+		</footer>
+		<!-- /.footer -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+		<script src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Javascripts/cookies-message.min.js?1511456509" type="text/javascript"></script>
+		<script src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Javascripts/app.min.js?1554542537" type="text/javascript"></script>
+		<script src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Javascripts/typo3.js?1581606961" type="text/javascript"></script>
+		<script src="/typo3conf/ext/chateaubriantderval_skin/Resources/Public/Javascripts/plugin.js?1513942754" type="text/javascript"></script>
+		<script src="/typo3temp/assets/compressed/merged-a64c0aaa2ad70abfbc9b0e23fb05d7f7.js?1581084081" type="text/javascript"></script>
+	</body>
+</html>
