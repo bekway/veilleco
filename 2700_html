@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Isle et Crempse en Périgord | Elle regroupe 25 communes du Mussidanais et du Villamblardais</title>
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://isle-et-crempse-en-perigord.fr/xmlrpc.php">
+		<title>Isle et Crempse en Périgord – Elle regroupe 25 communes du Mussidanais et du Villamblardais</title>
+		<!-- Async WordPress.com Remote Login -->
+		<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.remove(); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[i].remove();
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+						+ '//' + window.location.hostname;
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9pc2xlLWV0LWNyZW1wc2UtZW4tcGVyaWdvcmQuZnI%3D"
+		+ "&wpcomid=151872684"
+		+ "&time=1594219754";
+	document.body.appendChild( iframe );
+}, false );
+		</script>
+		<link rel="dns-prefetch" href="//s2.wp.com">
+		<link rel="dns-prefetch" href="//s1.wp.com">
+		<link rel="dns-prefetch" href="//isleetcrempseenperigord.wordpress.com">
+		<link rel="dns-prefetch" href="//s0.wp.com">
+		<link rel="dns-prefetch" href="//wordpress.com">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="alternate" type="application/rss+xml" title="Isle et Crempse en Périgord » Flux" href="https://isle-et-crempse-en-perigord.fr/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Isle et Crempse en Périgord » Flux des commentaires" href="https://isle-et-crempse-en-perigord.fr/comments/feed/">
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+		</script>
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+		</style>
+		<link rel="stylesheet" id="all-css-0-1" href="https://s2.wp.com/_static/??-eJydke1OhTAMhm/IUUAx8MN4LRvU2eMGy9oFuXs3cjg5MQaN/9auz9uPF9agxmUWnAV8UsElSzPDGsbFK/bkcPsWVSPzA9xhB2NTDg1Gm38iQl89VjWYRG4C45bxQzkyUccNWDaHf5DZKYYLStAF19uSRNlI038lohaaLf+CvyXnFJOgwokKcD0LNF3fD13dDhAiekr+hp4Ljst1jqZqy1EmYrkl1c/snRnlnDnvg5ZS4fNUGh36XHaGrTRZlIzz8VaCn+fIbrQxeT1mdSwp77nX7vurf2m64alu26Z+vnwBnCjVDA==?cssminify=yes" type="text/css" media="all">
+		<style id="wp-block-library-inline-css">
+.has-text-align-justify {
+	text-align:justify;
+}
+		</style>
+		<style id="global-styles-inline-css">
+:root {
+	--wp--preset--color--black: #000000;
+	--wp--preset--color--cyan-bluish-gray: #abb8c3;
+	--wp--preset--color--light-green-cyan: #7bdcb5;
+	--wp--preset--color--luminous-vivid-amber: #fcb900;
+	--wp--preset--color--luminous-vivid-orange: #ff6900;
+	--wp--preset--color--pale-cyan-blue: #8ed1fc;
+	--wp--preset--color--pale-pink: #f78da7;
+	--wp--preset--color--vivid-cyan-blue: #0693e3;
+	--wp--preset--color--vivid-green-cyan: #00d084;
+	--wp--preset--color--vivid-purple: #9b51e0;
+	--wp--preset--color--vivid-red: #cf2e2e;
+	--wp--preset--color--white: #ffffff;
+	--wp--preset--font-size--small: 13;
+	--wp--preset--font-size--normal: 16;
+	--wp--preset--font-size--medium: 20;
+	--wp--preset--font-size--large: 36;
+	--wp--preset--font-size--huge: 48;
+	--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+	--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+	--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+	--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+	--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+	--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+	--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+	--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+	--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+	--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+	--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+	--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+}
+		</style>
+		<link rel="stylesheet" id="all-css-2-1" href="https://s2.wp.com/_static/??-eJx9UO0KwjAMfCFr0OHAH+KzbDXWaJuUfjB8e6MDRR39d3e5S47AFI0VLsgFQjXRV0ecwUoIKhlPN1SWf5S1KisgYCmk6fwG82B5p0PGNNsX4V+2XDDo9VhHcJIGhlzuHls2PBEDsZ2dZoraul1JjBc7FBL+IubsB0qtaMLRi1PoXu/50GfoGA6bXd93Xbfd99cHULyFXw==?cssminify=yes" type="text/css" media="all">
+		<style id="edin-style-inline-css">
+.hero.with-featured-image { background-image: url(https://isleetcrempseenperigord.files.wordpress.com/2018/09/page-accueil.jpg?w=1230); }
+.tags-links { clip: rect(1px, 1px, 1px, 1px); height: 1px; position: absolute; overflow: hidden; width: 1px; }
+.hero.without-featured-image { background-image: url(https://isleetcrempseenperigord.files.wordpress.com/2018/09/cropped-dsc_0337.jpg); }
+		</style>
+		<link rel="stylesheet" id="print-css-3-1" href="https://s2.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&cssminify=yes" type="text/css" media="print">
+		<link crossorigin="anonymous" rel="stylesheet" id="goran-noto-sans-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext" media="all">
+		<link crossorigin="anonymous" rel="stylesheet" id="goran-noto-serif-css" href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C700%2C400italic%2C700italic&subset=latin%2Clatin-ext" media="all">
+		<link crossorigin="anonymous" rel="stylesheet" id="goran-droid-sans-mono-css" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" media="all">
+		<link rel="stylesheet" id="all-css-10-1" href="https://s2.wp.com/_static/??/wp-content/themes/pub/goran/inc/style-wpcom.css,/wp-content/mu-plugins/actionbar/actionbar.css?m=1560469195j&cssminify=yes" type="text/css" media="all">
+		<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+		</style>
+		<link rel="stylesheet" id="all-css-12-1" href="https://s2.wp.com/_static/??-eJxti8sKgCAQAH8oW6IHdIi+xcR0Y3XFVfr96NAh6jQMzMCZlOFYbCwQqkpUHUaBxFLUThoziNcZo3vYGpEG/i9hg5oUseO3fKbibbACfgBHvGm6gzUs3Tj3UzcO/XRcZTE30g==?cssminify=yes" type="text/css" media="all">
+		<script type="text/javascript" src="https://s0.wp.com/_static/??-eJx9zd0OgjAMBeAXcgyIGLgwPgtCWUrWbq6dxLd3xp8LY0ya9OJ8p7VbNMiTzzOIXctcMqTba1Wr7Ow/YAhdGhUqQn7jKbAC68PGIEogMjr4kVI4oweTBVIBrOXNEr5d9Nkhi12y90ZQwcCMiuzMM7FN1/dDV7eDjQkIM32qV4StnDvRsemGfd22TX1Y72+nV4A="></script>
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://isleetcrempseenperigord.wordpress.com/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml">
+		<meta name="generator" content="WordPress.com">
+		<link rel="canonical" href="https://isle-et-crempse-en-perigord.fr/">
+		<link rel="shortlink" href="https://wp.me/Pahf1q-5">
+		<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&url=https%3A%2F%2Fisle-et-crempse-en-perigord.fr%2F&for=wpcom-auto-discovery">
+		<link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&url=https%3A%2F%2Fisle-et-crempse-en-perigord.fr%2F&for=wpcom-auto-discovery">
+		<!-- Jetpack Open Graph Tags -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Isle et Crempse en Périgord">
+		<meta property="og:description" content="Elle regroupe 25 communes du Mussidanais et du Villamblardais">
+		<meta property="og:url" content="https://isle-et-crempse-en-perigord.fr/">
+		<meta property="og:site_name" content="Isle et Crempse en Périgord">
+		<meta property="og:image" content="https://isleetcrempseenperigord.files.wordpress.com/2018/09/page-accueil.jpg?w=1200">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="900">
+		<meta property="og:image:alt" content="Dans la Double">
+		<meta property="og:locale" content="fr_FR">
+		<meta name="twitter:site" content="@wordpressdotcom">
+		<meta name="twitter:text:title" content=".">
+		<meta name="twitter:image" content="https://isleetcrempseenperigord.files.wordpress.com/2018/09/page-accueil.jpg?w=640">
+		<meta name="twitter:image:alt" content="Dans la Double">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+		<!-- End Jetpack Open Graph Tags -->
+		<link rel="search" type="application/opensearchdescription+xml" href="https://isle-et-crempse-en-perigord.fr/osd.xml" title="Isle et Crempse en Périgord">
+		<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+		<meta name="theme-color" content="#e1dfdf">
+		<meta name="application-name" content="Isle et Crempse en Périgord">
+		<meta name="msapplication-window" content="width=device-width;height=device-height">
+		<meta name="msapplication-tooltip" content="Elle regroupe 25 communes du Mussidanais et du Villamblardais">
+		<meta name="msapplication-task" content="name=Souscrire;action-uri=https://isle-et-crempse-en-perigord.fr/feed/;icon-uri=https://isleetcrempseenperigord.files.wordpress.com/2019/03/cropped-logo-cc-isle-et-crempse.jpg?w=16">
+		<meta name="msapplication-task" content="name=Inscrivez-vous pour créer un blog gratuitement;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico">
+		<meta name="msapplication-task" content="name=Assistance WordPress.com;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico">
+		<meta name="msapplication-task" content="name=Forums WordPress.com;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico">
+		<meta name="description" content="La Communauté de Isle et Crempse en Périgord a déménagé au 2 rue du Périgord à Mussidan. Elle est à votre disposition tous les jours de 8h30 à 12h00 et  de 14h00 à 17h00 par téléphone au 05.53.81.00.88 par mail communaute-de-communes@mussidan.fr.">
+		<link rel="icon" href="https://isleetcrempseenperigord.files.wordpress.com/2019/03/cropped-logo-cc-isle-et-crempse.jpg?w=32" sizes="32x32">
+		<link rel="icon" href="https://isleetcrempseenperigord.files.wordpress.com/2019/03/cropped-logo-cc-isle-et-crempse.jpg?w=192" sizes="192x192">
+		<link rel="apple-touch-icon" href="https://isleetcrempseenperigord.files.wordpress.com/2019/03/cropped-logo-cc-isle-et-crempse.jpg?w=180">
+		<meta name="msapplication-TileImage" content="https://isleetcrempseenperigord.files.wordpress.com/2019/03/cropped-logo-cc-isle-et-crempse.jpg?w=259">
+	</head>
+	<body class="home page-template-default page page-id-5 customizer-styles-applied hero-image group-blog has-custom-background has-footer-navigation navigation-default sidebar-left tags-hidden highlander-enabled highlander-light">
+		<div id="page" class="hfeed site"><a class="skip-link screen-reader-text" href="#content">Aller au contenu principal</a>
+			<header id="masthead" class="site-header" role="banner">
+				<div class="site-branding"><a href="https://isle-et-crempse-en-perigord.fr/" class="site-logo-link" rel="home" itemprop="url"></a>
+					<h1 class="site-title"><a href="https://isle-et-crempse-en-perigord.fr/" rel="home">Isle et Crempse en Périgord</a></h1>
+					<h2 class="site-description">Elle regroupe 25 communes du Mussidanais et du Villamblardais</h2>
+				</div>
+				<!-- .site-branding -->
+				<nav id="site-navigation" class="main-navigation" role="navigation"><button class="menu-toggle">Menu</button>
+					<div class="menu-primary">
+						<ul id="menu-haut-droit" class="clear">
+							<li id="menu-item-40" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40"><a href="https://isle-et-crempse-en-perigord.fr/category/vivre-sur-le-territoire/">En ce moment</a></li>
+							<li id="menu-item-138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-138"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/">A votre service</a>
+								<ul class="sub-menu">
+									<li id="menu-item-742" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-742"><a href="https://isle-et-crempse-en-perigord.fr/category/maison-france-services/">Maison France Services</a></li>
+									<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/a-votre-service/">Environnement</a></li>
+									<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-150"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/habitat/">Habitat</a>
+										<ul class="sub-menu">
+											<li id="menu-item-194" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-194"><a href="https://isle-et-crempse-en-perigord.fr/category/logement/">Logement</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-183"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/enfance-et-ado/">Enfance et Ado</a>
+										<ul class="sub-menu">
+											<li id="menu-item-185" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185"><a href="https://isle-et-crempse-en-perigord.fr/category/ram/">RAM</a></li>
+											<li id="menu-item-193" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-193"><a href="https://isle-et-crempse-en-perigord.fr/category/creche/">Crèche</a></li>
+											<li id="menu-item-196" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-196"><a href="https://isle-et-crempse-en-perigord.fr/category/centre-de-loisirs-maurens/">Centre de loisirs Maurens</a></li>
+											<li id="menu-item-195" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-195"><a href="https://isle-et-crempse-en-perigord.fr/category/casado/">CAS’ADO</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/services-a-la-personne/">Services à la personne</a></li>
+									<li id="menu-item-224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224"><a href="https://isle-et-crempse-en-perigord.fr/a-votre-service-2/aides-aux-entreprises/">Aides aux entreprises</a></li>
+									<li id="menu-item-807" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-807"><a href="https://isle-et-crempse-en-perigord.fr/category/urbanisme/">Urbanisme</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-192"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/">La communauté</a>
+								<ul class="sub-menu">
+									<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-237"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/zoom-sur-la-cdc/">Zoom sur la CDC</a>
+										<ul class="sub-menu">
+											<li id="menu-item-558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-558"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/zoom-sur-la-cdc/delegues-communautaires/">Délégués communautaires</a></li>
+											<li id="menu-item-568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/zoom-sur-la-cdc/communes-de-la-communaute-de-communes-isle-et-crempse-en-perigord/">Communes de la communauté de communes Isle et Crempse en Périgord</a></li>
+											<li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592"><a href="https://isle-et-crempse-en-perigord.fr/category/actualites/">Actualités</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-234"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/projets-en-cours/">Projets en cours</a>
+										<ul class="sub-menu">
+											<li id="menu-item-235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-235"><a href="https://isle-et-crempse-en-perigord.fr/category/developpement-durable/">Développement durable</a></li>
+											<li id="menu-item-236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-236"><a href="https://isle-et-crempse-en-perigord.fr/category/projets-tourisme/">Projets tourisme</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="https://isle-et-crempse-en-perigord.fr/la-communaute/structures-auxquelles-nous-adherons/">Structures auxquelles nous adhérons</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- #site-navigation -->
+			</header>
+			<!-- #masthead -->
+			<div id="content" class="site-content">
+				<div class="hero with-featured-image">
+					<div class="hero-wrapper">
+						<h1 class="page-title">.</h1>
+					</div>
+				</div>
+				<!-- .hero -->
+				<div class="content-wrapper clear">
+					<div id="primary" class="content-area">
+						<main id="main" class="site-main" role="main">
+							<article id="post-5" class="post-5 page type-page status-publish has-post-thumbnail hentry">
+								<div class="entry-content">
+									<p>La Communauté de Isle et Crempse en Périgord a déménagé au 2 rue du Périgord à Mussidan.</p>
+									<p>Elle est à votre disposition tous les jours de 8h30 à 12h00 et  de 14h00 à 17h00</p>
+									<ul>
+										<li>par téléphone au 05.53.81.00.88</li>
+										<li>par mail <a href="mailto:communaute-de-communes@mussidan.fr">communaute-de-communes@mussidan.fr</a>.</li>
+									</ul>
+									<p></p>
+								</div>
+								<!-- .entry-content -->
+							</article>
+							<!-- #post-## -->
+						</main>
+						<!-- #main -->
+					</div>
+					<!-- #primary -->
+					<div id="secondary" class="widget-area" role="complementary">
+						<aside id="nav_menu-3" class="widget widget_nav_menu">
+							<div class="menu-barre-de-gauche-container">
+								<ul id="menu-barre-de-gauche" class="menu">
+									<li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="https://isleetcrempseenperigord.wordpress.com">Accueil</a></li>
+									<li id="menu-item-1208" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1208"><a href="https://isle-et-crempse-en-perigord.fr/2020/06/24/le-plan-climat-air-energie-territorial-de-la-ccicp/">LE PLAN CLIMAT AIR ENERGIE TERRITORIAL DE LA CCICP</a></li>
+									<li id="menu-item-1125" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1125"><a href="https://isle-et-crempse-en-perigord.fr/2020/05/27/fonds-de-solidarite-et-de-proximite-petites-entreprises-artisans-commercants/">Fonds de solidarité et de proximité petites entreprises, artisans, commerçants</a></li>
+									<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1042"><a href="https://isle-et-crempse-en-perigord.fr/2020/04/28/fonds-de-solidarite-et-de-proximite-pour-les-entreprises-de-moins-de-10-salaries/">Fonds de solidarité et de proximité pour les entreprises de moins de 10 salariés</a></li>
+									<li id="menu-item-988" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-988"><a href="https://isle-et-crempse-en-perigord.fr/2020/04/03/aide-aux-entreprises-pendant-la-crise-du-corona-virus/">Aide aux entreprises pendant la crise du CORONA Virus</a></li>
+									<li id="menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-763"><a href="https://isle-et-crempse-en-perigord.fr/2019/12/18/creation-dune-maison-france-services-a-mussidan/">Création d’une Maison France Services à Mussidan</a></li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="search-1" class="widget widget_search">
+							<h2 class="widget-title">Rechercher</h2>
+							<form role="search" method="get" class="search-form" action="https://isle-et-crempse-en-perigord.fr/"><label> <span class="screen-reader-text">Rechercher :</span> <input type="search" class="search-field" placeholder="Recherche…" value="" name="s"> </label> <input type="submit" class="search-submit" value="Rechercher"></form>
+						</aside>
+						<aside id="text-1" class="widget widget_text">
+							<h2 class="widget-title">CDC Isle et Crempse en Périgord</h2>
+							<div class="textwidget">
+								<p>Place Woodbridge<br> 24400 MUSSIDAN<br> 05.53.81.00.88<br> <a href="mailto:communaute-de-communes@mussidan.fr">communaute-de-communes@mussidan.fr</a></p>
+							</div>
+						</aside>
+					</div>
+					<!-- #secondary -->
+				</div>
+				<!-- .content-wrapper -->
+			</div>
+			<!-- #content -->
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<nav class="footer-navigation" role="navigation">
+					<div class="menu-pied-de-page-container">
+						<ul id="menu-pied-de-page" class="clear">
+							<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://isle-et-crempse-en-perigord.fr/contact/">Contact</a></li>
+							<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="https://isle-et-crempse-en-perigord.fr/mentions-legales/">Mentions légales</a></li>
+							<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://isle-et-crempse-en-perigord.fr/blog/">Blog</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- .footer-navigation -->
+				<div class="site-info"><a href="https://wordpress.com/?ref=footer_custom_svg" title="Créez un site ou un blog sur WordPress.com" rel="nofollow"><svg style="fill: currentColor; position: relative; top: 1px;" width="14px" height="15px" viewbox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title" role="img"><desc id="title">Créez un site ou un blog sur WordPress.com</desc><path d="M12.5225848,4.97949746 C13.0138466,5.87586309 13.2934037,6.90452431 13.2934037,7.99874074 C13.2934037,10.3205803 12.0351007,12.3476807 10.1640538,13.4385638 L12.0862862,7.88081544 C12.4453251,6.98296834 12.5648813,6.26504621 12.5648813,5.62667922 C12.5648813,5.39497674 12.549622,5.17994084 12.5225848,4.97949746 L12.5225848,4.97949746 Z M7.86730089,5.04801561 C8.24619178,5.02808979 8.58760099,4.98823815 8.58760099,4.98823815 C8.9267139,4.94809022 8.88671369,4.44972248 8.54745263,4.46957423 C8.54745263,4.46957423 7.52803983,4.54957381 6.86996227,4.54957381 C6.25158863,4.54957381 5.21247202,4.46957423 5.21247202,4.46957423 C4.87306282,4.44972248 4.83328483,4.96816418 5.17254589,4.98823815 C5.17254589,4.98823815 5.49358462,5.02808979 5.83269753,5.04801561 L6.81314716,7.73459399 L5.43565839,11.8651647 L3.14394256,5.04801561 C3.52312975,5.02808979 3.86416859,4.98823815 3.86416859,4.98823815 C4.20305928,4.94809022 4.16305906,4.44972248 3.82394616,4.46957423 C3.82394616,4.46957423 2.80475558,4.54957381 2.14660395,4.54957381 C2.02852925,4.54957381 1.88934333,4.54668493 1.74156477,4.54194422 C2.86690406,2.83350881 4.80113651,1.70529256 6.99996296,1.70529256 C8.638342,1.70529256 10.1302017,2.33173369 11.2498373,3.35765419 C11.222726,3.35602457 11.1962815,3.35261718 11.1683554,3.35261718 C10.5501299,3.35261718 10.1114609,3.89113285 10.1114609,4.46957423 C10.1114609,4.98823815 10.4107217,5.42705065 10.7296864,5.94564049 C10.969021,6.36482346 11.248578,6.90326506 11.248578,7.68133501 C11.248578,8.21992476 11.0413918,8.84503256 10.7696866,9.71584277 L10.1417574,11.8132391 L7.86730089,5.04801561 Z M6.99996296,14.2927074 C6.38218192,14.2927074 5.78595654,14.2021153 5.22195356,14.0362644 L7.11048207,8.54925635 L9.04486267,13.8491542 C9.05760348,13.8802652 9.07323319,13.9089317 9.08989995,13.9358945 C8.43574834,14.1661896 7.73285573,14.2927074 6.99996296,14.2927074 L6.99996296,14.2927074 Z M0.706448182,7.99874074 C0.706448182,7.08630113 0.902152921,6.22015756 1.25141403,5.43749503 L4.25357806,13.6627848 C2.15393732,12.6427902 0.706448182,10.4898387 0.706448182,7.99874074 L0.706448182,7.99874074 Z M6.99996296,0.999 C3.14016476,0.999 0,4.13905746 0,7.99874074 C0,11.8585722 3.14016476,14.999 6.99996296,14.999 C10.8596871,14.999 14,11.8585722 14,7.99874074 C14,4.13905746 10.8596871,0.999 6.99996296,0.999 L6.99996296,0.999 Z" id="wordpress-logo-simplified-cmyk" stroke="none" fill="“currentColor”" fill-rule="evenodd"></path></svg></a></div>
+				<!-- .site-info -->
+			</footer>
+			<!-- #colophon -->
+		</div>
+		<!-- #page -->
+		<!--  -->
+		<script src="//0.gravatar.com/js/gprofiles.js?ver=202028y"></script>
+		<script>
+var WPGroHo = {"my_hash":""};
+		</script>
+		<script type="text/javascript" src="https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h"></script>
+		<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+		</script>
+		<div style="display:none"></div>
+		<script>
+var comment_like_text = {"loading":"chargement\u2026"};
+		</script>
+		<script>
+var actionbardata = {"siteID":"151872684","siteName":"Isle et Crempse en P\u00e9rigord","siteURL":"https:\/\/isle-et-crempse-en-perigord.fr","icon":"<img alt='' src='https:\/\/isleetcrempseenperigord.files.wordpress.com\/2019\/03\/cropped-logo-cc-isle-et-crempse.jpg?w=50' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/goran","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fisle-et-crempse-en-perigord.fr%2F&signup_flow=account&domain=isle-et-crempse-en-perigord.fr","themeURL":"","xhrURL":"https:\/\/isle-et-crempse-en-perigord.fr\/wp-admin\/admin-ajax.php","nonce":"356e9666f3","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"43435a8dcf\" \/>","referer":"https:\/\/isle-et-crempse-en-perigord.fr\/","canFollow":"1","feedID":"88779590","statusMessage":"","customizeLink":"https:\/\/isleetcrempseenperigord.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fisleetcrempseenperigord.wordpress.com%2F","postID":"5","shortlink":"https:\/\/wp.me\/Pahf1q-5","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/isle-et-crempse-en-perigord.fr\/5","statsLink":"https:\/\/wordpress.com\/stats\/post\/5\/isle-et-crempse-en-perigord.fr","i18n":{"view":"Afficher le site","follow":"Suivre","following":"Abonn\u00e9","edit":"Modifier","login":"Connexion","signup":"S'inscrire","customize":"Personnaliser","report":"Signaler ce contenu","themeInfo":"Obtenir le th\u00e8me: Goran","shortlink":"Copier shortlink","copied":"Copi\u00e9","followedText":"Les nouveaux articles de ce site appara\u00eetront d\u00e9sormais dans votre <a href=\"https:\/\/wordpress.com\/\">Lecteur<\/a>","foldBar":"R\u00e9duire cette barre","unfoldBar":"\u00c9tendre cette barre","editSubs":"G\u00e9rer les abonnements","viewReader":"Voir le site dans le Lecteur","viewReadPost":"Voir l\u2019article dans le Lecteur","subscribe":"M\u2019inscrire","enterEmail":"Entrez votre adresse e-mail","followers":"","alreadyUser":"Vous disposez d\u00e9j\u00e0 d\u02bcun compte WordPress ? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fisle-et-crempse-en-perigord.fr%2F&signup_flow=account&domain=isle-et-crempse-en-perigord.fr\">Connectez-vous maintenant.<\/a>","stats":"Statistiques"}};
+		</script>
+		<script type="text/javascript" src="https://s2.wp.com/_static/??-eJyVkMsOgjAQRX/I2phIkIXxW0o74FD6SKcFP9+WBUFJjOxubs+ZdIbPnklnI9jIB+IKJpTgX+eBTnzzZBLzY+rREpfOmFyxETVQcUZsOc3o4Yj0UXyL8QkmYz61HBTawpNGn2GrWedkItbh7o8bq3dBLJoVE/YiorP/0Ev4sYVQBi1rReBGUISQE3MThIAqj1q7gxNiEFLvbrCVZFmgSGvK9MPcL1V9bepbVTXDG8QrqeI="></script>
+		<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+		</script>
+		<script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+		<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'151872684','blog_tz':'2','user_lang':'fr','blog_lang':'fr','user_id':'0'}]);
+_stq.push(['view', {'blog':'151872684','v':'wpcom','tz':'2','user_id':'0','post':'5','subd':'isleetcrempseenperigord'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGNrd29+Smw0TDhnZmRTK0hlRi9QSGh6bi9GXVhBJWIlZlR5U1JMLU8/MkNtblkvY1dSTkM3aVd2MFI1fkYvamVkYyVLP3dSdWFINjdDY05oNWJddXpXRjEyVU1aYUtMKzBocy41cUV2JXhrYzUmcE9OfiZYcmlpRUdrYVdzeDVOZnc9Y2NjSV13Tj9DWEcxV2o9a1o5eGIuS042LlJ6LVZmPUpDcXJwOHRqOSthQz9BSlRidDRSYi1dSGF+XXFfSHN1L1lnVjMwdkN1TEhNJnp+Ry1CY0k='}]);
+_stq.push([ 'clickTrackerInit', '151872684', '5' ]);
+		</script>
+		<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt=""></noscript>
+		<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+		</script>
+	</body>
+</html>
