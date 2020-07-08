@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html>
+	<head>
+		<style type="text/css">
+		body
+		{
+			background-image: url("https://www.nailloux.org/images/Fond/Fond-5.jpg") !important; ?>
+		}
+		
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="https://www.nailloux.org/index.php/accueil/vie-municipale/le-conseil-municipal">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Mairie de Nailloux">
+		<meta name="description" content="Toute l'actualité et les événements du village de Nailloux. Accédez à toutes les informations et aux services de votre mairie.">
+		<meta name="generator" content="MYOB">
+		<title>Mairie de Nailloux - Le conseil municipal</title>
+		<link href="/templates/nailloux/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="https://www.nailloux.org/index.php/component/search/?Itemid=121&format=opensearch" rel="search" title="Valider Mairie de Nailloux" type="application/opensearchdescription+xml">
+		<link href="/media/system/css/modal.css?407489e54ad55097e61db813d6a20d2a" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/css/jcemediabox.css?3ab6d4490e67378d035cce4c84ffa080" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/themes/standard/css/style.css?7361405241320e69bc1bfb093eb0a2f7" rel="stylesheet" type="text/css">
+		<link href="/templates/nailloux/css/template.css" rel="stylesheet" type="text/css">
+		<link href="/media/jfontsize/css/jfontsize.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+div.mod_search93 input[type="search"]{ width:auto; }
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"ceab89ef3a398abf539f95f87ef7e1f1","system.paths":{"root":"","base":""}}</script>
+		<script src="/media/system/js/mootools-core.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/system/js/core.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-more.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/system/js/modal.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery.min.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/system/js/caption.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/media/jui/js/bootstrap.min.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script>
+		<script src="/plugins/system/jcemediabox/js/jcemediabox.js?2ee2100a9127451a41de5a4c2c62e127" type="text/javascript"></script>
+		<script src="/templates/nailloux/js/template.js" type="text/javascript"></script>
+		<script src="/media/jfontsize/js/jquery.jfontsize-1.0.min.js" type="text/javascript"></script>
+		<!--[if lt IE 9]><script src="/media/system/js/html5fallback.js?407489e54ad55097e61db813d6a20d2a" type="text/javascript"></script><![endif]-->
+		<script type="text/javascript">
+
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Fermer','next':'Suivant','previous':'Précédent','cancel':'Annuler','numbers':'{$current} sur {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+		</script>
+		<script type="text/javascript">
+	(function ($) {
+		$().ready(function () {
+			 $('body, h1, h2, h3').jfontsize({
+			     btnMinusClasseId: '#jfontsize-minus',
+			     btnDefaultClasseId: '#jfontsize-default',
+			     btnPlusClasseId: '#jfontsize-plus',
+			     btnMinusMaxHits: 10,
+			     btnPlusMaxHits: 10,
+			     sizeChange: 1
+			 });
+		});
+	})(jQuery)
+		</script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		a
+		{
+			color: #b30000;
+		}
+		.navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
+		.btn-primary
+		{
+			background: #b30000;
+		}
+		.navbar-inner
+		{
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+		}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="/media/jui/js/html5.js"></script>
+	<![endif]-->
+		<!-- Google Analytics -->
+		<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-75223928-1', 'auto');  // Replace with your property ID.
+ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
+	</head>
+	<body class=" site fonce com_content view-article no-layout no-task itemid-121">
+		<!-- Body -->
+		<div class="body">
+			<div class="bloc-header">
+				<!-- Header -->
+				<header class="header " role="banner">
+					<div class="header-inner clearfix">
+						<hr class="hr-gauche span4"><a class="brand pull-left span4" href="/"> <span class="site-title" title="Mairie de Nailloux">Mairie de Nailloux</span> </a>
+						<hr class="hr-droite span4">
+						<div class="header-search pull-right"></div>
+					</div>
+				</header>
+				<nav class="navigation" role="navigation">
+					<div class="navbar pull-left"><a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a></div>
+					<div class="nav-cent">
+						<div class="nav-collapse">
+							<ul class="nav menu menu-p mod-list">
+								<li class="item-116 divider deeper parent"><span class="separator ">Vie municipale</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-117"><a href="/index.php/accueil/vie-municipale/la-mairie" class="colonne1">La mairie </a></li>
+										<li class="item-121 current"><a href="/index.php/accueil/vie-municipale/le-conseil-municipal" class="colonne1">Le conseil municipal</a></li>
+										<li class="item-124"><a href="/index.php/accueil/vie-municipale/marche-public" class="colonne1">Marché public</a></li>
+										<li class="item-345"><a href="/index.php/accueil/vie-municipale/club-de-mecenes-de-nailloux" class="colonne1">Club de mécènes de Nailloux</a></li>
+										<li class="item-125"><a href="/index.php/accueil/vie-municipale/publications" class="colonne2">Publications</a></li>
+										<li class="item-126"><a href="/index.php/accueil/infos-pratiques/demarches-administratives-2" class="colonne2">Démarches administratives </a></li>
+										<li class="item-127"><a href="/index.php/accueil/vie-municipale/budget-fiscalite-locale-elaboration-du-budget" class="colonne2">Budget - Fiscalité locale, Elaboration du budget </a></li>
+										<li class="item-344"><a href="/index.php/accueil/vie-municipale/police-municipale" class="colonne3">Police municipale</a></li>
+										<li class="item-128"><a href="/index.php/accueil/vie-municipale/centre-communal-d-actions-sociales" class="colonne3">Centre Communal d'actions Sociales</a></li>
+										<li class="item-129"><a href="/index.php/accueil/vie-municipale/plan-de-prevention-de-sauvegarde-communale" class="colonne3">Plan de Prévention de Sauvegarde communale</a></li>
+										<li class="item-130"><a href="/index.php/accueil/vie-municipale/citoyennete" class="colonne3">Citoyenneté</a></li>
+									</ul>
+								</li>
+								<li class="item-133 divider deeper parent"><span class="separator ">Vivre à Nailloux</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-164"><a href="/index.php/accueil/vivre-a-nailloux/petite-enfance" class="colonne1">Petite Enfance</a></li>
+										<li class="item-165"><a href="/index.php/accueil/vivre-a-nailloux/affaires-scolaires" class="colonne1">Affaires scolaires</a></li>
+										<li class="item-167"><a href="/index.php/accueil/vivre-a-nailloux/jeunesse" class="colonne1">Jeunesse</a></li>
+										<li class="item-166"><a href="/index.php/accueil/vivre-a-nailloux/ecole-intercommunale-de-musique-du-lauragais" class="colonne1">École Intercommunale de Musique du Lauragais</a></li>
+										<li class="item-168"><a href="/index.php/accueil/vivre-a-nailloux/services-aux-personnes-agees" class="colonne2">Services aux personnes âgées</a></li>
+										<li class="item-169"><a href="/index.php/accueil/vivre-a-nailloux/service-a-la-personne" class="colonne2">Maison des solidarités du Conseil départemental de la Haute-Garonne</a></li>
+										<li class="item-170"><a href="/index.php/accueil/vivre-a-nailloux/vie-economique" class="colonne2">Vie économique</a></li>
+									</ul>
+								</li>
+								<li class="item-134 divider deeper parent"><span class="separator ">Vie Associative</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-138"><a href="/index.php/accueil/vie-associative/annuaire-des-associations" class="colonne1">Annuaire des associations</a></li>
+										<li class="item-139"><a href="/index.php/accueil/vie-associative/forum-des-associations" class="colonne1">Forum des associations</a></li>
+										<li class="item-140"><a href="/index.php/accueil/vie-associative/dossier-de-demande-de-subvention" class="colonne1">Dossier de demande de subvention</a></li>
+										<li class="item-155"><a href="/index.php/accueil/vie-associative/reservations-salles-materiel" class="colonne2">Réservations salles - Matériel</a></li>
+										<li class="item-141"><a href="/index.php/accueil/vie-associative/communication" class="colonne2">Communication</a></li>
+										<li class="item-142"><a href="/index.php/accueil/vie-associative/creer-son-association" class="colonne2">Créer son association</a></li>
+									</ul>
+								</li>
+								<li class="item-135 divider deeper parent"><span class="separator ">Découvrir Nailloux</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-158"><a href="/index.php/accueil/decouvrir-nailloux/nailloux-aujourd-hui" class="colonne1">Nailloux aujourd'hui</a></li>
+										<li class="item-159 deeper parent"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels" class="colonne1">Lieux Culturels</a>
+											<ul class="nav-child unstyled small">
+												<li class="item-173"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/mediatheque">Médiathèque</a></li>
+												<li class="item-174"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/cyber-base">Cyber base</a></li>
+												<li class="item-175"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/ecole-et-salle-de-musique">École et Salle de Musique</a></li>
+											</ul>
+										</li>
+										<li class="item-160"><a href="/index.php/accueil/decouvrir-nailloux/lieux-sportifs" class="colonne2">Lieux Sportifs</a></li>
+										<li class="item-161"><a href="/index.php/accueil/decouvrir-nailloux/histoire-et-patrimoine" class="colonne2">Histoire et Patrimoine</a></li>
+										<li class="item-162"><a href="/index.php/accueil/decouvrir-nailloux/coulees-vertes-et-chemins-de-randonnees" class="colonne2">Coulées vertes et chemins de randonnées</a></li>
+									</ul>
+								</li>
+								<li class="item-136 divider deeper parent"><span class="separator ">Urbanisme</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-143"><a href="/index.php/accueil/urbanisme/plu-et-reglement" class="colonne1">PLU et règlement</a></li>
+										<li class="item-281"><a href="/index.php/accueil/urbanisme/autorisation-urbanisme" class="colonne1">Autorisation urbanisme</a></li>
+										<li class="item-282"><a href="/index.php/accueil/urbanisme/travaux-voirie-circulation" class="colonne2">Travaux - Voirie - Circulation</a></li>
+										<li class="item-149"><a href="/index.php/accueil/urbanisme/accessibilite" class="colonne2">Accessibilité </a></li>
+									</ul>
+								</li>
+								<li class="item-137 divider deeper parent"><span class="separator ">Infos Pratiques</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-163"><a href="/index.php/accueil/infos-pratiques/demarches-administratives-2" class="colonne1">Démarches administratives</a></li>
+										<li class="item-156"><a href="/index.php/accueil/infos-pratiques/transports" class="colonne1">Transports</a></li>
+										<li class="item-151"><a href="/index.php/accueil/infos-pratiques/professionnels-de-sante" class="colonne1">Professionnels de santé</a></li>
+										<li class="item-157"><a href="/index.php/accueil/infos-pratiques/naillousain-reservez-une-salle-municipale-et-du-materiel" class="colonne2"> Réservez une salle municipale et du matériel</a></li>
+										<li class="item-152"><a href="/index.php/accueil/infos-pratiques/trouver-un-logement-social-hlm" class="colonne2">Trouver un logement SOCIAL HLM</a></li>
+										<li class="item-153"><a href="/index.php/accueil/infos-pratiques/services-publics-sur-la-commune" class="colonne2">SERVICES publics sur la commune</a></li>
+										<li class="item-154"><a href="/index.php/accueil/infos-pratiques/dechetterie" class="colonne2">DECHETERIE</a></li>
+										<li class="item-349"><a href="/index.php/accueil/infos-pratiques/offres-d-emploi">OFFRES D'EMPLOI</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="row-fluid">
+					<main id="content" role="main" class="span9">
+						<!-- Begin Content -->
+						<div class="moduletable fil-de-nav">
+							<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb fil-de-nav">
+								<li class="active"><span class="divider icon-location"></span></li>
+								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/index.php" class="pathway"> <span itemprop="name"> Accueil </span> </a> <span class="divider"> > </span>
+									<meta itemprop="position" content="1">
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="/index.php/list" class="pathway"> <span itemprop="name"> Accueil </span> </a> <span class="divider"> > </span>
+									<meta itemprop="position" content="2">
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"> Vie municipale </span> <span class="divider"> > </span>
+									<meta itemprop="position" content="3">
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active"><span itemprop="name"> Le conseil municipal </span>
+									<meta itemprop="position" content="4">
+								</li>
+							</ul>
+						</div>
+						<div id="system-message-container"></div>
+						<div class="item-page" itemscope itemtype="https://schema.org/Article">
+							<meta itemprop="inLanguage" content="fr-FR">
+							<div class="page-header">
+								<h2 itemprop="headline">Le Conseil Municipal</h2>
+							</div>
+							<div class="icons">
+								<div class="btn-group pull-right"><button class="btn dropdown-toggle" type="button" id="dropdownMenuButton-75" aria-label="User tools" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-cog" aria-hidden="true"></span> <span class="caret" aria-hidden="true"></span> </button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-75">
+										<li class="print-icon"><a href="/index.php/accueil/vie-municipale/le-conseil-municipal?tmpl=component&print=1" title="Imprimer l'article < Le Conseil Municipal >" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"> <span class="icon-print" aria-hidden="true"></span> Imprimer </a></li>
+										<li class="email-icon"><a href="/index.php/component/mailto/?tmpl=component&template=nailloux&link=f61f6533b177711416fb80eb62eaf74e2990044f" title="Envoyer ce lien à un ami" onclick="window.open(this.href,'win2','width=400,height=450,menubar=yes,resizable=yes'); return false;" rel="nofollow"> <span class="icon-envelope" aria-hidden="true"></span> E-mail </a></li>
+									</ul>
+								</div>
+							</div>
+							<dl class="article-info muted">
+								<dt class="article-info-term">Détails</dt>
+								<dd class="createdby" itemprop="author" itemscope itemtype="https://schema.org/Person">Écrit par <span itemprop="name">Mairie de Nailloux</span></dd>
+								<dd class="category-name">Catégorie : <a href="/index.php/accueil/vie-municipale/le-conseil-municipal/9-le-conseil-municipal" itemprop="genre">Le conseil municipal</a></dd>
+								<dd class="published"><span class="icon-calendar" aria-hidden="true"></span>
+									<time datetime="2016-01-22T17:19:05+01:00" itemprop="datePublished">Publication : 22 janvier 2016</time>
+								</dd>
+								<dd class="hits"><span class="icon-eye-open" aria-hidden="true"></span>
+									<meta itemprop="interactionCount" content="UserPageVisits:14345">Affichages : 14345</dd>
+							</dl>
+							<div itemprop="articleBody">
+								<p> </p>
+								<p> </p>
+								<p> </p>
+								<h3>Le conseil municipal de la commune de Nailloux est composé de 27 membres</h3>
+								<h4><strong>Le Maire : *************</strong></h4>
+								<p>Lison GLEYSES<br>Pierre MARTY<br>Marc METIFEU<br>Charlotte CABANER<br>Eva NAUTRE<br>Michel ARPAILLANGE<br>Eliane OBIS<br>Daniel BAUR<br>Marion GERBER BENOI<br>Antoine ZARAGOZA<br>Aurélie VIVIER<br>Laurent BONNEFONT<br>Marie-Noëlle JEROME<br>Emilien DAHERON<br>Marie-Thérèse CHAYNES<br>Sylvain THENAULT<br>Carine MESTRES<br>Pierre RIOLLET<br>Mélanie PERIES<br>Jean AIGOUY<br>Anne LEVRAT<br>Luc DELRIEU<br>Didier DATCHARRY<br>Agnès PONS-QUINZIN<br>Mickaël OPALA<br>Catherine VREZIL<br>Christian DELMAS</p>
+								<p> </p>
+								<h3>Les conseillers communautaires</h3>
+								<p> </p>
+								<p>Lison GLEYSES</p>
+								<p>Marc METIFEU</p>
+								<p>Eva NAUTRE</p>
+								<p>Michel ARPAILLANGE</p>
+								<p>Eliane OBIS</p>
+								<p>Didier DATCHARRY</p>
+								<p> </p>
+								<h3>Contact et permanences des adjoints au Maire</h3>
+								<p>Maire, Président de toutes les commissions  : Lison GLEYSES  - <span id="cloak67ed3066a9ad2722c791634630284e88">Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le JavaScript pour la visualiser.</span>
+									<script type="text/javascript">
+				document.getElementById('cloak67ed3066a9ad2722c791634630284e88').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy67ed3066a9ad2722c791634630284e88 = 'm&#97;&#105;r&#105;&#101;' + '&#64;';
+				addy67ed3066a9ad2722c791634630284e88 = addy67ed3066a9ad2722c791634630284e88 + 'm&#97;&#105;r&#105;&#101;n&#97;&#105;ll&#111;&#117;x31' + '&#46;' + 'c&#111;m';
+				var addy_text67ed3066a9ad2722c791634630284e88 = 'm&#97;&#105;r&#105;&#101;' + '&#64;' + 'm&#97;&#105;r&#105;&#101;n&#97;&#105;ll&#111;&#117;x31' + '&#46;' + 'c&#111;m';document.getElementById('cloak67ed3066a9ad2722c791634630284e88').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy67ed3066a9ad2722c791634630284e88 + '\'>'+addy_text67ed3066a9ad2722c791634630284e88+'<\/a>';
+		
+									</script><a href="mailto:dutech.mairie@gmail.com"><br></a></p>
+								<p>Permanences sur rendez-vous  - Tél : <strong>05.62.71.96.96 -</strong></p>
+								<p> </p>
+								<p>1<sup>ère</sup> adjointe adjointe Finances et administration générale :  ************* - Tél :  -<a href="mailto:anne.borgetto@gmail.com"><br></a></p>
+								<p> </p>
+								<p>2ème adjointe Urbanisme et travaux : ************* - Tél :<strong> - </strong><a href="mailto:cabaner.mairie@gmail.com"><br></a></p>
+								<p> </p>
+								<p>3ème adjoint Affaires scolaires : *************  - Tél : <b>-</b><a href="mailto:vienne.mairie@orange.fr" target="_blank"><br></a></p>
+								<p> </p>
+								<p>4 ème adjointe Communication, culture, relations intercommunales : *************- tel :  - </p>
+								<p><br>5<sup>ème</sup> adjoint Action sociale, CCAS : *************  - Tél : -<a href="mailto:%20zaragoza.tony@outlook.fr%20%20-"></a></p>
+								<p> </p>
+								<p>6ème adjoint Environnement et transition énergétique : *************  - Tél : <strong> - </strong><a href="mailto:marty.mairie@gmail.com"><br></a></p>
+								<p> </p>
+								<p>7ème adjoint Vie associative : *************  - Tél : <strong> - </strong></p>
+								<p> </p>
+								<p> </p>
+								<h3> compte-rendu et délibérations des séances du Conseil  municipal</h3>
+								<p><a href="/images/r%C3%A9pertoire-d%C3%A9lib%C3%A9rations-2019.pdf">RECAPITULATIF DÉLIBÉRATION 2020</a></p>
+								<table border="0" style="height: 52px; width: 338px;">
+									<tbody>
+										<tr>
+											<td><span>Compte rendus 2020</span></td>
+											<td>Procés verbaux 2020</td>
+										</tr>
+										<tr>
+											<td><a href="/images/01_CR_27_02_2020.pdf">CR.27/02/2020</a></td>
+											<td> <a href="/images/01_PV_27_02_2020.pdf">PV 27/02/2020</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/02_CR_25_05_2020.pdf">CR.25/05/2020</a></td>
+											<td><a href="/images/03_PV_21_03_2019.pdf"></a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/03_CR_08_06_2020.pdf">CR.08/06/2020</a></td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td><a href="/images/04_CR_29_06_2020.pdf">CR.29/06/2020</a></td>
+											<td> </td>
+										</tr>
+									</tbody>
+								</table>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/r%C3%A9pertoire-d%C3%A9lib%C3%A9rations-2018.pdf" target="_blank"></a></p>
+								<p> </p>
+								<p><a href="/images/r%C3%A9pertoire-d%C3%A9lib%C3%A9rations-2019.pdf">RECAPITULATIF DÉLIBÉRATION 2019</a></p>
+								<table border="0" style="height: 277px; width: 338px;">
+									<tbody>
+										<tr>
+											<td><span style="font-size: 16px;">Compte rendus 2019</span></td>
+											<td>Procés verbaux 2019</td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/01_CR_29_01_2019.pdf">CR.29/01/2019</a></td>
+											<td> <a href="/images/01_PV_29_01_2019.pdf">PV 29/01/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/02_CR_05_03_2019.pdf">CR.05/03/2019</a></td>
+											<td> <a href="/images/02_PV_05_03_2019.pdf">PV 05/03/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/03_CR_21_03_2019.pdf">CR.21/03/2019</a></td>
+											<td><a href="/images/03_PV_21_03_2019.pdf"> PV 21/03/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/04_CR_08_04_2019.pdf">CR.08/04/2019</a></td>
+											<td> <a href="/images/04_PV_08_04_2019.pdf">PV 08/04/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/05_CR_23_05_2019.pdf">CR.23/05/2019</a></td>
+											<td> <a href="/images/05_PV_23_05_2019.pdf">PV 23/05/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/06_CR_26_06_2019.pdf">CR.26/06/2019</a></td>
+											<td> <a href="/images/06_PV_26_06_2019.pdf">PV 26/06/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/07_CR_25_07_2019.pdf">CR.25/07/2019</a></td>
+											<td><a href="/images/07_PV_25_07_2019.pdf"> PV 25/07/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/08_CR_29_08_2019.pdf">CR.29/08/2019</a></td>
+											<td> <a href="/images/08_PV_29_08_2019.pdf">PV 29/08/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/09_CR_26_09_2019.pdf">CR.26/09/2019</a></td>
+											<td> <a href="/images/09_PV_26_09_2019.pdf">PV 26/09/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/10_CR_29_10_2019.pdf">CR.29/10/2019</a></td>
+											<td> <a href="/images/10_PV_29_10_2019.pdf">PV 29/10/2019</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/11_CR_05_12_2019.pdf">CR.05/12/2019</a></td>
+											<td> <a href="/images/11_PV_05_12_2019.pdf">PV 05/12/2019</a></td>
+										</tr>
+									</tbody>
+								</table>
+								<p> </p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/r%C3%A9pertoire-d%C3%A9lib%C3%A9rations-2018.pdf" target="_blank">RECAPITULATIF DELIBERATION  2018</a></p>
+								<table border="0">
+									<tbody>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">Compte rendus 2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">Procès verbaux 2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">CR25.01.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/01-PV_25_01_2018.pdf" target="_blank">PV 25.01.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">CR 22.02.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/02-PV_22_02_2018.pdf" target="_blank">PV 22.02.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">CR 15.03.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/03-PV_15_03_2018.pdf" target="_blank">PV 15.03.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">CR 09.04.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/04-PV_09-04_2018.pdf" target="_blank">PV 09.04.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank">CR 21.06.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/05-PV_21_06_2018.pdf" target="_blank">PV 21.06.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/06-CR_28_06_2018.pdf" target="_blank">CR 28.06.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/06-PV_28_06_2018.pdf" target="_blank">PV 28.06.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/07-CR_28_08_2018.pdf" target="_blank">CR 28.08.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/07-PV_28_08_2018.pdf" target="_blank">PV 28.08.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/08-CR_27_09_2018.pdf" target="_blank">CR 27.09.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2018/08-PV_27_09_2018.pdf" target="_blank">PV 27.09.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/09-CR_24_10_2018.pdf" target="_blank">CR 24.10.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/09-PV_24_10_2018.pdf">PV 24.10.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/10-CR_15_11_2018.pdf" target="_blank">CR 15.11.2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/10-PV_15_11_2018.pdf">PV 15.11.2018</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/11-CR_11_12_2018.pdf">CR 11/12/2018</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/CR_2018/05-CR_21_06_2018.pdf" target="_blank"></a><a href="/images/11-PV_11_12_2018.pdf">PV 11.12.2018</a></td>
+										</tr>
+									</tbody>
+								</table>
+								<p> </p>
+								<p>Vous retrouverez ici l'ensemble des compte rendus et délibérations des séances du Conseil Municipal</p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/RECAPITULATIF-DELIBERATIONS-2017.pdf" target="_blank">RECAPITULATIF DELIBERATIONS 2017</a></p>
+								<table border="0">
+									<tbody>
+										<tr>
+											<td>Compte rendus 2017</td>
+											<td> Procès verbaux 2017</td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/01-CR-12-01-2017.pdf" target="_blank">CR 12.01.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/01-PV-12-01-2017.pdf" target="_blank"> PV.12.01.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/02-CR-21-01-2017.pdf" target="_blank">CR 21.01.2017</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/02-PV-21-01-2017.pdf" target="_blank">PV 21.01.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/03-CR-09-02-2017.pdf" target="_blank">CR 09.02.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/03-PV-09-02-2017.pdf" target="_blank"> PV 09.02.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/04-CR-09-03-2017.pdf" target="_blank">CR 09.03.2017</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/04-PV-09-03-2017.pdf" target="_blank">PV09.03.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/05-CR-30-03-2017.pdf" target="_blank">CR 30.03.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/05-PV-30-03-2017.pdf" target="_blank"> PV 30.03.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/06-CR-13-04-2017.pdf" target="_blank">CR 13.04.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/06-PV-13-04-2017.pdf" target="_blank"> PV 13.04.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/07-CR-17-05-2017.pdf" target="_blank">CR 17.05.2017</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/07-PV-17-05-2017.pdf" target="_blank">PV 17.05.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/08-CR-29-06-2017.pdf" target="_blank">CR 29.06.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/08-PV-29-06-2017.pdf" target="_blank"> PV 29.06.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/09-CR-20-07-2017.pdf" target="_blank">CR 20.07.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/09-PV-20-07-2017.pdf" target="_blank"> PV 20.07.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/10-CR-31-08-2017.pdf" target="_blank">CR 31.08.2017</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/10-PV-31-08-2017.pdf" target="_blank">PV 31.08.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/11-CR-28-09-2017.pdf" target="_blank">CR 28.09.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/11-PV-28-09-2017.pdf" target="_blank"> PV 28.09.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/12-CR-12-10-2017.pdf" target="_blank">CR 12.10.2017</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/12-PV-12-10-2017.pdf" target="_blank">PV 12.10.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/13-CR-26-10-2017.pdf" target="_blank">CR 26.10.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/13-PV-26-10-2017.pdf" target="_blank"> PV 26.10.2017</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/14-CR-14-11-2017.pdf" target="_blank">CR 14.10.2017</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/14-PV-14-11-2017.pdf" target="_blank"> PV 14.11.2017</a></td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+										</tr>
+									</tbody>
+								</table>
+								<p> </p>
+								<p> </p>
+								<p><a href="/images/PDF/RECAPITULATIF-DELIBERATIONS-2016.pdf" target="_blank">RECAPITULATIF des DELIBERATIONS 2016</a></p>
+								<table border="0" style="height: 292px; width: 637px;">
+									<tbody>
+										<tr>
+											<td>Compte rendus 2016</td>
+											<td>Procès verbaux 2016</td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/01-CR-21-01-2016.pdf" target="_blank">CR-21012016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/01-PV-21-01-2016.pdf" target="_blank">PV-21012016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/02-CR-25-02-2016.pdf" target="_blank">CR-25022016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/02-PV-25-02-2016.pdf" target="_blank">PV-25022016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/03-CR-31-03-2016.pdf" target="_blank">CR-31032016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/03-PV-31-03-2016.pdf" target="_blank">PV-31032016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/04-CR-12-04-2016.pdf" target="_blank">CR-12042016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/04-PV-12-04-2016.pdf" target="_blank">PV-12042016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/06-CR-26-05-2016.pdf" target="_blank">CR-26052016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/05-PV-03-05-2016.pdf" target="_blank">PV-26052016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/07-CR-23-06-2016.pdf" target="_blank">CR-23062016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2016/07-PV-23-06-2016.pdf" target="_blank"> PV 23.06.2016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/08-CR-24-08-2016.pdf" target="_blank">CR-24082016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2016/08-PV-24-08-2016.pdf" target="_blank"> PV 24.08.2016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/09-CR-29-09-2016.pdf" target="_blank">CR-29092016</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2016/09-PV-29-09-2016.pdf" target="_blank">PV 29.09.2016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/10-CR-20-10-2016.pdf" target="_blank">CR-20102016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2016/10-PV-20-10-2016.pdf" target="_blank"> PV 20.10.2016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/12-CR-24-11-2016.pdf" target="_blank">CR-24112016</a></td>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2016/12-PV-24-11-2016.pdf" target="_blank"> PV 24.11.2016</a></td>
+										</tr>
+										<tr>
+											<td><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/13-CR-15-12-2016.pdf" target="_blank">CR-15122016</a></td>
+											<td> <a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/PV2017/13-PV-15-12-2016.pdf" target="_blank">PV 15.12.2016</a></td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+										</tr>
+									</tbody>
+								</table>
+								<p><a href="/images/PDF/03-PV-31-03-2016.pdf" target="_blank"></a></p>
+								<p> </p>
+								<h3><strong> Recueil des actes administratifs reglementaires</strong> </h3>
+								<p><a href="/images/PDF/R%C3%89PUBLIQUE_FRANCAISE.pdf" target="_blank">Actes de Decembre 2016</a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/R%C3%89PUBLIQUE_FRANCAISE_2017.pdf" target="_blank">Actes de Janvier 2017</a></p>
+								<p>Actes de février 2017</p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/R%C3%89PUBLIQUE_FRANCAISEmars_2017.pdf" target="_blank">Actes de Mars 2017 </a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/R%C3%89PUBLIQUE_FRANCAISEavril_2017.pdf" target="_blank">Actes d'Avril 2017</a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/maiR%C3%89PUBLIQUE_FRANCAISEmai_2017.pdf" target="_blank">Actes de Mai 2017</a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/juinR%C3%89PUBLIQUE_FRANCAISEjuin2017.pdf" target="_blank">Actes de juin 2017</a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/juilletR%C3%89PUBLIQUE_FRANCAISEjuillet2017.pdf" target="_blank">Actes de juillet 2017</a></p>
+								<p><a href="/images/PDF/CRETPVCONSEILMUNCIPAUX/R%C3%89PUBLIQUE_FRANCAISEao%C3%BBt_2017.pdf" target="_blank">Actes d'aout 2017</a></p>
+								<p><a href="/images/PDF/5eme_modification_PLU/R%C3%89PUBLIQUE_FRANCAISEseptembre_2017.pdf" target="_blank">Actes de septembre 2017</a></p>
+								<h3>Les commissions communales  </h3>
+								<p><a href="/images/PDF/COMMISSIONS_MUNICIPALES_pour_cm_26102017.pdf" target="_blank"> Tableau des commissions</a></p>
+								<p> </p>
+							</div>
+						</div>
+						<!-- End Content -->
+					</main>
+					<div id="aside" class="span3">
+						<!-- Begin Right Sidebar -->
+						<div class="well mod-ac">
+							<h3 class="page-header">Accessibilité</h3>
+							<div class="jfontsize"><a class="jfontsize-button" id="jfontsize-minus">A-</a> <a class="jfontsize-button" id="jfontsize-default">A</a> <a class="jfontsize-button" id="jfontsize-plus">A+</a></div>
+						</div>
+						<div class="well  recherche">
+							<h3 class="page-header">Recherche</h3>
+							<div class="search recherche mod_search93">
+								<form action="/index.php/accueil/vie-municipale/le-conseil-municipal" method="post" class="form-inline"><label for="mod-search-searchword93" class="element-invisible">b-recherche</label> <input name="searchword" id="mod-search-searchword93" maxlength="200" class="inputbox search-query input-medium" type="search" size="20" placeholder=" "> <input type="hidden" name="task" value="search"> <input type="hidden" name="option" value="com_search"> <input type="hidden" name="Itemid" value="121"></form>
+							</div>
+						</div>
+						<div class="well ">
+							<h3 class="h3-insc">Inscription en ligne</h3>
+							<ul class="nav menu mod-list" id="menu-insc">
+								<li class="item-283"><a href="/index.php/formulaires/cantine" target="_blank">Cantine</a></li>
+								<li class="item-284"><a href="/index.php/formulaires/garderie" target="_blank">Garderie</a></li>
+								<li class="item-347"><a href="/index.php/formulaires/panneau-lumineux">Panneau lumineux</a></li>
+								<li class="item-348"><a href="https://www.rdv360.com/mairie-de-nailloux" target="_blank" rel="noopener noreferrer">RDV Carte d'identité - Passeport</a></li>
+							</ul>
+						</div>
+						<div class="well  widget-suis">
+							<h3 class="suis-pos7">JE SUIS</h3>
+							<ul class="nav menu m-suis mod-list">
+								<li class="item-178 divider deeper parent"><span class="separator ">jeune</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-184"><a href="/index.php/accueil/vivre-a-nailloux/jeunesse">Jeunesse</a></li>
+										<li class="item-185"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/mediatheque">Médiathèque</a></li>
+										<li class="item-186"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/cyber-base">Cyber base</a></li>
+										<li class="item-202"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels">Lieux Culturels</a></li>
+										<li class="item-204"><a href="/index.php/accueil/infos-pratiques/transports">Transports</a></li>
+									</ul>
+								</li>
+								<li class="item-179 divider deeper parent"><span class="separator ">nouveau</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-187"><a href="/index.php/accueil/vie-municipale/la-mairie">Mairie</a></li>
+										<li class="item-188"><a href="/index.php/accueil/vivre-a-nailloux/affaires-scolaires">Affaires scolaires</a></li>
+										<li class="item-189"><a href="/index.php/accueil/vivre-a-nailloux/service-a-la-personne">Vie économique</a></li>
+										<li class="item-190"><a href="/index.php/un-nouvel-habitant/vie-associative">Vie Associative</a></li>
+										<li class="item-192"><a href="/index.php/un-nouvel-habitant/2015-12-02-10-32-46">Infos Pratiques</a></li>
+										<li class="item-191"><a href="/index.php/un-nouvel-habitant/urbanisme">Urbanisme</a></li>
+									</ul>
+								</li>
+								<li class="item-180 divider deeper parent"><span class="separator ">parent</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-193"><a href="/index.php/accueil/vivre-a-nailloux/petite-enfance">Petite Enfance</a></li>
+										<li class="item-194"><a href="/index.php/accueil/vivre-a-nailloux/affaires-scolaires">Affaires scolaires</a></li>
+										<li class="item-195"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/mediatheque">Médiathèque</a></li>
+										<li class="item-196"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels/cyber-base">Cyber base</a></li>
+									</ul>
+								</li>
+								<li class="item-182 divider deeper parent"><span class="separator ">commerçant</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-200"><a href="/index.php/accueil/vivre-a-nailloux/vie-economique">Vie économique</a></li>
+									</ul>
+								</li>
+								<li class="item-181 divider deeper parent"><span class="separator ">retraité</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-197"><a href="/index.php/accueil/vivre-a-nailloux/services-aux-personnes-agees">Services aux personnes âgées</a></li>
+										<li class="item-198"><a href="/index.php/accueil/vivre-a-nailloux/service-a-la-personne">Service à la personne</a></li>
+										<li class="item-199"><a href="/index.php/accueil/vivre-a-nailloux/vie-economique">Vie économique</a></li>
+									</ul>
+								</li>
+								<li class="item-183 divider deeper parent"><span class="separator ">association</span>
+									<ul class="nav-child unstyled small">
+										<li class="item-201"><a href="/index.php/une-association/vie-associative">Vie Associative</a></li>
+										<li class="item-203"><a href="/index.php/accueil/decouvrir-nailloux/lieux-culturels">Lieux Culturels</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="well ">
+							<h3 class="pratique-pos7">PRATIQUES</h3>
+							<ul class="nav menu m-prat mod-list">
+								<li class="item-205"><a href="/index.php/plan-de-ville"><img src="/images/pratiques/plan.png" alt="Plan de ville"><span class="image-title">Plan de ville</span></a></li>
+								<li class="item-206"><a href="/index.php/accueil/infos-pratiques/demarches-administratives-2"><img src="/images/pratiques/droit.png" alt="Démarches "><span class="image-title">Démarches </span></a></li>
+								<li class="item-207"><a href="/index.php/urgences"><img src="/images/pratiques/urgences.png" alt="Urgences"><span class="image-title">Urgences</span></a></li>
+							</ul>
+						</div>
+						<div class="well  widget-medias">
+							<h3 class="medias-pos7">Médias</h3>
+							<ul class="nav menu m-medias mod-list">
+								<li class="item-241"><a href="/index.php/le-journal"><img src="/images/Medias/journal.png" alt="Le journal"><span class="image-title">Le journal</span></a></li>
+								<li class="item-242"><a href="/index.php/la-galerie-photo"><img src="/images/Medias/gallerie1.png" alt="La galerie photo"><span class="image-title">La galerie photo</span></a></li>
+							</ul>
+						</div>
+						<!-- End Right Sidebar -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="footer" role="contentinfo">
+			<div class="container">
+				<div class="footer-co">
+					<!-- BEGIN: Custom advanced (www.pluginaria.com) -->
+					<div class="mairie-f span3">
+						<p><b>Mairie de Nailloux</b><br> 1, rue de la République<br> 05 62 71 96 96 <br> <span style="font-size: 14px;"><span id="cloaka4bfdddb16622a3f0de62de2cb5c72f3">Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le JavaScript pour la visualiser.</span><script type="text/javascript">
+				document.getElementById('cloaka4bfdddb16622a3f0de62de2cb5c72f3').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addya4bfdddb16622a3f0de62de2cb5c72f3 = 'm&#97;&#105;r&#105;&#101;' + '&#64;';
+				addya4bfdddb16622a3f0de62de2cb5c72f3 = addya4bfdddb16622a3f0de62de2cb5c72f3 + 'm&#97;&#105;r&#105;&#101;n&#97;&#105;ll&#111;&#117;x31' + '&#46;' + 'c&#111;m';
+				var addy_texta4bfdddb16622a3f0de62de2cb5c72f3 = 'm&#97;&#105;r&#105;&#101;' + '&#64;' + 'm&#97;&#105;r&#105;&#101;n&#97;&#105;ll&#111;&#117;x31' + '&#46;' + 'c&#111;m';document.getElementById('cloaka4bfdddb16622a3f0de62de2cb5c72f3').innerHTML += '<a ' + path + '\'' + prefix + ':' + addya4bfdddb16622a3f0de62de2cb5c72f3 + '\'>'+addy_texta4bfdddb16622a3f0de62de2cb5c72f3+'<\/a>';
+		</script> </span></p>
+					</div>
+					<!-- END: Custom advanced (www.pluginaria.com) -->
+					<ul class="nav menu span2 footer1 mod-list">
+						<li class="item-208"><a href="/index.php/2016-02-17-13-14-06/plan-du-site">Plan du site</a></li>
+						<li class="item-209"><a href="/index.php/2016-02-17-13-14-06/contact">Contact</a></li>
+						<li class="item-211"><a href="/index.php/2016-02-17-13-14-06/mentions-legales">Mentions légales</a></li>
+						<li class="item-210"><a href="/index.php/2016-02-17-13-14-06/aide">Aide</a></li>
+					</ul>
+					<ul class="nav menu span2 footer2 mod-list">
+						<li class="item-238"><a href="/index.php/credits">Crédits</a></li>
+						<li class="item-239"><a href="/index.php/accessibilite">Accessibilité </a></li>
+						<li class="item-240"><a href="/index.php/espace-presse">Espace Presse</a></li>
+						<li class="item-341"><a href="/index.php/2017-07-06-10-09-18">-</a></li>
+					</ul>
+					<!-- BEGIN: Custom advanced (www.pluginaria.com) --><a href="https://www.facebook.com/Ville-de-Nailloux-Mairie-164426363731303/%20" target="_blank"> <div class="facebook-f span3"><div class="image-fb span1"><img src="/images/fb.png" alt="Facebook"></div><div class=" text-fb span2"><p>Suivez-nous sur <br> notre page Facebook</p></div></div> </a>
+					<!-- END: Custom advanced (www.pluginaria.com) -->
+					<!-- BEGIN: Custom advanced (www.pluginaria.com) -->
+					<div class="copyright span2">
+						<p>Studio Ogham <br> © 2016</p>
+					</div>
+					<!-- END: Custom advanced (www.pluginaria.com) -->
+					<p class="pull-right"><a href="#top" id="back-top"> Haut de page </a></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript"><!--
+
+function afficheDescURL(toThis) 
+  {
+  if (document.getElementById)
+    {
+    document.getElementsByClassName("moreinfos").innerHTML = toThis;
+    }
+  else if (document.all) 
+    {
+    document.all["moreinfos"].innerHTML = toThis;
+    }
+  }
+
+base = " Vous êtes sur la page d'accueil ";
+afficheDescURL(base);
+
+jQuery(document).ready(function($) {
+
+
+	var inner = window.innerWidth /  window.innerHeight ;
+
+		if (inner <1.33)
+		{
+		 	jQuery("body.site").addClass('portrait');
+		}
+		else if ((inner >= 1.3333 ) && (inner <= 1.76)) 
+		{
+			jQuery("body.site").toggleClass('paysage');
+		}
+		else if (inner > 1.76)
+		{
+			jQuery("body.site").toggleClass('iphone');
+		}
+		else if (inner > 2)
+		{
+			jQuery("body.site").toggleClass('plat');
+		}
+
+
+
+
+
+/*** MENU ****/
+	/*NBR COLONNES POUR CHAQUE ELEMENT DE MENU*/
+	$(".menu-p .item-116").addClass( "nbrcol-3" ); //onglet 1
+	$(".menu-p .item-133").addClass( "nbrcol-2" ); //onglet 2
+	$(".menu-p .item-134").addClass( "nbrcol-2" ); //onglet 3
+	$(".menu-p .item-135").addClass( "nbrcol-2" ); //onglet 4
+	$(".menu-p .item-136").addClass( "nbrcol-2" ); //onglet 5
+	$(".menu-p .item-137").addClass( "nbrcol-2" ); //onglet 6
+
+	/*onglet 1*/
+	$(".menu-p .item-116  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-116  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+	$(".menu-p .item-116  .colonne3").parent("li").wrapAll( "<div class='col3' />" );
+
+
+	/*onglet 2*/
+	$(".menu-p .item-133  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-133  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+
+
+	/*onglet 3*/
+	$(".menu-p .item-134  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-134  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+
+
+	/*onglet 4*/
+	$(".menu-p .item-135  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-135  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+
+
+	$(".menu-p .item-136  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-136  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+
+
+	/*onglet 6*/
+	$(".menu-p .item-137  .colonne1").parent("li").wrapAll( "<div class='col1' />" );
+	$(".menu-p .item-137  .colonne2").parent("li").wrapAll( "<div class='col2' />" );
+
+
+	/*** FIN MENU ***/
+
+	/* SLIDER ACCUEIL*/
+$(".slide").each(function()
+{
+ 	$(this).find(".bt-title, .bt-introtext, .readmore").wrapAll( "<div class='block-ac' />" );
+
+}
+);
+
+$(".item-page").each(function()
+{
+ 	// $(this).find('a[itemprop="genre"]').text('A la une').wrapAll( "<div class='block-cat' />" );
+
+ 	if ($('a[itemprop="genre"]').text()=="A la une")
+	{
+		$('div[itemprop="articleBody"]').wrapAll("<div class=block-cat />");	
+	}
+
+	else {
+			$('div[itemprop="articleBody"]').removeClass('block-cat');
+		}
+
+}
+);
+
+
+
+
+/*AGENDA*/
+$('.moreinfos a').text(' Lire la suite...');
+
+
+
+
+/*JE SUIS */
+
+
+
+	$('.m-suis li.item-178').click(function() {
+		 var nom = $(".suis-pos7");
+		$('.m-suis  li.item-178  ul').css( "display", "block" ); 
+		nom.text("JEUNE");
+	});
+
+	$('.m-suis li.item-179').click(function() {
+		 var nom = $(".suis-pos7");
+		$('.m-suis  li.item-179  ul').css( "display", "block" ); 
+		nom.text("NOUVEAU");
+	});
+
+	$('.m-suis li.item-180').click(function() {
+		var nom = $(".suis-pos7");
+		$('.m-suis  li.item-180  ul').css( "display", "block" );
+		nom.text("PARENT");
+ 
+	});
+	
+	$('.m-suis li.item-181').click(function() {
+		var nom = $(".suis-pos7");
+		$('.m-suis  li.item-181  ul').css( "display", "block" );
+ 		nom.text("RETRAITE");
+	});
+
+	$('.m-suis li.item-182').click(function() {
+		var nom = $(".suis-pos7");
+		$('.m-suis  li.item-182  ul').css( "display", "block" );
+ 		nom.text("COMMERCANT");
+	});
+
+	$('.m-suis li.item-183').click(function() {
+		var nom = $(".suis-pos7");
+		$('.m-suis  li.item-183  ul').css( "display", "block" );
+ 		nom.text("ASSOCIATION");
+	});
+
+
+		$(document).click(function (e){
+			var nom = $(".suis-pos7");
+		    var container1 = $(".m-suis li.item-178 ");
+		    var container1a = $(".m-suis li.item-178 ul");
+		    var container2 = $(".m-suis li.item-179 ");
+		    var container2a = $(".m-suis li.item-179 ul");
+		    var container3 = $(".m-suis li.item-180 ");
+		    var container3a = $(".m-suis li.item-180 ul");
+		    var container4 = $(".m-suis li.item-181 ");
+		    var container4a = $(".m-suis li.item-181 ul");
+		    var container5 = $(".m-suis li.item-182 ");
+		    var container5a = $(".m-suis li.item-182 ul");
+		    var container6 = $(".m-suis li.item-183 ");
+		    var container6a = $(".m-suis li.item-183 ul");
+		  
+		  
+
+		    if ( container1.has(e.target).length === 0 && container2.has(e.target).length === 0 && container3.has(e.target).length === 0
+		    	&& container4.has(e.target).length === 0 && container5.has(e.target).length === 0 && container6.has(e.target).length === 0)
+		    {
+		        container1a.hide();
+		        container2a.hide();
+		        container3a.hide();
+		        container4a.hide();
+		        container5a.hide();
+		        container6a.hide();
+		    	nom.text("JE SUIS");
+		    }	
+		    
+    });
+
+
+
+
+
+
+
+});
+
+
+
+//-->
+		</script>
+	</body>
+</html>
