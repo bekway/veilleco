@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2018 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="http://ccvs84.fr/">
+		<link rel="shortcut icon" href="/fileadmin/mediatheque/ventoux_sud/images/logo/favicon.ico" type="image/x-icon">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="robots" content="index,follow,archive">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="territoire, élus, compétences, communauté de communes, Vaucluse, développement économique, zone d'activités, Ventoux Sud, Provence, jeunesse, centre de loisirs, ALSH,  crèches, périscolaire, haut débit, gestion des déchets, consignes de tri, ordures ménagères, transports scolaires, scot, gemapi, maison des services publics, office de tourisme, taxe de séjour, randonnées, produits locaux, patrimoine, culture, bibliothèque, musée, gorges de la Nesque, tourisme, associations, loisirs, culture, sports, course à pied, semi-marathon, cyclotourisme">
+		<meta name="description" content="Bienvenue sur le site officiel de la Communauté de Communes Ventoux Sud qui regroupe 11 communes : Aurel, Blauvac, Ferrassières, Malemort du Comtat, Méthamis, Monieux, Mormoiron, Saint Christol d'Albion, Saint Trinit, Sault, Villes sur Auzon">
+		<meta name="author" content="Communauté de Communes Ventoux Sud">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/Assets/b720878c11.css?1592232062" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/powermail/Resources/Public/Css/Basic.css?1490866138" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_ex_solr/Resources/Public/Css/jquery-ui.custom.css?1478091617" media="all">
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/swiper/css/swiper.min.css?1472634086" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/lightcase/css/lightcase.css?1472634067" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/masterslider/style/masterslider.css?1472634083" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/jquery.bxslider/4.2.5/jquery.bxslider.min.css?1479307684" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/leaflet/leaflet.css?1480605222" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/markerCluster/MarkerCluster.css?1483690769" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/markerCluster/MarkerCluster.Default.css?1483690769" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/main.css?1522071918" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/flatWeatherPlugin/css/flatWeatherPlugin.css?1475767242" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/tarteaucitron/css/tarteaucitron.css?1582708255" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/fonts/typicons/typicons.css?1480524218" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/print.css?1493980200" media="print">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" media="all">
+		<link rel="stylesheet" type="text/css" href="http://fr.allfont.net/allfont.css?fonts=montserrat-light" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/template-main.css?1493980202" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/template1.css?1493980202" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/logo-large.css?1496304272" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/color3.css?1508860398" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/css/font2.css?1493980197" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/Assets/6b348210c0.css?1592232062" media="all">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/lightcase/js/lightcase.js?1472634075" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/leaflet/leaflet.js?1480685337" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/leaflet/leaflet-KML.min.js?1483694043" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/markerCluster/leaflet.markercluster-src.min.js?1483690770" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/addclear/addclear.min.js?1482506951" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/tarteaucitron/tarteaucitron.js?1582708252" type="text/javascript"></script>
+		<script src="/typo3temp/Assets/dd82474708.js?1592232062" type="text/javascript"></script>
+		<title>Accueil</title>
+		<meta name="geo.region" content="FR-84">
+		<meta name="geo.placename" content="Sault">
+		<meta name="geo.position" content="44.093919,5.408364">
+		<link rel="canonical" href="http://ccvs84.fr/accueil.html">
+		<meta property="og:title" content="Accueil">
+		<meta property="og:site_name" content="Ventoux Sud">
+		<meta property="og:description" content="
+">
+		<meta property="og:url" content="http://ccvs84.fr/accueil.html">
+		<meta name="twitter:title" content="Accueil">
+		<meta name="twitter:site" content="Ventoux Sud">
+		<meta name="twitter:description" content="
+">
+		<meta name="twitter:url" content="http://ccvs84.fr/accueil.html">
+		<link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://ccvs84.fr/?type=7567" title="Website Search">
+	</head>
+	<body class="home">
+		<nav id="skiplink" class="no-mobile">
+			<ul>
+				<li><a href="#container" accesskey="c">Contenu</a></li>
+				<li><a href="#nav" accesskey="m">Menu principal</a></li>
+				<li><a href="#footer" accesskey="0">Pied de page</a></li>
+				<li><a href="/accessibilite.html" accesskey="0">Aide</a></li>
+			</ul>
+		</nav>
+		<div id="mobile-nav">
+			<div class="btn--search"><a href="#"><i class="icon icon-loupe"></i></a></div>
+			<div class="menu-icon">
+				<p class="text">Menu</p><span></span></div>
+			<div class="nav">
+				<div class="logo"><a href="/" title="Retour à la page d'accueil"> <img src="/fileadmin/_processed_/e/1/csm_logo_ccvs_blanc_db8d94ef0e.gif" width="1411" height="427" alt="" title="Impression"> <span class="indent--seo"></span> </a></div>
+				<nav class="mobile--main-nav">
+					<ul class="menu">
+						<li><a href="/navigation/la-communaute-de-communes.html" title="La communauté de Communes">La communauté de Communes</a></li>
+						<li><a href="/navigation/vie-locale.html" title="Vie locale">Vie locale</a></li>
+						<li><a href="/navigation/vie-economique.html" title="Vie économique">Vie économique</a></li>
+						<li><a href="/navigation/tourisme.html" title="Tourisme">Tourisme</a></li>
+						<li><a href="/navigation/agenda.html" title="Agenda">Agenda</a></li>
+						<li><a href="/navigation/mes-demarches.html" title="Mes démarches">Mes démarches</a></li>
+					</ul>
+				</nav>
+				<div class="header--tools">
+					<ul class="header--social">
+						<li class=""><a class="tooltip header--color" title="Facebook - Ouverture dans une nouvelle fenêtre" target="_blank" href="/navigation/facebook.html"><i class="icon "></i><span class="indent--seo">Facebook</span></a></li>
+					</ul>
+					<div class="header--account"><span class="text"></span></div>
+				</div>
+				<!-- .header-tools -->
+			</div>
+		</div>
+		<!-- #mobile-nav -->
+		<div class="btn--nav-fix">
+			<div class="scroll--btn-search"><a href="/votre-recherche.html"> <i class="icon icon-loupe"></i> <span class="indent--seo">Recherche</span> </a></div>
+			<div class="sidebar--container"><button class="sidebar--menu-btn"> <i class="icon icon-chrono"></i> <span class="text">Accès rapide</span> </button>
+				<div class="sidebar--menu">
+					<div class="sidebar--menu-title">
+						<p><i class="icon icon-chrono"></i> <span class="text">Accès rapide</span></p>
+					</div>
+					<nav class="sidebar--nav">
+						<ul>
+							<li><a href="/navigation/acces-rapide/enfance-et-jeunesse.html" title="Enfance et Jeunesse">Enfance et Jeunesse</a></li>
+							<li><a href="/navigation/acces-rapide/gestion-des-dechets.html" title="Gestion des déchets">Gestion des déchets</a></li>
+							<li><a href="/navigation/acces-rapide/msap.html" title="MSAP">MSAP</a></li>
+							<li><a href="/navigation/acces-rapide/taxe-de-sejour.html" title="Taxe de séjour">Taxe de séjour</a></li>
+							<li><a href="/navigation/acces-rapide/conseil-communautaire.html" title="Conseil Communautaire">Conseil Communautaire</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- .sidebar-container -->
+		</div>
+		<div class="block--search-fix"><button class="block--search-fix-close"> <i class="icon icon-close"></i> <span class="indent--seo">Fermer la recherche</span> </button>
+			<div class="layout--maxwidth">
+				<form method="get" class="tx-solr-search-form-pi-results" action="/votre-recherche.html" data-suggest="/?eID=tx_solr_suggest&id=46564" accept-charset="utf-8"><label for="main-search-fix">Vous cherchez une information ?</label>
+					<!--
+            -->
+					<div class="header--search-container"><input class="header--search-field" name="q" id="main-search-fix" type="text" placeholder="Entrez vos mots clés..."> <button class="header--search-btn" type="submit"> <i class="icon icon-loupe"></i> </button></div>
+				</form>
+			</div>
+		</div>
+		<!-- .block-search-fix -->
+		<div id="tourism" class="block--tourism" style="color: ; background: rgba(,,);">
+			<p class="block--tourism-text"><a href="http://www.ventouxprovence.fr/accueil.html" target="_blank" style="color:;"> <i class="icon icon-tourism"></i> <span class="text">Visiter Ventoux-provence / Visit Ventoux-provence</span> </a></p><button type="button" class="block--tourism-close"><span class="indent--seo">Fermer le bandeau</span></button></div>
+		<header id="header" style="background-image:url(/fileadmin/_processed_/4/6/csm_VENTOUX-AMANDIER-VSA_69757139f3.jpg)">
+			<div class="header--bg-scroll">
+				<div class="layout--maxwidth clearfix">
+					<h1 id="logo" class="logo"><a href="/accueil.html" title="Retour à la page d'accueil"> <img src="/fileadmin/_processed_/e/1/csm_logo_ccvs_blanc_db8d94ef0e.gif" width="1411" height="427" alt="" title="Impression"> <span class="indent--seo"></span> </a></h1>
+					<div class="header--tools no--mobile">
+						<ul class="header--social">
+							<li class=""><a style="color:#ffffff;" class="tooltip header--color" title="Facebook - Ouverture dans une nouvelle fenêtre" target="_blank" href="/navigation/facebook.html"><i class="icon icon-facebook"></i><span class="indent--seo">Facebook</span></a></li>
+						</ul>
+					</div>
+					<!-- .header-tools -->
+					<nav id="nav" class="nav--main">
+						<ul class="header--nav clearfix">
+							<li class=" "><a title="La communauté de Communes" href="/navigation/la-communaute-de-communes.html">La communauté de Communes</a>
+								<ul class="level--2 clearfix">
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Présentation" href="/la-communaute-de-communes/presentation.html"><span class="text">Présentation</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Situation" href="/la-communaute-de-communes/presentation/situation.html"> Situation </a></li>
+													<li class=""><a title="Les équipements" href="/la-communaute-de-communes/presentation/les-equipements.html"> Les équipements </a></li>
+												</ul>
+											</li>
+											<li class=""><a class="nav--title-level2" title="Territoire" href="/la-communaute-de-communes/territoire.html"><span class="text">Territoire</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Les communes" href="/la-communaute-de-communes/territoire/les-communes.html"> Les communes </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Fonctionnement" href="/la-communaute-de-communes/fonctionnement.html"><span class="text">Fonctionnement</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Les élus" href="/la-communaute-de-communes/fonctionnement/les-elus.html"> Les élus </a></li>
+													<li class=""><a title="Le Conseil Communautaire" href="/la-communaute-de-communes/fonctionnement/le-conseil-communautaire.html"> Le Conseil Communautaire </a></li>
+													<li class=""><a title="Les compétences" href="/la-communaute-de-communes/fonctionnement/les-competences.html"> Les compétences </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Contacts" href="/la-communaute-de-communes/contacts.html"><span class="text">Contacts</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class=" "><a title="Vie locale" href="/navigation/vie-locale.html">Vie locale</a>
+								<ul class="level--2 clearfix">
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Enfance/Jeunesse" href="/vie-locale/enfancejeunesse.html"><span class="text">Enfance/Jeunesse</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Petite enfance" href="/vie-locale/enfancejeunesse/petite-enfance.html"> Petite enfance </a></li>
+													<li class=""><a title="Enfance" href="/vie-locale/enfancejeunesse/enfance.html"> Enfance </a></li>
+													<li class=""><a title="Club jeunes" href="/vie-locale/enfancejeunesse/club-jeunes.html"> Club jeunes </a></li>
+												</ul>
+											</li>
+											<li class=""><a class="nav--title-level2" title="Transports" href="/vie-locale/transports.html"><span class="text">Transports</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Scolaires" href="/vie-locale/transports/scolaires.html"> Scolaires </a></li>
+													<li class=""><a title="Liaisons départementales" href="/vie-locale/transports/liaisons-departementales.html"> Liaisons départementales </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Gestion des déchets" href="/vie-locale/gestion-des-dechets.html"><span class="text">Gestion des déchets</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Collecte" href="/vie-locale/gestion-des-dechets/collecte.html"> Collecte </a></li>
+													<li class=""><a title="Tri des déchets" href="/vie-locale/gestion-des-dechets/tri-des-dechets.html"> Tri des déchets </a></li>
+													<li class=""><a title="Les déchetteries" href="/vie-locale/gestion-des-dechets/les-dechetteries.html"> Les déchetteries </a></li>
+													<li class=""><a title="Les partenaires" href="/vie-locale/gestion-des-dechets/les-partenaires.html"> Les partenaires </a></li>
+													<li class=""><a title="Les documents utiles" href="/vie-locale/gestion-des-dechets/les-documents-utiles.html"> Les documents utiles </a></li>
+												</ul>
+											</li>
+											<li class=""><a class="nav--title-level2" title="Urbanisme et Environnement" href="/vie-locale/urbanisme-et-environnement.html"><span class="text">Urbanisme et Environnement</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Le Schéma de Cohérence Territoriale" href="/vie-locale/urbanisme-et-environnement/le-schema-de-coherence-territoriale.html"> Le Schéma de Cohérence Territoriale </a></li>
+													<li class=""><a title="Gestion des Milieux Aquatiques et Prévention des Inondations" href="/vie-locale/urbanisme-et-environnement/gestion-des-milieux-aquatiques-et-prevention-des-inondations.html"> Gestion des Milieux Aquatiques et Prévention des Inondations </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Services à la population" href="/vie-locale/services-a-la-population.html"><span class="text">Services à la population</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Recharger sa voiture électrique" href="/vie-locale/services-a-la-population/recharger-sa-voiture-electrique.html"> Recharger sa voiture électrique </a></li>
+													<li class=""><a title="L'espace France Services" href="/vie-locale/services-a-la-population/lespace-france-services.html"> L'espace France Services </a></li>
+													<li class=""><a title="Haut débit" href="/vie-locale/services-a-la-population/haut-debit.html"> Haut débit </a></li>
+												</ul>
+											</li>
+											<li class=""><a class="nav--title-level2" title="Culture et loisirs" href="/vie-locale/culture-et-loisirs.html"><span class="text">Culture et loisirs</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Sortir" href="/vie-locale/culture-et-loisirs/sortir.html"> Sortir </a></li>
+													<li class=""><a title="Bibliothèques" href="/vie-locale/culture-et-loisirs/bibliotheques.html"> Bibliothèques </a></li>
+													<li class=""><a title="Musées" href="/vie-locale/culture-et-loisirs/musees.html"> Musées </a></li>
+													<li class=""><a title="Associations" href="/vie-locale/culture-et-loisirs/associations.html"> Associations </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class=" "><a title="Vie économique" href="/navigation/vie-economique.html">Vie économique</a>
+								<ul class="level--2 clearfix">
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Zone d'activités" href="/vie-economique/zone-dactivites.html"><span class="text">Zone d'activités</span></a></li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Acteurs du territoire" href="/vie-economique/acteurs-du-territoire.html"><span class="text">Acteurs du territoire</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Annuaire des Professionnels" href="/vie-economique/acteurs-du-territoire/annuaire-des-professionnels.html"> Annuaire des Professionnels </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Marchés Publics" href="/vie-economique/marches-publics.html"><span class="text">Marchés Publics</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class=" "><a title="Tourisme" href="/navigation/tourisme.html">Tourisme</a>
+								<ul class="level--2 clearfix">
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Entre vigne et lavande" href="/tourisme/entre-vigne-et-lavande.html"><span class="text">Entre vigne et lavande</span></a>
+												<ul class="level--3">
+													<li class=""><a title="Sites naturels" href="/tourisme/entre-vigne-et-lavande/sites-naturels.html"> Sites naturels </a></li>
+													<li class=""><a title="Patrimoine" href="/tourisme/entre-vigne-et-lavande/patrimoine.html"> Patrimoine </a></li>
+													<li class=""><a title="Balades et randonnées" href="/tourisme/entre-vigne-et-lavande/balades-et-randonnees.html"> Balades et randonnées </a></li>
+													<li class=""><a title="Produits locaux" href="/tourisme/entre-vigne-et-lavande/produits-locaux.html"> Produits locaux </a></li>
+													<li class=""><a title="Destination sportive" href="/tourisme/entre-vigne-et-lavande/destination-sportive.html"> Destination sportive </a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Office de tourisme" href="/tourisme/office-de-tourisme.html"><span class="text">Office de tourisme</span></a></li>
+										</ul>
+									</li>
+									<li class="column">
+										<ul>
+											<li class=""><a class="nav--title-level2" title="Taxe de séjour" href="/tourisme/taxe-de-sejour.html"><span class="text">Taxe de séjour</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class=" "><a title="Agenda" href="/navigation/agenda.html">Agenda</a></li>
+							<li class=" color"><a title="Mes démarches" href="/navigation/mes-demarches.html">Mes démarches</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- .layout-maxwidth -->
+			</div>
+			<!-- .header-bg-scroll -->
+			<div class="header--search">
+				<div class="layout--maxwidth">
+					<form method="get" id="tx-solr-search-form-pi-results" action="/votre-recherche.html" data-suggest="/?eID=tx_solr_suggest&id=46564" accept-charset="utf-8"><input type="hidden" name="L" value="0"> <input type="hidden" name="id" value="46564"> <label for="main-search">Vous cherchez une information ?</label>
+						<!--
+            -->
+						<div class="header--search-container"><input class="header--search-field tx-solr-q js-solr-q" name="q" id="main-search" type="text" placeholder="Rechercher par mots clés"> <button class="header--search-btn" type="submit"> <i class="icon icon-loupe"></i> </button></div>
+					</form>
+				</div>
+			</div>
+			<!-- .header-search -->
+		</header>
+		<div id="container">
+			<!--DMAILER_SECTION_BOUNDARY_-->
+			<section class="section--type ">
+				<div class="layout--maxwidth">
+					<h2 class="section--title double-line"><span class="double-line-content">Je suis</span></h2><a class="mobile--select-form"> <span class="text">Sélectionner un profil</span> <i class="icon icon-select"></i> </a>
+					<div class="block--profils mobile--select-option">
+						<ul doktypes="150,160,161,162,163,164,165,168,169,170,175,181,182,185,186,1,4,3,7">
+							<li class=""><a title="Jeune" href="/profil/jeune.html"> <i class="icon icon-jeune"></i> <span class="text">Jeune</span> </a></li>
+							<li class=""><a title="Famille" href="/profil/famille.html"> <i class="icon icon-famille"></i> <span class="text">Famille</span> </a></li>
+							<li class=""><a title="Association" href="/profil/association.html"> <i class="icon icon-association"></i> <span class="text">Association</span> </a></li>
+							<li class=""><a title="Touriste" href="/profil/touriste.html"> <i class="icon icon-tourism"></i> <span class="text">Touriste</span> </a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--DMAILER_SECTION_BOUNDARY_END-->
+			<!--DMAILER_SECTION_BOUNDARY_-->
+			<section class="section--type bg--gray-extralight ">
+				<div class="layout--maxwidth">
+					<h2 class="section--title double-line"><span class="double-line-content"> À la une </span></h2>
+					<div class="block--news swiper_sliderAuto">
+						<!-- Swiper -->
+						<div class="swiper-news">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="block--news-content"><a href="/actualites/informations-dechetterie-de-villes-sur-auzon.html"> <img src="/fileadmin/_processed_/b/e/csm_COLONNES-DECHETTERIE_726e3ad6cd.jpg" width="1623" height="559" alt=""> <div class="block--news-description"><div class="article--bullet-icon"><i class="icon icon-newspaper"></i></div><h3 class="block--news-title">Informations Déchetterie</h3><p class="block--news-text">A partir du mois de juin et jusqu'à fin août, la déchetterie de Villes sur Auzon est ouverte de 7h00 à 12h00 du lundi au samedi.</p></div> </a></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="block--news-content"><a href="/actualites/point-covid-au-19-juin-2020.html"> <img src="/fileadmin/user_upload/CORONAVISUS-TOUTES-LES-INFORMATIONS.jpg" width="2362" height="817" alt=""> <div class="block--news-description"><div class="article--bullet-icon"><i class="icon icon-newspaper"></i></div><h3 class="block--news-title">Point Informations COVID</h3><p class="block--news-text">La Communauté de Communes Ventoux Sud vous informe des dispositions et mesures en vigueur liées à la crise du COV-19.</p></div> </a></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="block--news-content"><a href="/actualites/informations-coronavirus-entreprises-et-secteur-agricole.html"> <img src="/fileadmin/mediatheque/ventoux_sud/documents/UNE/CORONAVIRUS-ENTREPRISES.jpg" width="2362" height="817" alt=""> <div class="block--news-description"><div class="article--bullet-icon"><i class="icon icon-newspaper"></i></div><h3 class="block--news-title">Coronavirus - Spécial Entreprises et secteur agricole</h3><p class="block--news-text">Les différentes informations communiquées par le gouvernement qui concernent les entreprises et le secteur agricole.</p></div> </a></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="block--news-content"><a href="/actualites/informations-deconfinement.html"> <img src="/fileadmin/mediatheque/ventoux_sud/documents/COVID/6-MAI/DECONFINEMENT.jpg" width="2362" height="817" alt=""> <div class="block--news-description"><div class="article--bullet-icon"><i class="icon icon-newspaper"></i></div><h3 class="block--news-title">COVID - Déconfinement</h3></div> </a></div>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"><i class="icon icon-right-big"></i></div>
+							<div class="swiper-button-prev"><i class="icon icon-left-big"></i></div>
+							<!-- Add Start/Stop -->
+							<div class="slider-controls start-autoplay hidden"><i class="icon icon-play"></i> <span class="hidden">Lecture</span></div>
+							<div class="slider-controls stop-autoplay"><i class="icon icon-pause"></i> <span class="hidden">Stop</span></div>
+						</div>
+					</div>
+					<div class="double-line section--btn">
+						<div class="double-line-content"><a class="btn btn--effect btn--blue" href="/actualites.html"> <span class="text">Toutes les actualités</span> </a></div>
+					</div>
+				</div>
+			</section>
+			<!--DMAILER_SECTION_BOUNDARY_END-->
+			<!--DMAILER_SECTION_BOUNDARY_-->
+			<section class="section--type">
+				<div class="layout--maxwidth">
+					<div class="block--multimedia-links clearfix">
+						<div class="block-3of4">
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="block--agenda-container  ">
+								<h2 class="section--title double-line"><span class="double-line-content">Agenda</span></h2>
+								<div class="block--agenda">
+									<ul class="clearfix">
+										<li class=""><a href="/agenda/detail/article/inscription-activites-club-jeunes-ete-2020/1/1.html" class="agenda--container"> <div class="agenda--img" style="background-image:url('/fileadmin/mediatheque/ventoux_sud/documents/CLUB-JEUNES/PLANNING-ACTIVITE-CJ-2020.jpg');"><div class="article--bullet-icon"><i class="icon icon-agenda"></i></div><img class="indent--seo" src="/fileadmin/mediatheque/ventoux_sud/documents/CLUB-JEUNES/PLANNING-ACTIVITE-CJ-2020.jpg" width="7016" height="4961" alt=""></div> <div class="agenda--description"><div class="agenda--description-date"><p class="day">16</p><p class="month">juin</p></div><div class="agenda--description-content"><h3 class="agenda--description-title">Inscription Activités Club Jeunes été 2020</h3><p class="agenda--description-location"><strong>Le 16/06/2020</strong></p><p class="agenda--description-type">Jeunesse</p><p class="agenda--description-chapo">Le Club Jeunes de la Communauté de Communes Ventoux Sud propose des activités et sorties pour les jeunes des communes du territoire.</p></div></div> </a></li>
+										<li class=""><a href="/agenda/formation-photovoltaique-citoyen-a-sault.html" class="agenda--container"> <div class="agenda--img" style="background-image:url('/fileadmin/user_upload/FORMATION-PHOTOVOLTAIQUE-CITOYEN-ALTE.jpg');"><div class="article--bullet-icon"><i class="icon icon-agenda"></i></div><img class="indent--seo" src="/fileadmin/user_upload/FORMATION-PHOTOVOLTAIQUE-CITOYEN-ALTE.jpg" width="411" height="459" alt=""></div> <div class="agenda--description"><div class="agenda--description-date"><p class="day">09</p><p class="month">juil.</p></div><div class="agenda--description-content"><h3 class="agenda--description-title">Formation photovoltaïque citoyen à Sault</h3><p class="agenda--description-location"><i class="icon icon-marker"></i> <span class="text">Petit foyer dans le bâtiment de la salle polyvalente</span><br> <strong>Le 09/07/2020</strong></p><p class="agenda--description-type">Environnement</p><p class="agenda--description-chapo">L'ALTE organise une formation sur les aspects techniques et financiers des projets solaires dédiée aux personnes souhaitant participer aux Centrales...</p></div></div> </a></li>
+										<li class=""><a href="/agenda/exposition-rene-seyssaud-la-couleur-exaltee-au-musee-de-nimes.html" class="agenda--container"> <div class="agenda--img" style="background-image:url('/fileadmin/mediatheque/ventoux_sud/documents/AGENDA/SEYSSAUD-MUSEE-NIMES.jpg');"><div class="article--bullet-icon"><i class="icon icon-agenda"></i></div><img class="indent--seo" src="/fileadmin/mediatheque/ventoux_sud/documents/AGENDA/SEYSSAUD-MUSEE-NIMES.jpg" width="1684" height="2382" alt=""></div> <div class="agenda--description"><div class="agenda--description-date"><p class="day">15</p><p class="month">juil.</p></div><div class="agenda--description-content"><h3 class="agenda--description-title">Exposition René Seyssaud - la couleur exaltée au Musée de Nîmes</h3><p class="agenda--description-location"><i class="icon icon-marker"></i> <span class="text">Musée des Beaux Art de Nîmes</span><br> <strong>Du 15/07/2020 au 25/10/2020<br>Du 26/10/2020 au 17/01/2021<br></strong></p><p class="agenda--description-type">Culture</p><p class="agenda--description-chapo">René Seyssaud est un peintre provençal, précurseur du Fauvisme. Natif de Marseille mais d’origine vauclusienne, il suit dès l’âge de treize ans, un...</p></div></div> </a></li>
+										<li class=""><a href="/agenda/detail/article/dechetterie-de-villes-sur-auzon-horaires-dete/1/1.html" class="agenda--container"> <div class="agenda--img" style="background-image:url('/fileadmin/mediatheque/ventoux_sud/documents/DECHETS/OUVERTURE-DECHETTERIE-ETE.jpg');"><div class="article--bullet-icon"><i class="icon icon-agenda"></i></div><img class="indent--seo" src="/fileadmin/mediatheque/ventoux_sud/documents/DECHETS/OUVERTURE-DECHETTERIE-ETE.jpg" width="9921" height="7016" alt=""></div> <div class="agenda--description"><div class="agenda--description-date"><p class="day">02</p><p class="month">juin</p></div><div class="agenda--description-content"><h3 class="agenda--description-title">Déchetterie de Villes sur Auzon - Horaires d'été</h3><p class="agenda--description-location"><i class="icon icon-marker"></i> <span class="text">Déchetterie Villes sur Auzon</span><br> <strong>Le 02/06/2020</strong></p><p class="agenda--description-type">Environnement, Vie citoyenne</p><p class="agenda--description-chapo">A partir du 2 juin et jusqu'à fin, la déchetterie de Villes sur Auzon est ouverte du lundi au samedi de 7h00 à14h00.</p></div></div> </a></li>
+										<li class=""><a href="/agenda/cyclosportive-la-ventoux-sud.html" class="agenda--container"> <div class="agenda--img" style="background-image:url('/fileadmin/mediatheque/ventoux_sud/images/florence/CYCLO/INFO-CYCLO-VERTICAL.jpg');"><div class="article--bullet-icon"><i class="icon icon-agenda"></i></div><img class="indent--seo" src="/fileadmin/mediatheque/ventoux_sud/images/florence/CYCLO/INFO-CYCLO-VERTICAL.jpg" width="1339" height="1953" alt=""></div> <div class="agenda--description"><div class="agenda--description-date"><p class="day">13</p><p class="month">sept.</p></div><div class="agenda--description-content"><h3 class="agenda--description-title">Cyclosportive - La Ventoux Sud</h3><p class="agenda--description-location"><strong>Le 13/09/2020</strong></p><p class="agenda--description-type">Sport</p><p class="agenda--description-chapo">A noter dans le calendrier, le 13 septembre prochain, la cyclosportive la Ventoux Sud partira à nouveau à l'assaut des routes tranquilles et paysages...</p></div></div> </a></li>
+									</ul>
+								</div>
+								<div class="double-line section--btn ">
+									<div class="double-line-content"><a class="btn btn--effect btn--blue" href="/agenda.html"> <span class="text">Tous les évènements</span> </a></div>
+								</div>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<div class="clearfix">
+								<div class="block--4of12">
+									<!--DMAILER_SECTION_BOUNDARY_-->
+									<h2 class="title--line "><span>Le mot du Président</span></h2>
+									<!--DMAILER_SECTION_BOUNDARY_END-->
+									<!--DMAILER_SECTION_BOUNDARY_-->
+									<div class="box box--blockquote">
+										<div class="block--blockquote ">
+											<div class="block--blockquote-img">
+												<div class="ratio"></div><img src="/fileadmin/_processed_/2/1/csm_MAX-RASPAIL_91231ba009.jpg" width="200" height="254" alt=""></div>
+											<blockquote>
+												<p>Je suis heureux de vous présenter le nouveau site de la Communauté de Communes Ventoux Sud.</p>
+												<p>Il a été conçu afin de vous apporter des renseignements sur le fonctionnement de votre intercommunalité mais aussi sur les projets en cours, ceux à venir et sur les sujets qui concernent votre territoire...</p>
+											</blockquote>
+											<div class="blockquote--info">
+												<p class="blockquote--name">Max Raspail</p>
+												<p class="blockquote--function">Président de la Communauté de Communes Ventoux Sud</p>
+											</div><a href="/la-communaute-de-communes/le-mot-du-president.html" target="_self" class="link--icon"> <span class="text">Lire la suite</span> </a></div>
+									</div>
+									<!--DMAILER_SECTION_BOUNDARY_END-->
+								</div>
+								<div class="block--8of12">
+									<!--DMAILER_SECTION_BOUNDARY_-->
+									<div class="block--kiosk ">
+										<h2 class="section--title">Mon kiosque</h2>
+										<div class="block-grid clearfix">
+											<div class="kiosk--mag"><img src="/fileadmin/_processed_/2/7/csm_11-VILLAGES-MARS-2019_50a7d97865.gif" width="250" height="355" alt="">
+												<h3 class="kiosk--mag-title">11 villages en Ventoux Sud</h3><a href="/fileadmin/mediatheque/ventoux_sud/documents/TOURISME/11-VILLAGES-MARS-2019.pdf" class="link--icon" target="_blank"> <i class="icon icon-download"></i> <span class="text">Télécharger</span> </a> <a href="https://www.calameo.com/read/0049250185c8148df00b6" class="link--icon" target="_blank"> <i class="icon icon-read"></i> <span class="text">Feuilleter</span> </a></div>
+											<div class="kiosk--mag-list">
+												<ul>
+													<li class="clearfix"><img src="/fileadmin/_processed_/5/4/csm_GUIDE-DECHETTERIE-NOV-2019_abe38a2fcd.gif" width="250" height="177" alt="">
+														<h3 class="kiosk--mag-title">Guide de la déchetterie</h3><a href="/fileadmin/mediatheque/ventoux_sud/documents/DECHETS/GUIDE-DECHETTERIE-NOV-2019.pdf" class="link--icon" title="Ouverture dans une nouvelle fenêtre" target="_blank"> <i class="icon icon-download"></i> <span class="text">Télécharger</span> </a> <a href="https://www.calameo.com/read/0049250184a387cf23058" class="link--icon" title="Ouverture dans une nouvelle fenêtre" target="_blank"> <i class="icon icon-read"></i> <span class="text">Feuilleter</span> </a></li>
+													<li class="clearfix"><img src="/fileadmin/_processed_/c/2/csm_GUIDE-TRI-1-MARS-2020_813d929e0e.jpg" width="250" height="354" alt="">
+														<h3 class="kiosk--mag-title">Guide du tri</h3><a href="/fileadmin/mediatheque/ventoux_sud/documents/DECHETS/GUIDE-TRI-MARS-2020.pdf" class="link--icon" title="Ouverture dans une nouvelle fenêtre" target="_blank"> <i class="icon icon-download"></i> <span class="text">Télécharger</span> </a> <a href="https://www.calameo.com/read/004925018285f539e3537" class="link--icon" title="Ouverture dans une nouvelle fenêtre" target="_blank"> <i class="icon icon-read"></i> <span class="text">Feuilleter</span> </a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="align--center"><a class="btn btn--effect btn--blue" href="/kiosque.html"> <span class="text">Voir toutes les publications</span> </a></div>
+									</div>
+									<!--DMAILER_SECTION_BOUNDARY_END-->
+								</div>
+							</div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+						</div>&#8232;
+						<div class="block-1of4 bg--gray-extralight block--links">
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<h2 class="title--line "><span>Mon territoire</span></h2>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_--><a href="https://www.google.com/maps/d/embed?mid=12dLImaXeUWgCAcYH4QludcbPuhLwy4xB" title="Ouvre un lien dans une nouvelle fenêtre" target="_blank" class="btn--plan"> <img src="/fileadmin/user_upload/carte-territoire-ventoux-sud.jpg" width="234" height="243" alt=""> </a>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_--><a href="http://www.tipi.budget.gouv.fr/tpa/accueilportail.web" target="_blank" class="btn btn--effect btn--icon btn--main-color2"> <i class="icon icon-famille"></i> <span class="text">Payer en ligne</span> </a>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_--><a href="/la-communaute-de-communes/presentation/les-equipements.html" target="_self" class="btn btn--effect btn--main-color2"> <span class="text">Infrastructures</span> </a>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<h2 class="title--line "><span>Météo de mon territoire</span></h2>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+							<!--DMAILER_SECTION_BOUNDARY_-->
+							<script type="text/javascript">
+    $(document).ready(function() {
+
+            //Setup the plugin, see readme for more examples
+            var modulemeteo38666 = $("#module-meteo38666").flatWeatherPlugin({
+             location: "", //city and region *required
+                zip: "84570,fr", //zip
+              country: ",France",         //country *required
+              title: 'Mormoiron',
+              //optional:
+             // api: "yahoo", //default: openweathermap (openweathermap or yahoo)
+              api: 'openweathermap',// (openweathermap or yahoo)
+              apikey: "8dc1744f836f57f7bff21cbbf706c104",   //optional api key for openweather
+              view : "simple", //default: full (partial, full, simple, today or forecast)
+              displayCityNameOnly : true, //default: false (true/false) if you want to display only city name
+              forecast: 4, //default: 5 (0 -5) how many days you want forecast
+              render: true, //default: true (true/false) if you want plugin to generate markup
+              loadingAnimation: true, //default: true (true/false) if you want plugin to show loading animation
+              lang:'fr'
+              //units : "metric" or "imperial" default: "auto"
+            });
+
+    });
+							</script>
+							<div class="module-meteo   openweathermap">
+								<div id="module-meteo38666"></div><a href="http://www.airpaca.org/monair/commune/84082" target="_blank" title="Ouverture dans une nouvelle fenêtre">Qualité de l'air</a></div>
+							<!--DMAILER_SECTION_BOUNDARY_END-->
+						</div>&#8232;</div>
+				</div>
+			</section>
+			<!--DMAILER_SECTION_BOUNDARY_END-->
+			<!--DMAILER_SECTION_BOUNDARY_-->
+			<!--DMAILER_SECTION_BOUNDARY_END-->
+		</div>
+		<footer id="footer" class="footer">
+			<div class="footer--web bg--gray-light">
+				<div class="layout--maxwidth">
+					<div class="footer--web-title"></div>
+					<!--
+            -->
+					<div class="footer--web-links"><a class="btn btn--gray btn--effect " title="Tourisme" target="_blank" href="/navigation/tourisme.html"><span>Tourisme</span></a><a class="btn btn--gray btn--effect " title="Économie" target="_blank" href="/navigation/economie.html"><span>Économie</span></a>
+						<div class="select  "><a href="#" class="btn--menu"><span class="text">Voir tous les sites</span><i class="icon icon-select"></i></a>
+							<ul>
+								<li class=""><a title="Ventoux Provence" target="_blank" href="/navigation/voir-tous-les-sites/ventoux-provence.html"><span>Ventoux Provence</span></a></li>
+								<li class=""><a title="La Ventoux Sud" target="_blank" href="/navigation/voir-tous-les-sites/la-ventoux-sud.html"><span>La Ventoux Sud</span></a></li>
+								<li class=""><a title="Semi Marathon de la Nesque" target="_blank" href="/navigation/voir-tous-les-sites/semi-marathon-de-la-nesque.html"><span>Semi Marathon de la Nesque</span></a></li>
+							</ul>
+						</div>
+						<div class="select  "><a href="#" class="btn--menu"><span class="text">Les communes</span><i class="icon icon-select"></i></a>
+							<ul>
+								<li class=""><a title="Malemort du Comtat" target="_blank" href="/navigation/les-communes/malemort-du-comtat.html"><span>Malemort du Comtat</span></a></li>
+								<li class=""><a title="Mormoiron" target="_blank" href="/navigation/les-communes/mormoiron.html"><span>Mormoiron</span></a></li>
+								<li class=""><a title="Villes sur Auzon" target="_blank" href="/navigation/les-communes/villes-sur-auzon.html"><span>Villes sur Auzon</span></a></li>
+								<li class=""><a title="Blauvac" target="_blank" href="/navigation/les-communes/blauvac.html"><span>Blauvac</span></a></li>
+								<li class=""><a title="Méthamis" target="_blank" href="/navigation/les-communes/methamis.html"><span>Méthamis</span></a></li>
+								<li class=""><a title="Monieux" target="_blank" href="/navigation/les-communes/monieux.html"><span>Monieux</span></a></li>
+								<li class=""><a title="Sault" target="_blank" href="/navigation/les-communes/sault.html"><span>Sault</span></a></li>
+								<li class=""><a title="Aurel" target="_blank" href="/navigation/les-communes/aurel.html"><span>Aurel</span></a></li>
+								<li class=""><a title="Ferrassières" target="_blank" href="/navigation/les-communes/ferrassieres.html"><span>Ferrassières</span></a></li>
+								<li class=""><a title="Saint Trinit" target="_blank" href="/navigation/les-communes/saint-trinit.html"><span>Saint Trinit</span></a></li>
+								<li class=""><a title="Saint Christol d'Albion" target="_blank" href="/navigation/les-communes/saint-christol-dalbion.html"><span>Saint Christol d'Albion</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer-agglo -->
+			<div class="footer--address bg--white">
+				<div class="layout--maxwidth clearfix">
+					<div class="footer--address-container"><img src="/fileadmin/mediatheque/ventoux_sud/images/logo/logo-ccvs-vert.jpg" width="640" height="223" alt="" title="Impression">
+						<div class="text">
+							<p>10 Immeuble Sorlot 84570 Mormoiron<br> Quartier Mougne 84390 Sault</p><a href="/nous-contacter.html" target="_self" class="btn btn--effect btn--border btn--border-color btn--blue-dark"> <span class="text">Nous Contacter</span> </a></div>
+					</div>
+					<div class="footer--social-networks">
+						<div class="social-networks">
+							<p class="title">Nous suivre :</p>
+							<ul class="header--social">
+								<li class=""><a style="color:;" class="tooltip header--color" title="Facebook - Ouverture dans une nouvelle fenêtre" target="_blank" href="/navigation/facebook.html"> <i class="icon icon-facebook"></i> </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer-address -->
+			<div class="footer--nav bg--gray">
+				<div class="layout--maxwidth clearfix">
+					<nav>
+						<ul>
+							<li class="first last link--right "><a title="Marchés publics" href="/navigation/marches-publics.html">Marchés publics</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer--sitemap bg-gray-light">
+				<div class="layout--maxwidth">
+					<nav class="footer--sitemap-nav sitemap--niv1">
+						<ul>
+							<li class=""><a title="La Communauté de Communes" href="/navigation/gauche/la-communaute-de-communes.html">La Communauté de Communes</a>
+								<ul>
+									<li class=""><a title="Présentation" href="/la-communaute-de-communes/presentation.html">Présentation</a></li>
+									<li class=""><a title="Territoire" href="/la-communaute-de-communes/territoire.html">Territoire</a></li>
+									<li class=""><a title="Fonctionnement" href="/la-communaute-de-communes/fonctionnement.html">Fonctionnement</a></li>
+									<li class=""><a title="Contacts" href="/la-communaute-de-communes/contacts.html">Contacts</a></li>
+								</ul>
+							</li>
+							<li class=""><a title="Vie locale" href="/navigation/gauche/vie-locale.html">Vie locale</a>
+								<ul>
+									<li class=""><a title="Enfance/Jeunesse" href="/vie-locale/enfancejeunesse.html">Enfance/Jeunesse</a></li>
+									<li class=""><a title="Transports" href="/vie-locale/transports.html">Transports</a></li>
+									<li class=""><a title="Gestion des déchets" href="/vie-locale/gestion-des-dechets.html">Gestion des déchets</a></li>
+									<li class=""><a title="Urbanisme et Environnement" href="/vie-locale/urbanisme-et-environnement.html">Urbanisme et Environnement</a></li>
+									<li class=""><a title="Services à la population" href="/vie-locale/services-a-la-population.html">Services à la population</a></li>
+									<li class=""><a title="Culture et loisirs" href="/vie-locale/culture-et-loisirs.html">Culture et loisirs</a></li>
+								</ul>
+							</li>
+							<li class=""><a title="Vie économique" href="/navigation/gauche/vie-economique.html">Vie économique</a>
+								<ul>
+									<li class=""><a title="Zone d'activités" href="/vie-economique/zone-dactivites.html">Zone d'activités</a></li>
+									<li class=""><a title="Acteurs du territoire" href="/vie-economique/acteurs-du-territoire.html">Acteurs du territoire</a></li>
+									<li class=""><a title="Marchés Publics" href="/vie-economique/marches-publics.html">Marchés Publics</a></li>
+								</ul>
+							</li>
+							<li class=""><a title="Tourisme" href="/navigation/gauche/tourisme.html">Tourisme</a>
+								<ul>
+									<li class=""><a title="Entre vigne et lavande" href="/tourisme/entre-vigne-et-lavande.html">Entre vigne et lavande</a></li>
+									<li class=""><a title="Office de tourisme" href="/tourisme/office-de-tourisme.html">Office de tourisme</a></li>
+									<li class=""><a title="Taxe de séjour" href="/tourisme/taxe-de-sejour.html">Taxe de séjour</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footer--sitemap-secondary sitemap--niv1">
+						<ul>
+							<li class=""><a title="Actualité" href="/navigation/millieu/actualite.html">Actualité</a></li>
+							<li class=""><a title="Agenda" href="/navigation/millieu/agenda.html">Agenda</a></li>
+						</ul>
+					</nav>
+					<nav class="footer--sitemap-secondary sitemap--niv1">
+						<ul>
+							<li class=""><a title="Pratique" href="/navigation/droite/pratique.html">Pratique</a>
+								<ul>
+									<li class=""><a title="Jeune" href="/profil/jeune.html">Jeune</a></li>
+									<li class=""><a title="Famille" href="/profil/famille.html">Famille</a></li>
+									<li class=""><a title="Association" href="/profil/association.html">Association</a></li>
+									<li class=""><a title="Touriste" href="/profil/touriste.html">Touriste</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<nav class="footer--nav-secondary">
+						<ul>
+							<li class=""><a title="Nous contacter" href="/nous-contacter.html">Nous contacter</a></li>
+							<li class=""><a title="Plan du site" href="/plan-du-site.html">Plan du site</a></li>
+							<li class=""><a title="Mentions légales" href="/mentions-legales.html">Mentions légales</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+		<div id="bandeauCookie"></div>
+		<script src="/typo3conf/ext/arc_ex_solr/Resources/Public/JavaScript/jquery-ui.min.js?1475847989" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_ex_solr/Resources/Public/JavaScript/suggest_controller.js?1475849000" type="text/javascript"></script>
+		<script src="/typo3conf/ext/solr/Resources/JavaScript/JQuery/jquery-ui.datepicker.min.js?1485512835" type="text/javascript"></script>
+		<script src="/typo3conf/ext/solrfluid/Resources/Public/JavaScript/facet_daterange_controller.js?1486032629" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_ex_solr/Resources/Public/JavaScript/scriptSolr.js?1478102269" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/jquery.datetimepicker.min.js?1490866138" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/parsley.min.js?1490866138" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Tabs.min.js?1490866138" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Form.min.js?1490866138" type="text/javascript"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/masterslider/jquery.easing.min.js?1472633990" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/modernizr/modernizr.custom.min.js?1472634031" type="text/javascript"></script>
+		<!--[if lt IE 9]><script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/ie8/html5shiv/3.7.2/html5shiv.js?1472634201" type="text/javascript"></script><![endif]-->
+		<!--[if lt IE 9]><script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/ie8/respond/1.4.2/respond.min.js?1472634207" type="text/javascript"></script><![endif]-->
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/scripts/app.detection.js?1472633975" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/scripts/tabs.js?1474385327" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/customselect/classie.js?1475249355" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/customselect/selectFx.js?1475249354" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/tooltipster/jquery.tooltipster.min.js?1472634040" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/masterslider/masterslider.min.js?1472634021" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/swiper/js/swiper.min.js?1472634132" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/customFileInput/custom-file-input.js?1482230630" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/customFileInput/jquery.custom-file-input.js?1482230513" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/jquery.bxslider/4.2.5/jquery.bxslider.min.js?1479307684" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/masonry/masonry.min.js?1474292255" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/libs/arcGallery/arc-gallery.js?1483958144" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/scripts/imagesloaded.js?1481272679" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/flatWeatherPlugin/js/jquery.flatWeatherPlugin.js?1516110710" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/scripts/scrollingNav.js?1523459492" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/script.js?1530799612" type="text/javascript"></script>
+		<script src="/typo3conf/ext/arc_projet/Resources/Public/Integrations/front/js/script-fr.js?1494426032" type="text/javascript"></script>
+		<script src="/typo3temp/Assets/0a2468cb08.js?1592232092" type="text/javascript"></script>
+		<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "http://ccvs84.fr/"
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://ccvs84.fr/votre-recherche.html?q={search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+		</script>
+		<!-- Piwik Code -->
+		<script type="text/javascript">
+
+				var _paq = _paq || [];
+				_paq.push(['trackPageView']);
+				_paq.push(['enableLinkTracking']);
+				(function() {
+					var u="http:/ccvs84.fr/piwik_stat_analytics/";
+					_paq.push(['setTrackerUrl', u+'piwik.php']);
+					var idsite="46463";
+					_paq.push(['setSiteId', idsite]);
+					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+				})();
+
+			
+		</script>
+		<!-- End Piwik Code -->
+	</body>
+</html>
