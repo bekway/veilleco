@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta name="Author" lang="fr" content="Leb Communication">
+		<meta name="Description" content="La Communauté de Communes du Bocage Mayennais, profitez d'un cadre de vie privilégié et dynamique aux portes de la Bretagne et de la Normandie.">
+		<meta name="Keywords" lang="fr" content="cc bocage mayennais, communauté de communes, territoire d'avenir, implanter son entreprise, qualité de vie, collectivité, mayenne, mayennais, 53, pays de la loire, territoire attractif, tourisme en mayenne, entreprendre en mayenne, visiter la mayenne, découvrir la mayenne, démènager en mayenne, s'installer en mayenne, créer mon entreprise en mayenne">
+		<meta name="Identifier-URL" content="bocage-mayennais.fr">
+		<meta name="Reply-to" content="">
+		<meta name="revisit-after" content="7">
+		<meta name="Publisher" content="Bocage Mayennais">
+		<meta name="Copyright" content="Bocage Mayennais">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+		<title>Bocage Mayennais</title>
+		<link rel="stylesheet" type="text/css" href="dist/css/styles__24-01-2019.css" media="all">
+		<!-- SPEC POUR GESTIONNAIRE -->
+		<link rel="stylesheet" type="text/css" href="css/spec.css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="dist/ico-bocage/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="dist/ico-bocage/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="dist/ico-bocage/favicon-16x16.png">
+		<!--    <link rel="manifest" href="dist/ico-bocage/site.webmanifest">-->
+		<link rel="mask-icon" href="dist/ico-bocage/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="dist/ico-bocage/favicon.ico">
+		<link rel="stylesheet" href="dist/css/glightbox.min.css">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="dist/ico-bocage/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<link href="https://vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+		<script src="https://vjs.zencdn.net/4.10/video.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/slick-slider/slick.css">
+		<link rel="stylesheet" type="text/css" href="dist/slick-slider/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/commun.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://vjs.zencdn.net/4.10/video.js"></script>
+		<script src="/inquery/tarteaucitron/tarteaucitron.js"></script>
+		<script type="text/javascript">
+        tarteaucitron.init({
+            "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+            "highPrivacy": false, /* désactiver le consentement implicite (en naviguant) ? */
+            "orientation": "bottom", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
+            "adblocker": false, /* Afficher un message si un adblocker est détecté */
+            "showAlertSmall": false, /* afficher le petit bandeau en bas à droite ? */
+            "cookieslist": true, /* Afficher la liste des cookies installés ? */
+            "removeCredit": true, /* supprimer le lien vers la source ? */
+            "handleBrowserDNTRequest": true /* Deny everything if DNT is on */
+            //"cookieDomain": ".example.com" /* Nom de domaine sur lequel sera posé le cookie pour les sous-domaines */
+        });
+        tarteaucitron.user.googlemapsKey = 'AIzaSyDiB40c-5x-GAEBw3mIJXPTvamFHUV536I';
+        (tarteaucitron.job = tarteaucitron.job || []).push('googlemaps');
+        /*tarteaucitron.user.googlemapsKey = 'AIzaSyDiB40c-5x-GAEBw3mIJXPTvamFHUV536I';
+        (tarteaucitron.job = tarteaucitron.job || []).push('googlemaps');
+        tarteaucitron.user.googletagmanagerId = 'GTM-XXXX';
+        (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');*/
+        tarteaucitron.user.gtagUa = 'UA-138620995-1';
+        tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        (tarteaucitron.job = tarteaucitron.job || []).push('recaptcha');
+        tarteaucitron.user.mapscallback = 'initializeMap';
+        var geoloc = 0;
+        var cartesCMS = [];
+        function initializeMap(){
+            for(i=0; i<cartesCMS.length; i++){
+                console.log(cartesCMS[i]);
+                eval("initializeMapGeoloc"+cartesCMS[i]+"()");
+            }
+        }
+
+    
+		</script>
+		<!--    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDiB40c-5x-GAEBw3mIJXPTvamFHUV536I&sensor=false" type="text/javascript"></script>-->
+	</head>
+	<body class="cpt-roll"><span id="fixResponsive"></span>
+		<div class="l-boxContent"></div>
+	</body>
+</html>
