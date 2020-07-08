@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<!--[if lt IE 7]>     <html lang="fr" class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 7]>        <html lang="fr" class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 8]>        <html lang="fr" class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 9]> 	  	  <html lang="fr" class="no-js ie9" lang="fr-FR"> <![endif]-->
+	<!--[if gt IE 8]><!-->
+	<!--<html class="no-js" >-->
+	<!--<![endif]-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Communauté de Communes des Terres du Val de Loire</title>
+		<meta name="description" content="Site officiel de la Communauté de Communes des Terres du Val de Loire">
+		<link rel="shortcut icon" type="image/png" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/images/favicon.png">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/images/favicon.ico">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="dns-prefetch" href="//www.ccterresduvaldeloire.fr">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="stylesheet" id="validate-engine-css-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css" type="text/css" media="all">
+		<link rel="stylesheet" id="colorbox-theme2-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="leaflet-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.ccterresduvaldeloire.fr/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="creasit-agenda-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="css-fenetre-information-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-fenetre-information/css/styles-fenetre-information.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-info-bulle-plan-interactif-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="gdrf-public-styles-css" href="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-rgpd/public/css/public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="reset-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/css/creasit-reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="dashicons-css" href="https://www.ccterresduvaldeloire.fr/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dflip-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="themify-icons-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-recherche-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/css/style-recherche.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="solution-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/css/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="1260-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/css/responsive-1260.css" type="text/css" media="screen and (max-width: 1260px)">
+		<link rel="stylesheet" id="940-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/css/responsive-940.css" type="text/css" media="screen and (max-width: 940px)">
+		<link rel="stylesheet" id="580-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/css/responsive-580.css" type="text/css" media="screen and (max-width: 640px)">
+		<link rel="stylesheet" id="print-css" href="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/css/print.css" type="text/css" media="print">
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"true","colorboxPreloading":"false","colorboxOverlayClose":"true","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js"></script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.ccterresduvaldeloire.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js"></script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js"></script>
+		<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-nl.js"></script>
+		<link rel="https://api.w.org/" href="https://www.ccterresduvaldeloire.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ccterresduvaldeloire.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ccterresduvaldeloire.fr/wp-includes/wlwmanifest.xml">
+		<link rel="alternate" type="application/rss+xml" href="https://www.ccterresduvaldeloire.fr/feed/?post_type=post" title="Flux RSS des actualités">
+		<link rel="alternate" type="application/rss+xml" href="https://www.ccterresduvaldeloire.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+		<link rel="alternate" type="application/rss+xml" href="https://www.ccterresduvaldeloire.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+		<link rel="alternate" type="application/rss+xml" href="https://www.ccterresduvaldeloire.fr/feed/?post_type=base_documentaire" title="Flux RSS de la base documentaire">
+		<link rel="alternate" type="application/rss+xml" href="https://www.ccterresduvaldeloire.fr/feed/?post_type=navigation_profils" title="Flux RSS des différents profils">
+		<script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.ccterresduvaldeloire.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "fee58e60ab";
+        
+		</script>
+		<script type="application/javascript">
+			var dFlipLocation = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		
+		</script>
+		<script type="text/javascript">
+            var URL_DU_SITE = "https://www.ccterresduvaldeloire.fr";
+            accessibilitytoolbar_custom = {
+                // MANDATORY : ID of the target container which will include the link. If not null, activate the display in link mode. The link will be added as the last element of the target container. 
+                idLinkModeContainer : "header",
+
+                // OPTIONAL (put it as comments if useless) CSS class applied on the link to unify its appearance with the site.
+                cssLinkModeClassName : "link-class-confort-plus",
+
+                // OPTIONAL (put it as comments if useless) When the service is displayed as a link in the page, a skip link is automatically added at the top of the page. If you already have a group of skip links, you can specify the target container where the skip link will be added. The link will be added as the last element of the target container. 
+                // idSkipLinkIdLinkMode : "", 
+
+                // OPTIONAL (put it as comments if useless) CSS class applied on the skip link
+                // cssSkipLinkClassName : "" 
+            };
+
+        
+		</script>
+		<style type="text/css">#uci_reponses_bigger_quick_set, #uci_contenu_onglet_typographie .uci_onglet_div:first-child {display:none!important;}#uci_profile_menu.uci_submenu {right:-119px;}</style>
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+	</head>
+	<body class="home blog unknown">
+		<div id="big-wrapper">
+			<div class="scroll-top">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.3px" height="10.2px" viewbox="0 0 18.3 10.2" style="overflow:scroll;enable-background:new 0 0 18.3 10.2;" xml:space="preserve">
+					<defs></defs>
+					<polygon id="top_1_" points="18.3,7.9 16.3,10.2 9.2,4.1 2,10.2 0,7.9 9.2,0 "></polygon>
+				</svg>
+			</div>
+			<header id="header">
+				<div id="top-header">
+					<div class="center"><a href="https://www.ccterresduvaldeloire.fr" id="identite" title="Communauté de Communes des Terres du Val de Loire"> <h1>Communauté de communes <span> des terres du val de loire </span></h1> </a></div>
+				</div>
+				<div id="bottom-header">
+					<div class="center">
+						<div class="menu"><button class="menu__burger"> <svg version="1.1" class="menu__burger__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.4px" height="13.1px" viewbox="0 0 18.4 13.1" style="overflow:scroll;enable-background:new 0 0 18.4 13.1;" xml:space="preserve"><path d="M9.2,2.7c-2.8,0-5.7,0-8.5,0C0,2.7,0,2.7,0,1.9c0-0.4,0-0.7,0-1.1C0,0,0,0,0.8,0
+                            c2.3,0,4.7,0,7,0c3.3,0,6.6,0,9.8,0c0.7,0,0.7,0,0.7,0.7c0,0.4,0,0.7,0,1.1c0,0.9,0,0.9-0.8,0.9C14.8,2.7,12,2.7,9.2,2.7z M17.7,7.9
+                            c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.2c0-0.7,0-0.7-0.7-0.7c-3,0-6,0-9,0c-2.6,0-5.3,0-7.9,0C0,5.2,0,5.2,0,6c0,0.4,0,0.8,0,1.2
+                            c0,0.7,0,0.7,0.7,0.7c2.8,0,5.6,0,8.4,0C12,7.9,14.8,7.9,17.7,7.9z M17.7,13.1c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.1
+                            c0-0.8,0-0.8-0.8-0.8c-3.1,0-6.1,0-9.2,0c-2.6,0-5.1,0-7.7,0c-0.7,0-0.7,0-0.7,0.7c0,0.4,0,0.8,0,1.1c0,0.8,0,0.8,0.8,0.8
+                            c2.8,0,5.6,0,8.4,0C12,13.1,14.8,13.1,17.7,13.1z"></path></svg> <span class="menu__burger__text"> Menu </span> </button>
+							<nav class="menu__nav">
+								<div class="menu-menu-principal-container">
+									<ul id="menu-menu-principal" class="menu__nav__list clearfix">
+										<li id="menu-item-6702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6702 item-1"><span title="Communauté de Communes">Communauté de Communes</span>
+											<div class="sub-menu">
+												<ul class="bloc-menu-left">
+													<li id="menu-item-6703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6703 item-2"><a title="Présentation" href="https://www.ccterresduvaldeloire.fr/presentation/">Présentation</a></li>
+													<li id="menu-item-6704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6704 item-2"><a title="Services communautaires" href="https://www.ccterresduvaldeloire.fr/services-communautaires/">Services communautaires</a></li>
+													<li id="menu-item-6705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6705 item-2"><a title="Élus communautaires" href="https://www.ccterresduvaldeloire.fr/elus-communautaires/">Élus communautaires</a></li>
+													<li id="menu-item-6706" class="menu-item menu-item-type-taxonomy menu-item-object-agenda_categorie menu-item-6706 item-2"><a title="Conseils communautaires" href="https://www.ccterresduvaldeloire.fr/categorie-agenda/conseils-communautaires/">Conseils communautaires</a></li>
+													<li id="menu-item-6707" class="menu-item menu-item-type-taxonomy menu-item-object-documents_categories menu-item-6707 item-2"><a title="Comptes-rendus du conseil communautaire" href="https://www.ccterresduvaldeloire.fr/categorie-documents/comptes-rendus-du-conseil-communautaire/">Comptes-rendus du conseil communautaire</a></li>
+													<li id="menu-item-6708" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6708 item-2"><a title="Communes membres" href="https://www.ccterresduvaldeloire.fr/listes/communes-membres/">Communes membres</a></li>
+													<li id="menu-item-6709" class="menu-item menu-item-type-taxonomy menu-item-object-documents_categories menu-item-6709 item-2"><a title="Publications" href="https://www.ccterresduvaldeloire.fr/categorie-documents/publications/">Publications</a></li>
+													<li id="menu-item-6710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6710 item-2"><a title="Marchés publics" href="https://www.ccterresduvaldeloire.fr/marches-publics/">Marchés publics</a></li>
+													<li id="menu-item-6711" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6711 item-2"><a title="Emploi" href="https://www.ccterresduvaldeloire.fr/listes/emploi/">Emploi</a></li>
+													<li id="menu-item-6712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6712 item-2"><a title="Nos partenaires" href="https://www.ccterresduvaldeloire.fr/nos-partenaires/">Nos partenaires</a></li>
+												</ul>
+												<ul class="bloc-menu-middle"></ul>
+												<ul class="bloc-menu-right"></ul>
+											</div>
+										</li>
+										<li id="menu-item-6713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6713 item-2"><span title="Cadre de vie">Cadre de vie</span>
+											<div class="sub-menu">
+												<ul class="bloc-menu-left">
+													<li id="menu-item-7288" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7288 item-3"><a title="Assainissement" href="https://www.ccterresduvaldeloire.fr/listes/assainissement/">Assainissement</a></li>
+													<li id="menu-item-6714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6714 item-3"><a title="Collecte des déchets (ex-SMIRTOM)" href="https://www.ccterresduvaldeloire.fr/collecte-des-dechets-smirtom/">Collecte des déchets (ex-SMIRTOM)</a></li>
+													<li id="menu-item-6715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6715 item-3"><a title="Réseau des déchèteries" href="https://www.ccterresduvaldeloire.fr/reseau-des-dechetteries/">Réseau des déchèteries</a></li>
+													<li id="menu-item-7757" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7757 item-3"><a title="Gestion des milieux aquatiques et prévention des inondations" href="https://www.ccterresduvaldeloire.fr/listes/gemapi/">Gestion des milieux aquatiques et prévention des inondations</a></li>
+													<li id="menu-item-6718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6718 item-3"><a title="Travaux et voirie" href="https://www.ccterresduvaldeloire.fr/travaux-et-voirie/">Travaux et voirie</a></li>
+												</ul>
+												<ul class="bloc-menu-middle"></ul>
+												<ul class="bloc-menu-right"></ul>
+											</div>
+										</li>
+										<li id="menu-item-6719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6719 item-3"><span title="Services au quotidien">Services au quotidien</span>
+											<div class="sub-menu">
+												<ul class="bloc-menu-left">
+													<li id="menu-item-6720" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6720 item-4"><a title="Action sociale & santé" href="https://www.ccterresduvaldeloire.fr/listes/action-sociale-sante/">Action sociale & santé</a></li>
+													<li id="menu-item-6721" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6721 item-4"><a title="Enfance-jeunesse" href="https://www.ccterresduvaldeloire.fr/listes/enfance-jeunesse/">Enfance-jeunesse</a></li>
+													<li id="menu-item-6722" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6722 item-4"><a title="Urbanisme" href="https://www.ccterresduvaldeloire.fr/listes/urbanisme/">Urbanisme</a></li>
+													<li id="menu-item-6723" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6723 item-4"><a title="Culture et loisirs" href="https://www.ccterresduvaldeloire.fr/listes/culture-et-loisirs/">Culture et loisirs</a></li>
+													<li id="menu-item-6724" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6724 item-4"><a title="Mobilités" href="https://www.ccterresduvaldeloire.fr/listes/mobilites/">Mobilités</a></li>
+													<li id="menu-item-6725" class="menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-6725 item-4"><a title="Droits et démarches administratives" href="https://www.ccterresduvaldeloire.fr/services-publics/guichet-virtuel/">Droits et démarches administratives</a></li>
+													<li id="menu-item-6726" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-6726 item-4"><a title="Plan interactif" href="https://www.ccterresduvaldeloire.fr/systeme/plan-interactif/">Plan interactif</a></li>
+												</ul>
+												<ul class="bloc-menu-middle"></ul>
+												<ul class="bloc-menu-right"></ul>
+											</div>
+										</li>
+										<li id="menu-item-6727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6727 item-4"><span title="Economie">Economie</span>
+											<div class="sub-menu">
+												<ul class="bloc-menu-left">
+													<li id="menu-item-6728" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6728 item-5"><a title="Le territoire" href="https://www.ccterresduvaldeloire.fr/listes/le-territoire/">Le territoire</a></li>
+													<li id="menu-item-6729" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6729 item-5"><a title="Nos actions" href="https://www.ccterresduvaldeloire.fr/listes/nos-actions/">Nos actions</a></li>
+													<li id="menu-item-6730" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6730 item-5"><a title="Entreprendre" href="https://www.ccterresduvaldeloire.fr/listes/entreprendre/">Entreprendre</a></li>
+													<li id="menu-item-6731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6731 item-5"><a title="Agriculture" href="https://www.ccterresduvaldeloire.fr/agriculture/">Agriculture</a></li>
+													<li id="menu-item-6732" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-6732 item-5"><a title="Emploi" href="https://www.ccterresduvaldeloire.fr/listes/emploi/">Emploi</a></li>
+													<li id="menu-item-6733" class="menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-6733 item-5"><a title="Démarches pour les professionnels" href="https://www.ccterresduvaldeloire.fr/services-publics/demarches-administratives-pour-les-professionnels-et-les-independants/">Démarches pour les professionnels</a></li>
+													<li id="menu-item-6734" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6734 item-5"><a title="Économie" href="https://www.ccterresduvaldeloire.fr/categorie-actualites/economie/">Économie</a></li>
+													<li id="menu-item-6735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6735 item-5"><a title="Marchés publics" href="https://www.ccterresduvaldeloire.fr/marches-publics/">Marchés publics</a></li>
+												</ul>
+												<ul class="bloc-menu-middle"></ul>
+												<ul class="bloc-menu-right"></ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<ul class="utilitaires-header">
+								<li class="accessibar-icon"><a href="#" title="Barre d'accessibilité"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.88px" height="16.41px" viewbox="0 0 18.88 16.41" style="enable-background:new 0 0 18.88 16.41;" xml:space="preserve"><defs></defs><path id="accessi_1_" d="M18.77,7.98c-0.17-0.22-4.21-5.46-9.34-5.46c-0.11,0-0.22,0.02-0.34,0.03L8.5,0L7.52,0.23L8.1,2.66
+                                    C7.81,2.71,7.53,2.77,7.25,2.84C6.93,2.93,6.61,3.04,6.3,3.16C6.03,3.27,5.76,3.39,5.5,3.52C5.18,3.67,4.88,3.83,4.59,4.01
+                                    c-0.27,0.16-0.52,0.32-0.77,0.5c-0.31,0.21-0.6,0.43-0.87,0.64C2.68,5.36,2.43,5.57,2.2,5.78C1.89,6.05,1.61,6.32,1.36,6.57
+                                    C0.61,7.33,0.16,7.91,0.1,7.98c-0.14,0.18-0.14,0.43,0,0.61c0.05,0.07,0.47,0.6,1.16,1.31c0.1,0.1,0.2,0.2,0.31,0.31L1.15,8.29
+                                    c0.12-0.14,0.29-0.33,0.49-0.55L1.98,9.2l0.42,1.78c0.38,0.33,0.8,0.67,1.26,0.99L3.3,10.41L2.47,6.9C2.69,6.69,2.93,6.47,3.2,6.25
+                                    l1.18,4.99l0.33,1.41c0.38,0.22,0.76,0.43,1.17,0.61l-0.3-1.27L4.07,5.56c0.24-0.18,0.5-0.35,0.77-0.52l1.76,7.41l0.28,1.16
+                                    c0.36,0.12,0.72,0.21,1.09,0.28L7.7,12.81L7.15,10.5c0.3,0.31,0.66,0.55,1.06,0.71L8.63,13l0.24,1.02c0.19,0.01,0.37,0.04,0.56,0.04
+                                    c0.16,0,0.31-0.02,0.46-0.03l-0.23-0.98l-0.38-1.59c0.04,0,0.08,0.01,0.11,0.01c0.26,0,0.51-0.04,0.75-0.1l0.38,1.59l0.23,0.97
+                                    l0.59,2.49l0.97-0.23l-0.59-2.49c3.98-1.16,6.89-4.91,7.03-5.1C18.91,8.41,18.91,8.16,18.77,7.98z M6.41,7.36L5.74,4.52
+                                    C6,4.39,6.26,4.26,6.54,4.15l0.5,2.09C6.75,6.56,6.54,6.94,6.41,7.36z M7.89,5.54L7.48,3.82c0.28-0.08,0.56-0.14,0.84-0.19l0.38,1.6
+                                    C8.42,5.29,8.15,5.4,7.89,5.54z M9.72,5.17L9.44,3.97c2.38,0.02,4.3,1.95,4.3,4.33c0,1.63-0.93,3.12-2.36,3.85l-0.28-1.19
+                                    c0.88-0.56,1.47-1.54,1.47-2.66C12.56,6.66,11.32,5.34,9.72,5.17z M13.29,11.95c0.91-0.97,1.45-2.27,1.45-3.65
+                                    c0-1.46-0.59-2.78-1.55-3.75c2.22,1.17,3.92,3.01,4.54,3.74C17.13,9,15.46,10.78,13.29,11.95z"></path></svg> </a></li>
+								<li class="search-icon c-search-form_open all-link" title="Rechercher">
+									<p>Rechercher</p><span title="Rechercher" class="toggle-search c-search-form_open all-link"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.32px" height="14.36px" viewbox="0 0 14.32 14.36" style="enable-background:new 0 0 14.32 14.36;" xml:space="preserve"><defs></defs><path id="search_1_" d="M13.91,12l-2.99-2.99c0.56-0.9,0.89-1.96,0.89-3.11C11.81,2.64,9.17,0,5.91,0C2.64,0,0,2.64,0,5.91
+                                    c0,3.26,2.64,5.91,5.91,5.91c1.12,0,2.16-0.32,3.05-0.86l3,3c0.54,0.54,1.42,0.54,1.96,0C14.45,13.42,14.45,12.54,13.91,12z
+                                    M1.81,5.91c0-2.26,1.83-4.09,4.09-4.09S10,3.65,10,5.91S8.17,10,5.91,10S1.81,8.17,1.81,5.91z"></path></svg> </span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="utilitaires-accessibar-div">
+					<div class="center">
+						<div class="utilitaires-div">
+							<div id="google_translate_element"></div>
+						</div>
+						<div class="infos-profil">
+							<h3>Navigation par profil</h3>
+							<ul>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/baccon/"><span class="titre">Baccon</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/baule/"><span class="titre">Baule</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/beauce-la-romaine/"><span class="titre">Beauce la Romaine</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/beaugency/"><span class="titre">Beaugency</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/binas/"><span class="titre">Binas</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/chaingy/"><span class="titre">Chaingy</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/charsonville/"><span class="titre">Charsonville</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/clery-saint-andre/"><span class="titre">Cléry-Saint-André</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/coulmiers/"><span class="titre">Coulmiers</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/cravant/"><span class="titre">Cravant</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/dry/"><span class="titre">Dry</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/epieds-en-beauce/"><span class="titre">Épieds-en-Beauce</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/huisseau-sur-mauves/"><span class="titre">Huisseau-sur-Mauves</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/lailly-en-val/"><span class="titre">Lailly-en-Val</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/le-bardon/"><span class="titre">Le Bardon</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/mareau-aux-pres/"><span class="titre">Mareau-aux-Prés</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/messas/"><span class="titre">Messas</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/meung-sur-loire/"><span class="titre">Meung-sur-Loire</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/mezieres-lez-clery/"><span class="titre">Mézières-lez-Cléry</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/rozieres-en-beauce/"><span class="titre">Rozières-en-Beauce</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/saint-ay/"><span class="titre">Saint-Ay</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/saint-laurent-des-bois/"><span class="titre">Saint-Laurent-des-Bois</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/tavers/"><span class="titre">Tavers</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/villermain/"><span class="titre">Villermain</span></a></li>
+								<li><a href="https://www.ccterresduvaldeloire.fr/profils/villorceau/"><span class="titre">Villorceau</span></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="c-search-main recherche-autocompletion">
+				<!-- <h2>Recherche</h2> --><button class="c-search-form_close o-toggle" type="button"></button>
+				<div class="c-search-main_container">
+					<form action="/" class="c-search-form">
+						<div class="c-search-form_wrap">
+							<div class="c-search-form_input-wrap">
+								<div id="searchform">
+									<div><input type="text" class="rechercher" placeholder="Rechercher" name="s" id="s"> <button type="submit" id="searchsubmit">OK</button></div>
+								</div>
+							</div>
+							<div class="c-search-loader">
+								<div class="c-search-loader_line"></div>
+							</div>
+						</div>
+					</form>
+					<div class="c-search-results"></div>
+				</div>
+			</div>
+			<div id="wrapper">
+				<!--cdlBloc ordre="3"-->
+				<div class="front-page">
+					<!-- Start A LA UNE -->
+					<section id="diaporama">
+						<div id="a-la-une">
+							<div id="a-la-une-medias" class="a-la-une-medias a-la-une-image">
+								<div class="a-la-une-media"><a class="a-la-une-item defaut" href="javascript:void(0)" style="background:url(https://www.ccterresduvaldeloire.fr/medias/2019/05/default1-e1565095518289.jpg) no-repeat center top;background-size:cover; background-position: top center;" data-paroller-factor-xs="0.2"></a></div>
+								<div class="a-la-une-media"><a class="a-la-une-item defaut" href="javascript:void(0)" style="background:url(https://www.ccterresduvaldeloire.fr/medias/2019/05/default2-e1565095483203.jpg) no-repeat center top;background-size:cover; background-position: top center;" data-paroller-factor-xs="0.2"></a></div>
+								<div class="a-la-une-media"><a class="a-la-une-item defaut" href="javascript:void(0)" style="background:url(https://www.ccterresduvaldeloire.fr/medias/2019/05/default3.jpg) no-repeat center top;background-size:cover; background-position: top center;" data-paroller-factor-xs="0.2"></a></div>
+								<div class="a-la-une-media"><a class="a-la-une-item defaut" href="javascript:void(0)" style="background:url(https://www.ccterresduvaldeloire.fr/medias/2019/08/c-Dominique-Daury-Office-de-Tourisme-de-Beaugency-e1566474869434.jpg) no-repeat center top;background-size:cover; background-position: top center;" data-paroller-factor-xs="0.2"></a></div>
+							</div>
+						</div>
+						<div id="nav-a-la-une" class="center"><span class="nav-une__arrow nav-une__arrow--prev" style="display: flex;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.2px" height="18.3px" viewbox="0 0 10.2 18.3" style="overflow:scroll;enable-background:new 0 0 10.2 18.3;" xml:space="preserve"><defs></defs><polygon class="gauche_1_" points="7.9,0 10.2,2 4.1,9.2 10.2,16.3 7.9,18.3 0,9.2 "></polygon></svg> </span> <span class="nav-une__arrow nav-une__arrow--next" style="display: flex;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.2px" height="18.3px" viewbox="0 0 10.2 18.3" style="overflow:scroll;enable-background:new 0 0 10.2 18.3;" xml:space="preserve"><defs></defs><polygon class="droite_1_" points="2.3,18.3 0,16.3 6.2,9.2 0,2 2.3,0 10.2,9.2 "></polygon></svg> </span></div>
+						<!-- Start ACCES RAPIDES -->
+						<div id="acces-rapides">
+							<h1>Accès rapides</h1>
+							<div id="container-acces-rapides"><a class="bloc-acces" href="https://www.ccterresduvaldeloire.fr/listes/portail-famille/" title="Portail Famille"> <span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.1px" height="19.4px" viewbox="0 0 19.1 19.4" style="enable-background:new 0 0 19.1 19.4;" xml:space="preserve"><defs></defs><path id="portail_1_" d="M7.4,1.8c0-1,0.8-1.8,1.8-1.8S11,0.8,11,1.8c0,1-0.8,1.8-1.8,1.8S7.4,2.8,7.4,1.8z M14.3,4.6
+                                c1,0,1.8-0.8,1.8-1.8c0-1-0.8-1.8-1.8-1.8s-1.8,0.8-1.8,1.8C12.5,3.8,13.4,4.6,14.3,4.6z M17.9,6.6c-0.1,0-0.2,0-0.3-0.1l1,1.2
+                                c0.2,0.3,0.1,0.6-0.2,0.8c-0.2,0.2-0.9,0.3-1.7,0.3l1,7.1h-1.3v2.7c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8l0-2.7h-1v2.7
+                                c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8v-2.7h-1.1v2.8c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8v-6H8.6v6
+                                c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8v-4.3L6.3,13v2.9v2.7c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8v-2.7h-1v2.7
+                                c0,0.4-0.3,0.7-0.8,0.7c-0.4,0-0.7-0.4-0.7-0.8v-2.7V13L1,15c-0.2,0.3-0.6,0.3-0.8,0.1c-0.2-0.2-0.3-0.5-0.1-0.8L2,11.4
+                                c0.2-0.3,0.5-0.5,0.9-0.5H5L5.3,10c-0.3,0.2-0.6,0.3-1,0.3c-0.9,0-1.7-0.7-1.7-1.7S3.4,7,4.3,7C5,7,5.6,7.4,5.9,8.1L7,4.5
+                                c0.1-0.2,0.3-0.4,0.5-0.4H11c0.2,0,0.4,0.2,0.5,0.4l0.9,2.8l0.2-1.2c0.1-0.7,0.7-1.2,1.4-1.2h1.7c0.4,0,0.8,0.2,1,0.5l0.1,0.2
+                                c0-0.1,0-0.1,0-0.2c0-0.7,0.5-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2C19.1,6,18.6,6.6,17.9,6.6z M6.6,11.4l0.5,0.8v-0.4V9l-0.7,2.2
+                                C6.5,11.3,6.6,11.3,6.6,11.4z M11.4,14.7l0.5-4L11.4,9v2.9v0.8V14.7z"></path></svg> </span> <span class="text-acces-rapides"> Portail Famille </span> </a> <a class="bloc-acces" href="https://www.ccterresduvaldeloire.fr/listes/culture-et-loisirs/" title="Culture et loisirs"> <span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.6px" height="13.9px" viewbox="0 0 18.6 13.9" style="enable-background:new 0 0 18.6 13.9;" xml:space="preserve"><defs></defs><path id="culture_2_" d="M10.4,4.3c-0.2-1.1-0.6-2.3-1-3.4l0,0C8.4,0.1,6.5-0.2,4.4,0.2C2.3,0.5,0.6,1.5,0,2.5l0,0
+                                C0,3.7,0,5,0.2,6.1C1,10.3,4,14.4,6.8,13.9C9.6,13.4,11.1,8.5,10.4,4.3z M1.9,6.2c-0.1,0-0.3,0-0.4,0C1.3,6.1,1.2,5.8,1.3,5.5
+                                c0.5-1,1.7-1.4,2.7-1C4.2,4.7,4.3,5,4.2,5.2C4.1,5.5,3.8,5.6,3.5,5.5C3,5.2,2.4,5.4,2.2,5.9C2.1,6.1,2,6.2,1.9,6.2z M9.2,7.9
+                                c-1.3,4-4.1,4.5-6.7,1.2l0,0c0,0,0,0,0,0C2.4,9,2.4,8.8,2.5,8.6c0.1-0.1,0.3-0.2,0.5-0.1c0.2,0.1,0.4,0.3,0.6,0.4
+                                C4.3,9.3,5.2,9.4,6,9.2c0.8-0.1,1.6-0.5,2.2-1.1c0.2-0.2,0.3-0.4,0.5-0.6C8.8,7.4,9,7.4,9.1,7.5C9.3,7.6,9.3,7.8,9.2,7.9
+                                C9.2,7.9,9.2,7.9,9.2,7.9L9.2,7.9z M9.2,4.8C9,5,8.7,5,8.5,4.8c-0.4-0.4-1-0.4-1.4,0C7,4.9,6.8,5,6.7,5c-0.1,0-0.3,0-0.4-0.2
+                                c-0.2-0.2-0.2-0.5,0-0.7c0.8-0.8,2.1-0.8,2.8,0C9.4,4.3,9.4,4.6,9.2,4.8z M18.5,2.6L18.5,2.6c-0.6-1.1-2.3-2-4.4-2.4
+                                c-1.6-0.3-3-0.2-4.1,0.3l0.1,0.2c0.4,0.9,0.7,2,1,3c0.5,0.2,0.9,0.5,1.1,1c0.1,0.3,0,0.6-0.2,0.7c-0.2,0.1-0.4,0-0.6-0.1
+                                c0.1,1,0.1,1.9,0,2.9c0.5,0.1,0.9,0.3,1.4,0.3c1.2,0.2,2.5-0.2,3.1,1.8l0,0c0,0,0,0,0,0c0.1,0.1,0.1,0.4-0.1,0.5
+                                c-0.1,0.1-0.4,0.1-0.5-0.1c-0.1-0.2-0.3-0.4-0.5-0.6c-0.6-0.6-1.7-0.3-2.5-0.5c-0.5-0.1-0.8-0.1-1.1-0.3c-0.1,0.6-0.3,1-0.4,1.5
+                                c-0.3,0.7-0.6,1.4-0.9,1.9c0.5,0.6,1.2,1.1,1.9,1.2c2.8,0.5,5.9-3.6,6.6-7.8C18.5,5,18.6,3.7,18.5,2.6z M17.3,5.7
+                                c-0.2,0.2-0.5,0.2-0.7,0c-0.4-0.4-1-0.4-1.4,0c-0.1,0.1-0.2,0.1-0.4,0.1c-0.1,0-0.3-0.1-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7
+                                c0.8-0.8,2.1-0.8,2.8,0C17.5,5.2,17.5,5.5,17.3,5.7z"></path></svg> </span> <span class="text-acces-rapides"> Culture et loisirs </span> </a> <a class="bloc-acces" href="https://www.ccterresduvaldeloire.fr/listes/entreprendre/" title="Entreprendre"> <span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.1px" height="15.4px" viewbox="0 0 21.1 15.4" style="enable-background:new 0 0 21.1 15.4;" xml:space="preserve"><defs></defs><path id="mains_1_" d="M8,13.6c-0.4,0.3-0.5,0.8-0.3,1.2c0.2,0.3,0.5,0.4,0.8,0.4c0.2,0,0.3,0,0.5-0.1l1-0.6l-1.7-1.1L8,13.6z
+                                 M20.4,2.8c-0.8-1.3-2.2-2-3.7-2.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0c-0.1,0-0.3,0-0.4,0l0,0c-0.1,0-0.3,0-0.4,0
+                                c0,0,0,0,0,0c-0.1,0-0.3,0-0.4,0c-0.1,0-0.3,0-0.5,0c0,0,0,0,0,0c-0.2,0-0.3,0-0.5,0c0,0-0.1,0-0.1,0c-0.1,0-0.1,0-0.2,0
+                                c-0.1,0-0.1,0-0.2,0c-0.8,0-1.5,0-2.2,0c-0.3,0-0.6,0-0.8,0c-0.2,0-0.3,0-0.5,0c-0.3,0-0.6-0.1-0.9-0.2C9,0.4,8.7,0.3,8.5,0.3
+                                c-0.1,0-0.1,0-0.2-0.1C8.2,0.1,8.1,0.1,8,0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0-0.1,0-0.1,0h0c0,0,0,0,0,0c0,0-0.1,0.1-0.1,0.1
+                                c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0
+                                c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0.1,0,0.1v0c0,0,0,0,0,0c0,0.1,0,0.1,0.1,0.2c0,0,0,0.1,0.1,0.1c0.3,0.5,1,1,1.9,1.6
+                                c0.3,0.2,0.6,0.4,0.9,0.5c0.1,0,0.2,0.1,0.2,0.1c0.1,0,0.2,0.1,0.2,0.1c0,0,0.1,0,0.1,0.1c0,0,0,0.1-0.1,0.1c0,0,0,0-0.1,0.1
+                                c0,0,0,0-0.1,0c0.2,0.1,7,4.3,7,4.4c0.3,0.2,0.5,0.5,0.6,0.8c0,0.1,0,0.3,0,0.4L19,8.9C21.1,7.6,21.7,4.9,20.4,2.8z M6.1,12
+                                l-0.7,0.5c-0.4,0.3-0.5,0.8-0.3,1.2c0.2,0.3,0.5,0.4,0.8,0.4c0.2,0,0.3,0,0.5-0.1l1.5-0.9L6.1,12z M3.9,10.7L3,11.2
+                                c-0.2,0.1-0.3,0.3-0.4,0.6c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.3,0.5,0.4,0.8,0.4c0.2,0,0.3,0,0.5-0.1l1.7-1.1L3.9,10.7z M18.1,11.4
+                                l-7.4-4.6c-0.1-0.1-0.2-0.2-0.1-0.4c0-0.1,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1,0l5.6,3.5c0.1,0.1,0.3,0.1,0.5,0.1c0,0,0,0,0.1,0
+                                c0.3,0,0.6-0.2,0.7-0.4c0,0,0,0,0,0C18,9.4,18,9.1,18,8.9c-0.1-0.2-0.2-0.4-0.4-0.6c-0.1,0-5.8-3.6-7.2-4.5
+                                c-0.2-0.1-0.3-0.2-0.3-0.2c-0.1,0-0.1-0.1-0.1-0.2c0,0,0-0.1,0-0.1C9.8,3.3,9.6,3.1,9.3,3c-1.2-0.8-2-1.4-2.2-2C7.1,1,7,1,7,1
+                                c-0.9,0-1.7,0-2.2,0c-0.1,0-0.2,0-0.3,0c-1.6,0-3,0.8-3.8,2.1C-0.6,5,0,7.7,2.1,9l10,6.2c0.1,0.1,0.3,0.1,0.5,0.1
+                                c0.3,0,0.6-0.2,0.8-0.4c0.3-0.4,0.1-1-0.3-1.2l-4.8-3c0,0,0,0,0,0l0,0l0,0c-0.1-0.1-0.1-0.2,0-0.3c0-0.1,0.1-0.1,0.2-0.1
+                                c0,0,0.1,0,0.1,0l0.2,0.1l0,0v0l6.1,3.8c0.1,0.1,0.3,0.1,0.5,0.1c0.3,0,0.6-0.2,0.8-0.4c0.3-0.4,0.1-1-0.3-1.2L9.5,8.8
+                                C9.4,8.7,9.3,8.5,9.4,8.4c0-0.1,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1,0l6.2,3.9l1.2,0.7c0.1,0.1,0.3,0.1,0.5,0.1c0.3,0,0.6-0.2,0.8-0.4
+                                c0.1-0.2,0.2-0.4,0.1-0.7C18.5,11.7,18.3,11.5,18.1,11.4z M13.4,0.4c0.1,0,0.2,0,0.3,0c-0.1-0.1-0.2-0.2-0.3-0.3L13.3,0l-0.1,0
+                                c-0.1,0-0.4,0.1-0.7,0.2c-0.1,0-0.3,0.1-0.4,0.1c0.2,0,0.4,0,0.7,0C13,0.4,13.2,0.4,13.4,0.4z"></path></svg> </span> <span class="text-acces-rapides"> Entreprendre </span> </a> <a class="bloc-acces" href="https://www.ccterresduvaldeloire.fr/collecte-des-dechets-smirtom/" title="Collecte des déchets"> <span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.6px" height="16.7px" viewbox="0 0 15.6 16.7" style="enable-background:new 0 0 15.6 16.7;" xml:space="preserve"><style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                            </style><defs></defs><path id="poubelle_1_" class="st0" d="M10.4,1V0H5.2v1H0v2.1h15.6V1H10.4z M1,4.2v9.4c0,1.7,1.4,3.1,3.1,3.1h7.3
+                            c1.7,0,3.1-1.4,3.1-3.1V4.2h-2.1v9.4c0,0.6-0.5,1-1,1H4.2c-0.6,0-1-0.5-1-1V4.2H1z M4.2,5.2v8.3h1V5.2H4.2z M6.3,5.2v8.3h1V5.2H6.3z
+                            M8.3,5.2v8.3h1V5.2H8.3z M10.4,5.2v8.3h1V5.2H10.4z"></path></svg> </span> <span class="text-acces-rapides"> Collecte des déchets </span> </a> <a class="bloc-acces" href="https://www.ccterresduvaldeloire.fr/listes/assainissement/" title="Assainissement"> <span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.3px" height="16.1px" viewbox="0 0 11.3 16.1" style="enable-background:new 0 0 11.3 16.1;" xml:space="preserve"><defs></defs><path id="eau_1_" d="M9.3,6.1L9.3,6.1C9.3,6.1,9.3,6.1,9.3,6.1c-0.1,0-0.1,0-0.1,0v0C8,6.1,7.3,5.4,7.3,4c0-1.4,2-4,2-4s2,2.6,2,4
+                            C11.3,5.4,10.5,6.1,9.3,6.1z M8.4,11.6c0-3-4.2-8.4-4.2-8.4S0,8.5,0,11.6C0,14.5,1.5,16,4,16v0c0.1,0,0.1,0,0.2,0c0,0,0,0,0.1,0v0
+                            C6.8,16,8.4,14.5,8.4,11.6z M7.2,11.7c0.3,0,0.4,0.3,0.4,0.7c0,0.6-0.4,1.6-1,2.1c-1,0.8-2.2,0.9-2.9,0.8c-0.4-0.1-0.6-0.4,0-0.3
+                            c0.8,0.1,1.7,0,2.5-0.7c0.9-0.8,0.9-1.5,1-1.8C7.2,12,7,11.7,7.2,11.7z"></path></svg> </span> <span class="text-acces-rapides"> Assainissement </span> </a></div>
+						</div>
+						<!-- End ACCES RAPIDES -->
+					</section>
+					<!-- End A LA UNE -->
+					<!-- Start ACTUALITES -->
+					<section id="actualites">
+						<div class="center">
+							<div id="container-actus">
+								<div id="actu-principale">
+									<h1 id="title-section-actu">Actualités</h1><a href="https://www.ccterresduvaldeloire.fr/actualites/signature-de-la-convention-de-mise-a-disposition-de-locaux-du-periscolaires-de-mezieres-lez-clery/" title="Signature de la convention de mise à disposition de locaux du périscolaires de Mézières-lez-Cléry" class="bloc-actu"> <div class="img-actu"><img width="2560" height="1920" src="https://www.ccterresduvaldeloire.fr/medias/2020/07/IMG_0787-Copie-scaled.jpg" class="attachment-home_post size-home_post colorbox-11627  wp-post-image" alt="" data-object-fit="cover"></div> <div class="infos-actu"><span class="categ-actu"> Enfance et Jeunesse </span><h1 class="title-actu">Signature de la convention de mise à disposition de locaux du périscolaires de Mézières-lez-Cléry</h1><p class="intro-actu"></p></div> </a></div>
+								<!-- END big actu -->
+								<!-- START small actus -->
+								<div id="actus-secondaires"><a href="https://www.ccterresduvaldeloire.fr/actualites/__trashed-3/" title="Réouverture des Médiathèques et Bibliothèques" class="bloc-actus"> <h1 class="title-actus">Réouverture des Médiathèques et Bibliothèques</h1> <p class="intro-actus">Réouverture des Médiathèques et Bibliothèques le 22 juin.</p> </a> <a href="https://www.ccterresduvaldeloire.fr/actualites/reouverture-du-centre-aquatique-de-beaugency/" title="Réouverture du Centre Aquatique de Beaugency" class="bloc-actus"> <h1 class="title-actus">Réouverture du Centre Aquatique de Beaugency</h1> <p class="intro-actus">Le Centre Aquatique de Beaugency va ré-ouvrir ses portes le jeudi 11...</p> </a> <a href="https://www.ccterresduvaldeloire.fr/actualites/decheteries-changement-des-modalites-dacces/" title="Déchèteries : changement des modalités d’accès" class="bloc-actus"> <h1 class="title-actus">Déchèteries : changement des modalités d’accès</h1> <p class="intro-actus">Les jours d'ouvertures des déchèteries du territoire changent pour la...</p> </a> <a href="https://www.ccterresduvaldeloire.fr/systeme/actualites/" id="voir-actus" title="Voir toutes les actualités"> <span class="all__text"> Voir toutes les actualités </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="19.3px" viewbox="0 0 24 19.3" style="enable-background:new 0 0 24 19.3;" xml:space="preserve"><defs></defs><path class="fleche_droite_1_" d="M23.7,10.4C23.8,10.4,23.8,10.4,23.7,10.4C23.8,10.4,23.8,10.4,23.7,10.4c0.1-0.1,0.1-0.1,0.1-0.1
+                                c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0
+                                c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0,0
+                                c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1
+                                c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0
+                                c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l-8.1-8.3c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l6,6.2H1.3
+                                C0.6,8.3,0,8.9,0,9.6c0,0.7,0.6,1.3,1.3,1.3h18.4l-6,6.2c-0.5,0.5-0.5,1.3,0,1.8c0.3,0.2,0.6,0.4,0.9,0.4c0.3,0,0.7-0.1,0.9-0.4
+                                L23.7,10.4C23.7,10.5,23.7,10.5,23.7,10.4C23.7,10.5,23.7,10.5,23.7,10.4C23.7,10.4,23.7,10.4,23.7,10.4z"></path></svg> </a></div>
+							</div>
+						</div>
+					</section>
+					<!-- End ACTUALITES -->
+					<section id="agenda">
+						<div class="center">
+							<div id="title-section-agenda">
+								<h1>Agenda</h1><span class="prev-agenda" style="display: flex;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.2px" height="18.3px" viewbox="0 0 10.2 18.3" style="overflow:scroll;enable-background:new 0 0 10.2 18.3;" xml:space="preserve"><defs></defs><polygon class="gauche_1_" points="7.9,0 10.2,2 4.1,9.2 10.2,16.3 7.9,18.3 0,9.2 "></polygon></svg> </span> <span class="next-agenda" style="display: flex;"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.2px" height="18.3px" viewbox="0 0 10.2 18.3" style="overflow:scroll;enable-background:new 0 0 10.2 18.3;" xml:space="preserve"><defs></defs><polygon class="droite_1_" points="2.3,18.3 0,16.3 6.2,9.2 0,2 2.3,0 10.2,9.2 "></polygon></svg> </span></div>
+							<div id="container-agenda"><a class="bloc-agenda" href="https://www.ccterresduvaldeloire.fr/agenda/partir-en-livre-seance-de-lecture/" title="« Partir en livre » – Séance de lecture"> <div class="image-agenda"><img width="1600" height="600" src="https://www.ccterresduvaldeloire.fr/medias/2020/07/104722208_2862296800546601_7677372869751898450_o.jpg" class="attachment-home_agenda size-home_agenda colorbox-11635  wp-post-image" alt="" data-object-fit="cover"></div> <div class="dates-agenda"><p><span class="day-agenda"> 08 </span> <span class="month-agenda"> Juill. </span></p></div> <div class="text-agenda"><span class="lieu"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="7.2px" height="11.6px" viewbox="0 0 7.2 11.6" style="overflow:scroll;enable-background:new 0 0 7.2 11.6;" xml:space="preserve"><path class="st0" d="M3.6,5.8c-1.2,0-2.2-1-2.2-2.2s1-2.2,2.2-2.2c1.2,0,2.2,1,2.2,2.2S4.8,5.8,3.6,5.8z M3.6,0 C1.6,0,0,1.6,0,3.6c0,2,3.6,7.9,3.6,7.9s3.6-6,3.6-7.9C7.2,1.6,5.6,0,3.6,0z"></path></svg><span class="txt-lieu">Lieu : </span>Médiathèque La Pléiade – Beaugency</span><h1>« Partir en livre » – Séance de lecture</h1><p>Une séance de lecture en extérieur est proposé par les Médiathèques du Réseau de Lecture Publique.</p></div> </a> <a class="bloc-agenda" href="https://www.ccterresduvaldeloire.fr/agenda/partir-en-livre-seance-de-lecture-2/" title="« Partir en livre » – Séance de lecture"> <div class="image-agenda"><img width="1600" height="600" src="https://www.ccterresduvaldeloire.fr/medias/2020/07/104722208_2862296800546601_7677372869751898450_o.jpg" class="attachment-home_agenda size-home_agenda colorbox-11644  wp-post-image" alt="" data-object-fit="cover"></div> <div class="dates-agenda"><p><span class="day-agenda"> 15 </span> <span class="month-agenda"> Juill. </span></p></div> <div class="text-agenda"><span class="lieu"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="7.2px" height="11.6px" viewbox="0 0 7.2 11.6" style="overflow:scroll;enable-background:new 0 0 7.2 11.6;" xml:space="preserve"><path class="st0" d="M3.6,5.8c-1.2,0-2.2-1-2.2-2.2s1-2.2,2.2-2.2c1.2,0,2.2,1,2.2,2.2S4.8,5.8,3.6,5.8z M3.6,0 C1.6,0,0,1.6,0,3.6c0,2,3.6,7.9,3.6,7.9s3.6-6,3.6-7.9C7.2,1.6,5.6,0,3.6,0z"></path></svg><span class="txt-lieu">Lieu : </span>Médiathèque La Pléiade – Beaugency</span><h1>« Partir en livre » – Séance de lecture</h1><p>Une séance de lecture en extérieur est proposé par les Médiathèques du Réseau de Lecture Publique.</p></div> </a> <a class="bloc-agenda" href="https://www.ccterresduvaldeloire.fr/agenda/conseil-communautaire-du-8-octobre-2020/" title="Conseil communautaire du 8 octobre 2020"> <div class="image-agenda no-image-agenda"></div> <div class="dates-agenda"><p><span class="day-agenda"> 08 </span> <span class="month-agenda"> Oct. </span></p></div> <div class="text-agenda"><h1>Conseil communautaire du 8 octobre 2020</h1><p>Le Conseil Communautaire se réunit le jeudi 8 octobre 2020.</p></div> </a> <a class="bloc-agenda" href="https://www.ccterresduvaldeloire.fr/agenda/conseil-communautaire-du-12-novembre-2020/" title="Conseil communautaire du 12 novembre 2020"> <div class="image-agenda no-image-agenda"></div> <div class="dates-agenda"><p><span class="day-agenda"> 12 </span> <span class="month-agenda"> Nov. </span></p></div> <div class="text-agenda"><h1>Conseil communautaire du 12 novembre 2020</h1><p>Le Conseil Communautaire se réunit le jeudi 12 novembre 2020.</p></div> </a> <a class="bloc-agenda" href="https://www.ccterresduvaldeloire.fr/agenda/conseil-communautaire-du-17-decembre-2020/" title="Conseil communautaire du 17 décembre 2020"> <div class="image-agenda no-image-agenda"></div> <div class="dates-agenda"><p><span class="day-agenda"> 17 </span> <span class="month-agenda"> Déc. </span></p></div> <div class="text-agenda"><h1>Conseil communautaire du 17 décembre 2020</h1><p>Le Conseil Communautaire se réunit le jeudi 17 décembre 2020.</p></div> </a></div>
+							<div id="boutons-agenda"><a href="https://www.ccterresduvaldeloire.fr/systeme/agenda/?view=propmanif" id="bouton-proposer" title="Proposer un évènement"> <span> Proposer un évènement </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.03px" height="19.26px" viewbox="0 0 24.03 19.26" style="enable-background:new 0 0 24.03 19.26;" xml:space="preserve"><defs></defs><path class="fleche_droite_1_" d="M23.74,10.44c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.03-0.04c0,0,0.01-0.01,0.01-0.02
+                            c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.02-0.04c0-0.01,0.01-0.01,0.01-0.02c0.01-0.02,0.02-0.04,0.03-0.06
+                            c0.01-0.01,0.01-0.03,0.02-0.04c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04
+                            c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04c0-0.01,0-0.01,0-0.02
+                            c0-0.02,0.01-0.04,0.01-0.06c0-0.02,0.01-0.03,0.01-0.05c0-0.01,0-0.01,0-0.02c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05
+                            c0,0,0-0.01,0-0.01c0,0,0-0.01,0-0.01c0-0.02,0-0.03,0-0.05c0-0.02,0-0.04,0-0.06c0-0.01,0-0.01,0-0.02c0-0.02,0-0.03-0.01-0.05
+                            c0-0.02-0.01-0.04-0.01-0.06c0-0.01,0-0.01,0-0.02c0-0.01-0.01-0.03-0.01-0.04c0-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02
+                            c0-0.01-0.01-0.03-0.01-0.04c-0.01-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02c-0.01-0.01-0.01-0.03-0.02-0.04
+                            c-0.01-0.02-0.02-0.04-0.03-0.06c0-0.01-0.01-0.01-0.01-0.02C23.86,9,23.85,8.99,23.85,8.97c-0.01-0.02-0.02-0.04-0.03-0.05
+                            c0-0.01-0.01-0.01-0.01-0.02c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.02-0.02-0.03-0.03-0.05c0-0.01-0.01-0.01-0.01-0.02
+                            c-0.01-0.01-0.02-0.03-0.04-0.04c-0.01-0.01-0.02-0.02-0.03-0.03l-8.07-8.34c-0.5-0.51-1.31-0.53-1.83-0.03
+                            c-0.51,0.5-0.53,1.31-0.03,1.83l5.96,6.15H1.29C0.58,8.34,0,8.92,0,9.63c0,0.71,0.58,1.29,1.29,1.29h18.4l-5.96,6.15
+                            c-0.5,0.51-0.48,1.33,0.03,1.83c0.25,0.24,0.57,0.36,0.9,0.36c0.34,0,0.67-0.13,0.93-0.39l8.07-8.34c0.01-0.01,0.02-0.02,0.03-0.03
+                            c0.01-0.01,0.02-0.03,0.04-0.04C23.73,10.45,23.74,10.44,23.74,10.44z"></path></svg> </a> <a href="https://www.ccterresduvaldeloire.fr/systeme/agenda/" id="voir-agenda" title="Voir tous les évènements"> <span> Voir tous les évènements </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.03px" height="19.26px" viewbox="0 0 24.03 19.26" style="enable-background:new 0 0 24.03 19.26;" xml:space="preserve"><defs></defs><path class="fleche_droite_1_" d="M23.74,10.44c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.03-0.04c0,0,0.01-0.01,0.01-0.02
+                            c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.02-0.04c0-0.01,0.01-0.01,0.01-0.02c0.01-0.02,0.02-0.04,0.03-0.06
+                            c0.01-0.01,0.01-0.03,0.02-0.04c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04
+                            c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04c0-0.01,0-0.01,0-0.02
+                            c0-0.02,0.01-0.04,0.01-0.06c0-0.02,0.01-0.03,0.01-0.05c0-0.01,0-0.01,0-0.02c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05
+                            c0,0,0-0.01,0-0.01c0,0,0-0.01,0-0.01c0-0.02,0-0.03,0-0.05c0-0.02,0-0.04,0-0.06c0-0.01,0-0.01,0-0.02c0-0.02,0-0.03-0.01-0.05
+                            c0-0.02-0.01-0.04-0.01-0.06c0-0.01,0-0.01,0-0.02c0-0.01-0.01-0.03-0.01-0.04c0-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02
+                            c0-0.01-0.01-0.03-0.01-0.04c-0.01-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02c-0.01-0.01-0.01-0.03-0.02-0.04
+                            c-0.01-0.02-0.02-0.04-0.03-0.06c0-0.01-0.01-0.01-0.01-0.02C23.86,9,23.85,8.99,23.85,8.97c-0.01-0.02-0.02-0.04-0.03-0.05
+                            c0-0.01-0.01-0.01-0.01-0.02c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.02-0.02-0.03-0.03-0.05c0-0.01-0.01-0.01-0.01-0.02
+                            c-0.01-0.01-0.02-0.03-0.04-0.04c-0.01-0.01-0.02-0.02-0.03-0.03l-8.07-8.34c-0.5-0.51-1.31-0.53-1.83-0.03
+                            c-0.51,0.5-0.53,1.31-0.03,1.83l5.96,6.15H1.29C0.58,8.34,0,8.92,0,9.63c0,0.71,0.58,1.29,1.29,1.29h18.4l-5.96,6.15
+                            c-0.5,0.51-0.48,1.33,0.03,1.83c0.25,0.24,0.57,0.36,0.9,0.36c0.34,0,0.67-0.13,0.93-0.39l8.07-8.34c0.01-0.01,0.02-0.02,0.03-0.03
+                            c0.01-0.01,0.02-0.03,0.04-0.04C23.73,10.45,23.74,10.44,23.74,10.44z"></path></svg> </a></div>
+						</div>
+					</section>
+					<!-- END Agenda -->
+					<!-- START Map - Kiosque -->
+					<section id="map-kiosque">
+						<div class="center">
+							<div id="map">
+								<div class="ville-presente-cc">
+									<h1>Nos 25 communes</h1><a id="voir-liste-ville"> Voir la liste </a>
+									<div id="villes-map">
+										<ul class="liste-1-ville-cc">
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/baccon/" class="item5" title="Baccon"> Baccon </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/baule/" class="item7" title="Baule"> Baule </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/beauce-la-romaine/" class="item1" title="Beauce-la-Romaine"> Beauce-la-Romaine </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/beaugency/" class="item8" title="Beaugency"> Beaugency </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/binas/" class="item2" title="Binas"> Binas </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/chaingy/" class="item9" title="Chaingy"> Chaingy </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/charsonville/" class="item10" title="Charsonville"> Charsonville </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/coulmiers/" class="item12" title="Coulmiers"> Coulmiers </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/clery-saint-andre/" class="item11" title="Cléry-Saint-André"> Cléry-Saint-André </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/cravant/" class="item13" title="Cravant"> Cravant </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/dry/" class="item14" title="Dry"> Dry </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/epieds-en-beauce/" class="item15" title="Épieds-en-Beauce"> Épieds-en-Beauce </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/huisseau-sur-mauves/" class="item25" title="Huisseau-sur-Mauves"> Huisseau-sur-Mauves </a></li>
+										</ul>
+										<ul class="liste-2-ville-cc">
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/lailly-en-val/" class="item16" title="Lailly-en-Val"> Lailly-en-Val </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/le-bardon/" class="item6" title="Le Bardon"> Le Bardon </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/mareau-aux-pres/" class="item17" title="Mareau-aux-Prés"> Mareau-aux-Prés </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/messas/" class="item18" title="Messas"> Messas </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/meung-sur-loire/" class="item19" title="Meung-sur-Loire"> Meung-sur-Loire </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/mezieres-lez-clery/" class="item20" title="Mézières-lez-Cléry"> Mézières-lez-Cléry </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/rozieres-en-beauce/" class="item21" title="Rozières-en-Beauce"> Rozières-en-Beauce </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/saint-ay/" class="item22" title="Saint-Ay"> Saint-Ay </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/saint-laurent-des-bois/" class="item3" title="Saint-Laurent-des-Bois"> Saint-Laurent-des-Bois </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/tavers/" class="item23" title="Tavers"> Tavers </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/villermain/" class="item4" title="Villermain"> Villermain </a></li>
+											<li><a href="https://www.ccterresduvaldeloire.fr/profils/villorceau/" class="item24" title="Villorceau"> Villorceau </a></li>
+										</ul>
+									</div>
+								</div>
+								<div id="map-interactif">
+									<svg version="1.1" id="CCTVL" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 253.6 226.8" style="enable-background:new 0 0 253.6 226.8;" xml:space="preserve" class="map-commune"><a xlink:href="https://www.ccterresduvaldeloire.fr/profils/beauce-la-romaine/" target="_top" xlink:title="Beauce-la-Romaine" class="item1"> <path id="Beauce-la-Romaine" class="st0" d="M116,83.6l0.9-4.5l-12.6-12.6l-13.5-6.3v0L89,58.3l1.8-9l3.6-3.6l10.8-4.5l-4.5-1.8
+                            l0.9-2.7l8.1-8.1V16.9l-1.8,0.9l-4.5-0.9l-15.3,5.4l-12.6-3.6L56.5,3.3l-6.3-2.7l-4.5,2.7l3.6,18l-1.8,4.5l-14.4,4.5l-9.9-7.2
+                            L21.4,25l-6.3,18l2.7,7.2l1.8,1.8l0,0L9.7,66.4L8.8,71L3.4,81.8l1.8,0.9l-4.5,8.1l4.5,8.1l12.6,11.7L25,107l-0.9-4.5L32.2,71
+                            l5.4-3.6l0.9-5.4l6.3-3.6l5.4,3.6l6.3-2.7l6.3-3.6L80,65.5l-7.2,9.9l4.5,5.4l-0.9,4.5l2.7,3.6l-0.9,1.8l8.1,7.2l6.3-4.5l10.8,6.3
+                            l6.3-8.1h5.4L116,89l1.8-1.8L116,83.6z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/binas/" target="_top" xlink:title="Binas" class="item2"> <path id="Binas" class="st0" d="M57.4,103.4h2.7l18-12.6l0.9-1.8l-2.7-3.6l0.9-4.5l-4.5-5.4l7.2-9.9l-17.1-9.9l-6.3,3.6l-6.3,2.7
+                            l-5.4-3.6l-6.3,3.6l-0.9,5.4l3.6,2.7l4.5-1.8l3.6,2.7l1.8,5.4v11.7l4.5,5.4L57.4,103.4L57.4,103.4z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/saint-laurent-des-bois/" target="_top" xlink:title="Saint-Laurent-des-Bois" class="item3"> <path id="Saint-Laurent-des-Bois" class="st0" d="M50.2,128.7l4.5,3.6l5.4-6.3l5.4-6.3l9-12.6l11.7-9l-8.1-7.2l-18,12.6h-2.7
+                            l-7.2,0.9l-11.7,15.3L50.2,128.7L50.2,128.7z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/villermain/" target="_top" xlink:title="Villermain" class="item4"> <path id="Villermain" class="st0" d="M86.3,98l-11.7,9l-9,12.6l9.9,7.2l8.1-0.9l7.2,7.2h2.7l1.8-7.2l6.3-3.6l17.1-18v-2.7l2.7-3.6
+                            l-5.4-9l-0.9,2.7h-5.4l-6.3,8.1l-10.8-6.3L86.3,98L86.3,98z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/baccon/" target="_top" xlink:title="Baccon" class="item5"> <path id="Baccon" class="st0" d="M116.9,79.1l-0.9,4.5l1.8,3.6L116,89l5.4,9l-2.7,3.6v2.7l22.5,13.5l0.9-2.7h3.6l4.5-10.8l9,2.7
+                            v-5.4l-3.6-6.3l0.9-4.5l-1.8-4.5l4.5-9l-2.7-4.5l-1.8-0.9l-4.5,1.8l-9-2.7v2.7l-3.6,2.7h-7.2l-6.3-3.6L116.9,79.1L116.9,79.1z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/le-bardon/" target="_top" xlink:title="Le Bardon" class="item6"> <path id="Le_Bardon" class="st0" d="M136.8,139.5l9-2.7l9-4.5l8.1-8.1l-1.8-9l-10.8-10.8l-4.5,10.8h-3.6l-0.9,2.7L136.8,139.5z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/baule/" target="_top" xlink:title="Baule" class="item7"> <path id="Baule" class="st0" d="M159.3,162l8.1-4.5l4.5-10.8l0.9-4.5l-9-7.2l-9-2.7l-9,4.5l7.2,18L159.3,162z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/beaugency/" target="_top" xlink:title="Beaugency" class="item8"> <path id="Beaugency" class="st0" d="M153.9,191.8l3.6-9l-0.9-13.5l2.7-7.2l-6.3-7.2l-2.7,3.6l-5.4-0.9l-3.6-3.6l-3.6-6.3l-5.4,8.1
+                            l-1.8,8.1l9.9,18.9L153.9,191.8z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/chaingy/" target="_top" xlink:title="Chaingy" class="item9"> <path id="Chaingy" class="st0" d="M223.3,107l5.4-3.6l-3.6-10.8l2.7-6.3l-1.8-4.5h-2.7l-9.9-6.3l-5.4-7.2l-9-0.9l-4.5,1.8l1.8,23.4
+                            l1.8,6.3l13.5,1.8l4.5,5.4L223.3,107L223.3,107z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/charsonville/" target="_top" xlink:title="Charsonville" class="item10"> <path id="Charsonville" class="st0" d="M116.9,79.1l7.2-6.3l6.3,3.6h7.2l3.6-2.7V71l0.9-9l-9.9,2.7l-3.6-1.8l-7.2-7.2l-0.9-7.2
+                            l-15.3-7.2l-10.8,4.5l-3.6,3.6l-1.8,9l1.8,1.8l13.5,6.3L116.9,79.1L116.9,79.1z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/clery-saint-andre/" target="_top" xlink:title="Cléry-Saint-André" class="item11"> <path id="Cléry-Saint-André" class="st0" d="M208.9,165.6l3.6-2.7l0.9,1.8l6.3-1.8l-4.5-30.6l5.4-5.4v-4.5l-4.5-2.7l-27.9,19.8
+                            l13.5,13.5L208.9,165.6L208.9,165.6z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/coulmiers/" target="_top" xlink:title="Coulmiers" class="item12"> <path id="Coulmiers" class="st0" d="M166.5,47.5l-1.8,0.9l-3.6-1.8l-1.8-6.3l-10.8,6.3l-6.3,15.3l-0.9,9l9,2.7l4.5-1.8l1.8,0.9
+                            l4.5-2.7l2.7-5.4l6.3-3.6l-3.6-6.3L166.5,47.5L166.5,47.5z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/cravant/" target="_top" xlink:title="Cravant" class="item13"> <path id="Cravant" class="st0" d="M118.7,104.3l-17.1,18l-6.3,3.6l-1.8,7.2l-1.8,6.3l6.3,1.8l14.4,14.4l11.7-12.6l9.9-2.7l2.7-0.9
+                            l4.5-21.6L118.7,104.3L118.7,104.3z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/dry/" target="_top" xlink:title="Dry" class="item14"> <path id="Dry" class="st0" d="M167.4,157.5l27,21.6h2.7l6.3-3.6l5.4-9.9l-7.2-12.6l-13.5-13.5l-9.9,5.4l-6.3,1.8L167.4,157.5
+                            L167.4,157.5z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/epieds-en-beauce/" target="_top" xlink:title="Épieds-en-Beauce" class="item15"> <path id="Épieds-en-Beauce" class="st0" d="M159.3,40.3l-1.8-4.5l-9.9,0.9l-4.5-8.1l0.9-5.4l-1.8-0.9l-4.5,0.9l-4.5-9l-5.4-5.4
+                            l-9-1.8l-9,9.9v11.7l-8.1,8.1l-0.9,2.7l4.5,1.8l15.3,7.2l0.9,7.2l7.2,7.2l3.6,1.8l9.9-2.7l6.3-15.3L159.3,40.3L159.3,40.3z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/lailly-en-val/" target="_top" xlink:title="Lailly-en-Val" class="item16"> <path id="Lailly-en-Val" class="st0" d="M159.3,162l-2.7,7.2l0.9,13.5l-3.6,9l8.1,5.4l9.9,0.9l9,3.6v8.1l7.2,16.2l26.1-12.6
+                            l-4.5-5.4v-4.5l-3.6-6.3l-1.8-1.8l-4.5,0.9l-2.7-17.1h-2.7l-27-21.6L159.3,162L159.3,162z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/mareau-aux-pres/" target="_top" xlink:title="Mareau-aux-Prés" class="item17"> <path id="Mareau-aux-Prés" class="st0" d="M191.8,119.6l-7.2,7.2l3.6,3.6l-1.8,7.2l1.8,1.8l27.9-19.8l4.5,2.7l7.2,1.8l2.7-2.7
+                            l-5.4-7.2l3.6-6.3l-5.4-0.9l-7.2-0.9h-2.7L191.8,119.6L191.8,119.6z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/messas/" target="_top" xlink:title="Messas" class="item18"> <path id="Messas" class="st0" d="M136.8,139.5l-2.7,0.9l3.6,7.2l3.6,6.3l3.6,3.6l5.4,0.9l2.7-3.6l-7.2-18L136.8,139.5L136.8,139.5z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/meung-sur-loire/" target="_top" xlink:title="Meung-sur-Loire" class="item19"> <path id="Meung-sur-Loire" class="st0" d="M159.3,107l-9-2.7l10.8,10.8l1.8,9l-8.1,8.1l9,2.7l9,7.2l-0.9,4.5l6.3-1.8l9.9-5.4
+                            l-1.8-1.8l1.8-7.2l-3.6-3.6l7.2-7.2l-9-10.8l0.9-1.8l-8.1,5.4l-5.4-0.9L159.3,107L159.3,107z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/mezieres-lez-clery/" target="_top" xlink:title="Mézières-lez-Cléry" class="item20"> <path id="Mézières-lez-Cléry" class="st0" d="M219.7,162.9l4.5,4.5l11.7-0.9l9-3.6l1.8-22.5l6.3-8.1v-1.8l-14.4,3.6l-10.8-9.9
+                            l-7.2-1.8v4.5l-5.4,5.4L219.7,162.9L219.7,162.9z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/rozieres-en-beauce/" target="_top" xlink:title="Rozières-en-Beauce" class="item21"> <path id="Rozières-en-Beauce" class="st0" d="M166.5,47.5v7.2l3.6,6.3h4.5l3.6,5.4l2.7-0.9l9.9-12.6v-9L166.5,47.5z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/saint-ay/" target="_top" xlink:title="Saint-Ay" class="item22"> <path id="Saint-Ay" class="st0" d="M191.8,119.6l21.6-13.5h2.7l-4.5-5.4l-13.5-1.8l-1.8-6.3L183.7,107l-0.9,1.8L191.8,119.6z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/tavers/" target="_top" xlink:title="Tavers" class="item23"> <path id="Tavers" class="st0" d="M118.7,204.4l-0.9,1.8l18-9l4.5-14.4l-9.9-18.9l-18-0.9l-10.8,12.6l24.3,21.6L118.7,204.4
+                            L118.7,204.4z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/villorceau/" target="_top" xlink:title="Villorceau" class="item24"> <path id="Villorceau" class="st0" d="M130.5,163.8l1.8-8.1l5.4-8.1l-3.6-7.2l-9.9,2.7l-11.7,12.6l-1.8,6.3l1.8,0.9L130.5,163.8
+                            L130.5,163.8z"></path> </a> <a xlink:href="https://www.ccterresduvaldeloire.fr/profils/huisseau-sur-mauves/" target="_top" xlink:title="Huisseau-sur-Mauves" class="item25"> <path id="Huisseau-sur-Mauves" class="st0" d="M156.6,72.8l2.7,4.5l-4.5,9l1.8,4.5l-0.9,4.5l3.6,6.3v5.4l10.8,4.5l5.4,0.9l8.1-5.4
+                            l12.6-14.4l-1.8-23.4h-1.8l-5.4-4.5l-6.3,0.9l-2.7,0.9l-3.6-5.4h-4.5l-6.3,3.6l-2.7,5.4L156.6,72.8L156.6,72.8z"></path> </a></svg><a id="voir-plan" href="https://www.ccterresduvaldeloire.fr/systeme/plan-interactif/" title="Voir le Plan Interactif"> <span> Voir le plan interactif </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.03px" height="19.26px" viewbox="0 0 24.03 19.26" style="enable-background:new 0 0 24.03 19.26;" xml:space="preserve"><defs></defs><path class="fleche_droite_1_" d="M23.74,10.44c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.03-0.04c0,0,0.01-0.01,0.01-0.02
+                                c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.02-0.04c0-0.01,0.01-0.01,0.01-0.02c0.01-0.02,0.02-0.04,0.03-0.06
+                                c0.01-0.01,0.01-0.03,0.02-0.04c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04
+                                c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04c0-0.01,0-0.01,0-0.02
+                                c0-0.02,0.01-0.04,0.01-0.06c0-0.02,0.01-0.03,0.01-0.05c0-0.01,0-0.01,0-0.02c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05
+                                c0,0,0-0.01,0-0.01c0,0,0-0.01,0-0.01c0-0.02,0-0.03,0-0.05c0-0.02,0-0.04,0-0.06c0-0.01,0-0.01,0-0.02c0-0.02,0-0.03-0.01-0.05
+                                c0-0.02-0.01-0.04-0.01-0.06c0-0.01,0-0.01,0-0.02c0-0.01-0.01-0.03-0.01-0.04c0-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02
+                                c0-0.01-0.01-0.03-0.01-0.04c-0.01-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02c-0.01-0.01-0.01-0.03-0.02-0.04
+                                c-0.01-0.02-0.02-0.04-0.03-0.06c0-0.01-0.01-0.01-0.01-0.02C23.86,9,23.85,8.99,23.85,8.97c-0.01-0.02-0.02-0.04-0.03-0.05
+                                c0-0.01-0.01-0.01-0.01-0.02c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.02-0.02-0.03-0.03-0.05c0-0.01-0.01-0.01-0.01-0.02
+                                c-0.01-0.01-0.02-0.03-0.04-0.04c-0.01-0.01-0.02-0.02-0.03-0.03l-8.07-8.34c-0.5-0.51-1.31-0.53-1.83-0.03
+                                c-0.51,0.5-0.53,1.31-0.03,1.83l5.96,6.15H1.29C0.58,8.34,0,8.92,0,9.63c0,0.71,0.58,1.29,1.29,1.29h18.4l-5.96,6.15
+                                c-0.5,0.51-0.48,1.33,0.03,1.83c0.25,0.24,0.57,0.36,0.9,0.36c0.34,0,0.67-0.13,0.93-0.39l8.07-8.34c0.01-0.01,0.02-0.02,0.03-0.03
+                                c0.01-0.01,0.02-0.03,0.04-0.04C23.73,10.45,23.74,10.44,23.74,10.44z"></path></svg> </a></div>
+							</div>
+							<div id="kiosque">
+								<div id="container-kiosque">
+									<div class="title-img-kiosque">
+										<h1>Kiosque</h1>
+										<div class="kiosque-img"><img src="https://www.ccterresduvaldeloire.fr/medias/miniature-pdf/miniature-ra-2019-final_compressed-270x385.jpg" alt="Rapport d’Activité 2019"></div>
+									</div>
+									<div class="kiosque-info">
+										<h3 class="kiosque-title">Rapport d’activité 2019</h3>
+										<p class="kiosque-date">Juillet 2020</p>
+										<!--
+                            <p class="kiosque-format_poids">
+                                                            </p>
+-->
+										<div id="boutons_kiosque"><a href="https://www.ccterresduvaldeloire.fr/medias/2020/07/RA-2019-final_compressed.pdf" title="Consulter" target="_blank" class="btn-touch btn-consulter"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.3px" height="7.5px" viewbox="0 0 12.3 7.5" style="overflow:scroll;enable-background:new 0 0 12.3 7.5;" xml:space="preserve"><path class="st0" d="M6.1,7.5C2.7,7.5,0,3.9,0,3.7C0,3.6,2.7,0,6.1,0c3.4,0,6.2,3.8,6.1,3.7 C12.2,3.7,9.5,7.5,6.1,7.5z M6.1,1.2c-1.4,0-2.6,1.1-2.6,2.5c0,1.4,1.2,2.5,2.6,2.5c1.4,0,2.6-1.1,2.6-2.5C8.7,2.3,7.6,1.2,6.1,1.2z  M6.1,4.8c-0.7,0-1.2-0.5-1.2-1.2c0-0.6,0.6-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2C7.3,4.2,6.8,4.8,6.1,4.8z"></path></svg> <span> Consulter </span> </a> <a href="https://www.ccterresduvaldeloire.fr/medias/2020/07/RA-2019-final_compressed.pdf" download="Rapport d’activité 2019" class="btn-touch btn-download" title="Télécharger"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="72px" viewbox="0 0 72 72" style="overflow:scroll;enable-background:new 0 0 72 72;" xml:space="preserve"><path d="M72,45v27H0V45h9v18h54V45H72z M54,27h-9V0H27v27h-9l18,27L54,27z"></path></svg> <span> Télécharger </span> </a></div><a id="voir-publications" href="https://www.ccterresduvaldeloire.fr/systeme/base-documentaire/" title="Toutes les publications"> <span> Toutes les publications </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.03px" height="19.26px" viewbox="0 0 24.03 19.26" style="enable-background:new 0 0 24.03 19.26;" xml:space="preserve"><defs></defs><path class="fleche_droite_1_" d="M23.74,10.44c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.03-0.04c0,0,0.01-0.01,0.01-0.02
+                                    c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.02-0.04c0-0.01,0.01-0.01,0.01-0.02c0.01-0.02,0.02-0.04,0.03-0.06
+                                    c0.01-0.01,0.01-0.03,0.02-0.04c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04
+                                    c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04c0-0.01,0-0.01,0-0.02
+                                    c0-0.02,0.01-0.04,0.01-0.06c0-0.02,0.01-0.03,0.01-0.05c0-0.01,0-0.01,0-0.02c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05
+                                    c0,0,0-0.01,0-0.01c0,0,0-0.01,0-0.01c0-0.02,0-0.03,0-0.05c0-0.02,0-0.04,0-0.06c0-0.01,0-0.01,0-0.02c0-0.02,0-0.03-0.01-0.05
+                                    c0-0.02-0.01-0.04-0.01-0.06c0-0.01,0-0.01,0-0.02c0-0.01-0.01-0.03-0.01-0.04c0-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02
+                                    c0-0.01-0.01-0.03-0.01-0.04c-0.01-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02c-0.01-0.01-0.01-0.03-0.02-0.04
+                                    c-0.01-0.02-0.02-0.04-0.03-0.06c0-0.01-0.01-0.01-0.01-0.02C23.86,9,23.85,8.99,23.85,8.97c-0.01-0.02-0.02-0.04-0.03-0.05
+                                    c0-0.01-0.01-0.01-0.01-0.02c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.02-0.02-0.03-0.03-0.05c0-0.01-0.01-0.01-0.01-0.02
+                                    c-0.01-0.01-0.02-0.03-0.04-0.04c-0.01-0.01-0.02-0.02-0.03-0.03l-8.07-8.34c-0.5-0.51-1.31-0.53-1.83-0.03
+                                    c-0.51,0.5-0.53,1.31-0.03,1.83l5.96,6.15H1.29C0.58,8.34,0,8.92,0,9.63c0,0.71,0.58,1.29,1.29,1.29h18.4l-5.96,6.15
+                                    c-0.5,0.51-0.48,1.33,0.03,1.83c0.25,0.24,0.57,0.36,0.9,0.36c0.34,0,0.67-0.13,0.93-0.39l8.07-8.34c0.01-0.01,0.02-0.02,0.03-0.03
+                                    c0.01-0.01,0.02-0.03,0.04-0.04C23.73,10.45,23.74,10.44,23.74,10.44z"></path></svg> </a></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- END Map - Kiosque -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--/cdlBloc-->
+			<footer class="site-footer">
+				<div id="top-footer">
+					<div class="center">
+						<div id="logo-footer">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="387.5px" height="395.3px" viewbox="0 0 387.5 395.3" style="enable-background:new 0 0 387.5 395.3;" xml:space="preserve">
+								<defs></defs>
+								<g id="LOGO_1_">
+									<g id="picto_1_">
+										<rect x="253.3" y="291.4" class="st0" width="29.1" height="29.1"></rect>
+										<rect x="187.7" y="231.9" class="st1" width="29.1" height="29.1"></rect>
+										<g>
+											<rect x="245.1" y="366.2" class="st2" width="29.1" height="29.1"></rect>
+											<rect x="188.3" y="174.5" class="st2" width="29.1" height="29.1"></rect>
+											<rect x="289.1" y="264.4" class="st2" width="16.9" height="16.9"></rect>
+											<rect x="314.2" y="219" class="st2" width="19.7" height="19.7"></rect>
+											<rect x="279.6" y="205.9" class="st2" width="20.5" height="20.5"></rect>
+											<rect x="173.6" y="263.1" class="st2" width="18.3" height="18.3"></rect>
+											<rect x="226.2" y="284.4" class="st2" width="20.5" height="20.5"></rect>
+											<rect x="32.7" y="225.2" class="st2" width="20.5" height="20.5"></rect>
+											<rect x="198.3" y="294.5" class="st2" width="13" height="13"></rect>
+											<rect x="145.9" y="231.5" class="st2" width="18.1" height="18.1"></rect>
+											<rect x="140.6" y="183.8" class="st2" width="20.5" height="20.5"></rect>
+											<rect x="178.1" y="307.2" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="207.6" y="327.9" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="167.1" y="235.1" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="173.5" y="251.5" class="st2" width="8.8" height="8.8"></rect>
+											<rect x="228.5" y="202.9" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="128" y="255" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="106.6" y="264.4" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="153.8" y="282.3" class="st2" width="11.5" height="11.5"></rect>
+											<rect x="70.3" y="199.3" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="207.6" y="310.4" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="172.4" y="340.6" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="182.8" y="324.2" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="226.4" y="314.7" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="226.4" y="307.5" class="st2" width="5" height="5"></rect>
+											<rect x="214.2" y="303.1" class="st2" width="4.3" height="4.3"></rect>
+											<rect x="214.2" y="293" class="st2" width="7.8" height="7.8"></rect>
+											<rect x="221.3" y="246.8" class="st2" width="9" height="9"></rect>
+											<rect x="233.3" y="246.8" class="st2" width="9" height="9"></rect>
+											<rect x="246.4" y="202.8" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="146.2" y="262.8" class="st2" width="8.7" height="8.7"></rect>
+											<rect x="154.5" y="211.1" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="90.6" y="210" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="63.7" y="229.3" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="102.8" y="235.7" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="253.1" y="273.7" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="271.1" y="273.2" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="205.9" y="217.2" class="st2" width="11.5" height="11.5"></rect>
+											<rect x="245.1" y="251.2" class="st2" width="4.3" height="4.3"></rect>
+											<rect x="238.8" y="307.5" class="st2" width="7.8" height="7.8"></rect>
+											<rect x="197.2" y="223.1" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="185" y="223.1" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="156.3" y="253.2" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="154.1" y="272.8" class="st2" width="7.2" height="7.2"></rect>
+											<rect x="144.1" y="272.8" class="st2" width="5.5" height="5.5"></rect>
+											<rect x="123.9" y="271.6" class="st2" width="6.7" height="6.7"></rect>
+											<rect x="167.5" y="220.8" class="st2" width="11.2" height="11.2"></rect>
+											<rect x="111" y="247.8" class="st2" width="14.5" height="14.5"></rect>
+											<rect x="136.3" y="245.4" class="st2" width="6.3" height="6.3"></rect>
+											<rect x="145.8" y="253" class="st2" width="7.5" height="7.5"></rect>
+											<rect x="125.4" y="230.6" class="st2" width="11.8" height="11.8"></rect>
+											<rect x="139.7" y="217.1" class="st2" width="9.1" height="10.1"></rect>
+											<rect x="117.3" y="230.5" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="108.1" y="190" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="205.9" y="208.8" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="164.3" y="198.5" class="st2" width="5.4" height="5.4"></rect>
+											<rect x="140.8" y="170.4" class="st2" width="9.8" height="9.8"></rect>
+											<rect x="164.5" y="183.5" class="st2" width="9.1" height="10.1"></rect>
+											<rect x="34" y="203.1" class="st2" width="9.8" height="9.8"></rect>
+										</g>
+										<g>
+											<rect x="14" y="170.5" class="st3" width="29.1" height="29.1"></rect>
+											<rect x="84" y="170.5" class="st3" width="20.5" height="20.5"></rect>
+											<rect x="52.4" y="184" class="st3" width="14.5" height="14.5"></rect>
+											<rect x="108" y="170.6" class="st3" width="14.5" height="14.5"></rect>
+											<rect x="47.6" y="170.6" class="st3" width="9.6" height="9.6"></rect>
+											<g>
+												<rect x="246.5" y="215.4" class="st3" width="29.1" height="29.1"></rect>
+												<rect x="143" y="329.5" class="st3" width="25.8" height="25.8"></rect>
+												<rect x="226.6" y="333.5" class="st3" width="29.4" height="29.4"></rect>
+												<rect x="88.5" y="283.8" class="st3" width="23.8" height="23.8"></rect>
+												<rect x="220.6" y="221.8" class="st3" width="22" height="22"></rect>
+												<rect x="259.6" y="342.3" class="st3" width="20.5" height="20.5"></rect>
+												<rect x="82.3" y="251.3" class="st3" width="20.5" height="20.5"></rect>
+												<rect x="245.6" y="170.5" class="st3" width="20.5" height="20.5"></rect>
+												<rect x="188.3" y="206.4" class="st3" width="14.5" height="14.5"></rect>
+												<rect x="289.5" y="285.5" class="st3" width="14.5" height="14.5"></rect>
+												<rect x="228.1" y="170.6" class="st3" width="14.5" height="14.5"></rect>
+												<rect x="269.3" y="170.6" class="st3" width="14.5" height="14.5"></rect>
+											</g>
+										</g>
+										<rect x="107.9" y="198.7" class="st4" width="29.1" height="29.1"></rect>
+										<rect x="116.9" y="281.8" class="st5" width="29.1" height="29.1"></rect>
+										<path class="st6" d="M59.6,389.4c137-133,227.1-151.8,327.8-144.3l-0.3,11.2c-92.5-6.5-184.5,1-323,133H59.6z"></path>
+									</g>
+									<g id="texte_1_">
+										<g>
+											<path class="st7" d="M43.1,77.6c0,11.2,0,20.4,0.6,25.3c0.3,3.4,1,5.9,4.5,6.4c1.6,0.2,4.2,0.5,5.2,0.5c0.7,0,0.9,0.3,0.9,0.7
+                                    c0,0.6-0.6,0.9-1.9,0.9c-6.4,0-13.7-0.3-14.3-0.3c-0.6,0-7.9,0.3-11.4,0.3c-1.3,0-1.9-0.2-1.9-0.9c0-0.3,0.2-0.7,0.9-0.7
+                                    c1,0,2.4-0.2,3.5-0.5c2.3-0.5,2.9-3,3.4-6.4c0.6-4.9,0.6-14.1,0.6-25.3V28.3l-17.2,0.2c-7.2,0.1-10,0.9-11.9,3.7
+                                    c-1.3,2-1.6,2.8-2,3.6c-0.4,0.9-0.7,1.2-1.2,1.2c-0.3,0-0.6-0.4-0.6-1.1c0-1.2,2.3-11.2,2.6-12.1c0.2-0.7,0.7-2.2,1.2-2.2
+                                    c0.8,0,2,1.2,5.1,1.4c3.4,0.4,7.8,0.6,9.2,0.6h43.6c3.7,0,6.4-0.2,8.3-0.6c1.7-0.2,2.8-0.6,3.3-0.6c0.6,0,0.6,0.7,0.6,1.4
+                                    c0,3.5-0.4,11.5-0.4,12.8c0,1-0.3,1.5-0.8,1.5c-0.6,0-0.8-0.3-0.9-2L72,35c-0.3-3.5-3.1-6.2-14.3-6.4l-14.7-0.2V77.6z"></path>
+											<path class="st7" d="M92.9,57.1c0-18.2,0-21.4-0.2-25.1c-0.2-4-1.2-5.8-5-6.6c-0.9-0.2-2.9-0.4-4-0.4c-0.5,0-0.9-0.2-0.9-0.7
+                                    c0-0.7,0.6-0.9,1.9-0.9c2.7,0,5.8,0,8.4,0.1l4.8,0.2c0.8,0,24,0,26.7-0.1c2.2-0.1,4.1-0.3,5-0.6c0.6-0.1,1-0.6,1.6-0.6
+                                    c0.4,0,0.5,0.5,0.5,1c0,0.8-0.6,2.2-0.9,5.5c-0.1,1.2-0.4,6.3-0.6,7.7c-0.1,0.6-0.3,1.3-0.8,1.3c-0.7,0-0.9-0.6-0.9-1.5
+                                    c0-0.8-0.1-2.8-0.7-4.2c-0.8-1.9-2-3.3-8.3-4c-2-0.2-14.7-0.4-15.9-0.4c-0.5,0-0.7,0.4-0.7,1.2v32.1c0,0.8,0.1,1.2,0.7,1.2
+                                    c1.5,0,15.8,0,18.5-0.2c2.8-0.2,4.4-0.5,5.5-1.6c0.8-0.9,1.3-1.5,1.7-1.5c0.4,0,0.6,0.2,0.6,0.9c0,0.7-0.6,2.7-0.9,6.5
+                                    c-0.2,2.3-0.5,6.6-0.5,7.4c0,0.9,0,2.2-0.8,2.2c-0.6,0-0.8-0.5-0.8-1c0-1.2,0-2.3-0.5-3.8c-0.5-1.6-1.5-3.6-6-4.1
+                                    c-3.1-0.4-14.7-0.6-16.6-0.6c-0.6,0-0.8,0.3-0.8,0.8v10.2c0,4-0.1,17.5,0,19.9c0.3,8,2.1,9.5,13.5,9.5c3,0,8.1,0,11.2-1.3
+                                    c3-1.3,4.4-3.6,5.2-8.4c0.2-1.3,0.5-1.7,1-1.7c0.7,0,0.7,0.9,0.7,1.7c0,0.9-0.9,8.8-1.5,11.3c-0.8,3-1.7,3-6.3,3
+                                    c-8.7,0-15.1-0.2-19.7-0.4c-4.5-0.2-7.3-0.3-9.1-0.3c-0.2,0-2.2,0-4.7,0.1c-2.3,0-5,0.2-6.7,0.2c-1.3,0-1.9-0.2-1.9-0.9
+                                    c0-0.3,0.2-0.7,0.9-0.7c1.1,0,2.4-0.2,3.5-0.5c2.3-0.5,2.9-3,3.4-6.4c0.6-4.9,0.6-14.1,0.6-25.3V57.1z"></path>
+											<path class="st7" d="M155.6,57.1c0-18.2,0-21.4-0.2-25.1c-0.2-4-1.2-5.8-5-6.6c-0.9-0.2-2.9-0.4-4-0.4c-0.5,0-0.9-0.2-0.9-0.7
+                                    c0-0.7,0.6-0.9,1.9-0.9c5.2,0,12.6,0.3,13.2,0.3c1.3,0,10.1-0.3,13.7-0.3c7.3,0,15.1,0.7,21.3,5.1c2.9,2.1,8,7.8,8,15.8
+                                    c0,8.6-3.6,17.2-14.1,26.9c9.5,12.2,17.5,22.6,24.2,29.8c6.3,6.6,11.3,7.9,14.2,8.4c2.2,0.4,3.8,0.4,4.5,0.4c0.6,0,1,0.3,1,0.7
+                                    c0,0.7-0.7,0.9-2.8,0.9h-8.3c-6.5,0-9.4-0.6-12.4-2.2c-5-2.7-9.1-8.4-15.7-17.1c-4.9-6.4-10.4-14.2-12.7-17.2
+                                    c-0.5-0.5-0.8-0.7-1.5-0.7l-14.3-0.2c-0.6,0-0.8,0.3-0.8,0.9v2.8c0,11.2,0,20.4,0.6,25.3c0.3,3.4,1,5.9,4.5,6.4
+                                    c1.6,0.2,4.2,0.5,5.2,0.5c0.7,0,0.9,0.3,0.9,0.7c0,0.6-0.6,0.9-1.9,0.9c-6.4,0-13.7-0.3-14.3-0.3c-0.1,0-7.4,0.3-10.9,0.3
+                                    c-1.3,0-1.9-0.2-1.9-0.9c0-0.3,0.2-0.7,0.9-0.7c1,0,2.4-0.2,3.5-0.5c2.3-0.5,2.9-3,3.4-6.4c0.6-4.9,0.6-14.1,0.6-25.3V57.1z
+                                     M165,67.2c0,0.6,0.2,1,0.8,1.4c1.7,1,7.1,1.9,12.2,1.9c2.8,0,6.1-0.3,8.7-2.2c4.1-2.8,7.1-9.1,7.1-17.9
+                                    c0-14.6-7.7-23.3-20.1-23.3c-3.5,0-6.6,0.4-7.8,0.7c-0.6,0.2-0.9,0.7-0.9,1.4V67.2z"></path>
+											<path class="st7" d="M286.6,57.1c0-18.2,0-21.4-0.2-25.1c-0.2-4-1.2-5.8-5-6.6c-0.9-0.2-2.9-0.4-4-0.4c-0.5,0-0.9-0.2-0.9-0.7
+                                    c0-0.7,0.6-0.9,1.9-0.9c2.7,0,5.8,0,8.4,0.1l4.8,0.2c0.8,0,24,0,26.6-0.1c2.2-0.1,4.1-0.3,5-0.6c0.6-0.1,1-0.6,1.6-0.6
+                                    c0.3,0,0.5,0.5,0.5,1c0,0.8-0.6,2.2-0.9,5.5c-0.1,1.2-0.4,6.3-0.6,7.7c-0.1,0.6-0.3,1.3-0.8,1.3c-0.7,0-0.9-0.6-0.9-1.5
+                                    c0-0.8-0.1-2.8-0.7-4.2c-0.8-1.9-2-3.3-8.3-4c-2-0.2-14.7-0.4-15.9-0.4c-0.5,0-0.7,0.4-0.7,1.2v32.1c0,0.8,0.1,1.2,0.7,1.2
+                                    c1.5,0,15.8,0,18.5-0.2c2.8-0.2,4.4-0.5,5.5-1.6c0.8-0.9,1.3-1.5,1.8-1.5c0.3,0,0.6,0.2,0.6,0.9c0,0.7-0.6,2.7-0.9,6.5
+                                    c-0.2,2.3-0.5,6.6-0.5,7.4c0,0.9,0,2.2-0.8,2.2c-0.6,0-0.8-0.5-0.8-1c0-1.2,0-2.3-0.5-3.8c-0.5-1.6-1.5-3.6-6.1-4.1
+                                    c-3.1-0.4-14.7-0.6-16.6-0.6c-0.6,0-0.8,0.3-0.8,0.8v10.2c0,4-0.1,17.5,0,19.9c0.4,8,2.1,9.5,13.5,9.5c3,0,8.1,0,11.2-1.3
+                                    c3-1.3,4.4-3.6,5.2-8.4c0.2-1.3,0.5-1.7,1-1.7c0.7,0,0.7,0.9,0.7,1.7c0,0.9-0.9,8.8-1.5,11.3c-0.8,3-1.7,3-6.3,3
+                                    c-8.7,0-15.1-0.2-19.7-0.4c-4.5-0.2-7.3-0.3-9.1-0.3c-0.2,0-2.2,0-4.7,0.1c-2.3,0-5,0.2-6.7,0.2c-1.3,0-1.9-0.2-1.9-0.9
+                                    c0-0.3,0.2-0.7,0.9-0.7c1,0,2.5-0.2,3.5-0.5c2.3-0.5,2.9-3,3.4-6.4c0.6-4.9,0.6-14.1,0.6-25.3V57.1z"></path>
+											<path class="st7" d="M344.3,109.8c-1.6-0.8-1.7-1.3-1.7-4.4c0-5.8,0.5-10.5,0.6-12.3c0.1-1.3,0.4-1.9,0.9-1.9
+                                    c0.7,0,0.8,0.3,0.8,1.3c0,1,0,2.7,0.3,4.3c1.7,8.6,9.4,11.9,17.2,11.9c11.2,0,16.6-8,16.6-15.5c0-8-3.4-12.7-13.4-20.9l-5.2-4.3
+                                    c-12.3-10.1-15.1-17.3-15.1-25.3c0-12.5,9.3-20.9,24.1-20.9c4.5,0,7.9,0.5,10.8,1.2c2.2,0.5,3.1,0.6,4.1,0.6
+                                    c0.9,0,1.2,0.2,1.2,0.8c0,0.6-0.5,4.4-0.5,12.3c0,1.9-0.2,2.7-0.8,2.7c-0.7,0-0.8-0.6-0.9-1.5c-0.1-1.4-0.8-4.5-1.5-5.8
+                                    c-0.7-1.3-3.8-6.2-14.5-6.2c-8,0-14.3,5-14.3,13.5c0,6.6,3,10.8,14.2,19.6l3.3,2.6c13.7,10.8,17,18,17,27.3
+                                    c0,4.8-1.9,13.6-9.9,19.3c-5,3.5-11.3,4.9-17.6,4.9C354.4,113,349.1,112.1,344.3,109.8z"></path>
+										</g>
+										<path class="st5" d="M256.1,77.6c0,11.2,0,20.4,0.6,25.3c0.5,3.4,1,5.9,3.4,6.4c1,0.2,2.4,0.5,3.5,0.5c0.7,0,0.9,0.3,0.9,0.7
+                                c0,0.7-0.6,0.9-1.9,0.9c-3.5,0-10.8-0.3-10.9-0.3c-0.6,0-7.9,0.3-14.3,0.3c-1.3,0-1.9-0.3-1.9-0.9c0-0.3,0.2-0.7,0.9-0.7
+                                c1,0,3.6-0.2,5.2-0.5c3.5-0.5,4.2-3,4.5-6.4c0.6-4.9,0.6-14.1,0.6-25.3v-2.8c0-0.6-0.2-0.9-0.8-0.9l-14.3,0.2
+                                c-0.7,0-1,0.2-1.5,0.7c-2.3,3-7.8,10.8-12.7,17.2c-6.6,8.7-10.7,14.4-15.7,17.1c-3,1.6-5.9,2.2-12.4,2.2h-8.3
+                                c-2.1,0-2.8-0.2-2.8-0.9c0-0.3,0.5-0.7,1-0.7c0.7,0,2.3,0,4.5-0.4c2.9-0.5,7.9-1.7,14.2-8.4c6.7-7.2,14.7-17.6,24.2-29.8
+                                c-10.5-9.7-14.1-18.3-14.1-26.9c0-8,5.1-13.7,8-15.8c6.2-4.4,14-5.1,21.3-5.1c3.6,0,12.5,0.3,13.7,0.3c0.6,0,7.9-0.3,13.2-0.3
+                                c1.3,0,1.9,0.2,1.9,0.9c0,0.5-0.5,0.7-0.9,0.7c-1,0-3,0.1-4,0.4c-3.8,0.8-4.8,2.7-5,6.6c-0.2,3.7-0.2,7-0.2,25.1V77.6z
+                                 M246.8,29.2c0-0.7-0.3-1.2-0.9-1.4c-1.2-0.4-4.3-0.7-7.8-0.7c-12.5,0-20.1,8.7-20.1,23.3c0,8.8,3,15.1,7.1,17.9
+                                c2.7,1.9,5.9,2.2,8.7,2.2c5.1,0,10.5-0.8,12.2-1.9c0.6-0.3,0.8-0.8,0.8-1.4V29.2z"></path>
+										<g>
+											<path class="st7" d="M3.9,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c2,0,4.9,0.1,5.1,0.1c0.5,0,3.4-0.1,6.1-0.1c4.5,0,12.7-0.4,18.1,5.1c2.3,2.3,4.4,6.1,4.4,11.5
+                                    c0,5.7-2.3,10.1-4.9,12.7c-1.9,2-6,5.2-13.7,5.2c-1.9,0-4.3-0.1-6.3-0.3c-2-0.1-3.5-0.3-3.7-0.3c-0.1,0-0.9,0-1.8,0
+                                    c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5
+                                    c0.2-1.9,0.2-5.5,0.2-9.8V137.5z M7.7,142.4c0,4.8,0,8.9,0.1,9.8c0,1.1,0.1,2.9,0.5,3.4c0.6,0.9,2.3,1.8,7.7,1.8
+                                    c4.2,0,8.1-1.5,10.7-4.2c2.3-2.3,3.6-6.6,3.6-10.8c0-5.7-2.5-9.4-4.3-11.4c-4.2-4.5-9.4-5.1-14.8-5.1c-0.9,0-2.6,0.1-2.9,0.3
+                                    c-0.4,0.2-0.5,0.4-0.5,0.9c0,1.5,0,6.1,0,9.6V142.4z"></path>
+											<path class="st7" d="M40.4,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c2,0,4.8,0.1,5.2,0.1c0.4,0,3.1-0.1,4.5-0.1c0.5,0,0.7,0.1,0.7,0.4c0,0.2-0.2,0.3-0.4,0.3
+                                    c-0.3,0-0.6,0-1.1,0.1c-1.2,0.2-1.6,1-1.7,2.6c-0.1,1.4-0.1,2.7-0.1,9.7v6.3c0,6.5,1.4,9.3,3.4,11.1c2.2,2.1,4.2,2.5,6.8,2.5
+                                    c2.8,0,5.5-1.3,7.1-3.2c2.1-2.6,2.6-6.4,2.6-11.1v-5.6c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1
+                                    c-0.2,0-0.4-0.1-0.4-0.3c0-0.3,0.2-0.4,0.7-0.4c2,0,4.5,0.1,4.8,0.1c0.3,0,2.4-0.1,3.8-0.1c0.5,0,0.7,0.1,0.7,0.4
+                                    c0,0.2-0.2,0.3-0.4,0.3c-0.3,0-0.6,0-1.1,0.1c-1.2,0.3-1.6,1-1.7,2.6c-0.1,1.4-0.1,2.7-0.1,9.7v4.8c0,4.9-0.5,10.3-4.2,13.5
+                                    c-3.2,2.9-6.6,3.3-9.3,3.3c-1.5,0-6.1-0.2-9.3-3.2c-2.2-2.1-3.9-5.3-3.9-11.9V137.5z"></path>
+											<path class="st7" d="M100.4,153.1c2.6-6,8.7-21.8,9.7-25c0.2-0.7,0.4-1.3,0.4-1.7c0-0.4-0.1-0.8-0.6-1c-0.5-0.2-1.2-0.2-1.7-0.2
+                                    c-0.3,0-0.5,0-0.5-0.3c0-0.3,0.3-0.4,1-0.4c1.8,0,3.9,0.1,4.4,0.1c0.3,0,2.2-0.1,3.5-0.1c0.5,0,0.8,0.1,0.8,0.3s-0.2,0.3-0.5,0.3
+                                    c-0.3,0-1.3,0-2.2,0.5c-0.6,0.4-1.3,1.2-2.5,4.2c-0.5,1.3-2.8,6.7-5.1,12.2c-2.8,6.6-4.8,11.5-5.8,13.7c-1.3,2.7-1.4,3.4-1.9,3.4
+                                    c-0.5,0-0.8-0.6-1.6-2.8l-11.1-27.7c-1-2.5-1.7-3-3.2-3.5c-0.7-0.2-1.4-0.2-1.7-0.2c-0.3,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.5-0.3,1.2-0.3c2.2,0,4.7,0.1,5.3,0.1c0.5,0,2.5-0.1,4.2-0.1c0.8,0,1.2,0.1,1.2,0.3s-0.1,0.3-0.5,0.3
+                                    c-0.5,0-1.3,0-1.7,0.2c-0.5,0.2-0.6,0.6-0.6,0.9c0,0.6,0.5,2,1.2,3.7L100.4,153.1z"></path>
+											<path class="st7" d="M125,125.6c0.5-1.5,0.7-1.8,1-1.8c0.3,0,0.5,0.2,1,1.6c0.7,1.7,7.8,20.3,10.5,27.2c1.6,4,2.9,4.7,3.9,5
+                                    c0.7,0.2,1.4,0.3,1.8,0.3c0.3,0,0.5,0,0.5,0.3c0,0.3-0.4,0.4-0.9,0.4c-0.7,0-4,0-7.1-0.1c-0.9,0-1.4,0-1.4-0.3
+                                    c0-0.2,0.1-0.3,0.3-0.3c0.3-0.1,0.5-0.5,0.3-1.2l-4.2-11.1c-0.1-0.2-0.2-0.3-0.4-0.3h-9.7c-0.2,0-0.4,0.1-0.5,0.4l-2.7,8
+                                    c-0.4,1.1-0.6,2.2-0.6,3c0,0.9,0.9,1.3,1.7,1.3h0.5c0.3,0,0.5,0.1,0.5,0.3c0,0.3-0.3,0.4-0.7,0.4c-1.1,0-3-0.1-3.5-0.1
+                                    c-0.5,0-3,0.1-5.1,0.1c-0.6,0-0.9-0.1-0.9-0.4c0-0.2,0.2-0.3,0.4-0.3c0.3,0,0.9,0,1.3-0.1c2.1-0.3,3-2,3.8-4.2L125,125.6z
+                                     M129.7,143.6c0.2,0,0.2-0.1,0.2-0.3l-4.3-12.2c-0.2-0.7-0.5-0.7-0.7,0l-4,12.2c-0.1,0.2,0,0.3,0.1,0.3H129.7z"></path>
+											<path class="st7" d="M151.6,145.6c0,6.6,0.2,9.5,1,10.3c0.7,0.7,1.9,1,5.4,1c2.4,0,4.4,0,5.5-1.4c0.6-0.7,1-1.8,1.2-2.7
+                                    c0-0.4,0.1-0.6,0.4-0.6c0.2,0,0.3,0.2,0.3,0.7c0,0.5-0.3,3.2-0.7,4.5c-0.3,1-0.5,1.2-2.8,1.2c-3.2,0-5.6-0.1-7.5-0.1
+                                    c-1.9-0.1-3.3-0.1-4.6-0.1c-0.2,0-0.9,0-1.8,0c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3
+                                    c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8v-7.9c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6
+                                    c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3c0-0.3,0.2-0.4,0.7-0.4c2,0,4.9,0.1,5.1,0.1s3.5-0.1,4.9-0.1
+                                    c0.5,0,0.7,0.1,0.7,0.4c0,0.2-0.2,0.3-0.4,0.3c-0.3,0-0.9,0-1.5,0.1c-1.3,0.2-1.7,1-1.8,2.6c-0.1,1.4-0.1,2.7-0.1,9.7V145.6z"></path>
+											<path class="st7" d="M184.7,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c2,0,4.9,0.1,5.1,0.1c0.5,0,3.4-0.1,6.1-0.1c4.5,0,12.7-0.4,18.1,5.1c2.3,2.3,4.4,6.1,4.4,11.5
+                                    c0,5.7-2.3,10.1-4.9,12.7c-1.9,2-6,5.2-13.7,5.2c-1.9,0-4.3-0.1-6.3-0.3c-2-0.1-3.5-0.3-3.7-0.3c-0.1,0-0.9,0-1.8,0
+                                    c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5
+                                    c0.2-1.9,0.2-5.5,0.2-9.8V137.5z M188.5,142.4c0,4.8,0,8.9,0.1,9.8c0,1.1,0.1,2.9,0.5,3.4c0.6,0.9,2.3,1.8,7.7,1.8
+                                    c4.2,0,8.1-1.5,10.7-4.2c2.3-2.3,3.6-6.6,3.6-10.8c0-5.7-2.5-9.4-4.3-11.4c-4.2-4.5-9.4-5.1-14.8-5.1c-0.9,0-2.6,0.1-2.9,0.3
+                                    c-0.4,0.2-0.5,0.4-0.5,0.9c0,1.5,0,6.1,0,9.6V142.4z"></path>
+											<path class="st7" d="M223.4,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c1,0,2.3,0,3.2,0l1.9,0.1c0.3,0,9.3,0,10.3,0c0.9,0,1.6-0.1,1.9-0.2c0.2,0,0.4-0.2,0.6-0.2
+                                    c0.1,0,0.2,0.2,0.2,0.4c0,0.3-0.2,0.9-0.4,2.1c0,0.5-0.1,2.4-0.2,3c0,0.2-0.1,0.5-0.3,0.5c-0.3,0-0.4-0.2-0.4-0.6
+                                    c0-0.3,0-1.1-0.3-1.6c-0.3-0.7-0.8-1.3-3.2-1.5c-0.8-0.1-5.7-0.1-6.2-0.1c-0.2,0-0.3,0.1-0.3,0.5v12.5c0,0.3,0,0.5,0.3,0.5
+                                    c0.6,0,6.1,0,7.2-0.1c1.1-0.1,1.7-0.2,2.1-0.6c0.3-0.4,0.5-0.6,0.7-0.6c0.1,0,0.2,0.1,0.2,0.4c0,0.3-0.2,1-0.4,2.5
+                                    c-0.1,0.9-0.2,2.6-0.2,2.9c0,0.4,0,0.9-0.3,0.9c-0.2,0-0.3-0.2-0.3-0.4c0-0.5,0-0.9-0.2-1.5c-0.2-0.6-0.6-1.4-2.3-1.6
+                                    c-1.2-0.1-5.7-0.2-6.5-0.2c-0.2,0-0.3,0.1-0.3,0.3v4c0,1.5,0,6.8,0,7.7c0.1,3.1,0.8,3.7,5.2,3.7c1.2,0,3.2,0,4.3-0.5
+                                    c1.2-0.5,1.7-1.4,2-3.2c0.1-0.5,0.2-0.7,0.4-0.7c0.3,0,0.3,0.4,0.3,0.7c0,0.4-0.4,3.4-0.6,4.4c-0.3,1.2-0.7,1.2-2.4,1.2
+                                    c-3.4,0-5.9-0.1-7.6-0.1c-1.8-0.1-2.8-0.1-3.5-0.1c-0.1,0-0.9,0-1.8,0c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4
+                                    c0-0.1,0.1-0.3,0.4-0.3c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8V137.5z"></path>
+											<path class="st7" d="M264.8,145.6c0,6.6,0.2,9.5,1,10.3c0.7,0.7,1.9,1,5.4,1c2.4,0,4.4,0,5.5-1.4c0.6-0.7,1-1.8,1.2-2.7
+                                    c0-0.4,0.1-0.6,0.4-0.6c0.2,0,0.3,0.2,0.3,0.7c0,0.5-0.3,3.2-0.7,4.5c-0.3,1-0.5,1.2-2.8,1.2c-3.2,0-5.6-0.1-7.5-0.1
+                                    c-1.9-0.1-3.3-0.1-4.6-0.1c-0.2,0-0.9,0-1.9,0c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3
+                                    c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8v-7.9c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6
+                                    c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3c0-0.3,0.2-0.4,0.7-0.4c2,0,4.9,0.1,5.1,0.1c0.2,0,3.5-0.1,4.9-0.1
+                                    c0.5,0,0.7,0.1,0.7,0.4c0,0.2-0.2,0.3-0.4,0.3c-0.3,0-0.9,0-1.5,0.1c-1.3,0.2-1.7,1-1.8,2.6c-0.1,1.4-0.1,2.7-0.1,9.7V145.6z"></path>
+											<path class="st7" d="M297.1,123.8c10.2,0,17.7,6.4,17.7,16.9c0,10.1-7.1,18.5-18,18.5c-12.4,0-17.5-9.6-17.5-17.7
+                                    C279.3,134.2,284.6,123.8,297.1,123.8z M298,157.5c4.1,0,12.5-2.3,12.5-15.5c0-10.8-6.6-16.6-13.7-16.6c-7.5,0-13.2,5-13.2,14.8
+                                    C283.6,150.7,289.9,157.5,298,157.5z"></path>
+											<path class="st7" d="M325.9,145.5c0,4.3,0,7.9,0.2,9.8c0.1,1.3,0.4,2.3,1.8,2.5c0.6,0.1,1.6,0.2,2,0.2c0.3,0,0.4,0.1,0.4,0.3
+                                    c0,0.2-0.2,0.4-0.7,0.4c-2.5,0-5.3-0.1-5.5-0.1c-0.2,0-3.1,0.1-4.4,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3
+                                    c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8v-7.9c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.5-2.5
+                                    c-0.5-0.1-1.1-0.2-1.4-0.2c-0.2,0-0.4-0.1-0.4-0.3c0-0.3,0.2-0.4,0.7-0.4c1.5,0,4.3,0.1,4.6,0.1c0.2,0,3.1-0.1,4.4-0.1
+                                    c0.5,0,0.7,0.1,0.7,0.4c0,0.2-0.2,0.3-0.4,0.3c-0.3,0-0.6,0-1.1,0.1c-1.2,0.2-1.6,1-1.7,2.6c-0.1,1.4-0.1,2.7-0.1,9.7V145.5z"></path>
+											<path class="st7" d="M339.7,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c2,0,4.9,0.1,5.1,0.1c0.5,0,3.9-0.1,5.3-0.1c2.8,0,5.9,0.3,8.3,2c1.1,0.8,3.1,3,3.1,6.1
+                                    c0,3.3-1.4,6.7-5.5,10.4c3.7,4.7,6.8,8.8,9.4,11.6c2.4,2.6,4.4,3.1,5.5,3.2c0.9,0.1,1.5,0.1,1.8,0.1c0.2,0,0.4,0.1,0.4,0.3
+                                    c0,0.3-0.3,0.4-1.1,0.4h-3.2c-2.5,0-3.7-0.2-4.8-0.9c-1.9-1-3.5-3.2-6.1-6.6c-1.9-2.5-4-5.5-4.9-6.7c-0.2-0.2-0.3-0.3-0.6-0.3
+                                    l-5.5-0.1c-0.2,0-0.3,0.1-0.3,0.4v1.1c0,4.3,0,7.9,0.2,9.8c0.1,1.3,0.4,2.3,1.8,2.5c0.6,0.1,1.6,0.2,2,0.2c0.3,0,0.4,0.1,0.4,0.3
+                                    c0,0.2-0.2,0.4-0.7,0.4c-2.5,0-5.3-0.1-5.5-0.1c0,0-2.9,0.1-4.2,0.1c-0.5,0-0.7-0.1-0.7-0.4c0-0.1,0.1-0.3,0.4-0.3
+                                    c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8V137.5z M343.3,141.5c0,0.2,0.1,0.4,0.3,0.5
+                                    c0.7,0.4,2.8,0.7,4.7,0.7c1.1,0,2.3-0.1,3.4-0.9c1.6-1.1,2.8-3.5,2.8-6.9c0-5.6-3-9-7.8-9c-1.4,0-2.6,0.1-3,0.3
+                                    c-0.2,0.1-0.4,0.3-0.4,0.5V141.5z"></path>
+											<path class="st7" d="M371.5,137.5c0-7,0-8.3-0.1-9.7c-0.1-1.5-0.5-2.3-1.9-2.6c-0.4-0.1-1.1-0.1-1.5-0.1c-0.2,0-0.4-0.1-0.4-0.3
+                                    c0-0.3,0.2-0.4,0.7-0.4c1,0,2.3,0,3.2,0l1.9,0.1c0.3,0,9.3,0,10.3,0c0.9,0,1.6-0.1,1.9-0.2c0.2,0,0.4-0.2,0.6-0.2
+                                    c0.1,0,0.2,0.2,0.2,0.4c0,0.3-0.2,0.9-0.4,2.1c0,0.5-0.1,2.4-0.2,3c0,0.2-0.1,0.5-0.3,0.5c-0.3,0-0.4-0.2-0.4-0.6
+                                    c0-0.3,0-1.1-0.3-1.6c-0.3-0.7-0.8-1.3-3.2-1.5c-0.8-0.1-5.7-0.1-6.2-0.1c-0.2,0-0.3,0.1-0.3,0.5v12.5c0,0.3,0,0.5,0.3,0.5
+                                    c0.6,0,6.1,0,7.2-0.1c1.1-0.1,1.7-0.2,2.1-0.6c0.3-0.4,0.5-0.6,0.7-0.6c0.1,0,0.2,0.1,0.2,0.4c0,0.3-0.2,1-0.4,2.5
+                                    c-0.1,0.9-0.2,2.6-0.2,2.9c0,0.4,0,0.9-0.3,0.9c-0.2,0-0.3-0.2-0.3-0.4c0-0.5,0-0.9-0.2-1.5c-0.2-0.6-0.6-1.4-2.3-1.6
+                                    c-1.2-0.1-5.7-0.2-6.5-0.2c-0.2,0-0.3,0.1-0.3,0.3v4c0,1.5,0,6.8,0,7.7c0.1,3.1,0.8,3.7,5.2,3.7c1.2,0,3.2,0,4.3-0.5
+                                    c1.2-0.5,1.7-1.4,2-3.2c0.1-0.5,0.2-0.7,0.4-0.7c0.3,0,0.3,0.4,0.3,0.7c0,0.4-0.4,3.4-0.6,4.4c-0.3,1.2-0.7,1.2-2.4,1.2
+                                    c-3.4,0-5.9-0.1-7.6-0.1c-1.8-0.1-2.8-0.1-3.5-0.1c-0.1,0-0.9,0-1.8,0c-0.9,0-1.9,0.1-2.6,0.1c-0.5,0-0.7-0.1-0.7-0.4
+                                    c0-0.1,0.1-0.3,0.4-0.3c0.4,0,0.9-0.1,1.4-0.2c0.9-0.2,1.1-1.2,1.3-2.5c0.2-1.9,0.2-5.5,0.2-9.8V137.5z"></path>
+										</g>
+										<g>
+											<path class="st7" d="M145.6,12.9c-1.5-1.3-1.8-3-1.8-4.5c0-1,0.3-2.8,1.7-4.1c0.9-0.9,2.3-1.6,4.6-1.6c0.6,0,1.4,0,2.2,0.2
+                                    c0.6,0.1,1.1,0.2,1.5,0.2c0.2,0,0.2,0.1,0.2,0.2c0,0.1,0,0.3-0.1,0.8c0,0.5,0,1.3,0,1.6c0,0.2,0,0.3-0.1,0.3
+                                    c-0.1,0-0.1-0.1-0.1-0.3c0-0.6-0.2-1.2-0.6-1.5c-0.5-0.5-1.7-0.9-3-0.9c-2,0-2.9,0.6-3.5,1.1c-1.1,1.1-1.4,2.4-1.4,3.9
+                                    c0,2.9,2.2,5.5,5.5,5.5c1.1,0,2-0.1,2.6-0.8c0.3-0.3,0.5-1,0.6-1.3c0-0.2,0.1-0.2,0.2-0.2c0.1,0,0.1,0.1,0.1,0.2
+                                    c0,0.1-0.2,1.4-0.3,1.9c-0.1,0.3-0.1,0.3-0.4,0.4c-0.6,0.2-1.8,0.3-2.7,0.3C148.3,14.5,146.8,13.9,145.6,12.9z"></path>
+											<path class="st7" d="M160.9,2.6c3.4,0,5.9,2.1,5.9,5.7c0,3.4-2.4,6.2-6,6.2c-4.1,0-5.9-3.2-5.9-5.9C155,6.1,156.8,2.6,160.9,2.6z
+                                     M161.3,13.9c1.4,0,4.2-0.8,4.2-5.2c0-3.6-2.2-5.6-4.6-5.6c-2.5,0-4.4,1.7-4.4,5C156.4,11.6,158.5,13.9,161.3,13.9z"></path>
+											<path class="st7" d="M180.9,12.3c0.1,0.5,0.2,1.4,0.8,1.6c0.4,0.1,0.8,0.1,1,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.3,0-2,0-2.5-0.1c-0.3,0-0.4-0.1-0.4-0.2c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.3,0.1-0.5L179,5.6h0l-3.7,7.9
+                                    c-0.3,0.7-0.4,0.8-0.5,0.8c-0.1,0-0.2-0.2-0.5-0.7c-0.4-0.7-1.7-3.4-1.8-3.5c-0.1-0.3-1.8-3.9-2-4.3h-0.1l-0.6,7
+                                    c0,0.2,0,0.5,0,0.8c0,0.2,0.2,0.4,0.4,0.5c0.3,0.1,0.5,0.1,0.6,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.6,0-1.3,0-1.4,0c-0.1,0-0.9,0-1.3,0c-0.2,0-0.3,0-0.3-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.5,0c0.5-0.1,0.5-0.7,0.6-1.3
+                                    l1.1-9.8c0-0.2,0.1-0.3,0.2-0.3c0.1,0,0.2,0.1,0.2,0.2l4.6,9.5l4.4-9.5c0.1-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.4
+                                    L180.9,12.3z"></path>
+											<path class="st7" d="M196,12.3c0.1,0.5,0.2,1.4,0.8,1.6c0.4,0.1,0.8,0.1,1,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.3,0-2,0-2.5-0.1c-0.3,0-0.4-0.1-0.4-0.2c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.3,0.1-0.5l-0.7-7.8h0l-3.7,7.9
+                                    c-0.3,0.7-0.4,0.8-0.5,0.8c-0.1,0-0.2-0.2-0.5-0.7c-0.4-0.7-1.7-3.4-1.8-3.5c-0.1-0.3-1.8-3.9-2-4.3h-0.1l-0.6,7
+                                    c0,0.2,0,0.5,0,0.8c0,0.2,0.2,0.4,0.4,0.5c0.3,0.1,0.5,0.1,0.6,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.6,0-1.3,0-1.4,0c-0.1,0-0.9,0-1.3,0c-0.2,0-0.3,0-0.3-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.5,0c0.5-0.1,0.5-0.7,0.6-1.3
+                                    l1.1-9.8c0-0.2,0.1-0.3,0.2-0.3c0.1,0,0.2,0.1,0.2,0.2l4.6,9.5l4.4-9.5c0.1-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.4L196,12.3z
+                                    "></path>
+											<path class="st7" d="M199,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.6-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.6,0,1.7,0c0.1,0,1,0,1.5,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v2.1c0,2.2,0.5,3.1,1.1,3.7c0.7,0.7,1.4,0.8,2.3,0.8c0.9,0,1.8-0.4,2.4-1.1
+                                    c0.7-0.9,0.9-2.1,0.9-3.7V7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.1-0.8-0.6-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.5,0,1.6,0c0.1,0,0.8,0,1.3,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v1.6c0,1.6-0.2,3.4-1.4,4.5c-1.1,1-2.2,1.1-3.1,1.1c-0.5,0-2-0.1-3.1-1.1
+                                    c-0.7-0.7-1.3-1.8-1.3-4V7.2z"></path>
+											<path class="st7" d="M212,12.2c0,1.2,0.2,1.6,0.6,1.8c0.3,0.1,0.6,0.1,0.8,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.9,0-1.5,0-1.6,0c-0.1,0-0.8,0-1.5,0c-0.1,0-0.2,0-0.2-0.1c0-0.1,0-0.1,0.1-0.1c0.1,0,0.4,0,0.6-0.1c0.4-0.1,0.5-0.5,0.5-1.9
+                                    l0-8.7c0-0.6,0-0.8,0.2-0.8c0.1,0,0.4,0.3,0.5,0.5c0.2,0.3,2.5,2.7,4.8,5.2c1.5,1.6,3.1,3.4,3.6,3.9l-0.2-7.7
+                                    c0-1-0.1-1.3-0.6-1.4c-0.3-0.1-0.6-0.1-0.7-0.1c-0.1,0-0.1,0-0.1-0.1c0-0.1,0.1-0.1,0.3-0.1c0.7,0,1.4,0,1.6,0s0.7,0,1.3,0
+                                    c0.2,0,0.3,0,0.3,0.1c0,0.1-0.1,0.1-0.2,0.1c-0.1,0-0.2,0-0.4,0C221,3.2,221,3.5,221,4.5l0,8.9c0,1,0,1.1-0.1,1.1
+                                    c-0.1,0-0.3-0.2-1.1-1c-0.2-0.2-2.3-2.4-3.9-4.1c-1.8-1.9-3.5-3.8-3.9-4.3L212,12.2z"></path>
+											<path class="st7" d="M227.3,3.2c0.2-0.5,0.2-0.6,0.3-0.6c0.1,0,0.2,0.1,0.3,0.5c0.2,0.6,2.6,6.8,3.5,9.1c0.5,1.3,1,1.6,1.3,1.7
+                                    c0.2,0.1,0.5,0.1,0.6,0.1c0.1,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.3,0.1c-0.2,0-1.3,0-2.4,0c-0.3,0-0.5,0-0.5-0.1
+                                    c0-0.1,0-0.1,0.1-0.1c0.1,0,0.2-0.2,0.1-0.4l-1.4-3.7c0-0.1-0.1-0.1-0.1-0.1h-3.2c-0.1,0-0.1,0-0.2,0.1l-0.9,2.7
+                                    c-0.1,0.4-0.2,0.7-0.2,1c0,0.3,0.3,0.4,0.6,0.4h0.2c0.1,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.2,0.1c-0.4,0-1,0-1.2,0
+                                    c-0.2,0-1,0-1.7,0c-0.2,0-0.3,0-0.3-0.1c0-0.1,0.1-0.1,0.1-0.1c0.1,0,0.3,0,0.4,0c0.7-0.1,1-0.7,1.3-1.4L227.3,3.2z M228.9,9.3
+                                    c0.1,0,0.1,0,0.1-0.1l-1.4-4.1c-0.1-0.2-0.2-0.2-0.2,0L226,9.2c0,0.1,0,0.1,0,0.1H228.9z"></path>
+											<path class="st7" d="M234.1,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.6,0,1.7,0c0.1,0,1,0,1.5,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v2.1c0,2.2,0.5,3.1,1.1,3.7c0.7,0.7,1.4,0.8,2.3,0.8c0.9,0,1.8-0.4,2.4-1.1
+                                    c0.7-0.9,0.9-2.1,0.9-3.7V7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.5,0,1.6,0c0.1,0,0.8,0,1.3,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v1.6c0,1.6-0.2,3.4-1.4,4.5c-1.1,1-2.2,1.1-3.1,1.1c-0.5,0-2-0.1-3.1-1.1
+                                    c-0.7-0.7-1.3-1.8-1.3-4V7.2z"></path>
+											<path class="st7" d="M250,9.9c0,1.4,0,2.6,0.1,3.3c0,0.4,0.1,0.8,0.6,0.8c0.2,0,0.5,0.1,0.7,0.1c0.1,0,0.1,0,0.1,0.1
+                                    c0,0.1-0.1,0.1-0.2,0.1c-0.8,0-1.8,0-1.9,0c-0.1,0-1,0-1.5,0c-0.2,0-0.2,0-0.2-0.1c0,0,0-0.1,0.1-0.1c0.1,0,0.3,0,0.5-0.1
+                                    c0.3-0.1,0.4-0.4,0.4-0.8c0.1-0.6,0.1-1.8,0.1-3.3V3.5l-2.2,0c-0.9,0-1.3,0.1-1.5,0.5c-0.2,0.3-0.2,0.4-0.3,0.5
+                                    c0,0.1-0.1,0.2-0.2,0.2c0,0-0.1,0-0.1-0.1c0-0.2,0.3-1.4,0.3-1.6c0-0.1,0.1-0.3,0.2-0.3c0.1,0,0.3,0.2,0.7,0.2
+                                    c0.4,0,1,0.1,1.2,0.1h5.7c0.5,0,0.8,0,1.1-0.1c0.2,0,0.4-0.1,0.4-0.1c0.1,0,0.1,0.1,0.1,0.2c0,0.5,0,1.5,0,1.7
+                                    c0,0.1,0,0.2-0.1,0.2c-0.1,0-0.1,0-0.1-0.3l0-0.2c0-0.5-0.4-0.8-1.9-0.8l-1.9,0V9.9z"></path>
+											<path class="st7" d="M256.4,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.6-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.3,0,0.8,0,1.1,0l0.6,0c0.1,0,3.1,0,3.5,0c0.3,0,0.5,0,0.6-0.1c0.1,0,0.1-0.1,0.2-0.1
+                                    c0,0,0.1,0.1,0.1,0.1c0,0.1-0.1,0.3-0.1,0.7c0,0.2,0,0.8-0.1,1c0,0.1,0,0.2-0.1,0.2c-0.1,0-0.1-0.1-0.1-0.2c0-0.1,0-0.4-0.1-0.5
+                                    c-0.1-0.2-0.3-0.4-1.1-0.5c-0.3,0-1.9,0-2.1,0c-0.1,0-0.1,0-0.1,0.2v4.2c0,0.1,0,0.2,0.1,0.2c0.2,0,2.1,0,2.4,0
+                                    c0.4,0,0.6-0.1,0.7-0.2c0.1-0.1,0.2-0.2,0.2-0.2c0,0,0.1,0,0.1,0.1c0,0.1-0.1,0.3-0.1,0.8c0,0.3-0.1,0.9-0.1,1
+                                    c0,0.1,0,0.3-0.1,0.3c-0.1,0-0.1-0.1-0.1-0.1c0-0.2,0-0.3-0.1-0.5c-0.1-0.2-0.2-0.5-0.8-0.5c-0.4,0-1.9-0.1-2.2-0.1
+                                    c-0.1,0-0.1,0-0.1,0.1v1.3c0,0.5,0,2.3,0,2.6c0,1,0.3,1.2,1.8,1.2c0.4,0,1.1,0,1.5-0.2c0.4-0.2,0.6-0.5,0.7-1.1
+                                    c0-0.2,0.1-0.2,0.1-0.2c0.1,0,0.1,0.1,0.1,0.2c0,0.1-0.1,1.1-0.2,1.5c-0.1,0.4-0.2,0.4-0.8,0.4c-1.1,0-2,0-2.6,0
+                                    c-0.6,0-1,0-1.2,0c0,0-0.3,0-0.6,0c-0.3,0-0.6,0-0.9,0c-0.2,0-0.2,0-0.2-0.1c0,0,0-0.1,0.1-0.1c0.1,0,0.3,0,0.5-0.1
+                                    c0.3-0.1,0.4-0.4,0.4-0.8c0.1-0.6,0.1-1.8,0.1-3.3V7.2z M260.8,0.8c0.1,0.1,0,0.2-0.1,0.2c0,0-0.2,0-0.5,0
+                                    c-0.7,0.1-1.8,0.4-2.3,0.6c-0.1,0-0.2,0.1-0.2,0.1c0,0-0.1,0-0.1-0.1c0,0,0-0.1,0.1-0.1c0.5-0.4,1.9-1.2,2.1-1.3
+                                    c0.3-0.2,0.3-0.2,0.4-0.2c0,0,0.1,0,0.2,0.1C260.5,0.3,260.6,0.5,260.8,0.8z"></path>
+											<path class="st7" d="M269,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.6,0,1.7,0c0.2,0,1.1,0,2,0c1.5,0,4.3-0.1,6.1,1.7c0.8,0.8,1.5,2,1.5,3.8c0,1.9-0.8,3.4-1.6,4.3
+                                    c-0.7,0.7-2,1.7-4.6,1.7c-0.6,0-1.4,0-2.1-0.1c-0.7,0-1.2-0.1-1.3-0.1c0,0-0.3,0-0.6,0c-0.3,0-0.6,0-0.9,0c-0.2,0-0.2,0-0.2-0.1
+                                    c0,0,0-0.1,0.1-0.1c0.1,0,0.3,0,0.5-0.1c0.3-0.1,0.4-0.4,0.4-0.8c0.1-0.6,0.1-1.8,0.1-3.3V7.2z M270.3,8.9c0,1.6,0,3,0,3.3
+                                    c0,0.4,0,1,0.2,1.1c0.2,0.3,0.8,0.6,2.6,0.6c1.4,0,2.7-0.5,3.6-1.4c0.8-0.8,1.2-2.2,1.2-3.6c0-1.9-0.8-3.2-1.5-3.8
+                                    c-1.4-1.5-3.1-1.7-4.9-1.7c-0.3,0-0.9,0-1,0.1c-0.1,0.1-0.2,0.1-0.2,0.3c0,0.5,0,2.1,0,3.2V8.9z"></path>
+											<path class="st7" d="M282,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.3,0,0.8,0,1.1,0l0.6,0c0.1,0,3.1,0,3.5,0c0.3,0,0.5,0,0.6-0.1c0.1,0,0.1-0.1,0.2-0.1
+                                    c0,0,0.1,0.1,0.1,0.1c0,0.1-0.1,0.3-0.1,0.7c0,0.2,0,0.8-0.1,1c0,0.1,0,0.2-0.1,0.2c-0.1,0-0.1-0.1-0.1-0.2c0-0.1,0-0.4-0.1-0.5
+                                    c-0.1-0.2-0.3-0.4-1.1-0.5c-0.3,0-1.9,0-2.1,0c-0.1,0-0.1,0-0.1,0.2v4.2c0,0.1,0,0.2,0.1,0.2c0.2,0,2.1,0,2.4,0
+                                    c0.4,0,0.6-0.1,0.7-0.2c0.1-0.1,0.2-0.2,0.2-0.2c0,0,0.1,0,0.1,0.1c0,0.1-0.1,0.3-0.1,0.8c0,0.3-0.1,0.9-0.1,1
+                                    c0,0.1,0,0.3-0.1,0.3c-0.1,0-0.1-0.1-0.1-0.1c0-0.2,0-0.3-0.1-0.5c-0.1-0.2-0.2-0.5-0.8-0.5c-0.4,0-1.9-0.1-2.2-0.1
+                                    c-0.1,0-0.1,0-0.1,0.1v1.3c0,0.5,0,2.3,0,2.6c0,1,0.3,1.2,1.8,1.2c0.4,0,1.1,0,1.5-0.2c0.4-0.2,0.6-0.5,0.7-1.1
+                                    c0-0.2,0.1-0.2,0.1-0.2c0.1,0,0.1,0.1,0.1,0.2c0,0.1-0.1,1.1-0.2,1.5c-0.1,0.4-0.2,0.4-0.8,0.4c-1.1,0-2,0-2.6,0
+                                    c-0.6,0-1,0-1.2,0c0,0-0.3,0-0.6,0c-0.3,0-0.6,0-0.9,0c-0.2,0-0.2,0-0.2-0.1c0,0,0-0.1,0.1-0.1c0.1,0,0.3,0,0.5-0.1
+                                    c0.3-0.1,0.4-0.4,0.4-0.8c0.1-0.6,0.1-1.8,0.1-3.3V7.2z"></path>
+											<path class="st7" d="M294.7,12.9c-1.5-1.3-1.8-3-1.8-4.5c0-1,0.3-2.8,1.7-4.1c0.9-0.9,2.3-1.6,4.6-1.6c0.6,0,1.5,0,2.2,0.2
+                                    c0.6,0.1,1.1,0.2,1.5,0.2c0.2,0,0.2,0.1,0.2,0.2c0,0.1,0,0.3-0.1,0.8c0,0.5,0,1.3,0,1.6c0,0.2,0,0.3-0.1,0.3
+                                    c-0.1,0-0.1-0.1-0.1-0.3c0-0.6-0.2-1.2-0.6-1.5c-0.5-0.5-1.7-0.9-3-0.9c-2,0-2.9,0.6-3.5,1.1c-1.1,1.1-1.4,2.4-1.4,3.9
+                                    c0,2.9,2.2,5.5,5.5,5.5c1.1,0,2-0.1,2.6-0.8c0.3-0.3,0.5-1,0.6-1.3c0-0.2,0.1-0.2,0.2-0.2c0.1,0,0.1,0.1,0.1,0.2
+                                    c0,0.1-0.2,1.4-0.3,1.9c-0.1,0.3-0.1,0.3-0.4,0.4c-0.6,0.2-1.8,0.3-2.7,0.3C297.4,14.5,295.9,13.9,294.7,12.9z"></path>
+											<path class="st7" d="M310,2.6c3.4,0,5.9,2.1,5.9,5.7c0,3.4-2.4,6.2-6,6.2c-4.1,0-5.9-3.2-5.9-5.9C304.1,6.1,305.9,2.6,310,2.6z
+                                     M310.4,13.9c1.4,0,4.2-0.8,4.2-5.2c0-3.6-2.2-5.6-4.6-5.6c-2.5,0-4.4,1.7-4.4,5C305.5,11.6,307.6,13.9,310.4,13.9z"></path>
+											<path class="st7" d="M330,12.3c0.1,0.5,0.2,1.4,0.8,1.6c0.4,0.1,0.8,0.1,1,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.3,0-2,0-2.5-0.1c-0.3,0-0.4-0.1-0.4-0.2c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.3,0.1-0.5l-0.7-7.8h0l-3.7,7.9
+                                    c-0.3,0.7-0.4,0.8-0.5,0.8c-0.1,0-0.2-0.2-0.5-0.7c-0.4-0.7-1.7-3.4-1.8-3.5c-0.1-0.3-1.8-3.9-2-4.3h-0.1l-0.6,7
+                                    c0,0.2,0,0.5,0,0.8c0,0.2,0.2,0.4,0.4,0.5c0.3,0.1,0.5,0.1,0.6,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.6,0-1.3,0-1.4,0c-0.1,0-0.9,0-1.3,0c-0.2,0-0.3,0-0.3-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.5,0c0.5-0.1,0.5-0.7,0.6-1.3
+                                    l1.1-9.8c0-0.2,0.1-0.3,0.2-0.3c0.1,0,0.2,0.1,0.2,0.2l4.6,9.5l4.4-9.5c0.1-0.1,0.1-0.2,0.2-0.2c0.1,0,0.1,0.1,0.2,0.4L330,12.3z
+                                    "></path>
+											<path class="st7" d="M345.1,12.3c0.1,0.5,0.2,1.4,0.8,1.6c0.4,0.1,0.8,0.1,1,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.3,0-2,0-2.5-0.1c-0.3,0-0.4-0.1-0.4-0.2c0-0.1,0-0.1,0.1-0.1c0.1,0,0.1-0.3,0.1-0.5l-0.7-7.8h0l-3.7,7.9
+                                    c-0.3,0.7-0.4,0.8-0.5,0.8c-0.1,0-0.2-0.2-0.5-0.7c-0.4-0.7-1.7-3.4-1.8-3.5c-0.1-0.3-1.8-3.9-2-4.3h-0.1l-0.6,7
+                                    c0,0.2,0,0.5,0,0.8c0,0.2,0.2,0.4,0.4,0.5c0.3,0.1,0.5,0.1,0.6,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.6,0-1.3,0-1.4,0c-0.1,0-0.9,0-1.3,0c-0.2,0-0.3,0-0.3-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.5,0c0.5-0.1,0.5-0.7,0.6-1.3
+                                    l1.1-9.8c0-0.2,0.1-0.3,0.2-0.3c0.1,0,0.2,0.1,0.2,0.2l4.6,9.5l4.4-9.5c0.1-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.1,0.2,0.4
+                                    L345.1,12.3z"></path>
+											<path class="st7" d="M348.1,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.6,0,1.7,0c0.1,0,1,0,1.5,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v2.1c0,2.2,0.5,3.1,1.1,3.7c0.7,0.7,1.4,0.8,2.3,0.8c0.9,0,1.8-0.4,2.4-1.1
+                                    c0.7-0.9,0.9-2.1,0.9-3.7V7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.7-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.7,0,1.5,0,1.6,0c0.1,0,0.8,0,1.3,0c0.2,0,0.2,0,0.2,0.1c0,0.1-0.1,0.1-0.1,0.1c-0.1,0-0.2,0-0.4,0
+                                    c-0.4,0.1-0.5,0.3-0.6,0.9c0,0.5,0,0.9,0,3.3v1.6c0,1.6-0.2,3.4-1.4,4.5c-1.1,1-2.2,1.1-3.1,1.1c-0.5,0-2-0.1-3.1-1.1
+                                    c-0.7-0.7-1.3-1.8-1.3-4V7.2z"></path>
+											<path class="st7" d="M361.1,12.2c0,1.2,0.2,1.6,0.6,1.8c0.3,0.1,0.6,0.1,0.8,0.1c0.1,0,0.1,0,0.1,0.1c0,0.1-0.1,0.1-0.3,0.1
+                                    c-0.9,0-1.5,0-1.6,0c-0.1,0-0.8,0-1.5,0c-0.2,0-0.2,0-0.2-0.1c0-0.1,0-0.1,0.1-0.1c0.1,0,0.4,0,0.6-0.1c0.4-0.1,0.5-0.5,0.5-1.9
+                                    l0-8.7c0-0.6,0-0.8,0.2-0.8c0.1,0,0.4,0.3,0.5,0.5c0.2,0.3,2.5,2.7,4.8,5.2c1.5,1.6,3.1,3.4,3.6,3.9l-0.2-7.7
+                                    c0-1-0.1-1.3-0.6-1.4c-0.3-0.1-0.6-0.1-0.7-0.1c-0.1,0-0.1,0-0.1-0.1c0-0.1,0.1-0.1,0.3-0.1c0.7,0,1.4,0,1.6,0c0.2,0,0.7,0,1.3,0
+                                    c0.2,0,0.3,0,0.3,0.1c0,0.1-0.1,0.1-0.2,0.1c-0.1,0-0.2,0-0.4,0c-0.5,0.1-0.6,0.4-0.6,1.3l0,8.9c0,1,0,1.1-0.1,1.1
+                                    c-0.1,0-0.3-0.2-1.1-1c-0.2-0.2-2.3-2.4-3.9-4.1c-1.8-1.9-3.5-3.8-3.9-4.3L361.1,12.2z"></path>
+											<path class="st7" d="M374.3,7.2c0-2.4,0-2.8,0-3.3c0-0.5-0.2-0.8-0.6-0.9c-0.1,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.1-0.1
+                                    c0-0.1,0.1-0.1,0.2-0.1c0.3,0,0.8,0,1.1,0l0.6,0c0.1,0,3.1,0,3.5,0c0.3,0,0.5,0,0.6-0.1c0.1,0,0.1-0.1,0.2-0.1
+                                    c0,0,0.1,0.1,0.1,0.1c0,0.1-0.1,0.3-0.1,0.7c0,0.2,0,0.8-0.1,1c0,0.1,0,0.2-0.1,0.2c-0.1,0-0.1-0.1-0.1-0.2c0-0.1,0-0.4-0.1-0.5
+                                    c-0.1-0.2-0.3-0.4-1.1-0.5c-0.3,0-1.9,0-2.1,0c-0.1,0-0.1,0-0.1,0.2v4.2c0,0.1,0,0.2,0.1,0.2c0.2,0,2.1,0,2.4,0
+                                    c0.4,0,0.6-0.1,0.7-0.2c0.1-0.1,0.2-0.2,0.2-0.2c0,0,0.1,0,0.1,0.1c0,0.1-0.1,0.3-0.1,0.8c0,0.3-0.1,0.9-0.1,1
+                                    c0,0.1,0,0.3-0.1,0.3c-0.1,0-0.1-0.1-0.1-0.1c0-0.2,0-0.3-0.1-0.5c-0.1-0.2-0.2-0.5-0.8-0.5c-0.4,0-1.9-0.1-2.2-0.1
+                                    c-0.1,0-0.1,0-0.1,0.1v1.3c0,0.5,0,2.3,0,2.6c0,1,0.3,1.2,1.8,1.2c0.4,0,1.1,0,1.5-0.2c0.4-0.2,0.6-0.5,0.7-1.1
+                                    c0-0.2,0.1-0.2,0.1-0.2c0.1,0,0.1,0.1,0.1,0.2c0,0.1-0.1,1.1-0.2,1.5c-0.1,0.4-0.2,0.4-0.8,0.4c-1.1,0-2,0-2.6,0
+                                    c-0.6,0-1,0-1.2,0c0,0-0.3,0-0.6,0c-0.3,0-0.6,0-0.9,0c-0.2,0-0.2,0-0.2-0.1c0,0,0-0.1,0.1-0.1c0.1,0,0.3,0,0.5-0.1
+                                    c0.3-0.1,0.4-0.4,0.4-0.8c0.1-0.6,0.1-1.8,0.1-3.3V7.2z"></path>
+											<path class="st7" d="M381.7,14.1c-0.2-0.1-0.2-0.2-0.2-0.6c0-0.8,0.1-1.4,0.1-1.6c0-0.2,0-0.2,0.1-0.2c0.1,0,0.1,0,0.1,0.2
+                                    c0,0.1,0,0.3,0,0.6c0.2,1.1,1.2,1.5,2.2,1.5c1.5,0,2.2-1,2.2-2c0-1-0.4-1.6-1.7-2.7l-0.7-0.6c-1.6-1.3-2-2.3-2-3.3
+                                    c0-1.6,1.2-2.7,3.1-2.7c0.6,0,1,0.1,1.4,0.2c0.3,0.1,0.4,0.1,0.5,0.1c0.1,0,0.2,0,0.2,0.1c0,0.1-0.1,0.6-0.1,1.6
+                                    c0,0.2,0,0.3-0.1,0.3c-0.1,0-0.1-0.1-0.1-0.2c0-0.2-0.1-0.6-0.2-0.8c-0.1-0.2-0.5-0.8-1.9-0.8c-1,0-1.9,0.6-1.9,1.8
+                                    c0,0.9,0.4,1.4,1.8,2.5l0.4,0.3c1.8,1.4,2.2,2.3,2.2,3.5c0,0.6-0.2,1.8-1.3,2.5c-0.6,0.5-1.5,0.6-2.3,0.6
+                                    C383.1,14.5,382.4,14.4,381.7,14.1z"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div id="adresse-horaires-footer">
+							<div id="adresse-footer">
+								<h1>Communauté de Communes des Terres du Val de Loire</h1>
+								<p id="adresse">32, rue du Général de Gaulle</p>
+								<p id="postal">45130 Meung-Sur-Loire</p><a id="tel" href="tel:0238451111"> Tél. : +33 (0)2 38 45 11 11 </a> <a id="bouton-contact" href="https://www.ccterresduvaldeloire.fr/systeme/contact/"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.92px" height="12.29px" viewbox="0 0 17.92 12.29" style="enable-background:new 0 0 17.92 12.29;" xml:space="preserve"><defs></defs><path id="mail_1_" d="M11.92,6.42l6-5.74v10.95L11.92,6.42z M17.2,0H0.72l8.24,7.86L17.2,0z M0,0.65v10.98l6.01-5.21L0,0.65z
+                            M8.96,9.25L6.73,7.11l-5.97,5.18h16.4l-5.96-5.18L8.96,9.25z"></path></svg> <span> Nous contacter </span> </a></div>
+							<div id="horaires-footer">
+								<h3>Horaires d'ouverture</h3>
+								<p class="footer-infos__texte">Du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 16h30</p>
+							</div>
+						</div>
+						<div id="newsletter-social-footer"><a id="newsletter-footer" title="Newsletter" href="https://www.ccterresduvaldeloire.fr/systeme/newsletters/"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.8px" height="18.9px" viewbox="0 0 18.8 18.9" style="enable-background:new 0 0 18.8 18.9;" xml:space="preserve"><style type="text/css">
+                            .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                        </style><defs></defs><path id="newsletter_1_" class="st0" d="M18.8,0L0,8.2l6.3,3.4L18.6,0.3L8.1,12.6l7.2,3.9L18.8,0z M9.4,15L5.9,13v5.9L9.4,15z"></path></svg> <div id="infos-newsletter"><h1>Newsletter</h1><p>Restez informés des dernières infos intercommunales en vous abonnant à la lettre d’information</p></div> </a>
+							<div id="social-footer"><a href="https://www.facebook.com/CCTVL4541/" id="bouton-facebook" title="Facebook" target="_blank"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6.4px" height="12.7px" viewbox="0 0 6.4 12.7" style="enable-background:new 0 0 6.4 12.7;" xml:space="preserve"><defs></defs><path id="Facebook_1_" d="M6.2,4.4H4.3V3.1c0.1-1.2,2.1-1,2.1-1l0-0.1l0,0V0.1h0v0h0c-0.1,0-3.9-0.9-4.6,2l0,0c0,0,0,0,0,0
+                                c-0.1,0.4-0.1,2-0.1,2.2H0v2.2h1.7v6.1h2.5V6.6h1.9l0.2-2.2L6.2,4.4z"></path></svg> </a> <a href="https://twitter.com/CCTVL4541" id="bouton-twitter" title="Twitter" target="_blank"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.5px" height="12.6px" viewbox="0 0 15.5 12.6" style="enable-background:new 0 0 15.5 12.6;" xml:space="preserve"><defs></defs><path id="Twitter_1_" d="M15.5,1.5c-0.6,0.3-1.2,0.4-1.8,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2,0.8c-0.6-0.6-1.4-1-2.3-1
+                                C9,0,7.5,1.4,7.5,3.2c0,0.2,0,0.5,0.1,0.7C5,3.8,2.6,2.5,1.1,0.6c-0.3,0.5-0.4,1-0.4,1.6c0,1.1,0.6,2.1,1.4,2.6
+                                c-0.5,0-1-0.2-1.4-0.4c0,0,0,0,0,0c0,1.5,1.1,2.8,2.5,3.1C2.9,7.6,2.6,7.7,2.3,7.7c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.2,3,2.2
+                                c-1.1,0.9-2.5,1.4-3.9,1.4c-0.3,0-0.5,0-0.8,0c1.4,0.9,3.1,1.4,4.9,1.4c5.8,0,9-4.8,9-9c0-0.1,0-0.3,0-0.4C14.5,2.7,15,2.1,15.5,1.5
+                                z"></path></svg> </a> <a href="https://www.ccterresduvaldeloire.fr/nos-sites/" id="bouton-sites" title="Nos Sites"> <span> Nos sites </span> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.03px" height="19.26px" viewbox="0 0 24.03 19.26" style="enable-background:new 0 0 24.03 19.26;" xml:space="preserve"><defs></defs><path id="fleche_droite_1_" d="M23.74,10.44c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.03-0.04c0,0,0.01-0.01,0.01-0.02
+                                c0.01-0.02,0.02-0.03,0.03-0.05c0.01-0.01,0.02-0.03,0.02-0.04c0-0.01,0.01-0.01,0.01-0.02c0.01-0.02,0.02-0.04,0.03-0.06
+                                c0.01-0.01,0.01-0.03,0.02-0.04c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04
+                                c0-0.01,0-0.01,0.01-0.02c0.01-0.02,0.01-0.04,0.02-0.06c0-0.01,0.01-0.03,0.01-0.04c0-0.01,0-0.01,0-0.02
+                                c0-0.02,0.01-0.04,0.01-0.06c0-0.02,0.01-0.03,0.01-0.05c0-0.01,0-0.01,0-0.02c0-0.02,0-0.04,0-0.06c0-0.02,0-0.03,0-0.05
+                                c0,0,0-0.01,0-0.01c0,0,0-0.01,0-0.01c0-0.02,0-0.03,0-0.05c0-0.02,0-0.04,0-0.06c0-0.01,0-0.01,0-0.02c0-0.02,0-0.03-0.01-0.05
+                                c0-0.02-0.01-0.04-0.01-0.06c0-0.01,0-0.01,0-0.02c0-0.01-0.01-0.03-0.01-0.04c0-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02
+                                c0-0.01-0.01-0.03-0.01-0.04c-0.01-0.02-0.01-0.04-0.02-0.06c0-0.01,0-0.01-0.01-0.02c-0.01-0.01-0.01-0.03-0.02-0.04
+                                c-0.01-0.02-0.02-0.04-0.03-0.06c0-0.01-0.01-0.01-0.01-0.02C23.86,9,23.85,8.99,23.85,8.97c-0.01-0.02-0.02-0.04-0.03-0.05
+                                c0-0.01-0.01-0.01-0.01-0.02c-0.01-0.01-0.02-0.03-0.03-0.04c-0.01-0.02-0.02-0.03-0.03-0.05c0-0.01-0.01-0.01-0.01-0.02
+                                c-0.01-0.01-0.02-0.03-0.04-0.04c-0.01-0.01-0.02-0.02-0.03-0.03l-8.07-8.34c-0.5-0.51-1.31-0.53-1.83-0.03
+                                c-0.51,0.5-0.53,1.31-0.03,1.83l5.96,6.15H1.29C0.58,8.34,0,8.92,0,9.63c0,0.71,0.58,1.29,1.29,1.29h18.4l-5.96,6.15
+                                c-0.5,0.51-0.48,1.33,0.03,1.83c0.25,0.24,0.57,0.36,0.9,0.36c0.34,0,0.67-0.13,0.93-0.39l8.07-8.34c0.01-0.01,0.02-0.02,0.03-0.03
+                                c0.01-0.01,0.02-0.03,0.04-0.04C23.73,10.45,23.74,10.44,23.74,10.44z"></path></svg> </a></div>
+						</div>
+					</div>
+				</div>
+				<div id="bottom-footer">
+					<div class="center">
+						<ul id="menu-menu-footer" class="footer-menu">
+							<li id="menu-item-7060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7060 item-1"><a title="Accès SADSI" href="https://www.ccterresduvaldeloire.fr/droits-des-sols-sadsi/">Accès SADSI</a></li>
+							<li id="menu-item-7061" class="imprimer menu-item menu-item-type-custom menu-item-object-custom menu-item-7061 item-2"><a href="javascript:window.print()" title="Imprimer">Imprimer</a></li>
+							<li id="menu-item-7062" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7062 item-3"><a title="Mentions légales" href="https://www.ccterresduvaldeloire.fr/systeme/mentions-legales/">Mentions légales</a></li>
+							<li id="menu-item-7065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7065 item-4"><a title="© Creasit" target="_blank" href="https://www.creasit.fr/">© Creasit</a></li>
+							<li id="menu-item-7063" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-privacy-policy menu-item-7063 item-5"><a title="Confidentialité" href="https://www.ccterresduvaldeloire.fr/systeme/politique-de-confidentialite/">Confidentialité</a></li>
+							<li id="menu-item-7073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7073 item-6"><a title="Extranet" href="https://www.ccterresduvaldeloire.fr/extranet/">Extranet</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		
+			</script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/Accessibility/toolbar-min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/ui/core.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/ui/widget.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/ui/position.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/ui/menu.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+			<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-url.min.js">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js">' + 'ipt>' );
+			</script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/dom-ready.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/dist/a11y.min.js"></script>
+			<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+			</script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/recherche.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/js/scripts.js"></script>
+			<script type="text/javascript" src="https://www.ccterresduvaldeloire.fr/wp-content/themes/cctvdl/js/objectFitPolyfill.min.js"></script>
+			<script type="text/javascript">
+				jQuery(function($) {
+			
+						$("#a-la-une .a-la-une-image").trigger("play", (8 * 1000));
+						$("#a-la-une .a-la-une-image").trigger("configuration", ["auto.timeoutDuration", (8 * 1000), true]);
+					});
+			
+			</script>
+			<script type="text/javascript">
+            if(accessibilitytoolbar.isTouchDevice(navigator.userAgent || navigator.vendor || window.opera) && !accessibilitytoolbar.inIframe()){
+              accessibilitytoolbar.start();
+            }
+        
+			</script>
+			<!-- Matomo -->
+			<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.ccterresduvaldeloire.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+			</script>
+			<!-- End Matomo Code -->
+			<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'fr', includedLanguages: 'de,en,ar,eu,ca,zh-CN,zh-TW,co,ko,da,es,el,it,ja,la,nl,no,pl,pt,ro,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+	</body>
+</html>
