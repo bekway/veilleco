@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if IE 6]>
+<html id="ie6" lang="fr-FR">
+<![endif]--><!--[if IE 7]>
+<html id="ie7" lang="fr-FR">
+<![endif]--><!--[if IE 8]>
+<html id="ie8" lang="fr-FR">
+<![endif]--><!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html lang="fr-FR">
+	<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="pingback" href="http://www.cc-valdamboise.fr/xmlrpc.php">
+		<script src="http://www.cc-valdamboise.fr/wp-content/themes/Divi-child/js/custom.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-88560471-1', 'auto');
+	  ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+		
+	/**
+	 * Animation du sous menu avec Javascript
+	**/
+	jQuery(document).ready(function($){
+		// Images des tuiles cliquables 
+		$(".bloc_accueil").on("click", "p", function( ) {
+			window.location = $(this).find("a").attr("href");
+		});
+		// retour haut de page animation douce
+		$(".bottom-to-top").click(function(){
+			$("html,body").animate({scrollTop: "0px"}, 1500);
+		});
+		// Clic sur élément pour remonter en haut de l'affichage
+		$("h5.et_pb_toggle_title").click(function(){
+			var offset_top = $(this).offset().top-$("header").height()-$("div.et_pb_ariane").height()-$("div#titre-1-page").height();
+			$("html,body").animate({scrollTop: offset_top}, 500);
+		});
+		// Sur le slider, ajout d'un bouton pour réduire la taille de celui-ci
+		setTimeout(function() {
+			$("div.et_pb_slider p > strong").append('<span class="retrecir_slider" onclick="agir_taille_slider($(this));">O');
+		},1500);
+		
+		// Stockage des références des différents éléments dans des variables
+		rocket1     = $('.sous-menu-dans-page');
+		rocket2     = $('#actus');
+		LAST_SCROLL_OFFSET = $(window).scrollTop();
+		LAST_SCROLL_TIME   = new Date().getTime();
+		
+		// On déclenche un événement scroll pour mettre à jour le positionnement au chargement de la page
+		$(window).trigger('scroll');
+		
+		$(window).scroll(function(event){
+			// Calcul de la marge entre le haut du document et #rocket_mobile
+			fixedLimit = rocket1.offset().top - parseFloat(rocket1.css('marginTop').replace(/auto/,0));
+			fixedLimit = $("div.et_pb_section_1:first").offset().top - $("header").height()-$("div.et_pb_ariane").height()-$("div#titre-1-page").height();
+		
+			// Valeur de défilement lors du chargement de la page
+			windowScroll = $(window).scrollTop();
+			
+			// Mise à jour du positionnement en fonction du scroll
+			if( windowScroll >= fixedLimit ){
+				rocket1.addClass('fixed');
+				rocket2.addClass('fixed');
+			} else {
+				rocket1.removeClass('fixed');
+				rocket2.removeClass('fixed');
+			}
+			
+			// Mise à jour variables
+			LAST_SCROLL_OFFSET = windowScroll;
+			LAST_SCROLL_TIME   = new Date().getTime();
+		});
+		
+		
+	});
+		</script>
+		<script type="text/javascript">
+	$('.sous-menu-dans-page a').click( function() {
+		var page = $(this).attr('href'); 
+		var speed = 750; // gérer la vitesse de défilement
+        
+        // Ici on retranche la hauteur du bandeau (200px dans ta feuille de styles)
+		$('html, body').animate( { scrollTop: $(page).offset().top - 200 }, speed );
+		return false;
+	});
+		</script>
+		<script type="text/javascript">
+		document.documentElement.className = 'js';
+		</script>
+		<script>var et_site_url='http://www.cc-valdamboise.fr';var et_post_id='143';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+		</script>
+		<title>Communauté de communes | CC du Val d'Amboise</title>
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="alternate" type="application/rss+xml" title="CC du Val d'Amboise » Flux" href="http://www.cc-valdamboise.fr/feed/">
+		<link rel="alternate" type="application/rss+xml" title="CC du Val d'Amboise » Flux des commentaires" href="http://www.cc-valdamboise.fr/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.cc-valdamboise.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		
+		</script>
+		<meta content="Divi-child v." name="generator">
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+		</style>
+		<link rel="stylesheet" id="wp-block-library-css" href="http://www.cc-valdamboise.fr/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="cookie-notice-front-css" href="http://www.cc-valdamboise.fr/wp-content/plugins/cookie-notice/css/front.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="dlm-frontend-css" href="http://www.cc-valdamboise.fr/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="parent-style-css" href="http://www.cc-valdamboise.fr/wp-content/themes/Divi/style.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="divi-style-css" href="http://www.cc-valdamboise.fr/wp-content/themes/Divi-child/style.css?ver=4.0.9" type="text/css" media="all">
+		<link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="http://fonts.googleapis.com/css?family=Lato%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&ver=5.4.2#038;subset=latin,latin-ext,cyrillic,greek,vietnamese,greek-ext,cyrillic-ext" type="text/css" media="all">
+		<link rel="stylesheet" id="dashicons-css" href="http://www.cc-valdamboise.fr/wp-includes/css/dashicons.min.css?ver=5.4.2" type="text/css" media="all">
+		<script type="text/javascript">
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"http:\/\/www.cc-valdamboise.fr\/wp-admin\/admin-ajax.php","nonce":"40f2d68b08","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"0","coronabarActive":"0"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-content/plugins/cookie-notice/js/front.min.js?ver=1.3.1"></script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var et_core_api_spam_recaptcha = {"site_key":"","page_action":{"action":"communautecommunes"}};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-content/themes/Divi/core/admin/js/recaptcha.js?ver=5.4.2"></script>
+		<link rel="https://api.w.org/" href="http://www.cc-valdamboise.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.cc-valdamboise.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cc-valdamboise.fr/wp-includes/wlwmanifest.xml">
+		<meta name="generator" content="WordPress 5.4.2">
+		<link rel="canonical" href="http://www.cc-valdamboise.fr/connaitre/communaute-communes/">
+		<link rel="shortlink" href="http://www.cc-valdamboise.fr/?p=143">
+		<link rel="alternate" type="application/json+oembed" href="http://www.cc-valdamboise.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.cc-valdamboise.fr%2Fconnaitre%2Fcommunaute-communes%2F">
+		<link rel="alternate" type="text/xml+oembed" href="http://www.cc-valdamboise.fr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.cc-valdamboise.fr%2Fconnaitre%2Fcommunaute-communes%2F&format=xml">
+		<style>
+	#category-posts-9-internal ul {padding: 0;}
+#category-posts-9-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-9-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-9-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-9-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-9-internal .cat-post-title {font-size: 15px;}
+#category-posts-9-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-9-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-9-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-9-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-9-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-9-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-9-internal p {margin:5px 0 0 0}
+#category-posts-9-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-9-internal .dashicons {vertical-align:middle;}
+#category-posts-9-internal .cat-post-thumbnail .cat-post-crop img {object-fit: cover;max-width:100%;}
+#category-posts-9-internal .cat-post-thumbnail .cat-post-crop-not-supported img {width:100%;}
+#category-posts-9-internal .cat-post-thumbnail {max-width:100%;}
+#category-posts-9-internal .cat-post-item img {margin: initial;}
+#category-posts-9-internal .cat-post-thumbnail {float:left;}
+#category-posts-2-internal ul {padding: 0;}
+#category-posts-2-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-2-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-2-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-2-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-2-internal .cat-post-title {font-size: 15px;}
+#category-posts-2-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-2-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-2-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-2-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-2-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-2-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-2-internal p {margin:5px 0 0 0}
+#category-posts-2-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-2-internal .dashicons {vertical-align:middle;}
+#category-posts-3-internal ul {padding: 0;}
+#category-posts-3-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-3-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-3-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-3-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-3-internal .cat-post-title {font-size: 15px;}
+#category-posts-3-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-3-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-3-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-3-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-3-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-3-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-3-internal p {margin:5px 0 0 0}
+#category-posts-3-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-3-internal .dashicons {vertical-align:middle;}
+#category-posts-4-internal ul {padding: 0;}
+#category-posts-4-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-4-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-4-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-4-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-4-internal .cat-post-title {font-size: 15px;}
+#category-posts-4-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-4-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-4-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-4-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-4-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-4-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-4-internal p {margin:5px 0 0 0}
+#category-posts-4-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-4-internal .dashicons {vertical-align:middle;}
+#category-posts-7-internal ul {padding: 0;}
+#category-posts-7-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-7-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-7-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-7-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-7-internal .cat-post-title {font-size: 15px;}
+#category-posts-7-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-7-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-7-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-7-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-7-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-7-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-7-internal p {margin:5px 0 0 0}
+#category-posts-7-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-7-internal .dashicons {vertical-align:middle;}
+#category-posts-8-internal ul {padding: 0;}
+#category-posts-8-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-8-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-8-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-8-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-8-internal .cat-post-title {font-size: 15px;}
+#category-posts-8-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-8-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-8-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-8-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-8-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-8-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-8-internal p {margin:5px 0 0 0}
+#category-posts-8-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-8-internal .dashicons {vertical-align:middle;}
+#category-posts-6-internal ul {padding: 0;}
+#category-posts-6-internal .cat-post-item img {max-width: initial; max-height: initial; margin: initial;}
+#category-posts-6-internal .cat-post-author {margin-bottom: 0;}
+#category-posts-6-internal .cat-post-thumbnail {margin: 5px 10px 5px 0;}
+#category-posts-6-internal .cat-post-item:before {content: ""; clear: both;}
+#category-posts-6-internal .cat-post-title {font-size: 15px;}
+#category-posts-6-internal .cat-post-current .cat-post-title {font-weight: bold; text-transform: uppercase;}
+#category-posts-6-internal .cat-post-date {font-size: 14px; line-height: 18px; font-style: italic; margin-bottom: 5px;}
+#category-posts-6-internal .cat-post-comment-num {font-size: 14px; line-height: 18px;}
+#category-posts-6-internal .cat-post-item {border-bottom: 1px solid #ccc;	list-style: none; list-style-type: none; margin: 3px 0;	padding: 3px 0;}
+#category-posts-6-internal .cat-post-item:last-child {border-bottom: none;}
+#category-posts-6-internal .cat-post-item:after {content: ""; display: table;	clear: both;}
+#category-posts-6-internal p {margin:5px 0 0 0}
+#category-posts-6-internal li > div {margin:5px 0 0 0; clear:both;}
+#category-posts-6-internal .dashicons {vertical-align:middle;}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="icon" href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/cropped-favicon-32x32.png" sizes="32x32">
+		<link rel="icon" href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/cropped-favicon-192x192.png" sizes="192x192">
+		<link rel="apple-touch-icon" href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/cropped-favicon-180x180.png">
+		<meta name="msapplication-TileImage" content="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/cropped-favicon-270x270.png">
+		<link rel="stylesheet" id="et-core-unified-143-cached-inline-styles" href="http://www.cc-valdamboise.fr/wp-content/et-cache/143/et-core-unified-143-15941141305847.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)">
+		<link rel="stylesheet" href="http://ccvala.odns.fr/wordpress/wp-content/themes/Divi-child/style.css?ver=2.6.1" type="text/css" media="screen">
+		<link rel="stylesheet" href="http://ccvala.odns.fr/wordpress/wp-content/themes/Divi-child/styles_print.css" type="text/css" media="print">
+	</head>
+	<body class="page-template-default page page-id-143 page-child parent-pageid-118 cookies-not-set et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters2 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div id="page-container">
+			<header id="main-header" data-height-onload="100">
+				<div class="container clearfix et_menu_container">
+					<div class="logo_container"><span class="logo_helper"></span> <a href="http://www.cc-valdamboise.fr/"> <img src="http://ccvala.odns.fr/wordpress/wp-content/uploads/2016/08/valdamboise.fr_.png" alt="CC du Val d'Amboise" id="logo" data-height-percentage="100"> </a>
+						<p id="slogan">Le site officiel de la communauté de communes</p>
+					</div>
+					<div id="search-social-container">
+						<!-- Partage réseaux sociaux + impression + mail-->
+						<div id="social"><a href="http://www.facebook.com/sharer.php?u=http://www.cc-valdamboise.fr/connaitre/communaute-communes/&t=Communaut%C3%A9%20de%20communes" target="blank" id="facebook">&#57491;</a> <a href="http://twitter.com/share" target="blank" data-url="http://www.cc-valdamboise.fr/connaitre/communaute-communes/" data-via="CC du Val d'Amboise" data-text="Communauté de communes" id="twitter">&#57492;</a> <a href="javascript:window.print()" id="print">&#57594;</a> <a rel="nofollow" href="mailto:?subject=Sur%20CC%20du%20Val%20d%26amp%3B%23039%3BAmboise%20%3A%20Communaut%C3%A9%20de%20communes&body=Je%20recommande%20cette%20page%20%3A%20Communaut%C3%A9%20de%20communes.%20Consultable%20%C3%A0%20cette%20adresse%20%3A%20http%3A%2F%2Fwww.cc-valdamboise.fr%2Fconnaitre%2Fcommunaute-communes%2F">&#57360;</a></div>
+						<!--Recherche-->
+						<form method="get" id="searchform" action="http://www.cc-valdamboise.fr/">
+							<div><input type="text" size="18" value="" name="s" id="s"> <input type="submit" id="searchsubmit" value="U"></div>
+						</form>
+					</div>
+					<div id="et-top-navigation" data-height="100" data-fixed-height="40">
+						<nav id="top-menu-nav">
+							<ul id="top-menu" class="nav et_disable_top_tier">
+								<li id="menu-item-287" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-287"><a href="#">Connaître</a>
+									<ul class="sub-menu">
+										<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="http://www.cc-valdamboise.fr/connaitre/territoire/">Territoire</a></li>
+										<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a href="http://www.cc-valdamboise.fr/connaitre/communes/">Communes</a></li>
+										<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-143 current_page_item menu-item-189"><a href="http://www.cc-valdamboise.fr/connaitre/communaute-communes/" aria-current="page">Communauté de communes</a></li>
+										<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="http://www.cc-valdamboise.fr/connaitre/services-communautaires/">Services communautaires</a></li>
+										<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="http://www.cc-valdamboise.fr/connaitre/grands-projets/">Grands projets</a></li>
+										<li id="menu-item-4715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4715"><a href="http://www.cc-valdamboise.fr/connaitre/finances/">Finances</a></li>
+										<li id="menu-item-8335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8335"><a href="http://www.cc-valdamboise.fr/connaitre/donnees-personnelles/">Données personnelles</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-288"><a href="#">Habiter</a>
+									<ul class="sub-menu">
+										<li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><a href="http://www.cc-valdamboise.fr/habiter/equipements-communautaires/">Équipements communautaires</a></li>
+										<li id="menu-item-205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"><a href="http://www.cc-valdamboise.fr/habiter/entourage/">Entour’âge</a></li>
+										<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="http://www.cc-valdamboise.fr/habiter/habitat-logement/">Habitat-logement</a></li>
+										<li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="http://www.cc-valdamboise.fr/habiter/urbanisme/">Urbanisme & planification</a></li>
+										<li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771"><a href="http://www.cc-valdamboise.fr/habiter/voirie/">Voirie</a></li>
+										<li id="menu-item-338" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-338"><a href="http://www.cc-valdamboise.fr/habiter/assainissement/">Assainissement</a></li>
+										<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="http://www.cc-valdamboise.fr/habiter/eau-potable/">Eau potable</a></li>
+										<li id="menu-item-2491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2491"><a href="http://www.cc-valdamboise.fr/habiter/transition-energetique/">Transition énergétique</a></li>
+										<li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a href="http://www.cc-valdamboise.fr/habiter/dechets-menagers/">Déchets ménagers</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-289"><a href="#">Grandir</a>
+									<ul class="sub-menu">
+										<li id="menu-item-198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a href="http://www.cc-valdamboise.fr/grandir/petite-enfance/">Petite enfance : de 0 à 3 ans</a></li>
+										<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="http://www.cc-valdamboise.fr/grandir/enfance/">Enfance : de 4 à 11 ans</a></li>
+										<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="http://www.cc-valdamboise.fr/grandir/jeunesse/">Jeunesse : de 12 à 17 ans</a></li>
+										<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201"><a href="http://www.cc-valdamboise.fr/grandir/parents/">Parents</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-290"><a href="#">Entreprendre</a>
+									<ul class="sub-menu">
+										<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="http://www.cc-valdamboise.fr/entreprendre/offre-fonciere-immobiliere/">Offre foncière & immobilière</a></li>
+										<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="http://www.cc-valdamboise.fr/entreprendre/action-aides-economiques/">Action & aides économiques</a></li>
+										<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://www.cc-valdamboise.fr/entreprendre/mise-en-reseau/">Mise en réseau</a></li>
+										<li id="menu-item-3917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"><a href="http://www.cc-valdamboise.fr/entreprendre/agriculture-viticulture/">Agriculture & viticulture</a></li>
+										<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="http://www.cc-valdamboise.fr/entreprendre/carte-des-infrastructures/">Carte des infrastructures</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-291" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-291"><a href="#">Sortir</a>
+									<ul class="sub-menu">
+										<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183"><a href="http://www.cc-valdamboise.fr/sortir/culture/">Culture</a></li>
+										<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="http://www.cc-valdamboise.fr/sortir/sport/">Sport & loisirs</a></li>
+										<li id="menu-item-1518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1518"><a href="http://www.cc-valdamboise.fr/sortir/tourisme/">Tourisme</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div id="et_mobile_nav_menu">
+							<div class="mobile_nav closed"><span class="select_page">Sélectionner une page</span> <span class="mobile_menu_bar mobile_menu_bar_toggle"></span></div>
+						</div>
+					</div>
+					<!-- #et-top-navigation -->
+				</div>
+				<!-- .container -->
+				<div class="et_search_outer">
+					<div class="container et_search_form_container">
+						<form role="search" method="get" class="et-search-form" action="http://www.cc-valdamboise.fr/"><input type="search" class="et-search-field" placeholder="Rechercher …" value="" name="s" title="Rechercher:"></form><span class="et_close_search_field"></span></div>
+				</div>
+			</header>
+			<!-- #main-header -->
+			<div id="et-main-area">
+				<!-- Fil d'Ariane et titre de la page-->
+				<div class="et_pb_ariane et_pb_row et_pb_row_0">
+					<div id="ariane">
+						<p><a title="Accueil - CC Val d'Amboise" rel="nofollow" href="http://www.cc-valdamboise.fr/"> Accueil</a> > <a href="http://www.cc-valdamboise.fr/connaitre/">Connaître</a> ></p>
+					</div>
+				</div>
+				<div id="main-content">
+					<article id="post-143" class="post-143 page type-page status-publish hentry">
+						<div class="entry-content">
+							<div class="retour-top"></div>
+							<div id="et-boc" class="et-boc">
+								<div class="et-l et-l--post">
+									<div class="et_builder_inner_content et_pb_gutters2">
+										<div id="page-connaitre" class="et_pb_section et_pb_section_0 et_pb_with_background et_pb_fullwidth_section et_section_regular">
+											<div id="titre-1-page" class="et_pb_module et_pb_fullwidth_post_title_0 et_pb_post_title  et_pb_text_align_left et_pb_bg_layout_light et_pb_image_below">
+												<div class="et_pb_title_container">
+													<h1 class="entry-title">Communauté de communes</h1>
+												</div>
+												<div class="et_pb_title_featured_container"></div>
+											</div>
+											<div class="et_pb_module et_pb_fullwidth_slider_0 apres-titre-1 et_hover_enabled et_pb_slider">
+												<div class="et_pb_slides">
+													<div class="et_pb_slide et_pb_slide_0 et_pb_bg_layout_dark et_pb_slide_with_image et-pb-active-slide" data-slide-id="et_pb_slide_0">
+														<div class="et_pb_container clearfix">
+															<div class="et_pb_slider_container_inner">
+																<div class="et_pb_slide_image"><img src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/07/connaitre-institution.jpg" alt=""></div>
+																<div class="et_pb_slide_description">
+																	<div class="et_pb_slide_content"><strong>Contact</strong>
+																		<p>Communauté de communes<br> du Val d’Amboise</p>
+																		<p>9 bis rue d’Amboise</p>
+																		<p>37530 Nazelles-Négron</p>
+																		<p><a href="tel:0247234744">02 47 23 47 44</a></p>
+																		<p><a href="mailto:valdamboise@cc-valdamboise.fr">valdamboise@cc-valdamboise.fr</a></p>
+																	</div>
+																</div>
+																<!-- .et_pb_slide_description -->
+															</div>
+														</div>
+														<!-- .et_pb_container -->
+													</div>
+													<!-- .et_pb_slide -->
+												</div>
+												<!-- .et_pb_slides -->
+											</div>
+											<!-- .et_pb_slider -->
+										</div>
+										<!-- .et_pb_section -->
+										<div id="page-connaitre" class="et_pb_section et_pb_section_1 et_pb_with_background et_section_specialty">
+											<div class="et_pb_row">
+												<div class="et_pb_column et_pb_column_3_4 et_pb_column_0   et_pb_specialty_column  et_pb_css_mix_blend_mode_passthrough">
+													<div class="et_pb_row_inner et_pb_row_inner_0">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_0 et-last-child">
+															<div id="chapeau" class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<p>La communauté de communes du Val d’Amboise est un établissement public de coopération intercommunale (EPCI). Elle exerce des compétences qui lui ont été déléguées par ses communes membres. Les conseillers communautaires de l’actuelle mandature (2014-2020) ont été élus lors de l’élection municipale de 2014.<strong><br></strong></p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+															<div id="chapeau" class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<p><a name="competences"></a></p>
+																	<h2>Compétences exercées</h2>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_1">
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_1">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Développement économique</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Aménagement, entretien et gestion des zones d’activités d’intérêt communautaire</li>
+																		<li>Actions de développement économique (immobilier d’entreprise, aides aux implantations, communication et promotion, maintien du dernier commerce de proximité, gestion du patrimoine commercial communautaire)</li>
+																		<li>Action de développement touristique d’intérêt communautaire (soutien à l’office de tourisme, pays d’art et d’histoire, itinéraires cyclo-touristiques, itinéraires de randonnée, auberge de jeunesse).</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_1 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Tourisme</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Soutien à l’office de tourisme du Val d’Amboise</li>
+																		<li>Pays d’art et d’histoire</li>
+																		<li>Itinéraires cyclo-touristiques et de randonnée</li>
+																		<li>Auberge de jeunesse (Résidence Ethic Etapes – Ile d’Or)</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_2 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Aménagement du territoire</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Schéma de cohérence territoriale</li>
+																		<li>ZAC d’intérêt communautaire</li>
+																		<li>Charte de développement et d’aménagement</li>
+																		<li>Réseaux publics de communication électronique</li>
+																		<li>Instruction du droit des sols</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_3 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Infrastructures communautaires</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Bâtiments communautaires (crèches, centres de loisirs…)</li>
+																		<li>Voirie d’intérêt communautaire</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_4 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Urbanisme</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Instruction du droit des sols</li>
+																		<li>Plan local d’urbanisme intercommunal (PLUI)</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_5 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Environnement</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Territoire lauréat de l’appel national à projets « Territoires à énergie positive pour la croissance verte » (TEPCV)</li>
+																		<li>Élaboration d’un « Plan climat air énergie territorial » (PCAET)</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_6 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Collecte sélective des déchets</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Collecte en porte à porte, en points d’apport volontaire, en déchetterie</li>
+																		<li>Traitement des déchets des ménages et déchets assimilés</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_2 et-last-child">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_7 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Eau potable et assainissement</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Services d’assainissement collectif et non collectif</li>
+																		<li>Service de l’eau potable</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_8 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Logement</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Programme local de l’habitat</li>
+																		<li>Logement social (acquisitions foncières et aides financières – suivi et coordination de la programmation des opération de logements locatifs sociaux)</li>
+																		<li>Logement des personnes défavorisées (hébergement d’urgence et logements temporaires)</li>
+																		<li>Opérations programmées d’amélioration de l’habitat</li>
+																		<li>Programme d’intérêt général</li>
+																		<li>Développement d’une offre adaptée aux jeunes, aux apprentis, aux personnes âgées, aux personnes à mobilité réduite</li>
+																		<li>Soutien à l’ASHAJ (association gestionnaire de la résidence habitat-jeunes, ex. foyer des jeunes travailleurs)</li>
+																		<li>Aire d’accueil des gens du voyage</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_9 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Actions personnes âgées / handicapées</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Lien social pour les communes rurales de moins de 1 500 habitants</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_10 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Petite enfance / Enfance - jeunesse</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Services, équipements et soutien aux actions associatives de petite enfance</li>
+																		<li>Actions et équipements destinés aux adolescents</li>
+																		<li>Accueils de loisirs du mercredi après-midi et des vacances scolaires</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_11 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Culture</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Soutien aux écoles de musique associatives</li>
+																		<li>Organisation et soutien financier d’actions ou événements culturels d’intérêt communautaire</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_12 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Sports</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<ul>
+																		<li>Piscine couverte Georges Vallerey</li>
+																		<li>Stade de rugby Marc Lièvremont</li>
+																		<li>Itinéraires cyclables locaux</li>
+																	</ul>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_2">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_3 et-last-child">
+															<div id="conseil-com" class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<p><a name="elus"></a></p>
+																	<h2>élus du conseil communautaire</h2>
+																	<p>Le conseil communautaire compte 40 élus titulaires et 6 suppléants. Ils ont été élus en 2014 lors du scrutin municipal. Dans les 8 communes de plus de 1 000 habitants, cette élection s’est faite pour la première fois au suffrage universel. Dans les 6 autres communes, c’est le conseil municipal qui a désigné ses représentants à la communauté de communes.<strong><br></strong> Les élus communautaires travaillent au sein de commissions dans lesquelles de nombreux élus municipaux sont également investis à mettre en œuvre le projet de territoire. Leurs travaux et propositions sont présentés au bureau communautaire (composé du Président et des Vice-présidents) pour être validés, puis à l’ensemble des conseillers lors du conseil communautaire, pour faire l’objet d’un vote.</p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+															<div id="conseil-com" class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h3>Président et Vice-président(e)s</h3>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_3">
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_4">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_13 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Claude Verne</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Verne-Claude.jpg" alt="Verne Claude" width="67" height="100">Président<br>de la communauté de communes<br>du Val d’Amboise</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_14 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Christophe Ahuir</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft wp-image-5253" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/christophe-ahuir-201x300.jpg" alt="christophe-ahuir" width="67" height="100" srcset="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/christophe-ahuir-201x300.jpg 201w, http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/christophe-ahuir.jpg 428w" sizes="(max-width: 67px) 100vw, 67px">Transition énergétique, habitat, logement, aire d’accueil des gens du voyage, mise en œuvre du PLH et du PCAET</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_15 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Chantal Alexandre</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Alexandre-Chantal.jpeg" alt="Alexandre Chantal" width="67" height="100">Aménagement du territoire, urbanisme, assainissement, mutualisation et contractualisations</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_16 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Patrick Bigot</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Bigot-Patrick.jpg" alt="Bigot Patrick" width="67" height="100">Action culturelle, petite enfance, enfance et jeunesse</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_17 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Serge Bonnigal</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Bonnigal-Serge.jpg" alt="Bonnigal Serge" width="67" height="100">Agriculture, viticulture</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_18 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Richard Chatellier</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Chatellier-Richard.jpeg" alt="Chatellier Richard" width="67" height="100">Équipements sportifs intercommunaux, action sociale</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_5 et-last-child">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_19 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Michel Gasiorowski</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Gasiorowski-Michel.jpg" alt="Gasiorowski Michel" width="67" height="100">Voirie, mobilité, transports, boucles cyclables</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_20 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Isabelle Gaudron</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Gaudron-Isabelle.jpeg" alt="Gaudron Isabelle" width="67" height="100">Économie, emploi, formation professionnelle, parcs d’activités, commerce, artisanat, aménagement numérique et nouvelles technologies</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_21 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Claude Michel</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Michel-Claude.jpeg" alt="Michel Chaude" width="67" height="100">Développement et animation touristique</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_22 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Pascal Offre</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Offre-Pascal.jpeg" alt="Offre Pascal" width="67" height="100">Environnement et développement durable, ordures ménagères, eau potable</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_23 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Jean-Pierre Vincendeau</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<p style="text-align: left;"><img class="alignleft" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/Vincendeau-Jean-Pierre.jpeg" alt="Vincendeau Jean-Pierre" width="67" height="100">Bâtiments communautaires, économies d’énergie</p>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_4">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_6 et-last-child">
+															<div id="conseil-com" class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h3>Conseillers communautaires</h3>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_5">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_7 et-last-child">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_24 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Voir la liste des conseillers communautaires</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<div class="col-gauche">
+																		<ul>
+																			<li>Philippe Deniau</li>
+																			<li>Christophe Ahuir</li>
+																			<li>Chantal Alexandre</li>
+																			<li>François Bastard</li>
+																			<li>Marie-France Baucher</li>
+																			<li>David Benoît (suppléant)</li>
+																			<li>Dominique Berdon</li>
+																			<li>Dominique Lambert</li>
+																			<li>Patrick Bigot</li>
+																			<li>Serge Bonnigal</li>
+																			<li>Laurent Borel</li>
+																			<li>Thierry Boutard</li>
+																			<li>Marc Cassy (suppléant)</li>
+																			<li>Richard Chatellier</li>
+																			<li>Nelly Chauvelin</li>
+																			<li>Jacky Chipon (suppléant)</li>
+																			<li>Valérie Collet</li>
+																			<li>Claude Courgeau</li>
+																			<li>Huguette Delaine</li>
+																			<li>Pascal Dupré</li>
+																			<li>Daniel Duran</li>
+																			<li>Christine Fauquet</li>
+																			<li>Damien Foratier</li>
+																			<li>Christophe Galland</li>
+																		</ul>
+																	</div>
+																	<div class="col-droite">
+																		<ul>
+																			<li>Jocelyn Garçonnet</li>
+																			<li>Jean-Claude Gaudion</li>
+																			<li>Isabelle Gaudron</li>
+																			<li>Michel Gasiorowski</li>
+																			<li>Josette Guerlais</li>
+																			<li>Christian Guyon</li>
+																			<li>Déborah Farineau</li>
+																			<li>Evelyne Latapy</li>
+																			<li>Jean-Michel Léna</li>
+																			<li>Martine Loriant (suppléante)</li>
+																			<li>Laurence Cornier-Goehring</li>
+																			<li>Marie-Claude Métivier</li>
+																			<li>Claude Michel</li>
+																			<li>Chantal Morlec (suppléante)</li>
+																			<li>Jacqueline Mousset</li>
+																			<li>Pascal Offre</li>
+																			<li>Myriam Santacana</li>
+																			<li>Marie-France Tassart</li>
+																			<li>Danielle Vergeon</li>
+																			<li>Claude Verne</li>
+																			<li>Christophe Villemain (suppléant)</li>
+																			<li>Jean-Pierre Vincendeau</li>
+																		</ul>
+																	</div>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_6">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_8 et-last-child et_pb_column_empty"></div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_7">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_9 et-last-child">
+															<div class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<p><a name="decisions"></a></p>
+																	<h2>Comptes-rendus du conseil communautaire</h2>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_8">
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_10">
+															<div class="et_pb_module et_pb_text et_pb_text_6 bloc_picto  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h5>Année 2020</h5>
+																	<ul>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2020/01/CR-du-9-janvier-2020.pdf" rel="attachment wp-att-8839">09/01/2020</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2020/02/CR-du-13-fevrier-2020.pdf" target="_blank" rel="attachment noopener wp-att-8933 noreferrer">13/02/2020</a></li>
+																	</ul>
+																	<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+															<div class="et_pb_module et_pb_text et_pb_text_7 bloc_picto  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h5>Année 2019</h5>
+																	<ul>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/03/CR-du-31-janvier-2019.pdf" target="_blank" rel="noopener noreferrer">31/01/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/04/CR-du-28-mars-2019.pdf" target="_blank" rel="noopener noreferrer">28/03/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/06/CR-du-22-mai-2019.pdf" target="_blank" rel="noopener noreferrer">22/05/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/07/CR-du-4-juillet-2019.pdf" target="_blank" rel="noopener noreferrer">04/07/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/10/CR-du-26-septembre-2019.pdf" target="_blank" rel="noopener noreferrer">26/09/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/12/CR-du-14-novembre-2019.pdf">14/11/2019</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2020/01/CR-du-19-d%C3%A9cembre-2019.pdf" rel="attachment wp-att-8835">19/12/2019</a></li>
+																	</ul>
+																	<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+														<div class="et_pb_column et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_11 et-last-child">
+															<div class="et_pb_module et_pb_text et_pb_text_8 bloc_picto  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h5>Année 2018</h5>
+																	<ul>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2018/06/CR-du-29-janvier-2018.pdf" target="_blank" rel="noopener noreferrer">29/01/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2018/06/CR-du-29-mars-2018.pdf" target="_blank" rel="noopener noreferrer">29/03/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2018/07/CR-du-17-mai-2018.pdf">17/05/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2018/08/CR-du-28-juin-2018.pdf" target="_blank" rel="noopener noreferrer">28/06/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/01/CR-du-24-sept-2018.pdf" target="_blank" rel="noopener noreferrer">24/09/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/02/CR-du-15-nov-2018.pdf">15/11/2018</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2019/03/CR-du-17-decembre-2018.pdf" target="_blank" rel="noopener noreferrer">17/12/2018</a></li>
+																	</ul>
+																	<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+															<div class="et_pb_module et_pb_text et_pb_text_9 bloc_picto  et_pb_text_align_left et_pb_bg_layout_light">
+																<div class="et_pb_text_inner">
+																	<h5>Année 2017</h5>
+																	<ul>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-23-janvier-2017.pdf" target="_blank" rel="noopener noreferrer">23/01/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-16-mars-2017.pdf" target="_blank" rel="noopener noreferrer">16/03/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-11-mai-2017.pdf">11/05/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/conseil-communautaire-CR-du-22-juin-2017.pdf" target="_blank" rel="noopener noreferrer">22/06/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-21-septembre-2017.pdf">21/09/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-16-novembre-2017.pdf">16/11/2017</a></li>
+																		<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2018/01/CR-du-Conseil-du-14-d%C3%A9cembre-2017.pdf">14/12/2017</a></li>
+																	</ul>
+																	<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																</div>
+															</div>
+															<!-- .et_pb_text -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+													<div class="et_pb_row_inner et_pb_row_inner_9">
+														<div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_12 et-last-child">
+															<div class="et_pb_module et_pb_toggle et_pb_toggle_25 et_pb_toggle_item  et_pb_toggle_close">
+																<h5 class="et_pb_toggle_title">Comptes-rendus en 2016, 2015 et 2014</h5>
+																<div class="et_pb_toggle_content clearfix">
+																	<div class=" et_pb_row_inner et_pb_row_inner_12">
+																		<div class="et_pb_column_inner et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_18">
+																			<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left bloc_picto et_pb_text_17">
+																				<h5>Année 2016</h5>
+																				<ul>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-04022016.pdf" target="_blank" rel="noopener noreferrer">04/02/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/07/compte_rendu-conseil-17032016.pdf" target="_blank" rel="noopener noreferrer">17/03/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/07/compte_rendu-conseil-12052016.pdf" target="_blank" rel="noopener noreferrer">12/05/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/compte_rendu-conseil-23062016.pdf" target="_blank" rel="noopener noreferrer">23/06/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-11-juillet-2016.pdf" target="_blank" rel="noopener noreferrer">11/07/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-15-Septembre-2016.pdf" target="_blank" rel="noopener noreferrer">15/09/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-10-Novembre-2016.pdf" target="_blank" rel="noopener noreferrer">10/11/2016</a></li>
+																					<li><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/CR-du-12-d%C3%A9cembre-2016.pdf" target="_blank" rel="noopener noreferrer">12/12/2016</a></li>
+																				</ul>
+																				<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																				<h5 style="text-align: left;">Année 2015</h5>
+																				<ul>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-22012015.pdf" target="_blank" rel="noopener noreferrer">22/01/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-05022015.pdf" target="_blank" rel="noopener noreferrer">05/02/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-12032015.pdf" target="_blank" rel="noopener noreferrer">12/03/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-16042015.pdf" target="_blank" rel="noopener noreferrer">16/04/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-21052015.pdf" target="_blank" rel="noopener noreferrer">21/05/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-09072015.pdf" target="_blank" rel="noopener noreferrer">09/07/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-17092015.pdf" target="_blank" rel="noopener noreferrer">17/09/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-12112015.pdf" target="_blank" rel="noopener noreferrer">12/11/2015</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-15122015.pdf" target="_blank" rel="noopener noreferrer">15/12/2015</a></li>
+																				</ul>
+																				<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																			</div>
+																		</div>
+																		<div class="et_pb_column_inner et_pb_column_3_8 et_pb_column_inner et_pb_column_inner_19">
+																			<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left bloc_picto et_pb_text_18">
+																				<h5 style="text-align: left;">Année 2014</h5>
+																				<ul>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-09012014.pdf" target="_blank" rel="noopener noreferrer">09/01/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-06022014.pdf" target="_blank" rel="noopener noreferrer">06/02/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-13032014.pdf" target="_blank" rel="noopener noreferrer">13/03/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-17042014.pdf" target="_blank" rel="noopener noreferrer">17/04/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-05052014.pdf" target="_blank" rel="noopener noreferrer">05/05/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-19062014.pdf" target="_blank" rel="noopener noreferrer">19/06/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-10072014.pdf" target="_blank" rel="noopener noreferrer">10/07/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-18092014.pdf" target="_blank" rel="noopener noreferrer">18/09/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-23102014.pdf" target="_blank" rel="noopener noreferrer">23/10/2014</a></li>
+																					<li style="text-align: left;"><a href="http://www.cc-valdamboise.fr/wp-content/uploads/2016/04/compte_rendu-conseil-11122014.pdf" target="_blank" rel="noopener noreferrer">11/12/2014</a></li>
+																				</ul>
+																				<p><img class="alignnone wp-image-1882" style="text-align: left;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/icone-pdf.png" alt="icone pdf" width="39" height="45"></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- .et_pb_toggle_content -->
+															</div>
+															<!-- .et_pb_toggle -->
+														</div>
+														<!-- .et_pb_column -->
+													</div>
+													<!-- .et_pb_row_inner -->
+												</div>
+												<!-- .et_pb_column -->
+												<div class="et_pb_column et_pb_column_1_4 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough">
+													<div class="et_pb_module et_pb_code et_pb_code_0 dock-menu"></div>
+													<!-- .et_pb_code -->
+													<div id="sous-menu-dans-page-connaitre" class="et_pb_module et_pb_text et_pb_text_10 sous-menu-dans-page  et_pb_text_align_left et_pb_bg_layout_light">
+														<div class="et_pb_text_inner">
+															<h4><a href="#">Communauté de communes</a></h4>
+															<ul>
+																<li><a href="#competences">Compétences exercées</a></li>
+																<li><a href="#elus">Elus du conseil communautaire</a></li>
+																<li><a href="#decisions">Comptes-rendus du conseil communautaire</a></li>
+															</ul>
+														</div>
+													</div>
+													<!-- .et_pb_text -->
+													<div class="et_pb_module et_pb_code et_pb_code_1 dock-actus"></div>
+													<!-- .et_pb_code -->
+													<div id="actus" class="et_pb_module et_pb_sidebar_0 et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light">
+														<div id="category-posts-3" class="et_pb_widget cat-post-widget">
+															<h4 class="widgettitle">Actualités</h4>
+															<ul id="category-posts-3-internal" class="category-posts-internal">
+																<li class="cat-post-item">
+																	<div><a class="cat-post-title" href="http://www.cc-valdamboise.fr/collecte-textiles/" rel="bookmark">Collecte textiles</a> <span class="cat-post-date">30 Juin 2020</span></div>
+																</li>
+																<li class="cat-post-item">
+																	<div><a class="cat-post-title" href="http://www.cc-valdamboise.fr/aide-au-logement/" rel="bookmark">Aide au logement</a> <span class="cat-post-date">24 Juin 2020</span></div>
+																</li>
+																<li class="cat-post-item">
+																	<div><a class="cat-post-title" href="http://www.cc-valdamboise.fr/permanences-architecte/" rel="bookmark">Permanences architecte</a> <span class="cat-post-date">23 Juin 2020</span></div>
+																</li>
+															</ul><a class="cat-post-footer-link" href="http://www.cc-valdamboise.fr/category/connaitre/">P</a></div>
+														<!-- end .et_pb_widget -->
+													</div>
+													<!-- .et_pb_widget_area -->
+												</div>
+												<!-- .et_pb_column -->
+											</div>
+											<!-- .et_pb_row -->
+										</div>
+										<!-- .et_pb_section -->
+									</div>
+									<!-- .et_builder_inner_content -->
+								</div>
+								<!-- .et-l -->
+							</div>
+							<!-- #et-boc -->
+						</div>
+						<!-- .entry-content -->
+					</article>
+					<!-- .et_pb_post -->
+				</div>
+				<!-- #main-content -->
+				<div class="background-sidebar"></div>
+				<footer id="main-footer">
+					<div class="container">
+						<div id="footer-widgets" class="clearfix">
+							<div class="footer-widget">
+								<div id="text-10" class="fwidget et_pb_widget widget_text">
+									<div class="textwidget"><a href="http://www.cc-valdamboise.fr/"><img style="margin-top:0;" src="http://www.cc-valdamboise.fr/wp-content/uploads/2016/02/logo_valdamboise.png" alt="logo-val-damboise"></a></div>
+								</div>
+								<!-- end .fwidget -->
+							</div>
+							<!-- end .footer-widget -->
+							<div class="footer-widget">
+								<div id="text-8" class="fwidget et_pb_widget widget_text">
+									<h4 class="title">COORDONNÉES</h4>
+									<div class="textwidget">
+										<p>9 bis rue d'Amboise<br> 37530 Nazelles-Négron<br> <a href="mailto:valdamboise@cc-valdamboise.fr">valdamboise@cc-valdamboise.fr</a><br> tel : <a href="tel:0247234744">02 47 23 47 44</a><br> fax : 02 47 23 47 50</p>
+									</div>
+								</div>
+								<!-- end .fwidget -->
+							</div>
+							<!-- end .footer-widget -->
+							<div class="footer-widget">
+								<div id="text-9" class="fwidget et_pb_widget widget_text">
+									<h4 class="title">HORAIRES</h4>
+									<div class="textwidget">
+										<p>Accueil du public<br> du lundi au jeudi<br> 9h-12h et 13h30-17h,<br> vendredi 9h-12h<br> et 13h30-16h30</p>
+									</div>
+								</div>
+								<!-- end .fwidget -->
+							</div>
+							<!-- end .footer-widget -->
+							<div class="footer-widget">
+								<div id="text-4" class="fwidget et_pb_widget widget_text">
+									<h4 class="title">LIENS UTILES</h4>
+									<div class="textwidget">
+										<p><a href="https://www.service-public.fr/" target="_blank" rel="noopener noreferrer">Service-public.fr</a><br> <a href="http://www.indre-et-loire.gouv.fr/" target="_blank" rel="noopener noreferrer">Préfecture d'Indre-et-Loire</a><br> <a href="http://www.amboise-valdeloire.com/" target="_blank" rel="noopener noreferrer">Office de tourisme</a><br> <a href="http://www.tourainefilvert.com/" target="_blank" rel="noopener noreferrer">Touraine Fil Vert</a><br> <a href="http://www.cc-valdamboise.fr/liens-utiles/" id="plus-footer">P</a></p>
+									</div>
+								</div>
+								<!-- end .fwidget -->
+							</div>
+							<!-- end .footer-widget -->
+						</div>
+						<!-- #footer-widgets -->
+					</div>
+					<!-- .container -->
+					<!--<div id="footer-logo">
+                	<div class="container clearfix">
+                    	<img src="http://ccvala.odns.fr/wordpress/wp-content/uploads/2016/02/logo_valdamboise.png" alt="Logo de la CC du Val d'Amboise">
+                    </div>
+                </div>	-->
+					<div id="footer-bottom">
+						<div class="container clearfix">
+							<!--<ul class="et-social-icons">
+
+
+</ul>--><a href="http://www.cc-valdamboise.fr/plan-du-site/">Plan du site</a> • <a href="http://www.cc-valdamboise.fr/credits/">Crédits</a> • <a href="http://www.cc-valdamboise.fr/mentions-legales/">Mentions légales</a>
+							<div class="bottom-to-top">↑ Remonter ↑</div>
+							<!--<p id="footer-info">
+						Design de <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Propulsé par <a href="http://www.wordpress.org">WordPress</a></p>-->
+						</div>
+						<!-- .container -->
+					</div>
+				</footer>
+				<!-- #main-footer -->
+			</div>
+			<!-- #et-main-area -->
+		</div>
+		<!-- #page-container -->
+		<script type="text/javascript">
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_shortcodes_strings = {"previous":"Pr\u00e9c\u00e9dent","next":"Suivant"};
+var et_pb_custom = {"ajaxurl":"http:\/\/www.cc-valdamboise.fr\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/www.cc-valdamboise.fr\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/www.cc-valdamboise.fr\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"2e7d059db6","subscription_failed":"Veuillez v\u00e9rifier les champs ci-dessous pour vous assurer que vous avez entr\u00e9 les informations correctes.","et_ab_log_nonce":"3eb99840f3","fill_message":"S'il vous pla\u00eet, remplissez les champs suivants:","contact_error_message":"Veuillez corriger les erreurs suivantes :","invalid":"E-mail non valide","captcha":"Captcha","prev":"Pr\u00e9c\u00e9dent","previous":"Pr\u00e9c\u00e9dente","next":"Prochaine","wrong_captcha":"Vous avez entr\u00e9 le mauvais num\u00e9ro dans le captcha.","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"143","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_box_shadow_elements = [".et_pb_fullwidth_slider_0",".et_pb_fullwidth_slider_0",".et_pb_fullwidth_slider_0"];
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-content/themes/Divi/js/custom.min.js?ver=4.0.9"></script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-content/themes/Divi/core/admin/js/common.js?ver=4.0.9"></script>
+		<script type="text/javascript" src="http://www.cc-valdamboise.fr/wp-includes/js/wp-embed.min.js?ver=5.4.2"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+jQuery(document).ready( function($) {
+	$("ul.menu").not(":has(li)").closest('div').prev('h3.widget-title').hide();
+});
+/* ]]> */
+		</script>
+		<!-- Cookie Notice plugin v1.3.1 by Digital Factory https://dfactory.eu/ -->
+		<div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);">
+			<div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">Nous utilisons des cookies pour vous garantir la meilleure expérience sur notre site web. Si vous continuez à utiliser ce site, nous supposerons que vous en êtes satisfait.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button bootstrap button">Ok</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon"></a></div>
+		</div>
+		<!-- / Cookie Notice plugin -->
+	</body>
+</html>
