@@ -1,0 +1,947 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<link rel="stylesheet" type="text/css" media="all" href="extensions/porte_plume/css/barre_outils.css">
+		<link rel="stylesheet" type="text/css" media="all" href="http://www.ccvt.fr/spip.php?page=barre_outils_icones.css">
+		<link rel="stylesheet" href="plugins/auto/enluminures_typographiques_v3/css/enluminurestypo.css" type="text/css" media="all">
+		<!-- Debut CS -->
+		<link rel="stylesheet" href="local/couteau-suisse/header.css" type="text/css" media="all">
+		<!-- Fin CS -->
+		<link rel="stylesheet" href="plugins/auto/Lecteur_multimedia/player.css" type="text/css" media="all">
+		<link rel="stylesheet" href="plugins/auto/mediabox/colorbox/black-striped/colorbox.css" type="text/css" media="all">
+		<link rel="stylesheet" href="http://www.ccvt.fr/spip.php?page=css_nivoslider" type="text/css" media="all">
+		<script src="prive/javascript/jquery.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.form.js" type="text/javascript"></script>
+		<script src="prive/javascript/ajaxCallback.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.cookie.js" type="text/javascript"></script>
+		<!-- insert_head -->
+		<!--[if lt IE 8]>
+	<script type='text/javascript'>//<![CDATA[
+		var IE7_PNG_SUFFIX = '.png'; 
+	//]]></script>
+	<script src='extensions/msie_compat/javascript/IE8.js'></script>
+<![endif]-->
+		<script type="text/javascript" src="extensions/porte_plume/javascript/xregexp-min.js"></script>
+		<script type="text/javascript" src="extensions/porte_plume/javascript/jquery.markitup_pour_spip.js"></script>
+		<script type="text/javascript" src="extensions/porte_plume/javascript/jquery.previsu_spip.js"></script>
+		<script type="text/javascript" src="http://www.ccvt.fr/spip.php?page=porte_plume_start.js&lang=fr"></script>
+		<script src="http://www.ccvt.fr/plugins/auto/ancres_douces/js/jquery.scrollto.js" type="text/javascript"></script>
+		<script src="http://www.ccvt.fr/plugins/auto/ancres_douces/js/jquery.localscroll.js" type="text/javascript"></script>
+		<script type="text/javascript">/* <![CDATA[ */
+function ancre_douce_init() {if(typeof jQuery.localScroll=="function")jQuery.localScroll({hash:true});}
+if(window.jQuery)jQuery(document).ready(ancre_douce_init);
+onAjaxLoad(ancre_douce_init);
+/* ]]> */
+		</script>
+		<link rel="stylesheet" type="text/css" href="plugins/auto/jolirecherche/recherche.css" media="projection, screen, tv">
+		<!-- Debut CS -->
+		<script src="local/couteau-suisse/header.js" type="text/javascript"></script>
+		<!-- Fin CS -->
+		<!-- Player JS -->
+		<script type="text/javascript" src="plugins/auto/Lecteur_multimedia/soundmanager/soundmanager2.js"></script>
+		<script type="text/javascript"><!--
+var musicplayerurl="";
+var key_espace_stop = true;
+var image_play="plugins/auto/Lecteur_multimedia/images/playl.gif";
+var image_pause="plugins/auto/Lecteur_multimedia/images/pausel.gif";
+soundManager.url = "plugins/auto/Lecteur_multimedia/soundmanager/soundmanager2.swf";
+soundManager.nullURL = "plugins/auto/Lecteur_multimedia/soundmanager/null.mp3";
+var videoNullUrl = "null.flv";
+var DIR_PLUGIN_PLAYER = "plugins/auto/Lecteur_multimedia/";//-->
+		</script>
+		<script type="text/javascript" src="plugins/auto/Lecteur_multimedia/javascript/jscroller.js"></script>
+		<script type="text/javascript" src="plugins/auto/Lecteur_multimedia/player_enclosure.js"></script>
+		<script src="plugins/auto/mediabox/javascript/jquery.colorbox.js?1351430601" type="text/javascript"></script>
+		<script src="plugins/auto/mediabox/javascript/spip.mediabox.js?1351430601" type="text/javascript"></script>
+		<script type="text/javascript">/* <![CDATA[ */
+var box_settings = {tt_img:true,sel_g:"#documents_portfolio a[type='image/jpeg'],#documents_portfolio a[type='image/png'],#documents_portfolio a[type='image/gif']",sel_c:".mediabox",trans:"elastic",speed:"200",ssSpeed:"2500",maxW:"90%",maxH:"90%",minW:"400px",minH:"",opa:"0.9",str_ssStart:"Diaporama",str_ssStop:"Arrêter",str_cur:"{current}/{total}",str_prev:"Précédent",str_next:"Suivant",str_close:"Fermer",splash_url:""};
+if (window.jQuery) (jQuery(function(){ if(typeof onAjaxLoad == "function") onAjaxLoad(mediaboxInit); jQuery(mediaboxInit); }));
+/* ]]> */
+		</script>
+		<script src="http://www.ccvt.fr/plugins/auto/nivoslider/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+		<title>Communauté de Communes des Vallées de Thônes - Conseils Communautaires</title>
+		<meta name="Keywords" content="sommaire_centre">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="plugins/auto/eva_squelettes_pour_spip_2_0/eva_styles/eva4_basic_menu_droite.css" media="screen">
+		<style type="text/css">
+body{background:#AACC03;}
+div#page{background:#FFFFFF;}
+div#arborescence{background:#AACC03;}
+ul#pied{background:#778E02;}
+#forum ul.forum div.contenu , blockquote.spip , #forum ul.forum div.auteur , #forum ul.forum div.texte , #forum ul.forum , body , div#menu .bloc ul li , div#contenu .bloc ul li , div#menudroit .bloc ul li , .menupaginationbas , li .menupaginationbas , .menupaginationhaut , li .menupaginationhaut , div#contenu .bloc , div#menu .bloc , div#menudroit .bloc , div#contenu ul li , div .contenu , .divers , .erreur , hr , .spip_cadre , textarea.spip_cadre , fieldset , div#contenu , div#contenu .bloc , .bloc , ul#sommaire , div#menu .bloc ul , div#menudroit .bloc ul , div#contenu .bloc ul li , .auteur{color:#282F39;}
+div#menu .bloc ul li.deux , div#menudroit .bloc ul li.deux , div#contenu ul li.deux , div#contenu ul li.deux h2 , table.spip tr.row_odd , div#contenu ul.bloc li.deux{color:#282F39;}
+div#menu .bloc ul li.un , div#contenu ul li.un , div#contenu ul li.un h2 , div#menudroit .bloc ul li.un , table.spip tr.row_odd , div#contenu ul.bloc li.un{color:#282F39;}
+.titre h2 , div#contenu h2{color:#282F39;}
+.titre h4.soustitre{color:#4A596C;}
+h3 , h3.titre , h3.titre a , h3 a , div#contenu h3 , legend , #forum .bouton a , .bloc .titre , .divers h4 , table.spip tr.row_first th , div#contenu div.ps h4 , div#menu h3.titre , div#menudroit h3.titre , table.spip tr.row_first , div#contenu div.lien , .contenu .lien , div#contenu div.notes h4 , div#contenu h4.titre , div#contenu h3.titre , #forum ul.forum div.titre h4{color:#AACC03;}
+div#contenu .edito , div#contenu div.chapo , div#entetediaporama h2 , div#boutondiaporama a span{color:#282F39;}
+div#contenu .edito h3.titre , div#contenu .edito h2.titre , .edito .titre , div#contenu .edito .titre a , .edito h2 a{color:#282F39;}
+div#arborescence , div#arborescence a , div#arborescence strong , div#arborescence em , div#entete ul.liens , div#entete ul.liens a , div#entete ul.liens li.on a{color:#282F39;}
+ul#pied , ul#pied a , ul#pied li.on a , ul#pied a:hover , ul#pied p a:hover{color:#FFFFFF;}
+h4.titre a , div#boutondiaporama a , a , .texte a , div#menu .bloc ul li a.on , div#menu .bloc ul li.on strong , div#menudroit .bloc ul li a.on , div#menudroit .bloc ul li.on strong{color:#8EAC02;}
+div#boutondiaporama a:hover , #forum .bouton a:hover , .texte a:hover , a:hover , div#contenu a:hover , div#menu .bloc ul a:hover , div#menudroit .bloc ul a:hover , div#arborescence a:hover , div#entete ul.liens a:hover{color:#4A596C;}
+div#menudroit .bloc ul li.un a , div#menu .bloc ul li.un a , div#contenu .bloc li.un a , .bloc li .un a{color:#282F39;}
+div#menudroit .bloc ul li.un a:hover , div#menu .bloc ul li.un a:hover , div#contenu .bloc li.un a:hover , div#contenu .un a:hover{color:#4A596C;}
+div#menudroit .bloc ul li.deux a , div#menu .bloc ul li.deux a , div#contenu .bloc li.deux a , .bloc li .deux a{color:#282F39;}
+div#menudroit .bloc ul li.deux a:hover , div#menu .bloc ul li.deux a:hover , div#contenu .bloc li.deux a:hover , div#contenu .deux a:hover{color:#4A596C;}
+div#page{border-style:none;}
+div#contenu .bloc , div#menu .bloc , div#menudroit .bloc , .divers , hr , div#boutondiaporama a span , div #entetediaporama , div #entetediaporama h2 span , .lien , .divers , .bloc , #forum .bouton a , #formRecherche , input.formrecherche , fieldset , .forml , textarea.spip_cadre , table.spip th , table.spip td , table.spip tr.row_odd , table.spip tr.row_even , hr , .spip_encadrer , a.spip_barre img , a.spip_barre:hover img{border-style:none;}
+h3 , #forum ul.forum div.titre h4 , .menupaginationbas{border-top-style:none;}
+#forum ul.forum div.titre h4 , #forum ul.forum div.titre .auteur , #forum ul.forum div.contenu{border-right-style:none;}
+h3 , #forum ul.forum div.contenu , .menupaginationhaut{border-bottom-style:none;}
+#forum ul.forum div.titre h4 , #forum ul.forum div.titre .auteur , #forum ul.forum div.contenu , div.spip_poesie{border-left-style:none;}
+div#entete h2 span , div#entete h1 span{border-style:none;}
+div#entete ul.liens a:hover{border-top-style:none;}
+div#arborescence , div#entete ul.liens , div#entetediaporama , div#entete{border-bottom-style:none;}
+div#entete ul.liens li{border-left-style:none;}
+.titre{border-style:none;}
+#auteursdates{border-style:none;}
+div#contenu .edito , div#entetediaporama , div#boutondiaporama a span{border-color:#AACC03;}
+div#contenu .edito , div#entetediaporama , div#boutondiaporama a span{border-width:2px;}
+div#contenu .edito , div#entetediaporama , div#boutondiaporama a span{border-style:solid;}
+ul#pied a:hover , #logo-pied , ul#pied{border-top-color:#ffffff;}
+ul#pied a:hover{border-bottom-color:#ffffff;}
+ul#pied li{border-left-color:#ffffff;}
+ul#pied a:hover , #logo-pied , ul#pied{border-top-width:1px;}
+ul#pied a:hover{border-bottom-width:1px;}
+ul#pied li{border-left-width:1px;}
+ul#pied a:hover , #logo-pied , ul#pied{border-top-style:solid;}
+ul#pied a:hover{border-bottom-style:solid;}
+ul#pied li{border-left-style:solid;}
+div#page , div#entete ul.liens{width:1024px;}
+div#menu{width:250px;}
+div#contenu{width:744px;}
+div#entete{height:190px;}
+body {background-image : url(IMG/eva_habillage/fondpage.jpg);
+background-position : center top;
+background-repeat : no-repeat;
+background-attachment : fixed;}
+div#entete {background-image : url(IMG/eva_habillage/bandeau.jpg);
+background-position : center top;
+background-repeat : no-repeat;
+background-attachment : scroll;}
+#menu_horizontal , #menu_horizontal a {background-image : url(IMG/eva_habillage/menu.jpg);
+background-position : left top;
+background-repeat : repeat-x;
+background-attachment : scroll;}
+#menu_horizontal a:hover , #menu_horizontal li .on:hover {background-image : url(IMG/eva_habillage/menusurvol.jpg);
+background-position : left top;
+background-repeat : repeat-x;
+background-attachment : scroll;}
+#menu_horizontal li .on {background-image : url(IMG/eva_habillage/menusurvol.jpg);
+background-position : left top;
+background-repeat : repeat-x;
+background-attachment : scroll;}
+#menu_horizontal a {color:#282F39;}
+#menu_horizontal a:hover {color:#282F39;}
+#menu_horizontal a .on, #menu_horizontal li .on{color:#282F39;}
+#menu_horizontal li {border-right-style:solid;}
+#menu_horizontal li {border-right-width:3px;}
+#menu_horizontal li {border-right-color:#F6F6F8;}
+#entete h1 a {color:#2E4885;text-shadow: 0px 4px 4px #BBC5DE;} 
+div#entete h1 {top:141px;}
+#menu_horizontal li ul a:hover {background-color: #AACC03;} 
+		</style>
+		<link rel="alternate stylesheet" type="text/css" href="plugins/auto/eva_squelettes_pour_spip_2_0/eva_style.css" media="screen" title="Présentation alternative">
+		<link rel="stylesheet" type="text/css" href="plugins/auto/eva_squelettes_pour_spip_2_0/eva_style_print.css" media="print">
+		<link rel="icon" type="image/png" href="IMG/eva_habillage/favicon/favicon.png">
+		<link rel="alternate" type="application/rss+xml" title="Syndiquer tout le site" href="spip.php?page=backend">
+		<link rel="alternate" type="application/rss+xml" title="Syndiquer les brèves du site" href="spip.php?page=backend-breves">
+		<link rel="stylesheet" type="text/css" href="plugins/auto/eva_bonus_pour_spip_2_0/style/eva_menu_depliable_horizontal.css" media="screen">
+	</head>
+	<body>
+		<div id="page">
+			<div class="ajaxbloc env-CdFJtxPQF/vZVW95fLtRhBj68cECmAMcaDRx9gMPSQGbxy/+tSfNdtxP4zzUJXw/2++b3Bd/+gTdPR3viyT9VdzylBvh1UeDxDpOgR8syzfGF4Jd4+B87fCvRVpr1CH4X6d/P7MYnvZB5WmDofO+8z5tLKueOOjQ7/Y7RlX/a7K0icq9jJ83zRKxjrSOkHewaD/3Zw8HBl9dw/X48OQyW17FXLY0xkq2P9pwHbvrhGDI8Gw=">
+				<div id="entete"><a name="haut"></a>
+					<h1><a href="http://www.ccvt.fr?lang=fr"> <span> Communauté de Communes des Vallées de Thônes</span></a></h1>
+					<div class="nettoyeur"></div>
+				</div>
+			</div>
+			<!-- ajaxbloc -->
+			<div class="ajaxbloc env-CdFJUxPAF/zZ1XU5E6ec2d7EMXrVBay3w2woMVQf5m/C90vBHZkQyrf1+5vjfl8T38BBteQ8asMvSYMwiVe0ZQ/lI1RXRrVvgnO5YUGfenr9Gg0/MMkH4vLGwMXzWT8LtcHJuRhgV2P4j8jry+ybDwL2BB3GUp/2XPelJwvC8nqAPxaRwmceJe3U+RebqbzChzL4PlmmemRUMIvun3yiutDm3mOffCzvmI3k+WA5hb/PESaux9ZfGIeqZQSZ8A==">
+				<script type="text/javascript" src="plugins/auto/eva_bonus_pour_spip_2_0/javascript/menu_depliable_horizontal.js"></script>
+				<ul id="menu_horizontal">
+					<li><a href="http://www.ccvt.fr?lang=fr">Accueil</a></li>
+					<li class=""><a href="-La-CCVT-.html">La CCVT</a>
+						<ul>
+							<li class=""><a href="-Presentation-.html">Présentation</a></li>
+							<li class=""><a href="-Statuts-.html">Statuts</a></li>
+							<li class=""><a href="-Elus-.html">Elus</a></li>
+							<li class=""><a href="-Deliberations-et-Decisions-.html">Conseils Communautaires et actes administratifs</a></li>
+							<li class=""><a href="-Videos-.html">Vidéos</a></li>
+							<li class=""><a href="-Fonctionnement-.html">Fonctionnement</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="-Transports-.html">Transports</a></li>
+					<li class=""><a href="-Gestion-des-dechets-.html">Gestion des déchets</a>
+						<ul>
+							<li class=""><a href="-INFOS-TRI-.html">INFOS TRI</a></li>
+							<li class=""><a href="-Ordures-menageres-.html">Ordures ménagères</a></li>
+							<li class=""><a href="-Collecte-selective-.html">Collecte sélective</a></li>
+							<li class=""><a href="-Dechetteries-.html">Déchetteries</a></li>
+							<li class=""><a href="-Compostage-individuel-.html">Compostage individuel</a></li>
+							<li class=""><a href="-Compostage-partage,72-.html">Compostage partagé</a></li>
+							<li class=""><a href="-Huiles-vegetales-usagees-.html">Huiles végétales usagées</a></li>
+							<li class=""><a href="-Animations-Scolaires-.html">Animations Scolaires</a></li>
+							<li class=""><a href="-Rapports-annuels-.html">Rapports annuels</a></li>
+							<li class=""><a href="-Ou-deposer-mes-dechets-specifiques-.html">Où déposer mes déchets spécifiques ?</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="-Agriculture-et-foret-.html">Agriculture, forêts, ENS</a>
+						<ul>
+							<li class=""><a href="-Charte-Forestiere-de-Territoire-.html">Charte Forestière de Territoire</a></li>
+							<li class=""><a href="-Plan-Pastoral-Territorial-.html">Pastoralisme</a></li>
+							<li class=""><a href="-Espaces-naturels-.html">Espaces naturels</a></li>
+							<li class=""><a href="-Risques-naturels,70-.html">Risques naturels</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="-Amenagement-du-Territoire-.html">Aménagement du Territoire</a>
+						<ul>
+							<li class=""><a href="-Revision-du-Schema-de-Coherence-.html">Révision du Schéma de Cohérence Territoriale Fier-Aravis (SCOT)</a></li>
+							<li class=""><a href="-Schema-de-Coherence-Territoriale-.html">Schéma de Cohérence Territoriale</a></li>
+							<li class=""><a href="-Plan-Local-de-l-Habitat-.html">Programme Local de l’Habitat</a></li>
+							<li class=""><a href="-Economie-.html">Économie</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="-Sentiers-et-Patrimoine-.html">Sentiers et Patrimoine</a>
+						<ul>
+							<li class=""><a href="-Sentiers-.html">Sentiers</a></li>
+							<li class=""><a href="-Patrimoine-.html">Patrimoine</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="-Actions-Sociales-.html">Actions Sociales</a>
+						<ul>
+							<li class=""><a href="-Chantier-d-insertion-.html">Chantier d’insertion</a></li>
+							<li class=""><a href="-Prevention-sante,16-.html" title="Programme d'actions de la CCVT dans le domaine de la Prévention, de la Santé et de l'insertion sociale et professionnelle.">Prévention Santé Insertion</a></li>
+							<li class=""><a href="-R-A-M-.html">R.A.M.</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="nettoyeur"></div>
+			</div>
+			<!-- ajaxbloc -->
+			<div class="ajaxbloc env-CdBJVxTQC/zZVW+ZwhDBhIZ/pZPXLYE5VzrJ0U9PoO4Q8IzcYsClkpQGFw/eYQrAQTEzF/xSf7g8ENpHsJ+wjcvDAspSnBNn/ESxnVZN4lklzq64qOjDiwyrO9RxVGU4rLv6q86mMIGMz4j7mcljg6LKTrSWghKyz5la4E5xedmpZouRMwnfJ2WsSFbT2svHfyT6PlmmemRk+A415kvDXf/MVphtq+5qQ8ps6OcPJKe/t+YPdlk=">
+				<div id="arborescence"><strong>Vous êtes ici :</strong> <a href="http://www.ccvt.fr?lang=fr">Accueil</a> > <a href="-Informations-pratiques-.html">Informations pratiques</a> > <a href="-Telechargements-liens-.html">Téléchargements / liens</a> > <em>Conseils Communautaires</em>
+					<div style="position: absolute;right: 15px;top:10px;">
+						<div id="recherche-style">
+							<form action="spip.php?page=recherche" id="re" method="get" class="noajax"><label for="recherche">Rechercher</label> <img src="plugins/auto/jolirecherche/images/rere.gif" alt="" style="width:18px;height:18px;border:0;vertical-align:bottom;" class="refond"><input name="recherche" type="text" id="recherche" value="" class="rech"><img src="plugins/auto/jolirecherche/images/rerien.gif" id="rerien" alt="" style="width:18px;height:18px;border:0;vertical-align:bottom;" class="refond"> <input value="recherche" name="page" type="hidden"> <button><span>Valider</span></button>
+								<script type="text/javascript"><!-- //
+	if (jQuery) (function($){
+		var mod = $('#recherche-style label').remove().text();
+		if (!$('#recherche').attr('value').length) {
+			$('#recherche')
+			.attr('title', mod)
+			.attr('value', mod)
+			.focus(function(){
+				if(mod) $('#recherche').attr('value','');
+			})
+			.blur(function(){
+				if(mod) $('#recherche').attr('value', mod);
+			})
+			.bind('change keydown keyup', function(){
+				mod='';
+				if ($('#recherche').attr('value').length)
+					$('#rerien')
+					.attr('src', 'plugins/auto/jolirecherche/images/reok.gif')
+					.click(function(){
+						$('#recherche')
+						.attr('value','')
+						.change();
+					});
+				else
+					$('#rerien')
+					.attr('src', 'plugins/auto/jolirecherche/images/rerien.gif')
+					.unbind('click');
+			});
+		}
+	})(jQuery);
+// -->
+								</script>
+							</form>
+						</div>
+					</div>
+					<!-- élément pour rajouter la barre de recherche dans l'aboresence à droite de 15px -->
+				</div>
+			</div>
+			<!-- ajaxbloc -->
+			<div id="conteneur">
+				<div id="menu">
+					<div class="ajaxbloc env-sdPTNxPAF7hJEpK1Q+/CruiXnKQI/9zwhwja8yQE+L8X4wb1sVIyVKwl69F6toyWvpkzQXHEKANtSCW523wQdPQf5WI1yxX/jevkNRwDVVgS6S7yKY/Mte4Sd9uIjCDUScqXgIfW1G/bXYCOKwnz7E/pmFfU/Wk=">
+						<div class="ajaxbloc env-kZfJM1TAC/h3S+cmu4AjTzGqWWjoM5u2+wPafX9NaF7SQkhSIzOu0IrD6uTo4XW46NXs06ig+IG5pKLZHKQlz6Frss5DiEZ5x3sImnL3AkhaM5XWbn/VnZtbHZ5z3PY="><a href="../spip.php?article8" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/contact.png" name="image9" style="height:52px;width:252px;" onmouseover="image9.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/contactsurvol.png'" onmouseout="image9.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/contact.png'" onmousedown="image9.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/contactsurvol.png'"></a> <a href="../spip.php?article9" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/horaires.png" name="image1" style="height:52px;width:252px;" onmouseover="image1.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/horairessurvol.png'" onmouseout="image1.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/horaires.png'" onmousedown="image1.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/horairessurvol.png'"></a> <a href="../spip.php?article10" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/epaiement.png" name="image2" style="height:52px;width:252px;" onmouseover="image2.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/epaiementsurvol.png'" onmouseout="image2.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/epaiement.png'" onmousedown="image2.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/epaiementsurvol.png'"></a> <a href="../spip.php?rubrique15" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/telechargement.png" name="image3" style="height:52px;width:252px;" onmouseover="image3.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/telechargementsurvol.png'" onmouseout="image3.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/telechargement.png'" onmousedown="image3.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/telechargementsurvol.png'"></a> <a href="../spip.php?article15" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/marches.png" name="image4" style="height:52px;width:252px;" onmouseover="image4.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/marchessurvol.png'" onmouseout="image4.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/marches.png'" onmousedown="image4.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/marchessurvol.png'"></a> <a href="../spip.php?article16" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/emploi.png" name="image5" style="height:52px;width:252px;" onmouseover="image5.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/emploisurvol.png'" onmouseout="image5.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/emploi.png'" onmousedown="image5.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/emploisurvol.png'"></a> <a href="../spip.php?article17" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/archi.png" name="image6" style="height:52px;width:252px;" onmouseover="image6.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/archisurvol.png'" onmouseout="image6.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/archi.png'" onmousedown="image6.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/archisurvol.png'"></a> <a href="../spip.php?article18" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/pont.png" name="image7" style="height:52px;width:252px;" onmouseover="image7.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/pontsurvol.png'" onmouseout="image7.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/pont.png'" onmousedown="image7.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/pontsurvol.png'"></a> <a href="../spip.php?article19" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/chenil.png" name="image8" style="height:52px;width:252px;" onmouseover="image8.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/chenilsurvol.png'" onmouseout="image8.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/chenil.png'" onmousedown="image8.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/chenilsurvol.png'"></a></div>
+						<!-- ajaxbloc -->
+					</div>
+					<!-- ajaxbloc -->
+					<div class="ajaxbloc env-wdPTNxPAF/1REpG9Pw3MaGdTDt3OPSAbj0F8l7CrbVKZVTbUX2BKYq3Nsmf74Q80OPKyiJVrHqDa0lN2kkoWMLGiltFQhVhW99OZTW4CufBs/GIsup4ZhwHLvzMdjXnEjjnXRZm1oCBaUuJ+XT56FXR9a2J1+kYK9lw=">
+						<div class="bloc"><a name="pagination_article_actuel" id="pagination_article_actuel"></a>
+							<h3 class="titre">Dans cette rubrique</h3>
+							<ul>
+								<li class="un"><a href="Conseils-de-communaute,11.html" class="on"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">Conseils Communautaires</a></li>
+								<li class="deux"><a href="Recueil-des-actes-administratifs,12.html"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">Recueil des actes administratifs</a></li>
+								<li class="un"><a href="Liens-vers-les-mairies.html"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">Liens vers les mairies</a></li>
+								<li class="deux"><a href="Liens-vers-les-offices-du-tourisme.html"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">Liens vers les offices du tourisme</a></li>
+								<li class="un"><a href="Liens-divers.html"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">Liens divers</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- ajaxbloc -->
+				</div>
+				<div id="menudroit"></div>
+				<div id="contenu">
+					<div class="ajaxbloc env-sdPTNxPAF/1REpHN8u5lez0QTxuYfqDIIfW9T8RBap0R0Ra3TIjir20HfRn8yH35hZxTrnbhxZbne9416LeiOUq0d4NB6nvOQ/SeFy7TaBEXLbNPqFV4I53oxQBRRYanrJB9rMsb2gxVAmxNQ8ZZWC154p6kTgQegw==">
+						<!-- debut_surligneconditionnel -->
+						<div class="bloc">
+							<div class="titre"><img class="spip_logos" alt="" src="local/cache-vignettes/L15xH15/rubon0-37e4c.png" width="15" height="15" style="height:15px;width:15px;">
+								<h2 class="crayon article-titre-11 ">Conseils Communautaires</h2>
+								<div class="nettoyeur"></div>
+							</div>
+							<div class="crayon article-texte-11 texte">
+								<p>Convocation au prochain conseil communautaire :</p>
+								<dl class="spip_document_958 spip_documents spip_documents_center" style="width:120px;">
+									<dt><a href="IMG/pdf/02_-_11.02.2020_-_convocation.pdf" title="PDF - 195.8 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 195.8 ko"></a></dt>
+									<dt class="crayon document-titre-958 spip_doc_titre" style="width:120px;"><strong>Convocation - Conseil communautaire du 11.02.2020</strong></dt>
+								</dl>
+								<p><strong>Téléchargez et consultez les comptes-rendus des conseils communautaires années après années.</strong></p>
+								<div class="onglets_bloc_initial">
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2020</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_959 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_11.02.2020.pdf" title="PDF - 711.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 711.9 ko"></a></dt>
+															<dt class="crayon document-titre-959 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 11.02.2020</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_956 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_14.01.2020.pdf.pdf" title="PDF - 2.5 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 2.5 Mo"></a></dt>
+															<dt class="crayon document-titre-956 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 14.01.2020</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2019</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_957 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_17.12.2019.pdf" title="PDF - 721 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 721 ko"></a></dt>
+															<dt class="crayon document-titre-957 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 17.12.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_948 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12.11.2019.pdf" title="PDF - 386.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 386.9 ko"></a></dt>
+															<dt class="crayon document-titre-948 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 12.11.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_941 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_08.10.2019_-_version_finalisee.pdf" title="PDF - 642.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 642.2 ko"></a></dt>
+															<dt class="crayon document-titre-941 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 08.10.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_936 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_27.08.2019.pdf" title="PDF - 592.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 592.1 ko"></a></dt>
+															<dt class="crayon document-titre-936 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 27.08.2019</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_935 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_25.06.2019.pdf" title="PDF - 480.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 480.2 ko"></a></dt>
+															<dt class="crayon document-titre-935 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 25.06.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_920 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_14.05.2019.pdf" title="PDF - 334.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 334.7 ko"></a></dt>
+															<dt class="crayon document-titre-920 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 14.05.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_883 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_02.04.2019.pdf" title="PDF - 517.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 517.2 ko"></a></dt>
+															<dt class="crayon document-titre-883 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 02.04.2019</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_874 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12.03.2019.pdf" title="PDF - 318.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 318.9 ko"></a></dt>
+															<dt class="crayon document-titre-874 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 12.03.2019</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_872 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_29.01.2019.pdf" title="PDF - 696.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 696.6 ko"></a></dt>
+															<dt class="crayon document-titre-872 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 29.01.2019</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2018</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_808 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_16.01.2018.pdf" title="PDF - 765.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 765.3 ko"></a></dt>
+															<dt class="crayon document-titre-808 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 16.01.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_821 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_13_02_2018.pdf" title="PDF - 553.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 553.6 ko"></a></dt>
+															<dt class="crayon document-titre-821 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 13.02.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_820 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_06.03.2018.pdf" title="PDF - 304.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 304.2 ko"></a></dt>
+															<dt class="crayon document-titre-820 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 06.03.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_832 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_09.04.2018.pdf" title="PDF - 738.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 738.6 ko"></a></dt>
+															<dt class="crayon document-titre-832 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 09.04.2018</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_838 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_23.05.2018.pdf" title="PDF - 499.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 499.3 ko"></a></dt>
+															<dt class="crayon document-titre-838 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 23.05.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_845 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_26.06.2018.pdf" title="PDF - 726.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 726.5 ko"></a></dt>
+															<dt class="crayon document-titre-845 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 26.06.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_848 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_16.07.2018.pdf" title="PDF - 309.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 309.1 ko"></a></dt>
+															<dt class="crayon document-titre-848 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 16.07.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_858 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_25.09.2018.pdf" title="PDF - 522.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 522.9 ko"></a></dt>
+															<dt class="crayon document-titre-858 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 25.09.2018</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_857 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_23.10.2018.pdf" title="PDF - 541.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 541.7 ko"></a></dt>
+															<dt class="crayon document-titre-857 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 23.10.2018</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_871 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_11.12.2018.pdf" title="PDF - 862.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 862.4 ko"></a></dt>
+															<dt class="crayon document-titre-871 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 11.12.2018</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2017</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_658 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_17-01-2017.pdf" title="PDF - 682.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 682.7 ko"></a></dt>
+															<dt class="crayon document-titre-658 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 17.01.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_660 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc-_13-02-2017.pdf" title="PDF - 8.2 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 8.2 Mo"></a></dt>
+															<dt class="crayon document-titre-660 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 13.02.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_691 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc-_14-03-2017.pdf" title="PDF - 7.1 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 7.1 Mo"></a></dt>
+															<dt class="crayon document-titre-691 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 14.03.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_710 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_11-04-2017-2.pdf" title="PDF - 473.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 473.3 ko"></a></dt>
+															<dt class="crayon document-titre-710 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 11.04.2017</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_723 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_5_-_30-05-2017.pdf" title="PDF - 550.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 550.6 ko"></a></dt>
+															<dt class="crayon document-titre-723 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 30.05.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_739 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_11_07_2017.pdf" title="PDF - 568.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 568.1 ko"></a></dt>
+															<dt class="crayon document-titre-739 spip_doc_titre" style="width:120px;"><strong>Conseil communaitaire - 11.07.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_753 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12.09.2017.pdf" title="PDF - 621.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 621.3 ko"></a></dt>
+															<dt class="crayon document-titre-753 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 12.09.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_752 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_13.11.2017.pdf" title="PDF - 848.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 848.3 ko"></a></dt>
+															<dt class="crayon document-titre-752 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 13.11.2017</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_807 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12.12.2017.pdf" title="PDF - 1012.8 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 1012.8 ko"></a></dt>
+															<dt class="crayon document-titre-807 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 12.12.2017</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2016</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_559 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_23-02-2016.pdf" title="PDF - 757.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 757.5 ko"></a></dt>
+															<dt class="crayon document-titre-559 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 23.02.2016</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_567 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_22-03-2016.pdf" title="PDF - 584.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 584.3 ko"></a></dt>
+															<dt class="crayon document-titre-567 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 22.03.2016</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_580 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12-04-2016.pdf" title="PDF - 520.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 520.3 ko"></a></dt>
+															<dt class="crayon document-titre-580 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 12.04.2016</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_589 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_14-06-2016.pdf" title="PDF - 429.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 429.4 ko"></a></dt>
+															<dt class="crayon document-titre-589 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 14.06.2016</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_592 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_12-07-2016.pdf" title="PDF - 678.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 678.4 ko"></a></dt>
+															<dt class="crayon document-titre-592 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 12.07.2016</strong></dt>
+														</dl>
+													</td>
+													<td></td>
+													<td>
+														<dl class="spip_document_622 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_27-09-2016.pdf" title="PDF - 5.8 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 5.8 Mo"></a></dt>
+															<dt class="crayon document-titre-622 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 27.09.2016</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_636 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_25-10-2016.pdf" title="PDF - 558.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 558.7 ko"></a></dt>
+															<dt class="crayon document-titre-636 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 25.10.2016</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_640 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_13-12-2016.pdf" title="PDF - 692.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 692.1 ko"></a></dt>
+															<dt class="crayon document-titre-640 spip_doc_titre" style="width:120px;"><strong>Conseil communautaire - 13.12.2016</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2015</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_496 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/cr_cc_-_17-02-2015.pdf" title="PDF - 901.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 901.1 ko"></a></dt>
+															<dt class="crayon document-titre-496 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire 17.02.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_525 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/cr_cc_-_24-03-2015.pdf" title="PDF - 597.8 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 597.8 ko"></a></dt>
+															<dt class="crayon document-titre-525 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire 24.03.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_524 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_28-04-2015.pdf" title="PDF - 536.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 536.3 ko"></a></dt>
+															<dt class="crayon document-titre-524 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire 28.04.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_519 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_07-07-2015.pdf" title="PDF - 183.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 183.4 ko"></a></dt>
+															<dt class="crayon document-titre-519 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire 7.07.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_520 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_21-07-2015.pdf" title="PDF - 305.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 305.5 ko"></a></dt>
+															<dt class="crayon document-titre-520 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire 21.07.2015</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_545 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_13-10-2015.pdf" title="PDF - 540.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 540.9 ko"></a></dt>
+															<dt class="crayon document-titre-545 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 13.10.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_551 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_24-11-2015.pdf" title="PDF - 410.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 410.2 ko"></a></dt>
+															<dt class="crayon document-titre-551 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 24.11.2015</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_553 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/pv_cc_-_14-12-2015.pdf" title="PDF - 604.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 604.4 ko"></a></dt>
+															<dt class="crayon document-titre-553 spip_doc_titre" style="width:120px;"><strong>Conseil Communautaire - 14.12.2015</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2014</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_323 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberation_20_janvier_2014_diffusion.pdf" title="PDF - 140.8 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 140.8 ko"></a></dt>
+															<dt class="crayon document-titre-323 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 20.01.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_327 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_3_mars_2014_cr_diffusion.pdf" title="PDF - 111.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 111.9 ko"></a></dt>
+															<dt class="crayon document-titre-327 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 03.03.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_326 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberation_10_mars_2014_diffusion.pdf" title="PDF - 106.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 106.4 ko"></a></dt>
+															<dt class="crayon document-titre-326 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 10.03.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_331 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/conseil_de_communaute_22_avril_2014_diffusion.pdf" title="PDF - 142.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 142.9 ko"></a></dt>
+															<dt class="crayon document-titre-331 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 22.04.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_333 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/conseil_cr_28_avril_2014_diffusion.pdf" title="PDF - 47.8 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 47.8 ko"></a></dt>
+															<dt class="crayon document-titre-333 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 28.04.2014</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_335 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/deliberation_27_mai_2014_diffusion.pdf" title="PDF - 75.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 75.1 ko"></a></dt>
+															<dt class="crayon document-titre-335 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 27.05.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_340 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/conseil_15_juillet_2014_compte_rendu_diffusion.pdf" title="PDF - 81 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 81 ko"></a></dt>
+															<dt class="crayon document-titre-340 spip_doc_titre" style="width:120px;"><strong>Conseil de Comunauté 15.07.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_479 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_compte_rendu_2_septembre_2014_diffusion.pdf" title="PDF - 79.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 79.3 ko"></a></dt>
+															<dt class="crayon document-titre-479 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté - 02.09.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_484 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/deliberation_7_octobre_2014.pdf" title="PDF - 81.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 81.9 ko"></a></dt>
+															<dt class="crayon document-titre-484 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 07.10.2014</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_488 spip_documents" style="width:120px;">
+															<dt><a href="IMG/pdf/cr_cc_-_09-12-2014.pdf" title="PDF - 229.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 229.2 ko"></a></dt>
+															<dt class="crayon document-titre-488 spip_doc_titre" style="width:120px;"><strong>Compte Rendu CC 09.12.2014</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2013</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_239 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_21_janvier_2013.pdf" title="PDF - 135 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 135 ko"></a></dt>
+															<dt class="crayon document-titre-239 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 21.01.2013</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_253 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberations_2_avril_2013.pdf" title="PDF - 117.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 117.4 ko"></a></dt>
+															<dt class="crayon document-titre-253 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 02.04.2013</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_254 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_compte_rendu_13_mai_2013.pdf" title="PDF - 104.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 104.7 ko"></a></dt>
+															<dt class="crayon document-titre-254 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 13.05.2013</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_252 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/cr_conseil_24_juin_2013.pdf" title="PDF - 82.2 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 82.2 ko"></a></dt>
+															<dt class="crayon document-titre-252 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 24.06.2013</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_279 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/conseil_29_sept_2013.pdf" title="PDF - 220.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 220.5 ko"></a></dt>
+															<dt class="crayon document-titre-279 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 29.09.2013</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_324 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_com_17_decembre_2013_diffusion.pdf" title="PDF - 147.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 147.6 ko"></a></dt>
+															<dt class="crayon document-titre-324 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 17.12.2013</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2012</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_168 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberations_6_fevrier_2012.pdf" title="PDF - 242.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 242.1 ko"></a></dt>
+															<dt class="crayon document-titre-168 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 06.02.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_166 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_26_mars_2012.pdf" title="PDF - 1.5 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 1.5 Mo"></a></dt>
+															<dt class="crayon document-titre-166 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 26.03.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_167 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberations_2_avril_2012_diffusion.pdf" title="PDF - 181.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 181.9 ko"></a></dt>
+															<dt class="crayon document-titre-167 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 02.04.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_169 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/deliberation_14_mai_2012.pdf" title="PDF - 198.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 198.5 ko"></a></dt>
+															<dt class="crayon document-titre-169 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 14.05.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_165 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_25_juin_2012.pdf" title="PDF - 106 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 106 ko"></a></dt>
+															<dt class="crayon document-titre-165 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 25.06.2012</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_164 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_23_juillet_2012_diffusion.pdf" title="PDF - 80.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 80.1 ko"></a></dt>
+															<dt class="crayon document-titre-164 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 23.07.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_172 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberations_15_octobre_2012.pdf" title="PDF - 78.4 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 78.4 ko"></a></dt>
+															<dt class="crayon document-titre-172 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 15.10.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_237 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_deliberation_6_nov_2012.pdf" title="PDF - 81.3 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 81.3 ko"></a></dt>
+															<dt class="crayon document-titre-237 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 06.11.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_238 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/ccvt_conseil_10_decembre_2012.pdf" title="PDF - 105.1 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 105.1 ko"></a></dt>
+															<dt class="crayon document-titre-238 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 10.12.2012</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_279 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/conseil_29_sept_2013.pdf" title="PDF - 220.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 220.5 ko"></a></dt>
+															<dt class="crayon document-titre-279 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 29.09.2013</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="onglets_contenu">
+										<h2 class="cs_onglet"><a href="#">2011</a></h2>
+										<div>
+											<table class="spip">
+												<tr class="row_even">
+													<td>
+														<dl class="spip_document_160 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_21_fevrier_2011-2.pdf" title="PDF - 602.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 602.6 ko"></a></dt>
+															<dt class="crayon document-titre-160 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 21.02.2011</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_163 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_28_mars_2011.pdf" title="PDF - 2 Mo" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 2 Mo"></a></dt>
+															<dt class="crayon document-titre-163 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 28.03.2011</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_162 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_28_avril_2011x.pdf" title="PDF - 609.9 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 609.9 ko"></a></dt>
+															<dt class="crayon document-titre-162 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 28.04.2011</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_159 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_18_juillet_2011.pdf" title="PDF - 236.6 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 236.6 ko"></a></dt>
+															<dt class="crayon document-titre-159 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 18.07.2011</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_158 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_12_sept_2011.pdf" title="PDF - 600.7 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 600.7 ko"></a></dt>
+															<dt class="crayon document-titre-158 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 12.09.2011</strong></dt>
+														</dl>
+													</td>
+												</tr>
+												<tr class="row_odd">
+													<td>
+														<dl class="spip_document_161 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_24_octobre_2011.pdf" title="PDF - 142 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 142 ko"></a></dt>
+															<dt class="crayon document-titre-161 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté 24.10.2011</strong></dt>
+														</dl>
+													</td>
+													<td>
+														<dl class="spip_document_157 spip_documents spip_documents_center" style="width:120px;">
+															<dt><a href="IMG/pdf/compte_rendu_conseil_12_decembre_2011.pdf" title="PDF - 441.5 ko" type="application/pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="PDF - 441.5 ko"></a></dt>
+															<dt class="crayon document-titre-157 spip_doc_titre" style="width:120px;"><strong>Conseil de Communauté du 12.12.2011</strong></dt>
+														</dl>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="nettoyeur"></div>
+							<div class="divers">
+								<h4>Documents joints</h4>
+								<ul>
+									<li><a href="IMG/pdf/07_-_16.07.2018_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Document</a>, <em>PDF</em>, <em>284.9 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/08_-_25.09.2018_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Document</a>, <em>PDF</em>, <em>283.9 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/02_-_12.03.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 12.03.2019</a>, <em>PDF</em>, <em>282.2 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/03_-_02.04.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 02.04.2019</a>, <em>PDF</em>, <em>188.9 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/04_-14.05.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 14.05.2019</a>, <em>PDF</em>, <em>183.3 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/05_-25.06.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 25.06.2019</a>, <em>PDF</em>, <em>189.3 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/06_-27.08.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 27.08.2019</a>, <em>PDF</em>, <em>193.7 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/09_-_17.12.2019_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 17.12.2019</a>, <em>PDF</em>, <em>202.8 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+									<li><a href="IMG/pdf/01_-_14.01.2020_-_convocation.pdf"><img src="prive/vignettes/pdf.png" width="52" height="52" alt="" class="spip_logos">Convocation - Conseil communautaire du 14.01.2020</a>, <em>PDF</em>, <em>191.3 ko</em>
+										<div class="nettoyeur"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- finde_surligneconditionnel-->
+					</div>
+					<!-- ajaxbloc -->
+				</div>
+				<div class="nettoyeur"></div>
+			</div>
+			<div class="ajaxbloc env-CdFDNxLQF/3ZtSUIsHFKD9ab+5eqDaCQSpQiRh2Z4gb4fvqiEJSq6Bldw+yKQ3qz+xqtyAp2wnNZrmIv1EQRfLKgjDcq6lI7ACkeBimJHS7PsqApDkPt6Cb0Tm9B6olnq8XLx0tUVo5R2ILViFKIdnsfCsFcpXkOzaN/xce1QmocILZwj2nMUAWGmgi2bpVaWJPPwRydQtFvoA=="><a name="bas"></a>
+				<ul id="pied">
+					<li class="premier"><a href="http://www.ccvt.fr/spip.php?page=rss" title="RSS"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/rss2.png" name="image1" alt="RSS" style="height:15px;width:15px;"></a></li>
+					<li><a href="http://www.ccvt.fr/spip.php?page=plan&lang=fr">Plan du site</a></li>
+					<li><a href="../spip.php?page=auteur&id_auteur=2">Contact</a></li>
+					<li><a href="http://www.ccvt.fr/spip.php?page=mentions&lang=fr">Mentions légales</a></li>
+					<li><a href="http://www.oak-webdesign.com">Création : OAK-Webdesign</a></li>
+					<li><a href="../spip.php?article69">Accès zone privée</a></li>
+					<li><a href="ecrire/?lang=fr" class="mainlevel"><img src="plugins/auto/eva_bonus_pour_spip_2_0/img_pack/prive.png" name="image" alt="Privé" style="height:15px;width:15px;" onmouseover="image.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/prive2.png'" onmouseout="image.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/prive.png'" onmousedown="image.src='plugins/auto/eva_bonus_pour_spip_2_0/img_pack/prive2.png'"></a></li>
+					<li class="supprimer_le_pied" style="border-style:none;">CCVT - Maison du Canton - 4 rue du pré de Foire 74230 THONES - Tél : 04.50.32.13.59</li>
+				</ul>
+			</div>
+			<!-- ajaxbloc -->
+		</div>
+	</body>
+</html>
