@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html class="no-js" lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="IMG/siteon0.png?1575970080">
+		<link rel="alternate" type="application/rss+xml" title="Syndiquer tout le site" href="spip.php?page=backend">
+		<script type="text/javascript">/* <![CDATA[ */
+var box_settings = {tt_img:true,sel_g:"a[type='image/jpeg'],a[type='image/png'],a[type='image/gif'],.tuiles.diaporama > .tuile > a",sel_c:".mediabox",trans:"elastic",speed:"200",ssSpeed:"2500",maxW:"90%",maxH:"90%",minW:"400px",minH:"",opa:"0.9",str_ssStart:"Diaporama",str_ssStop:"Arrêter",str_cur:"{current}/{total}",str_prev:"Précédent",str_next:"Suivant",str_close:"Fermer",splash_url:""};
+var box_settings_splash_width = "600px";
+var box_settings_splash_height = "90%";
+var box_settings_iframe = true;
+/* ]]> */
+		</script>
+		<!-- insert_head_css -->
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/ui/jquery-ui.css">
+		<link rel="stylesheet" href="plugins-dist/mediabox/colorbox/black-striped/colorbox.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/porte_plume/css/barre_outils.css?1576488294">
+		<link rel="stylesheet" type="text/css" media="all" href="local/cache-css/cssdyn-css_barre_outils_icones_css-1df81cf1.css?1580828508">
+		<link rel="stylesheet" href="plugins/auto/portail74/public/squelettes/css/albums.css" type="text/css">
+		<script src="prive/javascript/jquery.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/jquery-migrate-3.0.1.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.form.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.autosave.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.placeholder-label.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/ajaxCallback.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/js.cookie.js?1576488290" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.cookie.js?1576488290" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery-ui.js?1576488294" type="text/javascript"></script>
+		<!-- insert_head -->
+		<script src="plugins-dist/mediabox/javascript/jquery.colorbox.js?1576488295" type="text/javascript"></script>
+		<script src="plugins-dist/mediabox/javascript/spip.mediabox.js?1576488295" type="text/javascript"></script>
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.markitup_pour_spip.js?1576488294"></script>
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.previsu_spip.js?1576488294"></script>
+		<script type="text/javascript" src="local/cache-js/jsdyn-javascript_porte_plume_start_js-d43412a4.js?1580828508"></script>
+		<!-- Debut CS -->
+		<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/* Par defaut : enveloppe_mails = -1 */
+
+/*]]>*/-->
+		</style>
+		<!-- Fin CS -->
+		<!-- Debut CS -->
+		<script type="text/javascript"><!--
+var cs_prive=window.location.pathname.match(/\/ecrire\/$/)!=null;
+jQuery.fn.cs_todo=function(){return this.not('.cs_done').addClass('cs_done');};
+var cs_init = function() {
+	/* optimisation : 'IF(1)' */ if(!cs_prive) jQuery("a.spip_out,a.spip_url,a.spip_glossaire",this).attr("target", "_blank"); 
+}
+if(typeof onAjaxLoad=='function') onAjaxLoad(cs_init);
+if(window.jQuery) {
+var cs_sel_jQuery=typeof jQuery(document).selector=='undefined'?'@':'';
+var cs_CookiePlugin="prive/javascript/jquery.cookie.js";
+jQuery(document).ready(function(){
+	cs_init.apply(document);
+});
+}
+// -->
+		</script>
+		<!-- Fin CS -->
+		<!-- début de : ckeditor_insert_head -->
+		<link rel="stylesheet" href="plugins/auto/ckeditor/v0.17.1/css/cked-editor.css" type="text/css">
+		<script type="application/javascript" src="https://www.cc-hautchablais.fr/lib/ckeditor/ckeditor.js"></script>
+		<script type="application/javascript">CKEDITOR.config.jqueryOverrideVal=true;</script>
+		<script type="application/javascript" src="https://www.cc-hautchablais.fr/lib/ckeditor/adapters/jquery.js"></script>
+		<script type="application/javascript" src="local/cache-js/jsdyn-ckeditor4spip_js-51e428e6.js?1580828508"></script>
+		<script type="application/javascript">
+$(document).ready(function(){
+	function loadCKEditor() {
+		// la configuration de ckeditor :
+		CKEDITOR.ckeditorpath="https:\/\/www.cc-hautchablais.fr\/lib\/ckeditor\/ckeditor.js";
+		CKEDITOR.spipurl="https:\/\/www.cc-hautchablais.fr\/spip.php";
+		CKEDITOR.ckpreferedversion='3.6.5';
+		CKEDITOR.ckeditmode='spip';
+		CKEDITOR.ckConfig = {"minwidth":488,"vignette":200,"filebrowserSpipdocBrowseUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=select_documents","format_tags":"h3;pre","format_h3":{"element":"h3","attributes":{"class":"spip"}},"format_pre":{"element":"pre","attributes":{"class":"spip"}},"forcePasteAsPlainText":true,"toolbar_SpipFull":[["Cut","Copy","Paste","PasteText"],["SpellChecker","Scayt"],["Undo","Redo"],["Find","Replace"],["SelectAll","RemoveFormat"],["Bold","Italic","Underline","Strike"],"\/",["Subscript","Superscript"],["NumberedList","BulletedList","Outdent","Indent"],["JustifyLeft","JustifyCenter","JustifyRight","JustifyBlock"],["Spip","Link","Unlink","Anchor"],"\/",["SpipModeles"],["Table","HorizontalRule","SpecialChar"],"\/",["Styles","Format","Font","FontSize"],["TextColor","BGColor"],"\/",["Maximize","About"]],"toolbar_SpipBasic":[["Cut","Copy","PasteText","-","Bold","Italic","Underline","-","NumberedList","BulletedList","-","Spip","Link","Unlink","-","About"]],"toolbar":"SpipFull","uiColor":"#eee","language":"fr","contentsCss":["https:\/\/www.cc-hautchablais.fr\/prive\/spip_style.css","https:\/\/www.cc-hautchablais.fr\/plugins\/auto\/ckeditor\/v0.17.1\/css\/cked-editor.css"],"font_names":"serif;sans serif;monospace;cursive;fantasy","filebrowserBrowseUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=files","filebrowserImageBrowseLinkUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=files","filebrowserImageBrowseUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=images","filebrowserFlashBrowseUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=flash","filebrowserUploadUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=files&mode=direct","filebrowserImageUploadUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=images&mode=direct","filebrowserFlashUploadUrl":"https:\/\/www.cc-hautchablais.fr\/spip.php?page=filebrowser&type=flash&mode=direct","filebrowserWindowWidth":682,"filebrowserWindowHeight":500,"extraPlugins":"spip,spipmodeles","loadExtraPlugins":{"spip":"https:\/\/www.cc-hautchablais.fr\/plugins\/auto\/ckeditor\/v0.17.1\/ckeditor-plugin\/spip\/","spipmodeles":"https:\/\/www.cc-hautchablais.fr\/plugins\/auto\/ckeditor\/v0.17.1\/ckeditor-plugin\/spipmodeles\/"},"colorButton_enableMore":false,"height":500,"scayt_autoStartup":true,"scayt_sLang":"fr_FR","resize_enabled":true,"entities":false,"skin":"kama","enterMode":1,"shiftEnterMode":2,"stylesCombo_stylesSet":"spip-styles:https:\/\/www.cc-hautchablais.fr\/spip.php?page=spip-styles","removeDialogTabs":"link:advanced","fontSize_sizes":"8\/8px;9\/9px;10\/10px;11\/11px;12\/12px;14\/14px;16\/16px;18\/18px;20\/20px;22\/22px;24\/24px;26\/26px;28\/28px;36\/36px;48\/48px;72\/72px","dialog_startupFocusTab":true,"readOnly":false,"spip_contexte":{"id":null,"type":null},"forceEnterMode":true,"removePlugins":"blockquote,div,docprops,flash,iframe,image,newpage,pagebreak,pastefromword,placeholder,preview,print,save,showblocks,smiley,sourcearea,templates,uicolor,forms"};
+
+		var ajaxload=[{"0":"#formulaire_forum textarea[name=texte]","1":"Basic","3":"54c01556b8a644870e0ec01f26dd1541"},{"0":"textarea.crayon-active","1":"Full","3":"1c62eb7851e9eaf12196e323a2b31960"}];
+		CKEDITOR.instances = [] ; // normalement aucune instances de CKEDITOR n'est valide à cet instant, on les vide.
+		fullInitCKEDITOR(ajaxload) ;
+	}
+
+	if(typeof onAjaxLoad == 'function') onAjaxLoad(loadCKEditor);
+	loadCKEditor();
+}) ;
+
+		</script>
+		<!-- fin de : ckeditor_insert_head -->
+		<link href="plugins/auto/portail74/public/squelettes/css/normalize.css" rel="stylesheet">
+		<link href="plugins/auto/portail74/public/squelettes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="plugins/auto/portail74/public/squelettes/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		<script src="plugins/auto/portail74/public/squelettes/js/hoverIntent.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/superfish.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/jquery.cycle2.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/jquery.cycle2.carousel.min.js"></script>
+		<script src="plugins/auto/portail74/public/squelettes/js/modernizr-2.8.3.min.js"></script>
+		<link href="spip.php?page=portail74.css" rel="stylesheet">
+		<script src="plugins/auto/portail74/public/squelettes/js/portail74.js" type="text/javascript"></script>
+		<title>Les comptes-rendus des réunions du conseil communautaire - Communauté de Communes du Haut-Chablais</title>
+		<meta name="description" content="2020 2019 2018 2017 2016 2015 2014 2013 2012">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1><a href="Francais"> <img class="spip_logo spip_logos" alt="" src="local/cache-vignettes/L158xH100/siteon0-ef592.png?1580828407" width="158" height="100"> <span> <strong>Communauté de Communes du Haut-Chablais</strong> <em></em> </span> </a></h1>
+				<div class="haut">
+					<form action="spip.php?page=recherche" method="get" class="formrecherche formulaire_spip"><input name="page" value="recherche" type="hidden"> <input type="text" class="text" size="80" accesskey="4" autocapitalize="off" autocorrect="off" name="recherche" id="recherche" placeholder="Rechercher" value=""> <button type="submit" class="button"> <span class="glyphicon glyphicon-search"></span> <span class="text">Recherche</span> </button></form>
+				</div>
+				<nav class="header">
+					<h2>Navigation</h2><span class="sommaire_button"></span>
+					<ul class="sommaire">
+						<li class="accueil off"><a href="Francais" class="off premier"> <span class="glyphicon glyphicon-home"></span> <span class="text"> Accueil </span> </a></li>
+						<li class="on current"><a href="CCHC" class="on current pere"> <strong> CCHC </strong> </a>
+							<ul>
+								<li class="off"><a href="Nos-15-communes" class="off"> <span> Nos 15 communes </span> </a></li>
+								<li class="off"><a href="Presentation" class="off"> <span> Présentation </span> </a></li>
+								<li class="off"><a href="Organisation-politique" class="off"> <span> Organisation politique </span> </a></li>
+								<li class="off"><a href="Les-services-et-le-personnel" class="off"> <span> Les services et le personnel </span> </a></li>
+								<li class="on current"><a href="Les-comptes-rendus-des-reunions-du" class="on"> <strong> Les comptes-rendus des réunions du conseil communautaire </strong> </a></li>
+								<li class="off"><a href="Les-marches-publics-392" class="off"> <span> Marchés publics </span> </a></li>
+								<li class="off"><a href="Appels-a-projets-et-programmes-de" class="off"> <span> Appels à projets et programmes de subventions </span> </a></li>
+								<li class="off"><a href="Offres-d-emploi-550" class="off"> <span> Offres d’emploi </span> </a></li>
+								<li class="off"><a href="Publications" class="off"> <span> Publications </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Urbanisme-PLUi-H" class="off pere"> <span> URBANISME - PLUiH </span> </a>
+							<ul>
+								<li class="off"><a href="PLUi-H-365" class="off  pere"> <span> Le PLUi-H </span> </a>
+									<ul>
+										<li class="off"><a href="Reunions-publiques" class="off  pere"> <span> Réunions publiques </span> </a></li>
+										<li class="off"><a href="Le-PLUi-H-qu-est-ce-que-c-est" class="off"> <span> Le PLUi-H, qu’est-ce que c’est ? </span> </a></li>
+										<li class="off"><a href="Les-grandes-etapes-du-PLUi-H" class="off"> <span> Les grandes étapes du PLUi-H </span> </a></li>
+										<li class="off"><a href="Gouvernance-s-informer-et-s" class="off"> <span> Gouvernance - s’informer et s’exprimer </span> </a></li>
+										<li class="off"><a href="Les-ateliers-du-COP15" class="off"> <span> Les ateliers du COP15 </span> </a></li>
+										<li class="off"><a href="Le-Projet-d-Amenagement-et-de" class="off"> <span> Le Projet d’Aménagement et de Développement Durables (PADD) </span> </a></li>
+										<li class="off"><a href="Les-compte-rendus-de-commissions" class="off"> <span> Les compte-rendus de commissions thématiques </span> </a></li>
+										<li class="off"><a href="La-concertation-avec-la-population" class="off"> <span> La concertation avec la population. </span> </a></li>
+										<li class="off"><a href="Lettres-d-informations" class="off"> <span> Lettres d’informations </span> </a></li>
+										<li class="off"><a href="Dossier-d-arret-du-PLUi-EXEMPLE" class="off"> <span> Dossier d’arrêt du PLUi-H </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="L-instruction-des-autorisations-d" class="off"> <span> L’instruction des autorisations d’urbanisme </span> </a></li>
+								<li class="off"><a href="Le-Schema-de-Coherence-654" class="off"> <span> Le Schéma de Cohérence Territoriale (SCoT) </span> </a></li>
+								<li class="off"><a href="Modification-des-PLU-communaux" class="off"> <span> Modification des PLU communaux </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="Economie-et-tourisme" class="off pere"> <span> ECONOMIE </span> </a>
+							<ul>
+								<li class="off"><a href="Les-zones-d-activites-economiques" class="off"> <span> Les zones d’activités économiques </span> </a></li>
+								<li class="off"><a href="Chablais-Leman-Developpement" class="off"> <span> Agence Economique du Chablais </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="ENVIRONNEMENT" class="off pere"> <span> ENVIRONNEMENT </span> </a>
+							<ul>
+								<li class="off"><a href="Les-dechets" class="off  pere"> <span> Gestion des déchets </span> </a>
+									<ul>
+										<li class="off"><a href="Actualites-des-dechets" class="off  pere"> <span> Actualités des déchets </span> </a></li>
+										<li class="off"><a href="La-collecte-des-dechets" class="off  pere"> <span> La collecte des déchets </span> </a></li>
+										<li class="off"><a href="Les-decheteries" class="off  pere"> <span> Les déchèteries </span> </a>
+											<ul>
+												<li class="off"><a href="Les-conditions-d-acces-aux" class="off"> <span> Les conditions d’accès aux déchèteries intercommunales </span> </a></li>
+												<li class="off"><a href="La-decheterie-de-Vailly" class="off"> <span> La déchèterie de Vailly </span> </a></li>
+												<li class="off"><a href="La-decheterie-de-La-Vignette-au" class="off"> <span> La déchèterie du Biot </span> </a></li>
+												<li class="off"><a href="La-decheterie-du-Couard-a-Morzine" class="off"> <span> La déchèterie de Morzine </span> </a></li>
+												<li class="off"><a href="La-dechetterie-des-Gets" class="off"> <span> La déchèterie des Gets </span> </a></li>
+												<li class="off"><a href="La-dechetterie-d-Avoriaz" class="off"> <span> La déchèterie d’Avoriaz </span> </a></li>
+												<li class="off"><a href="7-Les-dechets-des-professionnels" class="off"> <span> Les déchets des professionnels </span> </a></li>
+											</ul>
+										</li>
+										<li class="off"><a href="Le-depot-de-materiaux-inertes-484" class="off"> <span> Le dépôt de matériaux inertes </span> </a></li>
+										<li class="off"><a href="Dechets-particuliers" class="off"> <span> Les déchets particuliers comme les pneumatiques, les lampes, les médicaments, les DEEE... </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="L-assainissement-non-collectif-322" class="off  pere"> <span> Assainissement non collectif </span> </a></li>
+								<li class="off"><a href="Les-sites-Natura-2000" class="off  pere"> <span> Sites Natura 2000 </span> </a>
+									<ul>
+										<li class="off"><a href="Le-site-Natura-2000-du-Roc-d-Enfer-446" class="off"> <span> Le site Natura 2000 du Roc d’Enfer </span> </a></li>
+										<li class="off"><a href="Le-site-Natura-2000-du-Haut-Giffre-447" class="off"> <span> Le site Natura 2000 du Haut-Giffre </span> </a></li>
+										<li class="off"><a href="Le-site-Natura-2000-du-Haut-Giffre" class="off"> <span> Le site Natura 2000 du Plateau de Loex </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Agriculture-et-foret" class="off  pere"> <span> Agriculture et forêt </span> </a>
+									<ul>
+										<li class="off"><a href="Les-alpages" class="off"> <span> Les alpages </span> </a></li>
+										<li class="off"><a href="La-Route-Terroir-et-Savoir-Faire" class="off"> <span> La "Route Terroir et Savoir-Faire du Haut-Chablais". </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Les-Espaces-Naturels-Sensibles-ENS" class="off  pere"> <span> Les Espaces Naturels Sensibles (ENS) </span> </a></li>
+								<li class="off"><a href="GEMAPI-375" class="off  pere"> <span> GEMAPI </span> </a>
+									<ul>
+										<li class="off"><a href="La-competence-GEMAPI" class="off"> <span> La compétence GEMAPI </span> </a></li>
+										<li class="off"><a href="Le-contrat-de-riviere-des-Dranses" class="off"> <span> Le contrat de rivières des Dranses et de l’est lémanique </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Le-Geopark-488" class="off"> <span> Le Geopark Chablais </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="SOCIAL-SANTE" class="off pere"> <span> PETITE ENFANCE </span> </a>
+							<ul>
+								<li class="off"><a href="Le-Relais-d-Assistantes-396" class="off"> <span> Le Relais d’Assistant(es) Maternel(les) </span> </a></li>
+								<li class="off"><a href="Les-creches" class="off"> <span> Les crèches </span> </a></li>
+								<li class="off"><a href="Parentalite" class="off"> <span> Parentalité </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="SOCIAL-SANTE-317" class="off pere"> <span> SOCIAL </span> </a>
+							<ul>
+								<li class="off"><a href="LES-AINES-338" class="off  pere"> <span> Les aînés </span> </a>
+									<ul>
+										<li class="off"><a href="Animations-490" class="off"> <span> Animations </span> </a></li>
+										<li class="off"><a href="Foyer-Les-Floralies-492" class="off"> <span> Foyer "Les Floralies" </span> </a></li>
+										<li class="off"><a href="EHPAD-du-Haut-Chablais-493" class="off"> <span> EHPAD du Haut-Chablais </span> </a></li>
+										<li class="off"><a href="EHPAD-La-prairie-494" class="off"> <span> EHPAD "La prairie" </span> </a></li>
+										<li class="off"><a href="EHPAD-L-Ermitage-495" class="off"> <span> EHPAD "L’Ermitage" </span> </a></li>
+										<li class="off"><a href="Autres-etablissements-496" class="off"> <span> Autres établissements </span> </a></li>
+										<li class="off"><a href="Accueil-de-jour-498" class="off"> <span> Accueil de jour </span> </a></li>
+										<li class="off"><a href="Aide-au-maintien-a-domicile-499" class="off"> <span> Aide au maintien à domicile </span> </a></li>
+										<li class="off"><a href="Portage-de-repas-501" class="off"> <span> Portage de repas </span> </a></li>
+										<li class="off"><a href="Transports-502" class="off"> <span> Transports </span> </a></li>
+										<li class="off"><a href="Services-Specialisees" class="off"> <span> Services Spécialisés </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Le-Pole-de-Sante-489" class="off"> <span> Le Pôle de Santé Pluriprofessionnel de la Vallée d’Aulps </span> </a></li>
+								<li class="off"><a href="La-Maison-de-Sante-Multisite-de-la" class="off"> <span> La Maison de Santé Multisite de la Vallée du Brevon </span> </a></li>
+								<li class="off"><a href="La-Maison-de-Services-au-Public" class="off"> <span> La Maison de Services au Public </span> </a></li>
+								<li class="off"><a href="Le-Point-Accueil-Saisonniers" class="off"> <span> Le Point Accueil Saisonniers </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="TRANSPORTS" class="off pere"> <span> TRANSPORT </span> </a>
+							<ul>
+								<li class="off"><a href="Le-transport-scolaire-401" class="off"> <span> Le transport scolaire </span> </a></li>
+								<li class="off"><a href="Le-Balad-Aulps-Bus-et-le-Brev-Bus" class="off"> <span> Le Balad’Aulps Bus </span> </a></li>
+							</ul>
+						</li>
+						<li class="off"><a href="CULTURE-TOURISME-SPORTS" class="off pere"> <span> CULTURE/TOURISME/SPORTS </span> </a>
+							<ul>
+								<li class="off"><a href="Equipements-sportifs" class="off  pere"> <span> Sentiers - Trail - Cyclo </span> </a>
+									<ul>
+										<li class="off"><a href="Les-sentiers-486" class="off"> <span> Les sentiers pédestres </span> </a></li>
+										<li class="off"><a href="Le-Trail" class="off"> <span> Le Trail </span> </a></li>
+										<li class="off"><a href="Le-velo-de-route" class="off"> <span> Le vélo de route </span> </a></li>
+									</ul>
+								</li>
+								<li class="off"><a href="Les-musees" class="off"> <span> Les musées </span> </a></li>
+								<li class="off"><a href="Le-Reseau-des-Bibliotheques" class="off"> <span> Le Réseau des Bibliothèques </span> </a></li>
+								<li class="off"><a href="Les-ecoles-de-musique" class="off"> <span> Le Réseau des écoles de musique </span> </a></li>
+								<li class="off"><a href="les-Offices-de-Tourisme-586" class="off"> <span> Les Offices de Tourisme </span> </a></li>
+								<li class="off"><a href="Les-partenaires-culturels" class="off"> <span> Les partenaires culturels </span> </a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="slide_list">
+					<div class="slide slide_1"></div>
+				</div>
+			</div>
+		</header>
+		<article>
+			<!-- debut_surligneconditionnel -->
+			<header class="entete">
+				<p class="container arborescence"><strong>Vous êtes ici : </strong> <a href="Francais">Accueil</a> > <a href="CCHC">CCHC</a> > <em>Les comptes-rendus des réunions du conseil communautaire</em></p>
+				<div class="container">
+					<h2><span class="crayon article-titre-387 ">Les comptes-rendus des réunions du conseil communautaire</span></h2>
+				</div>
+			</header>
+			<section class="contenu">
+				<div class="container">
+					<div class="crayon article-texte-387 texte">
+						<center><strong>2020</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_2020 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_21_janvier_2020.pdf" target="_blank" class=" " title="PDF - 234.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-2020 spip_doc_titre"><strong>Réunion du 20 janvier 2020</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_2021 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_6_fevrier_2020.pdf" target="_blank" class=" " title="PDF - 628.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-2021 spip_doc_titre"><strong>Réunion du 6 février 2020</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_2022 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_10_mars_2020.pdf" target="_blank" class=" " title="PDF - 226 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-2022 spip_doc_titre"><strong>Réunion du 10 mars 2020</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2019</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1953 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_17_septembre_2019.pdf" target="_blank" class=" " title="PDF - 428.4 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1953 spip_doc_titre"><strong>Réunion du 17 septembre 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1973 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_15_octobre_2019.pdf" target="_blank" class=" " title="PDF - 817.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1973 spip_doc_titre"><strong>Réunion du 15 octobre 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1974 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_26_novembre_2019.pdf" target="_blank" class=" " title="PDF - 283.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1974 spip_doc_titre"><strong>Réunion du 26 novembre 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1975 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_17_decembre_2019.pdf" target="_blank" class=" " title="PDF - 326.8 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1975 spip_doc_titre"><strong>Réunion du 17 décembre 2019</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_1925 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_12_avril_2019.pdf" target="_blank" class=" " title="PDF - 1.4 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1925 spip_doc_titre"><strong>Réunion du 12 avril 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1926 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_14_mai_2019.pdf" target="_blank" class=" " title="PDF - 289.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1926 spip_doc_titre"><strong>Réunion du 14 mai 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1927 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_18_juin_2019.pdf" target="_blank" class=" " title="PDF - 1.6 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1927 spip_doc_titre"><strong>Réunion du 18 juin 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1952 spip_documents">
+											<dt><a href="IMG/pdf/cr_du_16_juillet_2019.pdf" target="_blank" class=" " title="PDF - 276.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1952 spip_doc_titre"><strong>Réunion du 16 juillet 2019</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1742 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_15_janvier_2019.pdf" target="_blank" class=" " title="PDF - 5.5 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1742 spip_doc_titre"><strong>Réunion du 15 janvier 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1883 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_12_fevrier_2019.pdf" target="_blank" class=" " title="PDF - 1.1 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1883 spip_doc_titre"><strong>Réunion du 12 février 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1884 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_12_mars_2019.pdf" target="_blank" class=" " title="PDF - 560.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1884 spip_doc_titre"><strong>Réunion du 12 mars 2019</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1885 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_26_mars_2019.pdf" target="_blank" class=" " title="PDF - 817.9 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1885 spip_doc_titre"><strong>Réunion du 26 mars 2019</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2018</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1678 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_9_octobre_2018.pdf" target="_blank" class=" " title="PDF - 550.9 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1678 spip_doc_titre"><strong>Réunion du 9 octobre 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1740 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_de_la_reunion_du_13_novembre_2018-2.pdf" target="_blank" class=" " title="PDF - 191.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1740 spip_doc_titre"><strong>Réunion du 13 novembre 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1741 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_11_decembre_2018.pdf" target="_blank" class=" " title="PDF - 273.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1741 spip_doc_titre"><strong>Réunion du 11 décembre 2018</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_1593 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_15_mai_2018.pdf" target="_blank" class=" " title="PDF - 272.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1593 spip_doc_titre"><strong>Réunion du 15 mai 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1626 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_12_juin_2018.pdf" target="_blank" class=" " title="PDF - 1020.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1626 spip_doc_titre"><strong>Réunion du 12 juin 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1668 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_10_juillet_2018.pdf" target="_blank" class=" " title="PDF - 232.4 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1668 spip_doc_titre"><strong>Réunion du 10 juillet 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1669 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_11_septembre_2018-2.pdf" target="_blank" class=" " title="PDF - 729.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1669 spip_doc_titre"><strong>Réunion du 11 septembre 2018</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1563 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_12_janvier_2018.pdf" target="_blank" class=" " title="PDF - 441.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1563 spip_doc_titre"><strong>Réunion du 16 janvier 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1570 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_6_fevrier_2018.pdf" target="_blank" class=" " title="PDF - 265.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1570 spip_doc_titre"><strong>Réunion du 6 février 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1571 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_13_mars_2018.pdf" target="_blank" class=" " title="PDF - 413.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1571 spip_doc_titre"><strong>Réunion du 13 mars 2018</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1592 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_10_avril_2018.pdf" target="_blank" class=" " title="PDF - 1.8 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1592 spip_doc_titre"><strong>Réunion du 10 avril 2018</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2017</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1523 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_17_octobre_2017.pdf" target="_blank" class=" " title="PDF - 220.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1523 spip_doc_titre"><strong>Réunion du 17 octobre 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1524 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_14_novembre_2017.pdf" target="_blank" class=" " title="PDF - 2.4 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1524 spip_doc_titre"><strong>Réunion du 14 novembre 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1562 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_5_decembre_2017.pdf" target="_blank" class=" " title="PDF - 318.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1562 spip_doc_titre"><strong>Réunion du 5 décembre 2017</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_1442 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_16_mai_2017.pdf" target="_blank" class=" " title="PDF - 3.2 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1442 spip_doc_titre"><strong>Réunion du 16 mai 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1459 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_13_juin_2017.pdf" target="_blank" class=" " title="PDF - 570.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1459 spip_doc_titre"><strong>Réunion du 11 juillet 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1466 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_cchc_11-07-17.pdf" target="_blank" class=" " title="PDF - 1.1 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1466 spip_doc_titre"><strong>Réunion du 11 juillet 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1519 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_19_septembre_2017.pdf" target="_blank" class=" " title="PDF - 684.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1519 spip_doc_titre"><strong>Réunion du 19 septembre 2017</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1292 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_10_janvier_2017.pdf" target="_blank" class=" " title="PDF - 1.8 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1292 spip_doc_titre"><strong>Réunion du 10 janvier 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1342 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_7_fevrier_2017.pdf" target="_blank" class=" " title="PDF - 1.7 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1342 spip_doc_titre"><strong>Réunion du 7 février 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1391 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_14_mars_2017.pdf" target="_blank" class=" " title="PDF - 2.9 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1391 spip_doc_titre"><strong>Réunion du 14 mars 2017</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1420 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_du_11_avril_2017.pdf" target="_blank" class=" " title="PDF - 1.5 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1420 spip_doc_titre"><strong>Réunion du 11 avril 2017</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2016</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1201 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_13_septembre_2016.pdf" target="_blank" class=" " title="PDF - 296.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1201 spip_doc_titre"><strong>Réunion du 13 septembre 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1223 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_10_octobre_2016.pdf" target="_blank" class=" " title="PDF - 305.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1223 spip_doc_titre"><strong>Réunion du 10 octobre 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1229 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_8_novembre_2016.pdf" target="_blank" class=" " title="PDF - 170.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1229 spip_doc_titre"><strong>Réunion du 8 novembre 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1238 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_6_decembre_2016.pdf" target="_blank" class=" " title="PDF - 449.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1238 spip_doc_titre"><strong>Réunion du 6 décembre 2016</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_1149 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_5_avril_2016.pdf" target="_blank" class=" " title="PDF - 303.2 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1149 spip_doc_titre"><strong>Réunion du 5 avril 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1178 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_14_juin_2016.pdf" target="_blank" class=" " title="PDF - 283.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1178 spip_doc_titre"><strong>Réunion du 14 juin 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1183 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_12_juillet_2016.pdf" target="_blank" class=" " title="PDF - 400.9 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1183 spip_doc_titre"><strong>Réunion du 12 juillet 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1199 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_6_septembre_2016.pdf" target="_blank" class=" " title="PDF - 566.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1199 spip_doc_titre"><strong>Réunion du 6 septembre 2016</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1096 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_19_janvier_2016.pdf" target="_blank" class=" " title="PDF - 267.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1096 spip_doc_titre"><strong>Réunion du 19 janvier 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1098 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_2_fevrier_2016.pdf" target="_blank" class=" " title="PDF - 207.2 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1098 spip_doc_titre"><strong>Réunion du 2 février 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1105 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_9_fevrier_2016.pdf" target="_blank" class=" " title="PDF - 206.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1105 spip_doc_titre"><strong>Réunion du 9 février 2016</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1184 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu_22_mars_2016-2.pdf" target="_blank" class=" " title="PDF - 322.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1184 spip_doc_titre"><strong>Réunion du 22 mars 2016</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2015</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_1084 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_20_octobre_2015.pdf" target="_blank" class=" " title="PDF - 658.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1084 spip_doc_titre"><strong>Réunion du 20 octobre 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1083 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_3_novembre_2015.pdf" target="_blank" class=" " title="PDF - 506.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1083 spip_doc_titre"><strong>Réunion du 3 novembre 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1095 spip_documents">
+											<dt><a href="IMG/pdf/cr_reunion_du_15_decembre_2015.pdf" target="_blank" class=" " title="PDF - 451 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1095 spip_doc_titre"><strong>Réunion du 15 décembre 2015</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_1072 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_26_mai_2015.pdf" target="_blank" class=" " title="PDF - 95.9 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1072 spip_doc_titre"><strong>Réunion du 26 mai 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1076 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_23_juin_2015.pdf" target="_blank" class=" " title="PDF - 1.3 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1076 spip_doc_titre"><strong>Réunion du 23 juin 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1080 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_4_aout_2015.pdf" target="_blank" class=" " title="PDF - 1.1 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1080 spip_doc_titre"><strong>Réunion du 4 août 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1082 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_29_septembre_2015.pdf" target="_blank" class=" " title="PDF - 230.8 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1082 spip_doc_titre"><strong>Réunion du 29 septembre 2015</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_988 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_27_janvier_2015.pdf" target="_blank" class=" " title="PDF - 105.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-988 spip_doc_titre"><strong>Réunion du 27 janvier 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_990 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_24_fevrier_2015.pdf" target="_blank" class=" " title="PDF - 348.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-990 spip_doc_titre"><strong>Réunion du 24 février 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1007 spip_documents">
+											<dt><a href="IMG/pdf/compte-rendu.pdf" target="_blank" class=" " title="PDF - 965.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1007 spip_doc_titre"><strong>Réunion du 31 mars 2015</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_1010 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_21_avril_2015.pdf" target="_blank" class=" " title="PDF - 647.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-1010 spip_doc_titre"><strong>Réunion du 21 avril 2015</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2014</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_968 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_14_octobre_2014.pdf" target="_blank" class=" " title="PDF - 599.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-968 spip_doc_titre"><strong>Réunion du 14 octobre 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_986 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_25_novembre_2014.pdf" target="_blank" class=" " title="PDF - 320.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-986 spip_doc_titre"><strong>Réunion du 25 novembre 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_987 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_16_decembre_2014.pdf" target="_blank" class=" " title="PDF - 1.3 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-987 spip_doc_titre"><strong>Réunion du 16 décembre 2014</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_915 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_27_mai_2014.pdf" target="_blank" class=" " title="PDF - 494.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-915 spip_doc_titre"><strong>Réunion du 27 mai 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_917 spip_documents">
+											<dt><a href="IMG/pdf/cr_de_la_reunion_du_24_juin_2014.pdf" target="_blank" class=" " title="PDF - 1.4 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-917 spip_doc_titre"><strong>Réunion du 24 juin 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_946 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_5_aout_2014.pdf" target="_blank" class=" " title="PDF - 195.7 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-946 spip_doc_titre"><strong>Réunion du 5 août 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_966 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_9_septembre_2014-2.pdf" target="_blank" class=" " title="PDF - 129.4 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-966 spip_doc_titre"><strong>Réunion du 9 septembre 2014</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_868 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_21_janvier_2014.pdf" target="_blank" class=" " title="PDF - 109.2 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-868 spip_doc_titre"><strong>Réunion du 21 janvier 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_870 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_11_mars_2014-2.pdf" target="_blank" class=" " title="PDF - 287.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-870 spip_doc_titre"><strong>Réunion du 11 mars 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_913 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_15_avril_2014.pdf" target="_blank" class=" " title="PDF - 72.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-913 spip_doc_titre"><strong>Réunion du 15 avril 2014</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_914 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_29_avril_2014.pdf" target="_blank" class=" " title="PDF - 129.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-914 spip_doc_titre"><strong>Réunion du 29 avril 2014</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2013</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_765 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_11_juin_2013-2.pdf" target="_blank" class=" " title="PDF - 228 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-765 spip_doc_titre"><strong>Réunion du 11 juin 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_777 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_9_juillet_2013.pdf" target="_blank" class=" " title="PDF - 800.6 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-777 spip_doc_titre"><strong>Réunion du 9 juillet 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_797 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_24_septembre_2013.pdf" target="_blank" class=" " title="PDF - 236.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-797 spip_doc_titre"><strong>Réunion du 24 septembre 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_845 spip_documents">
+											<dt><a href="IMG/pdf/reunion_du_17_decembre_2013.pdf" target="_blank" class=" " title="PDF - 297.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-845 spip_doc_titre"><strong>Réunion du 17 décembre 2013</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_663 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_29_janvier_2013.pdf" target="_blank" class=" " title="PDF - 448.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-663 spip_doc_titre"><strong>Réunion du 29 janvier 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_664 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_19_fevrier_2013.pdf" target="_blank" class=" " title="PDF - 267 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-664 spip_doc_titre"><strong>Réunion du 19 février 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_693 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_26_mars_2013.pdf" target="_blank" class=" " title="PDF - 2.5 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-693 spip_doc_titre"><strong>Réunion du 26 mars 2013</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_754 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_23_avril_2013.pdf" target="_blank" class=" " title="PDF - 242.2 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-754 spip_doc_titre"><strong>Réunion du 23 avril 2013</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<center><strong>2012</strong></center>
+						<table class="spip">
+							<tbody>
+								<tr class="row_odd odd">
+									<td>
+										<dl class="spip_document_514 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_31_janvier_2012.pdf" target="_blank" class=" " title="PDF - 252.4 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-514 spip_doc_titre"><strong>Réunion du 31 janvier 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_521 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_28_fevrier_2012.pdf" target="_blank" class=" " title="PDF - 1.7 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-521 spip_doc_titre"><strong>Réunion du 28 février 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_527 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_27_mars_2012.pdf" target="_blank" class=" " title="PDF - 1.6 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-527 spip_doc_titre"><strong>Réunion du 27 mars 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_553 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_24_avril_2012.pdf" target="_blank" class=" " title="PDF - 2.9 Mo" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-553 spip_doc_titre"><strong>Réunion du 24 avril 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_561 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_12_juin_2012.pdf" target="_blank" class=" " title="PDF - 223 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-561 spip_doc_titre"><strong>Réunion du 12 juin 2012</strong></dt>
+										</dl>
+									</td>
+								</tr>
+								<tr class="row_even even">
+									<td>
+										<dl class="spip_document_564 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_17_juillet_2012.pdf" target="_blank" class=" " title="PDF - 237.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-564 spip_doc_titre"><strong>Réunion du 17 juillet 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_569 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_11_septembre_2012.pdf" target="_blank" class=" " title="PDF - 357.9 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-569 spip_doc_titre"><strong>Réunion du 11 septembre 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_570 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_16_octobre_2012.pdf" target="_blank" class=" " title="PDF - 278.5 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-570 spip_doc_titre"><strong>Réunion du 16 octobre 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_585 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_27_novembre_2012-2.pdf" target="_blank" class=" " title="PDF - 233.3 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-585 spip_doc_titre"><strong>Réunion du 27 novembre 2012</strong></dt>
+										</dl>
+									</td>
+									<td>
+										<dl class="spip_document_590 spip_documents">
+											<dt><a href="IMG/pdf/Reunion_du_18_decembre_2012.pdf" target="_blank" class=" " title="PDF - 314.1 ko" type="application/pdf"><img src="local/cache-vignettes/L52xH52/pdf-39070.png?1580828587" width="52" height="52" alt=""></a></dt>
+											<dt class="crayon document-titre-590 spip_doc_titre"><strong>Réunion du 18 décembre 2012</strong></dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			<!-- finde_surligneconditionnel-->
+		</article>
+		<footer>
+			<div class="container">
+				<div class="liste_elements row">
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Francais"> <span class="text"> Accueil </span> </a></h3>
+						<ul class="plan">
+							<li class="off"><a href="Mentions-Legales"> <span> Mentions Légales </span> </a></li>
+							<li class="off"><a href="Nous-contacter-369"> <span> Nous contacter </span> </a></li>
+							<li class="off"><a href="spip.php?page=recherche&lang=fr"> <span> Rechercher </span> </a></li>
+							<li class="off"><a href="spip.php?page=plan&lang=fr"> <span> Plan du site </span> </a></li>
+							<li class="admin off"><a href="http://www.cc-hautchablais.fr/ecrire/"> <span> Espace privé </span> </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre on"><a href="CCHC"> <strong> CCHC </strong> </a></h3>
+						<ul class="plan">
+							<li><a href="Nos-15-communes">Nos 15 communes</a></li>
+							<li><a href="Presentation">Présentation</a></li>
+							<li><a href="Organisation-politique">Organisation politique</a></li>
+							<li><a href="Les-services-et-le-personnel">Les services et le personnel</a></li>
+							<li><a href="Les-comptes-rendus-des-reunions-du">Les comptes-rendus des réunions du conseil communautaire</a></li>
+							<li><a href="Les-marches-publics-392">Marchés publics</a></li>
+							<li><a href="Appels-a-projets-et-programmes-de">Appels à projets et programmes de subventions</a></li>
+							<li><a href="Offres-d-emploi-550">Offres d’emploi</a></li>
+							<li><a href="Publications">Publications</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Urbanisme-PLUi-H"> <span> URBANISME - PLUiH </span> </a></h3>
+						<ul class="plan">
+							<li><a href="PLUi-H-365">Le PLUi-H</a></li>
+							<li><a href="L-instruction-des-autorisations-d">L’instruction des autorisations d’urbanisme</a></li>
+							<li><a href="Le-Schema-de-Coherence-654">Le Schéma de Cohérence Territoriale (SCoT)</a></li>
+							<li><a href="Modification-des-PLU-communaux">Modification des PLU communaux</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="Economie-et-tourisme"> <span> ECONOMIE </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Les-zones-d-activites-economiques">Les zones d’activités économiques</a></li>
+							<li><a href="Chablais-Leman-Developpement">Agence Economique du Chablais</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="ENVIRONNEMENT"> <span> ENVIRONNEMENT </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Les-dechets">Gestion des déchets</a></li>
+							<li><a href="L-assainissement-non-collectif-322">Assainissement non collectif</a></li>
+							<li><a href="Les-sites-Natura-2000">Sites Natura 2000</a></li>
+							<li><a href="Agriculture-et-foret">Agriculture et forêt</a></li>
+							<li><a href="Les-Espaces-Naturels-Sensibles-ENS">Les Espaces Naturels Sensibles (ENS)</a></li>
+							<li><a href="GEMAPI-375">GEMAPI</a></li>
+							<li><a href="Le-Geopark-488">Le Geopark Chablais</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="SOCIAL-SANTE"> <span> PETITE ENFANCE </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Le-Relais-d-Assistantes-396">Le Relais d’Assistant(es) Maternel(les)</a></li>
+							<li><a href="Les-creches">Les crèches</a></li>
+							<li><a href="Parentalite">Parentalité</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="SOCIAL-SANTE-317"> <span> SOCIAL </span> </a></h3>
+						<ul class="plan">
+							<li><a href="LES-AINES-338">Les aînés</a></li>
+							<li><a href="Le-Pole-de-Sante-489">Le Pôle de Santé Pluriprofessionnel de la Vallée d’Aulps</a></li>
+							<li><a href="La-Maison-de-Sante-Multisite-de-la">La Maison de Santé Multisite de la Vallée du Brevon</a></li>
+							<li><a href="La-Maison-de-Services-au-Public">La Maison de Services au Public</a></li>
+							<li><a href="Le-Point-Accueil-Saisonniers">Le Point Accueil Saisonniers</a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="TRANSPORTS"> <span> TRANSPORT </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Le-transport-scolaire-401">Le transport scolaire</a></li>
+							<li><a href="Le-Balad-Aulps-Bus-et-le-Brev-Bus">Le Balad’Aulps Bus </a></li>
+						</ul>
+					</div>
+					<div class="element col-md-3">
+						<h3 class="titre off"><a href="CULTURE-TOURISME-SPORTS"> <span> CULTURE/TOURISME/SPORTS </span> </a></h3>
+						<ul class="plan">
+							<li><a href="Equipements-sportifs">Sentiers - Trail - Cyclo</a></li>
+							<li><a href="Les-musees">Les musées</a></li>
+							<li><a href="Le-Reseau-des-Bibliotheques">Le Réseau des Bibliothèques</a></li>
+							<li><a href="Les-ecoles-de-musique">Le Réseau des écoles de musique</a></li>
+							<li><a href="les-Offices-de-Tourisme-586">Les Offices de Tourisme</a></li>
+							<li><a href="Les-partenaires-culturels">Les partenaires culturels</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
