@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<!--[if lt IE 7]>     <html lang="fr" class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 7]>        <html lang="fr" class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 8]>        <html lang="fr" class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 9]> 	  	  <html lang="fr" class="no-js ie9" lang="fr-FR"> <![endif]-->
+	<!--[if gt IE 8]><!-->
+	<!--<html class="no-js" >-->
+	<!--<![endif]-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>Communauté de communes Côte d'Émeraude</title>
+		<meta name="description" content="Site officiel de la Communauté de communes Côte d'Émeraude">
+		<link rel="shortcut icon" type="image/png" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/images/favicon.png">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/images/favicon.ico">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="dns-prefetch" href="//www.cote-emeraude.fr">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="stylesheet" id="validate-engine-css-css" href="https://www.cote-emeraude.fr/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css" type="text/css" media="all">
+		<link rel="stylesheet" id="colorbox-theme2-css" href="https://www.cote-emeraude.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="leaflet-css" href="https://www.cote-emeraude.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.cote-emeraude.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.cote-emeraude.fr/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="creasit-agenda-css" href="https://www.cote-emeraude.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="style-info-bulle-plan-interactif-css" href="https://www.cote-emeraude.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="gdrf-public-styles-css" href="https://www.cote-emeraude.fr/wp-content/plugins/creasit-rgpd/public/css/public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="gravity_form_style_perso-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/style-gravity-forms.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="reset-css" href="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/css/creasit-reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="dashicons-css" href="https://www.cote-emeraude.fr/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dflip-css" href="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="themify-icons-css" href="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-recherche-css" href="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/css/style-recherche.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="solution-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="1260-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/responsive-1260.css" type="text/css" media="screen and (max-width: 1260px)">
+		<link rel="stylesheet" id="940-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/responsive-940.css" type="text/css" media="screen and (max-width: 940px)">
+		<link rel="stylesheet" id="580-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/responsive-580.css" type="text/css" media="screen and (max-width: 580px)">
+		<link rel="stylesheet" id="print-css" href="https://www.cote-emeraude.fr/wp-content/themes/ccce/css/print.css" type="text/css" media="print">
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"true","colorboxPreloading":"false","colorboxOverlayClose":"true","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js"></script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.cote-emeraude.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js"></script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js"></script>
+		<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-nl.js"></script>
+		<link rel="https://api.w.org/" href="https://www.cote-emeraude.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cote-emeraude.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cote-emeraude.fr/wp-includes/wlwmanifest.xml">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=contacts" title="Flux RSS de l'annuaire de contact">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=base_documentaire" title="Flux RSS de la base documentaire">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=navigation_profils" title="Flux RSS des différents profils">
+		<script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.cote-emeraude.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "eb9e88ea9e";
+        
+		</script>
+		<script type="application/javascript">
+			var dFlipLocation = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		
+		</script>
+		<script type="text/javascript">
+            var URL_DU_SITE = "https://www.cote-emeraude.fr";
+            accessibilitytoolbar_custom = {
+                // MANDATORY : ID of the target container which will include the link. If not null, activate the display in link mode. The link will be added as the last element of the target container. 
+                idLinkModeContainer : "header",
+
+                // OPTIONAL (put it as comments if useless) CSS class applied on the link to unify its appearance with the site.
+                cssLinkModeClassName : "link-class-confort-plus",
+
+                // OPTIONAL (put it as comments if useless) When the service is displayed as a link in the page, a skip link is automatically added at the top of the page. If you already have a group of skip links, you can specify the target container where the skip link will be added. The link will be added as the last element of the target container. 
+                // idSkipLinkIdLinkMode : "", 
+
+                // OPTIONAL (put it as comments if useless) CSS class applied on the skip link
+                // cssSkipLinkClassName : "" 
+            };
+
+        
+		</script>
+		<style type="text/css">#uci_reponses_bigger_quick_set, #uci_contenu_onglet_typographie .uci_onglet_div:first-child {display:none!important;}#uci_profile_menu.uci_submenu {right:-119px;}</style>
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.cote-emeraude.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+	</head>
+	<body class="home blog unknown">
+		<div class="global-wrapper">
+			<div class="scroll-top">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.3px" height="10.2px" viewbox="0 0 18.3 10.2" style="overflow:scroll;enable-background:new 0 0 18.3 10.2;" xml:space="preserve">
+					<defs></defs>
+					<polygon id="top_1_" points="18.3,7.9 16.3,10.2 9.2,4.1 2,10.2 0,7.9 9.2,0 "></polygon>
+				</svg>
+			</div>
+			<header id="header">
+				<div class="header-top">
+					<div class="center"><a href="#" class="toggle-access">Accessibilité</a> <a href="#" class="toggle-translate">Traduction</a> <a href="https://www.marque-bretagne.fr/" target="_blank" title="Marque Bretagne"></a></div>
+				</div>
+				<div id="google_translate_element"></div>
+				<div class="header-bottom">
+					<div class="center">
+						<div class="header-identity">
+							<h1>Communauté de Communes Côte d'Émeraude</h1><a href="https://www.cote-emeraude.fr" class="identity" title="Communauté de Communes Côte d'Émeraude"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="491.1px" height="95.6px" viewbox="0 0 491.1 95.6" style="enable-background:new 0 0 491.1 95.6;" xml:space="preserve"><g id="LOGO_1_"><g id="cadre_1_"><rect x="0.3" y="0.3" class="logo0" width="490.5" height="95.1"></rect><path d="M491.1,95.6H0V0h491.1V95.6z M0.6,95.1h490V0.6H0.6V95.1z"></path></g><g id="texte_1_"><path d="M110.8,22.2c0-6,4.6-10.1,10-10.1c1.5,0,3,0.3,4.3,0.9l-0.1,1.7c0,0.4,0,0.6-0.3,0.6c-0.2,0-0.2-0.1-0.2-0.6
+									c-0.1-0.6-1.7-1.6-3.9-1.6c-4.9,0-7.9,3.7-7.9,8.8c0,5,3.3,8.2,7.4,8.2c2.1,0,4.9-1.1,5.1-2.7c0-0.2,0-0.4,0.3-0.4
+									c0.2,0,0.2,0.1,0.2,0.3c0,0.4,0,0.7-0.1,2.3c-1.8,1-3.9,1.4-6,1.4C114.3,30.9,110.8,27.8,110.8,22.2"></path><path d="M135.8,12.9c-2.6,0-6.4,1.8-6.4,8.3c0,6.2,3.5,8.8,6.9,8.8c2.6,0,6.4-1.8,6.4-8.3C142.7,15.5,139.2,12.9,135.8,12.9
+									 M136.3,12.1c5.3,0,8.1,3.8,8.1,9.1c0,5.1-3.3,9.6-8.5,9.6c-5.3,0-8.1-3.8-8.1-9.1C127.7,16.6,131.1,12.1,136.3,12.1z"></path><path d="M148.8,15.4c0-1-0.2-2.1-1.2-2.1h-1.2v-0.8h3.8l6.3,14.7l5.6-14.7h3.4v0.8h-1.1c-0.3,0-0.6,0-0.6,0.3v11.9
+									c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-5.6v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15l-0.1,0l-6,15.2c0,0.1-0.1,0.2-0.1,0.2c-0.1,0-0.1-0.1-0.2-0.3
+									l-6.2-14.7h0v10.2c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-4.8v-0.8h1.1c0.3,0,0.5,0,0.5-0.3"></path><path d="M170.1,15.4c0-1-0.2-2.1-1.2-2.1h-1.2v-0.8h3.7l6.3,14.7l5.6-14.7h3.4v0.8h-1.1c-0.3,0-0.6,0-0.6,0.3v11.9
+									c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-5.6v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15l0,0l-6,15.2c0,0.1-0.1,0.2-0.1,0.2c-0.1,0-0.2-0.1-0.2-0.3
+									l-6.2-14.7h0v10.2c0,4,0.3,4.1,0.9,4.1h1.4v0.8h-4.7v-0.8h1.1c0.3,0,0.5,0,0.5-0.3"></path><path d="M200.4,12.6h4.8v0.8h-1.1c-0.3,0-0.5,0-0.5,0.3v10.2c0,5.3-3.6,7.1-6.8,7.1c-2.4,0-6-1.1-6-6.1v-7.6
+									c0-3.2-0.1-3.7-0.7-3.7h-1.6v-0.8h5.6v0.8h-1c-0.3,0-0.6,0-0.6,0.3v10.7c0,4.8,3.2,5.4,4.8,5.4c1.7,0,5.5-0.5,5.5-6.2v-6.2
+									c0-4-0.3-4.1-0.9-4.1h-1.4"></path><path d="M221.1,27.2L221.1,27.2l0.1-9.8c0-4-0.3-4.1-0.9-4.1h-1.5v-0.8h4.8v0.8h-1.1c-0.3,0-0.5,0-0.5,0.3v16.5
+									c0,0.3,0,0.4-0.2,0.4c-0.1,0-0.1,0-0.2-0.1L210.1,15h0v10.5c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-4.8v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15.4
+									c0-1-0.2-2.1-1.2-2.1h-1.2v-0.8h3.3"></path><path d="M232.6,14.7c-1.4,3.3-2.1,5.4-3,7.9h5.4 M229.3,23.5c-0.9,2.5-1.6,4.6-1.6,5.4c0,0.2,0,0.7,0.6,0.7h1.1h0.7v0.8h-5.3v-0.8
+									c1.2,0,1.3,0,1.5-0.5l6.6-16.8c0.6-0.2,1.2-0.3,1.4-0.3c0.1,0,0.2,0.1,0.2,0.2c0,0.3-0.4,0.3-0.4,0.8c0,1.1,3.7,12.4,4.6,14.8
+									c0.4,0.9,0.7,1.7,1.3,1.7h1v0.8h-5.4v-0.8h1.3c0.5,0,0.5,0,0.5-0.3c0-0.2-1.1-3.4-1.9-5.8H229.3z"></path><path d="M253.1,12.6h4.7v0.8h-1c-0.3,0-0.5,0-0.5,0.3v10.2c0,5.3-3.5,7.1-6.8,7.1c-2.4,0-6.1-1.1-6.1-6.1v-7.6
+									c0-3.2-0.1-3.7-0.7-3.7h-1.6v-0.8h5.6v0.8h-1c-0.3,0-0.6,0-0.6,0.3v10.7c0,4.8,3.2,5.4,4.8,5.4c1.8,0,5.5-0.5,5.5-6.2v-6.2
+									c0-4-0.3-4.1-0.9-4.1h-1.4"></path><path d="M269.9,30.3H263v-0.8h1.9c0.3,0,0.5,0,0.5-0.3V13.4c-1.6,0-5,0-5.6,1.4c-0.1,0.2-0.2,0.4-0.3,0.4c-0.1,0-0.3,0-0.3-0.2
+									c0-0.1,0.1-0.4,0.7-2.4h12.6c0.7,2,0.7,2.2,0.7,2.4c0,0.2-0.2,0.2-0.3,0.2c-0.2,0-0.3-0.2-0.4-0.4c-0.6-1.4-4-1.4-5.6-1.4v12.1
+									c0,4,0.3,4.1,0.9,4.1h1.9"></path><path d="M280.5,10.5c0.4-0.6,3-2.8,3.5-2.8c0.3,0,0.6,0.6,0.7,0.8c-1.4,0.6-2.6,1.6-3.9,2.4 M274.5,12.6h12.3l-0.2,1.9
+									c-0.1,0.4-0.1,0.5-0.2,0.5c-0.2,0-0.2-0.2-0.3-0.4c0-0.4-0.4-0.6-0.8-0.8c-1.1-0.4-2.7-0.4-3.9-0.4h-1.9c-0.5,0-1,0-1,0.3v6.3h2.5
+									c3.7,0,3.9-0.3,3.9-0.9v-1.1h0.6v4.6h-0.6v-1c0-0.7,0-0.8-3.1-0.8h-3.3v4.5c0,3.9,0.2,3.9,1.1,3.9h1.6c1.3,0,5.2,0,5.7-1.4
+									c0-0.1,0.1-0.3,0.3-0.3c0.1,0,0.2,0.1,0.2,0.2c0,0.2-0.3,1.2-0.7,2.4h-11.6v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V17.1
+									c0-3.2-0.1-3.7-0.7-3.7h-1.6V12.6z"></path><path d="M299.7,25.5c0,3.9,0.2,3.9,1,3.9h2.1c2.3,0,7-0.5,7-7.6c0-7.1-5.4-8.3-6.7-8.3h-2.5c-0.5,0-1,0-1,0.3 M298,17.1
+									c0-3.2-0.1-3.7-0.7-3.7h-1.5v-0.8h7.9c5.4,0,8.1,4.1,8.1,8.6c0,3.6-1.9,9.2-8.6,9.2h-6.7v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V17.1z"></path><path d="M313.6,12.6h12.3l-0.3,1.9c0,0.4,0,0.5-0.2,0.5c-0.2,0-0.2-0.2-0.3-0.4c0-0.4-0.4-0.6-0.8-0.8c-1.1-0.4-2.6-0.4-3.9-0.4
+									h-1.9c-0.5,0-1,0-1,0.3v6.3h2.5c3.7,0,3.9-0.3,3.9-0.9v-1.1h0.7v4.6H324v-1c0-0.7,0-0.8-3-0.8h-3.3v4.5c0,3.9,0.2,3.9,1.1,3.9h1.7
+									c1.3,0,5.2,0,5.7-1.4c0-0.1,0.1-0.3,0.3-0.3c0.1,0,0.2,0.1,0.2,0.2c0,0.2-0.3,1.2-0.7,2.4h-11.5v-0.8h1c0.3,0,0.5,0,0.5-0.3V17.1
+									c0-3.2-0.1-3.7-0.7-3.7h-1.6"></path><path d="M335.5,22.2c0-6,4.6-10.1,10-10.1c1.5,0,3,0.3,4.3,0.9l-0.1,1.7c0,0.4-0.1,0.6-0.3,0.6c-0.2,0-0.2-0.1-0.2-0.6
+									c-0.1-0.6-1.7-1.6-4-1.6c-4.9,0-7.9,3.7-7.9,8.8c0,5,3.3,8.2,7.4,8.2c2.1,0,4.8-1.1,5.1-2.7c0-0.2,0-0.4,0.3-0.4
+									c0.2,0,0.2,0.1,0.2,0.3c0,0.4,0,0.7-0.1,2.3c-1.8,1-3.9,1.4-6,1.4C339,30.9,335.5,27.8,335.5,22.2"></path><path d="M360.5,12.9c-2.6,0-6.4,1.8-6.4,8.3c0,6.2,3.5,8.8,6.9,8.8c2.6,0,6.4-1.8,6.4-8.3C367.4,15.5,363.9,12.9,360.5,12.9
+									 M360.9,12.1c5.3,0,8.1,3.8,8.1,9.1c0,5.1-3.3,9.6-8.5,9.6c-5.4,0-8.1-3.8-8.1-9.1C352.4,16.6,355.8,12.1,360.9,12.1z"></path><path d="M373.5,15.4c0-1-0.2-2.1-1.2-2.1h-1.2v-0.8h3.8l6.3,14.7l5.6-14.7h3.4v0.8h-1.1c-0.3,0-0.6,0-0.6,0.3v11.9
+									c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-5.6v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15l0,0l-6,15.2c0,0.1-0.1,0.2-0.1,0.2c-0.1,0-0.2-0.1-0.2-0.3
+									l-6.2-14.7h0v10.2c0,4,0.3,4.1,0.9,4.1h1.4v0.8h-4.7v-0.8h1c0.3,0,0.5,0,0.5-0.3"></path><path d="M394.7,15.4c0-1-0.2-2.1-1.1-2.1h-1.2v-0.8h3.7l6.3,14.7l5.6-14.7h3.4v0.8h-1.1c-0.3,0-0.6,0-0.6,0.3v11.9
+									c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-5.6v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15l0,0l-6,15.2c0,0.1-0.1,0.2-0.1,0.2c-0.1,0-0.2-0.1-0.2-0.3
+									l-6.2-14.7h0v10.2c0,4,0.3,4.1,0.9,4.1h1.4v0.8h-4.8v-0.8h1.1c0.3,0,0.5,0,0.5-0.3"></path><path d="M425.1,12.6h4.7v0.8h-1.1c-0.3,0-0.5,0-0.5,0.3v10.2c0,5.3-3.5,7.1-6.8,7.1c-2.4,0-6.1-1.1-6.1-6.1v-7.6
+									c0-3.2-0.1-3.7-0.7-3.7h-1.6v-0.8h5.6v0.8h-1.1c-0.3,0-0.6,0-0.6,0.3v10.7c0,4.8,3.2,5.4,4.8,5.4c1.8,0,5.5-0.5,5.5-6.2v-6.2
+									c0-4-0.3-4.1-0.9-4.1h-1.4"></path><path d="M445.8,27.2L445.8,27.2l0.1-9.8c0-4-0.3-4.1-0.9-4.1h-1.4v-0.8h4.8v0.8h-1.1c-0.3,0-0.5,0-0.5,0.3v16.5
+									c0,0.3,0,0.4-0.2,0.4c-0.1,0-0.1,0-0.2-0.1L434.8,15h0v10.5c0,4,0.3,4.1,0.9,4.1h1.5v0.8h-4.8v-0.8h1.1c0.3,0,0.5,0,0.5-0.3V15.4
+									c0-1-0.2-2.1-1.2-2.1h-1.2v-0.8h3.3"></path><path d="M450.4,12.6h12.3l-0.3,1.9c0,0.4,0,0.5-0.2,0.5s-0.2-0.2-0.3-0.4c0-0.4-0.4-0.6-0.8-0.8c-1.1-0.4-2.6-0.4-3.9-0.4h-1.9
+									c-0.5,0-1,0-1,0.3v6.3h2.5c3.7,0,3.9-0.3,3.9-0.9v-1.1h0.7v4.6h-0.7v-1c0-0.7,0-0.8-3-0.8h-3.3v4.5c0,3.9,0.2,3.9,1.1,3.9h1.7
+									c1.3,0,5.2,0,5.7-1.4c0-0.1,0.1-0.3,0.3-0.3c0.1,0,0.2,0.1,0.2,0.2c0,0.2-0.3,1.2-0.7,2.4h-11.5v-0.8h1.1c0.3,0,0.5,0,0.5-0.3
+									V17.1c0-3.2-0.1-3.7-0.7-3.7h-1.6"></path><path d="M474.4,14.5c0,0.2,0,0.4-0.2,0.4c-0.2,0-0.2-0.2-0.3-0.4c-0.2-1.1-2.3-1.4-3.1-1.4c-2.7,0-3.7,1.9-3.7,3.3
+									c0,4.9,8.6,2.9,8.6,9.1c0,3.5-3,5.4-6.1,5.4c-1.2,0-2.8-0.3-3.9-0.8c-0.2-1.3-0.4-2.3-0.4-2.5c0-0.2,0.1-0.3,0.3-0.3
+									c0.2,0,0.3,0.3,0.3,0.5c0.3,1.6,2.9,2.1,4.1,2.1c2.2,0,4.4-1.2,4.4-3.7c0-5.4-8.5-3.1-8.5-9.4c0-2.9,2.9-4.9,5.8-4.9
+									c0.9,0,2,0.1,2.8,0.5"></path><path d="M133.1,62.2c-0.4,0-0.4-0.2-0.5-0.8c-0.2-1.6-3.6-2.8-6-2.8c-7.5,0-11.8,6.2-11.8,13.8c0,8.2,5.7,12.6,10.7,12.6
+									c3.7,0,7.7-1.8,8-4.3c0-0.4,0.1-0.8,0.5-0.8c0.3,0,0.4,0.3,0.4,0.6c0,0.4-0.1,1.1-0.2,3.8c-2.7,1.5-6.2,2.2-9.3,2.2
+									c-8.1,0-13.7-4.6-13.7-13.7c0-9.5,7.3-15.9,15.7-15.9c2.5,0,4.8,0.6,7,1.5C133.5,62.1,133.5,62.2,133.1,62.2"></path><path d="M151.1,49.9c1.4,2.1,3.5,3.4,5.7,4.3c-0.4,0.5-0.9,1-1.2,1c-1.2,0-3.6-1.6-4.4-2.5c-0.8,0.9-3.3,2.5-4.4,2.5
+									c-0.3,0-0.8-0.5-1.2-1C147.6,53.3,149.7,51.9,151.1,49.9 M141.4,71c0,10,5.4,14.2,10.2,14.2c5.4,0,9.1-4.6,9.1-12.5
+									c0-10-5.4-14.2-10.2-14.2C145.1,58.5,141.4,63,141.4,71z M138,72.3c0-8.3,5.4-15.3,13.5-15.3c8.2,0,12.8,5.8,12.8,14.4
+									c0,8.3-5.4,15.2-13.5,15.2C142.6,86.6,138,80.8,138,72.3z"></path><path d="M180.2,78.3c0,4.6,0.1,6.2,1.2,6.2h3.1v1.3h-11.4v-1.3h3c0.4,0,0.6-0.3,0.6-0.7V59.4h-1.1c-4.7,0-7,0.9-7.5,2.3
+									c-0.1,0.3-0.2,0.6-0.5,0.6c-0.2,0-0.5-0.1-0.5-0.4c0-0.3,0.6-2.2,1.2-4h20.1c0.6,1.8,1.2,3.7,1.2,4c0,0.3-0.2,0.4-0.5,0.4
+									c-0.3,0-0.5-0.4-0.6-0.6c-0.4-1.3-2.7-2.3-7.5-2.3h-1"></path><path d="M195.8,65.4c0-4.6-0.1-6.2-1.1-6.2h-2.4v-1.3h20.3c-0.4,3.9-0.5,4-0.9,4.1c-0.3,0-0.4-0.2-0.5-0.8
+									c-0.1-0.5-0.8-1.7-7.2-1.7h-4c-0.6,0-0.8,0.4-0.8,0.8v9.6h4.7c4.2,0,5.4-0.2,5.4-1.5v-1.7h1.1V74h-1.1v-1.5c0-1.2-0.4-1.3-5.1-1.3
+									h-5.1v7.5c0,5.4,0.4,5.4,1.7,5.4h2.7c6.9,0,8.5-1.1,9.2-2.3c0.1-0.2,0.2-0.5,0.5-0.5c0.2,0,0.3,0.3,0.3,0.5c0,0.4-0.5,2.1-1,3.9
+									h-19.3v-1.3h1.9c0.5,0,0.6-0.3,0.6-0.7"></path><path d="M233.9,78.8c0,5.4,0.4,5.4,1.7,5.4h3.2c7.2,0,9.7-6.2,9.7-11.2c0-9.7-5.6-13.6-11.5-13.6c-2.7,0-3.1,0-3.1,0.8
+									 M226.9,57.9h11.9c11.5,0,13.4,9.4,13.4,13.4c0,7.9-4.9,14.6-13.3,14.6h-10.9v-1.3h1.9c0.4,0,0.6-0.3,0.6-0.7V65.4
+									c0-4.6-0.1-6.2-1.1-6.2h-2.4V57.9z"></path><path d="M259.2,59.2c0,1.1-0.5,6.3-0.7,9c0,0.6-0.2,1.2-0.6,1.2c-0.4,0-0.6-0.6-0.6-1.2c-0.2-2.6-0.7-7.9-0.7-9
+									c0-1.2,0.5-2.2,1.4-2.2C258.8,57,259.2,57.9,259.2,59.2"></path><path d="M273.1,54.3c0.7-0.9,4.6-4.4,5.4-4.4c0.4,0,1.2,1,1.4,1.4c-2.1,1.1-4.1,2.5-6,3.9 M266.5,65.4c0-4.6-0.1-6.2-1.1-6.2H263
+									v-1.3h20.3c-0.3,3.9-0.5,4-0.9,4.1c-0.3,0-0.4-0.2-0.5-0.8c-0.1-0.5-0.8-1.7-7.2-1.7h-4c-0.6,0-0.8,0.4-0.8,0.8v9.6h4.7
+									c4.2,0,5.4-0.2,5.4-1.5v-1.7h1.1V74h-1.1v-1.5c0-1.2-0.4-1.3-5.1-1.3H270v7.5c0,5.4,0.4,5.4,1.7,5.4h2.7c6.9,0,8.5-1.1,9.2-2.3
+									c0.1-0.2,0.2-0.5,0.5-0.5c0.2,0,0.3,0.3,0.3,0.5c0,0.4-0.5,2.1-1,3.9H264v-1.3h1.9c0.5,0,0.6-0.3,0.6-0.7V65.4z"></path><path d="M317.8,59.2h-1.8c-0.4,0-0.6,0.3-0.6,0.7v18.4c0,4.6,0.1,6.2,1.1,6.2h2.3v1.3h-9.4v-1.3h1.9c0.5,0,0.6-0.3,0.6-0.7V62.1
+									l-0.1-0.1l-9.1,23.3c-0.1,0.2-0.2,0.3-0.7,0.3c-0.2,0-0.4-0.5-0.6-1.1l-9.6-22l-0.1,0.1v17.1c0,2.1,0.1,4.6,1.3,4.6h2.1v1.3h-7.4
+									v-1.3h1.5c0.5,0,0.9-0.2,0.9-0.9V64.2c0-3.6-0.4-5-2.3-5h-1.2v-1.3h6.5l9.8,22l9-22h5.8"></path><path d="M325.2,65.4c0-4.6-0.1-6.2-1.1-6.2h-2.4v-1.3H342c-0.3,3.9-0.5,4-0.9,4.1c-0.3,0-0.4-0.2-0.5-0.8
+									c-0.1-0.5-0.8-1.7-7.2-1.7h-4c-0.6,0-0.8,0.4-0.8,0.8v9.6h4.7c4.2,0,5.4-0.2,5.4-1.5v-1.7h1.1V74h-1.1v-1.5c0-1.2-0.4-1.3-5.1-1.3
+									h-5.1v7.5c0,5.4,0.4,5.4,1.7,5.4h2.7c6.9,0,8.5-1.1,9.1-2.3c0.2-0.2,0.2-0.5,0.5-0.5c0.2,0,0.3,0.3,0.3,0.5c0,0.4-0.5,2.1-1,3.9
+									h-19.3v-1.3h1.9c0.5,0,0.6-0.3,0.6-0.7"></path><path d="M354.9,71.8c3.5,0,7.1-1.4,7.1-5.7c0-4.1-2.9-6.7-6.1-6.7h-2.1c-0.4,0-0.9,0-0.9,0.6v11.8 M349.4,65.4
+									c0-4.6-0.1-6.2-1.1-6.2h-2.4v-1.3h11.4c3.5,0,8.1,2,8.1,7.6c0,4-2.8,6.4-6.3,7.1c6.7,10.5,8.1,12,9.2,12h1.1v1.3h-4.7
+									c-0.9,0-1.4,0-8.8-12.7h-3v5.2c0,4.6,0.1,6.2,1.1,6.2h2.3v1.3h-9.5v-1.3h1.9c0.5,0,0.6-0.3,0.6-0.7V65.4z"></path><path d="M381.5,62.1L377,73.7h8.1 M376.4,75.4c-0.9,2.5-2.3,6.8-2.3,8c0,0.9,0.4,1.2,1,1.2h2.5v1.3h-8.2v-1.3h0.8
+									c0.6,0,1.2-0.1,1.4-0.7l10.3-26.4c1-0.3,2.1-0.6,2.4-0.6c0.2,0,0.4,0.1,0.4,0.4c0,0.6-0.7,0.5-0.7,1.4c0,1.9,5.1,16.6,7,22.5
+									c0.9,2.8,1.4,3.4,2.5,3.4h1.2v1.3h-9.1v-1.3h2.2c0.3,0,0.6-0.1,0.6-0.4c0-0.3-1.1-3.4-2.8-8.7H376.4z"></path><path d="M396.1,57.9h9.4v1.3h-1.8c-0.5,0-0.6,0.3-0.6,0.7v16.7c0,6.5,3.9,8.3,6.9,8.3c8.4,0,8.5-7,8.5-10.5V63.8
+									c0-2-0.1-4.6-1.3-4.6H415v-1.3h7.4v1.3H421c-0.5,0-0.9,0.2-0.9,0.8v15.7c0,6.8-4,10.9-10.3,10.9c-9.7,0-10.2-6.9-10.2-11.5v-9.8
+									c0-4.6-0.1-6.2-1.1-6.2h-2.4"></path><path d="M432.4,78.8c0,5.4,0.5,5.4,1.7,5.4h3.3c7.2,0,9.7-6.2,9.7-11.2c0-9.7-5.6-13.6-11.4-13.6c-2.7,0-3.2,0-3.2,0.8
+									 M425.4,57.9h11.9c11.4,0,13.3,9.4,13.3,13.4c0,7.9-4.9,14.6-13.3,14.6h-11v-1.3h1.9c0.4,0,0.6-0.3,0.6-0.7V65.4
+									c0-4.6-0.1-6.2-1.2-6.2h-2.4V57.9z"></path><path d="M457.5,65.4c0-4.6-0.1-6.2-1.1-6.2H454v-1.3h20.3c-0.3,3.9-0.5,4-0.8,4.1c-0.3,0-0.4-0.2-0.5-0.8
+									c-0.1-0.5-0.8-1.7-7.2-1.7h-4c-0.6,0-0.8,0.4-0.8,0.8v9.6h4.7c4.2,0,5.4-0.2,5.4-1.5v-1.7h1.1V74h-1.1v-1.5c0-1.2-0.4-1.3-5-1.3
+									h-5.1v7.5c0,5.4,0.5,5.4,1.7,5.4h2.7c6.9,0,8.5-1.1,9.2-2.3c0.1-0.2,0.2-0.5,0.5-0.5c0.2,0,0.3,0.3,0.3,0.5c0,0.4-0.5,2.1-1.1,3.9
+									H455v-1.3h1.9c0.4,0,0.6-0.3,0.6-0.7"></path><rect x="111.1" y="43.5" width="364.2" height="1.1"></rect></g><g id="picto_1_"><path class="logo1" d="M44.9,37.5C33.1,25.2,32,12.2,32,12.2l5,4c4.6,16.4,13.8,20.2,24.7,30.6c17.3-16.1,20.8-28,20.8-28
+									s-3,16.2-17.8,31c0.4,0.4,0.9,0.9,1.3,1.4c1,0.4,1.9,0.8,2.8,1.1c16.7,5.7,27.5-4.6,28.4-5.5V7.5H7.2v36.8
+									C10.6,38.6,25.3,27,44.9,37.5z M46.6,30l2.6-2.8l1.2,3.2L46.6,30z M49.1,34.4l1.6-3.5l2.1,2.6L49.1,34.4z M71,24.8
+									c0,5.8-4.7,10.5-10.5,10.5c-5.8,0-10.5-4.7-10.5-10.5s4.7-10.5,10.5-10.5C66.3,14.4,71,19.1,71,24.8z M67.2,11.5l0,3.8l-3-1.5
+									L67.2,11.5z M62.5,10l1.2,3.6l-3.4-0.4L62.5,10z M57.4,10.3l2.3,3L56.4,14L57.4,10.3z M55.8,14.3L52.9,16l-0.3-3.8L55.8,14.3z
+									 M52.6,16.5l-2.2,2.6l-1.5-3.5L52.6,16.5z M50.2,19.6L49,22.8L46.4,20L50.2,19.6z M49,23.3l0.1,3.4l-3.5-1.7L49,23.3z"></path><path class="logo2" d="M68.8,52.4c-0.9-0.3-1.8-0.6-2.7-1c0,0,0,0,0,0c12.7,14.1,10.4,27.9,10.4,27.9s-4.9,5.6-4.9,5
+									c1.2-10.6-2-21-10.4-31.2c-9.8,8.6-24,16.2-44.4,19.2l-7-5.1c0,0,29.6-1.7,48.6-17.3c-2.4-2.6-5.2-5.1-8.3-7.6
+									c-1-0.8-1.9-1.6-2.8-2.4c-0.8-0.8-1.6-1.6-2.4-2.3C25.3,27,10.6,38.6,7.2,44.3v4.5v39.3h89.9V51.4v-4.5
+									C96.3,47.8,85.5,58.1,68.8,52.4z"></path><path class="logo3" d="M50,24.8c0,5.8,4.7,10.5,10.5,10.5c5.8,0,10.5-4.7,10.5-10.5s-4.7-10.5-10.5-10.5C54.7,14.4,50,19.1,50,24.8z
+									"></path><g><path class="logo4" d="M66.1,51.4c0,0-0.1-0.1-0.1-0.1c-0.4-0.5-0.9-0.9-1.3-1.4c14.8-14.8,17.8-31,17.8-31s-3.5,12-20.8,28
+										C50.8,36.5,41.6,32.7,37,16.3l-5-4c0,0,1.1,13,12.9,25.3c0.8,0.8,1.6,1.6,2.4,2.3c0.9,0.8,1.8,1.6,2.8,2.4c3.1,2.5,5.9,5,8.3,7.6
+										C39.4,65.4,9.8,67.2,9.8,67.2l7,5.1c20.4-3,34.6-10.6,44.4-19.2c8.4,10.1,11.5,20.6,10.4,31.2c-0.1,0.7,4.9-5,4.9-5
+										S78.8,65.4,66.1,51.4C66.1,51.4,66.1,51.4,66.1,51.4z"></path><polygon class="logo4" points="57.4,10.3 56.4,14 59.8,13.2"></polygon><polygon class="logo4" points="55.8,14.3 52.6,12.2 52.9,16"></polygon><polygon class="logo4" points="52.6,16.5 48.9,15.6 50.4,19.1"></polygon><polygon class="logo4" points="50.2,19.6 46.4,20 49,22.8"></polygon><polygon class="logo4" points="49,23.3 45.7,25.1 49.1,26.7"></polygon><polygon class="logo4" points="46.6,30 50.4,30.4 49.2,27.2"></polygon><polygon class="logo4" points="50.7,30.9 49.1,34.4 52.9,33.5"></polygon><polygon class="logo4" points="62.5,10 60.3,13.2 63.7,13.7"></polygon><polygon class="logo4" points="67.2,11.5 64.2,13.8 67.2,15.3"></polygon></g></g></g></svg> </a> <a href="https://eadmin.cote-emeraude.fr/" target="_blank" class="aber"> <div class="aber-text"><h3>E-administration Aber</h3><p>Vos démarches administratives en ligne <br>Taxe de séjour, autorisations d’urbanisme…</p></div> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.1px" height="38.6px" viewbox="0 0 40.1 38.6" style="enable-background:new 0 0 40.1 38.6;" xml:space="preserve"><path id="ABER_1_" d="M15.8,7.9l-0.2-1.7l1.7-0.2l0.2,1.7L15.8,7.9z M17.8,9.9l-0.2-1.7l-1.7,0.2L16,10L17.8,9.9z M15.7,12.3
+							l-0.2-1.7l-1.7,0.2l0.2,1.7L15.7,12.3z M19.9,7.4l-0.2-1.7L18,5.9l0.2,1.7L19.9,7.4z M18,12l-0.2-1.7l-1.7,0.2l0.2,1.7L18,12z
+							 M15.2,7.9L15,6.2l-1.7,0.2l0.2,1.7L15.2,7.9z M20.1,9.6l-0.2-1.7L18.2,8l0.2,1.7L20.1,9.6z M8.5,6.9l0.2,1.7l1.7-0.2l-0.2-1.7
+							L8.5,6.9z M13.3,12.5l-0.2-1.7L11.4,11l0.2,1.7L13.3,12.5z M11,12.8l-0.2-1.7L9,11.2L9.2,13L11,12.8z M10.7,10.6l-0.2-1.7L8.8,9.1
+							L9,10.8L10.7,10.6z M13.1,10.4l-0.2-1.7l-1.7,0.2l0.2,1.7L13.1,10.4z M12.8,8.2l-0.2-1.7l-1.7,0.2l0.2,1.7L12.8,8.2z M15.4,10.1
+							l-0.2-1.7l-1.7,0.2l0.2,1.7L15.4,10.1z M2.8,13.9L7,15.7L7,16.3l1.1-0.1l4.5,1.9c0.2,0.1,0.4,0.1,0.5,0l3.6,0.4l0.5,0.2
+							c0.1,0,0.2,0,0.2-0.1c0-0.1,0-0.2-0.1-0.2l-0.5-0.2l-2.8-2.4c0-0.1-0.1-0.2-0.1-0.2l5.4-0.6l-0.1-1l-7.1,0.8l-4.5-1.9L6.8,4.8
+							l14.4-1.6l0.8,7.3l1-0.1l-0.8-7.3l0.2,0l-0.2-1.6c-0.1-0.9-0.9-1.6-1.8-1.5L7,1.5C6.1,1.6,5.4,2.4,5.5,3.3L5.7,5l0.1,0l0.8,7.3
+							l-2.6-1.1c-0.2-0.1-0.5,0-0.6,0.1c0-0.2-0.1-0.4-0.4-0.5l-1.4-0.6c-0.3-0.1-0.7,0-0.8,0.3L0,12.1c-0.1,0.3,0,0.7,0.3,0.8l1.4,0.6
+							c0.2,0.1,0.5,0,0.6-0.1C2.4,13.6,2.6,13.8,2.8,13.9z M23.2,10.8l-3.7,0.4l0.4,3.7L23.2,10.8z M33,24.1c0.3,0,0.5,0.1,0.7,0.2
+							l0.2-0.8c-0.2-0.1-0.5-0.2-0.8-0.2c-0.6,0-1,0.2-1.4,0.6c-0.2,0.2-0.4,0.6-0.5,0.9h-0.3l-0.1,0.4h0.4c0,0.1,0,0.1,0,0.2
+							c0,0.1,0,0.1,0,0.1h-0.3l-0.1,0.4h0.4c0.1,0.4,0.2,0.7,0.5,0.9c0.3,0.4,0.8,0.6,1.3,0.6c0.3,0,0.6-0.1,0.8-0.2v-0.8
+							c-0.2,0.2-0.5,0.3-0.8,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.1-0.2-0.3-0.2-0.5h1.3l0.1-0.4H32c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1,0-0.2
+							h1.5l0.1-0.4H32c0-0.2,0.1-0.3,0.2-0.5C32.4,24.2,32.7,24.1,33,24.1z M40.1,19.1v8.9c0,0.6-0.5,1.1-1.1,1.1H25.6
+							c-0.6,0-1.1-0.5-1.1-1.1v-1.3c-0.1-0.1-0.2-0.3-0.2-0.4l-1.4-8.2c-0.1-0.5,0.3-1,0.8-1.1l12.4-2.2c0.5-0.1,1,0.3,1.1,0.8l0.4,2.5
+							h1.4C39.7,18.1,40.1,18.6,40.1,19.1z M25.6,18.1h11.4l-0.4-2.4c0-0.2-0.2-0.3-0.3-0.3l-12.5,2.2c-0.2,0-0.3,0.2-0.3,0.4l1,5.8v-4.6
+							C24.6,18.6,25,18.1,25.6,18.1z M39.4,22.2h-1h-0.7H25.3v4.2v0.7v1c0,0.2,0.2,0.4,0.4,0.4h13.5c0.2,0,0.3-0.2,0.3-0.4V22.2z
+							 M39.4,19.1c0-0.2-0.2-0.4-0.3-0.4h-1.3h-0.7H25.6c-0.2,0-0.4,0.2-0.4,0.4v0.8h12.1H38h1.4V19.1z M20.3,31L19,33.2l-0.1-0.6l1.1-1.9
+							c0.1-0.3,0.3-0.8,0.1-1.1c-0.3-0.5-0.8-0.6-1.2-0.6l-1.5,2.5L17.3,31l1.3-2.1c0.2-1.4-0.7-1.7-1.3-1.6l-1.6,2.6l-0.1-0.6l3.6-6.1
+							c0.7-1.4-1.3-2.4-2.1-1.1c-0.7,1.2-4,6.7-4,6.7c0,0,0,0,0,0l-0.4,0.7l-0.1-0.6l0.5-0.9c-0.1-1.1-0.4-1.6-0.6-2
+							c-0.6-0.7-1.9-1.6-1.8,0.4c0.2,5.2-1.8,7.6-0.5,9.1c1.2,1.4,4.2,3.3,5.5,3.3c1.7,0.1,5-5,5.2-5.9C21.2,31.5,20.7,31.1,20.3,31z
+							 M8,32c0,0-0.3-0.2-0.7-0.5c-0.2-0.2-0.5-0.1-0.7,0.1c-0.2,0.2-0.2,0.5,0.1,0.7c0.5,0.4,0.9,0.6,0.9,0.6c0.1,0,0.2,0.1,0.2,0.1
+							c0.2,0,0.3-0.1,0.4-0.2C8.3,32.4,8.2,32.1,8,32z M3.9,26.1c-0.2-0.7-0.3-1.4-0.4-2.1c0-0.3-0.3-0.5-0.6-0.4c-0.3,0-0.5,0.3-0.4,0.6
+							c0.1,0.8,0.3,1.5,0.5,2.2c0.1,0.2,0.3,0.4,0.5,0.4c0,0,0.1,0,0.1,0C3.8,26.7,4,26.4,3.9,26.1z M4.7,28.1c-0.1-0.2-0.4-0.3-0.7-0.2
+							c-0.2,0.1-0.3,0.4-0.2,0.7c0.4,0.7,0.8,1.4,1.2,2c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.2,0,0.3-0.1c0.2-0.2,0.3-0.5,0.1-0.7
+							C5.4,29.4,5,28.7,4.7,28.1z M2.8,22.4C2.8,22.4,2.8,22.4,2.8,22.4c0.3,0,0.5-0.2,0.5-0.5c0-0.7,0.1-1.4,0.2-2.2
+							c0-0.3-0.2-0.5-0.4-0.6c-0.3,0-0.5,0.2-0.6,0.4c-0.1,0.8-0.2,1.5-0.2,2.3C2.3,22.2,2.5,22.4,2.8,22.4z M3.2,16.4
+							c-0.1,0.3-0.2,0.7-0.2,1C2.8,17.6,3,17.9,3.3,18c0,0,0.1,0,0.1,0c0.2,0,0.4-0.2,0.5-0.4C4,17.3,4,17,4.1,16.6
+							C4.2,16.4,4,16.1,3.8,16C3.5,16,3.2,16.1,3.2,16.4z M24.5,7.6c0.3,0.1,0.6,0.2,0.9,0.3c0.1,0,0.1,0,0.2,0c0.2,0,0.4-0.1,0.5-0.3
+							c0.1-0.3,0-0.5-0.3-0.6c-0.3-0.1-0.7-0.2-1-0.3c-0.3-0.1-0.5,0.1-0.6,0.3S24.3,7.6,24.5,7.6z M30.5,11.6c0.1,0.1,0.2,0.2,0.4,0.2
+							c0.1,0,0.2,0,0.3-0.1c0.2-0.2,0.3-0.5,0.1-0.7c-0.4-0.4-0.7-0.9-1.2-1.3c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7
+							C29.8,10.8,30.2,11.2,30.5,11.6z M26.9,8.6c0.5,0.2,0.9,0.5,1.3,0.8c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.3-0.1,0.4-0.2
+							c0.2-0.2,0.1-0.5-0.1-0.7c-0.5-0.3-0.9-0.6-1.5-0.9c-0.2-0.1-0.5,0-0.7,0.2C26.6,8.2,26.6,8.5,26.9,8.6z M31.4,12.9
+							c0.2,0.3,0.3,0.6,0.5,0.8c0.1,0.2,0.3,0.3,0.5,0.3c0.1,0,0.1,0,0.2,0c0.2-0.1,0.4-0.4,0.2-0.7c-0.2-0.3-0.3-0.6-0.5-0.9
+							c-0.1-0.2-0.4-0.3-0.7-0.2C31.3,12.4,31.2,12.7,31.4,12.9z M31,30.2c-0.2-0.1-0.5,0-0.7,0.2c0,0-0.1,0.3-0.5,0.7
+							c-0.2,0.2-0.2,0.5,0.1,0.7c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.3-0.1,0.4-0.2c0.4-0.5,0.6-0.9,0.6-0.9C31.3,30.6,31.2,30.3,31,30.2z
+							 M25.4,34.1c-0.5,0.2-1.1,0.4-1.7,0.6c-0.3,0.1-0.4,0.4-0.3,0.6c0.1,0.2,0.3,0.3,0.5,0.3c0.1,0,0.1,0,0.2,0c0.6-0.2,1.2-0.4,1.8-0.7
+							c0.3-0.1,0.4-0.4,0.3-0.7S25.6,34,25.4,34.1z M28.5,32.3c-0.4,0.3-1,0.7-1.5,1c-0.2,0.1-0.3,0.4-0.2,0.7c0.1,0.2,0.3,0.3,0.4,0.3
+							c0.1,0,0.2,0,0.2-0.1c0.6-0.3,1.1-0.7,1.6-1.1c0.2-0.2,0.3-0.5,0.1-0.7C29,32.2,28.7,32.2,28.5,32.3z M21.9,35.3
+							c-0.3,0.1-0.6,0.1-1,0.2c-0.3,0.1-0.4,0.3-0.4,0.6c0,0.2,0.3,0.4,0.5,0.4c0,0,0.1,0,0.1,0c0.3-0.1,0.7-0.1,1-0.2
+							c0.3-0.1,0.4-0.3,0.4-0.6C22.4,35.4,22.2,35.2,21.9,35.3z"></path></svg> </a></div>
+						<div class="header-nav">
+							<div class="menu"><button class="menu__burger"> <svg version="1.1" class="menu__burger__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.4px" height="13.1px" viewbox="0 0 18.4 13.1" style="overflow:scroll;enable-background:new 0 0 18.4 13.1;" xml:space="preserve"><path d="M9.2,2.7c-2.8,0-5.7,0-8.5,0C0,2.7,0,2.7,0,1.9c0-0.4,0-0.7,0-1.1C0,0,0,0,0.8,0
+								c2.3,0,4.7,0,7,0c3.3,0,6.6,0,9.8,0c0.7,0,0.7,0,0.7,0.7c0,0.4,0,0.7,0,1.1c0,0.9,0,0.9-0.8,0.9C14.8,2.7,12,2.7,9.2,2.7z M17.7,7.9
+								c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.2c0-0.7,0-0.7-0.7-0.7c-3,0-6,0-9,0c-2.6,0-5.3,0-7.9,0C0,5.2,0,5.2,0,6c0,0.4,0,0.8,0,1.2
+								c0,0.7,0,0.7,0.7,0.7c2.8,0,5.6,0,8.4,0C12,7.9,14.8,7.9,17.7,7.9z M17.7,13.1c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.1
+								c0-0.8,0-0.8-0.8-0.8c-3.1,0-6.1,0-9.2,0c-2.6,0-5.1,0-7.7,0c-0.7,0-0.7,0-0.7,0.7c0,0.4,0,0.8,0,1.1c0,0.8,0,0.8,0.8,0.8
+								c2.8,0,5.6,0,8.4,0C12,13.1,14.8,13.1,17.7,13.1z"></path></svg> <span class="menu__burger__text">Menu</span> </button>
+								<nav class="menu__nav">
+									<div class="menu-menu-principal-container">
+										<ul id="menu-menu-principal" class="menu__nav__list clearfix">
+											<li id="menu-item-7180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7180 item-1"><span title="Présentation">Présentation</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7187 item-2"><a title="Historique" href="https://www.cote-emeraude.fr/historique/">Historique</a></li>
+														<li id="menu-item-7264" class="menu-item menu-item-type-taxonomy menu-item-object-categories menu-item-7264 item-2"><a title="9 communes" href="https://www.cote-emeraude.fr/categories/acteur-institutionnel/mairie/">9 communes</a></li>
+														<li id="menu-item-7190" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7190 item-2"><a title="Organisation et fonctionnement" href="https://www.cote-emeraude.fr/listes/organisation-et-fonctionnement/">Organisation et fonctionnement</a></li>
+														<li id="menu-item-7191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7191 item-2"><a title="Marchés publics" href="https://www.cote-emeraude.fr/consulter-et-repondre-a-un-marche-public/">Marchés publics</a></li>
+														<li id="menu-item-7196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7196 item-2"><a title="Offres d'emploi ou de stage" href="https://www.cote-emeraude.fr/offres-demploi-ou-de-stage/">Offres d’emploi ou de stage</a></li>
+														<li id="menu-item-7198" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7198 item-2"><a title="Cartes interactives" href="https://www.cote-emeraude.fr/listes/cartes-interactives/">Cartes interactives</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7182 item-2"><span title="Habiter">Habiter</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-guichet-virtuel menu-item-7212 item-3"><a title="Droits et démarches" href="https://www.cote-emeraude.fr/services-publics/guichet-virtuel/">Droits et démarches</a></li>
+														<li id="menu-item-7218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7218 item-3"><a title="Le Programme Local de l'Habitat" href="https://www.cote-emeraude.fr/le-programme-local-de-lhabitat/">Le Programme Local de l’Habitat</a></li>
+														<li id="menu-item-7219" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7219 item-3"><a title="Les aides à l'habitat pour les particuliers" href="https://www.cote-emeraude.fr/listes/les-aides-du-plh-pour-les-particuliers/">Les aides à l’habitat pour les particuliers</a></li>
+														<li id="menu-item-9079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9079 item-3"><a title="France Services" href="https://www.cote-emeraude.fr/france-services/">France Services</a></li>
+														<li id="menu-item-7220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7220 item-3"><a title="Les aires d'accueil pour les gens du voyage" href="https://www.cote-emeraude.fr/les-aires-daccueil-pour-les-gens-du-voyage/">Les aires d’accueil pour les gens du voyage</a></li>
+														<li id="menu-item-7225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7225 item-3"><a title="Les médiathèques & bibliothèques" href="https://www.cote-emeraude.fr/les-mediatheques-bibliotheques-du-territoire/">Les médiathèques & bibliothèques</a></li>
+														<li id="menu-item-7226" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7226 item-3"><a title="Les associations" href="https://www.cote-emeraude.fr/listes/les-associations/">Les associations</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7181 item-3"><span title="Entreprendre">Entreprendre</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7200 item-4"><a title="Les atouts du territoire" href="https://www.cote-emeraude.fr/les-atouts-du-territoire/">Les atouts du territoire</a></li>
+														<li id="menu-item-7201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7201 item-4"><a title="Les parcs d'activités artisanaux et commerciaux" href="https://www.cote-emeraude.fr/les-parcs-dactivites-artisanaux-et-commerciaux/">Les parcs d’activités artisanaux et commerciaux</a></li>
+														<li id="menu-item-7263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7263 item-4"><a title="Cap Emeraude" href="https://www.cote-emeraude.fr/cap-emeraude/">Cap Emeraude</a></li>
+														<li id="menu-item-7211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7211 item-4"><a title="Le Pass Commerce Artisanat" href="https://www.cote-emeraude.fr/le-pass-commerce-artisanat/">Le Pass Commerce Artisanat</a></li>
+														<li id="menu-item-7203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7203 item-4"><a title="Les ateliers relais communautaires" href="https://www.cote-emeraude.fr/les-ateliers-relais-communautaires/">Les ateliers relais communautaires</a></li>
+														<li id="menu-item-7206" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7206 item-4"><a title="Les ateliers d'artistes communautaires" href="https://www.cote-emeraude.fr/listes/ateliers-dartistes-communautaires/">Les ateliers d’artistes communautaires</a></li>
+														<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210 item-4"><a title="Bretagne Très Haut Débit" href="https://www.cote-emeraude.fr/bretagne-tres-haut-debit/">Bretagne Très Haut Débit</a></li>
+														<li id="menu-item-7691" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7691 item-4"><a title="Taxe de séjour" href="https://www.cote-emeraude.fr/listes/taxe-de-sejour/">Taxe de séjour</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7183 item-4"><span title="Grandir">Grandir</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7221 item-5"><a title="Les établissements d'accueil de jeunes enfants (multi-accueils)" href="https://www.cote-emeraude.fr/les-etablissements-daccueil-de-jeunes-enfants-multi-accueils/">Les établissements d’accueil de jeunes enfants (multi-accueils)</a></li>
+														<li id="menu-item-7222" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7222 item-5"><a title="Relais Intercommunal Parents Assistants Maternels Enfants" href="https://www.cote-emeraude.fr/listes/relais-intercommunal-parents-assistants-maternels-enfants/">Relais Intercommunal Parents Assistants Maternels Enfants</a></li>
+														<li id="menu-item-7223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7223 item-5"><a title="Le lundi ré-créatif : lieu d'accueil enfants-parents" href="https://www.cote-emeraude.fr/le-lieu-daccueil-enfant-parents-le-lundi-re-creatif/">Le lundi ré-créatif : lieu d’accueil enfants-parents</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7185 item-5"><span title="frelons asiatiques" target="_blank">environnement</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7234 item-6"><a title="Le programme des écogestes" href="https://www.cote-emeraude.fr/le-programme-des-ecogestes/">Le programme des écogestes</a></li>
+														<li id="menu-item-7235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7235 item-6"><a title="Les sites naturels" href="https://www.cote-emeraude.fr/les-sites-naturels/">Les sites naturels</a></li>
+														<li id="menu-item-7231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7231 item-6"><a title="Randos et balades" href="https://www.cote-emeraude.fr/randos-et-balades/">Randos et balades</a></li>
+														<li id="menu-item-7236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7236 item-6"><a title="Le bocage" href="https://www.cote-emeraude.fr/le-bocage/">Le bocage</a></li>
+														<li id="menu-item-7227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7227 item-6"><a title="La brigade nature et patrimoine" href="https://www.cote-emeraude.fr/la-brigade-nature-et-patrimoine/">La brigade nature et patrimoine</a></li>
+														<li id="menu-item-7237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7237 item-6"><a title="Le conseil en énergie partagé" href="https://www.cote-emeraude.fr/le-conseil-en-energie-partage/">Le conseil en énergie partagé</a></li>
+														<li id="menu-item-7789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7789 item-6"><a title="Le Plan Climat" href="https://www.cote-emeraude.fr/plan-climat/">Le Plan Climat</a></li>
+														<li id="menu-item-7240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7240 item-6"><a title="Le SPANC" href="https://www.cote-emeraude.fr/le-spanc/">Le SPANC</a></li>
+														<li id="menu-item-9046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9046 item-6"><a title="Frelons asiatiques" href="https://www.cote-emeraude.fr/frelons-asiatiques-2/">Frelons asiatiques</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7186 item-6"><span title="Mobilité">Mobilité</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7243 item-7"><a title="Les transports sur le territoire" href="https://www.cote-emeraude.fr/les-transports-sur-le-territoire/">Les transports sur le territoire</a></li>
+														<li id="menu-item-7244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7244 item-7"><a title="TADy cool, le transport à la demande" href="https://www.cote-emeraude.fr/tady-cool-le-transport-a-la-demande/">TADy cool, le transport à la demande</a></li>
+														<li id="menu-item-7245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7245 item-7"><a title="Le covoiturage" href="https://www.cote-emeraude.fr/le-covoiturage/">Le covoiturage</a></li>
+														<li id="menu-item-7246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7246 item-7"><a title="Le pédibus/vélobus PAT'Mobile" href="https://www.cote-emeraude.fr/le-pedibus-velobus-patmobile/">Le pédibus/vélobus PAT’Mobile</a></li>
+														<li id="menu-item-7247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7247 item-7"><a title="La plateforme Mobil'Rance" href="https://www.cote-emeraude.fr/la-plateforme-mobilrance/">La plateforme Mobil’Rance</a></li>
+														<li id="menu-item-7248" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-7248 item-7"><a title="Se déplacer à vélo" href="https://www.cote-emeraude.fr/listes/se-deplacer-a-velo/">Se déplacer à vélo</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+											<li id="menu-item-7184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7184 item-7"><span title="Déchets">Déchets</span>
+												<div class="sub-menu">
+													<ul class="bloc-menu-left">
+														<li id="menu-item-7563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7563 item-8"><a title="Présentation" href="https://www.cote-emeraude.fr/presentation-generale/">Présentation</a></li>
+														<li id="menu-item-7561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7561 item-8"><a title="Déchets ménagers" href="https://www.cote-emeraude.fr/dechets-menagers-2019/">Déchets ménagers</a></li>
+														<li id="menu-item-7558" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7558 item-8"><a title="La déchèterie de Dinard" href="https://www.cote-emeraude.fr/decheteries-2/">La déchèterie de Dinard</a></li>
+														<li id="menu-item-7560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7560 item-8"><a title="Collecte des cartons" href="https://www.cote-emeraude.fr/cartons-2/">Collecte des cartons</a></li>
+														<li id="menu-item-7564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7564 item-8"><a title="Encombrants" href="https://www.cote-emeraude.fr/encombrants-menagers/">Encombrants</a></li>
+														<li id="menu-item-7562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7562 item-8"><a title="Points de collecte des déchets" href="https://www.cote-emeraude.fr/points-de-collecte-des-dechets/">Points de collecte des déchets</a></li>
+													</ul>
+													<ul class="bloc-menu-middle"></ul>
+													<ul class="bloc-menu-right"></ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="toggle-search c-search-form_open all-link">
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.32px" height="14.36px" viewbox="0 0 14.32 14.36" style="enable-background:new 0 0 14.32 14.36;" xml:space="preserve">
+									<path d="M13.91,12l-2.99-2.99c0.56-0.9,0.89-1.96,0.89-3.11C11.81,2.64,9.17,0,5.91,0C2.64,0,0,2.64,0,5.91
+	                        c0,3.26,2.64,5.91,5.91,5.91c1.12,0,2.16-0.32,3.05-0.86l3,3c0.54,0.54,1.42,0.54,1.96,0C14.45,13.42,14.45,12.54,13.91,12z
+	                         M1.81,5.91c0-2.26,1.83-4.09,4.09-4.09S10,3.65,10,5.91S8.17,10,5.91,10S1.81,8.17,1.81,5.91z"></path>
+								</svg><span>Rechercher</span></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="c-search-main recherche-autocompletion">
+				<!-- <h2>Recherche</h2> --><button class="c-search-form_close o-toggle" type="button"></button>
+				<div class="c-search-main_container">
+					<form action="/" class="c-search-form">
+						<div class="c-search-form_wrap">
+							<div class="c-search-form_input-wrap">
+								<div id="searchform">
+									<div><input type="text" class="rechercher" placeholder="Rechercher" name="s" id="s"> <button type="submit" id="searchsubmit">OK</button></div>
+								</div>
+							</div>
+							<div class="c-search-loader">
+								<div class="c-search-loader_line"></div>
+							</div>
+						</div>
+					</form>
+					<div class="c-search-results"></div>
+				</div>
+			</div>
+			<!--[if lt IE 7]>
+	<p class="navigateur-obosolete">
+		Vous utilisez un navigateur très ancien. <a href="http://browsehappy.com/">Mettre à jour votre navigateur aujourd'hui</a> ou installer <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">Google Chrome</a> ou <a href="https://www.mozilla.org/fr/firefox/new/" target="_blank">Firefox</a> pour la meilleure expérience utilisateur sur ce site.
+	</p>
+	<![endif]-->
+			<div id="wrapper">
+				<!--cdlBloc ordre="3"-->
+				<div class="front-page">
+					<div class="home-news">
+						<div class="center">
+							<h2 class="home-title">À la une</h2>
+							<div class="home-news-wrapper">
+								<div class="home-news-top">
+									<div class="home-news-carousel"><a class="post-wrapper" href="https://www.cote-emeraude.fr/actualites/deconfinement-des-sites-naturels/" title="Déconfinement des sites naturels"> <div class="post-pic"><img width="4256" height="2832" src="https://www.cote-emeraude.fr/medias/2019/05/2012-1128.jpg" class="attachment-home_post size-home_post colorbox-8917  wp-post-image" alt="" data-object-fit="cover"></div> <div class="post-info"><p class="post-categ">Divers</p><h3 class="post-title">Déconfinement des sites naturels</h3><h4 class="post-desc">Les sites naturels du Conservatoire du Littoral vont rouvrir dans le cadre du déconfinement progressif</h4><p class="post-more">En savoir plus</p></div> </a> <a class="post-wrapper" href="https://www.cote-emeraude.fr/actualites/le-laep-le-lundi-recreatif-reste-ferme-jusqua-nouvel-ordre/" title="Le LAEP « Le Lundi Récréatif » reste fermé jusqu’à nouvel ordre"> <div class="post-pic"><img width="960" height="1280" src="https://www.cote-emeraude.fr/medias/2020/05/land-art-laep.jpg" class="attachment-home_post size-home_post colorbox-8926  wp-post-image" alt="" data-object-fit="cover"></div> <div class="post-info"><p class="post-categ">Vie intercommunale</p><h3 class="post-title">Le LAEP « Le Lundi Récréatif » reste fermé jusqu’à nouvel ordre</h3><h4 class="post-desc">Les locaux ne permettant pas de concilier la sécurité sanitaire et la qualité d’accueil et d’accompagnement spécifique au lieu d’accueil enfant-parent, celui-ci reste fermé jusqu'à nouvel ordre.</h4><p class="post-more">En savoir plus</p></div> </a> <a class="post-wrapper" href="https://www.cote-emeraude.fr/actualites/ouverture-de-france-services-au-siege-de-la-ccce/" title="Ouverture de France Services au siège de la CCCE"> <div class="post-pic"><img width="2480" height="2480" src="https://www.cote-emeraude.fr/medias/2020/05/logo_France-services_CMJN.jpg" class="attachment-home_post size-home_post colorbox-8935  wp-post-image" alt="" data-object-fit="cover"></div> <div class="post-info"><p class="post-categ">Vie intercommunale</p><h3 class="post-title">Ouverture de France Services au siège de la CCCE</h3><h4 class="post-desc">France Services est un nouveau service de proximité qui a pour vocation d'aider les administrés dans leurs démarches administratives. Il ouvre mardi 2 juin au siège de la Communauté de Communes...</h4><p class="post-more">En savoir plus</p></div> </a></div>
+								</div>
+								<ul class="home-news-bottom">
+									<li class="item-liste-actus"><a href="" title="Voir l'actualité" data-slide="0" class="selected"> <span class="responsive"></span> <span class="desktop"> <div class="post-pic"><img width="4256" height="2832" src="https://www.cote-emeraude.fr/medias/2019/05/2012-1128.jpg" class="attachment-home_post size-home_post colorbox-8917  wp-post-image" alt="" data-object-fit="cover"></div> <h3 class="post-title">Déconfinement des sites naturels</h3> </span> </a></li>
+									<li class="item-liste-actus"><a href="" title="Voir l'actualité" data-slide="1"> <span class="responsive"></span> <span class="desktop"> <div class="post-pic"><img width="960" height="1280" src="https://www.cote-emeraude.fr/medias/2020/05/land-art-laep.jpg" class="attachment-home_post size-home_post colorbox-8926  wp-post-image" alt="" data-object-fit="cover"></div> <h3 class="post-title">Le LAEP « Le Lundi Récréatif » reste fermé jusqu’à nouvel ordre</h3> </span> </a></li>
+									<li class="item-liste-actus"><a href="" title="Voir l'actualité" data-slide="2"> <span class="responsive"></span> <span class="desktop"> <div class="post-pic"><img width="2480" height="2480" src="https://www.cote-emeraude.fr/medias/2020/05/logo_France-services_CMJN.jpg" class="attachment-home_post size-home_post colorbox-8935  wp-post-image" alt="" data-object-fit="cover"></div> <h3 class="post-title">Ouverture de France Services au siège de la CCCE</h3> </span> </a></li>
+								</ul>
+								<div class="part-footer"><a href="https://www.cote-emeraude.fr/systeme/actualites/" title="Voir toutes les actualités" class="see-all see-all--news">Toutes les actualités</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="home-links">
+						<div class="center">
+							<h2 class="home-title">Accès directs</h2>
+							<ul>
+								<li><a href="https://www.cote-emeraude.fr/decheteries-2/" title="Déchèterie"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55.3px" height="54.8px" viewbox="0 0 55.3 54.8" style="enable-background:new 0 0 55.3 54.8;" xml:space="preserve"><g id="dechets_1_"><polyline class="li0" points="20.7,32.1 20.7,47 16.7,47 24.1,53.8 31.4,47 27.4,47 27.4,28.3 	"></polyline><path class="li1" d="M55.2,8.2c-0.2-0.5-0.8-0.8-1.3-0.6l-6.8,2.7c-0.4,0.2-0.7,0.6-0.6,1.1c0.4,3.1-1.4,5.9-4.4,6.9l-9.8,3.1
+									c-0.2,0.1-0.3,0.2-0.4,0.3l-5.4,6.1c-0.2,0.3-0.6,0.4-0.9,0.4c-0.3,0-0.7-0.1-1-0.3c-0.5-0.5-0.6-1.3-0.2-1.8l5.3-6.7
+									c0.3-0.3,0.3-0.8,0-1.2c-0.7-1-1-2.2-1.1-3.4l0-1c0-0.3-0.2-0.6-0.4-0.8c-0.3-0.2-0.6-0.2-0.9-0.1l-2.2,0.7c-2.4,0.7-4,2.8-4.3,5.3
+									l-0.1,1.3l-2.1,2L18,21.3c-0.3-0.5-0.4-1.1-0.2-1.6l3.6-8.2c0.4-0.9,1.1-1.6,2-1.9l20-7.7c0.5-0.2,0.8-0.8,0.6-1.3
+									c-0.2-0.5-0.8-0.8-1.3-0.6l-20,7.7c-1.4,0.5-2.5,1.6-3.1,3l-3.6,8.2c-0.5,1.2-0.4,2.5,0.3,3.6l1.2,1.7c0.1,0.1,0.1,0.2,0.2,0.2
+									L3.9,36.9l-2-2.2c-0.3-0.3-0.7-0.4-1.1-0.3s-0.6,0.5-0.6,0.9L0,45.3c0,0.5,0.4,1,0.9,1l9.9,1c0,0,0.1,0,0.1,0
+									c0.4,0,0.7-0.2,0.9-0.5c0.2-0.4,0.1-0.8-0.1-1.1l-2-2.2l10.1-9.1V46h-3c-0.4,0-0.8,0.3-0.9,0.6s0,0.8,0.3,1.1l7.3,6.7
+									c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7.3-6.7c0.3-0.3,0.4-0.7,0.3-1.1S31.8,46,31.4,46h-3V34l10.4,9.4l-2,2.2
+									c-0.3,0.3-0.3,0.8-0.1,1.1c0.2,0.3,0.5,0.5,0.9,0.5c0,0,0.1,0,0.1,0l9.9-1c0.5,0,0.9-0.5,0.9-1l-0.1-10c0-0.4-0.3-0.8-0.6-0.9
+									c-0.4-0.1-0.8,0-1.1,0.3l-2,2.2L37,30.1c1.6-0.2,2.8-1.6,2.8-3.2v-5.7l2.9-0.9c3.6-1.2,6-4.6,5.8-8.3l6.1-2.5
+									C55.1,9.3,55.4,8.7,55.2,8.2z M33.2,23.2L33.2,23.2l0.1,3.6l-1.8-1.6L33.2,23.2z M22.8,19.1c0.2-1.7,1.3-3.1,2.9-3.6l1-0.3
+									c0.1,1.2,0.4,2.5,1,3.5l-1.6,2.1l-1.2-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3L22.7,20L22.8,19.1z M7.5,44l1,1.1
+									L2,44.4l0.1-6.5l1,1.1c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3L24,21.5l0.8,0.9l-1.9,2.5c-0.9,1.2-0.9,2.8-0.1,4L7.6,42.6
+									C7.2,42.9,7.1,43.6,7.5,44z M28.8,48l-4.8,4.4L19.3,48h1.4c0.6,0,1-0.4,1-1V32.5l2.7-2.5c0.3,0.1,0.7,0.2,1,0.2c0.1,0,0.1,0,0.2,0
+									c0.2,0,0.5-0.1,0.7-0.1V47c0,0.6,0.4,1,1,1H28.8z M44.7,39.3c0.3,0,0.5-0.1,0.7-0.3l1-1.1l0.1,6.5L40,45l1-1.1
+									c0.4-0.4,0.3-1-0.1-1.4L28.4,31.3v-2.6l1.8-2L44,39.1C44.2,39.3,44.5,39.4,44.7,39.3z M37.8,26.9c0,0.7-0.6,1.3-1.3,1.3
+									c-0.7,0-1.3-0.6-1.3-1.3v-4.3l2.5-0.8V26.9z"></path></g></svg></div> <h3 class="link-title">Déchèterie</h3> </a></li>
+								<li><a href="https://www.cote-emeraude.fr/listes/grandir/" title="Petite enfance"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="41.4px" height="53.1px" viewbox="0 0 41.4 53.1" style="enable-background:new 0 0 41.4 53.1;" xml:space="preserve"><g id="enfant_1_"><path class="li0" d="M14.2,12.8C12,15.4,8.7,17.2,5,17.6c-0.1-0.5-0.1-1-0.1-1.6C4.9,7.7,12,1,20.7,1s15.8,6.7,15.8,15
+									c0,0.5,0,1-0.1,1.5l0,0c-4.6-0.5-8.5-3.2-10.6-6.9c-2.5,3.5-6.7,5.8-11.4,5.8c-1.4,0-2.7-0.2-4-0.6"></path><path class="li1" d="M35.6,37.3l-5.5-1.9c0-0.2-0.1-0.3-0.1-0.5c2.3-1.8,4-4.3,5-7.2c2.8,0,5.1-2.5,5.1-5.5c0-2.2-1.1-4.3-2.8-5.2
+									c0-0.3,0.1-0.6,0.1-0.9c0-8.8-7.5-16-16.8-16C11.4,0,3.9,7.2,3.9,16c0,0.3,0,0.6,0,0.9c-1.9,0.8-3.3,3-3.3,5.3c0,3,2.3,5.5,5.2,5.5
+									c0.2,0,0.3,0,0.5,0c1,2.9,2.8,5.4,5.1,7.2c0,0.2-0.1,0.3-0.1,0.5l-5.5,1.9C2.3,38.5,0,41.7,0,45.4v6.8c0,0.6,0.4,1,1,1s1-0.4,1-1
+									v-6.8c0-2.8,1.8-5.3,4.4-6.2l4.7-1.6c0.3,5,4.5,9,9.6,9c5.1,0,9.2-4,9.6-9l4.7,1.6c2.6,0.9,4.4,3.4,4.4,6.2v6.8c0,0.6,0.4,1,1,1
+									s1-0.4,1-1v-6.8C41.4,41.7,39,38.5,35.6,37.3z M20.7,2c8.1,0,14.8,6.3,14.8,14c0,0.1,0,0.3,0,0.4c-3.7-0.7-7-3-8.8-6.2
+									c-0.2-0.3-0.5-0.5-0.8-0.5c-0.4,0-0.7,0.1-0.9,0.4c-2.4,3.4-6.4,5.4-10.6,5.4c-0.5,0-1,0-1.4-0.1c0.7-0.6,1.4-1.2,2-2
+									c0.4-0.4,0.3-1.1-0.1-1.4c-0.4-0.4-1.1-0.3-1.4,0.1c-1,1.2-2.2,2.1-3.5,2.9c-0.1,0-0.1,0.1-0.2,0.1c-1.2,0.6-2.5,1.1-3.9,1.3
+									c0-0.1,0-0.3,0-0.4C5.9,8.3,12.5,2,20.7,2z M7.3,22.2c0-0.6-0.4-1-1-1s-1,0.4-1,1c0,1.2,0.1,2.4,0.4,3.5c-1.7-0.1-3.1-1.6-3.1-3.5
+									c0-1.7,1.1-3.3,2.6-3.6c0,0,0,0,0,0c0.1,0.6,0.1,1.1,0.1,1.2c0.1,0.5,0.5,0.8,1,0.8c0.1,0,0.1,0,0.2,0c0.5-0.1,0.9-0.6,0.8-1.1
+									c0,0-0.1-0.6-0.1-1.2c1.2-0.3,2.3-0.7,3.3-1.2c1.3,0.3,2.6,0.5,3.9,0.5c4.4,0,8.5-1.9,11.3-5c2,2.8,5,4.8,8.4,5.7c0,0.5,0,1,0,1.3
+									c0,0.6,0.4,1,0.9,1.1c0,0,0,0,0.1,0c0.5,0,1-0.4,1-0.9c0-0.1,0-0.6,0-1.1c0,0,0,0,0,0c1.2,0.5,2.1,2,2.1,3.6c0,1.7-1.1,3.1-2.5,3.4
+									c0.2-1.1,0.4-2.3,0.4-3.4c0-0.6-0.4-1-1-1s-1,0.4-1,1c0,7.7-6,14.1-13.4,14.1S7.3,29.9,7.3,22.2z M25.1,37.5
+									c-0.3,2.2-2.2,3.8-4.4,3.8c-2.2,0-4.1-1.7-4.4-3.8c1.4,0.4,2.9,0.7,4.4,0.7C22.2,38.2,23.7,38,25.1,37.5z M20.7,44.5
+									c-4.2,0-7.6-3.4-7.6-7.6c0-0.3,0-0.5,0.1-0.8c0.4,0.2,0.7,0.4,1.1,0.6c0,0.1,0,0.1,0,0.2c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5
+									c0-0.1,0-0.1,0-0.2c0.4-0.2,0.7-0.4,1.1-0.6c0,0.3,0.1,0.5,0.1,0.8C28.3,41.1,24.9,44.5,20.7,44.5z M18.2,24.1
+									c0.3-0.5,0.9-0.6,1.4-0.3c0.6,0.4,1.5,0.4,2.1,0c0.5-0.3,1.1-0.2,1.4,0.3s0.2,1.1-0.3,1.4c-0.6,0.4-1.4,0.6-2.2,0.6
+									c-0.8,0-1.5-0.2-2.2-0.6C18.1,25.2,17.9,24.5,18.2,24.1z M20.7,32.9c-2,0-3.6-1.8-3.6-3.9c0-0.6,0.4-1,1-1s1,0.4,1,1
+									c0,1.1,0.7,1.9,1.6,1.9s1.6-0.9,1.6-1.9c0-0.6,0.4-1,1-1s1,0.4,1,1C24.3,31.1,22.7,32.9,20.7,32.9z M14.9,21.2
+									c0,0.8-0.6,1.4-1.4,1.4S12,22,12,21.2s0.6-1.4,1.4-1.4S14.9,20.5,14.9,21.2z M26.5,21.2c0-0.8,0.6-1.4,1.4-1.4
+									c0.8,0,1.4,0.6,1.4,1.4s-0.6,1.4-1.4,1.4C27.1,22.7,26.5,22,26.5,21.2z"></path></g></svg></div> <h3 class="link-title">Petite enfance</h3> </a></li>
+								<li><a href="https://www.cote-emeraude.fr/tady-cool-le-transport-a-la-demande/" title="Transport à la demande"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90px" height="49.5px" viewbox="0 0 90 49.5" style="enable-background:new 0 0 90 49.5;" xml:space="preserve"><g id="transport_1_"><path class="li0" d="M72.2,26.5C69,17,58.5,23.1,53.9,15.8C47.9,6.2,40.4,1.3,30.5,1c0,0-14.2-1-23,8.4C0,31.1,14.4,36.6,15.7,34.3
+									c1.1-2.1,3.1-4.1,6.4-4.4c4-0.3,5.7,3,6.5,5.9c3,0.2,12.1,1.4,18.8,0c1.2-3.5,2-4.8,6.2-5.7c4.3-0.9,7.1,3.5,7.5,5.7
+									c1.7-0.4,9.6-2.6,9.6-2.6S70.2,28,72.2,26.5z"></path><path class="li1" d="M89.9,16.1c0.3-2.4-0.8-3.4-1.5-3.8c-3.1-1.8-10.5,4.7-14.5,9.9c-0.6,0.7-1,1.4-1.5,2.1c-2-4-5.9-4.5-9.4-5.1
+									c-3.3-0.5-6.4-1-8.3-3.9C48.5,5.3,40.6,0.3,30.6,0C30.4,0,15.5-0.8,6.5,9.1C6.4,9.2,6.3,9.3,6.3,9.4c-3.1,3.5-5.4,8.4-6.2,15
+									c-0.6,5.4,1.2,12.5,13.1,15.4c0,2.1,0.5,4,1.5,5.7c1.3,2.2,3.3,3.6,5.5,3.9c0.3,0.1,0.7,0.1,1,0.1c4.1,0,7.7-3.5,8.7-8.3
+									c4.7-0.1,9.9-0.6,15.5-1.4c0,2.1,0.5,4.1,1.5,5.7c1.3,2.2,3.3,3.6,5.5,3.9c0.3,0.1,0.7,0.1,1,0.1c4.2,0,8-3.8,8.8-8.9
+									c0.2-1.4,0.2-2.7-0.1-4c2.9-0.7,5.7-1.4,7.8-2.1c0.2,0.5,0.6,1,1,1.4c1.3,1.3,2.8,2,4.4,2c0.2,0,0.4,0,0.6,0
+									c5.7-0.6,11.3-8.8,11.5-9.1c0.3-0.5,0.2-1.1-0.3-1.4c-0.5-0.3-1.1-0.2-1.4,0.3c-1.4,2.2-6,7.8-10,8.2c-1.3,0.1-2.4-0.3-3.5-1.3
+									c-0.2-0.2-0.3-0.4-0.5-0.6C82.8,30,89.3,21.2,89.9,16.1z M2.1,24.6c0.4-4,1.5-7.3,2.9-10C4.3,19.3,3.9,26.3,7,31
+									c1.6,2.4,3.9,3.9,7,4.5c-0.3,0.7-0.5,1.4-0.6,2.2C5.1,35.7,1.4,31.4,2.1,24.6z M20.5,47.4c-1.7-0.2-3.1-1.3-4.1-3
+									c-1-1.7-1.4-3.9-1.1-6.1c0.2-1.1,0.5-2.1,1-3c0-0.1,0.1-0.1,0.1-0.2c0.5-0.9,1-1.6,1.7-2.3c1.2-1.1,2.6-1.7,4-1.7
+									c0.3,0,0.5,0,0.8,0.1c1.7,0.2,3.1,1.3,4.1,3c1,1.6,1.3,3.6,1.1,5.7c0,0.1-0.1,0.2-0.1,0.3c0,0,0,0,0,0.1c0,0,0,0,0,0
+									C27.4,44.7,24,48,20.5,47.4z M45.6,37.7c-5.6,0.8-10.8,1.3-15.5,1.4c0-0.8,0-1.5-0.1-2.3c1.6,0.1,4.8,0.4,8.5,0.4
+									c2.3,0,4.8-0.1,7.3-0.4C45.7,37.2,45.7,37.4,45.6,37.7z M60.3,40.3c-0.7,4.5-4.1,7.7-7.6,7.2c-1.7-0.2-3.1-1.3-4.1-3
+									c-1-1.7-1.4-3.9-1.1-6.1c0.3-2.2,1.3-4.2,2.8-5.5c1.2-1.1,2.6-1.7,4-1.7c0.3,0,0.5,0,0.8,0.1c1.7,0.2,3.1,1.3,4.1,3
+									C60.2,35.9,60.6,38.1,60.3,40.3z M69.5,32.6c-2.2,0.7-4.9,1.4-7.9,2.1c-0.2-0.5-0.4-1-0.7-1.5c-1.3-2.2-3.3-3.6-5.5-3.9
+									c-2.3-0.3-4.6,0.4-6.4,2.1c-1,0.9-1.8,2.1-2.5,3.4c-7.2,0.9-15.4,0.2-17.1,0c-0.2-0.6-0.5-1.1-0.8-1.7c-1.3-2.2-3.3-3.6-5.5-3.9
+									c-2.3-0.3-4.6,0.4-6.4,2.1c-0.7,0.7-1.3,1.4-1.9,2.3c-2.8-0.4-4.8-1.7-6.2-3.8c-4.2-6.3-1.1-18-0.7-19.5C16.2,1.2,29.7,2,30.5,2
+									c9.4,0.3,16.6,4.8,22.6,14.3c2.3,3.7,6.2,4.3,9.7,4.8c3.8,0.6,7.1,1.1,8.4,5.3C69.9,28.7,69.4,30.8,69.5,32.6z M71.5,31.9
+									c0-1.4,0.5-3,1.5-4.9c0,0,0,0,0,0c0.6-1.1,1.4-2.4,2.4-3.6c4.6-5.9,10-9.4,11.6-9.4c0.1,0,0.2,0,0.3,0.1c0.6,0.3,0.6,1.3,0.5,1.9
+									C87.5,19.6,82.3,28,71.5,31.9z"></path></g></svg></div> <h3 class="link-title">Transport à la demande</h3> </a></li>
+								<li><a href="https://www.cote-emeraude.fr/le-spanc/" title="Spanc"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.2px" height="59.1px" viewbox="0 0 54.2 59.1" style="enable-background:new 0 0 54.2 59.1;" xml:space="preserve"><g id="SPANC_1_"><polygon class="li0" points="40.7,54.6 22.4,54.5 17.2,48.4 33.1,48.4 	"></polygon><path class="li1" d="M22,20v-4.2c0-0.6,0.4-1,1-1s1,0.4,1,1V20c0,0.6-0.4,1-1,1S22,20.5,22,20z M35,21c0.6,0,1-0.4,1-1v-4.2
+									c0-0.6-0.4-1-1-1s-1,0.4-1,1V20C34,20.5,34.4,21,35,21z M54.1,58.4c-0.1,0.4-0.5,0.7-0.9,0.7c0,0,0,0,0,0L16.8,59
+									c-0.3,0-0.6-0.1-0.7-0.3L4.9,46c-0.3-0.3-0.3-0.7-0.2-1.1c0.2-0.4,0.5-0.6,0.9-0.6c0,0,0,0,0,0l14.6,0.1l-2.2-2.3h-6
+									c-0.1,0-0.3,0-0.4-0.1c0,0-0.1,0-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0,0,0l-6.8-7.9c-0.2-0.2-0.2-0.4-0.2-0.6V14.7l-3.9-2.5
+									C0.2,12.1,0,11.8,0,11.4c0-0.4,0.2-0.7,0.5-0.8L19.2,0.1C19.5,0,19.8,0,20.1,0.1l9.3,3.7c0,0,0,0,0,0c0,0,0,0,0.1,0l16.4,7.9
+									c0,0,0,0,0,0c0.3,0,0.6,0.1,0.8,0.4l4.7,2.3c0.5,0.2,0.7,0.8,0.5,1.3c-0.2,0.4-0.5,0.6-0.9,0.6c-0.1,0-0.3,0-0.4-0.1l-3.6-1.7v26.7
+									c0,0.6-0.4,1-1,1H34.4c-0.6,0-1-0.4-1-1V30.3h-8.8v10.8c0,0.6-0.4,1-1,1h-2.8l2.2,2.3l14.1,0.1c0.2,0,0.4,0.1,0.6,0.2l16,12.7
+									C54.1,57.6,54.3,58,54.1,58.4z M3,11.5l4.2,2.6l19.4-9.3l-6.8-2.7L3,11.5z M6.4,32.8l4.8,5.6v-24l-3.6,1.7c-0.3,0.1-0.7,0.1-1-0.1
+									L6.4,16V32.8z M13.1,13.6v26.5h9.5V29.3c0-0.6,0.4-1,1-1h10.8c0.6,0,1,0.4,1,1v10.8h9.4V13.5L29,5.8l-15.9,7.6
+									C13.1,13.5,13.1,13.5,13.1,13.6z M50.3,57.1L36.8,46.4l-11.8,0l1,1l7.1,0c0.2,0,0.4,0.1,0.6,0.2l7.6,6.2c0.3,0.3,0.5,0.7,0.3,1.1
+									c-0.1,0.4-0.5,0.7-0.9,0.7c0,0,0,0,0,0l-18.3-0.1c-0.3,0-0.6-0.1-0.8-0.4L16.5,49c-0.3-0.3-0.3-0.7-0.1-1.1
+									c0.2-0.4,0.5-0.6,0.9-0.6c0,0,0,0,0,0l6,0l-1-1L7.9,46.3L17.3,57L50.3,57.1z M25.2,49.4l-5.8,0l3.5,4.2l15,0l-5.1-4.2l-4.8,0
+									l1.3,1.4c0.4,0.4,0.4,1,0,1.4c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3L25.2,49.4z"></path></g></svg></div> <h3 class="link-title">Spanc</h3> </a></li>
+								<li><a href="https://www.cote-emeraude.fr/vous-etes-a-la-recherche-dun-emploi/" title="Emploi"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72.9px" height="42.9px" viewbox="0 0 72.9 42.9" style="enable-background:new 0 0 72.9 42.9;" xml:space="preserve"><g id="emplpoi_1_"><path class="li0" d="M65.1,18.5L54.3,7.8c-1-1-1-2.5,0-3.5L57.6,1l14.2,14.2l-3.3,3.3C67.6,19.5,66,19.5,65.1,18.5z M18.5,4.6
+									l-3.3-3.3L1,15.5l3.3,3.3c1,1,2.5,1,3.5,0L18.5,8.1C19.5,7.1,19.5,5.6,18.5,4.6z"></path><path class="li1" d="M72.6,14.5L58.3,0.3C58.1,0.1,57.9,0,57.6,0s-0.5,0.1-0.7,0.3l-3.3,3.3c-0.7,0.7-1,1.5-1,2.4
+									c0,0.4,0.1,0.9,0.3,1.3L49,11.2L40,7c-0.6-0.3-1.2-0.4-1.8-0.3l-2.1,0.1c-0.9,0-1.8,0.4-2.5,1.1l-2.9,2.9l-6.9,1.1L19.8,8
+									c0.3-0.5,0.4-1,0.4-1.6c0-0.9-0.4-1.8-1-2.4l-3.3-3.3c-0.4-0.4-1-0.4-1.4,0L0.3,14.8C0.1,15,0,15.3,0,15.5s0.1,0.5,0.3,0.7l3.3,3.3
+									c0.7,0.7,1.6,1,2.4,1c0.9,0,1.8-0.3,2.4-1l0.2-0.2l5.5,5.5l-1.2,1.2c-1.2,1.2-1.2,3.1,0,4.2l1,1c0,0,0,0,0,0
+									c0.6,0.6,1.4,0.9,2.1,0.9c0.3,0,0.5,0,0.7-0.1c0.1,0.5,0.4,0.9,0.7,1.2l1,1c0.6,0.6,1.4,0.9,2.1,0.9c0.3,0,0.5,0,0.7-0.1
+									c0.1,0.5,0.4,0.9,0.7,1.2l1,1c0.6,0.6,1.4,0.9,2.1,0.9c0.3,0,0.5,0,0.7-0.1c0.1,0.5,0.4,0.9,0.7,1.2l1,1c0.6,0.6,1.4,0.9,2.1,0.9
+									c0.4,0,0.8-0.1,1.2-0.2L32,42c0.6,0.6,1.4,0.9,2.2,0.9c0.8,0,1.6-0.3,2.2-0.9l0.7-0.7c0.3-0.3,0.5-0.6,0.7-1
+									c1.2,0.7,2.7,0.5,3.7-0.5l0.8-0.8c0.4-0.4,0.6-0.8,0.8-1.3c1,0.3,2.2,0,3-0.8l1-1c0.3-0.3,0.5-0.6,0.6-0.9c1.2,1.2,3.1,1.2,4.3,0
+									L53,34c0.6-0.6,0.9-1.4,0.9-2.2c0-0.5-0.1-0.9-0.3-1.3l11.6-10.7c0.5,0.3,1.1,0.4,1.6,0.4c0.9,0,1.8-0.3,2.4-1l3.3-3.3
+									c0.2-0.2,0.3-0.4,0.3-0.7S72.7,14.7,72.6,14.5z M35.1,9.3c0.3-0.3,0.7-0.5,1.2-0.5l2.1-0.1c0.3,0,0.6,0,0.8,0.2l9.6,4.5
+									c0.4,0.2,0.8,0.1,1.1-0.2l4.2-4.2l9.6,9.6L52.3,29L37.6,14.2c-0.4-0.4-1-0.4-1.4,0l-5,5c-0.5,0.5-1.3,0.5-1.8,0L28.2,18
+									c-0.2-0.2-0.4-0.6-0.4-0.9s0.1-0.7,0.4-0.9L35.1,9.3z M5,18.1l-2.6-2.6L15.2,2.7l2.6,2.6c0.3,0.3,0.4,0.6,0.4,1
+									c0,0.4-0.2,0.8-0.4,1c0,0,0,0,0,0L7.1,18.1C6.5,18.7,5.6,18.7,5,18.1z M15.3,29.9l-1-1c-0.4-0.4-0.4-1,0-1.4l5.6-5.6
+									c0.4-0.4,1-0.4,1.4,0l1,1c0.2,0.2,0.3,0.4,0.3,0.7c0,0.2-0.1,0.4-0.2,0.6l-4.9,4.9c-0.1,0.1-0.1,0.2-0.2,0.3l-0.6,0.6
+									C16.3,30.3,15.7,30.3,15.3,29.9z M19.9,32.9l-1-1c-0.3-0.3-0.4-0.9-0.1-1.3l4.9-4.9c0.1-0.1,0.2-0.2,0.2-0.3l0.5-0.5
+									c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3l1,1c0.2,0.2,0.3,0.4,0.3,0.7c0,0.2-0.1,0.4-0.2,0.6l-4.9,4.9c-0.1,0.1-0.2,0.2-0.2,0.3
+									l-0.5,0.5C20.9,33.3,20.3,33.3,19.9,32.9z M24.5,35.9l-1-1c-0.3-0.3-0.4-0.9-0.1-1.3l4.9-4.9c0.1-0.1,0.1-0.2,0.2-0.3l0.6-0.6
+									c0.2-0.2,0.4-0.3,0.7-0.3s0.5,0.1,0.7,0.3l1,1c0.2,0.2,0.3,0.4,0.3,0.7c0,0.2-0.1,0.4-0.2,0.6l-4.9,4.9c-0.1,0.1-0.1,0.2-0.2,0.3
+									l-0.6,0.6C25.5,36.3,24.9,36.3,24.5,35.9z M29.1,38.9l-1-1c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.2,0.1-0.4,0.2-0.6l4.9-4.9
+									c0.1-0.1,0.1-0.2,0.2-0.3l0.5-0.5c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3l1,1c0.2,0.2,0.3,0.4,0.3,0.7s-0.1,0.5-0.3,0.7
+									l-5.6,5.6C30.1,39.3,29.5,39.3,29.1,38.9z M35.6,40L35,40.6c-0.4,0.4-1.1,0.4-1.5,0l-0.9-0.9l2.2-2.2c0,0,0,0,0,0.1l0.9,0.9
+									C36.1,38.9,36.1,39.5,35.6,40z M51.6,32.6l-1.1,1.1c-0.4,0.4-1.1,0.4-1.5,0l-5.1-5.1c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l3.1,3.1
+									c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8l-1,1c-0.4,0.4-1.1,0.4-1.5,0l-2.8-2.8c-0.4-0.4-1-0.4-1.4,0
+									c-0.2,0.2-0.3,0.5-0.3,0.7s0.1,0.5,0.3,0.7l1.9,1.9c0.2,0.2,0.3,0.5,0.3,0.8c0,0.3-0.1,0.6-0.3,0.8L40,38.5c-0.4,0.4-1.1,0.4-1.5,0
+									l-1.4-1.4c0,0,0,0,0,0l-0.9-0.9c0,0,0,0-0.1,0l1.4-1.4c1.2-1.2,1.2-3.1,0-4.2l-1-1c-0.8-0.8-1.9-1-2.9-0.8
+									c-0.1-0.5-0.4-0.9-0.7-1.2l-1-1c-0.7-0.7-1.9-1-2.9-0.7c-0.1-0.5-0.4-0.9-0.7-1.3l-1-1c-0.7-0.7-1.9-1-2.9-0.7
+									c-0.1-0.5-0.4-0.9-0.7-1.3l-1-1c-1.2-1.2-3.1-1.2-4.2,0l-2.9,2.9L10.1,18l8.5-8.5l4.2,4.2c0.2,0.2,0.4,0.3,0.7,0.3
+									c0.1,0,0.1,0,0.2,0l4.8-0.7l-1.5,1.5c-0.6,0.6-1,1.4-1,2.3c0,0.9,0.3,1.7,1,2.3l1.2,1.2c1.3,1.3,3.4,1.3,4.7,0l4.3-4.3l14.7,14.7
+									c0.2,0.2,0.3,0.5,0.3,0.8S51.8,32.4,51.6,32.6z M67.8,17.8c-0.6,0.6-1.5,0.6-2.1,0L55,7.1c-0.3-0.3-0.4-0.6-0.4-1
+									c0-0.4,0.2-0.8,0.4-1l2.6-2.6l12.8,12.8L67.8,17.8z"></path></g></svg></div> <h3 class="link-title">Emploi</h3> </a></li>
+								<li><a href="https://www.cote-emeraude.fr/listes/cartes-interactives/" title="Cartographie"> <div class="link-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="51.7px" height="51.7px" viewbox="0 0 51.7 51.7" style="enable-background:new 0 0 51.7 51.7;" xml:space="preserve"><g id="map_1_"><path class="li0" d="M16.3,37.4c0,0-18.5-18.8-6-27.1c3.6-2.4,8.4-2.4,12,0C34.9,18.6,16.3,37.4,16.3,37.4 M16.3,12.4
+									c-2.8,0-5.1,2.3-5.1,5.1s2.3,5.1,5.1,5.1s5.1-2.3,5.1-5.1S19.2,12.4,16.3,12.4z"></path><path class="li1" d="M50.7,6.4h-18V1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1v43.5c0,0.6,0.4,1,1,1h18v4.6c-0.2,0.3-0.3,0.7-0.1,1.1
+									c0.2,0.3,0.5,0.5,0.9,0.5c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0h30.7c0.6,0,1-0.4,1-1V7.4C51.7,6.9,51.2,6.4,50.7,6.4z M49.7,8.4v20.8
+									l-0.2,0.1c-0.5,0.3-0.7,0.9-0.4,1.4c0.1,0.2,0.3,0.4,0.6,0.5v9c-3.8-3.3-5.6-8.2-7.3-12.9c-2.1-5.8-4-11.3-9.7-12.9V8.4H49.7z M2,2
+									h28.7v41.5H2V2z M27.6,45.5L21,48.9v-3.5H27.6z M36.8,49.7c-0.2-0.2-0.4-0.3-0.6-0.3c-0.3,0-0.6,0.1-0.8,0.3H23.8l8.3-4.3
+									c0,0,0,0,0,0c0.3-0.2,0.6-0.5,0.6-0.9V16.4c4.3,1.5,5.9,6.1,7.8,11.4c0.7,2.1,1.5,4.2,2.5,6.3c-0.1,0.1-0.3,0.1-0.4,0.2l-0.2,0.2
+									c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l0,0c1.4,2.5,3.2,4.9,5.8,6.6v7.1H36.8z M45.6,33
+									c-0.3-0.4-0.2-1.1,0.2-1.4l0.2-0.2c0.4-0.3,1.1-0.2,1.4,0.2c0.3,0.4,0.2,1.1-0.2,1.4L47,33.2c-0.2,0.1-0.4,0.2-0.6,0.2
+									C46.1,33.4,45.8,33.3,45.6,33z M39.5,42.6l-0.1,0.3c-0.2,0.4-0.5,0.6-0.9,0.6c-0.1,0-0.3,0-0.4-0.1c-0.5-0.2-0.7-0.8-0.5-1.3
+									l0.1-0.3c0.2-0.5,0.8-0.7,1.3-0.5C39.5,41.5,39.7,42.1,39.5,42.6z M38,46.5l-0.1,0.3c-0.1,0.4-0.5,0.7-1,0.7c-0.1,0-0.2,0-0.3,0
+									c-0.5-0.2-0.8-0.7-0.7-1.2l0.1-0.3c0.2-0.5,0.7-0.8,1.2-0.7C37.8,45.4,38.1,45.9,38,46.5z M41.2,37.6c0.5,0.3,0.6,0.9,0.3,1.4
+									l-0.2,0.2c-0.2,0.3-0.5,0.4-0.8,0.4c-0.2,0-0.4-0.1-0.6-0.2c-0.5-0.3-0.6-0.9-0.3-1.4l0.2-0.3C40.2,37.4,40.8,37.3,41.2,37.6z
+									 M27.6,16.9c-0.3-3.1-1.9-5.6-4.7-7.5c-4-2.6-9.1-2.6-13.1,0c-2.8,1.9-4.4,4.4-4.7,7.5c-1,9.3,10.1,20.7,10.6,21.2
+									c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3C17.5,37.6,28.6,26.2,27.6,16.9z M16.3,35.9c-2.4-2.7-10-11.7-9.3-18.8
+									c0.3-2.5,1.5-4.5,3.8-6c1.7-1.1,3.6-1.7,5.5-1.7c1.9,0,3.8,0.6,5.5,1.7c2.3,1.5,3.6,3.5,3.8,6C26.4,24.2,18.7,33.3,16.3,35.9z
+									 M16.3,11.4c-3.4,0-6.1,2.8-6.1,6.1s2.8,6.1,6.1,6.1s6.1-2.8,6.1-6.1S19.7,11.4,16.3,11.4z M16.3,21.7c-2.3,0-4.1-1.9-4.1-4.1
+									s1.9-4.1,4.1-4.1s4.1,1.9,4.1,4.1S18.6,21.7,16.3,21.7z"></path></g></svg></div> <h3 class="link-title">Cartographie</h3> </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="home-agenda-kiosk">
+						<div class="center">
+							<div class="agenda-part">
+								<h2 class="home-title">Agenda</h2>
+								<div class="agenda-wrapper"><a href="https://www.cote-emeraude.fr/agenda/conseil-communautaire/" title="Conseil Communautaire" class="event-wrapper"> <div class="event-date"><div class="date-item date-debut"><span>Le </span>18.06</div></div> <div class="event-info"><p class="event-categ">Dates des conseils communautaires</p><h3 class="event-title item-title">Conseil Communautaire</h3><p class="event-desc item-desc">En raison du contexte sanitaire et des règles relatives au regroupement de personnes, le conseil communautaire délibèrera...</p></div> </a></div>
+								<div class="part-footer"><a href="https://www.cote-emeraude.fr/systeme/agenda/" title="Voir toutes les dates" class="see-all see-all--agenda">Toutes les dates</a></div>
+							</div>
+							<div class="kiosk-part">
+								<h2 class="home-title">Kiosque</h2>
+								<div class="doc-wrapper">
+									<div class="doc-pic"><img src="https://www.cote-emeraude.fr/medias/miniature-pdf/miniature-guide-n-23-web-270x385.jpg" alt="Echo de la Côte d’Emeraude n°23"></div>
+									<div class="doc-desc">
+										<h3 class="doc-title">L’Echo de la Côte d’Emeraude N°23</h3>
+										<div class="doc-infos">
+											<p>2019</p>
+											<p>PDF - 2 Mo</p>
+										</div>
+										<div class="doc-btn"><a href="javascript:void(0)" class="btn-liseuse consulter-ligne feuilleter" data-href="https://www.cote-emeraude.fr/medias/2019/12/Guide-N-23-Web.pdf" data-id="8328" data-dwnl="oui" data-print="oui" title="Feuilleter le PDF" data-hover="Feuilleter"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86.4px" height="86.9px" viewbox="0 0 86.4 86.9" style="enable-background:new 0 0 86.4 86.9;" xml:space="preserve"><path d="M86.4,20v-8.4c0-1.4-1.3-2.5-2.8-2.5h-9.2V2.5c0-1.4-1.3-2.5-2.8-2.5h-6.1c-11,0-20.7,6.3-24.1,15.6 c-5.9-4.2-13.2-6.5-20.7-6.5H2.9c-1.5,0-2.8,1.1-2.8,2.5V20L0,25v50.4c0,1.4,1.3,2.5,2.8,2.5h17.8c7.8,0,15.3,3,20.5,8.2 c1,1,2.8,1.1,4,0.2c0.1-0.1,0.2-0.1,0.2-0.2c5.2-5.2,12.6-8.2,20.5-8.2h17.8c1.5,0,2.8-1.1,2.8-2.5V25 M80.8,14.1v58.8h-15 c-6.7,0-13.3,1.8-18.8,5.2c2.9-6.8,10.3-11.4,18.5-11.3h6.1c1.5,0,2.8-1.1,2.8-2.5V14.1H80.8z M65.5,5h3.3v56.8h-3.3 c-7.5,0-14.6,2.9-19.5,8V19.7c0.1-0.7,0.3-1.3,0.5-2C48.9,10.1,56.6,5,65.5,5z M5.6,14.1h15c7.4,0,14.6,2.7,19.7,7.5v57.2 c-5.7-3.8-12.6-5.9-19.7-5.9h-15V14.1z"></path></svg> <span>Feuilleter</span> </a> <a href="https://www.cote-emeraude.fr/medias/2019/12/Guide-N-23-Web.pdf" download="L’Echo de la Côte d’Emeraude N°23" class="btn-touch btn-download" title="Télécharger"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="72px" viewbox="0 0 72 72" style="overflow:scroll;enable-background:new 0 0 72 72;" xml:space="preserve"><path d="M72,45v27H0V45h9v18h54V45H72z M54,27h-9V0H27v27h-9l18,27L54,27z"></path></svg> <span>Télécharger</span> </a></div>
+									</div>
+								</div>
+								<div class="part-footer"><a href="https://www.cote-emeraude.fr/systeme/base-documentaire/" title="Voir toutes les publciations" class="see-all see-all--kiosk">Toutes les publications</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!--/cdlBloc-->
+			<footer class="site-footer">
+				<div class="intouch">
+					<div class="center">
+						<h2 class="home-title">Restons en contact</h2>
+						<ul>
+							<li><a href="https://www.facebook.com/CCCoteEmeraude" title="Facebook" target="_blank"> <div class="intouch-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6.4px" height="12.7px" viewbox="0 0 6.4 12.7" style="enable-background:new 0 0 6.4 12.7;" xml:space="preserve"><path d="M6.2,4.4H4.3V3.1c0.1-1.2,2.1-1,2.1-1l0-0.1l0,0V0.1h0v0h0c-0.1,0-3.9-0.9-4.6,2l0,0c0,0,0,0,0,0
+                                c-0.1,0.4-0.1,2-0.1,2.2H0v2.2h1.7v6.1h2.5V6.6h1.9l0.2-2.2L6.2,4.4z"></path></svg></div> <h3 class="intouch-title">Facebook</h3> </a></li>
+							<li><a href="https://twitter.com/cccotedemeraude" title="Twitter" target="_blank"> <div class="intouch-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15.5px" height="12.6px" viewbox="0 0 15.5 12.6" style="enable-background:new 0 0 15.5 12.6;" xml:space="preserve"><path d="M15.5,1.5c-0.6,0.3-1.2,0.4-1.8,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2,0.8c-0.6-0.6-1.4-1-2.3-1
+                                C9,0,7.5,1.4,7.5,3.2c0,0.2,0,0.5,0.1,0.7C5,3.8,2.6,2.5,1.1,0.6c-0.3,0.5-0.4,1-0.4,1.6c0,1.1,0.6,2.1,1.4,2.6
+                                c-0.5,0-1-0.2-1.4-0.4c0,0,0,0,0,0c0,1.5,1.1,2.8,2.5,3.1C2.9,7.6,2.6,7.7,2.3,7.7c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.2,3,2.2
+                                c-1.1,0.9-2.5,1.4-3.9,1.4c-0.3,0-0.5,0-0.8,0c1.4,0.9,3.1,1.4,4.9,1.4c5.8,0,9-4.8,9-9c0-0.1,0-0.3,0-0.4C14.5,2.7,15,2.1,15.5,1.5
+                                z"></path></svg></div> <h3 class="intouch-title">Twitter</h3> </a></li>
+							<li><a href="https://www.cote-emeraude.fr/systeme/newsletters/" title="S'inscrire à la newsletter"> <div class="intouch-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.1px" height="14.1px" viewbox="0 0 22.1 14.1" style="enable-background:new 0 0 22.1 14.1;" xml:space="preserve"><path d="M16.5,9.7c0,0.2,0,0.3,0.1,0.4c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.4,0.2c0,0,0,0,0,0
+                                c0.1,0,0.2,0.1,0.4,0.1c0,0,0,0,0.1,0c0.2,0,0.5-0.1,0.6-0.2c0.1-0.1,0.2-0.2,0.3-0.3c0,0,0-0.1,0.1-0.1v-1c0-0.1-0.1-0.2-0.2-0.2
+                                c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.1c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c0,0-0.1,0-0.1,0
+                                c-0.1,0.1-0.3,0.1-0.4,0.2c-0.1,0.1-0.2,0.2-0.2,0.3c0,0,0,0.1,0,0.1C16.5,9.5,16.5,9.6,16.5,9.7z M21.9,8.3C22,8.7,22.1,9,22.1,9.4
+                                c0,0.2,0,0.4-0.1,0.6c0,0.2-0.1,0.4-0.2,0.6c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.2-0.2,0.3-0.4,0.4c-0.2,0.1-0.3,0.2-0.5,0.3
+                                C20.5,12,20.3,12,20.1,12c-0.1,0-0.3,0-0.4,0c-0.1,0-0.2-0.1-0.3-0.1c-0.2-0.1-0.3-0.2-0.4-0.4c-0.2,0.1-0.3,0.2-0.5,0.3
+                                c-0.5,0.2-1.1,0.2-1.6,0c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.2-0.3-0.3-0.4-0.5c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.3-0.2-0.5-0.2-0.8
+                                c0-0.3,0.1-0.6,0.2-0.8c0.1-0.1,0.1-0.3,0.2-0.4c0.1-0.1,0.2-0.2,0.2-0.3c0.2-0.2,0.4-0.3,0.6-0.4c0,0,0.1,0,0.1-0.1
+                                c0.5-0.2,1-0.2,1.5-0.1c0,0,0.1,0,0.1,0c0.1,0,0.2,0.1,0.2,0.1V7.5h1.1v3c0,0.2,0,0.3,0.1,0.3c0,0.1,0.1,0.1,0.1,0.1
+                                c0,0,0.1,0,0.2,0c0.2,0,0.3,0,0.4-0.1c0.1-0.1,0.2-0.2,0.3-0.4c0.1-0.2,0.1-0.3,0.2-0.5c0-0.2,0-0.4,0-0.6c0-0.3,0-0.5-0.1-0.8
+                                c-0.1-0.3-0.2-0.5-0.3-0.7c-0.1-0.2-0.3-0.4-0.5-0.6c-0.2-0.2-0.4-0.4-0.7-0.5c-0.2-0.1-0.5-0.2-0.8-0.3c-0.1,0-0.1,0-0.2,0
+                                c-0.5-0.1-1.1-0.1-1.6,0c-0.3,0.1-0.6,0.2-0.8,0.3c0,0,0,0,0,0c-0.2,0.1-0.4,0.3-0.6,0.5c-0.1,0.1-0.1,0.1-0.2,0.2
+                                C15,7.6,14.9,7.8,14.8,8c-0.1,0.2-0.3,0.5-0.3,0.8c-0.1,0.3-0.1,0.6-0.1,0.9c0,0.3,0,0.6,0.1,0.9c0,0.1,0,0.1,0.1,0.2
+                                c0.1,0.2,0.2,0.4,0.3,0.6c0.1,0.2,0.3,0.5,0.5,0.7c0.2,0.2,0.4,0.4,0.7,0.5c0.2,0.1,0.5,0.3,0.8,0.3c0.6,0.2,1.2,0.2,1.8,0
+                                c0.3-0.1,0.6-0.2,0.8-0.4l0.1-0.1l0.5,0.9L20,13.4c-0.3,0.2-0.7,0.4-1.1,0.5c-0.4,0.1-0.8,0.2-1.2,0.2c-0.4,0-0.8-0.1-1.2-0.2
+                                c-0.4-0.1-0.7-0.3-1.1-0.4c-0.3-0.2-0.6-0.4-0.9-0.7c-0.3-0.3-0.5-0.6-0.7-0.9c-0.2-0.3-0.3-0.7-0.4-1.1c0,0,0-0.1,0-0.1
+                                c-0.1-0.3-0.1-0.7-0.1-1.1c0-0.4,0.1-0.8,0.2-1.2c0.1-0.4,0.3-0.7,0.4-1.1c0.2-0.3,0.4-0.6,0.6-0.8c0,0,0.1-0.1,0.1-0.1
+                                c0.2-0.2,0.5-0.4,0.7-0.6c0,0,0.1-0.1,0.2-0.1c0.3-0.2,0.7-0.3,1.1-0.4c0.6-0.2,1.3-0.2,1.9-0.1c0.2,0,0.3,0.1,0.5,0.1
+                                c0.4,0.1,0.7,0.2,1.1,0.4c0.3,0.2,0.6,0.4,0.9,0.7c0.3,0.3,0.5,0.5,0.7,0.8C21.7,7.6,21.8,8,21.9,8.3z M18.4,1.2v3.1
+                                c-0.2,0-0.4,0-0.6,0c-1.2,0-2.2,0.4-3.1,1l-0.6-0.8L18.4,1.2C18.4,1.1,18.4,1.2,18.4,1.2z M17.9,0.2L9.2,6.6L0.6,0.1
+                                C0.8,0,1,0,1.2,0h16.1C17.5,0,17.7,0.1,17.9,0.2z M13.2,5l0.6,0.9c-1,1-1.6,2.4-1.6,3.9c0,0.3,0,0.6,0.1,0.9H1.2c-0.1,0-0.2,0-0.3,0
+                                L5.2,5l4,3L13.2,5z M4.4,4.3L0.1,10C0,9.8,0,9.7,0,9.6V1.2c0,0,0-0.1,0-0.1L4.4,4.3z"></path></svg></div> <h3 class="intouch-title">Newsletter</h3> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-infos">
+					<div class="center">
+						<div class="footer-identity">
+							<div class="footer-logo">
+								<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 239 274.3" style="enable-background:new 0 0 239 274.3;" xml:space="preserve">
+									<g id="Logo">
+										<g id="cadre">
+											<rect x="0.3" y="0.3" class="lf0" width="238.4" height="273.6"></rect>
+											<path d="M239,274.3H0V0h239V274.3z M0.7,273.6h237.7V0.7H0.7V273.6z"></path>
+										</g>
+										<g id="picto">
+											<path class="lf1" d="M7.3,109.2c0,0,41.8-67.3,102.7-20.4c60.9,46.9,112.2,42.9,121.7,26.5V6.1H7.3"></path>
+											<path class="lf2" d="M231.7,104.1c0,0-44,45.9-108.6-8.2C63.6,45.9,16.8,81.6,7.3,98v109.2h224.4"></path>
+											<path class="lf3" d="M140.1,75.3c14.4,0,26.1-11.7,26.1-26.1c0-14.4-11.7-26.1-26.1-26.1c-14.4,0-26.1,11.7-26.1,26.1
+                                C114,63.7,125.7,75.3,140.1,75.3"></path>
+											<g>
+												<path class="lf4" d="M150.5,111.7C187.5,74.9,195,34.4,195,34.4s-8.8,29.8-51.9,69.9C116,78.4,93,68.8,81.6,27.9L69,17.8
+                                    c0,0,3.5,41.4,45.1,74.8c7.8,6.2,14.6,12.6,20.7,18.9c-47.2,38.9-121.1,43.3-121.1,43.3l17.6,12.6c50.8-7.4,86.2-26.4,110.7-47.8
+                                    c20.9,25.2,28.8,51.3,25.9,77.7C167.7,199.1,180,185,180,185s5.8-34.5-26-69.6C152.8,114.2,151.7,112.9,150.5,111.7z"></path>
+												<polygon class="lf4" points="132.4,12.9 130,22.2 138.3,20.4             "></polygon>
+												<polygon class="lf4" points="128.4,23 120.4,17.8 121.1,27.4             "></polygon>
+												<polygon class="lf4" points="120.3,28.4 111,26.2 114.9,35           "></polygon>
+												<polygon class="lf4" points="114.5,36.4 105,37.2 111.5,44.3             "></polygon>
+												<polygon class="lf4" points="111.5,45.4 103.1,49.8 111.7,54             "></polygon>
+												<polygon class="lf4" points="105.4,62.2 114.9,63.2 112,55.2             "></polygon>
+												<polygon class="lf4" points="115.7,64.4 111.7,73 121,71             "></polygon>
+												<polygon class="lf4" points="145.1,12.4 139.7,20.4 148.1,21.4           "></polygon>
+												<polygon class="lf4" points="156.9,16.1 149.2,21.8 156.8,25.6           "></polygon>
+											</g>
+										</g>
+										<path d="M7.4,221.5c0-3.7,2.8-6.2,6.1-6.2c0.9,0,1.8,0.2,2.6,0.5l-0.1,1c0,0.2,0,0.4-0.2,0.4c-0.1,0-0.1-0.1-0.1-0.4
+                            c0-0.4-1.1-1-2.4-1c-3,0-4.9,2.3-4.9,5.4c0,3.1,2.1,5,4.5,5c1.3,0,3-0.7,3.1-1.7c0-0.1,0-0.3,0.2-0.3c0.1,0,0.1,0.1,0.1,0.2
+                            c0,0.2,0,0.4-0.1,1.4c-1.1,0.6-2.4,0.9-3.7,0.9C9.6,226.9,7.4,225,7.4,221.5z M17.8,221.3c0-3.2,2.1-6,5.3-6c3.3,0,5,2.4,5,5.6
+                            c0,3.2-2.1,5.9-5.2,5.9C19.5,226.9,17.8,224.5,17.8,221.3z M18.8,221c0,3.8,2.1,5.4,4.2,5.4c1.6,0,3.9-1.1,3.9-5.1
+                            c0-3.9-2.1-5.4-4.2-5.4C21.2,215.9,18.8,217,18.8,221z M30.8,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5h2.9v-0.5h-0.9
+                            c-0.4,0-0.5,0-0.5-2.5v-6.3h0l3.8,9.1c0,0.1,0.1,0.2,0.1,0.2c0,0,0.1-0.1,0.1-0.1l3.7-9.3l0,0v8.8c0,0.1-0.1,0.2-0.3,0.2H38v0.5
+                            h3.4v-0.5h-0.9c-0.3,0-0.5,0-0.5-2.5v-7.3c0-0.2,0.2-0.2,0.4-0.2h0.6v-0.5H39l-3.5,9l-3.8-9h-2.3v0.5H30
+                            C30.6,216.1,30.8,216.8,30.8,217.4z M43.8,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5h2.9v-0.5h-0.9c-0.4,0-0.5,0-0.5-2.5v-6.3h0
+                            l3.8,9.1c0,0.1,0.1,0.2,0.1,0.2c0,0,0-0.1,0.1-0.1l3.7-9.3l0,0v8.8c0,0.1-0.1,0.2-0.3,0.2h-0.7v0.5h3.5v-0.5h-0.9
+                            c-0.4,0-0.5,0-0.5-2.5v-7.3c0-0.2,0.2-0.2,0.4-0.2h0.6v-0.5H52l-3.5,9l-3.9-9h-2.3v0.5h0.7C43.7,216.1,43.8,216.8,43.8,217.4z
+                             M56.5,218.4v4.7c0,3.1,2.2,3.8,3.7,3.8c2,0,4.2-1.1,4.2-4.3v-6.3c0-0.1,0.1-0.2,0.3-0.2h0.7v-0.5h-2.9v0.5h0.9
+                            c0.4,0,0.5,0.1,0.5,2.5v3.8c0,3.5-2.3,3.8-3.4,3.8c-1,0-3-0.4-3-3.3v-6.6c0-0.2,0.2-0.2,0.4-0.2h0.6v-0.5h-3.4v0.5h1
+                            C56.5,216.1,56.5,216.5,56.5,218.4z M67.9,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5h2.9v-0.5h-0.9c-0.4,0-0.5,0-0.5-2.5v-6.4h0
+                            l7.1,9.5c0,0,0,0.1,0.1,0.1c0.1,0,0.1-0.1,0.1-0.2v-10.2c0-0.1,0.1-0.2,0.3-0.2h0.7v-0.5h-2.9v0.5h0.9c0.3,0,0.5,0.1,0.5,2.5v6h0
+                            l-6.7-9h-2v0.5h0.7C67.7,216.1,67.9,216.8,67.9,217.4z M80.7,226.6h-3.3v-0.5c0.7,0,0.8,0,0.9-0.3l4-10.3c0.4-0.1,0.7-0.2,0.8-0.2
+                            c0.1,0,0.1,0.1,0.1,0.1c0,0.2-0.3,0.2-0.3,0.5c0,0.7,2.2,7.6,2.8,9.1c0.2,0.6,0.4,1.1,0.8,1.1h0.6v0.5H84v-0.5h0.8
+                            c0.3,0,0.3,0,0.3-0.2c0-0.1-0.6-2.1-1.1-3.5h-3.8c-0.6,1.5-1,2.8-1,3.3c0,0.1,0,0.4,0.4,0.4h0.6h0.4V226.6z M80.4,221.8h3.3
+                            l-1.5-4.9C81.5,219,81,220.3,80.4,221.8z M88.9,218.4v4.7c0,3.1,2.3,3.8,3.7,3.8c2,0,4.2-1.1,4.2-4.3v-6.3c0-0.1,0.1-0.2,0.3-0.2
+                            h0.6v-0.5h-2.9v0.5h0.9c0.4,0,0.5,0.1,0.5,2.5v3.8c0,3.5-2.3,3.8-3.4,3.8c-1,0-2.9-0.4-2.9-3.3v-6.6c0-0.2,0.2-0.2,0.4-0.2h0.6
+                            v-0.5h-3.4v0.5h1C88.8,216.1,88.9,216.5,88.9,218.4z M98.8,217.3c0.1,0,0.2-0.1,0.2-0.2c0.3-0.9,2.4-0.9,3.4-0.9v9.7
+                            c0,0.1-0.1,0.2-0.3,0.2H101v0.5h4.2v-0.5H104c-0.3,0-0.5,0-0.5-2.5v-7.4c1,0,3.1,0,3.4,0.9c0,0.1,0.1,0.2,0.2,0.2
+                            c0.1,0,0.2,0,0.2-0.1c0-0.1,0-0.2-0.5-1.5h-7.7c-0.4,1.2-0.4,1.4-0.4,1.5C98.6,217.2,98.7,217.3,98.8,217.3z M109.4,218.4v7.5
+                            c0,0.1-0.1,0.2-0.3,0.2h-0.7v0.5h7.1c0.2-0.7,0.4-1.3,0.4-1.5c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0.1-0.2,0.2
+                            c-0.3,0.9-2.7,0.9-3.5,0.9h-1c-0.5,0-0.7,0-0.7-2.4v-2.8h2c1.9,0,1.9,0.1,1.9,0.5v0.6h0.4v-2.9h-0.4v0.7c0,0.4-0.1,0.5-2.4,0.5
+                            h-1.5v-3.9c0-0.2,0.3-0.2,0.6-0.2h1.2c0.7,0,1.7,0,2.4,0.2c0.3,0.1,0.5,0.2,0.5,0.5c0,0.1,0,0.2,0.2,0.2c0.1,0,0.1-0.1,0.1-0.3
+                            l0.1-1.2H108v0.5h1C109.4,216.1,109.4,216.5,109.4,218.4z M114.3,213.2c-0.1-0.2-0.3-0.5-0.5-0.5c-0.3,0-1.9,1.3-2.1,1.7l0.2,0.3
+                            C112.7,214.1,113.4,213.6,114.3,213.2z M122,216.1h-0.9v-0.5h4.8c3.3,0,4.9,2.5,4.9,5.3c0,2.2-1.2,5.6-5.3,5.6h-4.1v-0.5h0.7
+                            c0.2,0,0.3,0,0.3-0.2v-7.5C122.5,216.5,122.4,216.1,122,216.1z M123.5,223.6c0,2.4,0.1,2.4,0.6,2.4h1.3c1.4,0,4.3-0.3,4.3-4.7
+                            c0-4.4-3.3-5.1-4.1-5.1h-1.5c-0.3,0-0.6,0-0.6,0.2V223.6z M133.5,218.4v7.5c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5h7.1
+                            c0.2-0.7,0.4-1.3,0.4-1.5c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0.1-0.2,0.2c-0.3,0.9-2.7,0.9-3.5,0.9h-1c-0.5,0-0.7,0-0.7-2.4v-2.8h2.1
+                            c1.9,0,1.9,0.1,1.9,0.5v0.6h0.4v-2.9h-0.4v0.7c0,0.4-0.1,0.5-2.4,0.5h-1.5v-3.9c0-0.2,0.3-0.2,0.6-0.2h1.2c0.7,0,1.7,0,2.4,0.2
+                            c0.3,0.1,0.5,0.2,0.5,0.5c0,0.1,0,0.2,0.2,0.2c0.1,0,0.1-0.1,0.1-0.3l0.2-1.2h-7.6v0.5h1C133.4,216.1,133.5,216.5,133.5,218.4z
+                             M150.8,226.9c1.2,0,2.5-0.3,3.7-0.9c0.1-1,0.1-1.2,0.1-1.4c0-0.1,0-0.2-0.1-0.2c-0.1,0-0.2,0.2-0.2,0.3c-0.1,1-1.8,1.7-3.1,1.7
+                            c-2.5,0-4.5-1.9-4.5-5c0-3.1,1.9-5.4,4.9-5.4c1.4,0,2.4,0.6,2.4,1c0,0.3,0,0.4,0.1,0.4c0.1,0,0.2-0.1,0.2-0.4l0.1-1
+                            c-0.8-0.4-1.7-0.5-2.6-0.5c-3.3,0-6.1,2.5-6.1,6.2C145.5,225,147.7,226.9,150.8,226.9z M155.9,221.3c0-3.2,2.1-6,5.3-6
+                            c3.3,0,5,2.4,5,5.6c0,3.2-2.1,5.9-5.2,5.9C157.6,226.9,155.9,224.5,155.9,221.3z M156.9,221c0,3.8,2.1,5.4,4.2,5.4
+                            c1.6,0,3.9-1.1,3.9-5.1c0-3.9-2.2-5.4-4.2-5.4C159.3,215.9,156.9,217,156.9,221z M168.9,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5
+                            h2.9v-0.5h-0.9c-0.4,0-0.5,0-0.5-2.5v-6.3h0l3.8,9.1c0,0.1,0.1,0.2,0.1,0.2c0,0,0-0.1,0.1-0.1l3.7-9.3l0,0v8.8
+                            c0,0.1-0.1,0.2-0.3,0.2h-0.6v0.5h3.4v-0.5h-0.9c-0.4,0-0.5,0-0.5-2.5v-7.3c0-0.2,0.2-0.2,0.4-0.2h0.6v-0.5h-2.1l-3.5,9l-3.8-9h-2.3
+                            v0.5h0.7C168.7,216.1,168.9,216.8,168.9,217.4z M181.9,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2h-0.7v0.5h2.9v-0.5H183
+                            c-0.4,0-0.5,0-0.5-2.5v-6.3h0l3.8,9.1c0,0.1,0.1,0.2,0.1,0.2c0,0,0-0.1,0.1-0.1l3.7-9.3l0,0v8.8c0,0.1-0.1,0.2-0.3,0.2h-0.7v0.5
+                            h3.5v-0.5h-0.9c-0.4,0-0.5,0-0.5-2.5v-7.3c0-0.2,0.2-0.2,0.4-0.2h0.6v-0.5h-2.1l-3.5,9l-3.9-9h-2.3v0.5h0.7
+                            C181.8,216.1,181.9,216.8,181.9,217.4z M194.6,218.4v4.7c0,3.1,2.3,3.8,3.7,3.8c2,0,4.2-1.1,4.2-4.3v-6.3c0-0.1,0.1-0.2,0.3-0.2
+                            h0.6v-0.5h-2.9v0.5h0.9c0.4,0,0.5,0.1,0.5,2.5v3.8c0,3.5-2.3,3.8-3.4,3.8c-1,0-2.9-0.4-2.9-3.3v-6.6c0-0.2,0.2-0.2,0.4-0.2h0.6
+                            v-0.5h-3.4v0.5h1C194.6,216.1,194.6,216.5,194.6,218.4z M206,217.4v8.5c0,0.1-0.1,0.2-0.3,0.2H205v0.5h2.9v-0.5H207
+                            c-0.4,0-0.5,0-0.5-2.5v-6.4h0l7.1,9.5c0,0,0.1,0.1,0.1,0.1c0.1,0,0.1-0.1,0.1-0.2v-10.2c0-0.1,0.1-0.2,0.3-0.2h0.7v-0.5h-2.9v0.5
+                            h0.9c0.4,0,0.5,0.1,0.5,2.5v6h0l-6.7-9h-2v0.5h0.7C205.8,216.1,206,216.8,206,217.4z M217.5,218.4v7.5c0,0.1-0.1,0.2-0.3,0.2h-0.6
+                            v0.5h7.1c0.2-0.7,0.4-1.3,0.4-1.5c0-0.1,0-0.1-0.1-0.1c-0.1,0-0.1,0.1-0.2,0.2c-0.3,0.9-2.7,0.9-3.5,0.9h-1c-0.5,0-0.7,0-0.7-2.4
+                            v-2.8h2.1c1.9,0,1.9,0.1,1.9,0.5v0.6h0.4v-2.9h-0.4v0.7c0,0.4-0.1,0.5-2.4,0.5h-1.5v-3.9c0-0.2,0.3-0.2,0.6-0.2h1.2
+                            c0.7,0,1.7,0,2.4,0.2c0.3,0.1,0.5,0.2,0.5,0.5c0,0.1,0,0.2,0.2,0.2c0.1,0,0.1-0.1,0.1-0.3l0.2-1.2h-7.6v0.5h1
+                            C217.5,216.1,217.5,216.5,217.5,218.4z M227.9,226.9c1.9,0,3.8-1.2,3.8-3.3c0-3.8-5.3-2.6-5.3-5.6c0-0.9,0.6-2.1,2.3-2.1
+                            c0.5,0,1.8,0.2,1.9,0.9c0,0.1,0,0.2,0.2,0.2c0.1,0,0.1-0.1,0.1-0.2v-1.2c-0.5-0.3-1.2-0.3-1.7-0.3c-1.8,0-3.6,1.2-3.6,3
+                            c0,3.9,5.2,2.4,5.2,5.8c0,1.5-1.3,2.2-2.7,2.2c-0.7,0-2.3-0.4-2.5-1.3c0-0.1,0-0.3-0.2-0.3c-0.1,0-0.2,0.1-0.2,0.2
+                            c0,0.1,0.1,0.7,0.2,1.5C226.2,226.7,227.1,226.9,227.9,226.9z M21.7,257.1c-0.3,0-0.3,0.3-0.3,0.5c-0.2,1.5-2.7,2.6-4.9,2.6
+                            c-3.1,0-6.6-2.7-6.6-7.8c0-4.7,2.7-8.5,7.2-8.5c1.5,0,3.6,0.7,3.7,1.7c0,0.4,0.1,0.5,0.3,0.5c0.2,0,0.3-0.1,0.4-2.3
+                            c-1.3-0.6-2.7-0.9-4.3-0.9c-5.2,0-9.7,4-9.7,9.8c0,5.7,3.5,8.5,8.4,8.5c1.9,0,4.1-0.5,5.7-1.4c0.1-1.7,0.1-2.1,0.1-2.4
+                            C21.9,257.3,21.9,257.1,21.7,257.1z M40.3,251.8c0,5.1-3.3,9.4-8.3,9.4c-5,0-7.9-3.6-7.9-8.8c0-5.1,3.3-9.4,8.3-9.4
+                            C37.4,243,40.3,246.5,40.3,251.8z M38.1,252.6c0-6.1-3.3-8.7-6.3-8.7c-3.4,0-5.6,2.8-5.6,7.7c0,6.1,3.3,8.7,6.3,8.7
+                            C35.9,260.3,38.1,257.5,38.1,252.6z M28.7,241.2c0.3,0.3,0.6,0.6,0.8,0.6c0.7,0,2.2-1,2.7-1.5c0.5,0.6,2,1.5,2.7,1.5
+                            c0.2,0,0.5-0.3,0.8-0.6c-1.3-0.5-2.6-1.4-3.5-2.6C31.3,239.8,30,240.7,28.7,241.2z M42.8,243.5c-0.4,1.1-0.7,2.3-0.7,2.5
+                            c0,0.2,0.1,0.3,0.3,0.3c0.2,0,0.3-0.2,0.3-0.4c0.3-0.8,1.7-1.4,4.6-1.4H48v15c0,0.2-0.1,0.4-0.4,0.4h-1.9v0.8h7v-0.8h-1.9
+                            c-0.7,0-0.7-1-0.7-3.8v-11.6h0.6c2.9,0,4.4,0.6,4.6,1.4c0.1,0.2,0.2,0.4,0.4,0.4c0.1,0,0.3-0.1,0.3-0.3c0-0.2-0.4-1.4-0.7-2.5H42.8
+                            z M70.4,258c-0.2,0-0.2,0.2-0.3,0.3c-0.4,0.7-1.4,1.4-5.6,1.4h-1.6c-0.8,0-1,0-1-3.3v-4.6h3.1c2.8,0,3.1,0,3.1,0.8v0.9h0.7v-4.6H68
+                            v1.1c0,0.8-0.8,0.9-3.3,0.9h-2.9v-5.9c0-0.3,0.1-0.5,0.5-0.5h2.4c3.9,0,4.4,0.7,4.4,1.1c0,0.4,0.1,0.5,0.3,0.5
+                            c0.2-0.1,0.3-0.1,0.5-2.5H57.5v0.8H59c0.6,0,0.7,1,0.7,3.8v11.3c0,0.2-0.1,0.4-0.4,0.4h-1.2v0.8H70c0.3-1.1,0.6-2.2,0.6-2.4
+                            C70.6,258.1,70.5,258,70.4,258z M94.3,251.7c0,4.9-3,8.9-8.2,8.9h-6.7v-0.8h1.2c0.3,0,0.4-0.2,0.4-0.4v-11.3c0-2.8,0-3.8-0.7-3.8
+                            h-1.5v-0.8h7.3C93.1,243.5,94.3,249.3,94.3,251.7z M92,252.8c0-6-3.4-8.4-7.1-8.4c-1.6,0-1.9,0-1.9,0.5v11.4c0,3.3,0.3,3.3,1,3.3h2
+                            C90.5,259.7,92,255.9,92,252.8z M97.8,243c-0.5,0-0.8,0.6-0.8,1.3c0,0.7,0.3,3.9,0.5,5.5c0,0.4,0.1,0.7,0.4,0.7
+                            c0.2,0,0.3-0.4,0.4-0.7c0.2-1.6,0.5-4.8,0.5-5.5C98.6,243.5,98.4,243,97.8,243z M107.2,241.3l0.5,0.5c1.2-0.9,2.4-1.7,3.7-2.4
+                            c-0.1-0.2-0.6-0.9-0.8-0.9C110,238.6,107.6,240.7,107.2,241.3z M113.9,258c-0.2,0-0.2,0.2-0.3,0.3c-0.4,0.7-1.4,1.4-5.6,1.4h-1.6
+                            c-0.8,0-1,0-1-3.3v-4.6h3.1c2.8,0,3.1,0,3.1,0.8v0.9h0.7v-4.6h-0.7v1.1c0,0.8-0.8,0.9-3.3,0.9h-2.9v-5.9c0-0.3,0.1-0.5,0.5-0.5h2.4
+                            c3.9,0,4.4,0.7,4.4,1.1c0,0.4,0.1,0.5,0.3,0.5c0.2-0.1,0.3-0.1,0.5-2.5h-12.5v0.8h1.5c0.6,0,0.7,1,0.7,3.8v11.3
+                            c0,0.2-0.1,0.4-0.4,0.4h-1.2v0.8h11.9c0.3-1.1,0.6-2.2,0.6-2.4C114.1,258.1,114,258,113.9,258z M133.1,256.1v-11.3
+                            c0-0.2,0.1-0.4,0.4-0.4h1.1v-0.8h-3.6l-5.5,13.5l-6-13.5h-4v0.8h0.8c1.2,0,1.4,0.9,1.4,3.1v11.9c0,0.4-0.3,0.5-0.6,0.5h-0.9v0.8
+                            h4.6v-0.8h-1.3c-0.8,0-0.8-1.6-0.8-2.9v-10.5l0-0.1l5.9,13.5c0.1,0.4,0.2,0.7,0.4,0.7c0.4,0,0.4-0.1,0.5-0.2l5.6-14.3l0,0.1v13.3
+                            c0,0.2-0.1,0.4-0.4,0.4h-1.2v0.8h5.8v-0.8h-1.4C133.2,259.9,133.1,258.8,133.1,256.1z M149.9,258c-0.2,0-0.2,0.2-0.3,0.3
+                            c-0.4,0.7-1.4,1.4-5.6,1.4h-1.7c-0.8,0-1,0-1-3.3v-4.6h3.1c2.8,0,3.1,0,3.1,0.8v0.9h0.7v-4.6h-0.7v1.1c0,0.8-0.8,0.9-3.3,0.9h-2.9
+                            v-5.9c0-0.3,0.1-0.5,0.5-0.5h2.4c3.9,0,4.4,0.7,4.4,1.1c0,0.4,0.1,0.5,0.3,0.5c0.2-0.1,0.3-0.1,0.5-2.5H137v0.8h1.5
+                            c0.6,0,0.7,1,0.7,3.8v11.3c0,0.2-0.1,0.4-0.4,0.4h-1.2v0.8h11.9c0.3-1.1,0.6-2.2,0.6-2.4C150.1,258.1,150,258,149.9,258z
+                             M165.7,259.9h0.6v0.8h-2.9c-0.6,0-0.9,0-5.4-7.8h-1.8v3.2c0,2.8,0,3.8,0.7,3.8h1.4v0.8h-5.8v-0.8h1.2c0.3,0,0.4-0.2,0.4-0.4v-11.3
+                            c0-2.8,0-3.8-0.7-3.8h-1.5v-0.8h7c2.2,0,5,1.2,5,4.7c0,2.4-1.7,3.9-3.9,4.4C164.1,259,165,259.9,165.7,259.9z M161.8,248.6
+                            c0-2.5-1.8-4.1-3.8-4.1h-1.3c-0.2,0-0.6,0-0.6,0.4v7.2h1.2C159.6,252.1,161.8,251.2,161.8,248.6z M181.2,259.9h0.7v0.8h-5.6v-0.8
+                            h1.3c0.2,0,0.4-0.1,0.4-0.3c0-0.2-0.7-2.1-1.7-5.3h-5.7c-0.5,1.5-1.4,4.2-1.4,4.9c0,0.6,0.2,0.7,0.6,0.7h1.6v0.8h-5v-0.8h0.5
+                            c0.4,0,0.7-0.1,0.9-0.4l6.3-16.2c0.6-0.2,1.3-0.4,1.5-0.4c0.1,0,0.2,0.1,0.2,0.3c0,0.4-0.5,0.3-0.5,0.9c0,1.2,3.1,10.2,4.3,13.8
+                            C180.2,259.5,180.5,259.9,181.2,259.9z M176,253.3l-2.2-7.2l-2.8,7.2H176z M194.4,244.3h1.3c0.7,0,0.8,1.6,0.8,2.8v6.5
+                            c0,2.1-0.1,6.4-5.2,6.4c-1.8,0-4.2-1.1-4.2-5.1v-10.3c0-0.2,0.1-0.4,0.4-0.4h1.1v-0.8h-5.8v0.8h1.5c0.6,0,0.7,1,0.7,3.8v6
+                            c0,2.8,0.3,7.1,6.2,7.1c3.9,0,6.3-2.5,6.3-6.7v-9.7c0-0.4,0.3-0.5,0.6-0.5h0.9v-0.8h-4.6V244.3z M216.3,251.7c0,4.9-3,8.9-8.2,8.9
+                            h-6.7v-0.8h1.2c0.3,0,0.4-0.2,0.4-0.4v-11.3c0-2.8,0-3.8-0.7-3.8h-1.5v-0.8h7.3C215.1,243.5,216.3,249.3,216.3,251.7z M214,252.8
+                            c0-6-3.4-8.4-7-8.4c-1.6,0-2,0-2,0.5v11.4c0,3.3,0.3,3.3,1,3.3h2C212.5,259.7,214,255.9,214,252.8z M231.2,258
+                            c-0.2,0-0.2,0.2-0.3,0.3c-0.4,0.7-1.4,1.4-5.6,1.4h-1.7c-0.7,0-1,0-1-3.3v-4.6h3.2c2.8,0,3.1,0,3.1,0.8v0.9h0.7v-4.6h-0.7v1.1
+                            c0,0.8-0.8,0.9-3.3,0.9h-2.9v-5.9c0-0.3,0.1-0.5,0.5-0.5h2.4c3.9,0,4.4,0.7,4.4,1.1c0,0.4,0.1,0.5,0.3,0.5c0.2-0.1,0.3-0.1,0.5-2.5
+                            h-12.5v0.8h1.5c0.6,0,0.7,1,0.7,3.8v11.3c0,0.2-0.1,0.4-0.4,0.4H219v0.8h11.9c0.3-1.1,0.6-2.2,0.6-2.4
+                            C231.5,258.1,231.3,258,231.2,258z M231.4,234.7H7.6v0.7h223.8V234.7z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="footer-address">
+								<h3 class="title-footer">Communauté de communes Côte d'Émeraude</h3>
+								<p>Cap Émeraude - 1, esplanade des équipages - 35730 Pleurtuit</p><a class="footer-tel" href="tel:0223151315">Siège communautaire > Tél : +33 (0)2 23 15 13 15</a> <a class="footer-tel" href="tel:0299462078">Pôle déchets > Tél : +33 (0)2 99 46 20 78</a> <a href="https://www.cote-emeraude.fr/systeme/contact/" title="Nous contacter" class="footer-contact"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10.9px" height="7.5px" viewbox="0 0 10.9 7.5" style="overflow:scroll;enable-background:new 0 0 10.9 7.5;" xml:space="preserve" class="svg-couleur"><path d="M5.4,6.4l2-2.1l3.1,3.1H0.3l3.1-3.1L5.4,6.4z M0,6.3V1.2l2.7,2.5L0,6.3z M0,0h10.9L5.4,5L0,0z
+                         M8.2,3.7l2.7-2.5v5L8.2,3.7z"></path></svg> Nous contacter </a></div>
+						</div><a href="https://www.dinardemeraudetourisme.com/" title="Dinard Côte d'Émeraude Tourisme" target="_blank" class="footer-ot"> <p>Visiter le site de l'office <br>de tourisme intercommunal</p> </a></div>
+				</div>
+				<div class="footer-bottom">
+					<div class="center">
+						<ul id="menu-menu-footer" class="footer-menu">
+							<li id="menu-item-7402" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7402 item-1"><a title="Flux RSS" href="https://www.cote-emeraude.fr/systeme/flux-rss/">Flux RSS</a></li>
+							<li id="menu-item-7403" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7403 item-2"><a title="Plan du site" href="https://www.cote-emeraude.fr/systeme/plan-du-site/">Plan du site</a></li>
+							<li id="menu-item-7404" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-7404 item-3"><a title="Mentions légales" href="https://www.cote-emeraude.fr/systeme/mentions-legales/">Mentions légales</a></li>
+							<li id="menu-item-7405" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-privacy-policy menu-item-7405 item-4"><a title="Confidentialité" href="https://www.cote-emeraude.fr/systeme/politique-de-confidentialite/">Confidentialité</a></li>
+							<li><a href="http://www.creasit.fr/" target="_blank" title="Agence Creasit">© Creasit</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<link rel="alternate" type="application/rss+xml" href="https://www.cote-emeraude.fr/feed/?post_type=post" title="Flux RSS des actualités">
+			<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		
+			</script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/Accessibility/toolbar-min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/ui/core.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/ui/widget.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/ui/position.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/ui/menu.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+			<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-url.min.js">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.cote-emeraude.fr/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js">' + 'ipt>' );
+			</script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/dist/dom-ready.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/dist/a11y.min.js"></script>
+			<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+			</script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/recherche.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/ccce/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/ccce/js/scripts.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/ccce/js/objectFitPolyfill.min.js"></script>
+			<script type="text/javascript" src="https://www.cote-emeraude.fr/wp-content/themes/ccce/js/jquery.waypoints.min.js"></script>
+			<script type="text/javascript">
+            if(accessibilitytoolbar.isTouchDevice(navigator.userAgent || navigator.vendor || window.opera) && !accessibilitytoolbar.inIframe()){
+              accessibilitytoolbar.start();
+            }
+        
+			</script>
+		</div>
+		<!-- end global-wrapper -->
+		<!-- Matomo -->
+		<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.cote-emeraude.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+		</script>
+		<!-- End Matomo Code -->
+		<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'fr', includedLanguages: 'de,en,ar,eu,ca,zh-CN,zh-TW,co,ko,da,es,el,it,ja,la,nl,no,pl,pt,ro,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</body>
+</html>
