@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+	<!-- <head> -->
+	<head>
+		<base href="https://www.coeurduvar.com/kiosque">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Communauté de communes Coeur du Var, Le Luc en Provence, le Cannet des Maures, les Mayons, Puget-Ville, Gonfaron, Pignans, Cabasse, Flassans, Carnoules, le Thoronet, Besse">
+		<meta name="x-ua-compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Bienvenue sur le site officiel de la communauté de communes Coeur du Var, département 83">
+		<title>Kiosque - Communauté de communes Coeur du Var</title>
+		<link href="/kiosque?format=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+		<link href="/images/template/favicon/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/plugins/system/infscroller/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/media/com_docman/css/site.css?b1179856" rel="stylesheet" type="text/css">
+		<link href="/templates/adcoeurduvar/css/mld.min.css" rel="stylesheet" type="text/css">
+		<link href="/templates/adcoeurduvar/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="/templates/adcoeurduvar/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="/media/jui/css/icomoon.css" rel="stylesheet" type="text/css">
+		<link href="/media/com_docman/css/module.css?b1179856" rel="stylesheet" type="text/css">
+		<style type="text/css">
+#infscr-loading img{width:48px; height:48px;} 
+			#infscr-loading {overflow: hidden;clear: both;text-align:center;padding: 15px 0;width: 100%;}
+	#tarteaucitronAlertBig, #tarteaucitronAlertSmall { background :#3a3a3a!important;}
+	#tarteaucitronDisclaimerAlert { color : #d6d3d3!important; }
+	#tarteaucitronAlertBig #tarteaucitronCloseAlert, 
+	#tarteaucitronAlertBig #tarteaucitronPersonalize { background :#96368b!important; color :#e6e6e6!important;}
+	#tarteaucitronAlertBig #tarteaucitronCloseAlert { background :#e0e0e0!important; color :#5c5c5c!important;}
+	#tarteaucitronAlertSmall, #tarteaucitronAlertSmall #tarteaucitronCookiesListContainer { left:initial!important; right:0; }
+
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"5071cdfe249b0446a19c17f0b694f161","system.paths":{"root":"","base":""}}</script>
+		<script src="/media/jui/js/jquery.min.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/media/k2/assets/js/k2.frontend.js?v=2.8.0&sitepath=/" type="text/javascript"></script>
+		<script src="/plugins/system/infscroller/js/jquery.infinitescroll.min.js" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/koowa.kquery.js?1e4966dd" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/min/modernizr.js?1e4966dd" type="text/javascript"></script>
+		<script src="/media/koowa/framework/js/min/koowa.js?1e4966dd" type="text/javascript"></script>
+		<script src="/templates/adcoeurduvar/js/template.js" type="text/javascript" defer></script>
+		<script src="/templates/adcoeurduvar/js/min/mld.min.js" type="text/javascript" defer></script>
+		<script src="/media/jui/js/bootstrap.min.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/templates/adcoeurduvar/js/min/modernizr-2.8.3-min.js" type="text/javascript" defer></script>
+		<script src="/templates/adcoeurduvar/js/min/jquery.slides-min.js" type="text/javascript"></script>
+		<script src="/modules/mod_responsive_contact_form/js/jqBootstrapValidation.min.js" type="text/javascript"></script>
+		<script src="/media/joomladcookies/tarteaucitron/tarteaucitron.js" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-core.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/media/system/js/core.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/media/system/js/mootools-more.js?a5d6b3be7c818e8ce96e43c5758c038d" type="text/javascript"></script>
+		<script src="/modules/mod_rokajaxsearch/js/rokajaxsearch.js" type="text/javascript"></script>
+		<script type="text/javascript">
+window.InfiniteConfig = {
+					container   : '.viweactu #itemListPrimary, .blog',
+					navSelector : '.k2Pagination, .pagination',
+					nextSelector: 'a[title="Suivant"]',
+					itemSelector: '.viweactu #itemListPrimary .itemContainer, .blog div[itemprop="blogPost"]',
+					contentSelector: '.viweactu #itemListPrimary, .blog',
+					baseURL     : '',
+					finishedMsg : 'Fin des articles',
+					msgText     : '',
+					loader:'https://www.coeurduvar.com//plugins/system/infscroller/images/loader.gif',
+					use_button:0,
+					button_text:'Load next'
+			}kQuery(function($) {
+                $('.docman_track_download').on('click', function() {
+                    var el = $(this);
+                    
+                    if (typeof window.GoogleAnalyticsObject !== 'undefined' && typeof window[window.GoogleAnalyticsObject] !== 'undefined') {
+                        window[window.GoogleAnalyticsObject]('send', 'event', 'DOCman', 'Download', el.data('title'), parseInt(el.data('id'), 10));
+                    }
+                    else if (typeof _gaq !== 'undefined' && typeof _gat !== 'undefined') {
+                        if (_gat._getTrackers().length) {
+                            _gaq.push(function() {
+                                var tracker = _gat._getTrackers()[0];
+                                tracker._trackEvent('DOCman', 'Download', el.data('title'), parseInt(el.data('id'), 10));
+                            });
+                        }
+                    }
+                });
+
+                if (typeof _paq !== 'undefined') {
+                    _paq.push(['setDownloadClasses', 'docman_track_download']);
+                    _paq.push(['trackPageView']);
+                }
+            });jQuery.noConflict();jQuery(function () { jQuery("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });	   
+		tarteaucitron.user.gajsUa = "UA-15134526-1";
+	    tarteaucitron.user.gajsMore = function () { /* add here your optionnal _ga.push() */ };
+	    (tarteaucitron.job = tarteaucitron.job || []).push("gajs");
+	   	
+		tarteaucitron.user.googlemapsKey = "AIzaSyA5lQ-hJNkWcC-Kwo4zbUo8VOss14vcG58";
+        (tarteaucitron.job = tarteaucitron.job || []).push("googlemaps");
+        (tarteaucitron.job = tarteaucitron.job || []).push("googlemapssearch");
+       
+	(tarteaucitron.job = tarteaucitron.job || []).push("recaptcha");
+	
+		tarteaucitron.init({
+            "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+            "highPrivacy": false, /* désactiver le consentement implicite (en naviguant) ? */
+            "orientation": "bottom", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
+            "adblocker": false, /* Afficher un message si un adblocker est détecté */
+            "showAlertSmall": false, /* afficher le petit bandeau en bas à droite ? */
+            "cookieslist": false, /* Afficher la liste des cookies installés ? */
+            "removeCredit": true, /* supprimer le lien vers la source ? */
+            "customLang": false, /* supprimer le lien vers la source ? */
+            "expiration": 31536000000
+        }); window.addEvent((window.webkit) ? 'load' : 'domready', function() {
+				window.rokajaxsearch = new RokAjaxSearch({
+					'results': 'Résultats de la recherche',
+					'close': '',
+					'websearch': 0,
+					'blogsearch': 0,
+					'imagesearch': 0,
+					'videosearch': 0,
+					'imagesize': 'MEDIUM',
+					'safesearch': 'MODERATE',
+					'search': 'Rechercher une info, un service, une démarche...',
+					'readmore': 'Lire la suite',
+					'noresults': 'Aucun résultat pour cette recherche',
+					'advsearch': 'Recherche avancée',
+					'page': 'Page',
+					'page_of': 'sur',
+					'searchlink': 'https://www.coeurduvar.com/index.php?option=com_search&view=search&tmpl=component',
+					'advsearchlink': 'https://www.coeurduvar.com/index.php?option=com_search&view=search',
+					'uribase': 'https://www.coeurduvar.com/',
+					'limit': '10',
+					'perpage': '3',
+					'ordering': 'popular',
+					'phrase': 'any',
+					'hidedivs': '',
+					'includelink': 1,
+					'viewall': 'Afficher tous les résultats',
+					'estimated': 'estimated',
+					'showestimated': 1,
+					'showpagination': 1,
+					'showcategory': 1,
+					'showreadmore': 1,
+					'showdescription': 1
+				});
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=2">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="//fonts.googleapis.com/css?family=Open%20Sans:300,400,700%7COpen%20Sans%20Condensed:300,400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/templates/adcoeurduvar/css/adtemplate.css?1592300492" type="text/css">
+		<!-- 	<link rel="stylesheet" href="/templates/adcoeurduvar/css/editor.css" type="text/css" /> -->
+		<!--[if lte IE 8]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+					<style>
+				{behavior:url(/templates/adcoeurduvar/js/PIE.htc);}
+			</style>
+			<![endif]-->
+		<script>jQuery.noConflict();</script>
+		<script type="text/javascript">	
+    	function showMenu(){
+	        document.getElementById("offcanvas").style.transform='none';
+	        document.getElementById("offcanvas").style.webkitTransform='none';
+	        document.getElementById("hidemenu").style.display='block';
+	    }
+	    function hideMenu(){
+	        document.getElementById("offcanvas").style.transform='translateX(-100%)';
+	        document.getElementById("offcanvas").style.webkitTransform='translateX(-100%)';
+	        document.getElementById("hidemenu").style.display='none';
+	    }
+   
+		</script>
+	</head>
+	<!-- </head> -->
+	<body class="com_docman not-k2">
+		<div id="hidemenu"><a href="javascript:hideMenu()"></a></div>
+		<div id="offcanvas" class="menumobile">
+			<ul class="nav menu">
+				<li class="item-101"><a href="/"><i></i>Accueil</a></li>
+				<li class="item-145"><a href="/l-institution"><i></i>L'institution</a></li>
+				<li class="item-179"><a href="/actualites"><i></i>Actualités</a></li>
+				<li class="item-146 deeper parent"><a href="#"><i></i>Démarches</a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-154"><a href="/demarches/assainissement-non-collectif"><i></i>Assainissement non collectif</a></li>
+							<li class="item-155"><a href="/demarches/sante-solidarite"><i></i>Santé - solidarité</a></li>
+							<li class="item-159"><a href="/demarches/enfance-jeunesse"><i></i>Enfance - jeunesse</a></li>
+							<li class="item-152"><a href="/demarches/transports-scolaires"><i></i>Transports scolaires</a></li>
+							<li class="item-276"><a href="/demarches/foret"><i></i>Forêt</a></li>
+							<li class="item-195"><a href="/demarches/agriculture"><i></i>Agriculture</a></li>
+							<li class="item-153"><a href="http://www.letriacoeur.fr" target="_blank"><i></i><span>Déchets</span></a></li>
+							<li class="item-325"><a href="https://www.coeurduvartourisme.com" target="_blank"><i></i><span>Promotion touristique</span></a></li>
+							<li class="item-393"><a href="https://coeurduvar.taxesejour.fr/" target="_blank"><i></i><span>Taxe de séjour intercommunale</span></a></li>
+							<li class="item-384"><a href="http://emarches.coeurduvar.com/index.php" target="_blank"><i></i><span>E-marchés</span></a></li>
+							<li class="item-391"><a href="/demarches/coworking"><i></i>Coworking</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-273 deeper parent"><a href="#"><i></i>Grands dossiers</a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-162"><a href="/grands-dossiers/le-scot"><i></i>Le SCoT</a></li>
+							<li class="item-163"><a href="/grands-dossiers/varecopole"><i></i>Varecopole</a></li>
+							<li class="item-164"><a href="/grands-dossiers/zero-dechet"><i></i>Zéro déchet</a></li>
+							<li class="item-196"><a href="/grands-dossiers/technovar"><i></i>Technovar</a></li>
+							<li class="item-161"><a href="/grands-dossiers/amenagement-numerique"><i></i>Aménagement numérique</a></li>
+							<li class="item-580"><a href="/grands-dossiers/zones-d-activites-economiques"><i></i>Zones d’Activités Economiques</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-148 current active deeper parent"><a href="/kiosque"><i></i>Kiosque</a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-165"><a href="/kiosque/le-magazine-coeurduvar"><i></i>Magazine intercommunal</a></li>
+							<li class="item-355"><a href="/kiosque/le-magazine-zero-dechet"><i></i>Zéro Déchet</a></li>
+							<li class="item-166"><a href="/kiosque/rapport-d-activites-coeurduvar"><i></i>Rapport d'activités</a></li>
+							<li class="item-205"><a href="/kiosque/les-comptesrendus-du-conseil"><i></i>Les comptes-rendus du Conseil</a></li>
+							<li class="item-223"><a href="/kiosque/les-deliberations"><i></i>Les délibérations</a></li>
+							<li class="item-298"><a href="/kiosque/documents-budgetaires"><i></i>Documents budgétaires</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="item-574 deeper parent"><a href="#"><i></i>Covid-19</a>
+					<ul class="nav-child unstyled small">
+						<div class="sousmenu">
+							<li class="item-576"><a href="/covid-19/actualites-locales"><i></i>Actualités locales</a></li>
+							<li class="item-579"><a href="/covid-19/actualites-nationales"><i></i>Actualités nationales</a></li>
+							<li class="item-274"><a href="/covid-19/gestion-des-dechets"><i></i>Gestion des déchets</a></li>
+							<li class="item-575"><a href="/covid-19/entreprises"><i></i>Entreprises</a></li>
+							<li class="item-578"><a href="/covid-19/agriculture"><i></i>Agriculture</a></li>
+							<li class="item-577"><a href="/covid-19/tourisme"><i></i>Tourisme</a></li>
+						</div>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<header>
+			<div class="header-2 container">
+				<div class="logo col-md-6"><a href="/"> <img src="/images/template/logo_interne_coeur_du_var.png" alt="Communauté de Communes Coeur du Var"> </a></div>
+				<div class="col-md-4 pull-right">
+					<div class="menusocial pull-right"><span class="facebook-square"><a href="https://www.facebook.com/coeurduvarofficiel" title="facebook-square" target="_blank"><i class="fa fa-facebook-square"></i></a></span><span class="twitter-square"><a href="https://twitter.com/CoeurDuVar" title="twitter-square" target="_blank"><i class="fa fa-twitter-square"></i></a></span><span class="linkedin-square"><a href="https://fr.linkedin.com/company/coeur-du-var" title="linkedin-square" target="_blank"><i class="fa fa-linkedin-square"></i></a></span> <span class="other"> <a href="/contact-coeur-du-var" title="contactez-nousr"><i class="fa fa-envelope-square"></i></a> </span></div>
+					<div class="pull-right">
+						<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+							<div class="moduletable">
+								<div class="module-content">
+									<script type="text/javascript">
+jQuery( "#roksearch_search_str" ).change(function() {
+	alert("test");
+  	jQuery( "#roksearch_search_str" ).addClass("top");
+});
+									</script>
+									<form name="rokajaxsearch" id="rokajaxsearch" class="blue" action="https://www.coeurduvar.com/" method="get">
+										<div class="rokajaxsearch ">
+											<div class="roksearch-wrapper"><input id="roksearch_search_str" name="searchword" type="text" class="inputbox roksearch_search_str" placeholder="Rechercher une info, un service, une démarche..."></div><input type="hidden" name="searchphrase" value="any"> <input type="hidden" name="limit" value="20"> <input type="hidden" name="ordering" value="popular"> <input type="hidden" name="view" value="search"> <input type="hidden" name="option" value="com_search">
+											<div id="roksearch_results"></div>
+										</div>
+										<div id="rokajaxsearch_tmp" style="visibility:hidden;display:none;"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="3-navigation">
+			<div id="navigation">
+				<div class="navbar navbar-default" role="navigation">
+					<div class="container">
+						<div class="navbar-collapse ">
+							<nav class="navigation" role="navigation"><a href="javascript:showMenu();" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"> <div id="nav-icon1"><span></span> <span></span> <span></span></div> </a>
+								<ul class="nav menu">
+									<li class="item-101"><a href="/"><i></i>Accueil</a></li>
+									<li class="item-145"><a href="/l-institution"><i></i>L'institution</a></li>
+									<li class="item-179"><a href="/actualites"><i></i>Actualités</a></li>
+									<li class="item-146 deeper parent"><a href="#"><i></i>Démarches</a>
+										<ul class="nav-child unstyled small">
+											<div class="sousmenu">
+												<li class="item-154"><a href="/demarches/assainissement-non-collectif"><i></i>Assainissement non collectif</a></li>
+												<li class="item-155"><a href="/demarches/sante-solidarite"><i></i>Santé - solidarité</a></li>
+												<li class="item-159"><a href="/demarches/enfance-jeunesse"><i></i>Enfance - jeunesse</a></li>
+												<li class="item-152"><a href="/demarches/transports-scolaires"><i></i>Transports scolaires</a></li>
+												<li class="item-276"><a href="/demarches/foret"><i></i>Forêt</a></li>
+												<li class="item-195"><a href="/demarches/agriculture"><i></i>Agriculture</a></li>
+												<li class="item-153"><a href="http://www.letriacoeur.fr" target="_blank"><i></i><span>Déchets</span></a></li>
+												<li class="item-325"><a href="https://www.coeurduvartourisme.com" target="_blank"><i></i><span>Promotion touristique</span></a></li>
+												<li class="item-393"><a href="https://coeurduvar.taxesejour.fr/" target="_blank"><i></i><span>Taxe de séjour intercommunale</span></a></li>
+												<li class="item-384"><a href="http://emarches.coeurduvar.com/index.php" target="_blank"><i></i><span>E-marchés</span></a></li>
+												<li class="item-391"><a href="/demarches/coworking"><i></i>Coworking</a></li>
+											</div>
+										</ul>
+									</li>
+									<li class="item-273 deeper parent"><a href="#"><i></i>Grands dossiers</a>
+										<ul class="nav-child unstyled small">
+											<div class="sousmenu">
+												<li class="item-162"><a href="/grands-dossiers/le-scot"><i></i>Le SCoT</a></li>
+												<li class="item-163"><a href="/grands-dossiers/varecopole"><i></i>Varecopole</a></li>
+												<li class="item-164"><a href="/grands-dossiers/zero-dechet"><i></i>Zéro déchet</a></li>
+												<li class="item-196"><a href="/grands-dossiers/technovar"><i></i>Technovar</a></li>
+												<li class="item-161"><a href="/grands-dossiers/amenagement-numerique"><i></i>Aménagement numérique</a></li>
+												<li class="item-580"><a href="/grands-dossiers/zones-d-activites-economiques"><i></i>Zones d’Activités Economiques</a></li>
+											</div>
+										</ul>
+									</li>
+									<li class="item-148 current active deeper parent"><a href="/kiosque"><i></i>Kiosque</a>
+										<ul class="nav-child unstyled small">
+											<div class="sousmenu">
+												<li class="item-165"><a href="/kiosque/le-magazine-coeurduvar"><i></i>Magazine intercommunal</a></li>
+												<li class="item-355"><a href="/kiosque/le-magazine-zero-dechet"><i></i>Zéro Déchet</a></li>
+												<li class="item-166"><a href="/kiosque/rapport-d-activites-coeurduvar"><i></i>Rapport d'activités</a></li>
+												<li class="item-205"><a href="/kiosque/les-comptesrendus-du-conseil"><i></i>Les comptes-rendus du Conseil</a></li>
+												<li class="item-223"><a href="/kiosque/les-deliberations"><i></i>Les délibérations</a></li>
+												<li class="item-298"><a href="/kiosque/documents-budgetaires"><i></i>Documents budgétaires</a></li>
+											</div>
+										</ul>
+									</li>
+									<li class="item-574 deeper parent"><a href="#"><i></i>Covid-19</a>
+										<ul class="nav-child unstyled small">
+											<div class="sousmenu">
+												<li class="item-576"><a href="/covid-19/actualites-locales"><i></i>Actualités locales</a></li>
+												<li class="item-579"><a href="/covid-19/actualites-nationales"><i></i>Actualités nationales</a></li>
+												<li class="item-274"><a href="/covid-19/gestion-des-dechets"><i></i>Gestion des déchets</a></li>
+												<li class="item-575"><a href="/covid-19/entreprises"><i></i>Entreprises</a></li>
+												<li class="item-578"><a href="/covid-19/agriculture"><i></i>Agriculture</a></li>
+												<li class="item-577"><a href="/covid-19/tourisme"><i></i>Tourisme</a></li>
+											</div>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="slideshow"></div>
+		<div id="content">
+			<section class="container article">
+				<div id="breadcrumbs">
+					<div class="row">
+						<div class="moduletable">
+							<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+								<li>Vous êtes ici :  </li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/" class="pathway"><span itemprop="name">Accueil</span></a>
+									<!--
+									<span class="divider">
+						<img src="/media/system/images/arrow.png" alt="" />					</span>
+				-->
+									<meta itemprop="position" content="1">
+								</li>
+								<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active"><span itemprop="name"> Kiosque </span>
+									<meta itemprop="position" content="2">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Page d'accueil caché ou non  -->
+				<div id="main-box">
+					<article class="col-md-12  " style="padding: 0;">
+						<div id="system-message-container"></div>
+						<div class="k-ui-ltr  k-ui-namespace com_docman">
+							<!--[if lte IE 8 ]><div class="old-ie"><![endif]-->
+							<script data-inline type="text/javascript">(function() {var el = document.documentElement; var cl = "k-js-enabled"; if (el.classList) { el.classList.add(cl); }else{ el.className += " " + cl;}})()</script>
+							<div class="docman_table_layout docman_table_layout--default">
+								<h1 class="docman_page_heading">Kiosque</h1>
+								<form action="/kiosque" method="get" class="k-js-grid-controller koowa_table_list" data-token-name="csrf_token" data-token-value="a8c40cc710a8cbaae713c8cb5d6f3710774bab47"></form>
+							</div>
+							<!--[if lte IE 8 ]></div><![endif]-->
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="container ctbottom ">
+				<aside class="content-bottom col-md-8 col-sm-12">
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="magazine_intercommunal" class="title">Magazine intercommunal</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="koowa_media--gallery">
+										<div class="koowa_media_wrapper">
+											<div class="koowa_media_contents columns-6">
+												<div class="koowa_media">
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N60" data-id="162" href="/kiosque/le-magazine-coeurduvar/162-journal-cdv-n60" title="Journal CDV N60"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-60.jpg" alt="Journal CDV N60"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N60</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N59" data-id="160" href="/kiosque/le-magazine-coeurduvar/160-journal-cdv-n59" title="Journal CDV N59"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-59.jpg" alt="Journal CDV N59"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N59</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N58" data-id="153" href="/kiosque/le-magazine-coeurduvar/153-journal-cdv-n578" title="Journal CDV N58"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-58.jpg" alt="Journal CDV N58"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N58</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N57" data-id="147" href="/kiosque/le-magazine-coeurduvar/147-journal-cdv-n57" title="Journal CDV N57"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-57.jpg" alt="Journal CDV N57"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N57</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N56" data-id="140" href="/kiosque/le-magazine-coeurduvar/140-journal-cdv-n56" title="Journal CDV N56"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-56.jpg" alt="Journal CDV N56"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N56</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N55" data-id="133" href="/kiosque/le-magazine-coeurduvar/133-journal-cdv-n55" title="Journal CDV N55"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-55.jpg" alt="Journal CDV N55"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N55</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N54" data-id="127" href="/kiosque/le-magazine-coeurduvar/127-journal-cdv-n54" title="Journal CDV N54"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-54.jpg" alt="Journal CDV N54"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N54</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N53" data-id="123" href="/kiosque/le-magazine-coeurduvar/123-journal-cdv-n53" title="Journal CDV N53"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-53.jpg" alt="Journal CDV N53"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N53</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N52" data-id="119" href="/kiosque/le-magazine-coeurduvar/119-journal-cdv-n52" title="Journal CDV N52"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-52.jpg" alt="Journal CDV N52"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N52</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Journal CDV N51" data-id="112" href="/kiosque/le-magazine-coeurduvar/112-journal-cdv-n51" title="Journal CDV N51"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/cdv-51.jpg" alt="Journal CDV N51"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Journal CDV N51</div></div></div></div></div></div> </a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="zero_dechet" class="title">Zéro Déchet</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="koowa_media--gallery">
+										<div class="koowa_media_wrapper">
+											<div class="koowa_media_contents columns-6">
+												<div class="koowa_media">
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N16" data-id="163" href="/kiosque/le-magazine-zero-dechet/163-zero-dechet-n16" title="Zéro Déchet N16"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-16.jpg" alt="Zéro Déchet N16"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N16</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N15" data-id="161" href="/kiosque/le-magazine-zero-dechet/161-zero-dechet-n15" title="Zéro Déchet N15"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-15.jpg" alt="Zéro Déchet N15"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N15</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N14" data-id="154" href="/kiosque/le-magazine-zero-dechet/154-zero-dechet-n14" title="Zéro Déchet N14"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/magazine/zero-14.jpg" alt="Zéro Déchet N14"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N14</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N13" data-id="148" href="/kiosque/le-magazine-zero-dechet/148-zero-dechet-n13" title="Zéro Déchet N13"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-13.jpg" alt="Zéro Déchet N13"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N13</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N12" data-id="134" href="/kiosque/le-magazine-zero-dechet/134-zero-dechet-n12" title="Zéro Déchet N12"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-12.jpg" alt="Zéro Déchet N12"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N12</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N11" data-id="128" href="/kiosque/le-magazine-zero-dechet/128-zero-dechet-n11" title="Zéro Déchet N11"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-11.jpg" alt="Zéro Déchet N11"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N11</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N10" data-id="124" href="/kiosque/le-magazine-zero-dechet/124-zero-dechet-n10" title="Zéro Déchet N10"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-10.jpg" alt="Zéro Déchet N10"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N10</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N9" data-id="120" href="/kiosque/le-magazine-zero-dechet/120-zero-dechet-n9" title="Zéro Déchet N9"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zero-09.jpg" alt="Zéro Déchet N9"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N9</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N8" data-id="113" href="/kiosque/le-magazine-zero-dechet/113-zero-dechet-n8" title="Zéro Déchet N8"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/Z%C3%A9ro-08.jpg" alt="Zéro Déchet N8"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N8</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Zéro Déchet N7" data-id="104" href="/kiosque/le-magazine-zero-dechet/104-zero-dechet-n7" title="Zéro Déchet N7"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/Zero%20dechet/zd-7.jpg" alt="Zéro Déchet N7"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Zéro Déchet N7</div></div></div></div></div></div> </a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="rapport_d_activites" class="title">Rapports d'activités</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="koowa_media--gallery">
+										<div class="koowa_media_wrapper">
+											<div class="koowa_media_contents columns-6">
+												<div class="koowa_media">
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport d'activités 2018" data-id="142" href="/kiosque/rapport-d-activites-coeurduvar/142-rapport-d-activites-2018" title="Rapport d'activités 2018"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/rapport_activite/rapact-2018.jpg" alt="Rapport d'activités 2018"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport d'activités 2018</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport PPE 2018" data-id="141" href="/kiosque/rapport-d-activites-coeurduvar/141-rapport-ppe-2018" title="Rapport PPE 2018"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/RA-2018-V5-BIS-1.jpg" alt="Rapport PPE 2018"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport PPE 2018</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport d'activités 2017" data-id="114" href="/kiosque/rapport-d-activites-coeurduvar/114-rapport-d-activites-2017" title="Rapport d'activités 2017"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/rapport_activite/rapact-2017.jpg" alt="Rapport d'activités 2017"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport d'activités 2017</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport SPANC 2017" data-id="109" href="/kiosque/rapport-d-activites-coeurduvar/109-rapport-service-public-de-l-assainissement-non-collectif-2017" title="Rapport SPANC 2017"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/rapport_activite/rapactSPANC2017.jpg" alt="Rapport SPANC 2017"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport SPANC 2017</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport PPE 2017" data-id="108" href="/kiosque/rapport-d-activites-coeurduvar/108-rapport-2017-sur-le-prix-et-la-qualite-du-service-de-prevention-et-de-gestion-des-dechets" title="Rapport PPE 2017"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/rapactPPE2017.jpg" alt="Rapport PPE 2017"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport PPE 2017</div></div></div></div></div></div> </a></div>
+													</div>
+													<div class="koowa_media__item col-md-3 col-sm-4 col-xs-12">
+														<div class="koowa_media__item__content document">
+															<meta itemprop="contentUrl" content=""><a class="koowa_media__item__link " target="_blank" data-title="Rapport d'activités 2016" data-id="74" href="/kiosque/rapport-d-activites-coeurduvar/74-rapport-d-activites-2016" title="Rapport d'activités 2016"> <div class="koowa_media__item__content-holder"><div class="koowa_media__item__thumbnail"><img itemprop="thumbnail" src="https://www.coeurduvar.com/joomlatools-files/docman-images/rapport_activite/rapact-2016.jpg" alt="Rapport d'activités 2016"></div><div class="koowa_header koowa_media__item__label"><div class="koowa_header__item koowa_header__item--title_container"><div class="koowa_wrapped_content"><div class="whitespace_preserver"><div class="overflow_container">Rapport d'activités 2016</div></div></div></div></div></div> </a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="comptes-rendus_conseils_communautaires" class="title">Comptes-rendus conseils communautaires</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="mod_docman mod_docman--documents">
+										<ul class="mod_docman_icons">
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/165-conseil-communautaire-du-03-03-2020" class="koowa_header__image_link " data-title="Conseil communautaire du 03/03/2020" data-id="165" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/165-conseil-communautaire-du-03-03-2020" class="koowa_header__title_link " data-title="Conseil communautaire du 03/03/2020" data-id="165" target="_blank"> Conseil communautaire du 03/03/2020</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/164-conseil-communautaire-du-04-o2-2020" class="koowa_header__image_link " data-title="Conseil communautaire du 04/O2/2020" data-id="164" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/164-conseil-communautaire-du-04-o2-2020" class="koowa_header__title_link " data-title="Conseil communautaire du 04/O2/2020" data-id="164" target="_blank"> Conseil communautaire du 04/O2/2020</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/158-conseil-communautaire-du-17-12-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 17/12/2019" data-id="158" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/158-conseil-communautaire-du-17-12-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 17/12/2019" data-id="158" target="_blank"> Conseil communautaire du 17/12/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/156-conseil-communautaire-du-26-11-2019-1" class="koowa_header__image_link " data-title="Conseil communautaire du 26/11/2019" data-id="156" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/156-conseil-communautaire-du-26-11-2019-1" class="koowa_header__title_link " data-title="Conseil communautaire du 26/11/2019" data-id="156" target="_blank"> Conseil communautaire du 26/11/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/155-conseil-communautaire-du-26-11-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 26/11/2019" data-id="155" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/155-conseil-communautaire-du-26-11-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 26/11/2019" data-id="155" target="_blank"> Conseil communautaire du 26/11/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/151-conseil-communautaire-du-29-10-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 29/10/2019" data-id="151" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/151-conseil-communautaire-du-29-10-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 29/10/2019" data-id="151" target="_blank"> Conseil communautaire du 29/10/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/149-conseil-communautaire-du-24-09-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 24/09/2019" data-id="149" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/149-conseil-communautaire-du-24-09-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 24/09/2019" data-id="149" target="_blank"> Conseil communautaire du 24/09/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/144-conseil-communautaire-du-09-07-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 09/07/2019" data-id="144" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/144-conseil-communautaire-du-09-07-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 09/07/2019" data-id="144" target="_blank"> Conseil communautaire du 09/07/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/143-conseil-communautaire-du-25-06-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 25/06/2019" data-id="143" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/143-conseil-communautaire-du-25-06-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 25/06/2019" data-id="143" target="_blank"> Conseil communautaire du 25/06/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/137-conseil-communautaire-du-28-05-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 28/05/2019" data-id="137" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/137-conseil-communautaire-du-28-05-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 28/05/2019" data-id="137" target="_blank"> Conseil communautaire du 28/05/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/136-conseil-communautaire-du-08-04-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 08/04/2019" data-id="136" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/136-conseil-communautaire-du-08-04-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 08/04/2019" data-id="136" target="_blank"> Conseil communautaire du 08/04/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-comptesrendus-du-conseil/131-conseil-communautaire-du-26-03-2019" class="koowa_header__image_link " data-title="Conseil communautaire du 26/03/2019" data-id="131" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-comptesrendus-du-conseil/131-conseil-communautaire-du-26-03-2019" class="koowa_header__title_link " data-title="Conseil communautaire du 26/03/2019" data-id="131" target="_blank"> Conseil communautaire du 26/03/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="deliberations" class="title">Délibérations</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="mod_docman mod_docman--documents">
+										<ul class="mod_docman_icons">
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/167-deliberations-du-03-03-2020" class="koowa_header__image_link " data-title="Délibérations du 03/03/2020" data-id="167" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/167-deliberations-du-03-03-2020" class="koowa_header__title_link " data-title="Délibérations du 03/03/2020" data-id="167" target="_blank"> Délibérations du 03/03/2020</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/166-deliberations-du-04-02-2020" class="koowa_header__image_link " data-title="Délibérations du 04/02/2020" data-id="166" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/166-deliberations-du-04-02-2020" class="koowa_header__title_link " data-title="Délibérations du 04/02/2020" data-id="166" target="_blank"> Délibérations du 04/02/2020</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/159-deliberations-du-17-12-2019" class="koowa_header__image_link " data-title="Délibérations du 17/12/2019" data-id="159" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/159-deliberations-du-17-12-2019" class="koowa_header__title_link " data-title="Délibérations du 17/12/2019" data-id="159" target="_blank"> Délibérations du 17/12/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/157-deliberations-du-26-11-2019" class="koowa_header__image_link " data-title="Délibérations du 26/11/2019" data-id="157" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/157-deliberations-du-26-11-2019" class="koowa_header__title_link " data-title="Délibérations du 26/11/2019" data-id="157" target="_blank"> Délibérations du 26/11/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/152-deliberations-du-29-10-2019" class="koowa_header__image_link " data-title="Délibérations du 29/10/2019" data-id="152" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/152-deliberations-du-29-10-2019" class="koowa_header__title_link " data-title="Délibérations du 29/10/2019" data-id="152" target="_blank"> Délibérations du 29/10/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/150-deliberations-du-24-09-2019" class="koowa_header__image_link " data-title="Délibérations du 24/09/2019" data-id="150" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/150-deliberations-du-24-09-2019" class="koowa_header__title_link " data-title="Délibérations du 24/09/2019" data-id="150" target="_blank"> Délibérations du 24/09/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/146-deliberations-du-09-07-2019" class="koowa_header__image_link " data-title="Délibérations du 09/07/2019" data-id="146" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/146-deliberations-du-09-07-2019" class="koowa_header__title_link " data-title="Délibérations du 09/07/2019" data-id="146" target="_blank"> Délibérations du 09/07/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/145-deliberations-du-25-06-2019" class="koowa_header__image_link " data-title="Délibérations du 25/06/2019" data-id="145" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/145-deliberations-du-25-06-2019" class="koowa_header__title_link " data-title="Délibérations du 25/06/2019" data-id="145" target="_blank"> Délibérations du 25/06/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/138-deliberations-du-28-05-2019" class="koowa_header__image_link " data-title="Délibérations du 28/05/2019" data-id="138" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/138-deliberations-du-28-05-2019" class="koowa_header__title_link " data-title="Délibérations du 28/05/2019" data-id="138" target="_blank"> Délibérations du 28/05/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/135-deliberations-du-08-04-2019" class="koowa_header__image_link " data-title="Délibérations du 08/04/2019" data-id="135" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/135-deliberations-du-08-04-2019" class="koowa_header__title_link " data-title="Délibérations du 08/04/2019" data-id="135" target="_blank"> Délibérations du 08/04/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/132-deliberations-du-26-03-2019" class="koowa_header__image_link " data-title="Délibérations du 26/03/2019" data-id="132" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/132-deliberations-du-26-03-2019" class="koowa_header__title_link " data-title="Délibérations du 26/03/2019" data-id="132" target="_blank"> Délibérations du 26/03/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/les-deliberations/130-deliberations-du-05-03-2019" class="koowa_header__image_link " data-title="Délibérations du 05/03/2019" data-id="130" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/les-deliberations/130-deliberations-du-05-03-2019" class="koowa_header__title_link " data-title="Délibérations du 05/03/2019" data-id="130" target="_blank"> Délibérations du 05/03/2019</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-title">
+								<h4 id="documents_budgetaires" class="title">Documents budgétaires</h4>
+							</div>
+							<div class="module-content">
+								<div class="koowa">
+									<div class="mod_docman mod_docman--documents">
+										<ul class="mod_docman_icons">
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/documents-budgetaires/84-deliberation-budgetaire-2017-11" class="koowa_header__image_link " data-title="Délibération budgétaire 2017-11" data-id="84" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/documents-budgetaires/84-deliberation-budgetaire-2017-11" class="koowa_header__title_link " data-title="Délibération budgétaire 2017-11" data-id="84" target="_blank"> Délibération budgétaire 2017-11</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/documents-budgetaires/83-deliberation-budgetaire-2017-10" class="koowa_header__image_link " data-title="Délibération budgétaire 2017-10" data-id="83" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/documents-budgetaires/83-deliberation-budgetaire-2017-10" class="koowa_header__title_link " data-title="Délibération budgétaire 2017-10" data-id="83" target="_blank"> Délibération budgétaire 2017-10</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+											<li class="module_document">
+												<div class="koowa_header"><span class="koowa_header__item koowa_header__item--image_container"> <a href="/kiosque/documents-budgetaires/82-deliberation-budgetaire-2017-9" class="koowa_header__image_link " data-title="Délibération budgétaire 2017-9" data-id="82" target="_blank"> <span class="k-icon-document-pdf k-icon--size-default" aria-hidden="true"></span> <span class="k-visually-hidden">pdf</span> </a> </span> <span class="koowa_header__item"> <span class="koowa_wrapped_content"> <span class="whitespace_preserver"> <a href="/kiosque/documents-budgetaires/82-deliberation-budgetaire-2017-9" class="koowa_header__title_link " data-title="Délibération budgétaire 2017-9" data-id="82" target="_blank"> Délibération budgétaire 2017-9</a> </span> </span> </span></div>
+												<div class="module_document__info"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clr"></div>
+				</aside>
+				<div id="right" class="col-md-3 col-md-offset-1 col-sm-12">
+					<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+						<div class="moduletable">
+							<div class="module-content">
+								<div class="custom">
+									<div id="anchormenu" style="position: absolute; top: 1px;">
+										<h4>Dans cette rubrique</h4>
+										<div>
+											<ul>
+												<li><span><a href="#magazine_intercommunal">Magazine intercommunal</a></span></li>
+												<li><span><a href="#zero_dechet">Zéro déchet</a></span></li>
+												<li><span><a href="#rapport_d_activites">Rapports d'activités</a></span></li>
+												<li><span><a href="#comptes-rendus_conseils_communautaires">CR conseils communautaires</a></span></li>
+												<li><span><a href="#deliberations">Délibérations</a></span></li>
+												<li><span><a href="#documents_budgetaires">Documents budgétaires</a></span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-bloc-top">
+				<div class="container">
+					<div class="col-md-4  col-sm-5 col-xs-12 infofooter bloc1"><img src="/images/template/logo_footer_coeur_du_var.png" alt="Communauté de Communes Coeur du Var"> <span>Quartier Précoumin</span> <span>Route de Toulon</span> <span>83340 Le Luc en Provence</span> <span class="infotel">Tel : 04 98 10 43 50</span></div>
+					<div class="bloccenter col-md-5 col-sm-5">
+						<div class="block nopadding col-lg-12 col-md-12 col-sm-12  ">
+							<div class="moduletable">
+								<div class="module-title">
+									<h4 class="title">Contactez-nous</h4>
+								</div>
+								<div class="module-content">
+									<section id="contact">
+										<script type="text/javascript">
+		 var RecaptchaOptions = {
+			theme : "red"
+		 };
+	 
+										</script>
+										<form action="/kiosque#contact-form" method="POST" class="form-horizontal" id="contact-form" novalidate><input type="hidden" name="form_key" id="form_key" value="f42ac258b7df6924d7214bd56ede749e">
+											<fieldset>
+												<!-- Alert Box-->
+												<div class="col-md-7 nopadding">
+													<!-- début bloc left -->
+													<!-- Message Field -->
+													<div class="control-group">
+														<!-- 			<label class="control-label" for="inputMessage">Message</label> -->
+														<div class="controls"><textarea class="input-80" name="message" rows="12" id="inputMessage" placeholder="Message" minlength="0" required></textarea>
+															<p class="help-block"></p>
+														</div>
+													</div>
+												</div>
+												<!-- fin bloc left -->
+												<div class="col-md-5">
+													<!-- Début bloc right -->
+													<!-- Name Field -->
+													<div class="control-group">
+														<!-- 			<label class="control-label" for="inputName">Nom</label> -->
+														<div class="controls"><input class="input-80" name="name" type="text" id="inputName" placeholder="Nom" required>
+															<p class="help-block"></p>
+														</div>
+													</div>
+													<!-- E-mail Field -->
+													<div class="control-group">
+														<!-- 			<label class="control-label" for="inputEmail">Adresse e-mail</label> -->
+														<div class="controls"><input class="input-80" name="email" type="email" id="inputEmail" placeholder="Adresse e-mail" required>
+															<p class="help-block"></p>
+														</div>
+													</div>
+													<!-- Submit Button -->
+													<div class="control-group">
+														<div class="controls"><button type="submit" name="sbutton" value="Send" class="btn ">Envoyer</button></div>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</section>
+								</div>
+							</div>
+						</div>
+						<div class="bloc2 pull-right col-md-3 col-sm-12">
+							<div class="col-md-12 nopadding col-sm-6 col-xs-12">
+								<!-- Autres sites -->
+								<h4>Nos autres sites</h4>
+								<ul class="partenaires">
+									<li><a href="https://www.coeurduvartourisme.com" title="Coeur du Var Tourisme" target="_blank"><img src="/images/template/logo_cdvourisme.png" align="Logo Coeur du Var Tourisme"></a></li>
+									<li><a href="http://www.letriacoeur.fr" title="Le tri à Coeur" target="_blank"><img src="/images/template/logo_tri.png" align="Logo Le tri à Coeur"></a></li>
+									<li><a href="/demarches/coworking" title="Le Tarmac" target="_parent"><img src="/images/template/tarmac.png" align="Logo du Tarmac"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<!--
+		<div class="container sef">
+			<p>
+			<a target="_blank" href="/marches-publics-coeurduvar" title="Marché publics">Marchés publics</a> |
+			<a href="/offres-d-emplois" title="Offre d'emplois">Offres d’emplois</a> |
+			<a href="/espace-presse" title="Espace presse">Espace presse</a> |
+			<a href="/mentions-legales" title="Mentions légales">Mentions légales</a>
+			</p>
+		</div>
+-->
+				<div class="footer-bloc-bottom container">
+					<div class="copyright">
+						<p class="col-md-6">Copyright 2020 Communauté de Communes Coeur du Var | Conception : Agence Digitale</p>
+						<p class="col-md-6"><a href="/marches-publics-coeurduvar" title="Marché publics">Marchés publics</a> | <a href="/offres-d-emplois" title="Offre d'emplois">Offres d’emplois</a> | <a href="/espace-presse" title="Espace presse">Espace presse</a> | <a href="/mentions-legales" title="Mentions légales">Mentions légales</a> | <a href="javascript:tarteaucitron.userInterface.openPanel();" tile="Gestion des Cookies">Gestion des Cookies</a></p>
+					</div>
+				</div><a href="#" class="back-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> </a>
+				<script type="text/javascript">/*joomlatools job scheduler*/
+!function(){function e(e,t,n,o){try{o=new(this.XMLHttpRequest||ActiveXObject)("MSXML2.XMLHTTP.3.0"),o.open("POST",e,1),o.setRequestHeader("X-Requested-With","XMLHttpRequest"),o.setRequestHeader("Content-type","application/x-www-form-urlencoded"),o.onreadystatechange=function(){o.readyState>3&&t&&t(o.responseText,o)},o.send(n)}catch(c){}}function t(n){e(n,function(e,o){try{if(200==o.status){var c=JSON.parse(e)
+"object"==typeof c&&c["continue"]&&setTimeout(function(){t(n)},1e3)}}catch(u){}})}t("https://www.coeurduvar.com/index.php?option=com_joomlatools&controller=scheduler")}()
+				</script>
+			</div>
+		</footer>
+	</body>
+</html>
