@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link href="css/styles_stDenis2016.css" rel="stylesheet" type="text/css">
+		<title>Conseil municipal | Saint Denis</title>
+		<style>
+        @import url("http://ville-saint-denis.fr/modules/system/system.base.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/modules/node/node.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/modules/user/user.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/print.css?o6r5ul");
+        @import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o6r5ul");
+    
+		</style>
+		<script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+		<script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script>
+		<script src="http://ville-saint-denis.fr/misc/drupal.js?o6r5ul"></script>
+		<script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_iMNUldP7wa4HAc0VvJdrKHXQhE44ZjDj7Mh0LWB1xWo.js?o6r5ul"></script>
+		<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o6r5ul"></script>
+		<script>
+        jQuery.extend( Drupal.settings, {
+            "basePath": "\/",
+            "pathPrefix": "",
+            "ajaxPageState": {
+                "theme": "saint_denis",
+                "theme_token": "IllMYW51WcYSO3NZH4ls0vRWsAKgzGKrphxUvn9f0AU",
+                "js": {
+                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js": 1,
+                    "misc\/jquery.once.js": 1,
+                    "misc\/drupal.js": 1,
+                    "public:\/\/languages\/fr_iMNUldP7wa4HAc0VvJdrKHXQhE44ZjDj7Mh0LWB1xWo.js": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js": 1
+                },
+                "css": {
+                    "modules\/system\/system.base.css": 1,
+                    "modules\/system\/system.menus.css": 1,
+                    "modules\/system\/system.messages.css": 1,
+                    "modules\/system\/system.theme.css": 1,
+                    "sites\/all\/modules\/contrib\/date\/date_api\/date.css": 1,
+                    "sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+                    "modules\/field\/theme\/field.css": 1,
+                    "modules\/node\/node.css": 1,
+                    "modules\/user\/user.css": 1,
+                    "sites\/all\/modules\/contrib\/views\/css\/views.css": 1,
+                    "sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css": 1,
+                    "sites\/all\/modules\/contrib\/ctools\/css\/ctools.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/system.menus.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/system.theme.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/pages.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/forms.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/css\/style.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css": 1,
+                    "sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css": 1
+                }
+            },
+            "urlIsAjaxTrusted": {
+                "\/vos-elus": true
+            }
+        } );
+    
+		</script>
+	</head>
+	<body class="html front not-logged-in no-sidebars page-home page-home-home page-home-home- page-home-home-1">
+		<!-- HEADER -->
+		<div id="header" class="conteneur"><a target="_blank" href="http://ville-saint-denis.fr/"><img src="img_newsite/logo-saint-denis.png" alt="Ville de Saint-Denis" class="logo"></a>
+			<div class="col-2 noresp">
+				<div class="boutons-size"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/bouton-size-moins.png" class="typo-moins" alt="Diminuer la taille du texte"> <img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/bouton-size-plus.png" class="typo-plus" alt="Agrandir la taille du texte"></div>
+				<p><span>Suivez-nous !</span> <a href="https://www.facebook.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-facebook.png" id="" alt="Facebook"></a> <a href="https://twitter.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-twitter.png" id="" alt="Twitter"></a> <a href="http://ville-saint-denis.fr/rss.xml" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/picto-rss.png" id="" alt="Rss"></a></p>
+			</div>
+			<div class="col-3">
+				<div id="navigation">
+					<div id="nav-resp"><span></span> Menu</div>
+					<nav>
+						<ul class="menu noresp">
+							<li><a id="mairie">Votre mairie</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/vos-elus">Vos élus</a></li>
+									<li><a href="http://ville-saint-denis.fr/nos-engagements">Suivi des engagements</a></li>
+									<li><a href="http://ville-saint-denis.fr/communiques">Communiqués</a></li>
+									<li><a href="https://www.synople.tv/ville-saint-denis/index.php">Séances du Conseil municipal</a></li>
+									<li><a href="http://ville-saint-denis.fr/d%C3%A9lib%C3%A9rations-du-conseil-municipal">Délibérations du Conseil Municipal</a></li>
+									<li><a href="http://ville-saint-denis.fr/march%C3%A9s-publics">Marchés publics</a></li>
+									<li><a href="http://ville-saint-denis.fr/lieux-ressources">Lieux ressources</a></li>
+									<li><a href="http://ville-saint-denis.fr/contactez-nous">Nous contacter</a></li>
+								</ul>
+							</li>
+							<li><a id="services">Services</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/d%C3%A9marches">Démarches</a></li>
+									<li><a href="http://ville-saint-denis.fr/petite-enfance">Petite enfance</a></li>
+									<li><a href="http://ville-saint-denis.fr/enfance">Enfance</a></li>
+									<li><a href="http://ville-saint-denis.fr/jeunesse">Jeunesse</a></li>
+									<li><a href="http://ville-saint-denis.fr/s%C3%A9niors">Seniors</a></li>
+									<li><a href="http://ville-saint-denis.fr/handicap">Handicap</a></li>
+									<li><a href="http://ville-saint-denis.fr/sant%C3%A9">Santé</a></li>
+									<li><a href="http://ville-saint-denis.fr/action-sociale">Action sociale</a></li>
+									<li><a href="http://ville-saint-denis.fr/aide-juridique">Aide juridique</a></li>
+									<li><a href="http://ville-saint-denis.fr/logement-habitat">Logement - Habitat</a></li>
+									<li><a href="http://ville-saint-denis.fr/emploi">Emploi</a></li>
+									<li><a href="http://ville-saint-denis.fr/propret%C3%A9">Propreté</a></li>
+								</ul>
+							</li>
+							<li><a id="citoyen">Citoyenneté</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/participation-citoyenne">Participation citoyenne</a></li>
+									<li><a href="http://ville-saint-denis.fr/jeunes-et-citoyens">Jeunes et citoyens</a></li>
+									<li><a href="http://ville-saint-denis.fr/droits-des-femmes">Droits des femmes</a></li>
+									<li><a href="http://ville-saint-denis.fr/m%C3%A9moire-et-comm%C3%A9morations">Mémoire et commémorations</a></li>
+								</ul>
+							</li>
+							<li><a id="territoire">Territoire</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/histoire-et-archives">Histoire et Archives</a></li>
+									<li><a href="http://ville-saint-denis.fr/%C3%A9tudes-locales-dionysiennes">Études locales dionysiennes</a></li>
+									<li><a href="http://ville-saint-denis.fr/les-quartiers">Les Quartiers</a></li>
+									<li><a href="http://ville-saint-denis.fr/plaine-commune">Plaine Commune</a></li>
+									<li><a href="http://ville-saint-denis.fr/la-metropole-du-grand-paris">La Métropole du Grand Paris</a></li>
+									<li><a href="http://ville-saint-denis.fr/saint-denis-ville-monde">Ville monde</a></li>
+									<li><a href="http://ville-saint-denis.fr/economie-locale">Économie locale</a></li>
+									<li><a href="http://ville-saint-denis.fr/cadre-de-vie">Cadre de vie</a></li>
+									<li><a href="http://ville-saint-denis.fr/grands-projets">Grands projets</a></li>
+								</ul>
+							</li>
+							<li><a id="temps_libre">Temps libre</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/vie-associative">Vie associative</a></li>
+									<li><a href="http://ville-saint-denis.fr/culture">Culture</a></li>
+									<li><a href="http://ville-saint-denis.fr/sport">Sport</a></li>
+									<li><a href="http://ville-saint-denis.fr/centre-de-vacances">Centres de vacances</a></li>
+									<li><a href="http://ville-saint-denis.fr/grands-rendez-vous">Grands rendez-vous</a></li>
+									<li><a href="http://ville-saint-denis.fr/tourisme-0">Tourisme</a></li>
+									<li><a href="http://ville-saint-denis.fr/espaces-multim%C3%A9dia">Espaces multimédia</a></li>
+								</ul>
+							</li>
+							<li><a id="euro-2016">UEFA Euro 2016</a>
+								<ul>
+									<li><a href="http://ville-saint-denis.fr/lequipe-de-france-de-saint-denis">l'Équipe de France de Saint-Denis</a></li>
+									<li><a href="http://ville-saint-denis.fr/la-fan-zone">La Fan zone</a></li>
+									<li><a href="http://ville-saint-denis.fr/le-coin-du-supporter">Le coin du supporter</a></li>
+									<li><a href="http://ville-saint-denis.fr/saint-denis-ville-h%C3%B4te">Saint-Denis, ville hôte</a></li>
+									<li><a href="http://ville-saint-denis.fr/acces-transports">Transports, circulation et accès</a></li>
+								</ul>
+							</li>
+							<!--<li><a href="#" id="jo-2024">JO 2024</a></li>-->
+							<li class="tabletteonly partage">
+								<p><span>Suivez-nous !</span> <a href="https://www.facebook.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-facebook.png" id="" alt="Facebook"></a> <a href="https://twitter.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-twitter.png" id="" alt="Twitter"></a> <a href="http://ville-saint-denis.fr/rss.xml" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/picto-rss.png" id="" alt="Rss"></a></p>
+							</li>
+							<li class="mobileonly search-mobile">
+								<form action="/recherche" title="recherche-mobile" method="get"><input type="text" name="recherche" id="recherche-id" placeholder="Recherchez" required> <input type="submit" value=" " title="Rechercher"></form>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div id="recherche" class="nomobile">
+					<form action="/recherche" title="recherche-mobile" method="get"><input type="text" name="recherche" id="recherche-id" placeholder="Recherchez" required> <input type="submit" value=" " title="Rechercher"></form>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- // HEADER -->
+		<!-- TITRE -->
+		<div class="titre-page">
+			<div class="conteneur">
+				<h1>Conseil municipal</h1>
+			</div>
+		</div>
+		<!-- // TITRE -->
+		<!-- ILLUSTRATION -->
+		<div class="illustration-page">
+			<div class="conteneur">
+				<!-- // include live -->
+				<!-- // include livevod -->
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<title>LiveVOD_StDenis 4/07/20</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+				<link href="css/styles_stDenis2016.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19030672-1']);
+  _gaq.push(['_setDomainName', 'synople.tv']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+				</script>
+				<!-- 
+    <p class="titreSeance">Prochaine séance du Conseil Municipal en direct le Jeudi 26 Mai 2016 - en direct dès 19h00</p> -->
+				<p class="dateDiffereStrong">
+					<!-- -->Séance<span class="dateDiffere"><br> du 4 Juillet 2020<br> </span></p>
+				<!-- -->
+				<div class="iframeplayer">
+					<iframe src="https://new.synople.tv/vod/16479" width="100%" height="100%" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" allow="fullscreen" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+				</div>
+				<div class="clear"></div>
+				<!-- // telechargement 
+  <div id="telecharger"> <a target="_blank"  href="https://www.synople.tv/ville-saint-denis/2016/CM_160414/ODJ-sdt_160414.pdf" target="_blank">
+    <div class="tel_odj">Télécharger l'ordre du jour</div>
+    </a></div>-->
+				<!--  -->
+				<!-- // iframe livevod <iframe src="https://www.synople.tv/ville-saint-denis/livevod_CM_StDenis_new.html" width="1080" height="700" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"> </iframe>-->
+				<div class="col-page-content">
+					<div class="links_view"><a target="_blank" href="https://www.synople.tv/ville-saint-denis/2020/odj/ODJ-StDenis_200206.pdf" class="link-dl"> Télécharger l'ordre du jour</a>
+						<!-- -->                 <a target="_blank" href="http://ville-saint-denis.fr/d%C3%A9lib%C3%A9rations-du-conseil-municipal" class="link-dl"> Délibérations du Conseil Municipal</a></div>
+				</div>
+				<p></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- // ILLUSTRATION -->
+		<!-- PAGE CONTENT -->
+		<div class="conteneur">
+			<!-- MAIN COL -->
+			<div class="col-page-content">
+				<div class="ariane"><a target="_blank" href="http://ville-saint-denis.fr/">Accueil</a> / Conseil Municipal</div>
+				<h2>Les séances du Conseil municipal,<br> <strong>débats et délibération</strong></h2>
+				<div class="bloc-maire moremargin">
+					<div class="contenu-maire">
+						<p><strong>Le Conseil municipal est composé 55 élus dont 21 adjoints et 7 conseillers municipaux délégués.</strong><br> <br> Le Conseil municipal se réunit environ <strong>une dizaine de fois par an</strong> en salle du conseil de l’hôtel de ville. Les séances sont publiques. Les séances du Conseil municipal sont <strong>ouvertes au grand public</strong>.<br> Elles se tiennent généralement <strong>un jeudi par mois à 19h00</strong> à l'Hôtel de ville. <br> <a target="blank" href="http://ville-saint-denis.fr/agenda" class="bt-savoir bt-orange">Prochain Conseil municipal</a><br><br> Pour une plus grande accessibilité des séances, des casques avec émetteur FM sont disponibles pour les personnes malentendantes. Il suffit d’en faire la demande aux agents d’accueil.</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- SIDEBAR COL -->
+			<div class="col-page-sidebar">
+				<div class="up-boutons"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/picto-typo-smaller.png" class="typo-moins" alt="Diminuer la taille du texte"> <img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/picto-typo-normal.png" class="typo-reset" alt="Taille du texte normal"> <img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/picto-typo-larger.png" class="typo-plus" alt="Agrandir la taille du texte"> <a target="_blank" href="javascript:window.print();" class="print"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/picto-print.png" alt="Imprimer la page"></a></div>
+				<h4>Partager l'article</h4>
+				<div class="partage"><a target="_blank" href="mailto:?subject=Je%20voudrai%20te%20partager%20cette%20page&body=Conseil%20municipal%20%20http%3A%2F%2Fwww.synople.tv%2Fville-saint-denis%2F" class="partage-mail">Mail</a> <a target="_blank" href="https://twitter.com/intent/tweet?status=Conseil%20Municipal%20%20http://https://www.synople.tv/ville-saint-denis/" class="partage-twitter">Twitter</a> <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.synople.tv%2Fville-saint-denis%2F&title=Conseil+municipal+" class="partage-facebook" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Facebook</a></div>
+				<h4>Accès rapide</h4>
+				<div id="acces-rapide"><a href="https://ville-saint-denis.espace-famille.net/ville-saint-denis/index.do"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-01.svg" alt="Paiements en ligne" title="Paiements en ligne"></a> <a href="http://ville-saint-denis.fr/annuaires"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-02.svg" alt="Nous contacter" title="Nous contacter"></a> <a href="http://ville-saint-denis.fr/d%C3%A9marches"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-03.svg" alt="Démarches en ligne" title="Démarches en ligne"></a> <a href="http://ville-saint-denis.fr/march%C3%A9s"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-04.svg" alt="Marchés" title="Marchés"></a> <a href="http://ville-saint-denis.fr/equipements-sportifs"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-05.svg" alt="Piscines" title="Piscines"></a> <a href="http://ville-saint-denis.fr/questions-frequentes"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-06.svg" alt="Questions fréquentes" title="Questions fréquentes"></a> <a href="http://ville-saint-denis.fr/restauration-scolaire-les-cantines"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-07.svg" alt="Menu des cantines" title="Menu des cantines"></a> <a href="http://ville-saint-denis.fr/calcul-du-quotient-familial"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-08.svg" alt="Quotient familial" title="Quotient familial"></a> <a href="http://www.mediatheques-plainecommune.fr"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-09.svg" alt="Médiathèque" title="Médiathèque"></a> <a href="http://ville-saint-denis.fr/propret%C3%A9"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/acces-rapide-10.svg" alt="Propreté" title="Propreté"></a></div>
+				<h4>Bienvenue à Saint Denis</h4>
+				<div class="lien-sidebar-color"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/page/sidebar-lien-bienvenue.jpg">
+					<p class="orange txt-gris2"><strong>L'Actualité</strong><br> <em>de votre quartier</em></p>
+					<div class="gris"><a class="rose" id="bloc_quartier">Découvrir</a>
+						<!-- link to node Quartier // POP UP -->
+					</div>
+				</div>
+				<script>
+                jQuery( "#bloc_quartier" ).click( function () {
+
+                    call_modal( "quartier_pop" );
+                } );
+            
+				</script>
+			</div>
+			<!-- // SIDEBAR COL -->
+			<div class="clear"></div>
+		</div>
+		<!-- // PAGE CONTENT -->
+		<!-- TITRE -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link href="css/styles_stDenis2016.css" rel="stylesheet" type="text/css">
+		<title>Conseil municipal archives | Saint Denis</title>
+		<style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o59csj");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o59csj");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o59csj");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/print.css?o59csj");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o59csj");
+body,td,th {
+	font-family: TodaySH-Regular, Arial, sans-serif;
+	font-size: 60%;
+}
+a {
+	font-size: 60%;
+}
+h1 {
+	font-size: 60%;
+}
+h2 {
+	font-size: 60%;
+}
+h3 {
+	font-size: 60%;
+}
+h4 {
+	font-size: 60%;
+}
+h5 {
+	font-size: 60%;
+}
+h6 {
+	font-size: 60%;
+}
+		</style>
+		<script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+		<script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script>
+		<script src="http://ville-saint-denis.fr/misc/drupal.js?o59csj"></script>
+		<script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_iMNUldP7wa4HAc0VvJdrKHXQhE44ZjDj7Mh0LWB1xWo.js?o59csj"></script>
+		<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o59csj"></script>
+		<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"IllMYW51WcYSO3NZH4ls0vRWsAKgzGKrphxUvn9f0AU","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_iMNUldP7wa4HAc0VvJdrKHXQhE44ZjDj7Mh0LWB1xWo.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/conseil_municipal":true}});</script>
+		<!-- TITRE -->
+		<div class="titre-page">
+			<div class="conteneur">
+				<h1>Archives des séances du Conseil municipal</h1>
+			</div>
+			<div class="clear"></div>
+		</div><br> <br>
+		<!-- VOD 2020 -->
+		<div class="souspartie-box">
+			<div class="souspartie-titre">
+				<div class="conteneur-small">
+					<h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone7');">Séances du Conseil municipal 2020</h4>
+				</div>
+			</div>
+		</div>
+		<div id="zone7" class="contenu-in conteneur">
+			<div class="col-815">
+				<p></p>
+				<meta charset="utf-8">
+				<link rel="shortlink" href="http://ville-saint-denis.fr/node/275">
+				<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+				<link rel="canonical" href="http://ville-saint-denis.fr/node/275">
+				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+				<title>Archives Vidéo 2019 | Saint Denis</title>
+				<style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o5bppk");
+div.bloc-video.quartier {
+	width: 167px;
+	margin: 10px 2px;
+}
+div.bloc-video.quartier div span {
+	position: absolute;
+	width: 167px;
+	height: 111px;
+	background: none;
+	text-align: center;
+}
+div.bloc-video.quartier div span i {
+	display: none;
+	font-size: 90px;
+	font-style: normal;
+	color: white;
+	font-family: "TodaySH-XLight";
+	line-height: 110px;
+}
+div.bloc-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	height: auto;
+	background: #ecebe7;
+	margin: 10px 11px 10px 0;
+}
+@media (max-width: 1220px) div.col-page-content {
+ width: 760px;
+ margin-right: 10px;
+}
+div.bloc-video.quartier:nth-child(2n+1) {
+	margin-left: 0px;
+}
+div.bloc-video h3 {
+	font-size: 18px; /**/
+	font-family: "TodaySH-Light";
+	margin: 0px 0;
+}
+div.bloc-video h3, div.bloc-video p, div.bloc-video u {
+	margin: 2px 10px 5px 10px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 80%;
+	/* vertical-align: baseline; */
+	background: transparent;
+}
+				</style>
+				<script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+				<script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script>
+				<script src="http://ville-saint-denis.fr/misc/drupal.js?o5bppk"></script>
+				<script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js?o5bppk"></script>
+				<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o5bppk"></script>
+				<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"59yB1FddKYL79qhx_FFkZ2KeESLI0rhypWlUmr1F6WA","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/node\/275":true}});</script>
+				<!-- PAGE CONTENT <div class="conteneur"> -->
+				<!-- MAIN COL -->
+				<div class="col-page-content nopadleft">
+					<!--   
+    <div class="bloc-video quartier">
+    <div class="titre"> Conseil Municipal </div>
+    <div class="player"><span><a target="_parent"  href="http://www.synople.tv/ville-saint-denis/2020/CM_std_200704.php" title="revoir la séance d'insatallation du 4 juillet 2020" ><i>+</i></a></span><a target="_parent"  href="http://www.synople.tv/ville-saint-denis/2020/CM_std_200704.php" title="revoir la séance du 6 Février 2020"> <img src="http://www.synople.tv/ville-saint-denis/images/std_salle.jpg" alt="" width="167" height="111" /></a></div>
+    <h3>Séance du<br />
+      <strong>4 Juillet 2020</strong></h3>
+  </div>-->
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2020/CM_std_200206.php" title="revoir la séance du 6 Février 2020"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2020/CM_std_200206.php" title="revoir la séance du 6 Février 2020"> <img src="http://www.synople.tv/ville-saint-denis/images/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>6 Février 2020</strong></h3>
+					</div>
+				</div>
+				<!-- </div>// PAGE CONTENT -->
+				<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- VOD 2019 -->
+		<div class="souspartie-box">
+			<div class="souspartie-titre">
+				<div class="conteneur-small">
+					<h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone6');">Séances du Conseil municipal 2019</h4>
+				</div>
+			</div>
+		</div>
+		<div id="zone6" class="contenu-in conteneur">
+			<div class="col-815">
+				<p></p>
+				<meta charset="utf-8">
+				<link rel="shortlink" href="http://ville-saint-denis.fr/node/275">
+				<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+				<link rel="canonical" href="http://ville-saint-denis.fr/node/275">
+				<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+				<title>Archives Vidéo 2019 | Saint Denis</title>
+				<style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o5bppk");
+				</style>
+				<style>
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o5bppk");
+div.bloc-video.quartier {
+	width: 167px;
+	margin: 10px 2px;
+}
+div.bloc-video.quartier div span {
+	position: absolute;
+	width: 167px;
+	height: 111px;
+	background: none;
+	text-align: center;
+}
+div.bloc-video.quartier div span i {
+	display: none;
+	font-size: 90px;
+	font-style: normal;
+	color: white;
+	font-family: "TodaySH-XLight";
+	line-height: 110px;
+}
+div.bloc-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	height: auto;
+	background: #ecebe7;
+	margin: 10px 11px 10px 0;
+}
+@media (max-width: 1220px) div.col-page-content {
+ width: 760px;
+ margin-right: 10px;
+}
+div.bloc-video.quartier:nth-child(2n+1) {
+	margin-left: 0px;
+}
+div.bloc-video h3 {
+	font-size: 18px; /**/
+	font-family: "TodaySH-Light";
+	margin: 0px 0;
+}
+div.bloc-video h3, div.bloc-video p, div.bloc-video u {
+	margin: 2px 10px 5px 10px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 80%;
+	/* vertical-align: baseline; */
+	background: transparent;
+}
+				</style>
+				<script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+				<script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script>
+				<script src="http://ville-saint-denis.fr/misc/drupal.js?o5bppk"></script>
+				<script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js?o5bppk"></script>
+				<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o5bppk"></script>
+				<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"59yB1FddKYL79qhx_FFkZ2KeESLI0rhypWlUmr1F6WA","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/node\/275":true}});</script>
+				<!-- PAGE CONTENT <div class="conteneur"> -->
+				<!-- MAIN COL -->
+				<div class="col-page-content nopadleft">
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191219.php" title="revoir la séance du 19 décembre 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191219.php" title="revoir la séance du 19 décembre 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>19 décembre 2019</strong></h3>
+					</div>
+					<!--  -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191121.php" title="revoir la séance du 21 novembre 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191121.php" title="revoir la séance du 21 novembre 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>21 novembre 2019</strong></h3>
+					</div>
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191003.php" title="revoir la séance du 3 octobre 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_191003.php" title="revoir la séance du 3 octobre 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>3 octobre 2019</strong></h3>
+					</div>
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190702.php" title="revoir la séance du 2 juillet 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190702.php" title="revoir la séance du 2 juillet 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>2 juillet 2019</strong></h3>
+					</div>
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190627.php" title="revoir la séance du 27 juin 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190627.php" title="revoir la séance du 27 juin 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>27 juin 2019</strong></h3>
+					</div>
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190522.php" title="revoir la séance du 22 mai 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190522.php" title="revoir la séance du 22 mai 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>22 mai 2019</strong></h3>
+					</div>
+					<!--   -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190404.php" title="revoir la séance du 4 avril 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190404.php" title="revoir la séance du 4 avril 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>4 avril 2019</strong></h3>
+					</div>
+					<!-- -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190221.php" title="revoir la séance du 21 Février 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190221.php" title="revoir la séance du 21 Février 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>21 Février 2019</strong></h3>
+					</div>
+					<!-- -->
+					<div class="bloc-video quartier">
+						<div class="titre">Conseil Municipal</div>
+						<div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190131.php" title="revoir la séance du 31 janvier 2019"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2019/CM_std_190131.php" title="revoir la séance du 31 janvier 2019"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2019/std_salle.jpg" alt="" width="167" height="111"></a></div>
+						<h3>Séance du<br> <strong>31 Janvier 2019</strong></h3>
+					</div>
+				</div>
+				<!-- </div>// PAGE CONTENT -->
+				<script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script>
+			</div>
+		</div>
+	</body>
+</html><html><div class="clear"></div><!-- VOD 2018 --><div class="souspartie-box"><div class="souspartie-titre"><div class="conteneur-small"><h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone5');">Séances du Conseil municipal 2018</h4></div></div></div><div id="zone5" class="contenu-in conteneur"><div class="col-815"><p></p><meta charset="utf-8"><link rel="shortlink" href="http://ville-saint-denis.fr/node/275"><meta name="Generator" content="Drupal 7 (http://drupal.org)"><link rel="canonical" href="http://ville-saint-denis.fr/node/275"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Archives Vidéo 2018 | Saint Denis</title><style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o5bppk");
+div.bloc-video.quartier {
+	width: 167px;
+	margin: 10px 2px;
+}
+div.bloc-video.quartier div span {
+	position: absolute;
+	width: 167px;
+	height: 111px;
+	background: none;
+	text-align: center;
+}
+div.bloc-video.quartier div span i {
+	display: none;
+	font-size: 90px;
+	font-style: normal;
+	color: white;
+	font-family: "TodaySH-XLight";
+	line-height: 110px;
+}
+div.bloc-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	height: auto;
+	background: #ecebe7;
+	margin: 10px 11px 10px 0;
+}
+@media (max-width: 1220px) div.col-page-content {
+ width: 760px;
+ margin-right: 10px;
+}
+div.bloc-video.quartier:nth-child(2n+1) {
+	margin-left: 0px;
+}
+div.bloc-video h3 {
+	font-size: 18px; /**/
+	font-family: "TodaySH-Light";
+	margin: 0px 0;
+}
+div.bloc-video h3, div.bloc-video p, div.bloc-video u {
+	margin: 2px 10px 5px 10px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 80%;
+	/* vertical-align: baseline; */
+	background: transparent;
+}
+</style><script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script><script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script><script src="http://ville-saint-denis.fr/misc/drupal.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o5bppk"></script><script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"59yB1FddKYL79qhx_FFkZ2KeESLI0rhypWlUmr1F6WA","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/node\/275":true}});</script><body><!-- PAGE CONTENT <div class="conteneur"> --><!-- MAIN COL --><div class="col-page-content nopadleft"><!----><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181220.php" title="revoir la séance du 20 Décembre 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181220.php" title="revoir la séance du 20 Décembre 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_181220.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>20 Décembre 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181129.php" title="revoir la séance du 29 Novembre 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181129.php" title="revoir la séance du 29 Novembre 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_1801.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>29 Novembre 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181004.php" title="revoir la séance du 4 Octobre 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_181004.php" title="revoir la séance du 4 Octobre 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_181004.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>4 Octobre 2018</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180628.php" title="revoir la séance du 28 Juin 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180628.php" title="revoir la séance du 28 Juin 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180628.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>28 Juin 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180531.php" title="revoir la séance du 31 Mai 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180531.php" title="revoir la séance du 31 Mai 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180531.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>31 Mai 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180329.php" title="revoir la séance du 29 Mars 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180329.php" title="revoir la séance du 29 Mars 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180329.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>29 Mars 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180305.php" title="revoir la séance du 5 Mars 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180305.php" title="revoir la séance du 5 Mars 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180305.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>5 Mars 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180215.php" title="revoir la séance du 15 Février 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180215.php" title="revoir la séance du 15 Février 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180215.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>15 Février 2018</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180125.php" title="revoir la séance du 25 janvier 2018"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2018/CM_std_180125.php" title="revoir la séance du 25 janvier 2018"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2018/std_180125.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>25 Janvier 2018</strong></h3></div></div><!-- </div>// PAGE CONTENT --><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script></body></div></div></html><html><div class="clear"></div><!-- VOD 2017--><div class="souspartie-box"><div class="souspartie-titre"><div class="conteneur-small"><h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone1');">Séances du Conseil municipal 2017</h4></div></div></div><div id="zone1" class="contenu-in conteneur"><div class="col-815"><p></p><meta charset="utf-8"><link rel="shortlink" href="http://ville-saint-denis.fr/node/275"><meta name="Generator" content="Drupal 7 (http://drupal.org)"><link rel="canonical" href="http://ville-saint-denis.fr/node/275"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Archives Vidéo 2016 | Saint Denis</title><style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o5bppk");
+div.bloc-video.quartier {
+	width: 167px;
+	margin: 10px 2px;
+}
+div.bloc-video.quartier div span {
+	position: absolute;
+	width: 167px;
+	height: 111px;
+	background: none;
+	text-align: center;
+}
+div.bloc-video.quartier div span i {
+	display: none;
+	font-size: 90px;
+	font-style: normal;
+	color: white;
+	font-family: "TodaySH-XLight";
+	line-height: 110px;
+}
+div.bloc-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	height: auto;
+	background: #ecebe7;
+	margin: 10px 11px 10px 0;
+}
+@media (max-width: 1220px) div.col-page-content {
+ width: 760px;
+ margin-right: 10px;
+}
+div.bloc-video.quartier:nth-child(2n+1) {
+	margin-left: 0px;
+}
+div.bloc-video h3 {
+	font-size: 18px; /**/
+	font-family: "TodaySH-Light";
+	margin: 0px 0;
+}
+div.bloc-video h3, div.bloc-video p, div.bloc-video u {
+	margin: 2px 10px 5px 10px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 80%;
+	/* vertical-align: baseline; */
+	background: transparent;
+}
+</style><script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script><script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script><script src="http://ville-saint-denis.fr/misc/drupal.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o5bppk"></script><script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"59yB1FddKYL79qhx_FFkZ2KeESLI0rhypWlUmr1F6WA","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/node\/275":true}});</script><body><!-- PAGE CONTENT <div class="conteneur"> --><!-- MAIN COL --><div class="col-page-content nopadleft"><!--  --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171221.php" title="revoir la séance du 21 décembre 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171221.php" title="revoir la séance du 21 décembre 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/dec21_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>21 décembre 2017</strong></h3></div><!--  --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171130.php" title="revoir la séance du 30 novembre 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171130.php" title="revoir la séance du 30 novembre 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/nov30_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>30 novembre 2017</strong></h3></div><!--   --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171115.php" title="revoir la séance du 15 novembre 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171115.php" title="revoir la séance du 15 novembre 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/nov15_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>15 novembre 2017</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171019.php" title="revoir la séance du 19 octobre 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_171019.php" title="revoir la séance du 19 octobre 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/oct19_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>19 octobre 2017</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170928.php" title="revoir la séance du 28 septembre 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170928.php" title="revoir la séance du 28 septembre 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/sep28_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>28 septembre 2017</strong></h3></div><!--  --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170629.php" title="revoir la séance du 29 juin 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170629.php" title="revoir la séance du 29 juin 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/jun29_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>29 Juin 2017</strong></h3></div><!-- --><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170601.php" title="revoir la séance du 1er juin 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170601.php" title="revoir la séance du 1er juin 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/jun01_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>1er Juin 2017</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170427.php" title="revoir la séance du 27 avril 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170427.php" title="revoir la séance du 27 avril 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/avr_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>27 Avril 2017</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170330.php" title="revoir la séance du 30 Mars 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170330.php" title="revoir la séance du 30 Mars 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/mar2_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>30 Mars 2017</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170302.php" title="revoir la séance du 2 Mars 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170302.php" title="revoir la séance du 2 Mars 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/mar_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>2 Mars 2017</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170202.php" title="revoir la séance du 2 Février 2017"><i>+</i></a></span><a target="_parent" href="https://www.synople.tv/ville-saint-denis/2017/CM_std_170202.php" title="revoir la séance du 2 Février 2017"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2017/fev_17.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>2 Février 2017</strong></h3></div></div><!-- </div>// PAGE CONTENT --><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script></body></div></div></html><html><div class="clear"></div><!-- VOD 2016--><div class="souspartie-box"><div class="souspartie-titre"><div class="conteneur-small"><h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone2');">Séances du Conseil municipal 2016</h4></div></div></div><div id="zone2" class="contenu-in conteneur"><div class="col-815"><p></p><meta charset="utf-8"><link rel="shortlink" href="http://ville-saint-denis.fr/node/275"><meta name="Generator" content="Drupal 7 (http://drupal.org)"><link rel="canonical" href="http://ville-saint-denis.fr/node/275"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Archives Vidéo 2016 | Saint Denis</title><style>
+@import url("http://ville-saint-denis.fr/modules/system/system.base.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/system/system.messages.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_api/date.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/fences/field.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/node/node.css?o5bppk");
+@import url("http://ville-saint-denis.fr/modules/user/user.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/views/css/views.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ckeditor/css/ckeditor.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/modules/contrib/ctools/css/ctools.css?o5bppk");
+</style><style>
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/jquery.bxslider.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/style.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/page.css?o5bppk");
+@import url("http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/css/custom.css?o5bppk");
+div.bloc-video.quartier {
+	width: 167px;
+	margin: 10px 2px;
+}
+div.bloc-video.quartier div span {
+	position: absolute;
+	width: 167px;
+	height: 111px;
+	background: none;
+	text-align: center;
+}
+div.bloc-video.quartier div span i {
+	display: none;
+	font-size: 90px;
+	font-style: normal;
+	color: white;
+	font-family: "TodaySH-XLight";
+	line-height: 110px;
+}
+div.bloc-video {
+	display: inline-block;
+	vertical-align: top;
+	width: 290px;
+	height: auto;
+	background: #ecebe7;
+	margin: 10px 11px 10px 0;
+}
+@media (max-width: 1220px) div.col-page-content {
+ width: 760px;
+ margin-right: 10px;
+}
+div.bloc-video.quartier:nth-child(2n+1) {
+	margin-left: 0px;
+}
+div.bloc-video h3 {
+	font-size: 18px; /**/
+	font-family: "TodaySH-Light";
+	margin: 0px 0;
+}
+div.bloc-video h3, div.bloc-video p, div.bloc-video u {
+	margin: 2px 10px 5px 10px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 80%;
+	/* vertical-align: baseline; */
+	background: transparent;
+}
+</style><script src="http://ville-saint-denis.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script><script src="http://ville-saint-denis.fr/misc/jquery.once.js?v=1.2"></script><script src="http://ville-saint-denis.fr/misc/drupal.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/default/files/languages/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js?o5bppk"></script><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/jquery.bxslider.js?o5bppk"></script><script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"saint_denis","theme_token":"59yB1FddKYL79qhx_FFkZ2KeESLI0rhypWlUmr1F6WA","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/fr_veMIjgdo8mWFnQoKDIXGwsmRL31tNo9oSmMJ1xkbgYU.js":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/js\/jquery.bxslider.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.menus.css":1,"sites\/all\/themes\/custom\/saint_denis\/system.theme.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/html-reset.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/wireframes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/layout-fixed.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/page-backgrounds.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/pages.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/blocks.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/navigation.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/views-styles.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/nodes.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/forms.css":1,"sites\/all\/themes\/custom\/saint_denis\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/jquery.bxslider.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/style.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/page.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/print.css":1,"sites\/all\/themes\/custom\/saint_denis\/assets\/css\/custom.css":1}},"urlIsAjaxTrusted":{"\/node\/275":true}});</script><body><!-- PAGE CONTENT <div class="conteneur"> --><!-- MAIN COL --><div class="col-page-content nopadleft"><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160128.php" title="revoir la séance du 28 janvier 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160128.php" title="revoir la séance du 28 janvier 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/jan_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>28 Janvier 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160218.php" title="revoir la séance du 18 fevrier 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160218.php" title="revoir la séance du 18 fevrier 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/fev_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>18 Février 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160331.php" title="revoir la séance du 31 mars 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160331.php" title="revoir la séance du 31 mars 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/mar_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>31 Mars 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160414.php" title="revoir la séance du 14 avril 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160414.php" title="revoir la séance du 14 avril 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/avr_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>14 Avril 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160526.php" title="revoir la séance du 26 mai 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160526.php" title="revoir la séance du 26 mai 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/mai_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>26 Mai 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160623.php" title="revoir la séance du 23 juin 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160623.php" title="revoir la séance du 23 juin 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/jun_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>23 Juin 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160929.php" title="revoir la séance du 29 septembre 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_160929.php" title="revoir la séance du 29 septembre 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/sep_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>29 Septembre 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161020.php" title="revoir la séance du 20 octobre 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161020.php" title="revoir la séance du 20 octobre 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/oct_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>20 Octobre 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161124.php" title="revoir la séance du 24 novembre 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161124.php" title="revoir la séance du 24 novembre 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/nov_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>24 Novembre 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161203.php" title="revoir la séance du 3 décembre 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161203.php" title="revoir la séance du 3 décembre 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/dec1_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>3 Décembre 2016</strong></h3></div><div class="bloc-video quartier"><div class="titre">Conseil Municipal</div><div class="player"><span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161215.php" title="revoir la séance du 15 décembre 2016"><i>+</i></a></span><a target="_parent" href="http://www.synople.tv/ville-saint-denis/2016/CM_std_161215.php" title="revoir la séance du 15 décembre 2016"> <img src="https://www.synople.tv/ville-saint-denis/images/CM_2016/dec2_16.jpg" alt="" width="167" height="111"></a></div><h3>Séance du <br> <strong>15 Décembre 2016</strong></h3></div></div><!-- </div>// PAGE CONTENT --><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script></body></div></div></html><html><div class="clear"></div><!-- VOD 2015
+<div class="souspartie-box">
+  <div class="souspartie-titre">
+    <div class="conteneur-small">
+      <h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone3');">Séances du Conseil municipal 2015</h4>
+    </div>
+  </div>
+</div>
+<div id="zone3" class="contenu-in conteneur">
+  <div class="col-815">
+    <p>
+            
+      </p>
+  </div>--><div class="clear"></div><!-- VOD 2014
+<div class="souspartie-box">
+  <div class="souspartie-titre">
+    <div class="conteneur-small">
+      <h4 class="titre-blanc" onclick="ouvertureClick(this, 'zone4');">Séances du Conseil municipal 2014</h4>
+    </div>
+  </div>
+</div>
+<div id="zone4" class="contenu-in conteneur">
+  <div class="col-815">
+    <p>
+            
+      </p>
+  </div>--><div class="clear"></div><!-- // TITRE --><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/plan_quartier.js"></script></html><!-- // TITRE --><!-- NEWSLETTER --><html><div id="newsletter-box"><div class="conteneur"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/footer/newsletter-picto.png" alt="Newsletter"><div class="content"><form action="http://ville-saint-denis.fr/logement-habitat" method="post" id="stdenis-base-newsletter-form" accept-charset="UTF-8"><div><div class="inside"><h4>Newsletter</h4><p></p><p>Indiquez votre adresse mail pour vous abonner.</p><div></div></div><div class="sub"><input class="email-field form-text required" placeholder="Entrez votre email" type="text" id="edit-email--2" name="email" value="" size="60" maxlength="128"> <input type="submit" id="edit-submit--2" name="op" value="ENVOYER" class="form-submit"> <input type="hidden" name="form_build_id" value="form-PNSjTY8HpNTsltUsYxc7c2NvIC3iyBxJ96mHRysbUL8"> <input type="hidden" name="form_id" value="stdenis_base_newsletter_form"></div></div></form></div></div></div><!-- // NEWSLETTER --><!-- FOOTER --><div id="footer-box"><div class="conteneur"><div class="col1 nomobile"><div class="follow"><p>Suivez-nous ! <a href="https://www.facebook.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-facebook.png" id="" alt="Facebook"></a> <a href="https://twitter.com/VilleSaintDenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-twitter.png" id="" alt="Twitter"></a><!--<a href="" target="_blank"><img src=".../assets/img/header/social-instagram.png" id="" alt="Instagram" /></a>--><a href="http://www.dailymotion.com/villedesaintdenis" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/social-d.png" id="" alt="D"></a> <a href="http://ville-saint-denis.fr/rss.xml" target="_blank"><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/header/picto-rss.png" id="" alt="Rss"></a></p></div><div class="souscol1"><h2>LES SITES DE SAINT-DENIS</h2><p><a href="http://www.plainecommune.fr/" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Plaine_Commune.png?itok=z1IFFHMr" width="129" height="76"> Plaine commune </a></p><p><a href="http://archives.ville-saint-denis.fr/" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Footer-archives.PNG?itok=0tMiGInW" width="129" height="76"> Archives municipales </a></p><p><a href="http://www.mediatheques-plainecommune.fr" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Footer-mediatheques.PNG?itok=xa-m5aNH" width="129" height="76"> Médiathèques </a></p><p><a href="http://www.musee-saint-denis.fr" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Footer-musee.PNG?itok=YUN5VHNI" width="129" height="76"> Musée d'art et d'histoire </a></p><p><a href="http://www.tourisme-plainecommune-paris.com/" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Footer-office.PNG?itok=R24mmoSA" width="129" height="76"> Office du tourisme </a></p><p><a href="http://suivezlafleche.fr/" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/Footer-fleche.PNG?itok=l6TesDhO" width="129" height="76"> Suivez la flèche </a></p><p><a href="http://www.saintdenisentreleslignes.com" target="_blank"> <img src="http://ville-saint-denis.fr/sites/default/files/styles/129x76/public/content/images/saintdenisentreleslignes_0.png?itok=oULfeVkl" width="129" height="76"> Saint-Denis entre les lignes </a></p><a href="#" class="backtotop responly">HAUT DE PAGE</a><ul class="responly"><li><a href="http://ville-saint-denis.fr/contact-elu">Écrire à un élu</a></li><li><a href="http://ville-saint-denis.fr/contact-services-municipaux">Écrire à un service municipal</a></li></ul></div><div class="souscol2 notablette nomobile"><h2>Plan du site</h2><h3>Votre mairie</h3><ul><li><a href="http://ville-saint-denis.fr/vos-elus">Vos élus</a></li><li><a href="http://ville-saint-denis.fr/nos-engagements">Suivi des engagements</a></li><li><a href="http://ville-saint-denis.fr/communiques">Communiqués</a></li><li><a href="https://www.synople.tv/ville-saint-denis/index.php">Séances du Conseil municipal</a></li><li><a href="http://ville-saint-denis.fr/d%C3%A9lib%C3%A9rations-du-conseil-municipal">Délibérations du Conseil Municipal</a></li><li><a href="http://ville-saint-denis.fr/march%C3%A9s-publics">Marchés publics</a></li><li><a href="http://ville-saint-denis.fr/lieux-ressources">Lieux ressources</a></li><li><a href="http://ville-saint-denis.fr/contactez-nous">Nous contacter</a></li></ul><h3>Services</h3><ul><li><a href="http://ville-saint-denis.fr/d%C3%A9marches">Démarches</a></li><li><a href="http://ville-saint-denis.fr/petite-enfance">Petite enfance</a></li><li><a href="http://ville-saint-denis.fr/enfance">Enfance</a></li><li><a href="http://ville-saint-denis.fr/jeunesse">Jeunesse</a></li><li><a href="http://ville-saint-denis.fr/s%C3%A9niors">Seniors</a></li><li><a href="http://ville-saint-denis.fr/handicap">Handicap</a></li><li><a href="http://ville-saint-denis.fr/sant%C3%A9">Santé</a></li><li><a href="http://ville-saint-denis.fr/action-sociale">Action sociale</a></li><li><a href="http://ville-saint-denis.fr/aide-juridique">Aide juridique</a></li><li><a href="http://ville-saint-denis.fr/logement-habitat">Logement - Habitat</a></li><li><a href="http://ville-saint-denis.fr/emploi">Emploi</a></li><li><a href="http://ville-saint-denis.fr/propret%C3%A9">Propreté</a></li></ul><h3>Citoyenneté</h3><ul><li><a href="http://ville-saint-denis.fr/participation-citoyenne">Participation citoyenne</a></li><li><a href="http://ville-saint-denis.fr/jeunes-et-citoyens">Jeunes et citoyens</a></li><li><a href="http://ville-saint-denis.fr/droits-des-femmes">Droits des femmes</a></li><li><a href="http://ville-saint-denis.fr/m%C3%A9moire-et-comm%C3%A9morations">Mémoire et commémorations</a></li></ul></div><div class="souscol3 notablette"><h3>Territoire</h3><ul><li><a href="http://ville-saint-denis.fr/histoire-et-archives">Histoire et Archives</a></li><li><a href="http://ville-saint-denis.fr/%C3%A9tudes-locales-dionysiennes">Études locales dionysiennes</a></li><li><a href="http://ville-saint-denis.fr/les-quartiers">Les Quartiers</a></li><li><a href="http://ville-saint-denis.fr/plaine-commune">Plaine Commune</a></li><li><a href="http://ville-saint-denis.fr/la-metropole-du-grand-paris">La Métropole du Grand Paris</a></li><li><a href="http://ville-saint-denis.fr/saint-denis-ville-monde">Ville monde</a></li><li><a href="http://ville-saint-denis.fr/economie-locale">Économie locale</a></li><li><a href="http://ville-saint-denis.fr/cadre-de-vie">Cadre de vie</a></li><li><a href="http://ville-saint-denis.fr/grands-projets">Grands projets</a></li></ul><h3>Temps libre</h3><ul><li><a href="http://ville-saint-denis.fr/vie-associative">Vie associative</a></li><li><a href="http://ville-saint-denis.fr/culture">Culture</a></li><li><a href="http://ville-saint-denis.fr/sport">Sport</a></li><li><a href="http://ville-saint-denis.fr/centre-de-vacances">Centres de vacances</a></li><li><a href="http://ville-saint-denis.fr/grands-rendez-vous">Grands rendez-vous</a></li><li><a href="http://ville-saint-denis.fr/tourisme-0">Tourisme</a></li><li><a href="http://ville-saint-denis.fr/espaces-multim%C3%A9dia">Espaces multimédia</a></li></ul><h3>UEFA Euro 2016</h3><ul><li><a href="http://ville-saint-denis.fr/lequipe-de-france-de-saint-denis">l'Équipe de France de Saint-Denis</a></li><li><a href="http://ville-saint-denis.fr/la-fan-zone">La Fan zone</a></li><li><a href="http://ville-saint-denis.fr/le-coin-du-supporter">Le coin du supporter</a></li><li><a href="http://ville-saint-denis.fr/saint-denis-ville-h%C3%B4te">Saint-Denis, ville hôte</a></li><li><a href="http://ville-saint-denis.fr/acces-transports">Transports, circulation et accès</a></li></ul></div></div><div class="col2"><div class="horaires"><h2>Horaires et contact</h2><p>Mairie de Saint-Denis<br> BP 269<br> 93205 Saint-Denis cedex</p><p> </p><p>Téléphone : <a href="tel:01%2049%2033%2066%2066">01 49 33 66 66</a><br> <a href="http://ville-saint-denis.fr/contactez-nous" target="_self">Consulter les horaires d'ouverture</a></p><p> </p></div><p class="marge">ADRESSE POSTALE<br> Mairie de Saint-Denis<br> BP 269<br> 93 205 Saint-Denis cedex</p><ul id="footer-ecrire" class="nolaptop"><li><a href="http://ville-saint-denis.fr/contact-elu">Écrire à un élu</a></li><li><a href="http://ville-saint-denis.fr/contact-services-municipaux">Écrire à un service municipal</a></li></ul><p class="liens"><a href="http://ville-saint-denis.fr/espace-presse">ESPACE PRESSE</a> <a href="http://ville-saint-denis.fr/espace-publications">PUBLICATIONS</a></p><p></p><p class="marge"><a href="http://ville-saint-denis.fr/mentions-l%C3%A9gales" class="overgris"><em>Mentions légales</em></a> <a href="http://ville-saint-denis.fr/mentions-l%C3%A9gales" class="overgris"><em>Cookies et données personnelles</em></a> <a href="http://ville-saint-denis.fr/mentions-l%C3%A9gales" class="overgris"><em>Accessibilité</em></a></p><img src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/img/footer/footer-logo.png" alt="" class="marge"></div><div class="clear"></div></div></div><!-- // FOOTER --><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/function.js"></script><script src="http://ville-saint-denis.fr/sites/all/themes/custom/saint_denis/assets/js/plan_quartier.js"></script></html>
