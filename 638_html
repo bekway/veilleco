@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if lt IE 9]><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]--><!--[if gt IE 9]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" dir="ltr">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Documentation - L'agglo - Agglo du Pays de Dreux</title>
+		<meta name="description" content="Connexion au dossier élus">
+		<meta name="author" content="Contributeur du site">
+		<meta name="copyright" content="Inovagora">
+		<meta name="generator" content="eZ Publish">
+		<meta name="MSSmartTagsPreventParsing" content="TRUE">
+		<link rel="Home" href="/" title="Page d'accueil de Agglo du Pays de Dreux">
+		<link rel="Index" href="/">
+		<link rel="Search" href="/content/advancedsearch" title="Recherche Agglo du Pays de Dreux">
+		<link rel="Shortcut icon" href="/extension/agglo_dreux/design/agglo_dreux/images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/extension/agglo_dreux/design/agglo_dreux/images/apple-touch-icon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" /-->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+		<!--[if lte IE 8]>
+<link rel="stylesheet" href="/extension/agglo_dreux/design/agglo_dreux/stylesheets/bootstrap.min.css">
+<style type="text/css">
+
+	h1#logo img { max-width:none !important; }
+	.infomap { display:none;}
+
+</style>
+<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/extension/iagutils/design/ezwebin/stylesheets/base/jquery.ui.core.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/iagutils/design/ezwebin/stylesheets/base/jquery.ui.theme.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/iagutils/design/ezwebin/stylesheets/base/jquery.ui.datepicker.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/agglo_dreux/design/agglo_dreux/stylesheets/styles.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/agglo_dreux/design/agglo_dreux/stylesheets/lightbox.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/agglo_dreux/design/agglo_dreux/stylesheets/zoombox.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/ezfind/design/standard/stylesheets/ezfind.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/ezfind/design/standard/stylesheets/ezajax_autocomplete.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/iagalertesms/design/standard/stylesheets/iagalertesms.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/iagcartosimple/design/standard/stylesheets/iagcartosimple.css" media="screen,projection">
+		<link rel="stylesheet" type="text/css" href="/extension/cjw_newsletter/design/standard/stylesheets/cjw_newsletter.css" media="screen,projection">
+		<!--[if gt IE 6]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<![endif]-->
+		<!--link rel="stylesheet" type="text/css" href="/extension/agglo_dreux/design/agglo_dreux/stylesheets/impression.css" media="print" /-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.8.6/jquery-ui.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+
+(function($) {
+    var _rootUrl = '/', _serverUrl = _rootUrl + 'ezjscore/', _seperator = '@SEPERATOR$';
+
+// FIX: Ajax is broken on IE8 / IE7 on jQuery 1.4.x as it's trying to use the broken window.XMLHttpRequest object
+if ( window.XMLHttpRequest && window.ActiveXObject )
+    $.ajaxSettings.xhr = function() { try { return new window.ActiveXObject('Microsoft.XMLHTTP'); } catch(e) {} };
+
+    // (static) jQuery.ez() uses jQuery.post() (Or jQuery.get() if post paramer is false)
+    //
+    // @param string callArgs
+    // @param object|array|string|false post Optional post values, uses get request if false or undefined
+    // @param function Optional callBack
+    function _ez( callArgs, post, callBack )
+    {
+        callArgs = callArgs.join !== undefined ? callArgs.join( _seperator ) : callArgs;
+        var url = _serverUrl + 'call/';
+        if ( post )
+        {
+            // support serializeArray() format
+            if ( post.join !== undefined )
+                post.push( { 'name': 'ezjscServer_function_arguments', 'value': callArgs } );
+            else if ( typeof(post) === 'string' )
+                post += ( post !== '' ? '&' : '' ) + 'ezjscServer_function_arguments=' + callArgs;
+            else
+                post['ezjscServer_function_arguments'] = callArgs;
+            return $.post( url, post, callBack, 'json' );
+        }
+        return $.get( url + encodeURIComponent( callArgs ), {}, callBack, 'json' );
+    };
+    _ez.url = _serverUrl;
+    _ez.root_url = _rootUrl;
+    _ez.seperator = _seperator;
+    $.ez = _ez;
+
+    // Method version, for loading response into elements
+    // NB: Does not use json (not possible with .load), so ezjscore/call will return string
+    function _ezLoad( callArgs, post, selector, callBack )
+    {
+        callArgs = callArgs.join !== undefined ? callArgs.join( _seperator ) : callArgs;
+        var url = _serverUrl + 'call/';
+        if ( post )
+            post['ezjscServer_function_arguments'] = callArgs;
+        else
+            url += encodeURIComponent( callArgs );
+
+        return this.load( url + ( selector ? ' ' + selector : '' ), post, callBack );
+    };
+    $.fn.ez = _ezLoad;
+})(jQuery);
+        
+		</script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/protection-spam.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.lang.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.ui.lightbox.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.jcarousel.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.rater.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.placeholder.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.easySlider.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.extendAnchor.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.slidePanel.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.cookie.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.addFocusToTarget.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/agglo_dreux/design/agglo_dreux/javascript/comportements.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.swfobject.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/extension/iagutils/design/ezwebin/javascript/jquery.ui.datepicker-fr.js" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body role="document">
+		<div id="header" class="hidden-print">
+			<div class="container">
+				<h1 id="logo" role="banner" class="pull-left"><a href="/"> <img class="img-responsive" src="/var/agglo_dreux/storage/images/design/agglo-du-pays-de-dreux/79641-193-fre-FR/Agglo-du-Pays-de-Dreux.png" width="174" height="148" alt="Agglo du Pays de Dreux (Aller à l'accueil)"> </a></h1>
+				<ul id="acces_rapides" class="hidden-sm hidden-xs" role="navigation">
+					<li><a href="#contenu">Aller au contenu</a></li>
+					<li><a href="/">Accueil</a></li>
+					<li><a href="/Accessibilite" rel="nofollow">Aide</a></li>
+					<li><a href="/plan-du-site">Plan du site</a></li>
+					<li class=" dernier"><a href="/Contact">Contact</a></li>
+				</ul>
+				<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$('body').on('click', function(event)
+	{
+		if($(event.target).parent().attr('id') === 'recherche')
+		{
+			$('.asearch').hide();
+			$('#SearchText').addClass('showed').focus();
+		}
+		else
+		{
+			$('#SearchText').removeClass('showed');
+			$('.asearch').show();
+		}
+	});
+
+});
+				</script>
+				<form action="/content/search" id="recherche" class="pull-right" role="search"><a class="asearch" href="javascript:void(0)"></a> <input name="SearchText" id="SearchText" type="text" placeholder="Recherche" title="Recherche"> <input type="image" src="/extension/agglo_dreux/design/agglo_dreux/images/contenu/ok.png" class="loupe" alt="Lancer la recherche." title="Lancer la recherche."> <input type="hidden" name="SubTreeArray[]" value="200" id="search-global"></form>
+				<ul id="pictos">
+					<li><a href="http://www.facebook.com/dreux.agglomeration" target="_blank" title="Facebook (Nouvelle fenêtre)."><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/facebook/373989-1-fre-FR/facebook.png" width="51" height="49" alt="Facebook (Nouvelle fenêtre)."></a></li>
+					<li><a href="https://twitter.com/dreuxagglo%20" target="_blank" title="Twitter (Nouvelle fenêtre)."><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/twiter/373979-1-fre-FR/twiter.png" width="51" height="49" alt="Twitter (Nouvelle fenêtre)."></a></li>
+					<li><a href="http://www.youtube.com/user/Dreuxagglomeration" target="_blank" title="Youtube (Nouvelle fenêtre)."><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/youtube/373984-1-fre-FR/youtube.png" width="51" height="49" alt="Youtube (Nouvelle fenêtre)."></a></li>
+					<li><a href="http://www.pinterest.com/dreuxagglo/" target="_blank" title="Pinterest (Nouvelle fenêtre)."><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/p/374004-1-fre-FR/p.png" width="51" height="49" alt="Pinterest (Nouvelle fenêtre)."></a></li>
+					<li><a href="/flux-rss" title="RSS."><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/rss/373994-1-fre-FR/rss.png" width="51" height="49" alt="RSS."></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="nav" class="hidden-print">
+			<div id="overlay" class="hidden-print"></div>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu"> <span class="sr-only">Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">Menu principal</a></div>
+					<div class="collapse navbar-collapse navHeaderCollapse" id="mainmenu">
+						<script type="text/javascript">
+
+	// version pour survol des dropdown bootstrap :
+	var windowWidth = $(window).width();
+	if ( windowWidth > 1024 ) { 
+		$(document).ready(function(){
+			var bodyheight = $('body').height();
+			var navpos = $('#nav').offset().top;
+			var navheight = $('#nav').height();
+			var overlayheight = bodyheight - navpos - navheight;
+
+		    $('ul.nav li.dropdown').hover(function() {
+		      $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(100);
+		    }, function() {
+		      $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(100);
+		    });  
+			$('.niv1').hover(function() {$('#overlay').css({ height: overlayheight + "px" }); },function(){ $('#overlay').css({ height: "0" }); });
+		});
+	}
+						</script>
+						<ul id="menuderoulant" class="nav navbar-nav">
+							<li class="home"><a href="/"><i class="icon-home"></i></a></li>
+							<li class="niv1 dropdown menu0 actif"><a class="dropdown-toggle" data-toggle="dropdown" href="/L-agglo" title="L'agglo (rubrique active)."><em>L'agglo</em></a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/l-agglo/territoire/carte-agglo-pays-dreux/370047-2-fre-FR/Carte-Agglo-Pays-Dreux_small-crop.png" width="71" height="100" alt=""> <a href="/L-agglo/Territoire">Territoire</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-les-communes/553338-3-fre-FR/Icone-Les-Communes_small-crop.png" width="100" height="100" alt=""> <a href="/L-agglo/Les-communes">Les communes</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-le-fonctionnement/554587-1-fre-FR/Icone-Le-fonctionnement_small-crop.png" width="100" height="100" alt=""> <a href="/L-agglo/Le-fonctionnement">Le fonctionnement</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-les-competences/554592-1-fre-FR/Icone-Les-Competences_small-crop.png" width="100" height="100" alt=""> <a href="/L-agglo/Les-competences">Les compétences</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/l-agglo/adresse-et-numeros-utiles/photo-adresse-et-numeros-utiles/373548-2-fre-FR/Photo-Adresse-et-numeros-utiles_small-crop.jpg" width="97" height="100" alt=""> <a href="/L-agglo/Adresses-et-numeros-utiles">Adresses et numéros utiles</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-documentation/554602-1-fre-FR/Icone-Documentation_small-crop.png" width="100" height="100" alt=""> <strong>Documentation</strong></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-accueil-proximite/554597-1-fre-FR/Icone-Accueil-Proximite_small-crop.png" width="100" height="100" alt=""> <a href="/L-agglo/Accueils-de-proximite">Accueils de proximité</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu1"><a class="dropdown-toggle" data-toggle="dropdown" href="/Enfance-Jeunesse-Famille">Enfance Jeunesse Famille</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/enfance-jeunesse-famille/petite-enfance/373576-1-fre-FR/Petite-enfance_small-crop.jpg" width="100" height="100" alt=""> <a href="/Enfance-Jeunesse-Famille/Petite-Enfance-3-mois-4-ans">Petite Enfance ( 3 mois - 4 ans)</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/enfance-jeunesse-famille/enfance-2/373689-1-fre-FR/Enfance-2_small-crop.jpg" width="100" height="100" alt=""> <a href="/Enfance-Jeunesse-Famille/Enfance-3-12-ans">Enfance ( 3 - 12 ans)</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/enfance-jeunesse-famille/jeunesse/374063-1-fre-FR/Jeunesse_small-crop.jpg" width="100" height="100" alt=""> <a href="/Enfance-Jeunesse-Famille/Jeunesse-12-25-ans">Jeunesse (12 - 25 ans)</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/enfance-jeunesse-famille/pole-famille/374208-1-fre-FR/Pole-Famille_small-crop.jpg" width="100" height="100" alt=""> <a href="/Enfance-Jeunesse-Famille/Famille">Famille </a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu2"><a class="dropdown-toggle" data-toggle="dropdown" href="/Dechets4">Déchets</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/dechets/dechets-2015/dechets-particulier/547157-1-fre-FR/Dechets-Particulier_small-crop.jpg" width="71" height="100" alt=""> <a href="/Dechets4/Gestion-des-dechets-des-particuliers">Gestion des déchets des particuliers</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/votre-quotidien/dechets/pourquoi-trier/poubelle-tri/311274-1-fre-FR/Poubelle-tri_small-crop.jpg" width="72" height="100" alt=""> <a href="/Dechets4/La-prevention-des-dechets">La prévention des déchets</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/dechets/esp_pedagogique/467239-1-fre-FR/ESP_PEDAGOGIQUE_small-crop.jpg" width="100" height="100" alt=""> <a href="/Dechets4/Visite-et-sensibilisation">Visite et sensibilisation</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/dechets/esp_pro/467244-1-fre-FR/ESP_PRO_small-crop.jpg" width="100" height="100" alt=""> <a href="/Dechets4/Gestion-des-dechets-des-professionnels">Gestion des déchets des professionnels</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/dechets/faq-min/545874-1-fre-FR/FAQ-min_small-crop.jpg" width="100" height="100" alt=""> <a href="/Dechets4/Foire-aux-questions">Foire aux questions</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu3"><a class="dropdown-toggle" data-toggle="dropdown" href="/Eau-Assainissement">Eau Assainissement</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/eau-asssainissement/assainissement/rubrique-le-reseau-d-assainissement/401637-1-fre-FR/Rubrique-Le-Reseau-d-assainissement_small-crop.jpg" width="100" height="100" alt=""> <a href="/Eau-Assainissement/Assainissement-Collectif">Assainissement Collectif</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/eau-asssainissement/assainissement/rubrique-l-assainissement-non-collectif/401642-1-fre-FR/Rubrique-L-assainissement-non-collectif_small-crop.jpg" width="100" height="100" alt=""> <a href="/Eau-Assainissement/Assainissement-Non-Collectif">Assainissement Non Collectif</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/eau-asssainissement/eau/photo-rubrique-eau/401657-1-fre-FR/photo-rubrique-eau_small-crop.jpg" width="100" height="100" alt=""> <a href="/Eau-Assainissement/Eau2">Eau</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/eau-asssainissement/dig/565218-1-fre-FR/DIG_small-crop.jpg" width="100" height="100" alt=""> <a href="/Eau-Assainissement/Rivieres-et-Plans-d-eau">Rivières et Plans d'eau</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu4"><a class="dropdown-toggle" data-toggle="dropdown" href="/Transports">Transports</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/transports/transport-scolaires/scolaires-home/581710-1-fre-FR/scolaires-home_small-crop.jpg" width="100" height="100" alt=""> <a href="/Transports/Transports-scolaires">Transports scolaires </a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/transports/transport-urbain/linead/593562-1-fre-FR/linead_small-crop.jpg" width="100" height="100" alt=""> <a href="/Transports/Transport-Urbain">Transport Urbain</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/transports/transport-a-la-demande/transport-a-la-demande/402427-1-fre-FR/Transport-A-la-Demande_small-crop.jpg" width="100" height="100" alt=""> <a href="/Transports/Transport-a-la-Demande">Transport à la Demande</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/transports/covoiturage/logo-covoiturage/584190-1-fre-FR/logo-covoiturage_small-crop.jpg" width="99" height="100" alt=""> <a href="/Transports/Covoiturage">Covoiturage</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/transports/parking-gare/parking-menu/643305-1-fre-FR/Parking-Menu_small-crop.png" width="100" height="100" alt=""> <a href="/Transports/Parking-aerien-du-Pole-Gare-de-Dreux" title="Parking aérien du Pôle Gare de Dreux.">Parking Pôle Gare</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu5"><a class="dropdown-toggle" data-toggle="dropdown" href="/Culture-Loisirs-Tourisme">Culture Loisirs Tourisme</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/culture-et-loisirs/photos-accueil/culture/314728-1-fre-FR/Culture_small-crop.jpg" width="100" height="100" alt=""> <a href="/Culture-Loisirs-Tourisme/La-culture">La culture</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/culture-et-loisirs/photos-accueil/loisirs/314738-1-fre-FR/Loisirs_small-crop.jpg" width="100" height="100" alt=""> <a href="/Culture-Loisirs-Tourisme/Les-loisirs">Les loisirs</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/culture-et-loisirs/photos-accueil/tourisme/314733-1-fre-FR/Tourisme_small-crop.jpg" width="100" height="100" alt=""> <a href="/Culture-Loisirs-Tourisme/Le-tourisme">Le tourisme</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/culture-loisirs-tourisme/les-piscines/piscine/630671-2-fre-FR/Piscine_small-crop.jpg" width="100" height="100" alt=""> <a href="/Culture-Loisirs-Tourisme/Les-piscines">Les piscines</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu6"><a class="dropdown-toggle" data-toggle="dropdown" href="/Emploi-Economie">Emploi Economie</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/emploi-et-economie/logo-24h-pharma-crop/623006-2-fre-FR/Logo-24h-Pharma-Crop_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/24H-Pharma-Dreux" title="24H Pharma@Dreux.">24 H Pharma Dreux</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/emploi-et-economie/villas_d-entreprises_01/467284-1-fre-FR/Villas_d-entreprises_01_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/Attractivite-et-Competitivite">Attractivité et Compétitivité</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/economie-et-emploi/photos-accueil/travailler/315065-1-fre-FR/Travailler_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/Travailler">Travailler</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/economie-et-emploi/se-loger/se-loger/314979-1-fre-FR/Se-loger_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/Se-loger">Se loger</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/emploi-et-economie/img_6054/467279-1-fre-FR/IMG_6054_small-crop.jpg" width="67" height="100" alt=""> <a href="/Emploi-Economie/Renovation-Urbaine">Rénovation Urbaine</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/economie-et-emploi/commerce/commerce/315007-1-fre-FR/Commerce_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/Commerce">Commerce</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/emploi-et-economie/logo-contrat-ville/563194-2-fre-FR/Logo-Contrat-Ville_small-crop.jpg" width="100" height="100" alt=""> <a href="/Emploi-Economie/Politique-de-la-ville">Politique de la ville</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/agglo-recrute/job/590741-1-fre-FR/job_small-crop.png" width="100" height="100" alt=""> <a href="/L-agglomeration-recrute" title="L'agglomération recrute.">L'Agglo recrute</a></li>
+								</ul>
+							</li>
+							<li class="niv1 dropdown menu7"><a class="dropdown-toggle" data-toggle="dropdown" href="/Amenager">Aménager</a>
+								<ul class="container dropdown-menu">
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/rubrique-amenagement-territorial/401984-1-fre-FR/Rubrique-Amenagement-territorial_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Amenagement-territorial">Aménagement territorial</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/cap-citergie/550246-3-fre-FR/cap-citergie_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Une-strategie-Energie-Climat">Une stratégie Energie - Climat</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/eco-renove/550241-1-fre-FR/eco-renove_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Des-services-publics-pour-repondre-aux-enjeux-energetiques">Des services publics pour répondre aux enjeux énergétiques</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/rubrique-amenagement-numerique/402006-1-fre-FR/Rubrique-Amenagement-numerique_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Amenagement-numerique">Aménagement numérique</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/agenda21/467254-1-fre-FR/Agenda21_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Agenda-21">Agenda 21</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/15-01-2014-11-01-20/402437-1-fre-FR/15-01-2014-11-01-20_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Liaisons-douces">Liaisons douces</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/scot/564274-1-fre-FR/SCoT_small-crop.jpg" width="90" height="100" alt=""> <a href="/Amenager/SCoT-PLH">SCoT - PLH</a></li>
+									<li><img src="/var/agglo_dreux/storage/images/mediatheque/amenagement-durable/rubrique-programme-leader/599447-1-fre-FR/Rubrique-Programme-LEADER_small-crop.jpg" width="100" height="100" alt=""> <a href="/Amenager/Programme-LEADER">Programme LEADER</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div id="contenu" class="content col-md-9">
+					<p id="fil-ariane"><a href="/">Accueil</a> > <a href="/L-agglo">L'agglo</a> > <strong>Documentation</strong></p>
+					<h1><span>Documentation</span></h1>
+					<div class="object-left"><img class="img-thumbnail img-responsive" src="/var/agglo_dreux/storage/images/mediatheque/liens-images/icones-menu-principal/icone-documentation/554602-1-fre-FR/Icone-Documentation_medium.png" width="200" height="200" alt=""></div>
+					<div class="introduction">
+						<p><a href="/L-agglo/Documentation/Dossier-Elus">Connexion au dossier élus</a></p>
+					</div>
+					<p>Dates des prochains Conseils Communautaires :</p>
+					<ul>
+						<li>lundi 4 février 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Janvier-2019/ORDRE-DU-JOUR-CONSEIL-du-4-Fevrier-2019">Ordre du jour</a> / <a href="/Mediatheque/L-agglo/Documentation/2019/Compte-rendu-de-Conseil-Communautaire-4-02-19">Compte rendu</a> )</li>
+						<li>Vendredi 8 février 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Fevrier-2019/Convocation-Conseil-Communautaire-du-08.02.2019" target="_blank" title="(Nouvelle fenêtre)">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2019/Fevrier-2019/Ordre-du-jour-du-Conseil-Communautaire-du-08.02.2019" target="_blank" title="(Nouvelle fenêtre)">Ordre du jour</a> / <a href="/Mediatheque/Acces-directs/Archives-2019/Fevrier-2019/Compte-Rendu-du-Conseil-Communautaire-du-8-Fevrier-2019">Compte rendu</a> )</li>
+						<li>lundi 29 avril 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Avril-2019/INVITATION-CONSEIL-COMMUNAUTAIRE" target="_blank" title="(Nouvelle fenêtre)">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2019/Avril-2019/ORDRE-DU-JOUR-CONSEIL-COMMUNAUTAIRE-DU-29.04.2019">Ordre du jour</a> / <a href="/Mediatheque/Acces-directs/Archives-2019/Avril-2019/COMPTE-RENDU-CC-du-29-avril-19-affiche-le-6-mai-2019" target="_blank" title="(Nouvelle fenêtre)">Compte rendu</a> )</li>
+						<li>lundi 24 juin 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Juin-2019/Conseil-Com-du-24.06.2019" target="_blank" title="(Nouvelle fenêtre)">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2019/Juin-2019/Ordre-du-jour-du-Conseil-Communautaire-du-24.06.2019" target="_blank" title="(Nouvelle fenêtre)">Ordre du jour</a> / <a href="/Mediatheque/Acces-directs/Archives-2019/Juin-2019/COMPTE-RENDU-du-Conseil-Communautaire-du-24-juin-2019">Compte rendu</a> )</li>
+						<li>lundi 30 septembre 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Septembre-2019/Convocation-Conseil-Com-du-30.09.2019" target="_blank" title="(Nouvelle fenêtre)">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2019/Septembre-2019/2019-09-30-ORDRE-DU-JOUR-CONSEIL-COMMUNAUTAIRE" target="_blank" title="(Nouvelle fenêtre)">Ordre du jour </a>/ <a href="/Mediatheque/L-agglo/Documentation/COMPTE-RENDU-CC-du-30-septembre-2019" target="_blank" title="(Nouvelle fenêtre)">Compte rendu</a> )</li>
+						<li>lundi 2 décembre 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Decembre-2019/01-2019_12_02_invitation">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2019/Decembre-2019/02_2019_12_02-ORDRE_DU_JOUR_DU_CC">Ordre du jour</a> / <a href="/Mediatheque/Acces-directs/Archives-2019/Decembre-2019/COMPTE-RENDU-CC-du-2-decembre-2019-affiche-le-9-decembre-2019" target="_blank" title="(Nouvelle fenêtre)">Compte rendu</a> )</li>
+						<li>lundi 16 décembre 2019<br>( <a href="/Mediatheque/Acces-directs/Archives-2019/Decembre-2019/01-2019_12_16-invitation-CC" target="_blank" title="(Nouvelle fenêtre)">Convocation</a> / <a href="/Mediatheque/Acces-directs/Archives-2019/Decembre-2019/02-2019_12_16-ORDRE_DU_JOUR_CC" target="_blank" title="(Nouvelle fenêtre)">Ordre du jour</a> / Compte rendu )</li>
+						<li>lundi 3 février 2020<br>( <a href="/Mediatheque/Acces-directs/Archives-2020/Janvier-2020/Convocation-Conseil-du-03.02.2020" lang="" hreflang="">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2020/Janvier-2020/ODJ-CONSEIL-COMMUNAUTAIRE-DU-3-FEVRIER-2020" lang="" hreflang="">Ordre du jour</a> / Compte rendu )</li>
+						<li>Jeudi 9 juillet 2020<br>( <a href="/Mediatheque/Acces-directs/Archives-2020/Juillet-2020/CC-2020-07-09-INVITATION" lang="" hreflang="">Convocation </a>/ <a href="/Mediatheque/Acces-directs/Archives-2020/Juillet-2020/INSTALLATION-2020-07-09-ODJ" lang="" hreflang="">Ordre du jour </a> )</li>
+					</ul>
+					<p><em>Ce planning est établi à titre indicatif, il est susceptible d’être modifié en cours de semestre, seules les convocations font foi.</em> <br><em>Consultez les procès verbaux en bas de page.</em></p>
+					<p> </p>
+					<div style="text-align:center;">
+						<div style="margin:8px 0px 4px;"><a href="https://www.calameo.com/books/0040877061494a4d35333" target="_blank"></a></div>
+						<iframe src="//v.calameo.com/?bkcode=0040877061494a4d35333" width="432" height="232" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+						<div style="margin:4px 0px 8px;"><a href="http://www.calameo.com/"></a></div>
+					</div>
+					<div class="accordeon" id="faq">
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2019.\">Conseils Communautaires 2019<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2019</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/44469/649990/file/Proces%20Verbal%20du%2004_02_2019.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 04.02.2019 (pdf - 1,43 Mo).">Proces Verbal du Conseil Communautaire du 04.02.2019</a> <span class="metas">(.pdf - 1,43 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/44471/650026/file/Proces%20Verbal%20du%2008_02_2019.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 08.02.2019 (pdf - 1,57 Mo).">Proces Verbal du Conseil Communautaire du 08.02.2019</a> <span class="metas">(.pdf - 1,57 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/44470/650008/file/Proces%20Verbal%20du%2029_04_2019.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 29.04.2019 (pdf - 1,56 Mo).">Proces Verbal du Conseil Communautaire du 29.04.2019</a> <span class="metas">(.pdf - 1,56 Mo)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2018.\">Conseils Communautaires 2018<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2018</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/42134/619254/file/Proces%20Verbal%20du%20Conseil%20Communautaire%20du%2012.02.2018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 12.02.2018 (pdf - 557,43 ko).">Proces Verbal du Conseil Communautaire du 12.02.2018</a> <span class="metas">(.pdf - 557,43 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/42356/622378/file/PROCES%20VERBAL%20CONSEIL%20DU%2026%20MARS%202018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 26.03.2018 (pdf - 2,22 Mo).">Proces Verbal du Conseil Communautaire du 26.03.2018</a> <span class="metas">(.pdf - 2,22 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/42357/622396/file/PROCES%20VERBAL%20CONSEIL%20DU%209%20AVRIL%202018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 09.04.2018 (pdf - 538,94 ko).">Proces Verbal du Conseil Communautaire du 09.04.2018</a> <span class="metas">(.pdf - 538,94 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/42878/629092/file/PROCES%20VERBAL%20CONSEIL%20DU%2028%20mai%202018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 28.05.2018 (pdf - 722,78 ko).">Proces Verbal du Conseil Communautaire du 28.05.2018</a> <span class="metas">(.pdf - 722,78 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/42879/629110/file/PROCES%20VERBAL%20CONSEIL.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 25.06.2018 (pdf - 1,70 Mo).">Proces Verbal du Conseil Communautaire du 25.06.2018</a> <span class="metas">(.pdf - 1,70 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/43314/635200/file/PROCES%20VERBAL%20DU%20CONSEIL%20DU%205%20NOVEMBRE%202018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 05.11.2018 (pdf - 1,17 Mo).">Proces Verbal du Conseil Communautaire du 05.11.2018</a> <span class="metas">(.pdf - 1,17 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/43935/642935/file/PROCES%20VERBAL%20DU%20CONSEIL%20DU%2010%20DECEMBRE%202018.pdf" title="Télécharger le fichier : Proces Verbal du Conseil Communautaire du 10.12.2018 (pdf - 1,83 Mo).">Proces Verbal du Conseil Communautaire du 10.12.2018</a> <span class="metas">(.pdf - 1,83 Mo)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2017.\">Conseils Communautaires 2017<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2017</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/40841/602262/file/PROCES%20VERBAL%20CONSEIL%206%20%20FEVRIER%202017.pdf" title="Télécharger le fichier : Procès verbal - Conseil communautaire du 6 février 2017 (pdf - 1,05 Mo).">Procès verbal - Conseil communautaire du 6 février 2017</a> <span class="metas">(.pdf - 1,05 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/40842/602280/file/PROCES%20VERBAL%20CONSEIL%2024%20AVRIL%202017.pdf" title="Télécharger le fichier : Procès verbal - conseil communautaire du 24 avril 2017 (pdf - 1,44 Mo).">Procès verbal - conseil communautaire du 24 avril 2017</a> <span class="metas">(.pdf - 1,44 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41170/606800/file/PROCES%20VERBAL%20DU%20CONSEIL%20DU%2026%20JUIN%202017.pdf" title="Télécharger le fichier : Procès verbal - conseil communautaire du 26 juin 2017 (pdf - 854,70 ko).">Procès verbal - conseil communautaire du 26 juin 2017</a> <span class="metas">(.pdf - 854,70 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41326/608974/file/PROCES%20VERBAL%20DU%20CONSEIL%20DU%2025%20SEPTEMBRE%202017.pdf" title="Télécharger le fichier : Procès verbal du Conseil Communautaire du 25 septembre 2017 (pdf - 252,55 ko).">Procès verbal du Conseil Communautaire du 25 septembre 2017</a> <span class="metas">(.pdf - 252,55 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41857/615631/file/PROCES%20VERBAL%20CONSEIL%20du%2011.12.2017.pdf" title="Télécharger le fichier : Procès verbal du Conseil Communautaire du 11.12.2017 (pdf - 584,99 ko).">Procès verbal du Conseil Communautaire du 11.12.2017</a> <span class="metas">(.pdf - 584,99 ko)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2016.\">Conseils Communautaires 2016<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2016</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/38765/575417/file/PROCES%20VERBAL%20du%201er%20fe%CC%81vrier%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 1er février 2016 (pdf - 1,13 Mo).">Procès verbal Conseil Communautaire 1er février 2016</a> <span class="metas">(.pdf - 1,13 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/39685/587668/file/PROCES%20VERBAL%20du%2021%20mars%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 21 mars 2016 (pdf - 1,09 Mo).">Procès verbal Conseil Communautaire 21 mars 2016</a> <span class="metas">(.pdf - 1,09 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/39686/587686/file/PROCES%20VERBAL%20du%209%20mai%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 9 mai 2016 (pdf - 1,78 Mo).">Procès verbal Conseil Communautaire 9 mai 2016</a> <span class="metas">(.pdf - 1,78 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/39687/587704/file/PROCES%20VERBAL%20du%2027%20juin%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 27 juin 2016 (pdf - 2,18 Mo).">Procès verbal Conseil Communautaire 27 juin 2016</a> <span class="metas">(.pdf - 2,18 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/40175/593447/file/PROCES%20VERBAL%20du%2026%20SEPTEMBRE%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 26 septembre 2016 (pdf - 1 020,35 ko).">Procès verbal Conseil Communautaire 26 septembre 2016</a> <span class="metas">(.pdf - 1 020,35 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/40176/593465/file/PROCES%20VERBAL%20du%2021%20NOVEMBRE%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 21 novembre 2016 (pdf - 1,05 Mo).">Procès verbal Conseil Communautaire 21 novembre 2016</a> <span class="metas">(.pdf - 1,05 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/40177/593483/file/Proc%C3%A8s%20verbal%20Conseil%20Communautaire%2012%20d%C3%A9cembre%202016.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 12 décembre 2016 (pdf - 434,69 ko).">Procès verbal Conseil Communautaire 12 décembre 2016</a> <span class="metas">(.pdf - 434,69 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41168/606764/file/PROCES%20VERBAL%20DU%20CONSEIL%20DU%2026%20JUIN%202017.pdf" title="Télécharger le fichier : PROCES VERBAL DU CONSEIL DU 26 JUIN 2017 (pdf - 854,70 ko).">PROCES VERBAL DU CONSEIL DU 26 JUIN 2017</a> <span class="metas">(.pdf - 854,70 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41169/606782/file/PROCES%20VERBAL%20CONSEIL%2024%20AVRIL%202017.pdf" title="Télécharger le fichier : PROCES VERBAL CONSEIL 24 AVRIL 2017 (pdf - 1,44 Mo).">PROCES VERBAL CONSEIL 24 AVRIL 2017</a> <span class="metas">(.pdf - 1,44 Mo)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2015.\">Conseils Communautaires 2015<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2015</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/37168/558735/file/PROCES%20VERBAL%20CONSEIL%2026%20JANVIER%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 26 Janvier 2015 (pdf - 1,34 Mo).">Procès verbal Conseil Communautaire 26 Janvier 2015</a> <span class="metas">(.pdf - 1,34 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/37169/558753/file/PROCES%20VERBAL%20CONSEIL%2030%20MARS%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 30 Mars 2015 (pdf - 568,66 ko).">Procès verbal Conseil Communautaire 30 Mars 2015</a> <span class="metas">(.pdf - 568,66 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/37170/558771/file/PROCES%20VERBAL%20CONSEIL%2018%20MAI%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 18 Mai 2015 (pdf - 1,64 Mo).">Procès verbal Conseil Communautaire 18 Mai 2015</a> <span class="metas">(.pdf - 1,64 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/37551/563286/file/PROCES%20VERBAL%20CONSEIL%2029%20JUIN%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire - 29 juin 2015 (pdf - 2,16 Mo).">Procès verbal Conseil Communautaire - 29 juin 2015</a> <span class="metas">(.pdf - 2,16 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/38757/575287/file/PROCES%20VERBAL%20CONSEIL%2028%20SEPTEMBRE%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 28 septembre 2015 (pdf - 397,25 ko).">Procès verbal Conseil Communautaire 28 septembre 2015</a> <span class="metas">(.pdf - 397,25 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/38758/575305/file/PROCES%20VERBAL%20CONSEIL%2023%20NOVEMBRE%202015%20V2.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 23 novembre 2015 (pdf - 1,41 Mo).">Procès verbal Conseil Communautaire 23 novembre 2015</a> <span class="metas">(.pdf - 1,41 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/38759/575323/file/PROCES%20VERBAL%20du%2014%20decembre%202015.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 14 décembre 2015 (pdf - 740,73 ko).">Procès verbal Conseil Communautaire 14 décembre 2015</a> <span class="metas">(.pdf - 740,73 ko)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Conseils Communautaires 2014.\">Conseils Communautaires 2014<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Conseils Communautaires 2014</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/32663/497750/file/Proc%C3%A8s%20verbal%20Conseil%20Communautaire%20du%206%20janvier%202014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire 6 janvier 2014 (pdf - 1,23 Mo).">Procès verbal Conseil Communautaire 6 janvier 2014</a> <span class="metas">(.pdf - 1,23 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/32664/497768/file/Proc%C3%A8s%20verbal%20Conseil%20Communautaire%20du%2010%20mars%202014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire du 10 mars 2014 (pdf - 296,19 ko).">Procès verbal Conseil Communautaire du 10 mars 2014</a> <span class="metas">(.pdf - 296,19 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/33036/500239/file/Proc%C3%A8s%20verbal%20Conseil%20Communautaire%20du%2014%20avril%202014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire du 14 avril 2014 (pdf - 408,09 ko).">Procès verbal Conseil Communautaire du 14 avril 2014</a> <span class="metas">(.pdf - 408,09 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/33354/502602/file/2014-188%20DESIGNATION%20PERSONNE%20CADA.pdf" title="Télécharger le fichier : Délibération désignant le responsable de l'accès aux documents administratifs - Conseil Communautaire du 12 mai 2014 (pdf - 1,26 Mo).">Délibération désignant le responsable de l'accès aux documents administratifs - Conseil Communautaire du 12 mai 2014</a> <span class="metas">(.pdf - 1,26 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/34061/511955/file/Proc%C3%A8s%20verbal%20du%20Conseil%20Communautaire%20du%2030%20juin%202014.pdf" title="Télécharger le fichier : Procès verbal du Conseil Communautaire du 30 juin 2014 (pdf - 929,83 ko).">Procès verbal du Conseil Communautaire du 30 juin 2014</a> <span class="metas">(.pdf - 929,83 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/35850/544229/file/Proces%20verbal%20du%20conseil%20communautaire%20du%2015.12.2014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire du 15 décembre 2014 (pdf - 1,15 Mo).">Procès verbal Conseil Communautaire du 15 décembre 2014</a> <span class="metas">(.pdf - 1,15 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/35851/544247/file/Proces%20verbal%20du%20conseil%20communautaire%20du%2024.11.2014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire du 24 novembre 2014 (pdf - 1,18 Mo).">Procès verbal Conseil Communautaire du 24 novembre 2014</a> <span class="metas">(.pdf - 1,18 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/35852/544265/file/Proces%20verbal%20du%20conseil%20communautaire%20du%2029.09.2014.pdf" title="Télécharger le fichier : Procès verbal Conseil Communautaire du 29 septembre 2014 (pdf - 1,11 Mo).">Procès verbal Conseil Communautaire du 29 septembre 2014</a> <span class="metas">(.pdf - 1,11 Mo)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Rapports d\047activités.\">Rapports d\047activités<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Rapports d'activités</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/36681/552777/file/RAPPORTACTIVITE2014.pdf" title="Télécharger le fichier : Rapport d'activité 2014 - Service Eau et Assainissement (pdf - 13,26 Mo).">Rapport d'activité 2014 - Service Eau et Assainissement</a> <span class="metas">(.pdf - 13,26 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/37060/557304/file/Rapport%20annuel%202014%20v%2005%2006%202015.pdf" title="Télécharger le fichier : Rapport annuel d'activités Keolis - 2014 (pdf - 2,56 Mo).">Rapport annuel d'activités Keolis - 2014</a> <span class="metas">(.pdf - 2,56 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/45735/665781/file/Rapport_Annuel_2015_WEB.pdf" title="Télécharger le fichier : Rapport Annuel 2015 (pdf - 11,75 Mo).">Rapport Annuel 2015</a> <span class="metas">(.pdf - 11,75 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/41222/607443/file/Rapport_Annuel_2016_WEB.pdf" title="Télécharger le fichier : Rapport annuel 2016 de l'Agglo du Pays de Dreux (pdf - 40,88 Mo).">Rapport annuel 2016 de l'Agglo du Pays de Dreux</a> <span class="metas">(.pdf - 40,88 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/43936/642953/file/Rapport_Annuel_2017%20BD.pdf" title="Télécharger le fichier : Rapport Annuel d'activité 2017 (pdf - 37,93 Mo).">Rapport Annuel d'activité 2017</a> <span class="metas">(.pdf - 37,93 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/45734/665763/file/Rapport%20annuel%202018%20WEB.pdf" title="Télécharger le fichier : Rapport annuel 2018 (pdf - 21,64 Mo).">Rapport annuel 2018</a> <span class="metas">(.pdf - 21,64 Mo)</span></li>
+							</ul>
+						</div>
+						<h2>
+							<script type="text/javascript">
+						<!--
+							document.write('<a href=\"#\" title=\"Afficher les délibérations : Autres documents.\">Autres documents<\/a>');
+						//-->
+					
+							</script>
+							<noscript>Autres documents</noscript>
+						</h2>
+						<div>
+							<ul class="deliberations">
+								<li><a class="fichier pdf" href="/content/download/27867/373294/file/Charte%20Communautaire.pdf" title="Télécharger le fichier : Charte Communautaire (pdf - 57,73 ko).">Charte Communautaire</a> <span class="metas">(.pdf - 57,73 ko)</span></li>
+								<li><a class="fichier pdf" href="/content/download/27868/373307/file/Arret%C3%A9%20de%20creation%20Communaut%C3%A9%20d%5C'Agglomeration%20du%20Pays%20de%20Dreux.pdf" title="Télécharger le fichier : Arrêté de creation Communauté d'Agglomeration du Pays de Dreux (pdf - 1,32 Mo).">Arrêté de creation Communauté d'Agglomeration du Pays de Dreux</a> <span class="metas">(.pdf - 1,32 Mo)</span></li>
+								<li><a class="fichier pdf" href="/content/download/44284/647539/file/Brochure_Promo_Territoire_2017_VDEF_BD.pdf" title="Télécharger le fichier : Brochure_Territoire_Agglo du Pays de Dreux (pdf - 2,66 Mo).">Brochure_Territoire_Agglo du Pays de Dreux</a> <span class="metas">(.pdf - 2,66 Mo)</span></li>
+								<li><a class="fichier octet-stream" href="/content/download/46300/673762/file/top10remuneration.csv" title="Télécharger le fichier : Top 10 rémunération (octet-stream - 357 o).">Top 10 rémunération</a> <span class="metas">(.octet-stream - 357 o)</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<ul class="outils">
+							<li><a href="/content/tipafriend/27110" rel="nofollow" class="suggerer">Suggérer</a></li>
+							<li>
+								<script type="text/javascript">
+				<!--
+					document.write('<a href=\"javascript:window.print()\" class=\"imprimer\">Imprimer<\/a>');
+				//-->
+			
+								</script>
+							</li>
+							<li><a href="#header" class="haut_page">Haut de page</a></li>
+						</ul>
+						<div class="partager">
+							<ul>
+								<li>
+									<script type="text/javascript">
+	<!--
+	document.write('<a href=\"javascript:void(0)\" onclick=\"openpopup(\'http://www.facebook.com/share.php?u=https://www.dreux-agglomeration.fr/L-agglo/Documentation\',500,500)\" title=\"Partager sur Facebook.\"><img src="/extension/iagutils/design/ezwebin/images/addthis/facebook.png" width=\"26\" height=\"26\" alt=\"Partager sur Facebook.\" \/><\/a>');
+	//-->
+									</script>
+									<noscript><a href="http://www.facebook.com/share.php?u=https://www.dreux-agglomeration.fr/L-agglo/Documentation" title="Partager sur Facebook."><img src="/extension/iagutils/design/ezwebin/images/addthis/facebook.png" width="26" height="26" alt="Partager sur Facebook."></a></noscript>
+								</li>
+								<li>
+									<script type="text/javascript">
+	<!--
+	document.write('<a href=\"javascript:void(0)\" onclick=\"openpopup(\'http://twitter.com/home?status=https://www.dreux-agglomeration.fr/L-agglo/Documentation\',500,500)\" title=\"Partager sur Twitter.\"><img src="/extension/iagutils/design/ezwebin/images/addthis/twitter.png" width=\"26\" height=\"26\" alt=\"Partager sur Twitter.\" \/><\/a>');
+	//-->
+									</script>
+									<noscript><a href="http://twitter.com/home?status=https://www.dreux-agglomeration.fr/L-agglo/Documentation" title="Partager sur Twitter."><img src="/extension/iagutils/design/ezwebin/images/addthis/twitter.png" width="26" height="26" alt="Partager sur Twitter."></a></noscript>
+								</li>
+								<li>
+									<script type="text/javascript">
+	<!--
+	document.write('<a href=\"javascript:void(0)\" onclick=\"openpopup(\'http://www.viadeo.com/shareit/share/?url=https://www.dreux-agglomeration.fr/L-agglo/Documentation\',500,500)\" title=\"Partager sur Viadeo.\"><img src="/extension/iagutils/design/ezwebin/images/addthis/viadeo.png" width=\"26\" height=\"26\" alt=\"Partager sur Viadeo.\" \/><\/a>');
+	//-->
+									</script>
+									<noscript><a href="http://www.viadeo.com/shareit/share/?url=https://www.dreux-agglomeration.fr/L-agglo/Documentation" title="Partager sur Viadeo."><img src="/extension/iagutils/design/ezwebin/images/addthis/viadeo.png" width="26" height="26" alt="Partager sur Viadeo."></a></noscript>
+								</li>
+								<li>
+									<script type="text/javascript">
+	<!--
+	document.write('<a href=\"javascript:void(0)\" onclick=\"openpopup(\'https://plus.google.com/share?url=https://www.dreux-agglomeration.fr/L-agglo/Documentation\',500,500)\" title=\"Partager sur Google+.\"><img src="/extension/iagutils/design/ezwebin/images/addthis/google+.png" width=\"26\" height=\"26\" alt=\"Partager sur Google+.\" \/><\/a>');
+	//-->
+									</script>
+									<noscript><a href="https://plus.google.com/share?url=https://www.dreux-agglomeration.fr/L-agglo/Documentation" title="Partager sur Google+."><img src="/extension/iagutils/design/ezwebin/images/addthis/google+.png" width="26" height="26" alt="Partager sur Google+."></a></noscript>
+								</li>
+							</ul>
+						</div>
+						<script type="text/javascript">
+
+function openpopup(page,largeur,hauteur)
+{
+	var top=(screen.height-hauteur)/2;
+	var left=(screen.width-largeur)/2;
+	window.open(page,"","top="+top+",left="+left+",width="+largeur+",height="+hauteur);
+	// e.preventDefault(); // marche p:-(
+}
+						</script>
+					</div>
+				</div>
+				<div id="sidebar" class="col-md-3 sidebar hidden-print" role="navigation">
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="contextuel_2n" class="panel panel-default">
+								<div class="panel-heading">
+									<h2><a href="/L-agglo"> L'agglo </a></h2>
+								</div>
+								<ul class="nav">
+									<li><a href="/L-agglo/Territoire">Territoire</a></li>
+									<li><a href="/L-agglo/Les-communes">Les communes</a></li>
+									<li><a href="/L-agglo/Le-fonctionnement">Le fonctionnement</a></li>
+									<li><a href="/L-agglo/Les-competences">Les compÃ©tences</a></li>
+									<li><a href="/L-agglo/Adresses-et-numeros-utiles">Adresses et numÃ©ros utiles</a></li>
+									<li class="active"><strong>Documentation</strong>
+										<ul>
+											<li><a href="/L-agglo/Documentation/Dossier-Elus">Dossier Elus</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2019">Conseils Communautaires 2019</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2018">Conseils Communautaires 2018</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2017">Conseils Communautaires 2017</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2016">Conseils Communautaires 2016</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2015">Conseils Communautaires 2015</a></li>
+											<li><a href="/L-agglo/Documentation/Conseils-Communautaires-2014">Conseils Communautaires 2014</a></li>
+											<li><a href="/L-agglo/Documentation/Rapports-d-activites">Rapports d'activitÃ©s</a></li>
+											<li><a href="/L-agglo/Documentation/Les-Commissions">Les Commissions</a></li>
+											<li><a href="/L-agglo/Documentation/Autres-documents">Autres documents</a></li>
+										</ul>
+									</li>
+									<li><a href="/L-agglo/Accueils-de-proximite">Accueils de proximitÃ©</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="acces_directs" class="col-xs-12 col-sm-6 col-md-12">
+							<div class="list-group acdt1"><a class="list-group-item" href="/Culture-Loisirs-Tourisme/Les-piscines/Reservation-piscine-Vernouillet">RÃ©servation Piscine</a></div>
+							<div class="list-group acdt5"><a class="list-group-item" href="https://www.dreux-agglomeration.fr/Dechets4/Gestion-des-dechets-des-particuliers/Annuaire-des-collectes-de-dechets">Calendriers de collecte</a></div>
+							<div class="list-group acdt2"><a class="list-group-item" href="/Actualites">ActualitÃ©s</a></div>
+							<div class="list-group acdt3"><a class="list-group-item" href="/Agenda-2020">Agenda 2020</a></div>
+							<div class="list-group acdt4"><a class="list-group-item" href="/Marches-publics">MarchÃ©s publics</a></div>
+							<div class="list-group acdt5"><a class="list-group-item" href="/Enfance-Jeunesse-Famille/Famille/Portail-Famille">Portail Famille</a></div>
+						</div>
+						<div class="newsletter col-xs-12 col-sm-6 col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Lettre d'information</h3>
+								</div>
+								<div id="rn" class="panel-body">
+									<!--iframe
+			frameborder="0"
+			scrolling="no"
+			marginheight="0"
+			marginwidth="0"
+			src="https://widget.mailjet.com/58dbc34ad5619ed3b1b9839be8eb95b1c4e2a8ad.html"
+			width="250"
+			height="138"></iframe-->
+									<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/e8s/9MF" width="250" height="345"></iframe>
+								</div>
+								<div class="panel-footer"><a href="/Actualites/Newsletters">Voir toutes les lettres d'info</a></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-xs-12 col-sm-6 col-md-12">
+							<div id="video" class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">VidÃ©os</h3>
+								</div>
+								<div class="panel-body">
+									<script type="text/javascript" src="/extension/agglo_dreux/design/agglo_dreux/javascript/zoombox.js" charset="utf-8"></script>
+									<script type="text/javascript">
+						
+							$(document).ready(function() {
+								$('a.zoombox').zoombox({theme:'simple',width:800,height:500,gallery:false});
+							});
+						
+					
+									</script><a class="zoombox" href="https://www.youtube.com/watch?v=S7pOcuZAj2o"> <img class="img-responsive" src="/var/agglo_dreux/storage/images/mediatheque/enfance-jeunesse-famille/fotolia_48628429_xs/374176-2-fre-FR/Fotolia_48628429_XS_medium-large.jpg" width="250" height="141" alt=""> <h4>L'agglo du Pays de Dreux entre en scÃ¨ne</h4> </a></div>
+								<div class="panel-footer"><a href="/Videos2"> Voir toutes les vidÃ©os </a></div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-12">
+							<div id="publications" class="panel panel-default slider">
+								<div class="panel-heading">
+									<h3 class="panel-title">Publications</h3>
+								</div>
+								<div class="panel-body">
+									<ul>
+										<li><a href="/Publications/AGGLOrama-du-Pays-de-Dreux-n-23" title="AGGLOrama du Pays de Dreux nÂ°23"> <img src="/var/agglo_dreux/storage/images/mediatheque/acces-directs/archives-2020/juillet-2020/n23_juin2020_hd-1/674188-1-fre-FR/N23_JUIN2020_HD-1_small-medium.jpg" width="150" height="207" alt=""> </a></li>
+										<li><a href="/Publications/AGGLOrama-du-Pays-de-Dreux-n-222" title="AGGLOrama du Pays de Dreux nÂ°22"> <img src="/var/agglo_dreux/storage/images/mediatheque/acces-directs/archives-2020/janvier-2020/n22_janv2020_hd-1/665887-1-fre-FR/N22_JANV2020_HD-1_small-medium.jpg" width="150" height="207" alt=""> </a></li>
+										<li><a href="/Publications/AGGLOrama-du-Pays-de-Dreux-n-21" title="AGGLOrama du Pays de Dreux nÂ°21"> <img src="/var/agglo_dreux/storage/images/mediatheque/acces-directs/archives-2019/septembre-2019/n21_sept2019_p3_hd-1/653372-1-fre-FR/N21_SEPT2019_P3_HD-1_small-medium.jpg" width="150" height="207" alt=""> </a></li>
+										<li><a href="/Publications/AGGLOrama-du-Pays-de-Dreux-n-202" title="AGGLOrama du Pays de Dreux nÂ°20"> <img src="/var/agglo_dreux/storage/images/mediatheque/acces-directs/archives-2019/juin-2019/n20_juin2019_hd-1/648297-1-fre-FR/N20_JUIN2019_HD-1_small-medium.jpg" width="150" height="207" alt=""> </a></li>
+										<li><a href="/Publications/AGGLOrama-du-Pays-de-Dreux-n-19" title="AGGLOrama du Pays de Dreux nÂ°19"> <img src="/var/agglo_dreux/storage/images/mediatheque/acces-directs/archives-2019/mars-2019/n19_mars2019_hd-1/644561-1-fre-FR/N19_MARS2019_HD-1_small-medium.jpg" width="150" height="207" alt=""> </a></li>
+									</ul>
+								</div>
+								<div class="panel-footer"><a href="/Publications">Voir toutes les publications</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="agglosurnet" class="hidden-xs hidden-print slider">
+			<div class="container">
+				<h2 class="Museo-700">L'agglo sur le net</h2>
+				<ul>
+					<li><a href="http://www.ot-dreux.fr/" target="_blank" title="Office de Tourisme (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/office-de-tourisme2/401883-5-fre-FR/Office-de-tourisme.jpg" width="228" height="140" alt="Office de Tourisme (Nouvelle fenÃªtre)."> Office de Tourisme </a></li>
+					<li><a href="http://www.simplanter-a-dreux.fr/" target="_blank" title="S'implanter Ã  Dreux (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/dreux-agglomeration/401878-4-fre-FR/Dreux-Agglomeration.jpg" width="230" height="140" alt="S'implanter Ã  Dreux (Nouvelle fenÃªtre)."> S'implanter Ã  Dreux </a></li>
+					<li><a href="http://www.linead.fr/" target="_blank" title="LinÃ©ad (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/linead_nouveausite/603130-1-fre-FR/Linead_NouveauSite.jpg" width="228" height="140" alt="LinÃ©ad (Nouvelle fenÃªtre)."> LinÃ©ad </a></li>
+					<li><a href="http://www.odyssee-culture.com/" target="_blank" title="L'OdyssÃ©e (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/l-odyssee/401888-3-fre-FR/L-odyssee.jpg" width="228" height="140" alt="L'OdyssÃ©e (Nouvelle fenÃªtre)."> L'OdyssÃ©e </a></li>
+					<li><a href="http://www.latelier-a-spectacle.com" target="_blank" title="L'Atelier Ã  spectacle (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/atelier-a-spectacle/429098-3-fre-FR/Atelier-a-spectacle.jpg" width="228" height="140" alt="L'Atelier Ã  spectacle (Nouvelle fenÃªtre)."> L'Atelier Ã  spectacle </a></li>
+					<li><a href="http://aggloceane.fr/" target="_blank" title="Centre Aquatique AgglOcÃ©ane (Nouvelle fenÃªtre)."> <img src="/var/agglo_dreux/storage/images/mediatheque/liens-images/centre-aquatique/429211-2-fre-FR/Centre-aquatique.jpg" width="228" height="140" alt="Centre Aquatique AgglOcÃ©ane (Nouvelle fenÃªtre)."> Centre Aquatique AgglOcÃ©ane </a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="pied_page" class="hidden-print">
+			<div class="container">
+				<div class="row">
+					<div id="lpp" class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+						<ul role="navigation">
+							<li><a href="/L-agglomeration-recrute">L'agglo recrute</a></li>
+							<li><a href="/Credits">CrÃ©dits</a></li>
+							<li><a href="/Mentions-legales">Mentions lÃ©gales</a></li>
+							<li class=" dernier"><a href="/Contact">Nous contacter</a></li>
+						</ul>
+					</div>
+					<div id="coordonnees" class="col-lg-8 col-md-9 col-sm-9 col-xs-12">
+						<div class="row">
+							<address class="col-lg-5 col-md-5 col-sm-6 "><span class="fn org Museo-700">Agglo du Pays de Dreux</span><br>
+								<p><span class="adr"> <span class="street-address">4, rue de ChÃ¢teaudun</span><br> <span class="bp">BP 20159</span><br> <span class="postal-code">28103</span> <span class="locality">Dreux Cedex</span> <span class="country-name masquer">France</span> </span></p>
+								<p><span class="tel"><abbr title="TÃ©lÃ©phone :">TÃ©l. :</abbr> 02 37 64 82 00</span><br> <span class="tel"> <span class="type">Fax :</span> <span class="value">02 37 42 89 68</span> </span></p>
+							</address>
+							<div id="horaires" class="col-lg-7 col-md-7 col-sm-6 ">
+								<h3 class="Museo-700">Horaires</h3>
+								<p><strong>HÃ´tel d'Agglo :</strong><br> Du lundi au jeudi :Â de 09h Ã  12h et de 13h30 Ã  17h<br>Le vendredi : de 09h Ã  12h et de 13h30 Ã  16h30</p>
+								<p><strong>Services Techniques :</strong><br> Accueil tÃ©lÃ©phonique uniquement : Lundi, mardi, jeudi et vendredi<strong>Â :Â </strong>de 8h30 Ã  12h<br>Mercredi : de 8h30 Ã  12h et de 13h30 Ã  17h</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 hidden-md hidden-sm hidden-xs"><img src="/extension/agglo_dreux/design/agglo_dreux/images/contenu/logobas.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+/*
+8b8b22fe3c6061ed500fbd2b377b885f
+*/
+gaProperty = '8b8b22fe3c6061ed500fbd2b377b885f';
+
+// DÃ©sactive le tracking si le cookie dâ&#128;&#153;Opt-out existe dÃ©jÃ .
+var disableStr = 'ga-disable-' + gaProperty;
+if (document.cookie.indexOf('hasConsent=false') > -1) {window[disableStr] = true;}
+//Cette fonction retourne la date dâ&#128;&#153;expiration du cookie de consentement
+function getCookieExpireDate() {
+ var cookieTimeout = 34214400000;// Le nombre de millisecondes que font 13 mois
+ var date = new Date();
+date.setTime(date.getTime()+cookieTimeout);
+var expires = "; expires="+date.toGMTString();
+return expires;
+}
+// Cette fonction est appelÃ©e pour afficher la demande de consentement
+function askConsent(){
+    var bodytag = document.getElementsByTagName('body')[0];
+    var div = document.createElement('div');
+    div.setAttribute('id','cookie-banner');
+    div.setAttribute('width','70%');
+    // Le code HTML de la demande de consentement. Vous pouvez modifier le contenu ainsi que le style
+    div.innerHTML =  '<div style="border-color:#f8c253;border-bottom:1px solid #ccc;background:#fefbc0;color:#C09853;padding:5px 0px 5px;font-size:13px;text-align:center">En poursuivant votre navigation sur ce site, vous acceptez lâ&#128;&#153;utilisation de cookies Ã  des fins de mesure d\'audience. <a href="/cookies/infos">En savoir plus et gÃ©rer ces paramÃ¨tres <button type="button" style="float: right;font-size: 21px;font-weight: 700;line-height: 1;color: #000;text-shadow: 0 1px 0 #fff;opacity: .2;filter: alpha(opacity=20);padding: 0;cursor: pointer;background: 0;border: 0;-webkit-appearance: none;top: -2px;right: 10px;position: relative;" onclick="javascript:closeMessage()">Ã&#151;';
+    // 
+    //<a href="javascript:gaOptout()">
+    // Ajoute la banniÃ¨re juste au dÃ©but de la page
+    bodytag.insertBefore(div,bodytag.firstChild);
+    document.getElementsByTagName('body')[0].className+=' cookiebanner';
+}
+
+function closeMessage(){
+  var div = document.getElementById('cookie-banner');
+  div.style.display = 'none';    
+}
+
+
+// Retourne la chaine de caractÃ¨re correspondant Ã  nom=valeur
+function getCookie(NomDuCookie)  {
+    if (document.cookie.length > 0) {
+        begin = document.cookie.indexOf(NomDuCookie+"=");
+        if (begin != -1)  {
+            begin += NomDuCookie.length+1;
+            end = document.cookie.indexOf(";", begin);
+            if (end == -1) end = document.cookie.length;
+            return unescape(document.cookie.substring(begin, end));
+        }
+     }
+    return null;
+}
+// Fonction d'effacement des cookies
+function delCookie(name )   {
+    path = ";path=" + "/";
+    domain = ";domain=" + "."+document.location.hostname;
+    var expiration = "Thu, 01-Jan-1970 00:00:01 GMT";
+    document.cookie = name + "=" + path + domain + ";expires=" + expiration;
+}
+// Efface tous les types de cookies utilisÃ©s par Google Analytics
+function deleteAnalyticsCookies() {
+    var cookieNames = ["__utma","__utmb","__utmc","__utmz","_ga"]
+    for (var i=0; i<cookieNames.length; i++)
+        delCookie(cookieNames[i])
+}
+// La fonction d'opt-out
+function gaOptout() {
+    document.cookie = disableStr + '=true;'+ getCookieExpireDate() +' ; path=/';
+    document.cookie = 'hasConsent=false;'+ getCookieExpireDate() +' ; path=/';
+    var div = document.getElementById('cookie-banner');
+    // Ci dessous le code de la banniÃ¨re affichÃ©e une fois que l'utilisateur s'est opposÃ© au dÃ©pÃ´t
+    // Vous pouvez modifier le contenu et le style
+    if ( div!= null ) div.innerHTML = '<div style="background-color:#ffffff"> Vous vous Ãªtes opposÃ© \
+    au dÃ©pÃ´t de cookies de mesures d\'audience dans votre navigateur '
+    window[disableStr] = true;
+    deleteAnalyticsCookies();
+}
+//Ce bout de code vÃ©rifie que le consentement n'a pas dÃ©jÃ  Ã©tÃ© obtenu avant d'afficher la baniÃ©re
+var consentCookie =  getCookie('hasConsent');
+if (!consentCookie) {//L'utilisateur n'a pas encore de cookie de consentement
+ var referrer_host = document.referrer.split('/')[2];
+
+   if ( referrer_host != document.location.hostname ) { //si il vient d'un autre site
+   //on dÃ©sactive le tracking et on affiche la demande de consentement
+     window[disableStr] = true;
+     window[disableStr] = true;
+     window.onload = askConsent;
+   } else { //sinon on lui dÃ©pose un cookie
+      document.cookie = 'hasConsent=true; '+ getCookieExpireDate() +' ; path=/';
+   }
+}
+		</script>
+		<script type="text/javascript">
+				var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12468544-1']);
+  _gaq.push(['_setDomainName', 'dreux-agglomeration.fr']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+			
+		</script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	</body>
+</html>
