@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="fr"> <![endif]--><!--[if IE 7]> <html class="no-js ie7 oldie" lang="fr"> <![endif]--><!--[if IE 8]> <html class="no-js ie8 oldie" lang="fr"> <![endif]--><!--[if gt IE 8]> <!--><html class="no-js" lang="fr">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2020 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="https://www.pays-ancenis.com/">
+		<link rel="shortcut icon" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/images/favicon.ico" type="image/x-icon">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="description" content="Retrouvez tous les comptes-rendus des réunions du bureau et du conseil communautaire, recueil des actes administratifs et statuts">
+		<meta name="robots" content="index, follow">
+		<meta name="twitter:card" content="summary">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/femanager/Resources/Public/Css/Main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/FancyBox/CSS/jquery.fancybox.css?1587387689" media="screen">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/indexed_search_autocomplete/Resources/Public/Css/Indexed_search_autocomplete.css?1587387688" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/irfaq/Resources/Public/Stylesheets/styles.css?1587387688" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3temp/ws_less/styles_5ff9d9a39e591a2691a0b80f48d5c6c2930ef3d1.css?1594136455" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/font-awesome.min.css?1587387689" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/style-page.css?1594136456" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/slick.css?1587387689" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/Css/style.css" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/Fonts/font-awesome-5.0.9/web-fonts-with-css/css/fontawesome-all.css?1587387689" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/print.css?1587387689" media="print">
+		<link rel="stylesheet" type="text/css" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/JavaScript/Libs/tarteaucitron/css/tarteaucitron.css?1587387689" media="all">
+		<style type="text/css">
+/*<![CDATA[*/
+<!-- 
+/*InlineDefaultCss*/
+/* default styles for extension "tx_frontend" */
+    .ce-align-left { text-align: left; }
+    .ce-align-center { text-align: center; }
+    .ce-align-right { text-align: right; }
+
+    .ce-table td, .ce-table th { vertical-align: top; }
+
+    .ce-textpic, .ce-image, .ce-nowrap .ce-bodytext, .ce-gallery, .ce-row, .ce-uploads li, .ce-uploads div { overflow: hidden; }
+
+    .ce-left .ce-gallery, .ce-column { float: left; }
+    .ce-center .ce-outer { position: relative; float: right; right: 50%; }
+    .ce-center .ce-inner { position: relative; float: right; right: -50%; }
+    .ce-right .ce-gallery { float: right; }
+
+    .ce-gallery figure { display: table; margin: 0; }
+    .ce-gallery figcaption { display: table-caption; caption-side: bottom; }
+    .ce-gallery img { display: block; }
+    .ce-gallery iframe { border-width: 0; }
+    .ce-border img,
+    .ce-border iframe {
+        border: 2px solid #000000;
+        padding: 0px;
+    }
+
+    .ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery, .ce-above .ce-gallery {
+        margin-bottom: 10px;
+    }
+    .ce-intext.ce-right .ce-gallery { margin-left: 10px; }
+    .ce-intext.ce-left .ce-gallery { margin-right: 10px; }
+    .ce-below .ce-gallery { margin-top: 10px; }
+
+    .ce-column { margin-right: 10px; }
+    .ce-column:last-child { margin-right: 0; }
+
+    .ce-row { margin-bottom: 10px; }
+    .ce-row:last-child { margin-bottom: 0; }
+
+    .ce-above .ce-bodytext { clear: both; }
+
+    .ce-intext.ce-left ol, .ce-intext.ce-left ul { padding-left: 40px; overflow: auto; }
+
+    /* Headline */
+    .ce-headline-left { text-align: left; }
+    .ce-headline-center { text-align: center; }
+    .ce-headline-right { text-align: right; }
+
+    /* Uploads */
+    .ce-uploads { margin: 0; padding: 0; }
+    .ce-uploads li { list-style: none outside none; margin: 1em 0; }
+    .ce-uploads img { float: left; padding-right: 1em; vertical-align: top; }
+    .ce-uploads span { display: block; }
+
+    /* Table */
+    .ce-table { width: 100%; max-width: 100%; }
+    .ce-table th, .ce-table td { padding: 0.5em 0.75em; vertical-align: top; }
+    .ce-table thead th { border-bottom: 2px solid #dadada; }
+    .ce-table th, .ce-table td { border-top: 1px solid #dadada; }
+    .ce-table-striped tbody tr:nth-of-type(odd) { background-color: rgba(0,0,0,.05); }
+    .ce-table-bordered th, .ce-table-bordered td { border: 1px solid #dadada; }
+
+    /* Space */
+    .frame-space-before-extra-small { margin-top: 1em; }
+    .frame-space-before-small { margin-top: 2em; }
+    .frame-space-before-medium { margin-top: 3em; }
+    .frame-space-before-large { margin-top: 4em; }
+    .frame-space-before-extra-large { margin-top: 5em; }
+    .frame-space-after-extra-small { margin-bottom: 1em; }
+    .frame-space-after-small { margin-bottom: 2em; }
+    .frame-space-after-medium { margin-bottom: 3em; }
+    .frame-space-after-large { margin-bottom: 4em; }
+    .frame-space-after-extra-large { margin-bottom: 5em; }
+
+    /* Frame */
+    .frame-ruler-before:before { content: ''; display: block; border-top: 1px solid rgba(0,0,0,0.25); margin-bottom: 2em; }
+    .frame-ruler-after:after { content: ''; display: block; border-bottom: 1px solid rgba(0,0,0,0.25); margin-top: 2em; }
+    .frame-indent { margin-left: 15%; margin-right: 15%; }
+    .frame-indent-left { margin-left: 33%; }
+    .frame-indent-right { margin-right: 33%; }
+/* default styles for extension "tx_eannuaires" */
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-e-annuaires table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-e-annuaires table th {
+		font-weight:bold;
+	}
+
+	.tx-e-annuaires table td {
+		vertical-align:top;
+	}
+
+/*additionalTSFEInlineStyle*/
+
+#nbComment {
+    position: relative;
+    border-bottom: 1px solid #000;
+    display: block;
+    height: 22px;
+}
+-->
+/*]]>*/
+		</style>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/ajax-googleapis-2.1.4-jquery.min.js?1587387689" type="text/javascript"></script>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/headerJs.js?1587387689" type="text/javascript"></script>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/JavaScript/Libs/tarteaucitron/tarteaucitron.js?1587462116" type="text/javascript"></script>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/JavaScript/Libs/jquery-2.2.0.min.js?1587387689" type="text/javascript"></script>
+		<script src="https://www.pays-ancenis.com/typo3temp/assets/js/62b8391210.js?1587389194" type="text/javascript"></script>
+		<title>Décisions des élus | COMPA</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/jquery-ui.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+		<meta name="msapplication-config" content="none">
+		<link href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/images/favicon.ico" rel="apple-touch-icon">
+		<link href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/images/favicon.ico" rel="apple-touch-icon-precomposed">
+		<link href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/fonts-googleapis-family=Roboto.css" rel="stylesheet" type="text/css">
+		<!--[if lt IE 9]>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/html5shiv.min.js"></script>
+		<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/respond.min.js"></script>
+    <![endif]-->
+		<noscript>
+			<link rel="stylesheet" href="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/css/no-js.css" type="text/css">
+		</noscript>
+		<link rel="canonical" href="/compa/elus-et-decisions/decisions-des-elus">
+		<link rel="canonical" href="https://www.pays-ancenis.com/compa/elus-et-decisions/decisions-des-elus">
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ3Z3F8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<!--[if lt IE 8]>
+        <div class="update-browser">Pensez à <a href="http://browsehappy.com/">mettre à jour</a> votre navigateur.</div>
+    <![endif]-->
+		<!-- #COOKIES Begin -->
+		<!-- <div class="color-orange">
+        <div class="cnil">
+            
+<div id="c15653" class="frame frame-default frame-type-textpic frame-layout-0"><div class="ce-textpic ce-right ce-intext"><div class="ce-bodytext"><p class="align-center">En poursuivant votre navigation sans modifier vos paramètres, vous acceptez l'utilisation des cookies pour améliorer le fonctionnement de notre site.<br /> Pour gérer et modifier ces paramètres, <a href="/en-savoir-plus-sur-les-cookies" title="Opens internal link in current window" class="internal-link">cliquez ici</a></p></div></div></div>
+
+
+            <a href="#" class="close">x</a>
+        </div>
+    </div> -->
+		<!-- #COOKIES End -->
+		<!-- <div class="th-grisf site o1-rouge o2-rosef o3-bleu o4-bleuv o5-violet sf-grisf ag-gris s-orange"> -->
+		<div class="o-orange color-orange">
+			<header role="banner" class="header h-gris-clair clearfix" id="main-header">
+				<div class="th-gris-1">
+					<div class="top-h">
+						<div class="center">
+							<div id="lang">
+								<ul>
+									<li class="active" title="Version française - langue active"><span>FR</span></li>
+									<li><a href="https://www.pays-ancenis.com/" title="Translate into English">EN</a></li>
+									<li><a href="https://www.pays-ancenis.com/" title="Übersetzen auf Deutsch">DE</a></li>
+								</ul>
+							</div>
+							<div id="marche">
+								<ul>
+									<li><a href="/compa/marches-publics">Marchés publics</a></li>
+									<li><a href="/compa/offres-demploi-de-la-compa">Offres d'emploi de la COMPA</a></li>
+								</ul>
+							</div>
+							<div id="top-menu">
+								<ul>
+									<li><a href="#" class="nos-sites">nos sites</a></li>
+									<!-- 
+                            <li>
+                                <a href="#" class="top-menu-picture-partager">partager</a>
+                            </li> -->
+								</ul>
+							</div>
+							<div id="recherche">
+								<div class="tx-solr-searchbox">
+									<form method="post" id="tx_indexedsearch" action="/recherche?tx_indexedsearch_pi2%5Baction%5D=search&tx_indexedsearch_pi2%5Bcontroller%5D=Search&cHash=e767490abd542520ef192423fc194ab0" _lpchecked="1">
+										<div><input type="hidden" name="tx_indexedsearch_pi2[__referrer][@extension]" value="IndexedSearch"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@vendor]" value="TYPO3\CMS"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@controller]" value="Search"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@action]" value="search"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][arguments]" value="YToyOntzOjY6ImFjdGlvbiI7czo2OiJzZWFyY2giO3M6MTA6ImNvbnRyb2xsZXIiO3M6NjoiU2VhcmNoIjt9ad2bf6ae4b777dfad0a0c5b3bc1f9b861b683bdb"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@request]" value='a:4:{s:10:"@extension";s:13:"IndexedSearch";s:11:"@controller";s:6:"Search";s:7:"@action";s:6:"search";s:7:"@vendor";s:9:"TYPO3\CMS";}58d088c98ea7afd5909f9cee3583909eee957fdb'> <input type="hidden" name="tx_indexedsearch_pi2[__trustedProperties]" value='a:1:{s:6:"search";a:15:{s:9:"_sections";i:1;s:13:"_freeIndexUid";i:1;s:7:"pointer";i:1;s:3:"ext";i:1;s:10:"searchType";i:1;s:14:"defaultOperand";i:1;s:9:"mediaType";i:1;s:9:"sortOrder";i:1;s:5:"group";i:1;s:11:"languageUid";i:1;s:4:"desc";i:1;s:15:"numberOfResults";i:1;s:14:"extendedSearch";i:1;s:5:"sword";i:1;s:12:"submitButton";i:1;}}88610827108e538e29097f9a6c4a7d6b87d86eb7'></div>
+										<div class="tx-indexedsearch-hidden-fields"><input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0"> <input id="tx_indexedsearch_freeIndexUid" type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_"> <input id="tx_indexedsearch_pointer" type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][searchType]" value="1"> <input type="hidden" name="tx_indexedsearch_pi2[search][defaultOperand]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[search][mediaType]" value="-1"> <input type="hidden" name="tx_indexedsearch_pi2[search][sortOrder]" value="rank_flag"> <input type="hidden" name="tx_indexedsearch_pi2[search][group]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[search][desc]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][numberOfResults]" value="10"> <input type="hidden" name="tx_indexedsearch_pi2[search][extendedSearch]" value=""></div>
+										<fieldset><label for="tx-indexedsearch-searchbox-sword">Rechercher</label> <input class="header-tx-indexedsearch-searchbox-sword indexed-search-autocomplete-sword" id="header-tx-indexedsearch-searchbox-sword" type="text" name="tx_indexedsearch_pi2[search][sword]">
+											<div class="search-autocomplete-results no-results" data-mode="word" data-searchonclick="false" data-maxresults="10" data-minlength="2" data-searchurl="/recherche?no_cache=1&tx_indexedsearchautocomplete_pi2%5Baction%5D=search&tx_indexedsearchautocomplete_pi2%5Bcontroller%5D=Search&type=7423794&cHash=575a4461ad6d841c48999b0fc8e41f67" style="display: none;"></div><input class="header-tx-indexedsearch-searchbox-button" id="tx-indexedsearch-searchbox-button-submit" type="submit" value="Rechercher" name="tx_indexedsearch_pi2[search][submitButton]"></fieldset>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="map-sites">
+						<div>
+							<div id="c5437" class="frame frame-default frame-type-list frame-layout-0">
+								<div class="tx-e-annuaires">
+									<div class="carto-sites">
+										<div id="image_map"><img id="Map" src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/images/carte/map-transparent.png" alt="" usemap="#Map"></div><map name="Map" id="Map"><area alt="" title="Oudon" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/oudon/" shape="poly" coords="246,560,266,553,273,544,279,544,309,527,314,530,356,532,368,537,398,536,399,540,393,548,406,564,414,568,420,571,419,576,398,577,384,586,376,589,355,596,337,596,323,594,304,596,294,598,274,609,274,604,276,598,248,574" onmouseover="change_image('Oudon')" onmouseout="hide_image();"><area alt="" title="Cellier (Le)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/le-cellier/" shape="poly" coords="230,640,196,673,194,671,195,668,185,657,178,655,174,657,162,658,157,651,151,652,144,643,140,642,140,628,138,626,137,622,140,617,138,609,134,608,133,583,154,552,160,539,166,521,181,521,184,529,198,539,205,551,226,536,238,549,238,554,244,557,249,571,267,588,276,599,274,604,275,609,267,612,265,623,260,629,251,636,237,639" onmouseover="change_image('Cellier (Le)')" onmouseout="hide_image();"><area alt="" title="Saint-Géréon" href="http://www.pays-ancenis.com/fr/compa/le-territoire/les-communes/saint-gereon/" shape="poly" coords="399,496,405,502,415,506,414,502,418,500,428,503,435,512,433,516,456,532,456,543,460,543,460,546,457,546,450,558,435,562,434,567,431,572,422,572,409,568,395,549,400,542,396,527,400,520,395,509" onmouseover="change_image('Saint-Géréon')" onmouseout="hide_image();"><area alt="" title="Ancenis-Saint-Géréon" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ancenis-saint-gereon/" shape="poly" coords="397,578,409,582,416,579,422,580,422,582,430,583,438,578,442,580,457,576,467,564,466,561,486,548,502,549,520,544,521,547,529,548,530,546,541,548,564,549,577,546,577,542,564,538,552,541,550,539,541,537,538,539,518,534,502,542,485,540,487,532,484,524,484,518,490,517,489,493,487,477,491,476,493,468,493,462,492,456,493,450,489,443,482,449,452,449,442,449,439,452,445,456,445,459,435,466,434,475,402,485,398,483,394,486,397,492,401,496,404,500,414,505,413,502,418,499,427,502,435,512,433,516,454,532,455,540,460,541,461,546,458,546,451,557,436,562,434,567,431,570,423,572,419,575,411,574" onmouseover="change_image('Ancenis-Saint-Géréon')" onmouseout="hide_image();"><area alt="" title="Joué-sur-Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/joue-sur-erdre/" shape="poly" coords="1,230,49,234,51,252,55,256,57,258,55,261,51,262,46,274,35,278,32,280,34,283,37,284,35,296,45,295,55,297,69,295,88,276,121,286,130,286,132,290,137,288,162,295,173,282,175,261,177,258,185,262,191,252,187,230,191,227,193,219,199,219,201,210,220,200,226,186,211,172,206,171,187,162,186,164,178,159,154,163,153,169,110,151,101,154,101,160,86,162,67,171,59,171,51,175,42,177,32,182,33,187,15,198,6,200,9,205,0,211" onmouseover="change_image('Joué-sur-Erdre')" onmouseout="hide_image();"><area alt="" title="Pin (Le)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/le-pin/" shape="poly" coords="602,120,589,123,570,110,544,109,535,107,514,104,505,105,485,95,482,83,470,78,473,75,474,71,479,69,483,56,482,51,490,51,500,27,497,23,501,14,533,10,538,12,554,2,573,4,578,20,584,23,581,58,569,101,600,103,601,108" onmouseover="change_image('Pin (Le)')" onmouseout="hide_image();"><area alt="" title="Roche-Blanche (La)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/la-roche-blanche/" shape="poly" coords="560,361,562,373,569,373,573,378,568,382,569,384,574,385,575,391,570,393,569,401,566,403,562,408,559,406,551,414,552,420,541,424,535,433,529,436,526,435,521,439,515,438,506,448,503,450,503,455,491,457,493,452,487,440,490,437,490,432,487,429,494,427,491,416,487,413,483,403,494,391,493,387,495,384,495,379,499,370,506,369,511,356,516,356,515,352,521,348,526,351,539,349,542,351,554,355" onmouseover="change_image('Roche-Blanche (La)')" onmouseout="hide_image();"><area alt="" title="Pouillé-Les-Côteaux" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/pouille-les-coteaux/" shape="poly" coords="414,316,429,335,453,345,462,344,480,355,491,379,494,380,501,371,508,369,511,358,517,356,515,351,522,348,526,339,522,335,525,329,522,321,525,315,519,301,521,286,512,287,506,289,499,297,492,299,488,305,468,312,463,313,454,313,446,320,437,317,433,312,429,312,424,314,420,317" onmouseover="change_image('Pouillé-Les-Côteaux')" onmouseout="hide_image();"><area alt="" title="Mésanger" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/mesanger/" shape="poly" coords="380,348,405,342,414,341,419,327,426,334,453,346,465,344,479,355,490,378,495,380,495,383,491,386,494,391,483,404,485,413,491,415,493,427,486,429,490,433,489,437,489,440,489,443,481,449,455,451,442,450,438,454,445,456,445,459,434,467,433,477,403,485,397,484,393,487,330,444,309,441,296,427,300,425,303,408,308,408,310,396,306,395,308,385,326,385,329,379,353,382,362,374,390,367" onmouseover="change_image('Mésanger')" onmouseout="hide_image();"><area alt="" title="Couffé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/couffe/" shape="poly" coords="394,487,330,442,310,441,297,427,295,436,278,427,269,430,259,425,247,426,243,431,238,433,238,441,251,443,249,457,235,453,229,464,233,468,231,497,227,500,225,513,230,532,227,536,239,548,238,555,245,557,247,565,249,561,255,556,267,553,273,545,281,547,306,527,314,531,353,532,370,540,399,537,396,528,400,521,395,508,400,498" onmouseover="change_image('Couffé')" onmouseout="hide_image();"><area alt="" title="Vair-sur-Loire" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/vair-sur-loire/" shape="poly" coords="637,546,629,544,618,543,603,545,593,547,587,551,566,552,565,550,577,546,577,542,564,538,551,542,549,540,544,537,540,540,519,534,503,541,485,540,487,531,483,524,485,519,490,518,490,491,486,476,492,475,494,462,491,456,502,455,502,450,508,447,516,437,520,437,526,434,530,435,533,434,539,423,549,421,551,412,559,406,562,407,565,402,584,398,592,403,604,405,623,420,635,422,640,429,646,429,659,425,663,429,658,433,651,468,646,469,641,479,638,478,634,479,638,489,635,490,636,495,630,507,633,510,638,521,635,527" onmouseover="change_image('Vair-sur-Loire')" onmouseout="hide_image();"><area alt="" title="Loireauxence" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/loireauxence/" shape="poly" coords="711,560,693,557,686,558,664,558,638,544,636,530,638,520,634,510,630,508,635,497,636,491,638,490,635,480,637,479,639,480,646,471,649,470,657,434,663,430,658,426,647,429,642,429,638,422,624,420,605,405,594,402,585,399,568,401,570,394,575,390,574,385,570,384,570,382,572,376,567,372,582,358,582,353,601,324,605,322,608,315,609,311,607,309,613,308,617,311,628,310,627,294,629,284,631,278,635,273,633,267,638,259,649,261,653,259,678,256,691,260,697,267,707,268,710,278,722,291,739,295,746,291,760,292,760,295,775,294,783,288,792,289,801,313,797,315,788,324,788,341,797,353,797,363,808,377,806,389,807,418,813,432,811,441,807,439,796,440,793,445,774,435,769,437,768,441,764,442,756,431,750,431,744,426,744,447,738,450,742,460,745,465,742,471,745,482,749,492,754,498,755,508,760,513,769,515,770,528,766,528,762,536,762,540,779,540,772,549,751,549,747,545,742,545,738,553,725,552" onmouseover="change_image('Loireauxence')" onmouseout="hide_image();"><area alt="" title="Ingrandes-le-Fresne-sur-Loire" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ingrandes-le-fresne-sur-loire/" shape="poly" coords="819,527,837,514,848,498,846,494,858,490,854,483,854,480,866,476,873,473,875,469,881,472,884,471,886,468,885,463,887,456,883,451,883,447,872,439,861,437,854,436,842,434,828,442,819,449,815,448,811,443,803,438,798,442,794,446,798,459,799,466,807,473,809,481,807,483,811,498,806,503,806,512,811,518,815,515,822,514,824,515,816,524" onmouseover="change_image('Ingrandes-le-Fresne-sur-Loire')" onmouseout="hide_image();"><area alt="" title="Ligné" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ligne/" shape="poly" coords="198,412,211,413,229,426,247,427,243,433,237,433,238,440,251,443,249,457,235,454,229,463,233,469,233,495,229,500,225,515,229,531,206,552,199,539,187,532,181,520,167,523,159,543,139,529,136,530,123,517,112,515,108,507,102,505,99,504,107,480,121,466,120,463,118,461,119,459,123,457,117,444,120,439,103,431,108,420,106,411,108,399,117,395,135,404,157,396,165,398,169,391,170,388,169,385,181,379,180,372,185,363,198,362,204,378,217,376" onmouseover="change_image('Ligné')" onmouseout="hide_image();"><area alt="" title="Mouzeil" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/mouzeil/" shape="poly" coords="235,317,242,325,257,328,259,340,253,349,257,352,274,355,273,372,289,383,297,377,305,379,306,383,306,394,310,395,307,406,302,407,300,423,296,427,297,434,279,426,269,430,261,426,229,426,211,412,199,412,200,407,215,388,215,382,218,375,217,363,210,362,206,350,220,346,222,339,217,336,210,326,213,322,214,324,220,322,227,323" onmouseover="change_image('Mouzeil')" onmouseout="hide_image();"><area alt="" title="Teillé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/teille/" shape="poly" coords="261,272,271,270,277,273,301,271,308,275,318,277,318,271,326,268,337,273,343,295,372,303,378,316,383,316,383,319,377,325,380,337,378,340,390,367,365,374,354,381,328,379,326,385,307,385,306,379,299,379,289,385,273,375,273,357,259,355,255,350,258,344,257,329,258,325,263,320,274,301,267,296,267,286" onmouseover="change_image('Teillé')" onmouseout="hide_image();"><area alt="" title="Pannecé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/pannece/" shape="poly" coords="336,273,344,295,371,302,379,315,384,316,384,319,377,324,380,336,377,339,381,348,402,342,415,340,421,324,415,317,424,315,427,313,433,313,435,316,445,319,455,314,461,316,466,312,484,308,487,307,491,300,498,299,503,289,512,287,515,269,515,250,507,252,501,247,488,247,486,248,481,249,473,247,458,250,438,245,394,238,384,240,378,252,365,252,351,261,346,260,343,268,339,268" onmouseover="change_image('Pannecé')" onmouseout="hide_image();"><area alt="" title="Riaillé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/riaille/" shape="poly" coords="225,138,226,149,225,153,201,159,198,164,201,170,209,171,225,186,222,199,208,206,210,208,210,212,223,220,216,244,210,247,211,253,226,249,233,259,225,277,233,283,243,279,249,279,254,271,270,269,279,271,302,269,315,276,319,271,327,267,336,272,339,268,343,268,346,259,352,259,362,252,377,252,382,240,380,236,373,236,359,231,356,223,347,220,347,211,354,209,356,200,348,195,349,183,373,162,363,157,363,152,345,138,324,141,315,147,298,140,290,142,275,135,242,129,242,123,229,120,222,124" onmouseover="change_image('Riaillé')" onmouseout="hide_image();"><area alt="" title="Trans-sur-Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/trans-sur-erdre/" shape="poly" coords="209,207,211,209,211,214,223,222,216,247,211,248,211,255,227,251,234,260,224,279,234,284,243,279,250,280,253,272,261,270,260,276,266,285,267,296,275,300,266,320,257,325,257,329,245,326,235,319,232,323,223,324,217,325,213,321,210,327,214,336,223,336,221,349,205,351,201,344,192,344,174,344,174,341,151,330,151,324,149,315,147,314,151,308,150,306,151,303,154,297,154,293,161,296,173,281,175,264,179,259,186,263,192,253,187,229,192,228,193,220,198,217,199,211" onmouseover="change_image('Trans-sur-Erdre')" onmouseout="hide_image();"><area alt="" title="Vallons-de-l'Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/vallons-de-lerdre/" shape="poly" coords="574,5,578,2,589,5,596,1,608,2,618,10,618,24,634,28,636,33,665,42,665,47,682,48,684,44,701,47,701,51,712,54,723,59,722,64,733,66,735,65,739,75,723,92,723,103,693,114,690,114,685,120,689,126,686,130,666,124,671,139,671,143,659,143,661,155,671,154,674,164,691,160,690,170,687,173,692,187,688,193,688,203,688,213,683,216,683,222,676,240,678,255,655,259,651,261,639,258,633,264,635,273,628,279,626,287,626,308,616,310,612,307,607,307,609,313,605,322,601,322,581,351,581,359,568,372,563,372,561,359,553,351,544,351,542,348,524,348,522,346,527,338,523,333,525,328,523,320,527,316,527,312,521,300,523,286,514,284,519,270,516,249,508,249,502,244,487,245,485,247,478,247,473,244,454,249,437,244,393,237,384,239,381,235,370,235,359,231,357,221,349,218,346,210,355,209,356,200,349,195,349,182,375,160,363,155,363,149,346,138,344,131,353,120,360,120,366,105,366,86,380,86,386,63,379,55,382,48,396,45,406,50,411,47,413,50,413,53,428,57,434,55,437,57,436,62,447,60,456,68,473,69,474,72,468,76,480,82,482,93,500,102,535,105,542,110,570,110,587,122,605,121,602,115,604,108,600,101,571,101,582,59,585,22,577,18" onmouseover="change_image('Vallons-de-l'Erdre')" onmouseout="hide_image();"><area alt="" title="Nantes" href="" shape="poly" coords="29 Rue de Strasbourg, 44000 Nantes" onmouseover="change_image('Nantes')" onmouseout="hide_image();"><area alt="" title="Orée d'Anjou ( La Varenne)" href="https://www.oreedanjou.fr/site-de-mairie-doree-danjou/bienvenu-a-la-varenne/" shape="poly" coords="Mairie annexe de La Varenne (Orée d'Anjou)
+16 Route d'Anjou, 49270 La Varenne" onmouseover="change_image('Orée d'Anjou ( La Varenne)')" onmouseout="hide_image();"><area alt="" title="Mauves-sur-Loire" href="www.mauvessurloire.fr" shape="poly" coords="7 Rue du Carteron
+44470 Mauves-sur-Loire" onmouseover="change_image('Mauves-sur-Loire')" onmouseout="hide_image();"><area alt="" title="Mauges-sur-Loire (Montjean-sur-Loire)" href="https://www.mauges-sur-loire.fr%20%E2%80%BA%20Montjean-sur-Loire" shape="poly" coords="Mairie annexe de Montjean-sur-Loire - MAUGES-SUR-LOIRE
+15 Rue du Pilori, 49570 Montjean-sur-Loire, France" onmouseover="change_image('Mauges-sur-Loire (Montjean-sur-Loire)')" onmouseout="hide_image();"><area alt="" title="Nort-sur-Erdre" href="http://www.nort-sur-erdre.fr/" shape="poly" coords="30 rue Aristide Briand
+44390 Nort-sur-Erdre
+02 51 12 00 70" onmouseover="change_image('Nort-sur-Erdre')" onmouseout="hide_image();"><area alt="" title="Montrelais" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/montrelais/" shape="poly" coords="19, rue de l’Abbaye 44370 MONTRELAIS" onmouseover="change_image('Montrelais')" onmouseout="hide_image();"><area alt="" title="Candé" href="http://www.sic-candeen.fr/listes/cande/" shape="poly" coords="4 Rue de l'Hôtel de Ville 49440 Candé" onmouseover="change_image('Candé')" onmouseout="hide_image();"></map></div>
+									<div class="carto-sites-mobile"><a title="accéder au site Oudon" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/oudon/">Oudon</a><a title="accéder au site Cellier (Le)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/le-cellier/">Cellier (Le)</a><a title="accéder au site Saint-Géréon" href="http://www.pays-ancenis.com/fr/compa/le-territoire/les-communes/saint-gereon/">Saint-Géréon</a><a title="accéder au site Ancenis-Saint-Géréon" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ancenis-saint-gereon/">Ancenis-Saint-Géréon</a><a title="accéder au site Joué-sur-Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/joue-sur-erdre/">Joué-sur-Erdre</a><a title="accéder au site Pin (Le)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/le-pin/">Pin (Le)</a><a title="accéder au site Roche-Blanche (La)" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/la-roche-blanche/">Roche-Blanche (La)</a><a title="accéder au site Pouillé-Les-Côteaux" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/pouille-les-coteaux/">Pouillé-Les-Côteaux</a><a title="accéder au site Mésanger" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/mesanger/">Mésanger</a><a title="accéder au site Couffé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/couffe/">Couffé</a><a title="accéder au site Vair-sur-Loire" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/vair-sur-loire/">Vair-sur-Loire</a><a title="accéder au site Loireauxence" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/loireauxence/">Loireauxence</a><a title="accéder au site Ingrandes-le-Fresne-sur-Loire" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ingrandes-le-fresne-sur-loire/">Ingrandes-le-Fresne-sur-Loire</a><a title="accéder au site Ligné" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/ligne/">Ligné</a><a title="accéder au site Mouzeil" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/mouzeil/">Mouzeil</a><a title="accéder au site Teillé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/teille/">Teillé</a><a title="accéder au site Pannecé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/pannece/">Pannecé</a><a title="accéder au site Riaillé" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/riaille/">Riaillé</a><a title="accéder au site Trans-sur-Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/trans-sur-erdre/">Trans-sur-Erdre</a><a title="accéder au site Vallons-de-l'Erdre" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/vallons-de-lerdre/">Vallons-de-l'Erdre</a><a title="accéder au site Nantes" href="">Nantes</a><a title="accéder au site Orée d'Anjou ( La Varenne)" href="https://www.oreedanjou.fr/site-de-mairie-doree-danjou/bienvenu-a-la-varenne/">Orée d'Anjou ( La Varenne)</a><a title="accéder au site Mauves-sur-Loire" href="www.mauvessurloire.fr">Mauves-sur-Loire</a><a title="accéder au site Mauges-sur-Loire (Montjean-sur-Loire)" href="https://www.mauges-sur-loire.fr%20%E2%80%BA%20Montjean-sur-Loire">Mauges-sur-Loire (Montjean-sur-Loire)</a><a title="accéder au site Nort-sur-Erdre" href="http://www.nort-sur-erdre.fr/">Nort-sur-Erdre</a><a title="accéder au site Orée d'Anjou (Drain)" href="https://www.oreedanjou.fr/site-de-mairie-doree-danjou/bienvenu-a-drain/">Orée d'Anjou (Drain)</a><a title="accéder au site Non indiqué" href="">Non indiqué</a><a title="accéder au site Montrelais" href="https://www.pays-ancenis.com/compa/le-territoire/les-communes/montrelais/">Montrelais</a><a title="accéder au site Candé" href="http://www.sic-candeen.fr/listes/cande/">Candé</a><a title="accéder au site Orée d'Anjou (Champtoceaux)" href="">Orée d'Anjou (Champtoceaux)</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sub-header clearfix">
+					<div id="sub-header-contenu" class="clearfix">
+						<div class="sub-header-col-1 clear">
+							<div id="home"><a href=""><img src="https://www.pays-ancenis.com/fileadmin/user_upload/Logos/COMPA-quadri-100.png" maxwidth="140c" alt=""></a></div>
+							<div class="cadreTitle"><span class="title"> Site officiel de la COMPA - Communauté de Communes du Pays d’Ancenis</span></div>
+						</div>
+						<div class="sub-header-col-wrapper">
+							<div id="sub-header-nav">
+								<div class="sub-header-col-2">
+									<div class="sub-header-center">
+										<div class="menu menu-secondaire">
+											<ul>
+												<li id="etre"><a href="#">Vous êtes</a>
+													<div class="sub-etre">
+														<div class="center">
+															<div class="close clearfix"><a href="#"> Fermer</a></div>
+															<div class="sub-diapo">
+																<ul>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/8/9/csm_jeune_ef8bb6050c.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=170&cHash=e3a0178cc49604b6be47a6cf06f0959f">Jeune</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/0/7/csm_famille_48d85ccaa3.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=171&cHash=54f648167ece5b5fa8bb7b9f19e632db">Une famille</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/2/b/csm_senior_d5cc41dff3.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=172&cHash=304bede24cb455e19195b491ba435d3d">Senior</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/8/9/csm_entreprise_33f95c79ab.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=173&cHash=5ac5838ce9705a31a2acaa8f756b2602">Une entreprise</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/4/c/csm_partenaire_8d12ef7e71.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=174&cHash=78ecae5d1edf7906c9719ae281dbae05">Un actif</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/1/d/csm_handicap_a930a675b0.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=175&cHash=fd06e26bb0e674fd42124d685de828a2">En situation de handicap</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/4/c/csm_partenaire_8d12ef7e71.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=176&cHash=b8d8421df72f227853221dfe86d3b3b2">Un partenaire</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/8/9/csm_jeune_ef8bb6050c.png"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=177&cHash=8a5ca3f4d6bcf0daf9f92ec16da2f074">Une association</a></div>
+																	</li>
+																	<li>
+																		<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/f/e/csm_professeur-enseignant_41549cf23e.jpg"></figure>
+																		<div class="info-center"><a href="/vous-etes?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=1047&cHash=eac0a95e853572083be7a88ad716b5f2">Un enseignant</a></div>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<li id="souhait"><a href="#">Vous souhaitez</a>
+															<div class="sub-souhait">
+																<div class="center">
+																	<div class="close clearfix"><a href="#"> Fermer</a></div>
+																	<div class="sub-diapo">
+																		<ul>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/0/7/csm_demenager_485d3562ae.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=184&cHash=00951ae3874b85140869a9be0a56cbf6">Déménager ou emménager au Pays d'Ancenis</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/8/9/csm_jeune_ef8bb6050c.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=185&cHash=f4d12c1407c4b2dffb70392db3ca9c26">Inscrire mes enfants aux transports scolaires</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/f/c/csm_emploi_402dc962c2.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=186&cHash=01636c774a63a3be9bd8871be5aa7083">Trouver un stage ou un emploi</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/4/6/csm_emmenager_f6735b41ce.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=187&cHash=507d4113ac2cbba3f06731d4ea8e9887">Créer ou reprendre une entreprise</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/f/4/csm_parents_f03043eefc.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=188&cHash=721b91595ea56b43418bb4cf2a84da8a">Accompagner mes parents</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/8/9/csm_entreprise_33f95c79ab.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=189&cHash=1f7ea27ad78a6e035cdf1160e8d88da2">Faire des économies</a></div>
+																			</li>
+																			<li>
+																				<figure><img src="https://www.pays-ancenis.com/fileadmin/_processed_/1/d/csm_handicap_a930a675b0.png"></figure>
+																				<div class="info-center"><a href="/vous-souhaitez?tx_news_pi1%5BoverwriteDemand%5D%5Bcategories%5D=192&cHash=219d139a2f9eb74a2ac03e165eedcf8f">Faire partie d'une association</a></div>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</div>
+													<div id="toggle-menu"><span class="top"></span> <span class="middle"></span> <span class="bottom"></span></div>
+													<div class="main-menu o-orange-1 o-rouge-2-2 o-bleu-1-3 o-vert-1-4 o-mauve-5">
+														<ul class="niveau1">
+															<li><a href="/compa">COMPA</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Le territoire</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/le-territoire/chiffres-cles">Chiffres clés</a></li>
+																						<li><a href="/compa/le-territoire">Le territoire</a></li>
+																						<li><a href="/compa/le-territoire/les-communes">Les communes</a></li>
+																						<li><a href="/compa/le-territoire/cartcompa">Cart@compa</a></li>
+																						<li><a href="/compa/le-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">La COMPA</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/historique">Historique</a></li>
+																						<li><a href="/compa/offres-demploi-de-la-compa">Offres d'emploi de la COMPA</a></li>
+																						<li><a href="/compa/marches-publics">Marchés publics</a></li>
+																						<li><a href="/le-kiosque-de-la-compa">Nos publications</a></li>
+																						<li><a href="https://data.loire-atlantique.fr/explore/?q=COMPA&disjunctive.theme&disjunctive.diffuseur&disjunctive.publisher&disjunctive.gestionnaire&disjunctive.keyword&disjunctive.license&disjunctive.features&source=shared&sort=modified&refine.publisher=COMPA">Nos données publiques</a></li>
+																						<li><a href="/compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Elus et décisions</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/elus-et-decisions/decisions-des-elus">Décisions des élus</a></li>
+																						<li><a href="/compa/elus-et-decisions/fonctionnement">Fonctionnement</a></li>
+																						<li><a href="/compa/elus-et-decisions/les-commissions">Les commissions</a></li>
+																						<li><a href="/compa/elus-et-decisions">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Les services</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/les-services/direction-generale">Direction générale</a></li>
+																						<li><a href="/compa/les-services/pole-amenagement-du-territoire">Pôle Aménagement du territoire</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Pôle Développement économique</a></li>
+																						<li><a href="/compa/les-services">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Finances</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/finances/le-budget">Le Budget</a></li>
+																						<li><a href="/compa/finances/les-ressources-financieres">Les ressources financières</a></li>
+																						<li><a href="/compa/finances/les-emprunts">Les emprunts</a></li>
+																						<li><a href="/compa/finances/les-reversements-aux-communes">Les reversements aux communes</a></li>
+																						<li><a href="/compa/finances">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos Partenaires</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/nos-partenaires/conseil-de-developpement">Conseil de Développement</a></li>
+																						<li><a href="http://www.missionlocalepaysancenis.fr">Mission Locale du Pays d’Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire/boutique-et-troc/trocantons">Trocantons</a></li>
+																						<li><a href="/compa/nos-partenaires">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/nos-actions">Nos actions</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos projets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/nos-projets/projet-de-creation-dun-parc-photovoltaique">Projet de création d'une centrale photovoltaïque</a></li>
+																						<li><a href="/nos-actions/nos-projets/demarche-dattractivite-territoriale">Démarche d'attractivité territoriale</a></li>
+																						<li><a href="/nos-actions/nos-projets/programme-de-travaux-sur-les-cours-deau">Programme de travaux sur les cours d'eau</a></li>
+																						<li><a href="/nos-actions/nos-projets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Politiques territoriales</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/politiques-territoriales/projet-de-territoire">Projet de territoire</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/leader-2014-2020">Leader 2014-2020</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/fonds-de-concours-territorial">Fonds de concours territorial</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Aménagement du territoire et cadres de vie</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/amenagement-du-territoire/transport-et-mobilite">Transport et mobilité</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/habitat-et-logement">Habitat et logement</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/autorisation-du-droit-des-sols-ads">Autorisation du Droit des Sols (ADS)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/schema-de-coherence-territoriale-scot">Schéma de Cohérence territoriale (SCOT)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développement économique</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/developpement-economique/amenager-un-espace-economique-performant">Aménager un espace économique performant</a></li>
+																						<li><a href="/nos-actions/developpement-economique/developper-lattractivite-et-le-rayonnement-du-territoire">Développer l'attractivité et le rayonnement du territoire</a></li>
+																						<li><a href="/nos-actions/developpement-economique/contribuer-a-un-developpement-economique-equilibre-et-diversifie">Contribuer à un développement économique équilibré et diversifié</a></li>
+																						<li><a href="/nos-actions/developpement-economique">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/environnement/dechets">Déchets</a></li>
+																						<li><a href="/nos-actions/environnement/assainissement">Assainissement</a></li>
+																						<li><a href="/nos-actions/environnement/eau-et-gestion-des-milieux-aquatiques">Eau et gestion des milieux aquatiques</a></li>
+																						<li><a href="/nos-actions/environnement/climat-et-energies">Climat et énergies</a></li>
+																						<li><a href="/nos-actions/environnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Actions sociales, vie associative et sport</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/actions-sociales/la-mobilite-des-publics-en-difficulte">La mobilité des publics en difficulté</a></li>
+																						<li><a href="/nos-actions/actions-sociales/la-sante">La santé</a></li>
+																						<li><a href="/nos-actions/sport-et-vie-associative">Sport et vie associative</a></li>
+																						<li><a href="/nos-actions/actions-sociales/les-jeunes">Les jeunes</a></li>
+																						<li><a href="/nos-actions/actions-sociales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Culture</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/culture/lecture-publique">Lecture publique</a></li>
+																						<li><a href="/nos-actions/culture/coordination-des-ecoles-de-musique">Coordination des écoles de musique</a></li>
+																						<li><a href="/nos-actions/culture/education-artistique-et-culturelle">Education artistique et culturelle</a></li>
+																						<li><a href="/nos-actions/culture">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Fourrière</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-animaux-de-compagnie">Fourrière</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Incendie et secours</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/incendie-et-secours">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/entreprendre">Entreprendre</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos atouts</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/nos-atouts/aeroport-dancenis">Aéroport d'Ancenis</a></li>
+																						<li><a href="/entreprendre/nos-atouts/nos-entreprises">Nos entreprises</a></li>
+																						<li><a href="/annuaires/annuaires-des-nouveaux-entrepreneurs">Annuaire des nouveaux entrepreneurs</a></li>
+																						<li><a href="/entreprendre/nos-atouts">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace Entreprendre</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/espace-entreprendre/monter-son-projet">Monter son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/financer-son-projet">Financer son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/developper-son-activite">Développer son activité</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Implanter son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-terrain">Rechercher un terrain</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-local">Rechercher un local</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/les-biens-immobiliers-de-la-compa">Les biens immobiliers de la COMPA</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développer son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/developper-son-entreprise/recruter-en-pays-dancenis">Recruter en Pays d'Ancenis</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/former-mes-salaries">Former mes salariés</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/promouvoir-mes-savoir-faire">Promouvoir mes savoir-faire</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Au service des entreprises</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/au-service-des-entreprises">Nos missions</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Nos services</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Logement pour les jeunes</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Votre projet</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/votre-projet">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/vie-quotidienne">Vie quotidienne</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Gérer mes déchets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/produire-moins-de-dechets">Produire moins de déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/comment-trier-mes-dechets">Comment trier mes déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/ou-et-quand-deposer-mes-dechets">Où et quand déposer mes déchets ?</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Transport et déplacement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa/se-deplacer-en-bus-/-car-en-pays-dancenis-compa">En car</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/en-train">En train</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/jai-besoin-dun-vehicule">J'ai besoin d'un véhicule</a></li>
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Habitat et logement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/me-loger/chercher-un-logement">Chercher un logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/acheter-ou-vendre-son-logement">Acheter ou vendre son logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/faire-construire-une-maison">Faire construire une maison</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/habiter-en-pays-dancenis">Habiter en Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/me-loger">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Orientation, formation, emploi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/decouvrir-les-metiers-et-savoir-faire-du-pays-dancenis">Découvrir les métiers et savoir-faire du Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/morienter-et-me-former">M'orienter et me former</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/trouver-un-emploi-un-stage">Trouver un emploi, un stage</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Santé et vieillissement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="http://annuairesante.ameli.fr/">Annuaire des professionnels de santé</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/mutuelle-sante-intercommunale">Mutuelle santé intercommunale</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/adaptation-au-viellissement">Adaptation au viellissement</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Agir pour l'environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/consommez-local-et-responsable">Consommez local et responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/devenez-eco-responsable">Devenez éco-responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/faites-des-economies-denergie">Faites des économies d'énergie</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/jardinez-autrement">Jardinez autrement</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Ma famille et moi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mon-couple">Mon couple</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-enfants">Mes enfants</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-parents">Mes parents</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Solidarité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/solidarite/aides-sociales">Aides sociales</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subvention et appel à projet</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire">Consommer solidaire</a></li>
+																						<li><a href="/vie-quotidienne/solidarite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/sorties-et-loisirs">Sorties et loisirs</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Découvrir</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/decouvrir/les-gens-dici">Les gens d'ici</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/terroir-vins-et-gastronomie">Terroir, vins et gastronomie</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/histoire-et-patrimoine">Histoire et patrimoine</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/nos-communes">Nos communes</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Sortir, me cultiver</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/saison-litteraire">Saison littéraire</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle">Festival et spectacle</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/cinema">Cinéma</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/exposition">Exposition</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Bouger, prendre l'air</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/parcours-permanents-dorientation">Parcours Permanents d'Orientation</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/balades-et-randonnees">Balades et randonnées</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscine et baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/sport">Sport</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Pratiquer une activité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Lecture écriture et BD</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Numérique</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Musique et chant</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Sport ou activité de pleine nature</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace associations</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subventions</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/associations-faites-vous-connaitre">Associations, faites-vous connaître</a></li>
+																						<li><a href="/annuaires/les-associations">Annuaire des associations</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/guide-des-bonnes-pratiques">Guide des bonnes pratiques</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Du côté de</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscines et zones de baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Bibliothèques</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Espace multimédia</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Structures de musique</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="main-menu-tablette o-orange-1 o-rouge-2-2 o-bleu-1-3 o-vert-1-4 o-mauve-5">
+														<ul class="niveau1">
+															<li><a href="/compa">COMPA</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Le territoire</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/le-territoire/chiffres-cles">Chiffres clés</a></li>
+																						<li><a href="/compa/le-territoire">Le territoire</a></li>
+																						<li><a href="/compa/le-territoire/les-communes">Les communes</a></li>
+																						<li><a href="/compa/le-territoire/cartcompa">Cart@compa</a></li>
+																						<li><a href="/compa/le-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">La COMPA</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/historique">Historique</a></li>
+																						<li><a href="/compa/offres-demploi-de-la-compa">Offres d'emploi de la COMPA</a></li>
+																						<li><a href="/compa/marches-publics">Marchés publics</a></li>
+																						<li><a href="/le-kiosque-de-la-compa">Nos publications</a></li>
+																						<li><a href="https://data.loire-atlantique.fr/explore/?q=COMPA&disjunctive.theme&disjunctive.diffuseur&disjunctive.publisher&disjunctive.gestionnaire&disjunctive.keyword&disjunctive.license&disjunctive.features&source=shared&sort=modified&refine.publisher=COMPA">Nos données publiques</a></li>
+																						<li><a href="/compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Elus et décisions</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/elus-et-decisions/decisions-des-elus">Décisions des élus</a></li>
+																						<li><a href="/compa/elus-et-decisions/fonctionnement">Fonctionnement</a></li>
+																						<li><a href="/compa/elus-et-decisions/les-commissions">Les commissions</a></li>
+																						<li><a href="/compa/elus-et-decisions">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Les services</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/les-services/direction-generale">Direction générale</a></li>
+																						<li><a href="/compa/les-services/pole-amenagement-du-territoire">Pôle Aménagement du territoire</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Pôle Développement économique</a></li>
+																						<li><a href="/compa/les-services">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Finances</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/finances/le-budget">Le Budget</a></li>
+																						<li><a href="/compa/finances/les-ressources-financieres">Les ressources financières</a></li>
+																						<li><a href="/compa/finances/les-emprunts">Les emprunts</a></li>
+																						<li><a href="/compa/finances/les-reversements-aux-communes">Les reversements aux communes</a></li>
+																						<li><a href="/compa/finances">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos Partenaires</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/nos-partenaires/conseil-de-developpement">Conseil de Développement</a></li>
+																						<li><a href="http://www.missionlocalepaysancenis.fr">Mission Locale du Pays d’Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire/boutique-et-troc/trocantons">Trocantons</a></li>
+																						<li><a href="/compa/nos-partenaires">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/nos-actions">Nos actions</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos projets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/nos-projets/projet-de-creation-dun-parc-photovoltaique">Projet de création d'une centrale photovoltaïque</a></li>
+																						<li><a href="/nos-actions/nos-projets/demarche-dattractivite-territoriale">Démarche d'attractivité territoriale</a></li>
+																						<li><a href="/nos-actions/nos-projets/programme-de-travaux-sur-les-cours-deau">Programme de travaux sur les cours d'eau</a></li>
+																						<li><a href="/nos-actions/nos-projets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Politiques territoriales</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/politiques-territoriales/projet-de-territoire">Projet de territoire</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/leader-2014-2020">Leader 2014-2020</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/fonds-de-concours-territorial">Fonds de concours territorial</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Aménagement du territoire et cadres de vie</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/amenagement-du-territoire/transport-et-mobilite">Transport et mobilité</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/habitat-et-logement">Habitat et logement</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/autorisation-du-droit-des-sols-ads">Autorisation du Droit des Sols (ADS)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/schema-de-coherence-territoriale-scot">Schéma de Cohérence territoriale (SCOT)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développement économique</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/developpement-economique/amenager-un-espace-economique-performant">Aménager un espace économique performant</a></li>
+																						<li><a href="/nos-actions/developpement-economique/developper-lattractivite-et-le-rayonnement-du-territoire">Développer l'attractivité et le rayonnement du territoire</a></li>
+																						<li><a href="/nos-actions/developpement-economique/contribuer-a-un-developpement-economique-equilibre-et-diversifie">Contribuer à un développement économique équilibré et diversifié</a></li>
+																						<li><a href="/nos-actions/developpement-economique">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/environnement/dechets">Déchets</a></li>
+																						<li><a href="/nos-actions/environnement/assainissement">Assainissement</a></li>
+																						<li><a href="/nos-actions/environnement/eau-et-gestion-des-milieux-aquatiques">Eau et gestion des milieux aquatiques</a></li>
+																						<li><a href="/nos-actions/environnement/climat-et-energies">Climat et énergies</a></li>
+																						<li><a href="/nos-actions/environnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Actions sociales, vie associative et sport</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/actions-sociales/la-mobilite-des-publics-en-difficulte">La mobilité des publics en difficulté</a></li>
+																						<li><a href="/nos-actions/actions-sociales/la-sante">La santé</a></li>
+																						<li><a href="/nos-actions/sport-et-vie-associative">Sport et vie associative</a></li>
+																						<li><a href="/nos-actions/actions-sociales/les-jeunes">Les jeunes</a></li>
+																						<li><a href="/nos-actions/actions-sociales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Culture</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/culture/lecture-publique">Lecture publique</a></li>
+																						<li><a href="/nos-actions/culture/coordination-des-ecoles-de-musique">Coordination des écoles de musique</a></li>
+																						<li><a href="/nos-actions/culture/education-artistique-et-culturelle">Education artistique et culturelle</a></li>
+																						<li><a href="/nos-actions/culture">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Fourrière</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-animaux-de-compagnie">Fourrière</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Incendie et secours</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/incendie-et-secours">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/entreprendre">Entreprendre</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos atouts</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/nos-atouts/aeroport-dancenis">Aéroport d'Ancenis</a></li>
+																						<li><a href="/entreprendre/nos-atouts/nos-entreprises">Nos entreprises</a></li>
+																						<li><a href="/annuaires/annuaires-des-nouveaux-entrepreneurs">Annuaire des nouveaux entrepreneurs</a></li>
+																						<li><a href="/entreprendre/nos-atouts">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace Entreprendre</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/espace-entreprendre/monter-son-projet">Monter son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/financer-son-projet">Financer son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/developper-son-activite">Développer son activité</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Implanter son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-terrain">Rechercher un terrain</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-local">Rechercher un local</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/les-biens-immobiliers-de-la-compa">Les biens immobiliers de la COMPA</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développer son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/developper-son-entreprise/recruter-en-pays-dancenis">Recruter en Pays d'Ancenis</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/former-mes-salaries">Former mes salariés</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/promouvoir-mes-savoir-faire">Promouvoir mes savoir-faire</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Au service des entreprises</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/au-service-des-entreprises">Nos missions</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Nos services</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Logement pour les jeunes</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Votre projet</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/votre-projet">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/vie-quotidienne">Vie quotidienne</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Gérer mes déchets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/produire-moins-de-dechets">Produire moins de déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/comment-trier-mes-dechets">Comment trier mes déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/ou-et-quand-deposer-mes-dechets">Où et quand déposer mes déchets ?</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Transport et déplacement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa/se-deplacer-en-bus-/-car-en-pays-dancenis-compa">En car</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/en-train">En train</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/jai-besoin-dun-vehicule">J'ai besoin d'un véhicule</a></li>
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Habitat et logement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/me-loger/chercher-un-logement">Chercher un logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/acheter-ou-vendre-son-logement">Acheter ou vendre son logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/faire-construire-une-maison">Faire construire une maison</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/habiter-en-pays-dancenis">Habiter en Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/me-loger">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Orientation, formation, emploi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/decouvrir-les-metiers-et-savoir-faire-du-pays-dancenis">Découvrir les métiers et savoir-faire du Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/morienter-et-me-former">M'orienter et me former</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/trouver-un-emploi-un-stage">Trouver un emploi, un stage</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Santé et vieillissement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="http://annuairesante.ameli.fr/">Annuaire des professionnels de santé</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/mutuelle-sante-intercommunale">Mutuelle santé intercommunale</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/adaptation-au-viellissement">Adaptation au viellissement</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Agir pour l'environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/consommez-local-et-responsable">Consommez local et responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/devenez-eco-responsable">Devenez éco-responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/faites-des-economies-denergie">Faites des économies d'énergie</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/jardinez-autrement">Jardinez autrement</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Ma famille et moi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mon-couple">Mon couple</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-enfants">Mes enfants</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-parents">Mes parents</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Solidarité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/solidarite/aides-sociales">Aides sociales</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subvention et appel à projet</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire">Consommer solidaire</a></li>
+																						<li><a href="/vie-quotidienne/solidarite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/sorties-et-loisirs">Sorties et loisirs</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Découvrir</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/decouvrir/les-gens-dici">Les gens d'ici</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/terroir-vins-et-gastronomie">Terroir, vins et gastronomie</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/histoire-et-patrimoine">Histoire et patrimoine</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/nos-communes">Nos communes</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Sortir, me cultiver</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/saison-litteraire">Saison littéraire</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle">Festival et spectacle</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/cinema">Cinéma</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/exposition">Exposition</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Bouger, prendre l'air</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/parcours-permanents-dorientation">Parcours Permanents d'Orientation</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/balades-et-randonnees">Balades et randonnées</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscine et baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/sport">Sport</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Pratiquer une activité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Lecture écriture et BD</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Numérique</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Musique et chant</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Sport ou activité de pleine nature</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace associations</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subventions</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/associations-faites-vous-connaitre">Associations, faites-vous connaître</a></li>
+																						<li><a href="/annuaires/les-associations">Annuaire des associations</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/guide-des-bonnes-pratiques">Guide des bonnes pratiques</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Du côté de</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscines et zones de baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Bibliothèques</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Espace multimédia</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Structures de musique</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="main-menu-mobile o-orange-1 o-rouge-2-2 o-bleu-1-3 o-vert-1-4 o-mauve-5">
+														<ul class="niveau1">
+															<li><a href="/compa">COMPA</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Le territoire</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/le-territoire/chiffres-cles">Chiffres clés</a></li>
+																						<li><a href="/compa/le-territoire">Le territoire</a></li>
+																						<li><a href="/compa/le-territoire/les-communes">Les communes</a></li>
+																						<li><a href="/compa/le-territoire/cartcompa">Cart@compa</a></li>
+																						<li><a href="/compa/le-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">La COMPA</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/historique">Historique</a></li>
+																						<li><a href="/compa/offres-demploi-de-la-compa">Offres d'emploi de la COMPA</a></li>
+																						<li><a href="/compa/marches-publics">Marchés publics</a></li>
+																						<li><a href="/le-kiosque-de-la-compa">Nos publications</a></li>
+																						<li><a href="https://data.loire-atlantique.fr/explore/?q=COMPA&disjunctive.theme&disjunctive.diffuseur&disjunctive.publisher&disjunctive.gestionnaire&disjunctive.keyword&disjunctive.license&disjunctive.features&source=shared&sort=modified&refine.publisher=COMPA">Nos données publiques</a></li>
+																						<li><a href="/compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Elus et décisions</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/elus-et-decisions/decisions-des-elus">Décisions des élus</a></li>
+																						<li><a href="/compa/elus-et-decisions/fonctionnement">Fonctionnement</a></li>
+																						<li><a href="/compa/elus-et-decisions/les-commissions">Les commissions</a></li>
+																						<li><a href="/compa/elus-et-decisions">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Les services</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/les-services/direction-generale">Direction générale</a></li>
+																						<li><a href="/compa/les-services/pole-amenagement-du-territoire">Pôle Aménagement du territoire</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Pôle Développement économique</a></li>
+																						<li><a href="/compa/les-services">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Finances</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/finances/le-budget">Le Budget</a></li>
+																						<li><a href="/compa/finances/les-ressources-financieres">Les ressources financières</a></li>
+																						<li><a href="/compa/finances/les-emprunts">Les emprunts</a></li>
+																						<li><a href="/compa/finances/les-reversements-aux-communes">Les reversements aux communes</a></li>
+																						<li><a href="/compa/finances">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos Partenaires</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/compa/nos-partenaires/conseil-de-developpement">Conseil de Développement</a></li>
+																						<li><a href="http://www.missionlocalepaysancenis.fr">Mission Locale du Pays d’Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire/boutique-et-troc/trocantons">Trocantons</a></li>
+																						<li><a href="/compa/nos-partenaires">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/nos-actions">Nos actions</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos projets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/nos-projets/projet-de-creation-dun-parc-photovoltaique">Projet de création d'une centrale photovoltaïque</a></li>
+																						<li><a href="/nos-actions/nos-projets/demarche-dattractivite-territoriale">Démarche d'attractivité territoriale</a></li>
+																						<li><a href="/nos-actions/nos-projets/programme-de-travaux-sur-les-cours-deau">Programme de travaux sur les cours d'eau</a></li>
+																						<li><a href="/nos-actions/nos-projets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Politiques territoriales</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/politiques-territoriales/projet-de-territoire">Projet de territoire</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/leader-2014-2020">Leader 2014-2020</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales/fonds-de-concours-territorial">Fonds de concours territorial</a></li>
+																						<li><a href="/nos-actions/politiques-territoriales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Aménagement du territoire et cadres de vie</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/amenagement-du-territoire/transport-et-mobilite">Transport et mobilité</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/habitat-et-logement">Habitat et logement</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/autorisation-du-droit-des-sols-ads">Autorisation du Droit des Sols (ADS)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire/schema-de-coherence-territoriale-scot">Schéma de Cohérence territoriale (SCOT)</a></li>
+																						<li><a href="/nos-actions/amenagement-du-territoire">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développement économique</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/developpement-economique/amenager-un-espace-economique-performant">Aménager un espace économique performant</a></li>
+																						<li><a href="/nos-actions/developpement-economique/developper-lattractivite-et-le-rayonnement-du-territoire">Développer l'attractivité et le rayonnement du territoire</a></li>
+																						<li><a href="/nos-actions/developpement-economique/contribuer-a-un-developpement-economique-equilibre-et-diversifie">Contribuer à un développement économique équilibré et diversifié</a></li>
+																						<li><a href="/nos-actions/developpement-economique">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/environnement/dechets">Déchets</a></li>
+																						<li><a href="/nos-actions/environnement/assainissement">Assainissement</a></li>
+																						<li><a href="/nos-actions/environnement/eau-et-gestion-des-milieux-aquatiques">Eau et gestion des milieux aquatiques</a></li>
+																						<li><a href="/nos-actions/environnement/climat-et-energies">Climat et énergies</a></li>
+																						<li><a href="/nos-actions/environnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Actions sociales, vie associative et sport</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/actions-sociales/la-mobilite-des-publics-en-difficulte">La mobilité des publics en difficulté</a></li>
+																						<li><a href="/nos-actions/actions-sociales/la-sante">La santé</a></li>
+																						<li><a href="/nos-actions/sport-et-vie-associative">Sport et vie associative</a></li>
+																						<li><a href="/nos-actions/actions-sociales/les-jeunes">Les jeunes</a></li>
+																						<li><a href="/nos-actions/actions-sociales">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Culture</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/culture/lecture-publique">Lecture publique</a></li>
+																						<li><a href="/nos-actions/culture/coordination-des-ecoles-de-musique">Coordination des écoles de musique</a></li>
+																						<li><a href="/nos-actions/culture/education-artistique-et-culturelle">Education artistique et culturelle</a></li>
+																						<li><a href="/nos-actions/culture">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Fourrière</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-animaux-de-compagnie">Fourrière</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Incendie et secours</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/nos-actions/incendie-et-secours">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/entreprendre">Entreprendre</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Nos atouts</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/nos-atouts/aeroport-dancenis">Aéroport d'Ancenis</a></li>
+																						<li><a href="/entreprendre/nos-atouts/nos-entreprises">Nos entreprises</a></li>
+																						<li><a href="/annuaires/annuaires-des-nouveaux-entrepreneurs">Annuaire des nouveaux entrepreneurs</a></li>
+																						<li><a href="/entreprendre/nos-atouts">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace Entreprendre</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/espace-entreprendre/monter-son-projet">Monter son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/financer-son-projet">Financer son projet</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre/developper-son-activite">Développer son activité</a></li>
+																						<li><a href="/entreprendre/espace-entreprendre">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Implanter son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-terrain">Rechercher un terrain</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/rechercher-un-local">Rechercher un local</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise/les-biens-immobiliers-de-la-compa">Les biens immobiliers de la COMPA</a></li>
+																						<li><a href="/entreprendre/implanter-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Développer son entreprise</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/developper-son-entreprise/recruter-en-pays-dancenis">Recruter en Pays d'Ancenis</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/former-mes-salaries">Former mes salariés</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise/promouvoir-mes-savoir-faire">Promouvoir mes savoir-faire</a></li>
+																						<li><a href="/entreprendre/developper-son-entreprise">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Au service des entreprises</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/au-service-des-entreprises">Nos missions</a></li>
+																						<li><a href="/compa/les-services/pole-developpement-economique">Nos services</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Logement pour les jeunes</a></li>
+																						<li><a href="/entreprendre/au-service-des-entreprises">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Votre projet</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/entreprendre/votre-projet">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/vie-quotidienne">Vie quotidienne</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Gérer mes déchets</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/produire-moins-de-dechets">Produire moins de déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/comment-trier-mes-dechets">Comment trier mes déchets</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets/ou-et-quand-deposer-mes-dechets">Où et quand déposer mes déchets ?</a></li>
+																						<li><a href="/vie-quotidienne/gerer-mes-dechets">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Transport et déplacement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa/se-deplacer-en-bus-/-car-en-pays-dancenis-compa">En car</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/en-train">En train</a></li>
+																						<li><a href="/vie-quotidienne/me-deplacer/jai-besoin-dun-vehicule">J'ai besoin d'un véhicule</a></li>
+																						<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Habitat et logement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/me-loger/chercher-un-logement">Chercher un logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/acheter-ou-vendre-son-logement">Acheter ou vendre son logement</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/faire-construire-une-maison">Faire construire une maison</a></li>
+																						<li><a href="/vie-quotidienne/me-loger/habiter-en-pays-dancenis">Habiter en Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/me-loger">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Orientation, formation, emploi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/decouvrir-les-metiers-et-savoir-faire-du-pays-dancenis">Découvrir les métiers et savoir-faire du Pays d'Ancenis</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/morienter-et-me-former">M'orienter et me former</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler/trouver-un-emploi-un-stage">Trouver un emploi, un stage</a></li>
+																						<li><a href="/vie-quotidienne/morienter-me-former-travailler">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Santé et vieillissement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="http://annuairesante.ameli.fr/">Annuaire des professionnels de santé</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/mutuelle-sante-intercommunale">Mutuelle santé intercommunale</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir/adaptation-au-viellissement">Adaptation au viellissement</a></li>
+																						<li><a href="/vie-quotidienne/me-soigner-et-bien-vieillir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Agir pour l'environnement</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/consommez-local-et-responsable">Consommez local et responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/devenez-eco-responsable">Devenez éco-responsable</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/faites-des-economies-denergie">Faites des économies d'énergie</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement/jardinez-autrement">Jardinez autrement</a></li>
+																						<li><a href="/vie-quotidienne/agir-pour-lenvironnement">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Ma famille et moi</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mon-couple">Mon couple</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-enfants">Mes enfants</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi/mes-parents">Mes parents</a></li>
+																						<li><a href="/vie-quotidienne/ma-famille-et-moi">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Solidarité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/vie-quotidienne/solidarite/aides-sociales">Aides sociales</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subvention et appel à projet</a></li>
+																						<li><a href="/vie-quotidienne/solidarite/consommer-solidaire">Consommer solidaire</a></li>
+																						<li><a href="/vie-quotidienne/solidarite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+															<li><a href="/sorties-et-loisirs">Sorties et loisirs</a>
+																<div class="sub-menu">
+																	<div class="bloc6633 clear">
+																		<div class="close clearfix"><a href="#"></a></div>
+																		<div class="bloc66-33 sub-menu-col">
+																			<div class="bloc333333 clear">
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Découvrir</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/decouvrir/les-gens-dici">Les gens d'ici</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/terroir-vins-et-gastronomie">Terroir, vins et gastronomie</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/histoire-et-patrimoine">Histoire et patrimoine</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir/nos-communes">Nos communes</a></li>
+																						<li><a href="/sorties-et-loisirs/decouvrir">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Sortir, me cultiver</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/saison-litteraire">Saison littéraire</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle">Festival et spectacle</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/cinema">Cinéma</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/exposition">Exposition</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Bouger, prendre l'air</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/parcours-permanents-dorientation">Parcours Permanents d'Orientation</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/balades-et-randonnees">Balades et randonnées</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscine et baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature/sport">Sport</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Pratiquer une activité</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Lecture écriture et BD</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Numérique</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Musique et chant</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite/sport-ou-activite-de-pleine-nature">Sport ou activité de pleine nature</a></li>
+																						<li><a href="/sorties-et-loisirs/pratiquer-une-activite">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Espace associations</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/espace-associations/demande-de-subventions">Demande de subventions</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/associations-faites-vous-connaitre">Associations, faites-vous connaître</a></li>
+																						<li><a href="/annuaires/les-associations">Annuaire des associations</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations/guide-des-bonnes-pratiques">Guide des bonnes pratiques</a></li>
+																						<li><a href="/sorties-et-loisirs/espace-associations">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																				<nav class="rubrique bloc33">
+																					<div class="csc-header csc-header-n1"><span class="csc-header-alignment-0 title">Du côté de</span></div>
+																					<ul class="sub-rubrique">
+																						<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Piscines et zones de baignade</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/bibliotheques">Bibliothèques</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de/espace-multimedia">Espace multimédia</a></li>
+																						<li><a href="/sorties-et-loisirs/sortir-me-cultiver/festival-et-spectacle/ce-soir-je-sors-mes-parents/les-spectacles/samedi/structures-de-musique">Structures de musique</a></li>
+																						<li><a href="/sorties-et-loisirs/du-cote-de">Voir plus</a></li>
+																					</ul>
+																				</nav>
+																			</div>
+																		</div>
+																		<div class="bloc33-66"></div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sub-header-col-3">
+										<ul class="clik">
+											<li><a href="#">en <br>1 CLIC</a></li>
+										</ul>
+										<div class="sub-menu-clik">
+											<div class="center clearfix">
+												<div class="close clearfix"><a href="#"> Fermer</a></div>
+												<div class="center-clic">
+													<nav>
+														<ul class="sub-menu-clik-diapo">
+															<li><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/contactez-nous" title="Aller à la page Contactez-nous "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/mail-enveloppe-courrier.png" width="76" height="76" alt=""></figure></a><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/contactez-nous">Contactez-nous</a></li>
+															<li><a href="/actualites" title="Aller à la page Actualités "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/homme-monde.png" width="76" height="76" alt=""></figure></a><a href="/actualites">Actualités</a></li>
+															<li><a href="/lagenda" title="Aller à la page Agenda "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/homme-horloge.png" width="76" height="76" alt=""></figure></a><a href="/lagenda">Agenda</a></li>
+															<li><a href="/vie-quotidienne/gerer-mes-dechets" title="Aller à la page Déchets et déchèteries "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/poubelle.png" width="76" height="76" alt=""></figure></a><a href="/vie-quotidienne/gerer-mes-dechets">Déchets et déchèteries</a></li>
+															<li><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa/se-deplacer-en-bus-/-car-en-pays-dancenis-compa/transports-scolaires-informations-pratiques-compa" title="Aller à la page Transports scolaires "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/transports-scolaires-bus.png" width="76" height="76" alt=""></figure></a><a href="/vie-quotidienne/comment-se-deplacer-en-pays-dancenis-compa/se-deplacer-en-bus-/-car-en-pays-dancenis-compa/transports-scolaires-informations-pratiques-compa">Transports scolaires</a></li>
+															<li><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade" title="Aller à la page Espaces aquatiques - En 1 clic | COMPA "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/picto-piscine-76x76.jpg" width="76" height="76" alt=""></figure></a><a href="/sorties-et-loisirs/du-cote-de/piscines-et-zones-de-baignade">Espaces aquatiques</a></li>
+															<li><a href="/vie-quotidienne/me-loger/traiter-les-eaux-usees-de-son-logement" title="Aller à la page Assainissement - En 1 clic | COMPA "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/picto-assainissement-76x76.png" width="76" height="76" alt=""></figure></a><a href="/vie-quotidienne/me-loger/traiter-les-eaux-usees-de-son-logement">Assainissement</a></li>
+															<li><a href="/compa/marches-publics" title="Aller à la page Marchés Publics "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/marches-publics.png" width="76" height="76" alt=""></figure></a><a href="https://www.pays-ancenis.com/index.php?id=233">Marchés Publics</a></li>
+															<li><a href="/le-kiosque-de-la-compa" title="Aller à la page Publications "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/livre.png" width="76" height="76" alt=""></figure></a><a href="/le-kiosque-de-la-compa">Publications</a></li>
+															<li><a href="/compa/offres-demploi-de-la-compa" title="Aller à la page Offres d'emploi - En 1 clic | COMPA "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/job-ordinateur-recherche-offre-gris.png" width="76" height="76" alt=""></figure></a><a href="/compa/offres-demploi-de-la-compa">Offres d'emploi</a></li>
+															<li><a href="/vie-quotidienne/me-loger/acheter-ou-vendre-son-logement/documents-durbanisme" title="Aller à la page Urbanisme "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/urbanisme.png" width="76" height="76" alt=""></figure></a><a href="/vie-quotidienne/me-loger/acheter-ou-vendre-son-logement/documents-durbanisme">Urbanisme</a></li>
+															<li><a href="/compa/le-territoire/cartcompa" title="Aller à la page cart@compa "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/Pictos/compa.png" width="76" height="76" alt=""></figure></a><a href="/compa/le-territoire/cartcompa">cart@compa</a></li>
+															<li><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/telechargements" title="Aller à la page Téléchargements logiciels | COMPA "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/picto-telecharger.png" width="76" height="76" alt=""></figure></a><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/telechargements">Téléchargements</a></li>
+															<li><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/annuaire-du-handicap-en-pays-dancenis" title="Aller à la page Annuaire du handicap en Pays d'Ancenis "><figure><img src="https://www.pays-ancenis.com/fileadmin/user_upload/picto-handicaps.png" width="76" height="76" alt=""></figure></a><a href="https://www.loire-atlantique.fr/jcms/services/handicap-44/s-informer-et-lieux-d-informations/annuaire-handicap-en-pays-d-ancenis-fr-p1_887820">Annuaire du handicap en Pays d'Ancenis</a></li>
+														</ul>
+													</nav>
+													<!-- diapo -->
+												</div>
+											</div>
+											<!-- centerclik -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="wrapper" class="f-gris-clair">
+						<main role="main">
+							<div id="container" class="center clear">
+								<div class="top-article">
+									<!-- TOOLS -->
+									<div class="tool-article">
+										<!--ul class="filAriane">
+                                <li>
+                                    <a href="#">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rubrique</a>
+                                </li>
+                                <li>Sous-rubrique</li>
+                            </ul-->
+										<ul class="filAriane">
+											<li><a href="/">Accueil</a></li>
+											<li>/ <a href="/compa">COMPA</a></li>
+											<li>/ <a href="/compa/elus-et-decisions">Elus et décisions</a></li>
+											<li>/ Décisions des élus</li>
+										</ul>
+										<div class="block-tools"><button class="share ir"> boutons de partage </button> <button class="print ir"> print </button></div>
+										<div id="shareBox">
+											<div class="share"></div>
+										</div>
+									</div>
+									<!-- END TOOLS -->
+									<div class="category-article">
+										<!-- <p>Titre de la catégorie</p> -->
+									</div>
+									<div class="title-article">
+										<h1>Décisions des élus</h1>
+									</div>
+								</div>
+								<div class="wrap-article">
+									<!-- ARTICLE -->
+									<article>
+										<div class="article">
+											<div class="bloc333333 clear">
+												<div class="bloc33">
+													<div class="bloc-carre"><a href="/compa/elus-et-decisions/decisions-des-elus/comptes-rendus-des-reunions-du-conseil-communautaire"><div class="hoverElement"><div><h2 class="">Comptes-rendus des réunions du Conseil Communautaire</h2></div><figure class=""><img src="https://www.pays-ancenis.com/fileadmin/_processed_/0/0/csm_Compte-rendu-conseil-communautaire_06c24a2309.jpg" width="500" height="318" alt=""></figure><p>Tous les comptes-rendus des réunions de Conseil Communautaire, bureau, statuts, délibérations...</p></div></a></div>
+												</div>
+												<div class="bloc33">
+													<div class="bloc-carre"><a href="/compa/elus-et-decisions/decisions-des-elus/comptes-rendus-des-reunions-du-bureau-communautaire"><div class="hoverElement"><div><h2 class="">Comptes-rendus des réunions du bureau communautaire</h2></div><figure class=""><img src="https://www.pays-ancenis.com/fileadmin/_processed_/7/8/csm_preview_2017_06_29_CR_BUREAUsi_03d94a0431_7c20e4714a.gif" width="500" height="318" alt=""></figure><p>Tous les comptes-rendus des réunions de du bureau communautaire</p></div></a></div>
+												</div>
+												<div class="bloc33">
+													<div class="bloc-carre"><a href="/le-kiosque-de-la-compa/recueils-des-actes-administratifs-de-la-compa"><div class="hoverElement"><div><h2 class="">Recueil des actes administratifs</h2></div><figure class=""><img src="https://www.pays-ancenis.com/fileadmin/_processed_/f/5/csm_Recueil-actes-administratifs-2013-n-15_6e63a04636.jpg" width="500" height="318" alt=""></figure><p></p></div></a></div>
+												</div>
+												<div class="bloc33">
+													<div class="bloc-carre"><a href="/compa/elus-et-decisions/decisions-des-elus/statuts"><div class="hoverElement"><div><h2 class="">Statuts</h2></div><figure class=""><img src="https://www.pays-ancenis.com/fileadmin/_processed_/6/f/csm_csm_2017-Statuts-COMPA-1_0cf51d9438_816ed2149c.jpg" width="500" height="318" alt=""></figure><p>Retrouvez dans ce document les compétences détaillées de la COMPA.</p></div></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="comment clear"></div>
+									</article>
+									<!-- END ARTICLE -->
+									<!-- SIDEBAR -->
+									<aside>
+										<div class="sidebar">
+											<div class="block-sidebar">
+												<div id="c14987" class="frame frame-default frame-type-shortcut frame-layout-0">
+													<div id="c2625" class="frame frame-default frame-type-list frame-layout-0">
+														<header>
+															<h2 class="">L'agenda des élus</h2>
+														</header>
+														<div class="news">
+															<div class="agenda-liste-droite clear">
+																<div class="article clear agenda-actu articletype-0 topnews">
+																	<article>
+																		<div class="cat">
+																			<div>
+																				<!-- date --><span class="date"> 09 juil. </span></div>
+																			<h3><a title="Réunion du Conseil Communautaire - COMPA " href="/lagenda/detail-agenda/actualites/reunion-du-conseil-communautaire-compa">Réunion du Conseil Communautaire - COMPA </a></h3>
+																		</div>
+																	</article>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="block-sidebar">
+												<div id="c14989" class="frame frame-default frame-type-shortcut frame-layout-0">
+													<div id="c1316" class="frame frame-default frame-type-text frame-layout-0">
+														<header>
+															<h2 class="">Contacter les élus</h2>
+														</header>
+														<p>Tél. : 02.40.96.31.89.<br>Fax : 02.40.98.82.90.</p>
+														<ul>
+															<li><a href="/enregistrement-des-extensions/interface/menus/menu-en-un-clic/contactez-nous" class="internal-link">Envoyer un message</a></li>
+														</ul>
+														<p></p>
+													</div>
+												</div>
+											</div>
+											<div class="block-sidebar">
+												<div id="c29148" class="frame frame-default frame-type-textpic frame-layout-0">
+													<div class="ce-textpic ce-right ce-below">
+														<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+															<div class="ce-row">
+																<div class="ce-column">
+																	<figure class="image"><a href="/compa/elus-et-decisions" title="Retour page parente Elus et décisions"><img class="image-embed-item" title="Retour page parente Elus et décisions" alt="Pictogramme retour" src="https://www.pays-ancenis.com/fileadmin/_processed_/f/1/csm_icone-retour-page-parente-line_9c1f5b0883.png" width="50" height="50"></a></figure>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</aside>
+									<!-- END SIDEBAR -->
+								</div>
+							</div>
+						</main>
+					</div>
+					<footer role="contentinfo" id="main-footer" class="f-gris-1">
+						<div id="top-f" class="tf-blanc clearfix">
+							<ul>
+								<li><a href="/faq">FAQ</a></li>
+								<li><a href="/plan-du-site">Plan du site</a></li>
+								<li><a href="/aide">Aide</a></li>
+								<li><a href="/accessibilite">Accessibilité</a></li>
+								<li><a href="/mentions-legales">Mentions légales</a></li>
+							</ul>
+							<div id="scrolltotop"><a href="#" id="goBackToTop"> haut du site<i class="fas fa-angle-up"></i></a></div>
+						</div>
+						<!--  -->
+						<div class="sub-footer ">
+							<div class="center">
+								<div id="footer-c" class="clearfix">
+									<div id="c1482" class="frame frame-default frame-type-header frame-layout-0">
+										<header><span class="ce-headline-4 line title"> Communauté de communes du pays d'Ancenis </span></header>
+									</div>
+									<div class="bloc333333 clear">
+										<div class="bloc33">
+											<div class="bloc5050 clear">
+												<div class="bloc50">
+													<div id="c1487" class="frame frame-default frame-type-image frame-layout-0">
+														<div class="ce-image ce-center ce-above">
+															<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+																<div class="ce-outer">
+																	<div class="ce-inner">
+																		<div class="ce-row">
+																			<div class="ce-column">
+																				<figure class="image"><a href="/plan-dacces" title="Comment venir à la COMPA ?"><img class="image-embed-item" title="Comment venir à la COMPA ?" src="https://www.pays-ancenis.com/fileadmin/user_upload/carte.png" width="114" height="109" alt=""></a></figure>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bloc50">
+													<div id="c1488" class="frame frame-default frame-type-image frame-layout-0">
+														<div class="ce-image ce-center ce-above">
+															<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+																<div class="ce-outer">
+																	<div class="ce-inner">
+																		<div class="ce-row">
+																			<div class="ce-column">
+																				<figure class="image"><a href="/" title="Page d'accueil"><img class="image-embed-item" title="Page d'accueil" src="https://www.pays-ancenis.com/fileadmin/_processed_/a/1/csm_COMPA-blanc_3eac6a8525.png" width="100" height="97" alt=""></a></figure>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="bloc33">
+											<div id="c1483" class="frame frame-default frame-type-text frame-layout-0">
+												<div>
+													<p><b>Coordonnées</b></p>
+												</div>
+												<div>
+													<p class="linkGo">Centre administratif Les Ursulines - CS 50201<br> 44156 ANCENIS-SAINT-GÉRÉON CEDEX<br><a href="tel:+33240963189" title="Appeler la COMPA" target="_blank">Tél.  02 40 96 31 89</a>   Fax.  02 40 98 82 90 </p>
+													<p><strong>Horaires d'accueil : </strong>Du lundi au vendredi de 8 h 30 à 12 h 30 et de 14 h à 17 h 30</p>
+												</div>
+											</div>
+										</div>
+										<div class="bloc33">
+											<div class="bloc333333 clear">
+												<div class="bloc33">
+													<div id="c1490" class="frame frame-default frame-type-textpic frame-layout-0">
+														<div class="ce-textpic ce-center ce-above">
+															<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+																<div class="ce-outer">
+																	<div class="ce-inner">
+																		<div class="ce-row">
+																			<div class="ce-column">
+																				<figure class="image"><a href="tel:+33240963189" title="Appeler la COMPA" target="_blank"><img class="image-embed-item" title="Appeler la COMPA" alt="Pictogramme téléphone" src="https://www.pays-ancenis.com/fileadmin/user_upload/picto-rond-tel-gris.png" width="76" height="76"></a></figure>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="ce-bodytext">
+																<p><a href="tel:+33240963189" title="Appeler la COMPA" target="_blank">Appeler la COMPA</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bloc33">
+													<div id="c1491" class="frame frame-default frame-type-textpic frame-layout-0">
+														<div class="ce-textpic ce-center ce-above">
+															<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+																<div class="ce-outer">
+																	<div class="ce-inner">
+																		<div class="ce-row">
+																			<div class="ce-column">
+																				<figure class="image"><a href="/plan-dacces" title="Plan d'accès" target="_top"><img class="image-embed-item" alt="Pictogramme situation" src="https://www.pays-ancenis.com/fileadmin/user_upload/acces.png" width="76" height="76"></a></figure>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="ce-bodytext">
+																<p class="align-center"><a href="/plan-dacces" title="Plan d'accès" target="_top" class="internal-link">Plan d'accès</a></p>
+																<p> </p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bloc33">
+													<div id="c1489" class="frame frame-default frame-type-textpic frame-layout-0">
+														<div class="ce-textpic ce-center ce-above">
+															<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+																<div class="ce-outer">
+																	<div class="ce-inner">
+																		<div class="ce-row">
+																			<div class="ce-column">
+																				<figure class="image"><a href="/formulaires/formulaire-de-contact-compa" title="Formulaire de contact" target="_top"><img class="image-embed-item" src="https://www.pays-ancenis.com/fileadmin/user_upload/contact-footer.png" width="76" height="76" alt=""></a></figure>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="ce-bodytext">
+																<p class="align-center"><a href="/formulaires/formulaire-de-contact-compa" title="Formulaire de contact" target="_top" class="internal-link">Contact</a></p>
+																<p> </p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p>© pays d'ancenis</p>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/femanager/Resources/Public/JavaScripts/jquery.fineuploader-3.5.0.min.js" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/jquery.datetimepicker.min.js?1566916459" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/powermail/Resources/Public/JavaScript/Libraries/parsley.min.js?1566916459" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/extensions/powermail/JavaScripts/Powermail/Tabs.min.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/powermail/Resources/Public/JavaScript/Powermail/Form.min.js?1566916459" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/femanager/Resources/Public/JavaScripts/Validation.js" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/femanager/Resources/Public/JavaScripts/Femanager.js" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/FancyBox/JavaScript/jquery.mousewheel-3.0.6.pack.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/FancyBox/JavaScript/jquery.fancybox.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/FancyBox/JavaScript/helper.js?1587463659" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/indexed_search_autocomplete/Resources/Public/JavaScript/Indexed_search_autocomplete.js?1587462116" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/irfaq/Resources/Public/JavaScript/toggleFaq.js?1587387688" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/Resources/Public/JavaScript/script.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/socialshareprivacy.min.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/modules/facebook.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/modules/twitter.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/modules/gplus.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/modules/mail.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/locale/fr/socialshareprivacy.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/locale/fr/modules/facebook.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/locale/fr/modules/twitter.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/locale/fr/modules/gplus.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/locale/fr/modules/mail.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/jquery-slick-1.6.0-slick.min.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/consentement.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/jquery.rwdImageMaps.min.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/images/carte/carto.js?1587462116" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/script.js?1587462116" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/parallax.min.js?1587387689" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3conf/ext/wseils/res/compa/ressources/js/socialshareprivacy/start.js?1587462116" type="text/javascript"></script>
+				<script src="https://www.pays-ancenis.com/typo3temp/assets/js/6c0a5b3afe.js?1587393882" type="text/javascript"></script>
+				<script type="text/javascript">
+      var gaID = 'UA-25856010-1';
+    
+				</script>
+				<script type="text/javascript">
+    tarteaucitron.init({
+      "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+      "highPrivacy": false, /* désactiver le consentement implicite (en naviguant) ? */
+      "orientation": "bottom", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
+      "adblocker": false, /* Afficher un message si un adblocker est détecté */
+      "showAlertSmall": true, /* afficher le petit bandeau en bas à droite ? */
+      "cookieslist": true, /* Afficher la liste des cookies installés ? */
+      "removeCredit": false /* supprimer le lien vers la source ? */
+    });
+  
+				</script>
+				<script type="text/javascript">
+    tarteaucitron.user.gajsUa = gaID;
+    tarteaucitron.user.gajsMore = function () { /* add here your optionnal _ga.push() */ };
+    (tarteaucitron.job = tarteaucitron.job || []).push('gajs');
+  
+				</script>
+				<script type="text/javascript">
+    tarteaucitron.user.gtagUa = 'GTM-KQ3Z3F8';
+    (tarteaucitron.job = tarteaucitron.job || []).push('gtag')
+				</script>
+			</header>
+		</div>
+	</body>
+</html>
