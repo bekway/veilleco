@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html>
+	<body>
+		<p>&#65279;</p>
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+		<base href="http://www.ponthieu-marquenterre.fr/">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Super User">
+		<meta name="generator" content="Joomla! - Open Source Content Management">
+		<title>ACCUEIL - La communauté de commune de Ponthieu marquenterre</title>
+		<link href="/templates/theme3415/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/media/jui/css/chosen.css?ee78364740c2e903a662ca01e2d43f9e" rel="stylesheet" type="text/css">
+		<link href="/templates/theme3415/css/template.css" rel="stylesheet" type="text/css">
+		<link href="/templates/theme3415/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="/templates/theme3415/css/fl-budicons-free.css" rel="stylesheet" type="text/css">
+		<link href="/templates/theme3415/css/thin.css" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet" type="text/css">
+		<link href="/templates/theme3415/css/komento.css" rel="stylesheet" type="text/css">
+		<link href="/plugins/editors/pagebuilder3/assets/app/assets/1.3.16/main.css" rel="stylesheet" data-pagefly-main="true" type="text/css">
+		<link href="/templates/theme3415/html/mod_icemegamenu/css/navbar.css" rel="stylesheet" type="text/css">
+		<script src="/media/jui/js/jquery.min.js?ee78364740c2e903a662ca01e2d43f9e" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?ee78364740c2e903a662ca01e2d43f9e" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?ee78364740c2e903a662ca01e2d43f9e" type="text/javascript"></script>
+		<script src="/plugins/system/bootstrap_3/assets/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/media/jui/js/chosen.jquery.min.js?ee78364740c2e903a662ca01e2d43f9e" type="text/javascript"></script>
+		<script src="/templates/theme3415/js/scripts.js" type="text/javascript"></script>
+		<script src="/infopale.js" type="text/javascript"></script>
+		<script src="/plugins/editors/pagebuilder3/assets/app/assets/1.3.16/helper.js" type="text/javascript"></script>
+		<script src="/templates/theme3415/html/mod_icemegamenu/js/menu.js" type="text/javascript" defer></script>
+		<script src="/templates/theme3415/html/mod_icemegamenu/js/jquery.rd-navbar.js" type="text/javascript" defer></script>
+		<script type="text/javascript">
+jQuery(document).ready(function($){
+	jQuery('.hasTooltip').tooltip({"html": true});
+if(window.MooTools) {
+
+			  // Mootools conflict fix for toggle with Bootstrap 3/JQuery
+			  window.addEvent('load', function() {
+			    $$('[rel=tooltip],[data-toggle],a[data-toggle],button[data-toggle],[data-toggle=collapse],a[data-toggle=dropdown],.hasTooltip').each(function (e) {
+			        e.getParent().hide = null;
+			        e.hide = null;
+			    });
+			  });
+
+			}
+});
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find("select").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Saisir ou choisir des options","placeholder_text_single":"S\u00e9lectionnez une option","no_results_text":"Aucun r\u00e9sultat correspondant"});
+		}
+	});
+	var path = "templates/theme3415/js/";(function($){$(document).ready(function(){var o=$("#back-top");$(window).scroll(function(){if($(this).scrollTop()>100){o.fadeIn()}else{o.fadeOut()}});var $scrollEl=($.browser.mozilla||$.browser.msie)?$("html"):$("body");o.find("a").click(function(){$scrollEl.animate({scrollTop:0},400);return false})})})(jQuery);;
+			jQuery(function($) {
+				$(document).ready(function() {
+					var options = document.querySelectorAll("option[value=\"pagebuilder3\"]");
+					for (var i = 0; i < options.length; i++) {
+						var selector = options[i].parentNode;
+						options[i].parentNode.removeChild(options[i]);
+						if ($(selector).data("chosen")) {
+							var params = $(selector).data("chosen").options;
+							$(selector).chosen("destroy");
+							$(selector).chosen(params);
+						}
+					}
+				});
+			});
+		
+		window.pb_baseUrl = "http://www.ponthieu-marquenterre.fr/";
+		jQuery(function($){var e=$(window).width();$("#icemegamenu").find(".icesubMenu").each(function(a){var b=$(this).offset();var c=b.left+$(this).width();if(c>=e){$(this).addClass("ice_righttoleft")}});$(window).resize(function(){var d=$(window).width();$("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(a){var b=$(this).offset();var c=b.left+$(this).width();if(c>=d){$(this).addClass("ice_righttoleft")}})})});jQuery(function($){var e=$(window).width();$("#icemegamenu").find(".icesubMenu").each(function(a){var b=$(this).offset();var c=b.left+$(this).width();if(c>=e){$(this).addClass("ice_righttoleft")}});$(window).resize(function(){var d=$(window).width();$("#icemegamenu").find(".icesubMenu").removeClass("ice_righttoleft").each(function(a){var b=$(this).offset();var c=b.left+$(this).width();if(c>=d){$(this).addClass("ice_righttoleft")}})})});
+		</script>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" type="text/css" href="/media/n2/ss3/smartslider.min.css?1581608909" media="all">
+		<style type="text/css">.n2-ss-spinner-simple-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.n2-ss-spinner-simple-white {
+  outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+
+.n2-ss-spinner-simple-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+
+.n2-ss-spinner-simple-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #333;
+    border-right: 2px solid transparent;
+    animation: n2SimpleWhite .6s linear infinite;
+}
+@keyframes n2SimpleWhite {
+    to {transform: rotate(360deg);}
+}
+		</style>
+		<script type="text/javascript">(function(){var N=this;N.N2_=N.N2_||{r:[],d:[]},N.N2R=N.N2R||function(){N.N2_.r.push(arguments)},N.N2D=N.N2D||function(){N.N2_.d.push(arguments)}}).call(window);if(!window.n2jQuery){window.n2jQuery={ready:function(cb){console.error('n2jQuery will be deprecated!');N2R(['$'],cb)}}}window.nextend={localization:{},ready:function(cb){console.error('nextend.ready will be deprecated!');N2R('documentReady',function($){cb.call(window,$)})}};</script>
+		<script type="text/javascript" src="/media/n2/n/dist/n2-j.min.js?1581608909"></script>
+		<script type="text/javascript" src="/media/n2/n/dist/nextend-gsap.min.js?1581608909"></script>
+		<script type="text/javascript" src="/media/n2/n/dist/nextend-frontend.min.js?1581608909"></script>
+		<script type="text/javascript" src="/media/n2/ss3/dist/smartslider-frontend.min.js?1581608909"></script>
+		<script type="text/javascript" src="/media/n2/ss3/plugins/type/simple/simple/dist/smartslider-simple-type-frontend.min.js?1581608909"></script>
+		<script type="text/javascript">N2R('documentReady',function($){N2R(["nextend-frontend","smartslider-frontend","nextend-gsap","smartslider-simple-type-frontend"],function(){new N2Classes.SmartSliderSimple('#n2-ss-1',{"admin":false,"translate3d":1,"callbacks":"","background.video.mobile":1,"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"desktop":1,"tablet":1,"mobile":1,"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumHeight":3000,"maximumSlideWidth":3000,"maximumSlideWidthLandscape":3000,"maximumSlideWidthTablet":3000,"maximumSlideWidthTabletLandscape":3000,"maximumSlideWidthMobile":3000,"maximumSlideWidthMobileLandscape":3000,"maximumSlideWidthConstrainHeight":0,"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"body","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","deviceModes":{"desktopPortrait":1,"desktopLandscape":0,"tabletPortrait":1,"tabletLandscape":0,"mobilePortrait":1,"mobileLandscape":0},"normalizedDeviceModes":{"unknownUnknown":["unknown","Unknown"],"desktopPortrait":["desktop","Portrait"],"desktopLandscape":["desktop","Portrait"],"tabletPortrait":["tablet","Portrait"],"tabletLandscape":["tablet","Portrait"],"mobilePortrait":["mobile","Portrait"],"mobileLandscape":["mobile","Portrait"]},"verticalRatioModifiers":{"unknownUnknown":1,"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"minimumFontSizes":{"desktopPortrait":4,"desktopLandscape":4,"tabletPortrait":4,"tabletLandscape":4,"mobilePortrait":4,"mobileLandscape":4},"ratioToDevice":{"Portrait":{"tablet":0.7,"mobile":0.5},"Landscape":{"tablet":0,"mobile":0}},"sliderWidthToDevice":{"desktopPortrait":1200,"desktopLandscape":1200,"tabletPortrait":840,"tabletLandscape":0,"mobilePortrait":600,"mobileLandscape":0},"basedOn":"combined","orientationMode":"width_and_height","overflowHiddenPage":0,"desktopPortraitScreenWidth":1200,"tabletPortraitScreenWidth":800,"mobilePortraitScreenWidth":440,"tabletLandscapeScreenWidth":800,"mobileLandscapeScreenWidth":440,"focus":{"offsetTop":"","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":8000,"autoplayToSlide":-1,"autoplayToSlideIndex":-1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0}},"perspective":1500,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"allowBGImageAttachmentFixed":false,"bgAnimationsColor":"RGBA(51,51,51,1)","bgAnimations":0,"mainanimation":{"type":"horizontal","duration":600,"delay":0,"ease":"easeOutQuad","parallax":0,"shiftedBackgroundAnimation":0},"carousel":1,"dynamicHeight":0,"initCallbacks":function($){N2D("SmartSliderWidgetArrowImage",function(i,e){function s(e,s,t,h){this.slider=e,this.slider.started(i.proxy(this.start,this,s,t,h))}return s.prototype.start=function(e,s,t){return this.slider.sliderElement.data("arrow")?!1:(this.slider.sliderElement.data("arrow",this),this.deferred=i.Deferred(),this.slider.sliderElement.on("SliderDevice",i.proxy(this.onDevice,this)).trigger("addWidget",this.deferred),this.previous=i("#"+this.slider.elementID+"-arrow-previous").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionPrevious()]()},this)),this.previousResize=this.previous.find(".n2-resize"),0===this.previousResize.length&&(this.previousResize=this.previous),this.next=i("#"+this.slider.elementID+"-arrow-next").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionNext()]()},this)),this.nextResize=this.next.find(".n2-resize"),0===this.nextResize.length&&(this.nextResize=this.next),this.desktopRatio=e,this.tabletRatio=s,this.mobileRatio=t,void i.when(this.previous.n2imagesLoaded(),this.next.n2imagesLoaded()).always(i.proxy(this.loaded,this)))},s.prototype.loaded=function(){this.previous.css("display","inline-block"),this.previousResize.css("display","inline-block"),this.previousWidth=this.previousResize.width(),this.previousHeight=this.previousResize.height(),this.previousResize.css("display",""),this.previous.css("display",""),this.next.css("display","inline-block"),this.nextResize.css("display","inline-block"),this.nextWidth=this.nextResize.width(),this.nextHeight=this.nextResize.height(),this.nextResize.css("display",""),this.next.css("display",""),this.previousResize.find("img").css("width","100%"),this.nextResize.find("img").css("width","100%"),this.onDevice(null,{device:this.slider.responsive.getDeviceMode()}),this.deferred.resolve()},s.prototype.onDevice=function(i,e){var s=1;switch(e.device){case"tablet":s=this.tabletRatio;break;case"mobile":s=this.mobileRatio;break;default:s=this.desktopRatio}this.previousResize.width(this.previousWidth*s),this.previousResize.height(this.previousHeight*s),this.nextResize.width(this.nextWidth*s),this.nextResize.height(this.nextHeight*s)},s});new N2Classes.SmartSliderWidgetArrowImage(this,1,0.7,0.5);N2D("SmartSliderWidgetBulletTransition",function(t,e){function i(e,i){this.slider=e,this.slider.started(t.proxy(this.start,this,i))}return i.prototype.start=function(e){if(this.slider.sliderElement.data("bullet"))return!1;if(this.slider.sliderElement.data("bullet",this),this.axis="horizontal",this.offset=0,this.parameters=e,this.bar=this.slider.sliderElement.find(".nextend-bullet-bar"),this.event="universalclick","mouseenter"===this.parameters.action&&(this.event="universalenter"),this.slider.sliderElement.on({slideCountChanged:t.proxy(this.onSlideCountChanged,this),sliderSwitchTo:t.proxy(this.onSlideSwitch,this)}),this.slider.firstSlideReady.done(t.proxy(this.onFirstSlideSet,this)),0===e.overlay){var i=!1;switch(e.area){case 1:i="Top";break;case 12:i="Bottom";break;case 5:i="Left",this.axis="vertical";break;case 8:i="Right",this.axis="vertical"}i&&(this.offset=parseFloat(this.bar.data("offset")),this.slider.responsive.addStaticMargin(i,this))}},i.prototype.onFirstSlideSet=function(t){this.onSlideCountChanged(),this.$dots.eq(t.index).addClass("n2-active").attr("aria-current","true").removeAttr("tabindex")},i.prototype.onDotClick=function(e,i){this.slider.directionalChangeTo(e),t(i.target).blur()},i.prototype.onSlideSwitch=function(t,e){this.$dots.filter(".n2-active").removeClass("n2-active").removeAttr("aria-current").attr("tabindex",0),this.$dots.eq(e).addClass("n2-active").attr("aria-current","true").removeAttr("tabindex")},i.prototype.isVisible=function(){return this.bar.is(":visible")},i.prototype.getSize=function(){return"horizontal"===this.axis?this.bar.height()+this.offset:this.bar.width()+this.offset},i.prototype.showThumbnail=function(e,i){var s=this.getThumbnail(e);NextendTween.to(s,.3,{opacity:1}),this.$dots.eq(e).one("universalleave.thumbnailleave",t.proxy(this.hideThumbnail,this,e,s))},i.prototype.hideThumbnail=function(t,e,i){i.stopPropagation(),NextendTween.to(e,.3,{opacity:0,onComplete:function(){e.remove()}})},i.prototype.getThumbnail=function(e){var i=this.$dots.eq(e),s=this.slider.sliderElement.offset(),a=i.offset(),r=i.outerWidth(),o=i.outerHeight(),n=t("<div/>").append(t("<div/>").css({width:this.parameters.thumbnailWidth,height:this.parameters.thumbnailHeight,backgroundImage:'url("'+this.slider.slides[e].getThumbnail()+'")'}).addClass("n2-ss-bullet-thumbnail")).addClass(this.parameters.thumbnailStyle).addClass("n2-ss-bullet-thumbnail-container").appendTo(this.slider.sliderElement);switch(this.parameters.thumbnailPosition){case"right":n.css({left:a.left-s.left+r,top:a.top-s.top+o/2-n.outerHeight(!0)/2});break;case"left":n.css({left:a.left-s.left-n.outerWidth(!0),top:a.top-s.top+o/2-n.outerHeight(!0)/2});break;case"top":n.css({left:a.left-s.left+r/2-n.outerWidth(!0)/2,top:a.top-s.top-n.outerHeight(!0)});break;case"bottom":n.css({left:a.left-s.left+r/2-n.outerWidth(!0)/2,top:a.top-s.top+o})}return i.data("thumbnail",n),n},i.prototype.onSlideCountChanged=function(){this.bar.html("");for(var e=0;e<this.slider.slides.length;e++){var i=this.slider.slides[e],s=t('<div class="n2-ow n2-bullet '+this.parameters.dotClasses+'" tabindex="0">').attr("role","button").attr("aria-label",i.getTitle()).appendTo(this.bar);switch(s.wrap(t('<div class="n2-ow">').on(this.event,t.proxy(this.onDotClick,this,e))).on("n2Activate",t.proxy(this.onDotClick,this,e)),this.parameters.mode){case"numeric":s.html(e+1);break;case"title":s.html(i.getTitle())}if(1===this.parameters.thumbnail){var a=i.getThumbnail();a&&s.on({universalenter:t.proxy(this.showThumbnail,this,e)},{leaveOnSecond:!0})}}this.$dots=this.bar.find(">div>*")},i});new N2Classes.SmartSliderWidgetBulletTransition(this,{"overlay":1,"area":12,"dotClasses":"n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot ","mode":"","action":"click","thumbnail":1,"thumbnailWidth":120,"thumbnailHeight":81,"thumbnailStyle":"n2-style-42845aa02120076deb3a5681d1d750ac-simple ","thumbnailPosition":"top"})}})})});</script>
+		<!-- Body -->
+		<div id="wrapper">
+			<div class="wrapper-inner"><a id="fake" href="#"></a>
+				<!-- Top -->
+				<div id="top" class="stuck_position">
+					<div class="container">
+						<div class="row">
+							<div id="logo" class="col-sm-2"><a href="http://www.ponthieu-marquenterre.fr/"> <img src="/images/LOGO_PM.png" alt="La communauté de commune de Ponthieu marquenterre"> <!--?php else: ?--> <span class="site-logo"><span class="item_title_part0 item_title_part_odd item_title_part_first_half item_title_part_first">La</span> <span class="item_title_part1 item_title_part_even item_title_part_first_half">communauté</span> <span class="item_title_part2 item_title_part_odd item_title_part_first_half">de</span> <span class="item_title_part3 item_title_part_even item_title_part_first_half">commune</span> <span class="item_title_part4 item_title_part_odd item_title_part_second_half">de</span> <span class="item_title_part5 item_title_part_even item_title_part_second_half">Ponthieu</span> <span class="item_title_part6 item_title_part_odd item_title_part_second_half">marquenterre</span> </span> </a></div>
+							<nav class="moduletable home_menu  col-sm-8">
+								<div class="module_container">
+									<div class="icemegamenu">
+										<ul id="icemegamenu">
+											<li id="iceMenu_101" class="iceMenuLiLevel_1 mzr-drop parent current active fullwidth"><a href="http://www.ponthieu-marquenterre.fr/" class="icemega_active iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">ACCUEIL</span> </a>
+												<ul class="icesubMenu icemodules sub_level_1" style="width:100%">
+													<li>
+														<div style="float:left;width:25%" class="iceCols">
+															<ul>
+																<li id="iceMenu_599" class="iceMenuLiLevel_2 "><a href="/index.php/ccpm/le-bureau" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Le bureau</span> </a></li>
+															</ul>
+														</div>
+														<div style="float:left;width: 25%" class="iceCols">
+															<ul>
+																<li id="iceMenu_600" class="iceMenuLiLevel_2 "><a href="/index.php/ccpm/le-conseil-communautaire" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Le conseil communautaire</span> </a></li>
+																<li id="iceMenu_790" class="iceMenuLiLevel_2 "><a href="/index.php/ccpm/infos-utiles" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Infos utiles</span> </a></li>
+															</ul>
+														</div>
+														<div style="float:left;width: 25%" class="iceCols">
+															<ul>
+																<li id="iceMenu_789" class="iceMenuLiLevel_2 "><a href="/index.php/ccpm/marches-publics" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Marchés publics</span> </a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li id="iceMenu_602" class="iceMenuLiLevel_1 mzr-drop parent "><a href="/index.php/vivre-et-habiter" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Vivre et habiter</span> </a>
+												<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+													<li>
+														<div style="float:left;width:280px" class="iceCols">
+															<ul>
+																<li id="iceMenu_603" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/ecoles" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Ecoles</span> </a></li>
+																<li id="iceMenu_604" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/petite-enfance" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Petite enfance</span> </a></li>
+																<li id="iceMenu_605" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/vacances-et-jeunesse" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Vacances et jeunesse</span> </a></li>
+																<li id="iceMenu_606" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/services-a-la-personne" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Services à la personne</span> </a></li>
+																<li id="iceMenu_607" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/tiers-lieux" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Tiers-lieux</span> </a></li>
+																<li id="iceMenu_608" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/assainissement-non-collectif" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Assainissement non collectif</span> </a></li>
+																<li id="iceMenu_609" class="iceMenuLiLevel_2 "><a href="/index.php/vivre-et-habiter/gestion-des-dechets" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Gestion des déchets</span> </a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li id="iceMenu_610" class="iceMenuLiLevel_1 mzr-drop parent "><a href="/index.php/sortir-et-decouvrir" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Sortir et découvrir</span> </a>
+												<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+													<li>
+														<div style="float:left;width:280px" class="iceCols">
+															<ul>
+																<li id="iceMenu_611" class="iceMenuLiLevel_2 "><a href="/index.php/sortir-et-decouvrir/tourisme" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Tourisme</span> </a></li>
+																<li id="iceMenu_612" class="iceMenuLiLevel_2 "><a href="/index.php/sortir-et-decouvrir/culture-et-sport" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Culture et sport</span> </a></li>
+																<li id="iceMenu_613" class="iceMenuLiLevel_2 "><a href="/index.php/sortir-et-decouvrir/ecole-et-musique" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Ecole et musique</span> </a></li>
+																<li id="iceMenu_614" class="iceMenuLiLevel_2 "><a href="/index.php/sortir-et-decouvrir/atelier-peinture" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Atelier peinture</span> </a></li>
+																<li id="iceMenu_757" class="iceMenuLiLevel_2 "><a href="/index.php/sortir-et-decouvrir/les-associations" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">A voir / à faire</span> </a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</li>
+											<li id="iceMenu_615" class="iceMenuLiLevel_1 mzr-drop parent "><a href="/index.php/amenager-et-entreprendre" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Aménager et entreprendre</span> </a>
+												<ul class="icesubMenu icemodules sub_level_1" style="width:280px">
+													<li>
+														<div style="float:left;width:280px" class="iceCols">
+															<ul>
+																<li id="iceMenu_617" class="iceMenuLiLevel_2 "><a href="/index.php/amenager-et-entreprendre/habitat" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Habitat</span> </a></li>
+																<li id="iceMenu_619" class="iceMenuLiLevel_2 "><a href="/index.php/amenager-et-entreprendre/developpement-economique" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Développement économique</span> </a></li>
+																<li id="iceMenu_787" class="iceMenuLiLevel_2 "><a href="/index.php/amenager-et-entreprendre/urbanisme-logement-plh-2" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Urbanisme-Logement-PLH(2)</span> </a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<div class="moduletable submenu-ccpm menu-ccpm ">
+								<div class="module_container">
+									<div class="icemegamenu">
+										<ul id="icemegamenu">
+											<li id="iceMenu_620" class="iceMenuLiLevel_1 "><a href="/index.php/le-bureau" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Le bureau</span> </a></li>
+											<li id="iceMenu_621" class="iceMenuLiLevel_1 "><a href="/index.php/le-conseil-communautaire" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Le conseil communautaire</span> </a></li>
+											<li id="iceMenu_622" class="iceMenuLiLevel_1 "><a href="/index.php/recrutement" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Recrutement</span> </a></li>
+											<li id="iceMenu_708" class="iceMenuLiLevel_1 "><a href="/index.php/infis-utiles" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Infos utiles</span> </a></li>
+											<li id="iceMenu_788" class="iceMenuLiLevel_1 "><a href="/index.php/marches-publics" class=" iceMenuTitle "> <span class="icemega_title icemega_nosubtitle">Marchés publics</span> </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="logo_mobile"><img src="/images/LOGO_PM2.png"></div>
+				<!-- maintop -->
+				<div id="maintop">
+					<div class="row">
+						<div class="moduletable  ">
+							<div class="module_container">
+								<div>
+									<div>
+										<div class="n2-section-smartslider " role="region" aria-label="Slider">
+											<style>div#n2-ss-1{width:1200px;float:left;margin:0px 0px 0px 0px;}html[dir="rtl"] div#n2-ss-1{float:right;}div#n2-ss-1 .n2-ss-slider-1{position:relative;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;height:350px;border-style:solid;border-width:0px;border-color:#3e3e3e;border-color:RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;}div#n2-ss-1 .n2-ss-slider-background-video-container{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}div#n2-ss-1 .n2-ss-slider-2{position:relative;width:100%;height:100%;}.x-firefox div#n2-ss-1 .n2-ss-slider-2{opacity:0.99999;}div#n2-ss-1 .n2-ss-slider-3{position:relative;width:100%;height:100%;overflow:hidden;outline:1px solid rgba(0,0,0,0);z-index:10;}div#n2-ss-1 .n2-ss-slide-backgrounds,div#n2-ss-1 .n2-ss-slider-3 > .n-particles-js-canvas-el,div#n2-ss-1 .n2-ss-slider-3 > .n2-ss-divider{position:absolute;left:0;top:0;width:100%;height:100%;}div#n2-ss-1 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-1 .n2-ss-slider-3 > .n-particles-js-canvas-el{z-index:12;}div#n2-ss-1 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-1 .n2-ss-slide{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20;display:block;-webkit-backface-visibility:hidden;}div#n2-ss-1 .n2-ss-layers-container{position:relative;width:1200px;height:350px;}div#n2-ss-1 .n2-ss-parallax-clip > .n2-ss-layers-container{position:absolute;right:0;}div#n2-ss-1 .n2-ss-slide{perspective:1500px;}div#n2-ss-1[data-ie] .n2-ss-slide{perspective:none;transform:perspective(1500px);}div#n2-ss-1 .n2-ss-slide-active{z-index:21;}div#n2-ss-1 .nextend-arrow{cursor:pointer;overflow:hidden;line-height:0 !important;z-index:20;}div#n2-ss-1 .nextend-arrow img{position:relative;min-height:0;min-width:0;vertical-align:top;width:auto;height:auto;max-width:100%;max-height:100%;display:inline;}div#n2-ss-1 .nextend-arrow img.n2-arrow-hover-img{display:none;}div#n2-ss-1 .nextend-arrow:HOVER img.n2-arrow-hover-img{display:inline;}div#n2-ss-1 .nextend-arrow:HOVER img.n2-arrow-normal-img{display:none;}div#n2-ss-1 .nextend-arrow-animated{overflow:hidden;}div#n2-ss-1 .nextend-arrow-animated > div{position:relative;}div#n2-ss-1 .nextend-arrow-animated .n2-active{position:absolute;}div#n2-ss-1 .nextend-arrow-animated-fade{transition:background 0.3s, opacity 0.4s;}div#n2-ss-1 .nextend-arrow-animated-horizontal > div{transition:all 0.4s;left:0;}div#n2-ss-1 .nextend-arrow-animated-horizontal .n2-active{top:0;}div#n2-ss-1 .nextend-arrow-previous.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-1 .nextend-arrow-previous.nextend-arrow-animated-horizontal:FOCUS > div,div#n2-ss-1 .nextend-arrow-next.nextend-arrow-animated-horizontal .n2-active{left:-100%;}div#n2-ss-1 .nextend-arrow-previous.nextend-arrow-animated-horizontal .n2-active,div#n2-ss-1 .nextend-arrow-next.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-1 .nextend-arrow-next.nextend-arrow-animated-horizontal:FOCUS > div{left:100%;}div#n2-ss-1 .nextend-arrow.nextend-arrow-animated-horizontal:HOVER .n2-active,div#n2-ss-1 .nextend-arrow.nextend-arrow-animated-horizontal:FOCUS .n2-active{left:0;}div#n2-ss-1 .nextend-arrow-animated-vertical > div{transition:all 0.4s;top:0;}div#n2-ss-1 .nextend-arrow-animated-vertical .n2-active{left:0;}div#n2-ss-1 .nextend-arrow-animated-vertical .n2-active{top:-100%;}div#n2-ss-1 .nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-1 .nextend-arrow-animated-vertical:FOCUS > div{top:100%;}div#n2-ss-1 .nextend-arrow-animated-vertical:HOVER .n2-active,div#n2-ss-1 .nextend-arrow-animated-vertical:FOCUS .n2-active{top:0;}div#n2-ss-1 .n2-ss-control-bullet{visibility:hidden;text-align:center;justify-content:center;}div#n2-ss-1 .n2-ss-control-bullet-horizontal.n2-ss-control-bullet-fullsize{width:100%;}div#n2-ss-1 .n2-ss-control-bullet-vertical.n2-ss-control-bullet-fullsize{height:100%;flex-flow:column;}div#n2-ss-1 .nextend-bullet-bar{display:inline-flex;visibility:visible;align-items:center;flex-wrap:wrap;}div#n2-ss-1 .n2-bar-justify-content-left{justify-content:flex-start;}div#n2-ss-1 .n2-bar-justify-content-center{justify-content:center;}div#n2-ss-1 .n2-bar-justify-content-right{justify-content:flex-end;}div#n2-ss-1 .n2-ss-control-bullet-vertical > .nextend-bullet-bar{flex-flow:column;}div#n2-ss-1 .n2-ss-control-bullet-fullsize > .nextend-bullet-bar{display:flex;}div#n2-ss-1 .n2-ss-control-bullet-horizontal.n2-ss-control-bullet-fullsize > .nextend-bullet-bar{flex:1 1 auto;}div#n2-ss-1 .n2-ss-control-bullet-vertical.n2-ss-control-bullet-fullsize > .nextend-bullet-bar{height:100%;}div#n2-ss-1 .nextend-bullet-bar .n2-bullet{cursor:pointer;transition:background-color 0.4s;}div#n2-ss-1 .nextend-bullet-bar .n2-bullet.n2-active{cursor:default;}div#n2-ss-1 div.n2-ss-bullet-thumbnail-container{position:absolute;opacity:0;z-index:10000000;}div#n2-ss-1 .n2-ss-bullet-thumbnail-container .n2-ss-bullet-thumbnail{background-size:cover;background-repeat:no-repeat;background-position:center;}div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot{background: #000000;background: RGBA(0,0,0,0.67);opacity:1;padding:5px 5px 5px 5px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:50px;margin: 4px;}div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot.n2-active, div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot:HOVER, div#n2-ss-1 .n2-style-09efebcef1f2f45d29438e0cabcf79bc-dot:FOCUS{background: #09b474;}div#n2-ss-1 .n2-style-42845aa02120076deb3a5681d1d750ac-simple{background: #000000;background: RGBA(0,0,0,0.5);opacity:1;padding:3px 3px 3px 3px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:3px;margin: 5px;}</style>
+											<div id="n2-ss-1-align" class="n2-ss-align">
+												<div class="n2-padding">
+													<div id="n2-ss-1" data-creator="Smart Slider 3" class="n2-ss-slider n2-ow n2-has-hover n2notransition  n2-ss-load-fade " data-minfontsizedesktopportrait="4" data-minfontsizedesktoplandscape="4" data-minfontsizetabletportrait="4" data-minfontsizetabletlandscape="4" data-minfontsizemobileportrait="4" data-minfontsizemobilelandscape="4" style="font-size: 1rem;" data-fontsize="16">
+														<div class="n2-ss-slider-1 n2-ss-swipe-element n2-ow" style="">
+															<div class="n2-ss-slider-2 n2-ow">
+																<div class="n2-ss-slider-3 n2-ow" style="">
+																	<div class="n2-ss-slide-backgrounds"></div>
+																	<div data-first="1" data-slide-duration="0" data-id="19" data-title="<div><div>slide-4.jpg</div></div>" data-thumbnail="/images/slider/slide-4.jpg" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-19">
+																		<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																			<div data-hash="4647d33f7ca1e47e619442516420e040" data-desktop="/images/slider/slide-4.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="/images/slider/slide-4.jpg" alt=""></div>
+																		</div>
+																		<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																	</div>
+																	<div data-slide-duration="0" data-id="20" data-title="<div><div>slide-5.jpg</div></div>" data-thumbnail="/images/slider/slide-5.jpg" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-20">
+																		<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																			<div data-hash="3d64cea1779a5e32eafef6914e454fa2" data-desktop="/images/slider/slide-5.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="/images/slider/slide-5.jpg" alt=""></div>
+																		</div>
+																		<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																	</div>
+																	<div data-slide-duration="0" data-id="21" data-title="<div><div>slide-6.jpg</div></div>" data-thumbnail="/images/slider/slide-6.jpg" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-21">
+																		<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																			<div data-hash="6096dccdf4b0a52978874301a1cdcb72" data-desktop="/images/slider/slide-6.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="/images/slider/slide-6.jpg" alt=""></div>
+																		</div>
+																		<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																	</div>
+																</div>
+															</div>
+															<div data-ssleft="0+15" data-sstop="height/2-previousheight/2" id="n2-ss-1-arrow-previous" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ow nextend-arrow-previous  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="previous arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTEuNDMzIDE1Ljk5MkwyMi42OSA1LjcxMmMuMzkzLS4zOS4zOTMtMS4wMyAwLTEuNDItLjM5My0uMzktMS4wMy0uMzktMS40MjMgMGwtMTEuOTggMTAuOTRjLS4yMS4yMS0uMy40OS0uMjg1Ljc2LS4wMTUuMjguMDc1LjU2LjI4NC43N2wxMS45OCAxMC45NGMuMzkzLjM5IDEuMDMuMzkgMS40MjQgMCAuMzkzLS40LjM5My0xLjAzIDAtMS40MmwtMTEuMjU3LTEwLjI5IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="previous arrow"></div>
+															<div data-ssright="0+15" data-sstop="height/2-nextheight/2" id="n2-ss-1-arrow-next" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ow nextend-arrow-next  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="next arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuNzIyIDQuMjkzYy0uMzk0LS4zOS0xLjAzMi0uMzktMS40MjcgMC0uMzkzLjM5LS4zOTMgMS4wMyAwIDEuNDJsMTEuMjgzIDEwLjI4LTExLjI4MyAxMC4yOWMtLjM5My4zOS0uMzkzIDEuMDIgMCAxLjQyLjM5NS4zOSAxLjAzMy4zOSAxLjQyNyAwbDEyLjAwNy0xMC45NGMuMjEtLjIxLjMtLjQ5LjI4NC0uNzcuMDE0LS4yNy0uMDc2LS41NS0uMjg2LS43NkwxMC43MiA0LjI5M3oiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="next arrow"></div>
+														</div>
+														<div data-position="below" data-offset="10" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile  n2-flex n2-ss-control-bullet n2-ss-control-bullet-horizontal" style="margin-top:10px;">
+															<div class=" nextend-bullet-bar n2-ow n2-bar-justify-content-center"></div>
+														</div>
+													</div>
+													<div class="n2-clear"></div>
+													<div id="n2-ss-1-spinner" style="display: none;">
+														<div>
+															<div class="n2-ss-spinner-simple-white-container">
+																<div class="n2-ss-spinner-simple-white"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="n2-ss-1-placeholder" style="position: relative;z-index:2;background-color:RGBA(0,0,0,0);max-height:3000px; background-color:RGBA(255,255,255,0);"><img style="width: 100%; max-width:3000px; display: block;opacity:0;margin:0px;" class="n2-ow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMzUwIiA+PC9zdmc+" alt="Slider"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Main Content row -->
+				<div id="content">
+					<div class="content-inner">
+						<!-- Left sidebar -->
+						<div id="component">
+							<main role="main">
+								<div id="system-message-container"></div>
+								<article class="page-item page-item__home">
+									<div class="item_fulltext">
+										<div data-pb-version="250" style="display: none;"></div>
+										<div class="__pf_9kqh5o" id="__pf_9kqh5o" data-pf-ver="250" data-pf-initial-ver="210">
+											<section data-container="true" class="_DblQBlAM _jYwqCZ1N" data-id="_jYwqCZ1N" style="min-height: auto;">
+												<div class="_DblQBlAM__filter" style="background-color: rgba(0, 0, 0, 0);"></div>
+												<div class="_DblQBlAM__container" style="max-width: 1170px;">
+													<div class="_pDNE0kYl _Vz4BiYvJ pb-grid pb-grid--stackable pb-grid--automatic" data-id="_Vz4BiYvJ">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n __xW_TQ2L" data-id="__xW_TQ2L">
+																<h2 class="_qaQP6rvk _pQMLHr0w" data-id="_pQMLHr0w"><span class="_VWvqNvR9 _oXAPHlnX _3JdPm85O" data-id="_oXAPHlnX" data-name="title"><span style="font-weight: normal;">Communauté de Communes Ponthieu-Marquenterre</span></span></h2>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _n0Xdi_RJ pb-grid pb-grid--stackable" data-id="_n0Xdi_RJ">
+														<div class=" pb-three-twelfths grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _MnaDT04m" data-id="_MnaDT04m"></div>
+														</div>
+														<div class=" pb-six-twelfths grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _O3EPTawx" data-id="_O3EPTawx">
+																<div class="_P5BGqkyo _7Vbkto5D" data-id="_7Vbkto5D" data-name="video">
+																	<video type="video/mp4" src="/images/Accueil/200070936_cc_ponthieu_marquenterre_ITHEA.mp4" width="100%" height="auto" muted="true" autoplay="" playsinline="" class="html5-video"></video>
+																</div>
+															</div>
+														</div>
+														<div class=" pb-three-twelfths grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _l3b_Tw6n" data-id="_l3b_Tw6n"></div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _4JEkixW0 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_4JEkixW0">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _dneqTMAL" data-id="_dneqTMAL">
+																<div class="_NYd6gvae _YzBafajO" data-id="_YzBafajO">
+																	<div class="_NYd6gvae _1zZ7fEdz" data-id="_1zZ7fEdz">
+																		<p class="_7XqAY8_A _0GR2hpX6" data-id="_0GR2hpX6"><span hidden="" class="_VWvqNvR9 _qEWwhvL3 _2dknaNM0" data-id="_qEWwhvL3" data-name="dropcap"></span><span class="_VWvqNvR9 _qEWwhvL3 _ZGwmb_O6" data-id="_qEWwhvL3" data-name="text">Conception Ithéa Conseil,  <a href="/www.ithea-conseil.fr" target="_self">www.ithea-conseil.fr</a></span></p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _W0N1ilqb pb-grid pb-grid--stackable pb-grid--automatic" data-id="_W0N1ilqb">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _VnkDTDjm" data-id="_VnkDTDjm">
+																<h3 class="_qaQP6rvk _eyXbH9dy" data-id="_eyXbH9dy"><span class="_VWvqNvR9 _O8PvHP6k _3JdPm85O" data-id="_O8PvHP6k" data-name="title">Actualités</span></h3>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _m8m_i4R0 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_m8m_i4R0">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _rmZOTkRn" data-id="_rmZOTkRn" data-droppable="true">
+																<div class="_rg3E6376 _0aqmTzWP divider--text symbol--center" data-id="_0aqmTzWP"><span><span class="_VWvqNvR9 _EYBlFnd8 _3JdPm85O" data-id="_EYBlFnd8" data-name="title">Développement économique</span></span></div>
+																<p class="_7XqAY8_A _D6E8hvkG" data-id="_D6E8hvkG"><span hidden="" class="_VWvqNvR9 _w3DxhZqG _2dknaNM0" data-id="_w3DxhZqG" data-name="dropcap"></span><span class="_VWvqNvR9 _w3DxhZqG _ZGwmb_O6" data-id="_w3DxhZqG" data-name="text">Publié le 06/07/2020</span></p>
+																<p class="_7XqAY8_A _drvPhjn6" data-id="_drvPhjn6"><span hidden="" class="_VWvqNvR9 _M3rKhpdg _2dknaNM0" data-id="_M3rKhpdg" data-name="dropcap"></span><span class="_VWvqNvR9 _M3rKhpdg _ZGwmb_O6" data-id="_M3rKhpdg" data-name="text">L’équipe Economie Sociale et Solidaire (ESS) de BGE Picardie organise le jeudi 9 juillet à 9h30 un webinaire sur le thème l’Insertion par l’Activité Economique. <br> <br>Au programme : les éléments nécessaires à la constitution d'une structure de l'IAE : <br>- cadre légal <br>- structure juridique <br>- secteurs porteurs <br> <br>Inscription obligatoire, gratuite à cette adresse : <br><a href="https://www.eventbrite.fr/e/billets-webinaire-100-ess-sur-linsertion-par-lactivite-economique-111169348514">https://www.eventbrite.fr/e/billets-webinaire-100-ess-sur-linsertion-par-lactivite-economique-111169348514 <br></a> <br>Places limitées à 15.<br></span></p>
+																<div class="_rg3E6376 _8Mo_Tw3P divider--text symbol--center" data-id="_8Mo_Tw3P"><span><span class="_VWvqNvR9 _QYW9FbaY _3JdPm85O" data-id="_QYW9FbaY" data-name="title">Environnement</span></span></div>
+																<p class="_7XqAY8_A _zGWAhq76" data-id="_zGWAhq76"><span hidden="" class="_VWvqNvR9 _eVN8h_YG _2dknaNM0" data-id="_eVN8h_YG" data-name="dropcap"></span><span class="_VWvqNvR9 _eVN8h_YG _ZGwmb_O6" data-id="_eVN8h_YG" data-name="text">Publié le 11/06/2020</span></p>
+																<div class="_pDNE0kYl _2zRji6DJ pb-grid pb-grid--doubling pb-grid--stackable pb-grid--two-columns" data-id="_2zRji6DJ">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _DLKET5dm" data-id="_DLKET5dm">
+																			<picture class="_epNwrNGv _OZmOt4AZ" data-id="_OZmOt4AZ"><img src="/images/Environnement/Acc_s_d_chetteries_site.png"></picture>
+																		</div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _pmpOT0N3" data-id="_pmpOT0N3">
+																			<p class="_7XqAY8_A _2MVEhmlG" data-id="_2MVEhmlG"><span hidden="" class="_VWvqNvR9 _L38PhvMV _2dknaNM0" data-id="_L38PhvMV" data-name="dropcap"></span><span class="_VWvqNvR9 _L38PhvMV _ZGwmb_O6" data-id="_L38PhvMV" data-name="text"><a href="/index.php/vivre-et-habiter/gestion-des-dechets" target="_blank">Cliquez-ici pour en savoir plus</a><br></span></p>
+																		</div>
+																	</div>
+																</div>
+																<div class="_rg3E6376 _3ewQTDza divider--text symbol--center" data-id="_3ewQTDza"><span><span class="_VWvqNvR9 _nYw7FGWM _3JdPm85O" data-id="_nYw7FGWM" data-name="title">Vacances d'été</span></span></div>
+																<p class="_7XqAY8_A _L6lnhRYG" data-id="_L6lnhRYG"><span hidden="" class="_VWvqNvR9 _kglOhyKG _2dknaNM0" data-id="_kglOhyKG" data-name="dropcap"></span><span class="_VWvqNvR9 _kglOhyKG _ZGwmb_O6" data-id="_kglOhyKG" data-name="text">Publié le 04/06/2020</span></p>
+																<div class="_pDNE0kYl _68OPiQ60 pb-grid pb-grid--stackable" data-id="_68OPiQ60">
+																	<div class=" pb-four-twelfths grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _DmdqTV4x" data-id="_DmdqTV4x">
+																			<picture class="_epNwrNGv _K29Xt7Ka" data-id="_K29Xt7Ka"><img src="/images/ALSH/New%20Folder%203/image_site_et_fb.PNG"></picture>
+																		</div>
+																	</div>
+																	<div class=" pb-eight-twelfths grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _jxGMTkwn" data-id="_jxGMTkwn">
+																			<p class="_7XqAY8_A _2Gxvhm46" data-id="_2Gxvhm46"><span hidden="" class="_VWvqNvR9 _YExBhMDV _2dknaNM0" data-id="_YExBhMDV" data-name="dropcap"></span><span class="_VWvqNvR9 _YExBhMDV _ZGwmb_O6" data-id="_YExBhMDV" data-name="text">Les inscriptions  pour les accueils de loisirs et le CAJ sont ouvertes ! <br><br><a href="/index.php/vivre-et-habiter/vacances-et-jeunesse" target="_blank">Cliquez-ici pour en savoir plus</a><br></span></p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _K8eoi5B8 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_K8eoi5B8">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _7x7BTaNn" data-id="_7x7BTaNn">
+																<div class="_rg3E6376 _ObVxTLNe divider--text symbol--center" data-id="_ObVxTLNe"><span><span class="_VWvqNvR9 _9MVEF6Qp _3JdPm85O" data-id="_9MVEF6Qp" data-name="title">Urbanisme</span></span></div>
+																<p class="_7XqAY8_A _v6amhZjG" data-id="_v6amhZjG"><span hidden="" class="_VWvqNvR9 _yg9QhOw3 _2dknaNM0" data-id="_yg9QhOw3" data-name="dropcap"></span><span class="_VWvqNvR9 _yg9QhOw3 _ZGwmb_O6" data-id="_yg9QhOw3" data-name="text"><span style="text-decoration-line: underline;">Documents à télécharger</span> :<br> <br><a href="/images/Accueil/acte_urb_001_2020_annexe_1_vis_.pdf?type=file">- Déclaration d'intention : déclaration de projet valant mise en comptabilité du PLU de Mouflers (pdf)<br></a><br><a href="/images/Accueil/acte_urb_001_2020_vis_.pdf?type=file" target="_blank">- Arrêté portant déclaration d'intention relative à la procédure de déclaration de projet n°1 emportant mise en comptabilité du plan local d'urbanisme (Pdf)</a><a href="/images/Accueil/acte_urb_001_2020_annexe_1_vis_.pdf?type=file" target="_blank"> <br><br> </a>Documents mis en ligne le 13/03/2020 - 16:30 <br><br></span></p>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _WJ1Ai9Dz pb-grid pb-grid--stackable pb-grid--automatic" data-id="_WJ1Ai9Dz">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _Qx2ZTEGx" data-id="_Qx2ZTEGx">
+																<div class="_rg3E6376 _7M6vTmlP divider--text symbol--center" data-id="_7M6vTmlP"><span><span class="_VWvqNvR9 _jp6oFOZM _3JdPm85O" data-id="_jp6oFOZM" data-name="title">Journal communautaire</span></span></div>
+																<div class="_pDNE0kYl _WJ92ioe0 pb-grid pb-grid--stackable" data-id="_WJ92ioe0">
+																	<div class=" pb-eight-twelfths grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _ZxgYT6Qn" data-id="_ZxgYT6Qn">
+																			<p class="_7XqAY8_A _ZG9_hD86" data-id="_ZG9_hD86"><span hidden="" class="_VWvqNvR9 __3w5hneV _2dknaNM0" data-id="__3w5hneV" data-name="dropcap"></span><span class="_VWvqNvR9 __3w5hneV _ZGwmb_O6" data-id="__3w5hneV" data-name="text"><span style="font-weight: bold; text-decoration-line: underline;"><br></span><br>Le Magazine <br><span style="color: black;">"Ma communauté de communes Ponthieu-Marquenterre" n° 5<br></span>est arrivé !<br><br><a href="https://lemag.ponthieu-marquenterre.fr/" target="_blank"><span style="font-style: italic;">> Télécharger le journal, s'abonner et voir les anciens numéros</span><br><br><span style="font-style: italic;"><span style="color: rgb(109, 23, 33);">Erratum page 5 : <br>Permanences info énergie : <br>Ailly le Haut-Clocher : les lundi 11 mai et 10 août</span></span></a><br></span></p>
+																		</div>
+																	</div>
+																	<div class=" pb-four-twelfths grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _Q32ZTyG3" data-id="_Q32ZTyG3">
+																			<picture class="_epNwrNGv _9ZNPtON2" data-id="_9ZNPtON2"><img src="/images/ALSH/Capture_facebook.PNG"></picture>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _58PNiXVJ pb-grid pb-grid--stackable pb-grid--automatic" data-id="_58PNiXVJ">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _r3v8TJjm" data-id="_r3v8TJjm">
+																<div class="_rg3E6376 _NMOKTrXe divider--text symbol--center" data-id="_NMOKTrXe"><span><span class="_VWvqNvR9 _mMoKF21Y _3JdPm85O" data-id="_mMoKF21Y" data-name="title"><span style="color: rgb(131, 186, 38);">Services périscolaires</span></span></span></div>
+																<div class="_pDNE0kYl _j8y6im6J pb-grid pb-grid--stackable pb-grid--automatic" data-id="_j8y6im6J">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _VL0jTOGn mobile_center" data-id="_VL0jTOGn"></div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _JL45TY93 mobile_center" data-id="_JL45TY93"><a class="_epNwrNGv _nYnRtOEa" href="https://harmonie.ecolesoft.net/portail/index.jsp" target="_blank" data-id="_nYnRtOEa"><picture><img src="/images/Pictogrammes/dinner_ccpm.png"></picture></a></div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _ZxgYTGrn mobile_center" data-id="_ZxgYTGrn"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _dzoRirN8 pb-grid pb-grid--doubling pb-grid--stackable pb-grid--three-columns" data-id="_dzoRirN8">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n __3AlTEYm" data-id="__3AlTEYm"></div>
+														</div>
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _jnGMTYAm" data-id="_jnGMTYAm">
+																<p class="_7XqAY8_A _zwWAhYqM" data-id="_zwWAhYqM"><span hidden="" class="_VWvqNvR9 _eEN8h7_g _2dknaNM0" data-id="_eEN8h7_g" data-name="dropcap"></span><span class="_VWvqNvR9 _eEN8h7_g _ZGwmb_O6" data-id="_eEN8h7_g" data-name="text"><a href="https://harmonie.ecolesoft.net/portail/index.jsp" target="_blank" style="font-style: italic;">> Réservations et paiement en ligne</a></span></p>
+															</div>
+														</div>
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _5mBoTD7m" data-id="_5mBoTD7m"></div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _qJg3iXd0 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_qJg3iXd0">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _oxYAT8Pn" data-id="_oxYAT8Pn">
+																<div class="_rg3E6376 _NPdlTGzb divider--text symbol--center" data-id="_NPdlTGzb"><span><span class="_VWvqNvR9 _5xPLFVnp _3JdPm85O" data-id="_5xPLFVnp" data-name="title">Nos accueils</span></span></div>
+															</div>
+														</div>
+													</div>
+													<div class="_pDNE0kYl _azQRi_G8 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_azQRi_G8">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _dLJ2TJ13" data-id="_dLJ2TJ13">
+																<p class="_7XqAY8_A _DwE8hz_r" data-id="_DwE8hz_r"><span hidden="" class="_VWvqNvR9 _wgDxhQjE _2dknaNM0" data-id="_wgDxhQjE" data-name="dropcap"></span><span class="_VWvqNvR9 _wgDxhQjE _ZGwmb_O6" data-id="_wgDxhQjE" data-name="text">La Communauté de communes Ponthieu-Marquenterre vous accueille : </span></p>
+																<div class="_pDNE0kYl _dzpAie4b pb-grid pb-grid--stackable pb-grid--automatic" data-id="_dzpAie4b">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _O3jDTYvn" data-id="_O3jDTYvn">
+																			<h3 class="_qaQP6rvk _aZxNH5EP _qaQP6rvk__icon--left" data-id="_aZxNH5EP"><i class="_GwlbZrJE _mxO6hYbx _6pVxb12e fa _GwlbZrJE--none fa-clock-o" data-id="_mxO6hYbx" data-name="icon"></i><span class="_VWvqNvR9 _Awl_HMoX _3JdPm85O" data-id="_Awl_HMoX" data-name="title">Du lundi au vendredi, de 8h30 à 12h00 et de 14h à 17h30. (Fermé les jours fériés)</span></h3>
+																		</div>
+																	</div>
+																</div>
+																<div class="_pDNE0kYl _AzrYiYBz pb-grid pb-grid--doubling pb-grid--stackable pb-grid--three-columns" data-id="_AzrYiYBz">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _N3qjTldm" data-id="_N3qjTldm">
+																			<h2 class="_qaQP6rvk _4PBbHRWZ _qaQP6rvk__icon--left" data-id="_4PBbHRWZ"><i class="_GwlbZrJE _JzAgh54P _6pVxb12e fa _GwlbZrJE--none fa-map-signs" data-id="_JzAgh54P" data-name="icon"></i><span class="_VWvqNvR9 _Pxd0HLAX _3JdPm85O" data-id="_Pxd0HLAX" data-name="title">Au siège social à Rue</span></h2>
+																			<p class="_7XqAY8_A _gw2xhZEw" data-id="_gw2xhZEw"><span hidden="" class="_VWvqNvR9 _aG22hnAG _2dknaNM0" data-id="_aG22hnAG" data-name="dropcap"></span><span class="_VWvqNvR9 _aG22hnAG _ZGwmb_O6" data-id="_aG22hnAG" data-name="text"><span style="color: black;">33 bis route du Crotoy BP 40038 <br>80120 Rue <br>03 22 27 86 94<br>siege.rue@ponthieu-marquenterre.fr</span><br></span></p>
+																		</div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _DmdqT9rx" data-id="_DmdqT9rx">
+																			<h2 class="_qaQP6rvk _JQdLHL1P _qaQP6rvk__icon--left" data-id="_JQdLHL1P"><i class="_GwlbZrJE _QP5Mh2ex _6pVxb12e fa _GwlbZrJE--none fa-map-signs" data-id="_QP5Mh2ex" data-name="icon"></i><span class="_VWvqNvR9 _Mkz4HR2k _3JdPm85O" data-id="_Mkz4HR2k" data-name="title">À l'antenne de Nouvion</span></h2>
+																			<p class="_7XqAY8_A _2Gxvhzn6" data-id="_2Gxvhzn6"><span hidden="" class="_VWvqNvR9 _YExBhnpV _2dknaNM0" data-id="_YExBhnpV" data-name="dropcap"></span><span class="_VWvqNvR9 _YExBhnpV _ZGwmb_O6" data-id="_YExBhnpV" data-name="text">8 bis rue du collège<br>80860 Nouvion <br>03 22 23 25 43 <br>antenne.nouvion@ponthieu-marquenterre.fr<br></span></p>
+																		</div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n __LAlT2qn" data-id="__LAlT2qn">
+																			<h2 class="_qaQP6rvk _kP7OHgGQ _qaQP6rvk__icon--left" data-id="_kP7OHgGQ"><i class="_GwlbZrJE _5L7ghV5N _6pVxb12e fa _GwlbZrJE--none fa-map-signs" data-id="_5L7ghV5N" data-name="icon"></i><span class="_VWvqNvR9 _1ky0Hva8 _3JdPm85O" data-id="_1ky0Hva8" data-name="title">À l'antenne d'Ailly-le-Haut Clocher</span></h2>
+																			<p class="_7XqAY8_A _XMJmhjkM" data-id="_XMJmhjkM"><span hidden="" class="_VWvqNvR9 _a36Dh9PV _2dknaNM0" data-id="_a36Dh9PV" data-name="dropcap"></span><span class="_VWvqNvR9 _a36Dh9PV _ZGwmb_O6" data-id="_a36Dh9PV" data-name="text"><span style="color: black;">1 rue d'Ergnies<br>80690 Ailly-le-Haut-clocher <br>03 22 28 88 18<br>antenne.ailly@ponthieu-marquenterre.fr</span><br></span></p>
+																		</div>
+																	</div>
+																</div>
+																<div class="_pDNE0kYl _dzoRigp8 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_dzoRigp8">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n __3AlTeqm" data-id="__3AlTeqm">
+																			<div class="_pDNE0kYl _OJkLi3Gb pb-grid pb-grid--doubling pb-grid--stackable pb-grid--three-columns" data-id="_OJkLi3Gb">
+																				<div class=" grid__column" style="padding: 15px;">
+																					<div class="_O689JW7n _k39OT95n" data-id="_k39OT95n">
+																						<div class="_nJj2OBog _pPaXF8eM" data-id="_pPaXF8eM">
+																							<iframe scrolling="no" src="https://maps.google.com/maps?z=18&t=k&q=communaut%C3%A9%20de%20communes%20ponthieu%20marquenterre&ie=UTF8&&output=embed" style="height: 100%; width: 100%;"></iframe>
+																						</div>
+																					</div>
+																				</div>
+																				<div class=" grid__column" style="padding: 15px;">
+																					<div class="_O689JW7n _omYAT8bL" data-id="_omYAT8bL">
+																						<div class="_nJj2OBog _GMWaFYdM" data-id="_GMWaFYdM">
+																							<iframe scrolling="no" src="https://maps.google.com/maps?z=18&t=k&q=communaut%C3%A9%20de%20communes%20nouvion&ie=UTF8&&output=embed" style="height: 100%; width: 100%;"></iframe>
+																						</div>
+																					</div>
+																				</div>
+																				<div class=" grid__column" style="padding: 15px;">
+																					<div class="_O689JW7n _VnkDTdam" data-id="_VnkDTdam">
+																						<div class="_nJj2OBog _BM3vFpRA" data-id="_BM3vFpRA">
+																							<iframe scrolling="no" src="https://maps.google.com/maps?z=18&t=k&q=1%20rue%20d'ergnies%20ailly%20le%20haut%20clocher&ie=UTF8&&output=embed" style="height: 100%; width: 100%;"></iframe>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section data-container="true" class="_DblQBlAM _VRpMC0RQ" data-id="_VRpMC0RQ" style="min-height: auto;">
+												<div class="_DblQBlAM__filter" style="background-color: rgba(0, 0, 0, 0);"></div>
+												<div class="_DblQBlAM__container" style="max-width: 1170px;">
+													<div class="_pDNE0kYl _RbaoilD0 pb-grid pb-grid--stackable pb-grid--automatic" data-id="_RbaoilD0">
+														<div class=" grid__column" style="padding: 15px;">
+															<div class="_O689JW7n _v3lOTGWx" data-id="_v3lOTGWx">
+																<div class="_rg3E6376 _VbNwTz5a divider--text symbol--center" data-id="_VbNwTz5a"><span><span class="_VWvqNvR9 _oMNjFjop _3JdPm85O" data-id="_oMNjFjop" data-name="title">Accès rapide</span></span></div>
+																<div class="_pDNE0kYl _PbVyix4b pb-grid pb-grid--stackable pb-grid--automatic" data-id="_PbVyix4b">
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _GLVgTKzx" data-id="_GLVgTKzx"></div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _MxaDTbXn" data-id="_MxaDTbXn"><span class="_jwo7RMaD _D_7eUBlG" data-id="_D_7eUBlG" data-name="facebook page" style="display: inline-block;"><iframe src="//www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fponthieumarquenterre&tabs=timeline,&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&width=276&height=250&appId=" width="276" height="250" scrolling="no" frameborder="0" style="border: none; overflow: hidden;"></iframe></span></div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _1xzdT8oL" data-id="_1xzdT8oL">
+																			<div class="_NYd6gvae _YzBafqYO" data-id="_YzBafqYO"><a class="_epNwrNGv _lZ5DtN4Z" href="/pdf/JOURNAL1.pdf" target="_self" data-id="_lZ5DtN4Z"><picture><img src="/images/Pictogrammes/newspaper.png"></picture></a>
+																				<div class="_NYd6gvae _AOpafynO" data-id="_AOpafynO">
+																					<p class="_7XqAY8_A _lGjahXWr" data-id="_lGjahXWr"><span hidden="" class="_VWvqNvR9 _NG72hNqG _2dknaNM0" data-id="_NG72hNqG" data-name="dropcap"></span><span class="_VWvqNvR9 _NG72hNqG _ZGwmb_O6" data-id="_NG72hNqG" data-name="text"><a href="https://lemag.ponthieu-marquenterre.fr" target="_blank">Le Journal du Ponthieu-Marquenterre</a></span></p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class=" grid__column" style="padding: 15px;">
+																		<div class="_O689JW7n _Yx8RTgJn" data-id="_Yx8RTgJn"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+										<div data-type="pagefly-styles">
+											<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+											<style type="text/css">._ERbj1g7D { position: relative; } ._nDEv0Ex7 { display: block; width: 100%; margin-bottom: 20px; line-height: 1.5em; } ._nDEv0Ex7:last-child { margin-bottom: 0; } ._nDEv0Ex7:focus, ._nDEv0Ex7:active { outline: none; box-shadow: none; } ._GwlbZrJE { font-size: 1em; vertical-align: middle; text-align: center; width: auto; height: auto; } ._GwlbZrJE--diamond, ._GwlbZrJE--circle, ._GwlbZrJE--square { width: 50px; height: 50px; line-height: 50px; border: 1px solid; } ._GwlbZrJE--circle { border-radius: 100%; } ._GwlbZrJE--diamond { transform: rotate(45deg); -webkit-transform: rotate(45deg); } ._GwlbZrJE--diamond:before { display: block; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); } ._VWvqNvR9 { vertical-align: middle; } ._qaQP6rvk > a { color: inherit !important; } ._qaQP6rvk > span { font-weight: inherit; } ._qaQP6rvk { word-break: break-word; } ._qaQP6rvk__icon--none i, ._qaQP6rvk__icon--left i { margin-right: 0.3em; } ._qaQP6rvk__icon--right i { margin-left: 0.3em; } ._qaQP6rvk__icon--top i { margin-bottom: 0.5em; } ._qaQP6rvk__icon--top > span, ._qaQP6rvk__icon--top > a, ._qaQP6rvk__icon--top > span[data-empty][contenteditable] { display: block; } ._qaQP6rvk [class*="--diamond"] { margin-right: 1em; } ._O689JW7n { position: relative; } ._pDNE0kYl { position: relative; } ._pDNE0kYl { margin: 0 -15px; } ._P5BGqkyo { display: block; } .pf-slider-container ._P5BGqkyo { width: 500px; } ._7XqAY8_A > span:last-child { line-height: inherit; } ._7XqAY8_A[class*="dropcap--"] > span:first-child { display: block; margin-right: 10px; float: left; font-size: 2em; background: #919da9; color: black; width: 50px; height: 50px; line-height: 50px; } ._7XqAY8_A[class*="dropcap--"]:not(.dropcap--none) > span:first-child { margin-right: 20px; text-align: center; } ._7XqAY8_A.dropcap--none > span:first-child { text-align: inherit; line-height: 1 !important; width: auto !important; height: auto !important; background: none !important; border-radius: 0; } ._7XqAY8_A.dropcap--circle > span:first-child { border-radius: 100%; } ._7XqAY8_A:not([class*="dropcap--"]) > span { margin-right: 0 !important; } ._7XqAY8_A ol, ._7XqAY8_A ul { list-style-position: inside; } ._7XqAY8_A blockquote { font-size: inherit; } ._NYd6gvae { position: relative; } ._rg3E6376 { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; display: -webkit-flex !important; align-items: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; padding: 1rem 0; display: block; position: relative; font-size: 2px; } ._rg3E6376 > span { margin: 0 1rem; flex: 1 0 auto; display: flex; -webkit-flex: 1 0 auto; line-height: 1; color: black; font-size: 30px; } ._rg3E6376 span > span { vertical-align: middle; } ._rg3E6376:before, ._rg3E6376:after { content: ''; width: 100%; // height: 100%; display: block; border-top: 1em solid; } ._rg3E6376.symbol--right > span, ._rg3E6376.symbol--left:before, ._rg3E6376.symbol--left:after { order: 1; -webkit-order: 1; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; } ._rg3E6376.divider--none > span { display: none; } ._epNwrNGv { position: relative; overflow: hidden; display: inline-flex; justify-content: flex-start; align-items: flex-start; vertical-align: middle; max-width: 100%; } ._epNwrNGv picture { width: 100%; } ._epNwrNGv img { display: inline-block; object-fit: cover; max-width: 100%; max-height: 100%; height: auto; text-align: center; width: 100%; vertical-align: middle; position: unset; } ._epNwrNGv img.pf-placeholder-svg{ min-width: 150px; } ._epNwrNGv.image--rounded { border-radius: 10px; } ._epNwrNGv.image--circle { border-radius: 100%; } ._epNwrNGv[data-action], ._epNwrNGv[data-event] { cursor: pointer; } ._nJj2OBog { height: 450px; position: relative; } ._nJj2OBog iframe { border: 0; } ._DblQBlAM { position: relative; } ._DblQBlAM { clear: both; } ._DblQBlAM[data-parallax="true"] { position: relative; background: none !important; } ._DblQBlAM__parallax { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; background-size: cover !important; background-repeat: no-repeat; } ._DblQBlAM { box-sizing: border-box; padding: 15px 0; position: relative; } ._DblQBlAM[data-container] ._DblQBlAM__container { padding-left: 15px; padding-right: 15px; width: auto; margin: auto; box-sizing: border-box; } ._DblQBlAM .pf-parallax__img { position: absolute; object-fit: cover; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; } 
+						    @media all { #__pf_9kqh5o ._y8bBCL25 { font-size: 30px; padding: 15px; } .__pf_9kqh5o ._pQMLHr0w[data-id="_pQMLHr0w"] { border-style: none; font-size: 36px; color: rgb(30, 101, 156); text-transform: uppercase; font-family: Lato; font-weight: 700; } .__pf_9kqh5o ._0GR2hpX6[data-id="_0GR2hpX6"] { text-align: center; font-size: 12px; } .__pf_9kqh5o ._eyXbH9dy[data-id="_eyXbH9dy"] { font-size: 30px; text-align: center; text-transform: capitalize; background-color: rgb(131, 186, 38); color: white; font-weight: 700; } .__pf_9kqh5o ._0aqmTzWP[data-id="_0aqmTzWP"] { color: rgb(145, 157, 169); font-size: 22px; } .__pf_9kqh5o ._0aqmTzWP[data-id="_0aqmTzWP"] ._3JdPm85O { font-size: 22px; } .__pf_9kqh5o ._D6E8hvkG[data-id="_D6E8hvkG"] { text-align: center; } .__pf_9kqh5o ._2MVEhmlG[data-id="_2MVEhmlG"] { text-align: justify; } .__pf_9kqh5o ._3ewQTDza[data-id="_3ewQTDza"] { color: rgb(145, 157, 169); font-size: 22px; } .__pf_9kqh5o ._3ewQTDza[data-id="_3ewQTDza"] ._3JdPm85O { font-size: 22px; } .__pf_9kqh5o ._L6lnhRYG[data-id="_L6lnhRYG"] { text-align: center; } .__pf_9kqh5o ._DmdqTV4x[data-id="_DmdqTV4x"] { text-align: center; } .__pf_9kqh5o ._ObVxTLNe[data-id="_ObVxTLNe"] { color: rgb(145, 157, 169); } .__pf_9kqh5o ._7M6vTmlP[data-id="_7M6vTmlP"] { color: rgb(145, 157, 169); } .__pf_9kqh5o ._7M6vTmlP[data-id="_7M6vTmlP"] ._3JdPm85O { color: rgb(131, 186, 38); } .__pf_9kqh5o ._ZG9_hD86[data-id="_ZG9_hD86"] { text-align: center; font-size: 20px; } .__pf_9kqh5o ._Q32ZTyG3[data-id="_Q32ZTyG3"] { text-align: center; } .__pf_9kqh5o ._NMOKTrXe[data-id="_NMOKTrXe"] { color: rgb(145, 157, 169); font-size: 1px; } .__pf_9kqh5o ._NMOKTrXe[data-id="_NMOKTrXe"] ._3JdPm85O { font-family: Lato; } .__pf_9kqh5o ._VL0jTOGn[data-id="_VL0jTOGn"] { text-align: right; } .__pf_9kqh5o ._nYnRtOEa[data-id="_nYnRtOEa"] { display: inline-block; width: 300px; } .__pf_9kqh5o ._ZxgYTGrn[data-id="_ZxgYTGrn"] { text-align: left; } .__pf_9kqh5o ._j8y6im6J[data-id="_j8y6im6J"] { font-family: Lato; } .__pf_9kqh5o ._zwWAhYqM[data-id="_zwWAhYqM"] { text-align: center; } .__pf_9kqh5o ._NPdlTGzb[data-id="_NPdlTGzb"] { color: rgb(145, 157, 169); font-family: Lato; } .__pf_9kqh5o ._NPdlTGzb[data-id="_NPdlTGzb"] ._3JdPm85O { font-family: Lato; } .__pf_9kqh5o ._DwE8hz_r[data-id="_DwE8hz_r"] { text-align: center; } .__pf_9kqh5o ._aZxNH5EP[data-id="_aZxNH5EP"] ._6pVxb12e { font-size: 1.5em; color: rgb(255, 205, 4); } .__pf_9kqh5o ._aZxNH5EP[data-id="_aZxNH5EP"] { text-align: center; font-family: Lato; font-size: 22px; color: rgb(74, 74, 74); } .__pf_9kqh5o ._4PBbHRWZ[data-id="_4PBbHRWZ"] { font-size: 21px; border-style: none; border-color: rgb(255, 205, 4); display: block; font-family: Lato; color: rgb(30, 101, 156); } .__pf_9kqh5o ._4PBbHRWZ[data-id="_4PBbHRWZ"] ._6pVxb12e { color: rgb(75, 80, 88); } .__pf_9kqh5o ._gw2xhZEw[data-id="_gw2xhZEw"] { text-align: center; font-size: 18px; font-family: Lato; } .__pf_9kqh5o ._JQdLHL1P[data-id="_JQdLHL1P"] { font-size: 21px; border-style: none; font-family: Lato; } .__pf_9kqh5o ._2Gxvhzn6[data-id="_2Gxvhzn6"] { text-align: center; font-size: 18px; font-family: Lato; } .__pf_9kqh5o ._kP7OHgGQ[data-id="_kP7OHgGQ"] { font-size: 21px; border-style: none; font-family: Lato; color: rgb(131, 186, 39); } .__pf_9kqh5o ._kP7OHgGQ[data-id="_kP7OHgGQ"] ._6pVxb12e { color: rgb(75, 80, 88); } .__pf_9kqh5o ._XMJmhjkM[data-id="_XMJmhjkM"] { text-align: center; font-size: 18px; font-family: Lato; } .__pf_9kqh5o ._jYwqCZ1N[data-id="_jYwqCZ1N"] { font-family: Lato; border-style: none; } .__pf_9kqh5o ._VbNwTz5a[data-id="_VbNwTz5a"] { color: rgb(145, 157, 169); } .__pf_9kqh5o ._VbNwTz5a[data-id="_VbNwTz5a"] ._3JdPm85O { font-family: Lato; } .__pf_9kqh5o ._lZ5DtN4Z[data-id="_lZ5DtN4Z"] { width: 120px; } .__pf_9kqh5o ._lGjahXWr[data-id="_lGjahXWr"] { font-size: 24px; padding: 15px; line-height: 1.25; font-family: Lato; letter-spacing: -1px; } .__pf_9kqh5o ._AOpafynO[data-id="_AOpafynO"] { padding-left: 15px; } .__pf_9kqh5o ._YzBafqYO[data-id="_YzBafqYO"] { text-align: center; } .__pf_9kqh5o ._VRpMC0RQ[data-id="_VRpMC0RQ"] { border-style: none; } .__pf_9kqh5o ._8Mo_Tw3P[data-id="_8Mo_Tw3P"] { color: rgb(145, 157, 169); font-size: 22px; } .__pf_9kqh5o ._8Mo_Tw3P[data-id="_8Mo_Tw3P"] ._3JdPm85O { font-size: 22px; } .__pf_9kqh5o ._zGWAhq76[data-id="_zGWAhq76"] { text-align: center; } } @media only screen and (max-width: 767px) { } @media only screen and (min-width: 768px) and (max-width: 991px) { } @media only screen and (min-width: 992px) and (max-width: 1199px) { } @media only screen and (min-width: 1200px) { } 
+											</style>
+										</div>
+										<script type="text/javascript">
+			window.__pagefly_options__=window.__pagefly_options__||[],window.__pagefly_options__.push({"isBackend":false,"isPreview":false,"key":"helper","css":[{"key":"fontawesome","url":"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css","elements":["Icon","Tabs","Slider","Accordion","MailChimp","Form","Heading","Button"]}],"js":[],"page_id":"171"});
+										
+										</script>
+									</div>
+									<!-- Social Sharing -->
+									<!-- Pagination -->
+								</article>
+							</main>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-wrapper">
+			<div class="footer-wrapper-inner">
+				<!-- Copyright -->
+				<div id="copyright" role="contentinfo">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="copyright col-sm-9"><span class="copy">© </span><span class="year">2020.</span> <a class="privacy_link" rel="license" href="/index.php/mentions-legales"> Mentions légales </a> <a href="https://fr-fr.facebook.com/ponthieumarquenterre/" target="_blank"><img style="width:100px;height:100px" src="/images/social/FACEBOOK.jpg" alt="Facebook"></a> <a href="https://fr.wikipedia.org/wiki/Communaut%C3%A9_de_communes_Ponthieu-Marquenterre" target="_blank"><img style="width:100px;height:100px" src="/images/social/WIKIPEDIA.jpg" alt="Wikipedia"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="back-top"><a href="#"><span></span></a></div>
+	</body>
+</html>
