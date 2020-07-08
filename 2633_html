@@ -1,0 +1,731 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.domfront-tinchebray-interco.fr/default/">
+		<title>Comptes-rendus - Domfront-Tinchebray Interco - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Tahoma, Geneva, sans-serif;
+	background-color:#dbd3c9
+}
+.couleur_main, .cl_main {color:#009dca}
+.couleur_main_bg, .bg_main {background-color:#009dca !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #009dca;
+}
+.couleur_police, .cl_font {color:#39b2ac}
+.couleur_police_bg, .bg_font {background-color:#39b2ac !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #39b2ac;
+}
+.couleur_fond_bg {background-color:#dbd3c9}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #dbd3c9 100%);
+	background: -webkit-linear-gradient(top, transparent, #dbd3c9 100%);
+	background: linear-gradient(to bottom, transparent, #dbd3c9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#dbd3c9",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #009dca transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #009dca;}
+a.lien_couleur {color: #39b2ac;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #1B948E;}
+.couleur {color: #39b2ac;}
+#head .retour {background: #39b2ac url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #39b2ac;}
+#tribune a.postvisit, #tribune span.postvisit{color: #39b2ac;}
+#information .tree1, #information .tree1 a {color: #39b2ac;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#39b2ac; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/33/banner/VlFs44JhSXJkd13.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.domfront-tinchebray-interco.fr"> <img src="http://static.reseaudesintercoms.fr/cities/33/logo/ywElc579tBy2q4j.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://domfront-tinchebray-interco.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#ea554d !important;
+	border-color:#ea554d !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #ea554d;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#ea554d !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #ea554d;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#67b26c !important;
+	border-color:#67b26c !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #67b26c;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#67b26c !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #67b26c;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#4f7ea5 !important;
+	border-color:#4f7ea5 !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #4f7ea5;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#4f7ea5 !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #4f7ea5;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#58aa9b !important;
+	border-color:#58aa9b !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #58aa9b;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#58aa9b !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #58aa9b;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#e560a2 !important;
+	border-color:#e560a2 !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #e560a2;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#e560a2 !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #e560a2;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#eb8e2d !important;
+	border-color:#eb8e2d !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #eb8e2d;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#eb8e2d !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #eb8e2d;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#ea554d;"><a class="menu-a" href="/fr/rubrique/1/collectivite">Collectivité</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/jzdeffdqk5jg9pn.jpg" alt=""></li>
+								<li><a href="/fr/information/477/coordonnees" class="icon-arrow-right"> Coordonnées </a></li>
+								<li><a href="/fr/information/478/missions-actions" class="icon-arrow-right"> Missions et actions </a></li>
+								<li><a href="/fr/elus" class="icon-arrow-right"> Élus communautaires </a></li>
+								<li><a href="/fr/comptes-rendus" class="icon-arrow-right"> Comptes-rendus </a></li>
+								<li><a href="/fr/espace-presse" class="icon-arrow-right"> Espace presse </a></li>
+								<li><a href="/fr/marches-publics" class="icon-arrow-right"> Marchés publics </a></li>
+								<li><a href="/fr/information/9117/recueils-actes-administratifs" class="icon-arrow-right"> Recueils Actes administratifs </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#67b26c;"><a class="menu-a" href="/fr/rubrique/2/tourisme-animations">Tourisme/Animations</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/vjuwtufhlqgen6l.jpg" alt=""></li>
+								<li><a href="/fr/information/5327/videos-promouvoir-communes" class="icon-arrow-right"> Vidéos Promouvoir les communes </a></li>
+								<li><a href="/fr/information/3000/patrimoine" class="icon-arrow-right"> Patrimoine </a></li>
+								<li><a href="/fr/information/481/chemins-randonnee" class="icon-arrow-right"> Chemins de randonnée </a></li>
+								<li><a href="/fr/information/482/hebergements" class="icon-arrow-right"> Hébergements </a></li>
+								<li><a href="/fr/information/483/musees" class="icon-arrow-right"> Musées </a></li>
+								<li><a href="/fr/information/484/expositions" class="icon-arrow-right"> Expositions </a></li>
+								<li><a href="/fr/information/485/mardi-rando" class="icon-arrow-right"> Mardi-rando </a></li>
+								<li><a href="/fr/information/1269/restaurants" class="icon-arrow-right"> Restaurants </a></li>
+								<li><a href="/fr/information/4921/piscine-intercommunale" class="icon-arrow-right"> Piscine intercommunale </a></li>
+								<li><a href="/fr/information/6616/office-tourisme-domfront" class="icon-arrow-right"> Office de Tourisme Domfront </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#4f7ea5;"><a class="menu-a" href="/fr/rubrique/3/environnement-voirie">Environnement/Voirie</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/sj2e8da469cbhwa.JPG" alt=""></li>
+								<li><a href="/fr/information/5336/voirie" class="icon-arrow-right"> Voirie </a></li>
+								<li><a href="/fr/information/5337/chemins" class="icon-arrow-right"> Chemins </a></li>
+								<li><a href="/fr/information/5339/eau-potable" class="icon-arrow-right"> Eau potable </a></li>
+								<li><a href="/fr/information/5338/entretien-cours-eau" class="icon-arrow-right"> Entretien des cours d'eau </a></li>
+								<li><a href="/fr/information/486/ordures-menageres" class="icon-arrow-right"> Ordures ménagères </a></li>
+								<li><a href="/fr/information/6558/assainissement-collectif" class="icon-arrow-right"> Assainissement collectif </a></li>
+								<li><a href="/fr/information/6559/assainissement-non-collectif" class="icon-arrow-right"> Assainissement non collectif </a></li>
+								<li><a href="/fr/information/6639/dechetteries" class="icon-arrow-right"> Déchetteries </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#58aa9b;"><a class="menu-a" href="/fr/rubrique/5/enfance-jeunesse">Enfance/Jeunesse</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/dq4s36urhyl1u7a.JPG" alt=""></li>
+								<li><a href="/fr/information/6578/scolaire-periscolaire" class="icon-arrow-right"> Scolaire/Périscolaire </a></li>
+								<li><a href="/fr/information/6580/extra-scolaire" class="icon-arrow-right"> Extra-Scolaire </a></li>
+								<li><a href="/fr/information/6617/portail-familles" class="icon-arrow-right"> Portail familles </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#e560a2;"><a class="menu-a" href="/fr/rubrique/4/pratique">Pratique</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/5f7kbhqu0qq21mi.JPG" alt=""></li>
+								<li><a href="/fr/forum" class="icon-arrow-right"> Tribune </a></li>
+								<li><a href="/fr/associations" class="icon-arrow-right"> Associations </a></li>
+								<li><a href="/fr/information/490/entreprises" class="icon-arrow-right"> Entreprises </a></li>
+								<li><a href="/fr/information/498/logement" class="icon-arrow-right"> Logement </a></li>
+								<li><a href="/fr/information/491/numeros-utiles" class="icon-arrow-right"> Numéros utiles </a></li>
+								<li><a href="/fr/information/6686/emploi" class="icon-arrow-right"> Emploi </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#eb8e2d;"><a class="menu-a" href="/fr/rubrique/6/petite-enfance">Petite enfance</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/33/180x120/hh9c5a9jv2gs6d7.JPG" alt=""></li>
+								<li><a href="/fr/information/6260/portail-familles" class="icon-arrow-right"> PORTAIL FAMILLES </a></li>
+								<li><a href="/fr/information/496/ram-tinchebray-ufcv" class="icon-arrow-right"> RAM Tinchebray UFCV </a></li>
+								<li><a href="/fr/information/6564/ram-domfront" class="icon-arrow-right"> RAM Domfront </a></li>
+								<li><a href="/fr/information/6585/halte-garderie-1-2-3-soleil" class="icon-arrow-right"> Halte garderie "1-2-3- Soleil" </a></li>
+								<li><a href="/fr/information/6563/micro-creche-les-lutins" class="icon-arrow-right"> Micro-crèche "Les lutins" </a></li>
+								<li><a href="/fr/information/6592/creche-les-p-tits-loups" class="icon-arrow-right"> Crèche "Les P'tits Loups" </a></li>
+								<li><a href="/fr/information/7828/micro-creche-recre-neuf" class="icon-arrow-right"> Micro-crèche "Récré à Neuf" </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/collectivite" title="Collectivité">Collectivité</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">27/02/2020</td>
+									<td><a href="/fr/compte-rendu/2406/conseil-cdc-seance-27-fevrier-2020" title="Conseil CdC : séance du 27 février 2020"><b>Conseil CdC : séance du 27 février 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/bdums28qjhco058.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">12/12/2019</td>
+									<td><a href="/fr/compte-rendu/2376/conseil-cdc-seance-12-decembre-2019" title="Conseil CdC : séance du 12 décembre 2019"><b>Conseil CdC : séance du 12 décembre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/urv5sx1d9lgujnb.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">08/10/2019</td>
+									<td><a href="/fr/compte-rendu/2345/conseil-cdc-seance-8-octobre-2019" title="Conseil CdC : séance du 8 octobre 2019"><b>Conseil CdC : séance du 8 octobre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/qjhgfyiqylja5qs.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/06/2019</td>
+									<td><a href="/fr/compte-rendu/2293/conseil-cdc-seance-13-juin-2019" title="Conseil CdC : séance du 13 juin 2019"><b>Conseil CdC : séance du 13 juin 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/3y5jdaa08gvkzl7.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">14/03/2019</td>
+									<td><a href="/fr/compte-rendu/2219/conseil-cdc-seance-14-mars-2019" title="Conseil CdC : séance du 14 mars 2019"><b>Conseil CdC : séance du 14 mars 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/hkpunmm2p8byd2c.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/02/2019</td>
+									<td><a href="/fr/compte-rendu/2166/conseil-cdc-seance-20-fevrier-2019" title="Conseil CdC : séance du 20 février 2019"><b>Conseil CdC : séance du 20 février 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/nmernb31p32t5.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/12/2018</td>
+									<td><a href="/fr/compte-rendu/2146/conseil-cdc-seance-11-decembre-2018" title="Conseil CdC : séance du 11 décembre 2018"><b>Conseil CdC : séance du 11 décembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/npr1mp93mp4bqkk.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/10/2018</td>
+									<td><a href="/fr/compte-rendu/2092/conseil-cdc-seance-11-octobre-2018" title="Conseil CdC : séance du 11 octobre 2018"><b>Conseil CdC : séance du 11 octobre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/02yyw3qzn9pbx6f.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">26/06/2018</td>
+									<td><a href="/fr/compte-rendu/2045/conseil-cdc-seance-26-juin-2018" title="Conseil CDC : séance du 26 juin 2018"><b>Conseil CDC : séance du 26 juin 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/wixu34iigx0hns.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/03/2018</td>
+									<td><a href="/fr/compte-rendu/1998/conseil-cdc-seance-22-mars-2018" title="Conseil CDC : séance du 22 mars 2018"><b>Conseil CDC : séance du 22 mars 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/5cssfv9vmjq9h.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/12/2017</td>
+									<td><a href="/fr/compte-rendu/1950/conseil-cdc-seance-19-decembre-2017" title="Conseil CDC : séance du 19 décembre 2017"><b>Conseil CDC : séance du 19 décembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/k1vq9qdwh30p9h.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">05/12/2017</td>
+									<td><a href="/fr/compte-rendu/1901/conseil-cdc-seance-5-decembre-2017" title="Conseil CDC : séance du 5 décembre 2017"><b>Conseil CDC : séance du 5 décembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/yf9tnhcg8inld8v.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">12/10/2017</td>
+									<td><a href="/fr/compte-rendu/1876/conseil-cdc-seance-12-octobre-2017" title="Conseil CDC : séance du 12 octobre 2017"><b>Conseil CDC : séance du 12 octobre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/pemyeyrr2sr8kb.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/07/2017</td>
+									<td><a href="/fr/compte-rendu/1832/conseil-cdc-seance-19-07-2017" title="Conseil CDC : Séance du 19/07/2017"><b>Conseil CDC : Séance du 19/07/2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/0ugbxf4aw9f3s8j.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/07/2017</td>
+									<td><a href="/fr/compte-rendu/1784/conseil-cdc-election-president-interco-19-juillet-2017" title="Conseil CDC : Election du Président de l'Interco 19 juillet 2017"><b>Conseil CDC : Election du Président de l'Interco 19 juillet 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/qmqap2sig1zf84x.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/07/2017</td>
+									<td><a href="/fr/compte-rendu/1779/conseil-cdc-seance-19-juillet-2017" title="Conseil CDC : Séance du 19 juillet 2017"><b>Conseil CDC : Séance du 19 juillet 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/fdtoldi98v62a2c.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">10/07/2017</td>
+									<td><a href="/fr/compte-rendu/1831/conseil-cdc-seance-10-07-2017" title="Conseil CDC : Séance du 10/07/2017"><b>Conseil CDC : Séance du 10/07/2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/a087n77ow357m1n.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/04/2017</td>
+									<td><a href="/fr/compte-rendu/2071/conseil-cdc-seance-13-avril-2017" title="Conseil CdC : séance du 13 avril 2017"><b>Conseil CdC : séance du 13 avril 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/35vtncuri448rm.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/03/2017</td>
+									<td><a href="/fr/compte-rendu/1740/conseil-cdc-seance-20-mars-2017" title="Conseil CDC : Séance du 20 mars 2017"><b>Conseil CDC : Séance du 20 mars 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/m0kn5204vy8m8u.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">10/01/2017</td>
+									<td><a href="/fr/compte-rendu/1833/conseil-cdc-decision-modificative-n1-10-01-2017" title="Conseil CDC : Décision modificative n°1 du 10/01/2017"><b>Conseil CDC : Décision modificative n°1 du 10/01/2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/33/documents/or1lzqkd9mmyzqw.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div id="tipiandmsp" class="r_tipi sunshine "><a href="https://www.tipi.budget.gouv.fr" target="_blank"> <img class="tipi_img" src="http://static.reseaudescommunes.fr/default/images/paiment-ligne.jpg" width="50" height="50" alt="Paiements en ligne"> <span class="top_txt">Effectuez vos</span> <span class="bot_txt">Paiements en ligne</span> </a>
+					<div class="clear"></div>
+				</div>
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/17.png');"></div><a href="/fr/information/6260/portail-familles" title="PORTAIL FAMILLES"> PORTAIL FAMILLES </a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="mini-map">
+					<script type="text/javascript">
+				jQuery(function($){ 
+					var params = {
+						allowScriptAccess 	: "always",
+						wmode           	: "opaque",
+						quality           	: "high"
+					};
+					swfobject.embedSWF("http://static.reseaudesintercoms.fr/cities/33/banner/79ILgiUeS8IXU9G.swf", "interactivemap", 300, 220, "9.0.0", "/default/swf/expressInstall.swf", null, params, null);
+				});
+			
+					</script>
+					<div id="interactivemap"><a class="terr_link" href="/fr/territoire-liste/decouvrir-territoire"> <img src="http://static.reseaudesintercoms.fr/cities/33/banner/3l1YryiTr468T3A.jpg" alt="Carte de la Communauté"> </a></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/1329/avrilly"> Avrilly </a></li>
+						<li><a href="/fr/territoire/167/beauchene"> Beauchêne </a></li>
+						<li><a href="/fr/territoire/1331/champsecret"> Champsecret </a></li>
+						<li><a href="/fr/territoire/503/chanu"> Chanu </a></li>
+						<li><a href="/fr/territoire/166/clairefougere"> Clairefougère </a></li>
+						<li><a href="/fr/territoire/1333/domfront"> Domfront </a></li>
+						<li><a href="/fr/territoire/504/frenes"> Frênes </a></li>
+						<li><a href="/fr/territoire/1325/la-haute-chapelle"> La Haute Chapelle </a></li>
+						<li><a href="/fr/territoire/165/larchamp"> Larchamp </a></li>
+						<li><a href="/fr/territoire/164/le-menil-ciboult"> Le Ménil-Ciboult </a></li>
+						<li><a href="/fr/territoire/1328/lonlay-abbaye"> Lonlay L'Abbaye </a></li>
+						<li><a href="/fr/territoire/163/moncy"> Moncy </a></li>
+						<li><a href="/fr/territoire/771/montsecret"> Montsecret </a></li>
+						<li><a href="/fr/territoire/1326/rouelle"> Rouellé </a></li>
+						<li><a href="/fr/territoire/1327/saint-bomer-forges"> Saint Bomer les Forges </a></li>
+						<li><a href="/fr/territoire/1330/saint-brice-passais"> Saint Brice en Passais </a></li>
+						<li><a href="/fr/territoire/162/saint-christophe-de-chaulieu"> Saint-Christophe-de-Chaulieu </a></li>
+						<li><a href="/fr/territoire/161/saint-cornier-des-landes"> Saint-Cornier-des-Landes </a></li>
+						<li><a href="/fr/territoire/160/saint-jean-des-bois"> Saint-Jean-des-Bois </a></li>
+						<li><a href="/fr/territoire/506/saint-pierre-d-entremont"> Saint-Pierre-d'Entremont </a></li>
+						<li><a href="/fr/territoire/159/saint-quentin-les-chardonnets"> Saint-Quentin-les-Chardonnets </a></li>
+						<li><a href="/fr/territoire/1332/st-gilles-marais"> St Gilles des Marais </a></li>
+						<li><a href="/fr/territoire/158/tinchebray"> Tinchebray </a></li>
+						<li><a href="/fr/territoire/157/yvrandes"> Yvrandes </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/33/logo/Xb454IeJArkNrSN.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Bernard Soul </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 5, Bd du Midi, 61 800 Tinchebray </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 02 33 66 60 13 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> Siège administratif : 18, rue Georges Clémenceau - 61700 Domfront en Poiraie. Tél. 02.33.30.60.60<br> Siège social : 1, place du général Leclerc - 61800 Tinchebray. <br> Tél. 02.33.66.60.13<br> <br> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft">
+					<div id="f_newsletter">
+						<div class="titre">Newsletter</div>
+						<form action="/fr/newsletter/subscribe" method="post" name="newsletter">
+							<p>Saisissez votre adresse email afin de recevoir la newsletter de Domfront - Tinchebray Interco.</p>
+							<p><input name="email" type="text" class="email" placeholder="Adresse email"></p>
+							<p><label for="member_group">Vous pouvez également adhérer au(x) groupe(s) suivant(s) :</label></p>
+							<div class="f_multiselect">
+								<div class="selectBox"><select> <option>Sélectionnez un/des groupe(s)</option> </select>
+									<div class="overSelect"></div>
+								</div>
+								<div id="checkboxes" class="selectList"><label for="group_15"> <input type="checkbox" name="groups[15]" id="group_15" value="15"> UFCV </label> <label for="group_6"> <input type="checkbox" name="groups[6]" id="group_6" value="6"> Multi accueil St Pierre </label></div>
+							</div><br>
+							<script>
+					$(document).ready(function() {
+						$('.selectBox').click(function() {
+							$(this).parent().find('.selectList').toggle();
+						});
+					});
+				
+							</script>
+							<div id="newsletterCaptcha" class="g-recaptcha" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+							<p class="center"><input type="submit" value="Souscrire" class="submit bg_main"></p>
+						</form>
+					</div>
+				</div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/collectivite">Collectivité</a></li>
+									<li><a href="/fr/information/477/coordonnees">Coordonnées</a></li>
+									<li><a href="/fr/information/478/missions-actions">Missions et actions</a></li>
+									<li><a href="/fr/elus">Élus communautaires</a></li>
+									<li><a href="/fr/comptes-rendus">Comptes-rendus</a></li>
+									<li><a href="/fr/espace-presse">Espace presse</a></li>
+									<li><a href="/fr/marches-publics">Marchés publics</a></li>
+									<li><a href="/fr/information/9117/recueils-actes-administratifs">Recueils Actes administratifs</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/tourisme-animations">Tourisme/Animations</a></li>
+									<li><a href="/fr/information/5327/videos-promouvoir-communes">Vidéos Promouvoir les communes </a></li>
+									<li><a href="/fr/information/3000/patrimoine">Patrimoine</a></li>
+									<li><a href="/fr/information/481/chemins-randonnee">Chemins de randonnée</a></li>
+									<li><a href="/fr/information/482/hebergements">Hébergements</a></li>
+									<li><a href="/fr/information/483/musees">Musées</a></li>
+									<li><a href="/fr/information/484/expositions">Expositions</a></li>
+									<li><a href="/fr/information/485/mardi-rando">Mardi-rando</a></li>
+									<li><a href="/fr/information/1269/restaurants">Restaurants</a></li>
+									<li><a href="/fr/information/4921/piscine-intercommunale">Piscine intercommunale</a></li>
+									<li><a href="/fr/information/6616/office-tourisme-domfront">Office de Tourisme Domfront</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/environnement-voirie">Environnement/Voirie</a></li>
+									<li><a href="/fr/information/5336/voirie">Voirie </a></li>
+									<li><a href="/fr/information/5337/chemins">Chemins</a></li>
+									<li><a href="/fr/information/5339/eau-potable">Eau potable</a></li>
+									<li><a href="/fr/information/5338/entretien-cours-eau">Entretien des cours d'eau</a></li>
+									<li><a href="/fr/information/486/ordures-menageres">Ordures ménagères</a></li>
+									<li><a href="/fr/information/6558/assainissement-collectif">Assainissement collectif</a></li>
+									<li><a href="/fr/information/6559/assainissement-non-collectif">Assainissement non collectif</a></li>
+									<li><a href="/fr/information/6639/dechetteries">Déchetteries</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/enfance-jeunesse">Enfance/Jeunesse</a></li>
+									<li><a href="/fr/information/6578/scolaire-periscolaire">Scolaire/Périscolaire</a></li>
+									<li><a href="/fr/information/6580/extra-scolaire">Extra-Scolaire</a></li>
+									<li><a href="/fr/information/6617/portail-familles">Portail familles</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/pratique">Pratique</a></li>
+									<li><a href="/fr/forum">Tribune</a></li>
+									<li><a href="/fr/associations">Associations</a></li>
+									<li><a href="/fr/information/490/entreprises">Entreprises</a></li>
+									<li><a href="/fr/information/498/logement">Logement</a></li>
+									<li><a href="/fr/information/491/numeros-utiles">Numéros utiles</a></li>
+									<li><a href="/fr/information/6686/emploi">Emploi</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/petite-enfance">Petite enfance</a></li>
+									<li><a href="/fr/information/6260/portail-familles">PORTAIL FAMILLES</a></li>
+									<li><a href="/fr/information/496/ram-tinchebray-ufcv">RAM Tinchebray UFCV</a></li>
+									<li><a href="/fr/information/6564/ram-domfront">RAM Domfront</a></li>
+									<li><a href="/fr/information/6585/halte-garderie-1-2-3-soleil">Halte garderie "1-2-3- Soleil"</a></li>
+									<li><a href="/fr/information/6563/micro-creche-les-lutins">Micro-crèche "Les lutins"</a></li>
+									<li><a href="/fr/information/6592/creche-les-p-tits-loups">Crèche "Les P'tits Loups"</a></li>
+									<li><a href="/fr/information/7828/micro-creche-recre-neuf">Micro-crèche "Récré à Neuf"</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<div id="f_external_link">
+						<div class="titre">Liens externes</div>
+						<p class="link"><a class="icon-arrow-right" href="http://www.mairiedemoncy61.fr" title="Site commune de Moncy" target="_blank"> Site commune de Moncy </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://beauchene61.fr" title="Commune de Beauchêne" target="_blank"> Commune de Beauchêne </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://gite-moncy.com" title="Gite et commune de Moncy" target="_blank"> Gite et commune de Moncy </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.tinchebray.fr/" title="Commune de Tinchebray" target="_blank"> Commune de Tinchebray </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.service-public.fr" title="Renseignements  Administratifs" target="_blank"> Renseignements Administratifs </a></p>
+						<p class="link allLinks"><a class="icon-arrow-right" href="/fr/liens-externes" title="Tous les liens externes"> Tous les liens externes </a></p>
+					</div>
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.orne.fr/" title="Département de l'Orne" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/61.jpg" alt="Département de l'Orne" style="width:100%"></a></td>
+							<td><a href="https://www.normandie.fr/" title="Conseil régional de Normandie" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/4.jpg" alt="Conseil régional de Normandie" style="width:100%"></a></td>
+							<td><a href="http://www.orne.pref.gouv.fr/" title="Préfecture de l'Orne" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/61.jpg" alt="Préfecture de l'Orne" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p class="f_sep">|</p>
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.domfront-tinchebray-interco.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site domfront-tinchebray-interco.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #009dca;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #009dca; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #dbd3c9;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-11881475-1");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
