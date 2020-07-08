@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<title>Communauté de Communes de la Plaine Dijonnaise - La Plaine Dijonnaise</title>
+		<link rel="icon" type="image/png" href="/favicons/portal483_favicon.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" lang="fr" content="Site officiel de la Communauté de Communes de la Plaine Dijonnaise">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/lib/bootstrap/css/bootstrap.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/lib/bootstrap-lightbox/ekko-lightbox.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V7_Bootstrap/css/V7_Bootstrap_main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V7_Bootstrap/css/jqtransform.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/font-awesome-5.0.13/css/fontawesome-all.min.css" media="all">
+		<!-- personalization custom css -->
+		<link rel="stylesheet" type="text/css" href="/customThemes/V7_Bootstrap/customCss/customThemePortal483.css" media="all">
+		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.validation.min.js"></script>
+		<script type="text/javascript" src="/static/js/js.cookie.js"></script>
+		<script type="text/javascript" src="/static/embedded/commons-themes/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="/static/embedded/commons-themes/lib/bootstrap-lightbox/ekko-lightbox.min.js"></script>
+		<script type="text/javascript" src="/static/js/theme-bootstrap/carouselBootstrap.js"></script>
+		<script type="text/javascript" src="/static/js/theme-bootstrap/themeBootstrap.js"></script>
+		<script type="text/javascript" src="/static/js/theme-bootstrap/pluginBootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.custom.css" media="all">
+	</head>
+	<body>
+		<!-- Prepare Facebook button -->
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- Header -->
+		<header id="visuel_top" class="page-header px-5 py-3">
+			<div id="headerDiv" class="row justify-content-around pt-3">
+				<div id="headerTitle" class="col-12 col-md-8">
+					<h1><a class="title-header" title="Aller à la page d'accueil du site officiel de La Plaine Dijonnaise" href="https://www.plainedijonnaise.fr">La Plaine Dijonnaise</a></h1>
+					<p>Site officiel de la Communauté de Communes de la Plaine Dijonnaise</p>
+				</div>
+				<div id="headerTools" class="col-12">
+					<div id="headerButton"><a href="#paragraphe">Aller au contenu</a>   <a href="#nav">Aller à la navigation</a></div>
+					<div id="headerSearch">
+						<form id="fullTextSearch" name="SearchDirectoryForm" method="post" enctype="multipart/form-data" action="https://www.plainedijonnaise.fr/all/search">
+							<div class="input-group"><input type="text" class="form-control" name="fullTextSearchQuery" maxlength="128" size="17" placeholder="Rechercher">
+								<div class="input-group-append"><button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Menu -->
+		<nav id="nav" class="navbar navbar-expand-md navbar-light mb-3 sticky-top"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a title="Aller à la page d'accueil du site officiel de La Plaine Dijonnaise" href="https://www.plainedijonnaise.fr" class="homeLink active"> <i class="fas fa-home fa-2x"></i> </a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto flex-wrap">
+					<li class="nav-item mr-1 homeLink active"><a title="Aller à la page d'accueil du site officiel de La Plaine Dijonnaise" href="https://www.plainedijonnaise.fr" class="nav-link"> <i class="fas fa-home"></i> </a></li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1"><a href="https://www.plainedijonnaise.fr/dates-a-retenir" id="bt_nav_1" class="nav-link" title="Dates à retenir">Dates à retenir</a></li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1 dropdown"><a href="https://www.plainedijonnaise.fr/votre-communaute-de-communes" id="bt_nav_2" class="nav-link dropdown-toggle" title="Votre Communauté de Communes">Votre Communauté de Communes</a>
+						<div class="dropdown-menu"><a class="dropdown-item" href="https://www.plainedijonnaise.fr/mot-du-president" title="Mot du Président">Mot du Président</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/elus-communautaires" title="Élus communautaires">Élus communautaires</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/communes-membres" title="Communes membres">Communes membres</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/historique" title="Historique">Historique</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/comptes-rendus-du-conseil-communautaire" title="Comptes-rendus du Conseil Communautaire">Comptes-rendus du Conseil Communautaire</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/services-communautaires" title="Services communautaires">Services communautaires</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/marches-publics" title="Marchés publics">Marchés publics</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/le-president-recrute" title="Le Président recrute">Le Président recrute</a></div>
+					</li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1 dropdown"><a href="https://www.plainedijonnaise.fr/nos-services" id="bt_nav_3" class="nav-link dropdown-toggle" title="Nos Services">Nos Services</a>
+						<div class="dropdown-menu"><a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-deplacements" title="Pôle " d>Pôle "Déplacements"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-enfance-jeunesse" title="Pôle " enfance jeunesse>Pôle "Enfance Jeunesse"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-familial-et-social" title="Pôle " familial et social>Pôle "Familial et Social"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-petite-enfance" title="Pôle " petite enfance>Pôle "Petite Enfance"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/funerarium" title="Funérarium">Funérarium</a></div>
+					</li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1 dropdown"><a href="https://www.plainedijonnaise.fr/vie-economique" id="bt_nav_4" class="nav-link dropdown-toggle" title="Vie Économique">Vie Économique</a>
+						<div class="dropdown-menu"><a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-deveco-developpement-economique" title="Pôle " deveco>Pôle "DEVECO (DÉVeloppement ÉCOnomique)"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-dynamisation-du-territoire" title="Pôle " dynamisation du territoire>Pôle "Dynamisation du Territoire"</a></div>
+					</li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1 dropdown"><a href="https://www.plainedijonnaise.fr/notre-environnement" id="bt_nav_5" class="nav-link dropdown-toggle" title="Notre Environnement">Notre Environnement</a>
+						<div class="dropdown-menu"><a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-tourisme" title="Pôle " tourisme>Pôle "Tourisme"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-urbanisme" title="Pôle " urbanisme>Pôle "Urbanisme"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/le-projet-du-canal-de-bourgogne" title="Le projet du Canal de Bourgogne">Le projet du Canal de Bourgogne</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-traitement-des-ordures-menageres" title="Pôle " traitement des ordures m>Pôle "Traitement des Ordures Ménagères"</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/projet-gemapi" title="Projet GEMAPI">Projet GEMAPI</a> <a class="dropdown-item" href="https://www.plainedijonnaise.fr/pole-eau-et-assainissement" title="Pôle " eau et assainissement>Pôle "Eau et Assainissement"</a></div>
+					</li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1"><a href="https://www.plainedijonnaise.fr/plaine-en-fete" id="bt_nav_6" class="nav-link" title="Plaine en Fête">Plaine en Fête</a></li>
+					<!-- Test if URL is external -->
+					<li class="nav-item mr-1"><a href="https://www.plainedijonnaise.fr/services-en-ligne" id="bt_nav_7" class="nav-link" title="Services en ligne">Services en ligne</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Content -->
+		<main id="mainContent" class="col-12 col-xl-8 offset-xl-2 bg-white" role="main">
+			<div id="bg_degrade">
+				<div id="bg_main">
+					<!-- Breadcrumb -->
+					<nav aria-label="breadcrumb" class="pt-3">
+						<ol class="breadcrumb bg-light">
+							<li class="breadcrumb-item active" aria-current="page">Accueil</li>
+						</ol>
+					</nav>
+					<!-- Center and side -->
+					<div class="row mt-3">
+						<!-- Center -->
+						<div id="sideandcontent" class="col-12 col-md-8 col-xl-9">
+							<div id="bg_content">
+								<div id="content">
+									<div class="paragraphe" id="paragraphe">
+										<h2></h2>
+										<div class="txt_bloc">
+											<h3 style="text-align: center;"><strong><span style="color: #003366;">Bienvenue sur le site de la Communauté de Communes</span></strong></h3>
+											<h3 style="text-align: center;"><strong><span style="color: #003366;">de la Plaine Dijonnaise</span></strong></h3>
+											<p> </p>
+											<p> </p>
+											<p> </p>
+											<h3><span style="color: #003366;"><strong>Opération Le Repos des Héros en Côte-d’Or <img style="float: left;" title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/links/20200629-1738--COVID-19-lereposdesheros.png" alt="" width="178" height="173"></strong></span></h3>
+											<h4><strong><em><span style="color: #ff6600;">Solidarité envers les soignants – Soutien aux professionnels du tourisme</span> </em></strong></h4>
+											<p><br>Le personnel soignant n’a de cesse de s’impliquer au quotidien pour sauver des vies et a particulièrement fait preuve d’engagement dans le cadre de la lutte contre l’épidémie de Covid-19.</p>
+											<p>Afin de remercier ces hommes et ces femmes qui ont déployé tant d’énergie au service des autres, la Communauté de Communes de la Plaine Dijonnaise a souhaité s’associer à Côte d’Or Tourisme, l’agence de développement touristique du Conseil départemental de la Côte-d’Or, pour participer à l’opération nationale Le Repos des Héros et offrir des bons vacances d’une valeur unitaire de <strong>500 euros</strong> à utiliser notamment auprès des hébergeurs touristiques et restaurateurs du territoire.<br><br>Vous souhaitez participer au tirage au sort ou parrainer un soignant ?</p>
+											<p>Inscrivez-vous avant le <span style="color: #ff6600;"><strong>30 juin 2020</strong></span> et tenter votre chance en cliquant ici :  <a href="https://www.cotedor-tourisme.com/bourgogne/le-repos-des-heros-en-cotedor">https://www.cotedor-tourisme.com/bourgogne/le-repos-des-heros-en-cotedor</a></p>
+											<p><span style="color: #ff6600;"><strong>Le tirage au sort aura lieu début juillet.</strong></span></p>
+											<p> </p>
+											<hr>
+											<p> </p>
+											<h3><span style="color: #ff0000;">REORGANISATION DE NOS SERVICES :</span></h3>
+											<h6><span style="color: #003366;">Les services de la Plaine Dijonnaise se réorganisent depuis les annonces du 2 juin.</span></h6>
+											<h6><span style="color: #003366;"><br>Le numéro unique mis en place au début du confinement n'est plus en fonctionnement, vous pouvez dès à présent joindre le standard de la Collectivité (03.80.37.70.12), aux horaires d'ouverture : <span style="color: #ff0000;">08 h 30 - 12 h 00  /  13 h 30 - 16 h 30</span><br><br></span></h6>
+											<h6><span style="color: #003366;">De plus, l'accès à l'Hôtel Communautaire est maintenant ouvert au public, dans le respect des <span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">consignes sanitaires</span></span> (gestes barrières et port du masque obligatoire) et la <span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">prise de rendez-vous</span></span> est demandée dans la mesure du possible.<br></span></h6>
+											<p> </p>
+											<hr>
+											<p> </p>
+											<h3><span style="color: #003366;">COVID-19<br></span></h3>
+											<h5><span style="color: #003366;">Suivez toutes les informations en lien avec le COVID-19 dans le bandeau <span style="color: #ff6600;">"Actualité"</span> à droite ⇒</span></h5>
+											<p> </p>
+											<hr>
+											<h3> <span style="color: #003366;">Actualités : Allo billets</span></h3>
+											<h5>La Région Bourgogne - Franche-Comté met en place un nouveau <strong>service pour acheter vos billets TER dématérialisés par téléphone.</strong></h5>
+											<p><strong>        Plus d'information en cliquant <a href="https://www.viamobigo.fr/fr/actualites/3/allo-billets/326/32" target="_blank">ici !</a></strong></p>
+											<p> </p>
+											<hr>
+											<p style="text-align: center;"> </p>
+											<p style="text-align: center;"><strong> La Communauté de Communes de la Plaine Dijonnaise est un regroupement de communes qui a été créé le 1<sup>er</sup> janvier 2006 et compte 22 communes membres<em> </em></strong><em>(CF : carte ci-dessous)</em>.</p>
+											<p style="text-align: center;"><strong>La Communauté de Communes de la Plaine Dijonnaise est chargée de différentes missions, en rapport avec divers domaines tels que le développement économique, l'emploi, l'environnement, les travaux et les services sociaux.</strong><br><strong>Au sein de la Communauté de communes, huit commissions prennent en charge ces nombreuses missions </strong><em>(CF : rubrique "vie communautaire" - "commissions").</em></p>
+											<p><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal483/cartecomcom.jpg" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/cartecomcom.jpg" alt="" width="508" height="508"></a></p>
+											<p> </p>
+											<p style="text-align: justify;"> </p>
+											<p>
+												<script>// <![CDATA[
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55129229-1', 'auto');
+  ga('send', 'pageview');
+// ]]>
+												</script>
+											</p>
+											<div id="simple-translate">
+												<div></div>
+											</div>
+										</div>
+									</div>
+									<div id="social-nw-btns">
+										<!-- Your share button code -->
+										<div class="fb-share-button" data-layout="button_count" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&src=sdkpreparse">Partager</a></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+										<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+										<script type="IN/Share" data-counter="right"></script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Sidebar -->
+						<div id="sidebar_right" class="col-12 col-md-4 col-xl-3">
+							<div class="card mb-3"><a class="collapsed" data-toggle="collapse" href="#collapse-151928" role="button" aria-expanded="false" aria-controls="collapse-151928"> <div class="card-header"><h4 class="card-title">Actualités</h4></div> </a>
+								<div class="card-header">
+									<h4 class="card-title">Actualités</h4>
+								</div>
+								<div id="collapse-151928" class="bloc_side actu card-body collapse">
+									<div class="hgroup">
+										<h2>Actualités</h2>
+									</div>
+									<div class="bg_bloc">
+										<h3>INFORMATIONS - COVID - 19</h3>
+										<dl class="liste_actu">
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/199057">Opération : Le Repos des Héros en Côte-d'Or</a></dt>
+											<dd>Opération Le Repos des Héros en Côte-d’Or Solidarité envers les soignants – Soutien aux professionne...</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/198484">Note d'Information | 14</a></dt>
+											<dd>Pour lire la Note d'Information, cliquez ci-dessous ⇓</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/198239">Note d'Information | 13</a></dt>
+											<dd>Pour lire la Note d'Information, cliquez sur l'image ⇓</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/198240">Guide de bonne conduite sanitaire (Cafés et restaurants)</a></dt>
+											<dd>Le guide de bonne conduite sanitaire applicable aux salariés, employeurs et clients des hôtels, café...</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/198241">Diversification des circuits de distribution de denrées alimentaires</a></dt>
+											<dd>L’épidémie de Covid-19 conduit à réorganiser les modes de production ou de distribution de denrées a...</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/197270">Dépistage COVID-19</a></dt>
+											<dd>L’Agence régionale de santé indique que les capacités de dépistage du Covid-19 (par tests PCR) ont é...</dd>
+											<dt style=""><a class="itemTitle" href="https://www.plainedijonnaise.fr/news/197271">Protocole National de déconfinement pour les entreprises</a></dt>
+											<dd>Le Protocole National de Déconfinement, rédigé par le Ministre du Travail est disponible ici : Téléc...</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-3"><a class="collapsed" data-toggle="collapse" href="#collapse-151929" role="button" aria-expanded="false" aria-controls="collapse-151929"> <div class="card-header"><h4 class="card-title">Actualités</h4></div> </a>
+								<div class="card-header">
+									<h4 class="card-title">Actualités</h4>
+								</div>
+								<div id="collapse-151929" class="bloc_side actu card-body collapse">
+									<div class="hgroup">
+										<h2>Actualités</h2>
+									</div>
+									<div class="bg_bloc">
+										<h3>Recrutement !</h3>
+										<dl class="liste_actu"></dl>
+									</div>
+								</div>
+							</div>
+							<div id="151930" class="bloc_side htmlBlock">
+								<div class="bg_bloc">
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"><a href="https://www.plainedijonnaise-emploi.fr/espace-candidat/" target="_blank"><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/links/20190924-0926--VIE_ECONOMIQUE-MY_FAIR_JOB-mfj_bouton2.png" alt="" width="593" height="304"></a> </p>
+									<p> </p>
+									<p> </p>
+									<p style="text-align: center;"><a style="font-size: 0.75em;" href="http://www.plainedijonnaise.fr/actualites"><img title="bannière actu centre social" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/centresocialbanniereinfo.png" alt="bannière actu centre social" width="571" height="186"></a></p>
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"> <a style="font-size: 0.75em;" href="https://www.espace-citoyens.net/plainedijonnaise/" target="_blank"><img src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/links/20200428-1027--POLE_ENFANCE_JEUNESSE-bandeaux-ef_site-web.png" alt="" width="593" height="304"></a></p>
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"><a href="http://www.plainedijonnaise.fr/pole-enfance-jeunesse"><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/links/20180619-1342--Accueil-banniereej.jpg" alt="" width="566" height="184"></a></p>
+									<p style="text-align: center;"> </p>
+									<p style="text-align: center;"> <a href="http://www.plainedijonnaise.fr/pole-petite-enfance"><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal483/photos/banniere-petite-enfance-png.png" alt="" width="540" height="176"></a></p>
+									<p style="text-align: center;"> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Button go to top --><button onclick="returnToTop()" id="returnToTop" title="Retour en haut"> <span class="chevron-up"></span> </button>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row"><a class="text-muted" href="https://www.plainedijonnaise.fr/contact">Nous contacter</a> <a class="text-muted" href="https://www.plainedijonnaise.fr/mentions-legales">Mentions légales</a> <a class="text-muted" href="https://www.plainedijonnaise.fr/site-accessible">Site accessible</a></div>
+			</div>
+		</footer>
+		<!-- Popup cookies -->
+		<div id="cookieAlert" class="alert alert-dismissible text-center" role="alert" style="display: none">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins statistiques. <a href="https://www.plainedijonnaise.fr/mentions-legales">Cliquez ici pour en savoir plus.</a> <button class="close" type="button" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">×</span> </button></div>
+	</body>
+</html>
