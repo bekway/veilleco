@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.cc-russey.fr/default/">
+		<title>Comptes-rendus - Communauté de Communes du Plateau du Russey - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#d1c7b8
+}
+.couleur_main, .cl_main {color:#73bb49}
+.couleur_main_bg, .bg_main {background-color:#73bb49 !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #73bb49;
+}
+.couleur_police, .cl_font {color:#f1a111}
+.couleur_police_bg, .bg_font {background-color:#f1a111 !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f1a111;
+}
+.couleur_fond_bg {background-color:#d1c7b8}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #d1c7b8 100%);
+	background: -webkit-linear-gradient(top, transparent, #d1c7b8 100%);
+	background: linear-gradient(to bottom, transparent, #d1c7b8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#d1c7b8",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #73bb49 transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #73bb49;}
+a.lien_couleur {color: #f1a111;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #D38300;}
+.couleur {color: #f1a111;}
+#head .retour {background: #f1a111 url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #f1a111;}
+#tribune a.postvisit, #tribune span.postvisit{color: #f1a111;}
+#information .tree1, #information .tree1 a {color: #f1a111;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#f1a111; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/35/banner/5SA8nj5nSJrQfb2.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.cc-russey.fr"> <img src="http://static.reseaudesintercoms.fr/cities/35/logo/MKlcp2B7KIPf5Ez.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://cc-russey.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#e89529 !important;
+	border-color:#e89529 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #e89529;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#e89529 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #e89529;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#7f4c4e !important;
+	border-color:#7f4c4e !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #7f4c4e;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#7f4c4e !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #7f4c4e;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#f44482 !important;
+	border-color:#f44482 !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #f44482;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#f44482 !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #f44482;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#72c43e !important;
+	border-color:#72c43e !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #72c43e;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#72c43e !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #72c43e;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#4190e0 !important;
+	border-color:#4190e0 !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #4190e0;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#4190e0 !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #4190e0;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#f75d1b !important;
+	border-color:#f75d1b !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #f75d1b;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#f75d1b !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #f75d1b;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#e89529;"><a class="menu-a" href="/fr/rubrique/1/la-ccpr">La CCPR </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/35/180x120/1cntiuizbmobpu0.jpg" alt=""></li>
+								<li><a href="/fr/information/553/elus-communautaires" class="icon-arrow-right"> Élus communautaires </a></li>
+								<li><a href="/fr/information/554/competences" class="icon-arrow-right"> Compétences </a></li>
+								<li><a href="/fr/information/555/personnel-services-ccpr" class="icon-arrow-right"> Personnel et services de la CCPR </a></li>
+								<li><a href="/fr/comptes-rendus" class="icon-arrow-right"> Comptes-rendus </a></li>
+								<li><a href="/fr/information/8379/les-echos-ccpr" class="icon-arrow-right"> Les échos de la CCPR </a></li>
+								<li><a href="/fr/marches-publics" class="icon-arrow-right"> Marchés publics </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#7f4c4e;"><a class="menu-a" href="/fr/rubrique/4/services">Services</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/566/maison-services" class="icon-arrow-right"> Maison des Services </a></li>
+								<li><a href="/fr/information/565/petite-enfance" class="icon-arrow-right"> Petite enfance </a></li>
+								<li><a href="/fr/information/567/pour-vos-deplacements" class="icon-arrow-right"> Pour vos déplacements </a></li>
+								<li><a href="/fr/information/8334/chaufferies-bois" class="icon-arrow-right"> Chaufferies bois </a></li>
+								<li><a href="/fr/information/8335/complexe-sportif" class="icon-arrow-right"> Complexe sportif </a></li>
+								<li><a href="/fr/associations" class="icon-arrow-right"> Associations </a></li>
+								<li><a href="/fr/forum" class="icon-arrow-right"> Tribune </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#f44482;"><a class="menu-a" href="/fr/rubrique/6/dvlpmt-economique">Dvlpmt économique</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/8298/zones-activites-economiques" class="icon-arrow-right"> Zones d'Activités Economiques </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#72c43e;"><a class="menu-a" href="/fr/rubrique/3/dechets">Déchets</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/4070/mon-compte" class="icon-arrow-right"> Mon compte </a></li>
+								<li><a href="/fr/information/563/collecte-bac-ordures-menageres-bac-tri" class="icon-arrow-right"> Collecte bac Ordures Ménagères et bac de tri </a></li>
+								<li><a href="/fr/information/576/collecte-verre" class="icon-arrow-right"> Collecte du verre </a></li>
+								<li><a href="/fr/information/5439/redevance" class="icon-arrow-right"> Redevance </a></li>
+								<li><a href="/fr/information/578/installations-existantes" class="icon-arrow-right"> Installations existantes </a></li>
+								<li><a href="/fr/information/579/compostage" class="icon-arrow-right"> Compostage </a></li>
+								<li><a href="/fr/information/2149/collecte-textiles" class="icon-arrow-right"> Collecte des textiles </a></li>
+								<li><a href="/fr/information/580/calendriers-documentations" class="icon-arrow-right"> Calendriers et Documentations </a></li>
+								<li><a href="/fr/information/8997/tarifs" class="icon-arrow-right"> Tarifs </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#4190e0;"><a class="menu-a" href="/fr/rubrique/2/tourisme-randonnee">Tourisme/randonnée</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/557/randonnees" class="icon-arrow-right"> Randonnées </a></li>
+								<li><a href="/fr/information/1833/environnement" class="icon-arrow-right"> Environnement </a></li>
+								<li><a href="/fr/information/8340/aire-camping-car" class="icon-arrow-right"> Aire de camping car </a></li>
+								<li><a href="/fr/information/558/restauration" class="icon-arrow-right"> Restauration </a></li>
+								<li><a href="/fr/information/559/hebergement" class="icon-arrow-right"> Hébergement </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#f75d1b;"><a class="menu-a" href="/fr/rubrique/5/projets-cours">Projets en cours</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/8336/gendarmerie-renovation-energetique" class="icon-arrow-right"> Gendarmerie: Rénovation énergetique </a></li>
+								<li><a href="/fr/information/8337/tres-haut-debit-fibre" class="icon-arrow-right"> Très Haut Débit - Fibre </a></li>
+								<li><a href="/fr/information/8341/projet-parc-naturel-%28pnr%29" class="icon-arrow-right"> Projet de Parc Naturel (PNR) </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<div class="socialblck"><a href="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Plateau-du-Russey-406657972816399/" title="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Plateau-du-Russey-406657972816399/" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/fb_right.png" alt="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Plateau-du-Russey-406657972816399/"> </a></div>
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/la-ccpr" title="La CCPR ">La CCPR </a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">11/03/2020</td>
+									<td><a href="/fr/compte-rendu/2403/compte-rendu-conseil-communautaire-11-mars-2020" title="Compte rendu du conseil communautaire du 11 mars 2020"><b>Compte rendu du conseil communautaire du 11 mars 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/pv324yi1z6q1nnx.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">29/01/2020</td>
+									<td><a href="/fr/compte-rendu/2382/compte-rendu-conseil-communautaire-29-janvier-2020" title="Compte rendu du conseil communautaire du 29 janvier 2020"><b>Compte rendu du conseil communautaire du 29 janvier 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/nsqxkwyel0614.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/12/2019</td>
+									<td><a href="/fr/compte-rendu/2364/compte-rendu-conseil-communautaire-11-decembre-2019" title="Compte rendu du conseil communautaire du 11 décembre 2019"><b>Compte rendu du conseil communautaire du 11 décembre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/m7wll09mvs1xkc.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">06/11/2019</td>
+									<td><a href="/fr/compte-rendu/2344/compte-rendu-conseil-communautaire-06-11-19" title="Compte rendu du conseil communautaire du 06/11/19"><b>Compte rendu du conseil communautaire du 06/11/19</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/nfiun0g197xk0ui.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/09/2019</td>
+									<td><a href="/fr/compte-rendu/2317/compte-rendu-conseil-communautaire-25-09-19" title="Compte rendu du conseil communautaire du 25/09/19"><b>Compte rendu du conseil communautaire du 25/09/19</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/7kvdjwz7jlus55w.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">03/07/2019</td>
+									<td><a href="/fr/compte-rendu/2274/compte-rendu-conseil-communautaire-03-07-19" title="Compte rendu du conseil communautaire du 03/07/19"><b>Compte rendu du conseil communautaire du 03/07/19</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/1u47ei1k4u1nri5.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/05/2019</td>
+									<td><a href="/fr/compte-rendu/2243/compte-rendu-conseil-communautaire-22-05-2019" title="Compte rendu du conseil communautaire du 22/05/2019"><b>Compte rendu du conseil communautaire du 22/05/2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/7bregt2o2vq4vyq.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">03/04/2019</td>
+									<td><a href="/fr/compte-rendu/2206/compte-rendu-conseil-communautaire-03-04-2019" title="Compte rendu du conseil communautaire du 03/04/2019"><b>Compte rendu du conseil communautaire du 03/04/2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/wmxdqajnzzng4gm.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/03/2019</td>
+									<td><a href="/fr/compte-rendu/2195/compte-rendu-conseil-communautaire-13-mars-2019" title="Compte rendu du conseil communautaire du 13 mars 2019"><b>Compte rendu du conseil communautaire du 13 mars 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/r0agkzbromyur5.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">23/01/2019</td>
+									<td><a href="/fr/compte-rendu/2150/compte-rendu-conseil-communautaire-23-janvier-2019" title="Compte rendu du conseil communautaire du 23 janvier 2019"><b>Compte rendu du conseil communautaire du 23 janvier 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/61kg9pfia0l904h.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/12/2018</td>
+									<td><a href="/fr/compte-rendu/2123/compte-rendu-conseil-communautaire-12-12-18" title="Compte rendu du conseil communautaire du 12/12/18"><b>Compte rendu du conseil communautaire du 12/12/18</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/7jwbek8xtclgwlz.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">01/11/2018</td>
+									<td><a href="/fr/compte-rendu/2113/compte-rendus-conseil-communautaire-7-11-18" title="Compte rendus du conseil communautaire du 7/11/18"><b>Compte rendus du conseil communautaire du 7/11/18</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/xhrpo6eeqkkashf.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">26/09/2018</td>
+									<td><a href="/fr/compte-rendu/2072/compte-rendu-conseil-communautaire-26-09-2018" title="Compte rendu du conseil communautaire du 26/09/2018"><b>Compte rendu du conseil communautaire du 26/09/2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/jxxb0s7ekgbalh.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">04/07/2018</td>
+									<td><a href="/fr/compte-rendu/2036/compte-rendu-conseil-communautaire-04-07-2018" title="Compte rendu du conseil communautaire du 04/07/2018"><b>Compte rendu du conseil communautaire du 04/07/2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/d9as3llbls2bbuy.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">12/06/2018</td>
+									<td><a href="/fr/compte-rendu/2029/compte-rendu-conseil-communautaire-12-06-2018" title="Compte rendu du conseil communautaire du 12/06/2018"><b>Compte rendu du conseil communautaire du 12/06/2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/iltceizh8gdyw8k.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/04/2018</td>
+									<td><a href="/fr/compte-rendu/1990/compte-rendu-conseil-communautaire-11-04-2018" title="Compte rendu du conseil communautaire du 11/04/2018"><b>Compte rendu du conseil communautaire du 11/04/2018</b></a> <br>
+										<p>Compte rendu du conseil communautaire du 11/04/2018</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/pzfkdvirpzyhd54.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">21/03/2018</td>
+									<td><a href="/fr/compte-rendu/1979/compte-rendu-conseil-communautaire-21-03-2018" title="Compte rendu du conseil communautaire du 21/03/2018"><b>Compte rendu du conseil communautaire du 21/03/2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/0sujj1kun0gmlff.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">31/01/2018</td>
+									<td><a href="/fr/compte-rendu/1930/compte-rendu-conseil-communautaire-31-01-2018" title="Compte rendu du conseil communautaire du 31/01/2018"><b>Compte rendu du conseil communautaire du 31/01/2018</b></a> <br>
+										<p>Compte rendu du conseil communautaire du 31/01/2018</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/huh8pe4bwezxog4.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/12/2017</td>
+									<td><a href="/fr/compte-rendu/1898/compte-rendu-conseil-communautaire-13-12-2017" title="Compte rendu du conseil communautaire du 13/12/2017"><b>Compte rendu du conseil communautaire du 13/12/2017</b></a> <br>
+										<p>Compte rendu du conseil communautaire du 13/12/2017</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/v1bayfkw4zdhwog.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">15/11/2017</td>
+									<td><a href="/fr/compte-rendu/1897/compte-rendu-conseil-communautaire-15-11-2017" title="Compte rendu du conseil communautaire du 15/11/2017"><b>Compte rendu du conseil communautaire du 15/11/2017</b></a> <br>
+										<p>Compte rendu du 15/11/2017</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/35/documents/w82jv3qr5m7ejyt.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/3" title="Page 3"><span>3</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/4" title="Page 4"><span>4</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/5" title="Page 5"><span>5</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/12.png');"></div><a href="/fr/nous-contacter" title="Contactez-nous"> Contactez-nous </a></li>
+						</ul>
+					</div>
+				</div>
+				<style>
+#interactivemap svg {
+	background-color:#e5e9ec;
+	margin:0;
+	background-image: url(http://cdn3_4.reseaudesintercoms.fr/cities/35/interactive/point_geoloc.png);
+	background-repeat:no-repeat;
+	
+	/* Position à modifier */
+	background-position: 208px 8px;
+}
+
+#map-tip {
+	text-align: center;
+	font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+	display: none;
+	border: none;
+	color: #ffffff;
+	z-index: 1000;
+	float: left;
+	position: absolute;
+	background-color:#f1a111;
+	border-radius:4px;
+	padding:6px 8px;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+#map-tip p {
+	margin: 0!important;
+}
+				</style>
+				<div id="mini-map">
+					<div id="interactivemap">
+						<!--<svg version="1.1"  viewBox="0 0 1000 500" xml:space="preserve">-->
+						<svg version="1.1" viewbox="1 0 300 220" xml:space="preserve">
+							<g id="countries">
+								<!-- 1 --><a href="/fr/territoire/193/saint-julien-les-russey" xlink:href="/fr/territoire/193/saint-julien-les-russey"> <path id="map_1" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M166.84,35.29c1.25-.9,4.86-3.29,5-3.33s.38-1.87,0-2.17-1.83,0-1.83,0a2.61,2.61,0,0,1-.79-.5c-.12-.21-.12-2.62-.25-2.87s-5.83-10.33-6.21-11.17-2.12-9.33-2.17-9.58,1.92-1.92,1.92-2.12-.29-.87-.5-.87a39,39,0,0,0-3.62,1.63c-.25.17-2.21,1.75-2.37,1.58s-1.21-.54-1.37-.67a20.82,20.82,0,0,1,0-2.25c-.08-.25-3.21.67-3.58.83s-3.08,3.75-3.29,4a4.49,4.49,0,0,0-1,1.63c0,.46,1,2.08.79,2.42a7.22,7.22,0,0,1-1.17,1.29c-.21.13-1.29,2.71-1.62,2.88s-8.42.08-8.58.08-1.62-.75-2.33-1.08a22,22,0,0,0-2.37-1c-.29,0-3.21,1.88-3.5,2s-.79,1.25-.79,1.67a72.46,72.46,0,0,0,3.88,7.29c.33.38.17,1.29.13,1.63s-2.17.17-2.79,0-4.92-.54-5.12-.75a8.37,8.37,0,0,0-2.12-.37c-.33,0-1.42,2-1.42,2.25s.38,1.08.33,1.29-.67,0-.87,0a1.27,1.27,0,0,0-1,.33,20.61,20.61,0,0,0-.37,2.92,29.81,29.81,0,0,1-2.42,3,14.56,14.56,0,0,0-.37,2.79c0,.38-.62.75-.83,1s.21,1.25,0,1.42-1.08,0-1.21.25,3,3.67,3.21,3.83-.87.75-.87.75l-1.75.08c-.17,0-.42,1.71-.46,2s-3.79,3.79-4,4a15.36,15.36,0,0,1-1.46,1.13l-.66.36a2.07,2.07,0,0,1,1,.27c.46.38,1.33,3.21,2,3.33s.83,0,1.5-.58,5.17-5.12,5.42-5.12,1-.83,1.21-.83,1,.46,1.29.38,3.79-2,4.21-2a6.56,6.56,0,0,0,1.63-.71c.21-.17,2.83-3.42,4.21-3.62.92.67,2.46,2,2.92,2.29s3.29,2.71,4.29,3.71,1.58,2,2.13,2c.63-.75,1.33-2.29,1.46-2.29a5.21,5.21,0,0,1,1.92.08,18.15,18.15,0,0,0,2.75.38c.13,0,.58.25.63,0l.38-2.17c0-.25.13-.71.58-.75a8.71,8.71,0,0,1,2.83.25c.71.29,1.21.25,1.46.38a6.18,6.18,0,0,1,1,2.17c.08.5,2.13-1.87,2.92-2.25A54.3,54.3,0,0,1,160,45.29c-.17-.75-1.21-2.29-1.17-2.54A10.06,10.06,0,0,1,160,41c.29-.37,4.38-5.33,5.83-5.75A2.92,2.92,0,0,1,166.84,35.29Z"></path> </a>
+								<!-- 2 --><a href="/fr/territoire/192/plaimbois-du-miroir" xlink:href="/fr/territoire/192/plaimbois-du-miroir"> <path id="map_2" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M101.25,69a12.12,12.12,0,0,0-1.78-3.75c-1.16-1.53-2.12-2.78-2.34-2.75s-.56.44-.56.28a8.1,8.1,0,0,1,.75-1.37,13.49,13.49,0,0,1,1-1.72c.19-.26-.17-1.08-.35-1.62a.88.88,0,0,1-.23.1c-.33,0-.83-.75-.79-1.08s1.67-1.83,1.71-2S97.08,53.42,97,53.12A2.81,2.81,0,0,0,95.79,52c-.37-.12-1.08.75-1.17.92s-.75.25-1.17.25-1-.75-1.25-.87-1.75.79-2,1.21-.83.13-1,0-.67-1.08-.79-1.12-.37,0-1.33.08a27.33,27.33,0,0,0-2.5-4.5,35.05,35.05,0,0,1-1.08-4.25c-.12-.5-1.37-1.12-1.54-1.12a22.75,22.75,0,0,0-3.08,1.71c-.17.21-.62,1.21-.75,1.38a7.65,7.65,0,0,1-2.08.17c-.42,0-.46-.83-1-.83a32.22,32.22,0,0,0-5.37,3.08c-.25.29-1.12,2.42-1.46,2.67a10.24,10.24,0,0,1-2.87.13,11.93,11.93,0,0,1-2.13-.58,26.64,26.64,0,0,0-2.29,2.13c-.25.17-.79-1-1-1.17s-.67,1.21-.67,1.42-2.67.21-3,.17A25.25,25.25,0,0,1,53,50.08c-.21-.25-1.37.17-1.62.25s-.17,1.08-.29,1.38-1,.67-1.29.71,0,3.63-.08,4.54-.5,1.25-1.58,2.58a3,3,0,0,1-3,.88c-.37,0-3.21-3.08-3.21-3.08s-1.08-.67-1.33-.75a34.55,34.55,0,0,0-4.5,2.21,15.44,15.44,0,0,1-2.46.21c-.29,0-3,2.5-3.21,2.58s-1.46.33-1.71.46-1.22.06-1.46.46.58,1.52.58,1.52a12.3,12.3,0,0,1,1,1.69c.06.31,1.13.06,1.44.06s.84.28.78.75a15.23,15.23,0,0,0-.81,2.34c-.06.88,1.44,1.72,1.56,1.75a8,8,0,0,1,.5,2c0,.28-3.41,1.09-3.62,1.13a22.22,22.22,0,0,0-2.3,3c3.73,0,14.47,0,14.52-.11S40,75,40.13,74.93s9.72-2.78,10-2.78a7.83,7.83,0,0,1,1.28.59c.25.09.5.28.84.13a22.57,22.57,0,0,1,2.88-1.06,16.91,16.91,0,0,1,3.31,0c.06.19,0,.63.34.75s.53.44.34.66-.66.38-.53.5a3.66,3.66,0,0,1,.66,1.75c-.06.53-1.16,2.88-1.16,3.25a34.85,34.85,0,0,0,.56,3.78,14.69,14.69,0,0,1,.66,3.06c-.09.5-1.16,2.06-1.16,2.53a24.07,24.07,0,0,0,.31,2.47,26.28,26.28,0,0,1-.65,3c-.17.79-.25,1.88-.42,2.54s-.17,1.42-.46,1.71a1.88,1.88,0,0,0,.63,2.42c1.08,1,1.21,1,1.33,1s2.88-2.46,3.83-2.75c.92-1.83,1.46-2.33,2.5-2.83a2.33,2.33,0,0,0,1.67-2c0-2.42,0-2.67.13-2.71a13.93,13.93,0,0,0,1.63-.37A1.55,1.55,0,0,1,70,90.25c.67.21.21.29,1.21.29a23.22,23.22,0,0,0,4.63-1.37c.67-.25.79-.17,1-.46S80.5,85.17,80.71,85s1.88-1.29,2-1.62,0-1.21.21-1.21a4.92,4.92,0,0,1,1.5.25c.29.17.58,0,.83-.29A8.69,8.69,0,0,1,86.53,81a30.31,30.31,0,0,0,2.75-2.37,8.22,8.22,0,0,0,1.09-1.41c0-.12-.44-.78-.25-1.12s1.56-2.78,1.72-2.94a2.36,2.36,0,0,1,.69-.31s1,1.16,1.22.94,1.28-1.16,1.81-1.56S101.25,69.05,101.25,69Z"></path> </a>
+								<!-- 3 --><a href="/fr/territoire/177/bonnetage" xlink:href="/fr/territoire/177/bonnetage"> <path id="map_3" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M240.5,131.67c-.08-.25-7-4.54-7.62-5.33a9.06,9.06,0,0,0-1.42-2.92c-.42-.33-2.25-2.21-3-2.87s-10.42-7.83-11.21-8.33-7-5.67-7.25-5.87-1.92-1.21-3.79-2.67c-2.37-2.7-8.37-11.48-11-15.39-1.34.89-4.5,2.95-4.63,3a21.16,21.16,0,0,1-2.31,1.44,1.45,1.45,0,0,1-1.15-.1,9,9,0,0,1-1.33-2.46,20.26,20.26,0,0,0-1-2.21,10.81,10.81,0,0,0-2.25-1.42c-.29-.17-1.52-.58-2.19-.81s-1.33-.46-2-.65-2.29-.62-2.81-.77a12.79,12.79,0,0,1-1.65-.62,11.44,11.44,0,0,0-1.87,0c-.4,0-.85-.54-1.06-.6s-.19-.58-.37-.62-1,.67-1.79.6a23,23,0,0,1-2.83-.54,8.4,8.4,0,0,1-1.27-.27,1.47,1.47,0,0,0-.77-.1c-.21,0-1-1-1.12-1.19a4,4,0,0,1-.52-.87c-.1-.29-.44-.23-.62-.19s-.6.38-.77.38a12.93,12.93,0,0,1-1.69-1.81c-.12-.19-.5-1-.77-1.35s-.37-.75-.67-1.21-1.29-2-1.31-2.1-.6-.85-.77-.83-.54.48-.94.46-.6-1.17-.87-1.37a4.48,4.48,0,0,0-1.12-.4c-.35-.12-.46-.73-.69-1s-.73.08-1.6,0-3.08,1.4-3.46,1.44-.4-.27-.52-.4-1.35,1.1-1.54,1.21a23.73,23.73,0,0,1-3-2.67c-.1-.12-1.31-1.44-1.31-1.44a4.63,4.63,0,0,1,.33-.4c.15-.15.46-.15.58-.19a5.26,5.26,0,0,0,.63-1.12c.06-.15,2.08-2.56,2.19-2.77a6.65,6.65,0,0,0,.27-1.27c0-.12.23-.35.4-.71-.12-.1-1.21-1.33-1.25-1.44s.83-1.73,1-2.06,1-2.15,1.19-2.46a8.4,8.4,0,0,0,.58-1.08c.06-.17,2-2.26,2.74-2.95s2.16-1.84,2.5-2.16c.05,0,0-.22,0-.31a6.18,6.18,0,0,0-1-2.17c-.25-.12-.75-.08-1.46-.37a8.71,8.71,0,0,0-2.83-.25c-.46,0-.54.5-.58.75l-.37,2.17c0,.25-.5,0-.62,0a18.15,18.15,0,0,1-2.75-.37,5.21,5.21,0,0,0-1.92-.08c-.12,0-.83,1.54-1.46,2.29-.54,0-1.12-1-2.12-2s-3.83-3.42-4.29-3.71-2-1.62-2.92-2.29c-1.37.21-4,3.46-4.21,3.63a6.56,6.56,0,0,1-1.62.71c-.42.08-3.87,2-4.21,2s-1-.37-1.29-.37-1,.83-1.21.83-4.75,4.5-5.42,5.13-.87.71-1.5.58-1.5-3-2-3.33a2.07,2.07,0,0,0-1-.27c-1.51.81-5.12,2.71-5.59,3S98.69,57.62,97.93,58c.18.53.54,1.35.35,1.62a13.49,13.49,0,0,0-1,1.72,8.1,8.1,0,0,0-.75,1.38c0,.16.34-.25.56-.28s1.19,1.22,2.34,2.75a12.24,12.24,0,0,1,1.7,3.47c.39,0,.74,0,.83,0a24.27,24.27,0,0,1,1.88,2.63c.67.92,5.42,8,5.58,8.21a5.7,5.7,0,0,1,.88.88,7.93,7.93,0,0,1,1,2.08,5.69,5.69,0,0,0,.08,1.63,29.8,29.8,0,0,0,2.33,4,37,37,0,0,0,3.33,3.46A7.33,7.33,0,0,1,118.75,94c.08.42,1.25,2.08,1.71,2.13s2.5-.92,3.13-1,2-.83,2.63-.92a19.09,19.09,0,0,1,2.33-.58,5.27,5.27,0,0,1,2.17.33,1.26,1.26,0,0,0,1.38,0,18.66,18.66,0,0,1,2.58-1.29c.54-.17,2.29-1.71,3.38-1.67a28.73,28.73,0,0,0,5.08-.08c.63-.25,3.79-.87,4.75-1.12s4-1.46,4.79-1.5a23.77,23.77,0,0,1,2.88-.37c.38.13,7.38,2.83,9.63,3.92s8.54,3.92,9.17,4.46,3,3.29,3.29,3.5,1.71,2.37,2.25,2.37,9.33-1.79,9.67-2a1.18,1.18,0,0,1,1.67.21c.58.71.67,1,.92,1.21a5.58,5.58,0,0,1,1.38,1.42c.33.63,3.46,4.88,3.83,5.42a18.48,18.48,0,0,0,2.38,3,41.16,41.16,0,0,1,4.17,4.54,13.59,13.59,0,0,0,1.38,1.88,2.49,2.49,0,0,0,1.75.38,11.78,11.78,0,0,0,2.83-1.79c.25-.21,1.13-.5,1.5-.25s.79,1.75,1.08,2.17,1.42,3.17,1.63,3.46,1.75,2,2.21,2.63,2.58,4.67,3.25,5.46a20.89,20.89,0,0,0,1.5,1.92c.46.38.79,1.38,1.58,2s6.75,5.13,7.25,5.54,1,1.38,1.46,1.42c.21,0,.88.14,1.57.3.47-1,1.3-2.44,1.51-2.8s2.71-1.62,4-2.42A5.27,5.27,0,0,0,240.5,131.67Z"></path> </a>
+								<!-- 4 --><a href="/fr/territoire/188/les-fontenelles" xlink:href="/fr/territoire/188/les-fontenelles"> <path id="map_4" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M195.13,88.28c-.75-1.1-1.24-1.82-1.3-1.9a15.34,15.34,0,0,1-1.33-2.75c-.17-.58-4.5-10-5.12-11.42s-12.29-23.29-12.67-23.92-3.58-6.67-3.75-6.92-3-2.42-3.33-2.71a17,17,0,0,1-1.21-3s-.22-.43-.58-.37c-1.46.42-5.54,5.38-5.83,5.75a10.06,10.06,0,0,0-1.12,1.75c0,.25,1,1.79,1.17,2.54a54.3,54.3,0,0,0-5.42,2.42c-.65.31-2.12,1.94-2.69,2.26a1.68,1.68,0,0,1-.22.3c-.34.31-1.78,1.47-2.5,2.16s-2.68,2.78-2.74,2.95a8.4,8.4,0,0,1-.58,1.08c-.21.31-1.06,2.13-1.19,2.46s-1,2-1,2.06,1.13,1.33,1.25,1.44c-.17.35-.4.58-.4.71a6.65,6.65,0,0,1-.27,1.27c-.1.21-2.12,2.63-2.19,2.77a5.26,5.26,0,0,1-.62,1.13c-.12,0-.44,0-.58.19a4.63,4.63,0,0,0-.33.4s1.21,1.31,1.31,1.44a23.73,23.73,0,0,0,3,2.67c.19-.1,1.42-1.33,1.54-1.21s.15.44.52.4,2.58-1.5,3.46-1.44,1.38-.25,1.6,0,.33.83.69,1a4.48,4.48,0,0,1,1.13.4c.27.21.48,1.35.88,1.38s.77-.44.94-.46.75.75.77.83,1,1.65,1.31,2.1.4.81.67,1.21.65,1.17.77,1.35a12.93,12.93,0,0,0,1.69,1.81c.17,0,.58-.33.77-.37s.52-.1.63.19a4,4,0,0,0,.52.88c.17.23.92,1.19,1.13,1.19a1.47,1.47,0,0,1,.77.1,8.4,8.4,0,0,0,1.27.27,23,23,0,0,0,2.83.54c.79.06,1.6-.65,1.79-.6s.17.56.38.63.67.6,1.06.6a11.44,11.44,0,0,1,1.88,0,12.79,12.79,0,0,0,1.65.63c.52.15,2.19.58,2.81.77s1.29.42,2,.65,1.9.65,2.19.81A10.81,10.81,0,0,1,184.75,88a20.26,20.26,0,0,1,1,2.21A9,9,0,0,0,187,92.62a1.45,1.45,0,0,0,1.15.1,21.16,21.16,0,0,0,2.31-1.44C190.63,91.22,193.79,89.17,195.13,88.28Z"></path> </a>
+								<!-- 5 --><a href="/fr/territoire/181/laval-le-prieure" xlink:href="/fr/territoire/181/laval-le-prieure"> <path id="map_5" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M53.09,104.36c.13,0,.5-.37.66-.37a10.86,10.86,0,0,0,1.34-.06c.31-.06,1.28-.87,1.84-.78s.94.31,1.16,0c.1-.14.47-1.08.84-2.07l-.06,0c-.12.08-.25,0-1.33-1a1.88,1.88,0,0,1-.62-2.42c.29-.29.29-1,.46-1.71s.25-1.75.42-2.54a26.28,26.28,0,0,0,.65-3,24.07,24.07,0,0,1-.31-2.47c0-.47,1.06-2,1.16-2.53a14.69,14.69,0,0,0-.66-3.06,34.85,34.85,0,0,1-.56-3.78c0-.37,1.09-2.72,1.16-3.25a3.66,3.66,0,0,0-.66-1.75c-.12-.12.34-.28.53-.5s0-.53-.34-.66-.28-.56-.34-.75a16.91,16.91,0,0,0-3.31,0,22.57,22.57,0,0,0-2.87,1.06c-.34.16-.59,0-.84-.12a7.83,7.83,0,0,0-1.28-.59c-.25,0-9.84,2.72-10,2.78s.84,1.66.78,1.75-10.79.09-14.52.11a1.56,1.56,0,0,0-.2.35,23.53,23.53,0,0,0,2.13,3.44c.41.41,3.28,1.59,3.41,1.81a30.44,30.44,0,0,1,.06,3.78c0,.25-2,3.59-2.16,3.75a2.11,2.11,0,0,1-.69.81,11.66,11.66,0,0,0-2.75,3c0,.19.09,4.16,0,4.38s-.47.44-.75.5-1,1.78-1,2a7.62,7.62,0,0,1-1,1.41c-.09.09,0,2.06-.09,2.41s-.22,1.66-.25,1.88,2.94,5,3.09,5.16,5.66.06,5.88.06.11.29.11.66a8.84,8.84,0,0,0,.7-1.06c.16-.37.25-.75.41-1.09a42.31,42.31,0,0,1,2.91-3.78c.41-.37,1-.94,1-1.22a.84.84,0,0,1,.47-.66,1.46,1.46,0,0,0,.84-.69c.22-.41.5-1.16.94-1.37a8.41,8.41,0,0,0,1.44-1.62,18.29,18.29,0,0,0-2.94-3.5,8.79,8.79,0,0,1,1.66-2.41c.25-.16,1,.47,1.09.56s2.91,3.53,3.09,3.34.72-1.5.94-1.75,1.63-1.72,1.78-1.59.56.78.84,1.13a2.15,2.15,0,0,1,.44.72,5.08,5.08,0,0,0,.59,1.31,11.2,11.2,0,0,0,2.38,2.09.86.86,0,0,1,.72.88c0,.5-.37.78-.28.91A23.89,23.89,0,0,0,53.09,104.36Z"></path> </a>
+								<!-- 6 --><a href="/fr/territoire/190/montbeliardot" xlink:href="/fr/territoire/190/montbeliardot"> <path id="map_6" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M99.25,86.87c.38,0,3.33,1,3.58,1s2.21-.62,2.58-.67,5.08-2.08,5.38-2.08l1.08-.1a5.68,5.68,0,0,1-.46-.95,5.69,5.69,0,0,1-.08-1.62,7.93,7.93,0,0,0-1-2.08,5.7,5.7,0,0,0-.87-.87c-.17-.17-4.92-7.29-5.58-8.21A24.27,24.27,0,0,0,102,68.71c-.08,0-.44,0-.83,0a2.58,2.58,0,0,1,.08.28c0,.09-5.16,2.88-5.69,3.28S94,73.58,93.75,73.8s-1.22-.94-1.22-.94a2.36,2.36,0,0,0-.69.31c-.16.16-1.53,2.59-1.72,2.94s.25,1,.25,1.13a8.22,8.22,0,0,1-1.09,1.41A30.31,30.31,0,0,1,86.53,81a8.69,8.69,0,0,0-1.32,1.06c-.25.29-.54.46-.83.29a4.92,4.92,0,0,0-1.5-.25c-.25,0-.12.88-.21,1.21s-1.75,1.42-2,1.63S77,88.42,76.79,88.71s-.33.21-1,.46a23.22,23.22,0,0,1-4.62,1.38c-1,0-.54-.08-1.21-.29a1.55,1.55,0,0,0-1.33.21,13.93,13.93,0,0,1-1.62.38c-.17,0-.12.29-.12,2.71a2.33,2.33,0,0,1-1.67,2,4.82,4.82,0,0,0-.79.47c.33.2.6.36.71.45.29.25,1.25,1.08,1.54,1.38a19.34,19.34,0,0,0,1.54,1.79c.17,0,1.25-.29,1.25-.29a7.56,7.56,0,0,1,.63,1.37,1.71,1.71,0,0,0,.58,1,3.18,3.18,0,0,0,.71,0s-.37-1-.25-1,3.46-.12,4.46-.12,5.5-.5,5.71-.54.5-.37.67-.37A11.48,11.48,0,0,1,84,100c.33.17,1,.42,1.08.12a4.3,4.3,0,0,1,.29-.83,35.86,35.86,0,0,0,3.13-1.92c.38-.37,2-3.25,2.21-3.37s.88-.37,1-.62-.33-.83-.21-.83,1.42-.46,1.88-.5a1.57,1.57,0,0,0,1.17-.62c.33-.42,1.83-2.58,2.29-3A8.79,8.79,0,0,1,99.25,86.87Z"></path> </a>
+								<!-- 7 --><a href="/fr/territoire/184/le-luhier" xlink:href="/fr/territoire/184/le-luhier"> <path id="map_7" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M123.83,103a6.61,6.61,0,0,1-1-2,29.33,29.33,0,0,0-1.46-3.25c-.14-.22-.51-1-.76-1.6h-.11c-.46,0-1.62-1.71-1.71-2.12a7.33,7.33,0,0,0-1.67-2.46,37,37,0,0,1-3.33-3.46c-.3-.42-1.28-1.95-1.87-3l-1.08.1c-.29,0-5,2-5.37,2.08s-2.33.71-2.58.67-3.21-1-3.58-1a8.79,8.79,0,0,0-2.37,1.54c-.46.42-2,2.58-2.29,3a1.57,1.57,0,0,1-1.17.63c-.46,0-1.75.5-1.87.5s.33.58.21.83-.79.5-1,.63-1.83,3-2.21,3.38a35.86,35.86,0,0,1-3.12,1.92,4.3,4.3,0,0,0-.29.83c0,.29-.75,0-1.08-.12A11.48,11.48,0,0,0,82,99.58c-.17,0-.46.33-.67.38s-4.71.54-5.71.54-4.33,0-4.46.13.25,1,.25,1a3.18,3.18,0,0,1-.71,0,1.71,1.71,0,0,1-.58-1,7.56,7.56,0,0,0-.62-1.37l-.77.2a7.71,7.71,0,0,1,.44,1.26c0,.29.83,1.13.92,1.38s.92,1.42,1.13,1.92,1.63,1.79,1.75,2.25a39.76,39.76,0,0,0,1.88,3.83c.42.71,2.79,1.92,3.29,2.08s.79,1.33,1.08,1.67,1,0,1.21.08,4,3.38,4.71,4a21.26,21.26,0,0,0,3,2c.54.29,3.11,2.2,3.79,2.71.39-.16.7-.32.7-.43a21.13,21.13,0,0,1,.94-3c.44-1.19,1-4.28,1.34-4.91a10.29,10.29,0,0,1,2.5-3.47c.34-.84.34-.66.34-1s-.19-.81.06-1,5.63-2.75,5.69-2.87a5.39,5.39,0,0,1,.5-1.16c.16-.09,3.69-1.84,4.31-2.28a15.51,15.51,0,0,1,3.06-1.34c.22,0,.88-.12.78,0a.83.83,0,0,0-.37.94c.13.69.13.72.31.72a4,4,0,0,1,1.41.28,1.18,1.18,0,0,1,.47.75c0,.22-.16.88.09.84a3,3,0,0,0,1.16-1.25c.13-.37.28-.16.66-.41s.41-.81.69-.66,1.91,2.19,2.41,2.47.75-.19,1-.19a2.62,2.62,0,0,1,1.19.5,2.75,2.75,0,0,1,.81,1.31c.13.44.34,1.06.63,1a11.1,11.1,0,0,0,2.42-1.3c.21-.25.33-.37.25-.62A15.48,15.48,0,0,0,123.83,103Z"></path> </a>
+								<!-- 8 --><a href="/fr/territoire/189/mont-de-laval" xlink:href="/fr/territoire/189/mont-de-laval"> <path id="map_8" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M86.75,126.5c.38-.12.75-.92.83-1.25A9.32,9.32,0,0,1,89,123.67s2,1.25,2.25,1.08.75-2,.75-2-3.33-2.5-4-2.83a21.26,21.26,0,0,1-3-2c-.71-.62-4.46-3.87-4.71-4s-.92.25-1.21-.08-.58-1.5-1.08-1.67-2.87-1.37-3.29-2.08a39.76,39.76,0,0,1-1.87-3.83c-.12-.46-1.54-1.75-1.75-2.25s-1-1.67-1.12-1.92-.92-1.08-.92-1.37a7.71,7.71,0,0,0-.44-1.26,3.5,3.5,0,0,1-.48.09,19.34,19.34,0,0,1-1.54-1.79c-.29-.29-1.25-1.12-1.54-1.37-.11-.09-.38-.25-.71-.45a6.06,6.06,0,0,0-1.71,2.37,21.55,21.55,0,0,0-3.77,2.7c-.37,1-.75,1.93-.84,2.07-.22.31-.59.09-1.16,0s-1.53.72-1.84.78a10.86,10.86,0,0,1-1.34.06c-.16,0-.53.38-.66.38a23.89,23.89,0,0,1-1.91-2c-.09-.12.31-.41.28-.91a.86.86,0,0,0-.72-.87,11.2,11.2,0,0,1-2.37-2.09,5.08,5.08,0,0,1-.59-1.31,2.15,2.15,0,0,0-.44-.72c-.28-.34-.69-1-.84-1.12s-1.56,1.34-1.78,1.59-.75,1.56-.94,1.75-3-3.25-3.09-3.34-.84-.72-1.09-.56a8.79,8.79,0,0,0-1.66,2.41,18.29,18.29,0,0,1,2.94,3.5,8.41,8.41,0,0,1-1.44,1.63c-.44.22-.72,1-.94,1.38a1.46,1.46,0,0,1-.84.69.84.84,0,0,0-.47.66c0,.28-.59.84-1,1.22A42.31,42.31,0,0,0,33.28,110c-.16.34-.25.72-.41,1.09a8.84,8.84,0,0,1-.7,1.06c0,.53-.05,1.22,0,1.4s1.25,1,1.34,1.28.19,2.59.19,2.81,1.25.34,1.34.41A28.6,28.6,0,0,1,35,121.3c0,.16-.41.59-.41,1s4.28,13.06,4.31,13.28,2.16-1.5,2.31-1.62,1.5.47,1.81.59a.78.78,0,0,0,.94-.16c.34-.31.72-.94,1.25-1s1.44-.94,1.72-1.06.88.59,1.09.59.59-.41.94-.56,1,.91,1.13,1.06a6.39,6.39,0,0,1,.15,1.4c.72-.2,1.25-.31,1.37-.5a3.44,3.44,0,0,1,.88-1c.33-.17.5-1.33.58-1.67a3.42,3.42,0,0,1,1.17-1.25,17.11,17.11,0,0,0,2.92,0c.17-.12,1.08-.37,1.25-.17s1.83.25,2,.42a2.48,2.48,0,0,1,.42,1.29c0,.46-.17,1,0,1a8.76,8.76,0,0,0,1.63-.71,13,13,0,0,0,2.33-1.79,2.12,2.12,0,0,0,.38-1.29c0-.25-.46-.71-.46-.87a1.18,1.18,0,0,1,.21-.46,6.27,6.27,0,0,0,1.58-.12,7.83,7.83,0,0,0,2.21-2.17c.13-.37.29-.71.54-.75s1.13-.58,1.33-.25.17.58.54.92,2.21,1.83,2.33,2.29.42,1.25.88,1.33a2.27,2.27,0,0,1,1.25.5.83.83,0,0,1,.08,1,11.07,11.07,0,0,0-1.21,2.08c0,.17,2.46,1.83,2.67,1.63s1-2,1.21-2.17,2.42-1.92,2.83-2.33,2.71-2.62,3.29-2.75S86.38,126.62,86.75,126.5Z"></path> </a>
+								<!-- 9 --><a href="/fr/territoire/185/le-memont" xlink:href="/fr/territoire/185/le-memont"> <path id="map_9" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M122.5,107.55c-.28,0-.5-.59-.62-1a2.75,2.75,0,0,0-.81-1.31,2.62,2.62,0,0,0-1.19-.5c-.25,0-.5.47-1,.19s-2.12-2.31-2.41-2.47-.31.41-.69.66-.53,0-.66.41a3,3,0,0,1-1.16,1.25c-.25,0-.09-.62-.09-.84a1.18,1.18,0,0,0-.47-.75,4,4,0,0,0-1.41-.28c-.19,0-.19,0-.31-.72a.83.83,0,0,1,.38-.94c.09-.12-.56,0-.78,0a15.51,15.51,0,0,0-3.06,1.34c-.62.44-4.16,2.19-4.31,2.28a5.39,5.39,0,0,0-.5,1.16c-.06.13-5.44,2.66-5.69,2.88s-.06.69-.06,1,0,.16-.34,1a10.29,10.29,0,0,0-2.5,3.47c-.34.63-.91,3.72-1.34,4.91a21.13,21.13,0,0,0-.94,3c0,.09-.22.21-.51.34h0l.81.47s2.06,0,2.47,0a2.15,2.15,0,0,1,1,.41l2.38,1.5c.25.16,3.94,2.47,4.22,2.56s2.69,1.63,2.88,1.78,3.66,2.59,3.75,2.69.5-.94.5-.94a8.49,8.49,0,0,1,1.22-2c.44-.31.38-.5.38-.5s-1.16-1.12-1-1.22.72-.44.69-.78a3.42,3.42,0,0,1,.28-1.34c.13-.19,1-2.12,1.25-2.47s-.22-.94-.5-1.22-1-.72-.94-1a1.42,1.42,0,0,1,.94-.78c.38-.06,1.34-.28,1.84-.41s7-2.47,7.28-2.66.09-.66-.28-.81-1.31-.81-1.09-1.16a2.12,2.12,0,0,1,1.5-.69,1.51,1.51,0,0,0,1-.75,4,4,0,0,0-.22-1.34c-.19-.56-.94-1.47-.75-1.81s.91-.75,1.09-1,0-.5,0-.81c0-.14.06-.54.12-.94A1.75,1.75,0,0,1,122.5,107.55Z"></path> </a>
+								<!-- 10 --><a href="/fr/territoire/179/la-bosse" xlink:href="/fr/territoire/179/la-bosse"> <path id="map_10" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M89,123.67a9.32,9.32,0,0,0-1.42,1.58c-.08.33-.46,1.13-.83,1.25s-1.75.33-2.33.46-2.87,2.33-3.29,2.75-2.62,2.13-2.83,2.33-1,2-1.21,2.17-2.67-1.46-2.67-1.62a11.07,11.07,0,0,1,1.21-2.08.83.83,0,0,0-.08-1,2.27,2.27,0,0,0-1.25-.5c-.46-.08-.75-.87-.87-1.33s-2-2-2.33-2.29-.33-.58-.54-.92-1.08.21-1.33.25-.42.38-.54.75a7.83,7.83,0,0,1-2.21,2.17,6.27,6.27,0,0,1-1.58.13,1.18,1.18,0,0,0-.21.46c0,.17.46.63.46.88a2.12,2.12,0,0,1-.37,1.29,13,13,0,0,1-2.33,1.79,8.76,8.76,0,0,1-1.62.71c-.17,0,0-.5,0-1a2.48,2.48,0,0,0-.42-1.29c-.17-.17-1.83-.21-2-.42s-1.08,0-1.25.17a17.11,17.11,0,0,1-2.92,0A3.42,3.42,0,0,0,53,131.62c-.08.33-.25,1.5-.58,1.67a3.44,3.44,0,0,0-.87,1c-.12.18-.65.3-1.37.5,0,.07,0,.14,0,.19,0,.38-.66,2.06-.66,2.25s.38.13.66-.16.13-1.28.13-1.47,1.31,1.13,1.56,1.19.63-.94.94-1.19,3.44,2.13,3.44,2.13a2.73,2.73,0,0,1,.22.78c0,.28,1.19,1.13,1.28,1.19a2.52,2.52,0,0,1,.41.94,3.07,3.07,0,0,1-.94.63c-.19.06,1,1.72,1.47,2.34s.5.34.81.28.66.63.38,1.44a11.14,11.14,0,0,0-2.37,3.16c0,.38,1.16.84,1.34.91a.5.5,0,0,1,.38.53c0,.34-1.09,1.69-1.22,2s0,.88-.09,1-.94.47-1,.69,1.31,1.53,1.44,1.72.91-.87,1.13-1.06,1.22,1.72,1.28,1.91.75,0,1,0,.81,1.25.91,1.44.25,1.75.38,2.19,2.81,2.31,2.94,2.41,1.25,1,1.47,1,1.88-2.87,2.09-2.91,1.44,1,1.66,1,.91-.69,1.09-.72a19.11,19.11,0,0,1,2.77.81,6.48,6.48,0,0,0,.84-.66c.06-.15,0-1.15.21-1.15s.69-.21.69-.37,0-2.29.08-2.5a3,3,0,0,1,.69-1.06c.21-.1,1.75-.4,2.17-.94a41.6,41.6,0,0,0,3.08-4.92c.33-.92.54-.79.54-1.5s-.33-1.08.21-2,1.58-1.92,1.79-2.75a9.93,9.93,0,0,0-.17-2.46,14.81,14.81,0,0,1,1.21-3.71,3.87,3.87,0,0,0,1.25-1.5c.33-.79,2.08-5.37,2.21-5.62s0-1.75.21-2a7.5,7.5,0,0,0,.5-1.46c.13-.37.63-2,.63-2C91,124.92,89,123.67,89,123.67Z"></path> </a>
+								<!-- 11 --><a href="/fr/territoire/183/le-bizot" xlink:href="/fr/territoire/183/le-bizot"> <path id="map_11" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M119.21,143.58c.08.13.38.08.38.08l.54-.87c-.5-.4-1.77-1.61-2.79-2.63s-3.71-4.17-4.08-4.58a15.46,15.46,0,0,0-1.87-1.58,14.73,14.73,0,0,1-1.37-1.21l-.45-.82s0,0-.05,0-3.56-2.53-3.75-2.69-2.59-1.69-2.87-1.78-4-2.41-4.22-2.56l-2.37-1.5a2.15,2.15,0,0,0-1-.41c-.41,0-2.47,0-2.47,0l-.81-.47h0l-.19.08.17.13s-.46,1.79-.75,2c0,0-.5,1.67-.62,2a7.5,7.5,0,0,1-.5,1.46c-.21.29-.08,1.79-.21,2s-1.87,4.83-2.21,5.63a3.87,3.87,0,0,1-1.25,1.5,14.81,14.81,0,0,0-1.21,3.71,9.93,9.93,0,0,1,.17,2.46c-.21.83-1.25,1.83-1.79,2.75s-.21,1.29-.21,2-.21.58-.54,1.5a41.6,41.6,0,0,1-3.08,4.92c-.42.54-2,.83-2.17.94a3,3,0,0,0-.69,1.06c-.06.21-.08,2.33-.08,2.5s-.52.38-.69.38-.15,1-.21,1.15a6.48,6.48,0,0,1-.84.66c.24.1.41.17.42.22s-1.16,6.34-1.16,6.75,3.25,3.94,3.84,4.63a19,19,0,0,1,1.84,3c.07.16.28.53.54,1,.73-.18,1.34-.42,1.52-.47s2.47-1.62,2.72-1.66,1.25.81,1.28.94,1.75,2,1.75,2a6.05,6.05,0,0,1,.66-.25c.16,0,1.13-.53,1.41-.47s1.41.91,1.72.72a10.65,10.65,0,0,0,1.88-1c.25-.31.56-.34.81-.5s.94-.53,1.19-.69.59-.69.75-.78.47.06.59.25S98,177,98.25,176.9s.72-1,1-1.12.78-.66,1-.47.31.25.91-.12a8.81,8.81,0,0,1,1.44-.78,4.69,4.69,0,0,0,.63-.28v-.19a18.37,18.37,0,0,0-2-1.76,1.52,1.52,0,0,1-.65,0c-.29-.06-1.52-3.52-1.52-3.69s.63-.62.94-.73a3.84,3.84,0,0,0,1.27-.71c.08-.19-.52-2.67-.58-3.1s0-.52.17-.54a7.59,7.59,0,0,0,1.69-.5,3.76,3.76,0,0,0,.77-.92c.06-.19-.37-1.19-.06-1.5s.56-.15.83-.37a13.71,13.71,0,0,1,1-1c.17-.06.54-.1.56-.35s-.5-.83-.4-1,.69-.46.85-.71a12.14,12.14,0,0,0,.23-2.35c0-.12-.67-.12-.67-.4s-.08-1,.06-1.08,1.08-.83,1.13-1.08-.77-.17-.77-.23-.08-.54,0-.6,2.29-2,2.35-2.15a6.77,6.77,0,0,1,2.35.08c.17.13.54.79,1,.58a1.17,1.17,0,0,0,.67-1,1.45,1.45,0,0,1,.33-1,18.42,18.42,0,0,0,2.38-2,11.5,11.5,0,0,1,3.38-2.46A.9.9,0,0,1,119.21,143.58Z"></path> </a>
+								<!-- 12 --><a href="/fr/territoire/187/le-russey" xlink:href="/fr/territoire/187/le-russey"> <path id="map_12" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M167.92,140.83c.71-.17,1.25-.62,1.92-.83s4.58-2.37,6-2.92,8-3.25,9.46-4.08,6.67-4.92,7.75-5.71,5.25-4.46,6-5a9,9,0,0,0,1.92-1.75,6,6,0,0,1,2-1.75,13.93,13.93,0,0,0,2.08-1.31c-.31-.35-.57-.81-1.2-1.69a41.16,41.16,0,0,0-4.17-4.54,18.48,18.48,0,0,1-2.37-3c-.37-.54-3.5-4.79-3.83-5.42a5.58,5.58,0,0,0-1.37-1.42c-.25-.21-.33-.5-.92-1.21a1.18,1.18,0,0,0-1.67-.21c-.33.25-9.12,2-9.67,2s-2-2.17-2.25-2.37-2.67-3-3.29-3.5-6.92-3.37-9.17-4.46-9.25-3.79-9.62-3.92a23.77,23.77,0,0,0-2.87.38c-.75,0-3.83,1.25-4.79,1.5s-4.12.88-4.75,1.13A28.73,28.73,0,0,1,138,91c-1.08,0-2.83,1.5-3.37,1.67a18.66,18.66,0,0,0-2.58,1.29,1.26,1.26,0,0,1-1.37,0,5.27,5.27,0,0,0-2.17-.33,19.09,19.09,0,0,0-2.33.58c-.58.08-2,.79-2.62.92s-2.42,1-3,1c.25.56.63,1.38.76,1.6a29.33,29.33,0,0,1,1.46,3.25,6.61,6.61,0,0,0,1,2,15.48,15.48,0,0,1,1.33,2.63c.08.25,0,.38-.25.63a11.49,11.49,0,0,1-2.08,1.18c-.06.4-.12.8-.12.94,0,.31.19.59,0,.81s-.91.63-1.09,1,.56,1.25.75,1.81a4,4,0,0,1,.22,1.34,1.51,1.51,0,0,1-1,.75,2.12,2.12,0,0,0-1.5.69c-.22.34.72,1,1.09,1.16s.53.63.28.81-6.78,2.53-7.28,2.66-1.47.34-1.84.41a1.42,1.42,0,0,0-.94.78c0,.25.66.69.94,1s.75.88.5,1.22-1.12,2.28-1.25,2.47a3.42,3.42,0,0,0-.28,1.34c0,.34-.53.69-.69.78s1,1.22,1,1.22.06.19-.37.5a8.49,8.49,0,0,0-1.22,2,5.26,5.26,0,0,1-.45.92l.45.82a14.73,14.73,0,0,0,1.38,1.21,15.46,15.46,0,0,1,1.88,1.58c.38.42,2.92,3.42,4.08,4.58a37.41,37.41,0,0,0,3,2.75,4.33,4.33,0,0,1,1.42,1.46,20.22,20.22,0,0,0,1.79,2.25c.21.33,1.33,2.08,2.33,4.08a51.52,51.52,0,0,0,4.79,7,6.55,6.55,0,0,0,2,1.42c.38.08,1.67,0,1.92.17s.71.17,1,.33a2.63,2.63,0,0,0,1.08.54,3,3,0,0,1,1.46.33c.5.33,1.5,1.71,1.58,1.33a3.56,3.56,0,0,1,.29-1,21.61,21.61,0,0,1,2.71-1.75c.29,0,.58-1,.67-1.37a7.14,7.14,0,0,1,.58-1.25c.08-.21,1.21-1.67,2.08-3a12.14,12.14,0,0,1,1.71-2c.17-.25.21-.62.38-.62s.75,0,.83-.25,1.54-2.21,2.13-2.17.79-.25,1.25-.58a11,11,0,0,1,2.33-1.12c.67-.21,3.71-.92,5.33-1.58S167.21,141,167.92,140.83Z"></path> </a>
+								<!-- 13 --><a href="/fr/territoire/186/narbief" xlink:href="/fr/territoire/186/narbief"> <path id="map_13" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M127.63,163.85s1.59-2.4,1.81-2.8c.13-.23,1-1.64,1.74-2.8-.2-.16-.38-.33-.55-.5a51.52,51.52,0,0,1-4.79-7c-1-2-2.12-3.75-2.33-4.08a20.22,20.22,0,0,1-1.79-2.25,4.33,4.33,0,0,0-1.42-1.46l-.17-.12-.54.87s-.29,0-.37-.08a.9.9,0,0,0-.58-.21,11.5,11.5,0,0,0-3.37,2.46,18.42,18.42,0,0,1-2.37,2,1.45,1.45,0,0,0-.33,1,1.17,1.17,0,0,1-.67,1c-.42.21-.79-.46-1-.58a6.77,6.77,0,0,0-2.35-.08c-.06.17-2.25,2.08-2.35,2.15s0,.54,0,.6.81,0,.77.23-1,1-1.12,1.08-.06.81-.06,1.08.67.27.67.4a12.14,12.14,0,0,1-.23,2.35c-.17.25-.75.54-.85.71s.42.75.4,1-.4.29-.56.35a13.71,13.71,0,0,0-1,1c-.27.23-.52.06-.83.38s.13,1.31.06,1.5a3.76,3.76,0,0,1-.77.92,7.59,7.59,0,0,1-1.69.5c-.15,0-.23.1-.17.54s.67,2.92.58,3.1a3.84,3.84,0,0,1-1.27.71c-.31.1-.94.56-.94.73s1.23,3.63,1.52,3.69a1.52,1.52,0,0,0,.65,0,18.37,18.37,0,0,1,2,1.76V174a4.49,4.49,0,0,1,.59.05.68.68,0,0,1,.26.24,4.47,4.47,0,0,0,.8-.18c.35-.17.77-.81.92-.83s.58,0,.65-.42-.31-.4-.29-.58.35-.25.35-.25a32.24,32.24,0,0,1,3.23-2,6.08,6.08,0,0,0,1.46,1.23,2.09,2.09,0,0,0,.92-.44,9.34,9.34,0,0,1,1.33-.9,22.12,22.12,0,0,1,1.71,2c0,.13.46-.08.58-.19a8.88,8.88,0,0,1,1.52-.67c.15,0,1.1.75,1,.81a8.45,8.45,0,0,0-1,.56,6.57,6.57,0,0,1-1.31.94,4.79,4.79,0,0,1-1.06-.21,4.88,4.88,0,0,0-1.25-.06c-.25,0-.67.4-.77.42a3.22,3.22,0,0,1-.58-.08l0,.25s.92.35,1.08.4,2.19,1.67,2.4,1.85,1.23.77,1.29.81.29-.69.46-1,.75-1.58.92-1.58,1.65,1,1.9.83a12.47,12.47,0,0,0,1.54-1.73c.19-.29.88-.77,1-1.25s-.6-2.44-.73-2.81-1.23-2-1.12-2.23,2-1.69,2.21-1.52a3.94,3.94,0,0,1,.73,1,3.17,3.17,0,0,0,1.1.85c.13,0,.71-.58.71-.75s-1.06-1.58-1-1.85a.54.54,0,0,1,.46-.42c.17,0,1-.31,1.5.27C127.19,164.44,127.63,163.85,127.63,163.85Z"></path> </a>
+								<!-- 14 --><a href="/fr/territoire/191/noel-cerneux" xlink:href="/fr/territoire/191/noel-cerneux"> <path id="map_14" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M105.73,208.29c-.25-.35-1-1.5-1.4-2.12s-.54-.9-.67-.94-.6-.15-.73-.33a5.15,5.15,0,0,1-.06-1.56c0-.46.33-.48.25-.69s-.69-.15-1.25-.6a17.18,17.18,0,0,1-1.67-2.92c-.15-.17-1.62.48-1.92.58a.77.77,0,0,1-.69,0,7.74,7.74,0,0,1-1-2.29,1.16,1.16,0,0,1,.56-.87c.27-.21,1.1-.94,1.4-1.21a10.37,10.37,0,0,0,1.4-1.67c0-.21-.35-.52-.52-.77s-1.75-2.85-1.81-3.06-1.08-2.6-1.21-2.87-1.17-3.19-1.19-3.52a2,2,0,0,1,.21-1,11.08,11.08,0,0,0,.42-2c0-.21-1.42-2.33-1.46-2.46s0-.81,0-1.63l-.11.06c-.25.16-.56.19-.81.5a10.65,10.65,0,0,1-1.87,1c-.31.19-1.44-.66-1.72-.72s-1.25.44-1.41.47a6.05,6.05,0,0,0-.66.25s-1.72-1.91-1.75-2-1-1-1.28-.94-2.41,1.56-2.72,1.66-.79.29-1.52.47a34.27,34.27,0,0,1,1.9,3.65c0,.34-.5.75-.87,1s-5.78,6.06-6.59,7a7.75,7.75,0,0,0-1.16,1.88,15.32,15.32,0,0,1-2.22,2.78c-1,.94-2.44,2.16-2.59,2.25s-.72,1.5-1,1.84a36,36,0,0,1-4.62,2.19c-.22,0-3.28,2.09-3.53,2.13a2.41,2.41,0,0,0-1,.75c-.22.28-1.59,3.72-1.84,3.88s-1.28,1.13-1.19,1.63a17.16,17.16,0,0,0,1.63,1.31,77.48,77.48,0,0,0,8,.69c1.81.06,14.63,2.31,14.84,2.34s4.94,0,5.69.06,8.38,3.78,8.72,4,1.41,1,1.75,1A3.09,3.09,0,0,0,97.81,216a14.4,14.4,0,0,1,1.91-2.56,7.59,7.59,0,0,1,2.75-1.22,5.74,5.74,0,0,0,1.69-1.69,6.22,6.22,0,0,1,2-1.44C105.91,208.64,105.76,208.34,105.73,208.29Z"></path> </a>
+								<!-- 15 --><a href="/fr/territoire/180/la-chenalotte" xlink:href="/fr/territoire/180/la-chenalotte"> <path id="map_15" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M95.9,180.42a11.08,11.08,0,0,1-.42,2,2,2,0,0,0-.21,1c0,.33,1.06,3.25,1.19,3.52s1.15,2.67,1.21,2.88,1.65,2.81,1.81,3.06.56.56.52.77a10.37,10.37,0,0,1-1.4,1.67c-.29.27-1.12,1-1.4,1.21a1.16,1.16,0,0,0-.56.88,7.74,7.74,0,0,0,1,2.29.77.77,0,0,0,.69,0c.29-.1,1.77-.75,1.92-.58a17.18,17.18,0,0,0,1.67,2.92c.56.46,1.17.4,1.25.6s-.23.23-.25.69a5.15,5.15,0,0,0,.06,1.56c.13.19.6.29.73.33s.25.31.67.94,1.15,1.77,1.4,2.13c0,0,.18.35.41.82l.36-.15a2.31,2.31,0,0,1,1.56-.19,12.2,12.2,0,0,0,3.41.38c.91-.09,3.93-1.81,4.55-1.92a1.33,1.33,0,0,1,1.1.21,4.11,4.11,0,0,0,1.88.1,8.91,8.91,0,0,0,1.79-1.33c.23-.23,1.31-.12,1.73-.15a8.66,8.66,0,0,0,2.21-1.56c.46-.4.67-.19.94-.21s1-1.08,1.17-1.31.65-.27,1.29-.4,2.62-2.56,3.55-3.7c-.71-1.45-2-4.25-2.07-4.34s-.62.29-.94.27-1.23-1.1-1.4-1.25-2.75-4-3.06-4.58-3.15-3.94-3.31-4.12-.94-1.15-1.08-1.37-2.15-2.33-2.19-2.52-1.35-1.62-1.48-1.81-.73-.25-1.21-.33-3.92-1.83-4-1.9,0-1.37,0-1.5a5.39,5.39,0,0,0-1.48-.08,17.9,17.9,0,0,1-2-1c-.12,0-1.75,1.29-2,1.29s-.79-.5-.87-.71-.37-.79-.62-.87a4.49,4.49,0,0,0-.59-.05v.08a4.69,4.69,0,0,1-.62.28,8.81,8.81,0,0,0-1.44.78c-.59.38-.66.31-.91.13s-.72.34-1,.47-.78,1-1,1.13-1.25-1.53-1.37-1.72-.44-.34-.59-.25-.5.63-.75.78-.78.45-1.08.62c0,.82,0,1.56,0,1.63S95.9,180.21,95.9,180.42Z"></path> </a>
+								<!-- 16 --><a href="/fr/territoire/182/le-barboux" xlink:href="/fr/territoire/182/le-barboux"> <path id="map_16" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M178,163.24c0-.34-2.31-3.87-2.5-4.25s.78-1,1.09-1.41,1.13-.62,1.19-.87-1.37-3.5-1.5-3.94A23.07,23.07,0,0,0,174.5,150c-.44-.62-2.62-3.62-3.37-4.69-.52-.73-1.9-2.8-3.05-4.49l-.16.05c-.71.17-6.37,3.63-8,4.29s-4.67,1.38-5.33,1.58a11,11,0,0,0-2.33,1.13c-.46.33-.67.63-1.25.58s-2,1.88-2.12,2.17-.67.25-.83.25-.21.38-.37.63a12.14,12.14,0,0,0-1.71,2c-.87,1.33-2,2.79-2.08,3a7.14,7.14,0,0,0-.58,1.25c-.08.42-.37,1.33-.67,1.38a21.61,21.61,0,0,0-2.71,1.75,3.56,3.56,0,0,0-.29,1c-.08.38-1.08-1-1.58-1.33a3,3,0,0,0-1.46-.33,2.63,2.63,0,0,1-1.08-.54c-.29-.17-.75-.21-1-.33s-1.54-.08-1.92-.17a4.93,4.93,0,0,1-1.41-.92c-.73,1.16-1.61,2.57-1.74,2.8-.22.41-1.81,2.8-1.81,2.8s-.44.58-.77.65c-.5-.58-1.33-.27-1.5-.27a.54.54,0,0,0-.46.42c-.08.27,1,1.69,1,1.85s-.58.71-.71.75a3.17,3.17,0,0,1-1.1-.85,3.94,3.94,0,0,0-.73-1c-.23-.17-2.1,1.33-2.21,1.52s1,1.85,1.13,2.23.9,2.33.73,2.81-.85,1-1,1.25a12.47,12.47,0,0,1-1.54,1.73c-.25.15-1.73-.83-1.9-.83s-.75,1.23-.92,1.58-.4,1.08-.46,1-1.08-.62-1.29-.81-2.23-1.81-2.4-1.85-1.08-.4-1.08-.4l0-.25a3.22,3.22,0,0,0,.58.08c.1,0,.52-.4.77-.42a4.88,4.88,0,0,1,1.25.06,4.79,4.79,0,0,0,1.06.21,6.57,6.57,0,0,0,1.31-.94,8.45,8.45,0,0,1,1-.56c.08-.06-.87-.81-1-.81a8.88,8.88,0,0,0-1.52.67c-.12.1-.56.31-.58.19a22.12,22.12,0,0,0-1.71-2,9.34,9.34,0,0,0-1.33.9,2.09,2.09,0,0,1-.92.44,6.08,6.08,0,0,1-1.46-1.23,32.24,32.24,0,0,0-3.23,2s-.33.06-.35.25.35.19.29.58-.5.4-.65.42-.56.67-.92.83a4.47,4.47,0,0,1-.8.18,3.14,3.14,0,0,1,.36.64c.08.21.63.71.88.71s1.88-1.33,2-1.29a17.9,17.9,0,0,0,2,1,5.39,5.39,0,0,1,1.48.08c.06.13-.08,1.44,0,1.5s3.56,1.81,4,1.9,1.08.15,1.21.33,1.44,1.63,1.48,1.81,2,2.29,2.19,2.52.92,1.19,1.08,1.38,3,3.52,3.31,4.13,2.9,4.44,3.06,4.58,1.08,1.23,1.4,1.25.85-.37.94-.27,1.37,2.89,2.07,4.34c.25-.3.42-.52.45-.57.15-.23.6-.27,1.25-.5s6.17-3.06,6.67-3.46a7.61,7.61,0,0,0,1.38-1.4c.1-.23.1-1.12.25-1.42a12.67,12.67,0,0,1,2.08-1.87c.5-.33,1.35-.31,1.69-.52s.56-1,.67-1.1,1.11-1.4,1.46-1.46,1.41,1.94,1.69,1.94,2.38-3.56,2.84-3.87,3.38-2.72,3.69-3,1.59-1,1.72-1.12.94-.22,1.25-.47a31.14,31.14,0,0,1,2.69-2.37c.34-.09,1.31,1.53,1.25,2.09v0c1.14-.45,2.59-1.27,3.13-1.55a20.71,20.71,0,0,0,3.28-3.37c.25-.41,1.13-.84,1.5-1.19a9.08,9.08,0,0,0,1.22-2.66c0-.28-.69-.72-.69-1.06s.81-.53,1.16-.84,2-1.69,2.63-2.16a30.92,30.92,0,0,0,3.34-2.59A6.45,6.45,0,0,0,178,163.24Z"></path> </a>
+								<!-- 17 --><a href="/fr/territoire/178/grand-combe-des-bois" xlink:href="/fr/territoire/178/grand-combe-des-bois"> <path id="map_17" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M230.38,145.21c.38,0,2-2,2-2s.08-1,.13-1.46a3.77,3.77,0,0,1,.32-.79c-.7-.16-1.36-.27-1.57-.3-.42,0-1-1-1.46-1.42s-6.46-4.92-7.25-5.54-1.12-1.62-1.58-2a20.89,20.89,0,0,1-1.5-1.92c-.67-.79-2.79-4.79-3.25-5.46s-2-2.33-2.21-2.62-1.33-3-1.62-3.46-.71-1.92-1.08-2.17-1.25,0-1.5.25a11.78,11.78,0,0,1-2.83,1.79,2.49,2.49,0,0,1-1.75-.37,2.4,2.4,0,0,1-.17-.19,13.93,13.93,0,0,1-2.08,1.31,6,6,0,0,0-2,1.75,9,9,0,0,1-1.92,1.75c-.71.5-4.87,4.17-6,5s-6.29,4.88-7.75,5.71-8,3.54-9.46,4.08-5.37,2.71-6,2.92-1.13.59-1.76.78c1.16,1.69,2.53,3.76,3.05,4.49.75,1.06,2.94,4.06,3.38,4.69a23.07,23.07,0,0,1,1.81,2.81c.13.44,1.56,3.69,1.5,3.94s-.87.5-1.19.88-1.28,1-1.09,1.41,2.47,3.91,2.5,4.25a6.45,6.45,0,0,1,.22,1.19,30.92,30.92,0,0,1-3.34,2.59c-.66.47-2.28,1.84-2.62,2.16s-1.16.5-1.16.84.69.78.69,1.06a9.08,9.08,0,0,1-1.22,2.66c-.37.34-1.25.78-1.5,1.19a20.71,20.71,0,0,1-3.28,3.38c-.55.27-2,1.09-3.13,1.55-.07.55-.34,1.15-.37,1.42a35.54,35.54,0,0,0,2.56,5.25,11.41,11.41,0,0,0,3.16-.37c.63-.28,2.18-3.15,2.39-3.6a16.4,16.4,0,0,0,.5-1.62,14.59,14.59,0,0,1,1.88-2,2.15,2.15,0,0,1,1.58-.5c.33,0,.79-1.62.79-1.75a1,1,0,0,1,.83-.79c.58-.08,8.38-6.08,8.88-6.42a34.66,34.66,0,0,1,3.67-1c.42-.17,4.63,0,5,0a5.45,5.45,0,0,0,2-1.17c.21-.33,1.54-2.71,1.58-2.87a13.7,13.7,0,0,1,2.79-.67c.21,0,8.92-4,9.75-4.37s1.79-1.79,2-2,1.67-1.5,1.92-1.79a.87.87,0,0,1,1-.17,11.8,11.8,0,0,0,2.38.13,26.75,26.75,0,0,0,2.83-1.46c3-1.17,3.5-2.71,3.54-3.17s0-4.17,0-4.46,1.42-.92,1.79-1.17S230,145.25,230.38,145.21Z"></path> </a></g>
+							<g id="map_points"></g>
+						</svg><span id="map-tip"></span>
+						<script src="http://static.reseaudesintercoms.fr/default/scripts/interactive_map.js"></script>
+						<script>
+			var map_cities = [
+				'Saint-Julien-lès-Russey',
+				'Plaimbois-du-Miroir',
+				'Bonnétage',
+				'Les Fontenelles',
+				'Laval-le-Prieuré',
+				'Montbéliardot',
+				'Le Luhier',
+				'Mont-de-Laval',
+				'Le Mémont',
+				'La Bosse',
+				'Le Bizot',
+				'Le Russey',
+				'Narbief',
+				'Noël-Cerneux',
+				'La Chenalotte',
+				'Le Barboux',
+				'Grand-Combe-des-Bois'
+			];
+			
+			var map_config = {
+				'default':{
+					'borderColor': '#BEC4CB',
+					'mapShadow':'#fff',
+					'shadowOpacity':'35',
+					'hoverShadow':'#666666',
+					'lakesColor':'#66CCFF',
+					'namesColor':'#919191'
+				},
+			};
+			
+			for (var i = 1, max = map_cities.length; i <= max; i++) {
+				map_config['map_' + i] = {
+					'hover': map_cities[i-1],
+					'upColor':'#ffffff',
+					'overColor':'#73bb49', /* MODIF-couleurs regions survol */
+					'downColor':'#73bb49', /* MODIF-couleurs regions survol */
+					'enable':true,
+				};
+				addEvent('map_' + i);
+			}
+			
+			var pin_config = {
+				'default':{
+					'pinShadow':'#000',
+					'pinShadowOpacity':'50',
+				},
+				'points':[]
+			}
+		
+						</script>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/177/bonnetage"> Bonnétage </a></li>
+						<li><a href="/fr/territoire/178/grand-combe-des-bois"> Grand'Combe-des-Bois </a></li>
+						<li><a href="/fr/territoire/179/la-bosse"> La Bosse </a></li>
+						<li><a href="/fr/territoire/180/la-chenalotte"> La Chenalotte </a></li>
+						<li><a href="/fr/territoire/181/laval-le-prieure"> Laval-le-Prieuré </a></li>
+						<li><a href="/fr/territoire/182/le-barboux"> Le Barboux </a></li>
+						<li><a href="/fr/territoire/183/le-bizot"> Le Bizot </a></li>
+						<li><a href="/fr/territoire/184/le-luhier"> Le Luhier </a></li>
+						<li><a href="/fr/territoire/185/le-memont"> Le Mémont </a></li>
+						<li><a href="/fr/territoire/187/le-russey"> Le Russey </a></li>
+						<li><a href="/fr/territoire/188/les-fontenelles"> Les Fontenelles </a></li>
+						<li><a href="/fr/territoire/189/mont-de-laval"> Mont-de-Laval </a></li>
+						<li><a href="/fr/territoire/190/montbeliardot"> Montbéliardot </a></li>
+						<li><a href="/fr/territoire/186/narbief"> Narbief </a></li>
+						<li><a href="/fr/territoire/191/noel-cerneux"> Noël-Cerneux </a></li>
+						<li><a href="/fr/territoire/192/plaimbois-du-miroir"> Plaimbois-du-Miroir </a></li>
+						<li><a href="/fr/territoire/193/saint-julien-les-russey"> Saint-Julien-lès-Russey </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/35/logo/LWert3aP34VjqtA.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Gilles ROBERT </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 17 avenue de Lattre de Tassigny, 25 210 Le Russey </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 03 81 43 81 26 / 03 81 43 74 17 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> 8h30 - 12h / 13h30 -17h </span></p>
+						<p id="f_social"><span class="colLeft">En réseau :</span> <span class="colRight"> <a class="sl_facebook couleur_main_bg" href="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Plateau-du-Russey-406657972816399/" title="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Plateau-du-Russey-406657972816399/" onclick="this.target='_blank'"></a> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft"></div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/la-ccpr">La CCPR </a></li>
+									<li><a href="/fr/information/553/elus-communautaires">Élus communautaires </a></li>
+									<li><a href="/fr/information/554/competences">Compétences</a></li>
+									<li><a href="/fr/information/555/personnel-services-ccpr">Personnel et services de la CCPR</a></li>
+									<li><a href="/fr/comptes-rendus">Comptes-rendus</a></li>
+									<li><a href="/fr/information/8379/les-echos-ccpr">Les échos de la CCPR </a></li>
+									<li><a href="/fr/marches-publics">Marchés publics</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/services">Services</a></li>
+									<li><a href="/fr/information/566/maison-services">Maison des Services</a></li>
+									<li><a href="/fr/information/565/petite-enfance">Petite enfance</a></li>
+									<li><a href="/fr/information/567/pour-vos-deplacements">Pour vos déplacements </a></li>
+									<li><a href="/fr/information/8334/chaufferies-bois">Chaufferies bois</a></li>
+									<li><a href="/fr/information/8335/complexe-sportif">Complexe sportif</a></li>
+									<li><a href="/fr/associations">Associations</a></li>
+									<li><a href="/fr/forum">Tribune</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/dvlpmt-economique">Dvlpmt économique</a></li>
+									<li><a href="/fr/information/8298/zones-activites-economiques">Zones d'Activités Economiques</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/dechets">Déchets</a></li>
+									<li><a href="/fr/information/4070/mon-compte">Mon compte</a></li>
+									<li><a href="/fr/information/563/collecte-bac-ordures-menageres-bac-tri">Collecte bac Ordures Ménagères et bac de tri</a></li>
+									<li><a href="/fr/information/576/collecte-verre">Collecte du verre</a></li>
+									<li><a href="/fr/information/5439/redevance">Redevance</a></li>
+									<li><a href="/fr/information/578/installations-existantes">Installations existantes</a></li>
+									<li><a href="/fr/information/579/compostage">Compostage</a></li>
+									<li><a href="/fr/information/2149/collecte-textiles">Collecte des textiles</a></li>
+									<li><a href="/fr/information/580/calendriers-documentations">Calendriers et Documentations</a></li>
+									<li><a href="/fr/information/8997/tarifs">Tarifs</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/tourisme-randonnee">Tourisme/randonnée</a></li>
+									<li><a href="/fr/information/557/randonnees">Randonnées</a></li>
+									<li><a href="/fr/information/1833/environnement">Environnement</a></li>
+									<li><a href="/fr/information/8340/aire-camping-car">Aire de camping car</a></li>
+									<li><a href="/fr/information/558/restauration">Restauration</a></li>
+									<li><a href="/fr/information/559/hebergement">Hébergement</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/projets-cours">Projets en cours</a></li>
+									<li><a href="/fr/information/8336/gendarmerie-renovation-energetique">Gendarmerie: Rénovation énergetique </a></li>
+									<li><a href="/fr/information/8337/tres-haut-debit-fibre">Très Haut Débit - Fibre</a></li>
+									<li><a href="/fr/information/8341/projet-parc-naturel-%28pnr%29">Projet de Parc Naturel (PNR)</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<div id="f_external_link">
+						<div class="titre">Liens externes</div>
+						<p class="link"><a class="icon-arrow-right" href="http://www.service-public.fr/" title="Service-Public.fr" target="_blank"> Service-Public.fr </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.europe-franche-comte.fr/" title="L'Europe en Franche-Comté" target="_blank"> L'Europe en Franche-Comté </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.pays-horloger.com/" title="Pays Horloger" target="_blank"> Pays Horloger </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.tipi.budget.gouv.fr" title="Paiement par Internet" target="_blank"> Paiement par Internet </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.doubs.travel/" title="Comité départemental du Tourisme du Doubs" target="_blank"> Comité départemental du Tourisme du Doubs </a></p>
+						<p class="link allLinks"><a class="icon-arrow-right" href="/fr/liens-externes" title="Tous les liens externes"> Tous les liens externes </a></p>
+					</div>
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.doubs.fr/" title="Département du Doubs" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/25.jpg" alt="Département du Doubs" style="width:100%"></a></td>
+							<td><a href="https://www.bourgognefranchecomte.fr/" title="Conseil régional de Bourgogne Franche-Comté" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/5.jpg" alt="Conseil régional de Bourgogne Franche-Comté" style="width:100%"></a></td>
+							<td><a href="http://www.doubs.pref.gouv.fr/" title="Préfecture du Doubs" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/25.jpg" alt="Préfecture du Doubs" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p class="f_sep">|</p>
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cc-russey.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site cc-russey.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #73bb49;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #73bb49; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #d1c7b8;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-16757699-3");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
