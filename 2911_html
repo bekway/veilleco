@@ -1,0 +1,1325 @@
+<!DOCTYPE HTMl>
+<?xml encoding="utf-8" ?><html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Les délibérations - Site Officiel de la Communauté de Communes du Brivadois</title>
+		<meta name="robots" content="index, follow">
+		<meta name="google-site-verification" content="LII1W5kEle5-elgp4SjUoXJhCq8IcYCJ5up8kn8qNA8">
+		<link href="https://www.cc-brivadois.fr/favicon.ico" rel="shortcut icon" type="image/x-icon">
+		<meta name="description" content="Les délibérations - La Communauté de Communes du Brivadois informe sur les évènements, l'actualité de la ville, les manifestations culturelles. Le site référence également toutes les associations de la commune et présente ses activités.">
+		<meta name="keywords" content="Communauté de Communes du Brivadois">
+		<link rel="stylesheet" type="text/css" href="https://www.cc-brivadois.fr/css/custom-theme/jquery-ui-1.10.3.custom.min.css">
+		<link href="https://www.cc-brivadois.fr/css/style.css" media="(min-width: 1000px)" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://www.cc-brivadois.fr/css/template.css">
+		<link rel="stylesheet" media="(max-width: 999px)" href="https://www.cc-brivadois.fr/css/style_mobile.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://www.cc-brivadois.fr/css/colorbox.css">
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/tiny_slider.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/meteo.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/jquery.anythingslider.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/jquery.anythingslider.fx.min.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Scada" rel="stylesheet" type="text/css">
+		<link href="https://www.cc-brivadois.fr/css/owl.carousel.css" rel="stylesheet">
+		<link href="https://www.cc-brivadois.fr/css/owl.theme.css" rel="stylesheet">
+		<link href="https://www.cc-brivadois.fr/js/google-code-prettify/prettify.css" rel="stylesheet">
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/bootstrap-collapse.js"></script>
+		<script type="text/javascript" src="js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/bootstrap-tab.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/google-code-prettify/prettify.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/application.js"></script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/preload.js"></script>
+		<script type="text/javascript">
+	function favoris() {
+		if ( navigator.appName != "Microsoft Internet Explorer" ){
+			window.sidebar.addPanel("Communauté de Communes <br />Brioude Sud Auvergne","","");
+		}
+		else {
+			window.external.AddFavorite("","Communauté de Communes <br />Brioude Sud Auvergne");
+		}
+	}
+
+	function afficheMenu(baliseId, baliseId2, color, texte)
+	{
+		$('.sous-menu').hide();
+		$('#menu-princ td').removeClass("active");
+		$('#menu-princ td').css("background",'none');
+		$('#menu-princ td a').css("color","#887F78");
+
+		if ($(baliseId) && $(baliseId) != null)
+		{
+			console.log(texte);
+			$(baliseId2).css("background",color);
+			$(baliseId).css("background",color);
+			$(baliseId2+' a').css("color",texte);
+			$(baliseId+' .content_link a').css("color",texte);
+			$(baliseId2).addClass("active"); 	
+			$(baliseId).show();
+		}
+	}
+
+
+
+	$(document).ready(function() {
+
+		$('#nav').mouseleave(function() {
+			cacheMenu();
+		});
+
+		function afficheMasqueElement(o){
+			var IdElement = $(o).attr("id");
+			var etatElement = $('#table-article-'+IdElement).css("display");
+			if(etatElement){
+				if((etatElement=='block')||(etatElement=='table')){
+					$('#table-article-'+IdElement).addClass("hidden");	
+					$('#'+IdElement+' .icon').text('[+]');
+				}else{
+					$('#table-article-'+IdElement).removeClass("hidden");	
+					$('#'+IdElement+' .icon').text('[-]');	
+				}
+			}
+		}	 
+
+		function cacheMenu()
+		{
+			$('.sous-menu').hide();
+			$('#menu-princ td').removeClass("active");
+			$('#menu-princ td').css("background",'none');
+			$('#menu-princ td a').css("color","#887F78");
+		}
+	});
+		</script>
+		<script type="text/javascript" src="https://www.cc-brivadois.fr/js/tags.js"></script>
+		<script type="text/javascript">
+    $(function () {
+        $('#search_keyword2').tagSuggest({
+            url: 'https://www.cc-brivadois.fr//tagging.php',
+            delay: 700
+        });
+
+        $('a.menu-toggle-btn').bind("click", function(){
+	
+	    var $lefty = $('#sous-menu-mobile');
+    $lefty.animate({
+      left: parseInt($lefty.css('left'),10) == 0 ?
+        -$lefty.outerWidth() :
+        0		
+    });
+	var posmenu = $lefty.css('left');
+	if(posmenu=='0px'){
+	$('a.menu-toggle-btn').css('background','url(http://www.brioude.fr/img/mobile/menu_mobile_off.png) no-repeat right');
+	$('.sous-sous-menu-mobile').css('left','-300px');
+	}else{
+	$('a.menu-toggle-btn').css('background','url(http://www.brioude.fr/img/mobile/menu_mobile_on.png) no-repeat right');	
+	}
+
+});
+
+$('li.link_arrow').bind("click", function(){
+var id_rubrique = $(this).find("a[href]").attr('rel');
+
+
+	 var $lefty = $('#sous-sous-menu-'+id_rubrique);
+    $lefty.animate({
+      left: parseInt($lefty.css('left'),10) == 0 ?
+        -$lefty.outerWidth() :
+        0		
+    });
+
+});
+
+$('.menu-back-btn').bind("click", function(){
+	 var $lefty = $('.sous-sous-menu-mobile');
+    $lefty.animate({
+      left: '-300px'
+    });
+
+});
+
+$('.icon_right_search').bind("click", function(){
+$('.sous-sous-menu-mobile').css('left','-300px');
+$('#sous-menu-mobile').css('left','-300px');
+			var etatElement = $('#form_recherche_mobile').css("display");
+			if(etatElement){
+				if((etatElement=='block')||(etatElement=='table')){
+					$('#form_recherche_mobile').css("display","none");	
+				}else{
+					$('#form_recherche_mobile').css("display","block");
+				}
+			}
+
+
+
+});
+
+    });
+    
+		</script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43663403-1', 'cc-brivadois.fr');
+  ga('send', 'pageview');
+		
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="content">
+				<div id="top_bar">
+					<ul>
+						<li id="weather-tb"><a href="http://www.meteofrance.com/previsions-meteo-france/brioude/43100" title="Météo" target="_blank" style="display: block;float: left;">Météo</a></li>
+						<li><a href="accessibilite-li7.html" title="Accessibilité">Accessibilité</a></li>
+						<li> </li>
+						<li><a href="acces-a-la-communaute-de-communes-du-brivadois.html" title="Accès">Accès</a></li>
+						<li> </li>
+						<li><a href="liens-utiles-de-la-communaute-de-communes-du-brivadois.html" title="Liens">Liens</a></li>
+						<li> </li>
+						<li><a href="mediatheque.php" title="Multimédia">Multimédia</a></li>
+						<li> </li>
+						<li><a href="contactez-la-communaute-de-communes-du-brivadois.html" title="Contact">Contact</a></li>
+						<li> </li>
+						<li>
+							<form name="rechercheform" autocomplete="off" action="https://www.cc-brivadois.fr/recherche.html" method="POST"><input type="text" name="value_search" value="Rechercher" id="search_keyword2" onfocus="if(this.value=='Rechercher'){this.value='';}" onblur="if(this.value==''){this.value='Rechercher';}">
+								<div class="btn_submit" onclick="rechercheform.submit()">OK</div>
+							</form>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div><img src="https://www.cc-brivadois.fr/img/logo_brioude.png" id="main_logo" onclick="document.location.href='https://www.cc-brivadois.fr/'" title="Retour au site Communauté de Communes <br />Brioude Sud Auvergne" alt="Communauté de Communes <br />Brioude Sud Auvergne">
+				<div id="containerEntete">
+					<div id="sliderEntete">
+						<ul>
+							<li style="cursor:pointer;" onclick="document.location.href='https://www.cc-brivadois.fr/actualites-slider-1.html'"><img src="https://www.cc-brivadois.fr/_files/slider/1566918163_slider.jpg" width="1000" height="223" alt="Slider">
+								<div class="caption">
+									<table style="width:100%; height:85%; overflow:hidden;">
+										<tr>
+											<td style="vertical-align:middle; text-align:left;">
+												<h1>Slider</h1>
+												<p><span class="plus">[+]</span></p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<script type="text/javascript">
+		  var slideshowEntete=new TINY.slider.slide('slideshowEntete',{
+			id:'sliderEntete',
+			auto:0,
+			resume:true,
+			vertical:false,
+			navid:'paginationEntete',
+			activeclass:'currentEntete',
+			position:0,
+			rewind:false,
+			elastic:false
+		  });
+		
+				</script>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="main_wrapper">
+			<div class="content">
+				<div id="nav">
+					<table id="menu-princ">
+						<tr>
+							<td id="td-143" onmouseover="afficheMenu('#sous-menu-143', '#td-143','','');"><a href="-mr143.html"></a></td>
+							<td id="td-1" onmouseover="afficheMenu('#sous-menu-1', '#td-1','#0D9BDE','#ffffff');"><a href="votre-communaute-de-communes-mr1.html">Votre Communauté de Communes</a></td>
+							<td id="td-5" onmouseover="afficheMenu('#sous-menu-5', '#td-5','#F37837','#ffffff');"><a href="vivre-mr5.html">Vivre</a></td>
+							<td id="td-11" onmouseover="afficheMenu('#sous-menu-11', '#td-11','#FBB132','#ffffff');"><a href="grandir-et-s-epanouir-mr11.html">Grandir et s'épanouir</a></td>
+							<td id="td-12" onmouseover="afficheMenu('#sous-menu-12', '#td-12','#0C9CDE','#ffffff');"><a href="entreprendre-mr12.html">Entreprendre</a></td>
+							<td id="td-13" onmouseover="afficheMenu('#sous-menu-13', '#td-13','#F37837','#ffffff');"><a href="preserver-mr13.html">Préserver</a></td>
+							<td id="td-14" onmouseover="afficheMenu('#sous-menu-14', '#td-14','#FAB132','#ffffff');"><a href="amenager-mr14.html">Aménager</a></td>
+							<td id="td-15" onmouseover="afficheMenu('#sous-menu-15', '#td-15','#0D9BDE','#ffffff');"><a href="decouvrir-mr15.html">Découvrir</a></td>
+						</tr>
+					</table>
+					<div class="sous-menu" id="sous-menu-143">
+						<!--<div class="titre-sm"></div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="masques-et-protections-mr154-n2.html">> MASQUES ET PROTECTIONS</a><br></div>
+							<div class="item_submenu"><a href="traiteur-plats-a-emporter-mr150-n2.html">> TRAITEUR-PLATS A EMPORTER</a><br></div>
+							<div class="item_submenu"><a href="-mr144-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr145-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr146-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr147-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr148-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr149-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr151-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr152-n2.html">> </a><br></div>
+							<div class="item_submenu"><a href="-mr153-n2.html">> </a><br></div>
+						</div>
+						<!---->
+					</div>
+					<div class="sous-menu" id="sous-menu-1">
+						<!--<div class="titre-sm">Votre Communauté de Communes</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="appel-a-projets-mr135-n2.html">> Appel à projets</a><br></div>
+							<div class="item_submenu"><a href="statuts-et-competences-mr2-n2.html">> Statuts & compétences</a><br></div>
+							<div class="item_submenu"><a href="les-27-communes-mr51-n2.html">> Les 27 communes</a><br></div>
+							<div class="item_submenu"><a href="les-elus-mr3-n2.html">> Les élus</a><br></div>
+							<div class="item_submenu"><a href="le-journal-intercommunal-mr52-n2.html">> Le journal Intercommunal</a><br></div>
+							<div class="item_submenu"><a href="les-services-mr4-n2.html">> Les services</a><br></div>
+							<div class="item_submenu"><a href="mediatheque.php">> Multimédia</a><br></div>
+							<div class="item_submenu"><a href="les-deliberations-mr46-n2.html">> Les délibérations</a><br></div>
+							<div class="item_submenu"><a href="acces.php">> Acces</a><br></div>
+							<div class="item_submenu"><a href="marches-publics-mr48-n2.html">> Marchés publics</a><br></div>
+							<div class="item_submenu"><a href="offres-d-emploi-mr113-n2.html">> Offres d'emploi</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-5">
+						<!--<div class="titre-sm">Vivre</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="mission-locale-mr69-n2.html">> Mission locale</a><br></div>
+							<div class="item_submenu"><a href="telealarme-mr68-n2.html">> Téléalarme</a><br></div>
+							<div class="item_submenu"><a href="portage-de-repas-a-domicile-mr10-n2.html">> Portage de repas à domicile</a><br></div>
+							<div class="item_submenu"><a href="mobilite-pour-tous-mr9-n2.html">> Mobilité pour tous</a><br></div>
+							<div class="item_submenu"><a href="aire-d-accueil-des-gens-du-voyage-mr7-n2.html">> Aire d'accueil des gens du voyage</a><br></div>
+							<div class="item_submenu"><a href="fourriere-animale-mr6-n2.html">> Fourrière animale</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-11">
+						<!--<div class="titre-sm">Grandir et s'épanouir</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="bafa-citoyen-mr134-n2.html">> BAFA Citoyen</a><br></div>
+							<div class="item_submenu"><a href="accueil-periscolaire-mr23-n2.html">> Accueil périscolaire</a><br></div>
+							<div class="item_submenu"><a href="l-aquabulle-mr70-n2.html">> L'AQUABULLE</a><br></div>
+							<div class="item_submenu"><a href="creches-mr24-n2.html">> Crèches</a><br></div>
+							<div class="item_submenu"><a href="cinema-le-paris-mr116-n2.html">> Cinéma "Le Paris"</a><br></div>
+							<div class="item_submenu"><a href="assistantes-maternelles-mr25-n2.html">> Assistantes Maternelles</a><br></div>
+							<div class="item_submenu"><a href="accueil-ado-mr21-n2.html">> Accueil ado</a><br></div>
+							<div class="item_submenu"><a href="lieu-d-accueil-enfants-parents-mr79-n2.html">> Lieu d'Accueil Enfants-Parents</a><br></div>
+							<div class="item_submenu"><a href="accueil-de-loisirs-mr22-n2.html">> Accueil de loisirs</a><br></div>
+							<div class="item_submenu"><a href="ludotheques-mr16-n2.html">> Ludothèques</a><br></div>
+							<div class="item_submenu"><a href="ecole-intercommunale-de-javaugues-mr80-n2.html">> Ecole Intercommunale de Javaugues</a><br></div>
+							<div class="item_submenu"><a href="ecole-de-musique-du-brivadois-mr102-n2.html">> Ecole de musique du Brivadois</a><br></div>
+							<div class="item_submenu"><a href="halle-des-sports-et-salles-de-sports-mr62-n2.html">> Halle des sports et salles de sports</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-12">
+						<!--<div class="titre-sm">Entreprendre</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="le-tissu-economique-du-brivadois-mr31-n2.html">> Le tissu économique du Brivadois</a><br></div>
+							<div class="item_submenu"><a href="la-pepiniere---hotel-d-entreprises-brioude-sud-auvergne-mr29-n2.html">> La Pépinière - Hôtel d'entreprises BRIOUDE SUD AUVERGNE</a><br></div>
+							<div class="item_submenu"><a href="les-projets-mr30-n2.html">> Les projets</a><br></div>
+							<div class="item_submenu"><a href="zones-dactivites-economiques-mr72-n2.html">> Zones d’activités Economiques</a><br></div>
+							<div class="item_submenu"><a href="creer-et-reprendre-une-activite-mr57-n2.html">> Créer et reprendre une activité</a><br></div>
+							<div class="item_submenu"><a href="commerce-et-artisanat-mr63-n2.html">> Commerce et artisanat</a><br></div>
+							<div class="item_submenu"><a href="l-abattoir-intercommunal-mr74-n2.html">> L'abattoir Intercommunal</a><br></div>
+							<div class="item_submenu"><a href="les-animations-economiques-mr73-n2.html">> Les animations économiques</a><br></div>
+							<div class="item_submenu"><a href="les-partenaires-mr112-n2.html">> Les partenaires</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-13">
+						<!--<div class="titre-sm">Préserver</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="l-agenda-21-intercommunal-mr39-n2.html">> L'agenda 21 intercommunal</a><br></div>
+							<div class="item_submenu"><a href="la-collecte-des-dechets-mr38-n2.html">> La collecte des déchets</a><br></div>
+							<div class="item_submenu"><a href="natura-2000-mr54-n2.html">> Natura 2000</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-14">
+						<!--<div class="titre-sm">Aménager</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="plu-cohade-mr142-n2.html">> PLU Cohade</a><br></div>
+							<div class="item_submenu"><a href="plu-saint-beauzire-mr140-n2.html">> PLU Saint-Beauzire</a><br></div>
+							<div class="item_submenu"><a href="avap-mr133-n2.html">> AVAP</a><br></div>
+							<div class="item_submenu"><a href="plui-mr126-n2.html">> PLUi</a><br></div>
+							<div class="item_submenu"><a href="des-amenagements-de-bourg-pour-embellir-le-territoire-et-valoriser-son-patrimoine-mr71-n2.html">> Des aménagements de bourg pour embellir le territoire et valoriser son patrimoine...</a><br></div>
+							<div class="item_submenu"><a href="des-aides-pour--habiter-mieux--mr33-n2.html">> Des aides pour « Habiter Mieux »</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+					<div class="sous-menu" id="sous-menu-15">
+						<!--<div class="titre-sm">Découvrir</div>
+		                <div class="sous-titre-sm"></div>-->
+						<div class="content_link">
+							<div class="item_submenu"><a href="http://www.ot-brioude.fr/idees-activites-et-loisirs-pour-vos-vacances-dans-le-sud-de-lauvergne-c11/cyclotourisme-vos-vacances-a-brioude-dans-le-sud-de-l-auvergne-sr31/circuits-etquotsur-les-routes-de-romainetquot-a76.html" target="_blank">> Les circuits cyclo Romain BARDET</a><br></div>
+							<div class="item_submenu"><a href="gite-de-la-bageasse-mr117-n2.html">> Gîte de la Bageasse</a><br></div>
+							<div class="item_submenu"><a href="office-de-tourisme-mr67-n2.html">> Office de tourisme</a><br></div>
+							<div class="item_submenu"><a href="slalom-de-canoe-kayak-mr65-n2.html">> Slalom de canoë-kayak</a><br></div>
+							<div class="item_submenu"><a href="camping-de-la-bageasse-mr64-n2.html">> Camping de la Bageasse</a><br></div>
+							<div class="item_submenu"><a href="les-sentiers-de-randonnees-pedestres-et-vtt-mr45-n2.html">> Les sentiers de randonnées pédestres et VTT</a><br></div>
+							<div class="item_submenu"><a href="les-bornes-pour-camping-cars-mr44-n2.html">> Les bornes pour camping-cars</a><br></div>
+							<div class="item_submenu"><a href="la-plage-de-la-bageasse-mr43-n2.html">> La plage de la Bageasse</a><br></div>
+							<div class="item_submenu"><a href="relais-informations-touristiques-mr41-n2.html">> Relais Informations Touristiques</a><br></div>
+							<div class="item_submenu"><a href="les-partenaires-mr40-n2.html">> Les partenaires</a><br></div>
+						</div>
+						<!--						<img src="_fichiers/contenus/#ffffff" class="photo-sm" width="150">
+						-->
+					</div>
+				</div>
+				<table id="wrapper_header_mobile">
+					<tr>
+						<td align="left"><a class="menu-toggle-btn" href="#">MENU</a></td>
+						<td align="center"><a href="https://www.cc-brivadois.fr/" title="Retour accueil Communauté de Communes <br />Brioude Sud Auvergne"><img src="https://www.cc-brivadois.fr/img/mobile/logo.png" alt="Logo Communauté de Communes <br />Brioude Sud Auvergne" title="Logo Communauté de Communes <br />Brioude Sud Auvergne" id="logo"></a></td>
+						<td align="right"><a class="icon_right_search" href="#"></a></td>
+					</tr>
+				</table>
+				<ul id="sous-menu-mobile">
+					<li class="link_arrow level1"><a href="#" rel="1"></a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-1"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="masques-et-protections-mr154-n2.html">MASQUES ET PROTECTIONS</a></li>
+						<li class="level3 "><a href="traiteur-plats-a-emporter-mr150-n2.html">TRAITEUR-PLATS A EMPORTER</a></li>
+						<li class="level3  gray"><a href="-mr144-n2.html"></a></li>
+						<li class="level3 "><a href="-mr145-n2.html"></a></li>
+						<li class="level3  gray"><a href="-mr146-n2.html"></a></li>
+						<li class="level3 "><a href="-mr147-n2.html"></a></li>
+						<li class="level3  gray"><a href="-mr148-n2.html"></a></li>
+						<li class="level3 "><a href="-mr149-n2.html"></a></li>
+						<li class="level3  gray"><a href="-mr151-n2.html"></a></li>
+						<li class="level3 "><a href="-mr152-n2.html"></a></li>
+						<li class="level3  gray"><a href="-mr153-n2.html"></a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="2">Votre Communauté de Communes</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-2"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="appel-a-projets-mr135-n2.html">Appel à projets</a></li>
+						<li class="level3 "><a href="statuts-et-competences-mr2-n2.html">Statuts & compétences</a></li>
+						<li class="level3  gray"><a href="les-27-communes-mr51-n2.html">Les 27 communes</a></li>
+						<li class="level3 "><a href="les-elus-mr3-n2.html">Les élus</a></li>
+						<li class="level3  gray"><a href="le-journal-intercommunal-mr52-n2.html">Le journal Intercommunal</a></li>
+						<li class="level3 "><a href="les-services-mr4-n2.html">Les services</a></li>
+						<li class="level3  gray"><a href="mediatheque.php" target="_self">Multimédia</a></li>
+						<li class="level3 "><a href="les-deliberations-mr46-n2.html" target="_self">Les délibérations</a></li>
+						<li class="level3  gray"><a href="acces.php" target="_self">Acces</a></li>
+						<li class="level3 "><a href="marches-publics-mr48-n2.html" target="_self">Marchés publics</a></li>
+						<li class="level3  gray"><a href="offres-d-emploi-mr113-n2.html" target="_self">Offres d'emploi</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="3">Vivre</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-3"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="mission-locale-mr69-n2.html" target="_self">Mission locale</a></li>
+						<li class="level3 "><a href="telealarme-mr68-n2.html" target="_self">Téléalarme</a></li>
+						<li class="level3  gray"><a href="portage-de-repas-a-domicile-mr10-n2.html" target="_self">Portage de repas à domicile</a></li>
+						<li class="level3 "><a href="mobilite-pour-tous-mr9-n2.html" target="_self">Mobilité pour tous</a></li>
+						<li class="level3  gray"><a href="aire-d-accueil-des-gens-du-voyage-mr7-n2.html" target="_self">Aire d'accueil des gens du voyage</a></li>
+						<li class="level3 "><a href="fourriere-animale-mr6-n2.html" target="_self">Fourrière animale</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="4">Grandir et s'épanouir</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-4"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="bafa-citoyen-mr134-n2.html" target="_self">BAFA Citoyen</a></li>
+						<li class="level3 "><a href="accueil-periscolaire-mr23-n2.html" target="_self">Accueil périscolaire</a></li>
+						<li class="level3  gray"><a href="l-aquabulle-mr70-n2.html" target="_self">L'AQUABULLE</a></li>
+						<li class="level3 "><a href="creches-mr24-n2.html" target="_self">Crèches</a></li>
+						<li class="level3  gray"><a href="cinema-le-paris-mr116-n2.html" target="_self">Cinéma "Le Paris"</a></li>
+						<li class="level3 "><a href="assistantes-maternelles-mr25-n2.html" target="_self">Assistantes Maternelles</a></li>
+						<li class="level3  gray"><a href="accueil-ado-mr21-n2.html" target="_self">Accueil ado</a></li>
+						<li class="level3 "><a href="lieu-d-accueil-enfants-parents-mr79-n2.html" target="_self">Lieu d'Accueil Enfants-Parents</a></li>
+						<li class="level3  gray"><a href="accueil-de-loisirs-mr22-n2.html" target="_self">Accueil de loisirs</a></li>
+						<li class="level3 "><a href="ludotheques-mr16-n2.html" target="_self">Ludothèques</a></li>
+						<li class="level3  gray"><a href="ecole-intercommunale-de-javaugues-mr80-n2.html" target="_self">Ecole Intercommunale de Javaugues</a></li>
+						<li class="level3 "><a href="ecole-de-musique-du-brivadois-mr102-n2.html" target="_self">Ecole de musique du Brivadois</a></li>
+						<li class="level3  gray"><a href="halle-des-sports-et-salles-de-sports-mr62-n2.html" target="_self">Halle des sports et salles de sports</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="5">Entreprendre</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-5"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="le-tissu-economique-du-brivadois-mr31-n2.html" target="_self">Le tissu économique du Brivadois</a></li>
+						<li class="level3 "><a href="la-pepiniere---hotel-d-entreprises-brioude-sud-auvergne-mr29-n2.html" target="_self">La Pépinière - Hôtel d'entreprises BRIOUDE SUD AUVERGNE</a></li>
+						<li class="level3  gray"><a href="les-projets-mr30-n2.html" target="_self">Les projets</a></li>
+						<li class="level3 "><a href="zones-dactivites-economiques-mr72-n2.html" target="_self">Zones d’activités Economiques</a></li>
+						<li class="level3  gray"><a href="creer-et-reprendre-une-activite-mr57-n2.html" target="_self">Créer et reprendre une activité</a></li>
+						<li class="level3 "><a href="commerce-et-artisanat-mr63-n2.html" target="_self">Commerce et artisanat</a></li>
+						<li class="level3  gray"><a href="l-abattoir-intercommunal-mr74-n2.html" target="_self">L'abattoir Intercommunal</a></li>
+						<li class="level3 "><a href="les-animations-economiques-mr73-n2.html" target="_self">Les animations économiques</a></li>
+						<li class="level3  gray"><a href="les-partenaires-mr112-n2.html" target="_self">Les partenaires</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="6">Préserver</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-6"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="l-agenda-21-intercommunal-mr39-n2.html" target="_self">L'agenda 21 intercommunal</a></li>
+						<li class="level3 "><a href="la-collecte-des-dechets-mr38-n2.html" target="_self">La collecte des déchets</a></li>
+						<li class="level3  gray"><a href="natura-2000-mr54-n2.html" target="_self">Natura 2000</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="7">Aménager</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-7"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="plu-cohade-mr142-n2.html" target="_self">PLU Cohade</a></li>
+						<li class="level3 "><a href="plu-saint-beauzire-mr140-n2.html" target="_self">PLU Saint-Beauzire</a></li>
+						<li class="level3  gray"><a href="avap-mr133-n2.html" target="_self">AVAP</a></li>
+						<li class="level3 "><a href="plui-mr126-n2.html" target="_self">PLUi</a></li>
+						<li class="level3  gray"><a href="des-amenagements-de-bourg-pour-embellir-le-territoire-et-valoriser-son-patrimoine-mr71-n2.html" target="_self">Des aménagements de bourg pour embellir le territoire et valoriser son patrimoine...</a></li>
+						<li class="level3 "><a href="des-aides-pour--habiter-mieux--mr33-n2.html" target="_self">Des aides pour « Habiter Mieux »</a></li>
+					</ul>
+					<li class="link_arrow level1"><a href="#" rel="8">Découvrir</a></li>
+					<ul class="sous-sous-menu-mobile" id="sous-sous-menu-8"><a class="menu-back-btn" href="#">Retour</a>
+						<li class="level3  gray"><a href="http://www.ot-brioude.fr/idees-activites-et-loisirs-pour-vos-vacances-dans-le-sud-de-lauvergne-c11/cyclotourisme-vos-vacances-a-brioude-dans-le-sud-de-l-auvergne-sr31/circuits-etquotsur-les-routes-de-romainetquot-a76.html" target="_blank">Les circuits cyclo Romain BARDET</a></li>
+						<li class="level3 "><a href="gite-de-la-bageasse-mr117-n2.html" target="_blank">Gîte de la Bageasse</a></li>
+						<li class="level3  gray"><a href="office-de-tourisme-mr67-n2.html" target="_blank">Office de tourisme</a></li>
+						<li class="level3 "><a href="slalom-de-canoe-kayak-mr65-n2.html" target="_blank">Slalom de canoë-kayak</a></li>
+						<li class="level3  gray"><a href="camping-de-la-bageasse-mr64-n2.html" target="_blank">Camping de la Bageasse</a></li>
+						<li class="level3 "><a href="les-sentiers-de-randonnees-pedestres-et-vtt-mr45-n2.html" target="_blank">Les sentiers de randonnées pédestres et VTT</a></li>
+						<li class="level3  gray"><a href="les-bornes-pour-camping-cars-mr44-n2.html" target="_blank">Les bornes pour camping-cars</a></li>
+						<li class="level3 "><a href="la-plage-de-la-bageasse-mr43-n2.html" target="_blank">La plage de la Bageasse</a></li>
+						<li class="level3  gray"><a href="relais-informations-touristiques-mr41-n2.html" target="_blank">Relais Informations Touristiques</a></li>
+						<li class="level3 "><a href="les-partenaires-mr40-n2.html" target="_blank">Les partenaires</a></li>
+					</ul>
+					<li class="level1b"><a href="https://www.cc-brivadois.fr/accessibilite-lien7.html" title="Accessibilité">Accessibilité</a></li>
+					<li class="level1b"><a href="https://www.cc-brivadois.fr/acces-a-la-communaute-de-communes-du-brivadois.html" title="Accès">Accès</a></li>
+					<li class="level1b"><a href="https://www.cc-brivadois.fr/liens-utiles-de-la-communaute-de-communes-du-brivadois.html" title="Liens">Liens</a></li>
+					<li class="level1b"><a href="https://www.cc-brivadois.fr/mediatheque.php" title="Multimédia">Multimédia</a></li>
+					<li class="level1b"><a href="https://www.cc-brivadois.fr/contactez-la-communaute-de-communes-du-brivadois.html" title="Contact">Contact</a></li>
+				</ul>
+				<form title="Rechercher sur le site" id="form_recherche_mobile" method="post" action="https://www.cc-brivadois.fr/recherche.html"><input type="text" name="value_search" id="value_search" value="" onfocus="if(this.value=='Recherche'){this.value='';}" onblur="if(this.value==''){this.value='Recherche'}"> <input type="submit" id="submit_b" value="OK"></form>
+				<script type="text/javascript">
+
+    function getXhr(){
+		var xhr = null; 
+       if(window.XMLHttpRequest) // Firefox et autres
+          xhr = new XMLHttpRequest(); 
+       else if(window.ActiveXObject){ // Internet Explorer 
+          try {
+	       	xhr = new ActiveXObject("Msxml2.XMLHTTP");
+		   } catch (e) {
+		       xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		   }
+       }
+       else { // XMLHttpRequest non supporté par le navigateur 
+          alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest..."); 
+          xhr = false; 
+       } 
+		return xhr;
+    }
+               
+   /**
+   * Méthode qui sera appelée sur le click du bouton
+   */
+   function reloadComm(val){
+       var xhr = getXhr();
+       // On défini ce qu'on va faire quand on aura la réponse
+       xhr.onreadystatechange = function(){
+                      // On ne fait quelque chose que si on a tout reçu et que le serveur est ok
+                      if(xhr.readyState == 4 && xhr.status == 200){
+                          leselect = xhr.responseText;
+						  var donnees = jQuery.parseJSON(leselect);
+                          // On se sert de innerHTML pour rajouter les options a la liste
+                          //document.getElementById('chargeComm').innerHTML = leselect;
+						//  img_carte_actuelle = donnees.img2;
+						  $('#chargeComm img').attr('src',donnees.img1).attr('alt',donnees.title);
+						  $('#carte-map').attr('src',donnees.img2);
+                      }
+       }
+       
+       // Ici on va voir comment faire du post
+       xhr.open("POST","get_commune.php",true);
+       // ne pas oublier ça pour le post
+       xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+       // ne pas oublier de poster les arguments
+       // ici, l'id de l'auteur
+       xhr.send("a="+val);
+   }
+				
+				</script>
+				<div id="rightbloc">
+					<div class="unelmt bloc-right" id="bloc-right0">
+						<h4>Carte interactive</h4>
+						<div class="clear"></div>
+						<form id="commune_form" name="commune_form" method="POST" action="https://www.cc-brivadois.fr/detail_carte.php"><select name="a" id="commune" onchange="reloadComm(this.value)"> <option value="28">Frugières-le-Pin</option><option value="27">Agnat</option><option value="26">Saint-Ilpize</option><option value="18">Autrac</option><option value="9" selected>Beaumont</option><option value="20">Blesle</option><option value="8">Bournoncle St-Pierre</option><option value="5">Brioude</option><option value="10">Chaniat</option><option value="4">Cohade</option><option value="24">Espalem</option><option value="6">Fontannes</option><option value="23">Grenier-Montgon</option><option value="3">Javaugues</option><option value="11">Lamothe</option><option value="12">Lavaudieu</option><option value="22">Léotoing</option><option value="25">Lorlanges</option><option value="13">Lubilhac</option><option value="2">Paulhac</option><option value="15">Saint Beauzire</option><option value="19">Saint-Etienne-sur-Blesle</option><option value="14">Saint-Géron</option><option value="16">Saint Just Pres Brioude</option><option value="17">Saint Laurent Chabreuges</option><option value="21">Torsiac</option><option value="7">Vieille Brioude</option> </select> <input type="submit" value="OK" name="ok" class="btn_submit">
+							<div class="clear"></div>
+						</form>
+						<div class="content-bloc-right" id="carte-commune">
+							<div style="text-align:center;"><img src="https://www.cc-brivadois.fr/img/carte-communes-vide.png" width="194px" height="160px" alt="carte communes" id="carte-map" usemap="#Map" style="border:0px;"></div><map name="Map" id="Map"> <area shape="poly" coords="158,85,169,85,175,80,179,83,177,93,181,113,177,117,171,113,172,109,166,109,165,117,160,116,163,107,162,103,159,93,158,85" href="detail_carte.php?a=28" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519306455_frugieres-le-pin.png'" onmouseout="outCarte2()" title="Frugières-le-Pin" alt="Frugières-le-Pin"><area shape="poly" coords="136,51,140,46,141,32,146,27,155,26,163,32,161,35,161,43,164,44,149,58,142,57,137,51" href="detail_carte.php?a=27" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519306622_agnat.png'" onmouseout="outCarte2()" title="Agnat" alt="Agnat"><area shape="poly" coords="134,125,129,130,131,136,131,143,127,148,127,153,131,156,136,155,140,158,144,154,143,147,138,139,137,127" href="detail_carte.php?a=26" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519296963_saint-ilpize.png'" onmouseout="outCarte2()" title="Saint-Ilpize" alt="Saint-Ilpize"><area shape="poly" coords="20,37,29,38,32,36,36,37,28,49,32,61,21,53" href="detail_carte.php?a=18" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773436_autrac.png'" onmouseout="outCarte2()" title="Autrac" alt="Autrac"><area shape="poly" coords="105,54,112,54,117,63,115,65,111,65,105,67,97,80,90,77,90,70,97,67" href="detail_carte.php?a=9" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773416_beaumont.png'" onmouseout="outCarte2()" title="Beaumont" alt="Beaumont"><area shape="poly" coords="42,97,50,89,51,82,63,57,57,54,50,51,45,39,35,39,29,49,33,62,41,71,39,82" href="detail_carte.php?a=20" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773701_blesle.png'" onmouseout="outCarte2()" title="Blesle" alt="Blesle"><area shape="poly" coords="87,32,92,25,99,29,104,29,110,39,112,52,105,53,98,65,93,52,94,45,92,37" href="detail_carte.php?a=8" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773230_bournoncle-st-pierre.png'" onmouseout="outCarte2()" title="Bournoncle St-Pierre" alt="Bournoncle St-Pierre"><area shape="poly" coords="134,74,128,60,118,64,116,83,124,89,133,84" href="detail_carte.php?a=5" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773214_brioude.png'" onmouseout="outCarte2()" title="Brioude" alt="Brioude"><area shape="poly" coords="153,55,164,43,169,43,169,55,172,59,171,68,156,74,153,71,148,70,154,60" href="detail_carte.php?a=10" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773201_chaniat.png'" onmouseout="outCarte2()" title="Chaniat" alt="Chaniat"><area shape="poly" coords="113,54,111,38,116,33,129,54,124,61,117,61" href="detail_carte.php?a=4" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773134_cohade.png'" onmouseout="outCarte2()" title="Cohade" alt="Cohade"><area shape="poly" coords="57,75,60,84,66,80,71,83,84,83,81,74,67,56" href="detail_carte.php?a=24" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773825_espalem.png'" onmouseout="outCarte2()" title="Espalem" alt="Espalem"><area shape="poly" coords="135,77,139,71,145,71,156,75,150,79,149,86,145,86,141,94,138,93,135,86" href="detail_carte.php?a=6" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773119_fontannes.png'" onmouseout="outCarte2()" title="Fontannes" alt="Fontannes"><area shape="poly" coords="55,75,51,82,51,90,61,95,66,89,70,89,71,84,66,82,60,85" href="detail_carte.php?a=23" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773812_grenier-montgon.png'" onmouseout="outCarte2()" title="Grenier-Montgon" alt="Grenier-Montgon"><area shape="poly" coords="171,69,157,76,159,86,169,86,177,81" href="detail_carte.php?a=3" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773100_javaugues.png'" onmouseout="outCarte2()" title="Javaugues" alt="Javaugues"><area shape="poly" coords="130,55,134,50,140,51,142,57,151,56,153,59,146,70,141,68,134,73,129,61" href="detail_carte.php?a=11" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773065_lamothe.png'" onmouseout="outCarte2()" title="Lamothe" alt="Lamothe"><area shape="poly" coords="150,80,156,76,158,93,162,104,160,116,152,120,141,108,143,93,147,88,150,86" href="detail_carte.php?a=12" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487774863_lavaudieu.png'" onmouseout="outCarte2()" title="Lavaudieu" alt="Lavaudieu"><area shape="poly" coords="58,52,60,46,62,43,62,30,59,25,62,20,69,24,78,19,84,34,84,40,75,42,73,48,68,55,62,55" href="detail_carte.php?a=22" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773791_leotoing.png'" onmouseout="outCarte2()" title="Léotoing" alt="Léotoing"><area shape="poly" coords="68,55,74,50,76,43,84,42,89,69,82,73,71,60" href="detail_carte.php?a=25" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773837_lorlanges.png'" onmouseout="outCarte2()" title="Lorlanges" alt="Lorlanges"><area shape="poly" coords="70,90,81,102,85,103,84,111,81,119,85,122,85,127,89,133,81,142,68,131,63,114,63,95" href="detail_carte.php?a=13" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773050_lubilhac.png'" onmouseout="outCarte2()" title="Lubilhac" alt="Lubilhac"><area shape="poly" coords="115,81,116,66,105,69,98,82,100,94,108,80" href="detail_carte.php?a=2" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773038_paulhac.png'" onmouseout="outCarte2()" title="Paulhac" alt="Paulhac"><area shape="poly" coords="88,70,89,78,97,81,99,95,101,103,92,110,83,121,83,114,86,110,86,101,80,99,72,90,72,84,82,82,83,74" href="detail_carte.php?a=15" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773023_saint-beauzire.png'" onmouseout="outCarte2()" title="Saint Beauzire" alt="Saint Beauzire"><area shape="poly" coords="19,52,30,63,33,63,39,70,38,80,22,86,9,81,11,73,18,69,14,55" href="detail_carte.php?a=19" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773689_saint-etienne-sur-blesle.png'" onmouseout="outCarte2()" title="Saint-Etienne-sur-Blesle" alt="Saint-Etienne-sur-Blesle"><area shape="poly" coords="90,68,85,41,86,34,91,35,93,45,92,51,97,66" href="detail_carte.php?a=14" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773010_saint-geron.png'" onmouseout="outCarte2()" title="Saint-Géron" alt="Saint-Géron"><area shape="poly" coords="97,147,108,150,115,140,118,141,128,126,132,124,130,117,124,116,116,112,118,101,114,96,93,111,86,123,90,131,94,134,95,141" href="detail_carte.php?a=16" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772998_saint-just-pres-brioude.png'" onmouseout="outCarte2()" title="Saint Just Pres Brioude" alt="Saint Just Pres Brioude"><area shape="poly" coords="110,79,123,90,119,98,115,95,103,102,100,96,105,90" href="detail_carte.php?a=17" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772986_saint-laurent-chabreuges.png'" onmouseout="outCarte2()" title="Saint Laurent Chabreuges" alt="Saint Laurent Chabreuges"><area shape="poly" coords="51,51,57,52,61,42,61,30,55,25,51,29,46,30,44,36" href="detail_carte.php?a=21" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773778_torsiac.png'" onmouseout="outCarte2()" title="Torsiac" alt="Torsiac"><area shape="poly" coords="133,86,141,96,141,108,152,121,150,127,139,129,132,125,130,116,117,111,119,100,125,91" href="detail_carte.php?a=7" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772972_vieille-brioude.png'" onmouseout="outCarte2()" title="Vieille Brioude" alt="Vieille Brioude"> </map>
+							<script type="text/javascript">
+									var img_carte_actuelle = "https://www.cc-brivadois.fr/img/carte-communes-vide.png";
+							
+				
+				function outCarte2() {
+				  $('#carte-map').attr('src',img_carte_actuelle);
+				}
+			
+							</script>
+						</div>
+					</div>
+					<div class="unelmt bloc-right" id="bloc-right2">
+						<h4>Pratique</h4>
+						<div class="clear"></div>
+						<div class="content-bloc-right">
+							<table>
+								<tr>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p2"><a href="https://cc-brivadois.portail-familles.net/" target="_blank"><span>></span> Portail famille</a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/vie_pratique/1373983480_small_fleche.jpg" alt="Marchés publics" title="Marchés publics"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=48&niveau=2" target="_self"><span>></span> Marchés publics</a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504337_small_fleche.jpg" alt="Journal intercommunal" title="Journal intercommunal"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=52&niveau=2" target="_self"><span>></span> Journal intercommunal</a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504343_small_fleche.jpg" alt="Délibérations" title="Délibérations"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=46&niveau=2" target="_self"><span>></span> Délibérations</a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504350_small_fleche.jpg" alt="Liens utiles" title="Liens utiles"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/liens.php" target="_self"><span>></span> Liens utiles</a></td>
+								</tr>
+							</table>
+							<div class="border-bas-bloc" id="border-bas-bloc2"></div>
+						</div>
+					</div>
+					<div class="unelmt bloc-right" id="bloc-right3">
+						<h4></h4>
+						<div class="clear"></div>
+						<div class="content-bloc-right">
+							<table>
+								<tr>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://cc-brivadois.portail-familles.net/" target="_self">Portail famille <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1373983339_small_fleche.jpg" alt="RAM, crèches, CLSH, centres de loisirs, accueil ados..." title="RAM, crèches, CLSH, centres de loisirs, accueil ados..."></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=11" target="_self">RAM, crèches, CLSH, centres de loisirs, accueil ados... <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1374504362_small_fleche.jpg" alt="Ecole de Musique" title="Ecole de Musique"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=102&niveau=2" target="_self">Ecole de Musique <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1375166687_1374504343_small_fleche.jpg" alt="Ludothèques" title="Ludothèques"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=16&niveau=2" target="_self">Ludothèques <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1374504376_small_fleche.jpg" alt="Halle des sports" title="Halle des sports"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=62&niveau=2" target="_self">Halle des sports <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1374504386_small_fleche.jpg" alt="Abattoir" title="Abattoir"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=74&niveau=2" target="_self">Abattoir <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1374504395_small_fleche.jpg" alt="Aire d'accueil des gens du voyage" title="Aire d'accueil des gens du voyage"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=7&niveau=2" target="_self">Aire d'accueil des gens du voyage <span>></span></a></td>
+								</tr>
+								<tr>
+									<td style="vertical-align:middle; text-align:center; width:20px;"><img src="https://www.cc-brivadois.fr/_files/info_culture/1374504403_small_fleche.jpg" alt="Fourrière animale" title="Fourrière animale"></td>
+									<td style="vertical-align:middle; text-align:left; width:175px;" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=6&niveau=2" target="_self">Fourrière animale <span>></span></a></td>
+								</tr>
+							</table>
+							<div class="border-bas-bloc" id="border-bas-bloc3"></div>
+						</div>
+					</div>
+				</div>
+				<div id="wrap_contenu" style="float: left;width: 730px;clear: none; padding-right:10px;">
+					<div id="breadcrumb">
+						<p>Vous êtes ici :</p>
+						<ul>
+							<li><a href="votre-communaute-de-communes-mr1.html">Votre Communauté de Communes ></a></li>
+							<li><a class="current" style="color:#0D9BDE" href="les-deliberations-mr46-id0-n2.html">Les délibérations ></a></li>
+						</ul>
+						<div class="clear"></div>
+						<div class="clear"></div>
+					</div>
+					<div id="options_page">
+						<div class="contenu">
+							<p class="opt_aug_police" title="Augmenter la taille de police" onclick="change_size(1)"></p>
+							<p class="opt_eg_police" title="Rétablir la taille de police par défaut" onclick="change_size(2)"></p>
+							<p class="opt_red_police" title="Réduire la taille de police" onclick="change_size(0)"></p>
+							<p class="imprimer_btn" onclick="window.print()">Imprimer</p>
+							<p class="btn_send_friends" onclick="recomail()">Envoyer à un ami</p>
+							<!-- AddThis Button BEGIN -->
+							<div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook_like" fb:like:layout="button_count" style="height: 20px;"></a> <a class="addthis_button_tweet" style="width: 89px; height: 20px;"></a> <a class="addthis_button_google_plusone" g:plusone:size="medium" style="width: 70px; height: 20px;"></a></div>
+							<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5162788a145ef11e"></script>
+							<!-- AddThis Button END -->
+							<div class="clear"></div>
+						</div>
+					</div>
+					<h1 style="color:#0D9BDE">Les délibérations</h1>
+					<p class="intro_actu">Conseil Communautaire du 23/06/2020</p>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1593432435_2020-06-23-cr-pour-site.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<ol>
+							<li>Comptes de Gestion 2019, Comptes Administratifs 2019- Approbation et affectation des résultats</li>
+							<li>DOB 2020</li>
+							<li>Amortissements 2019</li>
+							<li>Fiscalité 2020</li>
+							<li>TEOM 2020</li>
+							<li>Renouvellement du contrat de ligne de trésorerie : autorisation de signature</li>
+							<li>Convention pour la mise en œuvre des aides économiques avec la Région AURA : autorisation de signature</li>
+							<li>Autorisation de recrutement d’un agent en contrat de projet</li>
+							<li>Tarifs des services 2020</li>
+							<li>Aides à la journée 2020</li>
+							<li>Subventions ordinaires et exceptionnelles</li>
+							<li>Dispositifs d’aides à l’installation de professionnels de santé : autorisation de signature des conventions d’octroi de l’aide.</li>
+							<li>Modification du tableau des effectifs</li>
+							<li>Modalités d’octroi et d’exercice du télétravail à Brioude Sud Auvergne</li>
+							<li>Adhésion 2020 communes forestières.</li>
+						</ol>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Conseil Communautaire du 27 février 2020 - Vieille-Brioude</p>
+					<div class="intro-contenu">
+						<p>Conseil Communautaire du 27 février 2020 - Vieille-Brioude</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1582895856_2020-02-27-cr-pour-site.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<ul>
+							<li>Demande de décharge en responsabilité du régisseur de l’aire d’accueil des gens du voyage</li>
+							<li>Cotisation AMF 2020</li>
+							<li>Modification du tableau des effectifs</li>
+							<li>Recrutements saisonniers</li>
+							<li>Assurance Statutaire : autorisation de donner mandat au Centre de Gestion de la Fonction Publique de Haute Loire.</li>
+							<li>AVAP de BRIOUDE : Approbation</li>
+							<li>Lancement d’une démarche de préfiguration d’une ORT</li>
+							<li>Audit Abattoirs : engagement de la démarche d’étude de l’installation d’un pole viande et pérennisation de l’outil existant</li>
+							<li>Brioude évènementiel : Demande de subvention</li>
+							<li>Local commercial de Fontannes : Autorisation de signature d’un bail précaire</li>
+							<li>Gestion de l’Aquabulle : autorisation de signature d’un avenant à la Délégation de Service Public avec la société TITAN</li>
+							<li>Lancement d’une procédure de délégation de Service Public pour la gestion de l’Aquabullle : Approbation du Rapport de Présentation du Président</li>
+							<li>Tennis Couverts : approbation de la convention attributive de fonds de concours de la ville de Brioude</li>
+							<li>Visites Virtuelles :  approbation d’une convention quadripartite d’un fonds de concours entre la CCBSA et Brioude, Blesle, Lavaudieu</li>
+							<li>Festival de la Chaise Dieu et festival de Jazz 2020 : demande de subvention et autorisation de signature d’une convention</li>
+							<li>Point d’information touristique : approbation d’une convention avec Lavaudieu</li>
+							<li> Communauté de communes des Rives du Haut Allier : Renouvellement de la convention de partenariat service Maison de la Petite Enfance.</li>
+							<li>Convention de répartition des charges Bâtiment Champ Pointu avec la commune de Lorlanges</li>
+							<li>Renouvellement de la convention d'objectifs et de financement avec la CAF pour le service ADO.COM</li>
+							<li>Renouvellement de la Convention d’Objectifs et de financement avec la CAF pour le service Maison de la Petite Enfance</li>
+							<li>Avis sur le SCOT du SYTEC</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Conseil Communautaire 24 janvier 2020 - Brioude</p>
+					<div class="intro-contenu">
+						<p>Conseil Communautaire 24 janvier 2020 - Brioude</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1580821542_2020-01-24-cr.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour :</p>
+						<ul>
+							<li>Avis sur le PPRI de l’Allier et de ses Affluents sur le bassin Brivadois</li>
+							<li>Gestion de la fourrière animale intercommunale : renouvellement de la convention avec la SPA de Brioude</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Conseil Communautaire du 19 décembre 2019-Salle polyvalente de Saint-Just</p>
+					<div class="intro-contenu">
+						<p>Conseil Communautaire du 19 décembre 2019</p>
+						<p>Salle polyvalente de Saint-Just</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1577367040_2019-12-19-cr.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>1.Camping de la Bageasse : Adoption du compte de gestion 2019 et du Compte administratif, affectation des résultats au Budget Principal 2019</p>
+						<p>2.Budget Principal : Décision Modificative n°2</p>
+						<p>3.Budget annexe Centre aqualudique : décision Modificative n°1</p>
+						<p>4.Admission en non-valeur</p>
+						<p>5.Autorisation de mandatement des subventions avant le vote du BP 2020</p>
+						<p>6.Autorisation de mandatement des dépenses d’investissement avant le vote du BP 2020.</p>
+						<p>7.Tarifs des services 2020</p>
+						<p>8.Tarifs des services affermés 2020</p>
+						<p>9.Redevance d’abattage 2020</p>
+						<p>10.Vente de l’ensemble Immobilier « CIEL » à Léo LAGRANGE</p>
+						<p>11.Appel à projets culturels : subventions</p>
+						<p>12.Nomination de deux représentants pour siéger à l’Ecole de Musique du Brivadois</p>
+						<p>13.Convention Territoire d’Industrie : autorisation de signature</p>
+						<p>14.SIGAL : approbation de la modification des statuts</p>
+						<p>15.SIGAL : Transfert de la compétence item 12 GEMAPI</p>
+						<p>16.PLUI : Débat PADD</p>
+						<p>17.PLU de COHADE : approbation de la Modification simplifiée</p>
+						<p>18.Modification du Plan de financement tennis couvert</p>
+						<p>19.Renouvellement du contrat enfance Jeunesse : autorisation de signature</p>
+						<p>20.SYDEC Rapport d’activités 2018</p>
+						<p>21.Centre Aqualudique Aquabulle : Gestion 2020</p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 14 novembre 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 14 novembre 2019</p>
+						<p>Salle du Conseil de la Mairie de Brioude</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1574773588_2019-11-14-cr.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Modification du tableau des effectifs</p>
+						<p>2. Plan de formation</p>
+						<p>3. Approbation du PLU de Saint-Beauzire</p>
+						<p>4. Modification du PLU de Cohade</p>
+						<p>5. Subvention UCAB "Vitrines de Brioude"</p>
+						<p>6. Maison de la Petite Enfance - Modification du règlement de fonctionnement</p>
+						<p>7. Rénovation de la toiture des tennis couverts de Brioude adoption du plan de financement et demande de subventions</p>
+						<p>8. Approbation de la modification statutaire du SICALA de Haute-Loire. </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 30 septembre 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 30 septembre 2019, </p>
+						<p>Salle polyvalente de Saint-Laurent-Chabreuges</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1571920635_2019-09-30-cr-pour-site.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>0 : Modification de l'ordre du jour, </p>
+						<p>1 : Visites virtuelles - Demande de subventions</p>
+						<p>2 : Modification des statuts</p>
+						<p>3 : Avenant au contrat 43.11 - Modification de la délibération n°102-2019 du 17 juillet 2019</p>
+						<p>4 : Adoption du réglement intérieur de fonctionnement de la CLECT</p>
+						<p>5 : Présentation du rapport de la CLECT - Attributions de compensation définitives 2019</p>
+						<p>6 : Budget principal décision modificative n°1</p>
+						<p>7 : Taxe de séjour - Vote des tarifs</p>
+						<p>8 : Adhésion à PAYFIP - Autorisation de signatures des conventions avec la DGFIP</p>
+						<p>9 : Modification du réglement sous-secteur AUED du PLU de Cohade</p>
+						<p>10 : Tarifs applicables aux familles séjournant sur l'aire d'accueil des gens du voyage</p>
+						<p>11 : Aire d'accueil des gens du voyage - Modification du règlement intérieur </p>
+						<p>12 : Mise à disposition de locaux avec l'association Champ Pointu - Avenant n°1</p>
+						<p>13 : Subvention exceptionnelle d'investissement à l'Office de Tourisme, du Commerce et de l'Artisanat Brioude Sud Auvergne</p>
+						<p>14 : Diagnostic social à l'échelle de deux EPCI du Pays de Lafayette - Groupement de Commandes</p>
+						<p>15 : Opération le Cinéma a du Coeur - Participation du Cinéma le Paris </p>
+						<p>16 : Retrait du SICALA </p>
+						<p>17 : Approbation du projet de statuts du Syndicat Mixte Allier et adhésion de la CCBSA </p>
+						<p>18 : Modification de l'Intérêt communautaire - Délibération complémentaire à la délibération 37.2019 du 13/02/2019</p>
+						<p>19 : Plan Régional de Prévention et de Gestion des Déchets (PRPGD) - Avis</p>
+						<p> </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Conseil Communautaire du 17 juillet 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 17 juillet 2019</p>
+						<p>Salle des fêtes de Frugières le Pin </p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1563460850_2019-07-17-cr-pour-site.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "CR du CC du 17/07/2019"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Protocole d’accord du temps de travail.</p>
+						<p>2. Instauration du RIFSEEP</p>
+						<p>3. Instauration du régime indemnitaire pour agents titulaires de grades non transposés au RIFSEEP</p>
+						<p>4. Modalités de réalisation d’heures supplémentaires</p>
+						<p>5. Adhésion au service Prévention CDG 43</p>
+						<p>6. Adhésion service retraite CDG 43</p>
+						<p>7. Modification du tableau des effectifs</p>
+						<p>8. FPIC 2019 Reversement</p>
+						<p>9. FPIC 2019 Prélèvement</p>
+						<p>10. Avenant 43.11</p>
+						<p>11. OTCABSA : Nomination de sept représentants et autorisation de signature d’une convention d’objectifs</p>
+						<p>12. Modification de la composition de la commission Commerce</p>
+						<p>13. Modification du guide des aides aux commerces</p>
+						<p>14. Analyse des besoins sociaux du territoire à l’échelle des trois EPCI du Pays de Lafayette : Groupement de commandes</p>
+						<p>15. Convention quadripartite dans le cadre de la charte de cohésion Social et du contrat local de Santé : autorisation de signature.</p>
+						<p>16. Dispositif d’aides à l’installation des professions médicales</p>
+						<p>17. Convention de mise à disposition gracieuse d’un terrain par la Ville de Brioude pour assurer l’accueil des gens du voyage : autorisation de signature.</p>
+						<p>18. Convention de partenariat Portail Familles</p>
+						<p>19. Rupture anticipée du CEJ CPBP pour reconduction</p>
+						<p>20. Modification du Règlement de fonctionnement de la Maison de la Petite Enfance</p>
+						<p>21. Modification du Procès de Verbal de mise à disposition des bâtiments sportifs de la Ville de Brioude auprès de la CCBSA suite à modification de l’intérêt communautaire</p>
+						<p>22. Gestion des salles de sports : convention de répartition des charges entre la Ville de Brioude et la CCBSA</p>
+						<p>23. Convention de mutualisation du personnel des services de salles sportives au profit de la commune de Brioude pour la gestion de la salle polyvalente.</p>
+						<p>24. Groupement de commandes CCBSA/ Ville de Brioude pour les contrats de contrôles technique sur les bâtiments</p>
+						<p>25. Aquabulle : Rapport d’activité 2018</p>
+						<p>26. Festival de la Chaise Dieu : subvention 2019 et autorisation de signature d’une convention</p>
+						<p>27. Convention chats libres : autorisation de signature de la convention et subvention 2019 allouée à la fondation 30 Millions d’amis</p>
+						<p>28. SRADDET : avis de la CCBSA.</p>
+						<p>29. Règlement Intérieur de la CCBSA : modification du règlement adopté le 28 Mai 2019</p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 28 mai</p>
+					<div class="intro-contenu">
+						<p>Séance du 28 mai 2019</p>
+						<p>Mairie de Brioude</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1560334011_cr-28-05-19.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Règlement Intérieur</p>
+						<p>2. Désaffectation et déclassement des parcelles ZI 161 sur la commune de Brioude et A 1260P, A 922, A 931, A 961, A 1010 sur la commune de Vieille-Brioude</p>
+						<p>3. Clôture du budget annexe du camping de la Bageasse - Transfert des résultats de clôture au budget principal de la CCBSA - Réintégration du passif et de l'actif au budget principal de la Communauté de Communes Brioude Sud Auvergne. </p>
+						<p>4. Appel à projets "Itinérance culturelle 2019" : Propositions de soutien aux associations retenues</p>
+						<p>5. Adhésion à l'association Union Régionale des Communes Forestières Auvergne-Rhône-Alpes</p>
+						<p>6. Adhésion à l'Association CIPRO 43 </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 28 mai 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 28 mai 2019,</p>
+						<p>Mairie de Brioude </p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1559915021_cr-28--05-19.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Réglement Intérieur </p>
+						<p>2. Désaffectation et déclassement des parcelles ZI 161 sur la commune de Brioude et A 1260P, A922, A931, A961, A1010 sur la commune de Vieille-Brioude </p>
+						<p>3. Cloture du budget annexe du camping de la Bageasse - Transfert des résultats de clôture au budget principal de la CCBSA - Réintégration du passif et de l'actif au budget principal de la communauté de communes Brioude Sud Auvergne</p>
+						<p>4. Appel à projets "Itinérance culturelle 2019" : propositions de soutien aux associations retenues</p>
+						<p>5. Adhésion à l'association Union Régionale des Communes Forestières Auvergne-Rhône-Alpes</p>
+						<p>6. Adhésion à l'Association CIPRO 43 </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 15 avril 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 15 avril 2019</p>
+						<p>Salle polyvalente de Grenier-Montgon</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1556200709_cr042019.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Modification de la délibération n°36-2019 en date du 13 février 2019 portant sur modification des statuts de l'EPCI</p>
+						<p>2. Tarifs des services 2019 : repas à domicile</p>
+						<p>3. Ligne de trésorerie : autorisation de signature du contrat.</p>
+						<p>4. Adoption des conventions d'objectifs et de moyens avec les associations bénéficiaires d'un soutien financier de la Communauté de Communes Brioude Sud Auvergne</p>
+						<p>5. Subventions ordinaires aux associations </p>
+						<p>6. Cotisations 2019</p>
+						<p>7. Règlement appel à projets "Itinérence culturelle"</p>
+						<p>8. Mise à disposition d'agents auprès de l'Office de Tourisme Brioude Sud Auvergne</p>
+						<p>9. Complément de la délibération n°71-2019 : Contrat Ambition Région : Avenant</p>
+						<p>10. Points d'informations touristiques de Lavaudieu et de Blesle</p>
+						<p>11. L'Aquabulle : Convention et avenant avec l'éducation nationale pour la mise en oeuvre de séances avec les scolaires du primaire</p>
+						<p>12. Délégation du droit de préemption urbain au Président de l'EPCI - délibération cadre : adoption de la procédure partagée de l'exercice du droit de préemption. </p>
+						<p> </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 18 mars 2019</p>
+					<div class="intro-contenu">
+						<p>Séance du 18 mars 2019</p>
+						<p>Mairie de Brioude</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1553685689_cr-180319.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1553685689_bp-2019-note-synthetique-pour-envoi.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "BP 2019 note synthétique"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>0. Modification de l'ordre du jour</p>
+						<p>1. Budget Primitif 2019</p>
+						<p>2. Fiscalité 2019</p>
+						<p>3. Amortissement des immobilisations 2018</p>
+						<p>4. Ligne de trésorerie - Autorisation de consultation pour renouvellement</p>
+						<p>5. Fixation du coefficient multiplicateur de TASCOM</p>
+						<p>6. Cotisation foncière des entreprises - Fixation du montant d'une base servant à l'établissement de la cotisation minimum</p>
+						<p>7. Exonérations CFE-CVAE</p>
+						<p>8. Taxe d'habitation - Fixation des abattements sur la base d'imposition des habitations principales</p>
+						<p>9. Autorisation des versements des subventions aux budgets annexes 2019 et au budget du cinéma Le Paris </p>
+						<p>10. Composition du comité technique et du comité d'hygiène et de sécurité des conditions de travail - Détermination du nombre de représentants du personnel et détermination du maintien ou non du paritarisme de l'avis des représentants de l'EPCI</p>
+						<p>11. Modification du tableau des effectifs</p>
+						<p>12. Gratification d'un stagiaire</p>
+						<p>13. Marché de confection et de portage de repas au domicile des personnes agées de la Communauté de Communes Brioude Sud Auvergne - Autorisation de signature</p>
+						<p>14. Contrat Ambition Région - Avenant</p>
+						<p>15. Adhésion Marque Auvergne</p>
+						<p>16. TEOM</p>
+						<p>17. Autorisation de recrutement d'un agent contractuel chargé de mission tourisme et communication et création d'un poste permanent au tableau des effectifs. </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 5 mars 2019</p>
+					<div class="intro-contenu">
+						<p>Séace du 5 mars 2019<br> Mairie de Brioude.</p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1552399011_2019-03-05-cr-pour-site.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Fusion : assujetissement TVA des budgets annexes ateliers relais, centre aqualudique, abattoirs publics, camping de la Bageasse et du budget du cinéma Le Paris</p>
+						<p>2. Comptes de gestion de la Communauté de Communes Brioude Sud Auvergne et des établissements annexes - exercice 2018</p>
+						<p>3. Comptes administratifs de la Communauté de Communes Brioude Sud Auvergne et des établissements annexes - exercice 2018</p>
+						<p>4. Comptes administratifs 2018 - affectation des résultats</p>
+						<p>5. PLUI - Modification des modalités de collaboration entre le Communauté de Communes et ses communes membres</p>
+						<p>6. Eléments de prospective financière préalable au fléchage des investissements 2019 et au vote du BP 2019. </p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<p class="intro_actu">Séance du 13 février 2019</p>
+					<div class="intro-contenu">
+						<p>Sénace du 13 février 2019.<br> Salle polyvalente de Fontannes. </p>
+					</div>
+					<div class="fichiers-telechargements">
+						<h2 style="color:#0D9BDE">En savoir plus</h2>
+						<div class="fichiers-telechargements-all">
+							<div class="downloadbrochure2" style="border-bottom:1px dashed #0D9BDE" onclick="window.open('https://www.cc-brivadois.fr/_files/contenu/1550657530_cr-130219.pdf')">
+								<p><span class="fleche" style="color:#0D9BDE">></span>    <strong>Téléchargez</strong> "Compte-rendu"</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="desc_actu">
+						<p>Ordre du jour : </p>
+						<p>1. Modification de l'ordre du jour<br> 2. Commissions obligatoires - CAO et Délégation de service public - modification de la délibération n°7 du 7 janvier 2019 et prolongation du délai de dépot des listes<br> 3. Installation des membres de la CLECT<br> 4. Installation des membres de la CIID<br> 5. Election des délégués de la CCBSA aux syndicats dont la CCBSA est membre<br> 6. PLUI - Installation du COPIL<br> 7. Elections des délégués aux associations<br> 8. Election des membres du conseil d'exploitation du Cinéma de Paris<br> 9. Indemnités des élus<br> 10. Etablissement du tableau des effectifs pour la CCBSA issue de la fusion de la Communauté de Communes du Brivadois et de la CC du Pays de Blesle, étendue aux communes d'Agnat, Frugières le Pin et Saint-Ilpize. <br> 11. Création d'un emploi de fonctionnel de DGS des EPCI de 10 000 à 20 000 habitants<br> 12. Autorisation de recrutement d'agents non titulaires pour faire face à un besoin saisonnier ou un accroissement temporaire d'activité sur différents services<br> 13. Modifications des Statuts<br> 14. Définition de l'intérêt communautaire<br> 15. Groupe de travail sur la définition et la rédaction des appels à projet dans le cadre de l'itinérance culturelle<br> 16. Camping de la Bageasse - Autorisation de signature d'une promesse de vente avec la société Aquadis Loisirs sous conditions suspensives de déclassement et de désaffectation du site<br> 17. Camping de la Bageasse - Autorisation de signature d'un protocole d'accord transactionnel amiable de fin de la délégation de service public avec la société Aquadis Loisirs<br> 18. PLUI de Saint-Beauzire - Application du nouveau réglement<br> 19. PLUI de Saint-Beauzire - Bilan de concertation et arrêt du projet<br> 20. Travaux d'éclairage public EP ZA Sainte Anne Simpal - Commune de Vieille-Brioude<br> 21.Site de Léotoing : Autorisation de signature d'une convention d'objectifs avec l'Oasis CENTANELLA<br> 22. Adhésion de l'association des Maires du 43<br> 23. Conventions s'objectifs avec les associations socio-éducatives partenaires<br> 24. DETR 2019/DSIL 2019<br> 25. Dématérialisation des procédures - recours à la télétransmission des actes - autorisation de signature des conventions de mise en oeuvre<br> 26 Elèction des memebres de la CAO<br> 27 Election des membres des la commission d'ouverture des plis</p>
+					</div>
+					<div class="clear"></div>
+					<hr style="border:1px solid #0D9BDE;">
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="quick_links_mobile">
+			<div class="unelmt" id="bloc-right0">
+				<h4>Carte interactive</h4>
+				<div class="clear"></div>
+				<form id="commune_form" name="commune_form" method="POST" action="https://www.cc-brivadois.fr/detail_carte.php"><select name="a" id="commune" onchange="reloadComm(this.value)"> <option value="28">Frugières-le-Pin</option><option value="27">Agnat</option><option value="26">Saint-Ilpize</option><option value="18">Autrac</option><option value="9" selected>Beaumont</option><option value="20">Blesle</option><option value="8">Bournoncle St-Pierre</option><option value="5">Brioude</option><option value="10">Chaniat</option><option value="4">Cohade</option><option value="24">Espalem</option><option value="6">Fontannes</option><option value="23">Grenier-Montgon</option><option value="3">Javaugues</option><option value="11">Lamothe</option><option value="12">Lavaudieu</option><option value="22">Léotoing</option><option value="25">Lorlanges</option><option value="13">Lubilhac</option><option value="2">Paulhac</option><option value="15">Saint Beauzire</option><option value="19">Saint-Etienne-sur-Blesle</option><option value="14">Saint-Géron</option><option value="16">Saint Just Pres Brioude</option><option value="17">Saint Laurent Chabreuges</option><option value="21">Torsiac</option><option value="7">Vieille Brioude</option> </select> <input type="submit" value="OK" name="ok" class="btn_submit">
+					<div class="clear"></div>
+				</form>
+				<div id="chargeComm"><img src="https://www.cc-brivadois.fr/_files/carte_commune/" alt="Beaumont" class="img-bloc-right" width="240"></div>
+				<div class="content-bloc-right" id="carte-commune">
+					<div style="text-align:center;"><img src="https://www.cc-brivadois.fr/img/plan-commune.jpg" width="194" height="160" alt="carte communes" id="carte-map" usemap="#Map" style="border:0px;"></div><map name="Map" id="Map"> <area shape="poly" coords="158,85,169,85,175,80,179,83,177,93,181,113,177,117,171,113,172,109,166,109,165,117,160,116,163,107,162,103,159,93,158,85" href="detail_carte.php?a=28" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519306455_frugieres-le-pin.png'" onmouseout="outCarte()" title="Frugières-le-Pin" alt="Frugières-le-Pin"><area shape="poly" coords="136,51,140,46,141,32,146,27,155,26,163,32,161,35,161,43,164,44,149,58,142,57,137,51" href="detail_carte.php?a=27" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519306622_agnat.png'" onmouseout="outCarte()" title="Agnat" alt="Agnat"><area shape="poly" coords="134,125,129,130,131,136,131,143,127,148,127,153,131,156,136,155,140,158,144,154,143,147,138,139,137,127" href="detail_carte.php?a=26" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1519296963_saint-ilpize.png'" onmouseout="outCarte()" title="Saint-Ilpize" alt="Saint-Ilpize"><area shape="poly" coords="20,37,29,38,32,36,36,37,28,49,32,61,21,53" href="detail_carte.php?a=18" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773436_autrac.png'" onmouseout="outCarte()" title="Autrac" alt="Autrac"><area shape="poly" coords="105,54,112,54,117,63,115,65,111,65,105,67,97,80,90,77,90,70,97,67" href="detail_carte.php?a=9" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773416_beaumont.png'" onmouseout="outCarte()" title="Beaumont" alt="Beaumont"><area shape="poly" coords="42,97,50,89,51,82,63,57,57,54,50,51,45,39,35,39,29,49,33,62,41,71,39,82" href="detail_carte.php?a=20" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773701_blesle.png'" onmouseout="outCarte()" title="Blesle" alt="Blesle"><area shape="poly" coords="87,32,92,25,99,29,104,29,110,39,112,52,105,53,98,65,93,52,94,45,92,37" href="detail_carte.php?a=8" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773230_bournoncle-st-pierre.png'" onmouseout="outCarte()" title="Bournoncle St-Pierre" alt="Bournoncle St-Pierre"><area shape="poly" coords="134,74,128,60,118,64,116,83,124,89,133,84" href="detail_carte.php?a=5" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773214_brioude.png'" onmouseout="outCarte()" title="Brioude" alt="Brioude"><area shape="poly" coords="153,55,164,43,169,43,169,55,172,59,171,68,156,74,153,71,148,70,154,60" href="detail_carte.php?a=10" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773201_chaniat.png'" onmouseout="outCarte()" title="Chaniat" alt="Chaniat"><area shape="poly" coords="113,54,111,38,116,33,129,54,124,61,117,61" href="detail_carte.php?a=4" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773134_cohade.png'" onmouseout="outCarte()" title="Cohade" alt="Cohade"><area shape="poly" coords="57,75,60,84,66,80,71,83,84,83,81,74,67,56" href="detail_carte.php?a=24" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773825_espalem.png'" onmouseout="outCarte()" title="Espalem" alt="Espalem"><area shape="poly" coords="135,77,139,71,145,71,156,75,150,79,149,86,145,86,141,94,138,93,135,86" href="detail_carte.php?a=6" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773119_fontannes.png'" onmouseout="outCarte()" title="Fontannes" alt="Fontannes"><area shape="poly" coords="55,75,51,82,51,90,61,95,66,89,70,89,71,84,66,82,60,85" href="detail_carte.php?a=23" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773812_grenier-montgon.png'" onmouseout="outCarte()" title="Grenier-Montgon" alt="Grenier-Montgon"><area shape="poly" coords="171,69,157,76,159,86,169,86,177,81" href="detail_carte.php?a=3" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773100_javaugues.png'" onmouseout="outCarte()" title="Javaugues" alt="Javaugues"><area shape="poly" coords="130,55,134,50,140,51,142,57,151,56,153,59,146,70,141,68,134,73,129,61" href="detail_carte.php?a=11" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773065_lamothe.png'" onmouseout="outCarte()" title="Lamothe" alt="Lamothe"><area shape="poly" coords="150,80,156,76,158,93,162,104,160,116,152,120,141,108,143,93,147,88,150,86" href="detail_carte.php?a=12" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487774863_lavaudieu.png'" onmouseout="outCarte()" title="Lavaudieu" alt="Lavaudieu"><area shape="poly" coords="58,52,60,46,62,43,62,30,59,25,62,20,69,24,78,19,84,34,84,40,75,42,73,48,68,55,62,55" href="detail_carte.php?a=22" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773791_leotoing.png'" onmouseout="outCarte()" title="Léotoing" alt="Léotoing"><area shape="poly" coords="68,55,74,50,76,43,84,42,89,69,82,73,71,60" href="detail_carte.php?a=25" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773837_lorlanges.png'" onmouseout="outCarte()" title="Lorlanges" alt="Lorlanges"><area shape="poly" coords="70,90,81,102,85,103,84,111,81,119,85,122,85,127,89,133,81,142,68,131,63,114,63,95" href="detail_carte.php?a=13" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773050_lubilhac.png'" onmouseout="outCarte()" title="Lubilhac" alt="Lubilhac"><area shape="poly" coords="115,81,116,66,105,69,98,82,100,94,108,80" href="detail_carte.php?a=2" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773038_paulhac.png'" onmouseout="outCarte()" title="Paulhac" alt="Paulhac"><area shape="poly" coords="88,70,89,78,97,81,99,95,101,103,92,110,83,121,83,114,86,110,86,101,80,99,72,90,72,84,82,82,83,74" href="detail_carte.php?a=15" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773023_saint-beauzire.png'" onmouseout="outCarte()" title="Saint Beauzire" alt="Saint Beauzire"><area shape="poly" coords="19,52,30,63,33,63,39,70,38,80,22,86,9,81,11,73,18,69,14,55" href="detail_carte.php?a=19" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773689_saint-etienne-sur-blesle.png'" onmouseout="outCarte()" title="Saint-Etienne-sur-Blesle" alt="Saint-Etienne-sur-Blesle"><area shape="poly" coords="90,68,85,41,86,34,91,35,93,45,92,51,97,66" href="detail_carte.php?a=14" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773010_saint-geron.png'" onmouseout="outCarte()" title="Saint-Géron" alt="Saint-Géron"><area shape="poly" coords="97,147,108,150,115,140,118,141,128,126,132,124,130,117,124,116,116,112,118,101,114,96,93,111,86,123,90,131,94,134,95,141" href="detail_carte.php?a=16" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772998_saint-just-pres-brioude.png'" onmouseout="outCarte()" title="Saint Just Pres Brioude" alt="Saint Just Pres Brioude"><area shape="poly" coords="110,79,123,90,119,98,115,95,103,102,100,96,105,90" href="detail_carte.php?a=17" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772986_saint-laurent-chabreuges.png'" onmouseout="outCarte()" title="Saint Laurent Chabreuges" alt="Saint Laurent Chabreuges"><area shape="poly" coords="51,51,57,52,61,42,61,30,55,25,51,29,46,30,44,36" href="detail_carte.php?a=21" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487773778_torsiac.png'" onmouseout="outCarte()" title="Torsiac" alt="Torsiac"><area shape="poly" coords="133,86,141,96,141,108,152,121,150,127,139,129,132,125,130,116,117,111,119,100,125,91" href="detail_carte.php?a=7" onmouseover="document.getElementById('carte-map').src='_files/carte_commune/1487772972_vieille-brioude.png'" onmouseout="outCarte()" title="Vieille Brioude" alt="Vieille Brioude"> </map>
+					<script type="text/javascript">
+									var img_carte_actuelle = "https://www.cc-brivadois.fr/img/carte-communes-vide.png";
+							
+				
+				function outCarte() {
+				  $('#carte-map').attr('src',img_carte_actuelle);
+				}
+			
+					</script>
+				</div>
+			</div>
+			<div class="unelmt" id="bloc-right2">
+				<h4>Pratique</h4>
+				<div class="clear"></div><img src="https://www.cc-brivadois.fr/" alt="Pratique" class="img-bloc-right">
+				<div class="content-bloc-right">
+					<table>
+						<tr>
+							<td width="275" valign="middle" align="left" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/annuaires-commerces-et-services-pendant-la-periode-de-covid-19-rp1.html"><span>></span> Annuaires des Commerces et services pendant la période de COVID 19</a></td>
+						</tr>
+						<tr>
+							<td width="275" valign="middle" align="left" class="titre-article-vie-p2"></td>
+						</tr>
+						<tr>
+							<!---->
+							<td valign="middle" align="left" class="titre-article-vie-p2"><a href="https://cc-brivadois.portail-familles.net/" target="_blank"><span>></span> Portail famille</a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/vie_pratique/1373983480_small_fleche.jpg" alt="Marchés publics" title="Marchés publics"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=48&niveau=2" target="_self"><span>></span> Marchés publics</a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504337_small_fleche.jpg" alt="Journal intercommunal" title="Journal intercommunal"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=52&niveau=2" target="_self"><span>></span> Journal intercommunal</a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504343_small_fleche.jpg" alt="Délibérations" title="Délibérations"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=46&niveau=2" target="_self"><span>></span> Délibérations</a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/vie_pratique/1374504350_small_fleche.jpg" alt="Liens utiles" title="Liens utiles"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p2"><a href="https://www.cc-brivadois.fr/liens.php" target="_self"><span>></span> Liens utiles</a></td>
+						</tr>
+					</table>
+					<div class="border-bas-bloc" id="border-bas-bloc2"></div>
+				</div>
+			</div>
+			<div class="unelmt" id="bloc-right3">
+				<h4></h4>
+				<div class="clear"></div>
+				<div class="content-bloc-right">
+					<table>
+						<tr>
+							<!---->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://cc-brivadois.portail-familles.net/" target="_self">Portail famille ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1373983339_small_fleche.jpg" alt="RAM, crèches, CLSH, centres de loisirs, accueil ados..." title="RAM, crèches, CLSH, centres de loisirs, accueil ados..."/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=11" target="_self">RAM, crèches, CLSH, centres de loisirs, accueil ados... ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1374504362_small_fleche.jpg" alt="Ecole de Musique" title="Ecole de Musique"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=102&niveau=2" target="_self">Ecole de Musique ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1375166687_1374504343_small_fleche.jpg" alt="Ludothèques" title="Ludothèques"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=16&niveau=2" target="_self">Ludothèques ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1374504376_small_fleche.jpg" alt="Halle des sports" title="Halle des sports"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=62&niveau=2" target="_self">Halle des sports ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1374504386_small_fleche.jpg" alt="Abattoir" title="Abattoir"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=74&niveau=2" target="_self">Abattoir ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1374504395_small_fleche.jpg" alt="Aire d'accueil des gens du voyage" title="Aire d'accueil des gens du voyage"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=7&niveau=2" target="_self">Aire d'accueil des gens du voyage ></a></td>
+						</tr>
+						<tr>
+							<!--					<td width="40" valign="middle" align="center">
+						<img src="https://www.cc-brivadois.fr/_files/info_culture/1374504403_small_fleche.jpg" alt="Fourrière animale" title="Fourrière animale"/>
+					</td>
+					-->
+							<td valign="middle" align="left" class="titre-article-vie-p"><a href="https://www.cc-brivadois.fr/detail_contenu.php?id_rubrique=6&niveau=2" target="_self">Fourrière animale ></a></td>
+						</tr>
+					</table>
+					<div class="border-bas-bloc" id="border-bas-bloc3"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_mobile">
+			<div class="content-f1">
+				<div class="unbloc_un">
+					<div id="bloc_autopubs_mobile"></div><a href="https://www.cc-brivadois.fr/"> <img src="https://www.cc-brivadois.fr/img/logo_comm_comm_brivadois.jpg" alt="Communauté de Communes <br />Brioude Sud Auvergne" style="margin-left:25px; float:left;"> </a>
+					<ul>
+						<li class="sous_menu_foot">
+							<div id="infos_mairie">
+								<p style="margin-top: 15px;"><b>Communauté de Communes <br>Brioude Sud Auvergne</b></p>
+								<p>Rue du 21 juin 1944 - BP 55</p>
+								<p>43102 BRIOUDE</p>
+								<p><b>Tél.: 04 71 50 89 10</b><br> Fax : 04 71 50 89 11<br> <a href="https://www.cc-brivadois.fr/contactez-la-communaute-de-communes-du-brivadois.html" title="accueil@cc-brivadois.fr">accueil@cc-brivadois.fr</a></p><br></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="liens_fin">
+				<ul>
+					<li><a href="https://www.cc-brivadois.fr/mentions-legales.html" alt="Mentions légales">Mentions légales</a></li>
+					<li>|</li>
+					<li><a href="http://www.itnt.fr" target="_blank" alt="itnt.fr">itnt.fr</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="content-f1">
+				<div class="unbloc"><img src="https://www.cc-brivadois.fr/img/logo_comm_comm_brivadois.jpg" alt="Communauté de Communes <br />Brioude Sud Auvergne" width="170" height="auto"><br>
+					<p style="margin-top: 15px;"><b>Communauté de Communes <br>Brioude Sud Auvergne</b></p>
+					<p>Rue du 21 juin 1944 - BP 55</p>
+					<p>43102 BRIOUDE</p>
+					<p><b>Tél.: 04 71 50 89 10</b><br> Fax : 04 71 50 89 11<br> <a href="https://www.cc-brivadois.fr/contactez-la-communaute-de-communes-du-brivadois.html" title="accueil@cc-brivadois.fr">accueil@cc-brivadois.fr</a></p><br> <br></div>
+				<div class="unbloc" id="col2">
+					<div id="recevoir-news">
+						<form name="newsletterform" action="https://www.cc-brivadois.fr/newsletter.php?action=add_news" method="POST"><label for="email">Recevoir la newsletter</label><br><input type="text" id="email" name="email" value="E-mail" onfocus="if(this.value=='E-mail'){this.value='';}" onblur="if(this.value==''){this.value='E-mail';}">
+							<div class="btn_submit" onclick="newsletterform.submit()">OK</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+					<ul>
+						<li><a href="https://www.cc-brivadois.fr/votre-communaute-de-communes-mr1.html" target="_self" title="BRIOUDE SUD AUVERGNE">BRIOUDE SUD AUVERGNE</a></li>
+						<li><a href="https://www.cc-brivadois.fr/vivre-mr5.html" target="_self" title="Vivre à Brioude Sud Auvergne">Vivre à Brioude Sud Auvergne</a></li>
+						<li><a href="https://www.cc-brivadois.fr/grandir-et-s-epanouir-mr11.html" target="_self" title="Grandir et s'épanouir à Brioude et dans ses environs">Grandir et s'épanouir à Brioude et dans ses environs</a></li>
+						<li><a href="https://www.cc-brivadois.fr/entreprendre-mr12.html" target="_self" title="Entreprendre">Entreprendre</a></li>
+						<li><a href="https://www.cc-brivadois.fr/preserver-mr13.html" target="_self" title="Préserver la Communauté de Communes de Brioude">Préserver la Communauté de Communes de Brioude</a></li>
+						<li><a href="https://www.cc-brivadois.fr/amenager-mr14.html" target="_self" title="Aménager">Aménager</a></li>
+						<li><a href="https://www.cc-brivadois.fr/decouvrir-mr15.html" target="_self" title="Découvrir Brioude et sa communauté">Découvrir Brioude et sa communauté</a></li>
+					</ul>
+				</div>
+				<div class="unbloc" id="col3">
+					<ul></ul>
+				</div>
+				<div class="unbloc last" id="col4">
+					<ul></ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="content-f2">
+				<ul>
+					<li><a href="https://www.cc-brivadois.fr/mentions-legales.html" title="Mentions légales">Mentions légales</a></li>
+					<li>|</li>
+					<li><a href="http://www.itnt.fr" target="_blank" title="itnt.fr">itnt.fr</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+	  $('.unblocmenu').mouseenter(function(){
+		$(this).find('.sous_menu').slideDown(200);	
+	  });
+	  $('.unblocmenu').mouseleave(function(){
+		$(this).find('.sous_menu').hide();	
+	  });
+	  
+	  function printPDF(pdfUrl) {
+		  var w = window.open(pdfUrl);
+		  w.print();
+	  }
+	  
+	  function go_annuaire() {
+		var url = $('#select_annuaires').val();
+		//console.log(url);
+		document.location.href = url;
+	  }
+	  
+	  function go_page_jesuis() {
+		var url = $('#sel_cat_jesuis').val();
+		document.location.href = url;
+	  }
+	  
+	  function recomail() {
+		mail_str = "mailto:?subject=" + document.title;
+		mail_str += "&body=Je te suggère de lire cet article : " + document.title + "";
+		mail_str += " est disponible a l'adresse : " + location.href;
+		location.href = mail_str;
+	  }
+	  
+	  function change_size(type) {
+		switch(type) {
+		  case 0:
+			$('#wrap_contenu *').css('font-size','-=1px');
+		  break;
+		  case 1:
+			$('#wrap_contenu *').css('font-size','+=1px');
+		  break;
+		  case 2:
+			window.location.reload();
+		  break;
+		}
+	  }
+		</script>
+	</body>
+</html>
