@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<title>ACCUEIL - Communauté de Communes de l'Agglomération Migennoise</title>
+		<link rel="icon" type="image/png" href="/favicons/portal308_favicon.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" lang="fr" content="ACCUEIL">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V1_h/css/main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V1_h/css/V1_h_main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V1_h/css/menu.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V1_h/css/jqtransform.css" media="all">
+		<!--[if IE 6]>
+    <link href="/static/embedded/commons-themes/themes/V1_h/css/ie6_styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/embedded/commons-themes/themes/V1_h/js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">DD_belatedPNG.fix('.png');</script>
+<![endif]-->
+		<!--[if IE]>
+  <link href="/static/embedded/commons-themes/themes/V1_h/css/ie_styles.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+		<link rel="stylesheet" type="text/css" href="/static/layouts/3x1/3x1_V1_h.css" media="all">
+		<!-- Custom css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/static/css/custom-front.css" media="all">
+		<!-- personalization custom css -->
+		<link rel="stylesheet" type="text/css" href="/customThemes/V1_h/customCss/customThemePortal308.css" media="all">
+		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.validation.min.js"></script>
+		<script type="text/javascript" src="/static/js/js.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.diaporousel.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.lightbox-0.5.css" media="all">
+		<link media="screen and (max-width: 640px)" href="/static/css/mobile.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/cookie.css" media="all">
+		<script type="text/javascript">
+$(function(){
+    $('.form_styled').jqTransform({imgPath:'/static/embedded/commons-themes/themes/V1_h/images/'});
+    $('.form_styled').jqTransform({imgPath:'/static/layouts/3x1/images/'});
+    $('img').each(function () {
+    	if($(this).parents('a').size() == 0) {
+    		$(this).wrap("<a href='" + $(this).attr("src").replace(new RegExp("(.*)(?:/\.)(.[^/]+)(?:\_[omst])(\.[a-zA-Z]*)$"), "$1/$2$3") + "' />");
+    	}
+    });
+
+    if (-1 != -1) {
+	    $('img').click(function () {
+	    	setTimeout(function () {
+	    		correction();
+	    	}, 2000);
+	    });
+	    function correction() {
+	     	$('img').each(function () {
+	       		if($(this).attr("src").indexOf('lightbox-btn') != -1) {
+	       			$(this).attr("src","../../"+$(this).attr("src"));
+	       		}
+	        });
+	    };
+    }
+
+	$("a[href$='.png']").lightBox();
+	$("a[href$='.jpg']").lightBox();
+	$("a[href$='.gif']").lightBox();
+ 	$("a[href$='.swf']").lightBox();
+ 	$('.eb_carrousel').diaporousel();
+ 	/* Specific JS for theme V6h made by CRB */
+ 	});
+		</script>
+		<!-- Fixes Displaying agenda BUG -->
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.custom.css" media="all">
+	</head>
+	<body>
+		<div id="global" class="png">
+			<div id="topandmiddle" class="png">
+				<div id="bg_tandm">
+					<!-- Header -->
+					<div id="top" class="png">
+						<div id="bandeau">
+							<h1><a id="headLink" title="Aller à la page d'accueil du site officiel de Communauté de Communes de l'Agglomération Migennoise" href="https://www.migennois.fr"> Communauté de Communes de l'Agglomération Migennoise </a></h1>
+							<p class="accroche">Site officiel de la Communauté de Communes de l'Agglomération Migennoise</p>
+						</div>
+						<div id="accessibility">
+							<p><span><a href="#paragraphe">Aller au contenu</a></span>  <span><a href="#nav">Aller à la navigation</a></span></p> 
+							<div id="fullTextSearch"> 
+								<form id="fullTextSearchDirectoryForm" name="SearchDirectoryForm" method="post" enctype="multipart/form-data" action="https://www.migennois.fr/all/search"><input type="text" id="fullTextSearchQuery" name="fullTextSearchQuery" maxlength="128" size="23" value="Rechercher" class="defaultText" onblur="this.value = this.value || 'Rechercher'; this.style.color = '#6D6D6D';" onfocus="if(this.value=='Rechercher') {this.value='';} this.style.color = '#666';"> <input type="image" id="fullTextSearch" value="Rechercher" src="/static/images/loupe_16x16.png"></form>
+							</div> </div>
+						<div id="visuel_top"></div>
+						<ul id="nav" class="png">
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/la-ccam" id="bt_nav_1" class="png" title="LA CCAM"><span class="png">LA CCAM </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/geolocalisation" title="Géolocalisation"><span> Géolocalisation </span></a></li>
+									<li><a href="https://www.migennois.fr/marches-publics" title="MARCHES PUBLICS"><span> MARCHES PUBLICS </span></a></li>
+									<li><a href="https://www.migennois.fr/infos-pratiques" title="Infos pratiques"><span> Infos pratiques </span></a></li>
+									<li><a href="https://www.migennois.fr/rapport-d-activites" title="Rapport d'activités"><span> Rapport d'activités </span></a></li>
+									<li><a href="https://www.migennois.fr/competences" title="Compétences"><span> Compétences </span></a></li>
+									<li><a href="https://www.migennois.fr/le-conseil-communautaire" title="Le conseil communautaire"><span> Le conseil commun... </span></a></li>
+									<li><a href="https://www.migennois.fr/les-services" title="Les services"><span> Les services </span></a></li>
+									<li><a href="https://www.migennois.fr/nous-contacter-par-services" title="Nous contacter par services"><span> Nous contacter pa... </span></a></li>
+									<li><a href="https://www.migennois.fr/projets" title="Projets"><span> Projets </span></a></li>
+									<li><a href="https://www.migennois.fr/paiement-en-ligne" title="Paiement en ligne"><span> Paiement en ligne </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/les-communes" id="bt_nav_2" class="png" title="LES COMMUNES"><span class="png">LES COMMUNES </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/bassou" title="Bassou"><span> Bassou </span></a></li>
+									<li><a href="https://www.migennois.fr/bonnard" title="Bonnard"><span> Bonnard </span></a></li>
+									<li><a href="https://www.migennois.fr/charmoy" title="Charmoy"><span> Charmoy </span></a></li>
+									<li><a href="https://www.migennois.fr/cheny" title="Cheny"><span> Cheny </span></a></li>
+									<li><a href="https://www.migennois.fr/chichery" title="Chichery"><span> Chichery </span></a></li>
+									<li><a href="https://www.migennois.fr/epineau-les-voves" title="Epineau-les-Voves"><span> Epineau-les-Voves </span></a></li>
+									<li><a href="https://www.migennois.fr/laroche-saint-cydroine" title="Laroche Saint Cydroine"><span> Laroche Saint Cyd... </span></a></li>
+									<li><a href="https://www.migennois.fr/migennes" title="Migennes"><span> Migennes </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/economie" id="bt_nav_3" class="png" title="ECONOMIE"><span class="png">ECONOMIE </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/zones-d-activites" title="Zones d'activités"><span> Zones d'activités </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/enfance-jeunesse" id="bt_nav_4" class="png" title="ENFANCE JEUNESSE"><span class="png">ENFANCE JEUNESSE </span></a></li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/ecole-de-musique-" id="bt_nav_5" class="png" title="ECOLE DE MUSIQUE "><span class="png">ECOLE DE MUSIQUE </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/ecole-de-musique-intercommunale" title="Ecole de musique intercommunale"><span> Ecole de musique ... </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/gens-du-voyage" id="bt_nav_6" class="png" title="GENS DU VOYAGE"><span class="png">GENS DU VOYAGE </span></a></li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/environnement" id="bt_nav_7" class="png" title="ENVIRONNEMENT"><span class="png">ENVIRONNEMENT </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/assainissement-collectif" title="Assainissement collectif"><span> Assainissement co... </span></a></li>
+									<li><a href="https://www.migennois.fr/service-public-d-assainissement-non-collectif-spanc" title="Service public d'assainissement non collectif (SPANC)"><span> Service public d'... </span></a></li>
+									<li><a href="https://www.migennois.fr/salage" title="Salage"><span> Salage </span></a></li>
+									<li><a href="https://www.migennois.fr/gestion-des-dechets" title="Gestion des déchets"><span> Gestion des déchets </span></a></li>
+									<li><a href="https://www.migennois.fr/balayage" title="Balayage"><span> Balayage </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="https://www.migennois.fr/sport" id="bt_nav_8" class="png" title="SPORT"><span class="png">SPORT </span></a>
+								<ul>
+									<li><a href="https://www.migennois.fr/piscine" title="Piscine"><span> Piscine </span></a></li>
+									<li><a href="https://www.migennois.fr/office-intercommunal-des-sports" title="Office InterCommunal des Sports"><span> Office InterCommu... </span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /#top -->
+					<hr>
+					<!-- Partie centrale -->
+					<div id="middle" class="png">
+						<p id="lastEdit"></p>
+						<div id="bg_degrade" class="png">
+							<div id="bg_main" class="png">
+								<div id="sideandcontent">
+									<div id="bg_content" class="png">
+										<div id="breadcrumb_navigation">
+											<u>Accueil</u>»</div>
+										<div id="content">
+											<div class="paragraphe" id="paragraphe">
+												<h2>ACCUEIL</h2>
+												<div class="txt_bloc">
+													<p style="text-align: center;"><span style="text-decoration: underline;"><span style="color: #ccffcc; text-decoration: underline;"><strong style="color: #ff0000; font-size: 1.15em; text-decoration: underline;">INFORMATIONS</strong></span></span></p>
+													<p style="text-align: center;"><span style="text-decoration: underline;"><span style="color: #ccffcc; text-decoration: underline;"><strong style="color: #ff0000; font-size: 1.15em; text-decoration: underline;">(mise à jour au 19/06/2020)</strong></span></span><span style="font-size: 1.15em;"> </span></p>
+													<p style="text-align: center;"><span style="font-size: 1.15em; background-color: #ccffcc; color: #003300;">UNE TOURNEE POUR L'ENLEVEMENT DES OBJETS LOURDS ET ENCOMBRANTS ET PREVUE SUR LES COMMUNES DE CHARMOY - LAROCHE ST CYDROINE - EPINEAU LES VOVES </span></p>
+													<p style="text-align: center;"><span style="font-size: 1.15em; background-color: #ccffcc; color: #003300;">LES 24 ET 25 JUIN 2020</span></p>
+													<p style="text-align: center;"><span style="font-size: 1.15em; background-color: #ccffcc; color: #003300;">Inscriptions auprès de votre mairie.</span></p>
+													<p style="text-align: center;"> <strong><span style="color: #ff0000; background-color: #ffcc99;">A COMPTER DU MARDI 09 JUIN 2020 LES CONDITIONS D'ACCES AUX DECHETERIES EVOLUENT : </span></strong></p>
+													<p style="text-align: center;"><strong><span style="color: #ff0000; background-color: #ffcc99;">Les déchèteries de Bonnard et d'Epineau-Les-Voves ouvriront à nouveau aux horaires habituels consultables  <a href="https://www.migennois.fr/gestion-des-dechets" target="_blank">ICI</a></span></strong></p>
+													<p style="text-align: center;"><strong><span style="color: #ff0000; background-color: #ffcc99;">Le LUNDI 8 JUIN 2020 les déchèteries demeureront fermées. </span></strong></p>
+													<p style="text-align: center;"><span style="text-decoration: underline;"><span style="text-decoration: underline; background-color: #ffff99;"><strong style="color: #ff0000; font-size: 1.15em; text-decoration: underline;">La communauté de Communes de l'Aggloméation Migennoise ne distribue pas de masques aux habitants.</strong></span></span></p>
+													<p style="text-align: center;"><span style="text-decoration: underline;"><span style="text-decoration: underline; background-color: #ffff99;"><strong style="color: #ff0000; font-size: 1.15em; text-decoration: underline;">Pour toute question relative à ce sujet, merci de vous adresser à votre mairie.</strong></span></span></p>
+													<p style="text-align: center;"> </p>
+													<p style="text-align: center;"><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20200602-1640--Ecole_de_musique-image-basse-def-inscriptions-pre-inscription-emim.jpg" alt="" width="1024" height="1024"><span style="text-align: left; font-size: 13.8px;">Les dossiers d'inscription et réinscription pour l'Ecole de Musique sont disponible </span><span style="text-decoration: underline;"><span style="color: #008080; text-decoration: underline;"><strong><a href="https://www.migennois.fr/ecole-de-musique-"><span style="color: #008080; text-decoration: underline;">ici</span></a></strong></span></span><strong><span style="color: #ff0000; background-color: #ffcc99;"><br></span></strong></p>
+													<p style="text-align: justify;"> </p>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong>Dans le cadre du contexte actuel, le maintien de la collecte des ordures ménagères est notre première priorité.</strong></span></p>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong>Par précaution, nous vous donnons ci-dessous quelques consignes simples pour vous préserver et préserver les agents de collecte. </strong></span></p>
+													<ol style="list-style-type: upper-roman; text-align: justify;">
+														<li><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Jetez mouchoirs, essuie-mains, gants, masques...dans un sac spécifique que vous placerez ensuite dans un sac poubelle, lui-même déposé dans le bac bordeaux réservé à la collecte des ordures ménagères. </strong></span></li>
+														<li><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Fermez bien tous les sacs contenant mouchoirs, essuie-mains... et ordures ménagères</strong></span></li>
+														<li><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Sortez votre bac la veille au soir de la collecte </strong></span></li>
+														<li><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Nettoyez régulièrement le bac et les surfaces de contact (poignées, couvercle) avant de le sortir</strong></span></li>
+														<li><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Lavez-vous les mains après avoir réalisé ces actions </strong></span></li>
+													</ol>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Tant que nous le pourrons, nous maintiendrons la collecte séparée des emballages et des papiers. </strong></span></p>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;"><span style="text-decoration: underline;">A ce sujet, il y a encore trop d'erreurs de tri</span> : mouchoirs, essuie-mains, essuie-tout, lingettes, couches... ne doivent J<span style="text-decoration: underline;">AMAIS être mis dans les sacs jaunes ou les bacs jaunes</span>, à plus forte raison en période d'épidémie. </strong></span></p>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Pensez aux agents de collecte et aux opérateurs du centre de tri! </strong></span></p>
+													<p style="text-align: justify;"><span style="color: #008000; background-color: #ffffff;"><strong style="font-size: 1.15em;">Ces déchets doivent être jetés avec les ordures ménagères. </strong></span></p>
+													<p style="text-align: justify;"> <img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20200402-1338--Calendrier_dechets_2019-1-citeo-covid19-insta.png" alt="" width="1024" height="1024"></p>
+													<p style="text-align: justify;"><span style="background-color: #ffffff; color: #3366ff;"><strong style="font-size: 1.15em;"><span style="text-decoration: underline;">En cette période où l'hygiène est primordiale</span>, nous rappelons que les lingettes, couches, protections périodiques... ne doivent JAMAIS être jetées dans la cuvette des toilettes, au risque de boucher les pompes de collecte des eaux usées. Pensez aux agents du service de l'assainissement !</strong></span></p>
+													<p style="text-align: justify;"> </p>
+													<p style="text-align: justify;"><strong style="color: #ff0000; font-size: 1.15em;">Suite aux décisions prises pour lutter contre la propagation de l'épidémie du COVID 19 nous vous informons qu'</strong><strong style="color: #ff0000; font-size: 1.15em;">à compter de ce lundi 16 Mars 2020 et jusqu'à nouvel ordre:</strong></p>
+													<p style="text-align: justify;"><span style="background-color: #ffcc99;"><strong style="color: #ff0000; font-size: 1.15em;">               - L'Ecole de musique est fermée <br></strong></span></p>
+													<p style="text-align: justify;"><span style="background-color: #ffcc99;"><strong style="color: #ff0000; font-size: 1.15em;">      - </strong><strong style="color: #ff0000; font-size: 1.15em;">Les équipements sportifs ainsi que l</strong><strong style="color: #ff0000; font-size: 1.15em;">a Piscine Intercommunale Luc Berton sont dès aujourd'hui fermés </strong></span></p>
+													<p style="text-align: justify;"><span style="background-color: #ffcc99;"><strong style="color: #ff0000; font-size: 1.15em;">           - Le transport public pour le marché de Migennes le jeudi est maintenu. </strong></span></p>
+													<p style="text-align: justify;">                  </p>
+													<p style="text-align: justify;"><strong style="color: #ff0000; font-size: 1.15em;">       </strong><img style="font-size: 1.15em; text-align: left;" title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20200213-1519--ateliers-decouverte-dernier-trimestre-2020-bd.jpg" alt="" width="1024" height="1024"></p>
+													<p><span style="color: #339966;"><strong>LES CALENDRIERS DE RAMASSAGE DES DECHETS SONT DISPONIBLES <span style="color: #800000;"><a href="http://www.migennois.fr/gestion-des-dechets"><span style="color: #800000;">ICI</span></a></span></strong></span></p>
+													<p> <span style="color: #008000; background-color: #ffffff;"><strong>Conformément aux dispositions de l'Arrêté 2015-662 du 10 Juin 2015, le Programme Local de Prévention des Déchets Ménagers et Assimilés (PLPDMA) est consultable <a href="https://www.dechetscentreyonne.fr/le-plpdma-du-centre-yonne-en-consultation-p54.html" target="_blank">ici</a> jusqu'au 30/09/2019.</strong></span></p>
+													<p> <span style="color: #008080;"><strong>Les rapports annuels des services pour l'année 2018 des service déchets, assainissement collectif et assainissement non collectifs sont disponibles dans l'onglet "environnement"; </strong></span></p>
+													<p><span style="color: #003366;"><span style="color: #008080;"><span style="color: #003366;"><span style="color: #008080;"><span style="color: #003366;"><span style="color: #008080;"><strong>Service des déchets</strong> </span></span></span></span></span></span></p>
+													<p>Depuis le 1er Janvier 2019, un nouveau règlement de facturation du service des ordures ménagères est applicable. Il est consultable <strong><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20190111-1526--reglement-de-facturation-2019.pdf" target="_blank">ici</a>. </strong></p>
+													<h3> </h3>
+													<h3><span style="color: #003366;"><strong> Liste des points d'apport volontaire sur le territoire de la CCAM en 2018 </strong>(cliquez sur le lien correspondant)<strong> :</strong></span></h3>
+													<p><span style="color: #003366;"><strong>                           - <a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20180924-1121--pav-verre.pdf">Verres</a></strong></span></p>
+													<p><span style="color: #003366;"><strong>                           - <a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20180924-1121--pav-textile.pdf">Textile </a></strong></span></p>
+													<h3><span style="color: #003366;"><strong><span style="color: #003366;"><strong>=> <a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20180517-1214--note-synthetique-bp-2018.pdf"><span style="color: #003366;">Note synthétique sur les comptes administratifs 2017 et les budgets primitifs 2018</span></a></strong></span></strong></span></h3>
+													<p style="text-align: justify;"><strong> </strong></p>
+													<h2 style="text-align: justify;"><span style="text-decoration: underline;"><strong><span style="color: #008080; text-decoration: underline;">Carte des points d'apport volontaires (verre et textile) </span></strong></span></h2>
+													<p style="text-align: justify;"> <img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20180731-0902--mx-6070v_20180731_085856_0002.jpg" alt="" width="723" height="1024"><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/links/20180731-0903--mx-6070v_20180731_085856_0001.jpg" alt="" width="723" height="1024"></p>
+													<p> </p>
+													<p style="text-align: justify;"><strong><em> REOMI</em></strong></p>
+													<p style="text-align: justify;"><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/Mon_dossier/presentation-tarifs-reomi-09-2017.pdf" target="_blank"><strong>Vous pouvez visualiser le document qui a été présenté lors des réunions publiques concernant la Redevance des Ordures ménagères Incitative</strong><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/Mon_dossier/flyer-2.png" alt="" width="642" height="904"></a></p>
+													<h5><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/Mon_dossier/flyer-1.png" alt="" width="636" height="899"> </h5>
+													<h5>TELECHARGER LES DOCUMENTS CI-DESSUS </h5>
+													<h5><a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/calendrier_de_collecte/flyer-bilan-nouveau-service-dechets-2017-05-12.pdf">- Nouvelle organisation des déchets</a></h5>
+													<p>      <a href="https://mon-site-internet.ternum-bfc.fr/documents/portal308/calendrier_de_collecte/flyer-evolution-service-dechets-2017-05-12-a4-rv.pdf"> - La collecte en porte à porte a évolué</a></p>
+													<h1> POUS POUVEZ CONSULTER LE GUIDE DU TRI 2017</h1>
+													<p> </p>
+													<p> </p>
+													<p> <img title="ccccc" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/cycleyyy.png" alt="ccccc" width="469" height="642"></p>
+													<p> </p>
+													<p><img title="steel" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/steel.png" alt="steel" width="413" height="574"></p>
+													<p> <img title="atelier" src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/atelier.png" alt="atelier" width="413" height="565"></p>
+													<p><a href="http://www.migennois.fr/gestion-des-dechets"> </a>Le maire (parti "Les Républicains") de Migennes, François Boucher, a été élu président de la Communauté de communes de l’agglomération migennoise (CCAM).</p>
+													<p><img src="https://mon-site-internet.ternum-bfc.fr/documents/portal308/photo-f-boucher.jpg" alt="" width="113" height="166"></p>
+													<p> </p>
+													<p style="text-align: justify;">Pionnières en matière de regroupement intercommunal, les communes d'Epineau-les-Voves, Cheny, Laroche-Saint-Cydroine et Migennes se sont constituées en District dès le mois de novembre 1963.   Etablissement public de coopération intercommunale, celui-ci est régi par le Code Général des Collectivités Territoriales.  <br> Le 1er janvier 1970, Charmoy rejoint les quatre autres communes au sein du District.   Le 03 octobre 1986, la structure, jusque-là appelée District Urbain de Migennes, prend la dénomination de District Urbain de l'Agglomération Migennoise. Le 26 novembre 1986, son siège est transféré de la Mairie de Migennes, dans des nouveaux locaux situés rue des Ecoles.  <br>  <br> Afin de satisfaire aux obligations de la loi du 12 juillet 1999 relative au renforcement et à la simplification de la coopération intercommunale, le 1er janvier 2002 le District est transformé en Communauté de Communes et prend le nom de Communauté de Communes de l'Agglomération Migennoise (CCAM).  La CCAM poursuit son développement en intégrant 3 nouvelles communes le 1er janvier 2003, Bassou, Bonnard et Chichery.   La population regroupée s'élève à 16 342 habitants (recensement 1999). </p>
+												</div>
+											</div>
+											<div id="social-nw-btns"></div>
+										</div>
+									</div>
+									<div id="sidebar_left">
+										<div id="groupe_1">
+											<div class="bloc_side actu">
+												<div class="hgroup">
+													<h2>Actualités</h2>
+												</div>
+												<div class="bg_bloc">
+													<h3>Budget CCAM</h3>
+													<dl class="liste_actu">
+														<dt style=""><a class="itemTitle" href="https://www.migennois.fr/news/153973">BUDGET</a></dt>
+														<dd>Note synthétique des comptes administratifs 2018 et budgets primitifs 2019</dd>
+													</dl><a class="rssLink" href="https://www.migennois.fr/rss/122510"><img src="/static/images/rss_alternative.png" alt="Flux RSS des actualités"></a></div>
+											</div>
+											<div class="bloc_side actu">
+												<div class="hgroup">
+													<h2>Actualités</h2>
+												</div>
+												<div class="bg_bloc">
+													<h3>Horaires de la CCAM</h3>
+													<dl class="liste_actu">
+														<dt style=""><a class="itemTitle" href="https://www.migennois.fr/news/183408">Horaires d'ouverture</a></dt>
+														<dd>Nos locaux situés 1bis, rue des Ecoles à Migennes sont ouverts du lundi au vendredi, de 08h30 à 12h0...</dd>
+													</dl>
+												</div>
+											</div>
+											<div class="bloc_side weatherBlock">
+												<script charset="UTF-8" src="https://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/892570/type/VILLE_FRANCE/size/PORTRAIT_VIGNETTE" type="text/javascript"></script>
+											</div>
+										</div><br class="clear"></div>
+								</div>
+								<div id="sidebar_right">
+									<div class="bloc_side htmlBlock">
+										<div class="bg_bloc">
+											<p style="text-align: center;"><img title="logo" src="../../../documents/portal308/.logo_t.png" alt="logo" width="100" height="61"></p>
+										</div>
+									</div>
+									<div class="bloc_side actu">
+										<div class="hgroup">
+											<h2>Actualités</h2>
+										</div>
+										<div class="bg_bloc">
+											<h3>Nouveaux horaires de la piscine intercommunale pour les vacances d'été 2019</h3>
+											<dl class="liste_actu"></dl>
+										</div>
+									</div>
+									<div class="bloc_side actu">
+										<div class="hgroup">
+											<h2>Actualités</h2>
+										</div>
+										<div class="bg_bloc">
+											<h3>Nouveaux horaires de la trésorerie de Migennes</h3>
+											<dl class="liste_actu"></dl>
+										</div>
+									</div>
+									<div class="bloc_side actu">
+										<div class="hgroup">
+											<h2>Actualités</h2>
+										</div>
+										<div class="bg_bloc">
+											<h3>Nouveau règlement de facturation</h3>
+											<dl class="liste_actu">
+												<dt style=""><a class="itemTitle" href="https://www.migennois.fr/news/197886">REOMI</a></dt>
+												<dd>consultez ici le règlement de facturation du service des déchets 2020</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="bloc_side htmlBlock">
+										<div class="bg_bloc">
+											<p><span>Nous contacter :</span></p>
+											<p><span>Tel: 03.86.92.66.85</span></p>
+											<p><span>Mail : <a href="mailto:cc-am@orange.fr">cc-am@orange.fr</a></span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#middle -->
+				</div>
+			</div>
+			<div id="footer" class="png">
+				<div id="bg_footer">
+					<!-- Footer -->
+					<div id="bottom" class="png"><a href="https://www.migennois.fr/site-accessible">Site accessible</a>    |    <a href="https://www.migennois.fr/contact">Nous contacter</a>    |    <a href="https://www.migennois.fr/mentions-legales">Mentions légales</a></div>
+					<!-- /#bottom -->
+				</div>
+			</div>
+		</div>
+		<!-- /#global -->
+		<div id="sliding-popup" class="sliding-popup-bottom popup_cookie" style="height: auto; width: 100%; bottom: 0px;">
+			<div class="hidden-print popup-content info popup_cookie">
+				<div id="popup-text" class="popup_cookie">
+					<p class="popup_cookie">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins statistiques. <a class="popup_cookie" href="https://www.migennois.fr/mentions-legales">Cliquez ici pour en savoir plus.</a></p>
+				</div>
+			</div>
+			<div id="sliding-popup-delete" class="popup_cookie"></div>
+		</div>
+		<script type="text/javascript">
+    $(document).ready(function() {
+         if (Cookies.get('cookie-agreed')) {
+            $('#sliding-popup').hide();
+         } else {
+            Cookies.set('cookie-agreed', 'true');
+         }
+    });
+
+    $('#sliding-popup-delete').click(function() {
+        $('#sliding-popup').slideUp('slow');
+    });
+		</script>
+	</body>
+</html>
