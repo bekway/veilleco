@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html xmlns="https://www.w3.org/1999/xhtml">
+	<head profile="https://gmpg.org/xfn/11">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Compte-rendu bureau, conseil - Communauté de communes du Pays de Colombey Sud Toulois</title>
+		<link rel="index" title="Communauté de communes du Pays de Colombey Sud Toulois" href="https://pays-colombey-sudtoulois.fr/">
+		<link href="lib/css/siteReset.css" rel="stylesheet" type="text/css">
+		<link href="lib/css/default.css" rel="stylesheet" type="text/css">
+		<link href="lib/css/index.css" rel="stylesheet" type="text/css">
+		<link href="lib/css/nivo-slider.css" rel="stylesheet" type="text/css">
+		<link href="lib/css/orange.css" rel="stylesheet" type="text/css">
+		<link media="screen" type="text/css" href="lib/css/page.css" rel="stylesheet">
+		<link href="lib/css/menuHorizontal.css" rel="stylesheet" type="text/css">
+		<link media="screen" type="text/css" href="lib/css/fullcalendar.css" rel="stylesheet">
+		<script src="lib/js/jquery.js" type="text/javascript"></script>
+		<script src="lib/js/jquery.nivo.js" type="text/javascript"></script>
+		<script src="lib/js/jquery.corner.js" type="text/javascript"></script>
+		<script src="lib/js/jquery.fullcalendar.js" type="text/javascript"></script>
+		<script type="text/javascript">
+	function favoris() 
+	{
+		if ( navigator.appName != 'Microsoft Internet Explorer' )
+		{ 
+			window.sidebar.addPanel('Site de la Communauté de Communes du Pays de Colombey Sud Toulois',"https://www.pays-colombey-sudtoulois.fr/",""); 
+		}else 
+		{ 
+			window.external.addfavorite('https://www.pays-colombey-sudtoulois.fr/','Site de la Communauté de Communes du Pays de Colombey Sud Toulois')
+		}
+	}
+
+	$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+
+	$(document).ready(function() {
+	
+		//arrondi
+		$('.arrondi').corner('right 7px');
+		
+		//calendrier 1
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth()+1;
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			firstDay:1,
+			editable: true,
+		
+			events: "lib/php/calendrier/json-events.php?m="+m+"&y="+y
+			
+		});
+		//end:calendrier 1
+		
+			});
+		
+		</script>
+		<script type="text/javascript">
+
+// JavaScript Document
+
+	/**
+	*	Initialisation des noms des containers de menu
+	*/
+	var containerName = 'div_menu_js';
+	var ssContainerName = 'div_ss_menu_js';
+	var ulName = 'ul_menu_js';
+	var ssUlName = 'ul_ss_menu_js';
+	
+	/**
+	*	Variables de positionement de la souris
+	*	var onMenu : la souris est sur un menu
+	*	var onSsMenu : la souris est sur un sous menu
+	*	var onSsSsMenu : la souris est sur un sous sous menu
+	*/
+	var onMenu = 0;
+	var onSsMenu = 0;
+	var onSsSsMenu = 0;
+	
+	/**
+	*	Initialisation du temporisateur de fermeture d'un sous menu
+	*/
+	var timeBeforeClosing = 1000;	
+	
+	/**
+	*	Initialisation des sous menus et des sous sous menus
+	*/
+	var ssMenu = new Array();
+	
+	ssMenu['m_1'] = new Array();
+		ssMenu['m_1'][0] = new Array();
+			ssMenu['m_1'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_1'][1] = new Array();
+			ssMenu['m_1'][1][0] = '<li id="m_1_1" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=6">Territoire';
+					ssMenu['m_1'][1][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_1'][1][2] = '<li ><a class="menuvert" href="page.php?id=11">Présentation des communes';
+						ssMenu['m_1'][1][3] = '<li class="last_li"><a class="menuvert" href="page.php?id=12">Carte de localisation';
+					ssMenu['m_1'][1][4] = '';
+		ssMenu['m_1'][2] = new Array();
+			ssMenu['m_1'][2][0] = '<li id="m_1_2" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=7">Structure';
+					ssMenu['m_1'][2][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_1'][2][2] = '<li ><a class="menuvert" href="page.php?id=13">Les statuts';
+						ssMenu['m_1'][2][3] = '<li ><a class="menuvert" href="page.php?id=14">budget et fiscalité';
+						ssMenu['m_1'][2][4] = '<li ><a class="menuvert" href="page.php?id=15">Les locaux';
+						ssMenu['m_1'][2][5] = '<li ><a class="menuvert" href="page.php?id=16">L\'historique';
+						ssMenu['m_1'][2][6] = '<li ><a class="menuvert" href="page.php?id=18">L\'organigrammes';
+						ssMenu['m_1'][2][7] = '<li ><a class="menuvert" href="page.php?id=19">La charte de territoire 2009-2016';
+						ssMenu['m_1'][2][8] = '<li class="last_li"><a class="menuvert" href="page.php?id=20">Les règles de fonctionnement';
+					ssMenu['m_1'][2][9] = '';
+		ssMenu['m_1'][3] = new Array();
+			ssMenu['m_1'][3][0] = '<li id="m_1_3" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=8">Projet politique et les élus';
+					ssMenu['m_1'][3][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_1'][3][2] = '<li ><a class="menuvert" href="page.php?id=21">Conseil communautaire, réunions';
+						ssMenu['m_1'][3][3] = '<li ><a class="menuvert" href="page.php?id=22">l\'Assemblée générale';
+						ssMenu['m_1'][3][4] = '<li ><a class="menuvert" href="page.php?id=23">Les commissions et groupes de travail';
+						ssMenu['m_1'][3][5] = '<li class="last_li"><a class="menuvert" href="page.php?id=24">Le bureau communautaire';
+					ssMenu['m_1'][3][6] = '';
+		ssMenu['m_1'][4] = new Array();
+			ssMenu['m_1'][4][0] = '<li id="m_1_4" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=9">Projets';
+					ssMenu['m_1'][4][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_1'][4][2] = '<li class="last_li"><a class="menuvert" href="page.php?id=26">Les projets concrets';
+					ssMenu['m_1'][4][3] = '';
+		ssMenu['m_1'][5] = new Array();
+			ssMenu['m_1'][5][0] = '<li id="m_1_5" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" class="last_li"><a class="menuvert" href="page.php?id=10">Communication';
+					ssMenu['m_1'][5][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_1'][5][2] = '<li ><a class="menuvert" href="page.php?id=29">Compte-rendu bureau, conseil';
+						ssMenu['m_1'][5][3] = '<li ><a class="menuvert" href="page.php?id=30">Charte graphique, logo';
+						ssMenu['m_1'][5][4] = '<li ><a class="menuvert" href="page.php?id=31">Com Eco';
+						ssMenu['m_1'][5][5] = '<li ><a class="menuvert" href="page.php?id=32">Com Elus';
+						ssMenu['m_1'][5][6] = '<li ><a class="menuvert" href="page.php?id=33">Grains de Pays';
+						ssMenu['m_1'][5][7] = '<li class="last_li"><a class="menuvert" href="page.php?id=34">Rapport d\'activités';
+					ssMenu['m_1'][5][8] = '';
+		ssMenu['m_1'][6] = new Array();
+			ssMenu['m_1'][6][0] = '';
+	ssMenu['m_2'] = new Array();
+		ssMenu['m_2'][0] = new Array();
+			ssMenu['m_2'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_2'][1] = new Array();
+			ssMenu['m_2'][1][0] = '<li  ><a class="menuvert" href="page.php?id=96">Accompagnement des porteurs de projet';
+		ssMenu['m_2'][2] = new Array();
+			ssMenu['m_2'][2][0] = '<li  ><a class="menuvert" href="page.php?id=97">Zones d\'activités économiques';
+		ssMenu['m_2'][3] = new Array();
+			ssMenu['m_2'][3][0] = '<li  ><a class="menuvert" href="page.php?id=98">Locaux d\'activité';
+		ssMenu['m_2'][4] = new Array();
+			ssMenu['m_2'][4][0] = '<li  ><a class="menuvert" href="page.php?id=99">Aides aux entreprises';
+		ssMenu['m_2'][5] = new Array();
+			ssMenu['m_2'][5][0] = '<li  ><a class="menuvert" href="page.php?id=164">Scic Le Relais Lorraine';
+		ssMenu['m_2'][6] = new Array();
+			ssMenu['m_2'][6][0] = '<li  class="last_li"><a class="menuvert" href="page.php?id=175">Déchets textiles Recytex';
+		ssMenu['m_2'][7] = new Array();
+			ssMenu['m_2'][7][0] = '';
+	ssMenu['m_3'] = new Array();
+		ssMenu['m_3'][0] = new Array();
+			ssMenu['m_3'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_3'][1] = new Array();
+			ssMenu['m_3'][1][0] = '<li id="m_3_1" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=73">Services d\'aides';
+					ssMenu['m_3'][1][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_3'][1][2] = '<li ><a class="menuvert" href="page.php?id=120">Asso Familles Rurales Interco Ciel';
+						ssMenu['m_3'][1][3] = '<li ><a class="menuvert" href="page.php?id=122">Assistants sociaux';
+						ssMenu['m_3'][1][4] = '<li class="last_li"><a class="menuvert" href="page.php?id=123">Banque alimentaire';
+					ssMenu['m_3'][1][5] = '';
+		ssMenu['m_3'][2] = new Array();
+			ssMenu['m_3'][2][0] = '<li id="m_3_2" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=74">Gardes d\'enfants';
+					ssMenu['m_3'][2][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_3'][2][2] = '<li ><a class="menuvert" href="page.php?id=124">Solutions collectives ';
+						ssMenu['m_3'][2][3] = '<li ><a class="menuvert" href="page.php?id=125">Solutions individuelles RAM';
+						ssMenu['m_3'][2][4] = '<li class="last_li"><a class="menuvert" href="page.php?id=151">Insertion et mode d\'accueil';
+					ssMenu['m_3'][2][5] = '';
+		ssMenu['m_3'][3] = new Array();
+			ssMenu['m_3'][3][0] = '<li id="m_3_3" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=117">Personnes Agées';
+					ssMenu['m_3'][3][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_3'][3][2] = '<li ><a class="menuvert" href="page.php?id=127">GIP grandir et  vieillir en Pays de Colombey';
+						ssMenu['m_3'][3][3] = '<li ><a class="menuvert" href="page.php?id=128">Service territorialisé';
+						ssMenu['m_3'][3][4] = '<li ><a class="menuvert" href="page.php?id=129">Services aux personnes au quotidien';
+						ssMenu['m_3'][3][5] = '<li ><a class="menuvert" href="page.php?id=138">Services aux personnes santé';
+						ssMenu['m_3'][3][6] = '<li ><a class="menuvert" href="page.php?id=139">Aménager ma maison';
+						ssMenu['m_3'][3][7] = '<li ><a class="menuvert" href="page.php?id=141">Télé-alarme';
+						ssMenu['m_3'][3][8] = '<li ><a class="menuvert" href="page.php?id=142">Service pour mes sorties et activités';
+						ssMenu['m_3'][3][9] = '<li ><a class="menuvert" href="page.php?id=143">ADCC';
+						ssMenu['m_3'][3][10] = '<li class="last_li"><a class="menuvert" href="page.php?id=156">Ergothérapeute de proximité et de prévention';
+					ssMenu['m_3'][3][11] = '';
+		ssMenu['m_3'][4] = new Array();
+			ssMenu['m_3'][4][0] = '<li id="m_3_4" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" class="last_li"><a class="menuvert" href="page.php?id=118">Personnes Handicapées';
+					ssMenu['m_3'][4][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_3'][4][2] = '<li ><a class="menuvert" href="page.php?id=131">ESAT';
+						ssMenu['m_3'][4][3] = '<li ><a class="menuvert" href="page.php?id=132">Par\'Hand';
+						ssMenu['m_3'][4][4] = '<li class="last_li"><a class="menuvert" href="page.php?id=133">ADCC';
+					ssMenu['m_3'][4][5] = '';
+		ssMenu['m_3'][5] = new Array();
+			ssMenu['m_3'][5][0] = '';
+	ssMenu['m_4'] = new Array();
+		ssMenu['m_4'][0] = new Array();
+			ssMenu['m_4'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_4'][1] = new Array();
+			ssMenu['m_4'][1][0] = '<li id="m_4_1" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=41">Lecture publique';
+					ssMenu['m_4'][1][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_4'][1][2] = '<li ><a class="menuvert" href="page.php?id=46">16 points lecture';
+						ssMenu['m_4'][1][3] = '<li ><a class="menuvert" href="page.php?id=47">Animations lectures';
+						ssMenu['m_4'][1][4] = '<li class="last_li"><a class="menuvert" href="page.php?id=48">Fête de la lecture';
+					ssMenu['m_4'][1][5] = '';
+		ssMenu['m_4'][2] = new Array();
+			ssMenu['m_4'][2][0] = '<li  ><a class="menuvert" href="page.php?id=42">Musique';
+		ssMenu['m_4'][3] = new Array();
+			ssMenu['m_4'][3][0] = '<li id="m_4_3" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=43">Animation et diffusion culturelle';
+					ssMenu['m_4'][3][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_4'][3][2] = '<li ><a class="menuvert" href="page.php?id=51">Accueil de spectacles vivants';
+						ssMenu['m_4'][3][3] = '<li ><a class="menuvert" href="page.php?id=52">Aides aux projets d\'écoles';
+						ssMenu['m_4'][3][4] = '<li ><a class="menuvert" href="page.php?id=53">Projets culturels de pays';
+						ssMenu['m_4'][3][5] = '<li class="last_li"><a class="menuvert" href="page.php?id=102">Aides à la création artistique';
+					ssMenu['m_4'][3][6] = '';
+		ssMenu['m_4'][4] = new Array();
+			ssMenu['m_4'][4][0] = '<li id="m_4_4" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=44">Animation Jeunesse';
+					ssMenu['m_4'][4][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_4'][4][2] = '<li class="last_li"><a class="menuvert" href="page.php?id=54">NOOBA';
+					ssMenu['m_4'][4][3] = '';
+		ssMenu['m_4'][5] = new Array();
+			ssMenu['m_4'][5][0] = '<li id="m_4_5" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" class="last_li"><a class="menuvert" href="page.php?id=45">Services aux associations';
+					ssMenu['m_4'][5][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_4'][5][2] = '<li ><a class="menuvert" href="page.php?id=55">Parc matériel';
+						ssMenu['m_4'][5][3] = '<li class="last_li"><a class="menuvert" href="page.php?id=181">Sécurité manifestations';
+					ssMenu['m_4'][5][4] = '';
+		ssMenu['m_4'][6] = new Array();
+			ssMenu['m_4'][6][0] = '';
+	ssMenu['m_5'] = new Array();
+		ssMenu['m_5'][0] = new Array();
+			ssMenu['m_5'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_5'][1] = new Array();
+			ssMenu['m_5'][1][0] = '<li id="m_5_1" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=165">Urbanisme';
+					ssMenu['m_5'][1][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_5'][1][2] = '<li ><a class="menuvert" href="page.php?id=169">Plan Local d\'Urbanisme Intercommunal';
+						ssMenu['m_5'][1][3] = '<li class="last_li"><a class="menuvert" href="page.php?id=170">Terres de Lorraine Urbanisme Permis de construire';
+					ssMenu['m_5'][1][4] = '';
+		ssMenu['m_5'][2] = new Array();
+			ssMenu['m_5'][2][0] = '<li id="m_5_2" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=166">Habitat';
+					ssMenu['m_5'][2][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_5'][2][2] = '<li ><a class="menuvert" href="page.php?id=171">Opération Programmée Amélioration Habitat';
+						ssMenu['m_5'][2][3] = '<li ><a class="menuvert" href="page.php?id=172">Aides habitat intercommunales';
+						ssMenu['m_5'][2][4] = '<li ><a class="menuvert" href="page.php?id=173">Assistance aux projets communaux';
+						ssMenu['m_5'][2][5] = '<li class="last_li"><a class="menuvert" href="page.php?id=174">Location vente';
+					ssMenu['m_5'][2][6] = '';
+		ssMenu['m_5'][3] = new Array();
+			ssMenu['m_5'][3][0] = '<li id="m_5_3" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=167">Mobilité';
+					ssMenu['m_5'][3][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_5'][3][2] = '<li ><a class="menuvert" href="page.php?id=176">Mobilité solidaire';
+						ssMenu['m_5'][3][3] = '<li class="last_li"><a class="menuvert" href="page.php?id=177">Covoiturage';
+					ssMenu['m_5'][3][4] = '';
+		ssMenu['m_5'][4] = new Array();
+			ssMenu['m_5'][4][0] = '<li id="m_5_4" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" class="last_li"><a class="menuvert" href="page.php?id=168">Energie';
+					ssMenu['m_5'][4][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_5'][4][2] = '<li ><a class="menuvert" href="page.php?id=178">Territoire à Energie Positive';
+						ssMenu['m_5'][4][3] = '<li ><a class="menuvert" href="page.php?id=179">Espaces Infos Energie';
+						ssMenu['m_5'][4][4] = '<li class="last_li"><a class="menuvert" href="page.php?id=180">Conseiller en énergie partagé';
+					ssMenu['m_5'][4][5] = '';
+		ssMenu['m_5'][5] = new Array();
+			ssMenu['m_5'][5][0] = '';
+	ssMenu['m_6'] = new Array();
+		ssMenu['m_6'][0] = new Array();
+			ssMenu['m_6'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_6'][1] = new Array();
+			ssMenu['m_6'][1][0] = '<li  ><a class="menuvert" href="page.php?id=63">Assainissement SDAA';
+		ssMenu['m_6'][2] = new Array();
+			ssMenu['m_6'][2][0] = '<li  ><a class="menuvert" href="page.php?id=64">Atlas de la biodiversité (ABI)';
+		ssMenu['m_6'][3] = new Array();
+			ssMenu['m_6'][3][0] = '<li id="m_6_3" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=65">Gestion et valorisation des déchets';
+					ssMenu['m_6'][3][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_6'][3][2] = '<li ><a class="menuvert" href="page.php?id=67">Collecte tri séléctif et déchets ménagers';
+						ssMenu['m_6'][3][3] = '<li ><a class="menuvert" href="page.php?id=68">Déchetterie';
+						ssMenu['m_6'][3][4] = '<li ><a class="menuvert" href="page.php?id=69">Plates-formes de compostage';
+						ssMenu['m_6'][3][5] = '<li ><a class="menuvert" href="page.php?id=70">Opération composteurs ';
+						ssMenu['m_6'][3][6] = '<li class="last_li"><a class="menuvert" href="page.php?id=71">Plan local de prévention déchets';
+					ssMenu['m_6'][3][7] = '';
+		ssMenu['m_6'][4] = new Array();
+			ssMenu['m_6'][4][0] = '<li id="m_6_4" onmouseover="appearSsMenu(this.id);" onmouseout="quitSsSsMenu();" ><a class="menuvert" href="page.php?id=66">Restauration des cours d\'eau en Pays de Colombey';
+					ssMenu['m_6'][4][1] = '<ul id="ul_menu_js">';
+						ssMenu['m_6'][4][2] = '<li ><a class="menuvert" href="page.php?id=157"> Bouvade  ';
+						ssMenu['m_6'][4][3] = '<li ><a class="menuvert" href="page.php?id=158"> Queue de Sompierre   ';
+						ssMenu['m_6'][4][4] = '<li ><a class="menuvert" href="page.php?id=159">Aroffe  Tranche 3';
+						ssMenu['m_6'][4][5] = '<li class="last_li"><a class="menuvert" href="page.php?id=160">Aar';
+					ssMenu['m_6'][4][6] = '';
+		ssMenu['m_6'][5] = new Array();
+			ssMenu['m_6'][5][0] = '<li  class="last_li"><a class="menuvert" href="page.php?id=184">Plan Climat Air Energie Transition Ecologique';
+		ssMenu['m_6'][6] = new Array();
+			ssMenu['m_6'][6][0] = '';
+	ssMenu['m_7'] = new Array();
+		ssMenu['m_7'][0] = new Array();
+			ssMenu['m_7'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_7'][1] = new Array();
+			ssMenu['m_7'][1][0] = '<li  ><a class="menuvert" href="page.php?id=83">Base de loisirs';
+		ssMenu['m_7'][2] = new Array();
+			ssMenu['m_7'][2][0] = '<li  class="last_li"><a class="menuvert" href="page.php?id=86">Sentiers de randonnées';
+		ssMenu['m_7'][3] = new Array();
+			ssMenu['m_7'][3][0] = '';
+	ssMenu['m_8'] = new Array();
+		ssMenu['m_8'][0] = new Array();
+			ssMenu['m_8'][0][0] = '<ul id="ul_menu_js">';
+		ssMenu['m_8'][1] = new Array();
+			ssMenu['m_8'][1][0] = '<li  ><a class="menuvert" href="page.php?id=91">Parc immobilier';
+		ssMenu['m_8'][2] = new Array();
+			ssMenu['m_8'][2][0] = '<li  class="last_li"><a class="menuvert" href="page.php?id=137">Services techniques intercommunaux';
+		ssMenu['m_8'][3] = new Array();
+			ssMenu['m_8'][3][0] = '';
+		
+/**
+*	Gestion des menus/sous-menus
+*/
+	/**
+	*	Function appearMenu
+	*	Fait apparaitre les sous menus du menu sélectionné
+	*	@param marginleft : positionnement du menu par rapport au coté gauche de l'écran
+	*/
+	function appearMenu(id_menu)
+	{
+		/**
+		*	Génere le contenu du sous menu selon le menu sélectionné
+		*/
+		generateMenu(id_menu);
+		
+		/**
+		*	On fait apparaitre le container de sous menus
+		*/
+		document.getElementById(containerName).style.display = '';	
+		
+		/**
+		*	La position de la souris change, on est sur un menu
+		*/
+		onMenu = 1;
+	}
+	
+	/**
+	*	Function quitMenu
+	*	La souris quitte le menu, mise à jour des variables de position
+	*	et lancement de la fonction prepareToCloseMenu qui fermera le menu si il faut
+	*/
+	function quitMenu()
+	{
+		onMenu = 0;
+		onSsMenu = 0;
+		prepareToCloseMenu();
+	}
+	
+	/**
+	*	Function initSsMenu
+	*	La souris passe sur un sous menu, mise à jour des variables de position
+	*/
+	function initSsMenu()
+	{
+		onMenu = 0;
+		onSsMenu = 1;	
+	}
+	
+	/**
+	*	Function quitSsMenu
+	*	La souris quitte le sous menu, mise à jour des variables de position
+	*	et lancement de la fonction prepareToCloseMenu qui fermera le menu si il faut
+	*/
+	function quitSsMenu()
+	{
+		onMenu = 0;
+		onSsMenu = 0;
+		onSsSsMenu = 0;
+		prepareToCloseMenu();
+	}
+		
+	/**
+	*	Function prepareToCloseMenu
+	*	Temporisateur avant la fermeture effective du sous menu
+	*	Lance la fonction de fermeture de sous menu après timeBeforeClosing millisecondes
+	*/
+	function prepareToCloseMenu()
+	{
+		setTimeout("closeMenu()", timeBeforeClosing);
+	}
+	
+	/**
+	*	Function closeMenu
+	*	Fait disparaitre le sous menu si la souris n'est ni sur un menu, ni sur un sous menu
+	*	Fait disparaitre le sous sous menu si la souris n'est pas dessus
+	*/
+	function closeMenu()
+	{		
+		if( (onSsMenu == 0)
+			   &&(onMenu == 0)
+			   		&&(onSsSsMenu == 0) )
+			document.getElementById(containerName).style.display = 'none';
+		
+		if( (onSsSsMenu == 0) )
+			document.getElementById(ssContainerName).style.display = 'none';
+	}
+	
+	/**
+	*	Function generateMenu
+	*	génère le sous menu correspondant à la position de la souris
+	* 	@param marginleft : positionnement du menu par rapport au coté gauche de l'écran
+	*/
+	function generateMenu(id_menu)
+	{
+		var ssMenuComplet = ''; 
+		/*
+		*	Selon le menu selectionné, on charge le sous menu correspondant
+		*/		
+		for(var i = 0; i < ssMenu[id_menu].length; i++)
+			ssMenuComplet += ssMenu[id_menu][i][0];
+			
+		document.getElementById(containerName).innerHTML = ssMenuComplet;
+		
+		/**
+		*	Placement et redimentionnement du sous menu
+		*/
+		switch(id_menu)
+		{
+			case 'm_1':
+				document.getElementById(containerName).style.marginLeft = '0px';
+				break;
+
+			case 'm_2':
+				document.getElementById(containerName).style.marginLeft = '116px';
+				break;
+				
+			case 'm_3':
+				document.getElementById(containerName).style.marginLeft = '232px';
+				break;
+				
+			case 'm_4':
+				document.getElementById(containerName).style.marginLeft = '348px';
+				break;
+				
+			case 'm_5':
+				document.getElementById(containerName).style.marginLeft = '464px';
+				break;
+			
+			case 'm_6':
+				document.getElementById(containerName).style.marginLeft = '580px';
+				break;
+		
+			case 'm_7':
+				document.getElementById(containerName).style.marginLeft = '696px';
+				break;
+				
+			case 'm_8':
+				document.getElementById(containerName).style.marginLeft = '633px';
+				break;
+				
+			default:
+				break;
+		}
+	}
+/*
+*	Fin de gestion menus/sous-menus
+*/
+
+/**
+*	Gestion sous-menus/sous-sous-menus
+*/
+
+	/**
+	*	Function initSsSsMenu
+	*	La souris passe sur un sous sous menu, mise à jour des variables de position
+	*/
+	function initSsSsMenu()
+	{
+		onMenu = 0;
+		onSsMenu = 0;
+		onSsSsMenu = 1;
+	}
+	
+	/**
+	*	Function quitSsSsMenu
+	*	La souris quitte le sous sous menu, mise à jour des variables de position
+	*	et lancement de la fonction prepareToCloseMenu qui fermera le menu si il faut
+	*/
+	function quitSsSsMenu()
+	{
+		onMenu = 0;
+		onSsMenu = 0;
+		onSsSsMenu = 0;
+		prepareToCloseMenu();
+	}
+	
+	/**
+	*	Function appearSsMenu
+	*	Fait apparaitre les sous sous menus du sous menu sélectionné
+	*	@param marginleft : positionnement du menu par rapport au coté gauche de l'écran
+	*/
+	function appearSsMenu(id_menu)
+	{
+		/**
+		*	Génere le contenu du sous sous menu selon le sous menu sélectionné
+		*/
+		generateSsMenu(id_menu);
+		
+		/**
+		*	On fait apparaitre le container de sous menus
+		*/
+		document.getElementById(ssContainerName).style.display = '';
+		
+		onSsSsMenu = 1;
+	}
+	
+	/**
+	*	Function generateSsMenu
+	*	génère le sous-sous menu correspondant à la position de la souris
+	*/
+	function generateSsMenu(id_menu)
+	{
+		// On décompose l'id du menu pour trouver le bon tableau
+		var explode_id = new Array();
+		explode_id = id_menu.split('_');
+		
+		var racine = explode_id[0] + '_' + explode_id[1]; // premiere dimension du tableau
+		var dim = explode_id[2]; // position du sous-sous menu
+		
+		var ssSsMenuComplet = ''; 
+		/*
+		*	Selon le menu selectionné, on charge le sous menu correspondant
+		*/		
+		for(var i = 1; i < ssMenu[racine][dim].length; i++)
+			ssSsMenuComplet += ssMenu[racine][dim][i];
+		
+		document.getElementById(ssContainerName).innerHTML = ssSsMenuComplet;
+		
+		var padding = 32;
+		
+		if(navigator.appName=="Microsoft Internet Explorer")
+			padding = 32;
+		
+		var pos_top = 162 + padding*(dim-1);
+		/**
+		*	Placement et redimentionnement du sous menu
+		*/
+		switch(racine)
+		{
+			case 'm_1':
+				document.getElementById(ssContainerName).style.marginLeft = '284px';
+				break;
+
+			case 'm_2':
+				document.getElementById(ssContainerName).style.marginLeft = '484px';
+				break;
+				
+			case 'm_3':
+				document.getElementById(ssContainerName).style.marginLeft = '539px';
+				break;
+				
+			case 'm_4':
+				document.getElementById(ssContainerName).style.marginLeft = '682px';
+				break;
+				
+			case 'm_5':
+				document.getElementById(ssContainerName).style.marginLeft = '304px';
+				break;
+				
+			case 'm_6':
+				document.getElementById(ssContainerName).style.marginLeft = '362px';
+				break;
+				
+			case 'm_7':
+				document.getElementById(ssContainerName).style.marginLeft = '464px';
+				break;
+				
+			case 'm_8':
+				document.getElementById(ssContainerName).style.marginLeft = '410px';
+				break;
+				
+			default:
+				break;
+		}
+		
+		document.getElementById(ssContainerName).style.marginTop = pos_top + 'px';
+	}
+	
+	function appearCommune()
+	{
+		/**
+		*	On fait apparaitre le container de sous menus
+		*/		
+		$('#listCommunes').fadeIn('slow', function() {
+        // Animation complete
+      	});
+		
+		/**
+		*	La position de la souris change, on est sur un menu
+		*/
+		onCommune = 1;
+	}
+	
+	function quitCommune()
+	{
+		onCommune = 0;
+		onMCommune = 0;
+		prepareToCloseCommune();
+	}
+	
+	function initCommune()
+	{
+		onCommune = 0;
+		onMCommune = 1;	
+	}
+	
+	function prepareToCloseCommune()
+	{
+		setTimeout("closeCommune()", timeBeforeClosing);
+	}
+	
+	function closeCommune()
+	{		
+		if( (onMCommune == 0) &&(onCommune == 0) )
+			$('#listCommunes').fadeOut(400, function() {
+			// Animation complete
+			});
+	}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- Menu -->
+			<div id="container_ss_menu">
+				<div id="div_menu_js" style="display:none;" onmouseover="initSsMenu();" onmouseout="quitSsMenu();"></div>
+				<div id="div_ss_menu_js" style="display:none;" onmouseover="initSsSsMenu();" onmouseout="quitSsSsMenu();"></div>
+			</div>
+			<!-- Fin menu -->
+			<div id="top">
+				<div id="topnav">
+					<div class="left">
+						<li class="page_item page-item-1"><a href="index.php">Accueil</a></li>
+						<li class="page_item page-item-2"><a href="communes.php" onmouseover="appearCommune();" onmouseout="quitCommune();">Communes</a></li>
+						<li class="page_item page-item-2"><a href="plan.php">Plan du site</a></li>
+						<li class="page_item page-item-5"><a href="contact.php">Nous écrire</a></li>
+						<li class="page_item page-item-5"><a href="#" onclick="void(favoris());">Mettre en favori</a></li>
+					</div>
+					<div id="listCommunes" style="display:none;" onmouseover="initCommune();" onmouseout="quitCommune();">
+						<ul id="ul-commune">
+							<li><a href="communes.php?commune=2">Aboncourt</a></li>
+							<li><a href="communes.php?commune=1">Allain</a></li>
+							<li><a href="communes.php?commune=3">Allamps</a></li>
+							<li><a href="communes.php?commune=5">Bagneux</a></li>
+							<li><a href="communes.php?commune=6">Barisey au Plain</a></li>
+							<li><a href="communes.php?commune=7">Barisey la Côte</a></li>
+							<li><a href="communes.php?commune=8">Battigny</a></li>
+							<li><a href="communes.php?commune=9">Beuvezin</a></li>
+							<li><a href="communes.php?commune=41">Blénod-lès-Toul</a></li>
+							<li><a href="communes.php?commune=10">Bulligny</a></li>
+							<li><a href="communes.php?commune=11">Colombey-les-Belles</a></li>
+							<li><a href="communes.php?commune=12">Courcelles</a></li>
+							<li><a href="communes.php?commune=13">Crépey</a></li>
+							<li><a href="communes.php?commune=14">Crézilles</a></li>
+							<li><a href="communes.php?commune=15">Dolcourt</a></li>
+							<li><a href="communes.php?commune=16">Favières</a></li>
+							<li><a href="communes.php?commune=17">Fecocourt</a></li>
+							<li><a href="communes.php?commune=19">Gémonville</a></li>
+							<li><a href="communes.php?commune=18">Gelaucourt</a></li>
+							<li><a href="communes.php?commune=20">Germiny</a></li>
+							<li><a href="communes.php?commune=21">Gibeaumeix</a></li>
+							<li><a href="communes.php?commune=22">Grimonviller</a></li>
+							<li><a href="communes.php?commune=23">Mont l'Etroit</a></li>
+							<li><a href="communes.php?commune=25">Mont-le-Vignoble</a></li>
+							<li><a href="communes.php?commune=26">Moutrot</a></li>
+							<li><a href="communes.php?commune=27">Ochey</a></li>
+							<li><a href="communes.php?commune=28">Pulney</a></li>
+							<li><a href="communes.php?commune=42">Saulxerotte</a></li>
+							<li><a href="communes.php?commune=29">Saulxures-lès-Vannes</a></li>
+							<li><a href="communes.php?commune=30">Selaincourt</a></li>
+							<li><a href="communes.php?commune=32">Thuilley-aux-Groseilles</a></li>
+							<li><a href="communes.php?commune=34">Tramont Emy</a></li>
+							<li><a href="communes.php?commune=35">Tramont Lassus</a></li>
+							<li><a href="communes.php?commune=33">Tramont Saint-André</a></li>
+							<li><a href="communes.php?commune=36">Uruffe</a></li>
+							<li><a href="communes.php?commune=37">Vandelèville</a></li>
+							<li><a href="communes.php?commune=38">Vannes-le-Châtel</a></li>
+							<li><a href="communes.php?commune=39">Vicherey</a></li>
+						</ul>
+					</div>
+					<!--end: left-->
+					<div class="right">
+						<form id="formulaire_recherche" name="formulaire_recherche" method="POST" action="recherche.php" enctype="multipart/form-data">
+							<div id="search"><input type="hidden" name="information" value="1"> <input type="hidden" name="actualite" value="1"> <input type="hidden" name="annuaire" value="1"> <input type="hidden" name="commune" value="1"> <input class="searchinput" type="text" value="Rechercher..." onclick="this.value='';" name="recherche" id="input_recherche"> <input type="submit" class="searchsubmit" value="OK"></div>
+						</form>
+					</div>
+					<!--end: right-->
+				</div>
+			</div>
+			<!--end: top-->
+			<div id="header"><a href="#"> <div class="logo"><img src="lib/images/banniere/logo.png" width="900" height="100"></div> </a>
+				<div id="banner">
+					<div><img src="lib/images/banniere/1.jpg" width="900" height="100"></div>
+				</div>
+				<!--end: logo-->
+			</div>
+			<!--end: header-->
+			<div id="menu">
+				<div class="left">
+					<li class="cat-item cat-item-3"><a class="nostyle" href="page.php?id=1"> <div id="m_1" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Communauté de Communes</div> </a></li>
+					<li class="cat-item cat-item-4"><a class="nostyle" href="page.php?id=2"> <div id="m_2" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Economie</div> </a></li>
+					<li class="cat-item cat-item-5"><a class="nostyle" href="page.php?id=3"> <div id="m_3" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Développement Social</div> </a></li>
+					<li class="cat-item cat-item-6"><a class="nostyle" href="page.php?id=4"> <div id="m_4" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Culture et Jeunesse</div> </a></li>
+					<li class="cat-item cat-item-7"><a class="nostyle" href="page.php?id=5"> <div id="m_5" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Aménagement du territoire</div> </a></li>
+					<li class="cat-item cat-item-8"><a class="nostyle" href="page.php?id=35"> <div id="m_6" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Environnement</div> </a></li>
+					<li class="cat-item cat-item-9"><a class="nostyle" href="page.php?id=36"> <div id="m_7" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Tourisme</div> </a></li>
+					<li class="cat-item cat-item-10"><a class="nostyle" href="page.php?id=37"> <div id="m_8" onmouseover="appearMenu(this.id);" onmouseout="quitMenu();">Services aux Communes</div> </a></li>
+				</div>
+				<div class="right"></div>
+				<!--end: right-->
+			</div>
+			<!--end: menu-->
+			<div id="content">
+				<p class="browse">Vous êtes dans : <a href="index.php">Accueil</a> // <a href="page.php?id=1">Communauté de Communes</a> // <a href="page.php?id=10">Communication</a> // <a href="page.php?id=29">Compte-rendu bureau, conseil</a></p>
+				<h3>Compte-rendu bureau, conseil</h3>
+				<div class="texte">
+					<table width="200" cellspacing="1" cellpadding="0" border="0" align="center">
+						<tbody>
+							<tr>
+								<td style="text-align: center">Bureau<br> communautaire<br> PV</td>
+								<td style="text-align: center">Conseil<br> communautaire<br> PV</td>
+							</tr>
+							<tr>
+								<td style="text-align: center" colspan="2"><strong>2010</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20bureau%2020%201%202010%20REGISTRE.pdf">BC 20 01 10 </a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20CC%201%204%2010%20REGISTRE.pdf">CC 01 04 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20REGISTRE%20bureau%2017%2002%2010.pdf">BC 17 02 10</a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20CC%208%203%2010.pdf">CC 08 03 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20%2017%203%2010%20REGISTRE.pdf">BC 17 03 10</a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CRduCC%2004%2011%2010.pdf">CC 04 11 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20BC%2021%204%2010%20REGISTRE.pdf">BC 21 04 10</a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CRduCC%2024%2006%2010.pdf">CC 24 06 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CRduBC%2019%2005%202010.pdf">BC 19 05 10</a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CRduCC%2030%2009%2010.pdf">CC 30 09 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CRduBC%2016%2006%2010.pdf">BC 16 06 10</a></td>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CReduCC%20%2009%2012%2010.pdf">CC 09 12 10 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20du%20BC%2022%2007%202010.pdf">BC 22 07 10</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20BC%2031%208%2010%20REGISTRE.pdf">BC 31 08 10</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20du%20BC%2020%2010%202010.pdf">BC 20 10 10</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20REGISTRE%2017%2011%202010.pdf">BC 17 11 10</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20BC%20du%2015%2012%202010.pdf">BC 15 12 10</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center" colspan="2"> <strong> 2011</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/BC%2019%2001%2011.pdf">BC 19 01 11</a></td>
+								<td style="text-align: center"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20CC%2017%2003%202011.pdf">CC 17 03 11</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/BC%2016%2002%2010.pdf">BC 16 02 10</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%20CC%2017%2003%202011.pdf">BC 17 03 11</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/CR%2013%2004%202011.pdf">BC 13 04 11</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/BC%2018%2005%2011.pdf">BC 18 05 11</a></td>
+								<td style="text-align: center"> </td>
+							</tr>
+						</tbody>
+					</table><br>
+					<table width="200" cellspacing="1" cellpadding="1" border="0" align="center">
+						<tbody>
+							<tr>
+								<td style="text-align: center" colspan="2"><span style="font-size: small;"><strong><span style="font-family: Arial;">2012</span></strong></span></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV-BC%2018%2001%202012%20finalise.pdf">BC 18 01 12</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20CC%2015%2002%202012.pdf">CC 15 02 12</a></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20BC%2021%2003%202012.pdf">BC 21 03 12</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20CC%2027%20032012.pdf">CC 27 03 12</a></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20BC%2018042012.pdf">BC 18 04 12</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20CC%2026062012.pdf">CC 26 06 12</a></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20BC%2016%2005%202012.pdf">BC 16 05 12</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20CC%2017-09-2012.pdf">CC 17 09 12</a></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20BC%2013-%2006-2012.pdf">BC 13 06 12</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20DU%20CC%2014112012.pdf">CC 14 11 12</a></td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20BC%2019-09-2012.pdf">BC 19 09 12</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2012/PV%20DU%20BC%2017102012.pdf">BC 17 10 12</a></td>
+								<td> </td>
+							</tr>
+						</tbody>
+					</table><br>
+					<div style="text-align: right;"> </div>
+					<div style="text-align: right;"> </div>
+					<table width="277" height="700" cellspacing="1" cellpadding="1" border="0" align="center">
+						<tbody>
+							<tr>
+								<td style="text-align: center" colspan="2"><span style="font-size: small;"><strong><span style="font-family: Arial;">2013</span></strong></span></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20BC%2024012013.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 24 01 2013 </span></span></a></td>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20DU%20CC%20BAGNEUX%2027%20FEVRIER%202013.pdf">CC 27 02 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20BC%2020003013bis.pdf">BC 20 03 2013</a></td>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20DU%20CC%2028%20MARS%202013-BLENOD.pdf">CC 28 03 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20BC%2017042013.pdf">BC 17 04 2013</a></td>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20DU%20CC%2025%20JUIN%20%202013-FAVIERES.pdf">CC 25 06 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/pv%20bc%2019%20JUIN%20%202013.pdf">BC 19 06 2013</a></td>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20DU%20CC%204%20JUILLET%202013-BULLIGNY%20bis.pdf">CC 04 07 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> BC 04 09 2013</td>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20DU%2026%20SEPT-2013-VANDELEVILLE%20(2).pdf">CC 26 10 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> </td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2013/PV%20CC%2012%2009%202013%20DEF.pdf">CC 12 09 2013</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> </td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%2018%20DECEMBRE%202013%20Mt%20le%20Vignoble.pdf">CC 18 12 2013</a></td>
+							</tr>
+							<tr>
+								<td colspan="2" style="text-align: left">
+									<div style="text-align: center;"><strong>2014</strong></div>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2014/PV-BC%209%20JUILLET%202014.pdf">BC 09 07 2014</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2014/PV%2024AVRIL2014.pdf">CC 24 04 2014</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: left"> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2014/PV-BC-3%20SEPTEMBRE%202014.pdf">BC 03 09 2014</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2014/PV-CC%2011%20JUIN%202014.pdf">CC 11 06 2014</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/proces%20verbal%201er%20octobre%202014.pdf">BC 01 10 2014</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%2019%20NOVEMBRE%20COURCELLES%20DEFINITIF.pdf">CC 19 11 2014</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20BC%205%20novembre%202014.pdf">BC 05 11 2014</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/proces%20verbal%2017%20decembre%202014.pdf"><strong>CC 17 12 2014</strong></a><br>  <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/piece%20jointe%20proces%20verbal%2017%20decembre.pdf">Diapo Eco</a><br>  </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2014/PV%20BC%2010%20DECEMBRE%202014.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 10 12 2014</span></span></a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;" colspan="2"><strong>2015</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20BC%2014%20JANVIER%202015.pdf">BC 14 01 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/Proces%20verbal%20conseil%20communautaire%2021%20janvier%202015.pdf">CC 21 01 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20du%204%20fevrier%202015.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 04 02 2015</span></span></a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%20CC%2025%20FEVRIER%20THUILLEY.pdf"><strong>CC 25 02 2015</strong></a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/ANNEXE%20POINT%202%20AU%20PV%20250215.pdf">annexe point 2</a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/ANNEXE%20POINT%205%20AU%20PV%2025%2002%2015.pdf">annexe point 5</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%20CC%2031%20MARS%20DEFINITIF.pdf"><strong>CC 31 03 2015</strong></a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/POINT%2051%20ANNEXE%20PV%20DOC%20BUDGETAIRE.pdf">annexe pt 5.1</a> budget<br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/annexe%2052%20Budget%20COVALOM%202015.pdf">annexe pt 5.2 budget COVALOM</a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/annexe%20point%205%202%20%20Budget%20OM%20CCPCST%202015.pdf">annexe pt 5.2 budget OM</a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/annexe%205%202%20Note%20explicative%20budget%20OM%20CCPCST%202015.pdf">annexe pt 5.2 note OM</a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/annexe%205%202%20Bilan%20analytique%202014.pdf">annexe pt 5.2 bilan analytique</a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/annexe%205%202%20Bilan%20analytique%202014.pdf">annexe pt 5.2 bilan 2014</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20%20BC%2018%20MARS%20ANNEXE%206%20f.pdf"><span style="font-size: x-small;"><span style="font-family: Arial;">BC 18 03 2015</span></span></a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/PV%20CC%2029%20AVRIL%202015%20definitif.pdf">CC 29 04 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PROCES%20VERBAL%20BC%208%20avril%202015.pdf">BC 8 04 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/PROCES%20VERBAL%203%20juin%202015.pdf">CC 03 06 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20BC%206%20MAI.pdf">BC 06 05 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20CC%20ABONCOURT%207%20JUILLET.pdf">CC 07 07 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20BC%2027%20MAI.pdf">BC 27 05 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20DU%2023%20SEPTEMBRE%202015.pdf"><span style="font-size: small;"><span style="font-family: Arial;">CC 23 09 2015</span></span></a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PV%20BC%201ER%20JUILLET.pdf">BC 01 07 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/14%20oct%20CC%20Saulxerotte.pdf">CC 14 11 2015 </a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20BUREAU%20COMMUNAUTAIRE%202%20SEPTEMBRE.pdf">BC 02 09 2015</a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PROCES%20VERBAL%2026%20NOVEMBRE%202015%20A%20COLOMBEY.pdf">CC 26 11 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PROCES%20VERBAL%20BC%2030%20SEPTEMBRE%202015.pdf">BC 30 09 2015</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/proces%20verbal%2016%20decembre%202015%20selaincourt.pdf">CC 16 12 2015</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2015/PROCES%20VERBAL%20BC%204%20NOVEMBRE%202015.pdf">BC 04 10 2015</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%202%20DECEMBRE%202015.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 02 12 2015</span></span></a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td colspan="2" style="text-align: center;"><strong>2016</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/2016/PROCES%20VERBAL%20DU%20BC%2013%20JANVIER%202016.pdf">BC 13 01 2016</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20CC%202%20MARS%202016%20definitif.pdf"><strong>CC 02 03 2016</strong></a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/ANNEXE%20AU%20POINT%209%20DU%20CC%20DU%202%20MARS%20%20VICHEREY.pdf">Annexe point 9</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20DU%2024%20FEVRIER%202016.pdf">BC 24 02 2016</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20CC%2027%20JANVIER%202016.pdf">CC 27 01 2016</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PRO%20CES%20VERBAL%20BC%203%20FEVRIER%202016.pdf">BC 03 02 2016</a></td>
+								<td> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20DU%2031%20MARS%202016.pdf"><strong>CC 31 03 2016</strong></a><br> <a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/BP%202016%20PP%20annexe%2031%2003%202016.pdf">annexe BP 2016</a><br>  </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%20BC%206%20avril%202016.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 06 07 2016</span></span></a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%20%20CC%2018%20MAI%202016.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">CC 18 05 2016  </span></span></a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%20BC%204%20MAI%202016.pdf" target="_blank"><span style="font-size: small;"><span style="font-family: Arial;">BC 04 05 2016</span></span></a></td>
+								<td><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%204%20juillet%202016%20crezilles.pdf">CC 04 07 2016</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PROCES%20VERBAL%208%20JUIN%202016.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">BC 08 06 2016</span></span></a></td>
+								<td> <span style="font-family: Arial;"><span style="font-size: small;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20CC%20DU%2022%20JUIN%202016.pdf" target="_blank"><strong>CC 22 06 2016</strong></a><br> <span style="font-size: x-small;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/ANNEXE%20POINT%202%20DECHETS%20MENAGERS%20CC%2022%20JUIN%202016.pdf" target="_blank">Annexe point 2</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/ANNEXE%20POINT%203%20%20PLUI%20CC%2022%20JUIN%202016.pdf" target="_blank">Annexe point 3</a></span><br> </span></span></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a target="_blank" href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20BC%20DU%206%20JUILLET%202016.pdf"><span style="font-size: small;"><span style="font-family: Arial;">BC 06 07 2016</span></span></a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20CC%2028%20SEPTEMBRE%202016%20TRAMONT%20LASSUS.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">CC 28 09 2016</span></span></a><span style="font-family: Arial;"><span style="font-size: small;"><br> </span></span><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/SDE%20Presentation%20projet%20CC%20Pays%20Colombey%20et%20Sud%20Toulois.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">SDE diaporama</span></span></a><span style="font-family: Arial;"><span style="font-size: small;"><br> </span></span><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/POINT%203%20diaporama%20competence%20loi%20NOTRe%20CLECT%202209%2020161186070.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">Compétence loi NOTRe</span></span></a><br>  </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20DU%207%20SEPTEMBRE%202016.pdf" target="_blank">BC 07 09 2016</a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20CC%2012%20OCTOBRE%20%20THUILLEY.pdf" target="_blank">CC 12 10 2016</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PROCES%20VERBAL%20BC%205%20OCTOBRE%202016.pdf" target="_blank">BC 05 10 2016</a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20CC%2023%20NOVEMBRE%202016%20MARPA.pdf" target="_blank">CC 23 11 2016</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20BC%20DU%209%20NOVEMBRE%202016.pdf" target="_blank">BC 09 11 2016</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20BC%207%20DECEMBRE%202016.pdf" target="_blank"><span style="font-size: small;"><span style="font-family: Arial;">BC  7/12/2016</span></span></a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;" colspan="2"><strong>2017</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><span style="font-family: Arial;"><span style="font-size: small;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/PV%20BC%2011%20JANVIER%202017.pdf" target="_blank">BC 11/01/2017</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2016/5%201%20ANNEXE%20METHANISATION%20web.pdf" target="_blank">annexe 5.1 méthanisation</a><br> </span></span></td>
+								<td><strong> </strong><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20CC%20%2015%20fevrier%202017%20MARPA.pdf" target="_blank"><strong>CC 15 février 2017</strong></a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20CC%20POINT%2011%201.pdf" target="_blank">annexe point 11.1</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20CC%20POINT%2011%202.pdf" target="_blank">annexe point 11.2</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20DOB%20POINT%204%20CC%2015%20FEVRIER.pdf" target="_blank">annexe point 4</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20BC%201er%20FEVRIER%202017.pdf" target="_blank">BC 1 fevrier 2017</a></td>
+								<td><span style="font-size: small;"><span style="font-family: Arial;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20CC%20DU%208%20MARS%202017.pdf" target="_blank"><strong>CC 8 mars 2017</strong></a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20POINT%202%20CC%208%20MARS.pdf" target="_blank">annexe point 2</a><br> </span></span></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PROCES%20VERBAL%20BC%201%20MARS%202017.pdf" target="_blank">BC 1 mars 2017</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20CC%2029%20MARS.pdf" target="_blank">CC 29 mars 2017</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20POINT%202%20CC%2029%20MARS.pdf" target="_blank">annexe point 2</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%205%20AVRIL%202017.pdf" target="_blank"><span style="font-size: small;"><span style="font-family: Arial;">BC 5 avril 2017</span></span></a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20CC%20DU%2031%20MAI%202017.pdf" target="_blank">CC 31 mai 2017</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20BC%203%20MAI%202017.pdf" target="_blank">BC 3 mai 2017</a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20CC%2012%20JUILLET.pdf" target="_blank">CC 12 juillet 2017</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20BC%207%20JUIN%202017.pdf" target="_blank">BC 7 juin 2017</a></td>
+								<td><span style="font-size: small;"><span style="font-family: Arial;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%2020%20SEPTEMBRE%202017.pdf" target="_blank"><strong>CC 20 septembre 2017</strong></a><br>    <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%202%201%20PV%20CC%2020%20SEPTEMBRE.pdf" target="_blank">annexe 2.1</a><br>    <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%202%202%20CC%2020%20SEPTEMBRE.pdf" target="_blank">annexe 2.2</a><br>    <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%202%203%20PV%20CC%2020%20SEPTEMBRE%202017.pdf" target="_blank">annexe 2.3</a></span></span><br>  </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PV%20BC%205%20JUILLET.pdf" target="_blank">BC 5 juillet 2017</a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PROCES%20VERBAL%20CC%2018%20OCTOBRE%202017.pdf" target="_blank"><strong><span style="font-size: small;"><span style="font-family: Arial;">CC 18 octobre 2017</span></span></strong></a><span style="font-size: small;"><span style="font-family: Arial;"><br> <div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20DU%20POINT%202.1.pdf" target="_blank">annexe point 2.1</a></div> <div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20DU%20POINT%204.pdf" target="_blank">annexe point 4</a></div> <div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20DU%20POINT%205.pdf" target="_blank">annexe point 5</a></div> </span></span></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PROCES%20VERBAL%20CC%2015%20NOVEMBRE%202017.pdf" target="_blank">CC 15 novembre</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/ANNEXE%20POINT%207%20CC%2015%20NOVEMBRE%202017.pdf" target="_blank">annexe pt 7 15 novembre</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PROCES%20VERBAL%20BC%208%20NOVEMBRE%202017.pdf" target="_blank">BC 8 nov 2017</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2017/PROCES%20VERBAL%20BC%206%20DECEMBRE%202017.pdf" target="_blank">BC 6 dec 2017</a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PROCES%20VERBAL%20DU%20CC%2021%20FEVRIER%202018.pdf" target="_blank">CC 21 fév 2018</a>
+									<div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%205%204%2021%20fev.pdf" target="_blank">annexe point 5.4</a></div>
+									<div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNESE%20POINT%205%205%2021%20fev.pdf" target="_blank">annexe point 5.5</a><br> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%205%206%2021%20fev.pdf" target="_blank">annexe point 5.6</a></div>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PROCES%20VERBAL%20BC%20%20DU%2010%20JANVIER%202018.pdf" target="_blank">BC 10 janvier 2018</a></td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PROCES%20VERBAL%20CC%2014%20MARS%202018.pdf" target="_blank">CC 14 mars</a> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PROCES%20VERBAL%20BC%207%20FEVRIER%202018.pdf" target="_blank">BC 7 fév 2018</a></td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%203%20DU%2014%20MARS%202018.pdf" target="_blank">annexe point 3</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20bc%20du%205%20mars%202018.pdf" target="_blank">BC 5 mars 2018</a></td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%206%20DU%20CC%2014%20MARS.pdf" target="_blank">annexe point 6</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%207%20DU%20CC%2014%20MARS.pdf" target="_blank">annexe point 7</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20%20CC%20DU%2028%20MARS%202018%20ABONCOURT.pdf" target="_blank">CC 28 mars</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20DU%20CC%206%20JUIN%202018.pdf" target="_blank">CC 6 juin</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/ANNEXE%20POINT%204%20PV%20DU%206%20JUIN%202018.pdf" target="_blank">annexe point 4</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20BC%204%20AVRIL1%2018.pdf" target="_blank">BC 4 avril 2018</a></td>
+								<td style="text-align: right;"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20BC%2025%20AVRIL%2018.pdf" target="_blank">BC 25 avril 2018</a></td>
+								<td style="text-align: right;"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20BC%2030%20MAI%2018.pdf" target="_blank">BC 30 mai 2018</a></td>
+								<td style="text-align: right;"> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20BC%2027%20JUIN%202018.pdf" target="_blank">BC 27 juin 2018</a>
+									<div style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/annexe%20point%204%201%20du%20bc%2027%20juin.pdf" target="_blank">annexe 4.1</a></div>
+									<div style="text-align: right;"> </div>
+								</td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20DU%204%20JUILLET%202018%20modif%20docx.pdf" target="_blank">CC 4 juillet 2018</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20BC%205%20SEPT%202018.pdf" target="_blank">BC 5 sept 2018 </a></td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20CC%2026%20SEPT%202018%20BAGNEUX.pdf" target="_blank">CC 26 sept</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2019/PV%20BC%203%20OCTOBRE%202018.pdf" target="_blank">BC 3 oct 2018 </a></td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%203%201%20CC%2026%20SEPT%2018.pdf" target="_blank">Annexe point 3</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%204%201%20DU%20CC%2026%20SEPT%2018.pdf" target="_blank">Annexe point 4</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: right;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/ANNEXE%20POINT%2011%203%20CC%20DU%2026%20SEPTEMBRE%202018.pdf" target="_blank">Annexe point 11</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> </td>
+								<td style="text-align: left;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2018/PV%20CC%2017%20OCTO%20BASE%20DE%20LOISIRS.pdf" target="_blank">CC 17 oct</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;" colspan="2"><strong>2019</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%2016%20janvier%202019.pdf" target="_blank">BC 16 janvier</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/2019/PV%20CC%2030%20JANVIER%202019.pdf" target="_blank">CC 30 janvier 2019</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%206%20fevrier%202019.pdf" target="_blank">BC 6 février</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/cc%206%20mars%202019.pdf" target="_blank">CC 6 mars</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%2020%20mars%202019.pdf" target="_blank">BC 20 mars</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/cc%204%20avril%202019.pdf" target="_blank">CC 4 avril</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%2024%20avril%202019.pdf" target="_blank">BC 24 avril</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/cc%203%20juillet%202019.pdf" target="_blank">CC 3 juillet</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%2022%20mai%202019.pdf" target="_blank">BC 22 mai</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/proces%20verbal%20conseil%2016%20octobre%202019.pdf" target="_blank"><span style="font-family: Arial;"><span style="font-size: small;">CC 16 octobre 2019</span></span></a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/bc%2026%20juin%202019.pdf" target="_blank">BC 26 juin</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/pv%20cc%2027%20novembre%202019.pdf" target="_blank">CC 27 novembre 2019</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/proces%20verbal%20bureau%2011%20septembre%202019.pdf" target="_blank"><span style="font-size: small;"><span style="font-family: Arial;">BC 11 septembre 2019 </span></span></a></td>
+								<td> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/pv%20cc%20du%2018%20decembre%202019.pdf" target="_blank">CC 18 decembre 2019</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><span style="font-size: small;"><span style="font-family: Arial;"> <a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/PV%20bc%202%20octobre%202019.pdf" target="_blank">BC 2 octobre 2019</a></span></span></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/pv%20bc%206%20novembre%202019.pdf" target="_blank">BC novembre 2019</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/BC%20pv%204%20decembre%202019.pdf" target="_blank">BC decembre 2019</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;" colspan="2"><strong>2020</strong></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/pv%20bc%2015%20janvier%202020.pdf" target="_blank">BC 15 janvier 2020</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/pv%20cc%2029%20janvier%202020%20et%20annexe%20dob%20f.pdf" target="_blank">CC 29 janvier 2020</a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/bureau%20conseil/pv%20bc%205%20fevrier%202020.pdf" target="_blank">BC 5 février 2020</a></td>
+								<td><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/pv%20cc%2026%20fevrier%202020.pdf" target="_blank"><span style="font-family: Arial;">CC 26 février 2020</span></a></td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/proces%20verbal%20bc%2011%20mars%202020.pdf" target="_blank">BC 11 mars 2020</a></td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"><a href="http://pays-colombey-sudtoulois.fr/images/contenu/Comcom/Communication/pv%20BC%2020%20mai%202020.pdf" target="_blank">BC 20 mai 2020</a></td>
+								<td> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="clear"> </div>
+				<ul class="three-column">
+					<li id="column-one"><a href="page.php?id=1"><img src="lib/images/interface/forward-32.png" width="32" height="32">Communauté de Communes</a></li>
+					<li id="column-two"><a href="page.php?id=10"><img src="lib/images/interface/return-32.png" width="32" height="32">Communication</a></li>
+					<li id="column-three"><a href="page.php?id=30"><img src="lib/images/interface/play-32.png" width="32" height="32">Charte graphique, logo</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<!--end: content-->
+			<div id="sidebar">
+				<div class="widget">
+					<!--end: En savoir plus-->
+					<h3 class="arrondi">Calendrier</h3>
+					<div class="box">
+						<div id="calendar"></div>
+					</div>
+					<!--end: calendrier-->
+				</div>
+				<!--end: widget-->
+			</div>
+			<!-- end:sidebar-->
+			<div class="clear"></div>
+			<div id="bottom">
+				<div class="left">Copyright © 2020 <a href="#">Communauté de Communes de Colombey Sud Toulois</a>. Tous droits réservés. <a href="mentions.php">Mentions légales</a>.</div>
+				<div class="clear"></div>
+			</div>
+			<!--end: bottom-->
+		</div>
+		<!--end: wrapper-->
+		<div class="clear"> </div>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23964660-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+		</script>
+	</body>
+</html>
