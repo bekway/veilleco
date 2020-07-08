@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<!-- basic metas
+  ================================================== -->
+		<base href="http://www.vosgescotesudouest.fr/">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="apple-touch-fullscreen" content="YES">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="icon" type="image/png" href="Views/images/logo.png">
+		<!--<link rel="canonical" href="http://www.lnl-nancy.fr/vosges-cote-sud-ouest/bureaux-et-conseils-communautaire.html" />-->
+		<meta name="robots" content="index, follow">
+		<title>Conseils Communautaires</title>
+		<!-- mobile port
+  ================================================== -->
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport">
+		<!-- styles
+  ================================================== -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+		<link href="Views/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="Views/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+		<link href="Views/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="Views/css/owl.theme.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="Views/css/admin.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="Views/css/font-awesome.css" media="screen">
+		<!--link href="Views/css/typography.css" rel="stylesheet" type="text/css" /-->
+		<link href="Views/css/main.css?t=1573557255" rel="stylesheet" type="text/css">
+		<!--link href="Views/css/responsive.css" rel="stylesheet" type="text/css" /-->
+		<link rel="stylesheet" type="text/css" href="Views/css/jquery-ui-1.10.4.custom.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="Views/fancybox/jquery.fancybox.css" media="screen">
+		<link href="https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css" rel="stylesheet">
+		<!-- html5.js for IE less than 10 -->
+		<!--[if lt IE 10]>
+  <link href="css/ie-9.css" rel="stylesheet" type="text/css" />
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+		<!-- css3-mediaqueries.js for IE less than 9 -->
+		<!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+		<!-- Modernizr & Jquery.min
+  ================================================== -->
+		<script src="Views/js/jquery.min.js"></script>
+		<script src="Views/js/jquery-1.9.1.min.js"></script>
+		<script src="Views/js/jquery-migrate.js"></script>
+		<script src="Views/js/jquery.quicksand.js"></script>
+		<script src="Views/js/quicksandpaginated.jquery.js"></script>
+		<script type="text/javascript" src="Views/js/jquery-ui-1.10.0.custom.min.js"></script>
+		<script type="text/javascript" src="Views/fancybox/jquery.fancybox.min.js"></script>
+		<!--<script type="text/javascript" src="Views/js/jquery.mmenu.min.js"></script>-->
+		<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?signed_in=true&v=3.exp"></script>-->
+		<!--script type="text/javascript" src="Views/js/popup.js"></script>
+  <script type="text/javascript" src="Views/js/moteur_recherche.js"></script-->
+		<script type="text/javascript" src="Views/js/owl.carousel.js"></script>
+		<script type="text/javascript" src="Views/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+      $(function() {
+        $('input[name=recherche]').autocomplete({
+          minLength: 2
+        });
+      });
+      
+		</script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js"></script>
+		<script type="text/javascript" src="Views/js/localisation.js"></script>
+		<script type="text/javascript" src="Views/js/cookieconsent.js"></script>
+		<!-- Modernizr & Jquery.min
+  ================================================== -->
+		<script src="Views/js/modernizr.js"></script>
+		<script type="text/javascript">
+	
+					  var _gaq = _gaq || [];
+					  _gaq.push(['_setAccount', 'UA-110030770-1']);_gaq.push(['_trackPageview']);(function() {
+						var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					  })();
+					
+				
+		</script>
+	</head>
+	<body><span class="maskBg"></span>
+		<!--[if IE 8]>
+  <div class="nav-ancien">
+  Votre version de navigateur n'est pas supportée par ce site. Veuillez le <a style="color:white;text-decoration:underline;" target="_blank" href="http://browsehappy.com/?locale=fr">mettre à jour.</a>
+</div>
+<![endif]-->
+		<header class="bodyHeader container-fluid">
+			<div class="row topHeader">
+				<div class="col-xs-12 borde-Header">
+					<div class="top-header">
+						<!--recherche -->
+						<form action="recherche.html" method="post" class="recherche" role="search">
+							<div class="input-bg"><input name="term" type="text" class="input-search" placeholder="Rechercher une information" style="outline: 0;"> <input name="sub-recherche" title="Lancer la recherche" type="submit" class="btn-search" value=""> <input type="hidden" name="affiche_page" value="1"> <input type="text" hidden="" value="recherche" name="c"></div>
+						</form><a href="http://www.meteofrance.com/previsions-meteo-france/vosges/88" title="Météo" alt="Météo" target="_blank"><img src="upload/annonces/normal/btn-meteo.png" title="Météo" alt="Météo" class="btn-meteo"></a></div>
+					<div class="contenu-center" style="margin-bottom: 30px;"><a href="http://www.vosgescotesudouest.fr/"><img src="upload/annonces/normal/titre-header.png" titre="Header" alt="" class="titre-header"></a></div>
+					<div class="menu">
+						<div class="container-large containerMenu">
+							<div class="row" id="menu">
+								<!-- Mobile -->
+								<nav class="navbar mobile" role="navigation">
+									<div class="" id="navigationSite">
+										<ul class="nav navbar-nav">
+											<li id="mobileBouton" class="menuMobile"><a class="spanBouton"> <span></span> <span class="deux"></span> <span class="trois"></span> </a>
+												<ul class="sousMenuMobile">
+													<li class=""><a href="http://www.vosgescotesudouest.fr/covid19.html" title="◀◉ COVID19 ◉▶"> ◀◉ COVID19 ◉▶ </a></li>
+													<li class=""><a href="http://www.vosgescotesudouest.fr/actualites.html-48-1" title="Actualités"> Actualités </a></li>
+													<li class="active drop"><a href="javascript:void(0)" title="Vosges Côté Sud Ouest" class="active"> Vosges Côté Sud Ouest </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/le-territoire.html" title="Territoire"> Territoire </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/competences-communautaire.html" title="Compétences Communautaires"> Compétences Communautaires </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/organigramme-des-services.html" title="Organigramme des services"> Organigramme des services </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/bureaux-et-conseils-communautaire.html" title="Conseils Communautaires"> Conseils Communautaires </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/processus-institutionnel.html" title="Processus Institutionnel"> Processus Institutionnel </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/bulletins-communautaire.html" title="Bulletins Communautaires - LES ECHOS DE L'INTERCO"> Bulletins Communautaires - LES ECHOS DE L'INTERCO </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=contact&id=8" title="Contact"> Contact </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux.html" title="Projets intercommunaux"> Projets intercommunaux </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/creation-d-un-parc-de-la-prehistoire.html" title="Ouverture d'un Parc de la Préhistoire"> Ouverture d'un Parc de la Préhistoire </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/creation-de-sentiers-vtt.html" title="Création de sentiers VTT"> Création de sentiers VTT </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/extension-micro-creche.html" title="Extension micro-crèche de Monthureux/S."> Extension micro-crèche de Monthureux/S. </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=191" title="Maison des services de Monthureux/S."> Maison des services de Monthureux/S. </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=190" title="Gymnase de Monthureux/S."> Gymnase de Monthureux/S. </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/numerique.html" title="Numérique dans les écoles"> Numérique dans les écoles </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/pressoir-au-mont-de-savillon.html" title="Pressoir au Mont-de-Savillon"> Pressoir au Mont-de-Savillon </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/vignes-de-charmont.html" title="Vignes de Charmont"> Vignes de Charmont </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Vie scolaire"> Vie scolaire </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/inscriptions-scolaires.html" title="Inscriptions scolaires"> Inscriptions scolaires </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/transports-scolaires.html" title="Transports scolaires"> Transports scolaires </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/colleges.html" title="Collèges"> Collèges </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/ecoles-maternelles-et-elementaires.html" title="Menus Écoles"> Menus Écoles </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance.html" title="Services petite enfance"> Services petite enfance </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/projet-educatif-territorial.html" title="Projet Éducatif Territorial"> Projet Éducatif Territorial </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/ram-relais-assistante-maternelle.html" title="RAM - Relais Assistante Maternelle"> RAM - Relais Assistante Maternelle </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/creches-halte-garderie.html" title="Crèches - Halte garderie"> Crèches - Halte garderie </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/laep-lieux-d-accueil-enfants-parents.html" title="LAEP - Lieux d'Accueil Enfants Parents"> LAEP - Lieux d'Accueil Enfants Parents </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=126" title="Services scolaires et périscolaires"> Services scolaires et périscolaires </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-scolaires-et-periscolaires/projet-educatif-territorial.html" title="Projet Éducatif Territorial"> Projet Éducatif Territorial </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-scolaires-et-periscolaires/inscriptions-periscolaire-et-transport.html" title="Inscriptions périscolaire et transport"> Inscriptions périscolaire et transport </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/clairey.html" title="Clairey"> Clairey </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/damblain.html" title="Damblain"> Damblain </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/darney.html" title="Darney"> Darney </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/dombrot-le-sec.html" title="Dombrot-le-sec"> Dombrot-le-sec </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/escles.html" title="Escles"> Escles </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/hennezel.html" title="Hennezel"> Hennezel </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/isches.html" title="Isches"> Isches </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/lamarche.html" title="Lamarche"> Lamarche </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/lerrain.html" title="Lerrain"> Lerrain </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/martigny-les-bains.html" title="Martigny-les-Bains"> Martigny-les-Bains </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/monthureux-sur-saone.html" title="Monthureux-sur-Saône"> Monthureux-sur-Saône </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/les-vallois.html" title="Les Vallois"> Les Vallois </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/sans-vallois.html" title="Sans Vallois"> Sans Vallois </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/viviers-le-gras.html" title="Viviers-le-Gras"> Viviers-le-Gras </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Habitat et Urbanisme"> Habitat et Urbanisme </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=60" title="Amélioration de l'habitat"> Amélioration de l'habitat </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=97" title="Plan Local d'Urbanisme Intercommunal (PLUI)"> Plan Local d'Urbanisme Intercommunal (PLUI) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=158" title="Modification du PLU de DAMBLAIN"> Modification du PLU de DAMBLAIN </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Vie économique"> Vie économique </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=123" title="Zones d'activités"> Zones d'activités </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/aide-a-l-immobilier-d-entreprise.html" title="Aide à l'immobilier d'entreprise"> Aide à l'immobilier d'entreprise </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/marches-publics.html" title="Marchés publics"> Marchés publics </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/offres-d-emploi.html" title="Offres d'Emploi"> Offres d'Emploi </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Tourisme"> Tourisme </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/les-syndicats-d-initiatives.html" title="Office du tourisme intercommunal (OTI)"> Office du tourisme intercommunal (OTI) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=195" title="Guide et carte touristiques"> Guide et carte touristiques </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/taxe-de-sejour.html" title="Taxe de séjour"> Taxe de séjour </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/dispositif-d-aide-a-l-investissement-touristique.html" title="Dispositif d'aide à l'investissement touristique"> Dispositif d'aide à l'investissement touristique </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=108" title="Centre d'animation de la Préhistoire de Darney"> Centre d'animation de la Préhistoire de Darney </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Environnement"> Environnement </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/la-biodiversite-en-10-questions.html" title="La biodiversité en 10 questions"> La biodiversité en 10 questions </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/le-mouzon-et-ses-affluents.html" title="Le Mouzon et ses affluents"> Le Mouzon et ses affluents </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/eolien.html" title="Eolien"> Eolien </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/espaces-naturels-sensibles.html" title="Espaces Naturels Sensibles"> Espaces Naturels Sensibles </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/natura-2000.html-112-1" title="Natura 2000"> Natura 2000 </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/territoire-a-energie-positive-pour-la-croissance-verte-tepcv.html" title="Territoire à Énergie Positive pour la Croissance Verte (TEPCV)"> Territoire à Énergie Positive pour la Croissance Verte (TEPCV) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=119" title="Verger Conservatoire"> Verger Conservatoire </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=113" title="ZPS Bassigny, partie Lorraine"> ZPS Bassigny, partie Lorraine </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/zsc-gites-a-chiropteres-de-la-voge.html" title="ZSC Gîtes à chiroptères de la Vôge"> ZSC Gîtes à chiroptères de la Vôge </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/dispositif-plantez-des-haies.html" title="Dispositif " plantez des haies> Dispositif "Plantez des Haies !" </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/osez-l-agroforesterie.html" title="Osez l'Agroforesterie !"> Osez l'Agroforesterie ! </a></li>
+														</ul>
+													</li>
+													<li class="drop"><a href="javascript:void(0)" title="Vie du Territoire"> Vie du Territoire </a>
+														<!-- Sous menu démolition --><span class="caretMenu"></span>
+														<ul class="sousmenu row">
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/associations.html" title="Vie Associative"> Vie Associative </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/maisons-de-sante.html" title="Maisons de Santé et Professionnels de santé"> Maisons de Santé et Professionnels de santé </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/sicotral.html" title="SICOTRAL (Ordures ménagères)"> SICOTRAL (Ordures ménagères) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=80" title="Agences Postales Communales (APC)"> Agences Postales Communales (APC) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/maison-des-services-au-public.html" title="Maison de Services au Public (MSAP)"> Maison de Services au Public (MSAP) </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/seniors.html" title="Seniors"> Seniors </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/aide-a-la-personne-et-insertion.html" title="Aide à la personne et insertion"> Aide à la personne et insertion </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/services-de-secours.html" title="Services de Secours"> Services de Secours </a></li>
+															<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/repair-cafe.html" title="Repair Café"> Repair Café </a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<!-- Ecran -->
+								<div class="col-xs-12">
+									<nav class="site" role="navigation">
+										<div id="navigationSite">
+											<ul class="listeMenu">
+												<li class="">
+													<div class="borderMenu"></div><a href="http://www.vosgescotesudouest.fr/covid19.html" title=""> ◀◉ COVID19 ◉▶ </a></li>
+												<li class="">
+													<div class="borderMenu"></div><a href="http://www.vosgescotesudouest.fr/actualites.html-48-1" title="Actualités"> Actualités </a></li>
+												<li class="drop active">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="communauté de communes Vosges Côté Sud Ouest" class="active"> Vosges Côté Sud Ouest </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/le-territoire.html" title="Territoire"> Territoire </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/competences-communautaire.html" title="Compétences Communautaires"> Compétences Communautaires </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/organigramme-des-services.html" title="Organigramme des services"> Organigramme des services </a></li>
+														<li class="col-xs-12 ssactive"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/bureaux-et-conseils-communautaire.html" title="Conseils Communautaires"> Conseils Communautaires </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/processus-institutionnel.html" title="Processus Institutionnel"> Processus Institutionnel </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/bulletins-communautaire.html" title="Bulletins Communautaires - LES ECHOS DE L'INTERCO"> Bulletins Communautaires - LES ECHOS DE L'INTERCO </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=contact&id=8" title="Contact"> Contact </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux.html" title=""> Projets intercommunaux </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/creation-d-un-parc-de-la-prehistoire.html" title="Ouverture d'un Parc de la Préhistoire"> Ouverture d'un Parc de la Préhistoire </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/creation-de-sentiers-vtt.html" title="Création de sentiers VTT"> Création de sentiers VTT </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/extension-micro-creche.html" title="Extension micro-crèche de Monthureux/S."> Extension micro-crèche de Monthureux/S. </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=191" title="Maison des services de Monthureux/S."> Maison des services de Monthureux/S. </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=190" title="Gymnase de Monthureux/S."> Gymnase de Monthureux/S. </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/numerique.html" title="Numérique dans les écoles"> Numérique dans les écoles </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/pressoir-au-mont-de-savillon.html" title="Pressoir au Mont-de-Savillon"> Pressoir au Mont-de-Savillon </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/projets-intercommunaux/vignes-de-charmont.html" title="Vignes de Charmont"> Vignes de Charmont </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="Vie scolaire"> Vie scolaire </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/inscriptions-scolaires.html" title="Inscriptions scolaires"> Inscriptions scolaires </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/transports-scolaires.html" title="Transports scolaires"> Transports scolaires </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/colleges.html" title="Collèges"> Collèges </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/ecoles-maternelles-et-elementaires.html" title="Menus Écoles"> Menus Écoles </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="http://www.vosgescotesudouest.fr/services-petite-enfance.html" title="Services petite enfance"> Services petite enfance </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/projet-educatif-territorial.html" title="Projet Éducatif Territorial"> Projet Éducatif Territorial </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/ram-relais-assistante-maternelle.html" title="RAM - Relais Assistante Maternelle"> RAM - Relais Assistante Maternelle </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/creches-halte-garderie.html" title="Crèches - Halte garderie"> Crèches - Halte garderie </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-petite-enfance/laep-lieux-d-accueil-enfants-parents.html" title="LAEP - Lieux d'Accueil Enfants Parents"> LAEP - Lieux d'Accueil Enfants Parents </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="http://www.vosgescotesudouest.fr/?c=pages&id=126" title="Services scolaires et périscolaires"> Services scolaires et périscolaires </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-scolaires-et-periscolaires/projet-educatif-territorial.html" title="Projet Éducatif Territorial"> Projet Éducatif Territorial </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/services-scolaires-et-periscolaires/inscriptions-periscolaire-et-transport.html" title="Inscriptions périscolaire et transport"> Inscriptions périscolaire et transport </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/clairey.html" title="Clairey"> Clairey </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/damblain.html" title="Damblain"> Damblain </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/darney.html" title="Darney"> Darney </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/dombrot-le-sec.html" title="Dombrot-le-sec"> Dombrot-le-sec </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/escles.html" title="Escles"> Escles </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/hennezel.html" title="Hennezel"> Hennezel </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/isches.html" title="Isches"> Isches </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/lamarche.html" title="Lamarche"> Lamarche </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/lerrain.html" title="Lerrain"> Lerrain </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/martigny-les-bains.html" title="Martigny-les-Bains"> Martigny-les-Bains </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/monthureux-sur-saone.html" title="Monthureux-sur-Saône"> Monthureux-sur-Saône </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/les-vallois.html" title="Les Vallois"> Les Vallois </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/sans-vallois.html" title="Sans Vallois"> Sans Vallois </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/ecoles-et-services/viviers-le-gras.html" title="Viviers-le-Gras"> Viviers-le-Gras </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title=""> Habitat et Urbanisme </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=60" title="Amélioration de l'habitat"> Amélioration de l'habitat </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=97" title="Plan Local d'Urbanisme Intercommunal (PLUI)"> Plan Local d'Urbanisme Intercommunal (PLUI) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=158" title="Modification du PLU de DAMBLAIN"> Modification du PLU de DAMBLAIN </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="vie économique"> Vie économique </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=123" title="Zones d'activités"> Zones d'activités </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/aide-a-l-immobilier-d-entreprise.html" title="Aide à l'immobilier d'entreprise"> Aide à l'immobilier d'entreprise </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/marches-publics.html" title="Marchés publics"> Marchés publics </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-economique/offres-d-emploi.html" title="Offres d'Emploi"> Offres d'Emploi </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="Tourisme"> Tourisme </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/les-syndicats-d-initiatives.html" title="Office du tourisme intercommunal (OTI)"> Office du tourisme intercommunal (OTI) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=195" title="Guide et carte touristiques"> Guide et carte touristiques </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/taxe-de-sejour.html" title="Taxe de séjour"> Taxe de séjour </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/tourisme/dispositif-d-aide-a-l-investissement-touristique.html" title="Dispositif d'aide à l'investissement touristique"> Dispositif d'aide à l'investissement touristique </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=108" title="Centre d'animation de la Préhistoire de Darney"> Centre d'animation de la Préhistoire de Darney </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="environnement"> Environnement </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/la-biodiversite-en-10-questions.html" title="La biodiversité en 10 questions"> La biodiversité en 10 questions </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/le-mouzon-et-ses-affluents.html" title="Le Mouzon et ses affluents"> Le Mouzon et ses affluents </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/eolien.html" title="Eolien"> Eolien </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/espaces-naturels-sensibles.html" title="Espaces Naturels Sensibles"> Espaces Naturels Sensibles </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/natura-2000.html-112-1" title="Natura 2000"> Natura 2000 </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/territoire-a-energie-positive-pour-la-croissance-verte-tepcv.html" title="Territoire à Énergie Positive pour la Croissance Verte (TEPCV)"> Territoire à Énergie Positive pour la Croissance Verte (TEPCV) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=119" title="Verger Conservatoire"> Verger Conservatoire </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=113" title="ZPS Bassigny, partie Lorraine"> ZPS Bassigny, partie Lorraine </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/zsc-gites-a-chiropteres-de-la-voge.html" title="ZSC Gîtes à chiroptères de la Vôge"> ZSC Gîtes à chiroptères de la Vôge </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/dispositif-plantez-des-haies.html" title="Dispositif " plantez des haies> Dispositif "Plantez des Haies !" </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/environnement/osez-l-agroforesterie.html" title="Osez l'Agroforesterie !"> Osez l'Agroforesterie ! </a></li>
+													</ul>
+												</li>
+												<li class="drop">
+													<div class="borderMenu"></div><a href="javascript:void(0)" title="vie du territoire"> Vie du Territoire </a>
+													<!-- Sous menu démolition -->
+													<ul class="sousmenu row">
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/associations.html" title="Vie Associative"> Vie Associative </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/maisons-de-sante.html" title="Maisons de Santé et Professionnels de santé"> Maisons de Santé et Professionnels de santé </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/sicotral.html" title="SICOTRAL (Ordures ménagères)"> SICOTRAL (Ordures ménagères) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=80" title="Agences Postales Communales (APC)"> Agences Postales Communales (APC) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/maison-des-services-au-public.html" title="Maison de Services au Public (MSAP)"> Maison de Services au Public (MSAP) </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/seniors.html" title="Seniors"> Seniors </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/aide-a-la-personne-et-insertion.html" title="Aide à la personne et insertion"> Aide à la personne et insertion </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/services-de-secours.html" title="Services de Secours"> Services de Secours </a></li>
+														<li class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/repair-cafe.html" title="Repair Café"> Repair Café </a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<!-- Fin menu -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-fluid container-large">
+			<div class="row">
+				<div class="banner-header col-xs-12">
+					<!--<img src="Views/images/banniere-header.jpg"/>--><img src="upload/annonces/normal/P10701971_1.jpg" style="width:100%; max-height: 300px;"></div>
+			</div>
+		</div>
+		<div class="container-fluid flash-info">
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="contenu-flash">Flash info : ➽➽  Les bureaux de la Communauté de Communes de Darney, Monthureux et Lamarche vous ouvrent leurs portes sur RDV / Inscriptions scolaires : voir rubrique Vie Scolaire.</p>
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<div class="container">
+				<div class="contenu-fil">
+					<div class="row">
+						<div class="col-xs-12 col-md-8">
+							<div class="pull-left"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <h4>Vous êtes ici :</h4><a href="http://www.vosgescotesudouest.fr/" title="Accueil" id="2" itemprop="item"><span itemprop="name"> Accueil</span><meta itemprop="position" content="1"></a>  >  </span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a href="javascript:void(0)" title="Vosges Côté Sud Ouest" itemprop="item"><span itemprop="name">Vosges Côté Sud Ouest</span><meta itemprop="position" content="2"></a>  >  </span>
+								<h4 itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="http://www.vosgescotesudouest.fr/vosges-cote-sud-ouest/bureaux-et-conseils-communautaire.html" title="Conseils Communautaires" itemprop="item"><span itemprop="name" style="font-size: 16px;">Conseils Communautaires</span><meta itemprop="position" content="3"></a></h4>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-4"><a href="" id="share"><span class="share"></span><h4 style="padding-left: 35px;">Partager cette page</h4></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-large container-fluid">
+			<div class="row">
+				<div class="contenu-texte col-xs-12">
+					<div class="container">
+						<h2>Conseils Communautaires</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-large container-fluid">
+			<div class="row">
+				<div class="container">
+					<div class="contenu-vcso col-xs-12 col-md-8">
+						<h3>Décisions du Président</h3>
+						<p><a title="ADM20201_TPN (1)" href="http://vosgescotesudouest.fr/userfiles/BC-CC/Decisions%20president/ADM20201_TPN%20(1).pdf" target="_blank" rel="noopener noreferrer">05/06/2020 - Décision Adhésion SPL-Xdemat<br></a><a title="DECISION ECONOMIE 2020-02" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Decisions%20president/DECISION%20ECONOMIE%202020-02.pdf" target="_blank" rel="noopener noreferrer">20/04/2020 - Décision économie 2020-02<br></a><a title="DECISION SCOLAIRE 2020-01" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Decisions%20president/DECISION%20SCOLAIRE%202020-01.pdf" target="_blank" rel="noopener noreferrer">16/04/2020 - Décision scolaire 2020-01<br></a><a title="Décision Economie 01 Fond de resistance" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Decisions%20president/D%C3%A9cision%20Economie%2001%20Fond%20de%20resistance.pdf" target="_blank" rel="noopener noreferrer">10/04/2020 - Décision Economie 01 Fonds de resistance</a> </p>
+						<p> </p>
+						<h3>Conseils Communautaires 2020</h3>
+						<p><a title="PV Conseil 10 Mars 2020" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/PV%20Conseil%2010%20Mars%202020.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire du 10 MARS 2020</a></p>
+						<h3> </h3>
+						<h3>Conseils Communautaires 2019</h3>
+						<p><a title="PV Conseil 10 décembre 2019 (1)" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20Conseil%2010%20d%C3%A9cembre%202019%20(1).pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 10 DECEMBRE 2019</a><br><a title="PV du Conseil Comm 24 septembre 19" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20du%20Conseil%20Comm%2024%20septembre%2019.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 24 SEPTEMBRE 2019</a><a title="Conseil Communatuaire 27 Août 19 Affichage" href="http://vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communatuaire%2027%20Ao%C3%BBt%2019%20Affichage.pdf" target="_blank" rel="noopener noreferrer"><br>Conseil Communautaire 27 AOUT 2019<br></a><a title="Conseil Communautaire 25 JUIN 2019 site internet" href="http://vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communautaire%2025%20JUIN%202019%20site%20internet.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 25 JUIN 2019<br></a><a title="Pv Conseil Communautaire 28 Mai 2019" href="http://vosgescotesudouest.fr/userfiles/BC-CC/Pv%20Conseil%20Communautaire%2028%20Mai%202019.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 28 MAI 2019<br></a><a title="PV Conseil Comm 9 Avril 2019" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20Conseil%20Comm%209%20Avril%202019.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 9 AVRIL 2019<br></a><a title="PV conseil Communautaire 12 Mars 2019" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20conseil%20Communautaire%2012%20Mars%202019.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 12 MARS 2019</a><a title="PV Conseil Comm 9 Avril 2019" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20Conseil%20Comm%209%20Avril%202019.pdf" target="_blank" rel="noopener noreferrer"><br></a><a title="PV conseil Communautaire 12 Février 2019[26984]" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20conseil%20Communautaire%2012%20F%C3%A9vrier%202019%5B26984%5D.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire 12 FEVRIER 2019</a></p>
+						<h3>Conseils Communautaires 2018</h3>
+						<p><a title="Conseil Communautaire du 13 Février 2018" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%2013-02.pdf">Conseil Communautaire du 13 Février 2018<br></a><a title="Conseil Communautaire du 13 Mars 2018" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%2013-03.pdf">Conseil Communautaire du 13 Mars 2018<br></a><a title="Conseil Communautaire du 10 Avril 2018" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communautaire%20du%2010%20Avril%202018.pdf">Conseil Communautaire du 10 Avril 2018<br></a><a title="Conseil Communautaire du 22 Mai 2018" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communautaire%20du%2022%20Mai%202018.pdf">Conseil Communautaire du 22 Mai 2018<br></a><a title="Conseil Communautaire du 25 Juin 2018" href="http://www.vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communautaire%20du%2025%20Juin%202018.pdf">Conseil Communautaire du 25 Juin 2018<br></a><a title="PV Conseil Comm 20 Août" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20Conseil%20Comm%2020%20Ao%C3%BBt.pdf">Conseil Communautaire du 20 Août 2018<br></a><a title="Conseil Communautaire du 11 Septembre 2018" href="http://vosgescotesudouest.fr/userfiles/BC-CC/Conseil%20Communautaire%20du%2011%20Septembre%202018.pdf">Conseil Communautaire du 11 Septembre 2018<br></a><a title="PVCC301018" href="http://vosgescotesudouest.fr/userfiles/BC-CC/PVCC301018.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire du 30 Octobre 2018<br></a><a title="PV conseil Communautaire 11 Décembre 2018 " href="http://vosgescotesudouest.fr/userfiles/BC-CC/PV%20conseil%20Communautaire%2011%20D%C3%A9cembre%202018%20.pdf" target="_blank" rel="noopener noreferrer">Conseil Communautaire du 11 Décembre 2018</a></p>
+					</div>
+					<div class="colonne-droite-vcso col-xs-12 col-md-4">
+						<div class="titre-style">
+							<h2 style="margin-left:0px;">communauté de communes Vosges Côté Sud Ouest</h2>
+						</div>
+						<div class="menu-style">
+							<ul class="menu-liste">
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Territoire</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Compétences Communautaires</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Organigramme des services</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A" class="active"> <li class="active">Conseils Communautaires</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Processus Institutionnel</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Bulletins Communautaires - LES ECHOS DE L'INTERCO</li> </a>
+								<div class="borde-menu"></div><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien_page%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/05a3d5ce36bf1585986e3a5448a5d802c7f8fcea.file.elt-menu-droit.tpl.php</b>%20on%20line%20<b>48</b><br%20/>%0A"> <li>Contact</li> </a>
+								<div class="borde-menu"></div>
+							</ul>
+						</div>
+						<div class="vignette-decouvrez">
+							<div class="bloc-texte-communes"></div>
+							<div class="select-communes"><label></label> <select id="decouvrez-select"> <option value="">Choisir une commune</option> <br> <b>Notice</b>: Undefined index: villes in <b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/6d609ba4b87a1dd92790cf973c5040f1ecd9d057.file.elt-decouvrez.tpl.php</b> on line <b>52</b><br> </select></div>
+						</div>
+						<div class="vignette-actu">
+							<div class="titre-style">
+								<h2>actualités</h2>
+							</div>
+							<div class="owl-actu-mini"></div>
+							<!--<div class="carte col-xs-12">
+    <div class="cadre">
+      <img src="Views/images/fd-actu-1.jpg" />
+      <div class="container-actu">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id mi commodo, tempus metus sed, finibus lectus.</p>
+        <a href="" class="btn-actu-gen">21 Juin 2017</a>
+      </div>
+    </div>
+  </div>-->
+							<div class="content-right"><a href="" class="lien-full">Toutes les actualités ></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-large container-fluid">
+			<div class="row">
+				<div class="acces-direct col-xs-12">
+					<div class="container">
+						<h2>Accès Direct</h2>
+						<div class="liens-acces owl-acces">
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/inscriptions-scolaires.html" title="Inscriptions scolaires"> <img src="upload/page_menu/normal/icone-inscription-scolaire_1.png" title="Inscriptions scolaires" alt="Inscriptions scolaires"> <p>Inscriptions scolaires</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/tourisme/les-syndicats-d-initiatives.html" title="Office du tourisme intercommunal (OTI)"> <img src="" title="Office du tourisme intercommunal (OTI)" alt="Office du tourisme intercommunal (OTI)"> <p>Office du tourisme intercommunal (OTI)</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/transports-scolaires.html" title="Transports scolaires"> <img src="" title="Transports scolaires" alt="Transports scolaires"> <p>Transports scolaires</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/enfance-et-jeunesse/ecoles-maternelles-et-elementaires.html" title="Menus Écoles"> <img src="upload/page_menu/normal/icone-menus-ecole_1.png" title="Menus Écoles" alt="Menus Écoles"> <p>Menus Écoles</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/vie-du-territoire/maison-des-services-au-public.html" title="Maison de Services au Public (MSAP)"> <img src="upload/page_menu/normal/icone-services-aux-public_1.png" title="Maison de Services au Public (MSAP)" alt="Maison de Services au Public (MSAP)"> <p>Maison de Services au Public (MSAP)</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/?c=pages&id=60" title="Habitat et Urbanisme"> <img src="upload/page_menu/normal/icone-habitat-urbanisme_1.png" title="Habitat et Urbanisme" alt="Habitat et Urbanisme"> <p>Habitat et Urbanisme</p> </a></div>
+							<div class="item-acces"><a href="http://www.vosgescotesudouest.fr/?c=contact&id=8" title="Nous contacter"> <img src="upload/page_menu/normal/icone-location-salles_1.png" title="Nous contacter" alt="Nous contacter"> <p>Nous contacter</p> </a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banniere">
+			<!--<img src="Views/images/fd-banniere.jpg"/>
+    <div class="contenu-banniere">
+      <img src="Views/images/logo-blanc.png" />
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a placerat dui. Nulla eros enim.</h3>
+    </div>--><img src="upload/annonces/normal/20171010_142257_HDR1.jpg" style="width: 100%; height: 350px;">
+			<div class="contenu-banniere"><img src="Views/images/logo-blanc.png">
+				<h3></h3>
+			</div>
+		</div>
+		<div class="container-large container-fluid">
+			<div class="row">
+				<div class="container">
+					<div class="bloc-communautaire">
+						<div class="bloc-accueil-contact col-xs-12 col-md-4" style="margin-bottom: 60px;">
+							<div class="titre-style">
+								<h2>contactez-nous</h2>
+							</div>
+							<div class="btn-contact-communautaire"><a href="http://www.vosgescotesudouest.fr/?c=contact&id=8">Nous situer<span></span></a>
+								<div class="borde-contact"></div><a href="http://www.vosgescotesudouest.fr/?c=contact&id=8">Nous contacter<span></span></a></div>
+						</div>
+						<div class="bloc-vie-communautaire col-xs-12 col-md-8">
+							<div class="titre-style">
+								<h2>vie communautaire</h2>
+							</div>
+							<div class="btn-vie-communautaire" style="margin-bottom:20px;"></div>
+							<div class="content-right"><a href="<br%20/>%0A<b>Notice</b>:%20%20Undefined%20index:%20lien%20in%20<b>/mnt/www/htdocs/vosges-cote-sud-ouest/cache/templates_c/15ec0897a70151dddd884c882822ed780bc637ee.file.elt-vie-communautaire.tpl.php</b>%20on%20line%20<b>78</b><br%20/>%0A" class="lien-full">Tous les bulletins intercommunaux ></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<section class="container-large" style="background-color:#efedea;">
+				<div class="fond-footer">
+					<div class="container">
+						<div class="container-top-footer">
+							<div class="row">
+								<div class="firstcol col-xs-12 col-md-5"><a href="http://www.vosgescotesudouest.fr/"><img src="Views/images/titre-footer.png" style="margin-bottom: 20px;"></a>
+									<div class="first">
+										<h4>Coordonnées</h4><span class="adresse"></span>
+										<p style="line-height:22px;">43 rue de la République <br> 88260 Darney</p><span class="tel"></span>
+										<p>03 29 09 43 16</p><span class="mail"></span>
+										<p>contact@vosgescotesudouest.fr</p>
+									</div>
+									<div class="second">
+										<h4>On vous accueille</h4>
+										<p></p>
+										<p><strong>A DARNEY :</strong></p>
+										<p>Du lundi au mercredi:<br> 8h30-12h / 13h30-17h<br>Jeudi :<br>8h30-12h30 / 13h30-17h<br>Vendredi :<br>8h30-12h / 13h30-16h</p>
+										<p><strong>A LAMARCHE :</strong></p>
+										<p>ZA Chéri Buisson<br>03.29.09.43.43<br>Lundi, mardi, jeudi : <br>8h30-12h / 14h-16h<br>Vendredi : 8h30-12h</p>
+										<p><strong>A MONTHUREUX-SUR-SAÔNE :</strong></p>
+										<p>61 Rue du Pervis<br>03.29.07.57.84<br>Du lundi au vendredi :<br>8h30-12h / 13h30-17h</p>
+										<p><a href="https://www.facebook.com/ComcomVCSO/" target="_blank" rel="noopener noreferrer"><strong>PAGE FACEBOOK</strong></a></p>
+									</div>
+								</div>
+								<div class="secondcol col-xs-12 col-md-4">
+									<h4>Navigation</h4>
+									<ul style="padding-right: 50px;">
+										<li><a href="http://www.vosgescotesudouest.fr/tourisme/taxe-de-sejour.html">Taxe de séjour</a></li>
+										<li><a href="http://www.vosgescotesudouest.fr/actualites.html-48-1">Actualités</a></li>
+										<li><a href="javascript:void(0)">Vosges Côté Sud Ouest</a></li>
+									</ul>
+									<ul>
+										<li><a href="javascript:void(0)">Vie scolaire</a></li>
+										<li><a href="http://www.vosgescotesudouest.fr/?c=pages&id=126">Services scolaires et périscolaires</a></li>
+										<li><a href="javascript:void(0)">Habitat et Urbanisme</a></li>
+										<li><a href="javascript:void(0)">Vie économique</a></li>
+										<li><a href="javascript:void(0)">Tourisme</a></li>
+										<li><a href="javascript:void(0)">Environnement</a></li>
+										<li><a href="javascript:void(0)">Vie du Territoire</a></li>
+									</ul>
+								</div>
+								<div class="thirdcol col-xs-12 col-md-3"><img src="upload/annonces/normal/Office_de_Tourisme_VCSO_LogoRVB@2x.png" title="OTVCSO" alt="OTVCSO" class="logo-footer"> <img src="upload/annonces/normal/paysdepinal.jpeg" title="Logo Pays d'Epinal" alt="Logo Pays d'Epinal" class="logo-footer"> <img src="upload/annonces/normal/Logo-UE-FEDER-web.jpg" title="" alt="" class="logo-footer"></div>
+							</div>
+						</div>
+						<div class="container-bottom-footer">
+							<div class="row">
+								<div class="col-xs-12"><a href="http://www.vosgescotesudouest.fr/plan-du-site.html"><h4>Plan du site</h4></a> <a href="http://www.vosgescotesudouest.fr/mentions-legales.html"><h4>Mentions légales</h4></a> <a href="http://www.vosgescotesudouest.fr/?c=contact&id=8"><h4>Contact</h4></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Copy - Right
+  ================================================== -->
+			<div class="end-footer">
+				<div class="copy-right container-fluid ">
+					<div class="row">
+						<div class="logo-dsoft container">
+							<center><span style="padding-right:10px;">Réalisation digitale</span> <a href="http://www.dsoft.fr/p26-offres-de-sites-web" title="Agence web Nancy" target="_blank"> <img src="Views/images/logo-dsoft.png" alt="Agence web et référencement Nancy" title="Agence web et référencement Nancy"> </a> <span style="padding-left:10px">Agence web Nancy</span></center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Slider Item
+================================================== -->
+		<script src="Views/js/flexslider.js"></script>
+		<script src="Views/js/custom.js?t=1542366846"></script>
+		<script>
+        var coord = [];
+        
+                            var coordCurrent = {
+                    "type" : "Feature",
+                    "properties": {
+                        "message": "43 rue de la République 88260 Darney \n 03 29 09 43 16 \n contact@vosgescotesudouest.fr",
+                        "iconSize": [50, 50]
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            6.046138499999984, 48.0855433
+                        ]
+                    }
+                };
+                coord.push(coordCurrent);
+                    
+        var geojson = {
+            "type": "FeatureCollection",
+            "features": coord
+        }
+        var icons = "http://www.vosgescotesudouest.fr/Views/images/markerDefault.png";
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZHNvZnQiLCJhIjoiY2psaHB1NnduMDdmMjN3b2U2d2F2YXdjayJ9.mFimkT2vfL1VQ94KoI7BdA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10',
+            center: [6.046138499999984,48.0855433],
+            zoom: 10.5
+        });
+
+        geojson.features.forEach(function(marker) {
+            // create a DOM element for the marker
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url('+icons+')';
+            el.style.width = marker.properties.iconSize[0] + 'px';
+            el.style.height = marker.properties.iconSize[1] + 'px';
+            el.addEventListener('click', function() {
+                window.alert(marker.properties.message);
+            });
+            // add marker to map
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .addTo(map);
+        });
+    
+		</script>
+	</body>
+</html>
