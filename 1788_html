@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>/ RAA</title>
+		<meta name="Description" content=" ">
+		<meta name="Keywords" content="Moselle, préfecture ">
+		<meta name="Author" content="Préfecture de la Moselle">
+		<meta name="robots" content="index,follow">
+		<meta name="rating" content="General">
+		<meta name="reply-to" content="">
+		<meta name="content-language" content="fr-FR">
+		<meta name="Owner" content="">
+		<meta name="verify-v1" content="">
+		<link rel="start" title="" href="" type="text/html">
+		<link type="text/css" rel="stylesheet" href="">
+		<link href="https://mc.moselle.gouv.fr/common/templates/frontoffice/mc_1280_avec_bandeau/styles.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="https://mc.moselle.gouv.fr/common/templates/frontoffice/mc_1280_avec_bandeau/forms.css" rel="stylesheet" type="text/css" media="screen">
+		<link type="text/css" rel="stylesheet" href="https://mc.moselle.gouv.fr/common/templates/frontoffice/mc_1280_avec_bandeau/clearbox.css">
+		<script src="https://mc.moselle.gouv.fr/common/include/clearbox.js?lng=fr" type="text/javascript"></script>
+		<script src="https://mc.moselle.gouv.fr/common/include/flowplayer-3.1.4.min.js" type="text/javascript"></script>
+		<script src="https://mc.moselle.gouv.fr/common/include/AC_RunActiveContent.js" type="text/javascript"></script>
+		<!--[if lte IE 6]>
+	<script type="text/javascript" src="https://mc.moselle.gouv.fr/common/include/supersleight-min.js"></script>
+	<![endif]-->
+		<!--[if lte IE 7]>
+	<link type="text/css" rel="stylesheet" href="https://mc.moselle.gouv.fr/common/templates/frontoffice/mc_1280_avec_bandeau/styles_ie.css" />
+	<![endif]-->
+	</head>
+	<body>
+		<div align="center" id="header" style="z-index:0"></div>
+		<div class="contenu">
+			<p>
+				<script langage="javascript">
+    dims_window_onload_functions = new Array();
+
+function keepConnexion() {
+    timerkeepconnect = setTimeout("execKeepConnexion()", 300000);
+}
+
+function execKeepConnexion() {
+    clearTimeout(timerkeepconnect);
+    dims_xmlhttprequest('admin-light.php','dims_op=keep_connection');
+    keepConnexion();
+}
+
+function switchElementDisplay(id) {
+	var elem	= dims_getelem(id);
+	var img		= dims_getelem('img'+id);
+
+	if (elem.style.display=="block") {
+		elem.style.display		= "none";
+		elem.style.visibility	= "hidden";
+		img.src					= "/img/plus.gif";
+	}else {
+		elem.style.display		= "block";
+		elem.style.visibility	= "visible";
+		img.src					= "/img/minus.gif";
+	}
+
+}
+
+function dims_window_onload_stock(func) {
+	dims_window_onload_functions[dims_window_onload_functions.length] = func;
+}
+
+function dims_window_onload_launch()
+{
+	window.onload = function() {
+		for(i = 0; i < dims_window_onload_functions.length; i++) {
+			dims_window_onload_functions[i]();
+		}
+	}
+}
+
+function dims_openwin(url,w,h,name) {
+   var top = (screen.height-(h+60))/2;
+   var left = (screen.width-w)/2;
+
+   if(name == '') name = 'dimswin';
+   dimswin=window.open(url,name,'top='+top+',left='+left+',width='+w+', height='+h+', status=no, menubar=no, toolbar=no, scrollbars=yes, resizable=yes, screenY=20, screenX=20');
+   dimswin.focus();
+}
+
+
+function dims_confirmform(form, message) {
+	if (confirm(message)) form.submit();
+}
+
+function dims_confirmlink(link, message) {
+	if (confirm(message)) location.href=link;
+}
+
+function dims_switchstyle(obj, opacity) {
+	obj.style.filter='alpha(opacity:'+(opacity)+')';
+	obj.style.MozOpacity = opacity/100;
+}
+
+function dims_switchdisplay(id) {
+	e = dims_getelem(id);
+	if (e) e.style.display = (e.style.display == 'none') ? 'block' : 'none';
+}
+
+function dims_validatefield(field_label, field_object, field_type) {
+	var ok = true;
+	var i;
+	var nbpoint = 0;
+	var msg = new String();
+	var reg = new RegExp("<FIELD_LABEL>","gi");
+
+	if (field_object) {
+		field_value = field_object.value;
+		if (field_type == 'selected') {
+			msg = lstmsg[9];
+			ok = (field_object.selectedIndex >= 0);
+		}
+
+		if (field_type == 'checked') {
+			msg = lstmsg[9];
+			ok = false;
+			for (c = 0; c < field_object.length; c++) {
+				if (field_object[c].checked) ok = true;
+			}
+		}
+
+		if (field_type == 'email') {
+
+			var email = field_value;
+			var aroba = email.indexOf("@");
+
+			if (aroba == -1)
+			{
+				ok = false;
+				msg = lstmsg[0];
+			}
+
+			if (ok)
+			{
+				var point = email.indexOf(".", aroba);
+				if ((point == -1) || (point == (aroba + 1)))
+				{
+					ok=false;
+					msg = lstmsg[1];
+				}
+			}
+
+			if (ok)
+			{
+				var point = email.lastIndexOf(".");
+				if ((point + 1) == email.length)
+				{
+					ok = false;
+					msg = lstmsg[2];
+				}
+			}
+
+			if (ok)
+			{
+				point = email.indexOf("..")
+				if (point != -1)
+				{
+					ok = false;
+					msg = lstmsg[3];
+				}
+			}
+		}
+
+		if (field_type == 'emptyemail')
+		{
+			if (field_value.length!=0)
+			{
+				var email = field_value;
+				var aroba = email.indexOf("@");
+
+				if (aroba == -1)
+				{
+					ok = false;
+					msg = lstmsg[0];
+				}
+
+				if (ok)
+				{
+					var point = email.indexOf(".", aroba);
+					if ((point == -1) || (point == (aroba + 1)))
+					{
+						ok=false;
+						msg = lstmsg[1];
+					}
+				}
+
+				if (ok)
+				{
+					var point = email.lastIndexOf(".");
+					if ((point + 1) == email.length)
+					{
+						ok = false;
+						msg = lstmsg[2];
+					}
+				}
+
+				if (ok)
+				{
+					point = email.indexOf("..")
+					if (point != -1)
+					{
+						ok = false;
+						msg = lstmsg[3];
+					}
+				}
+			}
+		}
+
+		if (field_type == 'color')
+		{
+			var color = new dims_rgbcolor(field_value);
+			if (!color.ok)
+			{
+				ok = false;
+				msg = lstmsg[10];
+			}
+		}
+
+		if (field_type == 'string')
+		{
+			if (field_value.replace(/(^\s*)|(\s*$)/g,'').length==0)
+			{
+				ok = false;
+				msg = lstmsg[4];
+			}
+		}
+
+		if (field_type == 'int')
+		{
+			if (field_value.length==0 || field_value.length>12) ok = false;
+			for (i=0;i<field_value.length;i++)
+			{
+				if (field_value.charAt(i)<'0' || field_value.charAt(i)>'9') ok = false;
+			}
+			if (!ok) msg = lstmsg[5];
+		}
+
+		if (field_type == 'emptyint')
+		{
+			if (field_value.length>12) ok = false;
+			for (i=0;i<field_value.length;i++)
+			{
+				if (field_value.charAt(i)<'0' || field_value.charAt(i)>'9') ok = false;
+			}
+			if (!ok) msg = lstmsg[5];
+		}
+
+		if (field_type == 'float')
+		{
+			if (field_value.length==0) ok = false;
+			for (i=0;i<field_value.length;i++)
+			{
+				if (field_value.charAt(i)=='.' || field_value.charAt(i)==',') nbpoint++;
+				else if (field_value.charAt(i)<'0' || field_value.charAt(i)>'9') ok = false;
+			}
+			if (nbpoint>1) ok = false;
+
+			if (!ok) msg = lstmsg[6];
+		}
+
+		if (field_type == 'emptyfloat')
+		{
+			for (i=0;i<field_value.length;i++)
+			{
+				if (field_value.charAt(i)=='.' || field_value.charAt(i)==',') nbpoint++;
+				else if (field_value.charAt(i)<'0' || field_value.charAt(i)>'9') ok = false;
+			}
+			if (nbpoint>1) ok = false;
+
+			if (!ok) msg = lstmsg[6];
+		}
+
+		if (field_type == 'date')
+		{
+			var thedate = field_value.split("/");
+			if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) thedate = field_value.split("-");
+			if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) thedate = field_value.split(":");
+			if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) ok = false;
+			if (ok)
+			{
+				var datetotest = new Date(eval(thedate[2]),eval(thedate[1])-1,eval(thedate[0]));
+				var year = datetotest.getYear()
+				if ((Math.abs(year)+"").length < 4) year = year + 1900
+				ok = ((datetotest.getDate() == eval(thedate[0])) && (datetotest.getMonth() == eval(thedate[1])-1) && (year == eval(thedate[2])));
+			}
+			if (!ok) msg = lstmsg[7];
+		}
+
+		if (field_type == 'time')
+		{
+			if (field_value.length!=5) ok = false;
+			else
+			{
+				h=field_value.substring(0,2);
+				m=field_value.substring(3,5);
+				if (parseInt(h)<0 || parseInt(h)>23) ok = false;
+				if (parseInt(m)<0 || parseInt(m)>59) ok = false;
+				madate=new Date(01,01,2000,h,m);
+				if (madate=="NaN" || field_value.charAt(2)!=':') ok = false;
+			}
+			if (!ok) msg = lstmsg[8];
+		}
+
+		if (field_type=='emptydate')
+		{
+			if (field_value.length!=0)
+			{
+				var thedate = field_value.split("/");
+				if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) thedate = field_value.split("-");
+				if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) thedate = field_value.split(":");
+				if (thedate.length != 3 || isNaN(parseInt(thedate[0])) || isNaN(parseInt(thedate[1])) || isNaN(parseInt(thedate[2]))) ok = false;
+				if (ok)
+				{
+					var datetotest = new Date(eval(thedate[2]),eval(thedate[1])-1,eval(thedate[0]));
+					var year = datetotest.getYear()
+					if ((Math.abs(year)+"").length < 4) year = year + 1900
+					ok = ((datetotest.getDate() == eval(thedate[0])) && (datetotest.getMonth() == eval(thedate[1])-1) && (year == eval(thedate[2])));
+				}
+				if (!ok) msg = lstmsg[7];
+			}
+		}
+
+		if (field_type=='emptytime')
+		{
+			if (field_value.length!=0)
+			{
+				if (field_value.length!=5) ok = false;
+				else
+				{
+					h=field_value.substring(0,2);
+					m=field_value.substring(3,5);
+					if (parseInt(h)<0 || parseInt(h)>23) ok = false;
+					if (parseInt(m)<0 || parseInt(m)>59) ok = false;
+					madate=new Date(01,01,2000,h,m);
+					if (madate=="NaN" || field_value.charAt(2)!=':') ok = false;
+				}
+				if (!ok) msg = lstmsg[8];
+			}
+		}
+	}
+	else
+	{
+		ok = false;
+	}
+
+	if (!ok)
+	{
+		alert(msg.replace(reg,field_label));
+		if (field_type != 'checked')
+		{
+			field_object.style.background = error_bgcolor;
+			field_object.focus();
+		}
+	}
+
+	return (ok);
+}
+
+
+function dims_checkall(form, mask, value, byid)
+{
+	var len = form.elements.length;
+	var reg = new RegExp(mask,"g");
+
+	if (isNaN(byid)) byid = false;
+
+	for (var i = 0; i < len; i++)
+	{
+		var e = form.elements[i];
+		if (byid) { if (e.id.match(reg)) e.checked = value; }
+		else if (e.name.match(reg)) e.checked = value;
+	}
+}
+
+var	timer_started = false;
+var popup_displayed = false;
+var	posx = 0;
+var	posy = 0;
+var	msg = '';
+
+function dims_showpopup_delayed(w,namepopup,h) {
+	if (timer_started) {
+		w = parseInt(w);
+		if (h==null) h="auto";
+		else h=parseInt(h)+'px';
+
+        if (namepopup=="" || namepopup==null) namepopup="dims_popup";
+		var dims_popup = dims_getelem(namepopup);
+
+//		with (dims_popup.style)
+//		{
+
+			//dims_popup.style.display = 'none';
+			//dims_popup.innerHTML = msg+' '+posx+','+posy;
+			if (msg!="") dims_popup.innerHTML = msg;
+
+			tmpleft = parseInt(posx) + 20;
+			tmptop = parseInt(posy);
+
+			if (w > 0) dims_popup.style.width = w+'px';
+			else w = parseInt(dims_popup.offsetWidth);
+
+			dims_popup.style.height = h;
+
+			if (20 + w + parseInt(tmpleft) > parseInt(document.body.offsetWidth)) {
+				tmpleft =parseInt(document.body.offsetWidth) - w - 10;
+			}
+
+			//if (tmptop+200>parseInt(document.body.offsetHeight)) // && tmptop > 300)
+			//	dims_popup.style.top = (tmptop-200)+'px';
+			//else
+			dims_popup.style.top = tmptop+'px';
+			dims_popup.style.left = tmpleft+'px';
+			dims_popup.style.display = 'block';
+			dims_popup.style.visibility = 'visible';
+			dims_popup.style.overflow = "auto";
+//		}
+
+		popup_displayed = true;
+		timer_started=false;
+	}
+}
+
+
+function dims_addslashes(str)
+{
+	str = str.replace(/\\/g,"\\\\");
+	str = str.replace(/\'/g,"\\'");
+	str = str.replace(/\"/g,"\\\"");
+	return(str);
+}
+
+function dims_redirect(url){
+    parent.location = url;
+}
+
+function dims_showcenteredpopup(message,w,h,namepopup) {
+	blockclosepopup=true;
+    if (namepopup=="" || namepopup==null) namepopup="dims_popup";
+	if (w=="") w=500;
+	if (h=="") h=500;
+
+	var msg = message;
+
+	if( window.innerWidth) {
+		largeur=window.innerWidth;
+	}
+  	else {
+  		largeur=document.body.offsetWidth;
+  	}
+    if( window.innerHeight) {
+		hauteur=window.innerHeight;
+	}
+  	else {
+  		hauteur=document.body.offsetHeight;
+  	}
+	hcal=(hauteur-h)/2;
+	if (hcal<0) hcal=10;
+
+	posx=(largeur-w)/2;
+	posy=hcal+window.scrollY;
+
+	if (!timer_started) {
+		timer_started = true;
+		setTimeout("dims_showpopup_delayed("+w+",'"+namepopup+"')", 10);
+	}
+}
+
+function dims_showpopup(message, w, e, origine,namepopup,decalx,decaly,decalfix_x,decalfix_y) {
+	if (namepopup=="" || namepopup==null) namepopup="dims_popup";
+    if (decalx=="" || decalx==null) decalx=0;
+    else decalx=decalx*1;
+
+    if (decaly=="" || decaly==null) decaly=0;
+    else decaly=decaly*1;
+
+    if (decalfix_x=="" || decalfix_x==null) decalfix_x=0;
+    if (decalfix_y=="" || decalfix_y==null) decalfix_y=0;
+
+    msg = message;
+
+	if (!origine) var origine = '';
+
+	if( window.innerWidth) {
+		largeur=window.innerWidth;
+	}
+  	else {
+  		largeur=document.body.offsetWidth;
+  	}
+    if( window.innerHeight) {
+		hauteur=window.innerHeight;
+	}
+  	else {
+  		hauteur=document.body.offsetHeight;
+  	}
+
+	if (!e) var e = window.event;
+
+	if (e.pageX || e.pageY)	{
+		posx = e.pageX;
+		posy = e.pageY ;
+	}
+	else if (e.clientX || e.clientY) {
+		posx = e.clientX + document.body.scrollLeft;
+		posy = e.clientY + document.body.scrollTop;
+	}
+
+
+    /* calul de la position fixe du block */
+    if (decalfix_x!=0) {
+        if (decalfix_x<0) {
+            // largeur - decalx
+            posx=(largeur+decalfix_x)*1;
+            posy-=50;
+        }
+        else {
+            posx=decalfix_x;
+        }
+    }
+    else if (decalx!=0) posx=posx+decalx;
+
+   /* calul de la position fixe du block */
+    if (decalfix_y!=0) {
+        if (decalfix_y<0) {
+            // largeur - decalx
+            posy=(hauteur+decalfix_y)*1;
+        }
+        else {
+            posy=decalfix_y;
+        }
+    }
+    else if (decaly!=0) posy=posy+decaly;
+
+	document.getElementById(namepopup).innerHTML="";
+    if (origine == 'click') {
+		timer_started = true;
+		dims_showpopup_delayed(w,namepopup);
+	}
+	else {
+		if (!timer_started) {
+			timer_started = true;
+
+			setTimeout("dims_showpopup_delayed("+w+",'"+namepopup+"')", 10*timerdelay);
+		}
+
+		if (!popup_displayed) dims_showpopup_delayed(w,namepopup);
+	}
+}
+
+function dims_movepopup(e,namepopup) {
+    if (namepopup=="" || namepopup==null) namepopup="dims_popup";
+	if (!e) var e = window.event;
+
+	if (e.pageX || e.pageY)	{
+		posx = e.pageX;
+		posy = e.pageY;
+	}
+	else if (e.clientX || e.clientY) {
+		posx = e.clientX + document.body.scrollLeft;
+		posy = e.clientY + document.body.scrollTop;
+	}
+
+	if (popup_displayed) dims_showpopup_delayed(0,namepopup);
+}
+
+function dims_hidepopup(namepopup) {
+    if (namepopup=="" || namepopup==null) namepopup="dims_popup";
+	timer_started = false;
+	popup_displayed = false;
+
+	var dims_popup = (document.getElementById) ? document.getElementById(namepopup) : eval("document.all["+namepopup+"]");
+	with (dims_popup.style) {
+		visibility = 'hidden';
+		display = 'none';
+	}
+
+	cur_idobject=-10;
+	cur_idworkspace=-10;
+	cur_idmodule = -10;
+	cur_idrecord=-10;
+}
+
+function dims_sleep(t)
+{
+	setTimeout("dims_wakeup()", t*timerdelay);
+}
+
+function dims_wakeup() {}
+
+function dims_getelem(elem, doc) {
+	if (!doc) doc = document;
+	return (doc.getElementById) ? doc.getElementById(elem) : eval("document.all['"+dims_addslashes(elem)+"']");
+}
+
+function dims_tickets_search_users() {
+	clearTimeout(timerdisplayresult);
+	timerdisplayresult = setTimeout("dims_tickets_search_users_exec()", 500);
+}
+
+function dims_tickets_search_users_exec() {
+	clearTimeout(timerdisplayresult);
+	timerdisplayresult = setTimeout("searchExecuteTag()", 500);
+	filter=dims_getelem('ticket_search').value;
+    if(filter != ""){
+		dims_xmlhttprequest_todiv('index-light.php','dims_op=tickets_search_users&dims_ticket_userfilter='+filter,'','div_ticket_search_result');
+    }else{
+        dims_getelem('div_ticket_search_result').innerHTML = "";
+    }
+}
+
+function dims_tickets_new(event, id_object, id_record, object_label) {
+	var data = '';
+
+	if (object_label) data += '&object_label='+object_label;
+	if (id_object) data += '&id_object='+id_object;
+	if (id_record) data += '&id_record='+id_record;
+
+	dims_showpopup('',500,event,'click');dims_xmlhttprequest_todiv('admin.php','dims_op=tickets_new'+data,'','dims_popup');
+}
+
+
+function dims_gethttpobject(callback) {
+	var xmlhttp = false;
+
+	/* on essaie de cr�er l'objet si ce n'est pas d�j� fait */
+	if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+		try {
+			xmlhttp = new XMLHttpRequest();
+		}
+		catch (e) {
+			xmlhttp = false;
+		}
+	}
+
+	return xmlhttp;
+}
+
+/**
+  * Envoie des donn�es � l'aide d'XmlHttpRequest?
+  * @param string methode d'envoi ['GET'|'POST']
+  * @param string url
+  * @param string donn�es � envoyer sous la forme var1=value1&var2=value2...
+  */
+function dims_sendxmldata(method, url, data, xmlhttp, asynchronous) {
+    if (!xmlhttp) {
+        return false;
+    }
+
+    if(method == "GET") {
+		if(data == 'null') {
+			xmlhttp.open("GET", url, asynchronous);
+			xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=ISO-8859-15');
+		}
+		else {
+			xmlhttp.open("GET", url+"?"+data, asynchronous);
+			xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=ISO-8859-15');
+		}
+		xmlhttp.send(null);
+	}
+	else if(method == "POST") {
+		xmlhttp.open("POST", url, asynchronous);
+		xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=ISO-8859-15');
+		xmlhttp.send(data);
+	}
+	return true;
+}
+
+function dims_xmlhttprequest(url, data, asynchronous, getxml) {
+	if (isNaN(asynchronous)) asynchronous = false;
+	if (isNaN(getxml)) getxml = false;
+
+	xmlhttp = dims_gethttpobject();
+	dims_sendxmldata('GET', url, data, xmlhttp, asynchronous);
+
+	// if asynchronous = false => return request content
+	if (getxml) return(xmlhttp.responseXML);
+	else return(xmlhttp.responseText);
+}
+
+function dims_xmlhttprequest_post(url, data, asynchronous, getxml)
+{
+	if (isNaN(asynchronous)) asynchronous = false;
+	if (isNaN(getxml)) getxml = false;
+
+	xmlhttp = dims_gethttpobject();
+	dims_sendxmldata('POST', url, data, xmlhttp, asynchronous);
+
+	// if asynchronous = false => return request content
+	if (getxml) return(xmlhttp.responseXML);
+	else return(xmlhttp.responseText);
+}
+
+function dims_xmlhttprequest_tofunction(url, data, callback, ticket, getxml) {
+    var xmlhttp = dims_gethttpobject();
+
+	if (isNaN(getxml)) getxml = false;
+
+	if (xmlhttp) {
+		/* on d�finit ce qui doit se passer quand la page r�pondra */
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4) {/* 4 : �tat "complete" */
+				if (xmlhttp.status == 200) {/* 200 : code HTTP pour OK */
+					if (getxml) callback(xmlhttp.responseXML,ticket);
+					else {
+						callback(xmlhttp.responseText,ticket);
+					}
+				}
+			}
+		}
+	}
+	return !dims_sendxmldata('GET', url, data, xmlhttp, true);
+}
+
+function dims_xmlhttprequest_todiv(url, data, sep) {
+    var xmlhttp = dims_gethttpobject();
+	var args;
+
+	if (xmlhttp) {
+		if (dims_xmlhttprequest_todiv.arguments!=null) {
+			args = dims_xmlhttprequest_todiv.arguments;
+
+			/* on d�finit ce qui doit se passer quand la page r�pondra */
+			xmlhttp.onreadystatechange=function() {
+				if (!isNaN(xmlhttp.readyState) && xmlhttp.readyState == 4) {/* 4 : �tat "complete" */
+					if (xmlhttp.status == 200) {/* 200 : code HTTP pour OK */
+						var tabxmlvalue = new Array();
+						var result= xmlhttp.responseText;
+
+						if (sep == '') tabxmlvalue[0] = result;
+						else tabxmlvalue=result.split(sep);
+						if (args.length!=null) {
+							for(i=0;i<args.length-3;i++) {
+								if (tabxmlvalue[i]) {
+									dims_getelem(args[i+3]).innerHTML = tabxmlvalue[i];
+									/* modify by pat to evaluate javascript */
+									var x = dims_getelem(args[i+3]).getElementsByTagName("script");
+									for(var j=0;j<x.length;j++) {
+										if (x[j].text!="") {
+											eval(x[j].text);
+										}
+									}
+								}
+								else dims_getelem(args[i+3]).innerHTML = '';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return !dims_sendxmldata('GET', url, data, xmlhttp, true);
+}
+
+function dims_ajaxloader(div)
+{
+	var ajaxloader = '<div style="text-align:center;padding:40px 10px;"><img src="/img/ajax-loader.gif">
+				</script>
+			</p>
+		</div>'; if (div && $(div)) $(div).innerHTML = ajaxloader; else return ajaxloader; } function dims_innerHTML(div, html) { if ($(div)) { $(div).innerHTML = html; $(div).innerHTML.evalScripts(); } } // SHARE MANAGEMENT function dims_share_searchdata() { dims_xmlhttprequest_todiv('index-light.php','dims_op=search_list&text=','','contentsearch'); } function dims_share_add_elem(typeshare,idshare) { dims_xmlhttprequest_todiv('index-light.php','dims_op=add_elem&type_share='+typeshare+'&id_share='+idshare,'','contentattach'); } function dims_share_del_elem(typeshare,idshare) { dims_xmlhttprequest_todiv('index-light.php','dims_op=del_elem&type_share='+typeshare+'&id_share='+idshare,'','contentattach'); } function dims_share_contentattach() { var ts=document.getElementById('contentattach'); dims_xmlhttprequest_todiv('index-light.php','dims_op=contentattach','','contentattach'); } var tag_timer; var tag_search; var tag_results = new Array(); var tag_last_array = new Array(); var tag_new_array = new Array(); var tag_lastedit = ''; var tag_modified = -1 function dims_tag_init(idrecord) { dims_getelem('dims_annotationtags_'+idrecord).onkeyup = dims_tag_keyup; dims_getelem('dims_annotationtags_'+idrecord).onkeypress = dims_tag_keypress; } function dims_tag_search(idrecord, search) { clearTimeout(tag_timer); tag_search = search; tag_timer = setTimeout("dims_tag_searchtimeout("+idrecord+")", 100); } function dims_tag_searchtimeout(idrecord) { // replace(/(^\s*)|(\s*$)/g,'') = TRIM list_tags = tag_search.split(' '); if (list_tags.length>0) dims_xmlhttprequest_tofunction('index-quick.php','dims_op=tags_search&tag='+list_tags[list_tags.length-1],dims_tag_display,idrecord); } function dims_tag_display(result,ticket) { if (result != '') { tag_results = new Array(); splited_result = result.split('|'); tagstoprint = ''; for (i=0;i
+		<splited_result.length detail="splited_result[i].split(';');" if tagstoprint>'; tagstoprint += '<a href="javascript:dims_tag_complete('+ticket+','+i+')">'+detail[0]+'</a> ('+detail[1]+')'; if (i==0) tagstoprint += ''; tag_results[i] = detail[0]; } dims_getelem('tagsfound_'+ticket).innerHTML = tagstoprint; } else { dims_getelem('tagsfound_'+ticket).innerHTML = ''; tag_results = new Array(); } } function dims_tag_prevent(e) { if (window.event) window.event.returnValue = false else e.preventDefault() } function dims_tag_keypress(e) { e=e||window.event; src = (e.srcElement) ? e.srcElement : e.target; switch(e.keyCode) { case 38: case 40: prevent(e) break case 9: dims_tag_prevent(e) break case 13: dims_tag_prevent(e) break default: tag_lastedit = dims_getelem(src.id).value; break; } } function dims_tag_keyup(e) { e=e||window.event; src = (e.srcElement) ? e.srcElement : e.target; // get source field idrecord = src.id.split('_')[2]; // get id record from source field id switch(e.keyCode) { case 38: case 40: prevent(e); break case 9: dims_tag_complete(idrecord); dims_tag_prevent(e); break case 13: dims_tag_complete(idrecord); dims_tag_prevent(e); break case 35: //end case 36: //home case 39: //right case 37: //left //case 32: //space break default: tag_last_array = new Array(); tag_new_array = new Array(); tag_last_array = tag_lastedit.split(' '); tag_new_array = dims_getelem(src.id).value.split(' '); tag_modified = -1; for (i=0;i
+			<tag_new_array.length if tag_last_array tag_modified="i;" else>=0) dims_tag_search(idrecord, tag_new_array[tag_modified]); break; } } function dims_tag_complete(idrecord, idtag) { if (!(idtag>=0)) idtag = 0; if (tag_results[idtag]) { tag_new_array[tag_modified] = tag_results[idtag]; taglist = ''; for (i=0;i
+				<tag_new_array.length if taglist tag_new_array dims_getelem taglist.replace tag_results="new" array function dims_calendar_open event dims_showpopup script="=null)" dims_xmlhttprequest_todiv dims_submitmac document.formlogin.dims_usermac.value="document.mac.getMacaddress();" colorpicker functions var rgb hsv colorpicker_hex2rgb default_ undefined hex_string="hex_string.substr(1);" r g b else return isnan g: b: colorpicker_rgb2hex includehash : colorpicker_hsv2rgb saturation value red green blue i="Math.floor(hue" f="(hue" p="value" q="value" t="value" switch case break fall through colorpicker_rgb2hsv max="Math.max(Math.max(red," min="Math.min(Math.min(red," hue delta="(max">1) { hue -= 1; } } return { h: hue, s: saturation, v: value }; } function colorpicker_initelements() { x = (hsv.v*199)-5; if (x194) x=194; dims_getelem('colorpicker_crosshairs').style.left = x.toString() + 'px'; y = ((1-hsv.s)*199)-5; if (y194) y=194; dims_getelem('colorpicker_crosshairs').style.top = y.toString() + 'px'; x = (hsv.h*199)-5; if (x194) x=194; dims_getelem('colorpicker_position').style.top = x.toString() + 'px'; } function colorpicker_colorchanged() { var hex = colorpicker_rgb2hex(rgb.r, rgb.g, rgb.b); var hueRgb = colorpicker_hsv2rgb(hsv.h, 1, 1); var hueHex = colorpicker_rgb2hex(hueRgb.r, hueRgb.g, hueRgb.b); dims_getelem('colorpicker_selectedcolor').style.background = hex; dims_getelem('colorpicker_inputcolor').value = hex; dims_getelem('colorpicker_sv').style.background = hueHex; } function colorpicker_rgbchanged() { hsv = colorpicker_rgb2hsv(rgb.r, rgb.g, rgb.b); colorpicker_colorchanged(); } function colorpicker_hsvchanged() { rgb = colorpicker_hsv2rgb(hsv.h, hsv.s, hsv.v); colorpicker_colorchanged(); } function colorpicker_pagecoords(node) { var x = node.offsetLeft; var y = node.offsetTop; var parent = node.offsetParent; while (parent != null) { x += parent.offsetLeft; y += parent.offsetTop; parent = parent.offsetParent; } return {x: x, y: y}; } function colorpicker_fixcoords(node, x, y) { var nodePageCoords = colorpicker_pagecoords(node); x = (x - nodePageCoords.x) + document.documentElement.scrollLeft; y = (y - nodePageCoords.y) + document.documentElement.scrollTop; if (x node.offsetWidth - 1) x = node.offsetWidth - 1; if (y > node.offsetHeight - 1) y = node.offsetHeight - 1; return {x: x, y: y}; } function colorpicker_onmousedown(e) { e=e||window.event; src = (e.srcElement) ? e.srcElement : e.target; // get source field coords = colorpicker_fixcoords(src, e.clientX, e.clientY); if (src.id == 'colorpicker_sv') { colorpicker_placeelement('colorpicker_crosshairs',coords.x,coords.y); } else if (src.id == 'colorpicker_crosshairs') { x = parseInt(dims_getelem('colorpicker_crosshairs').style.left) + coords.x; y = parseInt(dims_getelem('colorpicker_crosshairs').style.top) + coords.y; colorpicker_placeelement('colorpicker_crosshairs',x,y); } else if (src.id == 'colorpicker_h') { colorpicker_placeelement('colorpicker_position',0,coords.y); } else if (src.id == 'colorpicker_position') { y = parseInt(dims_getelem('colorpicker_position').style.top) + coords.y; colorpicker_placeelement('colorpicker_position',0,y); } } function colorpicker_placeelement(element,x,y) { if (x199) x=199; if (y199) y=199; if (element == 'colorpicker_position') { dims_getelem('colorpicker_position').style.top = (y-5) + 'px'; hsv.h = y/199; } else if (element == 'colorpicker_crosshairs') { dims_getelem('colorpicker_crosshairs').style.left = (x-5) + 'px'; dims_getelem('colorpicker_crosshairs').style.top = (y-5) + 'px'; hsv.s = 1-(y/199); hsv.v = (x/199); } colorpicker_hsvchanged(); } function colorpicker_input_onchange() { rgb = colorpicker_hex2rgb(dims_getelem('colorpicker_inputcolor').value, {r: 0, g: 0, b: 0}); colorpicker_rgbchanged(); colorpicker_initelements(); } function colorpicker_start() { dims_getelem('colorpicker_sv').onmousedown = colorpicker_onmousedown; dims_getelem('colorpicker_h').onmousedown = colorpicker_onmousedown; dims_getelem('colorpicker_position').onmousedown = colorpicker_onmousedown; dims_getelem('colorpicker_crosshairs').onmousedown = colorpicker_onmousedown; dims_getelem('colorpicker_inputcolor').onchange = colorpicker_input_onchange; colorpicker_input_onchange(); } function dims_colorpicker_open(inputfield_id, event) { dims_showpopup('','241',event,'click'); data = 'dims_op=colorpicker_open&inputfield_id='+inputfield_id+'&colorpicker_value='+escape(dims_getelem(inputfield_id).value); colorpickerhtml = dims_xmlhttprequest('admin-light.php',data); dims_getelem('dims_popup').innerHTML = colorpickerhtml; colorpicker_start(); } /* DOCUMENTS FUNCTIONS */ function dims_documents_openfolder(currentfolder, documentsfolder_id, event) { dims_showpopup('',300,event,'click'); dims_xmlhttprequest_todiv('admin-light.php','dims_op=documents_openfolder&currentfolder='+currentfolder+'&documentsfolder_id='+documentsfolder_id,'','dims_popup'); } function dims_documents_openfile(currentfolder, documentsfile_id, event) { dims_showpopup('',380,event,'click'); dims_xmlhttprequest_todiv('admin-light.php','dims_op=documents_openfile&currentfolder='+currentfolder+'&documentsfile_id='+documentsfile_id,'','dims_popup'); } function dims_documents_deletefile(currentfolder, documents_id, documentsfile_id) { dims_xmlhttprequest_todiv('admin-light.php','dims_op=documents_deletefile&currentfolder='+currentfolder+'&documentsfile_id='+documentsfile_id,'','dimsdocuments_'+documents_id); } function dims_documents_deletefolder(currentfolder, documents_id, documentsfolder_id) { dims_xmlhttprequest_todiv('admin-light.php','dims_op=documents_deletefolder&currentfolder='+currentfolder+'&documentsfolder_id='+documentsfolder_id,'','dimsdocuments_'+documents_id); } function dims_documents_browser(currentfolder, documents_id) { dims_xmlhttprequest_todiv('admin-light.php','dims_op=documents_browser&currentfolder='+currentfolder,'','dimsdocuments_'+documents_id); } function dims_documents_validate(form) { if (dims_validatefield('Fichier',form.documentsfile_file,"string")) if (dims_validatefield('Libell�',form.documentsfile_label,"string")) return true; return false; } function autofitIframe(){ try { if (document.getElementById || !window.opera && !document.mimeType && document.all && document.getElementById) { hauteur = this.document.body.scrollHeight + 40; if (hauteur horizontal sinon vertical if (sens==0) { dist=(xfin-xdep)*1/3; ctx.bezierCurveTo(dist,ydep,xfin-(dist/2),yfin,xfin,yfin); } else { dist=(yfin-ydep)*1; ctx.bezierCurveTo(xdep,dist,xfin,yfin-(dist/2),xfin,yfin); } ctx.stroke(); ctx.restore(); } } function dims_print_r(theObj){ if(theObj.constructor == Array || theObj.constructor == Object){ document.write("
+					<ul>") for(var p in theObj){ if(theObj[p].constructor == Array|| theObj[p].constructor == Object){ document.write("
+						<li>["+p+"] => "+typeof(theObj)+"</li>"); document.write("
+						<ul>") print_r(theObj[p]); document.write("</ul>") } else { document.write("
+						<li>["+p+"] => "+theObj[p]+"</li>"); } } document.write("</ul>") } }
+					<link title="" media="screen" href="/assets/stylesheets/common/jquery_ui/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+					<link title="" media="screen" href="/assets/stylesheets/backoffice/pureBO/theme/styles.css" rel="stylesheet" type="text/css">
+					<script type="text/javascript" src="/assets/javascripts/common/jquery/jquery1-9-1.min.js"></script>
+					<script type="text/javascript" src="/assets/javascripts/common/jquery-ui-1.10.3.custom.min.js"></script>
+					<div id="dims_popup" class="dims_popup ui-dialog ui-widget ui-widget-content ui-corner-all" style="display:none;"></div>
+					<script language="JavaScript" type="text/javascript">
+	function displayOptionRaa(type) {
+		if (type==0) {
+			// acte
+			var indice=document.getElementById('date_pub_op').selectedIndex;
+			var blockdatefin=document.getElementById('date_fin_acte');
+			if (indice==3) {
+				blockdatefin.style.display='block';
+				blockdatefin.style.visibility='visible';
+			}
+			else {
+				blockdatefin.style.display='none';
+				blockdatefin.style.visibility='hidden';
+			}
+		}
+		else {
+			// recueil
+			var indice=document.getElementById('date_pub_op1').selectedIndex;
+			var blockdatefin=document.getElementById('date_fin_acte1');
+			if (indice==3) {
+				blockdatefin.style.display='block';
+				blockdatefin.style.visibility='visible';
+			}
+			else {
+				blockdatefin.style.display='none';
+				blockdatefin.style.visibility='hidden';
+			}
+		}
+	}
+					</script>
+					<script language="JavaScript" type="text/javascript">
+	function displayOptionRaa(type) {
+		if (type==0) {
+			// acte
+			var indice=document.getElementById('date_pub_op').selectedIndex;
+			var blockdatefin=document.getElementById('date_fin_acte');
+			if (indice==3) {
+				blockdatefin.style.display='block';
+				blockdatefin.style.visibility='visible';
+			}
+			else {
+				blockdatefin.style.display='none';
+				blockdatefin.style.visibility='hidden';
+			}
+		}
+		else {
+			// acte
+			var indice=document.getElementById('date_pub_op1').selectedIndex;
+			var blockdatefin=document.getElementById('date_fin_acte1');
+			if (indice==3) {
+				blockdatefin.style.display='block';
+				blockdatefin.style.visibility='visible';
+			}
+			else {
+				blockdatefin.style.display='none';
+				blockdatefin.style.visibility='hidden';
+			}
+		}
+	}
+					</script>
+					<table width="80%" align="center">
+						<tr>
+							<td style="font-size:15px;font-weight:bold" colspan="2">Bienvenue sur le Recueil des Actes Administratifs</td>
+						</tr>
+						<tr>
+							<td style="font-size:15px;" colspan="2">Préfecture de la Moselle</td>
+						</tr>
+						<tr>
+							<td width="40%" style="vertical-align:top;">
+								<table width="100%">
+									<tr>
+										<td> </td>
+									</tr>
+									<tr>
+										<td style="font-size:13px;font-weight:bold">Actes</td>
+									</tr>
+									<tr>
+										<td>Arrêtés (16542)</td>
+									</tr>
+									<tr>
+										<td>Avis (326)</td>
+									</tr>
+									<tr>
+										<td>Décisions (3752)</td>
+									</tr>
+									<tr>
+										<td><a style="text-decoration: underline" href="https://mc.moselle.gouv.fr/index.php?op=raa&do=raa-acte">Consulter les actes</a></td>
+									</tr>
+									<tr>
+										<td> <br><br><br><br><br><br><br></td>
+									</tr>
+									<tr>
+										<td style="font-size:13px;font-weight:bold">Dernier recueil édité</td>
+									</tr>
+									<tr>
+										<td><a href="https://mc.moselle.gouv.fr/index.php?dims_op=doc_file_download&docfile_md5id=203c6771d43a4806f7586bfd8e1ce522">Numéro 134</a></td>
+									</tr>
+									<tr>
+										<td> </td>
+									</tr>
+									<tr>
+										<td style="font-size:13px;font-weight:bold">Recueils</td>
+									</tr>
+									<tr>
+										<td>Recueils normaux (1918)</td>
+									</tr>
+									<tr>
+										<td>Recueils spéciaux (798)</td>
+									</tr>
+									<tr>
+										<td><a style="text-decoration: underline" href="https://mc.moselle.gouv.fr/index.php?op=raa&do=raa_rec">Consulter les recueils</a></td>
+									</tr>
+								</table>
+							</td>
+							<td style="vertical-align:top;">
+								<table width="100%">
+									<tr>
+										<td> </td>
+									</tr>
+									<tr>
+										<td style="font-size:13px;font-weight:bold">Rechercher un acte</td>
+									</tr>
+									<tr>
+										<td>
+											<form id="search_raa" name="search_raa" action="https://mc.moselle.gouv.fr/raa.html?tab=1&do=exec_search_acte" method="post">
+												<table width="100%">
+													<tr>
+														<td width="40%">Mot clé :</td>
+														<td><input type="text" name="mot_cle" id="mot_cle" value=""> 
+															<font style="font-style:italic;font-size:10px;">(Référence, libellé, résumé ou signataire)</font>
+														</td>
+													</tr>
+													<tr>
+														<td>Date de publication :</td>
+														<td><select id="date_pub_op" name="date_pub_op" style="width:60px;" onchange="javascript:displayOptionRaa(0);"> <option value="egal">=</option> <option value="sup">>=</option> <option value="inf"></option><option value="entre">Entre</option> </select> <input type="text" style="width:100px;" name="date_pub" id="date_pub_rec" value=""> <a href="#" onclick="javascript:dims_calendar_open('date_pub_rec', event,'','index-light.php');"><img src="/common/img/calendar/calendar.gif" width="31" height="18" align="top" border="0"></a><br>
+															<div id="date_fin_acte" style="display:none;visibility:hidden;">Et <input type="text" style="width:100px;" name="date_pub_end" id="date_pub_end_rec" value="08/07/2020"> <a href="#" onclick="javascript:dims_calendar_open('date_pub_end_rec', event,'','index-light.php');"><img src="/common/img/calendar/calendar.gif" width="31" height="18" align="top" border="0"></a></div>
+														</td>
+													</tr>
+													<tr>
+														<td>Type d'acte :</td>
+														<td><select id="type_acte" name="type_acte"><option value="none">--</option><option value="794">Arrêté</option><option value="797">Autre</option><option value="796">Avis</option><option value="795">Décision</option></select></td>
+													</tr>
+													<tr>
+														<td>Direction :</td>
+														<td><select id="direction" name="direction" style="width:200px;"><option value="none">--</option><option value="58">Préfecture - Cabinet du Préfet</option><option value="1">Préfecture - Secrétariat Général</option><option value="131">Préfecture - Centre d'Expertise et de Ressources des Titres CNI-Passeports</option><option value="126">Préfecture - Direction de la Citoyenneté et de la Légalité</option><option value="127">Préfecture - Direction de la Coordination et de l'Appui Territorial</option><option value="128">Préfecture - Direction de l'Immigration et de l'Intégration</option><option value="129">Préfecture - Direction des Ressources Humaines et des Moyens</option><option value="130">Préfecture - Bureau de la Circulation Routière</option><option value="8">Sous-Préfecture de FORBACH - BOULAY-MOSELLE</option><option value="12">Sous-Préfecture de SARREBOURG - CHATEAU-SALINS</option><option value="13">Sous-Préfecture de SARREGUEMINES</option><option value="14">Sous-Préfecture de THIONVILLE</option><option value="15">Direction Départementale des Territoires de la Moselle</option><option value="16">Direction Départementale de la Cohésion Sociale de la Moselle</option><option value="17">Direction Départementale de la Protection des Populations de la Moselle</option><option value="18">Préfecture de la Zone de Défense et de Sécurité Est</option><option value="69">Etat-Major Interministériel de Zone de Défense et de Sécurité Est</option><option value="20">Cabinet du Préfet Délégué pour la Défense et la Sécurité</option><option value="21">Secrétariat Général pour l’Administration du Ministère de l’Intérieur</option><option value="112">Conseil National des Activités Privées de Sécurité</option><option value="23">Service Départemental d'Incendie et de Secours de la Moselle</option><option value="24">Direction Interdépartementale des Routes - Est</option><option value="25">Direction Régionale de l'environnement, de l'aménagement et du Logement Grand Est</option><option value="28">Agence Nationale de l'Habitat</option><option value="29">Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail et de l Emploi Grand Est</option><option value="72">Unité Départementale de Moselle de la Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail et de l Emploi Grand Est</option><option value="31">Direction Interrégionale de la Protection Judiciaire de la Jeunesse Grand Est</option><option value="132">Direction Interrégionale des Douanes et Droits Indirects du Grand Est</option><option value="133">Commissariat à l Aménagement du Massif des Vosges</option><option value="32">Service Départemental de l’Office National des Anciens Combattants et Victimes de Guerre de la Moselle</option><option value="33">Agence Nationale pour la Rénovation Urbaine</option><option value="34">Voies Navigables de France</option><option value="39">Direction Générale de l'Aviation Civile</option><option value="70">Direction de la sécurité de l'Aviation Civile Nord-Est</option><option value="120">Agence Régionale de Santé Grand Est</option><option value="122">Délégation Territoriale de Moselle de l’Agence Régionale de Santé Grand Est</option><option value="117">Délégation Territoriale de Meurthe-et-Moselle de l’Agence Régionale de Santé Grand Est</option><option value="43">Tribunal Interrégional de la Tarification Sanitaire et Sociale de NANCY</option><option value="44">Cour Nationale de la Tarification Sanitaire et Sociale</option><option value="116">Mission Nationale de Contrôle et d’Audit des Organismes de Sécurité Sociale</option><option value="45">Chambre Régionale des Comptes</option><option value="61">Direction Départementale des Finances Publiques de la Moselle</option><option value="125">Direction Départementale des Finances Publiques de Meurthe-et-Moselle</option><option value="90">Préfecture de Meurthe-et-Moselle</option><option value="49">Tribunal Administratif de STRASBOURG</option><option value="50">SNCF Réseau</option><option value="124">SNCF Immobilier</option><option value="51">Cour d'Appel de METZ</option><option value="52">Rectorat de l'Académie de Nancy-Metz</option><option value="114">Académie de Nancy-Metz</option><option value="53">Agence de l'Eau Rhin-Meuse</option><option value="74">EPCC Centre Pompidou-Metz</option><option value="111">Direction Interrégionale des Services Pénitentiaires Strasbourg Grand-Est</option><option value="71">Centre Hospitalier Régional Metz-Thionville</option><option value="136">Etablissements Hospitaliers, Sanitaires et sociaux</option><option value="102">Centre Hospitalier Régional Universitaire de NANCY</option><option value="89">Centre Hospitalier Le Secq de Crépy de BOULAY</option><option value="86">Centre Hospitalier Spécialisé de SARREGUEMINES</option><option value="98">Centre Hospitalier de SARREGUEMINES</option><option value="115">Groupement de Coopération Sanitaire des Hôpitaux de SARREGUEMINES</option><option value="83">Centre Hospitalier de VERDUN</option><option value="82">Centre Hospitalier Jean Monnet à EPINAL</option><option value="79">Centre Hospitalier de JURY</option><option value="99">Centre Hospitalier Spécialisé de LORQUIN</option><option value="73">Centre Hospitalier de LORQUIN</option><option value="105">Centre Hospitalier Intercommunal UNISANTE+</option><option value="63">Centre Hospitalier de SARREBOURG</option><option value="85">Centre Hospitalier de REMIREMONT</option><option value="97">Centre Hospitalier de BRIEY</option><option value="76">Syndicat Interhospitalier de Blanchisserie de METZ</option><option value="78">Syndicat Interhospitalier de LORQUIN</option><option value="121">Groupement de Coopération Sanitaire du Sud Mosellan</option><option value="108">Syndicat Inter Hospitalier du Sud Mosellan</option><option value="75">Centre Hospitalier Ravenel - MIRECOURT</option><option value="64">Centre Psychothérapique de NANCY LAXOU</option><option value="84">Maternité Régionale Universitaire de NANCY</option><option value="91">Etablissements Hospitaliers de DIEUZE</option><option value="123">Hôpitaux de SARREGUEMINES</option><option value="109">Etablissements Hospitaliers de SARREGUEMINES</option><option value="101">Maison d'Accueil Spécialisée de PETITE-ROSSELLE</option><option value="100">Centre d’Aide par le Travail de PETITE-ROSSELLE</option><option value="119">EHPAD Sans Souci de CREUTZWALD</option><option value="87">E.H.P.A.D. Sainte-Marie de VIC-SUR-SEILLE</option><option value="94">E.H.P.A.D. Sainte-Anne d’ALBESTROFF</option><option value="103">Centre Départemental de l'Enfance</option><option value="93">E.H.P.A.D. Saint Paulin de SAINT-EPVRE</option><option value="118">Groupement de Commandes de Moselle-Sud et Moselle-Est</option><option value="135">Groupement Hospitalier de Territoire de Moselle Est</option><option value="134">Etablissement Public Départemental de Santé de GORZE</option><option value="113">Service Départemental d'Archives de la Moselle</option><option value="80">Conseil Départemental de la Moselle</option><option value="56">Centre de Gestion de la Fonction Publique Territoriale de la Moselle</option><option value="137">Divers</option><option value="138">Trésorerie de Sud Saulnois</option><option value="139">Trésorerie de ROMBAS</option><option value="140">Service des Impôts des Particuliers de METZ NORD OUEST</option><option value="141">CENTRE HOSPITALIER INTERCOMMUNAL HÔPITAUX de FORBACH et SAINT-AVOLD</option><option value="142">Services des impôts de CHATEAU-SALINS</option><option value="143">Trésorerie de MONTIGNY PAYS MESSIN</option><option value="144">Police Municipale de Maizières les Metz</option><option value="145">Direction Générale des Douanes et Droits Indirects</option><option value="146">Pole de recouvrement spécialisé de Metz</option><option value="147">Direction Générale des Finances Publiques</option><option value="148">Trésorerie de FONTOY</option><option value="149">Service des impôts des particuliers de SARREGUEMINES</option><option value="150">Préfecture de la Réunion</option><option value="151">Direction Départementale des Finances publiques</option><option value="152">TRESORERIE de THIONVILLE ET TROIS FRONTIERES</option><option value="154">Service des Impôts des Entreprises de SAINT-AVOLD</option><option value="155">Centre Pompidou de Metz</option><option value="156">Unité Départementale de la Moselle DIRECCTE GRAND EST</option><option value="157">Préfecture - Direction des collectivités territoriales et des affaires juridiques</option><option value="158">Service des Impôts des particuliers et entreprises de HAYANGE</option><option value="159">Hôpitaux de Forbach et St Avold</option><option value="160">Centre de gestion de la fonction publique territoriale de la Moselle</option><option value="161">Trésorerie de Hayange</option><option value="162">Trésorerie de FORBACH PORTE de FRANCE</option><option value="163">Trésorerie de Metz Municipale</option><option value="164">Direction Territoriale Est</option><option value="165">DIRECTION GÉNÉRALE DES DOUANES ET DROITS INDIRECTS</option><option value="166">Service des Impôts des Entreprises de SARREGUEMINES</option><option value="167">TRESORERIE DE FLORANGE</option><option value="168">Service des Impôts des Particuliers de METZ CENTRE-EST</option><option value="169">Ministère de l'Intérieur</option><option value="170">Centre de Réadaptation Spécialisé Saint Luc</option><option value="171">Trésorerie de VIGY</option><option value="172">Pôle de contrôle des revenus patrimoine de la Moselle</option><option value="173">Trésorerie de BOUZONVILLE</option><option value="174">Service des impôts des Entreprises de THIONVILLE</option><option value="175">Direction Territoriale de la Protection Judiciaire de la Jeunesse Grand-Est</option><option value="176">Service des impôts des entreprises de METZ NORD-OUEST</option><option value="177">Trésorerie des ETS Hospitaliers de Metz-Thionville</option><option value="178">Direction Régionnale des Douanes et Droits Indirects de NANCY</option><option value="179">Pôle Départemental de Contrôle et d’Expertise de Metz</option><option value="180">Ministère de la transition écologique et solidaire</option><option value="181">Trésorerie de LORQUIN</option><option value="182">Service des Impôts des Particuliers et des Entreprises de CHATEAU-sALINS</option><option value="183">Service des Impôts des Particuliers de THIONVILLE</option><option value="184">DIRECTION TERRITORIALE ALSACE LORRAINE CHAMPAGNE-ARDENNE</option><option value="185">DIRECCTE Grand Est</option><option value="186">Direction Territoriale de la Protection Judiciaire de la Jeunesse de la Moselle</option><option value="187">Service des Impôts des Entreprises de Metz</option><option value="188">Trésorerie de Metz Amendes</option><option value="189">Service de gestion comptable de SARREGUEMINES</option></select></td>
+													</tr>
+												</table>
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td align="right"><a href="javascript:void(0);" onclick="javascript:document.search_raa.submit();"><img src="/common/img/icon_loupe.png" style="border:none;"> Rechercher</a></td>
+									</tr>
+								</table>
+								<table width="100%">
+									<tr>
+										<td> </td>
+									</tr>
+									<tr>
+										<td style="font-size:13px;font-weight:bold">Rechercher un recueil</td>
+									</tr>
+									<tr>
+										<td>
+											<form id="search_recueil" name="search_recueil" action="https://mc.moselle.gouv.fr/raa.html?tab=1&do=exec_search_rec" method="post">
+												<table width="100%">
+													<tr>
+														<td width="40%">Mot clé :</td>
+														<td><input type="text" name="mot_cle" id="mot_cle" value=""> 
+															<font style="font-style:italic;font-size:10px;"></font>
+														</td>
+													</tr>
+													<tr>
+														<td>Date de publication :</td>
+														<td><select id="date_pub_op1" name="date_pub_op" style="width:60px;" onchange="javascript:displayOptionRaa(1);"> <option value="egal">=</option> <option value="sup">>=</option> <option value="inf"></option><option value="entre">Entre</option> </select> <input type="text" style="width:100px;" name="date_pub" id="date_pub" value=""> <a href="#" onclick="javascript:dims_calendar_open('date_pub', event,'','index-light.php');"><img src="/common/img/calendar/calendar.gif" width="31" height="18" align="top" border="0"></a><br>
+															<div id="date_fin_acte1" style="display:none;visibility:hidden;">Et <input type="text" style="width:100px;" name="date_pub_end" id="date_pub_end" value="08/07/2020"> <a href="#" onclick="javascript:dims_calendar_open('date_pub_end', event,'','index-light.php');"><img src="/common/img/calendar/calendar.gif" width="31" height="18" align="top" border="0"></a></div>
+														</td>
+													</tr>
+													<tr>
+														<td>Type de recueil :</td>
+														<td><select id="type_acte" name="type_acte"> <option value="0">--</option> <option value="0">Normal</option> <option value="1">Spécial</option> </select></td>
+													</tr>
+												</table>
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td align="right"><a href="javascript:void(0);" onclick="javascript:document.search_recueil.submit();"><img src="/common/img/icon_loupe.png" style="border:none;"> Rechercher</a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</tag_new_array.length>
+			</tag_new_array.length>
+		</splited_result.length>
+	</body>
+</html>
