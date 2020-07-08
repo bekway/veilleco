@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title>Pays Fort Sancerrois Val de Loire - Communauté de Communes</title>
+		<meta name="description" content="La communauté de communes Pays Fort Sancerrois Val de Loire est une communauté de communes française située dans le département du Cher et la région Centre-Val de Loire. ">
+		<meta property="og:site_name" content="www.comcompsv.fr">
+		<meta property="og:title" content="Pays Fort Sancerrois Val de Loire - Communauté de Communes">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="La communauté de communes Pays Fort Sancerrois Val de Loire est une communauté de communes française située dans le département du Cher et la région Centre-Val de Loire. ">
+		<meta property="og:url" content="//www.comcompsv.fr/comptes-rendus-de-conseils_fr.html">
+		<meta property="og:image" content="//www.comcompsv.fr/userfile/img-og/logo-web.png">
+		<link rel="image_src" href="//www.comcompsv.fr/userfile/img-og/logo-web.png">
+		<link rel="stylesheet" href="/css/global/websee-maximenu.css" type="text/css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu%7CVoltaire%7CRubik%7CPathway+Gothic+One%7CArchivo+Black" rel="stylesheet" type="text/css">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/psv-fav.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/psv-fav.png">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-10").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-10").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-10 ul").css("display","block");		
+		$(".menu-principal-vertical-item-10").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-5").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/template/sencillo/global.css" rel="stylesheet">
+		<script>$(document).ready(function() {                             
+ $('.wrapper-global-0 #wrapper-bloc-2').addClass("hidden").viewportChecker({                    
+    classToAdd: 'visible animated fadeInUp ',                        
+offset: 100       });             
+  $('.wrapper-global-0 #wrapper-bloc-3').addClass("hidden").viewportChecker({               
+        classToAdd: 'visible animated fadeInRight',                
+        offset: 100       });          
+     $('.wrapper-global-0 #wrapper-bloc-4').addClass("hidden").viewportChecker({        
+                classToAdd: 'visible animated fadeInUp',                   
+     offset: 100       });         
+     $('.wrapper-global-0 #wrapper-bloc-5').addClass("hidden").viewportChecker({              
+          classToAdd: 'visible animated fadeInDown',        
+                offset: 100       });});
+		</script>
+		<link type="text/css" href="/css/global/animate_viewport.css" rel="stylesheet">
+		<script src="/js/jquery.viewportchecker.js"></script>
+		<link type="text/css" href="/js/cdtop/cdtop.css" rel="stylesheet">
+		<script src="/js/modernizr.js"></script>
+		<script src="/js/cdtop/cdtop.js"></script>
+		<link type="text/css" href="/css/template/sencillo/bleu.css" rel="stylesheet">
+		<link href="/css/css_0_fr.css?1583487324" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1583487324" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-5 body-groupe-10"><input type="hidden" id="token" value="275485d256cebb1ef31bd65278e4b85d">
+		<ul class="websee-barre-flottante-smartphone-list clearfix">
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-smartphone-icone-recherche"></span></li>
+			<li class="websee-barre-flottante-smartphone-items"><a target="_blank" href="https://www.facebook.com/Communaut%C3%A9-de-Communes-Pays-Fort-Sancerrois-Val-de-Loire-587137318474138/?modal=admin_todo_tour"><img src="/template/facebook.png" style="width:100%;height:auto;"></a></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-7" onclick="javascript:websee_barre_flottante_show_container_from_top(7);"><span class="websee-barre-flottante-smartphone-icone-newsletter"></span></li>
+		</ul>
+		<div class="websee-barre-flottante">
+			<ul class="websee-barre-flottante-list clearfix">
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-icone-recherche"></span></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-5"><a target="_blank" href="https://www.facebook.com/Communaut%C3%A9-de-Communes-Pays-Fort-Sancerrois-Val-de-Loire-587137318474138/?modal=admin_todo_tour"><img src="/template/facebook.png" style="width:100%;height:auto;"></a></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-7" onclick="javascript:websee_barre_flottante_show_container_from_top(7);"><span class="websee-barre-flottante-icone-newsletter"></span></li>
+			</ul>
+			<div class="websee-barre-flottante-master-container clearfix">
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-recherche" id="websee-barre-flottante-container-1">
+					<div class="recherche">
+						<form name="recherche_1594220451" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594220451.submit();" class="recherche-submit"></a></form>
+					</div>
+				</div>
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-newsletter" id="websee-barre-flottante-container-7">
+					<script type="text/javascript">
+		
+			function newsletter_validation_12B560860E074D9D85058A2226B31A64() {
+				var email = $("#inputNewsletter-12B560860E074D9D85058A2226B31A64").val();
+				var modele = /^[a-zA-Z0-9\.\-_]+@[a-zA-Z0-9\-]+[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}$/i;
+	
+				if (!modele.test(email))
+				{
+				custom_alert ("Veuillez saisir une adresse e-mail valide svp");
+			
+				} else {
+					//code ajax d enregistrement
+	
+				$.ajax ({
+					url: "/modules/newsletter/newsletter_client-ajax.php",
+					type: "POST",
+					data: {
+						action : "insert",
+						mail : $("#inputNewsletter-12B560860E074D9D85058A2226B31A64").val(),
+						type : $("#selectNewsletter-12B560860E074D9D85058A2226B31A64").val(),
+						token : $("#token").val()
+					},
+					success: function(data) {
+					custom_alert (data);
+						$("#inputNewsletter-12B560860E074D9D85058A2226B31A64").val("");
+					},
+				});
+	
+				}
+			}
+			
+					</script>
+					<div class="newsletter">
+						<div class="newsletter-titre"></div>
+						<div class="newsletter-content"><input type="text" class="newsletter-text" id="inputNewsletter-12B560860E074D9D85058A2226B31A64" placeholder="Votre email ..." value=""> <input type="hidden" name="groupe" id="selectNewsletter-12B560860E074D9D85058A2226B31A64" value="1">
+							<div class="newsletter-button" value="" id="submitNewsletter" onclick="javascript:newsletter_validation_12B560860E074D9D85058A2226B31A64();">OK</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu-topscreen"></ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone"></ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<div class="template-header">
+			<div class="template-header-content  template-contents">
+				<div class="header-left"><a class="logo-essentiel" href="pays-fort-sancerrois-val-de-loire_fr.html"><img src="/userfile/img-template-maker/logo/logo-web.png"></a></div>
+				<div class="header-right">
+					<div class="header-text"><a href="/contact-pays-fort-sancerrois-valdeloire_fr.html" class="btn-contact"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> <a href="/agenda-des-manifestations_fr.html" class="btn-agenda"><i class="fa fa-calendar" aria-hidden="true"></i></a></div>
+				</div>
+				<div class="header-center">
+					<div class="websee-megamenu-container">
+						<div class="websee-megamenu">
+							<ul class="websee-megamenu-principal">
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-1">LA COMMUNAUTÉ</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-1">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/1-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-32">PRÉSENTATION</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-32">
+												<li><a class="websee-megamenu-titre-3" href="/communaute-paysfort-sancerrois-valdeloire_fr.html">La CdC Pays Fort Sancerrois Val de Loire</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/communes-pays-fort-sancerrois-valdeloire_fr.html">Communes du territoire</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/organigramme-pays-fort-sancerrois-val-loire_fr.html">Organigramme</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/2-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-10">COMMUNICATION</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-10">
+												<li><a class="websee-megamenu-titre-3" href="/comptes-rendus-de-conseils_fr.html">Comptes-rendus & Procès verbaux</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/3-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-11">MARCHÉS PUBLICS</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-11"></ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/4-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-12">ACCÉS PRIVÉ</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-12">
+												<li><a class="websee-megamenu-titre-3" href="/acces-reserve-conseillers_fr.html">Accès réservé Conseillers</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-2">CADRE DE VIE</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-2">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/5-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-14">NUMÉRIQUE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-14">
+												<li><a class="websee-megamenu-titre-3" href="/numerique_fr.html">Arrivée de la fibre</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/6-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-33">SANTÉ</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-33">
+												<li><a class="websee-megamenu-titre-3" href="/maison-de-sante_fr.html">Maison de Santé</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/7-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-17">SOCIAL</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-17">
+												<li><a class="websee-megamenu-titre-3" href="/epicerie-sociale-belleville-sur-loire_fr.html">Epicerie sociale</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/8-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-18">EQUIPEMENTS</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-18">
+												<li><a class="websee-megamenu-titre-3" href="/cias---foyer-logement-de-vailly_fr.html">CIAS - Foyer logement de Vailly</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-3">ENFANCE & JEUNESSE</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-3">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/9-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-15">PETITE ENFANCE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-15">
+												<li><a class="websee-megamenu-titre-3" href="/competence-petite-enfance_fr.html">Présentation</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/multi-accueils-associatifs-pays-fort-sancerrois-valdeloire_fr.html">Multi-accueils associatifs </a></li>
+												<li><a class="websee-megamenu-titre-3" href="/halte-garderies-itinerantes-_fr.html">Halte-garderie itinérante</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/relais-assistantes-maternelles_fr.html">Relais des Assistantes Maternelles (RAM)</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/10-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-16">ENFANCE & ADOLESCENCE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-16">
+												<li><a class="websee-megamenu-titre-3" href="/centre-de-loisirs-_fr.html">Centres de Loisirs</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/activites-adolescents--12-17-_fr.html">Activités Adolescents (12-17)</a></li>
+											</ul>
+										</li>
+										<li>
+										<li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-4">ECONOMIE</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-4">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/13-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-20">AIDE & SOUTIEN</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-20">
+												<li><a class="websee-megamenu-titre-3" href="/projets_fr.html">Présentation des Aides</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/livret-developpement-economique_fr.html">Livret développement économique</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/14-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-21">PERMANENCES</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-21">
+												<li><a class="websee-megamenu-titre-3" href="/permanence-initiative-cher_fr.html">Permanences Initiative Cher et ADIE</a></li>
+											</ul>
+										</li>
+										<li>
+										<li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-5">CULTURE</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-5">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/17-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-22">CULTURE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-22">
+												<li><a class="websee-megamenu-titre-3" href="/competence-culture_fr.html">Présentation</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/partenaires-pays-fort-sancerrois-val-de-loire_fr.html">Partenaires</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/18-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-24">LECTURE PUBLIQUE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-24">
+												<li><a class="websee-megamenu-titre-3" href="/reseau-des-bibliotheques_fr.html">Les bibliothèques du territoire</a></li>
+											</ul>
+										</li>
+										<li>
+										<li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-6">TOURISME</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-6">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/21-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-25">INFOS TOURISTIQUES</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-25">
+												<li><a class="websee-megamenu-titre-3" href="/presentation-du-grand-sancerrois_fr.html">Présentation </a></li>
+												<li><a class="websee-megamenu-titre-3" href="/les-offices-de-tourisme_fr.html">L'Office du Tourisme & les points informations</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/taxe-sejour-pays-fort-sancerrois-val-loire_fr.html">Taxe de séjour</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/22-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-26">À NE PAS MANQUER</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-26">
+												<li><a class="websee-megamenu-titre-3" href="/structures-d-activites-et-loisirs_fr.html">Structures d'activités et loisirs</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/circuits-de-randonnees-pedestres-et-velo_fr.html">Circuits de randonnées pédestres et vélo</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/les-incontournables_fr.html">Les Incontournables</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/forum-des-associations_fr.html">Fête des Associations</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/23-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-27">PROCHAINS RENDEZ-VOUS</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-27">
+												<li><a class="websee-megamenu-titre-3" href="/agenda-des-manifestations_fr.html">Agenda des manifestations</a></li>
+											</ul>
+										</li>
+										<li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-7">ENVIRONNEMENT</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-7">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/25-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-29">SMICTREM</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-29">
+												<li><a class="websee-megamenu-titre-3" href="/smictrem_fr.html">Gestion des déchets</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/26-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-31">ASSAINISSEMENT</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-31">
+												<li><a class="websee-megamenu-titre-3" href="/assainissement-pays-fort-sancerrois-valdeloire_fr.html">Informations</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/27-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-8">URBANISME</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-8">
+												<li><a class="websee-megamenu-titre-3" href="/presentation_fr.html">Service d'Autorisation en Droit du Sol</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/urbanisme_fr.html">Guide pratique de l'urbanisme</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/plui_fr.html">PLUI</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/scot_fr.html">SCOT</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/21/28-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-30">AMÉNAGEMENT</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-30">
+												<li><a class="websee-megamenu-titre-3" href="/infrastructures-pays-fort-sancerrois-val-de-loire_fr.html">Infrastructures de la CdC</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/amenagement-du-territoire_fr.html">GEMAPI</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/revitalisation-des-bourgs_fr.html">Revitalisation, Cadre de vie</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-animation">
+			<div class="template-animation-content">
+				<div class="subst-bandeau"><img src="/resolution/haute/background/5_fr.jpg" alt="Pays Fort Sancerrois Val de Loire - Communauté de Communes"></div>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix">
+						<div class="bloc-h1">
+							<h1 class="h1-couleur-groupe-10">Comptes-rendus & Procès verbaux de la Communauté de Communes</h1>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-page-5 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<table class="responsive-table" style="width: 100%;" cellspacing="10" cellpadding="10">
+									<tbody>
+										<tr>
+											<td style="width: 50%; vertical-align: top;">
+												<p style="text-align: center;"><span style="font-size: 22px;">Comptes-rendus sommaires</span></p>
+												<p></p>
+												<div id="telechargement-32" class="telechargements">
+													<div class="telechargement-groupe" id="telechargement-groupe-1">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-1">Année 2018</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-1">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091042-cr-sommaire-8-novembre.pdf" target="_blank" title="Telecharger CR 08/11/2018"><b>CR 08/11/2018</b> (64Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091007-CR-sommaire-18-octobre.pdf" target="_blank" title="Telecharger CR 18/10/2018"><b>CR 18/10/2018</b> (62Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1539338412-Compte-rendu-sommaire-27-sept-2018.pdf" target="_blank" title="Telecharger CR 27/09/2018"><b>CR 27/09/2018</b> (1309Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1539338468-COMPTE-RENDU-sommaire-conseil-communautaire-5-septembre-2018.pdf" target="_blank" title="Telecharger CR 05/09/2018"><b>CR 05/09/2018</b> (62Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1539338428-PV-10-juillet-2018.pdf" target="_blank" title="Telecharger CR 10/07/2018"><b>CR 10/07/2018</b> (133Ko) </a></li>
+														</ul>
+													</div>
+													<div class="telechargement-groupe" id="telechargement-groupe-20">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-20">Année 2019</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-20">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318770-CR-sommaire-12-decembre-2019.pdf" target="_blank" title="Telecharger CR 12/12/2019"><b>CR 12/12/2019</b> (556Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318738-CR-sommaire-14-novembre-2019.pdf" target="_blank" title="Telecharger CR 14/11/2019"><b>CR 14/11/2019</b> (716Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318683-CR-sommaire-17-octobre-2019.pdf" target="_blank" title="Telecharger CR 17/10/2019"><b>CR 17/10/2019</b> (406Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1571670356-Compte-rendu-sommaire-conseil-communautaire-du-19092019.pdf" target="_blank" title="Telecharger CR 19/09/2019"><b>CR 19/09/2019</b> (59Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1562659176-compte-rendu-sommaire-27-juin-2019.pdf" target="_blank" title="Telecharger CR 27/06/2019"><b>CR 27/06/2019</b> (836Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1560851114-Compte-rendu-sommaire-23-MAI-2019.pdf" target="_blank" title="Telecharger CR 23/05/2019"><b>CR 23/05/2019</b> (621Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1556186388-CR-11-AVRIL-2019.pdf" target="_blank" title="Telecharger CR 11/04/2019"><b>CR 11/04/2019</b> (713Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1554210470-CR-14-MARS-2019.pdf" target="_blank" title="Telecharger CR 14/03/2019"><b>CR 14/03/2019</b> (706Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1552983133-CR-7-FEVRIER-2019.pdf" target="_blank" title="Telecharger CR 07/02/2019"><b>CR 07/02/2019</b> (489Ko) </a></li>
+														</ul>
+													</div>
+													<div class="telechargement-groupe" id="telechargement-groupe-22">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-22">Année 2020</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-22">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1592988859-Compte-rendu-sommaire-15-06-2020.pdf" target="_blank" title="Telecharger CR 15/06/2020"><b>CR 15/06/2020</b> (67Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1587648326-pv-SOMMAIRE-200220.pdf" target="_blank" title="Telecharger CR 20/02/2020"><b>CR 20/02/2020</b> (1130Ko) </a></li>
+														</ul>
+													</div>
+												</div>
+											</td>
+											<td class="bordure-marron" style="width: 50%; vertical-align: top;">
+												<p style="text-align: center;"><span style="font-size: 22px;">Procès verbaux complets<br></span></p>
+												<p style="text-align: left;"></p>
+												<div id="telechargement-43" class="telechargements">
+													<div class="telechargement-groupe" id="telechargement-groupe-3">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-3">Année 2018</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-3">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091441-PV-27-septembre-2018.pdf" target="_blank" title="Telecharger PV 27/11/2018"><b>PV 27/11/2018</b> (134Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091347-PV-8-novembre-2018.pdf" target="_blank" title="Telecharger PV 08/11/2018"><b>PV 08/11/2018</b> (118Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091416-PV-18-octobre-2018.pdf" target="_blank" title="Telecharger PV 18/10/2018"><b>PV 18/10/2018</b> (113Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1540463087-1539338483-5-septembre2018.pdf" target="_blank" title="Telecharger PV 05/09/2018"><b>PV 05/09/2018</b> (97Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1544091385-PV-10-juillet-2018.pdf" target="_blank" title="Telecharger PV 10/07/2018"><b>PV 10/07/2018</b> (133Ko) </a></li>
+														</ul>
+													</div>
+													<div class="telechargement-groupe" id="telechargement-groupe-21">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-21">Année 2019</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-21">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318879-PV-12-decembre-2019.pdf" target="_blank" title="Telecharger PV 12/12/2019"><b>PV 12/12/2019</b> (1209Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318842-PV-14-novembre-2019.pdf" target="_blank" title="Telecharger PV 14/11/2019"><b>PV 14/11/2019</b> (810Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583318816-PV-17-octobre-2019.pdf" target="_blank" title="Telecharger PV 17/10/2019"><b>PV 17/10/2019</b> (419Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1571670572-PV-conseil-communautaire-du-19092019.pdf" target="_blank" title="Telecharger PV 19/09/2019"><b>PV 19/09/2019</b> (146Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1571736806-PV--27-juin-2019.pdf" target="_blank" title="Telecharger PV 27/06/2019"><b>PV 27/06/2019</b> (102Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1562680356-PV-23-MAI-2019.pdf" target="_blank" title="Telecharger PV 23/05/2019"><b>PV 23/05/2019</b> (704Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1560851177-PV-conseil-11-avril-2019-modifie.pdf" target="_blank" title="Telecharger PV 11/04/2019"><b>PV 11/04/2019</b> (851Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1556186493-PV-14-mars-2019.pdf" target="_blank" title="Telecharger PV 14/03/2019"><b>PV 14/03/2019</b> (1046Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1552983209-PV-7-FEVRIER.pdf" target="_blank" title="Telecharger PV 07/02/2019"><b>PV 07/02/2019</b> (1009Ko) </a></li>
+														</ul>
+													</div>
+												</div>
+												<p></p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p style="text-align: center;"><span style="font-size: 17px;"><strong>Les comptes-rendus sommaires et procès-verbaux sont mis en ligne dès que possible.</strong></span></p>
+								<p style="text-align: justify;"><span style="font-size: 17px;"><strong>Si, pour une raison indépendante de notre volonté, ils ne peuvent être mis en ligne, ils sont consultables, conformément à la loi, en affichage version papier dans le panneau dédié à cet usage, au siège de la Communauté de Communes, 41, rue Basse des Remparts 18300 Sancerre.</strong></span></p>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:googlePlusSharePage();"><span class="socicon socicon-google"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div>
+		<script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, 'Pays Fort Sancerrois Val de Loire - Communauté de Communes', 'La communauté de communes Pays Fort Sancerrois Val de Loire est une communauté de communes française située dans le département du Cher et la région Centre-Val de Loire. ', '//www.comcompsv.fr/userfile/img-og/logo-web.png');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, 'Pays Fort Sancerrois Val de Loire - Communauté de Communes');
+			}
+			
+			function googlePlusSharePage(){
+				googlePlusShare(window.location.href);
+			}
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, 'La communauté de communes Pays Fort Sancerrois Val de Loire est une communauté de communes française située dans le département du Cher et la région Centre-Val de Loire. ', '//www.comcompsv.fr/userfile/img-og/logo-web.png');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, 'Pays Fort Sancerrois Val de Loire - Communauté de Communes', 'La communauté de communes Pays Fort Sancerrois Val de Loire est une communauté de communes française située dans le département du Cher et la région Centre-Val de Loire. ');
+			}
+			
+		</script>
+		<div class="template-footer">
+			<div class="template-footer-content  template-contents">
+				<div class="footer-template">
+					<p></p>
+					<table class="responsive-table" style="width: 85%; float: left;" cellpadding="10">
+						<tbody>
+							<tr>
+								<td style="width: 33%; vertical-align: top;">
+									<p><img src="../../userfile/images/logo%20Communaute%CC%81e%20de%20commune%20vect%20%28002%29.png" alt="" class="fit-to-original" style="display: block; margin-left: auto; margin-right: auto;"></p>
+									<p style="text-align: center;"><a href="/contact-pays-fort-sancerrois-valdeloire_fr.html" class="lien-contact">NOUS CONTACTER</a></p>
+								</td>
+								<td style="width: 33%; text-align: justify; vertical-align: middle; padding-left: 30px;"><span style="font-size: 18px;">41, rue Basse des Remparts <br>18300 SANCERRE <br><br>Tél. <strong>02 48 54 74 34</strong></span></td>
+								<td style="width: 33%; vertical-align: middle; text-align: center;">
+									<p><img src="../../userfile/images/pendule.png" alt="" class="fit-to-original" style="display: block; margin-left: auto; margin-right: auto;"></p>
+									<p style="text-align: center;"><strong><span style="font-size: 18px;">ACCUEIL DU PUBLIC</span></strong></p>
+									<p style="text-align: center;"><span style="font-size: 18px;">Lundi-Mardi-Jeudi<br>8h30-12h00 | 13h30-17h00</span></p><span style="font-size: 18px;">Mercredi-Vendredi<br>8h30-12h00</span></td>
+							</tr>
+						</tbody>
+					</table>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+					<p><span><ul class="menu-pied-de-page"><li class="menu-pied-de-page-item menu-pied-de-page-item-with-sub "><a href="javascript:open_submenu('menu-pied-de-page-submenu-0');" id="menu-pied-de-page-item-titre-0" class="menu-pied-de-page-item-titre" submenuof="menu-pied-de-page-submenu-0"></a><ul class="menu-pied-de-page-submenu" id="menu-pied-de-page-submenu-0"><li class="menu-pied-de-page-submenu-item menu-pied-de-page-submenu-item-38 "><a href="/credits-photos_fr.html" class="menu-pied-de-page-submenu-item-titre">CRÉDITS PHOTOS</a></li><li class="menu-pied-de-page-submenu-item menu-pied-de-page-submenu-item-35 "><a href="/mentions-legales_fr.html" class="menu-pied-de-page-submenu-item-titre">MENTIONS LÉGALES</a></li></ul></li></ul></span></p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright"><a href="websee_en_savoir_plus_sur_la_creation_de_site_internet.html">Création de site Web administrable et hébergement Internet par Net15</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script src="/css/global/websee-maximenu.js" type="text/javascript"></script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594041985"></script>
+		<script src="/js/responsive.min.js?1594041985"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
