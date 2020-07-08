@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<title>ACCUEIL - Communauté de Communes du Jovinien</title>
+		<link rel="icon" type="image/png" href="/favicons/portal994_favicon.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" lang="fr" content="mot du président
+actualités de la CCJ et des communes">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V2_h/css/main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V2_h/css/V2_h_main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V2_h/css/menu.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/embedded/commons-themes/themes/V2_h/css/jqtransform.css" media="all">
+		<!--[if IE 6]>
+    <link href="/static/embedded/commons-themes/themes/V2_h/css/ie6_styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/static/embedded/commons-themes/themes/V2_h/js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">DD_belatedPNG.fix('.png');</script>
+<![endif]-->
+		<!--[if IE]>
+  <link href="/static/embedded/commons-themes/themes/V2_h/css/ie_styles.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+		<link rel="stylesheet" type="text/css" href="/static/layouts/classic/classic_V2_h.css" media="all">
+		<!-- Custom css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/static/css/custom-front.css" media="all">
+		<!-- personalization custom css -->
+		<link rel="stylesheet" type="text/css" href="/customThemes/V2_h/customCss/customThemePortal994.css" media="all">
+		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/jquery.validation.min.js"></script>
+		<script type="text/javascript" src="/static/js/js.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.diaporousel.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.lightbox-0.5.css" media="all">
+		<link media="screen and (max-width: 640px)" href="/static/css/mobile.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/css/cookie.css" media="all">
+		<script type="text/javascript">
+$(function(){
+    $('.form_styled').jqTransform({imgPath:'/static/embedded/commons-themes/themes/V2_h/images/'});
+    $('.form_styled').jqTransform({imgPath:'/static/layouts/classic/images/'});
+    $('img').each(function () {
+    	if($(this).parents('a').size() == 0) {
+    		$(this).wrap("<a href='" + $(this).attr("src").replace(new RegExp("(.*)(?:/\.)(.[^/]+)(?:\_[omst])(\.[a-zA-Z]*)$"), "$1/$2$3") + "' />");
+    	}
+    });
+
+    if (-1 != -1) {
+	    $('img').click(function () {
+	    	setTimeout(function () {
+	    		correction();
+	    	}, 2000);
+	    });
+	    function correction() {
+	     	$('img').each(function () {
+	       		if($(this).attr("src").indexOf('lightbox-btn') != -1) {
+	       			$(this).attr("src","../../"+$(this).attr("src"));
+	       		}
+	        });
+	    };
+    }
+
+	$("a[href$='.png']").lightBox();
+	$("a[href$='.jpg']").lightBox();
+	$("a[href$='.gif']").lightBox();
+ 	$("a[href$='.swf']").lightBox();
+ 	$('.eb_carrousel').diaporousel();
+ 	/* Specific JS for theme V6h made by CRB */
+ 	});
+		</script>
+		<!-- Fixes Displaying agenda BUG -->
+		<link rel="stylesheet" type="text/css" href="/customThemes/V2_h/customCss/customThemePortal994adv.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/static/css/jquery.qtip.custom.css" media="all">
+	</head>
+	<body>
+		<div id="global" class="png">
+			<div id="topandmiddle" class="png">
+				<div id="bg_tandm">
+					<!-- Header -->
+					<div id="top" class="png">
+						<div id="bandeau">
+							<h1><a id="headLink" title="Aller à la page d'accueil du site officiel de Communauté de Communes du Jovinien" href="http://www.ccjovinien.fr"> Communauté de Communes du Jovinien </a></h1>
+							<p class="accroche">Site officiel de la Communauté de Communes du Jovinien</p>
+						</div>
+						<div id="accessibility">
+							<p><span><a href="#paragraphe">Aller au contenu</a></span>  <span><a href="#nav">Aller à la navigation</a></span></p> 
+							<div id="fullTextSearch"> 
+								<form id="fullTextSearchDirectoryForm" name="SearchDirectoryForm" method="post" enctype="multipart/form-data" action="http://www.ccjovinien.fr/all/search"><input type="text" id="fullTextSearchQuery" name="fullTextSearchQuery" maxlength="128" size="23" value="Rechercher" class="defaultText" onblur="this.value = this.value || 'Rechercher'; this.style.color = '#6D6D6D';" onfocus="if(this.value=='Rechercher') {this.value='';} this.style.color = '#666';"> <input type="image" id="fullTextSearch" value="Rechercher" src="/static/images/loupe_16x16.png"></form>
+							</div> </div>
+						<div id="visuel_top"></div>
+						<ul id="nav" class="png">
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/presentation" id="bt_nav_1" class="png" title="Présentation"><span class="png">Présentation </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/les-competences" title="Les compétences"><span> Les compétences </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-marches-publics" title="Les marchés publics"><span> Les marchés publics </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/comment-nous-contacter" title="Comment nous contacter"><span> Comment nous contacter </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-personnel-de-la-ccj" title="Le personnel de la CCJ"><span> Le personnel de la CCJ </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/recrutement" title="Recrutement"><span> Recrutement </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/conseil-communautaire" id="bt_nav_2" class="png" title="Conseil communautaire"><span class="png">Conseil communautaire </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/les-elus" title="Les élus"><span> Les élus </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-comptes-rendus" title="Les comptes-rendus"><span> Les comptes-rendus </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/deliberations" title="Délibérations"><span> Délibérations </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/notes-de-synthese" title="Notes de synthèse"><span> Notes de synthèse </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/19-communes" id="bt_nav_3" class="png" title="19 communes"><span class="png">19 communes </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/beon" title="Béon"><span> Béon </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/brion" title="Brion"><span> Brion </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/bussy-en-othe" title="Bussy-en-Othe"><span> Bussy-en-Othe </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/cezy" title="Cézy"><span> Cézy </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/champlay" title="Champlay"><span> Champlay </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/chamvres" title="Chamvres"><span> Chamvres </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/cudot" title="Cudot"><span> Cudot </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/joigny" title="Joigny"><span> Joigny </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/la-celle-saint-cyr" title="La Celle Saint-Cyr"><span> La Celle Saint-Cyr </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/looze" title="Looze"><span> Looze </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/paroy-sur-tholon" title="Paroy-sur-Tholon"><span> Paroy-sur-Tholon </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/precy-sur-vrin" title="Précy-sur-Vrin"><span> Précy-sur-Vrin </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/saint-aubin-sur-yonne" title="Saint-Aubin-sur-Yonne"><span> Saint-Aubin-sur-Yonne </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/saint-julien-du-sault" title="Saint-Julien-du-Sault"><span> Saint-Julien-du-Sault </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/saint-martin-d-ordon" title="Saint-Martin d'Ordon"><span> Saint-Martin d'Ordon </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/sepeaux---saint-romain" title="Sépeaux - Saint Romain"><span> Sépeaux - Saint Romain </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/verlin" title="Verlin"><span> Verlin </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/villecien" title="Villecien"><span> Villecien </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/villevallier" title="Villevallier"><span> Villevallier </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/environnement" id="bt_nav_4" class="png" title="Environnement"><span class="png">Environnement </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/calendriers-de-collecte-des-dechets" title="Calendriers de collecte des déchets"><span> Calendriers de collecte des déchets </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/dechets" title="Déchets"><span> Déchets </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/la-prevention-des-dechets" title="La prévention des déchets"><span> La prévention des déchets </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-ordures-menageres" title="Les ordures ménagères"><span> Les ordures ménagères </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/la-collecte-selective" title="La collecte sélective"><span> La collecte sélective </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-decheteries" title="Les déchèteries"><span> Les déchèteries </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-textiles" title="Les textiles"><span> Les textiles </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-verre" title="Le verre"><span> Le verre </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-service-" title="Le service +"><span> Le service + </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/compostage-individuel" title="Compostage individuel"><span> Compostage individuel </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-broyage-intercommunal" title="Le broyage intercommunal"><span> Le broyage intercommunal </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/quelques-chiffres" title="Quelques chiffres"><span> Quelques chiffres </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/balayage-mecanique" title="Balayage mécanique"><span> Balayage mécanique </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/economie" id="bt_nav_5" class="png" title="Économie"><span class="png">Économie </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/la-pepiniere-d-entreprises" title="La pépinière d'entreprises"><span> La pépinière d'entreprises </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/dispositifs-d-aides" title="Dispositifs d'aides"><span> Dispositifs d'aides </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/accessibilite-des-commerces" title="Accessibilité des commerces"><span> Accessibilité des commerces </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/liens-utiles" title="Liens utiles"><span> Liens utiles </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/nos-entrepreneurs" title="Nos entrepreneurs"><span> Nos entrepreneurs </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/urbanisme" id="bt_nav_6" class="png" title="Urbanisme"><span class="png">Urbanisme </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/le-plui" title="Le PLUi"><span> Le PLUi </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-scot-du-petr-du-nord-de-l-yonne" title="LE SCOT DU PETR DU NORD DE L'YONNE"><span> LE SCOT DU PETR DU NORD DE L'YONNE </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/projet-de-territoire-petr-du-nord-de-l-yonne" title="Projet de territoire PETR du Nord de l'Yonne"><span> Projet de territoire PETR du Nord de l'Yonne </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/projets" id="bt_nav_7" class="png" title="Projets"><span class="png">Projets </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/le-reamenagement-du-site-militaire-du-28eme-groupe-geographique" title="Le réaménagement du site militaire du 28ème Groupe Géographique"><span> Le réaménagement du site militaire du 28ème Groupe Géographique </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/habitat" title="Habitat"><span> Habitat </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/le-tres-haut-debit-thd" title="Le Très Haut Débit (THD)"><span> Le Très Haut Débit (THD) </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/pcaet" title="PCAET"><span> PCAET </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/questionnaire-amij" title="Questionnaire AMIJ"><span> Questionnaire AMIJ </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/loisirs" id="bt_nav_8" class="png" title="Loisirs"><span class="png">Loisirs </span></a>
+								<ul>
+									<li><a href="http://www.ccjovinien.fr/piscine-intercommunale" title="Piscine intercommunale"><span> Piscine intercommunale </span></a></li>
+									<li><a href="http://www.ccjovinien.fr/les-animations-des-communes" title="Les animations des communes"><span> Les animations des communes </span></a></li>
+								</ul>
+							</li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/relais-kangourou-" id="bt_nav_9" class="png" title="Relais Kangourou "><span class="png">Relais Kangourou </span></a></li>
+							<li>
+								<!-- Test if URL is external --><a href="http://www.ccjovinien.fr/demarches" id="bt_nav_10" class="png" title="Démarches"><span class="png">Démarches </span></a></li>
+						</ul>
+					</div>
+					<!-- /#top -->
+					<hr>
+					<!-- Partie centrale -->
+					<div id="middle" class="png">
+						<p id="lastEdit"></p>
+						<div id="bg_degrade" class="png">
+							<div id="bg_main" class="png">
+								<div id="sideandcontent">
+									<div id="breadcrumb_navigation">
+										<u>Accueil</u>»</div>
+									<div id="bg_content" class="png">
+										<div id="content">
+											<div class="paragraphe" id="paragraphe">
+												<h2>ACCUEIL</h2>
+												<div class="txt_bloc">
+													<h4> Piscine</h4>
+													<p>La Piscine Intercommunale du Jovinien - rue de Lavoisier à Joigny - rouvre ses portes au public samedi 4 juillet, à 14 heures, avec des règles d'hygiènes renforcées.</p>
+													<p>Conformément aux recommandations provenant notamment du ministère des Sports et de l'Agence Régionale de Santé (ARS), un protocole sanitaire est mis en place. Ce protocole est affiché à la piscine.</p>
+													<p>Voici les principales mesures:</p>
+													<ul>
+														<li>l'entrée s'effectue sur réservation, par tranche horaire de deux heures (1h30 de baignade);</li>
+														<li>du gel hydroalcoolique est à disposition;</li>
+														<li>le nombre de baigneur est limité en fonction du nombre de cabines disponibles (20), les cabines et casiers étant désinfectés après chaque tranche horaire selon la norme NFEN14476;</li>
+														<li>les sanitaires et douches sont désinfectés trois fois par jour;</li>
+														<li>les vestiaires collectifs sont fermés ainsi que les toilettes de l'accueil;</li>
+														<li>la pataugeoire est pour l'instant fermée;</li>
+														<li>un sens de circulation et une signalisation sont installés;</li>
+														<li>aucun matériel extérieur n'est accepté, ne sont autorisés que les maillots de bain référencés au règlement intérieur, les lunettes et bonnets de bain;</li>
+														<li>un prêt de brassards est accordé aux enfants, ces brassards sont ensuite désinfectés;</li>
+													</ul>
+													<p>A noter que les horaires d'accès au public ont été modifiés avec une ouverture en nocturne le vendredi et un créneau supplémentaire le dimanche matin. La piscine est ouverte:</p>
+													<ul>
+														<li>le lundi de 11h30 à 13h30 et de 14h30 à 18h30;</li>
+														<li>le mardi de 14h à 18h;</li>
+														<li>le mercredi et le jeudi de 10h à 12h et de 14h à 18h;</li>
+														<li>le vendredi de 11h30 à 13h30 et de 14h30 à 20h30;</li>
+														<li>le samedi de 14h à 18h;</li>
+														<li>le dimanche de 9h30 à 13h30 et de 14h à 18h.</li>
+													</ul>
+													<p>Des activités sont programmées les mardis, mercredis et jeudis de 18h à 18h45. La piscine propose: séances d'aquagym, aquatraining, perfectionnement enfants et adultes.</p>
+													<p>Pour réserver une tranche horaire, il est demandé de prendre contact par téléphone ( 03 86 62 10 98) pendant les heures d'ouverture de la piscine.</p>
+													<p>Les tarifs restent inchangés, le paiement sans contact étant privilégié.</p>
+													<p> </p>
+													<p> </p>
+													<h4>Accueil du public</h4>
+													<p><span style="color: #ff0000;"> </span></p>
+													<p><span style="color: #000000;"><span style="color: #000000;"><strong><span style="color: #ff0000;">RETOUR A LA NORMALE</span> </strong></span></span></p>
+													<p><span style="color: #000000;"><span style="color: #000000;">Accueil du public au 11 Quai du 1er Dragons <strong>d<span style="color: #000000;">u lundi au vendredi de 9h</span><span style="color: #000000;"><strong> à 12h et de 14h à 17h</strong></span></strong></span></span></p>
+													<p><strong>Pour les dossiers d'urbanisme </strong>(permis de construire, déclaration préalable...), merci de bien vouloir prendre RDV au 03.86.92.48.03. ou par mail : <a href="mailto:service.urbanisme@ccjovinien.fr">service.urbanisme@ccjovinien.fr</a></p>
+													<p>Merci de votre compréhension</p>
+													<p>  </p>
+													<h4><span style="color: #000000;">Déchèteries</span></h4>
+													<p> </p>
+													<p>Les horaires habituels de la déchèterie de <strong>Joigny</strong> et de <strong>Saint Julien du Sault</strong> ont repris depuis le <strong>mardi 02 Juin 2020</strong>.</p>
+													<p><img title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal994/links/20190107-1703--horaires-decheteries.jpg" alt="" width="751" height="1024"></p>
+													<p class="western" style="margin-bottom: 0cm; line-height: 100%;">Accueil</p>
+													<p><br><img style="float: right;" src="https://mon-site-internet.ternum-bfc.fr/documents/portal994/logo.png" alt="logo CCJ" width="133" height="157"></p>
+													<p>Chers Internautes,</p>
+													<p>Votre Communauté de Communes a le plaisir de vous présenter son site web. <br> A travers les pages et liens qui suivent, nous souhaitons partager avec vous la vie de notre communauté de communes, vous présenter ses missions et ses projets. J’espère que ce site, que nous nous efforcerons de rendre le plus vivant possible, répondra à vos attentes.</p>
+													<p>N'hésitez pas à nous faire part de vos remarques qui nous serviront à l’enrichir.</p>
+													<p>Très bonne visite !</p>
+													<p>Nicolas SORET<br> Président de la Communauté de Communes du Jovinien</p>
+													<p style="text-align: left;"><img style="margin: 13.8px; padding: 0px; outline: #000000 solid 1px; border: 0px #000000; height: 106px; text-align: right; color: #000000; text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial,Helvetica,sans-serif; font-size: 13.8px; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: normal; max-width: 650px; orphans: 2; -webkit-text-stroke-width: 0px; background-color: transparent;" title="" src="https://mon-site-internet.ternum-bfc.fr/documents/portal994/links/20190404-1141--photo_elus-ns.jpg" alt="" width="71" height="134">                                                                                                       </p>
+													<p> </p>
+													<h3>NOS ACTUALITÉS</h3>
+													<p> </p>
+													<p> </p>
+													<h5>Plan Local d'Urbanisme intercommunal</h5>
+													<p>Le Plan Local d'Urbanisme intercommunal (PLUi) de la Communauté de Communes du Jovinien a été approuvé le 18 décembre 2019. Il entrera en vigueur à la fin du mois de Février 2020. La page de notre site internet consacrée au PLUi est actuellement en maintenance, en attendant de pouvoir y consulter les pièces du PLUi approuvé vous pourrez retrouver le rapport de l'enquête publique sur ce lien: <a href="https://www.registre-dematerialise.fr/1514" target="_blank">https://www.registre-dematerialise.fr/1514</a></p>
+													<p> </p>
+													<p> </p>
+													<h5> SCOT (Schéma de Cohérence Territoriale) du PETR (Pôle d'Equilibre Territorial et Rural) du Nord de l'Yonne:</h5>
+													<p>Vous avez la possibilité de consulter les documents constituant le SCOT (arrêté par le comité syndical en date du 14 octobre 2019) en cliquant sur le lien suivant: <a href="http://www.ccjovinien.fr/le-scot-du-petr-du-nord-de-l-yonne" target="_blank">www.ccjovinien.fr/le-scot-du-petr-du-nord-de-l-yonne</a></p>
+													<p> </p>
+													<p> </p>
+													<h4><span style="color: #0000ff;">La collecte des encombrants</span></h4>
+													<p style="text-align: justify;">La communauté de Communes du Jovinien propose un service de collecte d'encombrants et de déchets d'équipements électroniques ou électriques limitée à 2 m3. Le ramassage n'est possible qu'une fois par mois pour un coût de 15€ par passage.</p>
+													<p style="text-align: justify;">Pour vous inscrire, vous contactez la Communauté de Communes du Jovinien :  03 86 62 47 95.</p>
+													<p style="text-align: center;"> </p>
+													<h6><span style="color: #0000ff;"><strong>Achat d'habitat dans les communes rurales bénéficiant du Prêt à Taux Zéro - PTZ</strong></span></h6>
+													<p style="text-align: justify;">Le gouvernement vient de dévoiler la carte des communes concernées par l’ouverture du Prêt à Taux Zéro (dit PTZ) pour l’achat de logements anciens à réhabiliter en milieu rural à compter du 1er janvier 2015 : <em>« Prévue par le projet de loi de finances pour 2015, cette ouverture du PTZ dans l’ancien sur les territoires en milieu rural est destinée à favoriser la revitalisation des centres-bourgs. Conditionnée à des travaux de rénovation, elle permettra de prendre en compte la situation de ménages qui souhaitent pour la première fois acquérir et rénover un logement existant ».</em> </p>
+													<p><strong>A ce jour, 6 communes de la CCJ sont concernées : <br> La Celle-Saint-Cyr, Cézy, Saint-Aubin-sur-Yonne, Saint-Julien-du-Sault, Saint-Martin-d'Ordon et Villevallier.</strong></p>
+													<p><a href="http://www.territoires.gouv.fr/ptz-rural-pres-de-6-000-communes-concernees" target="_blank">Plus d’informations, ici</a></p>
+													<h6><strong><span style="color: #0000ff;">Distribution des bacs "ordures ménagères" et "tri sélectif"</span></strong></h6>
+													<p>Si vous ne possédez pas encore de bacs homologués,<br>adressez-vous à la Communauté de Communes du Jovinien :</p>
+													<p> </p>
+													<p> </p>
+													<p style="text-align: center;"><strong>         téléphone : 03 86 62 47 95<br>         mail :<span style="color: #0000ff;"> <a href="mailto:accueil@ccjovinien.fr"><span style="color: #0000ff;">accueil@ccjovinien.fr<br></span></a></span></strong><strong>         siège social : 11 quai du 1er Dragons à Joigny.<br><br>   <span style="color: #0000ff;">     Horaires d'ouverture : </span></strong></p>
+													<p style="text-align: center;"><strong>        Lundi et jeudi : 13 h 30 - 19 h 00<br></strong></p>
+													<p style="text-align: center;"><strong>        Mardi : 13 h 30 - 17 h 00</strong></p>
+													<p style="text-align: center;"><strong>       Mercredi : 8 h 00 - 12 h 00 - 13 h 30 - 17 h 00</strong></p>
+													<p style="text-align: center;"><strong>       Vendredi: 8 h 00 - 12 h 00 - 14h00 - 16h30<br></strong></p>
+													<p style="text-align: center;"><strong>                                                                          </strong></p>
+													<p><strong><a href="https://mesdemarches.e-bourgogne.fr/envoi/demarche.html?id=18757"><span style="color: #0000ff;"><strong><span style="color: #0000ff;"> Pour nous contacter cliquez ici</span></strong></span></a></strong></p>
+													<p> </p>
+													<p> </p>
+												</div>
+											</div>
+											<div id="social-nw-btns"></div>
+										</div>
+									</div>
+								</div>
+								<div id="sidebar_right">
+									<div class="bloc_side agenda">
+										<div class="hgroup">
+											<h2>Agenda</h2>
+										</div>
+										<div class="bg_bloc">
+											<div class="pad_meteo">
+												<h3>ENVIRONNEMENT</h3>
+												<p class="month">juillet 2020</p>
+												<table class="tab_agenda">
+													<tbody>
+														<tr>
+															<th>L</th>
+															<th>M</th>
+															<th>M</th>
+															<th>J</th>
+															<th>V</th>
+															<th>S</th>
+															<th>D</th>
+														</tr>
+														<tr>
+															<td> </td>
+															<td> </td>
+															<td>1</td>
+															<td>2</td>
+															<td>3</td>
+															<td>4</td>
+															<td>5</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>7</td>
+															<td>8</td>
+															<td>9</td>
+															<td>10</td>
+															<td>11</td>
+															<td>12</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>14</td>
+															<td>15</td>
+															<td>16</td>
+															<td>17</td>
+															<td>18</td>
+															<td>19</td>
+														</tr>
+														<tr>
+															<td>20</td>
+															<td>21</td>
+															<td>22</td>
+															<td>23</td>
+															<td>24</td>
+															<td>25</td>
+															<td>26</td>
+														</tr>
+														<tr>
+															<td>27</td>
+															<td>28</td>
+															<td>29</td>
+															<td>30</td>
+															<td>31</td>
+															<td> </td>
+															<td> </td>
+														</tr>
+														<tr>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<p class="lk_fleche prec"><a class="png" href="http://www.ccjovinien.fr/?year=2020&month=5">Mois précédent</a></p>
+											<p class="lk_fleche suiv"><a class="png" href="http://www.ccjovinien.fr/?year=2020&month=7">Mois suivant</a></p>
+										</div>
+									</div>
+									<div class="bloc_side agenda">
+										<div class="hgroup">
+											<h2>Agenda</h2>
+										</div>
+										<div class="bg_bloc">
+											<div class="pad_meteo">
+												<h3>ACTUALITÉS DES COMMUNES</h3>
+												<p class="month">juillet 2020</p>
+												<table class="tab_agenda">
+													<tbody>
+														<tr>
+															<th>L</th>
+															<th>M</th>
+															<th>M</th>
+															<th>J</th>
+															<th>V</th>
+															<th>S</th>
+															<th>D</th>
+														</tr>
+														<tr>
+															<td> </td>
+															<td> </td>
+															<td>1</td>
+															<td>2</td>
+															<td>3</td>
+															<td>4</td>
+															<td>5</td>
+														</tr>
+														<tr>
+															<td>6</td>
+															<td>7</td>
+															<td>8</td>
+															<td>9</td>
+															<td>10</td>
+															<td>11</td>
+															<td>12</td>
+														</tr>
+														<tr>
+															<td>13</td>
+															<td>14</td>
+															<td>15</td>
+															<td>16</td>
+															<td>17</td>
+															<td>18</td>
+															<td>19</td>
+														</tr>
+														<tr>
+															<td>20</td>
+															<td>21</td>
+															<td>22</td>
+															<td>23</td>
+															<td>24</td>
+															<td>25</td>
+															<td>26</td>
+														</tr>
+														<tr>
+															<td>27</td>
+															<td>28</td>
+															<td>29</td>
+															<td>30</td>
+															<td>31</td>
+															<td> </td>
+															<td> </td>
+														</tr>
+														<tr>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+															<td> </td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<p class="lk_fleche prec"><a class="png" href="http://www.ccjovinien.fr/?year=2020&month=5">Mois précédent</a></p>
+											<p class="lk_fleche suiv"><a class="png" href="http://www.ccjovinien.fr/?year=2020&month=7">Mois suivant</a></p>
+										</div>
+									</div>
+									<div class="bloc_side htmlBlock">
+										<div class="bg_bloc">
+											<p>
+												<iframe src="http://www.ccjovinien.fr/documents/portal994/fluxyr.htm" width="200" height="410" scrolling="no" frameborder="0"></iframe>
+											</p>
+										</div>
+									</div>
+									<div class="bloc_side weatherBlock">
+										<script charset="UTF-8" src="https://www.meteofrance.com/mf3-rpc-portlet/rest/vignettepartenaire/892060/type/VILLE_FRANCE/size/PORTRAIT_VIGNETTE" type="text/javascript"></script>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#middle -->
+				</div>
+			</div>
+			<div id="footer" class="png">
+				<div id="bg_footer">
+					<!-- Footer -->
+					<div id="bottom" class="png"><a href="http://www.ccjovinien.fr/contact">Nous contacter</a>    |    <a href="http://www.ccjovinien.fr/mentions-legales">Mentions légales</a>    |    <a href="http://www.ccjovinien.fr/site-accessible">Site accessible</a></div>
+					<!-- /#bottom -->
+				</div>
+			</div>
+		</div>
+		<!-- /#global -->
+		<div id="sliding-popup" class="sliding-popup-bottom popup_cookie" style="height: auto; width: 100%; bottom: 0px;">
+			<div class="hidden-print popup-content info popup_cookie">
+				<div id="popup-text" class="popup_cookie">
+					<p class="popup_cookie">En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins statistiques. <a class="popup_cookie" href="http://www.ccjovinien.fr/mentions-legales">Cliquez ici pour en savoir plus.</a></p>
+				</div>
+			</div>
+			<div id="sliding-popup-delete" class="popup_cookie"></div>
+		</div>
+		<script type="text/javascript">
+    $(document).ready(function() {
+         if (Cookies.get('cookie-agreed')) {
+            $('#sliding-popup').hide();
+         } else {
+            Cookies.set('cookie-agreed', 'true');
+         }
+    });
+
+    $('#sliding-popup-delete').click(function() {
+        $('#sliding-popup').slideUp('slow');
+    });
+		</script>
+	</body>
+</html>
