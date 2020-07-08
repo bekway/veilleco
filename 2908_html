@@ -1,0 +1,686 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.cc-paysdopale.fr/default/">
+		<title>Comptes-rendus - Communauté de Communes Pays d'Opale - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#c6c2b8
+}
+.couleur_main, .cl_main {color:#19b2c5}
+.couleur_main_bg, .bg_main {background-color:#19b2c5 !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #19b2c5;
+}
+.couleur_police, .cl_font {color:#654298}
+.couleur_police_bg, .bg_font {background-color:#654298 !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #654298;
+}
+.couleur_fond_bg {background-color:#c6c2b8}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #c6c2b8 100%);
+	background: -webkit-linear-gradient(top, transparent, #c6c2b8 100%);
+	background: linear-gradient(to bottom, transparent, #c6c2b8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#c6c2b8",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #19b2c5 transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #19b2c5;}
+a.lien_couleur {color: #654298;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #47247A;}
+.couleur {color: #654298;}
+#head .retour {background: #654298 url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #654298;}
+#tribune a.postvisit, #tribune span.postvisit{color: #654298;}
+#information .tree1, #information .tree1 a {color: #654298;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#654298; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/75/banner/jLZPc1tYruhQNcH.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.cc-paysdopale.fr"> <img src="http://static.reseaudesintercoms.fr/cities/75/logo/FsvLzyEDXr5IXmW.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://cc-paysdopale.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#e85369 !important;
+	border-color:#e85369 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #e85369;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#e85369 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #e85369;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#7c5ead !important;
+	border-color:#7c5ead !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #7c5ead;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#7c5ead !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #7c5ead;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#ff7f00 !important;
+	border-color:#ff7f00 !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #ff7f00;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#ff7f00 !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #ff7f00;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#8ebf42 !important;
+	border-color:#8ebf42 !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #8ebf42;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#8ebf42 !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #8ebf42;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#25b4c5 !important;
+	border-color:#25b4c5 !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #25b4c5;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#25b4c5 !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #25b4c5;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#e0d809 !important;
+	border-color:#e0d809 !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #e0d809;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#e0d809 !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #e0d809;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#e85369;"><a class="menu-a" href="/fr/rubrique/1/vie-institutionnelle">Vie Institutionnelle</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/6720/la-communaute-communes" class="icon-arrow-right"> La Communauté de Communes </a></li>
+								<li><a href="/fr/information/6722/marches-publics" class="icon-arrow-right"> Marchés Publics </a></li>
+								<li><a href="/fr/information/3096/decisions-communautaires" class="icon-arrow-right"> Décisions Communautaires </a></li>
+								<li><a href="/fr/publications" class="icon-arrow-right"> Publications </a></li>
+								<li><a href="/fr/espace-presse" class="icon-arrow-right"> Espace presse </a></li>
+								<li><a href="/fr/information/8519/grand-debat-national" class="icon-arrow-right"> Grand Débat National </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#7c5ead;"><a class="menu-a" href="/fr/rubrique/3/services-public">Services au Public</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/6655/france-services" class="icon-arrow-right"> France Services </a></li>
+								<li><a href="/fr/information/3163/petite-enfance" class="icon-arrow-right"> Petite enfance </a></li>
+								<li><a href="/fr/information/6663/solidarite" class="icon-arrow-right"> Solidarité </a></li>
+								<li><a href="/fr/information/3172/mobilite" class="icon-arrow-right"> Mobilité </a></li>
+								<li><a href="/fr/associations" class="icon-arrow-right"> Associations </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#ff7f00;"><a class="menu-a" href="/fr/rubrique/2/culture-loisirs">Culture & Loisirs</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/6812/culture" class="icon-arrow-right"> Culture </a></li>
+								<li><a href="/fr/information/7821/les-ludotheques" class="icon-arrow-right"> Les Ludothèques </a></li>
+								<li><a href="/fr/information/5677/tourisme" class="icon-arrow-right"> Tourisme </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#8ebf42;"><a class="menu-a" href="/fr/rubrique/4/amenagement">Aménagement</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/6842/urbanisme" class="icon-arrow-right"> Urbanisme </a></li>
+								<li><a href="/fr/information/9181/opah" class="icon-arrow-right"> OPAH </a></li>
+								<li><a href="/fr/information/6843/fibre-numerique" class="icon-arrow-right"> Fibre numérique </a></li>
+								<li><a href="/fr/information/6712/travaux" class="icon-arrow-right"> Travaux </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#25b4c5;"><a class="menu-a" href="/fr/rubrique/5/environnement">Environnement</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/8409/plan-climat-air-energie-territorial-%28pcaet%29" class="icon-arrow-right"> Plan Climat Air Energie Territorial (PCAET) </a></li>
+								<li><a href="/fr/information/3449/assainissement-non-collectif" class="icon-arrow-right"> Assainissement non Collectif </a></li>
+								<li><a href="/fr/information/3450/collecte-dechets-menagers" class="icon-arrow-right"> Collecte des déchets ménagers </a></li>
+								<li><a href="/fr/information/6718/lutte-contre-rats-musques" class="icon-arrow-right"> Lutte contre les rats musqués </a></li>
+								<li><a href="/fr/information/7845/lutte-contre-erosion-ruissellements" class="icon-arrow-right"> Lutte contre l'érosion et les ruissellements </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#e0d809;"><a class="menu-a" href="/fr/rubrique/6/economie-emploi">Economie & Emploi</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/6816/developpement-economique" class="icon-arrow-right"> Développement Économique </a></li>
+								<li><a href="/fr/information/6827/emploi" class="icon-arrow-right"> Emploi </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<div class="socialblck"><a href="https://www.facebook.com/Communaute-de-Communes-Pays-dOpale-1830646800585368" title="https://www.facebook.com/Communaute-de-Communes-Pays-dOpale-1830646800585368" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/fb_right.png" alt="https://www.facebook.com/Communaute-de-Communes-Pays-dOpale-1830646800585368"> </a></div>
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/vie-institutionnelle" title="Vie Institutionnelle">Vie Institutionnelle</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">25/06/2020</td>
+									<td><a href="/fr/compte-rendu/2423/compte-rendu-2020-seance-25-juin-2020" title="Compte-rendu 2020 - Séance du 25 juin 2020"><b>Compte-rendu 2020 - Séance du 25 juin 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/0lnqqptcqap90e.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">05/06/2020</td>
+									<td><a href="/fr/compte-rendu/2417/compte-rendu-2020-seance-05-juin-2020" title="Compte-rendu 2020 - Séance du 05 juin 2020"><b>Compte-rendu 2020 - Séance du 05 juin 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/3vn5fofe3ny6nj.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/05/2020</td>
+									<td><a href="/fr/compte-rendu/2413/compte-rendu-2020-seance-20-mai-2020" title="Compte-rendu 2020 - Séance du 20 mai 2020"><b>Compte-rendu 2020 - Séance du 20 mai 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/0fan47g5yms97lj.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">26/02/2020</td>
+									<td><a href="/fr/compte-rendu/2393/compte-rendu-2020-seance-26-fevrier-2020" title="Compte-rendu 2020 - Séance du 26 février 2020"><b>Compte-rendu 2020 - Séance du 26 février 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/8ryqlrlx40n54fs.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">28/11/2019</td>
+									<td><a href="/fr/compte-rendu/2359/compte-rendu-2019-seance-28-novembre-2019" title="Compte-rendu 2019- Séance du 28 novembre 2019"><b>Compte-rendu 2019- Séance du 28 novembre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/r4g9rkem9nj73jo.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">26/09/2019</td>
+									<td><a href="/fr/compte-rendu/2314/compte-rendu-2019-seance-26-septembre-2019" title="Compte-rendu 2019- Séance du 26 septembre 2019"><b>Compte-rendu 2019- Séance du 26 septembre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/ukqbloauo1klvca.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">27/06/2019</td>
+									<td><a href="/fr/compte-rendu/2313/compte-rendu-2019-seance-27-juin-2019" title="Compte-rendu 2019 -Séance du 27 juin 2019"><b>Compte-rendu 2019 -Séance du 27 juin 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/g4vdls47tlw8ot8.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/04/2019</td>
+									<td><a href="/fr/compte-rendu/2264/compte-rendu-2019-seance-25-avril-2019" title="Compte rendu 2019 - Séance du 25 avril 2019"><b>Compte rendu 2019 - Séance du 25 avril 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/phv25ksg5o1vz7s.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">09/04/2019</td>
+									<td><a href="/fr/compte-rendu/2212/compte-rendu-2019-seance-09-avril-2019" title="Compte rendu 2019 - Séance du 09 avril 2019"><b>Compte rendu 2019 - Séance du 09 avril 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/9xfdler9vkjbbsp.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">28/02/2019</td>
+									<td><a href="/fr/compte-rendu/2211/compte-rendu-2019-seance-28-fevrier-2019" title="Compte rendu 2019 - Séance du 28 février 2019"><b>Compte rendu 2019 - Séance du 28 février 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/6l5nlhb7yu8t0l.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/01/2019</td>
+									<td><a href="/fr/compte-rendu/2151/compte-rendu-2019-seance-22-janvier-2019" title="Compte rendu 2019 - Séance du 22 janvier 2019"><b>Compte rendu 2019 - Séance du 22 janvier 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/2ud9np50n6q10uy.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/11/2018</td>
+									<td><a href="/fr/compte-rendu/2152/compte-rendu-2018-seance-22-novembre-2018" title="Compte rendu 2018 - Séance du 22 novembre 2018"><b>Compte rendu 2018 - Séance du 22 novembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/s3801qsrlybebb.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/10/2018</td>
+									<td><a href="/fr/compte-rendu/2103/compte-rendu-2018-seance-25-octobre-2018" title="Compte rendu 2018 - Séance du 25 octobre 2018"><b>Compte rendu 2018 - Séance du 25 octobre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/fb6n3av72awagz.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/09/2018</td>
+									<td><a href="/fr/compte-rendu/2102/compte-rendu-2018-seance-25-septembre-2018" title="Compte rendu 2018 - Séance du 25 septembre 2018"><b>Compte rendu 2018 - Séance du 25 septembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/24nq9quoomf4zw.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/09/2018</td>
+									<td><a href="/fr/compte-rendu/2062/compte-rendu-2018-seance-20-septembre-2018" title="Compte rendu 2018 - Séance du 20 septembre 2018"><b>Compte rendu 2018 - Séance du 20 septembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/r6jlcm0vbzw90qw.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">28/06/2018</td>
+									<td><a href="/fr/compte-rendu/2040/compte-rendu-2018-seance-28-juin-2018" title="Compte rendu 2018 - Séance du 28 juin 2018"><b>Compte rendu 2018 - Séance du 28 juin 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/mjtlaao0anc7ggp.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">12/06/2018</td>
+									<td><a href="/fr/compte-rendu/2028/compte-rendu-2018-seance-12-juin-2018" title="Compte rendu 2018 - Séance du 12 juin 2018"><b>Compte rendu 2018 - Séance du 12 juin 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/rs7c0bxwfs2uge.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/03/2018</td>
+									<td><a href="/fr/compte-rendu/2027/compte-rendu-2018-seance-22-mars-2018" title="Compte rendu 2018 - Séance du 22 mars 2018"><b>Compte rendu 2018 - Séance du 22 mars 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/recyvdzbwu59tiq.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/01/2018</td>
+									<td><a href="/fr/compte-rendu/1964/compte-rendu-2018-seance-25-janvier-2018" title="Compte rendu 2018 - Séance du 25 janvier 2018"><b>Compte rendu 2018 - Séance du 25 janvier 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/972moihowdegxg.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">04/12/2017</td>
+									<td><a href="/fr/compte-rendu/1958/compte-rendu-2017-seance-04-decembre-2017" title="Compte rendu 2017 - Séance du 04 décembre 2017"><b>Compte rendu 2017 - Séance du 04 décembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/75/documents/jyf3oh77cbau0b2.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/3" title="Page 3"><span>3</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/4" title="Page 4"><span>4</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/12.png');"></div><a href="/fr/nous-contacter" title="Contactez-nous"> Contactez-nous </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/28.png');"></div><a href="/fr/information/6722/marches-publics" title="Marchés Publics"> Marchés Publics </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/01.png');"></div><a href="/fr/information/8409/plan-climat-air-energie-territorial-%28pcaet%29" title="Plan Climat Air Energie Territorial (PCAET)"> Plan Climat Air Energie Territorial (PCAET) </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/13.png');"></div><a href="/fr/information/4212/pret-materiel-communautaire" title="Prêt de matériel communautaire"> Prêt de matériel communautaire </a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="r_advert"><a href="http://www.green-on.fr/paysdopale.html" target="_blank"> <img src="http://static.reseaudesintercoms.fr/cities/75/advertising/wcE2cdvXwVPYqq2.png" alt="Vélo Partage"> </a></div>
+				<div id="mini-map"><a class="terr_link" href="/fr/territoire-liste/decouvrir-territoire"> <img src="http://static.reseaudesintercoms.fr/cities/75/banner/IlwL8UBTfud9hCk.jpg" alt="Carte de la Communauté"> </a></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/665/alembon"> Alembon </a></li>
+						<li><a href="/fr/territoire/666/andres"> Andres </a></li>
+						<li><a href="/fr/territoire/680/ardres"> Ardres </a></li>
+						<li><a href="/fr/territoire/681/autingues"> Autingues </a></li>
+						<li><a href="/fr/territoire/667/bainghen"> Bainghen </a></li>
+						<li><a href="/fr/territoire/682/balinghem"> Balinghem </a></li>
+						<li><a href="/fr/territoire/668/bouquehault"> Bouquehault </a></li>
+						<li><a href="/fr/territoire/669/boursin"> Boursin </a></li>
+						<li><a href="/fr/territoire/683/bremes"> Brêmes </a></li>
+						<li><a href="/fr/territoire/670/caffiers"> Caffiers </a></li>
+						<li><a href="/fr/territoire/671/campagne-les-guines"> Campagne-lès-Guines </a></li>
+						<li><a href="/fr/territoire/672/fiennes"> Fiennes </a></li>
+						<li><a href="/fr/territoire/673/guines"> Guînes </a></li>
+						<li><a href="/fr/territoire/674/hardinghen"> Hardinghen </a></li>
+						<li><a href="/fr/territoire/675/herbinghen"> Herbinghen </a></li>
+						<li><a href="/fr/territoire/676/hermelinghen"> Hermelinghen </a></li>
+						<li><a href="/fr/territoire/677/hocquinghen"> Hocquinghen </a></li>
+						<li><a href="/fr/territoire/684/landrethun-les-ardres"> Landrethun-lès-Ardres </a></li>
+						<li><a href="/fr/territoire/678/licques"> Licques </a></li>
+						<li><a href="/fr/territoire/685/louches"> Louches </a></li>
+						<li><a href="/fr/territoire/686/nielles-les-ardres"> Nielles-lès-Ardres </a></li>
+						<li><a href="/fr/territoire/687/rodelinghem"> Rodelinghem </a></li>
+						<li><a href="/fr/territoire/679/sanghen"> Sanghen </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/75/logo/AuWzgFAav6pLLtz.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Ludovic LOQUET </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 9 avenue de la Libération, 62 340 Guînes </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 03 21 00 83 33 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> Du lundi au vendredi<br> de 8h à 12h30 et de 13h30 à 17h </span></p>
+						<p id="f_social"><span class="colLeft">En réseau :</span> <span class="colRight"> <a class="sl_facebook couleur_main_bg" href="https://www.facebook.com/Communaute-de-Communes-Pays-dOpale-1830646800585368" title="https://www.facebook.com/Communaute-de-Communes-Pays-dOpale-1830646800585368" onclick="this.target='_blank'"></a> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft">
+					<div id="f_newsletter">
+						<div class="titre">Newsletter</div>
+						<form action="/fr/newsletter/subscribe" method="post" name="newsletter">
+							<p>Pour vous inscrire veuillez indiquer votre adresse email.</p>
+							<p><input name="email" type="text" class="email" placeholder="Adresse email"></p>
+							<p><label for="member_group">Vous pouvez également adhérer au(x) groupe(s) suivant(s) :</label></p>
+							<div class="f_multiselect">
+								<div class="selectBox"><select> <option>Sélectionnez un/des groupe(s)</option> </select>
+									<div class="overSelect"></div>
+								</div>
+								<div id="checkboxes" class="selectList"><label for="group_66"> <input type="checkbox" name="groups[66]" id="group_66" value="66"> ASSOCIATIONS </label> <label for="group_64"> <input type="checkbox" name="groups[64]" id="group_64" value="64"> NEWSLETTER CULTURE </label></div>
+							</div><br>
+							<script>
+					$(document).ready(function() {
+						$('.selectBox').click(function() {
+							$(this).parent().find('.selectList').toggle();
+						});
+					});
+				
+							</script>
+							<div id="newsletterCaptcha" class="g-recaptcha" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+							<p class="center"><input type="submit" value="Souscrire" class="submit bg_main"></p>
+						</form>
+					</div>
+				</div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/vie-institutionnelle">Vie Institutionnelle</a></li>
+									<li><a href="/fr/information/6720/la-communaute-communes">La Communauté de Communes</a></li>
+									<li><a href="/fr/information/6722/marches-publics">Marchés Publics</a></li>
+									<li><a href="/fr/information/3096/decisions-communautaires">Décisions Communautaires</a></li>
+									<li><a href="/fr/publications">Publications</a></li>
+									<li><a href="/fr/espace-presse">Espace presse</a></li>
+									<li><a href="/fr/information/8519/grand-debat-national">Grand Débat National</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/services-public">Services au Public</a></li>
+									<li><a href="/fr/information/6655/france-services">France Services</a></li>
+									<li><a href="/fr/information/3163/petite-enfance">Petite enfance</a></li>
+									<li><a href="/fr/information/6663/solidarite">Solidarité</a></li>
+									<li><a href="/fr/information/3172/mobilite">Mobilité</a></li>
+									<li><a href="/fr/associations">Associations</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/culture-loisirs">Culture & Loisirs</a></li>
+									<li><a href="/fr/information/6812/culture">Culture</a></li>
+									<li><a href="/fr/information/7821/les-ludotheques">Les Ludothèques</a></li>
+									<li><a href="/fr/information/5677/tourisme">Tourisme</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/amenagement">Aménagement</a></li>
+									<li><a href="/fr/information/6842/urbanisme">Urbanisme</a></li>
+									<li><a href="/fr/information/9181/opah">OPAH</a></li>
+									<li><a href="/fr/information/6843/fibre-numerique">Fibre numérique</a></li>
+									<li><a href="/fr/information/6712/travaux">Travaux</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/environnement">Environnement</a></li>
+									<li><a href="/fr/information/8409/plan-climat-air-energie-territorial-%28pcaet%29">Plan Climat Air Energie Territorial (PCAET)</a></li>
+									<li><a href="/fr/information/3449/assainissement-non-collectif">Assainissement non Collectif</a></li>
+									<li><a href="/fr/information/3450/collecte-dechets-menagers">Collecte des déchets ménagers</a></li>
+									<li><a href="/fr/information/6718/lutte-contre-rats-musques">Lutte contre les rats musqués</a></li>
+									<li><a href="/fr/information/7845/lutte-contre-erosion-ruissellements">Lutte contre l'érosion et les ruissellements</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/economie-emploi">Economie & Emploi</a></li>
+									<li><a href="/fr/information/6816/developpement-economique">Développement Économique</a></li>
+									<li><a href="/fr/information/6827/emploi">Emploi</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<div id="f_external_link">
+						<div class="titre">Liens externes</div>
+						<p class="link"><a class="icon-arrow-right" href="http://www.pasdecalais.fr/" title="Conseil Général du Pas de Calais" target="_blank"> Conseil Général du Pas de Calais </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.parc-opale.fr/" title="Parc Naturel Régional des Caps et Marais d'Opale" target="_blank"> Parc Naturel Régional des Caps et Marais d'Opale </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.nordpasdecalais.fr" title="Conseil Régional du Pas de Calais" target="_blank"> Conseil Régional du Pas de Calais </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.pays-du-calaisis.fr/" title="SYMPAC" target="_blank"> SYMPAC </a></p>
+						<p class="link"><a class="icon-arrow-right" href="http://www.paysdopale-tourisme.fr" title="Office du Tourisme Pays d'Opale" target="_blank"> Office du Tourisme Pays d'Opale </a></p>
+						<p class="link allLinks"><a class="icon-arrow-right" href="/fr/liens-externes" title="Tous les liens externes"> Tous les liens externes </a></p>
+					</div>
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.pasdecalais.fr/" title="Département du Pas-de-Calais" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/62.jpg" alt="Département du Pas-de-Calais" style="width:100%"></a></td>
+							<td><a href="http://www.nordpasdecalaispicardie.fr/" title="Conseil régional de Hauts-de-France" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/21.jpg" alt="Conseil régional de Hauts-de-France" style="width:100%"></a></td>
+							<td><a href="http://www.pas-de-calais.pref.gouv.fr/" title="Préfecture du Pas-de-Calais" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/62.jpg" alt="Préfecture du Pas-de-Calais" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cc-paysdopale.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site cc-paysdopale.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #19b2c5;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #19b2c5; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #c6c2b8;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-34026804-11");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
