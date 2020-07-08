@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr-FR" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:title" content="">
+		<meta charset="utf-8">
+		<base href="https://www.cchpm.fr/index.php/home/decisions-communautaires/compte-rendu">
+		<meta name="author" content="Ludovic OLLIVIER">
+		<meta name="description" content="Site de la Communauté de Communes du Haut-Pays du Montreuillois (CCHPM). ">
+		<meta name="generator" content="Joomla! - Open Source Content Management">
+		<title>Haut-Pays du Montreuillois - Compte rendu</title>
+		<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/index.php?option=com_ajax&plugin=arktypography&format=json" rel="stylesheet">
+		<link href="/plugins/content/up/assets/up.css" rel="stylesheet">
+		<link href="/media/gantry5/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/media/gantry5/engines/nucleus/css-compiled/nucleus.css" rel="stylesheet">
+		<link href="/templates/g5_helium/custom/css-compiled/helium_27.css" rel="stylesheet">
+		<link href="/media/gantry5/assets/css/bootstrap-gantry.css" rel="stylesheet">
+		<link href="/media/gantry5/engines/nucleus/css-compiled/joomla.css" rel="stylesheet">
+		<link href="/media/jui/css/icomoon.css" rel="stylesheet">
+		<link href="/templates/g5_helium/custom/css-compiled/helium-joomla_27.css" rel="stylesheet">
+		<link href="/templates/g5_helium/custom/css-compiled/custom_27.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/light-bottom.css" rel="stylesheet">
+		<link href="/media/plg_system_imageeffectck/css/imageeffectck.css?ver=2.2.4" rel="stylesheet">
+		<link href="https://www.cchpm.fr/media/editors/arkeditor/css/squeezebox.css" rel="stylesheet">
+		<style>
+
+        #g-navigation {
+            /* Needed for Safari (Mac) */
+            width: 100%;
+        }
+
+        #g-navigation.g-fixed-active {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1003;
+            left: 0;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .animated {
+          -webkit-transition: transform 200ms linear;
+          -moz-transition: transform 200ms linear;
+          -ms-transition: transform 200ms linear;
+          -o-transition: transform 200ms linear;
+          transition: transform 200ms linear;
+        }
+
+        .slideDown {
+          -webkit-transform: translateY(0%);
+          -moz-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          -o-transform: translateY(0%);
+          transform: translateY(0%);
+        }
+
+        .slideUp {
+          -webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
+
+        .animated {
+          -webkit-animation-duration: 0.5s;
+          -moz-animation-duration: 0.5s;
+          -ms-animation-duration: 0.5s;
+          -o-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+          -webkit-animation-fill-mode: both;
+          -moz-animation-fill-mode: both;
+          -ms-animation-fill-mode: both;
+          -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes slideDownHR {
+            0% {
+                -webkit-transform: translateY(-100%);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+            }
+        }
+
+        @-moz-keyframes slideDownHR {
+            0% {
+                -moz-transform: translateY(-100%);
+            }
+
+            100% {
+                -moz-transform: translateY(0);
+            }
+        }
+
+        @-o-keyframes slideDownHR {
+            0% {
+                -o-transform: translateY(-100%);
+            }
+
+            100% {
+                -o-transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDownHR {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .animated.slideDown {
+            -webkit-animation-name: slideDownHR;
+            -moz-animation-name: slideDownHR;
+            -o-animation-name: slideDownHR;
+            animation-name: slideDownHR;
+        }
+
+        @-webkit-keyframes slideUpHR {
+            0% {
+                -webkit-transform: translateY(0);
+            }
+
+            100% {
+                -webkit-transform: translateY(-100%);
+            }
+        }
+
+        @-moz-keyframes slideUpHR {
+            0% {
+                -moz-transform: translateY(0);
+            }
+
+            100% {
+                -moz-transform: translateY(-100%);
+            }
+        }
+
+        @-o-keyframes slideUpHR {
+            0% {
+                -o-transform: translateY(0);
+            }
+
+            100% {
+                -o-transform: translateY(-100%);
+            }
+        }
+
+        @keyframes slideUpHR {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .animated.slideUp {
+            -webkit-animation-name: slideUpHR;
+            -moz-animation-name: slideUpHR;
+            -o-animation-name: slideUpHR;
+            animation-name: slideUpHR;
+        }
+
+        @-webkit-keyframes swingInX {
+            0% {
+                -webkit-transform: perspective(400px) rotateX(-90deg);
+            }
+            
+            100% {
+                -webkit-transform: perspective(400px) rotateX(0deg);
+            }
+        }
+
+        @-moz-keyframes swingInX {
+            0% {
+                -moz-transform: perspective(400px) rotateX(-90deg);
+            }
+
+            100% {
+                -moz-transform: perspective(400px) rotateX(0deg);
+            }
+        }
+
+        @-o-keyframes swingInX {
+            0% {
+                -o-transform: perspective(400px) rotateX(-90deg);
+            }
+            
+            100% {
+                -o-transform: perspective(400px) rotateX(0deg);
+            }
+        }
+
+        @keyframes swingInX {
+            0% {
+                transform: perspective(400px) rotateX(-90deg);
+            }
+            
+            100% {
+                transform: perspective(400px) rotateX(0deg);
+            }
+        }
+
+        .animated.swingInX {
+            -webkit-transform-origin: top;
+            -moz-transform-origin: top;
+            -ie-transform-origin: top;
+            -o-transform-origin: top;
+            transform-origin: top;
+          
+            -webkit-backface-visibility: visible !important;
+            -webkit-animation-name: swingInX;
+            -moz-backface-visibility: visible !important;
+            -moz-animation-name: swingInX;
+            -o-backface-visibility: visible !important;
+            -o-animation-name: swingInX;
+            backface-visibility: visible !important;
+            animation-name: swingInX;
+        }
+
+        @-webkit-keyframes swingOutX {
+            0% {
+                -webkit-transform: perspective(400px) rotateX(0deg);
+            }
+          100% {
+                -webkit-transform: perspective(400px) rotateX(-90deg);
+            }
+        }
+
+        @-moz-keyframes swingOutX {
+            0% {
+                -moz-transform: perspective(400px) rotateX(0deg);
+            }
+          100% {
+                -moz-transform: perspective(400px) rotateX(-90deg);
+            }
+        }
+
+        @-o-keyframes swingOutX {
+            0% {
+                -o-transform: perspective(400px) rotateX(0deg);
+            }
+          100% {
+                -o-transform: perspective(400px) rotateX(-90deg);
+            }
+        }
+
+        @keyframes swingOutX {
+            0% {
+                transform: perspective(400px) rotateX(0deg);
+            }
+          100% {
+                transform: perspective(400px) rotateX(-90deg);
+            }
+        }
+
+        .animated.swingOutX {
+            -webkit-transform-origin: top;
+            -webkit-animation-name: swingOutX;
+            -webkit-backface-visibility: visible !important;
+            -moz-animation-name: swingOutX;
+            -moz-backface-visibility: visible !important;
+            -o-animation-name: swingOutX;
+            -o-backface-visibility: visible !important;
+            animation-name: swingOutX;
+            backface-visibility: visible !important;
+        }
+
+        @-webkit-keyframes flipInX {
+            0% {
+                -webkit-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+            
+            100% {
+                -webkit-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes flipInX {
+            0% {
+                -moz-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+
+            100% {
+                -moz-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes flipInX {
+            0% {
+                -o-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+            
+            100% {
+                -o-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes flipInX {
+            0% {
+                transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+            
+            100% {
+                transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+        }
+
+        .animated.flipInX {
+            -webkit-backface-visibility: visible !important;
+            -webkit-animation-name: flipInX;
+            -moz-backface-visibility: visible !important;
+            -moz-animation-name: flipInX;
+            -o-backface-visibility: visible !important;
+            -o-animation-name: flipInX;
+            backface-visibility: visible !important;
+            animation-name: flipInX;
+        }
+
+        @-webkit-keyframes flipOutX {
+            0% {
+                -webkit-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+          100% {
+                -webkit-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes flipOutX {
+            0% {
+                -moz-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+          100% {
+                -moz-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+        }
+
+        @-o-keyframes flipOutX {
+            0% {
+                -o-transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+          100% {
+                -o-transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes flipOutX {
+            0% {
+                transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+          100% {
+                transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+        }
+
+        .animated.flipOutX {
+            -webkit-animation-name: flipOutX;
+            -webkit-backface-visibility: visible !important;
+            -moz-animation-name: flipOutX;
+            -moz-backface-visibility: visible !important;
+            -o-animation-name: flipOutX;
+            -o-backface-visibility: visible !important;
+            animation-name: flipOutX;
+            backface-visibility: visible !important;
+        }
+
+        @-webkit-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(-200px);
+            }
+
+            60% {
+                opacity: 1;
+                -webkit-transform: translateY(30px);
+            }
+
+            80% {
+                -webkit-transform: translateY(-10px);
+            }
+
+            100% {
+                -webkit-transform: translateY(0);
+            }
+        }
+
+        @-moz-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -moz-transform: translateY(-200px);
+            }
+
+            60% {
+                opacity: 1;
+                -moz-transform: translateY(30px);
+            }
+
+            80% {
+                -moz-transform: translateY(-10px);
+            }
+
+            100% {
+                -moz-transform: translateY(0);
+            }
+        }
+
+        @-o-keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                -o-transform: translateY(-200px);
+            }
+
+            60% {
+                opacity: 1;
+                -o-transform: translateY(30px);
+            }
+
+            80% {
+                -o-transform: translateY(-10px);
+            }
+
+            100% {
+                -o-transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-200px);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(30px);
+            }
+
+            80% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .animated.bounceInDown {
+            -webkit-animation-name: bounceInDown;
+            -moz-animation-name: bounceInDown;
+            -o-animation-name: bounceInDown;
+            animation-name: bounceInDown;
+        }
+
+        @-webkit-keyframes bounceOutUp {
+            0% {
+                -webkit-transform: translateY(0);
+            }
+
+            30% {
+                opacity: 1;
+                -webkit-transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translateY(-200px);
+            }
+        }
+
+        @-moz-keyframes bounceOutUp {
+            0% {
+                -moz-transform: translateY(0);
+            }
+
+            30% {
+                opacity: 1;
+                -moz-transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 0;
+                -moz-transform: translateY(-200px);
+            }
+        }
+
+        @-o-keyframes bounceOutUp {
+            0% {
+                -o-transform: translateY(0);
+            }
+
+            30% {
+                opacity: 1;
+                -o-transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 0;
+                -o-transform: translateY(-200px);
+            }
+        }
+
+        @keyframes bounceOutUp {
+            0% {
+                transform: translateY(0);
+            }
+
+            30% {
+                opacity: 1;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-200px);
+            }
+        }
+
+        .animated.bounceOutUp {
+            -webkit-animation-name: bounceOutUp;
+            -moz-animation-name: bounceOutUp;
+            -o-animation-name: bounceOutUp;
+            animation-name: bounceOutUp;
+        }
+        .imgblog {
+  display: block;
+  object-fit: cover;
+  width: 500px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-resp
+{
+display: block;
+object-fit: cover;
+vertical-align: middle;
+width: auto;
+height: 250px;
+margin-left: auto;
+margin-right: auto;
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"ac66132806fc2ebdb435470e8ccdb543","system.paths":{"root":"","base":""}}</script>
+		<script src="/media/system/js/mootools-core.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/system/js/core.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/jui/js/jquery.min.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/system/js/caption.js?3dcf7b3d37a5d53d817efecdd4228f06"></script>
+		<script src="/media/jui/js/bootstrap.min.js"></script>
+		<script src="/templates/g5_helium/js/anchor.min.js"></script>
+		<script src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0&appId=499060444231097&autoLogAppEvents=1"></script>
+		<script src="/media/plg_system_imageeffectck/js/imageeffectck.js"></script>
+		<script src="https://www.cchpm.fr/media/editors/arkeditor/js/jquery.easing.min.js"></script>
+		<script src="https://www.cchpm.fr/media/editors/arkeditor/js/squeezebox.min.js"></script>
+		<script>
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});(function()
+				{
+					if(typeof jQuery == 'undefined')
+						return;
+					
+					jQuery(function($)
+					{
+						if($.fn.squeezeBox)
+						{
+							$( 'a.modal' ).squeezeBox({ parse: 'rel' });
+				
+							$( 'img.modal' ).each( function( i, el )
+							{
+								$(el).squeezeBox({
+									handler: 'image',
+									url: $( el ).attr( 'src' )
+								});
+							})
+						}
+						else if(typeof(SqueezeBox) !== 'undefined')
+						{
+							$( 'img.modal' ).each( function( i, el )
+							{
+								SqueezeBox.assign( el, 
+								{
+									handler: 'image',
+									url: $( el ).attr( 'src' )
+								});
+							});
+						}
+						
+						function jModalClose() 
+						{
+							if(typeof(SqueezeBox) == 'object')
+								SqueezeBox.close();
+							else
+								ARK.squeezeBox.close();
+						}
+					
+					});
+				})();
+		</script>
+		<!-- BOF Socialmeta plugin for Joomla! https://github.com/vistamedia/socialmeta -->
+		<!-- Google structured data -->
+		<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"Article","image":{"@type":"ImageObject","url":"https:\/\/www.cchpm.fr\/images\/Logos\/logopdf_cchpm.png","width":400,"height":200,"fileFormat":"image\/png"},"mainEntityOfPage":"https:\/\/www.cchpm.fr\/index.php\/home\/decisions-communautaires\/compte-rendu","inLanguage":"fr-FR","author":{"@type":"Person","name":"Ludovic OLLIVIER"},"articleSection":"D\u00e9cisions communautaires & Publications","dateModified":"2020-06-29T07:15:23+0200","datePublished":"2018-05-30T09:32:26+0200","headline":"Publications","name":"Publications","description":" "}</script>
+		<!-- og common meta -->
+		<meta property="og:site_name" content="Haut-Pays du Montreuillois">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://www.cchpm.fr/index.php/home/decisions-communautaires/compte-rendu">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:title" content="Publications">
+		<meta property="og:description" content=" ">
+		<meta property="og:updated_time" content="2020-06-29T07:15:23+0200">
+		<meta property="og:image" content="https://www.cchpm.fr/images/Logos/logopdf_cchpm.png">
+		<meta name="twitter:image" content="https://www.cchpm.fr/images/Logos/logopdf_cchpm.png">
+		<meta property="og:image:width" content="400">
+		<meta property="og:image:height" content="200">
+		<meta property="og:image:type" content="image/png">
+		<!-- og:article specific meta -->
+		<meta property="article:publisher" content="https://www.facebook.com/cchpm.fr">
+		<meta property="article:modified_time" content="2020-06-29T07:15:23+0200">
+		<meta property="article:published_time" content="2018-05-30T09:32:26+0200">
+		<meta property="article:section" content="Décisions communautaires & Publications">
+		<!-- Facebook specific -->
+		<meta property="fb:app_id" content="499060444231097">
+		<meta property="fb:admins" content="290763558510538">
+		<!-- Twitter Specific -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Publications">
+		<meta name="twitter:description" content=" ">
+		<!-- EOF Socialmeta plugin for Joomla! https://github.com/vistamedia/socialmeta -->
+		<!--[if (gte IE 8)&(lte IE 9)]>
+        <script type="text/javascript" src="/media/gantry5/assets/js/html5shiv-printshiv.min.js"></script>
+        <link rel="stylesheet" href="/media/gantry5/engines/nucleus/css/nucleus-ie9.css" type="text/css"/>
+        <script type="text/javascript" src="/media/gantry5/assets/js/matchmedia.polyfill.js"></script>
+        <![endif]-->
+	</head>
+	<body class="gantry body-class site com_content view-article no-layout no-task dir-ltr itemid-214 outline-27 g-offcanvas-left g-joomla-protostar g-style-preset3">
+		<div id="g-offcanvas" data-g-offcanvas-swipe="1" data-g-offcanvas-css3="1">
+			<div class="g-grid">
+				<div class="g-block size-100">
+					<div id="mobile-menu-7029-particle" class="g-content g-particle">
+						<div id="g-mobilemenu-container" data-g-menu-breakpoint="48rem"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="g-page-surround">
+			<div class="g-offcanvas-hide g-offcanvas-toggle" role="navigation" data-offcanvas-toggle aria-controls="g-offcanvas" aria-expanded="false"><i class="fa fa-fw fa-bars"></i></div>
+			<header id="g-header" class="g-flushed">
+				<div class="g-container">
+					<div class="g-grid">
+						<div class="g-block size-35">
+							<div class="spacer"></div>
+						</div>
+						<div class="g-block size-30">
+							<div id="logo-9608-particle" class="g-content g-particle"><a href="/" target="_self" title="Logo CCHPM" aria-label="Logo CCHPM" rel="home"> <?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="105mm" height="55mm" viewbox="0 0 744.09449 389.76378" id="svg2" version="1.1"><defs id="defs4"><clippath clippathunits="userSpaceOnUse" id="clipPath4150"><path d="m 0,595.28 841.89,0 L 841.89,0 0,0 0,595.28 Z" id="path4152"></path></clippath><clippath clippathunits="userSpaceOnUse" id="clipPath4166"><path d="m 0,595.28 841.89,0 L 841.89,0 0,0 0,595.28 Z" id="path4168"></path></clippath><clippath clippathunits="userSpaceOnUse" id="clipPath4150-8"><path d="m 0,595.28 841.89,0 L 841.89,0 0,0 0,595.28 Z" id="path4152-4"></path></clippath><clippath clippathunits="userSpaceOnUse" id="clipPath4166-2"><path d="m 0,595.28 841.89,0 L 841.89,0 0,0 0,595.28 Z" id="path4168-5"></path></clippath></defs><metadata id="metadata7"><rdf><work rdf:about=""><format>image/svg+xml</format><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><title></title></work></rdf></metadata><g transform="matrix(1.25,0,0,-1.25,-153.98767,590.36585)" id="g4146"><g clip-path="url(#clipPath4150)" id="g4148"><g transform="translate(562.9014,433.2795)" id="g4154"><path id="path4156" style="fill:#c4052a;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 C 82.647,-16.602 140.296,-88.046 142.68,-168.847 150.078,-81.935 91.213,-1.432 3.655,16.156 -81.682,33.298 -164.969,-15.208 -193.893,-94.551 -158.885,-24.65 -80.337,16.138 0,0"></path></g></g></g><g id="text4158" style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.26200104px;font-family:TeXGyreHeros;-inkscape-font-specification:TeXGyreHeros-Regular;writing-mode:lr-tb;fill:#c4052a;fill-opacity:1;fill-rule:nonzero;stroke:none"><path id="path4332" style="" d="m 312.49378,354.18626 3.24552,0.81974 q -1.0205,3.99835 -3.68049,6.10627 -2.64326,2.09118 -6.47431,2.09118 -3.96489,0 -6.45758,-1.60603 -2.47597,-1.62276 -3.78087,-4.68425 -1.28817,-3.0615 -1.28817,-6.5747 0,-3.83105 1.45547,-6.67506 1.47219,-2.86075 4.16564,-4.33294 2.71018,-1.48893 5.9557,-1.48893 3.68049,0 6.18991,1.87371 2.50942,1.8737 3.49646,5.26979 l -3.19533,0.75282 q -0.8532,-2.67671 -2.47596,-3.89797 -1.62276,-1.22125 -4.082,-1.22125 -2.82728,0 -4.73445,1.35509 -1.89043,1.35509 -2.65999,3.64703 -0.76955,2.27521 -0.76955,4.70099 0,3.12841 0.90339,5.47054 0.92012,2.3254 2.84401,3.47973 1.9239,1.15434 4.16565,1.15434 2.72691,0 4.61734,-1.57257 1.89043,-1.57258 2.55961,-4.66753 z"></path><path id="path4334" style="" d="m 318.22623,353.90186 q 0,-4.9352 2.74364,-7.31079 2.29194,-1.97408 5.58765,-1.97408 3.66375,0 5.98915,2.40905 2.3254,2.39231 2.3254,6.62487 0,3.42955 -1.03722,5.40363 -1.0205,1.95735 -2.99458,3.04477 -1.95735,1.08742 -4.28275,1.08742 -3.73068,0 -6.03935,-2.39232 -2.29194,-2.39232 -2.29194,-6.89255 z m 3.09495,0 q 0,3.41281 1.48893,5.11922 1.48892,1.68968 3.74741,1.68968 2.24175,0 3.73067,-1.70641 1.48893,-1.70641 1.48893,-5.20287 0,-3.29571 -1.50566,-4.98539 -1.48892,-1.70641 -3.71394,-1.70641 -2.25849,0 -3.74741,1.68968 -1.48893,1.68968 -1.48893,5.1025 z"></path><path id="path4336" style="" d="m 338.39679,362.78522 0,-17.76672 2.69345,0 0,2.49269 q 0.83647,-1.3049 2.22502,-2.09119 1.38855,-0.80301 3.16187,-0.80301 1.97408,0 3.22879,0.81974 1.27145,0.81975 1.79006,2.29194 2.10792,-3.11168 5.48727,-3.11168 2.64326,0 4.06527,1.47219 1.42201,1.45547 1.42201,4.50024 l 0,12.1958 -2.99458,0 0,-11.19203 q 0,-1.80679 -0.30113,-2.59307 -0.2844,-0.80302 -1.05396,-1.28818 -0.76956,-0.48515 -1.80679,-0.48515 -1.8737,0 -3.11168,1.25471 -1.23798,1.23798 -1.23798,3.98162 l 0,10.3221 -3.01131,0 0,-11.54335 q 0,-2.00754 -0.7361,-3.01131 -0.7361,-1.00377 -2.40905,-1.00377 -1.27144,0 -2.35886,0.66918 -1.07068,0.66918 -1.55584,1.95735 -0.48515,1.28817 -0.48515,3.71395 l 0,9.21795 -3.01131,0 z"></path><path id="path4338" style="" d="m 366.93704,362.78522 0,-17.76672 2.69345,0 0,2.49269 q 0.83647,-1.3049 2.22502,-2.09119 1.38855,-0.80301 3.16187,-0.80301 1.97408,0 3.2288,0.81974 1.27144,0.81975 1.79005,2.29194 2.10792,-3.11168 5.48728,-3.11168 2.64326,0 4.06526,1.47219 1.42201,1.45547 1.42201,4.50024 l 0,12.1958 -2.99458,0 0,-11.19203 q 0,-1.80679 -0.30113,-2.59307 -0.2844,-0.80302 -1.05396,-1.28818 -0.76955,-0.48515 -1.80678,-0.48515 -1.87371,0 -3.11169,1.25471 -1.23798,1.23798 -1.23798,3.98162 l 0,10.3221 -3.01131,0 0,-11.54335 q 0,-2.00754 -0.7361,-3.01131 -0.7361,-1.00377 -2.40904,-1.00377 -1.27145,0 -2.35886,0.66918 -1.07069,0.66918 -1.55585,1.95735 -0.48515,1.28817 -0.48515,3.71395 l 0,9.21795 -3.01131,0 z"></path><path id="path4340" style="" d="m 407.12102,362.78522 0,-2.6098 q -2.07446,3.01131 -5.63784,3.01131 -1.57257,0 -2.94439,-0.60227 -1.35509,-0.60226 -2.02427,-1.50565 -0.65245,-0.92012 -0.92012,-2.24175 -0.18403,-0.88667 -0.18403,-2.81056 l 0,-11.008 3.01131,0 0,9.85367 q 0,2.35886 0.18403,3.1786 0.2844,1.18779 1.20452,1.8737 0.92012,0.66918 2.27521,0.66918 1.35509,0 2.54289,-0.68591 1.18779,-0.70263 1.67294,-1.89043 0.50189,-1.20452 0.50189,-3.47973 l 0,-9.51908 3.01131,0 0,17.76672 -2.69345,0 z"></path><path id="path4342" style="" d="m 414.52694,362.78522 0,-17.76672 2.71018,0 0,2.52615 q 1.95735,-2.92766 5.65457,-2.92766 1.60603,0 2.94439,0.58553 1.35509,0.5688 2.02427,1.50565 0.66918,0.93686 0.93685,2.22503 0.1673,0.83647 0.1673,2.92766 l 0,10.92436 -3.01131,0 0,-10.80725 q 0,-1.84025 -0.35132,-2.74364 -0.35132,-0.92012 -1.25471,-1.45547 -0.88667,-0.55207 -2.09119,-0.55207 -1.92389,0 -3.32917,1.22125 -1.38855,1.22126 -1.38855,4.63407 l 0,9.70311 -3.01131,0 z"></path><path id="path4344" style="" d="m 445.17017,360.59365 q -1.67295,1.42201 -3.2288,2.00754 -1.53911,0.58554 -3.31244,0.58554 -2.92766,0 -4.50023,-1.42201 -1.57257,-1.43874 -1.57257,-3.66376 0,-1.3049 0.58553,-2.37559 0.60226,-1.08742 1.55584,-1.73987 0.97031,-0.65245 2.17484,-0.98704 0.88666,-0.23421 2.67672,-0.45169 3.64703,-0.43497 5.37016,-1.03723 0.0167,-0.61899 0.0167,-0.78629 0,-1.84024 -0.8532,-2.59307 -1.15434,-1.0205 -3.42955,-1.0205 -2.12464,0 -3.14514,0.75283 -1.00377,0.7361 -1.48893,2.62653 l -2.94439,-0.40151 q 0.40151,-1.89043 1.32163,-3.04477 0.92012,-1.17106 2.65999,-1.79005 1.73987,-0.63572 4.03181,-0.63572 2.27521,0 3.69722,0.53534 1.422,0.53535 2.09118,1.35509 0.66918,0.80302 0.93686,2.041 0.15056,0.76956 0.15056,2.77709 l 0,4.01508 q 0,4.19911 0.18403,5.31998 0.20075,1.10415 0.76955,2.12465 l -3.14514,0 q -0.46843,-0.93685 -0.60226,-2.19157 z m -0.25095,-6.72525 q -1.63949,0.66918 -4.91847,1.1376 -1.85697,0.26768 -2.62653,0.60226 -0.76955,0.33459 -1.18779,0.98704 -0.41824,0.63573 -0.41824,1.42201 0,1.20453 0.90339,2.00754 0.92013,0.80302 2.67672,0.80302 1.73987,0 3.09496,-0.75283 1.35509,-0.76956 1.99081,-2.09119 0.48515,-1.0205 0.48515,-3.01131 l 0,-1.10414 z"></path><path id="path4346" style="" d="m 464.27004,362.78522 0,-2.6098 q -2.07446,3.01131 -5.63784,3.01131 -1.57257,0 -2.94439,-0.60227 -1.35509,-0.60226 -2.02427,-1.50565 -0.65245,-0.92012 -0.92012,-2.24175 -0.18403,-0.88667 -0.18403,-2.81056 l 0,-11.008 3.01131,0 0,9.85367 q 0,2.35886 0.18403,3.1786 0.2844,1.18779 1.20452,1.8737 0.92012,0.66918 2.27521,0.66918 1.35509,0 2.54288,-0.68591 1.1878,-0.70263 1.67295,-1.89043 0.50189,-1.20452 0.50189,-3.47973 l 0,-9.51908 3.01131,0 0,17.76672 -2.69345,0 z"></path><path id="path4348" style="" d="m 478.25065,360.09177 0.43497,2.65999 q -1.27144,0.26767 -2.27521,0.26767 -1.63949,0 -2.54288,-0.51861 -0.9034,-0.51862 -1.27145,-1.35509 -0.36804,-0.85321 -0.36804,-3.56338 l 0,-10.22172 -2.2083,0 0,-2.34213 2.2083,0 0,-4.39986 2.99457,-1.80679 0,6.20665 3.02804,0 0,2.34213 -3.02804,0 0,10.38901 q 0,1.28817 0.15057,1.65622 0.16729,0.36805 0.51861,0.58553 0.36805,0.21749 1.03723,0.21749 0.50189,0 1.32163,-0.11711 z"></path><path id="path4350" style="" d="m 492.85265,357.06373 3.11168,0.38478 q -0.7361,2.72691 -2.72691,4.23256 -1.9908,1.50566 -5.08576,1.50566 -3.89797,0 -6.18991,-2.39232 -2.27521,-2.40905 -2.27521,-6.74199 0,-4.4835 2.30867,-6.95947 2.30867,-2.47596 5.98915,-2.47596 3.56339,0 5.82187,2.42577 2.25848,2.42578 2.25848,6.82564 0,0.26767 -0.0167,0.80301 l -13.24976,0 q 0.1673,2.92766 1.65622,4.48351 1.48893,1.55584 3.71395,1.55584 1.65622,0 2.82728,-0.86993 1.17107,-0.86994 1.85698,-2.7771 z m -9.88713,-4.86828 9.92059,0 q -0.20076,-2.24175 -1.13761,-3.36263 -1.43874,-1.73987 -3.73068,-1.73987 -2.07445,0 -3.49646,1.38855 -1.40528,1.38855 -1.55584,3.71395 z m 3.24552,-9.38525 2.22502,-4.68425 3.94816,0 -3.68049,4.68425 -2.49269,0 z"></path><path id="path4352" style="" d="m 520.79145,362.78522 0,-2.24175 q -1.68968,2.64326 -4.96866,2.64326 -2.12465,0 -3.9147,-1.17107 -1.77333,-1.17106 -2.76037,-3.26225 -0.97031,-2.10792 -0.97031,-4.83482 0,-2.65999 0.88667,-4.8181 0.88666,-2.17483 2.65998,-3.32917 1.77333,-1.15433 3.96489,-1.15433 1.60604,0 2.86075,0.68591 1.25471,0.66918 2.041,1.75659 l 0,-8.79971 2.99457,0 0,24.52544 -2.79382,0 z m -9.51908,-8.86663 q 0,3.41281 1.43873,5.10249 1.43874,1.68968 3.39609,1.68968 1.97408,0 3.3459,-1.60603 1.38855,-1.62276 1.38855,-4.9352 0,-3.64703 -1.40528,-5.35344 -1.40528,-1.70641 -3.463,-1.70641 -2.00754,0 -3.36263,1.63949 -1.33836,1.63949 -1.33836,5.16942 z"></path><path id="path4354" style="" d="m 540.47679,357.06373 3.11169,0.38478 q -0.7361,2.72691 -2.72691,4.23256 -1.99081,1.50566 -5.08577,1.50566 -3.89797,0 -6.18991,-2.39232 -2.27521,-2.40905 -2.27521,-6.74199 0,-4.4835 2.30867,-6.95947 2.30867,-2.47596 5.98916,-2.47596 3.56338,0 5.82186,2.42577 2.25848,2.42578 2.25848,6.82564 0,0.26767 -0.0167,0.80301 l -13.24976,0 q 0.16729,2.92766 1.65622,4.48351 1.48892,1.55584 3.71394,1.55584 1.65622,0 2.82729,-0.86993 1.17106,-0.86994 1.85697,-2.7771 z m -9.88713,-4.86828 9.92059,0 q -0.20075,-2.24175 -1.1376,-3.36263 -1.43874,-1.73987 -3.73068,-1.73987 -2.07446,0 -3.49647,1.38855 -1.40527,1.38855 -1.55584,3.71395 z"></path><path id="path4356" style="" d="m 574.7728,354.18626 3.24552,0.81974 q -1.0205,3.99835 -3.68048,6.10627 -2.64326,2.09118 -6.47432,2.09118 -3.96489,0 -6.45758,-1.60603 -2.47597,-1.62276 -3.78087,-4.68425 -1.28817,-3.0615 -1.28817,-6.5747 0,-3.83105 1.45547,-6.67506 1.47219,-2.86075 4.16564,-4.33294 2.71018,-1.48893 5.9557,-1.48893 3.68049,0 6.18991,1.87371 2.50943,1.8737 3.49647,5.26979 l -3.19534,0.75282 q -0.8532,-2.67671 -2.47596,-3.89797 -1.62276,-1.22125 -4.082,-1.22125 -2.82728,0 -4.73444,1.35509 -1.89044,1.35509 -2.65999,3.64703 -0.76956,2.27521 -0.76956,4.70099 0,3.12841 0.90339,5.47054 0.92012,2.3254 2.84402,3.47973 1.92389,1.15434 4.16564,1.15434 2.72691,0 4.61734,-1.57257 1.89043,-1.57258 2.55961,-4.66753 z"></path><path id="path4358" style="" d="m 580.50522,353.90186 q 0,-4.9352 2.74364,-7.31079 2.29194,-1.97408 5.58765,-1.97408 3.66376,0 5.98916,2.40905 2.3254,2.39231 2.3254,6.62487 0,3.42955 -1.03723,5.40363 -1.0205,1.95735 -2.99458,3.04477 -1.95735,1.08742 -4.28275,1.08742 -3.73068,0 -6.03935,-2.39232 -2.29194,-2.39232 -2.29194,-6.89255 z m 3.09496,0 q 0,3.41281 1.48892,5.11922 1.48893,1.68968 3.74741,1.68968 2.24175,0 3.73067,-1.70641 1.48893,-1.70641 1.48893,-5.20287 0,-3.29571 -1.50566,-4.98539 -1.48892,-1.70641 -3.71394,-1.70641 -2.25848,0 -3.74741,1.68968 -1.48892,1.68968 -1.48892,5.1025 z"></path><path id="path4360" style="" d="m 600.67578,362.78522 0,-17.76672 2.69345,0 0,2.49269 q 0.83647,-1.3049 2.22502,-2.09119 1.38855,-0.80301 3.16187,-0.80301 1.97408,0 3.2288,0.81974 1.27144,0.81975 1.79005,2.29194 2.10792,-3.11168 5.48728,-3.11168 2.64326,0 4.06526,1.47219 1.42201,1.45547 1.42201,4.50024 l 0,12.1958 -2.99458,0 0,-11.19203 q 0,-1.80679 -0.30113,-2.59307 -0.2844,-0.80302 -1.05396,-1.28818 -0.76956,-0.48515 -1.80678,-0.48515 -1.87371,0 -3.11169,1.25471 -1.23798,1.23798 -1.23798,3.98162 l 0,10.3221 -3.01131,0 0,-11.54335 q 0,-2.00754 -0.7361,-3.01131 -0.7361,-1.00377 -2.40905,-1.00377 -1.27144,0 -2.35885,0.66918 -1.07069,0.66918 -1.55585,1.95735 -0.48515,1.28817 -0.48515,3.71395 l 0,9.21795 -3.01131,0 z"></path><path id="path4362" style="" d="m 629.21606,362.78522 0,-17.76672 2.69345,0 0,2.49269 q 0.83648,-1.3049 2.22502,-2.09119 1.38855,-0.80301 3.16188,-0.80301 1.97408,0 3.22879,0.81974 1.27144,0.81975 1.79005,2.29194 2.10792,-3.11168 5.48728,-3.11168 2.64326,0 4.06527,1.47219 1.422,1.45547 1.422,4.50024 l 0,12.1958 -2.99458,0 0,-11.19203 q 0,-1.80679 -0.30113,-2.59307 -0.2844,-0.80302 -1.05396,-1.28818 -0.76955,-0.48515 -1.80678,-0.48515 -1.8737,0 -3.11169,1.25471 -1.23798,1.23798 -1.23798,3.98162 l 0,10.3221 -3.01131,0 0,-11.54335 q 0,-2.00754 -0.7361,-3.01131 -0.73609,-1.00377 -2.40904,-1.00377 -1.27144,0 -2.35886,0.66918 -1.07069,0.66918 -1.55584,1.95735 -0.48516,1.28817 -0.48516,3.71395 l 0,9.21795 -3.01131,0 z"></path><path id="path4364" style="" d="m 669.40001,362.78522 0,-2.6098 q -2.07446,3.01131 -5.63784,3.01131 -1.57257,0 -2.94439,-0.60227 -1.35509,-0.60226 -2.02427,-1.50565 -0.65245,-0.92012 -0.92012,-2.24175 -0.18402,-0.88667 -0.18402,-2.81056 l 0,-11.008 3.0113,0 0,9.85367 q 0,2.35886 0.18403,3.1786 0.2844,1.18779 1.20452,1.8737 0.92012,0.66918 2.27521,0.66918 1.35509,0 2.54289,-0.68591 1.18779,-0.70263 1.67295,-1.89043 0.50188,-1.20452 0.50188,-3.47973 l 0,-9.51908 3.01131,0 0,17.76672 -2.69345,0 z"></path><path id="path4366" style="" d="m 676.80597,362.78522 0,-17.76672 2.71017,0 0,2.52615 q 1.95736,-2.92766 5.65457,-2.92766 1.60603,0 2.94439,0.58553 1.35509,0.5688 2.02427,1.50565 0.66918,0.93686 0.93685,2.22503 0.1673,0.83647 0.1673,2.92766 l 0,10.92436 -3.01131,0 0,-10.80725 q 0,-1.84025 -0.35132,-2.74364 -0.35132,-0.92012 -1.25471,-1.45547 -0.88666,-0.55207 -2.09119,-0.55207 -1.92389,0 -3.32917,1.22125 -1.38854,1.22126 -1.38854,4.63407 l 0,9.70311 -3.01131,0 z"></path><path id="path4368" style="" d="m 708.01793,357.06373 3.11169,0.38478 q -0.7361,2.72691 -2.72691,4.23256 -1.99081,1.50566 -5.08577,1.50566 -3.89797,0 -6.18991,-2.39232 -2.27521,-2.40905 -2.27521,-6.74199 0,-4.4835 2.30867,-6.95947 2.30867,-2.47596 5.98916,-2.47596 3.56338,0 5.82186,2.42577 2.25848,2.42578 2.25848,6.82564 0,0.26767 -0.0167,0.80301 l -13.24976,0 q 0.1673,2.92766 1.65622,4.48351 1.48893,1.55584 3.71395,1.55584 1.65622,0 2.82729,-0.86993 1.17106,-0.86994 1.85697,-2.7771 z m -9.88713,-4.86828 9.92059,0 q -0.20076,-2.24175 -1.13761,-3.36263 -1.43873,-1.73987 -3.73067,-1.73987 -2.07446,0 -3.49647,1.38855 -1.40528,1.38855 -1.55584,3.71395 z"></path><path id="path4370" style="" d="m 713.70075,357.48197 2.97785,-0.46843 q 0.25094,1.79006 1.38855,2.74364 1.15433,0.95358 3.21206,0.95358 2.07445,0 3.07822,-0.83647 1.00377,-0.85321 1.00377,-1.99081 0,-1.0205 -0.88666,-1.60604 -0.61899,-0.4015 -3.07823,-1.02049 -3.31244,-0.83648 -4.60061,-1.43874 -1.27144,-0.61899 -1.94062,-1.68968 -0.65245,-1.08742 -0.65245,-2.39232 0,-1.18779 0.53535,-2.19156 0.55207,-1.0205 1.48892,-1.68968 0.70264,-0.51861 1.90716,-0.86993 1.22126,-0.36805 2.6098,-0.36805 2.09119,0 3.66376,0.60226 1.5893,0.60226 2.34213,1.63949 0.75283,1.0205 1.03723,2.74364 l -2.94439,0.4015 q -0.20075,-1.37181 -1.17106,-2.14137 -0.95359,-0.76956 -2.71018,-0.76956 -2.07446,0 -2.96112,0.68591 -0.88667,0.68591 -0.88667,1.60603 0,0.58554 0.36805,1.05396 0.36805,0.48516 1.15434,0.80302 0.45169,0.16729 2.65999,0.76955 3.19533,0.85321 4.45004,1.40528 1.27144,0.53535 1.99081,1.57257 0.71937,1.03723 0.71937,2.57635 0,1.50565 -0.88666,2.84401 -0.86994,1.32163 -2.52616,2.05773 -1.65622,0.71937 -3.7474,0.71937 -3.46301,0 -5.28652,-1.43874 -1.80679,-1.43874 -2.30867,-4.26602 z"></path></g><g transform="matrix(1.25,0,0,-1.25,-153.98767,590.36585)" id="g4162"><g clip-path="url(#clipPath4166)" id="g4164"><g transform="translate(314.1533,305.0632)" id="g4170"><path id="path4172" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -1.318,0.269 -2.43,0.403 -3.333,0.403 -2.197,0 -4.114,-0.605 -5.749,-1.813 -1.636,-1.209 -3.156,-3.382 -4.56,-6.518 -1.403,-3.138 -2.105,-6.269 -2.105,-9.394 0,-1.66 0.28,-2.857 0.842,-3.589 0.562,-0.733 1.294,-1.099 2.197,-1.099 1.685,0 3.492,0.909 5.42,2.729 1.929,1.818 3.345,4.436 4.248,7.855 L 0,0 Z M 4.541,5.603 6.958,6.116 4.211,-3.149 c -1.099,-3.687 -2.136,-7.935 -3.112,-12.745 -0.537,-2.613 -0.806,-4.297 -0.806,-5.053 0,-0.757 0.305,-1.136 0.915,-1.136 0.391,0 1.013,0.257 1.868,0.77 1.514,0.902 2.966,2.026 4.358,3.369 l 1.172,-1.429 c -2.783,-2.539 -4.565,-4.077 -5.347,-4.614 -1.562,-1.075 -3.052,-1.867 -4.467,-2.38 -0.929,-0.342 -1.832,-0.513 -2.71,-0.513 -0.636,0 -1.112,0.147 -1.429,0.44 -0.317,0.293 -0.476,0.719 -0.476,1.281 0,0.366 0.097,0.866 0.293,1.502 l 1.465,4.98 c -2.1,-2.514 -4.602,-4.676 -7.507,-6.482 -1.782,-1.122 -3.419,-1.685 -4.907,-1.685 -1.417,0 -2.503,0.501 -3.26,1.502 -1.025,1.342 -1.538,3.1 -1.538,5.274 0,2.587 0.69,5.468 2.069,8.642 1.379,3.174 3.229,6.055 5.548,8.643 2.32,2.587 4.761,4.491 7.325,5.713 1.977,0.927 4.516,1.391 7.617,1.391 0.781,0 1.574,-0.049 2.38,-0.146 l 0.879,1.428 z"></path></g><g transform="translate(349.9546,309.0915)" id="g4174"><path id="path4176" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 5.214,0 1.772,-12.799 c -2.027,-7.433 -3.04,-11.663 -3.04,-12.689 0,-0.464 0.11,-0.819 0.33,-1.063 0.22,-0.244 0.463,-0.366 0.732,-0.366 0.415,0 0.903,0.184 1.465,0.55 0.806,0.561 2.331,1.977 4.578,4.248 l 1.208,-1.356 c -4.907,-5.102 -8.52,-7.653 -10.839,-7.653 -0.782,0 -1.447,0.299 -1.997,0.897 -0.548,0.598 -0.823,1.447 -0.823,2.545 0,1.269 0.264,2.966 0.793,5.09 -2.172,-2.49 -4.855,-4.675 -8.051,-6.554 -2.123,-1.246 -3.964,-1.869 -5.525,-1.869 -0.854,0 -1.525,0.283 -2.013,0.844 -0.488,0.562 -0.732,1.454 -0.732,2.677 0,0.953 0.11,1.98 0.33,3.08 0.317,1.54 1.123,4.633 2.417,9.277 1.635,5.892 2.454,9.425 2.454,10.599 0,0.684 -0.245,1.026 -0.733,1.026 -0.439,0 -1.038,-0.226 -1.794,-0.677 -0.757,-0.452 -2.051,-1.544 -3.882,-3.278 l -1.611,1.282 c 3.271,2.93 5.767,4.853 7.489,5.768 1.721,0.916 3.106,1.373 4.156,1.373 0.586,0 1.062,-0.214 1.428,-0.642 0.367,-0.428 0.55,-1.094 0.55,-1.998 0,-1.687 -0.879,-5.831 -2.637,-12.432 -1.563,-5.941 -2.344,-9.327 -2.344,-10.157 0,-0.514 0.164,-0.954 0.494,-1.321 0.329,-0.367 0.689,-0.549 1.08,-0.549 1.365,0 3.304,1.128 5.817,3.386 2.512,2.259 4.159,4.828 4.94,7.709 L 0,0 Z"></path></g><g transform="translate(369.9639,315.6833)" id="g4178"><path id="path4180" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 5.814,2.23 -2.631,-10.25 7.584,0 -0.586,-2.6 -7.59,0 -3.194,-12.273 c -1.014,-3.684 -1.521,-6.247 -1.521,-7.686 0,-0.659 0.14,-1.135 0.421,-1.428 0.281,-0.293 0.665,-0.439 1.154,-0.439 0.756,0 1.916,0.451 3.479,1.354 2.05,1.196 4.004,2.551 5.859,4.066 l 1.392,-1.685 c -5.347,-4.028 -8.924,-6.495 -10.73,-7.397 -1.807,-0.904 -3.26,-1.356 -4.358,-1.356 -0.904,0 -1.618,0.33 -2.143,0.989 -0.525,0.66 -0.787,1.734 -0.787,3.223 0,1.758 0.463,4.443 1.392,8.057 l 3.728,14.575 -5.933,0 0.659,2.6 5.939,0 L 0,0 Z"></path></g><g transform="translate(384.4312,296.0905)" id="g4182"><path id="path4184" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 16.99,0 -0.881,-3.625 -17.063,0 L 0,0 Z"></path></g><g transform="translate(442.1367,346.0671)" id="g4186"><path id="path4188" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 0.837,3.142 C 7.592,3.794 13.369,4.729 18.168,5.941 17.019,2.674 15.775,-1.597 14.441,-6.871 l -5.277,-19.662 6.425,-0.349 c 2.978,-0.14 6.226,0.604 9.742,2.234 3.515,1.629 6.657,4.492 9.427,8.588 2.77,4.096 4.156,8.519 4.156,13.267 0,4.701 -1.685,8.425 -5.057,11.172 -3.372,2.746 -8.522,4.12 -15.451,4.12 -7.905,0 -15.647,-1.968 -23.227,-5.901 -7.58,-3.934 -13.427,-8.961 -17.543,-15.082 -4.115,-6.121 -6.173,-12.161 -6.173,-18.119 0,-2.933 0.535,-5.481 1.606,-7.646 1.071,-2.165 2.979,-4.294 5.726,-6.389 2.28,-1.675 3.422,-3.305 3.422,-4.887 0,-1.025 -0.374,-1.886 -1.123,-2.584 -0.748,-0.698 -1.637,-1.047 -2.665,-1.047 -2.759,0 -5.424,1.885 -7.995,5.656 -2.573,3.77 -3.858,8.541 -3.858,14.313 0,10.567 4.049,20.203 12.149,28.908 10.614,11.451 24.858,17.176 42.733,17.176 6.796,0 12.369,-0.884 16.723,-2.653 4.351,-1.769 7.61,-4.189 9.775,-7.262 2.164,-3.072 3.247,-6.4 3.247,-9.984 0,-4.563 -1.519,-9.042 -4.557,-13.442 -3.039,-4.398 -7.515,-7.949 -13.428,-10.648 -5.914,-2.7 -12.49,-4.05 -19.726,-4.05 -1.113,0 -2.852,0.07 -5.218,0.21 L 2.66,-52.662 c -0.93,-3.674 -1.976,-7.301 -3.137,-10.882 3.624,-0.882 6.784,-1.323 9.479,-1.323 3.392,0 7.039,0.651 10.942,1.955 l -0.837,-3.91 C 15.48,-67.8 12.411,-68.288 9.9,-68.288 c -2.417,0 -5.952,0.256 -10.601,0.767 -3.721,0.466 -6.743,0.699 -9.068,0.699 -4.51,0 -9.137,-0.534 -13.88,-1.606 l 0.838,3.7 c 4.837,0.791 8.14,1.932 9.908,3.422 2.511,2.095 4.556,6.307 6.138,12.639 L 3.766,-6.843 c 0.464,1.955 0.697,3.328 0.697,4.12 0,0.744 -0.302,1.407 -0.906,1.99 C 2.952,-0.152 2.231,0.14 1.395,0.14 1.069,0.14 0.604,0.093 0,0"></path></g><g transform="translate(374.8804,214.4323)" id="g4190"><path id="path4192" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 -2.893,39.445 C -3.528,32.804 -4.7,26.609 -6.409,20.86 c -1.709,-5.75 -3.65,-10.193 -5.822,-13.33 -2.174,-3.137 -4.395,-5.342 -6.665,-6.61 -2.271,-1.27 -4.518,-1.904 -6.739,-1.904 -1.343,0 -2.374,0.274 -3.094,0.824 -0.721,0.549 -1.081,1.214 -1.081,1.995 0,0.659 0.263,1.232 0.788,1.722 0.524,0.488 1.19,0.732 1.996,0.732 0.586,0 1.428,-0.128 2.526,-0.385 1.001,-0.256 1.832,-0.384 2.491,-0.384 1.147,0 2.343,0.426 3.589,1.281 1.879,1.267 3.741,3.542 5.585,6.823 1.842,3.28 3.49,7.854 4.943,13.72 1.453,5.866 2.362,11.592 2.728,17.177 -5.542,0 -10.046,-1.379 -13.513,-4.138 -2.759,-2.197 -4.138,-4.651 -4.138,-7.361 0,-1.196 0.651,-2.636 1.954,-4.321 0.699,-0.903 1.049,-1.636 1.049,-2.197 0,-0.636 -0.2,-1.16 -0.601,-1.575 -0.4,-0.415 -0.879,-0.622 -1.437,-0.622 -0.946,0 -1.784,0.536 -2.512,1.611 -0.995,1.44 -1.492,3.149 -1.492,5.127 0,2.783 0.934,5.45 2.801,8.002 1.868,2.551 4.455,4.491 7.763,5.822 3.309,1.33 7.184,2.008 11.628,2.032 2.392,0 4.308,0.22 5.749,0.66 C 2.008,43.363 1.975,42.179 1.986,42.009 1.976,41.788 2.008,41.287 2.083,40.507 l 2.125,-27.89 c 5.906,10.302 11.678,18.78 17.314,25.437 4.001,4.711 7.487,7.897 10.458,9.557 C 30.286,42.973 28.469,36.857 26.529,29.265 L 22.036,11.687 C 21.79,10.71 21.458,9.281 21.041,7.401 L 20.157,3.483 c 1.856,-0.439 3.554,-0.659 5.094,-0.659 1.246,0 2.577,0.147 3.994,0.44 L 28.769,1.14 C 27.522,0.92 26.558,0.81 25.874,0.81 c -1.001,0 -2.443,0.11 -4.324,0.33 -1.539,0.195 -2.907,0.293 -4.104,0.293 -1.27,0 -2.712,-0.245 -4.323,-0.733 1.345,3.516 2.753,8.239 4.221,14.172 l 2.827,11.206 c 1.199,4.834 2.239,8.154 3.12,9.961 C 21.332,33.814 18.307,29.733 14.217,23.794 10.935,19.004 7.261,12.941 3.196,5.609 L 0,0 Z"></path></g><g transform="translate(424.7588,244.0632)" id="g4194"><path id="path4196" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -2.075,0 -4.084,-1.483 -6.024,-4.449 -1.942,-2.967 -2.912,-7.063 -2.912,-12.287 0,-3.174 0.598,-5.676 1.794,-7.507 0.879,-1.343 2.051,-2.015 3.516,-2.015 2.051,0 3.919,1.27 5.604,3.809 2.147,3.296 3.222,7.385 3.222,12.268 0,3.662 -0.495,6.275 -1.483,7.837 C 2.728,-0.782 1.488,0 0,0 m 3.112,2.746 c 2.393,0 4.382,-0.952 5.97,-2.856 1.587,-1.905 2.38,-4.554 2.38,-7.947 0,-5.42 -1.904,-10.285 -5.713,-14.593 -3.809,-4.31 -7.837,-6.464 -12.085,-6.464 -2.613,0 -4.718,0.855 -6.317,2.563 -1.599,1.709 -2.399,4.041 -2.399,6.995 0,5.127 1.465,9.864 4.395,14.209 3.686,5.396 8.276,8.093 13.769,8.093"></path></g><g transform="translate(440.7988,238.2038)" id="g4198"><path id="path4200" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 -1.245,1.281 c 3.127,2.993 5.619,4.981 7.476,5.962 1.858,0.982 3.446,1.473 4.765,1.473 0.513,0 0.916,-0.111 1.209,-0.33 0.293,-0.22 0.441,-0.476 0.441,-0.769 0,-0.22 -0.062,-0.61 -0.184,-1.172 l -1.65,-7.37 c 2.485,2.762 5.605,5.339 9.359,7.735 1.998,1.246 3.643,1.869 4.935,1.869 0.951,0 1.694,-0.306 2.23,-0.915 0.536,-0.611 0.805,-1.49 0.805,-2.637 0,-0.757 -0.11,-1.611 -0.329,-2.564 -0.389,-1.587 -1.411,-5.042 -3.065,-10.364 -1.557,-4.98 -2.335,-8.289 -2.335,-9.924 0,-0.501 0.073,-0.876 0.22,-1.126 0.146,-0.251 0.353,-0.376 0.622,-0.376 0.708,0 1.818,0.684 3.333,2.051 1.074,0.977 2.147,1.88 3.223,2.71 l 0.915,-1.318 c -2.246,-2.478 -4.578,-4.471 -6.995,-5.977 -1.538,-0.971 -2.807,-1.457 -3.808,-1.457 -0.929,0 -1.649,0.336 -2.161,1.007 -0.513,0.671 -0.769,1.764 -0.769,3.277 0,2.173 1.355,7.581 4.065,16.224 0.83,3.076 1.245,4.87 1.245,5.383 0,0.757 -0.452,1.136 -1.355,1.136 -0.976,0 -2.234,-0.514 -3.772,-1.541 -2.295,-1.516 -4.211,-3.3 -5.749,-5.354 -0.977,-1.321 -1.795,-3.423 -2.454,-6.308 l -2.966,-12.798 -5.457,0 c 1.025,3.666 1.917,7.174 2.674,10.524 L 6.481,2.268 c 0.123,0.562 0.184,0.965 0.184,1.21 0,0.66 -0.244,0.99 -0.732,0.99 C 5.542,4.468 4.98,4.209 4.248,3.692 2.733,2.683 1.318,1.452 0,0"></path></g><g transform="translate(484.4512,252.4489)" id="g4202"><path id="path4204" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 5.813,2.23 -2.63,-10.25 7.584,0 -0.586,-2.6 -7.59,0 -3.195,-12.273 c -1.013,-3.684 -1.52,-6.246 -1.52,-7.685 0,-0.659 0.14,-1.136 0.421,-1.429 0.28,-0.293 0.665,-0.439 1.153,-0.439 0.757,0 1.917,0.452 3.48,1.355 2.05,1.195 4.004,2.551 5.859,4.065 l 1.392,-1.685 c -5.347,-4.028 -8.924,-6.494 -10.731,-7.397 -1.806,-0.903 -3.259,-1.355 -4.357,-1.355 -0.904,0 -1.618,0.329 -2.143,0.988 -0.525,0.66 -0.787,1.734 -0.787,3.223 0,1.758 0.463,4.443 1.392,8.057 l 3.727,14.575 -5.932,0 0.659,2.6 5.939,0 L 0,0 Z"></path></g><g transform="translate(504.959,216.0114)" id="g4206"><path id="path4208" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 -5.457,0 2.563,9.851 c 1.246,4.834 2.332,9.423 3.26,13.769 0.22,1.074 0.329,1.745 0.329,2.015 0,0.586 -0.268,0.879 -0.805,0.879 -0.367,0 -0.928,-0.251 -1.685,-0.751 -0.757,-0.501 -2.124,-1.74 -4.101,-3.717 l -1.135,1.281 c 2.343,2.515 4.679,4.401 7.01,5.658 2.331,1.257 4.118,1.886 5.363,1.886 0.439,0 0.787,-0.103 1.043,-0.31 C 6.642,30.353 6.77,30.09 6.77,29.772 6.77,29.453 6.608,28.607 6.288,27.233 L 4.694,20.645 c 2.471,3.897 5.26,7.23 8.367,10 1.492,1.322 2.74,1.984 3.743,1.984 0.733,0 1.345,-0.237 1.834,-0.714 0.489,-0.476 0.734,-1.031 0.734,-1.666 0,-0.659 -0.238,-1.222 -0.713,-1.685 C 18.183,28.101 16.994,27.551 15.091,26.916 13.286,26.305 11.815,25.572 10.682,24.718 9.547,23.863 8.303,22.557 6.949,20.798 5.596,19.04 4.648,17.508 4.11,16.202 3.572,14.896 2.753,11.862 1.651,7.104 L 0,0 Z"></path></g><g transform="translate(527.041,230.5134)" id="g4210"><path id="path4212" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 3.931,1.758 6.885,3.649 8.862,5.676 1.343,1.416 2.015,2.82 2.015,4.212 0,1.049 -0.275,1.885 -0.824,2.508 C 9.503,13.019 8.789,13.33 7.91,13.33 7.007,13.33 6.128,12.987 5.273,12.305 4.126,11.401 3.162,10.034 2.381,8.203 1.258,5.517 0.464,2.783 0,0 m 12.817,-5.311 1.209,-1.611 c -5.982,-5.688 -11.109,-8.532 -15.38,-8.532 -1.735,0 -3.059,0.586 -3.974,1.758 -0.916,1.172 -1.373,3.051 -1.373,5.639 0,5.224 1.587,10.424 4.761,15.601 3.564,5.883 7.824,8.825 12.78,8.825 1.733,0 3.057,-0.433 3.973,-1.3 0.916,-0.867 1.374,-2.056 1.374,-3.57 0,-1.588 -0.549,-3.149 -1.648,-4.687 C 13.44,5.273 11.475,3.674 8.643,2.014 7.227,1.208 4.199,-0.244 -0.439,-2.344 c -0.22,-1.318 -0.33,-2.576 -0.33,-3.772 0,-1.734 0.275,-2.943 0.824,-3.625 0.549,-0.684 1.349,-1.026 2.399,-1.026 1.001,0 2.1,0.281 3.296,0.842 1.611,0.757 3.967,2.295 7.067,4.614"></path></g><g transform="translate(570.8994,245.8571)" id="g4214"><path id="path4216" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 5.214,0 1.771,-12.799 c -2.026,-7.432 -3.039,-11.663 -3.039,-12.689 0,-0.464 0.11,-0.819 0.33,-1.062 0.219,-0.244 0.463,-0.366 0.732,-0.366 0.415,0 0.903,0.183 1.465,0.549 0.805,0.561 2.331,1.977 4.578,4.248 l 1.208,-1.355 c -4.907,-5.103 -8.521,-7.654 -10.84,-7.654 -0.781,0 -1.446,0.3 -1.996,0.898 -0.549,0.597 -0.823,1.446 -0.823,2.544 0,1.27 0.263,2.967 0.793,5.091 -2.172,-2.49 -4.856,-4.676 -8.051,-6.555 -2.123,-1.246 -3.965,-1.868 -5.525,-1.868 -0.854,0 -1.526,0.282 -2.013,0.843 -0.488,0.563 -0.732,1.455 -0.732,2.677 0,0.954 0.11,1.98 0.33,3.081 0.317,1.54 1.123,4.632 2.416,9.277 1.636,5.892 2.455,9.424 2.455,10.598 0,0.685 -0.245,1.026 -0.733,1.026 -0.439,0 -1.038,-0.225 -1.795,-0.676 -0.757,-0.453 -2.051,-1.545 -3.882,-3.279 l -1.611,1.283 c 3.272,2.929 5.768,4.852 7.489,5.767 1.721,0.916 3.107,1.373 4.157,1.373 0.586,0 1.062,-0.214 1.428,-0.641 0.367,-0.428 0.549,-1.094 0.549,-1.998 0,-1.688 -0.879,-5.832 -2.637,-12.432 -1.562,-5.942 -2.343,-9.327 -2.343,-10.158 0,-0.513 0.164,-0.953 0.494,-1.321 0.329,-0.366 0.688,-0.549 1.08,-0.549 1.365,0 3.304,1.128 5.816,3.387 2.513,2.258 4.159,4.828 4.941,7.709 L 0,0 Z"></path></g><g transform="translate(596.2178,262.5564)" id="g4218"><path id="path4220" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 0.757,0 1.38,-0.25 1.868,-0.75 0.488,-0.501 0.733,-1.142 0.733,-1.923 0,-1.075 -0.372,-2.02 -1.118,-2.838 -0.745,-0.818 -1.581,-1.227 -2.508,-1.227 -0.733,0 -1.343,0.257 -1.83,0.769 -0.49,0.513 -0.733,1.184 -0.733,2.014 0,1.099 0.354,2.033 1.062,2.802 C -1.818,-0.384 -0.977,0 0,0 m -14.392,-24.243 -1.611,1.245 c 2.439,2.686 4.663,4.597 6.676,5.731 2.012,1.136 3.723,1.704 5.139,1.704 0.78,0 1.377,-0.171 1.792,-0.513 0.414,-0.343 0.622,-0.806 0.622,-1.392 0,-0.709 -0.791,-3.712 -2.374,-9.009 -2.581,-8.667 -3.872,-13.892 -3.872,-15.673 0,-0.343 0.085,-0.629 0.256,-0.861 0.171,-0.232 0.355,-0.348 0.55,-0.348 0.781,0 2.783,1.513 6.006,4.541 l 1.429,-1.392 c -3.346,-3.149 -5.787,-5.163 -7.325,-6.042 -1.539,-0.879 -2.795,-1.318 -3.772,-1.318 -0.854,0 -1.532,0.268 -2.032,0.805 -0.501,0.536 -0.751,1.282 -0.751,2.234 0,3.052 1.831,10.51 5.493,22.376 0.171,0.561 0.256,1.061 0.256,1.501 0,0.488 -0.219,0.732 -0.658,0.732 -0.49,0 -1.044,-0.195 -1.667,-0.586 -0.622,-0.39 -2.008,-1.636 -4.157,-3.735"></path></g><g transform="translate(613.8701,224.8366)" id="g4222"><path id="path4224" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 1.245,-1.318 c -1.904,-2.149 -4.156,-4.108 -6.757,-5.877 -2.599,-1.771 -4.742,-2.656 -6.426,-2.656 -0.757,0 -1.38,0.288 -1.868,0.861 -0.489,0.573 -0.732,1.36 -0.732,2.362 0,1.953 0.756,6.006 2.267,12.158 l 3.95,16.076 c 1.438,5.811 2.645,9.706 3.621,11.683 1.512,2.991 3.651,5.314 6.419,6.968 2.766,1.653 5.686,2.48 8.76,2.48 1.047,0 1.871,-0.253 2.467,-0.756 0.598,-0.503 0.897,-1.112 0.897,-1.825 0,-0.788 -0.292,-1.433 -0.876,-1.936 -0.584,-0.504 -1.436,-0.756 -2.554,-0.756 -0.73,0 -1.765,0.122 -3.101,0.366 -1.168,0.195 -2.251,0.293 -3.249,0.293 -0.998,0 -1.751,-0.207 -2.262,-0.62 C 1.095,36.92 0.457,35.692 -0.115,33.821 -0.687,31.95 -1.617,28.258 -2.906,22.742 L -6.56,7.397 c -1.807,-7.69 -2.71,-11.706 -2.71,-12.047 0,-0.783 0.281,-1.172 0.842,-1.172 0.537,0 1.319,0.316 2.345,0.952 C -4.056,-3.602 -2.028,-1.978 0,0"></path></g><g transform="translate(631.8506,224.8366)" id="g4226"><path id="path4228" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 1.245,-1.318 c -1.904,-2.149 -4.156,-4.108 -6.757,-5.877 -2.599,-1.771 -4.742,-2.656 -6.426,-2.656 -0.757,0 -1.38,0.288 -1.868,0.861 -0.489,0.573 -0.732,1.36 -0.732,2.362 0,1.953 0.756,6.006 2.267,12.158 l 3.95,16.076 c 1.438,5.811 2.645,9.706 3.621,11.683 1.512,2.991 3.651,5.314 6.419,6.968 2.766,1.653 5.686,2.48 8.76,2.48 1.047,0 1.871,-0.253 2.467,-0.756 0.598,-0.503 0.897,-1.112 0.897,-1.825 0,-0.788 -0.292,-1.433 -0.876,-1.936 -0.584,-0.504 -1.436,-0.756 -2.554,-0.756 -0.73,0 -1.765,0.122 -3.101,0.366 -1.168,0.195 -2.251,0.293 -3.249,0.293 -0.998,0 -1.751,-0.207 -2.262,-0.62 C 1.095,36.92 0.457,35.692 -0.115,33.821 -0.687,31.95 -1.617,28.258 -2.906,22.742 L -6.56,7.397 c -1.807,-7.69 -2.71,-11.706 -2.71,-12.047 0,-0.783 0.281,-1.172 0.842,-1.172 0.537,0 1.319,0.316 2.345,0.952 C -4.056,-3.602 -2.028,-1.978 0,0"></path></g><g transform="translate(649.6484,244.0632)" id="g4230"><path id="path4232" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -2.076,0 -4.084,-1.483 -6.024,-4.449 -1.942,-2.967 -2.912,-7.063 -2.912,-12.287 0,-3.174 0.598,-5.676 1.794,-7.507 0.879,-1.343 2.051,-2.015 3.516,-2.015 2.051,0 3.919,1.27 5.603,3.809 2.148,3.296 3.222,7.385 3.222,12.268 0,3.662 -0.494,6.275 -1.482,7.837 C 2.728,-0.782 1.488,0 0,0 m 3.112,2.746 c 2.393,0 4.382,-0.952 5.97,-2.856 1.586,-1.905 2.38,-4.554 2.38,-7.947 0,-5.42 -1.904,-10.285 -5.713,-14.593 -3.809,-4.31 -7.837,-6.464 -12.085,-6.464 -2.612,0 -4.719,0.855 -6.317,2.563 -1.599,1.709 -2.399,4.041 -2.399,6.995 0,5.127 1.465,9.864 4.395,14.209 3.686,5.396 8.276,8.093 13.769,8.093"></path></g><g transform="translate(680.1523,262.5564)" id="g4234"><path id="path4236" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 0.757,0 1.38,-0.25 1.868,-0.75 0.488,-0.501 0.733,-1.142 0.733,-1.923 0,-1.075 -0.372,-2.02 -1.118,-2.838 -0.745,-0.818 -1.581,-1.227 -2.508,-1.227 -0.733,0 -1.343,0.257 -1.83,0.769 -0.49,0.513 -0.733,1.184 -0.733,2.014 0,1.099 0.354,2.033 1.062,2.802 C -1.818,-0.384 -0.977,0 0,0 m -14.392,-24.243 -1.611,1.245 c 2.439,2.686 4.663,4.597 6.676,5.731 2.012,1.136 3.723,1.704 5.139,1.704 0.78,0 1.377,-0.171 1.792,-0.513 0.414,-0.343 0.622,-0.806 0.622,-1.392 0,-0.709 -0.791,-3.712 -2.374,-9.009 -2.581,-8.667 -3.872,-13.892 -3.872,-15.673 0,-0.343 0.085,-0.629 0.256,-0.861 0.171,-0.232 0.355,-0.348 0.55,-0.348 0.781,0 2.783,1.513 6.006,4.541 l 1.429,-1.392 c -3.346,-3.149 -5.787,-5.163 -7.325,-6.042 -1.539,-0.879 -2.795,-1.318 -3.772,-1.318 -0.854,0 -1.532,0.268 -2.032,0.805 -0.501,0.536 -0.751,1.282 -0.751,2.234 0,3.052 1.831,10.51 5.493,22.376 0.171,0.561 0.256,1.061 0.256,1.501 0,0.488 -0.219,0.732 -0.658,0.732 -0.49,0 -1.044,-0.195 -1.667,-0.586 -0.622,-0.39 -2.008,-1.636 -4.157,-3.735"></path></g><g transform="translate(698.6465,246.8093)" id="g4238"><path id="path4240" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 2.172,0 3.851,-0.421 5.035,-1.263 1.184,-0.842 1.776,-1.813 1.776,-2.912 0,-0.659 -0.25,-1.232 -0.75,-1.721 -0.501,-0.489 -1.106,-0.732 -1.813,-0.732 -0.465,0 -0.867,0.104 -1.209,0.312 -0.342,0.207 -0.83,0.725 -1.465,1.555 -1.196,1.587 -2.381,2.381 -3.553,2.381 -1,0 -1.885,-0.385 -2.654,-1.152 -0.769,-0.769 -1.154,-1.726 -1.154,-2.871 0,-1 0.244,-1.97 0.732,-2.909 0.489,-0.938 1.722,-2.457 3.7,-4.553 2.709,-2.877 4.064,-5.609 4.064,-8.193 0,-2.585 -1.098,-4.846 -3.295,-6.785 -2.197,-1.938 -5.03,-2.907 -8.496,-2.907 -2.906,0 -5.066,0.592 -6.482,1.776 -1.416,1.184 -2.124,2.642 -2.124,4.376 0,0.855 0.268,1.562 0.805,2.124 0.537,0.562 1.196,0.842 1.978,0.842 0.683,0 1.269,-0.225 1.758,-0.677 0.488,-0.452 0.732,-0.983 0.732,-1.593 0,-0.244 -0.017,-0.562 -0.049,-0.952 -0.016,-0.318 -0.024,-0.586 -0.024,-0.806 0,-0.806 0.341,-1.489 1.021,-2.051 0.657,-0.561 1.558,-0.842 2.701,-0.842 1.314,0 2.469,0.226 3.466,0.676 0.997,0.451 1.777,1.135 2.336,2.049 0.56,0.914 0.839,1.822 0.839,2.724 0,0.878 -0.262,1.756 -0.787,2.634 -0.526,0.878 -1.703,2.328 -3.533,4.353 -2.54,2.828 -3.809,5.547 -3.809,8.156 0,2.39 0.964,4.481 2.893,6.273 C -5.433,-0.896 -2.979,0 0,0"></path></g><g transform="translate(311.3105,229.1521)" id="g4242"><path id="path4244" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -1.042,0.234 -1.777,0.352 -2.207,0.352 -0.873,0 -1.726,-0.342 -2.559,-1.028 -0.833,-0.684 -1.637,-2.012 -2.412,-3.98 -0.775,-1.969 -1.162,-3.684 -1.162,-5.145 0,-0.665 0.179,-1.21 0.537,-1.634 0.358,-0.423 0.765,-0.635 1.221,-0.635 0.547,0 1.172,0.241 1.875,0.723 1.002,0.718 1.797,1.592 2.383,2.622 0.351,0.652 0.826,2.249 1.426,4.792 L 0,0 Z m 4.141,-10.098 0.546,-0.742 c -1.745,-1.472 -3.04,-2.448 -3.886,-2.93 -1.172,-0.664 -2.097,-0.996 -2.774,-0.996 -0.312,0 -0.566,0.088 -0.761,0.264 -0.196,0.176 -0.293,0.374 -0.293,0.596 0,0.221 0.071,0.586 0.214,1.093 l 0.684,2.387 c -1.562,-1.681 -2.865,-2.821 -3.906,-3.421 -1.042,-0.599 -1.98,-0.899 -2.813,-0.899 -0.69,0 -1.269,0.304 -1.738,0.909 -0.469,0.607 -0.703,1.496 -0.703,2.669 0,1.852 0.635,3.98 1.904,6.385 1.27,2.405 2.682,4.184 4.239,5.338 1.555,1.153 2.978,1.73 4.267,1.73 0.286,0 0.716,-0.046 1.289,-0.137 0.612,2.536 1.198,4.384 1.758,5.547 0.56,1.163 1.282,2.168 2.168,3.013 0.885,0.845 1.897,1.498 3.037,1.959 1.139,0.462 2.204,0.692 3.193,0.692 0.521,0 0.938,-0.136 1.25,-0.41 0.313,-0.273 0.469,-0.618 0.469,-1.035 0,-0.403 -0.143,-0.732 -0.431,-0.986 -0.287,-0.254 -0.678,-0.381 -1.174,-0.381 -0.326,0 -0.933,0.065 -1.821,0.195 -0.887,0.13 -1.495,0.196 -1.821,0.196 -0.456,0 -0.858,-0.14 -1.204,-0.419 C 5.488,10.239 5.159,9.638 4.846,8.716 4.638,8.13 4.165,6.261 3.425,3.109 L 0.662,-8.689 c -0.324,-1.394 -0.486,-2.319 -0.486,-2.775 0,-0.495 0.188,-0.743 0.566,-0.743 0.235,0 0.508,0.085 0.82,0.255 0.443,0.247 1.302,0.865 2.579,1.854"></path></g><g transform="translate(331.2051,230.9294)" id="g4246"><path id="path4248" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 2.781,0 0.945,-6.826 c -1.081,-3.964 -1.621,-6.22 -1.621,-6.768 0,-0.247 0.059,-0.436 0.176,-0.566 0.117,-0.13 0.247,-0.195 0.391,-0.195 0.221,0 0.481,0.097 0.781,0.292 0.43,0.3 1.243,1.055 2.441,2.266 l 0.645,-0.723 c -2.617,-2.721 -4.545,-4.082 -5.781,-4.082 -0.417,0 -0.772,0.161 -1.065,0.479 -0.293,0.319 -0.439,0.771 -0.439,1.357 0,0.677 0.141,1.582 0.423,2.715 -1.159,-1.328 -2.59,-2.493 -4.294,-3.496 -1.132,-0.664 -2.115,-0.996 -2.947,-0.996 -0.455,0 -0.813,0.15 -1.073,0.45 -0.261,0.3 -0.391,0.776 -0.391,1.428 0,0.508 0.059,1.056 0.176,1.643 0.169,0.821 0.599,2.47 1.289,4.948 0.872,3.141 1.309,5.026 1.309,5.652 0,0.364 -0.131,0.547 -0.391,0.547 -0.234,0 -0.553,-0.12 -0.957,-0.361 -0.404,-0.242 -1.094,-0.824 -2.07,-1.748 l -0.86,0.683 c 1.745,1.563 3.077,2.588 3.995,3.076 0.918,0.489 1.656,0.733 2.216,0.733 0.313,0 0.567,-0.114 0.762,-0.342 0.195,-0.228 0.293,-0.584 0.293,-1.066 0,-0.9 -0.469,-3.11 -1.406,-6.63 -0.834,-3.168 -1.25,-4.975 -1.25,-5.418 0,-0.274 0.087,-0.508 0.263,-0.703 0.176,-0.197 0.368,-0.294 0.576,-0.294 0.728,0 1.762,0.602 3.102,1.806 1.341,1.204 2.219,2.576 2.635,4.112 L 0,0 Z"></path></g><g transform="translate(287.9082,221.0847)" id="g4250"><path id="path4252" style="fill:#1b4668;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 -1.466,-6.426 c -3.832,-0.451 -6.763,-0.677 -8.792,-0.677 -3.232,0 -7.516,0.265 -12.851,0.791 -5.712,0.526 -10.596,0.789 -14.654,0.789 -3.232,0 -6.577,-0.526 -10.033,-1.58 3.047,8.653 6.572,20.668 10.57,36.048 l 8.665,33.843 -30.488,-1.128 c -5.346,-0.301 -10.841,-0.715 -16.486,-1.239 -5.094,-20.066 -10.346,-34.908 -15.757,-44.527 -5.413,-9.621 -11.595,-16.703 -18.549,-21.248 -6.953,-4.546 -13.624,-6.821 -20.014,-6.821 -6.238,0 -11.575,1.504 -16.01,4.509 -3.234,2.105 -4.849,4.734 -4.849,7.892 0,1.877 0.637,3.474 1.916,4.79 1.277,1.314 2.818,1.972 4.622,1.972 2.93,0 5.935,-2.067 9.018,-6.199 1.877,-2.48 3.399,-4.078 4.565,-4.791 1.164,-0.715 2.461,-1.071 3.889,-1.071 5.862,0 11.366,4.734 16.515,14.204 5.146,9.469 12.681,32.877 22.601,70.228 l 11.047,41.257 c -15.031,0 -26.321,-2.48 -33.874,-7.44 -7.553,-4.96 -11.329,-10.559 -11.329,-16.796 0,-2.105 1.015,-4.773 3.044,-8.003 1.804,-3.007 2.705,-5.45 2.705,-7.327 0,-2.181 -0.695,-3.965 -2.085,-5.355 -1.392,-1.391 -3.139,-2.086 -5.242,-2.086 -2.632,0 -4.886,1.258 -6.763,3.777 -1.88,2.517 -2.819,6.18 -2.819,10.991 0,8.717 3.156,16.419 9.469,23.108 6.313,6.688 15.481,11.423 27.505,14.204 6.913,1.578 20.703,2.367 41.37,2.367 -5.56,-10.973 -11.785,-30.362 -18.673,-58.166 19.896,0 35.572,0.713 47.027,2.141 6.498,21.794 12.228,36.992 17.188,45.598 4.96,8.604 10.539,14.824 16.74,18.656 6.199,3.833 13.132,5.749 20.798,5.749 6.611,0 11.704,-1.259 15.273,-3.776 3.569,-2.519 5.355,-5.393 5.355,-8.624 0,-1.879 -0.637,-3.42 -1.913,-4.621 -1.275,-1.203 -2.925,-1.804 -4.951,-1.804 -2.626,0 -5.589,1.877 -8.889,5.636 -3.377,3.757 -6.378,5.636 -9.002,5.636 -5.626,0 -11.178,-5.224 -16.654,-15.668 -9.76,-18.639 -21.058,-57.98 -33.895,-118.024 1.272,-0.151 3.067,-0.414 5.388,-0.789 4.266,-0.752 7.707,-1.128 10.329,-1.128 3.067,0 6.546,0.376 10.439,1.128"></path></g><g transform="translate(492.1533,305.0627)" id="g4254"><path id="path4256" style="fill:#00476b;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -1.318,0.269 -2.43,0.403 -3.332,0.403 -2.197,0 -4.114,-0.605 -5.75,-1.813 -1.636,-1.209 -3.155,-3.382 -4.56,-6.518 -1.403,-3.138 -2.105,-6.269 -2.105,-9.394 0,-1.661 0.28,-2.856 0.843,-3.589 0.561,-0.732 1.294,-1.098 2.197,-1.098 1.685,0 3.491,0.909 5.42,2.728 1.928,1.819 3.345,4.437 4.248,7.855 L 0,0 Z M 4.541,5.603 6.958,6.116 4.211,-3.149 c -1.099,-3.687 -2.136,-7.935 -3.112,-12.745 -0.537,-2.612 -0.806,-4.297 -0.806,-5.054 0,-0.757 0.306,-1.135 0.916,-1.135 0.39,0 1.013,0.256 1.867,0.769 1.514,0.903 2.967,2.026 4.359,3.369 l 1.171,-1.428 c -2.783,-2.54 -4.565,-4.078 -5.346,-4.614 -1.563,-1.075 -3.053,-1.868 -4.468,-2.381 -0.929,-0.341 -1.831,-0.512 -2.71,-0.512 -0.636,0 -1.111,0.146 -1.429,0.439 -0.317,0.293 -0.475,0.72 -0.475,1.282 0,0.367 0.096,0.867 0.293,1.501 l 1.465,4.981 c -2.101,-2.515 -4.603,-4.675 -7.508,-6.482 -1.782,-1.123 -3.418,-1.684 -4.907,-1.684 -1.417,0 -2.503,0.5 -3.259,1.501 -1.026,1.342 -1.538,3.1 -1.538,5.273 0,2.588 0.689,5.469 2.068,8.643 1.38,3.174 3.229,6.055 5.549,8.643 2.319,2.587 4.761,4.491 7.324,5.713 1.978,0.927 4.517,1.391 7.617,1.391 0.781,0 1.574,-0.049 2.38,-0.146 l 0.879,1.428 z"></path></g><g transform="translate(503.1035,302.5725)" id="g4258"><path id="path4260" style="fill:#00476b;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 -1.172,1.721 2.71,1.831 c 2.637,1.807 4.491,2.967 5.566,3.479 0.61,0.293 1.172,0.44 1.685,0.44 0.513,0 1.001,-0.293 1.465,-0.879 2.147,-2.708 3.955,-6.362 5.42,-10.96 1.465,-4.598 2.197,-9.056 2.197,-13.375 0,-0.561 -0.024,-1.415 -0.073,-2.561 4.125,7.596 6.188,13.63 6.188,18.101 0,0.928 -0.207,2.162 -0.622,3.701 -0.439,1.71 -0.659,2.931 -0.659,3.665 0,0.708 0.226,1.294 0.677,1.758 0.452,0.464 1.019,0.696 1.703,0.696 0.854,0 1.544,-0.329 2.069,-0.989 0.525,-0.659 0.787,-1.599 0.787,-2.819 0,-3.15 -0.719,-7.075 -2.16,-11.774 -1.441,-4.701 -3.705,-9.754 -6.794,-15.161 -3.088,-5.408 -5.908,-9.424 -8.459,-12.048 -2.551,-2.625 -5.017,-4.505 -7.397,-5.64 -2.381,-1.136 -4.633,-1.703 -6.757,-1.703 -1.611,0 -2.825,0.299 -3.644,0.897 -0.817,0.598 -1.226,1.313 -1.226,2.142 0,0.732 0.317,1.361 0.952,1.887 0.635,0.524 1.488,0.787 2.564,0.787 0.829,0 1.964,-0.159 3.405,-0.477 1.538,-0.342 2.588,-0.512 3.149,-0.512 1.489,0 3.064,0.622 4.725,1.866 2.27,1.707 4.07,3.744 5.401,6.11 1.33,2.366 1.996,4.757 1.996,7.171 0,3.391 -0.495,7.464 -1.483,12.22 C 11.224,-5.669 9.826,-2.035 8.02,0.478 7.116,1.771 6.152,2.417 5.127,2.417 3.931,2.417 2.221,1.611 0,0"></path></g><g transform="translate(549.2822,310.0432)" id="g4262"><path id="path4264" style="fill:#00476b;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 2.173,0 3.852,-0.421 5.036,-1.263 1.184,-0.843 1.776,-1.813 1.776,-2.912 0,-0.659 -0.25,-1.233 -0.75,-1.721 -0.501,-0.489 -1.106,-0.732 -1.814,-0.732 -0.464,0 -0.866,0.103 -1.208,0.311 -0.343,0.207 -0.83,0.726 -1.465,1.556 -1.196,1.587 -2.381,2.381 -3.553,2.381 -1.001,0 -1.885,-0.385 -2.654,-1.153 -0.769,-0.768 -1.154,-1.725 -1.154,-2.87 0,-1.001 0.244,-1.97 0.732,-2.909 0.489,-0.938 1.722,-2.457 3.7,-4.554 2.709,-2.877 4.064,-5.608 4.064,-8.192 0,-2.585 -1.099,-4.847 -3.296,-6.785 -2.197,-1.939 -5.029,-2.907 -8.496,-2.907 -2.905,0 -5.066,0.591 -6.481,1.776 -1.416,1.183 -2.124,2.641 -2.124,4.376 0,0.854 0.268,1.561 0.805,2.124 0.536,0.561 1.195,0.842 1.978,0.842 0.682,0 1.268,-0.226 1.758,-0.677 0.488,-0.452 0.732,-0.983 0.732,-1.594 0,-0.244 -0.017,-0.561 -0.049,-0.952 -0.016,-0.317 -0.024,-0.586 -0.024,-0.806 0,-0.805 0.34,-1.489 1.021,-2.05 0.657,-0.562 1.558,-0.842 2.7,-0.842 1.315,0 2.47,0.225 3.467,0.676 0.997,0.451 1.777,1.134 2.336,2.048 0.56,0.914 0.839,1.823 0.839,2.725 0,0.878 -0.263,1.756 -0.787,2.634 -0.526,0.878 -1.703,2.328 -3.534,4.352 -2.539,2.828 -3.809,5.548 -3.809,8.157 0,2.389 0.965,4.481 2.894,6.273 C -5.433,-0.896 -2.979,0 0,0"></path></g></g></g></svg> </a></div>
+						</div>
+						<div class="g-block size-35">
+							<div class="spacer"></div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="g-navigation" class="g-flushed">
+				<div class="g-container">
+					<div class="g-grid">
+						<div class="g-block size-100 center">
+							<div id="menu-6409-particle" class="g-content g-particle">
+								<nav class="g-main-nav" data-g-mobile-target data-g-hover-expand="true">
+									<ul class="g-toplevel">
+										<li class="g-menu-item g-menu-item-type-component g-menu-item-101 g-parent active g-standard g-menu-item-link-parent " title="La Communauté de Communes"><a class="g-menu-item-container" href="/"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La Communauté de Communes</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-separator g-menu-item-133 g-parent  " title="Le territoire">
+																	<div class="g-menu-item-container" data-g-menuparent=""><span class="g-separator g-menu-item-content"> <span class="g-menu-item-title">Le territoire</span> </span> <span class="g-menu-parent-indicator"></span></div>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-169  " title="Présentation du territoire"><a class="g-menu-item-container" href="/home/le-territoire/presentation-du-territoire"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Présentation du territoire</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-170  " title="Les 49 communes"><a class="g-menu-item-container" href="/home/le-territoire/les-49-communes"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les 49 communes</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-141 g-parent g-menu-item-link-parent " title="L'institution"><a class="g-menu-item-container" href="/home/institution"> <span class="g-menu-item-content"> <span class="g-menu-item-title">L'institution</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-201  " title="Hôtel communautaire et antenne"><a class="g-menu-item-container" href="/home/institution/hotel-communautaire-et-annexes"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Hôtel communautaire et antenne</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-202  " title="Le Bureau"><a class="g-menu-item-container" href="/home/institution/le-bureau"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Le Bureau</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-203  " title="Les commissions"><a class="g-menu-item-container" href="/home/institution/les-commissions"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les commissions</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-204  " title="Le conseil communautaire"><a class="g-menu-item-container" href="/home/institution/le-conseil-communautaire"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Le conseil communautaire</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-205  " title="Les services"><a class="g-menu-item-container" href="/home/institution/les-services"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les services</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-171  " title="Les compétences et statuts"><a class="g-menu-item-container" href="/home/les-competences-et-status"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les compétences et statuts</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-172  " title="Marchés publics"><a class="g-menu-item-container" href="/home/marches-publics"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Marchés publics</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-167 g-parent active g-menu-item-link-parent " title="Publications"><a class="g-menu-item-container" href="/home/decisions-communautaires"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Publications</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-214 active  " title="Compte rendu"><a class="g-menu-item-container" href="/home/decisions-communautaires/compte-rendu"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Compte rendu</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-200  " title="Magazines communautaires"><a class="g-menu-item-container" href="/home/decisions-communautaires/journal-communautaire"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Magazines communautaires</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-377  " title="Charte Graphique"><a class="g-menu-item-container" href="/home/decisions-communautaires/charte-graphique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Charte Graphique</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-199  " title="Actualités et Evénements"><a class="g-menu-item-container" href="/home/evenements-et-actualites"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Actualités et Evénements</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-355  " title="Les Permanences"><a class="g-menu-item-container" href="/home/les-permanences"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les Permanences</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-282  " title="Nous contacter"><a class="g-menu-item-container" href="/home/nous-contacter"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Nous contacter</span> </span> </a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="g-menu-item g-menu-item-type-separator g-menu-item-135 g-parent g-standard  " title="Vie Quotidienne">
+											<div class="g-menu-item-container" data-g-menuparent=""><span class="g-separator g-menu-item-content"> <span class="g-menu-item-title">Vie Quotidienne</span> </span> <span class="g-menu-parent-indicator"></span></div>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-216 g-parent g-menu-item-link-parent " title="Santé"><a class="g-menu-item-container" href="/vie-quotidienne/sant%C3%A9"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Santé</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-319  " title="La MSP d'Hucqueliers"><a class="g-menu-item-container" href="/vie-quotidienne/sant%C3%A9/la-msp-d-hucqueliers"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La MSP d'Hucqueliers</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-320  " title="La MSP de Fruges"><a class="g-menu-item-container" href="/vie-quotidienne/sant%C3%A9/la-msp-de-fruges"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La MSP de Fruges</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-365  " title="Guichet unique"><a class="g-menu-item-container" href="/vie-quotidienne/sant%C3%A9/la-msp-de-fruges-2"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Guichet unique</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-217 g-parent g-menu-item-link-parent " title="Social"><a class="g-menu-item-container" href="/vie-quotidienne/social"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Social</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-321  " title="Restos du coeur"><a class="g-menu-item-container" href="/vie-quotidienne/social/restos-du-coeur"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Restos du coeur</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-322  " title="Centre Intercommunal d'Action Sociale"><a class="g-menu-item-container" href="/vie-quotidienne/social/centre-intercommunal-d-action-sociale"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Centre Intercommunal d'Action Sociale</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-218 g-parent g-menu-item-link-parent " title="Petite Enfance"><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Petite Enfance</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-323  " title="Ateliers d'éveils itinérants"><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance/ateliers-jardinsdesmomes-itinerants"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Ateliers d'éveils itinérants</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-325  " title='Micro crèche "Au Pays des Merveilles"'><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance/micro-cr%C3%A8che-au-pays-des-merveilles"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Micro crèche "Au Pays des Merveilles"</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-324  " title='RAM "Les Jeunes Pousses"'><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance/relais-assistants-maternels-les-jeunes-pousses"> <span class="g-menu-item-content"> <span class="g-menu-item-title">RAM "Les Jeunes Pousses"</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-456  " title='RAM "Les Lapinous"'><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance/relais-assistants-maternels-les-lapinous"> <span class="g-menu-item-content"> <span class="g-menu-item-title">RAM "Les Lapinous"</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-326  " title='Maison de la Petite Enfance : Le "Jardin des Mômes"'><a class="g-menu-item-container" href="/vie-quotidienne/petite-enfance/maison-de-la-petite-enfance-le-jardin-des-m%C3%B4mes"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Maison de la Petite Enfance : Le "Jardin des Mômes"</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-219  " title="Maison de la jeunesse et de l'innovation"><a class="g-menu-item-container" href="/vie-quotidienne/maison-de-la-jeunesse-et-de-l-innovation"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Maison de la jeunesse et de l'innovation</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-220  " title="Activités Périscolaires"><a class="g-menu-item-container" href="/vie-quotidienne/periscolaire"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Activités Périscolaires</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-221 g-parent g-menu-item-link-parent " title="Mobilité"><a class="g-menu-item-container" href="/vie-quotidienne/mobilit%C3%A9"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Mobilité</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-327  " title="Bornes de recharge des voitures électriques"><a class="g-menu-item-container" href="/vie-quotidienne/mobilit%C3%A9/bornes-de-recharge-des-voitures-%C3%A9lectriques"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Bornes de recharge des voitures électriques</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-328  " title="Transports"><a class="g-menu-item-container" href="/vie-quotidienne/mobilit%C3%A9/transports"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Transports</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-222  " title="Associations"><a class="g-menu-item-container" href="/vie-quotidienne/associations"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Associations</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-223  " title="Numérique"><a class="g-menu-item-container" href="/vie-quotidienne/num%C3%A9rique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Numérique</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-369  " title="Pratique"><a class="g-menu-item-container" href="/vie-quotidienne/pratique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Pratique</span> </span> </a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="g-menu-item g-menu-item-type-component g-menu-item-137 g-parent g-standard g-menu-item-link-parent " title="Culture & Loisirs"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Culture & Loisirs</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-224 g-parent g-menu-item-link-parent " title="Culture & Musique"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/culture"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Culture & Musique</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-329  " title="Culture & loisirs"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/culture/culture-et-loisirs"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Culture & loisirs</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-330  " title="Ecoles de musique"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/culture/ecoles-de-musique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Ecoles de musique</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-225  " title="Le Centre Socio Culturel Intercommunal"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/le-centre-socio-culturel-intercommunal"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Le Centre Socio Culturel Intercommunal</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-226 g-parent g-menu-item-link-parent " title="Tourisme"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/tourisme"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Tourisme</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-307  " title="Découvrez notre territoire"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/tourisme/d%C3%A9couvrez-notre-territoire"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Découvrez notre territoire</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-381  " title="Les randonnées"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/tourisme/les-randonn%C3%A9es"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les randonnées</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-306  " title="La Taxe de séjour"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/tourisme/la-taxe-de-s%C3%A9jour"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La Taxe de séjour</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-227 g-parent g-menu-item-link-parent " title="Jeunesse et sports"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Jeunesse et sports</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-331  " title="La marche nordique"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports/la-marche-nordique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La marche nordique</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-332  " title="Equipements sportifs"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports/equipements-sportifs"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Equipements sportifs</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-333  " title="Séjours de vacances"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports/s%C3%A9jours-de-vacances"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Séjours de vacances</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-334  " title="Accueil de loisirs"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports/accueil-de-loisirs"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Accueil de loisirs</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-376  " title="Informations aux Jeunes"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jeunesse-et-sports/informations-jeunes"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Informations aux Jeunes</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-228 g-parent g-menu-item-link-parent " title="Jumelages"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jumelages"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Jumelages</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-284  " title="Waltershausen"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jumelages/europe-amiti%C3%A9"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Waltershausen</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-285  " title="Olsberg"><a class="g-menu-item-container" href="/culture-loisirs-sports-tourisme/jumelages/les-amis-d-olsberg"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Olsberg</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="g-menu-item g-menu-item-type-component g-menu-item-138 g-parent g-standard g-menu-item-link-parent " title="Aménagement"><a class="g-menu-item-container" href="/amenagement"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Aménagement</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-229 g-parent g-menu-item-link-parent " title="Urbanisme"><a class="g-menu-item-container" href="/amenagement/urbanisme"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Urbanisme</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-335  " title="Documents d'Urbanisme"><a class="g-menu-item-container" href="/amenagement/urbanisme/documents-d-urbanisme"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Documents d'Urbanisme</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-337  " title="PLU Intercommunal de HUCQUELIERS"><a class="g-menu-item-container" href="/amenagement/urbanisme/plu-intercommunal-de-hucqueliers"> <span class="g-menu-item-content"> <span class="g-menu-item-title">PLU Intercommunal de HUCQUELIERS</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-336  " title="Schéma de cohérence Territoriale"><a class="g-menu-item-container" href="/amenagement/urbanisme/sch%C3%A9ma-de-coh%C3%A9rence-territoriale"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Schéma de cohérence Territoriale</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-338  " title="Instruction des autorisations du droit des sols"><a class="g-menu-item-container" href="/amenagement/urbanisme/instruction-des-autorisations-du-droit-des-sols"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Instruction des autorisations du droit des sols</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-230  " title="Habitat"><a class="g-menu-item-container" href="/amenagement/opah"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Habitat</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-231  " title="Travaux"><a class="g-menu-item-container" href="/amenagement/travaux"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Travaux</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-232 g-parent g-menu-item-link-parent " title="Agricole"><a class="g-menu-item-container" href="/amenagement/d%C3%A9veloppement-agricole"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Agricole</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-357  " title="Développement Agricole"><a class="g-menu-item-container" href="/amenagement/d%C3%A9veloppement-agricole/d%C3%A9veloppement-agricole"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Développement Agricole</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-356  " title="Produits Locaux"><a class="g-menu-item-container" href="/amenagement/d%C3%A9veloppement-agricole/produits-locaux"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Produits Locaux</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-233 g-parent g-menu-item-link-parent " title="Erosion - Inondations"><a class="g-menu-item-container" href="/amenagement/erosion-inondations"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Erosion - Inondations</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-435  " title="Présentation"><a class="g-menu-item-container" href="/amenagement/erosion-inondations/pr%C3%A9sentation"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Présentation</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-436  " title="Bassin versant de la Canche"><a class="g-menu-item-container" href="/amenagement/erosion-inondations/bassin-versant-de-la-canche"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Bassin versant de la Canche</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-437  " title="Bassin versant de l’Aa"><a class="g-menu-item-container" href="/amenagement/erosion-inondations/bassin-versant-de-l%E2%80%99aa"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Bassin versant de l’Aa</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-438  " title="La Lys"><a class="g-menu-item-container" href="/amenagement/erosion-inondations/la-lys"> <span class="g-menu-item-content"> <span class="g-menu-item-title">La Lys</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-234  " title="Espace info énergie"><a class="g-menu-item-container" href="/amenagement/espace-info-%C3%A9nergie"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Espace info énergie</span> </span> </a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="g-menu-item g-menu-item-type-url g-menu-item-139 g-parent g-standard g-menu-item-link-parent " title="Environnement"><a class="g-menu-item-container" href="#"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Environnement</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-177 g-parent g-menu-item-link-parent " title="Déchets"><a class="g-menu-item-container" href="/environnement/dechets"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Déchets</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-176  " title="Collecte et tri sélectif des déchets"><a class="g-menu-item-container" href="/environnement/dechets/collecte-et-tri-selectif-des-dechets"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Collecte et tri sélectif des déchets</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-235  " title="Collecte du verre"><a class="g-menu-item-container" href="/environnement/dechets/collecte-du-verre"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Collecte du verre</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-291  " title=" Collecte des textiles usagés"><a class="g-menu-item-container" href="/environnement/dechets/collecte-des-textiles-usag%C3%A9s"> <span class="g-menu-item-content"> <span class="g-menu-item-title"> Collecte des textiles usagés</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-236  " title="Compostage"><a class="g-menu-item-container" href="/environnement/dechets/compostage"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Compostage</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-178  " title="Déchetteries"><a class="g-menu-item-container" href="/environnement/dechets/dechetteries"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Déchetteries</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-237  " title="Plateformes déchets verts"><a class="g-menu-item-container" href="/environnement/dechets/plateformes-d%C3%A9chets-verts"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Plateformes déchets verts</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-238  " title="REOM"><a class="g-menu-item-container" href="/environnement/dechets/reom"> <span class="g-menu-item-content"> <span class="g-menu-item-title">REOM</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-239  " title="Rapport annuel"><a class="g-menu-item-container" href="/environnement/dechets/rapport-annuel"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Rapport annuel</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-240 g-parent g-menu-item-link-parent " title="Assainissement"><a class="g-menu-item-container" href="/environnement/assainissement"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Assainissement</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-241  " title="Assainissement non collectif"><a class="g-menu-item-container" href="/environnement/assainissement/spanc"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Assainissement non collectif</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-242  " title="Assainissement collectif"><a class="g-menu-item-container" href="/environnement/assainissement/assainissement-non-collectif"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Assainissement collectif</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-243  " title="Eaux Pluviales"><a class="g-menu-item-container" href="/environnement/assainissement/eaux-pluviales"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Eaux Pluviales</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-244  " title="Eau potable"><a class="g-menu-item-container" href="/environnement/eau-potable"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Eau potable</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-245  " title="Territoire à Energie Positive"><a class="g-menu-item-container" href="/environnement/territoire-%C3%A0-ernergie-positive"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Territoire à Energie Positive</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-246  " title="Développement durable"><a class="g-menu-item-container" href="/environnement/d%C3%A9veloppement-durable"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Développement durable</span> </span> </a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="g-menu-item g-menu-item-type-url g-menu-item-140 g-parent g-standard g-menu-item-link-parent " title="Economie & Emploi"><a class="g-menu-item-container" href="#"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Economie & Emploi</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+											<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+												<li class="g-dropdown-column">
+													<div class="g-grid">
+														<div class="g-block size-100">
+															<ul class="g-sublevel">
+																<li class="g-level-1 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-247 g-parent g-menu-item-link-parent " title="Développement économique"><a class="g-menu-item-container" href="/economie-emploi/d%C3%A9veloppement-%C3%A9conomique"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Développement économique</span> </span> <span class="g-menu-parent-indicator" data-g-menuparent=""></span> </a>
+																	<ul class="g-dropdown g-inactive g-zoom g-dropdown-right">
+																		<li class="g-dropdown-column">
+																			<div class="g-grid">
+																				<div class="g-block size-100">
+																					<ul class="g-sublevel">
+																						<li class="g-level-2 g-go-back"><a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-248  " title="Les Zones d'activités économiques"><a class="g-menu-item-container" href="/economie-emploi/d%C3%A9veloppement-%C3%A9conomique/les-zones-d-activit%C3%A9s-%C3%A9conomiques"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Les Zones d'activités économiques</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-249  " title="Développement éolien"><a class="g-menu-item-container" href="/economie-emploi/d%C3%A9veloppement-%C3%A9conomique/d%C3%A9veloppement-%C3%A9olien"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Développement éolien</span> </span> </a></li>
+																						<li class="g-menu-item g-menu-item-type-component g-menu-item-290  " title="Programme LEADER"><a class="g-menu-item-container" href="/economie-emploi/d%C3%A9veloppement-%C3%A9conomique/programme-leader"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Programme LEADER</span> </span> </a></li>
+																					</ul>
+																				</div>
+																			</div>
+																		</li>
+																	</ul>
+																</li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-251  " title="Aides aux entreprises"><a class="g-menu-item-container" href="/economie-emploi/aides-aux-entreprises"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Aides aux entreprises</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-252  " title="Emploi / Formation"><a class="g-menu-item-container" href="/economie-emploi/emploi-formation"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Emploi / Formation</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-253  " title="Le répertoire des entreprises"><a class="g-menu-item-container" href="/economie-emploi/le-r%C3%A9pertoire-des-entreprises"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Le répertoire des entreprises</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-url g-menu-item-254  " title="L'agence d'attractivité du Montreuillois"><a class="g-menu-item-container" href="http://opaleandco.co" target="_blank" rel="noopener noreferrer"> <span class="g-menu-item-content"> <span class="g-menu-item-title">L'agence d'attractivité du Montreuillois</span> </span> </a></li>
+																<li class="g-menu-item g-menu-item-type-component g-menu-item-255  " title="Société d'abattage des Hauts Pays"><a class="g-menu-item-container" href="/economie-emploi/l-abattoir"> <span class="g-menu-item-content"> <span class="g-menu-item-title">Société d'abattage des Hauts Pays</span> </span> </a></li>
+															</ul>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="g-grid">
+						<div class="g-block size-100">
+							<div class="g-system-messages">
+								<div id="system-message-container"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="g-container-main" class="g-wrapper">
+				<div class="g-container">
+					<div class="g-grid">
+						<div class="g-block size-100">
+							<main id="g-main">
+								<div class="g-grid">
+									<div class="g-block size-100">
+										<div class="g-content">
+											<div class="platform-content">
+												<div class="moduletable ">
+													<div aria-label="Fil de navigation" role="navigation">
+														<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+															<li>Vous êtes ici :  </li>
+															<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/" class="pathway"><span itemprop="name">Accueil</span></a> <span class="divider"> <img src="/media/system/images/arrow.png" alt=""> </span>
+																<meta itemprop="position" content="1">
+															</li>
+															<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/home/decisions-communautaires" class="pathway"><span itemprop="name">Publications</span></a> <span class="divider"> <img src="/media/system/images/arrow.png" alt=""> </span>
+																<meta itemprop="position" content="3">
+															</li>
+															<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active"><span itemprop="name"> Compte rendu </span>
+																<meta itemprop="position" content="4">
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="g-grid">
+									<div class="g-block size-100">
+										<div class="g-content">
+											<div class="platform-content row-fluid">
+												<div class="span12">
+													<div class="item-page" itemscope itemtype="https://schema.org/Article">
+														<meta itemprop="inLanguage" content="fr-FR">
+														<div class="page-header">
+															<h2 itemprop="headline">Publications</h2>
+														</div>
+														<div itemprop="articleBody">
+															<p><img alt="" height="165" id="" src="/images/Backgrounds/titres/compte-rendu-cc.png" title="" width="1338"></p>
+															<p> </p>
+															<h4 style="color: rgb(255, 255, 255); background-color: rgb(27, 70, 104);"><strong>Compte rendu (CR) des conseils communautaires - Année 2018</strong></h4>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/Compte-rendu.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 05 février 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/Compte-rendu-1.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 12 mars 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/Compte-rendu-2.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 09 avril 2018</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 04 juin 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-14.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 14 juin 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-10.07.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> CR du 10 juillet 2018</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-10.09.18.pdf" style="" target="_blank" title=""> CR du 10 septembre 2018.</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a><a href="/images/Pdf/Institution/compterenduCC/compte-rendu.pdf" style="" target="_blank" title=""> CR du 24 septembre 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a>  <a href="/images/Pdf/Institution/compterenduCC/cr-5-nov-2018.pdf" id="" style="" target="_blank" title="">CR du 05 novembre 2018</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a>  <a href="/images/Pdf/Institution/compterenduCC/cr-26-novembre-2018.pdf" id="" style="" target="_blank" title="">CR du 26 novembre 2018</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a>  <a href="/images/Pdf/Institution/compterenduCC/cr-17-decembre-2018.pdf" id="" style="" target="_blank" title="">CR du 17 décembre 2018</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+																<div class="g-block size-33 equal-height"> </div>
+																<div class="g-block size-33 equal-height"> </div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<h4 style="color: rgb(255, 255, 255); background-color: rgb(27, 70, 104);"><strong>Compte rendu des conseils communautaires - Année 2019</strong></h4>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a>  <a href="/images/Pdf/Institution/compterenduCC/cr-11-fevrier-2019.pdf" id="" style="" target="_blank" title="">CR du 11 février 2019</a></div>
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a>  <a href="/images/Pdf/Institution/compterenduCC/cr-15-avril-2019.pdf" target="_blank">CR du 15 avril 2019</a></div>
+																<div class="g-block size-33 equal-height"><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30">  <a href="/images/Pdf/Institution/compterenduCC/cr-24-juin-19.pdf" id="" style="" target="_blank" title="">CR du 24 juin 2019</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30">  <a href="/images/Pdf/Institution/compterenduCC/cr-du-30-sep-2019.pdf" id="" style="" target="_blank" title="">CR du 30 septembre 2019</a></div>
+																<div class="g-block size-33 equal-height"><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> <a href="/images/Pdf/Institution/compterenduCC/cr-12-nov-2019.pdf" id="" style="" target="_blank" title="">CR du 12 novembre 2019</a></div>
+																<div class="g-block size-33 equal-height"><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"> <a href="/images/Pdf/Institution/compterenduCC/cr16dec2019.pdf" id="" style="" target="_blank" title="">CR du 16 décembre 2019</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<h4 style="color: rgb(255, 255, 255); background-color: rgb(27, 70, 104);"><strong>Compte rendu des conseils communautaires - Année 2020</strong></h4>
+															<div class="g-grid">
+																<div class="g-block size-33 equal-height"><a href="/images/Pdf/Institution/compterenduCC/compte-rendu-4.06.18.pdf" id="" style="" target="_blank" title=""><img alt="Téléchargement" height="30" id="" src="/images/Elements/icones/document.png" title="" width="30"></a><a href="/images/Pdf/Institution/compterenduCC/cr-du-cc-du-10-fevrier-2020.pdf" id="" style="" target="_blank" title="">CR du 10 février 2020</a></div>
+																<div class="g-block size-33 equal-height"> </div>
+																<div class="g-block size-33 equal-height"> </div>
+															</div>
+															<p> </p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</main>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer id="g-footer" class="g-flushed">
+				<div class="g-container">
+					<div class="g-grid">
+						<div class="g-block size-10">
+							<div class="spacer"></div>
+						</div>
+						<div class="g-block size-20">
+							<div id="copyright-1736-particle" class="g-content g-particle">
+								<div class="g-copyright ">© <a target="_parent" href="/www.cchpm.fr" title=""> </a> 2018 - 2020 <br>CCHPM</div>
+							</div>
+						</div>
+						<div class="g-block size-40">
+							<div id="horizontalmenu-9034-particle" class="g-content g-particle">
+								<ul class="g-horizontalmenu ">
+									<li><a target="_parent" href="/home/decisions-communautaires/compte-rendu/62-a-propos/77-mentions-legales" title="Mentions légales">Mentions légales</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="g-block size-20">
+							<div id="totop-8670-particle" class="g-content g-particle">
+								<div class="">
+									<div class="g-totop"><a href="#" id="g-totop" rel="nofollow"> <i class="fa fa-chevron-circle-up fa-4x"></i> </a></div>
+								</div>
+							</div>
+						</div>
+						<div class="g-block size-10">
+							<div class="spacer"></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="/media/gantry5/assets/js/main.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/jQuery.headroom.js"></script>
+		<script type="text/javascript">
+                (function($) {
+                    $(window).load(function() {
+                        $("#g-navigation").headroom({
+                            "offset": 1024,
+                            "tolerance": 5,
+                            "classes": {
+                                "initial": "animated",
+                                "pinned": "slideDown",
+                                "unpinned": "slideUp"
+                            }
+                        });
+
+                        var stickyOffset = $('#g-navigation').offset().top;                
+                        var stickyContainerHeight = $('#g-navigation').height();
+
+                        $('#g-navigation').wrap( "<div class='g-fixed-container'><\/div>" );
+                        $('.g-fixed-container').css("height", stickyContainerHeight);
+
+                        
+                        $(window).scroll(function(){
+                            var sticky = $('#g-navigation'),
+                                scroll = $(window).scrollTop();
+
+                            if (scroll > stickyOffset ) sticky.addClass('g-fixed-active');
+                            else sticky.removeClass('g-fixed-active');
+                        });
+                    });
+                })(jQuery);
+            
+		</script>
+		<script type="text/javascript">anchors.options = {
+  visible: 'touch',
+  placement: 'right'
+};
+anchors.add('h5');
+		</script>
+		<script type="text/javascript">
+            window.cookieconsent_options = {
+                message: 'En\u0020poursuivant\u0020votre\u0020navigation\u0020sur\u0020le\u0020site,\u0020vous\u0020acceptez\u0020l\u0027utilisation\u0020de\u0020cookies\u0020sur\u0020votre\u0020poste\u0020dans\u0020le\u0020respect\u0020de\u0020notre\u0020politique\u0020de\u0020protection\u0020de\u0020votre\u0020vie\u0020priv\u00E9e.',
+                learnMore: 'En\u0020savoir\u0020\u002B',
+                                    link: 'https://www.cchpm.fr/vie-quotidienne/num%C3%A9rique/62-a-propos/77-mentions-legales#rgpd',
+                    target: '_parent',
+                                dismiss: 'Accepter\u0020\u0021',
+                theme: 'light-bottom'
+            };
+        
+		</script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	</body>
+</html>
