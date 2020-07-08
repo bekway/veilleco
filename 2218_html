@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title>Communauté de communes du Pays d'Urfé (42)</title>
+		<meta name="description" content="Située dans le département de la Loire (42), au cœur des Massifs des Bois Noirs et de la Madeleine, la Communauté de Communes du Pays d’Urfé est un Etablissement Public de Coopération Intercommunale (EPCI)">
+		<meta property="og:site_name" content="www.ccpu.fr">
+		<meta property="og:title" content="Communauté de communes du Pays d'Urfé (42)">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Située dans le département de la Loire (42), au cœur des Massifs des Bois Noirs et de la Madeleine, la Communauté de Communes du Pays d’Urfé est un Etablissement Public de Coopération Intercommunale (EPCI)">
+		<meta property="og:url" content="//www.ccpu.fr/">
+		<meta property="og:image" content="//www.ccpu.fr/userfile/img-og/logo-seul.png">
+		<link rel="image_src" href="//www.ccpu.fr/userfile/img-og/logo-seul.png">
+		<link rel="stylesheet" href="/js/jssor/css/skin-arrow.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/jssor/css/skin-bullet.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/css/global/websee-maximenu.css" type="text/css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu%7CVoltaire%7CHind%7COswald" rel="stylesheet" type="text/css">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/ccpu-fav.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/ccpu-fav.png">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-1").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-1").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-1 ul").css("display","block");		
+		$(".menu-principal-vertical-item-1").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-1").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/template/simplo/global.css" rel="stylesheet">
+		<script>
+var temp = $(".template-header").height();
+$(".template-header").height(temp);
+		</script>
+		<link type="text/css" href="/css/template/simplo/marron.css" rel="stylesheet">
+		<style>
+@media only screen and (max-width: 1280px) {
+    .websee-megamenu-container {
+        width: 100%;
+    }
+    .websee-megamenu-mobile {
+        display: block;
+    }
+    .websee-megamenu-dropdown-icon:before {
+        display: block;
+    }
+    .websee-megamenu > ul {
+        display: none;
+    }
+    .websee-megamenu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    a.websee-megamenu-titre-2 {
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+    .websee-megamenu-sub {
+        position: relative;
+    }
+    .websee-megamenu > ul > li > ul.normal-sub {
+        width: 100%;
+    }
+    .websee-megamenu-sub > li {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .websee-megamenu-sub > li:first-child {
+        margin: 0;
+    }
+    .websee-megamenu-sub-2 {
+        position: relative;
+        margin:2px 0 0 0;
+    }
+    .websee-megamenu-sub-2 > li {
+        float: none;
+        padding:0;
+    }
+    .websee-megamenu .show-on-mobile {
+        display: block;
+    }
+
+    .websee-megamenu-images, .websee-megamenu-datas {display:none;}
+}
+		</style>
+		<link href="/css/css_0_fr.css?1591276164" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1591276164" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-1 body-groupe-1"><input type="hidden" id="token" value="a966a78279b481fa6d91eccc6a989821">
+		<ul class="websee-barre-flottante-smartphone-list clearfix">
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-smartphone-icone-recherche"></span></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-4" onclick="javascript:websee_barre_flottante_show_container(4);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+			<li class="websee-barre-flottante-smartphone-items"><a target="" href="/contact-comcom-pays-durfe-loire-42_fr.html"><img src="/template/picto-map.png" style="width:100%;height:auto;"></a></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-3" onclick="javascript:websee_barre_flottante_show_container_from_top(3);"><span class="websee-barre-flottante-smartphone-icone-calendrier"></span></li>
+		</ul>
+		<div class="websee-barre-flottante">
+			<ul class="websee-barre-flottante-list clearfix">
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-icone-recherche"></span></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-4" onclick="javascript:websee_barre_flottante_show_container(4);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-2"><a target="" href="/contact-comcom-pays-durfe-loire-42_fr.html"><img src="/template/picto-map.png" style="width:100%;height:auto;"></a></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-3" onclick="javascript:websee_barre_flottante_show_container_from_top(3);"><span class="websee-barre-flottante-icone-calendrier"></span></li>
+			</ul>
+			<div class="websee-barre-flottante-master-container clearfix">
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-recherche" id="websee-barre-flottante-container-1">
+					<div class="recherche">
+						<form name="recherche_1594218451" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594218451.submit();" class="recherche-submit"></a></form>
+					</div>
+				</div>
+				<div class="websee-barre-flottante-containers" id="websee-barre-flottante-container-4">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-page" data-href="https://www.facebook.com/Communaut%C3%A9-de-Communes-du-Pays-dUrf%C3%A9-100630981591818" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+				</div>
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-calendrier" id="websee-barre-flottante-container-3">
+					<div class="calendrier clearfix">
+						<script type="text/javascript">
+				
+			var events_E14CC12EA1E446ADA2B87CDA2207C394 = undefined;	
+					
+			function getEvent_E14CC12EA1E446ADA2B87CDA2207C394(day, month,year){	
+					var empty = ["false","",""];
+					if(events_E14CC12EA1E446ADA2B87CDA2207C394 != undefined)			
+						return events_E14CC12EA1E446ADA2B87CDA2207C394[year][month+1][day];		
+					else 
+						return empty; 										
+				}
+		
+				selectedDay_E14CC12EA1E446ADA2B87CDA2207C394 = function(month,day, year) {					
+						return "/modules/calendrier/calendrier_view.php?id-template=1&date="+year+(month < 10 ? "0"+month : month)+(day < 10 ? "0"+day : day)
+				}
+		
+				function load_month_E14CC12EA1E446ADA2B87CDA2207C394(year, month){						
+						events_E14CC12EA1E446ADA2B87CDA2207C394 = undefined;
+						$.ajax({
+								url: "/modules/actualite/agenda_calendrier.php",
+								type: "POST", 
+								data: {
+									action : "getMonth",
+									month : month,									
+									year : year
+									},									
+								success: function(data) {					
+									 events_E14CC12EA1E446ADA2B87CDA2207C394 = jQuery.parseJSON(data);	
+									 $("#almanach-E14CC12EA1E446ADA2B87CDA2207C394").datepicker("refresh");
+							}		 		
+					});
+				}
+								 		
+	
+				$(document).ready(function(){
+			
+								 		
+						
+					$("#almanach-E14CC12EA1E446ADA2B87CDA2207C394").datepicker({
+										numberOfMonths: 1,
+										stepMonths: 1,
+										nextText: "Suivant",
+										prevText: "Précédent",
+										dayNamesMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
+										monthNames: ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],
+										firstDay: 1,
+										beforeShowDay: function(date) {									 												
+											return getEvent_E14CC12EA1E446ADA2B87CDA2207C394(date.getDate(), date.getMonth(), date.getFullYear());							
+										},
+										onChangeMonthYear : function (year, month, inst) {
+											load_month_E14CC12EA1E446ADA2B87CDA2207C394(year, month);
+										},	
+										onSelect: function(dateText) {
+											var day = parseInt(dateText.slice(3,5),10);	
+         									var month = parseInt(dateText.slice(0,2),10);
+											var year = parseInt(dateText.slice(6),10);
+											
+											var href_to_open = selectedDay_E14CC12EA1E446ADA2B87CDA2207C394(month,	day,year);
+													
+											var event = events_E14CC12EA1E446ADA2B87CDA2207C394[year][month][day];
+													
+											if(event[0] == "true")
+												$.fancybox( {type : "iframe", href : href_to_open}  );
+										}
+						
+									});
+							
+									/*
+									* Bricolage indispensable pour colorer les dates choisies
+									* chaque fois que le datepicker se redessine !
+									*/
+									$("#almanach-E14CC12EA1E446ADA2B87CDA2207C394").bind("mouseenter", function(){
+										if ($("td.important > a", this).eq(0).css("color") != "#FF0000") {
+											$("td.important > a", this).css("color","#FF0000");
+								
+										}
+									});			
+							
+					
+				});	//fin document ready
+		
+				load_month_E14CC12EA1E446ADA2B87CDA2207C394(2020, 07)	;									
+													
+				$(window).load(function(){
+					$(".calendrier-test").mouseenter();
+				});	//fin window ready
+		
+			
+						</script>
+						<div class="almanach" id="almanach-E14CC12EA1E446ADA2B87CDA2207C394"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu-topscreen">
+			<li class="menu-topscreen-item menu-topscreen-item-1  "><a href="/comcom-pays-durfe-loire-42_fr.html" id="menu-topscreen-item-titre-1" class="menu-topscreen-item-titre ">ACCUEIL</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-2 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-2');" id="menu-topscreen-item-titre-2" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-2">PRÉSENTATION</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-2">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-64 "><a href="/intercommunalite-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">L'Intercommunalité</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-2 "><a href="/communaute-commune-pays-durfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Le fonctionnement de la CCPU</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-3 "><a href="/les-competences-de-la-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Les Compétences de la CCPU</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-4 "><a href="/elus-pays-communaute-commune-pays-durfe_fr.html" class="menu-topscreen-submenu-item-titre">Les élus</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-5 "><a href="/personnel-ccpu-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Le personnel</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-6 "><a href="/communes-pays-durfe-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Les 11 communes</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-16 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-16');" id="menu-topscreen-item-titre-16" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-16">Les 11 communes</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-16">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-53 "><a href="/champoly-loire-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Champoly</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-54 "><a href="/chausseterre-loire-ccpu-42_fr.html" class="menu-topscreen-submenu-item-titre">Chausseterre</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-55 "><a href="/cherier-loire-42-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Cherier</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-56 "><a href="/jure-loire-42-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Juré</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-57 "><a href="/cremeaux-loire-42-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Crémeaux</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-58 "><a href="/tuiliere-loire-42-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">La Tuilière</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-59 "><a href="/les-salles-commune-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Les Salles</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-60 "><a href="/saint-just-en-chevalet-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Saint Just en Chevalet</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-61 "><a href="/saint-marcel-d-urfe-loire-42-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Saint Marcel d'Urfé</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-62 "><a href="/saint-priest-la-prugne-ccpu-42_fr.html" class="menu-topscreen-submenu-item-titre">Saint Priest La Prugne</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-63 "><a href="/saint-romain-d-urfe-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Saint Romain d'Urfé</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-3 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-3');" id="menu-topscreen-item-titre-3" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-3">PUBLICATIONS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-3">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-69 "><a href="/newsletter-ccpu_fr.html" class="menu-topscreen-submenu-item-titre">Newsletters</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-8 "><a href="/annonces-legales-ccpu-loire_fr.html" class="menu-topscreen-submenu-item-titre">Annonces Légales</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-4 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-4');" id="menu-topscreen-item-titre-4" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-4">ENFANCE & JEUNESSE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-4">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-9 "><a href="/relais-accueil-petite-enfance-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Relais Accueil Petite Enfance (RAPE)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-10 "><a href="/alsh_fr.html" class="menu-topscreen-submenu-item-titre">Accueil de Loisirs (ALSH)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-11 "><a href="/permanence-pmi_fr.html" class="menu-topscreen-submenu-item-titre">Permanence PMI</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-5 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-5');" id="menu-topscreen-item-titre-5" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-5">LOGEMENT</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-5">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-12 "><a href="/programme-amelioration-de-l-habitat_fr.html" class="menu-topscreen-submenu-item-titre">Programme amélioration de l'habitat</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-13 "><a href="/architecte-conseil_fr.html" class="menu-topscreen-submenu-item-titre">Architecte conseil</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-14 "><a href="/plate-forme-renov-actions-42_fr.html" class="menu-topscreen-submenu-item-titre">Plateforme renov-actions 42</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-15 "><a href="/poltentiel-solaire-toitures_fr.html" class="menu-topscreen-submenu-item-titre">Potentiel solaire toitures</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-16 "><a href="/spanc--assainissement-non-collectif-_fr.html" class="menu-topscreen-submenu-item-titre">SPANC (assainissement non collectif)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-17 "><a href="/fibre-optique-departement-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Accès à la fibre optique</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-18 "><a href="/radon-risque-pays-durfe-loire_fr.html" class="menu-topscreen-submenu-item-titre">Campagne de mesure radon</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-6 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-6');" id="menu-topscreen-item-titre-6" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-6">GESTION DES DÉCHETS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-6">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-19 "><a href="/collecte-des-ordures-menageres_fr.html" class="menu-topscreen-submenu-item-titre">Collecte des ordures ménagères</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-20 "><a href="/decheterie-dechetterie-pays-urfe-saint-just-en-chevalet-42430_fr.html" class="menu-topscreen-submenu-item-titre">Déchèterie</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-21 "><a href="/compostage-pays-durfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Compostage</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-22 "><a href="/collecte-des-textiles_fr.html" class="menu-topscreen-submenu-item-titre">Collecte des textiles</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-23 "><a href="/consignes-tri-pays-durfe-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Comment trier ?</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-24 "><a href="/points-apports-tri-pays-d-urfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Les points d'apports volontaires </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-7 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-7');" id="menu-topscreen-item-titre-7" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-7">SANTÉ</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-7">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-25 "><a href="/maisons-de-sante-pays-durfe-loire_fr.html" class="menu-topscreen-submenu-item-titre">Maisons de santé</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-26 "><a href="/samead-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Samead</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-27 "><a href="/accueil-de-jour_fr.html" class="menu-topscreen-submenu-item-titre">Accueil de jour</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-74 "><a href="/marpa-du-pays-d-urfe_fr.html" class="menu-topscreen-submenu-item-titre">MARPA du Pays d'Urfé</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-9  "><a href="/relais-transport_fr.html" id="menu-topscreen-item-titre-9" class="menu-topscreen-item-titre ">SE DEPLACER</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-10 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-10');" id="menu-topscreen-item-titre-10" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-10">VIE ASSOCIATIVE, CULTURE & PATRIMOINE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-10">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-33 "><a href="/convention-terre-buissonniere-_fr.html" class="menu-topscreen-submenu-item-titre">Convention terre buissonnière </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-34 "><a href="/musicadanse-pays-durfe-loire_fr.html" class="menu-topscreen-submenu-item-titre">Musicadanse</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-36 "><a href="/renaissance-chateau-cornes-urfe-champoly_fr.html" class="menu-topscreen-submenu-item-titre">Renaissance d'Urfé</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-31 "><a href="/soutien-associatif--dossier-dde-de-subv-_fr.html" class="menu-topscreen-submenu-item-titre">Soutien associatif (dossier de subvention)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-32 "><a href="/annuaire-des-associations_fr.html" class="menu-topscreen-submenu-item-titre">Annuaire des associations</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-67 "><a target="_blank" href="http://www.tourisme-paysdurfe.com/agenda/" class="menu-topscreen-submenu-item-titre">Agenda des manifestations</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-11 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-11');" id="menu-topscreen-item-titre-11" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-11">TOURISME</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-11">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-37 "><a href="/syndicat-d-initiatives-pays-urfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Syndicat d'initiative</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-38 "><a href="/sentiers-randonnee-pays-durfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Entretien des sentiers de randonnée</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-40 "><a href="/newsletter-comcom-pays-durfe-42_fr.html" class="menu-topscreen-submenu-item-titre">Newsletter</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-39 "><a href="/roannais-tourisme-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Roannais Tourisme</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-12 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-12');" id="menu-topscreen-item-titre-12" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-12">ENVIRONNEMENT</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-12">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-41 "><a href="/syndicat-mixte-des-monts-de-la-madeleine_fr.html" class="menu-topscreen-submenu-item-titre">Syndicat mixte des Monts de la Madeleine</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-42 "><a href="/gestion-milieux-aquatiques-pays-urfe_fr.html" class="menu-topscreen-submenu-item-titre">Gestion des milieux aquatiques </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-68 "><a href="/contrat-vert-et-bleu-roannais-_fr.html" class="menu-topscreen-submenu-item-titre">Contrat Vert et Bleu Roannais </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-70 "><a href="/chenilles-ambroisie-renouee-urfe-loire-42_fr.html" class="menu-topscreen-submenu-item-titre">Espèces invasives</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-13 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-13');" id="menu-topscreen-item-titre-13" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-13">ENTREPRENDRE EN PAYS D'URFÉ</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-13">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-44 "><a href="/la-zone-d-activites_fr.html" class="menu-topscreen-submenu-item-titre">La zone d'activités</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-45 "><a href="/les-ateliers-partages_fr.html" class="menu-topscreen-submenu-item-titre">Les ateliers partagés</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-72 "><a href="/les-aides-aux-artisans-et-commercants_fr.html" class="menu-topscreen-submenu-item-titre">Les aides aux artisans et commerçants</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-14 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-14');" id="menu-topscreen-item-titre-14" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-14">LE SITE DE PROXIMITÉ À VOS CÔTÉS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-14">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-46 "><a href="/siteprox_fr.html" class="menu-topscreen-submenu-item-titre">Le Site de proximité</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-49 "><a href="/permanences-mission-locale-roannais_fr.html" class="menu-topscreen-submenu-item-titre">Permanences Mission Locale</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-71 "><a href="/covid-19---aides-aux-tpe_fr.html" class="menu-topscreen-submenu-item-titre">Covid 19 - Aides aux TPE</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-15  "><a href="/contact-comcom-pays-durfe-loire-42_fr.html" id="menu-topscreen-item-titre-15" class="menu-topscreen-item-titre ">NOUS CONTACTER</a></li>
+		</ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone">
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-1  "><a href="/comcom-pays-durfe-loire-42_fr.html" id="menu-topscreen-smartphone-item-titre-1" class="menu-topscreen-smartphone-item-titre ">ACCUEIL</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-2 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-2');" id="menu-topscreen-smartphone-item-titre-2" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-2">PRÉSENTATION</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-2">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-64 "><a href="/intercommunalite-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">L'Intercommunalité</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-2 "><a href="/communaute-commune-pays-durfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le fonctionnement de la CCPU</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-3 "><a href="/les-competences-de-la-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Compétences de la CCPU</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-4 "><a href="/elus-pays-communaute-commune-pays-durfe_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les élus</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-5 "><a href="/personnel-ccpu-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le personnel</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-6 "><a href="/communes-pays-durfe-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les 11 communes</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-16 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-16');" id="menu-topscreen-smartphone-item-titre-16" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-16">Les 11 communes</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-16">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-53 "><a href="/champoly-loire-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Champoly</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-54 "><a href="/chausseterre-loire-ccpu-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Chausseterre</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-55 "><a href="/cherier-loire-42-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Cherier</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-56 "><a href="/jure-loire-42-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Juré</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-57 "><a href="/cremeaux-loire-42-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Crémeaux</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-58 "><a href="/tuiliere-loire-42-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">La Tuilière</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-59 "><a href="/les-salles-commune-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Salles</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-60 "><a href="/saint-just-en-chevalet-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Saint Just en Chevalet</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-61 "><a href="/saint-marcel-d-urfe-loire-42-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Saint Marcel d'Urfé</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-62 "><a href="/saint-priest-la-prugne-ccpu-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Saint Priest La Prugne</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-63 "><a href="/saint-romain-d-urfe-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Saint Romain d'Urfé</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-3 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-3');" id="menu-topscreen-smartphone-item-titre-3" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-3">PUBLICATIONS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-3">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-69 "><a href="/newsletter-ccpu_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Newsletters</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-8 "><a href="/annonces-legales-ccpu-loire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Annonces Légales</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-4 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-4');" id="menu-topscreen-smartphone-item-titre-4" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-4">ENFANCE & JEUNESSE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-4">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-9 "><a href="/relais-accueil-petite-enfance-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Relais Accueil Petite Enfance (RAPE)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-10 "><a href="/alsh_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil de Loisirs (ALSH)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-11 "><a href="/permanence-pmi_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Permanence PMI</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-5 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-5');" id="menu-topscreen-smartphone-item-titre-5" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-5">LOGEMENT</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-5">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-12 "><a href="/programme-amelioration-de-l-habitat_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Programme amélioration de l'habitat</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-13 "><a href="/architecte-conseil_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Architecte conseil</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-14 "><a href="/plate-forme-renov-actions-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Plateforme renov-actions 42</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-15 "><a href="/poltentiel-solaire-toitures_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Potentiel solaire toitures</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-16 "><a href="/spanc--assainissement-non-collectif-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">SPANC (assainissement non collectif)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-17 "><a href="/fibre-optique-departement-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accès à la fibre optique</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-18 "><a href="/radon-risque-pays-durfe-loire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Campagne de mesure radon</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-6 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-6');" id="menu-topscreen-smartphone-item-titre-6" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-6">GESTION DES DÉCHETS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-6">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-19 "><a href="/collecte-des-ordures-menageres_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Collecte des ordures ménagères</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-20 "><a href="/decheterie-dechetterie-pays-urfe-saint-just-en-chevalet-42430_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Déchèterie</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-21 "><a href="/compostage-pays-durfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Compostage</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-22 "><a href="/collecte-des-textiles_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Collecte des textiles</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-23 "><a href="/consignes-tri-pays-durfe-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Comment trier ?</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-24 "><a href="/points-apports-tri-pays-d-urfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les points d'apports volontaires </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-7 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-7');" id="menu-topscreen-smartphone-item-titre-7" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-7">SANTÉ</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-7">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-25 "><a href="/maisons-de-sante-pays-durfe-loire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Maisons de santé</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-26 "><a href="/samead-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Samead</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-27 "><a href="/accueil-de-jour_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil de jour</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-74 "><a href="/marpa-du-pays-d-urfe_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">MARPA du Pays d'Urfé</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-9  "><a href="/relais-transport_fr.html" id="menu-topscreen-smartphone-item-titre-9" class="menu-topscreen-smartphone-item-titre ">SE DEPLACER</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-10 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-10');" id="menu-topscreen-smartphone-item-titre-10" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-10">VIE ASSOCIATIVE, CULTURE & PATRIMOINE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-10">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-33 "><a href="/convention-terre-buissonniere-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Convention terre buissonnière </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-34 "><a href="/musicadanse-pays-durfe-loire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Musicadanse</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-36 "><a href="/renaissance-chateau-cornes-urfe-champoly_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Renaissance d'Urfé</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-31 "><a href="/soutien-associatif--dossier-dde-de-subv-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Soutien associatif (dossier de subvention)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-32 "><a href="/annuaire-des-associations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Annuaire des associations</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-67 "><a target="_blank" href="http://www.tourisme-paysdurfe.com/agenda/" class="menu-topscreen-smartphone-submenu-item-titre">Agenda des manifestations</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-11 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-11');" id="menu-topscreen-smartphone-item-titre-11" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-11">TOURISME</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-11">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-37 "><a href="/syndicat-d-initiatives-pays-urfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Syndicat d'initiative</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-38 "><a href="/sentiers-randonnee-pays-durfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Entretien des sentiers de randonnée</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-40 "><a href="/newsletter-comcom-pays-durfe-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Newsletter</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-39 "><a href="/roannais-tourisme-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Roannais Tourisme</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-12 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-12');" id="menu-topscreen-smartphone-item-titre-12" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-12">ENVIRONNEMENT</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-12">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-41 "><a href="/syndicat-mixte-des-monts-de-la-madeleine_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Syndicat mixte des Monts de la Madeleine</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-42 "><a href="/gestion-milieux-aquatiques-pays-urfe_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Gestion des milieux aquatiques </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-68 "><a href="/contrat-vert-et-bleu-roannais-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Contrat Vert et Bleu Roannais </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-70 "><a href="/chenilles-ambroisie-renouee-urfe-loire-42_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espèces invasives</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-13 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-13');" id="menu-topscreen-smartphone-item-titre-13" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-13">ENTREPRENDRE EN PAYS D'URFÉ</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-13">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-44 "><a href="/la-zone-d-activites_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">La zone d'activités</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-45 "><a href="/les-ateliers-partages_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les ateliers partagés</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-72 "><a href="/les-aides-aux-artisans-et-commercants_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les aides aux artisans et commerçants</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-14 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-14');" id="menu-topscreen-smartphone-item-titre-14" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-14">LE SITE DE PROXIMITÉ À VOS CÔTÉS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-14">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-46 "><a href="/siteprox_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le Site de proximité</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-49 "><a href="/permanences-mission-locale-roannais_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Permanences Mission Locale</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-71 "><a href="/covid-19---aides-aux-tpe_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Covid 19 - Aides aux TPE</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-15  "><a href="/contact-comcom-pays-durfe-loire-42_fr.html" id="menu-topscreen-smartphone-item-titre-15" class="menu-topscreen-smartphone-item-titre ">NOUS CONTACTER</a></li>
+			</ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<div class="template-header">
+			<div class="template-header-content  template-contents">
+				<div class="bloc-logo"><a class="logo-essentiel" href="comcom-pays-durfe-loire-42_fr.html"><img src="/userfile/img-template-maker/logo/logo-seul.png"></a> <a href="comcom-pays-durfe-loire-42_fr.html" class="logo-btn-home"></a> <a href="/contact-comcom-pays-durfe-loire-42_fr.html" class="logo-btn-email"></a></div>
+				<div class="bouton-contact"><a href="/contact-comcom-pays-durfe-loire-42_fr.html">NOUS CONTACTER</a></div>
+				<div class="websee-megamenu-container">
+					<div class="websee-megamenu">
+						<ul class="websee-megamenu-principal">
+							<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-1">LA COMM COMM</a>
+								<ul class="websee-megamenu-sub" id="websee-megamenu-sub-1">
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/1-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-2">PRÉSENTATION</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-2">
+											<li><a class="websee-megamenu-titre-3" href="/intercommunalite-loire-42_fr.html">L'Intercommunalité</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/communaute-commune-pays-durfe-42_fr.html">Le fonctionnement de la CCPU</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/les-competences-de-la-ccpu_fr.html">Les Compétences de la CCPU</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/elus-pays-communaute-commune-pays-durfe_fr.html">Les élus</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/personnel-ccpu-loire-42_fr.html">Le personnel</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/communes-pays-durfe-loire-42_fr.html">Les 11 communes</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/2-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-3">PUBLICATIONS</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-3">
+											<li><a class="websee-megamenu-titre-3" href="/newsletter-ccpu_fr.html">Newsletters</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/annonces-legales-ccpu-loire_fr.html">Annonces Légales</a></li>
+										</ul>
+									</li>
+									<li>
+									<li>
+								</ul>
+							</li>
+							<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-2">HABITER EN PAYS D'URFÉ</a>
+								<ul class="websee-megamenu-sub" id="websee-megamenu-sub-2">
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/5-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-4">ENFANCE & JEUNESSE</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-4">
+											<li><a class="websee-megamenu-titre-3" href="/relais-accueil-petite-enfance-loire-42_fr.html">Relais Accueil Petite Enfance (RAPE)</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/alsh_fr.html">Accueil de Loisirs (ALSH)</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/permanence-pmi_fr.html">Permanence PMI</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/6-before.jpeg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-5">LOGEMENT</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-5">
+											<li><a class="websee-megamenu-titre-3" href="/programme-amelioration-de-l-habitat_fr.html">Programme amélioration de l'habitat</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/architecte-conseil_fr.html">Architecte conseil</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/plate-forme-renov-actions-42_fr.html">Plateforme renov-actions 42</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/poltentiel-solaire-toitures_fr.html">Potentiel solaire toitures</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/spanc--assainissement-non-collectif-_fr.html">SPANC (assainissement non collectif)</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/fibre-optique-departement-loire-42_fr.html">Accès à la fibre optique</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/radon-risque-pays-durfe-loire_fr.html">Campagne de mesure radon</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/7-before.jpeg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-6">GESTION DES DÉCHETS</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-6">
+											<li><a class="websee-megamenu-titre-3" href="/collecte-des-ordures-menageres_fr.html">Collecte des ordures ménagères</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/decheterie-dechetterie-pays-urfe-saint-just-en-chevalet-42430_fr.html">Déchèterie</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/compostage-pays-durfe-42_fr.html">Compostage</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/collecte-des-textiles_fr.html">Collecte des textiles</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/consignes-tri-pays-durfe-loire-42_fr.html">Comment trier ?</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/points-apports-tri-pays-d-urfe-42_fr.html">Les points d'apports volontaires </a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/8-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-7">SANTÉ</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-7">
+											<li><a class="websee-megamenu-titre-3" href="/maisons-de-sante-pays-durfe-loire_fr.html">Maisons de santé</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/samead-loire-42_fr.html">Samead</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/accueil-de-jour_fr.html">Accueil de jour</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/marpa-du-pays-d-urfe_fr.html">MARPA du Pays d'Urfé</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-3">SORTIR & VISITER</a>
+								<ul class="websee-megamenu-sub" id="websee-megamenu-sub-3">
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/9-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-9">SE DEPLACER</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-9">
+											<li><a class="websee-megamenu-titre-3" href="/relais-transport_fr.html">Relais transport</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/10-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-10">VIE ASSOCIATIVE, CULTURE & PATRIMOINE</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-10">
+											<li><a class="websee-megamenu-titre-3" href="/convention-terre-buissonniere-_fr.html">Convention terre buissonnière </a></li>
+											<li><a class="websee-megamenu-titre-3" href="/musicadanse-pays-durfe-loire_fr.html">Musicadanse</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/renaissance-chateau-cornes-urfe-champoly_fr.html">Renaissance d'Urfé</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/soutien-associatif--dossier-dde-de-subv-_fr.html">Soutien associatif (dossier de subvention)</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/annuaire-des-associations_fr.html">Annuaire des associations</a></li>
+											<li><a class="websee-megamenu-titre-3" target="_blank" href="http://www.tourisme-paysdurfe.com/agenda/">Agenda des manifestations</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/11-before.png"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-11">TOURISME</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-11">
+											<li><a class="websee-megamenu-titre-3" href="/syndicat-d-initiatives-pays-urfe-42_fr.html">Syndicat d'initiative</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/sentiers-randonnee-pays-durfe-42_fr.html">Entretien des sentiers de randonnée</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/roannais-tourisme-loire-42_fr.html">Roannais Tourisme</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/newsletter-comcom-pays-durfe-42_fr.html">Newsletter</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/12-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-12">ENVIRONNEMENT</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-12">
+											<li><a class="websee-megamenu-titre-3" href="/syndicat-mixte-des-monts-de-la-madeleine_fr.html">Syndicat mixte des Monts de la Madeleine</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/gestion-milieux-aquatiques-pays-urfe_fr.html">Gestion des milieux aquatiques </a></li>
+											<li><a class="websee-megamenu-titre-3" href="/contrat-vert-et-bleu-roannais-_fr.html">Contrat Vert et Bleu Roannais </a></li>
+											<li><a class="websee-megamenu-titre-3" href="/chenilles-ambroisie-renouee-urfe-loire-42_fr.html">Espèces invasives</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-4">TRAVAILLER & ENTREPRENDRE</a>
+								<ul class="websee-megamenu-sub" id="websee-megamenu-sub-4">
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/13-before.JPG"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-13">ENTREPRENDRE EN PAYS D'URFÉ</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-13">
+											<li><a class="websee-megamenu-titre-3" href="/la-zone-d-activites_fr.html">La zone d'activités</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/les-ateliers-partages_fr.html">Les ateliers partagés</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/les-aides-aux-artisans-et-commercants_fr.html">Les aides aux artisans et commerçants</a></li>
+										</ul>
+									</li>
+									<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/14-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-14">LE SITE DE PROXIMITÉ À VOS CÔTÉS</a>
+										<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-14">
+											<li><a class="websee-megamenu-titre-3" href="/siteprox_fr.html">Le Site de proximité</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/permanences-mission-locale-roannais_fr.html">Permanences Mission Locale</a></li>
+											<li><a class="websee-megamenu-titre-3" href="/covid-19---aides-aux-tpe_fr.html">Covid 19 - Aides aux TPE</a></li>
+										</ul>
+									</li>
+									<li>
+									<li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-animation">
+			<div class="template-animation-content">
+				<style>
+			#slider_12_container .caption-text-defaut { background-color: rgba(0, 0, 0, 0.5); }
+		    #slider_12_container .caption-text-defaut-titre {color:#ffffff ;}
+		    #slider_12_container .caption-text-defaut-texte {color:#ffffff ;}
+				</style>
+				<script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions_12 = [];
+            _CaptionTransitions_12["t-1"] = {$Duration:2500,y:0.6,$Easing:{$Top:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+            _CaptionTransitions_12["t-2"] = {$Duration:2500,y:-0.6,$Easing:{$Top:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+            _CaptionTransitions_12["t-3"] = {$Duration:2500,x:0.6,$Easing:{$Left:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+            _CaptionTransitions_12["t-4"] = {$Duration:2500,y:-0.6,$Easing:{$Top:$JssorEasing$.$EaseInOutSine},$Opacity:2};
+           
+           	_CaptionTransitions_12["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
+           		
+			var _SlideshowTransitions_12 = [
+            	{$Duration:700,$Opacity:2,$Brother:{$Duration:1000,$Opacity:2}}	
+            ];
+            		
+            var options_12 = {
+                $FillMode: 0,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 3000,                  //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 0,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                //$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                //$SlideEasing: $JssorEasing$.$EaseOutQuad,           //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                //$SlideDuration: 1000,                     			//[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                //$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                //$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                //$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                //$DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+               	 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions_12,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },           
+                   	
+                   $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions_12,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+                    		              
+                   
+	  
+	 
+	  
+                
+            };
+
+        if($("#slider_12_container").length > 0)
+            var jssor_slider_12 = new $JssorSlider$("slider_12_container", options_12);
+
+           
+            function ScaleSlider_12() {
+     	
+            	$(".caption-images-12").css("display","block");
+            	$(".caption-texts-12").css("display","block");
+     	
+            	$("#slider_12_container").css("display","none");
+				var parentwidth = $("#responsive-container-12").width();
+     	
+				$("#slider_12_container").css("display","block");
+     	
+				var max_width = 	1920;					
+				if(max_width < $(window).width()){					
+					max_width = $(window).width();					
+				}				
+						
+                if (parentwidth != undefined)
+                    jssor_slider_12.$ScaleWidth(Math.min(parentwidth, max_width));
+                else
+                    window.setTimeout(ScaleSlider_12, 30);
+            }
+        
+            //ScaleSlider_12();
+            if($("#slider_12_container").length > 0){
+            $(window).bind("load", ScaleSlider_12);
+            $(window).bind("resize", ScaleSlider_12);
+            $(window).bind("orientationchange", ScaleSlider_12);
+            //responsive code end
+            }
+        });            		
+          		
+    
+				</script>
+				<div class="responsive-container" id="responsive-container-12">
+					<div class="module_diaporama" id="slider_12_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 600px; overflow: hidden;">
+						<!-- Loading Screen -->
+						<div u="loading" style="position: absolute; top: 0px; left: 0px;z-index:9999;">
+							<div style="position: absolute; display: block;background-color:white;top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+							<div style="position: absolute; display: block; background: url(/js/jssor/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						</div>
+						<!-- Loading Screen End -->
+						<!-- Slides Container -->
+						<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 600px; overflow: hidden;">
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1584608694_Pays-dUrfe.jpg" alt="Communauté de communes du Pays d'Urfé (42)">
+								<div u="caption" t="t-1" t2="NO" style="position: absolute; top: 169px; left: 678px;width:783px;height:42px;z-index:100;max-width:733px;">
+									<div class="caption-texts caption-texts-12 caption-text-1" style="width:783px;height:42px;position: absolute; top: 0px; left: 0px;padding-left:10px;">
+										<p><span style="font-size: 35px;"><strong><span style="color: #ffffff;">DANS LE DÉPARTEMENT DE LA LOIRE</span></strong></span></p>
+									</div>
+								</div>
+								<div u="caption" t="t-2" t2="NO" style="position: absolute; top: 238px; left: 581px;width:863px;height:57px;z-index:100;max-width:813px;">
+									<div class="caption-texts caption-texts-12 caption-text-2" style="width:863px;height:57px;position: absolute; top: 0px; left: 0px;padding-left:10px;">
+										<p><span class="fond-bleu espacement-lettres" style="font-family: Oswald, sans-serif; font-size: 25px;">au coeur des Massifs des Bois Noirs et de la Madeleine</span></p>
+									</div>
+								</div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1584637971_Soiree-Turak.jpg" alt="Communauté de communes du Pays d'Urfé (42)">
+								<div u="caption" t="t-3" t2="NO" style="position: absolute; top: 168px; left: 251px;width:538px;height:42px;z-index:100;max-width:488px;">
+									<div class="caption-texts caption-texts-12 caption-text-3" style="width:538px;height:42px;position: absolute; top: 0px; left: 0px;padding-left:10px;">
+										<p><span style="font-size: 35px;"><strong><span style="color: #ffffff;">SORTIR EN PAYS D'URFÉ</span></strong></span></p>
+									</div>
+								</div>
+								<div u="caption" t="t-4" t2="NO" style="position: absolute; top: 229px; left: 145px;width:624px;height:57px;z-index:100;max-width:574px;">
+									<div class="caption-texts caption-texts-12 caption-text-4" style="width:624px;height:57px;position: absolute; top: 0px; left: 0px;padding-left:10px;">
+										<p><span class="fond-bleu espacement-lettres" style="font-family: Oswald, sans-serif; font-size: 25px;">animations variées pour tous les âges</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slides Container End-->
+					</div><a class="anchor-bottom-contenu anchor-bottom-contenu-12" href="javascript:goToContentBody();"></a></div>
+				<!-- Jssor Slider End -->
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix"></div>
+				</div>
+				<div class="wrapper-page-1 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<table style="margin-left: auto; margin-right: auto;">
+									<tbody>
+										<tr>
+											<td>
+												<script>
+		
+		    var timer_resize_bloc_15 = 0;
+		
+			$( window ).resize(function() {				
+				
+			    if(timer_resize_bloc_15 != 0){
+				    clearTimeout(timer_resize_bloc_15);
+				    timer_resize_bloc_15= 0;
+				}
+								
+				timer_resize_bloc_15= setTimeout(resize_bloc_15,1000);
+			    
+			});
+		
+			$(window).load(function(){				
+				resize_bloc_15();
+							
+				timer_resize_bloc_15= setTimeout(resize_bloc_15,1000);
+				
+				
+			});
+			
+			
+			function resize_bloc_15(){
+			   equalheightForAll(".module-bloc-15 .module-bloc-item-image");
+				equalheightForAll(".module-bloc-15 .module-bloc-item-titre");
+				equalheightForAll(".module-bloc-15 .module-bloc-item-commentaire");
+				equalheightForAll(".module-bloc-15 .module-bloc-item");
+			}
+			
+			
+			
+												</script>
+												<style>					
+			.module-bloc-15 .module-bloc-item {background-color: #FFFFFF;}		
+			.module-bloc-15 .module-bloc-item:hover {background-color: #;}				
+			.module-bloc-15 .module-bloc-item-titre {color: #000000;}
+			.module-bloc-15 .module-bloc-item:hover .module-bloc-item-titre {color: #FFFFFF;}
+			.module-bloc-15 .module-bloc-item-commentaire {color: #000000;}						
+			.module-bloc-15 .module-bloc-item:hover .module-bloc-item-commentaire {color: #FFFFFF;}		
+			.module-bloc-15 a.module-bloc-item-plus {background-color: #000000;color: #FFFFFF;}		
+			.module-bloc-15 .module-bloc-item:hover .module-bloc-item-plus {background-color: #FFFFFF;color: #000000;}		
+			
+			
+												</style>
+												<div class="module-bloc module-bloc-15">
+													<div class="module-bloc-item module-bloc-item-5" id="module-bloc-item-1"><a class="module-bloc-item-image-click" href="/communes-pays-durfe-loire-42_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/15/1.jpg" alt="Titre"></div></a>
+														<div class="module-bloc-item-titre">
+															<p>Titre</p>
+														</div>
+														<div class="module-bloc-item-commentaire">
+															<p>Sous-titre</p>
+														</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/communes-pays-durfe-loire-42_fr.html"></a></div>
+													<div class="module-bloc-item module-bloc-item-5" id="module-bloc-item-2"><a class="module-bloc-item-image-click" href="/alsh_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/15/2.jpg" alt="Titre"></div></a>
+														<div class="module-bloc-item-titre">
+															<p>Titre</p>
+														</div>
+														<div class="module-bloc-item-commentaire">
+															<p>Sous-titre</p>
+														</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/alsh_fr.html"></a></div>
+													<div class="module-bloc-item module-bloc-item-5" id="module-bloc-item-4"><a class="module-bloc-item-image-click" href="http://www.tourisme-paysdurfe.com/agenda/" target="_blank"><div class="module-bloc-item-image"><img src="/userfile/blocs/15/4.jpg" alt="Titre"></div></a>
+														<div class="module-bloc-item-titre">
+															<p>Titre</p>
+														</div>
+														<div class="module-bloc-item-commentaire">
+															<p>Sous-titre</p>
+														</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="http://www.tourisme-paysdurfe.com/agenda/" target="_blank"></a></div>
+													<div class="module-bloc-item module-bloc-item-5" id="module-bloc-item-3"><a class="module-bloc-item-image-click" href="/les-offres-d-emploi-du-territoire_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/15/3.jpg" alt="Titre"></div></a>
+														<div class="module-bloc-item-titre">
+															<p>Titre</p>
+														</div>
+														<div class="module-bloc-item-commentaire">
+															<p>Sous-titre</p>
+														</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/les-offres-d-emploi-du-territoire_fr.html"></a></div>
+													<div class="module-bloc-item module-bloc-item-5" id="module-bloc-item-5"><a class="module-bloc-item-image-click" href="/consignes-tri-pays-durfe-loire-42_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/15/5.jpg" alt="Titre"></div></a>
+														<div class="module-bloc-item-titre">
+															<p>Titre</p>
+														</div>
+														<div class="module-bloc-item-commentaire">
+															<p>Sous-titre</p>
+														</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/consignes-tri-pays-durfe-loire-42_fr.html"></a></div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+							</div>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-2">
+							<div class="wrapper-contents clearfix" id="wrapper-content-2">
+								<table class="responsive-table" style="width: 100%;" cellspacing="10" cellpadding="10">
+									<tbody>
+										<tr>
+											<td style="width: 40%; vertical-align: top; text-align: center;"><strong><span class="espacement-lettres" style="font-size: 38px;">AGENDA</span></strong>
+												<table style="margin-left: auto; margin-right: auto;">
+													<tbody>
+														<tr>
+															<td></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td style="width: 60%; vertical-align: top; text-align: center;">
+												<p><span class="hauteur-ligne"><span class="espacement-lettres"><strong><span style="font-size: 48px;">ACTUALITÉS<br></span></strong></span><span class="espacement-lettres" style="font-family: Oswald, sans-serif; color: #5aac96;"><span style="font-size: 38px;">de la</span> <strong><span style="font-size: 40px;">COM'COM</span></strong></span></span><br>
+													<style>
+@media (min-width: 1480px) {
+  #contrainer-slick-17 .MS-content .item {
+    width: 98%;
+  }
+}
+
+@media (max-width: 1480px) {
+    #contrainer-slick-17 .MS-content .item {
+    width: 98%;
+  }
+}
+@media (max-width: 600px) {
+    #contrainer-slick-17 .MS-content .item {
+    width: 98%;
+  }
+}
+                
+													</style>
+												</p>
+												<div class="contrainer-slick-parent" id="contrainer-slick-parent-7058289FCF354FEAA74F2EAD2EC16D4C">
+													<script type="text/javascript" src="/js/multislider/multislider.js"></script>
+													<div class="contrainer-slick articles-slick" id="contrainer-slick-17">
+														<div class="MS-content">
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">La documentation touristique directement sur vos smartphones et tablettes</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_37_1_la-documentation-touristique-directement-sur-vos-smartphones-et-tablettes-_fr.html"><div class="un-article-slick-image" alt="La documentation touristique directement sur vos smartphones et tablettes " style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1591963436-QR-code-SI.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_37_1_la-documentation-touristique-directement-sur-vos-smartphones-et-tablettes-_fr.html"><div class="un-article-slick-suite"></div></a></div>
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">Chantier de bénévoles au château d’Urfé : recherche de volontaires locaux !</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_36_1_chantier-de-benevoles-au-chateau-d---urfe---recherche-de-volontaires-locaux--_fr.html"><div class="un-article-slick-image" alt="Chantier de bénévoles au château d’Urfé : recherche de volontaires locaux !" style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1591360406-Cornes-durfe.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_36_1_chantier-de-benevoles-au-chateau-d---urfe---recherche-de-volontaires-locaux--_fr.html"><div class="un-article-slick-suite"></div></a></div>
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">Une page Facebook pour la CCPU</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_31_1_une-page-facebook-pour-la-ccpu_fr.html"><div class="un-article-slick-image" alt="Une page Facebook pour la CCPU" style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1590395331-Page-facebook.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_31_1_une-page-facebook-pour-la-ccpu_fr.html"><div class="un-article-slick-suite"></div></a></div>
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">Retrouvez les lettres d'informations de la CCPU</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_2_1_retrouvez-les-lettres-d-informations-de-la-ccpu-_fr.html"><div class="un-article-slick-image" alt="Retrouvez les lettres d'informations de la CCPU " style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1584624236-csm_COVID-19_420x280px_30_c74e8f32a8.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_2_1_retrouvez-les-lettres-d-informations-de-la-ccpu-_fr.html"><div class="un-article-slick-suite"></div></a></div>
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">Covid-19 : consultez les aides aux TPE</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_25_1_covid-19---consultez-les-aides-aux-tpe_fr.html"><div class="un-article-slick-image" alt="Covid-19 : consultez les aides aux TPE" style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1589210167-office-1209640_1920.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_25_1_covid-19---consultez-les-aides-aux-tpe_fr.html"><div class="un-article-slick-suite"></div></a></div>
+															<div class="item articles-slick-1 clearfix">
+																<div class="un-article-slick-titre">La déchèterie est réouverte depuis le 11 mai</div>
+																<div class="un-article-slick-publication"></div><a class="fancybox-article clearfix" href="article_popup_24_1_la-decheterie-est-reouverte-depuis-le-11-mai_fr.html"><div class="un-article-slick-image" alt="La déchèterie est réouverte depuis le 11 mai" style="background:url(https://www.ccpu.fr/userfile/img-actu/xl/1590395576-reouverture-dech-18-mai-sans-huile-et-pneus.jpg) center center no-repeat;"></div></a>
+																<div class="un-article-slick-texte"></div><a class="fancybox-article clearfix" href="article_popup_24_1_la-decheterie-est-reouverte-depuis-le-11-mai_fr.html"><div class="un-article-slick-suite"></div></a></div>
+														</div>
+														<div class="MS-controls"><button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button> <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div>
+													</div>
+												</div>
+												<script type="text/javascript">
+			    
+			    function resize_7058289FCF354FEAA74F2EAD2EC16D4C(){
+                $("#contrainer-slick-17").css("display","none");	
+				var parentwidth = $("#contrainer-slick-parent-7058289FCF354FEAA74F2EAD2EC16D4C").width();
+				$("#contrainer-slick-17").css("display","block");	
+					
+				$("#contrainer-slick-17").css("max-width",parentwidth+"px");
+            }
+            
+           $( document ).ready(function() {
+               resize_7058289FCF354FEAA74F2EAD2EC16D4C();
+            });
+            
+			$(window).load(function(){
+			    $("#contrainer-slick-17").multislider({
+                    duration: 750,
+                    interval: 3000
+                });
+			});
+			
+			$(window).resize(function(){
+			   resize_7058289FCF354FEAA74F2EAD2EC16D4C();
+			 });
+			
+			
+												</script>
+												<p></p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+							</div>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-3">
+							<div class="wrapper-contents clearfix" id="wrapper-content-3">
+								<p></p>
+								<p style="text-align: right;"><a href="/syndicat-d-initiatives-pays-urfe-42_fr.html"><img src="../../resolution/haute/images/Et%20si%20on%20visitait%201.png" class="element-80"></a></p>
+								<p style="text-align: left;"></p>
+								<p style="text-align: left;"></p>
+							</div>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-4">
+							<div class="wrapper-contents clearfix" id="wrapper-content-4">
+								<p>
+									<script>
+		
+		    var timer_resize_bloc_18 = 0;
+		
+			$( window ).resize(function() {				
+				
+			    if(timer_resize_bloc_18 != 0){
+				    clearTimeout(timer_resize_bloc_18);
+				    timer_resize_bloc_18= 0;
+				}
+								
+				timer_resize_bloc_18= setTimeout(resize_bloc_18,1000);
+			    
+			});
+		
+			$(window).load(function(){				
+				resize_bloc_18();
+							
+				timer_resize_bloc_18= setTimeout(resize_bloc_18,1000);
+				
+				
+			});
+			
+			
+			function resize_bloc_18(){
+			   equalheightForAll(".module-bloc-18 .module-bloc-item-image");
+				equalheightForAll(".module-bloc-18 .module-bloc-item-titre");
+				equalheightForAll(".module-bloc-18 .module-bloc-item-commentaire");
+				equalheightForAll(".module-bloc-18 .module-bloc-item");
+			}
+			
+			
+			
+									</script>
+									<style>					
+			.module-bloc-18 .module-bloc-item {background-color: #FFFFFF;}		
+			.module-bloc-18 .module-bloc-item:hover {background-color: #;}				
+			.module-bloc-18 .module-bloc-item-titre {color: #000000;}
+			.module-bloc-18 .module-bloc-item:hover .module-bloc-item-titre {color: #FFFFFF;}
+			.module-bloc-18 .module-bloc-item-commentaire {color: #000000;}						
+			.module-bloc-18 .module-bloc-item:hover .module-bloc-item-commentaire {color: #FFFFFF;}		
+			.module-bloc-18 a.module-bloc-item-plus {background-color: #000000;color: #FFFFFF;}		
+			.module-bloc-18 .module-bloc-item:hover .module-bloc-item-plus {background-color: #FFFFFF;color: #000000;}		
+			
+			
+									</style>
+								</p>
+								<div class="module-bloc module-bloc-18">
+									<div class="module-bloc-item module-bloc-item-3" id="module-bloc-item-6"><a class="module-bloc-item-image-click" href="/maisons-de-sante-pays-durfe-loire_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/18/6.jpg" alt="Titre"></div></a>
+										<div class="module-bloc-item-titre">
+											<p>Titre</p>
+										</div>
+										<div class="module-bloc-item-commentaire">
+											<p>Sous-titre</p>
+										</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/maisons-de-sante-pays-durfe-loire_fr.html"></a></div>
+									<div class="module-bloc-item module-bloc-item-3" id="module-bloc-item-7"><a class="module-bloc-item-image-click" href="/les-offres-d-emploi-du-territoire_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/18/7.jpg" alt="Titre"></div></a>
+										<div class="module-bloc-item-titre">
+											<p>Titre</p>
+										</div>
+										<div class="module-bloc-item-commentaire">
+											<p>Sous-titre</p>
+										</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/les-offres-d-emploi-du-territoire_fr.html"></a></div>
+									<div class="module-bloc-item module-bloc-item-3" id="module-bloc-item-8"><a class="module-bloc-item-image-click" href="/decheterie-dechetterie-pays-urfe-saint-just-en-chevalet-42430_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/18/8.jpg" alt="Titre"></div></a>
+										<div class="module-bloc-item-titre">
+											<p>Titre</p>
+										</div>
+										<div class="module-bloc-item-commentaire">
+											<p>Sous-titre</p>
+										</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/decheterie-dechetterie-pays-urfe-saint-just-en-chevalet-42430_fr.html"></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-footer">
+			<div class="template-footer-content  template-contents">
+				<div class="footer-template">
+					<table style="margin-left: auto; margin-right: auto;">
+						<tbody>
+							<tr>
+								<td><span><div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div><script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, 'Communauté de communes du Pays d\'Urfé (42)', 'Située dans le département de la Loire (42), au cœur des Massifs des Bois Noirs et de la Madeleine, la Communauté de Communes du Pays d’Urfé est un Etablissement Public de Coopération Intercommunale (EPCI)', '//www.ccpu.fr/userfile/img-og/logo-seul.png');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, 'Communauté de communes du Pays d\'Urfé (42)');
+			}
+						
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, 'Située dans le département de la Loire (42), au cœur des Massifs des Bois Noirs et de la Madeleine, la Communauté de Communes du Pays d’Urfé est un Etablissement Public de Coopération Intercommunale (EPCI)', '//www.ccpu.fr/userfile/img-og/logo-seul.png');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, 'Communauté de communes du Pays d\'Urfé (42)', 'Située dans le département de la Loire (42), au cœur des Massifs des Bois Noirs et de la Madeleine, la Communauté de Communes du Pays d’Urfé est un Etablissement Public de Coopération Intercommunale (EPCI)');
+			}
+			</script> </span></td>
+							</tr>
+						</tbody>
+					</table>
+					<p></p>
+					<table class="responsive-table" style="width: 100%;" cellspacing="10" cellpadding="10">
+						<tbody>
+							<tr>
+								<td style="width: 30%; vertical-align: middle;"><img src="../../userfile/images/logo-pp.png" class="element-80" style="display: block; margin-left: auto; margin-right: auto;"></td>
+								<td style="width: 70%; vertical-align: top;" class="bordure-gauche">
+									<table class="responsive-table" style="width: 100%;" cellpadding="10" cellspacing="10">
+										<tbody>
+											<tr>
+												<td style="width: 60%; text-align: justify; vertical-align: top;">
+													<p style="padding-left: 30px;"><span style="color: #004d61;"><strong><span style="font-size: 20px;">Communauté <span class="hauteur-ligne">de Communes</span></span> <br></strong></span><span class="hauteur-ligne" style="color: #004d61;"><strong><span style="font-size: 30px;">du Pays d’Urfé</span> </strong></span><br><span style="color: #004d61;"><strong>40, place du Cèdre</strong></span><br><span style="color: #004d61;"><strong> 42430 SAINT JUST EN CHEVALET</strong></span></p>
+													<p style="padding-left: 30px;"><span style="color: #4e6e7a;"><strong><span class="espacement-lettres" style="font-size: 20px;">OUVERT DU LUNDI AU VENDREDI</span><br><span class="espacement-lettres" style="font-size: 20px;">8h30-12h00 | 13h30 - 17h30</span></strong></span></p>
+												</td>
+												<td style="width: 40%; text-align: left; vertical-align: middle;">
+													<p><span class="espacement-lettres telephone-pp" style="color: #5aac96;"><strong><span style="font-size: 24px;">04 77 65 12 24</span></strong></span></p>
+													<p><strong><span class="email-pp" style="color: #cf8c2f; font-size: 20px;"><a href="/contact-comcom-pays-durfe-loire-42_fr.html"><span style="color: #cf8c2f;">Nous envoyer un email</span></a></span></strong></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p></p>
+					<ul class="menu-pied-de-page">
+						<li class="menu-pied-de-page-item  "><a href="/mentions-legales_fr.html" id="menu-pied-de-page-item-titre-0" class="menu-pied-de-page-item-titre ">Mentions Légales</a></li>
+					</ul>
+				</div><img src="/template/points.png" class="points-footer"></div>
+		</div>
+		<div class="copyright"><a href="websee_en_savoir_plus_sur_la_creation_de_site_internet.html">Création de site Web administrable et hébergement Internet par Net15</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script type="text/javascript">
+									
+					(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+					  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					  })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+					
+					  ga("create", "UA-20820806-1", "ccpu.fr");
+					  ga("send", "pageview");
+									
+				
+		</script>
+		<script type="text/javascript" src="/js/jssor/jssor.js"></script>
+		<script type="text/javascript" src="/js/jssor/jssor.slider.js"></script>
+		<script src="/css/global/websee-maximenu.js" type="text/javascript"></script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594041985"></script>
+		<script src="/js/responsive.min.js?1594041985"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
