@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title>Communauté de Communes Sumène Artense</title>
+		<meta name="description" content="Site de la communauté de communes Sumène Artense dans le Cantal (Auvergne) : 16 communes et plus de 8500 habitants sur le teritoire">
+		<meta property="og:site_name" content="www.sumene-artense.com">
+		<meta property="og:title" content="Communauté de Communes Sumène Artense">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Site de la communauté de communes Sumène Artense dans le Cantal (Auvergne) : 16 communes et plus de 8500 habitants sur le teritoire">
+		<meta property="og:url" content="//www.sumene-artense.com/comptes-rendus-du-conseil-communautaire_fr.html">
+		<meta property="og:image" content="//www.sumene-artense.com/userfile/img-og/logo-2017-2.png">
+		<link rel="image_src" href="//www.sumene-artense.com/userfile/img-og/logo-2017-2.png">
+		<link href="https://fonts.googleapis.com/css?family=Neucha%7CNews+Cycle" rel="stylesheet" type="text/css">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/sa-fav.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/sa-fav.png">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-13").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-13").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-13 ul").css("display","block");		
+		$(".menu-principal-vertical-item-13").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-62").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/template/simplo/global.css" rel="stylesheet">
+		<link type="text/css" href="/css/global/animate_viewport.css" rel="stylesheet">
+		<link type="text/css" href="/js/cdtop/cdtop.css" rel="stylesheet">
+		<style>
+.hidden{     opacity:0;}.visible{     opacity:1;}
+		</style>
+		<script src="/js/jquery.viewportchecker.js"></script>
+		<script src="/js/modernizr.js"></script>
+		<script>
+var temp = $(".template-header").height();
+$(".template-header").height(temp);
+$(document).ready(function() {
+
+$("#menu-principal-horizontal-submenu-2").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">La Communauté
+<div class="menu-gauche-image"><img src="/template/1.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+Situé au Nord du Cantal, partie intégrante de l’Auvergne et limitrophe du Limousin, le territoire Sumène Artense conjugue tradition et modernité. 
+
+
+`);
+$("#menu-principal-horizontal-submenu-2").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+$("#menu-principal-horizontal-submenu-3").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">Vie pratique
+<div class="menu-gauche-image"><img src="/template/3.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+Gestion des déchets, Assainissement et Services à la personne sur le Territoire de Sumène Artense
+
+
+`);
+$("#menu-principal-horizontal-submenu-3").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+$("#menu-principal-horizontal-submenu-4").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">Economie
+<div class="menu-gauche-image"><img src="/template/4.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+La CCSA se caractérise par une composante industrielle importante qui fait de ce territoire le second bassin industriel du département après Aurillac.
+
+
+`);
+$("#menu-principal-horizontal-submenu-4").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+$("#menu-principal-horizontal-submenu-6").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">Tourisme
+<div class="menu-gauche-image"><img src="/template/6.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+Le pays intime de Sumène Artense offre une mosaïque de paysages où se côtoient lacs, rivières, forêts et estives, royaumes des vaches Salers. 
+
+
+`);
+$("#menu-principal-horizontal-submenu-6").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+$("#menu-principal-horizontal-submenu-5").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">Culture
+<div class="menu-gauche-image"><img src="/template/5.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+Le Territoire de Sumène Artense laisse une place très importante à la Culture avec de nombreuses pratiques artistiques, festivals, saisons culturelles...
+
+
+`);
+$("#menu-principal-horizontal-submenu-5").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+$("#menu-principal-horizontal-submenu-7").prepend(`<div class="menu-gauche" id="menu-gauche-2">
+<div class="menu-gauche-content">
+<div class="menu-gauche-titre">Enfance & jeunesse
+<div class="menu-gauche-image"><img src="/template/7.jpg">
+<div class="menu-gauche-commentaire">
+<i class="fa fa-check-square-o" aria-hidden="true">
+L'Enfance et la Jeunesse, au coeur du territoire de Sumène Artense
+
+
+`);
+$("#menu-principal-horizontal-submenu-7").append(`<div class="menu-droite">
+<a href="/les-communes-sumene-artense_fr.html"><img src="/template/territoire.png" />
+`);
+
+               $('.wrapper-global-0 #wrapper-bloc-1').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInUp',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-2').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInLeft',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-3').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInRight',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-4').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInUp',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-5').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInLeft',
+                        offset: 100       });
+});
+
+$(window).load(function(){   
+
+$("a.lien-meteo").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "60%",
+			maxWidth: 270,
+			maxHeight: 300
+		});
+
+resize_submenu();
+
+});
+
+$( window ).resize(function() {
+resize_submenu();
+});
+
+function resize_submenu(){
+$(".menu-principal-horizontal-submenu").each(function(){
+   $(this).css({"display":"block",'visibility': 'hidden'});
+   var sizeMe = child_size(this);
+
+   if($(this).height() < sizeMe)
+      $(this).height(sizeMe);
+
+   $(this).css({"display":"none",'visibility': 'visible'});
+});
+}
+
+
+function child_size(submenu){
+   var menu_gauche = $(submenu).find(".menu-gauche");
+   var content = $(menu_gauche).find(".menu-gauche-content");
+   return (content.height());
+}
+		
+		</script>
+		<link type="text/css" href="/css/template/simplo/bleu.css" rel="stylesheet">
+		<link type="text/css" href="/template/css_sumene_artense.css" rel="stylesheet">
+		<link href="/css/css_0_fr.css?1580311757" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1580311757" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-62 body-groupe-13"><input type="hidden" id="token" value="56328940772eb44b40d78fdff5489dc5">
+		<ul class="websee-barre-flottante-smartphone-list clearfix">
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-2" onclick="javascript:websee_barre_flottante_show_container_from_top(2);"><span class="websee-barre-flottante-smartphone-icone-recherche"></span></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-1" onclick="javascript:websee_barre_flottante_show_container(1);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+			<li class="websee-barre-flottante-smartphone-items"><a target="_blank" href="https://fr.linkedin.com/company/communaute-de-communes-sumene-artense"><img src="/images/social/linkedin.jpg" style="width:100%;height:auto;"></a></li>
+		</ul>
+		<div class="websee-barre-flottante">
+			<ul class="websee-barre-flottante-list clearfix">
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-2" onclick="javascript:websee_barre_flottante_show_container_from_top(2);"><span class="websee-barre-flottante-icone-recherche"></span></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-1" onclick="javascript:websee_barre_flottante_show_container(1);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-5"><a target="_blank" href="https://fr.linkedin.com/company/communaute-de-communes-sumene-artense"><img src="/images/social/linkedin.jpg" style="width:100%;height:auto;"></a></li>
+			</ul>
+			<div class="websee-barre-flottante-master-container clearfix">
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-recherche" id="websee-barre-flottante-container-2">
+					<div class="recherche">
+						<form name="recherche_1594218382" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594218382.submit();" class="recherche-submit"></a></form>
+					</div>
+				</div>
+				<div class="websee-barre-flottante-containers" id="websee-barre-flottante-container-1">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-page" data-href="https://www.facebook.com/CCSumeneArtense/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu-topscreen">
+			<li class="menu-topscreen-item menu-topscreen-item-2 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-2');" id="menu-topscreen-item-titre-2" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-2">Communauté</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-2">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-2 "><a href="/territoire-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Le Territoire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-3 "><a href="/les-communes-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Les Communes</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-4 "><a href="/competences_fr.html" class="menu-topscreen-submenu-item-titre">Compétences</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-5 "><a href="/fonctionnement_fr.html" class="menu-topscreen-submenu-item-titre">Fonctionnement</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-88 "><a href="/marches-publics-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Marchés Publics</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-127 "><a href="/le-mag-de-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Le Mag de Sumène Artense</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-3 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-3');" id="menu-topscreen-item-titre-3" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-3">Vie Pratique</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-3">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-6 "><a href="/gestion-des-dechets-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Gestion des déchets</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-10 "><a href="/assainissement-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Assainissement</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-11 "><a href="/service-a-la-personne-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Services à la personne</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-4 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-4');" id="menu-topscreen-item-titre-4" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-4">Economie</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-4">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-73 "><a href="/contexte-economique_fr.html" class="menu-topscreen-submenu-item-titre">Contexte Economique</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-7 "><a href="/porteurs-de-projets-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Accueil et soutien aux Porteurs de Projets</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-9 "><a href="/zones-d-activites-intercommunales_fr.html" class="menu-topscreen-submenu-item-titre">Zones d’activités intercommunales</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-102 "><a href="/espace-entreprendre-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Espace Entreprendre</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-6 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-6');" id="menu-topscreen-item-titre-6" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-6">Tourisme / Environnement</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-6">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-19 "><a href="/sentiers-de-randonnee-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Sentiers de randonnée</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-20 "><a href="/amenagement-de-sites-remarquables-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Aménagement de sites remarquables</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-21 "><a href="/la-piste-verte-bassignac-cheyssac-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">La piste verte</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-22 "><a href="/base-nautique-de-lastioulles_fr.html" class="menu-topscreen-submenu-item-titre">Base nautique de Lastioulles</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-52 "><a href="/site-de-val-bort-les-orgues_fr.html" class="menu-topscreen-submenu-item-titre">Site de Val</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-26 "><a href="/office-de-tourisme-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Office de Tourisme</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-24 "><a href="/ens-de-la-pignole_fr.html" class="menu-topscreen-submenu-item-titre">ENS de la Pignole</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-109 "><a href="/natura2000_fr.html" class="menu-topscreen-submenu-item-titre">Natura 2000</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-118 "><a href="/gemapi_fr.html" class="menu-topscreen-submenu-item-titre">GEMAPI</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-115 "><a href="/tepcv_fr.html" class="menu-topscreen-submenu-item-titre">Le Programme Territoire à Energie Positive pour la Croissance Verte</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-5 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-5');" id="menu-topscreen-item-titre-5" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-5">Culture</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-5">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-14 "><a href="/les-saisons-culturelles-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Les Saisons Culturelles</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-15 "><a href="/residences-artistiques-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Résidences artistiques</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-16 "><a href="/pratiques-artistiques-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Pratiques artistiques</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-29 "><a href="/dor_fr.html" class="menu-topscreen-submenu-item-titre">Festival C'Mouvoir</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-30 "><a href="/piste-des-arts-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Piste des Arts</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-7 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-7');" id="menu-topscreen-item-titre-7" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-7">Enfance / Jeunesse</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-7">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-28 "><a href="/le-relais-petite-enfance-sumene-artense_fr.html" class="menu-topscreen-submenu-item-titre">Le Relais Petite Enfance</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-31 "><a href="/accueils-de-loisirs-ydes-saignes-champs_fr.html" class="menu-topscreen-submenu-item-titre">Accueils de Loisirs Sans Hébergement</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-32 "><a href="/projet-educatif-de-territoire-pedt-_fr.html" class="menu-topscreen-submenu-item-titre">Projet Educatif de Territoire (PEDT)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-33 "><a href="/cantdornews-le-cyberjournal-des-jeunes_fr.html" class="menu-topscreen-submenu-item-titre">Cantdornews : le Cyberjournal des jeunes</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-34 "><a href="/temps-d-activites-periscolaires_fr.html" class="menu-topscreen-submenu-item-titre">Temps d’Activités Périscolaires</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-35 "><a href="/animathlon-tremouille-lac-lastioulles_fr.html" class="menu-topscreen-submenu-item-titre">Animathlon</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-50 "><a href="/projet-escalade_fr.html" class="menu-topscreen-submenu-item-titre">Action Escalade</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-51 "><a href="/actualites-animations-ados_fr.html" class="menu-topscreen-submenu-item-titre">Animations Ados</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-53 "><a href="/cantal-tour-sport-lac-lastioulles_fr.html" class="menu-topscreen-submenu-item-titre">Cantal Tour Sport</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-23  "><a href="/plan-local-d-urbanisme-intercommunal-de-sumene-artense_fr.html" id="menu-topscreen-item-titre-23" class="menu-topscreen-item-titre ">PLUi</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-11  "><a href="/contact-communaute-communes-sumene-artense_fr.html" id="menu-topscreen-item-titre-11" class="menu-topscreen-item-titre ">Contact</a></li>
+		</ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone">
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-2 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-2');" id="menu-topscreen-smartphone-item-titre-2" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-2">Communauté</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-2">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-2 "><a href="/territoire-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le Territoire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-3 "><a href="/les-communes-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Communes</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-4 "><a href="/competences_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Compétences</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-5 "><a href="/fonctionnement_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Fonctionnement</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-88 "><a href="/marches-publics-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Marchés Publics</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-127 "><a href="/le-mag-de-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le Mag de Sumène Artense</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-3 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-3');" id="menu-topscreen-smartphone-item-titre-3" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-3">Vie Pratique</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-3">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-6 "><a href="/gestion-des-dechets-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Gestion des déchets</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-10 "><a href="/assainissement-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Assainissement</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-11 "><a href="/service-a-la-personne-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Services à la personne</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-4 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-4');" id="menu-topscreen-smartphone-item-titre-4" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-4">Economie</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-4">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-73 "><a href="/contexte-economique_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Contexte Economique</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-7 "><a href="/porteurs-de-projets-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil et soutien aux Porteurs de Projets</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-9 "><a href="/zones-d-activites-intercommunales_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Zones d’activités intercommunales</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-102 "><a href="/espace-entreprendre-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espace Entreprendre</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-6 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-6');" id="menu-topscreen-smartphone-item-titre-6" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-6">Tourisme / Environnement</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-6">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-19 "><a href="/sentiers-de-randonnee-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Sentiers de randonnée</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-20 "><a href="/amenagement-de-sites-remarquables-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Aménagement de sites remarquables</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-21 "><a href="/la-piste-verte-bassignac-cheyssac-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">La piste verte</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-22 "><a href="/base-nautique-de-lastioulles_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Base nautique de Lastioulles</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-52 "><a href="/site-de-val-bort-les-orgues_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Site de Val</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-26 "><a href="/office-de-tourisme-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Office de Tourisme</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-24 "><a href="/ens-de-la-pignole_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">ENS de la Pignole</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-109 "><a href="/natura2000_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Natura 2000</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-118 "><a href="/gemapi_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">GEMAPI</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-115 "><a href="/tepcv_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le Programme Territoire à Energie Positive pour la Croissance Verte</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-5 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-5');" id="menu-topscreen-smartphone-item-titre-5" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-5">Culture</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-5">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-14 "><a href="/les-saisons-culturelles-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Saisons Culturelles</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-15 "><a href="/residences-artistiques-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Résidences artistiques</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-16 "><a href="/pratiques-artistiques-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Pratiques artistiques</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-29 "><a href="/dor_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Festival C'Mouvoir</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-30 "><a href="/piste-des-arts-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Piste des Arts</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-7 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-7');" id="menu-topscreen-smartphone-item-titre-7" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-7">Enfance / Jeunesse</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-7">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-28 "><a href="/le-relais-petite-enfance-sumene-artense_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le Relais Petite Enfance</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-31 "><a href="/accueils-de-loisirs-ydes-saignes-champs_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueils de Loisirs Sans Hébergement</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-32 "><a href="/projet-educatif-de-territoire-pedt-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Projet Educatif de Territoire (PEDT)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-33 "><a href="/cantdornews-le-cyberjournal-des-jeunes_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Cantdornews : le Cyberjournal des jeunes</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-34 "><a href="/temps-d-activites-periscolaires_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Temps d’Activités Périscolaires</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-35 "><a href="/animathlon-tremouille-lac-lastioulles_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Animathlon</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-50 "><a href="/projet-escalade_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Action Escalade</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-51 "><a href="/actualites-animations-ados_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Animations Ados</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-53 "><a href="/cantal-tour-sport-lac-lastioulles_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Cantal Tour Sport</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-23  "><a href="/plan-local-d-urbanisme-intercommunal-de-sumene-artense_fr.html" id="menu-topscreen-smartphone-item-titre-23" class="menu-topscreen-smartphone-item-titre ">PLUi</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-11  "><a href="/contact-communaute-communes-sumene-artense_fr.html" id="menu-topscreen-smartphone-item-titre-11" class="menu-topscreen-smartphone-item-titre ">Contact</a></li>
+			</ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<div class="template-header-top clearfix">
+			<div class="bloc-logo-small"><img src="/template/logo-980.jpg"></div>
+			<div class="entete-meteo">
+				<div class="meteo-light"><i title="Ensoleillé" class="wi wi-day-sunny"></i>Champs- Marchal, Mercredi 08 Juillet 2020, 26 °C, Ensoleillé</div><a class="plus-meteo lien-meteo" href="/meteo-sumene-artense_fr.html"><img src="/template/icone-meteo.png" width="22" height="21"></a></div>
+			<div class="entete">
+				<div class="header-text">16 Communes et + de 8500 habitants sur le territoire...</div>
+			</div>
+		</div>
+		<div class="template-header">
+			<div class="bloc-logo-full"><a class="logo-essentiel" href="communaute-communes-sumene-artense_fr.html"><img src="/userfile/img-template-maker/logo/logo-2017-2.png"></a></div>
+			<div class="template-header-content  template-contents">
+				<ul class="menu-principal-horizontal">
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-2 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-2');" id="menu-principal-horizontal-item-titre-2" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-2">Communauté</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-2">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-2 "><a href="/territoire-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le Territoire</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-3 "><a href="/les-communes-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les Communes</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-4 "><a href="/competences_fr.html" class="menu-principal-horizontal-submenu-item-titre">Compétences</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-5 "><a href="/fonctionnement_fr.html" class="menu-principal-horizontal-submenu-item-titre">Fonctionnement</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-88 "><a href="/marches-publics-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Marchés Publics</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-127 "><a href="/le-mag-de-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le Mag de Sumène Artense</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-3 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-3');" id="menu-principal-horizontal-item-titre-3" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-3">Vie Pratique</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-3">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-6 "><a href="/gestion-des-dechets-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Gestion des déchets</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-10 "><a href="/assainissement-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Assainissement</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-11 "><a href="/service-a-la-personne-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Services à la personne</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-4 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-4');" id="menu-principal-horizontal-item-titre-4" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-4">Economie</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-4">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-73 "><a href="/contexte-economique_fr.html" class="menu-principal-horizontal-submenu-item-titre">Contexte Economique</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-7 "><a href="/porteurs-de-projets-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accueil et soutien aux Porteurs de Projets</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-9 "><a href="/zones-d-activites-intercommunales_fr.html" class="menu-principal-horizontal-submenu-item-titre">Zones d’activités intercommunales</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-102 "><a href="/espace-entreprendre-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Espace Entreprendre</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-6 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-6');" id="menu-principal-horizontal-item-titre-6" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-6">Tourisme / Environnement</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-6">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-19 "><a href="/sentiers-de-randonnee-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Sentiers de randonnée</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-20 "><a href="/amenagement-de-sites-remarquables-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Aménagement de sites remarquables</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-21 "><a href="/la-piste-verte-bassignac-cheyssac-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">La piste verte</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-22 "><a href="/base-nautique-de-lastioulles_fr.html" class="menu-principal-horizontal-submenu-item-titre">Base nautique de Lastioulles</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-52 "><a href="/site-de-val-bort-les-orgues_fr.html" class="menu-principal-horizontal-submenu-item-titre">Site de Val</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-26 "><a href="/office-de-tourisme-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Office de Tourisme</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-24 "><a href="/ens-de-la-pignole_fr.html" class="menu-principal-horizontal-submenu-item-titre">ENS de la Pignole</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-109 "><a href="/natura2000_fr.html" class="menu-principal-horizontal-submenu-item-titre">Natura 2000</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-118 "><a href="/gemapi_fr.html" class="menu-principal-horizontal-submenu-item-titre">GEMAPI</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-115 "><a href="/tepcv_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le Programme Territoire à Energie Positive pour la Croissance Verte</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-5 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-5');" id="menu-principal-horizontal-item-titre-5" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-5">Culture</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-5">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-14 "><a href="/les-saisons-culturelles-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les Saisons Culturelles</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-15 "><a href="/residences-artistiques-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Résidences artistiques</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-16 "><a href="/pratiques-artistiques-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Pratiques artistiques</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-29 "><a href="/dor_fr.html" class="menu-principal-horizontal-submenu-item-titre">Festival C'Mouvoir</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-30 "><a href="/piste-des-arts-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Piste des Arts</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-7 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-7');" id="menu-principal-horizontal-item-titre-7" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-7">Enfance / Jeunesse</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-7">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-28 "><a href="/le-relais-petite-enfance-sumene-artense_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le Relais Petite Enfance</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-31 "><a href="/accueils-de-loisirs-ydes-saignes-champs_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accueils de Loisirs Sans Hébergement</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-32 "><a href="/projet-educatif-de-territoire-pedt-_fr.html" class="menu-principal-horizontal-submenu-item-titre">Projet Educatif de Territoire (PEDT)</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-33 "><a href="/cantdornews-le-cyberjournal-des-jeunes_fr.html" class="menu-principal-horizontal-submenu-item-titre">Cantdornews : le Cyberjournal des jeunes</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-34 "><a href="/temps-d-activites-periscolaires_fr.html" class="menu-principal-horizontal-submenu-item-titre">Temps d’Activités Périscolaires</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-35 "><a href="/animathlon-tremouille-lac-lastioulles_fr.html" class="menu-principal-horizontal-submenu-item-titre">Animathlon</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-50 "><a href="/projet-escalade_fr.html" class="menu-principal-horizontal-submenu-item-titre">Action Escalade</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-51 "><a href="/actualites-animations-ados_fr.html" class="menu-principal-horizontal-submenu-item-titre">Animations Ados</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-53 "><a href="/cantal-tour-sport-lac-lastioulles_fr.html" class="menu-principal-horizontal-submenu-item-titre">Cantal Tour Sport</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-23  "><a href="/plan-local-d-urbanisme-intercommunal-de-sumene-artense_fr.html" id="menu-principal-horizontal-item-titre-23" class="menu-principal-horizontal-item-titre ">PLUi</a></li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-11  "><a href="/contact-communaute-communes-sumene-artense_fr.html" id="menu-principal-horizontal-item-titre-11" class="menu-principal-horizontal-item-titre ">Contact</a></li>
+				</ul>
+				<div class="menu-principal-smartphone-menu"><a class="menu-principal-smartphone-menu-dropdown">Menu</a>
+					<ul class="menu-principal-smartphone">
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-2 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-2');" id="menu-principal-smartphone-item-titre-2" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-2">Communauté</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-2">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-2 "><a href="/territoire-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le Territoire</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-3 "><a href="/les-communes-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les Communes</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-4 "><a href="/competences_fr.html" class="menu-principal-smartphone-submenu-item-titre">Compétences</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-5 "><a href="/fonctionnement_fr.html" class="menu-principal-smartphone-submenu-item-titre">Fonctionnement</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-88 "><a href="/marches-publics-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Marchés Publics</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-127 "><a href="/le-mag-de-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le Mag de Sumène Artense</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-3 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-3');" id="menu-principal-smartphone-item-titre-3" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-3">Vie Pratique</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-3">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-6 "><a href="/gestion-des-dechets-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Gestion des déchets</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-10 "><a href="/assainissement-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Assainissement</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-11 "><a href="/service-a-la-personne-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Services à la personne</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-4 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-4');" id="menu-principal-smartphone-item-titre-4" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-4">Economie</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-4">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-73 "><a href="/contexte-economique_fr.html" class="menu-principal-smartphone-submenu-item-titre">Contexte Economique</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-7 "><a href="/porteurs-de-projets-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accueil et soutien aux Porteurs de Projets</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-9 "><a href="/zones-d-activites-intercommunales_fr.html" class="menu-principal-smartphone-submenu-item-titre">Zones d’activités intercommunales</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-102 "><a href="/espace-entreprendre-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Espace Entreprendre</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-6 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-6');" id="menu-principal-smartphone-item-titre-6" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-6">Tourisme / Environnement</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-6">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-19 "><a href="/sentiers-de-randonnee-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Sentiers de randonnée</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-20 "><a href="/amenagement-de-sites-remarquables-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Aménagement de sites remarquables</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-21 "><a href="/la-piste-verte-bassignac-cheyssac-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">La piste verte</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-22 "><a href="/base-nautique-de-lastioulles_fr.html" class="menu-principal-smartphone-submenu-item-titre">Base nautique de Lastioulles</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-52 "><a href="/site-de-val-bort-les-orgues_fr.html" class="menu-principal-smartphone-submenu-item-titre">Site de Val</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-26 "><a href="/office-de-tourisme-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Office de Tourisme</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-24 "><a href="/ens-de-la-pignole_fr.html" class="menu-principal-smartphone-submenu-item-titre">ENS de la Pignole</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-109 "><a href="/natura2000_fr.html" class="menu-principal-smartphone-submenu-item-titre">Natura 2000</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-118 "><a href="/gemapi_fr.html" class="menu-principal-smartphone-submenu-item-titre">GEMAPI</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-115 "><a href="/tepcv_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le Programme Territoire à Energie Positive pour la Croissance Verte</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-5 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-5');" id="menu-principal-smartphone-item-titre-5" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-5">Culture</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-5">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-14 "><a href="/les-saisons-culturelles-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les Saisons Culturelles</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-15 "><a href="/residences-artistiques-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Résidences artistiques</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-16 "><a href="/pratiques-artistiques-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Pratiques artistiques</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-29 "><a href="/dor_fr.html" class="menu-principal-smartphone-submenu-item-titre">Festival C'Mouvoir</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-30 "><a href="/piste-des-arts-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Piste des Arts</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-7 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-7');" id="menu-principal-smartphone-item-titre-7" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-7">Enfance / Jeunesse</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-7">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-28 "><a href="/le-relais-petite-enfance-sumene-artense_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le Relais Petite Enfance</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-31 "><a href="/accueils-de-loisirs-ydes-saignes-champs_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accueils de Loisirs Sans Hébergement</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-32 "><a href="/projet-educatif-de-territoire-pedt-_fr.html" class="menu-principal-smartphone-submenu-item-titre">Projet Educatif de Territoire (PEDT)</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-33 "><a href="/cantdornews-le-cyberjournal-des-jeunes_fr.html" class="menu-principal-smartphone-submenu-item-titre">Cantdornews : le Cyberjournal des jeunes</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-34 "><a href="/temps-d-activites-periscolaires_fr.html" class="menu-principal-smartphone-submenu-item-titre">Temps d’Activités Périscolaires</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-35 "><a href="/animathlon-tremouille-lac-lastioulles_fr.html" class="menu-principal-smartphone-submenu-item-titre">Animathlon</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-50 "><a href="/projet-escalade_fr.html" class="menu-principal-smartphone-submenu-item-titre">Action Escalade</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-51 "><a href="/actualites-animations-ados_fr.html" class="menu-principal-smartphone-submenu-item-titre">Animations Ados</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-53 "><a href="/cantal-tour-sport-lac-lastioulles_fr.html" class="menu-principal-smartphone-submenu-item-titre">Cantal Tour Sport</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-23  "><a href="/plan-local-d-urbanisme-intercommunal-de-sumene-artense_fr.html" id="menu-principal-smartphone-item-titre-23" class="menu-principal-smartphone-item-titre ">PLUi</a></li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-11  "><a href="/contact-communaute-communes-sumene-artense_fr.html" id="menu-principal-smartphone-item-titre-11" class="menu-principal-smartphone-item-titre ">Contact</a></li>
+					</ul>
+				</div>
+				<script>
+				var menu_ul_smartphone = $(".menu-principal-smartphone-submenu"),
+       				 menu_a_smartphone  = $(".menu-principal-smartphone-item-with-sub a");
+				
+				menu_ul_smartphone.hide();
+				
+				$(".menu-principal-smartphone").hide();
+			
+				menu_a_smartphone.click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+						
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+				$(".menu-principal-smartphone-menu-dropdown").click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+				</script>
+			</div>
+		</div>
+		<div class="template-animation">
+			<div class="template-animation-content">
+				<div class="subst-bandeau"><img src="/resolution/haute/background/62_fr.jpg" alt="Communauté de Communes Sumène Artense"></div>
+			</div>
+			<div class="menu-animation">
+				<script>
+			myFontSize = 100;
+		
+			function zoomContenuPlus(){
+				
+				if(myFontSize < 200){
+					myFontSize = myFontSize+10;
+					appliqueZoom();
+				}
+			}
+			
+			function zoomContenuMoins(){
+			
+				if(myFontSize > 100){
+					myFontSize = myFontSize-10;
+					appliqueZoom();
+				}
+			}
+			
+			function appliqueZoom(){
+				$(".rendu-contenu").css("font-size",myFontSize+"%");
+				$(".article-vignette-resume").css("font-size",myFontSize+"%");
+				$(".article-vignette-titre").css("font-size",myFontSize+"%");
+			}
+			
+		
+				</script>
+				<div class="zoom-contenu">
+					<div class="zoom-contenu-select zoom-contenu-plus" onclick="javascript:zoomContenuPlus();"></div>
+					<div class="zoom-contenu-select zoom-contenu-moins" onclick="javascript:zoomContenuMoins();"></div>
+				</div>
+				<div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:googlePlusSharePage();"><span class="socicon socicon-google"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div>
+				<script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, 'Communauté de Communes Sumène Artense', 'Site de la communauté de communes Sumène Artense dans le Cantal (Auvergne) : 16 communes et plus de 8500 habitants sur le teritoire', '//www.sumene-artense.com/userfile/img-og/logo-2017-2.png');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, 'Communauté de Communes Sumène Artense');
+			}
+			
+			function googlePlusSharePage(){
+				googlePlusShare(window.location.href);
+			}
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, 'Site de la communauté de communes Sumène Artense dans le Cantal (Auvergne) : 16 communes et plus de 8500 habitants sur le teritoire', '//www.sumene-artense.com/userfile/img-og/logo-2017-2.png');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, 'Communauté de Communes Sumène Artense', 'Site de la communauté de communes Sumène Artense dans le Cantal (Auvergne) : 16 communes et plus de 8500 habitants sur le teritoire');
+			}
+			
+				</script>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix">
+						<div class="nom-page nom-page-62 nom-page-groupe-13">
+							<div class="nom-page-text">Comptes rendus du Conseil communautaire</div>
+						</div>
+						<div class="recherche">
+							<form name="recherche_1594218382" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594218382.submit();" class="recherche-submit"></a></form>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-page-62 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<p></p>
+								<div id="telechargement-34" class="telechargements">
+									<div class="telechargement-groupe" id="telechargement-groupe-19">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-19">Année 2020</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-19">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1582802494-Compte-rendu-du-20-02-2020.pdf" target="_blank" title="Telecharger Compte rendu du 20.02.2020"><b>Compte rendu du 20.02.2020</b> (357Ko) </a></li>
+										</ul>
+									</div>
+									<div class="telechargement-groupe" id="telechargement-groupe-12">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-12">Année 2019</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-12">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576234196-compte-rendu-du-05.12.2019.pdf" target="_blank" title="Telecharger Compte Rendu du 05.12.2019"><b>Compte Rendu du 05.12.2019</b> (433Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576234163-Compte-rendu-du-19-09-2019.pdf" target="_blank" title="Telecharger Compte Rendu du 19.09.2019"><b>Compte Rendu du 19.09.2019</b> (373Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1563459599-compte-rendu.pdf" target="_blank" title="Telecharger Compte Rendu du 13.06.2019"><b>Compte Rendu du 13.06.2019</b> (239Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1556781016-Compte-Rendu-du-11.04.2019.pdf" target="_blank" title="Telecharger Compte Rendu du 11.04.2019"><b>Compte Rendu du 11.04.2019</b> (406Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1552302336-Compte-rendu-du-21-02-2019.pdf" target="_blank" title="Telecharger Compte rendu du 21.02.2019"><b>Compte rendu du 21.02.2019</b> (561Ko) </a></li>
+										</ul>
+									</div>
+									<div class="telechargement-groupe" id="telechargement-groupe-5">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-5">Année 2018</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-5">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1545904769-Compte-Rendu-Conseil-Communautaire-du-11-12-2018.pdf" target="_blank" title="Telecharger Compte rendu du 11.12.2018"><b>Compte rendu du 11.12.2018</b> (323Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1540193409-Compte-Rendu-Conseil-Communautaire-du-04-10-2018.pdf" target="_blank" title="Telecharger Compte-rendu du 04.10.2018"><b>Compte-rendu du 04.10.2018</b> (410Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1533047027-COMPTE-RENDU-DU-27.06.2018.pdf" target="_blank" title="Telecharger Compte-rendu du 27.06.2018"><b>Compte-rendu du 27.06.2018</b> (123Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1530887688-COMPTE-RENDU-DU-CC-DU-5-AVRIL-2018-1.pdf" target="_blank" title="Telecharger Compte-rendu du 05.04.2018"><b>Compte-rendu du 05.04.2018</b> (994Ko) </a></li>
+										</ul>
+									</div>
+									<div class="telechargement-groupe" id="telechargement-groupe-1">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-1">Année 2017</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-1">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1519381350-5-COMPTE-RENDU-DU-CONSEIL-COMMUNAUTAIRE-DU-5-DECEMBRE-2017.pdf" target="_blank" title="Telecharger Compte-rendu du 05.12.2017"><b>Compte-rendu du 05.12.2017</b> (15089Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1510736544-4-COMPTE-RENDU-DU-CONSEIL-COMMUNAUTAIRE-DU-26-SEPTEMBRE-2017.pdf" target="_blank" title="Telecharger Compte-rendu du 26.09.2017"><b>Compte-rendu du 26.09.2017</b> (160Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401563-3-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-15-JUIN-2017.pdf" target="_blank" title="Telecharger Compte-rendu du 15.06.2017"><b>Compte-rendu du 15.06.2017</b> (156Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401430-1-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-11-AVRIL-2017.pdf" target="_blank" title="Telecharger Compte-rendu du 11.04.2017"><b>Compte-rendu du 11.04.2017</b> (210Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401541-2-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-14-FEVRIER-2017.pdf" target="_blank" title="Telecharger Compte-rendu du 14.02.2017"><b>Compte-rendu du 14.02.2017</b> (273Ko) </a></li>
+										</ul>
+									</div>
+									<div class="telechargement-groupe" id="telechargement-groupe-2">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-2">Année 2016</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-2">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401697-7-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-8-DECEMBRE-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 08.12.16"><b>Compte-rendu du 08.12.16</b> (712Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401682-6-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-8-NOVEMBRE-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 08.11.16"><b>Compte-rendu du 08.11.16</b> (154Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401663-5-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-8-SEPTEMBRE-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 08.09.16"><b>Compte-rendu du 08.09.16</b> (74Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401633-4-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-28-JUILLET-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 28.07.16"><b>Compte-rendu du 28.07.16</b> (59Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401616-3-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-22-JUIN-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 22.06.16"><b>Compte-rendu du 22.06.16</b> (135Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401480-2-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-11-AVRIL-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 11.04.2016"><b>Compte-rendu du 11.04.2016</b> (162Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1505401450-1-COMPTE-RENDU-CONSEIL-COMMUNAUTAIRE-DU-17-FEVRIER-2016.pdf" target="_blank" title="Telecharger Compte-rendu du 17.02.2016"><b>Compte-rendu du 17.02.2016</b> (127Ko) </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-footer">
+			<div class="template-footer-content  template-contents">
+				<div class="footer-template">
+					<p></p>
+					<p></p>
+					<table class="responsive-table" style="width: 100%;" cellpadding="10">
+						<tbody>
+							<tr>
+								<td style="width: 33%; margin-top: 20px; vertical-align: top;">
+									<p></p>
+									<ul class="liens-footer">
+										<li><a href="/les-saisons-culturelles-sumene-artense_fr.html" target="self"><span class="texte-footer-pro"></span></a></li>
+										<li><a href="/mentions-legales_fr.html" target="self"><span class="texte-footer-brochures"></span></a></li>
+										<li><a href="/newsletter-sumene-artense-comcom_fr.html" target="self"><span class="texte-footer-newsletter"></span></a></li>
+									</ul>
+								</td>
+								<td style="width: 33%; text-align: justify; vertical-align: top;">
+									<p>  </p>
+									<p style="text-align: center;"><span style="font-family: Neucha, cursive; font-size: 40px;">Communauté de Communes<br></span><span style="font-size: 20px; font-family: 'News Cycle', sans-serif;">23 bis Place de l'Église</span><br><span style="font-size: 20px; font-family: 'News Cycle', sans-serif;">15270 CHAMPS SUR TARENTAINE - MARCHAL</span></p>
+									<p style="text-align: center;"><span style="font-family: 'News Cycle', sans-serif; font-size: 30px; color: #094479;"><strong> Tel: +33 (0)4 71 78 72 55<br></strong></span></p>
+									<p style="text-align: center;"><span class="bouton-email a"><span style="font-family: Neucha, cursive; font-size: 24px;"><a href="/contact-communaute-communes-sumene-artense_fr.html" target="_parent" class="bouton-email a">Nous écrire un Email</a></span></span></p>
+									<p style="text-align: center;"><span style="font-family: Neucha, cursive; font-size: 24px;">Services Techniques </span><br><span style="font-family: Neucha, cursive; font-size: 24px;">Environnement et Cadre de vie</span><strong><br></strong>21, rue du Calalet 15240 SAIGNES - 04 71 40 62 66</p>
+								</td>
+								<td style="width: 33%; text-align: justify; vertical-align: top;">
+									<p>
+										<style>
+#cartographie-websee-perso div.item {
+margin: 0;
+    padding: 0;
+    list-style: none;
+font-size:0;
+position: absolute;
+    top: 30.5%;
+    left: 18%;
+}
+
+@keyframes mapRayon {
+
+0% {
+width: 30px;
+    height: 30px;
+    top: -15px;
+    left: -15px;
+    opacity: 1;
+}
+
+100% {
+width: 150px;
+    height: 150px;
+    top: -75px;
+    left: -75px;
+    opacity: 0;
+
+}
+};
+
+#cartographie-websee-perso .item.item-point {
+
+    right: 240px;
+    width: 210px;
+    height: 210px;
+    display: none;
+}
+ 
+ 
+
+#cartographie-websee-perso .item.item-point span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,.2);
+    display: block;
+    position: absolute;
+}
+
+#cartographie-websee-perso .item.item-point span.rayon{
+animation:mapRayon 3s infinite;
+}
+
+#cartographie-websee-perso .position-point {position:absolute;top: 55.5%;
+    left: 35.5%;}
+										</style>
+									</p>
+									<div style="position:relative" id="cartographie-websee-perso">
+										<div class="position-point">
+											<div class="item item-point"><span class="rayon"></span></div>
+										</div><img src="/template/carte-france.png" style="width:100%;height:auto;"></div>
+									<p></p>
+									<ul class="menu-pied-de-page">
+										<li class="menu-pied-de-page-item  "><a href="/mentions-legales_fr.html" id="menu-pied-de-page-item-titre-0" class="menu-pied-de-page-item-titre ">Mentions Légales</a></li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="template-footer-content-2  template-contents">
+				<ul class="logo">
+					<li class="logo-img logo-ot-lien"><a href="https://www.sumene-artense.com/office-de-tourisme-sumene-artense_fr.html"> </a></li>
+					<li class="logo-img logo-cantdornews"><a href="http://www.cantdornews.fr/" target="_blank"> </a></li>
+				</ul>
+			</div>
+		</div><a href="#0" class="cd-top"></a>
+		<script src="/js/cdtop/cdtop.js"></script>
+		<div class="copyright"><a href="websee_en_savoir_plus_sur_la_creation_de_site_internet.html">Création de site Web administrable et hébergement Internet par Net15</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script type="text/javascript">
+									
+					(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+					  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					  })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+					
+					  ga("create", "UA-127735099-1", "sumene-artense.com");
+					  ga("send", "pageview");
+									
+				
+		</script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594041985"></script>
+		<script src="/js/responsive.min.js?1594041985"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
