@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><!--<html xmlns="http://www.w3.org/1999/xhtml">--><html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Bienvenue sur le portail de l'Argonne Ardennaise</title>
+		<link href="css/structure_2c2a.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<!-- IMAGE MENU -->
+		<link href="css/imageMenu.css" rel="stylesheet" type="text/css">
+		<!-- IMAGE MENU -->
+		<!-- SEARCHFIELD - Champs rechercher -->
+		<link href="css/searchfield.css" rel="stylesheet" type="text/css" media="screen">
+		<!--<script type="text/javascript" src="searchfield/searchfield.js"></script>-->
+		<!-- SEARCHFIELD - Champs rechercher -->
+		<style type="text/css">
+
+body, img, h1, h2, background, td, tr, table, in-line table, div { 
+behavior: url(iepngfix.htc)
+}
+html, body {margin:0; padding:0; width:100%; height:100%;}
+}
+
+body {
+	background-color: #FF9966;
+}
+		</style>
+		<script type="text/javascript" src="iepngfix_tilebg.js"></script>
+		<!--/////////////////////// iepngfix ///////////////////////-->
+		<!-- Script de listes deroulantes liees avec appel par AJAX, (evite le rechargement de la page) -->
+		<script language="Javascript" type="text/JavaScript"> 
+// Requette AJAX
+function makeRequest1(url,id_niveau,id_ecrire){
+var http_request = false;
+//créer une instance (un objet) de la classe désirée fonctionnant sur plusieurs navigateurs
+if (window.XMLHttpRequest) { // Mozilla, Safari,...
+http_request = new XMLHttpRequest();
+if (http_request.overrideMimeType) {
+http_request.overrideMimeType('text/xml');//un appel de fonction supplémentaire pour écraser l'en-tête envoyé par le serveur, juste au cas où il ne s'agit pas de text/xml, pour certaines versions de navigateurs Mozilla
+}
+} else if (window.ActiveXObject) { // IE
+try {
+http_request = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+try {
+http_request = new ActiveXObject("Microsoft.XMLHTTP");
+} catch (e) {}
+}
+}
+
+if (!http_request) {
+alert('Abandon :( Impossible de créer une instance XMLHTTP');
+return false;
+}
+http_request.onreadystatechange = function() { traitementReponse1(http_request,id_ecrire); } //affectation fonction appelée qd on recevra la reponse
+// lancement de la requete
+http_request.open('POST', url, true);
+//changer le type MIME de la requête pour envoyer des données avec la méthode POST , !!!! cette ligne doit etre absolument apres http_request.open('POST'....
+http_request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+obj=document.getElementById(id_niveau);
+
+data="val_sel="+obj.value;
+data=data.replace(/\+/g,'#13p-m-p-m');
+
+
+
+http_request.send(data);
+}
+
+function traitementReponse1(http_request,id_ecrire) {
+var affich="";
+if (http_request.readyState == 4) {
+if (http_request.status == 200) {
+// cas avec reponse de PHP en mode texte:
+//chargement des elements reçus dans la liste
+var affich_list=http_request.responseText;
+obj = document.getElementById(id_ecrire);
+obj.innerHTML = affich_list;
+}
+else {
+alert(http_request.status);
+}
+}
+}
+		</script>
+		<style type="text/css">
+<!--
+a {
+}
+a:link, a:visited, a:active {
+text-decoration: none;
+font-weight: bold;
+color: #FF6600;
+}
+a:hover, a:focus {
+font-weight: bold;
+color: #1d8548;
+}
+-->
+		</style>
+	</head>
+	<body>
+		<!-- DÉBUT LE FOND -->
+		<div><img id="background" src="media/fond/2c2a_pw_01.jpg" alt="" title=""></div>
+		<!-- FIN LE FOND-->
+		<!-- TOUT TIENT DANS SCROLLER -->
+		<div id="scroller">
+			<!-- LA PAGE TIENT DANS CONTENT DÉBUT-->
+			<div id="content">
+				<!-- DUR - Type la famille -->
+				<div id="titreweb">
+					<table width="880" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td valign="middle"><a href="index.php">< Bienvenue sur le portail de l'Argonne Ardennaise ></a></td>
+							<td valign="baseline">
+								<!-- MEDIABOX -->
+								<link href="mediabox/mediaboxAdvWhite.css" rel="stylesheet" type="text/css" media="screen">
+								<script src="mediabox/mootools-1.2.5-core-nc.js" type="text/javascript"></script>
+								<script src="mediabox/mediaboxAdv-1.3.4b.js" type="text/javascript"></script>
+								<!-- /MEDIABOX --><img src="media/puces_comedia/pastille_habitant.png" alt="habitant" width="20" height="20" hspace="10" align="absmiddle"><img src="media/puces_comedia/pastille_touriste.png" alt="habitant" width="20" height="20" align="absmiddle"><img src="media/puces_comedia/pastille_entrepreneur.png" alt="habitant" width="20" height="20" hspace="10" align="absmiddle"><img src="media/puces_comedia/pastille_elu.png" alt="habitant" width="20" height="20" align="absmiddle"><img src="media/puces_comedia/pastille_chercheur.png" alt="habitant" width="20" height="20" hspace="10" align="absmiddle"></td>
+						</tr>
+					</table>
+				</div>
+				<!--/DUR - Type la famille -->
+				<div id="page">
+					<div id="header">
+						<script type="text/javascript" src="swfobject.js"></script>
+						<script type="text/javascript">
+var flashvars = {};flashvars.settingsXML = "media/images_menu/settings.xml";
+var params = {};
+params.scale = "noscale";
+params.salign = "tl";
+params.wmode = "transparent";
+var attributes = {};
+swfobject.embedSWF("accordion.swf", "AccordionDiv", "900", "200", "9.0.0", false, flashvars, params, attributes);
+						</script>
+						<div id="AccordionDiv"><a href="http://www.adobe.fr"> <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Téléchargez Adobe Flash player"> </a></div>
+					</div>
+					<div id="menu_h">
+						<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-base_01.css">
+						<link rel="stylesheet" type="text/css" href="ddlevelsfiles/ddlevelsmenu-horizontal_01.css">
+						<script type="text/javascript" src="ddlevelsfiles/ddlevelsmenu.js">
+/***********************************************
+* All Levels Navigational Menu- (c) Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+						</script>
+						<div id="ddtopmenubar" class="solidblockmenu">
+							<ul>
+								<li class="li01"><a href="#" rel="ddsubmenu1">Habitant</a></li>
+								<!--<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li> -->
+								<li class="li02"><a href="#" rel="ddsubmenu2">Touriste</a></li>
+								<!--<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li> -->
+								<li class="li03"><a href="#" rel="ddsubmenu3">Entrepreneur</a></li>
+								<!--<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li> -->
+								<li class="li04"><a href="#" rel="ddsubmenu4">Elu, citoyen</a></li>
+								<!--<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li> -->
+								<li class="li05"><a href="#" rel="ddsubmenu5">Programmes Européens</a></li>
+								<!--<li><a href="http://www.dynamicdrive.com/new.htm">DHTML</a></li> -->
+							</ul>
+						</div>
+						<script type="text/javascript">
+ddlevelsmenu.setup("ddtopmenubar", "topbar") //ddlevelsmenu.setup("mainmenuid", "topbar")
+						</script>
+						<!-- ///////// SOUS-MENU ///////// -->
+						<!--HTML for the Drop Down Menus associated with Top Menu Bar-->
+						<!--They should be inserted OUTSIDE any element other than the BODY tag itself-->
+						<!--A good location would be the end of the page (right above "</BODY>")-->
+						<!--Top Drop Down Menu 1 HTML-->
+						<ul id="ddsubmenu1" class="ddsubmenustyle">
+							<li class="habitant"><a href="page_habitant_type.php?rec=711&titre=Solidarite_Coronavirus">Solidarité Coronavirus</a></li>
+							<li>
+							<li class="habitant"><a href="#"> Urbanisme</a>
+								<ul>
+									<li class="habitant"><a href="page_habitant_type.php?rec=712&titre=Covid19__instruction_urbanisme">Les délais d'instruction des ADS en période de confinement</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=697&titre=Plan_Local_dUrbanisme_intercommunal">Plan Local d'Urbanisme intercommunal</a></li>
+									<li>
+									<li class="habitant"><a href="page_portail_contact.php?rec=685&titre=Documents_dUrbanisme">Documents d'Urbanisme</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=702&titre=PLU_de_Vouziers">Plan Local d'Urbanisme de Vouziers</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=704&titre=Reglement_Local_de_Publicite_intercommunal">Règlement Local de Publicité intercommunal</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="habitant"><a href="page_habitant_accueil.php?rec=27&titre=Actualites">Actualités</a></li>
+							<li>
+							<li class="habitant"><a href="#"> Notre territoire</a>
+								<ul>
+									<li class="habitant"><a href="page_habitant_type.php?rec=53&titre=LArgonne_Ardennaise_notre_territoire">Présentation générale</a></li>
+									<li>
+									<li class="habitant"><a href="page_portail_territoire.php?rec=54&titre=">Les 95 communes</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="habitant"><a href="#"> Vie quotidienne</a>
+								<ul>
+									<li class="habitant"><a href="page_habitant_type.php?rec=8&titre=Les_dechets_menagers">Déchets ménagers</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=635&titre=Desormais_dans_les_Ardennes__on_trie_tous_les_emballages">Désormais, on trie tous les emballages...</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=170&titre=Le_Relais_dAssistantes_Maternelles">Petite enfance</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=443&titre=Vivre_sa_scolarite_en_Argonne_Ardennaise">De l'école au lycée</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=442&titre=Consommer_local">Consommer local</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=9&titre=Logement__services_et_coups_de_pouces">Logement</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=10&titre=MSAP__une_aide_pour_vos_demarches_administratives">Maison de Services au Public</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=364&titre=Sante__des_reponses_locales">Santé</a></li>
+									<li>
+									<li class="habitant"><a target="_blank" href="http://www.vitici.fr?rec=267&titre=">Transports : Vitici</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="habitant"><a href="#"> Aides et subventions</a>
+								<ul>
+									<li class="habitant"><a href="page_habitant_type.php?rec=12&titre=Amelioration_de_lhabitat__les_aides_de_la_2C2A">Toitures-façades</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=14&titre=Le_soutien_aux_associations_locales">Associations</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=351&titre=2C2A_Solidarite_etudiant__un_vrai_coup_de_pouce_">Solidarité étudiant</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="habitant"><a href="#"> Loisirs</a>
+								<ul>
+									<li class="habitant"><a href="page_tourisme_agenda.php?rec=63&titre=">Agenda</a></li>
+									<li>
+									<li class="habitant"><a target="_blank" href="http://www.argona.fr/?rec=627&titre=Centre_aquatique_Argona">Centre aquatique</a></li>
+									<li>
+									<li class="habitant"><a href="page_habitant_type.php?rec=60&titre=Vie_culturelle__rendezvous_aux_Tourelles">Vie culturelle</a></li>
+									<li>
+									<li class="habitant"><a href="page_touriste_associations_appel.php?rec=62&titre=">Annuaire des associations</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="habitant"><a href="page_habitant_type.php?rec=67&titre=Contacts_utiles_au_quotidien">Contacts utiles</a></li>
+							<li>
+							<li class="habitant"><a href="#"> Agir pour l'environnement</a>
+								<ul>
+									<li class="habitant"><a href="page_chercheur_type.php?rec=175&titre=BoultauxBois_Pole_Nature">Boult-aux-Bois, Pôle Nature</a></li>
+									<li>
+									<li class="habitant"><a href="page_chercheur_type.php?rec=193&titre=Chouettes_Vergers_dArgonne_Ardennaise">Chouettes Vergers d'Argonne Ardennaise</a></li>
+									<li>
+								</ul>
+							</li>
+						</ul>
+						<!--Top Drop Down Menu 2 HTML-->
+						<ul id="ddsubmenu2" class="ddsubmenustyle">
+							<li class="touriste"><a href="page_tourisme_accueil_agenda.php?rec=15&titre=Site_de_lOffice_de_Tourisme_Argonne_en_Ardenne">Site de l'Office de Tourisme Argonne en Ardenne</a></li>
+							<li>
+						</ul>
+						<!--Top Drop Down Menu 3 HTML-->
+						<ul id="ddsubmenu3" class="ddsubmenustyle">
+							<li class="entrepreneur"><a href="page_entrepreneur_accueil.php?rec=22&titre=Actualites">Actualités</a></li>
+							<li>
+							<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=709&titre=Entreprises__les_infos_liees_a_la_crise_sanitaire_du_COVID_19">Infos entreprises COVID 19</a></li>
+							<li>
+							<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=716&titre=La_communaute_de_communes_aide_les_entreprises">Aide spéciale COVID-19</a></li>
+							<li>
+							<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=713&titre=Fonds_Resistance">Fonds Résistance</a></li>
+							<li>
+							<li class="entrepreneur"><a href="#"> S'implanter</a>
+								<ul>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=75&titre=LArgonne_Ardennaise___un_secteur_strategique">L'Argonne Ardennaise</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=77&titre=Les_zones_dactivites_communautaires">Zones d'activités</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=358&titre=Pepiniere_dentreprises__grandir_en_douceur">Pépinière d'entreprises</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="entrepreneur"><a href="#"> Se développer</a>
+								<ul>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=79&titre=Les_aides_economiques">Aides économiques</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=80&titre=Un_developpement_touristique_en_plein_essor">Côté tourisme</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=81&titre=Developpement_agricole__vers_la_diversification">Dans le secteur agricole</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="entrepreneur"><a href="#"> Trouver</a>
+								<ul>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=83&titre=Trouver_un_local_un_terrain">Un local, un terrain</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=82&titre=Offre_demplois">Un emploi, un employé</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="entrepreneur"><a href="#"> Consulter</a>
+								<ul>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=86&titre=Marches_publics_">Marchés publics </a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=198&titre=Des_publications_pour_aller_plus_loin">Publications</a></li>
+									<li>
+									<li class="entrepreneur"><a href="page_entrepreneur_type.php?rec=90&titre=Les_contacts_utiles_pour_vos_projets">Contacts utiles</a></li>
+									<li>
+								</ul>
+							</li>
+						</ul>
+						<!--Top Drop Down Menu 4 HTML-->
+						<ul id="ddsubmenu4" class="ddsubmenustyle">
+							<li class="elu"><a href="page_portail_identification.php?rec=189&titre=Identification">Pages privées</a></li>
+							<li>
+							<li class="elu"><a href="page_elu_accueil.php?rec=23&titre=Mot_du_president">Actualités</a></li>
+							<li>
+							<li class="elu"><a href="#"> 2C2A, mode d'emploi</a>
+								<ul>
+									<li class="elu"><a href="page_elu_type.php?rec=56&titre=2C2A__une_communion_de_projets">Histoire et compétences</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=57&titre=Le_fonctionnement_et_les_elus_de_la_2C2A">Fonctionnement, élus</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=526&titre=Les_membres_des_commissions_de_travail">Composition des commissions</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=153&titre=Les_finances_de_la_2C2A_">Finances</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=59&titre=2C2A__une_equipe_a_votre_service_">Les services communautaires</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="elu"><a href="#"> Comptes-rendus</a>
+								<ul>
+									<li class="elu"><a href="page_elu_type.php?rec=202&titre=Comptesrendus_du_Conseil_Communautaire">Conseil Communautaire</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=528&titre=Procesverbaux_du_Bureau_de_la_2C2A">Bureau (PV)</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="elu"><a href="#"> Recueil des Actes Administratifs</a>
+								<ul>
+									<li class="elu"><a href="page_elu_type.php?rec=66&titre=Deliberations_du_Conseil_Communautaire_de_la_2C2A">Délibérations du Conseil</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=162&titre=Deliberations_du_Bureau_de_la_2C2A">Délibérations du Bureau</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=480&titre=Arretes_du_President_de_la_2C2A">Arrêtés du Président</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="elu"><a href="#"> Publications</a>
+								<ul>
+									<li class="elu"><a href="page_elu_type.php?rec=64&titre=2C2A_mag__le_journal_de_votre_intercommunalite">2C2A mag'</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=534&titre=Journal_des_elus">Le Journal des élus</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=98&titre=Rapports_dactivites_de_la_2C2A">Rapports d'activités</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=97&titre=Statistiques_locales">Statistiques locales</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=339&titre=Etudes_relatives_a_lArgonne_Ardennaise">Etudes</a></li>
+									<li>
+									<li class="elu"><a href="page_elu_type.php?rec=169&titre=2C2A__les_reunions_de_travail">Agenda des réunions</a></li>
+									<li>
+								</ul>
+							</li>
+							<li class="elu"><a href="page_elu_type.php?rec=165&titre=Les_contacts_utiles_pour_vos_projets">Contacts utiles</a></li>
+							<li>
+						</ul>
+						<!--Top Drop Down Menu 5 HTML-->
+						<ul id="ddsubmenu5" class="ddsubmenustyle">
+							<li class="chercheur"><a href="page_chercheur_type.php?rec=653&titre=Programme_LEADER">Programme LEADER</a></li>
+							<li>
+							<li class="chercheur"><a href="#"> Natura 2000</a>
+								<ul>
+									<li class="chercheur"><a href="page_chercheur_type.php?rec=421&titre=Natura_2000__preserver_et_restaurer">Natura 2000 : préserver et restaurer</a></li>
+									<li>
+									<li class="chercheur"><a href="page_chercheur_type.php?rec=659&titre=Sorties_decouverte">Sorties découverte</a></li>
+									<li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="section"><img src="images/spacer.gif" width="900" height="5" alt="Parc Argonne Découverte">
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+						<script language="javascript">AC_FL_RunContent = 0;</script>
+						<script src="AC_RunActiveContent.js" language="javascript"></script>
+						<!--url's used in the movie-->
+						<!--text used in the movie-->
+						<!-- saved from url=(0013)about:internet -->
+						<script language="javascript">
+	if (AC_FL_RunContent == 0) {
+		alert("This page requires AC_RunActiveContent.js.");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', '900',
+			'height', '240',
+			'src', 'portail_rotator',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'transparent',
+			'devicefont', 'false',
+			'id', 'portail_rotator',
+			'bgcolor', '#666666',
+			'name', 'portail_rotator',
+			'menu', 'true',
+			'allowFullScreen', 'false',
+			'allowScriptAccess','sameDomain',
+			'movie', 'portail_rotator',
+			'FlashVars', 'urlxml=portail_monadmin_rotator.php&rec=125',
+			'salign', ''
+			); //end AC code
+	}
+						</script>
+						<noscript><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="900" height="240" id="portail_rotator" align="middle"> <param name="allowScriptAccess" value="sameDomain"> <param name="allowFullScreen" value="false"> <param name="movie" value="portail_rotator.swf"> <param name="quality" value="high"> <param name="bgcolor" value="#666666"> <param name="FlashVars" value="id=portail_monadmin_rotator.php&rec=125"> <embed src="portail_rotator.swf?rec=125" flashvars="urlxml=portail_monadmin_rotator.php&rec=125" quality="high" bgcolor="#666666" width="900" height="240" name="portail_rotator" align="middle" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed> </object></noscript><img src="images/spacer.gif" width="900" height="10" alt="Parc Argonne Découverte"></div>
+					<div id="contenu">
+						<!-- COLONNE GAUCHE DÉBUT -->
+						<div id="colonne_gauche">
+							<!-- DÉBUT RECHERCHER -->
+							<link href="css/searchfield.css" rel="stylesheet" type="text/css">
+							<div id="content_rechercher">
+								<form action="page_portail_recherche.php" method="post" id="searchform"><input name="moteur" type="text" class="input_rechercher" id="moteur" value="Rechercher" onfocus="javascript:this.value=''"> <button type="submit" class="button_rechercher" id="searchbutton">Go</button></form>
+							</div>
+							<!-- FIN RECHERCHER -->
+							<!-- DÉBUT IDENTIFICATION -->
+							<link href="css/searchfield.css" rel="stylesheet" type="text/css">
+							<!-- DÉBUT IDENTIFICATION -->
+							<!-- FIN IDENTIFICATION -->
+						</div>
+						<!-- /COLONNE GAUCHE -->
+						<!-- CONTENU PRINCIPAL DE LA PAGE DÉBUT -->
+						<div id="colonne_propos">
+							<!-- OPTIONNEL DÉBUT - INFOS IMPORTANTES - ZONE D'APPEL HORIZONTALE -->
+							<div id="section_580">
+								<div id="section_580">
+									<table style="height: 30px; width: 150px; background-color: #ffffff;" border="0" align="left">
+										<tbody>
+											<tr>
+												<td style="text-align: center;"><span class="chapo_portail"><a class="chapo_portail" href="http://www.eurafecam.org/Region_ACAL/2C2A/2C2A.htm" target="_blank">Accès malvoyants</a></span></td>
+											</tr>
+										</tbody>
+									</table>
+									<p><a href="http://www.argonne-ardennaise.fr/page_portail_territoire.php?rec=54&titre="><img style="float: right;" src="media/Appels_graphiques/Carte_territoire-30x450.jpg" alt="" width="400" height="30"></a></p>
+								</div>
+							</div>
+							<!-- OPTIONNEL FIN - INFOS IMPORTANTES - ZONE D'APPEL HORIZONTALE -->
+							<!-- /CONTENU PRINCIPAL DE LA PAGE -->
+						</div>
+					</div>
+				</div>
+				<!-- /LA PAGE TIENT DANS CONTENT -->
+			</div>
+			<div id="section_pied">
+				<div id="footer">
+					<table style="width: 880px;" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#ffffff">
+						<tbody>
+							<tr>
+								<td colspan="3">
+									<p style="text-align: center;"><a title="Découvrez le programme LEADER en Argonne Ardennaise" href="http://www.argonne-ardennaise.fr/page_chercheur_type.php?rec=653&titre=Programme_LEADER"><img src="media/programmes_europeens/en-tete-docs-leader.png" alt="" width="800" height="230"></a></p>
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 70px;" align="center" valign="middle">
+									<p><img style="border: 0pt none;" src="media/logos/logo_2c2a_signature.png" alt="" width="200" height="68"></p>
+								</td>
+								<td align="left" valign="middle">
+									<p><strong>Communauté de Communes de l'Argonne Ardennaise (2C2A)</strong><br> 44-46 rue du Chemin Salé - 08400 Vouziers<br> Tél. 03 24 30 23 94 -</p>
+								</td>
+								<td align="right" valign="middle">
+									<p><a rel="lightbox[inline 700 700]" href="page_mediabox_tourisme.php?rec=172"><img src="media/famfamfam_silk_icons_v013/icons/exclamation.png" border="0" alt="Mentions légales" hspace="2" width="16" height="16">Infos légales</a> - <a href="http://www.argonne-ardennaise.fr/page_portail_contact.php?rec=174&titre=Contact"><img src="media/famfamfam_silk_icons_v013/icons/email.png" border="0" alt="Contact" hspace="2" width="16" height="16">Contact</a> - <a rel="lightbox[inline 850 700]" href="http://newsletter.2c2a.com/lists/?p=subscribe&id=3"><img src="media/famfamfam_silk_icons_v013/icons/newspaper.png" border="0" alt="Newsletter" hspace="2" width="16" height="16"></a><a rel="lightbox[inline 850 700]" href="http://newsletter.2c2a.com/lists/?p=subscribe&id=3">Newsletter</a></p>
+									<p><a href="http://www.argonne-ardennaise.fr/page_portail_plan.php?rec=125"><img src="media/famfamfam_silk_icons_v013/icons/sitemap.png" alt="" width="16" height="16"></a> <a href="http://www.argonne-ardennaise.fr/page_portail_plan.php?rec=125">Plan du site</a> -  <a href="http://www.argonne-ardennaise.fr/page_portail_identification.php?rec=189"><img src="media/famfamfam_silk_icons_v013/icons/lock.png" alt="" width="16" height="16"></a> <a href="http://www.argonne-ardennaise.fr/page_portail_identification.php?rec=189">Privé</a></p>
+									<p><a rel="lightbox[inline 1200 900]" href="page_mediabox.php?rec=548"><img src="media/famfamfam_silk_icons_v013/icons/newspaper.png" alt="" width="16" height="16"></a> <a rel="lightbox[inline 1200 900]" href="page_mediabox.php?rec=548">Nos publications</a></p>
+									<p><a href="http://www.facebook.com/pages/Communaut%C3%A9-de-Communes-de-lArgonne-Ardennaise-2C2A/172058546177411" target="_blank"><img src="media/logos/Logo-facebook.png" alt="" width="16" height="16"></a> <a href="http://www.facebook.com/pages/Communaut%C3%A9-de-Communes-de-lArgonne-Ardennaise-2C2A/172058546177411" target="_blank">Rejoignez-nous sur Facebook</a></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- RAPPEL MENUS -->
+			<!-- /RAPPEL MENUS -->
+		</div>
+		<!-- TOUT TIENT DANS SCROLLER - FIN -->
+	</body>
+</html>
