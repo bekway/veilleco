@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<title>Compte-rendus réunions de bureau - Communauté de communes Grand Roye</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="/composants/bootstrap/js/bootstrap.min.js"></script>
+		<link href="/composants/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" href="/composants/bootstrapvalidator/0.5.1/css/bootstrapValidator.min.css">
+		<script type="text/javascript" src="/composants/bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+		<script type="text/javascript" src="/composants/bootstrapvalidator/0.5.1/js/language/fr_FR.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link href="/css/general.css" rel="stylesheet">
+		<link href="/css/xs.css" rel="stylesheet" media="(max-width:767px)">
+		<link href="/css/sm.css" rel="stylesheet" media="(min-width:768px) and (max-width:991px)">
+		<link href="/css/md.css" rel="stylesheet" media="(min-width:992px) and (max-width:1199px)">
+		<link href="/css/lg.css" rel="stylesheet" media="(min-width:1200px)">
+		<!-- RGPD -->
+		<script src="/composants/tarteaucitron.js-1.2/tarteaucitron.js"></script>
+		<script src="/includes/rgpd.js"></script>
+		<script type="text/javascript">
+			<!-- https://opt-out.ferank.eu/fr/install/ -->
+	        tarteaucitron.user.gajsUa = 'UA-68950643-1';
+	        tarteaucitron.user.gajsMore = function () { /* add here your optionnal _ga.push() */ };
+	        (tarteaucitron.job = tarteaucitron.job || []).push('gajs');
+        
+		</script>
+		<!-- ----- -->
+	</head>
+	<body>
+		<!-- Code Google Analytics 
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-68950643-1', 'auto');
+              ga('send', 'pageview');
+
+            </script>
+            <!-- FIN Code Google Analytics -->
+		<div class="container-fluid hidden-xs" style="background-color:#356A71; height:1em;"></div>
+		<div class="container">
+			<div>
+				<div id="plg_recherche" class="pull-right hidden-xs">
+					<link rel="stylesheet" href="/modules/recherche/plg_recherche.css" type="TEXT/CSS">
+					<div class="col-xs-11">
+						<form action="/18-recherche" role="form" method="post" name="formulaire">
+							<div class="form-group">
+								<div class="input-group"><img src="/images/loupe.png"> <input class="form-control input-xs" id="search" placeholder="Recherche" name="search" type="text">
+									<div class="input-group-addon"><input type="submit" value="Ok" class="btn btn-primary btok"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="pull-right hidden-xs" style="height: 40px;"><a href="https://www.facebook.com/grandroye/" target="_blank"><img src="/images/Facebook.svg" alt="Logo Facebook" height="25px" style="margin-right:1em;margin-top:5px;"></a> <a href="https://www.instagram.com/grandroye/" target="_blank"><img src="/images/Instagram.svg" alt="Logo Instagram" height="25px" style="margin-right:1em;margin-top:7px;"></a> <a href="mailto:contact@grandroye.fr" target="_blank"><img src="/images/Mail.svg" alt="Logo nous contacter" height="22px" style="margin-right:1em;margin-top:7px;"></a></div>
+				<div id="logo" class="col-xs-12 col-sm-6"><a href="/"><img src="/images/logo-CC-Grand-Roye-2018.png" srcset="/images/logo-CC-Grand-Roye-2018.png 1x, /images/logo-CC-Grand-Roye-2018@2x.png 2x" class="img-responsive"></a></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-lg-12" id="menus">
+				<link rel="stylesheet" href="/modules/cmsnim/plg_menu.css" type="TEXT/CSS">
+				<script>
+$().ready(function () {
+
+$("#menu").mouseenter(function(){
+    clearTimeout($(this).data('timeoutId'));
+}).mouseleave(function(){
+    var someElement = $(this);
+    var timeoutId = setTimeout("closeallssmenu()", 500);
+    //set the timeoutId, allowing us to clear this trigger if the mouse comes back over
+    someElement.data('timeoutId', timeoutId); 
+});
+
+	$("#m2 .N2toggle>span").each(function(index){
+		if($(this).siblings().length>0){
+			$(this).html("<span class='plus'>+" + $(this).html());
+		}
+	})
+
+	$(".N3").hide(0);
+	
+	$("#m2 .N2toggle>span").on("click",".plus",function(){
+		$(".moins").html("+")
+		$(".moins").addClass("plus");
+		$(".moins").removeClass("moins");
+		
+		
+		
+		$(this).html("-")
+		$(this).removeClass("plus");
+		$(this).addClass("moins");
+		var monN3 = $(this)
+		$(".N3").hide(0,function(){
+			monN3.parent().parent().find(".N3").show(0);
+		});
+	});
+	$("#m2 .N2toggle>span").on("click",".moins",function(){
+		$(this).html("+")
+		$(this).removeClass("moins");
+		$(this).addClass("plus");
+		var monN3 = $(this)
+		monN3.parent().parent().find(".N3").hide(0);
+	});
+
+    $('div#b1a').mouseover(function () {
+		$('div#m1').slideDown('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+    });
+	
+    $('div#b2a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideDown('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+	});
+	
+    $('div#b3a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideDown('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+	});
+
+    $('div#b4a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideDown('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+	});
+
+    $('div#b5a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideDown('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+	});
+	
+    $('div#b6a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideDown('medium');
+		$('div#m7').slideUp('medium');
+	});
+
+    $('div#b7a').mouseover(function () {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideDown('medium');
+	});
+	var objMenuTimeout = null;	
+	
+	$('.navmenu-brand').click(function(){
+		$('.navmenu').offcanvas('toggle');
+		})
+});
+
+function closeallssmenu() {
+		$('div#m1').slideUp('medium');
+		$('div#m2').slideUp('medium');
+		$('div#m3').slideUp('medium');
+		$('div#m4').slideUp('medium');
+		$('div#m5').slideUp('medium');
+		$('div#m6').slideUp('medium');
+		$('div#m7').slideUp('medium');
+}
+
+				
+				</script>
+				<div class="visible-xs" id="menu_mobile">
+					<link rel="stylesheet" href="/composants/jasny-bootstrap/css/jasny-bootstrap.min.css" type="text/css">
+					<script src="/composants/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+					<div class="navbar navbar-default"><button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						<div>Accueil</div>
+					</div>
+					<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+						<div class="navbar navbar-default"><button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+							<div>Accueil</div>
+						</div>
+						<ul class="nav navmenu-nav">
+							<li><a href="#">Com de Com<ul class="N1" id="UL_1"><li class="N1toggle" id="LI_37"><span><a href="/1-presentation/37-presentation.html" target="">Présentation</a></span><ul class="N2" id="UL_37"><li class="N2toggle" id="LI_42"><span><a href="/1-presentation/42-situation-geographique.html" target="">Situation géographique</a></span></li><li class="N2toggle" id="LI_176"><span><a href="/1-presentation/176-presidente-et-vice-presidentes.html" target="">Présidente et Vice-président(e)s</a></span></li><li class="N2toggle" id="LI_44"><span><a href="/1-presentation/44-les-commissions.html" target="">Les Commissions</a></span></li><li class="N2toggle" id="LI_43"><span><a href="/1-presentation/43-le-bureau-communautaire.html" target="">Le Bureau Communautaire</a></span></li><li class="N2toggle" id="LI_45"><span><a href="/1-presentation/45-le-conseil-communautaire.html" target="">Le Conseil Communautaire</a></span></li><li class="N2toggle" id="LI_46"><span><a href="/1-presentation/46-nos-services.html" target="">Nos services</a></span></li><li class="N2toggle" id="LI_107"><span><a href="/1-presentation/107-nos-competences.html" target="">Nos compétences</a></span></li></ul></li><li class="N1toggle" id="LI_3"><span><a href="/3-communes" target="">Les communes</a></span></li><li class="N1toggle" id="LI_117"><span><a href="/1-presentation/117-budget-et-fiscalite.html" target="">Budget et fiscalité</a></span></li><li class="N1toggle" id="LI_6"><span><a href="/5-publications" target="">Publications </a></span></li><li class="N1toggle" id="LI_178"><span><a href="/1-presentation/178-amenagement-du-territoire.html" target="">Aménagement du territoire</a></span><ul class="N2" id="UL_178"><li class="N2toggle" id="LI_12"><span><a href="/1-presentation/12-deneigement.html" target="">Déneigement</a></span></li><li class="N2toggle" id="LI_158"><span><a href="/1-presentation/158-contrat-de-ruralite.html" target="">Contrat de ruralité</a></span></li><li class="N2toggle" id="LI_173"><span><a href="/1-presentation/173-plui.html" target="">PLUI</a></span></li><li class="N2toggle" id="LI_150"><span><a href="/1-presentation/150-les-actualites-du-plui.html" target="">Les actualités du PLUI</a></span><ul class="N3" id="UL_150"><li class="N3toggle" id="LI_151"><span><a href="/1-presentation/151-1er-comite-de-suivi-du-plui-le-15-novembre-2017.html" target="">1er comité de suivi du Plui le 15 novembre 2017</a></span></li><li class="N3toggle" id="LI_152"><span><a href="/1-presentation/152-appel-a-candidatures-plui-2017.html" target="">Appel à candidatures PLUi 2017</a></span></li><li class="N3toggle" id="LI_153"><span><a href="/1-presentation/153-2eme-comite-de-suivi-du-plui-du-19-decembre-2017.html" target="">2ème comité de suivi du Plui du 19 décembre 2017</a></span></li><li class="N3toggle" id="LI_154"><span><a href="/1-presentation/154-3eme-comite-de-suivi-du-22-fevrier-2018.html" target="">3ème comité de suivi du 22 février 2018</a></span></li><li class="N3toggle" id="LI_160"><span><a href="/1-presentation/160-reunion-d-acteurspartenaires-exterieurs-du-28-fevrier-2018.html" target="">Réunion "d'acteurs/partenaires extérieurs" du 28 février 2018 </a></span></li><li class="N3toggle" id="LI_155"><span><a href="/1-presentation/155-seminaire-presentation-du-diagnostic-du-14-mars-2018.html" target="">séminaire Présentation du diagnostic du 14 mars 2018</a></span></li><li class="N3toggle" id="LI_159"><span><a href="/1-presentation/159-comite-de-suivi-n%C2%B04-du-19-avril-2018.html" target="">Comité de suivi n°4 du 19 avril 2018</a></span></li><li class="N3toggle" id="LI_163"><span><a href="/1-presentation/163-seminaire-note-d-enjeux-de-l-etat-23-mai-2018.html" target="">Séminaire Note d'enjeux de l'Etat" 23 mai 2018</a></span></li><li class="N3toggle" id="LI_164"><span><a href="/1-presentation/164-comite-de-suivi-n%C2%B05-du-13-juin-2018.html" target="">Comité de suivi n°5 du 13 juin 2018</a></span></li><li class="N3toggle" id="LI_166"><span><a href="/1-presentation/166-restitution-diagnostic-agricole-du-27-juin-2018.html" target="">Restitution diagnostic agricole du 27 juin 2018</a></span></li><li class="N3toggle" id="LI_171"><span><a href="/1-presentation/171-septieme-comite-de-suivi-du-23-octobre-2018.html" target="">Septième comité de suivi du 23 octobre 2018</a></span></li><li class="N3toggle" id="LI_172"><span><a href="/1-presentation/172-seminaire-de-presentation-des-grandes-orientations-du-padd-du-14-decembre-2018.html" target="">Séminaire de présentation des grandes orientations du PADD du 14 décembre 2018</a></span></li></ul></li><li class="N2toggle" id="LI_102"><span><a href="/1-presentation/102-urbanisme.html" target="">Urbanisme</a></span><ul class="N3" id="UL_102"><li class="N3toggle" id="LI_165"><span><a href="/1-presentation/165-revision-de-la-carte-communale-de-davenescourt.html" target="">Révision de la carte communale de Davenescourt</a></span></li></ul></li></ul></li></ul></a></li>
+							<li><a href="#">Social & Santé<ul class="N1" id="UL_7"><li class="N1toggle" id="LI_177"><span><a href="/1-presentation/177-bip-pop.html" target="">Bip Pop</a></span></li><li class="N1toggle" id="LI_96"><span><a href="/1-presentation/96-service-d-aide-a-domicile-s.a.d.html" target="">Service d'Aide à Domicile (S.A.D)</a></span><ul class="N2" id="UL_96"><li class="N2toggle" id="LI_100"><span><a href="/1-presentation/100-tele-assistance.html" target="">Télé-assistance</a></span></li></ul></li><li class="N1toggle" id="LI_98"><span><a href="/1-presentation/98-maison-de-sante-pluridisciplinaire.html" target="">Maison de santé pluridisciplinaire</a></span></li></ul></a></li>
+							<li><a href="#">Enfance, Loisirs & Sports<ul class="N1" id="UL_2"><li class="N1toggle" id="LI_186"><span><a href="/1-presentation/186-nos-evenements-a-venir.html" target="">Nos événements à venir</a></span></li><li class="N1toggle" id="LI_174"><span><a href="/1-presentation/174-petite-enfance.html" target="">Petite enfance</a></span><ul class="N2" id="UL_174"><li class="N2toggle" id="LI_143"><span><a href="/1-presentation/143-creches.html" target="">Crèches</a></span></li><li class="N2toggle" id="LI_101"><span><a href="/1-presentation/101-relais-assistants-maternels.html" target="">Relais assistants maternels</a></span></li></ul></li><li class="N1toggle" id="LI_99"><span><a href="/1-presentation/99-ecole-de-musique.html" target="">Ecole de musique </a></span></li><li class="N1toggle" id="LI_124"><span><a href="/1-presentation/124-cinemas.html" target="">Cinémas</a></span></li><li class="N1toggle" id="LI_141"><span><a href="/1-presentation/141-scolaires.html" target="">Scolaires</a></span><ul class="N2" id="UL_141"><li class="N2toggle" id="LI_97"><span><a href="/1-presentation/97-transport-scolaire.html" target="">Transport scolaire</a></span></li></ul></li><li class="N1toggle" id="LI_125"><span><a href="/1-presentation/125-piscine.html" target="">Piscine</a></span></li><li class="N1toggle" id="LI_19"><span><a href="/1-presentation/19-tourisme.html" target="">Tourisme</a></span></li><li class="N1toggle" id="LI_120"><span><a href="/1-presentation/120-l-aerodrome.html" target="">L'aérodrome</a></span></li><li class="N1toggle" id="LI_181"><span><a href="/1-presentation/181-annuaire-des-associations-du-territoire.html" target="">Annuaire des associations du territoire</a></span></li></ul></a></li>
+							<li><a href="#">Environnement<ul class="N1" id="UL_95"><li class="N1toggle" id="LI_9"><span><a href="/1-presentation/9-gerer-mes-dechets.html" target="">Gérer mes dechets</a></span><ul class="N2" id="UL_9"><li class="N2toggle" id="LI_26"><span><a href="/1-presentation/26-decheterie-de-roye-et-de-montdidier.html" target="">Décheterie de Roye et de Montdidier</a></span></li><li class="N2toggle" id="LI_187"><span><a href="/1-presentation/187-quand-sont-collectes-mes-dechets.html" target="">Quand sont collectés mes déchets ?</a></span></li><li class="N2toggle" id="LI_135"><span><a href="/1-presentation/135-comprendre-le-tri-selectif.html" target="">Comprendre le tri sélectif</a></span></li><li class="N2toggle" id="LI_21"><span><a href="/1-presentation/21-les-ordures-menageres.html" target="">Les ordures ménagères</a></span></li><li class="N2toggle" id="LI_25"><span><a href="/1-presentation/25-compostage-individuel.html" target="">Compostage individuel</a></span></li></ul></li><li class="N1toggle" id="LI_8"><span><a href="/1-presentation/8-brigade-verte.html" target="">Brigade Verte</a></span></li><li class="N1toggle" id="LI_11"><span><a href="/1-presentation/11-eolien.html" target="">Eolien</a></span></li><li class="N1toggle" id="LI_10"><span><a href="/1-presentation/10-service-public-d-assainissement-non-collectif-s.p.a.n.c.html" target="">Service Public d'Assainissement Non Collectif (S.P.A.N.C)</a></span><ul class="N2" id="UL_10"><li class="N2toggle" id="LI_51"><span><a href="/1-presentation/51-mieux-comprendre-son-assainissement.html" target="">Mieux comprendre son assainissement</a></span></li></ul></li></ul></a></li>
+							<li><a href="#">Economie & Drive Fermier<ul class="N1" id="UL_146"><li class="N1toggle" id="LI_189"><span><a href="/1-presentation/189-drive-fermier.html" target="">Drive Fermier</a></span></li><li class="N1toggle" id="LI_20"><span><a href="/1-presentation/20-developpement-economique.html" target="">Développement économique</a></span></li><li class="N1toggle" id="LI_84"><span><a href="/1-presentation/84-soutenir-la-creation-d-entreprises.html" target="">Soutenir la création d'entreprises</a></span></li><li class="N1toggle" id="LI_175"><span><a href="/1-presentation/175-subventions.html" target="">Subventions</a></span></li></ul></a></li>
+							<li><a href="#">Emploi & Mobilité<ul class="N1" id="UL_4"><li class="N1toggle" id="LI_114"><span><a href="/1-presentation/114-chantier-d-insertion.html" target="">Chantier d'insertion</a></span></li><li class="N1toggle" id="LI_127"><span><a href="/1-presentation/127-emploi-formation.html" target="">Emploi / Formation</a></span></li><li class="N1toggle" id="LI_180"><span><a href="/1-presentation/180-la-region-proche-de-vous.html" target="">La Région, proche de vous </a></span></li><li class="N1toggle" id="LI_188"><span><a href="/1-presentation/188-les-metiers-de-bouche.html" target="">Les métiers de bouche</a></span></li></ul></a></li>
+							<li><a href="#">Actualités</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id="menu" class="hidden-xs">
+					<div class="menu " id="b1a">
+						<div class="item"><span class="titre">Com de Com</span></div>
+					</div>
+					<div class="menu " id="b2a">
+						<div class="item"><span class="titre">Social & Santé</span></div>
+					</div>
+					<div class="menu " id="b3a">
+						<div class="item"><span class="titre">Enfance, Loisirs & Sports</span></div>
+					</div>
+					<div class="menu " id="b4a">
+						<div class="item"><span class="titre">Environnement</span></div>
+					</div>
+					<div class="menu " id="b5a">
+						<div class="item"><span class="titre">Economie & Drive Fermier</span></div>
+					</div>
+					<div class="menu " id="b6a">
+						<div class="item"><span class="titre">Emploi & Mobilité</span></div>
+					</div>
+					<div class="menu " id="b7a"><a href="/2-actualites" target=""><div class="item"><span class="titre">Actualités</span></div></a></div>
+					<div class="conteneur_item">
+						<div id="m1">
+							<ul class="N1" id="UL_1">
+								<li class="N1toggle" id="LI_37"><span><a href="/1-presentation/37-presentation.html" target="">Présentation</a></span>
+									<ul class="N2" id="UL_37">
+										<li class="N2toggle" id="LI_42"><span><a href="/1-presentation/42-situation-geographique.html" target="">Situation géographique</a></span></li>
+										<li class="N2toggle" id="LI_176"><span><a href="/1-presentation/176-presidente-et-vice-presidentes.html" target="">Présidente et Vice-président(e)s</a></span></li>
+										<li class="N2toggle" id="LI_44"><span><a href="/1-presentation/44-les-commissions.html" target="">Les Commissions</a></span></li>
+										<li class="N2toggle" id="LI_43"><span><a href="/1-presentation/43-le-bureau-communautaire.html" target="">Le Bureau Communautaire</a></span></li>
+										<li class="N2toggle" id="LI_45"><span><a href="/1-presentation/45-le-conseil-communautaire.html" target="">Le Conseil Communautaire</a></span></li>
+										<li class="N2toggle" id="LI_46"><span><a href="/1-presentation/46-nos-services.html" target="">Nos services</a></span></li>
+										<li class="N2toggle" id="LI_107"><span><a href="/1-presentation/107-nos-competences.html" target="">Nos compétences</a></span></li>
+									</ul>
+								</li>
+								<li class="N1toggle" id="LI_3"><span><a href="/3-communes" target="">Les communes</a></span></li>
+								<li class="N1toggle" id="LI_117"><span><a href="/1-presentation/117-budget-et-fiscalite.html" target="">Budget et fiscalité</a></span></li>
+								<li class="N1toggle" id="LI_6"><span><a href="/5-publications" target="">Publications </a></span></li>
+								<li class="N1toggle" id="LI_178"><span><a href="/1-presentation/178-amenagement-du-territoire.html" target="">Aménagement du territoire</a></span>
+									<ul class="N2" id="UL_178">
+										<li class="N2toggle" id="LI_12"><span><a href="/1-presentation/12-deneigement.html" target="">Déneigement</a></span></li>
+										<li class="N2toggle" id="LI_158"><span><a href="/1-presentation/158-contrat-de-ruralite.html" target="">Contrat de ruralité</a></span></li>
+										<li class="N2toggle" id="LI_173"><span><a href="/1-presentation/173-plui.html" target="">PLUI</a></span></li>
+										<li class="N2toggle" id="LI_150"><span><a href="/1-presentation/150-les-actualites-du-plui.html" target="">Les actualités du PLUI</a></span>
+											<ul class="N3" id="UL_150">
+												<li class="N3toggle" id="LI_151"><span><a href="/1-presentation/151-1er-comite-de-suivi-du-plui-le-15-novembre-2017.html" target="">1er comité de suivi du Plui le 15 novembre 2017</a></span></li>
+												<li class="N3toggle" id="LI_152"><span><a href="/1-presentation/152-appel-a-candidatures-plui-2017.html" target="">Appel à candidatures PLUi 2017</a></span></li>
+												<li class="N3toggle" id="LI_153"><span><a href="/1-presentation/153-2eme-comite-de-suivi-du-plui-du-19-decembre-2017.html" target="">2ème comité de suivi du Plui du 19 décembre 2017</a></span></li>
+												<li class="N3toggle" id="LI_154"><span><a href="/1-presentation/154-3eme-comite-de-suivi-du-22-fevrier-2018.html" target="">3ème comité de suivi du 22 février 2018</a></span></li>
+												<li class="N3toggle" id="LI_160"><span><a href="/1-presentation/160-reunion-d-acteurspartenaires-exterieurs-du-28-fevrier-2018.html" target="">Réunion "d'acteurs/partenaires extérieurs" du 28 février 2018 </a></span></li>
+												<li class="N3toggle" id="LI_155"><span><a href="/1-presentation/155-seminaire-presentation-du-diagnostic-du-14-mars-2018.html" target="">séminaire Présentation du diagnostic du 14 mars 2018</a></span></li>
+												<li class="N3toggle" id="LI_159"><span><a href="/1-presentation/159-comite-de-suivi-n%C2%B04-du-19-avril-2018.html" target="">Comité de suivi n°4 du 19 avril 2018</a></span></li>
+												<li class="N3toggle" id="LI_163"><span><a href="/1-presentation/163-seminaire-note-d-enjeux-de-l-etat-23-mai-2018.html" target="">Séminaire Note d'enjeux de l'Etat" 23 mai 2018</a></span></li>
+												<li class="N3toggle" id="LI_164"><span><a href="/1-presentation/164-comite-de-suivi-n%C2%B05-du-13-juin-2018.html" target="">Comité de suivi n°5 du 13 juin 2018</a></span></li>
+												<li class="N3toggle" id="LI_166"><span><a href="/1-presentation/166-restitution-diagnostic-agricole-du-27-juin-2018.html" target="">Restitution diagnostic agricole du 27 juin 2018</a></span></li>
+												<li class="N3toggle" id="LI_171"><span><a href="/1-presentation/171-septieme-comite-de-suivi-du-23-octobre-2018.html" target="">Septième comité de suivi du 23 octobre 2018</a></span></li>
+												<li class="N3toggle" id="LI_172"><span><a href="/1-presentation/172-seminaire-de-presentation-des-grandes-orientations-du-padd-du-14-decembre-2018.html" target="">Séminaire de présentation des grandes orientations du PADD du 14 décembre 2018</a></span></li>
+											</ul>
+										</li>
+										<li class="N2toggle" id="LI_102"><span><a href="/1-presentation/102-urbanisme.html" target="">Urbanisme</a></span>
+											<ul class="N3" id="UL_102">
+												<li class="N3toggle" id="LI_165"><span><a href="/1-presentation/165-revision-de-la-carte-communale-de-davenescourt.html" target="">Révision de la carte communale de Davenescourt</a></span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m2">
+							<ul class="N1" id="UL_7">
+								<li class="N1toggle" id="LI_177"><span><a href="/1-presentation/177-bip-pop.html" target="">Bip Pop</a></span></li>
+								<li class="N1toggle" id="LI_96"><span><a href="/1-presentation/96-service-d-aide-a-domicile-s.a.d.html" target="">Service d'Aide à Domicile (S.A.D)</a></span>
+									<ul class="N2" id="UL_96">
+										<li class="N2toggle" id="LI_100"><span><a href="/1-presentation/100-tele-assistance.html" target="">Télé-assistance</a></span></li>
+									</ul>
+								</li>
+								<li class="N1toggle" id="LI_98"><span><a href="/1-presentation/98-maison-de-sante-pluridisciplinaire.html" target="">Maison de santé pluridisciplinaire</a></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m3">
+							<ul class="N1" id="UL_2">
+								<li class="N1toggle" id="LI_186"><span><a href="/1-presentation/186-nos-evenements-a-venir.html" target="">Nos événements à venir</a></span></li>
+								<li class="N1toggle" id="LI_174"><span><a href="/1-presentation/174-petite-enfance.html" target="">Petite enfance</a></span>
+									<ul class="N2" id="UL_174">
+										<li class="N2toggle" id="LI_143"><span><a href="/1-presentation/143-creches.html" target="">Crèches</a></span></li>
+										<li class="N2toggle" id="LI_101"><span><a href="/1-presentation/101-relais-assistants-maternels.html" target="">Relais assistants maternels</a></span></li>
+									</ul>
+								</li>
+								<li class="N1toggle" id="LI_99"><span><a href="/1-presentation/99-ecole-de-musique.html" target="">Ecole de musique </a></span></li>
+								<li class="N1toggle" id="LI_124"><span><a href="/1-presentation/124-cinemas.html" target="">Cinémas</a></span></li>
+								<li class="N1toggle" id="LI_141"><span><a href="/1-presentation/141-scolaires.html" target="">Scolaires</a></span>
+									<ul class="N2" id="UL_141">
+										<li class="N2toggle" id="LI_97"><span><a href="/1-presentation/97-transport-scolaire.html" target="">Transport scolaire</a></span></li>
+									</ul>
+								</li>
+								<li class="N1toggle" id="LI_125"><span><a href="/1-presentation/125-piscine.html" target="">Piscine</a></span></li>
+								<li class="N1toggle" id="LI_19"><span><a href="/1-presentation/19-tourisme.html" target="">Tourisme</a></span></li>
+								<li class="N1toggle" id="LI_120"><span><a href="/1-presentation/120-l-aerodrome.html" target="">L'aérodrome</a></span></li>
+								<li class="N1toggle" id="LI_181"><span><a href="/1-presentation/181-annuaire-des-associations-du-territoire.html" target="">Annuaire des associations du territoire</a></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m4">
+							<ul class="N1" id="UL_95">
+								<li class="N1toggle" id="LI_9"><span><a href="/1-presentation/9-gerer-mes-dechets.html" target="">Gérer mes dechets</a></span>
+									<ul class="N2" id="UL_9">
+										<li class="N2toggle" id="LI_26"><span><a href="/1-presentation/26-decheterie-de-roye-et-de-montdidier.html" target="">Décheterie de Roye et de Montdidier</a></span></li>
+										<li class="N2toggle" id="LI_187"><span><a href="/1-presentation/187-quand-sont-collectes-mes-dechets.html" target="">Quand sont collectés mes déchets ?</a></span></li>
+										<li class="N2toggle" id="LI_135"><span><a href="/1-presentation/135-comprendre-le-tri-selectif.html" target="">Comprendre le tri sélectif</a></span></li>
+										<li class="N2toggle" id="LI_21"><span><a href="/1-presentation/21-les-ordures-menageres.html" target="">Les ordures ménagères</a></span></li>
+										<li class="N2toggle" id="LI_25"><span><a href="/1-presentation/25-compostage-individuel.html" target="">Compostage individuel</a></span></li>
+									</ul>
+								</li>
+								<li class="N1toggle" id="LI_8"><span><a href="/1-presentation/8-brigade-verte.html" target="">Brigade Verte</a></span></li>
+								<li class="N1toggle" id="LI_11"><span><a href="/1-presentation/11-eolien.html" target="">Eolien</a></span></li>
+								<li class="N1toggle" id="LI_10"><span><a href="/1-presentation/10-service-public-d-assainissement-non-collectif-s.p.a.n.c.html" target="">Service Public d'Assainissement Non Collectif (S.P.A.N.C)</a></span>
+									<ul class="N2" id="UL_10">
+										<li class="N2toggle" id="LI_51"><span><a href="/1-presentation/51-mieux-comprendre-son-assainissement.html" target="">Mieux comprendre son assainissement</a></span></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m5">
+							<ul class="N1" id="UL_146">
+								<li class="N1toggle" id="LI_189"><span><a href="/1-presentation/189-drive-fermier.html" target="">Drive Fermier</a></span></li>
+								<li class="N1toggle" id="LI_20"><span><a href="/1-presentation/20-developpement-economique.html" target="">Développement économique</a></span></li>
+								<li class="N1toggle" id="LI_84"><span><a href="/1-presentation/84-soutenir-la-creation-d-entreprises.html" target="">Soutenir la création d'entreprises</a></span></li>
+								<li class="N1toggle" id="LI_175"><span><a href="/1-presentation/175-subventions.html" target="">Subventions</a></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m6">
+							<ul class="N1" id="UL_4">
+								<li class="N1toggle" id="LI_114"><span><a href="/1-presentation/114-chantier-d-insertion.html" target="">Chantier d'insertion</a></span></li>
+								<li class="N1toggle" id="LI_127"><span><a href="/1-presentation/127-emploi-formation.html" target="">Emploi / Formation</a></span></li>
+								<li class="N1toggle" id="LI_180"><span><a href="/1-presentation/180-la-region-proche-de-vous.html" target="">La Région, proche de vous </a></span></li>
+								<li class="N1toggle" id="LI_188"><span><a href="/1-presentation/188-les-metiers-de-bouche.html" target="">Les métiers de bouche</a></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="conteneur_item">
+						<div id="m7"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-9 contenu">
+					<div class="row">
+						<div class="col-lg-12 hidden-xs" id="bandeaux">
+							<link rel="stylesheet" href="/modules/bandeaux/default.css">
+							<script language="javascript">
+
+var nb_background1 = 4;
+var background_en_cours1 = 1;
+
+var nb_background2 = 10;
+var background_en_cours2 = 1;
+
+function change_bloc1(id){
+	if(background_en_cours1==nb_background1){
+		background_en_cours1 = 1;
+		$("#"+id+nb_background1).fadeOut(2000);
+		$("#"+id+background_en_cours1).fadeIn(1000);
+		
+	}else{
+		$("#"+id+background_en_cours1).fadeOut(2000);
+		$("#"+id+(background_en_cours1+1)).fadeIn(1000);
+		background_en_cours1++;
+	}
+}
+
+function change_bloc2(id){
+	if(background_en_cours2==nb_background2){
+		background_en_cours2 = 1;
+		$("#"+id+nb_background2).fadeOut(2000);
+		$("#"+id+background_en_cours2).fadeIn(1000);
+		
+	}else{
+		$("#"+id+background_en_cours2).fadeOut(2000);
+		$("#"+id+(background_en_cours2+1)).fadeIn(1000);
+		background_en_cours2++;
+	}
+}
+
+$(document).ready(function(){
+	$(function() {
+		setInterval( "change_bloc1('bloc1image')", 7000 );
+		setInterval( "change_bloc2('bloc2image')", 5000 );
+	});
+});
+							
+							</script>
+							<div class="row visible-lg">
+								<div class="col-lg-8">
+									<div id="bloc1image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im01.jpg&h=227&w=555&zc=1&q=80" border="0"></div>
+									<div id="bloc1image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im02.jpg&h=227&w=555&zc=1&q=80" border="0"></div>
+									<div id="bloc1image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im03.jpg&h=227&w=555&zc=1&q=80" border="0"></div>
+								</div>
+								<div class="col-lg-4">
+									<div id="bloc2image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im01.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im02.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im03.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image4"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im04.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image5"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im05.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image6"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im06.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image7"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im07.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image8"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im08.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image9"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im09.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+									<div id="bloc2image10"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im10.jpg&h=227&w=262&zc=1&q=80" border="0"></div>
+								</div>
+							</div>
+							<div class="row visible-md">
+								<div class="col-md-8">
+									<div id="bloc1image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im01.jpg&h=227&w=455&zc=1&q=80" border="0"></div>
+									<div id="bloc1image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im02.jpg&h=227&w=455&zc=1&q=80" border="0"></div>
+									<div id="bloc1image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im03.jpg&h=227&w=455&zc=1&q=80" border="0"></div>
+								</div>
+								<div class="col-md-4">
+									<div id="bloc2image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im01.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im02.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im03.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image4"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im04.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image5"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im05.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image6"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im06.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image7"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im07.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image8"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im08.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image9"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im09.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+									<div id="bloc2image10"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im10.jpg&h=227&w=212&zc=1&q=80" border="0"></div>
+								</div>
+							</div>
+							<div class="row visible-sm">
+								<div class="col-sm-8">
+									<div id="bloc1image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im01.jpg&h=180&w=360&zc=1&q=80" border="0"></div>
+									<div id="bloc1image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im02.jpg&h=180&w=360&zc=1&q=80" border="0"></div>
+									<div id="bloc1image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc1/im03.jpg&h=180&w=360&zc=1&q=80" border="0"></div>
+								</div>
+								<div class="col-sm-4">
+									<div id="bloc2image1"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im01.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image2"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im02.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image3"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im03.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image4"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im04.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image5"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im05.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image6"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im06.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image7"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im07.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image8"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im08.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image9"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im09.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+									<div id="bloc2image10"><img class="img-responsive" src="/composants/timthumb/timthumb.php?src=/images/bandeaux/bloc2/im10.jpg&h=180&w=170&zc=1&q=80" border="0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<link rel="stylesheet" href="/modules/publications/default.css" type="TEXT/CSS">
+							<div id="publications" class="row">
+								<div class="col-xs-12">
+									<ul class="breadcrumb">
+										<li><a href="/">Accueil</a> <span class="divider"></span></li>
+										<li>Les publications <span class="divider"></span></li>
+									</ul>
+									<h1>Les publications</h1>
+									<div class="row">
+										<div class="col-xs-10 col-sm-6 col-sm-offset-3"><select name="categorie" onchange="document.location.href=this.value" class="form-control"> <option value="0" selected>Choisissez une catÃ©gorie</option> <option value="/5-publications/C_19-annonce-et-dossier-plu-montdidier.html">Annonce et dossier PLU MONTDIDIER</option><option value="/5-publications/C_2-comptes-rendus-des-conseils-communautaires.html">Comptes-rendus des conseils communautaires</option><option value="/5-publications/C_1-nos-publications.html">Nos publications</option><option value="/5-publications/C_11-rapports-d-activite.html">Rapports d'activité</option><option value="/5-publications/C_12-journaux-du-tri.html">Journaux du tri</option><option value="/5-publications/C_13-compte-rendus-reunions-de-bureau.html">Compte-rendus réunions de bureau</option><option value="/5-publications/C_14-revue-de-presse.html">Revue de presse</option><option value="/5-publications/C_16-comptes-rendus-des-conseils-communautaires-avant-fusion.html">Comptes-rendus des conseils communautaires (avant fusion)</option><option value="/5-publications/C_17-compte-rendus-reunions-de-bureau-avant-fusion.html">Compte-rendus réunions de bureau (avant fusion)</option> </select></div>
+									</div>
+									<div id="publications_content">
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/234/dossier_modif_simpl_montdidier_plu.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Dossier de modification simplifiée du PLU de Montdidier</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/246/cr_bc_017_2019_1411.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Procès-Verbal du bureau communautaire du 14 novembre 2019</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/251/rapport-d-orientations-budgetaires.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Rapport d'orientations budgétaires 2020</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/252/cr_cc_05_2020_1806.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> PV du conseil communautaire du 18 juin 2020</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/232/annonce-legale.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> ANNONCE LEGALE</div>
+											<div class="texte col-xs-12 col-sm-9">Modification simplifiée N°2 du PLU de Montdidier</div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/244/cr_bc_015_2019_1010.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Procès verbal du bureau communautaire du 10 octobre 2019</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/249/brochure-numerique-covid19-aides-entreprises.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Découvrez toutes les mesures, tous les acteurs, au service des entreprises des Hauts-de-France !</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/250/cr_cc_03_2020_1203-2.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> PV du Conseil Communautaire du 12 mars 2020</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/219/definitif.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> Journal communautaire</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="publication row">
+											<div class="titre col-xs-12 col-sm-9"><button class="btn btn-primary" type="button" onclick="window.open('/modules/publications/fichiers/242/cr_bc_013_2019_1209.pdf', '_blank')"><span class="glyphicon glyphicon-download-alt"></span> TÃ©lÃ©charger</button> PV du bureau communautaire du 12 septembre 2019</div>
+											<div class="texte col-xs-12 col-sm-9"></div>
+										</div>
+										<div class="text-center">
+											<ul class="pagination">
+												<li class="disabled"><a href="#"></a></li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="/5-2-publications">2</a></li>
+												<li><a href="/5-3-publications">3</a></li>
+												<li><a href="/5-4-publications">4</a></li>
+												<li><a href="/5-5-publications">5</a></li>
+												<li><a href="/5-6-publications">6</a></li>
+												<li><a href="/5-2-publications">>></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<link rel="stylesheet" type="text/css" href="/modules/pages/default.css">
+					<div id="plg_edito">
+						<div class="titre">Edito</div>
+						<div class="descriptif"><a href="/9-pages/2-edito.html">Le mot de la Présidente Bienvenue sur le site internet de la Communauté de communes du Grand Roye Ce site a été...</a> <br><br> <strong><a href="/9-pages/2-edito.html">Lire la suite</a></strong></div>
+					</div>
+					<link rel="stylesheet" href="/modules/newsletter/plg_colonne.css" type="TEXT/CSS">
+					<script>
+	$(document).ready(function() {
+		$('#nimform_newsletter')
+			.bootstrapValidator()
+			.on('success.form.bv', function(e) {
+				e.preventDefault();
+				var $form = $(e.target);
+				var bv = $form.data('bootstrapValidator');
+				$.post( $form.attr('action'), $form.serialize(), function(result) {
+						$( "#statut" ).addClass( "visible" );
+						$( "#statut" ).removeClass( "hidden" );
+				})
+		});
+			
+
+});	
+					</script>
+					<div id="newsletter">
+						<div class="titre">Newsletter</div>
+						<div class="descriptif">Inscrivez-vous gratuitement<br> pour ne rien manquer de l'actualitÃ©</div>
+						<form action="/modules/newsletter/add.php" role="form" method="post" name="formulaire" id="nimform_newsletter">
+							<div class="form-group">
+								<div class="input-group"><input class="form-control" id="emailnewsletter" placeholder="Email" name="email" type="email" required="required">
+									<div class="input-group-addon hidden-sm"><input type="submit" value="Ok" class="btn btn-primary btok"></div>
+								</div>
+							</div>
+							<div class="form-group"><input type="checkbox" name="rgpd" required="required" value="Ok"> Jâ&#128;&#153;ai bien pris connaissance des <a href="/9-pages/4-Politique-de-gestion-des-donnees-personnelles.html" style="color:#FFF"><strong>conditions dâ&#128;&#153;utilisation de mes donnÃ©es personnelles</strong></a></div>
+							<div class="visible-sm" style="text-align:center"><input type="submit" value="Ok" class="btn btn-primary btok"></div>
+							<div id="statut" class="hidden">Merci pour votre inscription!</div>
+						</form>
+					</div>
+					<link rel="stylesheet" href="/modules/contact/plg_colonne.css" type="TEXT/CSS">
+					<div id="contact">
+						<div class="titre">Nos coordonnÃ©es</div>
+						<div class="descriptif">Antenne de Montdidier :<br> 1136 rue du Pasteur prolongÃ©e<br> 80500 Montdidier<br> <strong>03 22 37 50 50</strong> Antenne de RoyeÂ : 11 rue de la pÃªcherie 80700 Roye <strong>03 22 78 58 83</strong> Du lundi au vendredi de 9h Ã  12h30 et de 13h30 Ã  17h <br></div>
+					</div>
+					<link rel="stylesheet" href="/modules/sondage/plg_colonne.css" type="TEXT/CSS">
+					<div id="sondage">
+						<div class="titre">SONDAGE</div>
+						<div class="question">Mettez-vous tout en oeuvre pour le tri de vos déchets ?</div>
+						<div class="reponse">
+							<div class="formulaire">
+								<form method="post" class="form-inline" id="formsondage" action="/modules/sondage/vote.php">
+									<div class="choix"><label class="radio" for="rep1"> <input type="radio" name="rep" id="rep1" value="1" onclick="document.getElementById('formsondage').submit();"> Oui </label></div>
+									<div class="choix"><label class="radio" for="rep2"> <input type="radio" name="rep" id="rep2" value="2" onclick="document.getElementById('formsondage').submit();"> Non </label></div>
+									<div class="choix"><label class="radio" for="rep3"> <input type="radio" name="rep" id="rep3" value="3" onclick="document.getElementById('formsondage').submit();"> Je ne sais pas </label></div><input type="hidden" name="id" value="7"></form>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs">
+						<link rel="stylesheet" href="/modules/questions/plg_colonne.css" type="TEXT/CSS">
+						<div id="questions"><span class="glyphicon glyphicon-envelope"></span>
+							<div class="titre"><a href="/11-posez-nous-vos-questions">Posez-nous<br>vos questions</a></div>
+							<div class="descriptif"><a href="/11-posez-nous-vos-questions">Vous souhaitez signaler un problÃ¨me ou nous poser une question ?</a></div>
+						</div>
+						<link rel="stylesheet" href="/modules/meteo/default.css" type="TEXT/CSS">
+						<script src="/composants/zweatherfeed/jquery.zweatherfeed.js" type="text/javascript"></script>
+						<script type="text/javascript">
+
+  	$(document).ready(function () {
+		//$('#meteoyahoo').weatherfeed(['FRXX2916']);	
+		$('#meteoyahoo').weatherfeed(['FRPI1440']);	
+	});
+						</script>
+						<div id="meteo">
+							<div class="titre">MÃ©tÃ©o</div>
+							<div class="date">Mercredi 08 Juillet 2020</div>
+							<div align="center">
+								<div id="cont_8a436922c286d880514919dcedf8aec3">
+									<script type="text/javascript" async src="https://www.tameteo.com/wid_loader/8a436922c286d880514919dcedf8aec3"></script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<link rel="stylesheet" href="/modules/galerie/plg_colonne.css" type="TEXT/CSS">
+					<div id="plg_galerie"><a href="/17-galerie-multimedia"><img src="/images/galerie-multimedia.jpg"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid hidden-xs" id="bas">
+			<div class="container" style="position:relative;">
+				<div class="col-sm-7" id="plg_publications">
+					<link rel="stylesheet" href="/modules/publications/plg_bas.css" type="TEXT/CSS">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="titre"><b>Les publications</b> du grand Roye</div>
+							<div class="descriptif">Retrouvez les derniÃ¨res publications de la CommunautÃ© de communes (Compte-rendus, journaux, rapports d'activitÃ©s, etc.)</div>
+						</div>
+						<div class="visuels col-sm-6 row"><a href="/5-publications"><img src="/images/publications.jpg" class="img-responsive"></a></div>
+					</div><a href="/5-publications" class="btn_noir">Consultez les <b>publications</b></a></div>
+				<div class="col-sm-5" id="plg_adresses">
+					<link rel="stylesheet" href="/modules/adresses/plg_bas.css" type="TEXT/CSS">
+					<div class="titre"><b>Adresses</b> utiles</div>
+					<script>
+        $().ready(function() {
+            $('#carousel_adresses').carousel({
+              interval: 3000
+            })
+        });
+    
+					</script>
+					<div id="carousel_adresses" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel_adresses" data-slide-to="0" class="active">
+							<li data-target="#carousel_adresses" data-slide-to="1">
+							<li data-target="#carousel_adresses" data-slide-to="2">
+							<li data-target="#carousel_adresses" data-slide-to="3">
+							<li data-target="#carousel_adresses" data-slide-to="4">
+							<li data-target="#carousel_adresses" data-slide-to="5">
+							<li data-target="#carousel_adresses" data-slide-to="6">
+							<li data-target="#carousel_adresses" data-slide-to="7">
+							<li data-target="#carousel_adresses" data-slide-to="8">
+							<li data-target="#carousel_adresses" data-slide-to="9">
+							<li data-target="#carousel_adresses" data-slide-to="10">
+							<li data-target="#carousel_adresses" data-slide-to="11">
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="visuel"><img src="/images/adresses-bdp/dechetterie-roye.jpg"></div>
+								<div class="titre">DÃ©chetterie du Grand Roye</div>
+								<div class="descriptif">Rue du puits Ã  Marne - zone industrielle ouest<br>80700 Roye</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/decheterrie-montdidier.jpg"></div>
+								<div class="titre">DÃ©chetterie de Montdidier</div>
+								<div class="descriptif">Route dâ&#128;&#153;Etelfay<br>80500 Montdidier</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/mairie.jpg"></div>
+								<div class="titre">Mairie de Roye</div>
+								<div class="descriptif">Place de l'hÃ´tel de ville<br>80700 Roye<br>03 22 37 49 82</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/montdidier.jpg"></div>
+								<div class="titre">Mairie de Montdidier</div>
+								<div class="descriptif">Place du gÃ©nÃ©ral de Gaulle<br>80500 Montdidier<br>03 22 78 75 75</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/college-louise-michel-montdidier-80.jpg"></div>
+								<div class="titre">CollÃ¨ge Louise MichÃ¨le</div>
+								<div class="descriptif">Route de Goyencourt<br>80700 Roye<br>03 22 87 04 38</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/montdiloup.jpg"></div>
+								<div class="titre">CrÃ¨che Montdiâ&#128;&#153;loup</div>
+								<div class="descriptif">Champs Saint-Pierre<br>le Hameau 80500 Montdidier<br>03 22 87 38 56</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/les-roitelets.png"></div>
+								<div class="titre">CrÃ¨che les Roitelets</div>
+								<div class="descriptif">32 rue des Granges<br>80700 Roye<br>03 22 87 88 12</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/ecole-de-musique-montdidier.jpg"></div>
+								<div class="titre">Ecole de musique de Montdidier</div>
+								<div class="descriptif">13 rue Anatole France<br>80500 Montdidier<br>03 22 78 16 57</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/ecole-de-musique-roye.jpg"></div>
+								<div class="titre">Ecole de musique de Roye</div>
+								<div class="descriptif">7 boulevard du GÃ©nÃ©ral Leclercq<br>80700 Roye<br>03 22 79 11 59</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/RAM-Montdidier.jpg"></div>
+								<div class="titre">Relais Assistants Maternels de Montdidier</div>
+								<div class="descriptif">(dans la crÃ¨che Montdiâ&#128;&#153;loup) Ã  Montdidier<br>03 22 87 44 78</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/ram-roye.jpg"></div>
+								<div class="titre">Relais Assistants Maternels de Roye</div>
+								<div class="descriptif">11 rue de la PÃªcherie<br>80700 Roye<br>03 22 78 68 21</div>
+							</div>
+							<div class="item">
+								<div class="visuel"><img src="/images/adresses-bdp/siege-de-la-CCGR.jpg"></div>
+								<div class="titre">Le siÃ¨ge de la CC Grand Roye</div>
+								<div class="descriptif">1136 rue Pasteur ProlongÃ©e<br>80500 Montdidier<br>03 22 37 50 50</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-sm-12" id="plg_bas">
+				<link rel="stylesheet" href="/modules/bas/plg_bas.css">
+				<div class="col-sm-3"><a href="//extranet.grandroye.fr" target="_blank">Extranet</a></div>
+				<div class="col-sm-3"><a href="/9-pages/3-mentions-legales.html">Mentions lÃ©gales</a></div>
+				<div class="col-sm-3"><a href="/9-pages/4-politique-de-gestion-des-donnees-personnelles.html">Politique de gestion des donnÃ©es personnelles</a></div>
+				<div class="col-sm-3"><a href="//www.netinfosmedias.com" target="_blank">Netinfosmedias</a></div>
+			</div>
+		</div>
+	</body>
+</html>
