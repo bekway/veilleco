@@ -1,0 +1,1111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	<head profile="http://www.w3.org/1999/xhtml/vocab">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"c2932e9a30",applicationID:"217959676"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<link rel="shortcut icon" href="/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/sites/all/themes/Porto/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/vendor/flexslider/flexslider.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/vendor/prettyPhoto/css/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/vendor/circle-flip-slideshow/css/component.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/vendor/isotope/jquery.isotope.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/theme.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/drupal-styles.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/theme-elements.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/theme-animate.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/theme-blog.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/sites/all/themes/Porto/css/theme-responsive.css" rel="stylesheet" type="text/css" media="screen">
+		<title>Communauté d'agglomération | Pays de Grasse</title>
+		<style type="text/css" media="all">
+@import url("/modules/system/system.base.css?qa7ccc");
+@import url("/modules/system/system.menus.css?qa7ccc");
+@import url("/modules/system/system.messages.css?qa7ccc");
+@import url("/modules/system/system.theme.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+@import url("/sites/all/modules/md_megamenu/css/awemenu/css/lib/font-awesome.min.css?qa7ccc");
+@import url("/sites/all/modules/md_megamenu/css/awemenu/css/lib/bootstrap.min.css?qa7ccc");
+@import url("/sites/all/modules/md_megamenu/css/awemenu/css/awemenu.css?qa7ccc");
+@import url("/sites/all/modules/md_megamenu/css/awemenu/css/themes.css?qa7ccc");
+@import url("/sites/all/modules/md_megamenu/css/awemenu/css/md-megamenu-style.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+@import url("/sites/all/modules/simplenews/simplenews.css?qa7ccc");
+@import url("/modules/aggregator/aggregator.css?qa7ccc");
+@import url("/modules/book/book.css?qa7ccc");
+@import url("/sites/all/modules/calendar/css/calendar_multiday.css?qa7ccc");
+@import url("/modules/comment/comment.css?qa7ccc");
+@import url("/sites/all/modules/date/date_api/date.css?qa7ccc");
+@import url("/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qa7ccc");
+@import url("/modules/field/theme/field.css?qa7ccc");
+@import url("/modules/node/node.css?qa7ccc");
+@import url("/modules/quiz/quiz.css?qa7ccc");
+@import url("/modules/search/search.css?qa7ccc");
+@import url("/modules/user/user.css?qa7ccc");
+@import url("/sites/all/modules/views/css/views.css?qa7ccc");
+@import url("/sites/all/modules/ckeditor/css/ckeditor.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+@import url("/sites/all/modules/colorbox/styles/default/colorbox_style.css?qa7ccc");
+@import url("/sites/all/modules/ctools/css/ctools.css?qa7ccc");
+@import url("/sites/all/modules/md_slider/css/animate.css?qa7ccc");
+@import url("/sites/all/modules/md_slider/css/md-slider.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.md-layer-1-0-0{background:rgb(246,246,246);background:rgba(246,246,246,0.8);z-index:998 !important;-webkit-border-top-left-radius:10px;-moz-border-radius-topleft:10px;border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-moz-border-radius-topright:10px;border-top-right-radius:10px;-webkit-border-bottom-left-radius:10px;-moz-border-radius-bottomleft:10px;border-bottom-left-radius:10px;-webkit-border-bottom-right-radius:10px;-moz-border-radius-bottomright:10px;border-bottom-right-radius:10px;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;color:#3f749a !important;text-align:center;font-size:2.0833333333333em;font-weight:700;font-family:"Arial";}.md-layer-1-0-1 a{background:#2da2d4;-webkit-border-top-left-radius:20px;-moz-border-radius-topleft:20px;border-top-left-radius:20px;-webkit-border-top-right-radius:20px;-moz-border-radius-topright:20px;border-top-right-radius:20px;-webkit-border-bottom-left-radius:20px;-moz-border-radius-bottomleft:20px;border-bottom-left-radius:20px;-webkit-border-bottom-right-radius:20px;-moz-border-radius-bottomright:20px;border-bottom-right-radius:20px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:#ffffff !important;text-align:center;font-size:2.0833333333333em;}.md-layer-1-0-1{z-index:1000!important;}.md-layer-1-1-0 a{background:rgb(255,255,255);background:rgba(255,255,255,0.8);-webkit-border-top-left-radius:15px;-moz-border-radius-topleft:15px;border-top-left-radius:15px;-webkit-border-top-right-radius:15px;-moz-border-radius-topright:15px;border-top-right-radius:15px;-webkit-border-bottom-left-radius:15px;-moz-border-radius-bottomleft:15px;border-bottom-left-radius:15px;-webkit-border-bottom-right-radius:15px;-moz-border-radius-bottomright:15px;border-bottom-right-radius:15px;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;color:#16915c !important;text-align:center;font-size:2.0833333333333em;font-family:"Open Sans";}.md-layer-1-1-0{z-index:1000!important;}.md-layer-1-2-0 a{background:rgb(255,255,255);background:rgba(255,255,255,0.8);-webkit-border-top-left-radius:15px;-moz-border-radius-topleft:15px;border-top-left-radius:15px;-webkit-border-top-right-radius:15px;-moz-border-radius-topright:15px;border-top-right-radius:15px;-webkit-border-bottom-left-radius:15px;-moz-border-radius-bottomleft:15px;border-bottom-left-radius:15px;-webkit-border-bottom-right-radius:15px;-moz-border-radius-bottomright:15px;border-bottom-right-radius:15px;padding-top:15px;padding-right:15px;padding-bottom:15px;padding-left:15px;color:#7c5c34 !important;text-align:center;font-size:2.0833333333333em;font-family:"Open Sans";}.md-layer-1-2-0{z-index:1000!important;}
+
+/*]]>*/-->
+		</style>
+		<style type="text/css" media="all">
+@import url("/sites/all/modules/md_slider/css/md-slider-style.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+@media (max-width:460px){.hideonmobile{display:none !important;}}
+
+/*]]>*/-->
+		</style>
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light%7COpen+Sans:400,600,700,800" media="all">
+		<style type="text/css" media="all">
+@import url("/sites/all/modules/eu_cookie_compliance/css/eu_cookie_compliance.css?qa7ccc");
+@import url("/sites/all/modules/st_block/css/st-block.css?qa7ccc");
+@import url("/sites/default/files/megamenu-4-custom.css?qa7ccc");
+		</style>
+		<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:#0779bf;}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,#sliding-popup label,#sliding-popup div,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important;}.eu-cookie-withdraw-tab{border-color:#fff;}.eu-cookie-compliance-more-button{color:#fff !important;}
+
+/*]]>*/-->
+		</style>
+		<style type="text/css" media="all">
+@import url("/sites/all/themes/Porto_sub/css/custom.css?qa7ccc");
+		</style>
+		<link type="text/css" rel="stylesheet" href="/sites/default/files/less/amWiBXo8QA2LwpPq3ErC0ccj8OdVp-eFN08JXxQYUDE/sites/all/themes/Porto/css/less/skin.gRfFZ-IhYylbEgezBYp7wkHRWYVDAI22P6zHoL798wg.css?qa7ccc" media="all">
+		<style type="text/css" media="all">
+@import url("/sites/default/files/fontyourface/font.css?qa7ccc");
+@import url("/sites/default/files/fontyourface/local_fonts/Kaili_light-normal-lighter/stylesheet.css?qa7ccc");
+@import url("/sites/default/files/fontyourface/local_fonts/Kaili-normal-normal/stylesheet.css?qa7ccc");
+		</style>
+		<script type="text/javascript" src="/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.js?v=1.8.3"></script>
+		<script type="text/javascript" src="/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+		<script type="text/javascript" src="/misc/jquery.once.js?v=1.2"></script>
+		<script type="text/javascript" src="/misc/drupal.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/md_megamenu/js/awemenu.min.js?v=1.0"></script>
+		<script type="text/javascript" src="/sites/all/modules/eu_cookie_compliance/js/jquery.cookie-1.4.1.min.js?v=1.4.1"></script>
+		<script type="text/javascript" src="/sites/all/modules/scroll_to_destination_anchors/scroll_to_destination_anchors.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/default/files/languages/fr_OEc4KtEe_sL6F3IJmAKKMbomD7Mnd57G9Ox6ykOM3a4.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/libraries/colorbox/jquery.colorbox-min.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/colorbox/js/colorbox.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/colorbox/styles/default/colorbox_style.js?qa7ccc"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+            (function($) {
+                $(document).ready(function() {
+                    $("#md-megamenu-4").aweMenu({
+            trigger : "toggle",
+            style : "md-style1",
+            position : "standard",
+            enableAnimation : 1,
+            defaultDesktopAnimation : "zoom",
+            desktopDurationDefault : "500",
+            showArrow : 1,
+            responsiveWidth : 640,
+            mobileTrigger : "click",
+            mobileStyle : "md-mobile-style1",
+            mobileAnimationDuration : 300,
+            mobilePosition : "standard",
+            showMobileArrow : 1,
+            sticky : 1,
+            stickyOffset : ".region-page-top",
+            initialize : function(menu){
+                if (menu.options.sticky) {
+                    $("#toolbar a.toggle").click(function(event) {
+                        event.preventDefault();
+                        if (menu.stickyActivated) {
+                            menu.$el.css("top", $(".region-page-top").offset().top + $(".region-page-top").height());
+                        }
+                    });
+                }
+            }
+        });
+                });
+            })(jQuery);
+        
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="/sites/all/modules/md_slider/js/jquery.touchwipe.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/md_slider/js/modernizr.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/md_slider/js/jquery.easing.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/md_slider/js/md-slider.js?qa7ccc"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) {
+      $(document).ready(function() {
+          effectsIn = Drupal.settings.inEffects;
+          effectsOut = Drupal.settings.outEffects;
+          var options_1 = Drupal.settings.md_slider_options_1;$('#md-slider-1-block').mdSlider(options_1);
+      });
+    })(jQuery);
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?qa7ccc"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2328834-24", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="/sites/all/modules/matomo/matomo.js?qa7ccc"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://matomo.paysdegrasse.fr/" : "http://matomo.paysdegrasse.fr/");_paq.push(["setSiteId", "1"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["trackPageView"]);_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"piwik.js";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="/sites/all/modules/st_block/js/jquery.stellar.min.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/st_block/js/st_block.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/st_block/js/jquery.appear.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/modules/st_block/js/plugins-scroll.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/modernizr.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/bootstrap.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.easing.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.cookie.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/includes/twitter/jquery.tweet.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/flexslider/jquery.flexslider.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/circle-flip-slideshow/js/jquery.flipshow.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/isotope/jquery.isotope.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/prettyPhoto/js/jquery.prettyPhoto.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jflickrfeed/jflickrfeed.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.mapmarker.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.stellar.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.gmap.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/magnific-popup/magnific-popup.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.validate.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/vendor/jquery.appear.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/js/mobile-menu.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/js/plugins.js?qa7ccc"></script>
+		<script type="text/javascript" src="/sites/all/themes/Porto/js/porto.js?qa7ccc"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"porto_sub","theme_token":"bqc-CYj9onbgw9v4OhmjdC6vGtbxptBz-O2R0RBM0_Y","js":{"0":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/md_megamenu\/js\/awemenu.min.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/scroll_to_destination_anchors\/scroll_to_destination_anchors.js":1,"public:\/\/languages\/fr_OEc4KtEe_sL6F3IJmAKKMbomD7Mnd57G9Ox6ykOM3a4.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"1":1,"sites\/all\/modules\/md_slider\/js\/jquery.touchwipe.js":1,"sites\/all\/modules\/md_slider\/js\/modernizr.js":1,"sites\/all\/modules\/md_slider\/js\/jquery.easing.js":1,"sites\/all\/modules\/md_slider\/js\/md-slider.js":1,"2":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/modules\/matomo\/matomo.js":1,"4":1,"sites\/all\/modules\/st_block\/js\/jquery.stellar.min.js":1,"sites\/all\/modules\/st_block\/js\/st_block.js":1,"sites\/all\/modules\/st_block\/js\/jquery.appear.js":1,"sites\/all\/modules\/st_block\/js\/plugins-scroll.js":1,"sites\/all\/themes\/Porto\/vendor\/modernizr.js":1,"sites\/all\/themes\/Porto\/vendor\/bootstrap.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.easing.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.cookie.js":1,"sites\/all\/themes\/Porto\/includes\/twitter\/jquery.tweet.js":1,"sites\/all\/themes\/Porto\/vendor\/flexslider\/jquery.flexslider.js":1,"sites\/all\/themes\/Porto\/vendor\/circle-flip-slideshow\/js\/jquery.flipshow.js":1,"sites\/all\/themes\/Porto\/vendor\/isotope\/jquery.isotope.js":1,"sites\/all\/themes\/Porto\/vendor\/prettyPhoto\/js\/jquery.prettyPhoto.js":1,"sites\/all\/themes\/Porto\/vendor\/jflickrfeed\/jflickrfeed.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.mapmarker.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.stellar.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.gmap.js":1,"sites\/all\/themes\/Porto\/vendor\/magnific-popup\/magnific-popup.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.validate.js":1,"sites\/all\/themes\/Porto\/vendor\/jquery.appear.js":1,"sites\/all\/themes\/Porto\/js\/mobile-menu.js":1,"sites\/all\/themes\/Porto\/js\/plugins.js":1,"sites\/all\/themes\/Porto\/js\/porto.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/md_megamenu\/css\/awemenu\/css\/lib\/font-awesome.min.css":1,"sites\/all\/modules\/md_megamenu\/css\/awemenu\/css\/lib\/bootstrap.min.css":1,"sites\/all\/modules\/md_megamenu\/css\/awemenu\/css\/awemenu.css":1,"sites\/all\/modules\/md_megamenu\/css\/awemenu\/css\/themes.css":1,"sites\/all\/modules\/md_megamenu\/css\/awemenu\/css\/md-megamenu-style.css":1,"sites\/all\/modules\/simplenews\/simplenews.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/quiz\/quiz.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/md_slider\/css\/animate.css":1,"sites\/all\/modules\/md_slider\/css\/md-slider.css":1,"0":1,"sites\/all\/modules\/md_slider\/css\/md-slider-style.css":1,"1":1,"http:\/\/fonts.googleapis.com\/css?family=Shadows+Into+Light|Open+Sans:400,600,700,800":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"sites\/all\/modules\/st_block\/css\/st-block.css":1,"public:\/\/megamenu-4-custom.css":1,"2":1,"sites\/all\/themes\/Porto_sub\/css\/custom.css":1,"sites\/all\/themes\/Porto\/css\/less\/skin.less":1,"sites\/default\/files\/fontyourface\/font.css":1,"public:\/\/fontyourface\/local_fonts\/Kaili_light-normal-lighter\/stylesheet.css":1,"public:\/\/fontyourface\/local_fonts\/Kaili-normal-normal\/stylesheet.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"Pr\u00e9c\u00e9dent","next":"Suivant","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"inEffects":["bounceIn","bounceInDown","bounceInUp","bounceInLeft","bounceInRight","fadeIn","fadeInUp","fadeInDown","fadeInLeft","fadeInRight","fadeInUpBig","fadeInDownBig","fadeInLeftBig","fadeInRightBig","flipInX","flipInY","foolishIn","lightSpeedIn","puffIn","rollIn","rotateIn","rotateInDownLeft","rotateInDownRight","rotateInUpLeft","rotateInUpRight","twisterInDown","twisterInUp","swap","swashIn","tinRightIn","tinLeftIn","tinUpIn","tinDownIn","vanishIn","bounceIn","bounceInDown","bounceInUp","bounceInLeft","bounceInRight","fadeIn","fadeInUp","fadeInDown","fadeInLeft","fadeInRight","fadeInUpBig","fadeInDownBig","fadeInLeftBig","fadeInRightBig","flipInX","flipInY","foolishIn","lightSpeedIn","puffIn","rollIn","rotateIn","rotateInDownLeft","rotateInDownRight","rotateInUpLeft","rotateInUpRight","twisterInDown","twisterInUp","swap","swashIn","tinRightIn","tinLeftIn","tinUpIn","tinDownIn","vanishIn"],"outEffects":["bombRightOut","bombLeftOut","bounceOut","bounceOutDown","bounceOutUp","bounceOutLeft","bounceOutRight","fadeOut","fadeOutUp","fadeOutDown","fadeOutLeft","fadeOutRight","fadeOutUpBig","fadeOutDownBig","fadeOutLeftBig","fadeOutRightBig","flipOutX","flipOutY","foolishOut","hinge","holeOut","lightSpeedOut","puffOut","rollOut","rotateOut","rotateOutDownLeft","rotateOutDownRight","rotateOutUpLeft","rotateOutUpRight","rotateDown","rotateUp","rotateLeft","rotateRight","swashOut","tinRightOut","tinLeftOut","tinUpOut","tinDownOut","vanishOut","bombRightOut","bombLeftOut","bounceOut","bounceOutDown","bounceOutUp","bounceOutLeft","bounceOutRight","fadeOut","fadeOutUp","fadeOutDown","fadeOutLeft","fadeOutRight","fadeOutUpBig","fadeOutDownBig","fadeOutLeftBig","fadeOutRightBig","flipOutX","flipOutY","foolishOut","hinge","holeOut","lightSpeedOut","puffOut","rollOut","rotateOut","rotateOutDownLeft","rotateOutDownRight","rotateOutUpLeft","rotateOutUpRight","rotateDown","rotateUp","rotateLeft","rotateRight","swashOut","tinRightOut","tinLeftOut","tinUpOut","tinDownOut","vanishOut"],"md_slider_options_1":{"fullwidth":true,"transitionsSpeed":800,"width":"1170","height":"800","enableDrag":true,"responsive":true,"pauseOnHover":true,"loop":true,"showLoading":false,"loadingPosition":"bottom","showArrow":true,"showBullet":true,"posBullet":"2","showThumb":false,"posThumb":"1","slideShowDelay":"8000","slideShow":true,"styleBorder":"1","styleShadow":"0","videoBox":true},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch3\u003ENous utilisons des cookies pour am\u00e9liorer votre experience\u003C\/h3\u003E\u003Cp\u003EEn poursuivant votre navigation sur ce site, vous acceptez l\u2019utilisation de cookies\u0026nbsp;[ou autres traceurs]\u0026nbsp;pour vous proposer\u0026nbsp;[Par exemple, des publicit\u00e9s cibl\u00e9es adapt\u00e9s \u00e0 vos centres d\u2019int\u00e9r\u00eats]\u0026nbsp;et\u0026nbsp;r\u00e9aliser des statistiques de visites.\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003ENon, donnez-moi plus d\u0027informations\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022 \u003ENon, merci\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\u003Cp\u003EBy tapping the Accept button, you agree to us doing so.\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003ENon, donnez-moi plus d\u0027informations\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button\u0022 \u003ENon, merci\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EMerci d\u0027avoir accepter les cookies\u003C\/h2\u003E\u003Cp\u003EVous pouvez faire dispara\u00eetre ce message\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003ECacher\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EPlus d\u0027info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"https:\/\/www.paysdegrasse.fr\/mentions-legales","popup_link_new_window":1,"popup_position":null,"fixed_top_position":1,"popup_language":"fr","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","domain_all_sites":0,"popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"opt_in","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch3\u003ENous utilisons des cookies pour am\u00e9liorer votre experience\u003C\/h3\u003E\u003Cp\u003EVous avez donn\u00e9 votre consentement pour l\u0027utilisation des cookies.\u0026nbsp;\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false,"withdraw_button_on_info_popup":0,"cookie_categories":[],"enable_save_preferences_button":1,"fix_first_cookie_category":1,"select_all_categories_by_default":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"matomo":{"trackMailto":1,"trackColorbox":1}});
+//--><!]]>
+		</script>
+	</head>
+	<body class="html front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page">
+		<div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Aller au contenu principal</a></div>
+		<div class="body">
+			<header>
+				<div class="container">
+					<h1 class="logo"><a href="/" title="Accueil" rel="home" id="logo"> <img src="/sites/default/files/pdg_loe.png" alt="Accueil"> </a></h1>
+					<div id="name-and-slogan" class="hidden">
+						<h1 id="site-name" class="hidden"><a href="/" title="Accueil" rel="home"><span>Pays de Grasse</span></a></h1>
+						<div id="site-slogan" class="hidden">Communauté d'agglomération du pays de Grasse</div>
+					</div>
+					<!-- /#name-and-slogan -->
+					<!-- /branding -->
+					<div id="header-top"></div>
+					<nav></nav>
+				</div>
+			</header>
+			<div role="main" class="main">
+				<div class="region region-header-menu">
+					<div id="block-block-1" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+						<div class="content">
+							<nav>
+								<ul class="nav nav-pills nav-top">
+									<li><a href="https://www.paysdegrasse.fr/espace-presse-capg">Espace Presse</a></li>
+									<li><a href="https://www.paysdegrasse.fr/nous-contacter">CONTACT</a></li>
+									<li><a href="https://www.paysdegrasse.fr/infos-pratiques-0">Infos Pratiques</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div id="block-block-22" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+						<div class="content">
+							<div align="right">
+								<div class="social-icons">
+									<ul class="social-icons">
+										<li class="facebook"><a href="https://www.facebook.com/pages/Communaut%C3%A9-dagglom%C3%A9ration-du-Pays-de-Grasse/136973279697584/" target="_blank" title="Facebook">Facebook</a></li>
+										<li class="vimeo"><a href="https://twitter.com/comagglo" target="_blank" title="Vidéothèque">Twitter</a></li>
+										<li class="twitter"><a href="https://www.paysdegrasse.fr/user" target="_blank" title="Connexion Utilisateur">Connexion Utilisateur</a></li>
+										<li class="digg"><a href="https://www.paysdegrasse.fr/search" target="_blank" title="Connexion Utilisateur">Recherche</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="block-md-megamenu-4" class="block block-md-megamenu st-block-parallax" data-stellar-background-ratio="0">
+						<div class="content">
+							<div id="md-megamenu-4" class="md-megamenu md-megamenu-4 md-megamenu-general awemenu-nav md-hozirontal-menu">
+								<div class="awemenu-container">
+									<ul class="awemenu">
+										<li class="awemenu-item awemenu-item-level-1 topmdmenu"><a href="/" class="awemenu-item-link"><span class="awemenu-item-title">Mon Agglo</span></a>
+											<ul class="awemenu-submenu awemenu-megamenu" data-width="100%">
+												<li class="awemenu-item">
+													<div class="awemenu-megamenu-wrapper">
+														<div class="row">
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Agenda</h3>
+																<div><a href="/agenda"><img alt="" src="/sites/default/files/agenda.jpg" style="width: 300px; height: 141px;"></a></div>
+																<div><a href="/agenda" class="headmdmenulinkpt">Agenda du Pays de Grasse</a></div>
+																<div><a href="/calendrier-culturel" class="headmdmenulinkpt">Agenda Culturel</a></div>
+																<div><a href="/agenda-du-moyen-et-haut-pays" class="headmdmenulinkpt">Agenda du Moyen et Haut-Pays</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Pays de Grasse</h3>
+																<div><a href="/connaitre-votre-agglo"><img alt="" src="/sites/default/files/agglo_1.jpg" style="width: 300px; height: 141px;"></a></div>
+																<div><a href="/connaitre-votre-agglo" class="headmdmenulinkpt">Connaître votre Agglo</a></div>
+																<div><a href="/accessibilite-handicap" class="headmdmenulinkpt">Accessibilité Handicap</a></div>
+																<div><a href="/23-communes" class="headmdmenulinkpt">23 Communes</a></div>
+																<div><a href="/projet-de-territoire" class="headmdmenulinkpt">Projet de territoire</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Nos Compétences</h3>
+																<div><a href="/competences-et-actions"><img alt="" src="/sites/default/files/competences.jpg" style="width: 300px; height: 141px;"></a></div>
+																<div><a href="/competences-et-actions" class="headmdmenulinkpt">Compétences</a></div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 col-xs-12">
+																<div class="md-separator-text md-separator-aligncenter">
+																	<div>***</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header headmdmenu">Conseillers communautaires</h3>
+																<div><img alt="" src="/sites/default/files/elus.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/elus" class="headmdmenulinkpt">Les élus du bureau communautaire et délégations</a></div>
+																<div><a href="/les-elus-du-conseil-de-communaute" class="headmdmenulinkpt">Les élus du conseil de communauté</a></div>
+																<div><a href="/les-commissions-thematiques" class="headmdmenulinkpt">Les commissions thématiques</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header headmdmenu">Assemblées</h3>
+																<div><img alt="" src="/sites/default/files/conseil.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/d-lib-rations-du-conseil-communautaire" class="headmdmenulinkpt">Comptes-rendus des décisions du conseil de communauté</a></div>
+																<div><a href="/recueil" class="headmdmenulinkpt">Recueil des actes administratifs</a></div>
+																<div><a href="/finance" class="headmdmenulinkpt">Finances</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header headmdmenu">Actes Executoires</h3>
+																<div><a href="https://stela.sictiam.fr/modules/stelapublic/registreActes.php?premrech=0&listeGroupe=175&submit=Rechercher&date_acte=&listeAnnee="><img alt="actes" src="/sites/default/files/actes.jpg" style="width: 300px; height: 141px;"></a></div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="awemenu-item awemenu-item-level-1 topmdmenu"><a href="/" class="awemenu-item-link"><span class="awemenu-item-title">Vivre en Pays de Grasse</span></a>
+											<ul class="awemenu-submenu awemenu-megamenu" data-width="100%">
+												<li class="awemenu-item">
+													<div class="awemenu-megamenu-wrapper">
+														<div class="row">
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/culture.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/activitesculture" class="headmdmenulink">Culture</a></div>
+																<div><a href="/calendrier-culturel" class="headmdmenulinkpt">Agenda culturel</a></div>
+																<div><a href="/node/2135" class="headmdmenulinkpt">Les grands Rendez-vous culturels</a></div>
+																<div><a href="/node/2134" class="headmdmenulinkpt">Les équipements culturels</a></div>
+																<div><a href="/node/2055" class="headmdmenulinkpt">L'éducation artistique et culturelle</a></div>
+																<div><a href="/candidature-pays-de-grasse-pci-unesco" class="headmdmenulinkpt">Candidature Pays de Grasse PCI UNESCO</a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/sport_0.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/sportsloisirs" class="headmdmenulink">Sport</a></div>
+																<div><a href="/les-equipements-sportifs" class="headmdmenulinkpt">Les équipements sportifs</a></div>
+																<div><a href="/node/6077" class="headmdmenulinkpt">BIGREEN</a></div>
+																<div><a href="/node/2136" class="headmdmenulinkpt">Apprendre</a></div>
+																<div><a href="/ambassadeurs-du-sport" class="headmdmenulinkpt">Les ambassadeurs du sport</a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/deplacement.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/transports" class="headmdmenulink">Déplacements/ Transports</a></div>
+																<div><a href="/pdu" class="headmdmenulinkpt">Plan de Déplacements Urbains</a></div>
+																<div><a href="/les-projets" class="headmdmenulinkpt">Plans de Mobilité</a></div>
+																<div><a href="/pole-intermodal-de-grasse" class="headmdmenulinkpt">Pôle Intermodal de Grasse</a></div>
+																<div><a href="/les-rendez-vous" class="headmdmenulinkpt">Les rendez-vous</a></div>
+																<div><a href="/sillages-bus" class="headmdmenulinkpt">Sillages - Bus</a></div>
+																<div><a href="/mobilite-durable" class="headmdmenulinkpt">Mobilité Durable</a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/amelorer.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/logement-habitat" class="headmdmenulink">Améliorer notre cadre de vie</a></div>
+																<div><a href="/amelioration-de-lhabitat" class="headmdmenulinkpt">Amélioration de l'habitat</a></div>
+																<div><a href="/conseils-et-informations-logement" class="headmdmenulinkpt">Conseils et informations logement</a></div>
+																<div><a href="/demande-de-logement-social" class="headmdmenulinkpt">Demande de logement social</a></div>
+																<div><a href="/urbanisme-reglementaire-0" class="headmdmenulinkpt">Urbanisme Réglementaire</a></div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 col-xs-12">
+																<div class="md-separator-text md-separator-aligncenter">
+																	<div>***</div>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/decouvrir.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/le-tourisme-en-pays-de-grasse" class="headmdmenulink">Découvrir</a></div>
+																<div><a href="/le-musee-international-de-la-parfumerie-et-ses-jardins" class="headmdmenulinkpt">Le Musée International de la Parfumerie et ses jardins</a></div>
+																<div><a href="/parc-naturel-regional-des-prealpes-dazur" class="headmdmenulinkpt">PNR</a></div>
+																<div><a href="/office-du-tourisme-du-pays-de-grasse" class="headmdmenulinkpt">Office du tourisme du pays de grasse</a></div>
+																<div><a href="/haut-pays-de-grasse" class="headmdmenulinkpt">Haut-Pays</a></div>
+																<div><a href="/les-savoir-faire-lies-au-parfum" class="headmdmenulinkpt">Les savoir-faire liés au Parfum en Pays de Grasse</a></div>
+																<div><a href="/la-station-de-ski-de-laudibergue">Les stations de ski</a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/solidaire_0.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/economie-sociale-et-solidaire" class="headmdmenulink">Un territoire solidaire</a></div>
+																<div><a href="/emploi" class="headmdmenulinkpt">Emploi </a></div>
+																<div><a href="/seniors" class="headmdmenulinkpt">Séniors</a></div>
+																<div><a href="/associations" class="headmdmenulinkpt">Associations</a></div>
+																<div><a href="/les-eric" class="headmdmenulinkpt">Les ERIC</a></div>
+																<div><a href="/economie-sociale-solidaire" class="headmdmenulinkpt">Economie Sociale et Solidaire / FESTISOL</a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/environnement.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/environnement" class="headmdmenulink">Préserver l'environnement</a></div>
+																<div><a href="/collecte-des-dechets" class="headmdmenulinkpt">Collecte des déchets</a></div>
+																<div><a href="/climat-energie" class="headmdmenulinkpt">Climat - Air - Energie</a></div>
+																<div><a href="/leducation-lenvironnement-0" class="headmdmenulinkpt">L’éducation à l’environnement</a></div>
+																<div><a href="/contrat-de-transition-ecologique">Contrat de Transition Écologique</a></div>
+																<div><a href="/alimentation-durable" class="headmdmenulinkpt">Alimentation Durable</a></div>
+																<div><a href="/prevention-et-securite" class="headmdmenulinkpt">Prévention </a></div>
+															</div>
+															<div class="col-md-3 col-xs-12">
+																<div><img alt="" src="/sites/default/files/apprendre.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/jeunesse" class="headmdmenulink">Petite Enfance </a></div>
+																<div><a href="/node/466" class="headmdmenulinkpt">Periscolaire</a></div>
+																<div><a href="/les-centres-de-loisirs" class="headmdmenulinkpt">Les centres de loisirs</a></div>
+																<div><a href="/petite-enfance" class="headmdmenulinkpt">Petite enfance</a></div>
+																<div><a href="/leducation-artistique-et-culturelle-0" class="headmdmenulinkpt">L'éducation artistique et culturelle</a></div>
+																<div><a href="/leducation-lenvironnement-0" class="headmdmenulinkpt">L’éducation à l’environnement</a></div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="awemenu-item awemenu-item-level-1 topmdmenu"><a href="/" class="awemenu-item-link"><span class="awemenu-item-title">Entreprendre</span></a>
+											<ul class="awemenu-submenu awemenu-megamenu" data-width="100%">
+												<li class="awemenu-item">
+													<div class="awemenu-megamenu-wrapper">
+														<div class="row">
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Entreprendre sur le Pays de Grasse</h3>
+																<div><img alt="" src="/sites/default/files/entreprendre.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/simplanter-sur-le-pays-de-grasse">S'implanter sur le Pays de Grasse</a></div>
+																<div><a href="/transporter-circuler">Transporter / Circuler</a></div>
+																<div><a href="/gerer-ses-dechets-professionnels">Gérer ses déchets professionnels</a></div>
+																<div><a href="/demande-de-subvention">Demande de subventions</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Création d'entreprise</h3>
+																<div><img alt="" src="/sites/default/files/creation.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/creer-et-developper-son-entreprise">Créer et développer son entreprise</a></div>
+																<div><a href="/sinformer-et-developper-son-reseau">S'informer et développer son réseau</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Commerces</h3>
+																<div><img alt="" src="/sites/default/files/commerces.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/dynamiser-son-activite-commerciale-et-artisanale">Commerces</a></div>
+																<div><a href="/accessibilite-pmr">Accessibilité PMR</a></div>
+																<div><a href="/dispositif-fisac">Dispositif FISAC</a></div>
+																<div><a href="/ecodefi">Ecodéfi</a></div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12 col-xs-12"></div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Emploi et formations</h3>
+																<div><img alt="" src="/sites/default/files/emploi.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/recruter-former-et-loger-ses-salaries">Recruter, former et loger ses salariés</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Territoire Numérique</h3>
+																<div><img alt="" src="/sites/default/files/numerique.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/les-espaces-numeriques">Un territoire numérique</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Agriculture</h3>
+																<div><img alt="" src="/sites/default/files/agriculture.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="/d%C3%A9velopper-son-projet-agricole">Développer son projet agricole</a></div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+										<li class="awemenu-item awemenu-item-level-1 topmdmenu"><a href="/" class="awemenu-item-link"><span class="awemenu-item-title">Pratique</span></a>
+											<ul class="awemenu-submenu awemenu-megamenu" data-width="100%">
+												<li class="awemenu-item">
+													<div class="awemenu-megamenu-wrapper">
+														<div class="row">
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Musées</h3>
+																<div><img alt="" src="/sites/default/files/horaire-musees.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="http://www.museesdegrasse.fr/infos-pratiques" target="_blank">Horaires & tarifs</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Bus</h3>
+																<div><img alt="" src="/sites/default/files/bus.jpg" style="width: 300px; height: 141px;"></div>
+																<div><a href="http://sillages.paysdegrasse.fr/node/4" target="_blank">Titres</a><br> <a href="http://sillages.paysdegrasse.fr/plan-des-lignes-urbaines" target="_blank">Plan de réseau</a></div>
+															</div>
+															<div class="col-md-4 col-xs-12">
+																<h3 class="mm-header">Nous Contacter</h3>
+																<div><img alt="" src="/sites/default/files/annuaire.jpg" style="width: 300px; height: 141px;">
+																	<div><a href="/nous-contacter">Formulaire de contact</a></div>
+																	<div><a href="/infos-pratiques-0">Annuaire</a></div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-12 col-xs-12">
+																	<div class="md-separator-text md-separator-aligncenter">
+																		<div>***</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4 col-xs-12">
+																	<h3 class="mm-header">Déchèteries & Points de Collecte</h3>
+																	<div><img alt="" src="/sites/default/files/decheterie.jpg" style="width: 300px; height: 141px;"></div>
+																	<div><a href="/decheteries">Toutes nos déchèteries</a></div>
+																	<div><a href="/les-points-de-collecte-du-territoire">Les points de collecte du territoire</a></div>
+																</div>
+																<div class="col-md-4 col-xs-12">
+																	<h3 class="mm-header">Piscines</h3>
+																	<div><img alt="" src="/sites/default/files/piscines.jpg" style="width: 300px; height: 141px;"></div>
+																	<div><a href="/les-piscines">Horaires </a></div>
+																</div>
+																<div class="col-md-4 col-xs-12">
+																	<h3 class="mm-header">Téléchargements</h3>
+																	<div><img alt="" src="/sites/default/files/telechargement.jpg" style="width: 300px; height: 141px;"></div>
+																	<div><a href="/telechargements-jeunesse-sport">Téléchargements Jeunesse </a></div>
+																	<div><a href="/la-documentation-pays-de-grasse">Documentation Pays de Grasse</a></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="region region-before-content">
+						<div id="block-md-slider-front-page" class="block block-md-slider st-block-parallax" data-stellar-background-ratio="0">
+							<div class="content">
+								<div id="md-slider-1-block" class="md-slide-items" data-thumb-width="100" data-thumb-height="75">
+									<div class="md-slide-item slide-1" data-timeout="15400" data-transition="right-curtain" data-thumb-type="image" data-thumb-alt="" data-thumb="/sites/default/files/styles/md_slider_1_thumb/public/ben02055.jpg?itok=zn18jwYF">
+										<div class="md-mainimg" style=""><img src="/sites/default/files/ben02055.jpg" alt=""></div>
+										<div class="md-objects">
+											<div class="md-object black-shadow md-layer-1-0-0 md-layer" data-x="293" data-y="364" data-width="561" data-height="50" data-start="0" data-stop="15400" data-easein="bounceInUp" data-paddingtop="15" data-paddingright="15" data-paddingbottom="15" data-paddingleft="15">Réouverture des piscines du Pays de Grasse <br>MERCREDI 1 JUILLET 2020</div>
+											<div class="md-object text-white-shadow md-layer-1-0-1 md-layer" data-x="480" data-y="438" data-width="216" data-height="27" data-start="500" data-stop="15400" data-easein="flipInX" data-paddingtop="10" data-paddingright="10" data-paddingbottom="10" data-paddingleft="10"><a href="/agenda/6179">INSCRIPTIONS</a></div>
+										</div>
+									</div>
+									<div class="md-slide-item slide-2" data-timeout="8000" data-thumb-type="image" data-thumb-alt="" data-thumb="/sites/default/files/styles/md_slider_1_thumb/public/ben04399slide.jpg?itok=c1sk2CKc">
+										<div class="md-mainimg" style=""><img src="/sites/default/files/ben04399slide.jpg" alt=""></div>
+										<div class="md-objects">
+											<div class="md-object text-white-shadow2 md-layer-1-1-0 md-layer" data-x="381" data-y="520" data-width="578" data-height="52" data-start="0" data-stop="8000" data-easein="fadeInUp" data-paddingtop="10" data-paddingright="10" data-paddingbottom="10" data-paddingleft="10"><a href="https://www.museesdegrasse.com/la-reouverture-des-jardins-du-mip-mouans-sartoux-samedi-16-mai" target="_blank">Les Jardins du MIP sont ouverts<br> voir toutes les infos</a></div>
+										</div>
+									</div>
+									<div class="md-slide-item slide-3" data-timeout="8000" data-thumb-type="image" data-thumb-alt="" data-thumb="/sites/default/files/styles/md_slider_1_thumb/public/ben01644.jpg?itok=YEEBamju">
+										<div class="md-mainimg" style=""><img src="/sites/default/files/ben01644.jpg" alt=""></div>
+										<div class="md-objects">
+											<div class="md-object md-layer-1-2-0 md-layer" data-x="456" data-y="525" data-width="519" data-height="55" data-start="0" data-stop="8000" data-easein="fadeInUp" data-paddingtop="15" data-paddingright="15" data-paddingbottom="15" data-paddingleft="15"><a href="https://labicyclette.paysdegrasse.fr/">Le Service de location de VAE reprend en juin...<br>En savoir plus...</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="block-views-latest-projects-block" class="block block-views st-block-parallax" data-stellar-background-ratio="0">
+							<div class="content"><br>
+								<div class="row" id="projects">
+									<div class="container">
+										<div class="span12">
+											<div style="text-align:center;">
+												<div class="row">
+													<div class="span12">
+														<h2>Actualités</h2>
+													</div>
+												</div>
+												<div class="span12">
+													<div class="row">
+														<div class="flexslider flexslider-top-title flexslider-center-mobile unstyled" data-plugin-options='{"controlNav":false, "slideshow": false, "animationLoop": true, "animation":"slide", "maxVisibleItems":4}'>
+															<ul class="slides">
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6177" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/affiches-tourisme-3200x24009.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Lancement saison estivale en Pays de Grasse</h4></span> <span class="thumb-info-type">01/07/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6179" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/ben02055.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>LE 1ER JUILLET : OUVERTURE DE LA PISCINE ALTITUDE 500 A GRASSE et DE LA PISCINE DE PEYMEINADE</h4></span> <span class="thumb-info-type">30/06/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6178" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/visuel-cp.png" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Famille zéro déchet : la saison 2 débute !</h4></span> <span class="thumb-info-type">29/06/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6172" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/bandeau-rdv-nature-capg-2020_0.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Programme 2020 des Rendez-vous Nature</h4></span> <span class="thumb-info-type">22/06/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6167" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/challenge-5m_0.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Challenge Cliiink : gagnez votre saut en parapente !</h4></span> <span class="thumb-info-type">16/06/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6163" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/csm_dpt06-proteger_frelon-1_6b32db6d80.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Plan de lutte contre le frelon asiatique du CD06</h4></span> <span class="thumb-info-type">26/05/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6162" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/capture-decran-2020-05-14-a-14.11.50.png" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Un déconfinement progressif, territorialisé et réversible ! Les informations essentielles…</h4></span> <span class="thumb-info-type">14/05/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6155" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/capture-decran-2020-05-10-a-07.58.05.png" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Le protocole national de déconfinement</h4></span> <span class="thumb-info-type">10/05/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6143" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/capture-decran-2020-04-30-a-07.52.27.png" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>GRASSE BIOTECH : ENGAGEMENT DES SOCIÉTÉS CONTRE LE COVID-19</h4></span> <span class="thumb-info-type">04/05/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6127" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/brulage_0.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Brûlage des déchets végétaux interdit</h4></span> <span class="thumb-info-type">01/05/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6136" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/reserve_0.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Interdiction de location des hébergements à vocation touristique</h4></span> <span class="thumb-info-type">25/04/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+																<li class="">
+																	<div class="span6">
+																		<div class="portfolio-item thumbnail"><a class="thumb-info" href="node/6131" data-plugin-options='{"type":"inline", preloader: false}'> <img src="/sites/default/files/fichiers_agenda/plan-regional.jpg" alt="item"> <span class="thumb-info-title"> <span class="thumb-info-inner"><h4>Plan régional d'urgence, de solidarité et de relance</h4></span> <span class="thumb-info-type">24/04/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="span12">
+															<p class="rteright"><a class="btn btn-primary" href="https://www.paysdegrasse.fr/editos">Toutes les actualités</a><a class="btn btn-primary" href="https://www.paysdegrasse.fr/covid-19">Toutes les infos COVID-19</a></p>
+														</div>
+													</div>
+												</div><br></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div style="background:url(/sites/default/files/files/slide-bg.jpg);" id="block-views-related-projects-block" class="block block-views st-block st-block-parallax" data-stellar-background-ratio="1">
+								<div class="block-content">
+									<div class="content">
+										<div class="container">
+											<div style="text-align:center;"><br>
+												<h2><a href="/editos"><img alt="" src="//sites/default/files/actuicon.png" style='data-appear-animation="fadeInLeft"' class="appear-animation fadeInLeft appear-animation-visible"></a></h2>
+											</div>
+											<div class="row">
+												<ul class="portfolio-list">
+													<h1 class="rtecenter"><span style="color:#d4801f;">AGENDA</span></h1>
+													<div class="views-row views-row-1 views-row-odd views-row-first span3">
+														<li class="span3">
+															<div class="portfolio-item thumbnail mobile-max-width"><a href="/formations-restauration-des-restanques" class="thumb-info"> <div class="field field-name-field-image-agenda field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/portrait/public/reseaux-sociaux4.jpg?itok=7OCxi_LH" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Formations restauration des restanques</span> <span class="thumb-info-type">sam, 12/09/2020 - sam, 24/10/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+														</li>
+													</div>
+													<div class="views-row views-row-2 views-row-even span3">
+														<li class="span3">
+															<div class="portfolio-item thumbnail mobile-max-width"><a href="/formations-au-jardinage-ecologique" class="thumb-info"> <div class="field field-name-field-image-agenda field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/portrait/public/guide-rendez-vous-nature-2020-reseaux-sociaux5_0.jpg?itok=EGHAgo8w" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Formations au jardinage écologique !</span> <span class="thumb-info-type">sam, 05/09/2020 - dim, 22/11/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+														</li>
+													</div>
+													<div class="views-row views-row-3 views-row-odd span3">
+														<li class="span3">
+															<div class="portfolio-item thumbnail mobile-max-width"><a href="/thorenc-dart-3" class="thumb-info"> <div class="field field-name-field-image-agenda field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/portrait/public/affiche_thorencdart2020_a3_reporte_0.jpg?itok=4SzjRHeC" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Thorenc D'art</span> <span class="thumb-info-type">sam, 18/07/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+														</li>
+													</div>
+													<div class="views-row views-row-4 views-row-even views-row-last span3">
+														<li class="span3">
+															<div class="portfolio-item thumbnail mobile-max-width"><a href="/sorties-nature-biodiversite" class="thumb-info"> <div class="field field-name-field-image-agenda field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/portrait/public/reseaux-sociaux-lpo3.jpg?itok=22FdTr_F" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Sorties nature biodiversité</span> <span class="thumb-info-type">sam, 11/07/2020 - sam, 24/10/2020</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span> </span> </a></div>
+														</li>
+													</div>
+													<div class="view-footer">
+														<p class="rteright"><a class="btn btn-primary" href="agenda">Tout l'Agenda</a></p><br><br></div>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="content" class="content full">
+							<div class="container">
+								<div class="row">
+									<aside id="sidebar-left">
+										<div class="span3">
+											<div id="sticky-sidebar">
+												<div class="region region-sidebar-left">
+													<div id="block-block-99" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+														<div class="content">
+															<div class="featured-box featured-box-deplace" style="height: 500px;">
+																<div class="box-content"><a href="http://attrapezlesdecos.paysdegrasse.fr/"><img alt="" src="/sites/default/files/app2.png" style="width: 300px; height: 259px;"><br> Cliquez ici</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</aside>
+									<div class="span9">
+										<div id="node-1" class="node node-page clearfix" about="/front" typeof="foaf:Document"><span property="dc:title" content="Communauté d'agglomération" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+											<div class="content"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="region region-after-content">
+						<div id="block-views-related-projects-blockcanal" class="block block-views st-block-parallax" data-stellar-background-ratio="0">
+							<div class="content"><br>
+								<div class="row" id="projects">
+									<div class="fondgris">
+										<div class="container">
+											<div class="span12">
+												<div style="text-align:center;">
+													<h2>CANAL CAPG <a href="/portfolio"><img alt="" src="//sites/default/files/planning3.png" style='data-appear-animation="fadeInLeft"' class="appear-animation fadeInLeft appear-animation-visible"></a></h2>
+												</div>
+												<h2 class="rtecenter"><span style="color:#ffffff;"><strong>ACTUALITÉS</strong></span></h2>
+												<div class="featured-box-primarycanal">
+													<div class="row">
+														<div class="flexslider flexslider-top-title flexslider-center-mobile unstyled" data-plugin-options='{"controlNav":false, "slideshow": false, "animationLoop": true, "animation":"slide", "maxVisibleItems":3}'>
+															<ul class="slides">
+																<div class="views-row views-row-1 views-row-odd views-row-first span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/6154" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2020-05-06-a-08.31.14.png?itok=drmE0APk" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Tutoriel Assemblage d'un Kit pour masque aux normes AFNOR - Pays de Grasse</span> <span class="thumb-info-type">Solidarité</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-2 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/6095" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2020-02-10-a-15.42.38.png?itok=LtM-ltZv" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Forum pour l'emploi 2020</span> <span class="thumb-info-type">Emploi</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-3 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/6024" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-11-20-a-09.06.15.png?itok=JIOuntvG" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Les assises de l'agriculture</span> <span class="thumb-info-type">Agriculture</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-4 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/6005" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-10-25-a-10.54.16.png?itok=muzIslcv" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Réduction du gaspillage alimentaire dans les cantines scolaires</span> <span class="thumb-info-type">Environnement</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-5 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/5505" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-10-09-a-07.52.13.png?itok=6lUA_B3F" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Initiation au Lombricompostage</span> <span class="thumb-info-type">Environnement</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-6 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/3085" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/dddd_0_1.jpg?itok=9Nbkw6Tj" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">HANDI-MOBILITÉ à la demande - Cap Azur</span> <span class="thumb-info-type">Déplacements</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-7 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/3034" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-05-23-a-17.07.42.png?itok=JotMx4-f" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">PADEL EMPLOI</span> <span class="thumb-info-type">Emploi</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-8 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2971" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-04-15-a-08.54.56.png?itok=-mw5M__q" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Conseils pour un Pitch-emploi</span> <span class="thumb-info-type">Emploi</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-9 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2945" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-03-20-a-15.06.10.png?itok=1QlN1IKM" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">L'intelligence Artificielle, une opportunité pour l'emploi ? </span> <span class="thumb-info-type">EconomieEmploi</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-10 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2891" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2019-01-24-a-07.25.10.png?itok=WSaGmARu" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Visite d'Entreprise "Mon petit Bikini" Mouans Sartoux</span> <span class="thumb-info-type">Economie</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-11 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2878" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-12-18-a-11.17.58.png?itok=1Su36Mr-" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Célébration de l'inscription des Savoir-faire liès au parfum en Pays de Grasse à l'UNESCO</span> <span class="thumb-info-type">CultureTourisme</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-12 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2870" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-12-10-a-12.09.06.png?itok=SdfWLdiL" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Compagnon Mobilité CAPAZUR</span> <span class="thumb-info-type">Déplacements</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-13 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2868" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-12-06-a-09.35.46.png?itok=fnEwzYu9" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Les Bois de Grasse obtiennent le Label Parc +</span> <span class="thumb-info-type">Economie</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-14 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2841" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-11-13-a-14.12.57.png?itok=48HQrhjR" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Inauguration de la distillerie Comte de Grasse</span> <span class="thumb-info-type">Economie</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-15 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2830" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-11-08-a-11.45.11.png?itok=dsjtefAi" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Colloque du CDD sur la transition énergétique</span> <span class="thumb-info-type">EconomieEnergie Climat AirEnvironnement</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-16 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2829" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-11-08-a-07.49.32.png?itok=n5aGuXgt" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">La Transition Énergétique en Pays de Grasse</span> <span class="thumb-info-type">EconomieEnergie Climat AirEnvironnement</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-17 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2781" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/capture-decran-2018-10-04-a-17.12.32.png?itok=Ll_1G-xH" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Contrat de Transition écologique </span> <span class="thumb-info-type"></span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-18 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2765" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couvtheatre.jpg?itok=ASADirB1" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Inauguration du théâtre de Grasse</span> <span class="thumb-info-type">Culture</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-19 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2756" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couvcevidra.jpg?itok=3K5xK0Cw" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Visite des laboratoires Cvidra</span> <span class="thumb-info-type">Economie</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-20 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2754" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couvgc.jpg?itok=wHCTvp7H" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Innauguration Grasse Campus</span> <span class="thumb-info-type">ApprendreEconomie</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-21 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2716" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/maxresdefault.jpg?itok=aNNEWh4z" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Inauguration du bus "Le Village Tour"</span> <span class="thumb-info-type">Tourisme</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-22 views-row-even span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2703" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couv-cliiink.jpg?itok=kf4QxGwb" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Inauguration CLIIINK</span> <span class="thumb-info-type">Environnement</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-23 views-row-odd span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2704" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couv-plie.jpg?itok=GFqMfOvA" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">PLIE (Plan Local pour l'Insertion et l'Emploi)</span> <span class="thumb-info-type">Emploi</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="views-row views-row-24 views-row-even views-row-last span4">
+																	<li class="span3">
+																		<div class="portfolio-item thumbnail mobile-max-width"><a href="/portfolio/2706" class="thumb-info"> <div class="field field-name-field-image-video field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="/sites/default/files/styles/large/public/couvsoiree-ambassadeurs.jpg?itok=0vJMp4L3" width="450" height="450" alt=""></div></div></div> <span class="thumb-info-title"> <span class="thumb-info-inner">Soirée des Ambassadeurs du Sport en Pays de Grasse 2018</span> <span class="thumb-info-type">Sports/Loisirs</span> </span> <span class="thumb-info-action"> <span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-film"></i></span> </span> </a></div>
+																	</li>
+																</div>
+																<div class="view-footer">
+																	<p class="rteright"><a class="btn btn-primary" href="agenda">Tout l'Agenda</a></p><br><br></div>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div align="right"><a class="btn btn-primary" href="../portfolio">TOUTES LES VIDEOS</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="block-block-59" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+							<div class="content">
+								<div class="flexiuu">
+									<hr>
+									<section class="section.page-top.custom-clic">
+										<div style="text-align:center;">
+											<h2>En un Clic</h2>
+										</div>
+										<div class="container">
+											<div class="row">
+												<div class="span4">
+													<div class="row center">
+														<div class="box-content">
+															<p><a class="learn-more" href="/demande-de-subvention"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/asssos.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/le-tourisme-en-pays-de-grasse"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/decouvrirsss.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/jeunesse"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/jeunesssss.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+													</div>
+												</div>
+												<div class="span4">
+													<div class="row center">
+														<div class="box-content">
+															<p><a class="learn-more" href="/collecte-des-dechets"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/collecte2.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/emploi"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/emploissss.png" style="width: 150px; height: 150px;"> </a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/demande-de-logement-social"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logement_0.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+													</div>
+												</div>
+												<div class="span4">
+													<div class="row center">
+														<div class="box-content">
+															<p><a class="learn-more" href="/conseil-de-developpement-du-pays-de-grasse"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/cdd.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/accueil-ecsvs"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/escvsee.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+														<hr>
+														<div class="box-content">
+															<p><a class="learn-more" href="/transports"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/icon/transport.png" style="width: 150px; height: 150px;"></a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+						<div id="block-block-100" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+							<div class="content">
+								<div class="flexiuuu">
+									<section class="section.page-top.custom-clic">
+										<div style="text-align:center;">
+											<h2><br> Nos autres sites Internet</h2>
+										</div>
+										<div class="container">
+											<div class="row">
+												<div class="span3">
+													<div class="row center">
+														<div class="box-content"><a href="http://www.museesdegrasse.com" target="_blank"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/encadre-2-logos-mipjardins.png" style="width: 224px; height: 80px;" target="_blank"></a></div> 
+														<div class="box-content"><a href="http://agglomobilite.paysdegrasse.fr/" target="_blank"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logoagg-1.png" style="width: 250px; height: 64px;" target="_blank"></a></div>
+													</div>
+												</div>
+												<div class="span2">
+													<div class="row center">
+														<div class="box-content"><a href="http://www.innovagrasse.fr/" target="_blank"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logoinnova.png" style="width: 178px; height: 80px;" target="_blank"></a></div> 
+														<div class="box-content"><a href="http://www.sillages.eu/" target="_blank"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logosillages_complet_court_300dpi_0.png" style="width: 178px; height: 79px;" target="_blank"></a></div>
+													</div>
+												</div>
+												<div class="span2">
+													<div class="row center">
+														<div class="box-content"><a href="http://www.grassebiotech.com/" target="_blank"><img a="" alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logootto-2_0.png" style="width: 195px; height: 80px;" target="_blank"></a></div> 
+														<div class="box-content"><a href="http://biblihautpays.paysdegrasse.fr/" target="_blank"><img a="" alt="" class="box-content" data-appear-animation="fadeInUp" img="" src="/sites/default/files/logobibliahu.png" style="width: 150px; height: 66px;" target="_blank"> </a></div>
+													</div>
+												</div>
+												<div class="span2">
+													<div class="row center">
+														<div class="box-content">
+															<div class="box-content"><a href="http://www.paysdegrassetourisme.fr/" target="_blank"><img a="" alt="" class="box-content" data-appear-animation="fadeInUp" img="" src="/sites/default/files/tourismelogo.png" style="width: 181px; height: 80px;" target="_blank"></a></div>
+														</div> 
+														<div class="box-content"><a href="http://stations-greolieres-audibergue.com/" target="_blank"><img alt="" data-appear-animation="fadeInUp" src="/sites/default/files/logoaudiberge.png" style="width: 181px; height: 80px;"></a></div>
+													</div>
+												</div>
+												<div class="span3">
+													<div class="row center">
+														<div class="box-content"><a href="https://labicyclette.paysdegrasse.fr/" target="_blank"><img a="" alt="" data-appear-animation="fadeInUp" src="/sites/default/files/bicyclette-logo.png" style="width: 178px; height: 80px;" target="_blank"></a></div> 
+														<div class="box-content"><a href="http://www.grassecampus.fr/" target="_blank"><img a="" alt="" class="box-content" data-appear-animation="fadeInUp" img="" src="/sites/default/files/grassecampus_0.png" style="width: 178px; height: 80px;" target="_blank"> </a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<div class="container">
+							<div class="row">
+								<div class="span3">
+									<div class="region region-footer-1">
+										<div id="block-views-march-s-publics-block" class="block block-views st-block-parallax" data-stellar-background-ratio="0">
+											<h2>Marchés Publics</h2>
+											<div class="content">
+												<div class="view view-march-s-publics view-id-march_s_publics view-display-id-block view-dom-id-62ed97781f73bfa84964fbc003dc5eeb">
+													<div class="view-content">
+														<div class="item-list">
+															<ul>
+																<li class="views-row views-row-1 views-row-odd views-row-first">
+																	<div class="views-field views-field-field-objet">
+																		<div class="field-content"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png"> <a href="/sites/default/files/marche-public/aapc-rehabilitation-extension-la-salle-polyvalente-et-ses-annexes-sur-la-commune-descragnolles-6-lots.pdf" type="application/pdf; length=144850">aapc-rehabilitation-extension-la-salle-polyvalente-et-ses-annexes-sur-la-commune-descragnolles-6-lots.pdf</a></span></div>
+																	</div>
+																	<div class="views-field views-field-field-date-limite-de-remise-des-">
+																		<div class="field-content">Date limite : <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-07-17T00:00:00+02:00">17/07/2020</span></div>
+																	</div>
+																</li>
+																<li class="views-row views-row-2 views-row-even">
+																	<div class="views-field views-field-field-objet">
+																		<div class="field-content"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png"> <a href="/sites/default/files/marche-public/avis-de-marche-entretien-et-reparation-des-vehicules-et-equipements-de-la-capg-6-lots.pdf" type="application/pdf; length=277010">avis-de-marche-entretien-et-reparation-des-vehicules-et-equipements-de-la-capg-6-lots.pdf</a></span></div>
+																	</div>
+																	<div class="views-field views-field-field-date-limite-de-remise-des-">
+																		<div class="field-content">Date limite : <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-04-15T00:00:00+02:00">15/04/2020</span></div>
+																	</div>
+																</li>
+																<li class="views-row views-row-3 views-row-odd views-row-last">
+																	<div class="views-field views-field-field-objet">
+																		<div class="field-content"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png"> <a href="/sites/default/files/marche-public/aapc-fourniture-de-panneaux-dinformation-et-dadhesifs-2-lots_0.pdf" type="application/pdf; length=124960">aapc-fourniture-de-panneaux-dinformation-et-dadhesifs-2-lots.pdf</a></span></div>
+																	</div>
+																	<div class="views-field views-field-field-date-limite-de-remise-des-">
+																		<div class="field-content">Date limite : <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-17T00:00:00+01:00">17/03/2020</span></div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="view-footer"><img align="right" alt="" src="https://www.paysdegrasse.fr//sites/default/files/flecheblanche.png" style="height:55px; width:102px"> <br> <a class="btn btn-primary" href="https://www.paysdegrasse.fr//marches-publics">Voir tous les marchés</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="span3">
+									<div class="region region-footer-2">
+										<div id="block-views-offres-d-emploi-block" class="block block-views st-block-parallax" data-stellar-background-ratio="0">
+											<h2>Offres d'emploi</h2>
+											<div class="content">
+												<div class="view view-offres-d-emploi view-id-offres_d_emploi view-display-id-block view-dom-id-b4364692a21f8887f0f71a08bd32007f">
+													<div class="view-content">
+														<div class="item-list">
+															<ul>
+																<li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+																	<div class="views-field views-field-title"><span class="field-content"><a href="/offres-d-emploi">Directeur.rice du Pôle Eaux </a></span></div>
+																	<div class="views-field views-field-field-fichier">
+																		<div class="field-content"><span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="/modules/file/icons/application-pdf.png"> <a href="/sites/default/files/offres_emploi/directeur.rice-du-pole-eaux.pdf" type="application/pdf; length=179999">directeur.rice-du-pole-eaux.pdf</a></span></div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="view-footer"><img align="right" alt="" src="/sites/default/files/flecheblanche.png" style="height:55px; width:102px"> <br> <a class="btn btn-primary" href="/offres-d-emploi">Voir toutes les offres</a></div>
+												</div>
+											</div>
+										</div>
+										<div id="block-views-newsletters-block" class="block block-views st-block-parallax" data-stellar-background-ratio="0">
+											<h2>Newsletters</h2>
+											<div class="content">
+												<div class="view view-newsletters view-id-newsletters view-display-id-block view-dom-id-3413daec5cd0a1646b25df471c9b87e2">
+													<div class="view-content">
+														<div class="views-row views-row-1 views-row-odd views-row-first">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-lemploi-du-pays-de-grasse-16">Lettre à l'emploi du Pays de Grasse </a></span></div>
+														</div>
+														<div class="views-row views-row-2 views-row-even">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-dinformation-generation-developpement-durable-du-pays-de-grasse-19">Lettre d'information Génération développement durable du Pays de Grasse #19</a></span></div>
+														</div>
+														<div class="views-row views-row-3 views-row-odd">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-lemploi-du-pays-de-grasse-15">Lettre à l'emploi du Pays de Grasse </a></span></div>
+														</div>
+														<div class="views-row views-row-4 views-row-even">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-dinformation-generation-developpement-durable-du-pays-de-grasse-18">Lettre d'information Génération développement Durable du Pays de Grasse #18</a></span></div>
+														</div>
+														<div class="views-row views-row-5 views-row-odd">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-lemploi-du-pays-de-grasse-14">Lettre à l'emploi du Pays de Grasse </a></span></div>
+														</div>
+														<div class="views-row views-row-6 views-row-even views-row-last">
+															<div class="views-field views-field-title"><span class="field-content"><a href="/lettre-lemploi-du-pays-de-grasse-13">Lettre à l'emploi du Pays de Grasse </a></span></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="block-block-63" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+											<div class="content">
+												<p><a class="btn btn-primary" href="/les-newsletters-du-pays-de-grasse" target="_blank">NEWSLETTER | Inscriptions </a></p>
+											</div>
+										</div>
+										<div id="block-block-61" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+											<div class="content">
+												<p><a class="btn btn-primary" href="https://stela.sictiam.fr/modules/stelapublic/registreActes.php?premrech=0&listeGroupe=175&submit=Rechercher&date_acte=&listeAnnee=" target="_blank">Délibérations du Conseil Communautaire</a></p>
+												<p><a class="btn btn-primary" href="node/6164" target="_blank">Ressources humaines</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="span3">
+									<div class="region region-footer-3">
+										<div id="block-block-155" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+											<h2>FACEBOOK</h2>
+											<div class="content">
+												<div id="fb-root"> </div>
+												<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+												<div class="fb-page" data-adapt-container-width="true" data-height="580" data-hide-cover="true" data-href="https://www.facebook.com/CommunautedAgglomerationduPaysdeGrasse" data-show-facepile="true" data-small-header="true" data-tabs="timeline" data-width="270">
+													<blockquote cite="https://www.facebook.com/CommunautedAgglomerationduPaysdeGrasse" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/CommunautedAgglomerationduPaysdeGrasse">Communauté d'agglomération du Pays de Grasse</a></blockquote>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="span3">
+									<div class="region region-footer-4">
+										<div id="block-block-11" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+											<h2>Twitter</h2>
+											<div class="content">
+												<p><a class="twitter-timeline" data-widget-id="540515641426706433" href="https://twitter.com/comagglo">Tweets de @comagglo</a>
+													<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-copyright">
+							<div class="container">
+								<div class="row">
+									<div class="span6"></div>
+									<div class="span6">
+										<div class="region region-footer-bottom-right">
+											<div id="block-block-15" class="block block-block st-block-parallax" data-stellar-background-ratio="0">
+												<div class="content">
+													<nav id="sub-menu">
+														<ul>
+															<li><a href="/la-documentation-pays-de-grasse">Documentation du Pays de Grasse</a></li>
+															<li><a href="/telechargements-jeunesse-sport">Téléchargement Jeunesse & Sport</a></li>
+															<li><a href="sitemap">Plan du site</a></li>
+															<li><a href="nous-contacter">Contact</a></li>
+															<li><a href="mentions-legales">Mentions Légales</a></li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+				</script>
+				<script type="text/javascript" src="/sites/all/modules/eu_cookie_compliance/js/eu_cookie_compliance.js?qa7ccc"></script>
+				<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c2932e9a30","applicationID":"217959676","transactionName":"bldbZxNSDRVYBxFbXFcdeFAVWgwIFgoKVlZmQlhUBGwVD1wT","queueTime":0,"applicationTime":627,"atts":"QhBYEVtIHhs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+			</div>
+		</div>
+	</body>
+</html>
