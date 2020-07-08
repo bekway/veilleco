@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><!--[if lt IE 7]><html id="top" class="no-js trident ie6" lang="fr" dir="ltr"><![endif]--><!--[if IE 7]><html id="top" class="no-js trident ie7" lang="fr" dir="ltr"><![endif]--><!--[if IE 8]><html id="top" class="no-js trident ie8" lang="fr" dir="ltr"><![endif]--><!--[if IE 9]><html id="top" class="no-js trident ie9" lang="fr" dir="ltr"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html id="top" class="no-js no-trident no-ie" lang="fr" dir="ltr">
+	<!--<![endif]-->
+	<head profile="http://www.w3.org/1999/xhtml/vocab">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+		<link rel="shortcut icon" href="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/favicon.ico" type="image/vnd.microsoft.icon">
+		<title>Conseils communautaires | Communauté de Communes du Pays Fouesnantais</title>
+		<style type="text/css" media="all">
+@import url("https://www.cc-paysfouesnantais.fr/modules/system/system.base.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/modules/system/system.messages.css?qd5fx7");
+		</style>
+		<style type="text/css" media="screen">
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/libraries/shadowbox/shadowbox.css?qd5fx7");
+		</style>
+		<style type="text/css" media="print">
+<!--/*--><![CDATA[/*><!--*/
+#sb-container{position:relative;}#sb-overlay{display:none;}#sb-wrapper{position:relative;top:0;left:0;}#sb-loading{display:none;}
+
+/*]]>*/-->
+		</style>
+		<style type="text/css" media="all">
+@import url("https://www.cc-paysfouesnantais.fr/modules/aggregator/aggregator.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/calendar/css/calendar_multiday.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/date/date_api/date.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/modules/field/theme/field.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/modules/node/node.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/modules/search/search.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/views/css/views.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?qd5fx7");
+		</style>
+		<style type="text/css" media="all">
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/ctools/css/ctools.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/all/modules/eu_cookie_compliance/css/eu_cookie_compliance.css?qd5fx7");
+		</style>
+		<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:#0779BF;}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,#sliding-popup label,#sliding-popup div,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#ffffff !important;}.eu-cookie-withdraw-tab{border-color:#ffffff;}.eu-cookie-compliance-more-button{color:#ffffff !important;}
+
+/*]]>*/-->
+		</style>
+		<style type="text/css" media="screen">
+@import url("https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/lib/jquery/fancybox/jquery.fancybox-1.3.4.css?qd5fx7");
+@import url("https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/css/screen.css?qd5fx7");
+		</style>
+		<style type="text/css" media="print">
+@import url("https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/css/print.css?qd5fx7");
+		</style>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/misc/jquery.js?v=1.4.4"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/misc/jquery-extend-3.4.0.js?v=1.4.4"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.4.4"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/misc/jquery.once.js?v=1.2"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/misc/drupal.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/all/libraries/shadowbox/shadowbox.js?v=3.0.3"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/all/modules/shadowbox/shadowbox_auto.js?v=3.0.3"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/all/modules/eu_cookie_compliance/js/jquery.cookie-1.4.1.min.js?v=1.4.1"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/files/languages/fr_7cKgWgjoUfNk4-_cZohnezjtz5vJrGsMALh2t-CuTlI.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/all/modules/google_analytics/googleanalytics.js?qd5fx7"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-27620095-2", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/modernizr.min.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/jquery.slides.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/jquery.roundabout.min.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/jquery.maphilight.min.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/jquery.hoverintent.min.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/lib/jquery/fancybox/jquery.fancybox-1.3.4.pack.js?qd5fx7"></script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/default/themes/ccpfweb/assets/js/document.js?qd5fx7"></script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+        
+//--><!]]>
+		</script>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ccpfweb","theme_token":"3DrfKRT54lXpcRfAYXTvswhS7a6j4zIawa1gJg46F58","js":{"0":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"misc\/jquery.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"sites\/all\/modules\/shadowbox\/shadowbox_auto.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"public:\/\/languages\/fr_7cKgWgjoUfNk4-_cZohnezjtz5vJrGsMALh2t-CuTlI.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/modernizr.min.js":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/jquery.slides.js":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/jquery.roundabout.min.js":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/jquery.maphilight.min.js":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/jquery.hoverintent.min.js":1,"sites\/default\/themes\/ccpfweb\/lib\/jquery\/fancybox\/jquery.fancybox-1.3.4.pack.js":1,"sites\/default\/themes\/ccpfweb\/assets\/js\/document.js":1,"2":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"0":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"1":1,"sites\/default\/themes\/ccpfweb\/lib\/jquery\/fancybox\/jquery.fancybox-1.3.4.css":1,"sites\/default\/themes\/ccpfweb\/assets\/css\/screen.css":1,"sites\/default\/themes\/ccpfweb\/assets\/css\/print.css":1}},"shadowbox":{"animate":1,"animateFade":1,"animSequence":"wh","auto_enable_all_images":1,"auto_gallery":0,"autoplayMovies":true,"continuous":0,"counterLimit":"10","counterType":"default","displayCounter":1,"displayNav":1,"enableKeys":1,"fadeDuration":"0.35","handleOversize":"resize","handleUnsupported":"link","initialHeight":160,"initialWidth":320,"language":"fr","modal":false,"overlayColor":"#000","overlayOpacity":"0.85","resizeDuration":"0.35","showMovieControls":1,"slideshowDelay":"0","viewportPadding":20,"useSizzle":0},"better_exposed_filters":{"views":{"publications":{"displays":{"page_3":{"filters":[]},"block_4":{"filters":[]}}},"projets":{"displays":{"block":{"filters":[]}}},"flux_balneides":{"displays":{"block":{"filters":[]}}},"news_view":{"displays":{"block":{"filters":[]}}}}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":0,"popup_scrolling_confirmation":0,"popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EEn utilisant ce site, vous acceptez l\u0027utilisation de cookies permettant de vous proposer des contenus et des services adapt\u00e9s \u00e0 vos centres d\u0027int\u00e9r\u00eats.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EEn savoir plus\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EOK, je suis d\u0027accord\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--default\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\u003Cp\u003EBy tapping the Accept button, you agree to us doing so.\u003C\/p\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EEn savoir plus\u003C\/button\u003E\n          \u003C\/div\u003E\n    \n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EOK, je suis d\u0027accord\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":768,"popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\n\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EMasquer\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EEn savoir plus\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"http:\/\/www.cnil.fr\/vos-droits\/vos-traces\/les-cookies\/","popup_link_new_window":1,"popup_position":null,"fixed_top_position":true,"popup_language":"fr","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","domain_all_sites":null,"popup_eu_only_js":0,"cookie_lifetime":100,"cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user experience\u003C\/h2\u003E\n\u003Cp\u003EYou have given your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false,"withdraw_button_on_info_popup":false,"cookie_categories":[],"enable_save_preferences_button":true,"fix_first_cookie_category":true,"select_all_categories_by_default":false,"cookie_name":""},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/la-communaut%C3%A9\/publications\/conseils-communautaires":true}});
+//--><!]]>
+		</script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="google-translate-customization" content="3b8470ba83df8b74-323af762f121f099-gd605b92d884982ef-18">
+		<style>html{background-image: url(https://www.cc-paysfouesnantais.fr/sites/default/files/images-de-fond/content-bg2.jpg);}</style>
+	</head>
+	<body class="html not-front not-logged-in no-sidebars page-la-communaute page-la-communaute-publications page-la-communaute-publications-conseils-communautaires path-la-communaute publications conseils-communautaires color-blue" style="display: none;">
+		<script type="text/javascript">
+		jQuery('body').fadeIn();
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=153437541400377";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div id="skip-link"><a href="#document" class="element-invisible element-focusable">Aller au contenu principal</a></div>
+		<div id="wrapper">
+			<div id="document" role="document" class="clearfix">
+				<header id="header" role="banner" class="container-12 clearfix">
+					<hgroup class="grid-3"><a id="header-logo" href="/"> <img src="https://www.cc-paysfouesnantais.fr/sites/default/files/logo_2.png" alt="Accueil"> </a>
+						<p class="display-none"><strong>Communauté de Communes du Pays Fouesnantais</strong></p>
+					</hgroup>
+					<section id="l1-header" class="grid-9">
+						<div id="block-menu-block-4" class="block block-menu-block">
+							<div class="menu-block-wrapper menu-block-4 menu-name-menu-direct-link parent-mlid-0 menu-level-1">
+								<div>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-598"><a href="/la-communaut%C3%A9/march%C3%A9s-publics" title="">Marchés publics</a></li>
+										<li class="leaf menu-mlid-599"><a href="/la-communaut%C3%A9/publications" title="">Publications</a></li>
+										<li class="leaf menu-mlid-600"><a href="/recrutement-0" title="">Recrutement</a></li>
+										<li class="last leaf menu-mlid-601"><a href="/node/69" title="">Accessibilité</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="block-menu-block-5" class="block block-menu-block">
+							<div class="menu-block-wrapper menu-block-5 menu-name-menu-menu-social parent-mlid-0 menu-level-1">
+								<div>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-614"><a href="https://twitter.com/CCPaysFouesnant">Twitter</a></li>
+										<li class="leaf menu-mlid-615"><a href="https://www.facebook.com/cc.paysfouesnantais" title="">Facebook</a></li>
+										<li class="leaf menu-mlid-616"><a href="http://www.youtube.com/user/PaysFouesnantais" title="">YouTube</a></li>
+										<li class="last leaf menu-mlid-617"><a href="/actualites.xml" title="">Flux rss des actualités</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="block-search-form" class="block block-search">
+							<section class="article-block">
+								<form onsubmit="if(this.search_block_form.value=='Rechercher...'){ alert('Veuillez saisir un terme à rechercher'); return false; }" action="/la-communaut%C3%A9/publications/conseils-communautaires" method="post" id="search-block-form" accept-charset="UTF-8">
+									<div>
+										<div class="container-inline">
+											<h2 class="element-invisible">Formulaire de recherche</h2>
+											<div class="form-item form-type-textfield form-item-search-block-form"><label class="element-invisible" for="edit-search-block-form--2">Rechercher </label> <input title="Indiquer les termes à rechercher" onblur="if (this.value == '') {this.value = 'Rechercher...';}" onfocus="if (this.value == 'Rechercher...') {this.value = '';}" placeholder="Rechercher..." type="text" id="edit-search-block-form--2" name="search_block_form" value="Rechercher..." size="15" maxlength="128" class="form-text"></div>
+											<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Rechercher" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-ops_DnOlT65s-zXyJdwsp3snbpPys23wceCKYJWfxiQ"> <input type="hidden" name="form_id" value="search_block_form"></div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</section>
+					<section id="l2-header" class="grid-9">
+						<div id="weather-today">
+							<figure class="weather-icon"><img src="http://l.yimg.com/os/mit/media/m/weather/images/icons/l/30d-100567.png" width="100px"></figure>
+							<div>
+								<div class="weather-day">Aujourd'hui</div>
+								<div class="weather-info">21°</div>
+							</div>
+						</div>
+						<div id="weather-tomorrow">
+							<figure class="weather-icon"><img src="http://l.yimg.com/os/mit/media/m/weather/images/icons/l/26d-100567.png" width="100px"></figure>
+							<div>
+								<div class="weather-day">Demain</div>
+								<div class="weather-info">13°/18°</div>
+							</div>
+						</div><a href="/extranet" title="Accès à l'espace privé">Extranet</a> <a href="#" id="menu-mob" title="Affichage de la navigation" style="display: none">Menu</a></section>
+					<section id="l3-header" class="grid-9">
+						<div id="block-menu-block-1" class="block block-menu-block">
+							<div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+								<div>
+									<ul class="menu">
+										<li class="first expanded active-trail menu-mlid-509 active-trail"><a href="/la-communaut%C3%A9">La <span class="blue">c</span>ommunauté</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf has-children menu-mlid-515 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communaute.jpg?itok=GuW5Uqaz" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/linstitution">L'institution</a>
+														<div class="subtitle">Histoire et fonctionnement de la Communauté de Communes du Pays Fouesnantais (CCPF). Bureau, conseil communautaire, commissions...</div>
+													</li>
+													<li class="leaf has-children menu-mlid-582 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/competences.jpg?itok=tctIZxKT" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-comp%C3%A9tences">Les compétences</a>
+														<div class="subtitle">Se substituer aux communes sur des projets d'intérêt communautaire</div>
+													</li>
+													<li class="leaf has-children menu-mlid-517 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communes.jpg?itok=AvM797CW" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-communes">Les communes</a>
+														<div class="subtitle">Bénodet, Clohars-Fouesnant, Fouesnant, Gouesnac'h, La Fôret Fouesnant, Pleuven, Saint-Evarzec</div>
+													</li>
+													<li class="leaf menu-mlid-664 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/budget.jpg?itok=Z2hmkg7o" width="115" height="70" alt=""><a href="/budget-primitif-2018">Budgets</a>
+														<div class="subtitle">Budget global et budget ordures ménagères</div>
+													</li>
+													<li class="leaf has-children active-trail menu-mlid-519 active-trail image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/publications.jpg?itok=aD199N5D" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/publications">Publications</a>
+														<div class="subtitle">Retrouvez l'ensemble des publications de la CCPF : les magazines, les conseils communautaires, les rapports d'activité, les guides ...</div>
+													</li>
+													<li class="last leaf has-children menu-mlid-520 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/marchepublic.jpg?itok=0zVVT86I" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/march%C3%A9s-publics">Marchés publics</a>
+														<div class="subtitle">Retrouvez les consultations en cours de la CCPF et du CIAS</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-702"><a href="/les-grands-projets">Les grands <br><span class="red">p</span>rojets</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-732 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/tic.jpg?itok=mtPuQPvB" width="115" height="70" alt=""><a href="/les-grands-projets/am%C3%A9nagement-num%C3%A9rique-du-pays-fouesnantais">Aménagement numérique : Montée en débit</a>
+														<div class="subtitle">La CCPF a décidé de réaménager la sous-boucle locale France Telecom afin de couvrir en Haut Débit (entre 8 Mo et 20 Mo) les zones jusqu’alors mal desservies.</div>
+													</li>
+													<li class="leaf menu-mlid-730 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/habitat.jpg?itok=ZO3rp-vX" width="115" height="70" alt=""><a href="/les-grands-projets/habitat">Habitat</a>
+														<div class="subtitle">Un véritable projet de territoire sur les questions d'habitat</div>
+													</li>
+													<li class="leaf menu-mlid-731 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/amenagement-espace.jpg?itok=1nik-PnZ" width="115" height="70" alt=""><a href="/les-grands-projets/le-scot-de-lodet">Le SCOT de l'Odet</a>
+														<div class="subtitle">Le Schéma de Cohérence Territoriale de l'Odet</div>
+													</li>
+													<li class="leaf menu-mlid-865 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/logo-sage.jpg?itok=R6AK5vxy" width="115" height="70" alt=""><a href="/les-grands-projets/sch%C3%A9ma-d%E2%80%99am%C3%A9nagement-et-de-gestion-des-eaux">Schéma d’aménagement et de gestion des eaux</a>
+														<div class="subtitle">Assurer l’équilibre entre les activités socio-économiques, la protection de l’eau et des milieux aquatiques</div>
+													</li>
+													<li class="leaf menu-mlid-868 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/velo.jpg?itok=cuxunFeC" width="115" height="70" alt=""><a href="/les-grands-projets/sch%C3%A9ma-v%C3%A9lo">Schéma vélo</a>
+														<div class="subtitle">Proposer aux familles du Pays Fouesnantais et aux touristes des itinéraires cyclables continus, structurés et sécurisés</div>
+													</li>
+													<li class="leaf menu-mlid-1591 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/pf-02.jpg?itok=ygcWHgrj" width="115" height="70" alt=""><a href="/les-grands-projets/extension-de-la-station-d%C3%A9puration-de-penfalud">Extension de la station d'épuration de Penfalud</a>
+														<div class="subtitle">Anticiper les besoins pour les 20 prochaines années</div>
+													</li>
+													<li class="leaf menu-mlid-1660 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/brehoulou.jpg?itok=yrMAecL_" width="115" height="70" alt=""><a href="/les-grands-projets/r%C3%A9novation-de-lespace-sportif-de-br%C3%A9houlou">Rénovation de l'espace sportif de Bréhoulou</a>
+														<div class="subtitle">Détail des travaux</div>
+													</li>
+													<li class="last leaf menu-mlid-1661 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/voiedouce-s.jpg?itok=vW_dDMZ6" width="115" height="70" alt=""><a href="/les-grands-projets/voies-de-circulation-douce">Voies de circulation douce</a>
+														<div class="subtitle">Aménagement de voies de circulation douce</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-511"><a href="/entreprendre-0"><span class="orange">E</span>ntreprendre</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-1592 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/espace.jpg?itok=Ivwit0Ap" width="115" height="70" alt=""><a href="/entreprendre/espace-entreprises">Espace Entreprises</a>
+														<div class="subtitle">Un lieu dédié à l’entrepreneuriat</div>
+													</li>
+													<li class="leaf has-children menu-mlid-537 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/eco2.jpg?itok=vBz3ebrM" width="115" height="70" alt=""><a href="/entreprendre/leconomie-du-pays-fouesnantais">L'Economie du Pays Fouesnantais</a>
+														<div class="subtitle">Présentation socio-économique du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-538 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/porteurs-projet2.jpg?itok=7mYpMujC" width="115" height="70" alt=""><a href="/entreprendre/laccueil-des-porteurs-de-projets">L'accueil des porteurs de projets</a>
+														<div class="subtitle">Le service développement économique de la CCPF accueille les créateurs et chefs d’entreprises pour répondre à l’ensemble de leurs interrogations</div>
+													</li>
+													<li class="last leaf menu-mlid-867 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/za.jpg?itok=oF_MVKAS" width="115" height="70" alt=""><a href="/entreprendre/zones-d-activit%C3%A9s">Zones d'activités</a>
+														<div class="subtitle">L’aménagement des zones d’activités est une des compétences de la CCPF. L’objectif est de pouvoir répondre aux besoins fonciers des entreprises en développement.</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-512"><a href="/environnement"><span class="green">E</span>nvironnement</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-554 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/om.jpg?itok=LSe6HsbA" width="115" height="70" alt=""><a href="/environnement/gestion-des-d%C3%A9chets">Gestion des déchets</a>
+														<div class="subtitle">La collecte, la redevance, retrouvez toutes les informations pratiques pour vos déchets</div>
+													</li>
+													<li class="leaf menu-mlid-544 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/facture.jpg?itok=HpUnpRG_" width="115" height="70" alt=""><a href="/environnement/ma-facture-en-ligne">Ma facture en ligne</a>
+														<div class="subtitle">Accédez au détail de votre facture redevance incitative</div>
+													</li>
+													<li class="leaf menu-mlid-555 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/dechetterie.jpg?itok=5ukNifFk" width="115" height="70" alt=""><a href="/environnement/gestion-des-d%C3%A9chets/d%C3%A9chetterie">Déchetteries</a>
+														<div class="subtitle">Horaires d'ouverture des déchetteries du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-549 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/composteur.jpg?itok=fXWeIGfj" width="115" height="70" alt=""><a href="/environnement/r%C3%A9servez-un-composteur">Composteur</a>
+														<div class="subtitle">Vous pouvez vous procurer un composteur auprès du Pôle déchets. Deux tailles disponibles.</div>
+													</li>
+													<li class="leaf menu-mlid-550 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/sage.jpg?itok=16eHqyTA" width="115" height="70" alt=""><a href="/environnement/le-sage-sud-cornouaille">Le SAGE Sud Cornouaille</a>
+														<div class="subtitle">Le Schéma d'Aménagement et de Gestion des Eaux Sud Cornouaille</div>
+													</li>
+													<li class="leaf menu-mlid-1196 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/invasives.jpg?itok=WbZS4zJS" width="115" height="70" alt=""><a href="/environnement/esp%C3%A8ces-invasives">Espèces invasives</a>
+														<div class="subtitle">Les moyens de lutte contre les espèces invasives.</div>
+													</li>
+													<li class="last leaf has-children menu-mlid-1657 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/eau-potable.jpg?itok=-GzwN0Uv" width="115" height="70" alt=""><a href="/environnement/eau-et-assainissement">Eau et assainissement</a>
+														<div class="subtitle">Retrouvez les informations et contacts pour toutes vos demandes en matière d'eau et d'assainissement</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-513"><a href="/service-%C3%A0-la-personne"><span class="purple">S</span>ervice à <br>la personne</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf has-children menu-mlid-556 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/enfance.jpg?itok=Uo0Y7KvO" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/petite-enfance">Petite Enfance</a>
+														<div class="subtitle">Relais Petite Enfance, multi-accueils, crèche inter-entreprises ... découvrez l'ensemble des services proposés par la CCPF</div>
+													</li>
+													<li class="leaf has-children menu-mlid-561 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/seniors.jpg?itok=Y6cnPipX" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/les-seniors">Les seniors</a>
+														<div class="subtitle">Information, accueil ... retrouvez l'ensemble des services proposés par la CCPF</div>
+													</li>
+													<li class="last leaf menu-mlid-565 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/services.jpg?itok=3x29CgMI" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/les-services-%C3%A0-la-ccpf">Les services à la CCPF</a>
+														<div class="subtitle">Information, conseil, formation ...</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="last expanded menu-mlid-514"><a href="/loisirs-tourisme"><span class="lightblue">L</span>oisirs <br>& <span class="lightblue">T</span>ourisme</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-568 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/carte.jpg?itok=X1fBLi0D" width="115" height="70" alt=""><a href="/loisirs-tourisme/carte-interactive-tourisme">Carte interactive tourisme</a>
+														<div class="subtitle">Retrouvez toute l'offre touristique du Pays Fouesnantais géolocalisée</div>
+													</li>
+													<li class="leaf menu-mlid-569 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/sentier.jpg?itok=4CR7FceI" width="115" height="70" alt=""><a href="/loisirs-tourisme/sentiers-de-randonn%C3%A9e">Sentiers de randonnée</a>
+														<div class="subtitle">250 km de sentiers de randonnée pour découvrir la richesse du patrimoine naturel du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-570 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/ot.jpg?itok=wDNV-4sm" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-offices-de-tourisme">Les offices de tourisme</a>
+														<div class="subtitle">Bienvenue sur la RIVIERA BRETONNE, la première destination touristique du Finistère</div>
+													</li>
+													<li class="leaf menu-mlid-576 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/espacesportif.jpg?itok=wTkuT4RO" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-espaces-sportifs">Les espaces sportifs</a>
+														<div class="subtitle">Les espaces sportifs dédiés aux scolaires et aux associations du Pays Fouesantais</div>
+													</li>
+													<li class="leaf menu-mlid-577 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/balneides.jpg?itok=Cwc40ViL" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-baln%C3%A9ides">Les Balnéides</a>
+														<div class="subtitle">Les Balnéides vous accueille dans un décor tropical et une ambiance chaleureuse pour une journée au bord de l'eau</div>
+													</li>
+													<li class="last leaf menu-mlid-1654 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/accueil/guide-des-loisirs.png?itok=uzsQ9R_J" width="115" height="70" alt=""><a href="https://www.cc-paysfouesnantais.fr/loisirs-tourisme/guide-de-loisirs">Guide des loisirs</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</header>
+				<section id="main" role="main" class="container-12 clearfix">
+					<section id="container" role="region" class="grid-8 contextual-links-region">
+						<nav id="breadcrumb"><span class="element-invisible">Vous êtes ici : </span><a href="/">Accueil</a> > <a href="/la-communaut%C3%A9">La <span class="blue">c</span>ommunauté</a> > <a href="/la-communaut%C3%A9/publications" title="Retrouvez l'ensemble des publications de la CCPF : les magazines, les conseils communautaires, les rapports d'activité, les guides ..." style="public://main-menu/publications.jpg">Publications</a> > <span class="active">Conseils communautaires</span></nav>
+						<div id="tools"><a id="print" title="Imprimer la page" href="javascript:window.print()">Imprimer</a>
+							<div id="enlarge" title="Agrandir la taille du texte">Agrandir la taille du texte</div>
+							<div id="decrease" title="Réduire la taille du texte">Réduire la taille du texte</div>
+						</div>
+						<article>
+							<header>
+								<h1 class="">Conseils communautaires</h1>
+							</header>
+							<div id="block-system-main" class="block block-system">
+								<section class="article-block">
+									<div class="view view-publications view-id-publications view-display-id-page_3 view-dom-id-15c0390d9629c4fdfad8e591c0eaa72b">
+										<div class="view-content">
+											<div class="views-row views-row-1 views-row-odd views-row-first">
+												<div class="image-list"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/magazine/public/publication-image/conseil_47.jpg?itok=dwX9vOZK" width="100" height="120" alt="Conseil communautaire du 25-06-20" title="Conseil communautaire du 25-06-20"></div>
+												<h2>Conseil communautaire du 25-06-20</h2>
+												<div class="date"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-07-02T00:00:00+02:00">Juillet 2020</span></div>
+												<p></p>
+												<div class="button-green"><a href="https://www.cc-paysfouesnantais.fr/sites/default/files/publication-file/conseil_du_25-06-2020.pdf" title="Consulter au format PDF"><span></span>Consulter</a></div>
+											</div>
+											<div class="views-row views-row-2 views-row-even">
+												<div class="image-list"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/magazine/public/publication-image/conseil_46.jpg?itok=zcqznxY8" width="100" height="120" alt="Conseil communautaire du 05 mars 2020" title="Conseil communautaire du 05 mars 2020"></div>
+												<h2>Conseil communautaire du 05 mars 2020</h2>
+												<div class="date"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-03-12T00:00:00+01:00">Mars 2020</span></div>
+												<p></p>
+												<div class="button-green"><a href="https://www.cc-paysfouesnantais.fr/sites/default/files/publication-file/05_mars_2020_-_compte_rendu.pdf" title="Consulter au format PDF"><span></span>Consulter</a></div>
+											</div>
+											<div class="views-row views-row-3 views-row-odd">
+												<div class="image-list"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/magazine/public/publication-image/conseil_44_0.jpg?itok=D8OmZHKf" width="100" height="120" alt=""></div>
+												<h2>Conseil communautaire du 06 février 2020</h2>
+												<div class="date"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-02-13T00:00:00+01:00">Février 2020</span></div>
+												<p>Conseil communautaire du 06 février 2020</p>
+												<div class="button-green"><a href="https://www.cc-paysfouesnantais.fr/sites/default/files/publication-file/2020_02_06.pdf" title="Consulter au format PDF"><span></span>Consulter</a></div>
+											</div>
+											<div class="views-row views-row-4 views-row-even views-row-last">
+												<div class="image-list"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/magazine/public/publication-image/conseil_44.jpg?itok=MNa6xLgU" width="100" height="120" alt=""></div>
+												<h2>Conseil communautaire du 25-09-19</h2>
+												<div class="date"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2019-10-20T00:00:00+02:00">Octobre 2019</span></div>
+												<p>Conseil communautaire du 25-09-19</p>
+												<div class="button-green"><a href="https://www.cc-paysfouesnantais.fr/sites/default/files/publication-file/90_-_conseil_du_25-09-19_0.pdf" title="Consulter au format PDF"><span></span>Consulter</a></div>
+											</div>
+										</div>
+										<h2 class="element-invisible">Pages</h2>
+										<div class="item-list">
+											<ul class="pager">
+												<li class="pager-current first">1</li>
+												<li class="pager-item"><a title="Aller à la page 2" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=1">2</a></li>
+												<li class="pager-item"><a title="Aller à la page 3" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=2">3</a></li>
+												<li class="pager-item"><a title="Aller à la page 4" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=3">4</a></li>
+												<li class="pager-item"><a title="Aller à la page 5" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=4">5</a></li>
+												<li class="pager-item"><a title="Aller à la page 6" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=5">6</a></li>
+												<li class="pager-item"><a title="Aller à la page 7" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=6">7</a></li>
+												<li class="pager-item"><a title="Aller à la page 8" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=7">8</a></li>
+												<li class="pager-item"><a title="Aller à la page 9" href="/la-communaut%C3%A9/publications/conseils-communautaires?page=8">9</a></li>
+												<li class="pager-ellipsis">…</li>
+												<li class="pager-next"><a href="/la-communaut%C3%A9/publications/conseils-communautaires?page=1">suivant</a></li>
+												<li class="pager-last last"><a href="/la-communaut%C3%A9/publications/conseils-communautaires?page=13"></a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</article>
+					</section>
+					<aside id="sidebar" role="complementary" class="grid-4">
+						<div id="block-menu-block-3" class="block block-menu-block">
+							<header>
+								<h4>La <span class="blue">c</span>ommunauté</h4>
+							</header>
+							<div class="menu-block-wrapper menu-block-3 menu-name-main-menu parent-mlid-0 menu-level-2">
+								<div>
+									<ul class="menu">
+										<li class="first collapsed menu-mlid-515 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communaute.jpg?itok=GuW5Uqaz" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/linstitution">L'institution</a>
+											<div class="subtitle">Histoire et fonctionnement de la Communauté de Communes du Pays Fouesnantais (CCPF). Bureau, conseil communautaire, commissions...</div>
+										</li>
+										<li class="collapsed menu-mlid-582 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/competences.jpg?itok=tctIZxKT" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-comp%C3%A9tences">Les compétences</a>
+											<div class="subtitle">Se substituer aux communes sur des projets d'intérêt communautaire</div>
+										</li>
+										<li class="collapsed menu-mlid-517 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communes.jpg?itok=AvM797CW" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-communes">Les communes</a>
+											<div class="subtitle">Bénodet, Clohars-Fouesnant, Fouesnant, Gouesnac'h, La Fôret Fouesnant, Pleuven, Saint-Evarzec</div>
+										</li>
+										<li class="leaf menu-mlid-664 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/budget.jpg?itok=Z2hmkg7o" width="115" height="70" alt=""><a href="/budget-primitif-2018">Budgets</a>
+											<div class="subtitle">Budget global et budget ordures ménagères</div>
+										</li>
+										<li class="expanded active-trail menu-mlid-519 active-trail image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/publications.jpg?itok=aD199N5D" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/publications">Publications</a>
+											<div class="subtitle">Retrouvez l'ensemble des publications de la CCPF : les magazines, les conseils communautaires, les rapports d'activité, les guides ...</div>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-733"><a href="/la-communaut%C3%A9/publications/magazines">Magazines</a></li>
+													<li class="leaf menu-mlid-734"><a href="/la-communaut%C3%A9/publications/les-guides">Les guides</a></li>
+													<li class="leaf menu-mlid-735"><a href="/la-communaut%C3%A9/publications/rapports-dactivit%C3%A9s">Rapports d'activités</a></li>
+													<li class="last leaf active-trail active menu-mlid-736 active-trail"><a href="/la-communaut%C3%A9/publications/conseils-communautaires" class="active">Conseils communautaires</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="last collapsed menu-mlid-520 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/marchepublic.jpg?itok=0zVVT86I" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/march%C3%A9s-publics">Marchés publics</a>
+											<div class="subtitle">Retrouvez les consultations en cours de la CCPF et du CIAS</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="block-views-news-view-block" class="block block-views">
+							<section class="article-block">
+								<div class="view view-news-view view-id-news_view view-display-id-block view-dom-id-9f13d0fac7bcf64ae31008ca42f7ccde">
+									<div class="view-content">
+										<div class="views-row views-row-1"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/thumbnail/public/actualites/actu-site-s.jpg?itok=A7JHtR6Z" width="65" height="65" alt="">
+											<h3>Ici commence la mer</h3>
+											<div class="date">Publié le <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-07-07T00:00:00+02:00">07/07/20</span></div>
+											<p>Adoptez des gestes simples pour préserver l’eau</p>
+											<div class="read-more"><a href="/actualit%C3%A9s/ici-commence-la-mer">en savoir <span>+</span></a></div>
+										</div>
+										<div class="views-row views-row-2"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/thumbnail/public/actualites/marchepublic4-3_9.jpg?itok=7QosTfqG" width="65" height="65" alt="">
+											<h3>Conseil communautaire du 8 juillet 2020</h3>
+											<div class="date">Publié le <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-07-06T00:00:00+02:00">06/07/20</span></div>
+											<p>Ordre du jour</p>
+											<div class="read-more"><a href="/actualit%C3%A9s/conseil-communautaire-du-8-juillet-2020">en savoir <span>+</span></a></div>
+										</div>
+										<div class="views-row views-row-3"><img typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/thumbnail/public/actualites/recrutement-s.jpg?itok=7WACRvBG" width="65" height="65" alt="">
+											<h3>La CCPF recrute</h3>
+											<div class="date">Publié le <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2020-06-19T00:00:00+02:00">19/06/20</span></div>
+											<p>2 postes à pourvoir</p>
+											<div class="read-more"><a href="/actualit%C3%A9s/la-ccpf-recrute-0">en savoir <span>+</span></a></div>
+										</div>
+									</div>
+									<div class="more-link"><a href="/actualit%C3%A9s"> toute l'actualité </a></div>
+								</div>
+							</section>
+						</div>
+						<div id="block-block-5" class="block block-block">
+							<section class="article-block">
+								<div class="alpha grid-2"><a href="/environnement/ma-facture-en-ligne" title="Accèdez à votre facture en ligne"><img src="/sites/default/files/accueil/ma-facture-en-ligne-2.png" alt="Ma facture en ligne" width="140" height="105"></a></div>
+								<div class="grid-2 omega"><a href="/loisirs-tourisme/guide-de-loisirs" title="Loisir et tourisme - Guide de loisirs"><img src="/sites/default/files/accueil/guide-des-loisirs.png" alt="Guide des loisirs" width="140" height="105"></a></div>
+								<div class="alpha grid-2"><a href="/les-grands-projets/travaux" title="Environnement - Gestion des déchets"><img src="/sites/default/files/accueil/travaux-en-cours.png" alt="Travaux en cours" width="140" height="105"></a></div>
+								<div class="grid-2 omega"><a href="/inscription-newsletter" title="S'inscrire à la newsletter"><img src="/sites/default/files/accueil/inscription-newsletter.png" alt="S'inscrire à la newsletter" width="140" height="105"></a></div>
+							</section>
+						</div> </aside>
+				</section>
+				<footer id="footer" role="contentinfo" class="container-12 clearfix">
+					<section class="grid-12">
+						<div id="block-block-2" class="block block-block">
+							<header>
+								<h4>La Communauté de Communes du Pays Fouesnantais</h4>
+							</header>
+							<section class="article-block">
+								<div id="infos-siege" class="alpha grid-5">
+									<div class="target">Siège <br><span>11, espace de Kerourgué - CS 31046 29170 Fouesnant</span> <br> Tél : 02 98 51 61 27 - Fax : 02 98 51 66 50</div>
+									<div class="clock">du lundi au jeudi : <span>8h30 -12h00 / 13h30 -17h30</span> <br> le vendredi : <span>8h30 - 12h00 / 13h30 -17h00</span></div>
+								</div>
+								<div class="grid-7 omega">
+									<div class="target">Pôle déchets <br><span>Kerambris - 29170 FOUESNANT</span> <br> Tél : 02 98 51 54 54 - Fax : 02 98 56 28 87</div>
+									<div class="clock">du lundi au jeudi : <span>8h30 -12h00 / 13h30 -17h30</span><br> le vendredi : <span>8h30 -12h00 / 13h30 -17h00</span><br> le samedi : <span>8h30 - 12h00</span></div>
+								</div>
+							</section>
+						</div>
+						<div id="block-menu-block-2" class="block block-menu-block">
+							<div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+								<div>
+									<ul class="menu">
+										<li class="first expanded active-trail menu-mlid-509 active-trail active-trail"><a href="/la-communaut%C3%A9">La <span class="blue">c</span>ommunauté</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf has-children menu-mlid-515 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communaute.jpg?itok=GuW5Uqaz" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/linstitution">L'institution</a>
+														<div class="subtitle">Histoire et fonctionnement de la Communauté de Communes du Pays Fouesnantais (CCPF). Bureau, conseil communautaire, commissions...</div>
+													</li>
+													<li class="leaf has-children menu-mlid-582 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/competences.jpg?itok=tctIZxKT" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-comp%C3%A9tences">Les compétences</a>
+														<div class="subtitle">Se substituer aux communes sur des projets d'intérêt communautaire</div>
+													</li>
+													<li class="leaf has-children menu-mlid-517 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/communes.jpg?itok=AvM797CW" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/les-communes">Les communes</a>
+														<div class="subtitle">Bénodet, Clohars-Fouesnant, Fouesnant, Gouesnac'h, La Fôret Fouesnant, Pleuven, Saint-Evarzec</div>
+													</li>
+													<li class="leaf menu-mlid-664 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/budget.jpg?itok=Z2hmkg7o" width="115" height="70" alt=""><a href="/budget-primitif-2018">Budgets</a>
+														<div class="subtitle">Budget global et budget ordures ménagères</div>
+													</li>
+													<li class="leaf has-children active-trail menu-mlid-519 active-trail active-trail image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/publications.jpg?itok=aD199N5D" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/publications">Publications</a>
+														<div class="subtitle">Retrouvez l'ensemble des publications de la CCPF : les magazines, les conseils communautaires, les rapports d'activité, les guides ...</div>
+													</li>
+													<li class="last leaf has-children menu-mlid-520 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/marchepublic.jpg?itok=0zVVT86I" width="115" height="70" alt=""><a href="/la-communaut%C3%A9/march%C3%A9s-publics">Marchés publics</a>
+														<div class="subtitle">Retrouvez les consultations en cours de la CCPF et du CIAS</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-702"><a href="/les-grands-projets">Les grands <br><span class="red">p</span>rojets</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-732 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/tic.jpg?itok=mtPuQPvB" width="115" height="70" alt=""><a href="/les-grands-projets/am%C3%A9nagement-num%C3%A9rique-du-pays-fouesnantais">Aménagement numérique : Montée en débit</a>
+														<div class="subtitle">La CCPF a décidé de réaménager la sous-boucle locale France Telecom afin de couvrir en Haut Débit (entre 8 Mo et 20 Mo) les zones jusqu’alors mal desservies.</div>
+													</li>
+													<li class="leaf menu-mlid-730 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/habitat.jpg?itok=ZO3rp-vX" width="115" height="70" alt=""><a href="/les-grands-projets/habitat">Habitat</a>
+														<div class="subtitle">Un véritable projet de territoire sur les questions d'habitat</div>
+													</li>
+													<li class="leaf menu-mlid-731 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/amenagement-espace.jpg?itok=1nik-PnZ" width="115" height="70" alt=""><a href="/les-grands-projets/le-scot-de-lodet">Le SCOT de l'Odet</a>
+														<div class="subtitle">Le Schéma de Cohérence Territoriale de l'Odet</div>
+													</li>
+													<li class="leaf menu-mlid-865 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/logo-sage.jpg?itok=R6AK5vxy" width="115" height="70" alt=""><a href="/les-grands-projets/sch%C3%A9ma-d%E2%80%99am%C3%A9nagement-et-de-gestion-des-eaux">Schéma d’aménagement et de gestion des eaux</a>
+														<div class="subtitle">Assurer l’équilibre entre les activités socio-économiques, la protection de l’eau et des milieux aquatiques</div>
+													</li>
+													<li class="leaf menu-mlid-868 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/velo.jpg?itok=cuxunFeC" width="115" height="70" alt=""><a href="/les-grands-projets/sch%C3%A9ma-v%C3%A9lo">Schéma vélo</a>
+														<div class="subtitle">Proposer aux familles du Pays Fouesnantais et aux touristes des itinéraires cyclables continus, structurés et sécurisés</div>
+													</li>
+													<li class="leaf menu-mlid-1591 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/pf-02.jpg?itok=ygcWHgrj" width="115" height="70" alt=""><a href="/les-grands-projets/extension-de-la-station-d%C3%A9puration-de-penfalud">Extension de la station d'épuration de Penfalud</a>
+														<div class="subtitle">Anticiper les besoins pour les 20 prochaines années</div>
+													</li>
+													<li class="leaf menu-mlid-1660 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/brehoulou.jpg?itok=yrMAecL_" width="115" height="70" alt=""><a href="/les-grands-projets/r%C3%A9novation-de-lespace-sportif-de-br%C3%A9houlou">Rénovation de l'espace sportif de Bréhoulou</a>
+														<div class="subtitle">Détail des travaux</div>
+													</li>
+													<li class="last leaf menu-mlid-1661 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/voiedouce-s.jpg?itok=vW_dDMZ6" width="115" height="70" alt=""><a href="/les-grands-projets/voies-de-circulation-douce">Voies de circulation douce</a>
+														<div class="subtitle">Aménagement de voies de circulation douce</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-511"><a href="/entreprendre-0"><span class="orange">E</span>ntreprendre</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-1592 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/espace.jpg?itok=Ivwit0Ap" width="115" height="70" alt=""><a href="/entreprendre/espace-entreprises">Espace Entreprises</a>
+														<div class="subtitle">Un lieu dédié à l’entrepreneuriat</div>
+													</li>
+													<li class="leaf has-children menu-mlid-537 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/eco2.jpg?itok=vBz3ebrM" width="115" height="70" alt=""><a href="/entreprendre/leconomie-du-pays-fouesnantais">L'Economie du Pays Fouesnantais</a>
+														<div class="subtitle">Présentation socio-économique du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-538 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/porteurs-projet2.jpg?itok=7mYpMujC" width="115" height="70" alt=""><a href="/entreprendre/laccueil-des-porteurs-de-projets">L'accueil des porteurs de projets</a>
+														<div class="subtitle">Le service développement économique de la CCPF accueille les créateurs et chefs d’entreprises pour répondre à l’ensemble de leurs interrogations</div>
+													</li>
+													<li class="last leaf menu-mlid-867 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/za.jpg?itok=oF_MVKAS" width="115" height="70" alt=""><a href="/entreprendre/zones-d-activit%C3%A9s">Zones d'activités</a>
+														<div class="subtitle">L’aménagement des zones d’activités est une des compétences de la CCPF. L’objectif est de pouvoir répondre aux besoins fonciers des entreprises en développement.</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-512"><a href="/environnement"><span class="green">E</span>nvironnement</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-554 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/om.jpg?itok=LSe6HsbA" width="115" height="70" alt=""><a href="/environnement/gestion-des-d%C3%A9chets">Gestion des déchets</a>
+														<div class="subtitle">La collecte, la redevance, retrouvez toutes les informations pratiques pour vos déchets</div>
+													</li>
+													<li class="leaf menu-mlid-544 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/facture.jpg?itok=HpUnpRG_" width="115" height="70" alt=""><a href="/environnement/ma-facture-en-ligne">Ma facture en ligne</a>
+														<div class="subtitle">Accédez au détail de votre facture redevance incitative</div>
+													</li>
+													<li class="leaf menu-mlid-555 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/dechetterie.jpg?itok=5ukNifFk" width="115" height="70" alt=""><a href="/environnement/gestion-des-d%C3%A9chets/d%C3%A9chetterie">Déchetteries</a>
+														<div class="subtitle">Horaires d'ouverture des déchetteries du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-549 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/composteur.jpg?itok=fXWeIGfj" width="115" height="70" alt=""><a href="/environnement/r%C3%A9servez-un-composteur">Composteur</a>
+														<div class="subtitle">Vous pouvez vous procurer un composteur auprès du Pôle déchets. Deux tailles disponibles.</div>
+													</li>
+													<li class="leaf menu-mlid-550 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/sage.jpg?itok=16eHqyTA" width="115" height="70" alt=""><a href="/environnement/le-sage-sud-cornouaille">Le SAGE Sud Cornouaille</a>
+														<div class="subtitle">Le Schéma d'Aménagement et de Gestion des Eaux Sud Cornouaille</div>
+													</li>
+													<li class="leaf menu-mlid-1196 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/invasives.jpg?itok=WbZS4zJS" width="115" height="70" alt=""><a href="/environnement/esp%C3%A8ces-invasives">Espèces invasives</a>
+														<div class="subtitle">Les moyens de lutte contre les espèces invasives.</div>
+													</li>
+													<li class="last leaf has-children menu-mlid-1657 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/eau-potable.jpg?itok=-GzwN0Uv" width="115" height="70" alt=""><a href="/environnement/eau-et-assainissement">Eau et assainissement</a>
+														<div class="subtitle">Retrouvez les informations et contacts pour toutes vos demandes en matière d'eau et d'assainissement</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="expanded menu-mlid-513"><a href="/service-%C3%A0-la-personne"><span class="purple">S</span>ervice à <br>la personne</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf has-children menu-mlid-556 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/enfance.jpg?itok=Uo0Y7KvO" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/petite-enfance">Petite Enfance</a>
+														<div class="subtitle">Relais Petite Enfance, multi-accueils, crèche inter-entreprises ... découvrez l'ensemble des services proposés par la CCPF</div>
+													</li>
+													<li class="leaf has-children menu-mlid-561 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/seniors.jpg?itok=Y6cnPipX" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/les-seniors">Les seniors</a>
+														<div class="subtitle">Information, accueil ... retrouvez l'ensemble des services proposés par la CCPF</div>
+													</li>
+													<li class="last leaf menu-mlid-565 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/services.jpg?itok=3x29CgMI" width="115" height="70" alt=""><a href="/service-%C3%A0-la-personne/les-services-%C3%A0-la-ccpf">Les services à la CCPF</a>
+														<div class="subtitle">Information, conseil, formation ...</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="last expanded menu-mlid-514"><a href="/loisirs-tourisme"><span class="lightblue">L</span>oisirs <br>& <span class="lightblue">T</span>ourisme</a>
+											<div>
+												<ul class="menu">
+													<li class="first leaf menu-mlid-568 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/carte.jpg?itok=X1fBLi0D" width="115" height="70" alt=""><a href="/loisirs-tourisme/carte-interactive-tourisme">Carte interactive tourisme</a>
+														<div class="subtitle">Retrouvez toute l'offre touristique du Pays Fouesnantais géolocalisée</div>
+													</li>
+													<li class="leaf menu-mlid-569 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/sentier.jpg?itok=4CR7FceI" width="115" height="70" alt=""><a href="/loisirs-tourisme/sentiers-de-randonn%C3%A9e">Sentiers de randonnée</a>
+														<div class="subtitle">250 km de sentiers de randonnée pour découvrir la richesse du patrimoine naturel du Pays Fouesnantais</div>
+													</li>
+													<li class="leaf menu-mlid-570 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/ot.jpg?itok=wDNV-4sm" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-offices-de-tourisme">Les offices de tourisme</a>
+														<div class="subtitle">Bienvenue sur la RIVIERA BRETONNE, la première destination touristique du Finistère</div>
+													</li>
+													<li class="leaf menu-mlid-576 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/espacesportif.jpg?itok=wTkuT4RO" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-espaces-sportifs">Les espaces sportifs</a>
+														<div class="subtitle">Les espaces sportifs dédiés aux scolaires et aux associations du Pays Fouesantais</div>
+													</li>
+													<li class="leaf menu-mlid-577 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/main-menu/balneides.jpg?itok=Cwc40ViL" width="115" height="70" alt=""><a href="/loisirs-tourisme/les-baln%C3%A9ides">Les Balnéides</a>
+														<div class="subtitle">Les Balnéides vous accueille dans un décor tropical et une ambiance chaleureuse pour une journée au bord de l'eau</div>
+													</li>
+													<li class="last leaf menu-mlid-1654 image"><img class="menu-thumbnail" typeof="foaf:Image" src="https://www.cc-paysfouesnantais.fr/sites/default/files/styles/main-menu/public/accueil/guide-des-loisirs.png?itok=uzsQ9R_J" width="115" height="70" alt=""><a href="https://www.cc-paysfouesnantais.fr/loisirs-tourisme/guide-de-loisirs">Guide des loisirs</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="block-menu-block-6" class="block block-menu-block">
+							<div class="menu-block-wrapper menu-block-6 menu-name-menu-menu-footer parent-mlid-0 menu-level-1">
+								<div>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-623"><a href="/node/72" title="">Mentions légales</a></li>
+										<li class="leaf menu-mlid-624"><a href="/contact" title="">Contact</a></li>
+										<li class="leaf menu-mlid-619"><a href="https://twitter.com/CCPaysFouesnant">Twitter</a></li>
+										<li class="leaf menu-mlid-620"><a href="https://www.facebook.com/cc.paysfouesnantais" title="">Facebook</a></li>
+										<li class="leaf menu-mlid-621"><a href="http://www.youtube.com/user/PaysFouesnantais" title="">YouTube</a></li>
+										<li class="last leaf menu-mlid-622"><a href="/actualites.xml" title="">Flux rss des actualités</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</footer>
+			</div>
+		</div>
+		<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysfouesnantais.fr/sites/all/modules/eu_cookie_compliance/js/eu_cookie_compliance.js?qd5fx7"></script>
+		<script type="text/javascript" src="//static.adserver.pm/position/SITES_COLLECTIVITES/P43301/footer/campaign_id=48152/cid=CL974032/c5=CL974032/campaign_token=b51f523e514a7902c67665b59aa67bf6/?click=%5BCLICK_COMMAND%5D"></script>
+	</body>
+</html>
