@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<!-- InstanceBegin template="/Templates/Site.dwt.php" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="windows-1252">
+		<meta name="description" content="Le service Achats liste régulièrement les prochaines consultations des fournisseurs :">
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="129x129" href="/images/apple-touch-icon-129x129.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Les consultations en cours - Hôpital Saint Joseph</title>
+		<!-- InstanceEndEditable -->
+		<script>
+    var arkoInfoPage = {"filRouge":[{"idRubrique":168,"intitule":"Espace Fournisseurs"},{"idRubrique":248,"intitule":"Les consultations en cours"}],"rubriqueEnCours":{"idRubrique":248,"intitule":"Les consultations en cours"},"articleEnCours":false,"multisite":2};
+		</script>
+		<link rel="icon" href="https://www.hopital-saint-joseph.fr/arkotheque/client/saint_joseph/hopital/images/icones/favicon.gif">
+		<link href="https://www.hopital-saint-joseph.fr/arkotheque/client/saint_joseph/hopital/css/styles.css?cb=7a4" rel="stylesheet" media="screen, print">
+		<link href="https://www.hopital-saint-joseph.fr/arkotheque/client/saint_joseph/hopital/css/styles_user.css?cb=7a4" rel="stylesheet" media="screen, print">
+		<link href="https://www.hopital-saint-joseph.fr/styles/print.css?cb=7a4" rel="stylesheet" media="print">
+		<script src="/lib/jquery/jquery-1.11.3.with-migrate.min.js?cb=7a4"></script>
+		<script src="/lib/js/dist/arkotheque-cms.min.js?cb=7a4"></script>
+		<script src="/lib/js/dist/arko-tracking.min.js?cb=7a4"></script>
+		<link rel="stylesheet" media="screen" href="/lib/jquery_modules/fancybox2/jquery.fancybox.css?cb=7a4">
+		<link rel="stylesheet" media="screen" href="/lib/jquery_modules/fancybox2/helpers/jquery.fancybox-thumbs.css?cb=7a4">
+		<link rel="stylesheet" media="screen" href="/styles/easy_slider.css?cb=7a4">
+		<script>
+        jQuery(document).ready(function () {
+//		$("a:has(img)").fancybox();
+            if (typeof(jQuery.fn.fancybox) != 'undefined') {
+                jQuery("a[zoom=fancy]").fancybox({
+                    /*'transitionIn'		: 'none',
+                     'transitionOut'		: 'none',
+                     'titlePosition' 	: 'inside'*/
+                                        nextEffect: 'none',
+                    prevEffect: 'none',
+                    helpers: {
+
+                        thumbs: {
+                            width: 50,
+                            height: 50
+                        }
+                    },
+                    padding: 0,
+                    preload: 5
+                                                        });
+            }
+        });
+        setupLiensPartage(jQuery, window);
+    
+		</script>
+		<!-- InstanceBeginEditable name="head" -->
+		<script type="text/javascript" src="/arkotheque/visionneuse/js/jquery.jplayer271.min.js"></script>
+		<script type="text/javascript">
+<!--
+ $(function(){
+	 $('.lien_visionneuse').on('click',function(e) {
+		 e.preventDefault();
+		 if(typeof(ArkVisuImage)!=="undefined") {
+			 ArkVisuImage($(this).attr('href'),"visionneuse");
+		 }
+		 else {
+			window.open($(this).attr('href'),"visionneuse","menubar=no,location=yes,resizable=yes,scrollbars=yes,status=yes");
+		 }
+	 });
+ });
+//-->
+		</script>
+		<!-- InstanceEndEditable -->
+	</head>
+	<body id="fournisseurs">
+		<div id="conteneur_global">
+			<div id="bandeau">
+				<div class="enveloppe_bandeau"><a href="https://www.hopital-saint-joseph.fr/" class="retour_accueil"><span>Hôpital Saint Joseph - Marseille</span></a></div>
+				<div class="enveloppe_bandeau">
+					<div id="boutons_reseaux_sociaux"><a href="https://twitter.com/HopitalSaintJo" target="_blank" class="bouton_twitter"><span>Retrouvez-nous sur Twitter</span></a><a href="https://fr-fr.facebook.com/H%C3%83%C2%B4pital-Saint-Joseph-Officiel-216480061697731/" target="_blank" class="bouton_facebook"><span>Retrouvez-nous sur Facebook</span></a><a href="https://www.linkedin.com/company/27238670/admin/updates/" target="_blank" class="bouton_linkedin"><span>Retrouvez-nous sur LinkedIn</span></a><a href="https://www.youtube.com/channel/UCLXAo-EhY3OqFIM2tWNrwdw" target="_blank" class="bouton_youtube"><span>Retrouvez-nous sur Youtube</span></a></div>
+					<div class="facette_es_recherche"><input type="text" id="champ-facette-es_1"> <input type="button" id="btn_champ-facette-es_1" value="Ok">
+						<script>
+        $(function() {
+            var url = 'https://www.hopital-saint-joseph.fr/e/saintjo_recherche_globale?f_1%5B0%5D=INPUTVALUE';
+            var champ = $('#champ-facette-es_1');
+            var searchFct = function() {
+                window.location.href = url.replace('INPUTVALUE', encodeURIComponent(champ.val()));
+            };
+            champ.on('keypress', function(ev) {
+                if (ev.which === 13) {
+                   searchFct();
+                }
+            });
+            $('#btn_champ-facette-es_1').on('click', function() {
+                searchFct();
+            });
+        });
+        
+						</script>
+					</div>
+				</div>
+				<script>
+$(function() {
+    arko.h.burgerMenu();
+});
+				</script>
+			</div>
+			<div id="menu">
+				<ul>
+					<li id="menu1" class="ref_158"><a href="/r/158/votre-hopital-votre-maternite/"><span>Votre hôpital, votre maternité</span></a>
+						<ul class="sous_menu">
+							<li id="menu1a" class="ref_304"><a href="/r/304/vous-entrez-a-l-hopital/"><span>Vous entrez à l'Hôpital</span></a></li>
+							<li id="menu1b" class="ref_305"><a href="/r/305/vous-entrez-a-la-maternite/"><span>Vous entrez à la maternité</span></a></li>
+							<li id="menu1c" class="ref_306"><a href="/r/306/nos-services/"><span>Nos services</span></a></li>
+							<li id="menu1d" class="ref_307"><a href="/r/307/la-chirurgie-robotique/"><span>La chirurgie robotique</span></a></li>
+							<li id="menu1e" class="ref_525"><a href="/r/525/nos-medecins/"><span>Nos médecins</span></a></li>
+							<li id="menu1f" class="ref_308"><a href="/r/308/que-faisons-nous-/"><span>Que faisons-nous ?</span></a></li>
+							<li id="menu1g" class="ref_309"><a href="/r/309/la-demarche-qualite-securite-des-soins/"><span>La démarche Qualité Sécurité des Soins</span></a></li>
+							<li id="menu1h" class="ref_310"><a href="/r/310/le-developpement-durable/"><span>Le Développement Durable</span></a></li>
+							<li id="menu1i" class="ref_311"><a href="/r/311/saint-joseph-d-hier-a-aujourd-hui/"><span>Saint Joseph d'hier à aujourd'hui</span></a></li>
+							<li id="menu1j" class="ref_312"><a href="/r/312/cultes-accompagnement-spirituel/"><span>Cultes - Accompagnement spirituel</span></a></li>
+							<li id="menu1k" class="ref_313"><a href="/r/313/notre-reflexion-ethique/"><span>Notre réflexion éthique</span></a></li>
+							<li id="menu1l" class="ref_314"><a href="/r/314/le-benevolat-a-l-hopital/"><span>Le bénévolat à l'Hôpital</span></a></li>
+							<li id="menu1m" class="ref_315"><a href="/r/315/les-droits-et-devoirs-du-patient/"><span>Les droits et devoirs du patient</span></a></li>
+							<li id="menu1n" class="ref_316"><a href="/r/316/don-d-organes-et-de-tissus/"><span>Don d'organes et de tissus</span></a></li>
+							<li id="menu1o" class="ref_317"><a href="/r/317/visiteurs/"><span>Visiteurs</span></a></li>
+							<li id="menu1p" class="ref_318"><a href="/r/318/ou-nous-trouver-/"><span>Où nous trouver ?</span></a></li>
+						</ul>
+					</li>
+					<li id="menu2" class="ref_159"><a href="/r/159/soins-de-suite-pole-domicile/"><span>Soins de suite & Pôle Domicile</span></a>
+						<ul class="sous_menu">
+							<li id="menu2a" class="ref_895"><a href="/r/895/le-ssr-fernande-berger/"><span>Le SSR Fernande Berger</span></a></li>
+							<li id="menu2b" class="ref_326"><a href="/r/326/hospitalisation-a-domicile-had-/"><span>Hospitalisation à domicile - HAD -</span></a></li>
+							<li id="menu2c" class="ref_328"><a href="/r/328/service-de-soins-a-domicile-ssiad-/"><span>Service de Soins à Domicile - SSIAD -</span></a></li>
+							<li id="menu2d" class="ref_536"><a href="/r/536/service-d-aide-a-domicile-abcd-saint-joseph/"><span>Service d'aide à domicile ABCD-Saint Joseph</span></a></li>
+							<li id="menu2e" class="ref_405"><a href="/r/405/le-service-social/"><span>Le Service Social</span></a></li>
+						</ul>
+					</li>
+					<li id="menu3" class="ref_160"><a href="/r/160/professionnels-de-sante/"><span>Professionnels de santé</span></a>
+						<ul class="sous_menu">
+							<li id="menu3a" class="ref_276"><a href="/r/276/annuaire-des-medecins/"><span>Annuaire des médecins</span></a></li>
+							<li id="menu3b" class="ref_277"><a href="/r/277/vous-avez-un-patient-hospitalise-a-saint-joseph/"><span>Vous avez un patient hospitalisé à Saint Joseph</span></a></li>
+							<li id="menu3c" class="ref_278"><a href="/r/278/la-chirurgie-robotique/"><span>La chirurgie robotique</span></a></li>
+							<li id="menu3d" class="ref_279"><a href="/r/279/publications/"><span>Publications</span></a></li>
+							<li id="menu3e" class="ref_280"><a href="/r/280/la-demarche-qualite-securite-des-soins/"><span>La démarche Qualité Sécurité des Soins</span></a></li>
+							<li id="menu3f" class="ref_281"><a href="/r/281/qui-sommes-nous-/"><span>Qui sommes-nous?</span></a></li>
+							<li id="menu3g" class="ref_282"><a href="/r/282/notre-activite-et-nos-finances/"><span>Notre activité et nos finances</span></a></li>
+							<li id="menu3h" class="ref_283"><a href="/r/283/la-direction-des-services-numeriques-/"><span>La Direction des Services Numériques </span></a></li>
+							<li id="menu3i" class="ref_284"><a href="/r/284/la-recherche-clinique/"><span>La Recherche Clinique</span></a></li>
+							<li id="menu3j" class="ref_285"><a href="/r/285/les-innovations-medicales/"><span>Les innovations médicales</span></a></li>
+							<li id="menu3k" class="ref_286"><a href="/r/286/le-developpement-durable/"><span>Le Développement Durable</span></a></li>
+						</ul>
+					</li>
+					<li id="menu4" class="ref_161"><a href="/r/161/l-hopital-recrute/"><span>L'Hôpital recrute</span></a>
+						<ul class="sous_menu">
+							<li id="menu4a" class="ref_269"><a href="/r/269/travailler-a-saint-joseph/"><span>Travailler à Saint Joseph</span></a></li>
+							<li id="menu4b" class="ref_270"><a href="/r/270/la-politique-des-soins/"><span>La politique des soins</span></a></li>
+							<li id="menu4c" class="ref_900"><a href="/r/900/les-postes-a-pourvoir/"><span>Les postes à pourvoir</span></a></li>
+							<li id="menu4d" class="ref_272"><a href="/r/272/candidature-spontanee/"><span>Candidature spontanée</span></a></li>
+							<li id="menu4e" class="ref_273"><a href="/r/273/la-formation-paramedicale/"><span>La formation paramédicale</span></a></li>
+							<li id="menu4f" class="ref_932"><a href="/r/932/le-contrat-d-apprentissage/"><span>Le contrat d'apprentissage</span></a></li>
+							<li id="menu4g" class="ref_864"><a href="/r/864/index-egalite-femmes-hommes/"><span>Index égalité femmes-hommes</span></a></li>
+							<li id="menu4h" class="ref_275"><a href="/r/275/contacts/"><span>Contacts</span></a></li>
+						</ul>
+					</li>
+					<li id="menu5" class="ref_166"><a href="/r/166/l-hopital-enseigne/"><span>L'Hôpital enseigne</span></a>
+						<ul class="sous_menu">
+							<li id="menu5a" class="ref_251"><a href="/r/251/les-conferences-ecni/"><span>Les conférences ECNI</span></a></li>
+							<li id="menu5b" class="ref_252"><a href="/r/252/la-formation-medicale-continue/"><span>La formation médicale continue</span></a></li>
+							<li id="menu5c" class="ref_253"><a href="/r/253/les-instituts-de-formations-en-soins-infirmiers/"><span>Les Instituts de formations en Soins Infirmiers</span></a></li>
+							<li id="menu5d" class="ref_254"><a href="/r/254/les-documents-pour-preparer-les-stages-paramedicaux/"><span>Les documents pour préparer les stages paramédicaux</span></a></li>
+							<li id="menu5e" class="ref_538"><a href="/r/538/le-stage-au-choix-de-3eme-annee-d-etude-en-soins-infirmiers/"><span>Le stage au choix de 3ème année d'étude en Soins Infirmiers</span></a></li>
+							<li id="menu5f" class="ref_899"><a href="/r/899/la-demande-d-autorisation-d-entretien-infirmier/"><span>La demande d'autorisation d'entretien infirmier</span></a></li>
+							<li id="menu5g" class="ref_528"><a href="/r/528/les-demandes-individuelles-de-stage/"><span>Les demandes individuelles de stage</span></a></li>
+						</ul>
+					</li>
+					<li id="menu6" class="ref_167"><a href="/r/167/espace-medias/"><span>Espace Médias</span></a>
+						<ul class="sous_menu">
+							<li id="menu6a" class="ref_170"><a href="/r/170/la-communication-et-les-relations-presse/"><span>La communication et les Relations Presse</span></a></li>
+							<li id="menu6b" class="ref_171"><a href="/r/171/agenda-des-congres-conferences-colloques-epu-manifestations/"><span>Agenda des congrès, conférences, colloques, EPU, manifestations</span></a></li>
+							<li id="menu6c" class="ref_172"><a href="/r/172/les-actualites/"><span>Les actualités</span></a></li>
+							<li id="menu6d" class="ref_173"><a href="/r/173/newsletter/"><span>Newsletter</span></a></li>
+							<li id="menu6e" class="ref_174"><a href="/r/174/les-communiques-de-presse/"><span>Les communiqués de presse</span></a></li>
+							<li id="menu6f" class="ref_175"><a href="/r/175/les-dossiers-presse/"><span>Les dossiers presse</span></a></li>
+							<li id="menu6g" class="ref_176"><a href="/r/176/la-revue-de-presse/"><span>La revue de presse</span></a></li>
+							<li id="menu6h" class="ref_177"><a href="/r/177/le-journal-de-saint-jo/"><span>Le journal de Saint Jo</span></a></li>
+							<li id="menu6i" class="ref_178"><a href="/r/178/la-lettre-qualite/"><span>La lettre Qualité</span></a></li>
+							<li id="menu6j" class="ref_179"><a href="/r/179/le-rapport-annuel/"><span>Le Rapport Annuel</span></a></li>
+							<li id="menu6k" class="ref_181"><a href="/r/181/les-livrets-d-accueil/"><span>Les livrets d'accueil</span></a></li>
+							<li id="menu6l" class="ref_183"><a href="/r/183/la-phototheque/"><span>La photothèque</span></a></li>
+							<li id="menu6m" class="ref_916"><a href="/r/916/nos-videos-d-information-et-reportages-tv/"><span>Nos Vidéos d'Information et Reportages TV</span></a></li>
+							<li id="menu6n" class="ref_184"><a href="/r/184/location-de-salle/"><span>Location de salle</span></a></li>
+							<li id="menu6o" class="ref_245"><a href="/r/245/contacts/"><span>Contacts</span></a></li>
+						</ul>
+					</li>
+					<li id="menu7" class="ref_168"><a href="/r/168/espace-fournisseurs/"><span>Espace Fournisseurs</span></a>
+						<ul class="sous_menu">
+							<li id="menu7a" class="ref_246"><a href="/r/246/les-interlocuteurs-des-achats/"><span>Les interlocuteurs des achats</span></a></li>
+							<li id="menu7b" class="ref_247"><a href="/r/247/formulaire-de-creation-d-un-fournisseur/"><span>Formulaire de création d'un fournisseur</span></a></li>
+							<li id="menu7c" class="ref_248"><a href="/r/248/les-consultations-en-cours/"><span>Les consultations en cours</span></a></li>
+							<li id="menu7d" class="ref_249"><a href="/r/249/la-taxe-d-apprentissage/"><span>La Taxe d'apprentissage</span></a></li>
+							<li id="menu7e" class="ref_250"><a href="/r/250/contacts/"><span>Contacts</span></a></li>
+						</ul>
+					</li>
+					<li id="menu8" class="ref_169"><a href="/r/169/decouvrez-la-fondation-hopital-saint-joseph/"><span>Découvrez la Fondation Hôpital Saint Joseph</span></a></li>
+					<li id="menu9" class="ref_494"><a href="/r/494/acces-reserve/"><span>Accès réservé</span></a>
+						<ul class="sous_menu">
+							<li id="menu9a" class="ref_2176"><a href="/a/2176/teleconsultation/"><span>Téléconsultation</span></a></li>
+							<li id="menu9b" class="ref_928"><a href="/a/928/acces-administrateurs/"><span>Accès Administrateurs</span></a></li>
+							<li id="menu9c" class="ref_929"><a href="/a/929/acces-distant/"><span>Accès distant</span></a></li>
+							<li id="menu9d" class="ref_930"><a href="/a/930/acces-espace-collaboratif-imagerie/"><span>Accès Espace collaboratif Imagerie</span></a></li>
+							<li id="menu9e" class="ref_964"><a href="/a/964/connexion-aux-pages-du-comite-d-entreprise/"><span>Connexion aux pages du Comité d'entreprise</span></a></li>
+							<li id="menu9f" class="ref_933"><a href="/a/933/espace-collaboratif-ppe-planning-sf-/"><span>Espace collaboratif PPE (Planning SF)</span></a></li>
+							<li id="menu9g" class="ref_1247"><a href="/a/1247/kiosque-self/"><span>Kiosque Self</span></a></li>
+							<li id="menu9h" class="ref_931"><a href="/a/931/messagerie/"><span>Messagerie</span></a></li>
+							<li id="menu9i" class="ref_932"><a href="/a/932/planning-anesthesistes/"><span>Planning Anesthesistes</span></a></li>
+							<li id="menu9j" class="ref_934"><a href="/a/934/sano-web/"><span>Sano Web</span></a></li>
+							<li id="menu9k" class="ref_935"><a href="/a/935/support-informatique/"><span>Support Informatique</span></a></li>
+							<li id="menu9l" class="ref_1332"><a href="/a/1332/tele-expertise/"><span>Télé-expertise</span></a></li>
+							<li id="menu9m" class="ref_927"><a href="/a/927/webpcp-demande-d-inscription-au-bloc/"><span>WebPCP/Demande d'inscription au bloc</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="conteneur">
+				<div id="conteneur_interieur">
+					<p class="filrouge"><span> <a href="https://www.hopital-saint-joseph.fr/">Accueil</a> > <!-- InstanceBeginEditable name="fil_rouge" --><a href="/r/168/espace-fournisseurs/">Espace Fournisseurs</a> > Les consultations en cours<!-- InstanceEndEditable --></span></p>
+					<p class="titre_rubrique"><a href="/r/168/espace-fournisseurs/"><span>Espace Fournisseurs</span></a></p>
+					<div id="colonne1">
+						<ul id="menu_rubrique">
+							<li><a href="/r/246/les-interlocuteurs-des-achats/"><span>Les interlocuteurs des achats</span></a></li>
+							<li><a href="/r/247/formulaire-de-creation-d-un-fournisseur/"><span>Formulaire de création d'un fournisseur</span></a></li>
+							<li><a class="page_en_cours" href="/r/248/les-consultations-en-cours/"><span>Les consultations en cours</span></a>
+								<ul>
+									<li><a href="/r/871/controle-technique-en-vue-des-etudes-et-travaux-de-l-extension-batimentaire-sud-du-site-de-l-hopital-saint-joseph/">Contrôle technique en vue des études et travaux de l'extension bâtimentaire sud du site de l'hôpital Saint Joseph</a></li>
+									<li><a href="/r/870/controle-technique-en-vue-des-etudes-et-travaux-de-l-extension-de-l-imagerie-au-rdc-du-batiment-bues-du-site-de-l-hopital-saint-joseph/">Contrôle technique en vue des études et travaux de l'extension de l'imagerie au RDC du bâtiment BUES du site de l'hôpital Saint Joseph</a></li>
+									<li><a href="/r/869/construction-du-nouvel-etablissement-de-soins-de-suite-et-longue-duree-du-site-de-la-salette-montval-et-l-hopital-saint-joseph-de-marseille-/">Construction du nouvel établissement de soins de suite et longue durée du site de La Salette-Montval et l'Hôpital Saint Joseph de Marseille.</a></li>
+									<li><a href="/r/611/marche-de-travaux-pour-la-creation-des-blocs-21-et-22/">Marché de travaux pour la création des blocs 21 et 22</a></li>
+									<li><a href="/r/599/appel-d-offres-pour-fournitures-de-produits-d-entretien-et-articles-menagers/">Appel d'offres pour fournitures de produits d'entretien et articles ménagers</a></li>
+									<li><a href="/r/551/projet-de-relocalisation-et-extension-du-bloc-endoscopique-et-travaux-associes/">Projet de relocalisation et extension du bloc endoscopique et travaux associés</a></li>
+									<li><a href="/r/577/appel-d-offres-fournitures-et-services-cvc-plomberie-froid-industriel/">Appel d'offres fournitures et services CVC, plomberie, froid industriel</a></li>
+								</ul>
+							</li>
+							<li><a href="/r/249/la-taxe-d-apprentissage/"><span>La Taxe d'apprentissage</span></a></li>
+							<li><a href="/r/250/contacts/"><span>Contacts</span></a></li>
+						</ul>
+						<div id="colonne_fin"> </div>
+						<!-- InstanceBeginEditable name="colonne1" -->
+						<!-- InstanceEndEditable -->
+					</div>
+					<div id="central">
+						<!-- InstanceBeginEditable name="central" -->
+						<div id="contenu_central">
+							<div id="article_haut"></div>
+							<h1 class="titre_page">Les consultations en cours</h1>
+							<div class="vignette_cartouche"><a href="/_depot_arkcms_fondationstjo/_depot_arko/articles/674/hopital-saint-jospeh_img.jpg" zoom="fancy" rel="gallerie_article" title="Hôpital Saint Jospeh"><img src="/_depot_arkcms_fondationstjo/_depot_arko/articles/674/vign_hopital-saint-jospeh_img.jpg" alt="Hôpital Saint Jospeh" title="Hôpital Saint Jospeh"></a></div>
+							<p>Le service Achats liste régulièrement les prochaines consultations des fournisseurs :</p>
+							<div id="affichage_liste" class="liste_complete niveau_0">
+								<div class="affichage_liste_entree numero_1  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/871/controle-technique-en-vue-des-etudes-et-travaux-de-l-extension-batimentaire-sud-du-site-de-l-hopital-saint-joseph/">Contrôle technique en vue des études et travaux de l'extension bâtimentaire sud du site de l'hôpital Saint Joseph</a></h2>
+									<p>Nous avons l’honneur de vous informer que nous procédons à un appel d’offre de contrôle technique en vue des études et travaux de l’extension bâtimentaire sud du site de l’hôpital Saint Joseph.</p>
+									<p>Vous trouverez en pièce jointe le dossier de consultation.</p>
+									<p>Votre proposition devra nous parvenir par mail à <a href="mailto:GrpDif_SecretariatEconomat@hopital-saint-joseph.fr">GrpDif_SecretariatEconomat@hopital-saint-joseph.fr</a> et par courrier au secrétariat des services économiques (5° étage bâtiment administratif) <strong><span style="text-decoration: underline;">avant le mercredi 04/09/2019 – 12h</span></strong>.</p>
+									<p class="fichier"><a href="https://www.hopital-saint-joseph.fr/d/YTozOntzOjQ6InJlZjAiO2k6MTtzOjQ6InJlZjEiO3M6NDoiMzkxNiI7czo0OiJyZWYyIjtzOjA6IiI7fQ==/le-dossier-de-consultation" target="_blank">Le dossier de consultation</a> <span class="poids_fichier">(9,8 Mo)</span></p>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_2  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/870/controle-technique-en-vue-des-etudes-et-travaux-de-l-extension-de-l-imagerie-au-rdc-du-batiment-bues-du-site-de-l-hopital-saint-joseph/">Contrôle technique en vue des études et travaux de l'extension de l'imagerie au RDC du bâtiment BUES du site de l'hôpital Saint Joseph</a></h2>
+									<p>Nous avons l’honneur de vous informer que nous procédons à un appel d’offre de contrôle technique en vue des études et travaux de l’extension de l’imagerie au RDC du bâtiment BUES du site de l’hôpital Saint-Joseph.</p>
+									<p>Vous trouverez en pièce jointe le dossier de consultation.</p>
+									<p>Votre proposition devra nous parvenir par mail à <a href="mailto:GrpDif_SecretariatEconomat@hopital-saint-joseph.fr">GrpDif_SecretariatEconomat@hopital-saint-joseph.fr</a> et par courrier au secrétariat des services économiques (5° étage bâtiment administratif) <strong><span style="text-decoration: underline;">avant le mercredi 04/09/2019 – 12h</span></strong>.</p>
+									<p class="fichier"><a href="https://www.hopital-saint-joseph.fr/d/YTozOntzOjQ6InJlZjAiO2k6MTtzOjQ6InJlZjEiO3M6NDoiMzkxNSI7czo0OiJyZWYyIjtzOjA6IiI7fQ==/le-dossier-de-consultation" target="_blank">Le dossier de consultation</a> <span class="poids_fichier">(3,8 Mo)</span></p>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_3  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/869/construction-du-nouvel-etablissement-de-soins-de-suite-et-longue-duree-du-site-de-la-salette-montval-et-l-hopital-saint-joseph-de-marseille-/">Construction du nouvel établissement de soins de suite et longue durée du site de La Salette-Montval et l'Hôpital Saint Joseph de Marseille.</a></h2>
+									<p>Nous avons l’honneur de vous informer que nous procédons à un appel d’offre de contrôle technique en vue des études et travaux de construction du nouvel établissement de soins de suite et longue durée du site de La Salette-Montval et l’hôpital saint joseph de Marseille.</p>
+									<p>Vous trouverez en pièce jointe le dossier de consultation.</p>
+									<p>Votre proposition devra nous parvenir par mail à <a href="mailto:GrpDif_SecretariatEconomat@hopital-saint-joseph.fr">GrpDif_SecretariatEconomat@hopital-saint-joseph.fr</a> et par courrier au secrétariat des services économiques (5° étage bâtiment administratif) <strong><span style="text-decoration: underline;">avant le mercredi 04/09/2019 – 12h</span></strong>.</p>
+									<p class="fichier"><a href="https://www.hopital-saint-joseph.fr/d/YTozOntzOjQ6InJlZjAiO2k6MTtzOjQ6InJlZjEiO3M6NDoiMzkxNCI7czo0OiJyZWYyIjtzOjA6IiI7fQ==/le-dossier-de-consultation" target="_blank">Le dossier de consultation</a> <span class="poids_fichier">(3,2 Mo)</span></p>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_4  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/611/marche-de-travaux-pour-la-creation-des-blocs-21-et-22/">Marché de travaux pour la création des blocs 21 et 22</a></h2>
+									<p class="fichier"><a href="https://www.hopital-saint-joseph.fr/d/YTozOntzOjQ6InJlZjAiO2k6MTtzOjQ6InJlZjEiO3M6NDoiMjUzNCI7czo0OiJyZWYyIjtzOjA6IiI7fQ==/dce-bloc-21-22-ensemble-des-lots" target="_blank">DCE Bloc 21-22 - Ensemble des lots</a> <span class="poids_fichier">(18,5 Mo)</span></p>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_5  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/599/appel-d-offres-pour-fournitures-de-produits-d-entretien-et-articles-menagers/">Appel d'offres pour fournitures de produits d'entretien et articles ménagers</a></h2>
+									<p><strong>Précision sur les modalités d’évolution des prix</strong> :</p>
+									<p>Les prix unitaires hors taxes proposés dans le cadre de l’Appel d’offres « Fournitures de produits d’entretien et articles ménagers » sont réputés fermes pendant la première période, soit du 01/09/2018 au 31/08/2021.</p>
+									<p>Ils pourront éventuellement être révisés, dans la limite de 1.5%, au terme et dans le cas d’une reconduction.</p>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_6  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/551/projet-de-relocalisation-et-extension-du-bloc-endoscopique-et-travaux-associes/">Projet de relocalisation et extension du bloc endoscopique et travaux associés</a></h2>
+									<div style="text-align: justify;"><span style="font-size: 15px;"><strong><br></strong></span></div>
+									<hr>
+								</div>
+								<div class="affichage_liste_entree numero_7  niveau_0">
+									<h2 class=" niveau_0"><a href="/r/577/appel-d-offres-fournitures-et-services-cvc-plomberie-froid-industriel/">Appel d'offres fournitures et services CVC, plomberie, froid industriel</a></h2>
+									<hr>
+								</div>
+							</div>
+							<div id="article_bas"></div>
+						</div>
+						<!-- InstanceEndEditable -->
+						<p class="mise_a_jour">Dernière mise à jour le 25.07.2018</p>
+						<div id="navigation_transversale"><a class="precedent" href="https://www.hopital-saint-joseph.fr/r/247/formulaire-de-creation-d-un-fournisseur/"><span>Formulaire de création d'un fournisseur</span></a><a class="suivant" href="https://www.hopital-saint-joseph.fr/r/249/la-taxe-d-apprentissage/"><span>La Taxe d'apprentissage</span></a></div>
+					</div>
+					<div id="colonne2">
+						<div id="complement_central"></div>
+						<!-- InstanceBeginEditable name="colonne2" -->
+						<!-- InstanceEndEditable -->
+						<div id="article_bloc_1">
+							<div class="macaron_neutre">
+								<h2>Newsletter</h2>
+								<p class="fleche"><a href="https://www.hopital-saint-joseph.fr/r/173/">Abonnez-vous à la lettre d'information de l'Hôpital Saint Joseph pour recevoir toutes les informations qui font la vie de l’Hôpital.</a></p>
+							</div>
+						</div>
+					</div>
+					<script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				
+				  ga('create', 'UA-7660852-1', 'auto');
+				  ga('send', 'pageview');
+				
+				
+					</script>
+					<script type="text/javascript">
+                    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7660852-1']);
+      _gaq.push(['_trackPageview']);arko.cnilCookie.addAcceptCallback(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);});arko.cnilCookie.init({
+                'messagePopup': "Nous utilisons des cookies pour vous donner la meilleure expérience sur notre site. Les cookies sont des fichiers stockés dans votre navigateur et sont utilisés par la plupart des sites Web pour aider à personnaliser votre expérience Web. En continuant à utiliser notre site Web sans modifier les paramètres, vous acceptez notre utilisation des cookies.",
+                'acceptBtnText': "<span>Fermer",
+                'refuseBtnText': "<span>Refuser",
+                'mode': "simple"
+        });
+					</script>
+					<hr class="filet_invisible">
+				</div>
+			</div>
+			<div id="honcode">
+				<p><a href="https://www.healthonnet.org/HONcode/Conduct_f.html?HONConduct874333" onclick="window.open(this.href); return false;"> <img src="https://www.honcode.ch/HONcode/Seal/French/HONConduct874333_s1.gif" hspace="2" vspace="2" align="left" width="43" height="60" style="border:0px" title="Ce site respecte les principes de la charte HONcode de HON" alt="Ce site respecte les principes de la charte HONcode de HON"></a> <span style="color: hsla(0,0%,0%,1)">Ce site respecte les</span> <a href="http://www.healthonnet.org/HONcode/Conduct_f.html" onclick="window.open(this.href); return false;"> principes de la charte HONcode</a>. <br><a href="https://www.healthonnet.org/HONcode/Conduct_f.html?HONConduct874333" onclick="window.open(this.href); return false;">Vérifiez ici.</a></p>
+			</div>
+			<div id="signature">
+				<div id="plandusite_signature">
+					<ul>
+						<li id="menu1" class="ref_158"><a href="/r/158/votre-hopital-votre-maternite/"><span>Votre hôpital, votre maternité</span></a>
+							<ul class="sous_menu">
+								<li id="menu1a" class="ref_304"><a href="/r/304/vous-entrez-a-l-hopital/"><span>Vous entrez à l'Hôpital</span></a></li>
+								<li id="menu1b" class="ref_305"><a href="/r/305/vous-entrez-a-la-maternite/"><span>Vous entrez à la maternité</span></a></li>
+								<li id="menu1c" class="ref_306"><a href="/r/306/nos-services/"><span>Nos services</span></a></li>
+								<li id="menu1d" class="ref_307"><a href="/r/307/la-chirurgie-robotique/"><span>La chirurgie robotique</span></a></li>
+								<li id="menu1e" class="ref_525"><a href="/r/525/nos-medecins/"><span>Nos médecins</span></a></li>
+								<li id="menu1f" class="ref_308"><a href="/r/308/que-faisons-nous-/"><span>Que faisons-nous ?</span></a></li>
+								<li id="menu1g" class="ref_309"><a href="/r/309/la-demarche-qualite-securite-des-soins/"><span>La démarche Qualité Sécurité des Soins</span></a></li>
+								<li id="menu1h" class="ref_310"><a href="/r/310/le-developpement-durable/"><span>Le Développement Durable</span></a></li>
+								<li id="menu1i" class="ref_311"><a href="/r/311/saint-joseph-d-hier-a-aujourd-hui/"><span>Saint Joseph d'hier à aujourd'hui</span></a></li>
+								<li id="menu1j" class="ref_312"><a href="/r/312/cultes-accompagnement-spirituel/"><span>Cultes - Accompagnement spirituel</span></a></li>
+								<li id="menu1k" class="ref_313"><a href="/r/313/notre-reflexion-ethique/"><span>Notre réflexion éthique</span></a></li>
+								<li id="menu1l" class="ref_314"><a href="/r/314/le-benevolat-a-l-hopital/"><span>Le bénévolat à l'Hôpital</span></a></li>
+								<li id="menu1m" class="ref_315"><a href="/r/315/les-droits-et-devoirs-du-patient/"><span>Les droits et devoirs du patient</span></a></li>
+								<li id="menu1n" class="ref_316"><a href="/r/316/don-d-organes-et-de-tissus/"><span>Don d'organes et de tissus</span></a></li>
+								<li id="menu1o" class="ref_317"><a href="/r/317/visiteurs/"><span>Visiteurs</span></a></li>
+								<li id="menu1p" class="ref_318"><a href="/r/318/ou-nous-trouver-/"><span>Où nous trouver ?</span></a></li>
+							</ul>
+						</li>
+						<li id="menu2" class="ref_159"><a href="/r/159/soins-de-suite-pole-domicile/"><span>Soins de suite & Pôle Domicile</span></a>
+							<ul class="sous_menu">
+								<li id="menu2a" class="ref_895"><a href="/r/895/le-ssr-fernande-berger/"><span>Le SSR Fernande Berger</span></a></li>
+								<li id="menu2b" class="ref_326"><a href="/r/326/hospitalisation-a-domicile-had-/"><span>Hospitalisation à domicile - HAD -</span></a></li>
+								<li id="menu2c" class="ref_328"><a href="/r/328/service-de-soins-a-domicile-ssiad-/"><span>Service de Soins à Domicile - SSIAD -</span></a></li>
+								<li id="menu2d" class="ref_536"><a href="/r/536/service-d-aide-a-domicile-abcd-saint-joseph/"><span>Service d'aide à domicile ABCD-Saint Joseph</span></a></li>
+								<li id="menu2e" class="ref_405"><a href="/r/405/le-service-social/"><span>Le Service Social</span></a></li>
+							</ul>
+						</li>
+						<li id="menu3" class="ref_160"><a href="/r/160/professionnels-de-sante/"><span>Professionnels de santé</span></a>
+							<ul class="sous_menu">
+								<li id="menu3a" class="ref_276"><a href="/r/276/annuaire-des-medecins/"><span>Annuaire des médecins</span></a></li>
+								<li id="menu3b" class="ref_277"><a href="/r/277/vous-avez-un-patient-hospitalise-a-saint-joseph/"><span>Vous avez un patient hospitalisé à Saint Joseph</span></a></li>
+								<li id="menu3c" class="ref_278"><a href="/r/278/la-chirurgie-robotique/"><span>La chirurgie robotique</span></a></li>
+								<li id="menu3d" class="ref_279"><a href="/r/279/publications/"><span>Publications</span></a></li>
+								<li id="menu3e" class="ref_280"><a href="/r/280/la-demarche-qualite-securite-des-soins/"><span>La démarche Qualité Sécurité des Soins</span></a></li>
+								<li id="menu3f" class="ref_281"><a href="/r/281/qui-sommes-nous-/"><span>Qui sommes-nous?</span></a></li>
+								<li id="menu3g" class="ref_282"><a href="/r/282/notre-activite-et-nos-finances/"><span>Notre activité et nos finances</span></a></li>
+								<li id="menu3h" class="ref_283"><a href="/r/283/la-direction-des-services-numeriques-/"><span>La Direction des Services Numériques </span></a></li>
+								<li id="menu3i" class="ref_284"><a href="/r/284/la-recherche-clinique/"><span>La Recherche Clinique</span></a></li>
+								<li id="menu3j" class="ref_285"><a href="/r/285/les-innovations-medicales/"><span>Les innovations médicales</span></a></li>
+								<li id="menu3k" class="ref_286"><a href="/r/286/le-developpement-durable/"><span>Le Développement Durable</span></a></li>
+							</ul>
+						</li>
+						<li id="menu4" class="ref_161"><a href="/r/161/l-hopital-recrute/"><span>L'Hôpital recrute</span></a>
+							<ul class="sous_menu">
+								<li id="menu4a" class="ref_269"><a href="/r/269/travailler-a-saint-joseph/"><span>Travailler à Saint Joseph</span></a></li>
+								<li id="menu4b" class="ref_270"><a href="/r/270/la-politique-des-soins/"><span>La politique des soins</span></a></li>
+								<li id="menu4c" class="ref_900"><a href="/r/900/les-postes-a-pourvoir/"><span>Les postes à pourvoir</span></a></li>
+								<li id="menu4d" class="ref_272"><a href="/r/272/candidature-spontanee/"><span>Candidature spontanée</span></a></li>
+								<li id="menu4e" class="ref_273"><a href="/r/273/la-formation-paramedicale/"><span>La formation paramédicale</span></a></li>
+								<li id="menu4f" class="ref_932"><a href="/r/932/le-contrat-d-apprentissage/"><span>Le contrat d'apprentissage</span></a></li>
+								<li id="menu4g" class="ref_864"><a href="/r/864/index-egalite-femmes-hommes/"><span>Index égalité femmes-hommes</span></a></li>
+								<li id="menu4h" class="ref_275"><a href="/r/275/contacts/"><span>Contacts</span></a></li>
+							</ul>
+						</li>
+						<li id="menu5" class="ref_166"><a href="/r/166/l-hopital-enseigne/"><span>L'Hôpital enseigne</span></a>
+							<ul class="sous_menu">
+								<li id="menu5a" class="ref_251"><a href="/r/251/les-conferences-ecni/"><span>Les conférences ECNI</span></a></li>
+								<li id="menu5b" class="ref_252"><a href="/r/252/la-formation-medicale-continue/"><span>La formation médicale continue</span></a></li>
+								<li id="menu5c" class="ref_253"><a href="/r/253/les-instituts-de-formations-en-soins-infirmiers/"><span>Les Instituts de formations en Soins Infirmiers</span></a></li>
+								<li id="menu5d" class="ref_254"><a href="/r/254/les-documents-pour-preparer-les-stages-paramedicaux/"><span>Les documents pour préparer les stages paramédicaux</span></a></li>
+								<li id="menu5e" class="ref_538"><a href="/r/538/le-stage-au-choix-de-3eme-annee-d-etude-en-soins-infirmiers/"><span>Le stage au choix de 3ème année d'étude en Soins Infirmiers</span></a></li>
+								<li id="menu5f" class="ref_899"><a href="/r/899/la-demande-d-autorisation-d-entretien-infirmier/"><span>La demande d'autorisation d'entretien infirmier</span></a></li>
+								<li id="menu5g" class="ref_528"><a href="/r/528/les-demandes-individuelles-de-stage/"><span>Les demandes individuelles de stage</span></a></li>
+							</ul>
+						</li>
+						<li id="menu6" class="ref_167"><a href="/r/167/espace-medias/"><span>Espace Médias</span></a>
+							<ul class="sous_menu">
+								<li id="menu6a" class="ref_170"><a href="/r/170/la-communication-et-les-relations-presse/"><span>La communication et les Relations Presse</span></a></li>
+								<li id="menu6b" class="ref_171"><a href="/r/171/agenda-des-congres-conferences-colloques-epu-manifestations/"><span>Agenda des congrès, conférences, colloques, EPU, manifestations</span></a></li>
+								<li id="menu6c" class="ref_172"><a href="/r/172/les-actualites/"><span>Les actualités</span></a></li>
+								<li id="menu6d" class="ref_173"><a href="/r/173/newsletter/"><span>Newsletter</span></a></li>
+								<li id="menu6e" class="ref_174"><a href="/r/174/les-communiques-de-presse/"><span>Les communiqués de presse</span></a></li>
+								<li id="menu6f" class="ref_175"><a href="/r/175/les-dossiers-presse/"><span>Les dossiers presse</span></a></li>
+								<li id="menu6g" class="ref_176"><a href="/r/176/la-revue-de-presse/"><span>La revue de presse</span></a></li>
+								<li id="menu6h" class="ref_177"><a href="/r/177/le-journal-de-saint-jo/"><span>Le journal de Saint Jo</span></a></li>
+								<li id="menu6i" class="ref_178"><a href="/r/178/la-lettre-qualite/"><span>La lettre Qualité</span></a></li>
+								<li id="menu6j" class="ref_179"><a href="/r/179/le-rapport-annuel/"><span>Le Rapport Annuel</span></a></li>
+								<li id="menu6k" class="ref_181"><a href="/r/181/les-livrets-d-accueil/"><span>Les livrets d'accueil</span></a></li>
+								<li id="menu6l" class="ref_183"><a href="/r/183/la-phototheque/"><span>La photothèque</span></a></li>
+								<li id="menu6m" class="ref_916"><a href="/r/916/nos-videos-d-information-et-reportages-tv/"><span>Nos Vidéos d'Information et Reportages TV</span></a></li>
+								<li id="menu6n" class="ref_184"><a href="/r/184/location-de-salle/"><span>Location de salle</span></a></li>
+								<li id="menu6o" class="ref_245"><a href="/r/245/contacts/"><span>Contacts</span></a></li>
+							</ul>
+						</li>
+						<li id="menu7" class="ref_168"><a href="/r/168/espace-fournisseurs/"><span>Espace Fournisseurs</span></a>
+							<ul class="sous_menu">
+								<li id="menu7a" class="ref_246"><a href="/r/246/les-interlocuteurs-des-achats/"><span>Les interlocuteurs des achats</span></a></li>
+								<li id="menu7b" class="ref_247"><a href="/r/247/formulaire-de-creation-d-un-fournisseur/"><span>Formulaire de création d'un fournisseur</span></a></li>
+								<li id="menu7c" class="ref_248"><a href="/r/248/les-consultations-en-cours/"><span>Les consultations en cours</span></a></li>
+								<li id="menu7d" class="ref_249"><a href="/r/249/la-taxe-d-apprentissage/"><span>La Taxe d'apprentissage</span></a></li>
+								<li id="menu7e" class="ref_250"><a href="/r/250/contacts/"><span>Contacts</span></a></li>
+							</ul>
+						</li>
+						<li id="menu8" class="ref_169"><a href="/r/169/decouvrez-la-fondation-hopital-saint-joseph/"><span>Découvrez la Fondation Hôpital Saint Joseph</span></a></li>
+						<li id="menu9" class="ref_494"><a href="/r/494/acces-reserve/"><span>Accès réservé</span></a>
+							<ul class="sous_menu">
+								<li id="menu9a" class="ref_2176"><a href="/a/2176/teleconsultation/"><span>Téléconsultation</span></a></li>
+								<li id="menu9b" class="ref_928"><a href="/a/928/acces-administrateurs/"><span>Accès Administrateurs</span></a></li>
+								<li id="menu9c" class="ref_929"><a href="/a/929/acces-distant/"><span>Accès distant</span></a></li>
+								<li id="menu9d" class="ref_930"><a href="/a/930/acces-espace-collaboratif-imagerie/"><span>Accès Espace collaboratif Imagerie</span></a></li>
+								<li id="menu9e" class="ref_964"><a href="/a/964/connexion-aux-pages-du-comite-d-entreprise/"><span>Connexion aux pages du Comité d'entreprise</span></a></li>
+								<li id="menu9f" class="ref_933"><a href="/a/933/espace-collaboratif-ppe-planning-sf-/"><span>Espace collaboratif PPE (Planning SF)</span></a></li>
+								<li id="menu9g" class="ref_1247"><a href="/a/1247/kiosque-self/"><span>Kiosque Self</span></a></li>
+								<li id="menu9h" class="ref_931"><a href="/a/931/messagerie/"><span>Messagerie</span></a></li>
+								<li id="menu9i" class="ref_932"><a href="/a/932/planning-anesthesistes/"><span>Planning Anesthesistes</span></a></li>
+								<li id="menu9j" class="ref_934"><a href="/a/934/sano-web/"><span>Sano Web</span></a></li>
+								<li id="menu9k" class="ref_935"><a href="/a/935/support-informatique/"><span>Support Informatique</span></a></li>
+								<li id="menu9l" class="ref_1332"><a href="/a/1332/tele-expertise/"><span>Télé-expertise</span></a></li>
+								<li id="menu9m" class="ref_927"><a href="/a/927/webpcp-demande-d-inscription-au-bloc/"><span>WebPCP/Demande d'inscription au bloc</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="signature_fin">© <a href="https://www.hopital-saint-joseph.fr/"><strong>Hôpital Saint Joseph</strong></a> - <a href="https://www.hopital-saint-joseph.fr/a/806/">Plan du site</a> - <a href="https://www.hopital-saint-joseph.fr/a/807/">Crédits</a> - <a href="https://www.hopital-saint-joseph.fr/a/854/">Nous contacter</a></div>
+			</div>
+		</div>
+	</body>
+	<!-- InstanceEnd -->
+</html>
