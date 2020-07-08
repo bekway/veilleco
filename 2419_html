@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr-FR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<title>Cœur de Loire</title>
+		<link rel="dns-prefetch" href="//www.google.com">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="alternate" type="application/rss+xml" title="Cœur de Loire » Flux" href="https://www.coeurdeloire.fr/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Cœur de Loire » Flux des commentaires" href="https://www.coeurdeloire.fr/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.10.4 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.10.4';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-121051192-24';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-121051192-24', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('set', 'anonymizeIp', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+		</script>
+		<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.coeurdeloire.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=854e3f6d169fa6211e4953c310341973"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+		</style>
+		<link rel="stylesheet" id="mec-select2-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.min.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-font-icons-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/css/iconfonts.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-frontend-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/css/frontend.min.css?ver=5.2.7" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-tooltip-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-tooltip-shadow-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-featherlight-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-google-fonts-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRoboto%3A100%2C300%2C400%2C700&ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-dynamic-styles-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/css/dyncss.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<style id="mec-dynamic-styles-inline-css" type="text/css">
+.post-type-archive-mec-events h1, .tax-mec_category h1, .mec-wrap h1, .mec-wrap h2, .mec-wrap h3, .mec-wrap h4, .mec-wrap h5, .mec-wrap h6,.entry-content .mec-wrap h1, .entry-content .mec-wrap h2, .entry-content .mec-wrap h3,.entry-content  .mec-wrap h4, .entry-content .mec-wrap h5, .entry-content .mec-wrap h6{ font-family: 'Montserrat', Helvetica, Arial, sans-serif;}.mec-load-more-button, .mec-events-meta-group-tags a, .mec-events-button, .mec-single-event .mec-event-meta dt, .mec-wrap abbr, .mec-event-schedule-content dl dt, .mec-breadcrumbs a, .mec-breadcrumbs span .mec-event-content p, .mec-wrap p { font-family: 'Montserrat',sans-serif; font-weight:300;}.mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic .mec-selected-day,.mec-wrap.colorskin-custom .mec-color, .mec-wrap.colorskin-custom .mec-event-sharing-wrap .mec-event-sharing > li:hover a, .mec-wrap.colorskin-custom .mec-color-hover:hover, .mec-wrap.colorskin-custom .mec-color-before *:before ,.mec-wrap.colorskin-custom .mec-widget .mec-event-grid-classic.owl-carousel .owl-nav i,.mec-wrap.colorskin-custom .mec-event-list-classic a.magicmore:hover,.mec-wrap.colorskin-custom .mec-event-grid-simple:hover .mec-event-title,.mec-wrap.colorskin-custom .mec-single-event .mec-event-meta dd.mec-events-event-categories:before,.mec-wrap.colorskin-custom .mec-single-event-date:before,.mec-wrap.colorskin-custom .mec-single-event-time:before,.mec-wrap.colorskin-custom .mec-events-meta-group.mec-events-meta-group-venue:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month i,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-infowindow-wp h5 a:hover, .colorskin-custom .mec-events-meta-group-countdown .mec-end-counts h3,.mec-calendar .mec-calendar-side .mec-next-month i,.mec-wrap .mec-totalcal-box i,.mec-calendar .mec-event-article .mec-event-title a:hover,.mec-attendees-list-details .mec-attendee-profile-link a:hover,.mec-wrap.colorskin-custom .mec-next-event-details li i, .mec-next-event-details i:before, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-next-event-details a,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected,.lity .mec-color,.lity .mec-color-before :before,.lity .mec-color-hover:hover,.lity .mec-wrap .mec-color,.lity .mec-wrap .mec-color-before :before,.lity .mec-wrap .mec-color-hover:hover,.leaflet-popup-content .mec-color,.leaflet-popup-content .mec-color-before :before,.leaflet-popup-content .mec-color-hover:hover,.leaflet-popup-content .mec-wrap .mec-color,.leaflet-popup-content .mec-wrap .mec-color-before :before,.leaflet-popup-content .mec-wrap .mec-color-hover:hover, .mec-calendar.mec-calendar-daily .mec-calendar-d-table .mec-daily-view-day.mec-daily-view-day-active.mec-color, .mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail i,.mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail:hover,.mec-map-boxshow .mec-color,.mec-map-boxshow .mec-color-before :before,.mec-map-boxshow .mec-color-hover:hover,.mec-map-boxshow .mec-wrap .mec-color,.mec-map-boxshow .mec-wrap .mec-color-before :before,.mec-map-boxshow .mec-wrap .mec-color-hover:hover{color: #027991}.mec-wrap .mec-map-lightbox-wp.mec-event-list-classic .mec-event-date,.mec-wrap.colorskin-custom .mec-event-sharing .mec-event-share:hover .event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-grid-clean .mec-event-date,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing li:hover a i,.mec-wrap.colorskin-custom .mec-calendar:not(.mec-event-calendar-classic) .mec-selected-day,.mec-wrap.colorskin-custom .mec-calendar .mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-row  dt.mec-has-event:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-has-event:after, .mec-wrap.colorskin-custom .mec-bg-color, .mec-wrap.colorskin-custom .mec-bg-color-hover:hover, .colorskin-custom .mec-event-sharing-wrap:hover > li, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .flip-clock-wrapper ul li a div div.inn,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel,.mec-event-countdown-style3 .mec-event-date,#wrap .mec-wrap article.mec-event-countdown-style1,.mec-event-countdown-style1 .mec-event-countdown-part3 a.mec-event-button,.mec-wrap .mec-event-countdown-style2,.mec-map-get-direction-btn-cnt input[type="submit"],.mec-booking button,span.mec-marker-wrap,.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:before{background-color: #027991;}.mec-wrap.colorskin-custom .mec-single-event .mec-speakers-details ul li .mec-speaker-avatar a:hover img,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-standard .mec-month-divider span:before,.mec-wrap.colorskin-custom .mec-single-event .mec-social-single:before,.mec-wrap.colorskin-custom .mec-single-event .mec-frontbox-title:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-events-side .mec-table-side-day, .mec-wrap.colorskin-custom .mec-border-color, .mec-wrap.colorskin-custom .mec-border-color-hover:hover, .colorskin-custom .mec-single-event .mec-frontbox-title:before, .colorskin-custom .mec-single-event .mec-events-meta-group-booking form > h4:before, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel:after,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-wrap.colorskin-custom .mec-events-masonry-cats a:hover{border-color: #027991;}.mec-wrap.colorskin-custom .mec-event-countdown-style3 .mec-event-date:after,.mec-wrap.colorskin-custom .mec-month-divider span:before{border-bottom-color:#027991;}.mec-wrap.colorskin-custom  article.mec-event-countdown-style1 .mec-event-countdown-part2:after{border-color: transparent transparent transparent #027991;}.mec-wrap.colorskin-custom .mec-box-shadow-color { box-shadow: 0 4px 22px -7px #027991;}.mec-wrap.colorskin-custom .mec-timeline-event-local-time, .mec-wrap.colorskin-custom .mec-timeline-event-time ,.mec-wrap.colorskin-custom .mec-timeline-event-location { background: rgba(2,121,145,.11);}.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:after { background: rgba(2,121,145,.3);}.mec-wrap.colorskin-custom h1 a:hover, .mec-wrap.colorskin-custom h2 a:hover, .mec-wrap.colorskin-custom h3 a:hover, .mec-wrap.colorskin-custom h4 a:hover, .mec-wrap.colorskin-custom h5 a:hover, .mec-wrap.colorskin-custom h6 a:hover,.entry-content .mec-wrap.colorskin-custom h1 a:hover, .entry-content .mec-wrap.colorskin-custom h2 a:hover, .entry-content .mec-wrap.colorskin-custom h3 a:hover,.entry-content  .mec-wrap.colorskin-custom h4 a:hover, .entry-content .mec-wrap.colorskin-custom h5 a:hover, .entry-content .mec-wrap.colorskin-custom h6 a:hover {color: #027991 !important;}
+		</style>
+		<link rel="stylesheet" id="mec-custom-google-font-css" href="https://fonts.googleapis.com/css?family=Montserrat%3Aregular%2C+700%2C+%7CMontserrat%3A700%2C+700%2C+&subset=latin%2Clatin-ext" type="text/css" media="all">
+		<link rel="stylesheet" id="mec-lity-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.coeurdeloire.fr/wp-includes/css/dist/block-library/style.min.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="wpos-slick-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/wp-responsive-recent-post-slider/assets/css/slick.css?ver=2.3" type="text/css" media="all">
+		<link rel="stylesheet" id="wppsac-public-style-css" href="https://www.coeurdeloire.fr/wp-content/plugins/wp-responsive-recent-post-slider/assets/css/recent-post-style.css?ver=2.3" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-hello-theme-style-css" href="https://www.coeurdeloire.fr/wp-content/themes/avamac-theme/style.css?ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.6.2" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-animations-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.9.7" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-frontend-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.9.7" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-pro-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=2.9.3" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-global-css" href="https://www.coeurdeloire.fr/wp-content/uploads/elementor/css/global.css?ver=1591263880" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-4-css" href="https://www.coeurdeloire.fr/wp-content/uploads/elementor/css/post-4.css?ver=1587368911" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-17-css" href="https://www.coeurdeloire.fr/wp-content/uploads/elementor/css/post-17.css?ver=1587368537" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-354-css" href="https://www.coeurdeloire.fr/wp-content/uploads/elementor/css/post-354.css?ver=1587368942" type="text/css" media="all">
+		<link rel="stylesheet" id="newsletter-css" href="https://www.coeurdeloire.fr/wp-content/plugins/newsletter/style.css?ver=6.6.0" type="text/css" media="all">
+		<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&ver=854e3f6d169fa6211e4953c310341973" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.12.0" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" href="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/library/media/smartslider.min.css?1587368071" media="all">
+		<style type="text/css">.n2-ss-spinner-simple-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.n2-ss-spinner-simple-white {
+  outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+
+.n2-ss-spinner-simple-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+
+.n2-ss-spinner-simple-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #333;
+    border-right: 2px solid transparent;
+    animation: n2SimpleWhite .6s linear infinite;
+}
+@keyframes n2SimpleWhite {
+    to {transform: rotate(360deg);}
+}
+		</style>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/js/jquery.typewatch.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.full.min.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var mecdata = {"day":"jour","days":"jours","hour":"heure","hours":"heures","minute":"minute","minutes":"minutes","second":"seconde","seconds":"secondes","elementor_edit_mode":"no","recapcha_key":"6LfSJLUUAAAAAPwtxy9GLCOBeRrzbtbzncmKgizs","ajax_url":"https:\/\/www.coeurdeloire.fr\/wp-admin\/admin-ajax.php","fes_nonce":"616f1411f9","current_year":"2020","datepicker_format":"yy-mm-dd"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js?ver=5.2.7"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/js/events.js?ver=5.2.7"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/colorbrightness/colorbrightness.min.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/modern-events-calendar-lite/assets/packages/owl-carousel/owl.carousel.min.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="//www.google.com/recaptcha/api.js?hl=fr-FR&ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.coeurdeloire.fr","hash_tracking":"false"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.4"></script>
+		<link rel="https://api.w.org/" href="https://www.coeurdeloire.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.coeurdeloire.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.coeurdeloire.fr/wp-includes/wlwmanifest.xml">
+		<link rel="canonical" href="https://www.coeurdeloire.fr/">
+		<link rel="shortlink" href="https://www.coeurdeloire.fr/">
+		<link rel="alternate" type="application/json+oembed" href="https://www.coeurdeloire.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.coeurdeloire.fr%2F">
+		<link rel="alternate" type="text/xml+oembed" href="https://www.coeurdeloire.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.coeurdeloire.fr%2F&format=xml">
+		<style type="text/css" id="wp-custom-css">
+			
+.tnp-subscription label {
+    display: block;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+    margin: 0;
+    font-family: montserrat;
+}
+.tnp-subscription input.tnp-submit {
+    background-color: #007a92;
+    color: #fff;
+    width: auto;
+    height: auto;
+    margin: 0;
+    font-family: montserrat;
+    padding: 8px 15px;
+    margin-top: 21px;
+}
+.tnp-subscription input.tnp-submit:hover {
+background-color: #000000;
+    color: #fff;
+	}
+.tnp-subscription input[type=email] {
+	    border-color: #fff;
+    background-color: #fff;
+    width: 70%;
+}
+main#site-main.post-3119.page.type-page.status-publish.hentry{
+	    margin: 60px 35px 150px 67px;
+}
+.mec-breadcrumbs-modern {
+    margin: 33px 0 33px 0;
+}
+.mec-breadcrumbs {
+    font-size: 12px;
+	}
+.mec-single-modern .col-md-4 .mec-frontbox {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: none;
+    background: #f7f7f7;
+    box-shadow: none;
+}
+.mec-breadcrumbs-modern {
+    margin: 33px 0 33px 0;
+}
+.mec-wrap div:not([class^=elementor-]) {
+	font-size: 12px;
+}
+section#main-content.container {
+	    margin-top: 30px;
+}
+.mec-month-divider {
+    text-align: center;
+    margin: 60px 0 40px 0;
+}
+.mec-wrap.colorskin-custom.mec-full-calendar-wrap {
+	    max-width: 1412px;
+    margin: 0 auto;
+}
+.mec-wrap .colorskin-custom {
+	  max-width: 1412px !important;
+    margin: 0 auto;
+}
+div.mec-wrap .col-md-3 {
+    width: 0% !important;
+}
+section#main-content.container h1 {
+	display :none !important;
+			
+}
+.mec-event-list-modern .mec-event-title {
+    font-weight: 700;
+    font-size: 17px;
+  
+}
+.mec-wrap div:not([class^=elementor-]) {
+    font-size: 13px;
+}
+.mec-event-list-modern .mec-event-date .event-d {
+    font-size: 36px;
+    display: table-cell;
+    padding: 10px 0 0;
+}
+.mec-month-divider span {
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.mec-month-divider {
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+.mec-single-modern .col-md-4 .mec-frontbox {
+  
+    padding: 25px;
+	margin-right: 35px;
+}
+.mec-event-list-standard .mec-event-title {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin: 0 0 10px;
+    font-family: "Montserrat", montserrat;
+line-height: 1.6
+}
+.elementor-4 .elementor-element.elementor-element-a03ab44 > .elementor-widget-container {
+    padding: 0px 34px 4px 34px;
+}
+.mec-next-event ul li {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0 15px 0 0px;
+padding-left: 0px;
+}
+.mec-next-event ul {
+	padding-left: 0px !important;
+}
+.mec-event-list-modern .mec-event-title {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.mec-wrap .mec-single-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.4;
+}
+.mec-event-content p, .mec-wrap p {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+
+.mec-next-event ul li a {
+    padding: 12px;
+    line-height: 1.7;
+    font-size: 12px;
+}
+.mec-calendar .mec-event-article .mec-event-title a {
+ 
+    font-size: 15px;
+}
+.elementor-1238 .elementor-element.elementor-element-263ed5fa .elementor-post__title, .elementor-1238 .elementor-element.elementor-element-263ed5fa .elementor-post__title a {
+    color: #007a92;
+    font-family: "montserrat", montserrat;
+    font-size: 17px;
+    font-weight: 300;
+}
+p.logged-in-as a {
+	color: #007a92 !important;
+}
+.page-id-4204 h2.elementor-heading-title.elementor-size-default, .page-id-4204 .entry-title {
+	display :none;
+}
+.cclvn_page_password_container {
+	padding: 95px 0;
+}
+.cclvn_page_password_submit {
+	padding: 0px;
+}
+button.btn.btn-primary.cclvn_page_password_button {
+	color: #007a92;
+    border: 1px solid #007a92;
+}
+button:hover, button:focus, [type="submit"]:hover, [type="submit"]:focus, [type="button"]:hover, [type="button"]:focus {
+	background-color: #007a92;
+		color: #ffffff !important;
+}
+ul.slick-dots {
+	display:none !important;
+}
+p {
+	font-weight : 400;
+font-size: 15px;
+line-height: 25px;
+}
+		
+		</style>
+		<style type="text/css">@media (min-width: 961px)
+.mec-wrap .col-md-3 {
+    width: 50%;
+}
+		</style>
+		<script type="text/javascript">(function(){var N=this;N.N2_=N.N2_||{r:[],d:[]},N.N2R=N.N2R||function(){N.N2_.r.push(arguments)},N.N2D=N.N2D||function(){N.N2_.d.push(arguments)}}).call(window);if(!window.n2jQuery){window.n2jQuery={ready:function(cb){console.error('n2jQuery will be deprecated!');N2R(['$'],cb)}}}window.nextend={localization:{},ready:function(cb){console.error('nextend.ready will be deprecated!');N2R('documentReady',function($){cb.call(window,$)})}};nextend.fontsLoaded=false;nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true};var requiredFonts=["Montserrat:n3","Montserrat:n4"],fontData={google:{families:["Montserrat:300,400:latin"]},active:function(){nextend.fontsLoadedActive()},inactive:function(){nextend.fontsLoadedActive()},fontactive:function(f,s){fontData.resolveFont(f+':'+s)},fontinactive:function(f,s){fontData.resolveFont(f+':'+s)},resolveFont:function(n){for(var i=requiredFonts.length-1;i>=0;i--){if(requiredFonts[i]===n){requiredFonts.splice(i,1);break}}if(!requiredFonts.length)nextend.fontsLoadedActive()}};if(typeof WebFontConfig!=='undefined'&&typeof WebFont==='undefined'){var _WebFontConfig=WebFontConfig;for(var k in WebFontConfig){if(k=='active'){fontData.active=function(){nextend.fontsLoadedActive();_WebFontConfig.active()}}else if(k=='inactive'){fontData.inactive=function(){nextend.fontsLoadedActive();_WebFontConfig.inactive()}}else if(k=='fontactive'){fontData.fontactive=function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontactive.apply(this,arguments)}}else if(k=='fontinactive'){fontData.fontinactive=function(f,s){fontData.resolveFont(f+':'+s);_WebFontConfig.fontinactive.apply(this,arguments)}}else if(k=='google'){if(typeof WebFontConfig.google.families!=='undefined'){for(var i=0;i<WebFontConfig.google.families.length;i++){fontData.google.families.push(WebFontConfig.google.families[i])}}}else{fontData[k]=WebFontConfig[k]}}}fontData.classes=true;fontData.events=true;if(typeof WebFont==='undefined'){window.WebFontConfig=fontData}else{WebFont.load(fontData)}</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/nextend/media/dist/n2.min.js?1587368071"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/nextend/media/dist/nextend-frontend.min.js?1587368071"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/library/media/dist/smartslider-frontend.min.js?1587368071"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/library/media/plugins/type/simple/simple/dist/smartslider-simple-type-frontend.min.js?1587368071"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/smart-slider-3/nextend/media/dist/nextend-webfontloader.min.js?1587368071"></script>
+		<script type="text/javascript">N2R('documentReady',function($){nextend.fontsDeferred=$.Deferred();if(nextend.fontsLoaded){nextend.fontsDeferred.resolve()}else{nextend.fontsLoadedActive=function(){nextend.fontsLoaded=true;nextend.fontsDeferred.resolve()};var intercalCounter=0;nextend.fontInterval=setInterval(function(){if(intercalCounter>3||document.documentElement.className.indexOf('wf-active')!==-1){nextend.fontsLoadedActive();clearInterval(nextend.fontInterval)}intercalCounter++},1000)}});</script>
+	</head>
+	<body class="home page-template-default page page-id-4 wp-custom-logo elementor-default elementor-kit-5446 elementor-page elementor-page-4">
+		<div data-elementor-type="header" data-elementor-id="17" class="elementor elementor-17 elementor-location-header" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+					<section class="elementor-element elementor-element-0a487ae elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="0a487ae" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+								<div class="elementor-element elementor-element-5ead0df elementor-hidden-phone elementor-column elementor-col-100 elementor-top-column" data-id="5ead0df" data-element_type="column">
+									<div class="elementor-column-wrap">
+										<div class="elementor-widget-wrap"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="elementor-element elementor-element-10fd045 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="10fd045" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+								<div class="elementor-element elementor-element-637f16e elementor-column elementor-col-33 elementor-top-column" data-id="637f16e" data-element_type="column">
+									<div class="elementor-column-wrap  elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-55a5b2b elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="55a5b2b" data-element_type="widget" data-widget_type="theme-site-logo.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-image"><a href="https://www.coeurdeloire.fr"> <img width="148" height="153" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/cropped-CoeurDeLoire-2.png" class="attachment-full size-full" alt=""> </a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-2e9f2e3 elementor-column elementor-col-33 elementor-top-column" data-id="2e9f2e3" data-element_type="column">
+									<div class="elementor-column-wrap  elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-537a3f9 elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu__align-right elementor-nav-menu--indicator-chevron elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="537a3f9" data-element_type="widget" data-settings='{"full_width":"stretch","layout":"horizontal","toggle":"burger"}' data-widget_type="nav-menu.default">
+												<div class="elementor-widget-container">
+													<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+														<ul id="menu-1-537a3f9" class="elementor-nav-menu">
+															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-2224"><a href="https://www.coeurdeloire.fr/" aria-current="page" class="elementor-item elementor-item-active">Ma communauté</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2291"><a href="https://www.coeurdeloire.fr/les-competences-et-les-services/" class="elementor-sub-item">Les compétences et les services</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2326"><a href="https://www.coeurdeloire.fr/le-conseil-le-bureau/" class="elementor-sub-item">Le conseil – Le bureau</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1671"><a href="https://www.coeurdeloire.fr/les-elus/" class="elementor-sub-item">Les élus</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2351"><a href="https://www.coeurdeloire.fr/les-commissions/" class="elementor-sub-item">Les commissions</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1083"><a href="https://www.coeurdeloire.fr/publications/" class="elementor-sub-item">Publications</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-433"><a href="#" class="elementor-item elementor-item-anchor">Le territoire</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://www.coeurdeloire.fr/les-communes/" class="elementor-sub-item">Les communes</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2223"><a href="#" class="elementor-item elementor-item-anchor">Vie quotidienne</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3017"><a href="https://www.coeurdeloire.fr/assainissement/" class="elementor-sub-item">Assainissement</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3022"><a href="https://www.coeurdeloire.fr/restauration-scolaire/" class="elementor-sub-item">Restauration scolaire</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3026"><a href="https://www.coeurdeloire.fr/portage-de-repas/" class="elementor-sub-item">Portage de repas</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2669"><a href="#" class="elementor-sub-item elementor-item-anchor">Enfance jeunesse</a>
+																		<ul class="sub-menu elementor-nav-menu--dropdown">
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="https://www.coeurdeloire.fr/creche/" class="elementor-sub-item">Crèche</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="https://www.coeurdeloire.fr/relai-parents-assistants-maternels-rpam-2/" class="elementor-sub-item">Relai parents – Assistants maternels (RPAM)</a></li>
+																		</ul>
+																	</li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3039"><a href="https://www.coeurdeloire.fr/piscines-2/" class="elementor-sub-item">Piscines</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3049"><a href="https://www.coeurdeloire.fr/mediatheques/" class="elementor-sub-item">Médiathèques</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3056"><a href="https://www.coeurdeloire.fr/ecole-de-musique/" class="elementor-sub-item">École de musique</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3061"><a href="https://www.coeurdeloire.fr/education-a-lenvironnement/" class="elementor-sub-item">Éducation à l’environnement</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3236"><a href="#" class="elementor-sub-item elementor-item-anchor">Déchets</a>
+																		<ul class="sub-menu elementor-nav-menu--dropdown">
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3235"><a href="https://www.coeurdeloire.fr/ramassage-des-ordures-menageres/" class="elementor-sub-item">Ramassage des ordures ménagères</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237"><a href="https://www.coeurdeloire.fr/decheteries/" class="elementor-sub-item">Déchèteries</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3238"><a href="https://www.coeurdeloire.fr/valorisation-des-dechets/" class="elementor-sub-item">Valorisation des déchets</a></li>
+																		</ul>
+																	</li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3678"><a href="https://www.coeurdeloire.fr/habitat/" class="elementor-sub-item">Habitat</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1624"><a href="#" class="elementor-item elementor-item-anchor">Entreprendre</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4981"><a href="https://www.coeurdeloire.fr/projets-de-territoire-et-actions-partenariales/" class="elementor-sub-item">Projets de territoire et actions partenariales</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4982"><a href="https://www.coeurdeloire.fr/developpement-economique-et-touristique/" class="elementor-sub-item">Développement économique et touristique</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4984"><a href="https://www.coeurdeloire.fr/amenagement/" class="elementor-sub-item">Aménagement</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="https://www.coeurdeloire.fr/emploi-insertion/" class="elementor-sub-item">Emploi – Insertion – Formation</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-864"><a href="https://www.coeurdeloire.fr/actualites/" class="elementor-item">Actualités</a></li>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="https://www.coeurdeloire.fr/contact/" class="elementor-item">Contact</a></li>
+														</ul>
+													</nav>
+													<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false"><i class="eicon-menu-bar" aria-hidden="true"></i> <span class="elementor-screen-only">Menu</span></div>
+													<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+														<ul id="menu-2-537a3f9" class="elementor-nav-menu">
+															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-2224"><a href="https://www.coeurdeloire.fr/" aria-current="page" class="elementor-item elementor-item-active">Ma communauté</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2291"><a href="https://www.coeurdeloire.fr/les-competences-et-les-services/" class="elementor-sub-item">Les compétences et les services</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2326"><a href="https://www.coeurdeloire.fr/le-conseil-le-bureau/" class="elementor-sub-item">Le conseil – Le bureau</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1671"><a href="https://www.coeurdeloire.fr/les-elus/" class="elementor-sub-item">Les élus</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2351"><a href="https://www.coeurdeloire.fr/les-commissions/" class="elementor-sub-item">Les commissions</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1083"><a href="https://www.coeurdeloire.fr/publications/" class="elementor-sub-item">Publications</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-433"><a href="#" class="elementor-item elementor-item-anchor">Le territoire</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-432"><a href="https://www.coeurdeloire.fr/les-communes/" class="elementor-sub-item">Les communes</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2223"><a href="#" class="elementor-item elementor-item-anchor">Vie quotidienne</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3017"><a href="https://www.coeurdeloire.fr/assainissement/" class="elementor-sub-item">Assainissement</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3022"><a href="https://www.coeurdeloire.fr/restauration-scolaire/" class="elementor-sub-item">Restauration scolaire</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3026"><a href="https://www.coeurdeloire.fr/portage-de-repas/" class="elementor-sub-item">Portage de repas</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2669"><a href="#" class="elementor-sub-item elementor-item-anchor">Enfance jeunesse</a>
+																		<ul class="sub-menu elementor-nav-menu--dropdown">
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="https://www.coeurdeloire.fr/creche/" class="elementor-sub-item">Crèche</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="https://www.coeurdeloire.fr/relai-parents-assistants-maternels-rpam-2/" class="elementor-sub-item">Relai parents – Assistants maternels (RPAM)</a></li>
+																		</ul>
+																	</li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3039"><a href="https://www.coeurdeloire.fr/piscines-2/" class="elementor-sub-item">Piscines</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3049"><a href="https://www.coeurdeloire.fr/mediatheques/" class="elementor-sub-item">Médiathèques</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3056"><a href="https://www.coeurdeloire.fr/ecole-de-musique/" class="elementor-sub-item">École de musique</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3061"><a href="https://www.coeurdeloire.fr/education-a-lenvironnement/" class="elementor-sub-item">Éducation à l’environnement</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3236"><a href="#" class="elementor-sub-item elementor-item-anchor">Déchets</a>
+																		<ul class="sub-menu elementor-nav-menu--dropdown">
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3235"><a href="https://www.coeurdeloire.fr/ramassage-des-ordures-menageres/" class="elementor-sub-item">Ramassage des ordures ménagères</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237"><a href="https://www.coeurdeloire.fr/decheteries/" class="elementor-sub-item">Déchèteries</a></li>
+																			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3238"><a href="https://www.coeurdeloire.fr/valorisation-des-dechets/" class="elementor-sub-item">Valorisation des déchets</a></li>
+																		</ul>
+																	</li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3678"><a href="https://www.coeurdeloire.fr/habitat/" class="elementor-sub-item">Habitat</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1624"><a href="#" class="elementor-item elementor-item-anchor">Entreprendre</a>
+																<ul class="sub-menu elementor-nav-menu--dropdown">
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4981"><a href="https://www.coeurdeloire.fr/projets-de-territoire-et-actions-partenariales/" class="elementor-sub-item">Projets de territoire et actions partenariales</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4982"><a href="https://www.coeurdeloire.fr/developpement-economique-et-touristique/" class="elementor-sub-item">Développement économique et touristique</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4984"><a href="https://www.coeurdeloire.fr/amenagement/" class="elementor-sub-item">Aménagement</a></li>
+																	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1623"><a href="https://www.coeurdeloire.fr/emploi-insertion/" class="elementor-sub-item">Emploi – Insertion – Formation</a></li>
+																</ul>
+															</li>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-864"><a href="https://www.coeurdeloire.fr/actualites/" class="elementor-item">Actualités</a></li>
+															<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="https://www.coeurdeloire.fr/contact/" class="elementor-item">Contact</a></li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-2a17aa3 elementor-column elementor-col-33 elementor-top-column" data-id="2a17aa3" data-element_type="column">
+									<div class="elementor-column-wrap  elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<div class="elementor-element elementor-element-9ae3bfc elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="9ae3bfc" data-element_type="widget" data-settings='{"skin":"full_screen"}' data-widget_type="search-form.default">
+												<div class="elementor-widget-container">
+													<form class="elementor-search-form" role="search" action="https://www.coeurdeloire.fr" method="get">
+														<div class="elementor-search-form__toggle"><i aria-hidden="true" class="fas fa-search"></i> <span class="elementor-screen-only">Search</span></div>
+														<div class="elementor-search-form__container"><input placeholder="Rechercher..." class="elementor-search-form__input" type="search" name="s" title="Search" value="">
+															<div class="dialog-lightbox-close-button dialog-close-button"><i class="eicon-close" aria-hidden="true"></i> <span class="elementor-screen-only">Close</span></div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<main id="main" class="site-main post-4 page type-page status-publish hentry" role="main">
+			<header class="page-header">
+				<h1 class="entry-title">Vie politique</h1>
+			</header>
+			<div class="page-content">
+				<div data-elementor-type="wp-post" data-elementor-id="4" class="elementor elementor-4" data-elementor-settings="[]">
+					<div class="elementor-inner">
+						<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-82e644b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="82e644b" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-b8c205b elementor-column elementor-col-100 elementor-top-column" data-id="b8c205b" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-159a4c5 elementor-widget elementor-widget-text-editor" data-id="159a4c5" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<div>
+																	<div class="n2-section-smartslider " role="region" aria-label="Diaporama">
+																		<style>div#n2-ss-2{width:1200px;float:left;margin:0px 0px 0px 0px;}html[dir="rtl"] div#n2-ss-2{float:right;}div#n2-ss-2 .n2-ss-slider-1{position:relative;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;height:450px;border-style:solid;border-width:0px;border-color:#3e3e3e;border-color:RGBA(62,62,62,1);border-radius:0px;background-clip:padding-box;background-repeat:repeat;background-position:50% 50%;background-size:cover;background-attachment:scroll;}div#n2-ss-2 .n2-ss-slider-background-video-container{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}div#n2-ss-2 .n2-ss-slider-2{position:relative;width:100%;height:100%;}.x-firefox div#n2-ss-2 .n2-ss-slider-2{opacity:0.99999;}div#n2-ss-2 .n2-ss-slider-3{position:relative;width:100%;height:100%;overflow:hidden;outline:1px solid rgba(0,0,0,0);z-index:10;}div#n2-ss-2 .n2-ss-slide-backgrounds,div#n2-ss-2 .n2-ss-slider-3 > .n-particles-js-canvas-el,div#n2-ss-2 .n2-ss-slider-3 > .n2-ss-divider{position:absolute;left:0;top:0;width:100%;height:100%;}div#n2-ss-2 .n2-ss-slide-backgrounds{z-index:10;}div#n2-ss-2 .n2-ss-slider-3 > .n-particles-js-canvas-el{z-index:12;}div#n2-ss-2 .n2-ss-slide-backgrounds > *{overflow:hidden;}div#n2-ss-2 .n2-ss-slide{position:absolute;top:0;left:0;width:100%;height:100%;z-index:20;display:block;-webkit-backface-visibility:hidden;}div#n2-ss-2 .n2-ss-layers-container{position:relative;width:1200px;height:450px;}div#n2-ss-2 .n2-ss-parallax-clip > .n2-ss-layers-container{position:absolute;right:0;}div#n2-ss-2 .n2-ss-slide{perspective:1500px;}div#n2-ss-2[data-ie] .n2-ss-slide{perspective:none;transform:perspective(1500px);}div#n2-ss-2 .n2-ss-slide-active{z-index:21;}div#n2-ss-2 .nextend-arrow{cursor:pointer;overflow:hidden;line-height:0 !important;z-index:20;}div#n2-ss-2 .nextend-arrow img{position:relative;min-height:0;min-width:0;vertical-align:top;width:auto;height:auto;max-width:100%;max-height:100%;display:inline;}div#n2-ss-2 .nextend-arrow img.n2-arrow-hover-img{display:none;}div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-hover-img{display:inline;}div#n2-ss-2 .nextend-arrow:HOVER img.n2-arrow-normal-img{display:none;}div#n2-ss-2 .nextend-arrow-animated{overflow:hidden;}div#n2-ss-2 .nextend-arrow-animated > div{position:relative;}div#n2-ss-2 .nextend-arrow-animated .n2-active{position:absolute;}div#n2-ss-2 .nextend-arrow-animated-fade{transition:background 0.3s, opacity 0.4s;}div#n2-ss-2 .nextend-arrow-animated-horizontal > div{transition:all 0.4s;left:0;}div#n2-ss-2 .nextend-arrow-animated-horizontal .n2-active{top:0;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal:FOCUS > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal .n2-active{left:-100%;}div#n2-ss-2 .nextend-arrow-previous.nextend-arrow-animated-horizontal .n2-active,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:HOVER > div,div#n2-ss-2 .nextend-arrow-next.nextend-arrow-animated-horizontal:FOCUS > div{left:100%;}div#n2-ss-2 .nextend-arrow.nextend-arrow-animated-horizontal:HOVER .n2-active,div#n2-ss-2 .nextend-arrow.nextend-arrow-animated-horizontal:FOCUS .n2-active{left:0;}div#n2-ss-2 .nextend-arrow-animated-vertical > div{transition:all 0.4s;top:0;}div#n2-ss-2 .nextend-arrow-animated-vertical .n2-active{left:0;}div#n2-ss-2 .nextend-arrow-animated-vertical .n2-active{top:-100%;}div#n2-ss-2 .nextend-arrow-animated-vertical:HOVER > div,div#n2-ss-2 .nextend-arrow-animated-vertical:FOCUS > div{top:100%;}div#n2-ss-2 .nextend-arrow-animated-vertical:HOVER .n2-active,div#n2-ss-2 .nextend-arrow-animated-vertical:FOCUS .n2-active{top:0;}div#n2-ss-2 .n2-font-1304-paragraph{font-family: 'Montserrat';color: #282828;font-size:87.5%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;}div#n2-ss-2 .n2-font-1304-paragraph a, div#n2-ss-2 .n2-font-1304-paragraph a:FOCUS{font-family: 'Montserrat';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;}div#n2-ss-2 .n2-font-1304-paragraph a:HOVER, div#n2-ss-2 .n2-font-1304-paragraph a:ACTIVE{font-family: 'Montserrat';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;}div#n2-ss-2 .n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph{font-family: 'Montserrat';color: #ffffff;font-size:256.25%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-2 .n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph a, div#n2-ss-2 .n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph a:FOCUS{font-family: 'Montserrat';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-2 .n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph a:HOVER, div#n2-ss-2 .n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph a:ACTIVE{font-family: 'Montserrat';color: #1890d7;font-size:100%;text-shadow: none;line-height: 1.5;font-weight: normal;font-style: normal;text-decoration: none;text-align: left;letter-spacing: normal;word-spacing: normal;text-transform: none;font-weight: 400;}div#n2-ss-2 .n2-style-ccae95e89dc34751b3f219f6ddff85ab-heading{background: #ffffff;background: RGBA(255,255,255,0);opacity:1;padding:20px 0px 0px 30px ;box-shadow: none;border-width: 0px;border-style: solid;border-color: #000000; border-color: RGBA(0,0,0,1);border-radius:0px;}</style>
+																		<div id="n2-ss-2-align" class="n2-ss-align">
+																			<div class="n2-padding">
+																				<div id="n2-ss-2" data-creator="Smart Slider 3" class="n2-ss-slider n2-ow n2-has-hover n2notransition  n2-ss-load-fade " data-minfontsizedesktopportrait="4" data-minfontsizedesktoplandscape="4" data-minfontsizetabletportrait="4" data-minfontsizetabletlandscape="4" data-minfontsizemobileportrait="4" data-minfontsizemobilelandscape="4" style="font-size: 1rem;" data-fontsize="16">
+																					<div class="n2-ss-slider-1 n2-ss-swipe-element n2-ow" style="">
+																						<div class="n2-ss-slider-2 n2-ow">
+																							<div class="n2-ss-slider-3 n2-ow" style="">
+																								<div class="n2-ss-slide-backgrounds"></div>
+																								<div data-first="1" data-slide-duration="0" data-id="26" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-26">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="96190a7c93c81b9e1454bf64397f00b5" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/chevaux-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/chevaux-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style="">
+																										<div class="n2-ss-layer n2-ow" style="overflow:visible;" data-csstextalign="inherit" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-pm="content" data-desktopportraitpadding="10|*|10|*|10|*|10|*|px+" data-desktopportraitinneralign="inherit" data-sstype="content" data-hasbackground="0" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="1" data-desktopportraitfontsize="100" data-plugin="rendered">
+																											<div class="n2-ss-section-main-content n2-ss-layer-content n2-ow" style="padding:0.625em 0.625em 0.625em 0.625em ;" data-verticalalign="center">
+																												<div class="n2-ss-layer n2-ow" style="margin:0em 0em 0em 0em ;overflow:visible;" data-pm="normal" data-desktopportraitmargin="0|*|0|*|0|*|0|*|px+" data-desktopportraitheight="0" data-has-maxwidth="0" data-desktopportraitmaxwidth="0" data-cssselfalign="inherit" data-desktopportraitselfalign="inherit" data-sstype="layer" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0" data-desktopportraitfontsize="100" data-plugin="rendered">
+																													<div class="n2-ss-item-content n2-ow">
+																														<div class="n2-ow n2-ow-all n2-ss-desktop n2-ss-mobile n2-ss-tablet"></div>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																										<div class="n2-ss-layer n2-ow" style="left:46px;top:135px;width:994px;height:auto;overflow:visible;" data-pm="absolute" data-responsiveposition="1" data-desktopportraitleft="46" data-tabletportraitleft="46" data-mobileportraitleft="-103" data-desktopportraittop="135" data-tabletportraittop="116" data-mobileportraittop="60" data-responsivesize="1" data-desktopportraitwidth="994" data-tabletportraitwidth="994" data-mobileportraitwidth="994" data-desktopportraitheight="auto" data-tabletportraitheight="auto" data-mobileportraitheight="auto" data-desktopportraitalign="left" data-tabletportraitalign="left" data-mobileportraitalign="center" data-desktopportraitvalign="top" data-tabletportraitvalign="top" data-mobileportraitvalign="top" data-parentid="" data-desktopportraitparentalign="center" data-desktopportraitparentvalign="middle" data-sstype="layer" data-rotation="0" data-desktopportrait="1" data-desktoplandscape="1" data-tabletportrait="1" data-tabletlandscape="1" data-mobileportrait="1" data-mobilelandscape="1" data-adaptivefont="0" data-desktopportraitfontsize="100" data-plugin="rendered">
+																											<div class="n2-ss-item-content n2-ow">
+																												<div class="n2-ss-mobile n2-ow n2-ow-all">
+																													<p class="n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph  n2-style-ccae95e89dc34751b3f219f6ddff85ab-heading  n2-ow"><b>Retrouvez toutes les informations sur la situation des services, en direct sur Facebook CCcoeurdeloire</b></p>
+																												</div>
+																												<div class="n2-ss-tablet n2-ow n2-ow-all">
+																													<p class="n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph  n2-style-ccae95e89dc34751b3f219f6ddff85ab-heading  n2-ow"><b>Retrouvez toutes les informations sur la situation des services, en direct<br> sur Facebook CCcoeurdeloire</b></p>
+																												</div>
+																												<div class="n2-ow n2-ow-all n2-ss-desktop">
+																													<p class="n2-font-6afdb8c7fe2351d50302a8cf1c0a1922-paragraph  n2-style-ccae95e89dc34751b3f219f6ddff85ab-heading  n2-ow"><b>Retrouvez toutes les informations sur la situation des services, en direct<br> sur Facebook CCcoeurdeloire</b></p>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																								<div data-slide-duration="0" data-id="32" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-32">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="c41140f25cd0f6d19432513796246a0e" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/deschanel1.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/deschanel1.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="24" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-24">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="2f484731ee080da9dd510f75009d09dd" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/abbaye-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/abbaye-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="16" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-16">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="e6064b2261b7e1fd1b374177cea5428b" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/campus-1.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/campus-1.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="21" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-21">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="59b92e9496583489080dd22ce4dbbddc" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/pouilly-1.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/pouilly-1.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="27" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-27">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="f821b4c67e17149d1d9a50ebc02b3792" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/cyclorail-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/cyclorail-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="29" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-29">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="79093c8decf9b6ffc1071c8862b9ef8a" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/loire-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/loire-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="31" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-31">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="413dd786ba0b40662f616893efa639aa" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/retromoisson-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/retromoisson-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="23" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-23">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="06ab80d309dc1980ee9fc6e01f88da3a" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/giennois-2.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/giennois-2.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																								<div data-slide-duration="0" data-id="33" style="" class=" n2-ss-slide n2-ss-canvas n2-ow  n2-ss-slide-33">
+																									<div class="n2-ss-slide-background n2-ow" data-mode="fill">
+																										<div data-hash="f4b21652afa3c7d5cb04afe35e5c7360" data-desktop="//www.coeurdeloire.fr/wp-content/uploads/2020/02/donzy.jpg" class="n2-ss-slide-background-image" data-blur="0"><img src="//www.coeurdeloire.fr/wp-content/uploads/2020/02/donzy.jpg" alt=""></div>
+																									</div>
+																									<div class="n2-ss-layers-container n2-ow" data-csstextalign="center" style=""></div>
+																								</div>
+																							</div>
+																						</div>
+																						<div data-ssleft="0+15" data-sstop="height/2-previousheight/2" id="n2-ss-2-arrow-previous" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ow nextend-arrow-previous  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="previous arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTEuNDMzIDE1Ljk5MkwyMi42OSA1LjcxMmMuMzkzLS4zOS4zOTMtMS4wMyAwLTEuNDItLjM5My0uMzktMS4wMy0uMzktMS40MjMgMGwtMTEuOTggMTAuOTRjLS4yMS4yMS0uMy40OS0uMjg1Ljc2LS4wMTUuMjguMDc1LjU2LjI4NC43N2wxMS45OCAxMC45NGMuMzkzLjM5IDEuMDMuMzkgMS40MjQgMCAuMzkzLS40LjM5My0xLjAzIDAtMS40MmwtMTEuMjU3LTEwLjI5IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="previous arrow"></div>
+																						<div data-ssright="0+15" data-sstop="height/2-nextheight/2" id="n2-ss-2-arrow-next" class="n2-ss-widget n2-ss-widget-display-desktop n2-ss-widget-display-tablet n2-ss-widget-display-mobile nextend-arrow n2-ow nextend-arrow-next  nextend-arrow-animated-fade n2-ib" style="position: absolute;" role="button" aria-label="next arrow" tabindex="0"><img class="n2-ow" data-no-lazy="1" data-hack="data-lazy-src" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuNzIyIDQuMjkzYy0uMzk0LS4zOS0xLjAzMi0uMzktMS40MjcgMC0uMzkzLjM5LS4zOTMgMS4wMyAwIDEuNDJsMTEuMjgzIDEwLjI4LTExLjI4MyAxMC4yOWMtLjM5My4zOS0uMzkzIDEuMDIgMCAxLjQyLjM5NS4zOSAxLjAzMy4zOSAxLjQyNyAwbDEyLjAwNy0xMC45NGMuMjEtLjIxLjMtLjQ5LjI4NC0uNzcuMDE0LS4yNy0uMDc2LS41NS0uMjg2LS43NkwxMC43MiA0LjI5M3oiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==" alt="next arrow"></div>
+																					</div>
+																				</div>
+																				<div class="n2-clear"></div>
+																				<div id="n2-ss-2-spinner" style="display: none;">
+																					<div>
+																						<div class="n2-ss-spinner-simple-white-container">
+																							<div class="n2-ss-spinner-simple-white"></div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<script type="text/javascript">N2R(["nextend-frontend","smartslider-frontend","smartslider-simple-type-frontend"],function(){new N2Classes.SmartSliderSimple('#n2-ss-2', {"admin":false,"translate3d":1,"callbacks":"","background.video.mobile":1,"align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"desktop":1,"tablet":1,"mobile":1,"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":0,"maximumHeight":5000,"maximumSlideWidth":3000,"maximumSlideWidthLandscape":3000,"maximumSlideWidthTablet":3000,"maximumSlideWidthTabletLandscape":3000,"maximumSlideWidthMobile":600,"maximumSlideWidthMobileLandscape":600,"maximumSlideWidthConstrainHeight":0,"forceFull":1,"forceFullOverflowX":"body","forceFullHorizontalSelector":"body","constrainRatio":1,"sliderHeightBasedOn":"real","decreaseSliderHeight":0,"focusUser":1,"focusEdge":"auto","deviceModes":{"desktopPortrait":1,"desktopLandscape":0,"tabletPortrait":1,"tabletLandscape":0,"mobilePortrait":1,"mobileLandscape":0},"normalizedDeviceModes":{"unknownUnknown":["unknown","Unknown"],"desktopPortrait":["desktop","Portrait"],"desktopLandscape":["desktop","Portrait"],"tabletPortrait":["tablet","Portrait"],"tabletLandscape":["tablet","Portrait"],"mobilePortrait":["mobile","Portrait"],"mobileLandscape":["mobile","Portrait"]},"verticalRatioModifiers":{"unknownUnknown":1,"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"minimumFontSizes":{"desktopPortrait":4,"desktopLandscape":4,"tabletPortrait":4,"tabletLandscape":4,"mobilePortrait":4,"mobileLandscape":4},"ratioToDevice":{"Portrait":{"tablet":0.7,"mobile":0.5},"Landscape":{"tablet":0,"mobile":0}},"sliderWidthToDevice":{"desktopPortrait":1200,"desktopLandscape":1200,"tabletPortrait":840,"tabletLandscape":0,"mobilePortrait":600,"mobileLandscape":0},"basedOn":"screen","orientationMode":"width_and_height","overflowHiddenPage":0,"desktopPortraitScreenWidth":400,"tabletPortraitScreenWidth":400,"mobilePortraitScreenWidth":400,"tabletLandscapeScreenWidth":400,"mobileLandscapeScreenWidth":400,"focus":{"offsetTop":"#wpadminbar","offsetBottom":""}},"controls":{"mousewheel":0,"touch":"horizontal","keyboard":1,"blockCarouselInteraction":1},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":1,"start":1,"duration":3000,"autoplayToSlide":-1,"autoplayToSlideIndex":-1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0}},"perspective":1500,"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"allowBGImageAttachmentFixed":false,"bgAnimationsColor":"RGBA(51,51,51,1)","bgAnimations":0,"mainanimation":{"type":"fade","duration":3000,"delay":0,"ease":"easeOutQuad","parallax":0,"shiftedBackgroundAnimation":0},"carousel":1,"dynamicHeight":0,"initCallbacks":function($){N2D("SmartSliderWidgetArrowImage",function(i,e){function s(e,s,t,h){this.slider=e,this.slider.started(i.proxy(this.start,this,s,t,h))}return s.prototype.start=function(e,s,t){return this.slider.sliderElement.data("arrow")?!1:(this.slider.sliderElement.data("arrow",this),this.deferred=i.Deferred(),this.slider.sliderElement.on("SliderDevice",i.proxy(this.onDevice,this)).trigger("addWidget",this.deferred),this.previous=i("#"+this.slider.elementID+"-arrow-previous").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionPrevious()]()},this)),this.previousResize=this.previous.find(".n2-resize"),0===this.previousResize.length&&(this.previousResize=this.previous),this.next=i("#"+this.slider.elementID+"-arrow-next").on("click",i.proxy(function(i){i.stopPropagation(),this.slider[this.slider.getDirectionNext()]()},this)),this.nextResize=this.next.find(".n2-resize"),0===this.nextResize.length&&(this.nextResize=this.next),this.desktopRatio=e,this.tabletRatio=s,this.mobileRatio=t,void i.when(this.previous.n2imagesLoaded(),this.next.n2imagesLoaded()).always(i.proxy(this.loaded,this)))},s.prototype.loaded=function(){this.previous.css("display","inline-block"),this.previousResize.css("display","inline-block"),this.previousWidth=this.previousResize.width(),this.previousHeight=this.previousResize.height(),this.previousResize.css("display",""),this.previous.css("display",""),this.next.css("display","inline-block"),this.nextResize.css("display","inline-block"),this.nextWidth=this.nextResize.width(),this.nextHeight=this.nextResize.height(),this.nextResize.css("display",""),this.next.css("display",""),this.previousResize.find("img").css("width","100%"),this.nextResize.find("img").css("width","100%"),this.onDevice(null,{device:this.slider.responsive.getDeviceMode()}),this.deferred.resolve()},s.prototype.onDevice=function(i,e){var s=1;switch(e.device){case"tablet":s=this.tabletRatio;break;case"mobile":s=this.mobileRatio;break;default:s=this.desktopRatio}this.previousResize.width(this.previousWidth*s),this.previousResize.height(this.previousHeight*s),this.nextResize.width(this.nextWidth*s),this.nextResize.height(this.nextHeight*s)},s});new N2Classes.SmartSliderWidgetArrowImage(this, 1, 0.7, 0.5);}});});</script>
+																		<div id="n2-ss-2-placeholder" style="position: relative;z-index:2;background-color:RGBA(0,0,0,0);max-height:5000px; background-color:RGBA(255,255,255,0);"><img style="width: 100%; max-width:3000px; display: block;opacity:0;margin:0px;" class="n2-ow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNDUwIiA+PC9zdmc+" alt="Slider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-element elementor-element-e49962f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e49962f" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-aa0bdef elementor-column elementor-col-33 elementor-top-column" data-id="aa0bdef" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-87d19fc elementor-widget elementor-widget-heading" data-id="87d19fc" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">à la une</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-a2c4ab2 elementor-widget elementor-widget-text-editor" data-id="a2c4ab2" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<div class="wppsac-slick-slider-wrp wppsac-clearfix ">
+																	<div id="wppsac-post-slider-1" class="wppsac-post-slider design-4">
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/modification-des-jours-de-collecte-des-cartons-des-commercants/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/07/collect-cartons.jpg" alt="Modification des jours de collecte des cartons des commerçants"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/modification-des-jours-de-collecte-des-cartons-des-commercants/">Modification des jours de collecte des cartons des commerçants</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content"></div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/modification-des-jours-de-collecte-des-cartons-des-commercants/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/reouverture-de-la-piscine-de-donzy-le-11-juillet/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/06/reouverture-piscine-Donzy-1.jpg" alt="Réouverture de la piscine de Donzy le 11 juillet"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/reouverture-de-la-piscine-de-donzy-le-11-juillet/">Réouverture de la piscine de Donzy le 11 juillet</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content"></div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/reouverture-de-la-piscine-de-donzy-le-11-juillet/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/restauration-scolaire-message-important-aux-parents-deleves/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Restauration-scolaire.jpg" alt="Restauration scolaire : Message important"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/restauration-scolaire-message-important-aux-parents-deleves/">Restauration scolaire : Message important</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">RETOUR A l’ECOLE : Si votre enfant retourne à l’école, merci…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/restauration-scolaire-message-important-aux-parents-deleves/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/reouverture-prochaine-de-la-piscine-et-du-pavillon-du-milieu-de-loire/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/06/Atelier-Du-Merc-Pavillon-du-Milieu-de-Loire.jpg" alt="Réouverture prochaine de la Piscine, du Pavillon du Milieu de Loire et de la crèche"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/reouverture-prochaine-de-la-piscine-et-du-pavillon-du-milieu-de-loire/">Réouverture prochaine de la Piscine, du Pavillon du Milieu de Loire et de la crèche</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">Nous sommes ravis de pouvoir vous annoncer la réouverture de…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/reouverture-prochaine-de-la-piscine-et-du-pavillon-du-milieu-de-loire/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/une-aide-exceptionnelle-pour-les-entreprises-qui-recrutent-des-apprentis-a-la-rentree/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/pavl2.jpg" alt="Une aide exceptionnelle pour les entreprises qui recrutent des apprentis à la rentrée"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/une-aide-exceptionnelle-pour-les-entreprises-qui-recrutent-des-apprentis-a-la-rentree/">Une aide exceptionnelle pour les entreprises qui recrutent des apprentis à la rentrée</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">A l’issue d’une réunion avec les partenaires sociaux, jeudi 4…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/une-aide-exceptionnelle-pour-les-entreprises-qui-recrutent-des-apprentis-a-la-rentree/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/devenez-ambassadeur-du-commerce-de-proximite/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/06/concours-photo-adeb.jpg" alt="Devenez ambassadeur du commerce de proximité!"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/devenez-ambassadeur-du-commerce-de-proximite/">Devenez ambassadeur du commerce de proximité!</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">Une campagne d’affichage va être prochainement menée par la communauté…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/devenez-ambassadeur-du-commerce-de-proximite/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/reouverture-des-offices-de-tourisme/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/06/logo-ot.jpg" alt="Réouverture des offices de tourisme"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/reouverture-des-offices-de-tourisme/">Réouverture des offices de tourisme</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">Toute l’équipe de l’Office de Tourisme est heureuse de vous…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/reouverture-des-offices-de-tourisme/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/ouverture-des-services-communautaires-11-mai/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/05/reouvertures-services-coeur-de-loire-2-juin.jpg" alt="Ouverture des services communautaires – 2 juin"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/ouverture-des-services-communautaires-11-mai/">Ouverture des services communautaires – 2 juin</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">Déconfinement – réouverture de services communautaires l’accueil du public au…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/ouverture-des-services-communautaires-11-mai/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/fonds-de-solidarite-territorial-region-epci/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/04/SCHEMA-FSN-FST.jpg" alt="Fonds de solidarité territorial Région-EPCI"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/fonds-de-solidarite-territorial-region-epci/">Fonds de solidarité territorial Région-EPCI</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">La Communauté de Communes Cœur de Loire s’engage financièrement avec…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/fonds-de-solidarite-territorial-region-epci/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="wppsac-post-slides">
+																			<div class="wppsac-post-list">
+																				<div class="wppsac-post-list-content">
+																					<div class="wp-medium-5 wpcolumns">
+																						<div class="wppsac-post-image-bg"><a href="https://www.coeurdeloire.fr/accueil-petite-enfance-fonctionnement-a-partir-du-11-mai/"> <img src="https://www.coeurdeloire.fr/wp-content/uploads/2020/05/entree-creche-balis%C3%A9e.jpg" alt="Accueil petite enfance : fonctionnement à partir du 11 mai"> </a></div>
+																					</div>
+																					<div class=" wp-medium-7  wpcolumns">
+																						<h2 class="wppsac-post-title"><a href="https://www.coeurdeloire.fr/accueil-petite-enfance-fonctionnement-a-partir-du-11-mai/">Accueil petite enfance : fonctionnement à partir du 11 mai</a></h2>
+																						<div class="wppsac-post-content">
+																							<div class="wppsac-sub-content">La structure augmente ces capacités d’accueil lundi 11 mai. Conformément…</div><a class="wppsac-readmorebtn" href="https://www.coeurdeloire.fr/accueil-petite-enfance-fonctionnement-a-partir-du-11-mai/">Lire plus</a></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="wppsac-slider-conf wppsac-hide" data-conf='{"dots":"true","arrows":"true","autoplay":"false","autoplay_interval":3000,"speed":"false","rtl":"false"}'></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-91917e2 elementor-align-left elementor-widget elementor-widget-button" data-id="91917e2" data-element_type="widget" data-widget_type="button.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-button-wrapper"><a href="https://www.coeurdeloire.fr/actualites/" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">Voir toutes les actualités</span> </span> </a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-ff2f85e elementor-column elementor-col-33 elementor-top-column" data-id="ff2f85e" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-6d8150c elementor-widget elementor-widget-text-editor" data-id="6d8150c" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h2 style="text-align: left;"><span style="color: #007a92;">En 1</span> <span style="color: #ffffff;">Clic</span></h2>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-1cce7f8 elementor-widget elementor-widget-image" data-id="1cce7f8" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/"> <img width="30" height="30" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/forms-1.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-ccb95b0 elementor-widget elementor-widget-image" data-id="ccb95b0" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/marches-publics/"> <img width="30" height="25" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Marches-publics-1.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-da0350e elementor-widget elementor-widget-image" data-id="da0350e" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/offres-demploi/"> <img width="30" height="30" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/offres-d-emploi-1.png" class="elementor-animation-shrink attachment-large size-large" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-f3d64a1 elementor-widget elementor-widget-image" data-id="f3d64a1" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/acces-reserve/"> <img width="30" height="30" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Acces-reserve-1.png" class="elementor-animation-shrink attachment-large size-large" alt=""> </a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-ba43a72 elementor-column elementor-col-33 elementor-top-column" data-id="ba43a72" data-element_type="column" data-settings='{"background_background":"classic"}'>
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-98aaab7 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-view-default elementor-widget elementor-widget-icon" data-id="98aaab7" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="icon.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-icon-wrapper">
+																<div class="elementor-icon"><i aria-hidden="true" class="fas fa-sort-down"></i></div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-270ab65 elementor-widget elementor-widget-text-editor" data-id="270ab65" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h2 style="text-align: left;"><span style="color: #ffffff;">Clic</span></h2>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-b0be6ed elementor-widget elementor-widget-text-editor" data-id="b0be6ed" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/">nos formulaires</a></p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-9a5493a elementor-widget elementor-widget-text-editor" data-id="9a5493a" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/marches-publics/" data-wplink-edit="true">marchés publics</a></p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-550489e elementor-widget elementor-widget-text-editor" data-id="550489e" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/offres-demploi/" data-wplink-edit="true">Offres d’emploi</a></p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-d4533b0 elementor-widget elementor-widget-text-editor" data-id="d4533b0" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/acces-reserve/">acces réservé</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-element elementor-element-262acbb elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="262acbb" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-6b544e0 elementor-column elementor-col-100 elementor-top-column" data-id="6b544e0" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-2d760ff elementor-widget elementor-widget-heading" data-id="2d760ff" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">Les services</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-ad1a042 elementor-widget elementor-widget-text-editor" data-id="ad1a042" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p>Retrouvez vos services utiles au quotidien</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-element elementor-element-40498b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="40498b2" data-element_type="section" data-settings='{"background_background":"classic","background_motion_fx_motion_fx_scrolling":"yes","background_motion_fx_devices":["desktop","tablet","mobile"]}'>
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-031b430 elementor-column elementor-col-16 elementor-top-column" data-id="031b430" data-element_type="column" data-settings='{"background_background":"classic"}'>
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-background-overlay"></div>
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-8b5c784 elementor-widget elementor-widget-image" data-id="8b5c784" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/culture/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Culture.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-5ec9c3a elementor-widget elementor-widget-text-editor" data-id="5ec9c3a" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/culture/">culture</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-6e23b37 elementor-column elementor-col-16 elementor-top-column" data-id="6e23b37" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-92832d4 elementor-widget elementor-widget-image" data-id="92832d4" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/enfance-jeunesse/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Jeunesse-1.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-3849738 elementor-widget elementor-widget-text-editor" data-id="3849738" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/enfance-jeunesse/">Enfance / jeunesse</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-9cc95a6 elementor-column elementor-col-16 elementor-top-column" data-id="9cc95a6" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-9a39f27 elementor-widget elementor-widget-image" data-id="9a39f27" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/seniors/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Senior-1.png" class="elementor-animation-shrink attachment-meccarouselthumb size-meccarouselthumb" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-69e11ed elementor-widget elementor-widget-text-editor" data-id="69e11ed" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/seniors/">senior</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-2fcb5fb elementor-column elementor-col-16 elementor-top-column" data-id="2fcb5fb" data-element_type="column" data-settings='{"background_background":"classic"}'>
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-274d28c elementor-widget elementor-widget-image" data-id="274d28c" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/environnement/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/Environnement-3.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-37775a7 elementor-widget elementor-widget-text-editor" data-id="37775a7" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/environnement/">environnement</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-a25e996 elementor-column elementor-col-16 elementor-top-column" data-id="a25e996" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-7cb779d elementor-widget elementor-widget-image" data-id="7cb779d" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/toursime/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Toursime.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-f0b7c45 elementor-widget elementor-widget-text-editor" data-id="f0b7c45" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/toursime/">tourisme</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-907b943 elementor-column elementor-col-16 elementor-top-column" data-id="907b943" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-f9243f3 elementor-widget elementor-widget-image" data-id="f9243f3" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image"><a href="https://www.coeurdeloire.fr/entreprises/"> <img width="50" height="50" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/offices-buildings-2.png" class="elementor-animation-shrink attachment-thumbnail size-thumbnail" alt=""> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-4c6f4e4 elementor-widget elementor-widget-text-editor" data-id="4c6f4e4" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><a href="https://www.coeurdeloire.fr/entreprises/">Entreprises</a></p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-element elementor-element-d87ef2d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="d87ef2d" data-element_type="section" data-settings='{"background_background":"classic"}'>
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-5101c96 elementor-column elementor-col-33 elementor-top-column" data-id="5101c96" data-element_type="column" data-settings='{"background_background":"classic"}'>
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-77832a3 elementor-widget elementor-widget-heading" data-id="77832a3" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">agenda</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-a03ab44 elementor-widget elementor-widget-text-editor" data-id="a03ab44" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<div id="mec_calendar_shortcode" class="postbox ">
+																	<div class="inside">
+																		<div class="mec-calendar-metabox mec-shortcode">
+																			<div id="mec_calendar_shortcode" class="postbox">
+																				<div class="inside">
+																					<div class="mec-calendar-metabox mec-shortcode">
+																						<div class="mec-wrap mec-skin-list-container  " id="mec_skin_267">
+																							<div id="mec_search_form_267" class="mec-search-form mec-totalcal-box">
+																								<div class="mec-dropdown-wrap">
+																									<div class="mec-dropdown-search"><i class="mec-sl-folder"></i><select name=" " id="mec_sf_category_267" class="postform"> <option value="" selected>Catégorie</option> <option class="level-0" value="22">Ateliers</option> <option class="level-0" value="18">Conférences</option> <option class="level-0" value="7">Manifestations</option> <option class="level-0" value="23">Projection</option> </select></div>
+																									<div class="mec-dropdown-search"><i class="mec-sl-location-pin"></i><select name=" " id="mec_sf_location_267" class="postform"> <option value="" selected>Lieu</option> <option class="level-0" value="21">Cosne-Cours-sur-Loire</option> <option class="level-0" value="24">Donzy</option> <option class="level-0" value="17">Marché de Donzy</option> <option class="level-0" value="16">Marché de Pouilly-sur-Loire</option> <option class="level-0" value="15">Place Georges Clemenceau 58200 Cosne-Cours-sur-Loire</option> <option class="level-0" value="25">Pouilly-sur-Loire</option> <option class="level-0" value="19">Salle Pierre et Marie-Curie</option> </select></div>
+																									<div class="mec-dropdown-search"><i class="mec-sl-user"></i><select name=" " id="mec_sf_organizer_267" class="postform"> <option value="" selected>Organisateur</option> <option class="level-0" value="27">Médiathèque de Donzy</option> <option class="level-0" value="26">Pavillon du Milieu de Loire</option> <option class="level-0" value="28">Piscine St Laurent</option> </select></div>
+																								</div>
+																								<div class="mec-text-input-search"><i class="mec-sl-magnifier"></i> <input type="search" value="" id="mec_sf_s_267"></div>
+																							</div>
+																							<div class="mec-skin-list-events-container" id="mec_skin_events_267">Pas d’événement actuellement programmé.</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div id="mec_calendar_search_form" class="postbox "> </div>
+																		</div>
+																	</div>
+																</div>
+																<div id="mec_calendar_search_form" class="postbox "> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-a16e868 elementor-hidden-tablet elementor-hidden-phone elementor-column elementor-col-33 elementor-top-column" data-id="a16e868" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap"></div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-e15ee45 elementor-column elementor-col-33 elementor-top-column" data-id="e15ee45" data-element_type="column" data-settings='{"background_background":"classic"}'>
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-d2eb1a0 elementor-widget elementor-widget-heading" data-id="d2eb1a0" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">publications</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-99bdc03 elementor-widget elementor-widget-text-editor" data-id="99bdc03" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p>Téléchargez ou consultez les publications de la Communauté de communes.</p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-757895e elementor-widget elementor-widget-image" data-id="757895e" data-element_type="widget" data-widget_type="image.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image">
+																<figure class="wp-caption"><a href="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Magazine-au-coeur-de-Loire-Vignobles-et-Nohain.pdf"> <img width="213" height="300" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Capture-d%E2%80%99e%CC%81cran-2019-08-01-a%CC%80-07.46.01-213x300.png" class="attachment-medium size-medium" alt="" srcset="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Capture-d’e&#769;cran-2019-08-01-a&#768;-07.46.01-213x300.png 213w, https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Capture-d’e&#769;cran-2019-08-01-a&#768;-07.46.01.png 636w" sizes="(max-width: 213px) 100vw, 213px"> </a>
+																	<figcaption class="widget-image-caption wp-caption-text">AU COEUR DE LOIRE VIGNOBLES ET NOHAIN#1</figcaption>
+																</figure>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-35306a1 elementor-align-center elementor-widget elementor-widget-button" data-id="35306a1" data-element_type="widget" data-widget_type="button.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-button-wrapper"><a href="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/Magazine-au-coeur-de-Loire-Vignobles-et-Nohain.pdf" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">consulter la version en ligne</span> </span> </a></div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-cf74eb2 elementor-align-center elementor-widget elementor-widget-button" data-id="cf74eb2" data-element_type="widget" data-widget_type="button.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-button-wrapper"><a href="https://www.coeurdeloire.fr/publications/" class="elementor-button-link elementor-button elementor-size-sm" role="button"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-text">toutes les publications</span> </span> </a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-element elementor-element-8c92f87 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="8c92f87" data-element_type="section" data-settings='{"background_background":"classic","background_motion_fx_motion_fx_scrolling":"yes","background_motion_fx_opacity_effect":"yes","background_motion_fx_opacity_range":{"unit":"%","size":"","sizes":{"start":0,"end":100}},"background_motion_fx_opacity_direction":"out-in","background_motion_fx_opacity_level":{"unit":"px","size":10,"sizes":[]},"background_motion_fx_devices":["desktop","tablet","mobile"]}'>
+								<div class="elementor-background-overlay"></div>
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-element elementor-element-e45abba elementor-column elementor-col-50 elementor-top-column" data-id="e45abba" data-element_type="column">
+											<div class="elementor-column-wrap  elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-508a48a elementor-widget elementor-widget-heading" data-id="508a48a" data-element_type="widget" data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">les communes de Cœur de Loire</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-206252d elementor-widget elementor-widget-text-editor" data-id="206252d" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p>Cliquer sur la commune de votre choix pour en savoir plus</p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-3541af8 elementor-hidden-desktop elementor-widget elementor-widget-html" data-id="3541af8" data-element_type="widget" data-widget_type="html.default">
+														<div class="elementor-widget-container"><select style="width: 100%;" tabindex="-1" title="" onchange="location = this.value;"> <option selected>Séléctionner une commune</option> <option value="https://www.coeurdeloire.fr/annay/">Annay</option> <option value="https://www.coeurdeloire.fr/alligny-cosne/">Alligny-cosne</option> <option value="https://www.coeurdeloire.fr/bulcy/">Bulcy</option> <option value="https://www.coeurdeloire.fr/cessy-les-bois/">Cessy-les-bois</option> <option value="https://www.coeurdeloire.fr/chateauneuf-val-de-bargis/">Châteauneuf-Val-de-Bargis</option> <option value="https://www.coeurdeloire.fr/ciez/">Ciez</option> <option value="https://www.coeurdeloire.fr/colmery/">Colméry</option> <option value="https://www.coeurdeloire.fr/cosne-cours-sur-loire/">Cosne-Cours-sur-Loire</option> <option value="https://www.coeurdeloire.fr/couloutre/">Couloutre</option> <option value="https://www.coeurdeloire.fr/donzy/">Donzy</option> <option value="https://www.coeurdeloire.fr/garchy/">Garchy</option> <option value="https://www.coeurdeloire.fr/la-celle-sur-loire/">La-Celle-sur-Loire</option> <option value="https://www.coeurdeloire.fr/menestreau/">Ménestreau</option> <option value="https://www.coeurdeloire.fr/mesves-sur-loire/">Mesves-sur-Loire</option> <option value="https://www.coeurdeloire.fr/myennes/">Myennes</option> <option value="https://www.coeurdeloire.fr/neuvy-sur-loire/">Neuvy-sur-Loire</option> <option value="https://www.coeurdeloire.fr/pougny/">Pougny</option> <option value="https://www.coeurdeloire.fr/pouilly-sur-loire/">Pouilly-sur-Loire</option> <option value="https://www.coeurdeloire.fr/saint-andelain/">Saint-Andelain</option> <option value="https://www.coeurdeloire.fr/saint-laurent-labbaye/">Saint-Laurent-l'Abbaye</option> <option value="https://www.coeurdeloire.fr/saint-loup/">Saint-Loup</option> <option value="https://www.coeurdeloire.fr/saint-malo-en-donziois/">Saint-Malo-en-Donziois</option> <option value="https://www.coeurdeloire.fr/saint-martin-sur-nohain/">Saint-Martin-sur-Nohain</option> <option value="https://www.coeurdeloire.fr/saint-pere/">Saint-Père</option> <option value="https://www.coeurdeloire.fr/saint-quentin-sur-nohain/">Saint-Quentin-sur-Nohain</option> <option value="https://www.coeurdeloire.fr/sainte-colombe-des-bois/">Sainte-Colombe-des-Bois</option> <option value="https://www.coeurdeloire.fr/suilly-la-tour/">Suilly-la-Tour</option> <option value="https://www.coeurdeloire.fr/tracy-sur-loire/">Tracy-sur-Loire</option> <option value="https://www.coeurdeloire.fr/vielmanay/">Vielmanay</option> </select></div>
+													</div>
+													<div class="elementor-element elementor-element-62ede57 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-html" data-id="62ede57" data-element_type="widget" data-widget_type="html.default">
+														<div class="elementor-widget-container">
+															<title>CARTE-Com-de-com-cclvn</title>
+															<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><img src="https://www.coeurdeloire.fr/wp-content/uploads/2019/08/CARTE-Com-de-com-cclvn.png" width="638" height="579" border="0" alt="" usemap="#CARTE_Com_de_com_cclvn_Map"> <map name="CARTE_Com_de_com_cclvn_Map"> <area shape="rect" alt="" coords="369,288,385,304" href="http://www.coeurdeloire.fr/donzy/"> <area shape="rect" alt="" coords="163,227,191,254" href="http://www.coeurdeloire.fr/cosne-cours-sur-loire/"> <area shape="rect" alt="" coords="228,420,244,436" href="http://www.coeurdeloire.fr/pouilly-sur-loire/"> <area shape="rect" alt="" coords="175,53,185,63" href="http://www.coeurdeloire.fr/annay/"> <area shape="rect" alt="" coords="135,66,145,76" href="http://www.coeurdeloire.fr/neuvy-sur-loire/"> <area shape="rect" alt="" coords="517,245,527,255" href="http://www.coeurdeloire.fr/menestreau/"> <area shape="rect" alt="" coords="400,254,410,264" href="http://www.coeurdeloire.fr/perroy/"> <area shape="rect" alt="" coords="463,240,473,250" href="http://www.coeurdeloire.fr/couloutre/"> <area shape="rect" alt="" coords="380,356,390,366" href="http://www.coeurdeloire.fr/sainte-colombe-des-bois/"> <area shape="rect" alt="" coords="452,340,462,350" href="http://www.coeurdeloire.fr/cessy-les-bois/"> <area shape="rect" alt="" coords="327,347,337,357" href="http://www.coeurdeloire.fr/suilly-la-tour/"> <area shape="rect" alt="" coords="226,306,236,316" href=""> <area shape="rect" alt="" coords="235,336,245,345" href="http://www.coeurdeloire.fr/saint-laurent-labbaye/"> <area shape="rect" alt="" coords="201,384,211,394" href="http://www.coeurdeloire.fr/saint-andelain/"> <area shape="rect" alt="" coords="160,367,170,377" href="http://www.coeurdeloire.fr/tracy-sur-loire/"> <area shape="rect" alt="" coords="255,359,265,369" href="http://www.coeurdeloire.fr/saint-quentin-sur-nohain/"> <area shape="rect" alt="" coords="240,488,249,498" href=""> <area shape="rect" alt="" coords="280,474,290,484" href="http://www.coeurdeloire.fr/bulcy/"> <area shape="rect" alt="" coords="311,452,321,462" href="http://www.coeurdeloire.fr/garchy/"> <area shape="rect" alt="" coords="452,418,462,427" href="http://www.coeurdeloire.fr/chateauneuf-val-de-bargis/"> <area shape="rect" alt="" coords="351,445,360,454" href="http://www.coeurdeloire.fr/vielmanay/"> <area shape="rect" alt="" coords="505,386,515,396" href="http://www.coeurdeloire.fr/saint-malo-en-donziois/"> <area shape="rect" alt="" coords="491,313,501,323" href="http://www.coeurdeloire.fr/colmery/"> <area shape="rect" alt="" coords="403,192,412,202" href="http://www.coeurdeloire.fr/ciez/"> <area shape="rect" alt="" coords="314,178,324,188" href="http://www.coeurdeloire.fr/alligny-cosne/"> <area shape="rect" alt="" coords="250,194,260,204" href="http://www.coeurdeloire.fr/saint-loup/"> <area shape="rect" alt="" coords="243,274,253,284" href="http://www.coeurdeloire.fr/pougny/"> <area shape="rect" alt="" coords="230,204,240,213" href="http://www.coeurdeloire.fr/saint-pere/"> <area shape="rect" alt="" coords="190,184,200,194" href="http://www.coeurdeloire.fr/myennes/"> <area shape="rect" alt="" coords="176,142,186,152" href="http://www.coeurdeloire.fr/la-celle-sur-loire/"> <area shape="rect" alt="" coords="389,291,443,309" href="http://www.coeurdeloire.fr/donzy/"> <area shape="rect" alt="" coords="248,409,384,427" href="http://www.coeurdeloire.fr/pouilly-sur-loire/"> <area shape="rect" alt="" coords="195,232,402,251" href="http://www.coeurdeloire.fr/cosne-cours-sur-loire/"> <area shape="rect" alt="" coords="228,258,289,269" href="http://www.coeurdeloire.fr/pougny/"> <area shape="rect" alt="" coords="423,327,491,337" href="http://www.coeurdeloire.fr/cessy-les-bois/"> <area shape="rect" alt="" coords="463,297,503,308" href="http://www.coeurdeloire.fr/colmery/"> <area shape="rect" alt="" coords="483,257,537,270" href="http://www.coeurdeloire.fr/menestreau/"> <area shape="rect" alt="" coords="385,267,446,277" href=""> <area shape="rect" alt="" coords="437,226,498,236" href=""> <area shape="rect" alt="" coords="397,177,428,187" href="http://www.coeurdeloire.fr/ciez/"> <area shape="rect" alt="" coords="212,216,273,226" href="http://www.coeurdeloire.fr/saint-pere/"> <area shape="rect" alt="" coords="206,181,250,193" href="http://www.coeurdeloire.fr/myennes/"> <area shape="rect" alt="" coords="199,396,274,407" href="http://www.coeurdeloire.fr/saint-andelain/"> <area shape="rect" alt="" coords="163,321,285,334" href="http://www.coeurdeloire.fr/saint-laurent-labbaye/"> <area shape="rect" alt="" coords="404,406,539,416" href="http://www.coeurdeloire.fr/chateauneuf-val-de-bargis/"> <area shape="rect" alt="" coords="456,373,564,383" href="http://www.coeurdeloire.fr/saint-malo-en-donziois/"> <area shape="rect" alt="" coords="394,354,510,364" href="http://www.coeurdeloire.fr/sainte-colombe-des-bois/"> <area shape="rect" alt="" coords="238,502,295,530" href="http://www.coeurdeloire.fr/mesves-sur-loire/"> <area shape="rect" alt="" coords="235,371,351,383" href="http://www.coeurdeloire.fr/saint-quentin-sur-nohain/"> <area shape="rect" alt="" coords="160,292,273,302" href="http://www.coeurdeloire.fr/saint-martin-sur-nohain/"> <area shape="rect" alt="" coords="291,439,323,449" href="http://www.coeurdeloire.fr/garchy/"> <area shape="rect" alt="" coords="269,457,300,467" href="http://www.coeurdeloire.fr/bulcy/"> <area shape="rect" alt="" coords="331,429,381,440" href="http://www.coeurdeloire.fr/vielmanay/"> <area shape="rect" alt="" coords="140,353,224,363" href="http://www.coeurdeloire.fr/tracy-sur-loire/"> <area shape="rect" alt="" coords="311,333,369,345" href="http://www.coeurdeloire.fr/suilly-la-tour/"> <area shape="rect" alt="" coords="288,163,354,173" href="http://www.coeurdeloire.fr/alligny-cosne/"> <area shape="rect" alt="" coords="264,195,329,208" href="http://www.coeurdeloire.fr/saint-loup/"> <area shape="rect" alt="" coords="191,140,273,160" href="http://www.coeurdeloire.fr/la-celle-sur-loire/"> <area shape="rect" alt="" coords="148,73,221,90" href="http://www.coeurdeloire.fr/neuvy-sur-loire/"> <area shape="rect" alt="" coords="160,40,199,53" href="http://www.coeurdeloire.fr/annay/"> </map></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-element elementor-element-525c561 elementor-hidden-tablet elementor-hidden-phone elementor-column elementor-col-50 elementor-top-column" data-id="525c561" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="post-tags"></div>
+			</div>
+			<section id="comments" class="comments-area"></section>
+			<!-- .comments-area -->
+		</main>
+		<div data-elementor-type="footer" data-elementor-id="354" class="elementor elementor-354 elementor-location-footer" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+					<section class="elementor-element elementor-element-73073d09 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="73073d09" data-element_type="section" data-settings='{"background_background":"gradient"}'>
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+								<div class="elementor-element elementor-element-42c0ded9 elementor-column elementor-col-100 elementor-top-column" data-id="42c0ded9" data-element_type="column">
+									<div class="elementor-column-wrap  elementor-element-populated">
+										<div class="elementor-widget-wrap">
+											<section class="elementor-element elementor-element-34839029 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="34839029" data-element_type="section" data-settings='{"background_background":"classic"}'>
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-row">
+														<div class="elementor-element elementor-element-37507ea0 elementor-column elementor-col-50 elementor-inner-column" data-id="37507ea0" data-element_type="column">
+															<div class="elementor-column-wrap  elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-6edccf92 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="6edccf92" data-element_type="widget" data-widget_type="theme-site-logo.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-image"><a href="https://www.coeurdeloire.fr"> <img width="148" height="153" src="https://www.coeurdeloire.fr/wp-content/uploads/2019/07/cropped-CoeurDeLoire-2.png" class="attachment-full size-full" alt=""> </a></div>
+																		</div>
+																	</div>
+																	<div class="elementor-element elementor-element-934c256 elementor-widget elementor-widget-text-editor" data-id="934c256" data-element_type="widget" data-widget_type="text-editor.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-text-editor elementor-clearfix">
+																				<p>Communauté de Communes Cœur de Loire<br>4 place Georges Clemenceau <br>BP 70 – 58203 COSNE-SUR-LOIRE CEDEX <br>Tél : 03 86 28 92 92</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-element elementor-element-6853907d elementor-column elementor-col-50 elementor-inner-column" data-id="6853907d" data-element_type="column">
+															<div class="elementor-column-wrap  elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-e216aa9 elementor-widget elementor-widget-text-editor" data-id="e216aa9" data-element_type="widget" data-widget_type="text-editor.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-text-editor elementor-clearfix">
+																				<p>S’inscrire à la newsletter</p>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="elementor-element elementor-element-1b3e3a5 elementor-widget elementor-widget-text-editor" data-id="1b3e3a5" data-element_type="widget" data-widget_type="text-editor.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-text-editor elementor-clearfix">
+																				<p></p>
+																				<div class="tnp tnp-subscription">
+																					<form method="post" action="https://www.coeurdeloire.fr/?na=s" onsubmit="return newsletter_check(this)"><input type="hidden" name="nlang" value=""> <input type="hidden" name="nr" value="page">
+																						<div class="tnp-field tnp-field-email"><label>Email</label><input class="tnp-email" type="email" name="ne" required></div>
+																						<div class="tnp-field tnp-field-privacy"><label><input type="checkbox" name="ny" required class="tnp-privacy"> En continuant, vous acceptez la politique de confidentialité</label></div>
+																						<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="S'abonner"></div>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-element elementor-element-3e394ae7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="3e394ae7" data-element_type="section">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-row">
+														<div class="elementor-element elementor-element-567b91e1 elementor-column elementor-col-100 elementor-inner-column" data-id="567b91e1" data-element_type="column">
+															<div class="elementor-column-wrap  elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-3b61bc5 elementor-widget elementor-widget-text-editor" data-id="3b61bc5" data-element_type="widget" data-widget_type="text-editor.default">
+																		<div class="elementor-widget-container">
+																			<div class="elementor-text-editor elementor-clearfix">
+																				<p><span style="color: #565251;">© 2019 Communauté de Communes Cœur de Loire – <a style="color: #565251;" href="https://www.coeurdeloire.fr/mentions-legales/">Mentions légales</a></span></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="elementor-element elementor-element-492b62e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="492b62e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+								<div class="elementor-element elementor-element-a1df13a elementor-column elementor-col-100 elementor-top-column" data-id="a1df13a" data-element_type="column">
+									<div class="elementor-column-wrap">
+										<div class="elementor-widget-wrap"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4"></script>
+		<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Fermer","currentText":"Aujourd\u2019hui","monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"],"monthNamesShort":["Jan","F\u00e9v","Mar","Avr","Mai","Juin","Juil","Ao\u00fbt","Sep","Oct","Nov","D\u00e9c"],"nextText":"Suivant","prevText":"Pr\u00e9c\u00e9dent","dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesMin":["D","L","M","M","J","V","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+		</script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var newsletter = {"messages":{"email_error":"L\u2019adresse de messagerie n\u2019est pas correcte","name_error":"Name is required","surname_error":"Last name is required","profile_error":"","privacy_error":"You must accept the privacy policy"},"profile_max":"20"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/newsletter/subscription/validate.js?ver=6.6.0"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/wp-embed.min.js?ver=854e3f6d169fa6211e4953c310341973"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/wp-responsive-recent-post-slider/assets/js/slick.min.js?ver=2.3"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var Wppsac = {"is_mobile":"0","is_rtl":"0"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/wp-responsive-recent-post-slider/assets/js/wppsac-public.js?ver=2.3"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.9.7"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=2.9.3"></script>
+		<script type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/www.coeurdeloire.fr\/wp-admin\/admin-ajax.php","nonce":"4177b21cd0","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"fr_FR","app_id":""}};
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=2.9.3"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.6"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6"></script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=2.9.7"></script>
+		<script type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","downloadImage":"Download image"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.9.7","urls":{"assets":"https:\/\/www.coeurdeloire.fr\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_lightbox_enable_counter":"yes","elementor_lightbox_enable_fullscreen":"yes","elementor_lightbox_enable_zoom":"yes","elementor_lightbox_enable_share":"yes","elementor_lightbox_title_src":"title","elementor_lightbox_description_src":"description"},"editorPreferences":[]},"post":{"id":4,"title":"C%C5%93ur%20de%20Loire","excerpt":"","featuredImage":false}};
+		</script>
+		<script type="text/javascript" src="https://www.coeurdeloire.fr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.9.7"></script>
+		<script type="text/javascript">
+jQuery(document).ready(function()
+{
+    jQuery("#mec_skin_267").mecListView(
+    {
+        id: "267",
+        start_date: "2020-07-08",
+        end_date: "2020-07-08",
+		offset: "0",
+		limit: "3",
+        current_month_divider: "0",
+        toggle_month_divider: "0",
+        style: "modern",
+        atts: "atts%5Blabel%5D=&atts%5Bcategory%5D=&atts%5Blocation%5D=&atts%5Borganizer%5D=&atts%5Btag%5D=&atts%5Bauthor%5D=&atts%5Bskin%5D=list&atts%5Bshow_past_events%5D=0&atts%5Bsk-options%5D%5Blist%5D%5Bstyle%5D=modern&atts%5Bsk-options%5D%5Blist%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Blist%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Blist%5D%5Bmaximum_date_range%5D=&atts%5Bsk-options%5D%5Blist%5D%5Bclassic_date_format1%5D=d+M+Y&atts%5Bsk-options%5D%5Blist%5D%5Bminimal_date_format1%5D=d&atts%5Bsk-options%5D%5Blist%5D%5Bminimal_date_format2%5D=M&atts%5Bsk-options%5D%5Blist%5D%5Bminimal_date_format3%5D=l&atts%5Bsk-options%5D%5Blist%5D%5Bmodern_date_format1%5D=d&atts%5Bsk-options%5D%5Blist%5D%5Bmodern_date_format2%5D=M&atts%5Bsk-options%5D%5Blist%5D%5Bmodern_date_format3%5D=l&atts%5Bsk-options%5D%5Blist%5D%5Bstandard_date_format1%5D=d+M&atts%5Bsk-options%5D%5Blist%5D%5Baccordion_date_format1%5D=d&atts%5Bsk-options%5D%5Blist%5D%5Baccordion_date_format2%5D=F&atts%5Bsk-options%5D%5Blist%5D%5Blimit%5D=3&atts%5Bsk-options%5D%5Blist%5D%5Binclude_events_times%5D=0&atts%5Bsk-options%5D%5Blist%5D%5Bload_more_button%5D=1&atts%5Bsk-options%5D%5Blist%5D%5Bmonth_divider%5D=1&atts%5Bsk-options%5D%5Blist%5D%5Bset_geolocation%5D=0&atts%5Bsk-options%5D%5Blist%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Blist%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Blist%5D%5Btoggle_month_divider%5D=0&atts%5Bsk-options%5D%5Bgrid%5D%5Bstyle%5D=minimal&atts%5Bsk-options%5D%5Bgrid%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bgrid%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bgrid%5D%5Bmaximum_date_range%5D=&atts%5Bsk-options%5D%5Bgrid%5D%5Bclassic_date_format1%5D=d+F+Y&atts%5Bsk-options%5D%5Bgrid%5D%5Bclean_date_format1%5D=d&atts%5Bsk-options%5D%5Bgrid%5D%5Bclean_date_format2%5D=F&atts%5Bsk-options%5D%5Bgrid%5D%5Bminimal_date_format1%5D=d&atts%5Bsk-options%5D%5Bgrid%5D%5Bminimal_date_format2%5D=M&atts%5Bsk-options%5D%5Bgrid%5D%5Bmodern_date_format1%5D=d&atts%5Bsk-options%5D%5Bgrid%5D%5Bmodern_date_format2%5D=F&atts%5Bsk-options%5D%5Bgrid%5D%5Bmodern_date_format3%5D=l&atts%5Bsk-options%5D%5Bgrid%5D%5Bsimple_date_format1%5D=M+d+Y&atts%5Bsk-options%5D%5Bgrid%5D%5Bcolorful_date_format1%5D=d&atts%5Bsk-options%5D%5Bgrid%5D%5Bcolorful_date_format2%5D=F&atts%5Bsk-options%5D%5Bgrid%5D%5Bcolorful_date_format3%5D=l&atts%5Bsk-options%5D%5Bgrid%5D%5Bnovel_date_format1%5D=d+F+Y&atts%5Bsk-options%5D%5Bgrid%5D%5Bcount%5D=4&atts%5Bsk-options%5D%5Bgrid%5D%5Blimit%5D=4&atts%5Bsk-options%5D%5Bgrid%5D%5Bload_more_button%5D=1&atts%5Bsk-options%5D%5Bgrid%5D%5Bset_geolocation%5D=0&atts%5Bsk-options%5D%5Bgrid%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bgrid%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bagenda%5D%5Bstyle%5D=clean&atts%5Bsk-options%5D%5Bagenda%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bagenda%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bagenda%5D%5Bmaximum_date_range%5D=&atts%5Bsk-options%5D%5Bagenda%5D%5Bclean_date_format1%5D=l&atts%5Bsk-options%5D%5Bagenda%5D%5Bclean_date_format2%5D=F+j&atts%5Bsk-options%5D%5Bagenda%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bagenda%5D%5Bload_more_button%5D=1&atts%5Bsk-options%5D%5Bagenda%5D%5Bmonth_divider%5D=0&atts%5Bsk-options%5D%5Bagenda%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bagenda%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bstart_date_type%5D=start_current_month&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bdefault_view%5D=list&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bmonthly_style%5D=clean&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Blist%5D=1&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Byearly%5D=0&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bmonthly%5D=1&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bweekly%5D=1&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bdaily%5D=1&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bdisplay_price%5D=0&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bfull_calendar%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Byearly_view%5D%5Bstyle%5D=modern&atts%5Bsk-options%5D%5Byearly_view%5D%5Bstart_date_type%5D=start_current_year&atts%5Bsk-options%5D%5Byearly_view%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Byearly_view%5D%5Bmodern_date_format1%5D=l&atts%5Bsk-options%5D%5Byearly_view%5D%5Bmodern_date_format2%5D=F+j&atts%5Bsk-options%5D%5Byearly_view%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Byearly_view%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Byearly_view%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Byearly_view%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bstyle%5D=classic&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bstart_date_type%5D=start_current_month&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bmap%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bmap%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bmap%5D%5Blimit%5D=200&atts%5Bsk-options%5D%5Bmap%5D%5Bgeolocation%5D=0&atts%5Bsk-options%5D%5Bdaily_view%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bdaily_view%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bdaily_view%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bdaily_view%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Bdaily_view%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bdaily_view%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bweekly_view%5D%5Bstart_date_type%5D=start_current_week&atts%5Bsk-options%5D%5Bweekly_view%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bweekly_view%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bweekly_view%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Bweekly_view%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bweekly_view%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Btimetable%5D%5Bstyle%5D=modern&atts%5Bsk-options%5D%5Btimetable%5D%5Bstart_date_type%5D=start_current_week&atts%5Bsk-options%5D%5Btimetable%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Btimetable%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Btimetable%5D%5Bnumber_of_days%5D=5&atts%5Bsk-options%5D%5Btimetable%5D%5Bweek_start%5D=-1&atts%5Bsk-options%5D%5Btimetable%5D%5Bstart_time%5D=1&atts%5Bsk-options%5D%5Btimetable%5D%5Bend_time%5D=13&atts%5Bsk-options%5D%5Btimetable%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Btimetable%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Btimetable%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bmasonry%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bmasonry%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bmasonry%5D%5Bmaximum_date_range%5D=&atts%5Bsk-options%5D%5Bmasonry%5D%5Bdate_format1%5D=j&atts%5Bsk-options%5D%5Bmasonry%5D%5Bdate_format2%5D=F&atts%5Bsk-options%5D%5Bmasonry%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bmasonry%5D%5Bfilter_by%5D=&atts%5Bsk-options%5D%5Bmasonry%5D%5Bfit_to_row%5D=0&atts%5Bsk-options%5D%5Bmasonry%5D%5Bmasonry_like_grid%5D=0&atts%5Bsk-options%5D%5Bmasonry%5D%5Bload_more_button%5D=0&atts%5Bsk-options%5D%5Bmasonry%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Bmasonry%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Bcover%5D%5Bstyle%5D=classic&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_clean1%5D=d&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_clean2%5D=M&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_clean3%5D=Y&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_classic1%5D=F+d&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_classic2%5D=l&atts%5Bsk-options%5D%5Bcover%5D%5Bdate_format_modern1%5D=l%2C+F+d+Y&atts%5Bsk-options%5D%5Bcover%5D%5Bevent_id%5D=3260&atts%5Bsk-options%5D%5Bcountdown%5D%5Bstyle%5D=style1&atts%5Bsk-options%5D%5Bcountdown%5D%5Bdate_format_style11%5D=j+F+Y&atts%5Bsk-options%5D%5Bcountdown%5D%5Bdate_format_style21%5D=j+F+Y&atts%5Bsk-options%5D%5Bcountdown%5D%5Bdate_format_style31%5D=j&atts%5Bsk-options%5D%5Bcountdown%5D%5Bdate_format_style32%5D=F&atts%5Bsk-options%5D%5Bcountdown%5D%5Bdate_format_style33%5D=Y&atts%5Bsk-options%5D%5Bcountdown%5D%5Bevent_id%5D=-1&atts%5Bsk-options%5D%5Bcountdown%5D%5Bbg_color%5D=%23437df9&atts%5Bsk-options%5D%5Bavailable_spot%5D%5Bdate_format1%5D=j&atts%5Bsk-options%5D%5Bavailable_spot%5D%5Bdate_format2%5D=F&atts%5Bsk-options%5D%5Bavailable_spot%5D%5Bevent_id%5D=-1&atts%5Bsk-options%5D%5Bcarousel%5D%5Bstyle%5D=type1&atts%5Bsk-options%5D%5Bcarousel%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bcarousel%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bcarousel%5D%5Btype1_date_format1%5D=d&atts%5Bsk-options%5D%5Bcarousel%5D%5Btype1_date_format2%5D=F&atts%5Bsk-options%5D%5Bcarousel%5D%5Btype1_date_format3%5D=Y&atts%5Bsk-options%5D%5Bcarousel%5D%5Btype2_date_format1%5D=M+d%2C+Y&atts%5Bsk-options%5D%5Bcarousel%5D%5Btype3_date_format1%5D=M+d%2C+Y&atts%5Bsk-options%5D%5Bcarousel%5D%5Bcount%5D=2&atts%5Bsk-options%5D%5Bcarousel%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bcarousel%5D%5Bautoplay%5D=&atts%5Bsk-options%5D%5Bcarousel%5D%5Barchive_link%5D=&atts%5Bsk-options%5D%5Bcarousel%5D%5Bhead_text%5D=&atts%5Bsk-options%5D%5Bslider%5D%5Bstyle%5D=t1&atts%5Bsk-options%5D%5Bslider%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Bslider%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Bslider%5D%5Btype1_date_format1%5D=d&atts%5Bsk-options%5D%5Bslider%5D%5Btype1_date_format2%5D=F&atts%5Bsk-options%5D%5Bslider%5D%5Btype1_date_format3%5D=l&atts%5Bsk-options%5D%5Bslider%5D%5Btype2_date_format1%5D=d&atts%5Bsk-options%5D%5Bslider%5D%5Btype2_date_format2%5D=F&atts%5Bsk-options%5D%5Bslider%5D%5Btype2_date_format3%5D=l&atts%5Bsk-options%5D%5Bslider%5D%5Btype3_date_format1%5D=d&atts%5Bsk-options%5D%5Bslider%5D%5Btype3_date_format2%5D=F&atts%5Bsk-options%5D%5Bslider%5D%5Btype3_date_format3%5D=l&atts%5Bsk-options%5D%5Bslider%5D%5Btype4_date_format1%5D=d&atts%5Bsk-options%5D%5Bslider%5D%5Btype4_date_format2%5D=F&atts%5Bsk-options%5D%5Bslider%5D%5Btype4_date_format3%5D=l&atts%5Bsk-options%5D%5Bslider%5D%5Btype5_date_format1%5D=d&atts%5Bsk-options%5D%5Bslider%5D%5Btype5_date_format2%5D=F&atts%5Bsk-options%5D%5Bslider%5D%5Btype5_date_format3%5D=l&atts%5Bsk-options%5D%5Bslider%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Bslider%5D%5Bautoplay%5D=&atts%5Bsk-options%5D%5Btimeline%5D%5Bstart_date_type%5D=today&atts%5Bsk-options%5D%5Btimeline%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Btimeline%5D%5Bmaximum_date_range%5D=&atts%5Bsk-options%5D%5Btimeline%5D%5Bclassic_date_format1%5D=d+F+Y&atts%5Bsk-options%5D%5Btimeline%5D%5Blimit%5D=&atts%5Bsk-options%5D%5Btimeline%5D%5Bload_more_button%5D=1&atts%5Bsk-options%5D%5Btimeline%5D%5Bmonth_divider%5D=0&atts%5Bsk-options%5D%5Btimeline%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Btimeline%5D%5Bimage_popup%5D=0&atts%5Bsk-options%5D%5Btile%5D%5Bstart_date_type%5D=start_current_month&atts%5Bsk-options%5D%5Btile%5D%5Bstart_date%5D=&atts%5Bsk-options%5D%5Btile%5D%5Bclean_date_format1%5D=j&atts%5Bsk-options%5D%5Btile%5D%5Bclean_date_format2%5D=M&atts%5Bsk-options%5D%5Btile%5D%5Bcount%5D=4&atts%5Bsk-options%5D%5Btile%5D%5Bnext_previous_button%5D=1&atts%5Bsk-options%5D%5Btile%5D%5Bsed_method%5D=0&atts%5Bsk-options%5D%5Btile%5D%5Bimage_popup%5D=0&atts%5Bsf-options%5D%5Blist%5D%5Bcategory%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Blist%5D%5Blocation%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Blist%5D%5Borganizer%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Blist%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Blist%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Blist%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Blist%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Blist%5D%5Btext_search%5D%5Btype%5D=text_input&atts%5Bsf-options%5D%5Bgrid%5D%5Bcategory%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Bgrid%5D%5Blocation%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Bgrid%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bgrid%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bgrid%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bgrid%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bgrid%5D%5Bmonth_filter%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Bgrid%5D%5Btext_search%5D%5Btype%5D=text_input&atts%5Bsf-options%5D%5Bagenda%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bagenda%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bfull_calendar%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Byearly_view%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bmap%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bdaily_view%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Bweekly_view%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btimetable%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Bcategory%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Blocation%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Borganizer%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Bspeaker%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Btag%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Blabel%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Bmonth_filter%5D%5Btype%5D=0&atts%5Bsf-options%5D%5Btile%5D%5Btext_search%5D%5Btype%5D=0&atts%5Bsf_status%5D=1&atts%5B_edit_lock%5D=1584089147%3A8&atts%5B_edit_last%5D=8&atts%5Bshow_only_past_events%5D=0&atts%5Bshow_only_ongoing_events%5D=0&atts%5Bid%5D=267",
+        ajax_url: "https://www.coeurdeloire.fr/wp-admin/admin-ajax.php",
+        sed_method: "0",
+        image_popup: "0",
+        sf:
+        {
+            container: "#mec_search_form_267",
+        },
+    });
+});
+		</script>
+	</body>
+</html>
