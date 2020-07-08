@@ -1,0 +1,1901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta content="Ametys CMS Open source (http://www.ametys.org)" name="generator">
+		<link href="/kernel/resources/img/runtime_favico.gif" type="image/gif" rel="icon">
+		<link href="/kernel/resources/img/runtime_favico.ico" type="image/x-icon" rel="shortcut icon">
+		<script src="/plugins/jquery/resources/js/jquery.min.js" type="text/javascript"></script>
+		<script src="/plugins/jquery-ui/resources/js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="/plugins/jquery-ui/resources/js/i18n/jquery.ui.datepicker-fr.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+              	$j = jQuery.noConflict();
+		
+-->
+		</script>
+		<script src="/plugins/web/resources/js/jquery.cookie.js" type="text/javascript"></script>
+		<script src="/plugins/pirobox_ext/resources/pirobox_extended_min.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+                $j(document).ready(function() {
+                    $j().piroBox_ext({
+                        piro_speed: 600,
+                        bg_alpha: 0.5,
+                        piro_scroll: true,
+                        prev_label: 'Précédent',
+                        next_label: 'Suivant',
+                        close_label: 'Fermer'
+                    });
+                });
+	        
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+            ametysFOUser = null;
+            
+            
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+	       ametysCookieConsentListener = [];
+	        
+           
+		        function ametysCallCookieConsentListener(accept)
+		        {
+		            for (var i = 0; i < ametysCookieConsentListener.length; i++)
+		            {
+		               ametysCookieConsentListener[i].apply(window, [accept]);
+		            }
+		        }
+
+		        
+			        var ametysCookieExpireDay = 390;
+				    
+				    function ametysRefuseCookieConsent()  
+			        {
+			            $j.cookie('ametysHasConsent', false, {expires: ametysCookieExpireDay, path: '' || '/'});
+			            
+			            ametysCallCookieConsentListener(false);
+			            ametysHideInformCookieConsent();
+			        }
+			
+			        function ametysAcceptCookieConsent()
+			        {
+			            $j.cookie('ametysHasConsent', true, {expires: ametysCookieExpireDay, path: '' || '/'});
+			            
+			            
+			            ametysHideInformCookieConsent();
+			        }
+			
+			        function ametysHideInformCookieConsent() 
+			        {
+			            $j("#cookie-banner").hide();
+			        }
+			        
+		        
+-->
+		</script>
+		<link media="screen" type="text/css" href="/skins/cannes/resources/css/jquery/jquery-ui-1.9.1.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" title="black" media="screen" href="/plugins/pirobox_ext/resources/css/style_2/style.css">
+		<meta content="IE=9" http-equiv="X-UA-Compatible">
+		<meta content="width=1072px" name="viewport">
+		<title>Conseil municipal - Mairie de Cannes</title>
+		<meta content="Mairie de Cannes" name="author">
+		<meta content="Mairie de Cannes" name="copyright">
+		<meta content="fr" name="language">
+		<meta content="15 days" name="revisit-aftert">
+		<meta name="subject" content="">
+		<meta name="description" content="">
+		<meta content="Le conseil municipal" name="DC.title">
+		<meta content="msaldo" name="DC.creator">
+		<meta content="jodorici" name="DC.contributor">
+		<meta content="2020-07-07" name="DC.date">
+		<meta content="Text" name="DC.type">
+		<meta content="text/html" name="DC.format">
+		<meta content="defaultWebContent://c9a8b126-8341-4af2-8ae2-a423bcdd7782" name="DC.identifier">
+		<meta content="fr" name="DC.language">
+		<meta content="fr" name="DC.coverage">
+		<!---->
+		<link type="text/css" href="/skins/cannes/resources/css/font-awesome.min.css" rel="stylesheet">
+		<link type="text/css" href="/skins/cannes/resources/css/ametys.css" rel="stylesheet">
+		<link type="text/css" href="/skins/cannes/resources/css/form.css" rel="stylesheet">
+		<link type="text/css" href="/skins/cannes/resources/css/cannes-layout.css" rel="stylesheet">
+		<link media="screen, print, handheld" href="/skins/cannes/resources/css/content/content.css" type="text/css" rel="stylesheet">
+		<!--[if IE 8]><link rel="stylesheet" href="/skins/cannes/resources/css/cannes.ie8.css/" type="text/css" /><![endif]-->
+		<link media="print" href="/skins/cannes/resources/css/cannes-print.css" type="text/css" rel="stylesheet">
+		<link href="/_plugins/web/mairiecannes/fr/filter/news/rss.xml" title="Flux RSS des actualités" type="application/rss+xml" rel="alternate">
+		<link href="/_plugins/web/mairiecannes/fr/filter/org.ametys.web.article.RSS/rss.xml" title="Flux RSS des articles" type="application/rss+xml" rel="alternate">
+		<script src="/skins/cannes/resources/js/jquery-picture-min.js" type="text/javascript"></script>
+		<script src="/skins/cannes/resources/js/ametys.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+		    $j(function() {
+		        $j( "#tabs" ).tabs({active: 0});
+
+			    if (navigator.userAgent.toLowerCase().indexOf("chrome/26.") >=0 && navigator.userAgent.toLowerCase().indexOf("android") >=0)
+			    {
+			    	$j(document.body).addClass("chromebug");
+			    }
+			    
+			    // Remote unwanted ->
+				$j('a.simple').each(function(){
+					if ($j(this).children('.image-wrapper').length > 0) {
+						$j(this).css('background-image', 'none');
+					}
+				});
+		    });
+		    		    
+		    function closeAlert(contentId) {
+		    	$j("#alertPopup").hide();
+		    	$j.cookie("hideAlert", contentId, {});
+		    }
+		
+-->
+		</script>
+		<script src="/skins/cannes/resources/js/jquery.placeholder.min.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+			$j().ready(function() { $j("#search-field-8982028007607389").placeholder(); });
+		
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+			$j().ready(function() 
+			{
+				function parseXML(data) 
+				{
+					var results = [];
+					var branches = $j(data).find('item');
+					$j(branches).each(function() {
+					  var text = $j.trim($j(this).text());
+					  results[results.length] = {'data': [text, text], 'result': text, 'value': text};
+					});
+					return results;
+				}
+					
+				$j("#search-field-8982028007607389").autocomplete({
+					source: function(request, response) {
+								$j.ajax({ url: "/plugins/web/service/search/auto-completion/mairiecannes/fr.xml?q=" + request.term, 
+									  dataType: "xml",
+									  success: function(xmlResponse) { response(parseXML (xmlResponse)); } });
+							},
+					minLength: 2,
+					delay: 500
+				});
+			});
+		
+-->
+		</script>
+		<script src="/skins/cannes/resources/js/jquery.highlight-3.yui.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+            $j().ready(function()
+            {
+                var hlRegexp = new RegExp('[\?\&]search-keywords=([^\?\&#;]+)', 'i');
+                var result = hlRegexp.exec(location.search);
+                if (result != null && result.length > 1)
+                {
+                    var keywords = result[1].split(',');
+                    for (var x = 0; x < keywords.length; x++)
+                    {
+                        if (keywords[x] != '')
+                        {
+                        
+                            $j('#ametys-cms-zone-default').highlight($j.trim(keywords[x]));
+                        
+                            $j('#ametys-cms-zone-header-content').highlight($j.trim(keywords[x]));
+                        
+                            $j('#ametys-cms-zone-sidebar-tabs1').highlight($j.trim(keywords[x]));
+                        
+                            $j('#ametys-cms-zone-sidebar-tabs2').highlight($j.trim(keywords[x]));
+                        
+                            $j('#ametys-cms-zone-sidebar').highlight($j.trim(keywords[x]));
+                         
+                        }
+                    }
+                }
+            });
+        
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+                
+                ametysCookieConsentListener.push(function(accept) {
+                    if (accept)
+                    {
+		                var gaProperty = 'UA-20092598-1';
+		                
+		                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+						
+						ga('create', gaProperty, 'auto');
+						ga('send', 'pageview');
+                    }
+                    else
+                    {
+                        // Delete Google Analytics cookies    
+                        var cookieNames = ["__utma","__utmb","__utmc","__utmt","__utmv","__utmz","_ga","_gat"];
+                        for (var i=0; i<cookieNames.length; i++)
+                        {
+                            $j.removeCookie(cookieNames[i], { path: '' || '/'});
+                        }
+                    }
+                });
+            
+-->
+		</script>
+		<link media="screen, print, handheld" href="/skins/cannes/resources/css/services/filtered-contents.css" rel="stylesheet" type="text/css">
+		<link media="screen, print, handheld" href="/skins/cannes/resources/css/pagination.css" rel="stylesheet" type="text/css">
+		<script src="/skins/cannes/resources/js/pagination.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+		    function onPaginationShow_fc_13899297315039338(count)
+		    {
+			    $j("#page-hidden-fc_13899297315039338").val(count - 1);
+			    displayNavButtons("aggregation-fc_13899297315039338", count, pagination_fc_13899297315039338.length);
+	     	}
+    	
+-->
+		</script>
+		<link href="/" title="Voir le flux RSS de ces contenus" type="application/rss+xml" rel="alternate">
+		<link media="screen, print, handheld" href="/skins/cannes/resources/css/content/news.css" type="text/css" rel="stylesheet">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://7ae5ebe7-6906-4bbe-b15c-7e62cb7fe3ca" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://48242754-60b0-4b9a-866a-2d00d12015e5" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://e283991b-2985-45bb-a79e-7303d82f6186" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://83ede954-266f-4be0-8eca-31e96556dbc9" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://963db093-4c9b-445f-b652-8798101ea40f" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://1b2fea3b-23e0-4f57-be0c-0a2866631878" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://3220e6ed-84c2-4e51-b281-6c7131961493" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://5d56a3f7-495b-40b5-a0cc-d6b9afd6b55b" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://c9a8b126-8341-4af2-8ae2-a423bcdd7782" rel="meta">
+		<link type="text/css" href="/skins/cannes/resources/css/services/filtered-contents-carousel.css" rel="stylesheet">
+		<link type="text/css" href="/skins/cannes/resources/css/services/filtered-contents-header-carousel.css" rel="stylesheet">
+		<script src="/skins/cannes/resources/js/jquery.carousel.min.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script src="/skins/cannes/resources/js/jquery.touchwipe.modified.1.1.1.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script type="text/javascript"><!--
+   
+            $j(document).ready( function() {
+                $j('#carousel-5427844865347646').carousel( { 
+                 
+                    // Is pagination available
+                    pagination: true,
+                    // The position of next/previous buttons : outsite or inside
+                    paginationPosition : "inside",
+                    // Enable the touch transition (mouse drag or finger) : requires that pagination is on
+                    enableTouch: true,
+                    
+                    // Effect between no, slidein or fade.
+                    effect: "fade",
+                    // Direction of the transitions : horizontal or vertical.
+                    direction: "horizontal",
+                    // Duration of the transitions in ms
+                    animSpeed: 1500,   
+                    
+                                        
+                    // Automatic startup (autoplay)
+                    autoSlide: true, 
+                    // Interval between auto transitions in ms
+                    autoSlideInterval: 4000,
+                    // Display a play/pause button (and associated texts)                                 
+                    stopSlideBtn: true,
+                    stopSlideTextPause: "Pause",
+                    stopSlideTextPlay: "Lecture", 
+                
+                    // add an internal attribute on links for ametys purposes 
+                    setInternalAttribute: false
+                	});
+                });
+        
+-->
+		</script>
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://464effb2-35f8-460c-bd9c-76d7173acbbe" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://fbf53ffc-c30b-470b-a24d-b8872f2df862" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://a3ad5785-0da5-4c75-b3bd-6c6beb1fe59a" rel="meta">
+	</head>
+	<body>
+		<script type="text/javascript"><!--
+
+					var theMonth= new Array(12);
+					theMonth[0] = "Janvier";
+					theMonth[1] = "Février";
+					theMonth[2] = "Mars";
+					theMonth[3] = "Avril";
+					theMonth[4] = "Mai";
+					theMonth[5] = "Juin";
+					theMonth[6] = "Juillet";
+					theMonth[7] = "Août";
+					theMonth[8] = "Septembre";
+					theMonth[9] = "Octobre";
+					theMonth[10] = "Novembre";
+					theMonth[11] = "Décembre";
+					
+					function writedate() {
+						var today = new Date();
+						document.write(today.getDate(), " ",theMonth[today.getMonth()], " ", today.getFullYear(), " | ", today.getHours(), "h", today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes());
+					}
+				
+-->
+		</script>
+		<div id="top-of-page" class="maincontainer">
+			<div class="header-toolbar">
+				<div class="innertube">
+					<div class="page-wai-links" id="page-wai-links">
+						<ul>
+							<li class="first"><a href="/fr/index.html">Accueil</a></li>
+							<li><a href="#menu">Menu</a></li>
+							<li><a href="#content">Contenu</a></li>
+							<li><a href="/fr/index/accessibilite.html">Accessibilité</a></li>
+							<li><a href="#search">Recherche</a></li>
+							<li><a href="/fr/index/contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<p>Site officiel de la Ville de Cannes</p>
+				</div>
+			</div>
+			<div class="header">
+				<div class="innertube">
+					<div class="logo">
+						<p><a title="Retour sur la page d'accueil" href="/fr/index.html" class="cannes"><img alt="La vie en version originale" src="/skins/cannes/resources/img/logo-cannes.png"></a></p>
+					</div>
+					<div class="header-tabs"><a name="search"></a>
+						<form method="post" action="/fr/recherche.html">
+							<div class="search" id="search"><label class="hidden-L" for="search-field-8982028007607389">Rechercher</label><input title="Saisissez le mots-clefs pour lancer la recherche" id="search-field-8982028007607389" name="textfield" class="input-text" type="text">
+								<script type="text/javascript"><!--
+
+		    			$j('#search-field-8982028007607389').attr('placeholder', "Rechercher");
+		    		
+-->
+								</script><input name="submit-form" type="hidden"><input value="Ok" type="submit" name="" class="form-button"></div>
+						</form>
+						<div class="directaccess">
+							<ul>
+								<li class="profile"><a href="#">Vous êtes</a>
+									<ul>
+										<li class="first"><a href="/fr/vous-etes/nouveau-cannois.html">Nouveau Cannois</a></li>
+										<li class=""><a href="/fr/vous-etes/famille.html">Famille</a></li>
+										<li class=""><a href="/fr/vous-etes/eco-citoyen.html">Éco-citoyen</a></li>
+										<li class=""><a href="/fr/vous-etes/jeune.html">Jeune</a></li>
+										<li class=""><a href="/fr/vous-etes/bel-age.html">Bel Âge</a></li>
+										<li class=""><a href="/fr/vous-etes/personne-avec-handicap.html">Personne avec handicap</a></li>
+										<li class=""><a href="/fr/vous-etes/visiteurs.html">Visiteurs</a></li>
+										<li class=""><a href="/fr/vous-etes/association.html">Association</a></li>
+										<li class=""><a href="/fr/vous-etes/professionnel.html">Professionnel</a></li>
+										<li class=" last"><a href="/fr/vous-etes/plaisancier.html">Plaisancier</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Vos démarches</a>
+									<ul>
+										<li class="first last"><a href="/fr/vos-demarches/voir-tout/voir-tout.html">Voir tout…</a></li>
+										<li class="first"><a href="/fr/vos-demarches/etat-civil/acte-de-naissance.html">Acte de naissance</a></li>
+										<li class=""><a href="/fr/vos-demarches/etat-civil/acte-de-mariage.html">Acte de mariage</a></li>
+										<li class=""><a href="/fr/vos-demarches/etat-civil/acte-de-deces.html">Acte de décès</a></li>
+										<li class=""><a href="/fr/vos-demarches/etat-civil/pacte-civil-de-solidarite-pacs.html">Pacte civil de solidarité - PACS</a></li>
+										<li class=""><a href="/fr/vos-demarches/etat-civil/carte-d-identite.html">Carte nationale d'identité</a></li>
+										<li class=""><a href="/fr/vos-demarches/etat-civil/passeport.html">Passeport</a></li>
+										<li class=" last"><a href="/fr/vos-demarches/etat-civil/autres-demarches-de-l-etat-civil.html">Autres démarches de l'état civil</a></li>
+										<li class="first"><a href="/fr/vos-demarches/affaires-electorales/s-inscrire-sur-les-listes-electorales.html">S'inscrire sur les listes électorales</a></li>
+										<li class=""><a href="/fr/vos-demarches/affaires-electorales/vote-par-procuration.html">Vote par procuration</a></li>
+										<li class=" last"><a href="/fr/vos-demarches/affaires-electorales/droit-de-vote-des-ressortissants-ue.html">Droit de vote des ressortissants UE</a></li>
+										<li class="first"><a href="/fr/vos-demarches/vie-citoyenne/allo-mairie.html">Allô Mairie +</a></li>
+										<li class=""><a href="/fr/vos-demarches/vie-citoyenne/demande-de-sacs-tri-selectif.html">Demande de sacs tri sélectif…</a></li>
+										<li class=" last"><a href="/fr/vos-demarches/vie-citoyenne/cimetiere-et-affaires-funeraires.html">Cimetière et affaires funéraires</a></li>
+										<li class="first"><a href="/fr/vos-demarches/travaux/demande-de-permis-de-construire.html">Demande de permis de construire</a></li>
+										<li class=""><a href="/fr/vos-demarches/travaux/declaration-de-travaux.html">Déclaration de travaux</a></li>
+										<li class=""><a href="/fr/vos-demarches/travaux/occupation-de-la-voie-publique.html">Occupation de la voie publique</a></li>
+										<li class=""><a href="/fr/vos-demarches/travaux/rens-d-urbanisme-simplifies.html">Rens. d'urbanisme simplifiés</a></li>
+										<li class=""><a href="/fr/vos-demarches/travaux/demande-permission-de-voirie.html">Demande permission de voirie</a></li>
+										<li class=""><a href="/fr/vos-demarches/travaux/arrete-de-circulation-et-stationnement.html">Demande d'arrêté de circulation…</a></li>
+										<li class=" last"><a href="/fr/vos-demarches/travaux/demande-reservation-stationnement.html">Demande réservation stationnement</a></li>
+										<li class="first"><a href="/fr/vos-demarches/professionnel/marches-publics-appel-d-offres.html">Marchés publics - Appel d'offres</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/declaration-de-la-taxe-de-sejour.html">Déclaration de la taxe de séjour</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/declaration-d-un-meuble-de-tourisme.html">Déclaration d'un meublé de tourisme</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/occupation-du-domaine-public-taxes-et-droits-communaux.html">Occupation du domaine public</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/installation-d-une-enseigne-commerciale.html">Installation enseigne commerciale</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/inscrire-son-association.html">Inscrire son association</a></li>
+										<li class=""><a href="/fr/vos-demarches/professionnel/autorisation-de-tournage.html">Autorisation de tournage</a></li>
+										<li class=" last"><a href="/fr/vos-demarches/professionnel/autorisation-evenementielle.html">Autorisation événementielle </a></li>
+										<li class="first last"><a href="/fr/vos-demarches/autre/cannes-alerte.html">Cannes Alerte</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-links">
+						<ul>
+							<li>
+								<script type="text/javascript"><!--
+writedate();
+-->
+								</script>
+							</li>
+							<li><a class="newsletter" href="/fr/mairie/espace-communication/abonnement-newsletter.html">Newsletter</a></li>
+							<li class="showLangsLink"><a class="lang" href="/fr/index.html">fr</a>
+								<ul>
+									<li><a href="/en/index.html">EN</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menu" id="menu">
+				<div class="innertube"><a name="menu"></a>
+					<ul>
+						<li class="home"><a href="/fr/index.html"><span>Accueil</span></a></li>
+						<li><span>Découvrir Cannes</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/decouvrir-cannes.html"><span class="title">Découvrir Cannes</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column morethan7">
+										<li><a href="/fr/decouvrir-cannes/cannes-et-le-cinema.html">Cannes et le cinéma</a></li>
+										<li><a href="/fr/decouvrir-cannes/venir-a-cannes.html">Venir à Cannes</a></li>
+										<li><a href="/fr/decouvrir-cannes/reserver-un-hotel-a-cannes.html">Réserver un hôtel à Cannes</a></li>
+										<li><a href="/fr/decouvrir-cannes/reserver-vos-activites-de-loisirs.html">Réserver vos activités de loisirs</a></li>
+										<li><a href="/fr/decouvrir-cannes/cannes-greeters.html">Cannes Greeters</a></li>
+										<li><a href="/fr/decouvrir-cannes/visiter-cannes.html">Visiter Cannes</a></li>
+										<li><a href="/fr/decouvrir-cannes/cannes-en-images.html">Cannes en images</a></li>
+									</ul>
+									<ul>
+										<li><a href="/fr/decouvrir-cannes/cannes-en-chiffres.html">Cannes en chiffres</a></li>
+										<li><a href="/fr/decouvrir-cannes/nouveaux-cannois.html">Nouveaux Cannois</a></li>
+										<li><a href="/fr/decouvrir-cannes/grands-rendez-vous-cannois-1.html">Grands rendez-vous cannois</a></li>
+										<li><a href="/fr/decouvrir-cannes/marches-provencaux-et-brocantes.html">Marchés provençaux et brocantes</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Événements</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/evenements.html"><span class="title">Événements</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column">
+										<li><a href="/fr/evenements/cannes-agenda-tout-l-evenementiel.html">Cannes Agenda : tout l'événementiel…</a></li>
+										<li><a href="/fr/evenements/que-faire-aujourd-hui-demain-ce-week-end.html">Que faire aujourd'hui, demain, ce week-end...</a></li>
+										<li><a href="/fr/evenements/grands-rendez-vous-mois-par-mois.html">Grands rendez-vous mois par mois</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="active " title="(Rubrique active)"><span>Mairie</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/mairie.html"><span class="title">Mairie</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column morethan7">
+										<li><a href="/fr/mairie/renseignements-e-services-et-demarches-administratives.html">Renseignements, e-services et démarches administratives</a></li>
+										<li><a href="/fr/mairie/annuaire-pratique.html">Annuaire pratique</a></li>
+										<li><a href="/fr/mairie/reglementation-arretes-permanents.html">Réglementation - Arrêtés permanents</a></li>
+										<li><a href="/fr/mairie/finances.html">Finances</a></li>
+										<li><a href="/fr/mairie/emploi-recrutement-et-stages.html">Emploi, recrutement et stages</a></li>
+										<li><a href="/fr/mairie/conseil-municipal.html">Conseil municipal</a></li>
+										<li><a href="/fr/mairie/conseil-municipal-des-jeunes-cannois.html">Conseil municipal des jeunes cannois</a></li>
+									</ul>
+									<ul>
+										<li><a href="/fr/mairie/commissions-extra-municipales.html">Commissions extra-municipales</a></li>
+										<li><a href="/fr/mairie/politique-des-quartiers.html">Politique des quartiers</a></li>
+										<li><a href="/fr/mairie/espace-communication.html">Espace Communication</a></li>
+										<li><a href="/fr/mairie/jumelages-pactes-d-amitie.html">Jumelages - Pactes d'amitié</a></li>
+										<li><a href="/fr/mairie/intercommunalite.html">Intercommunalité</a></li>
+										<li><a href="/fr/mairie/fondation-cannes.html">Fondation Cannes</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Cadre de vie</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/cadre-de-vie.html"><span class="title">Cadre de vie</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column morethan7">
+										<li><a href="/fr/cadre-de-vie/amenagements-et-travaux-en-cours.html">Aménagements et travaux en cours</a></li>
+										<li><a href="/fr/cadre-de-vie/lutte-contre-l-incivisme-1.html">Lutte contre l'incivisme</a></li>
+										<li><a href="/fr/cadre-de-vie/vie-associative.html">Vie associative</a></li>
+										<li><a href="/fr/cadre-de-vie/developpement-durable.html">Développement durable</a></li>
+										<li><a href="/fr/cadre-de-vie/proprete-tri.html">Propreté - Tri</a></li>
+										<li><a href="/fr/cadre-de-vie/hygiene-du-milieu.html">Hygiène du milieu</a></li>
+										<li><a href="/fr/cadre-de-vie/animal-citadin.html">Animal citadin</a></li>
+									</ul>
+									<ul>
+										<li><a href="/fr/cadre-de-vie/espaces-verts-parcs-et-jardins.html">Espaces verts - Parcs et jardins</a></li>
+										<li><a href="/fr/cadre-de-vie/mer-nautisme.html">Mer - Nautisme</a></li>
+										<li><a href="/fr/cadre-de-vie/transports.html">Transports</a></li>
+										<li><a href="/fr/cadre-de-vie/stationnement-se-garer-a-cannes.html">Stationnement : se garer à Cannes</a></li>
+										<li><a href="/fr/cadre-de-vie/securite-prevention.html">Sécurité - Prévention</a></li>
+										<li><a href="/fr/cadre-de-vie/logement-urbanisme.html">Logement - Urbanisme</a></li>
+										<li><a href="/fr/cadre-de-vie/patrimoine.html">Patrimoine</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Culture</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/culture.html"><span class="title">Culture</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column morethan7">
+										<li><a href="/fr/culture/education-artistique-et-culturelle.html">Éducation artistique et culturelle</a></li>
+										<li><a href="/fr/culture/politique-culturelle-a-cannes.html">Politique culturelle à Cannes</a></li>
+										<li><a href="/fr/culture/cannes-et-le-cinema.html">Cannes et le cinéma</a></li>
+										<li><a href="/fr/culture/musee-de-la-castre.html">Musée de la Castre</a></li>
+										<li><a href="/fr/culture/musee-de-la-mer.html">Musée de la Mer</a></li>
+										<li><a href="/fr/culture/centre-d-art-la-malmaison.html">Centre d'art La Malmaison</a></li>
+										<li><a href="/fr/culture/suquet-des-artistes.html">Suquet des Artistes</a></li>
+									</ul>
+									<ul>
+										<li><a href="/fr/culture/mediatheques-et-bibliotheques.html">Médiathèques et bibliothèques</a></li>
+										<li><a href="/fr/culture/conservatoire-de-musique-et-theatre.html">Conservatoire de musique et théâtre</a></li>
+										<li><a href="/fr/culture/theatre-de-la-licorne.html">Théâtre de la Licorne</a></li>
+										<li><a href="/fr/culture/archives-municipales.html">Archives municipales</a></li>
+										<li><a href="/fr/culture/associations-culturelles.html">Associations culturelles</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Économie</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/economie.html"><span class="title">Économie</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column">
+										<li><a href="/fr/economie/cannes-on-air-economie-creative.html">Cannes on Air - Économie créative</a></li>
+										<li><a href="/fr/economie/entreprendre-a-cannes.html">Entreprendre à Cannes</a></li>
+										<li><a href="/fr/economie/creacannes-lerins-la-cite-des-entreprises.html">CréÀCannes Lérins : la cité des entreprises</a></li>
+										<li><a href="/fr/economie/emploi-et-insertion.html">Emploi et insertion</a></li>
+										<li><a href="/fr/economie/economie-locale-en-chiffres.html">Économie locale en chiffres</a></li>
+										<li><a href="/fr/economie/bourse-aux-locaux-vacants.html">Bourse aux locaux vacants</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Jeunesse</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/jeunesse.html"><span class="title">Jeunesse</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column">
+										<li><a href="/fr/jeunesse/bureau-d-information-jeunesse-bij.html">Bureau d'Information Jeunesse - BIJ</a></li>
+										<li><a href="/fr/jeunesse/aide-a-la-parentalite.html">Aide à la parentalité</a></li>
+										<li><a href="/fr/jeunesse/etablissements-de-la-petite-enfance.html">Établissements de la petite enfance</a></li>
+										<li><a href="/fr/jeunesse/ecoles-maternelles-et-elementaires.html">Écoles maternelles et élémentaires</a></li>
+										<li><a href="/fr/jeunesse/enseignement-secondaire-et-superieur.html">Enseignement secondaire et supérieur</a></li>
+										<li><a href="/fr/jeunesse/loisirs.html">Loisirs</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><span>Social / Santé</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/social-sante.html"><span class="title">Social / Santé</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column">
+										<li><a href="/fr/social-sante/bel-age.html">Bel Âge</a></li>
+										<li><a href="/fr/social-sante/sante.html">Santé</a></li>
+										<li><a href="/fr/social-sante/handicap.html">Handicap</a></li>
+										<li><a href="/fr/social-sante/solidarite.html">Solidarité</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="last"><span>Sport</span>
+							<div class="submenu-panel">
+								<div class="innertube"><a class="submenu-header" href="/fr/sport.html"><span class="title">Sport</span><span class="know-more">En savoir</span></a>
+									<ul class="first-column morethan7">
+										<li><a href="/fr/sport/cannes-capitale-du-sport-en-plein-air.html">Cannes, capitale du sport en plein air</a></li>
+										<li><a href="/fr/sport/agenda-evenementiel.html">Agenda événementiel</a></li>
+										<li><a href="/fr/sport/piscines.html">Piscines</a></li>
+										<li><a href="/fr/sport/tennis.html">Tennis</a></li>
+										<li><a href="/fr/sport/parc-montfleury.html">Parc Montfleury</a></li>
+										<li><a href="/fr/sport/le-sport-pour-les-enfants.html">Sport pour les enfants</a></li>
+										<li><a href="/fr/sport/sport-pour-les-personnes-handicapees.html">Sport pour les personnes handicapées</a></li>
+									</ul>
+									<ul>
+										<li><a href="/fr/sport/equipements-sportifs-municipaux.html">Équipements sportifs municipaux</a></li>
+										<li><a href="/fr/sport/centre-medico-sportif.html">Centre médico-sportif</a></li>
+										<li><a href="/fr/sport/associations-sportives.html">Associations sportives</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-content">
+				<div id="ametys-cms-zone-header-content">
+					<div id="ametys-cms-zone-header-content-item-N10BA7" class="first last">
+						<div class="ametys-cms-content  wrapper">
+							<div class="filtered-contents filtered-contents-main carousel-contents">
+								<div class="carousel-container" id="carousel-5427844865347646">
+									<ul>
+										<li><img height="287" width="1072" alt="Bandeau d'illustration: Mairie de Cannes" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-entete-de-page/_metadata/header/1/header-illustration/image_287x1072/Bandeau-conseil-municipal.jpg?objectId=defaultWebContent%3A%2F%2F464effb2-35f8-460c-bd9c-76d7173acbbe">
+											<div class="carouselDetails">
+												<div>
+													<p>Conseil municipal</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content" class="main-content">
+				<div class="mask">
+					<div class="breadcrumb">
+						<div id="breadcrumb"><a name="breadcrumb"></a><span class="breadcrumb-title-invisible">Vous êtes ici :</span>
+							<ul>
+								<li class="first"><a href="/fr/index.html">Accueil</a></li>
+								<li><a href="/fr/mairie.html">Mairie</a></li>
+								<li class="current"><span>Conseil municipal</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="innertube">
+					<div class="col-content">
+						<div id="ametys-cms-zone-default">
+							<div id="ametys-cms-zone-default-item-N1006F" class="first ">
+								<div id="aggregation-fc_13899297315039338" class="ametys-cms-service filtered-contents filtered-contents-abstract news wrapper">
+									<h1 class="postheader"><span class="service-title">Actualité municipale</span></h1>
+									<!--empty-->
+									<script type="text/javascript"><!--
+
+                var pagination_fc_13899297315039338 = [];
+
+                
+	
+		pagination_fc_13899297315039338.push('1');
+
+        
+	
+		pagination_fc_13899297315039338.push('2');
+
+        
+-->
+									</script>
+									<!--empty-->
+									<ul>
+										<li class="content-list" id="fc_13899297315039338-part-1">
+											<script type="text/javascript"></script>
+											<ul>
+												<li class="content-list-item first ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/juillet/conseil-municipal-du-10-juillet-2020-a-huis-clos-diffusion-en-direct.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-4-2-2-2-3-3-2-3-2-2-2-2-3-2/_metadata/illustration/overview_max90x90/CM-actus-vignette.jpg?objectId=defaultWebContent%3A%2F%2F7ae5ebe7-6906-4bbe-b15c-7e62cb7fe3ca"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/juillet/conseil-municipal-du-10-juillet-2020-a-huis-clos-diffusion-en-direct.html" class="content-title summary"><span class="content-title summary">Conseil municipal du 10 juillet 2020 à huis... </span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/juillet/conseil-municipal-du-10-juillet-2020-a-huis-clos-diffusion-en-direct.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item second even ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/juin/adoption-du-budget-2020-et-resultats-du-compte-administratif-2019.html"><img height="90" width="90" alt="Budget" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-3-2-2-4-4-2-2-2-2-2/_metadata/illustration/overview_max90x90/budget-vignette.jpg?objectId=defaultWebContent%3A%2F%2F48242754-60b0-4b9a-866a-2d00d12015e5"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Économie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/juin/adoption-du-budget-2020-et-resultats-du-compte-administratif-2019.html" class="content-title summary"><span class="content-title summary">Adoption du budget 2020 et résultats du... </span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/juin/adoption-du-budget-2020-et-resultats-du-compte-administratif-2019.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item ter ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/juin/retour-sur-le-conseil-municipal-du-22-juin.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-4-2-2-2-3-3-2-3-2-2-2-2-3/_metadata/illustration/overview_max90x90/CM-actus-vignette.jpg?objectId=defaultWebContent%3A%2F%2Fe283991b-2985-45bb-a79e-7303d82f6186"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/juin/retour-sur-le-conseil-municipal-du-22-juin.html" class="content-title summary"><span class="content-title summary">Retour sur le conseil municipal du 22 juin</span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/juin/retour-sur-le-conseil-municipal-du-22-juin.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item last even ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/mai/le-maire-de-cannes-adapte-l-administration-communale-a-son-projet-de-mandat.html"><img height="90" width="90" alt="" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-4-2-2-2-3-3-2-3-2-2-2-2-2-4/_metadata/illustration/overview_max90x90/organisation-mairie-vignette.jpg?objectId=defaultWebContent%3A%2F%2F83ede954-266f-4be0-8eca-31e96556dbc9"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/mai/le-maire-de-cannes-adapte-l-administration-communale-a-son-projet-de-mandat.html" class="content-title summary"><span class="content-title summary">Le Maire de Cannes adapte l’administration... </span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/mai/le-maire-de-cannes-adapte-l-administration-communale-a-son-projet-de-mandat.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="clear-L">
+												<!--empty-->
+											</div>
+										</li>
+										<li class="content-list" id="fc_13899297315039338-part-2">
+											<script type="text/javascript"><!--
+
+                        document.getElementById('fc_13899297315039338-part-2').style.display = 'none';
+                    
+-->
+											</script>
+											<ul>
+												<li class="content-list-item first ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/mai/david-lisnard-presente-son-nouveau-conseil-municipal.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-4-2-2-2-3-3-2-3-2-2-2-2-2/_metadata/illustration/overview_max90x90/CM-actus-vignette.jpg?objectId=defaultWebContent%3A%2F%2F963db093-4c9b-445f-b652-8798101ea40f"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/mai/david-lisnard-presente-son-nouveau-conseil-municipal.html" class="content-title summary"><span class="content-title summary">David Lisnard présente son nouveau conseil... </span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/mai/david-lisnard-presente-son-nouveau-conseil-municipal.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item second even ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2020/mai/discours-de-david-lisnard-maire-de-cannes-lors-de-la-seance-d-installation-du-conseil-municipal.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-4-2-2-2-3-3-2-3-2-2-2-2-2-2/_metadata/illustration/overview_max90x90/DL-election-vignette.jpg?objectId=defaultWebContent%3A%2F%2F1b2fea3b-23e0-4f57-be0c-0a2866631878"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2020/mai/discours-de-david-lisnard-maire-de-cannes-lors-de-la-seance-d-installation-du-conseil-municipal.html" class="content-title summary"><span class="content-title summary">Discours de David Lisnard, Maire de Cannes,... </span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2020/mai/discours-de-david-lisnard-maire-de-cannes-lors-de-la-seance-d-installation-du-conseil-municipal.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item ter ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2019/decembre/retour-sur-le-conseil-municipal-du-16-decembre.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-3-3-2-2-4-2-2-2-2-2-2-3/_metadata/illustration/overview_max90x90/CM-vignette.png?objectId=defaultWebContent%3A%2F%2F3220e6ed-84c2-4e51-b281-6c7131961493"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2019/decembre/retour-sur-le-conseil-municipal-du-16-decembre.html" class="content-title summary"><span class="content-title summary">Retour sur le conseil municipal du 16 décembre</span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2019/decembre/retour-sur-le-conseil-municipal-du-16-decembre.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+												<li class="content-list-item last even ">
+													<div class="ametys-cms-content news view-abstract vevent wrapper">
+														<div class="content-illustration "><a href="/fr/actualites/annee-2019/novembre/retour-sur-le-conseil-municipal-du-18-novembre.html"><img height="90" width="90" alt="Conseil municipal" src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-du-6-mai-2013-actualite-2-2-2-4-2-2-2-2-4-3-2-3-3-2-2-4-2-2-2-2-2-2/_metadata/illustration/overview_max90x90/CM-vignette.png?objectId=defaultWebContent%3A%2F%2F5d56a3f7-495b-40b5-a0cc-d6b9afd6b55b"></a>
+															<!--empty-->
+														</div>
+														<p class="content-tag"><strong>Mairie</strong></p>
+														<h2><a href="/fr/actualites/annee-2019/novembre/retour-sur-le-conseil-municipal-du-18-novembre.html" class="content-title summary"><span class="content-title summary">Retour sur le conseil municipal du 18 novembre</span></a></h2>
+														<p class="content-read-more"><a href="/fr/actualites/annee-2019/novembre/retour-sur-le-conseil-municipal-du-18-novembre.html"><span class="url">Lire la suite</span></a></p>
+														<div class="content-richtext-end">
+															<!--empty-->
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="clear-L">
+												<!--empty-->
+											</div>
+										</li>
+									</ul>
+									<script type="text/javascript"><!--
+
+            pagination_fc_13899297315039338_current = 0;
+            var paginationLength = pagination_fc_13899297315039338.length;
+            if (paginationLength > 1)
+            {
+                document.write("<div class='pagination'><span class='label'>Pages :<ul class='nav'><li id='content_filter_prev_4998874089759817fc_13899297315039338' style='display: none;' class='precede nav-button'><input type='submit' onclick='try { show_fc_13899297315039338(\"prev\"); } catch(e) {} return false;' value='Précédent'/>");
+                
+                var firstLastCls = '';
+                for (var i = 0; i < paginationLength; i++)
+                {
+                    firstLastCls = i == 0 ? 'first' : (i == paginationLength - 1 ? 'last' : '');
+                    document.write("<li id='content_filter_4998874089759817fc_13899297315039338" + i + "_button' style='display: " + (i == 0 ? 'none' : '') + "' class='page" +  (firstLastCls ? (' ' + firstLastCls) : '') + "'><input type='submit' onclick='try { show_fc_13899297315039338(" + i + "); } catch(e) {} return false;' value='" + (i + 1) + "'/>");
+                    document.write("<li id='content_filter_4998874089759817fc_13899297315039338" + i + "' style='display: " + (i != 0 ? 'none' : '') + "' class='page current" +  (firstLastCls ? (' ' + firstLastCls) : '')  + "'><span class='current'>" + (i + 1) + "");
+                }
+                document.write("<li id='content_filter_next_4998874089759817fc_13899297315039338' class='next nav-button'><input type='submit' onclick='try { show_fc_13899297315039338(\"next\"); } catch(e) {} return false;' value='Suivant'/>
+									</script>
+								</div>
+								<div style="clear: both;"></div>"); try { show_fc_13899297315039338_buttonsid } catch (e) { show_fc_13899297315039338_buttonsid = []; } show_fc_13899297315039338_buttonsid.push("4998874089759817") function show_fc_13899297315039338(count) { if (count == 'next') { count = pagination_fc_13899297315039338_current + 1; } else if (count == 'prev') { count = pagination_fc_13899297315039338_current - 1; } pagination_fc_13899297315039338_current = count; for (var idindex = 0; idindex <input value="0" id="page-hidden-fc_13899297315039338" type="hidden">
+								<script type="text/javascript"><!--
+
+		            var page = parseInt($j("#page-hidden-fc_13899297315039338").val());
+		            show_fc_13899297315039338(page);
+		        
+-->
+								</script>
+							</div>
+						</div>
+						<div id="ametys-cms-zone-default-item-N10206" class="even last">
+							<div class="ametys-cms-content article view-main wrapper">
+								<h1 class="postheader"><span class="content-title">Le conseil municipal</span><span class="content-subtitle">Découvrez la liste des 14 adjoints, 4 conseillers municipaux délégués et 30 conseillers municipaux subdélégués qui composent le conseil municipal de Cannes.</span></h1>
+								<table style="width: 100%;" class="invisible">
+									<tr class="odd first last">
+										<td style="text-align: left;vertical-align: top;width: 225px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/LISNARD_DAVID.png"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/LISNARD_DAVID_216x216.png" alt="" width="216" height="216"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 405px;">
+											<p><strong><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal/David-Lisnard-nom-conseil-municipal_24x145.png" alt="" width="145" height="24"></span></strong></p>
+											<p><strong>Maire de Cannes<br></strong></p>
+										</td>
+									</tr>
+								</table>
+								<table class="invisible">
+									<tr class="odd first">
+										<td colspan="2" style="text-align: left;vertical-align: top;">
+											<p class="important" style="text-align:center;"><strong> LES ADJOINTS<br></strong></p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/GORJUX.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/GORJUX_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Nicolas GORJUX</strong></p>
+											<p><strong>1<sup>er</sup> Adjoint<br></strong>Adjoint en charge de la performance municipale, de la coordination des services et de l’organisation municipale, de l’optimisation et de la performance budgétaires, du patrimoine communal* et du protocole</p>
+											<p><em><sup><br>*Inclus le foncier</sup></em></p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BRUNETEAUX.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BRUNETEAUX_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Françoise BRUNETEAUX </strong></p>
+											<p><strong>2<sup>e</sup> Adjointe<br></strong>Adjointe en charge de l’environnement et du développement durable, des aménagements de la lutte contre les inondations, de la transition énergétique, du plan climat, des espaces naturels, de la protection de la Méditerranée</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CIMA.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CIMA_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Gilles CIMA </strong></p>
+											<p><strong>3<sup>e</sup> Adjoint</strong></p>
+											<p>Adjoint en charge de la qualité de vie, à l’attractivité et à l’accessibilité-sécurité des espaces publics, aux travaux, à la propreté urbaine, aux taxis et aux cultes</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/ARINI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/ARINI_140x140.jpg" alt="" width="140" height="140"></a></span></td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Joëlle ARINI </strong></p>
+											<p><strong>4<sup>e</sup> Adjointe</strong></p>
+											<p>Adjointe en charge de l’éducation, l’instruction publique et la petite enfance</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CHIKLI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CHIKLI_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Frank CHIKLI </strong></p>
+											<p><strong>5<sup>e</sup> Adjoint</strong></p>
+											<p>Adjoint en charge du développement de l’université et du campus universitaire, de la vie étudiante, de la formation, du centre de formation des apprentis, de l’innovation, de l’intelligence artificielle, de la croissance économique et du développement de la filière Cannes On Air</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/GOUNY-DOZOL_140x140.jpg" alt="" width="140" height="140"></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Odile GOUNY-DOZOL </strong></p>
+											<p><strong>6<sup>e</sup> Adjointe </strong></p>
+											<p>Adjointe en charge des ressources humaines, de l’administration générale, de l’état civil, des affaires électorales et des affaires funéraires</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/DE-PARIENTE_140x140.jpg" alt="" width="140" height="140"></span></td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Thomas DE PARIENTE </strong></p>
+											<p><strong>7<sup>e</sup> Adjoint</strong></p>
+											<p>Adjoint en charge du tourisme, de l’événementiel, des relations internationales, des casinos et de la culture</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/VERAN_140x140.jpg" alt="" width="140" height="140"></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Emma VÉRAN </strong></p>
+											<p><strong>8<sup>e</sup> Adjointe</strong></p>
+											<p>Adjointe en charge de l’aménagement, du développement territorial et de l’urbanisme</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CHIAPPINI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CHIAPPINI_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jean-Marc CHIAPPINI </strong></p>
+											<p><strong>9<sup>e</sup> Adjoint</strong></p>
+											<p>Adjoint en charge des sports et responsable du projet 100 % éducation sportive et maritime</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CRAPIZ.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CRAPIZ_140x140.jpg" alt="" width="140" height="140"></a></span></td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Apolline CRAPIZ </strong></p>
+											<p><strong>10<sup>e</sup> Adjointe</strong></p>
+											<p>Adjointe en charge du social, au handicap, au maintien à domicile et à la lutte contre les discriminations</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/TARICCO.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/TARICCO_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Christian TARICCO </strong></p>
+											<p><strong>11<sup>e</sup> Adjoint</strong></p>
+											<p>Adjoint en charge de la défense du commerce et de l’artisanat, aux marchés, aux fêtes et animations, aux terrasses, aux ouvertures tardives et débits de boissons et aux taxes et droits communaux</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/POURREYRON.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/POURREYRON_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Marie POURREYRON </strong></p>
+											<p><strong>12<sup>e</sup> Adjointe</strong></p>
+											<p>Adjointe en charge de la mobilité, à la circulation, au stationnement, à la logistique urbaine et aux livraisons</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/PANSIER.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/PANSIER_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jean-Pierre PANSIER </strong></p>
+											<p><strong>13<sup>e</sup> Adjoint </strong></p>
+											<p>Adjoint en charge de l’exécution et du contrôle budgétaires, du contrôle juridique et des contentieux, de la lutte contre les gaspillages, des moyens généraux, de la commande publique et de l’optimisation des délégations de services publics</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: center;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even last">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/MARTINS-DE-OLIVEIRA_140x140.jpg" alt="" width="140" height="140"></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Ana-Paula MARTINS DE OLIVEIRA </strong></p>
+											<p><strong>14<sup>e</sup> Adjointe</strong></p>
+											<p>Adjointe en charge des équipements portuaires, des établissements balnéaires, des services maritimes, de la politique des quartiers et de la communication</p>
+											<p>Subdéléguée en charge de l’exécution et du<br>contrôle budgétaires</p>
+										</td>
+									</tr>
+								</table>
+								<table style="width: 100%;" class="invisible">
+									<tr class="odd first">
+										<td colspan="2">
+											<p class="important" style="text-align:center;"><strong>LES CONSEILLERS MUNICIPAUX DÉLÉGUÉS</strong></p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/GAUTHIER.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/GAUTHIER_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jacques GAUTHIER</strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Délégué à la santé, à l’hôpital, à l’hygiène et la sécurité-prévention, à l’accessibilité des bâtiments et aux anciens combattants</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;width: 149px;"> </td>
+										<td style="text-align: left;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CLUET.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CLUET_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Charlotte CLUET </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Déléguée à la jeunesse, à la famille, à la cause animale et à l’animal citadin</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CHELPI-DEN_HAMER.png"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CHELPI-DEN_HAMER_140x140.png" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Magali CHELPI-DEN HAMER </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Déléguée au logement et à l’habitat</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even last">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/FRIZZI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/FRIZZI_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>André FRIZZI </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Délégué à la vie associative et à la qualité de vie à La Bocca</p>
+											<p>Subdélégué aux associations sportives</p>
+											<p> </p>
+										</td>
+									</tr>
+								</table>
+								<table style="width: 100%;" class="invisible">
+									<tr class="odd first">
+										<td colspan="2">
+											<p class="important" style="text-align:center;"><strong>LES CONSEILLERS MUNICIPAUX SUBDÉLÉGUÉS</strong></p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/ARNAUD.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/ARNAUD_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jean-Michel ARNAUD </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• aux relations institutionnelles et aux grands partenariats*, à la prospective et en charge du Musée international du cinéma et du Festival de Cannes <br>• sur le projet Cannes On Air</p>
+											<p>• aux relations internationales et à la coopération décentralisée</p>
+											<p><em><sup>*Inclus la démarche auprès des grandes enseignes et de la relance du haut de la rue d’Antibes, les projets européens et mécénat</sup></em></p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BONETTO.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BONETTO_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Grégori BONETTO </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à l’intelligence artificielle (IA) et à la SmartCity</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CHAABOUNI-PENTHER.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CHAABOUNI-PENTHER_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Noura CHAABOUNI PENTHER </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à l’école du futur <br>• à la culture</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/FIORENTINO.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/FIORENTINO_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Christophe FIORENTINO </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à l’urbanisme <br>• en charge des équipements portuaires, des établissements balnéaires et des services maritimes <br>• aux travaux <br>• au patrimoine</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/PIEL.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/PIEL_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Véronique PIEL </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à la qualité de vie et à l’attractivité<br>• au logement et à l’habitat</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/GIBELIN.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/GIBELIN_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Béatrice GIBELIN </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à l’éducation</p>
+											<p>• en charge de l’exécution et du contrôle<br>budgétaires</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/INGALLINERA.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/INGALLINERA_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Sophie INGALLINERA</strong><br><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• au handicap, à l’accessibilité des espaces et bâtiments publics, des commerces et de l’habitat <br>• à la culture</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BOISSY.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BOISSY_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Mireille BOISSY </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• aux équipements portuaires,  aux établissements balnéaires  et aux services maritimes<br>• à l’urbanisme <br>• au patrimoine communal</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/CATANESE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CATANESE_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Éric CATANESE </strong></p>
+											<p><strong>Conseiller municipal </strong></p>
+											<p>Subdélégué <br>• au commerce en charge de la relance et de la défense du commerce et de l’artisanat <br>• au stationnement en ouvrage <br>• au tourisme</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/AINEJIAN.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/AINEJIAN_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Haroutioun AINEJIAN </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• aux fêtes et animations <br>• aux manifestations sportives</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/DEWAVRIN.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/DEWAVRIN_140x140.jpg" alt="" width="140" height="140"></a></span></td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Noémie DEWAVRIN </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à l’environnement en charge des espaces maritimes, des espaces naturels et des îles de Lérins <br>• à l’évènementiel</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/SAUVAGE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/SAUVAGE_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jean-Michel SAUVAGE </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à l’innovation et au numérique, responsable du projet Open Data <br>• à la logistique urbaine et aux livraisons</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BERGERE-MORANT.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BERGERE-MORANT_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Sandrine BERGÈRE MORANT </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• au commerce en charge des marchés <br>• à la mobilité, à la circulation et au stationnement de surface</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> <span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BABU.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BABU_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Antoine BABU </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à la sécurité et à la lutte contre le communautarisme <br>• à la sécurité-prévention et aux anciens combattants</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/PEIRANO.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/PEIRANO_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Laurence PEIRANO </strong></p>
+											<p><strong>Conseillère municipale </strong></p>
+											<p>Subdéléguée <br>• à l’éducation en charge du développement de l’enseignement de l’anglais, des langues anciennes et du périscolaire<br>• à l’action sociale du Cannes Bel Âge <br>• à la relance commerciale et du développement de République <br>• à la culture</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> <span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BOYRON.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BOYRON_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Bernard BOYRON </strong></p>
+											<p><strong>Conseiller municipal  </strong></p>
+											<p>Subdéléguée<br> • à la qualité de vie de La Bocca <br>• aux affaires funéraires</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/MAMAN-BENICHOU.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/MAMAN-BENICHOU_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Sophie MAMAN-BÉNICHOU </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• au tourisme <br>• à l’administration générale, à l’état civil, aux affaires électorales et aux affaires funéraires</p>
+											<p>• à la cause animale at à l'animal citadin</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/LASSERRE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/LASSERRE_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Hubert LASSERRE </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à la jeunesse <br>• au campus universitaire, à la vie étudiante et à l’enseignement supérieur</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p> </p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/REIX.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/REIX_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Claire-Anne REIX </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• aux risques majeurs</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p> </p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/RAMY.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/RAMY_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Alain RAMY </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Monsieur « DÉONTOLOGUE » <br>Subdélégué <br>• au contrôle juridique et des contentieux, de la commande publique et de l’optimisation des délégations de services publics <br>• au protocole </p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p> </p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/LACOMBE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/LACOMBE_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Nicole LACOMBE </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à la vie associative et à Associations + <br>• au commerce en charge des terrasses, des ouvertures tardives, des débits de boissons et taxes et droits communaux <br>• aux ressources humaines </p>
+											<p>• en charge de l’exécution et du contrôle<br>budgétaires</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/JEUDY.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/JEUDY_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Patrick JEUDY </strong></p>
+											<p><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à la santé et à l’hôpital <br>• au social en charge du maintien à domicile des personnes âgées</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/ANDRE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/ANDRE_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Emmanuelle ANDRÉ </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à l’hygiène <br>• à la petite enfance <br>• au projet 100 % éducation sportive et maritime </p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BLONDET.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BLONDET_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Gilles BLONDET </strong></p>
+											<p><strong>Conseiller municipal </strong></p>
+											<p>Subdélégué <br>• à la lutte contre les discriminations <br>• à l’accessibilité des bâtiments</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BEZZI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BEZZI_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Emmanuelle BEZZI </strong></p>
+											<p><strong>Conseillère municipale </strong></p>
+											<p>Subdéléguée <br>• à la transition énergétique et au plan climat <br>• à la formation et au centre de formation d’apprentis</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/COMBET.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/COMBET_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Jérôme COMBET </strong><br><strong>Conseiller municipal </strong></p>
+											<p>Subdélégué <br>• à la lutte contre l’incivisme <br>• à la propreté urbaine <br>• aux quartiers <br>• au plan arbres </p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p> </p>
+										</td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/LASSALLE.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/LASSALLE_140x140.jpg" alt="" width="140" height="140"></a></span></p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Marie-Christine LASSALLE </strong></p>
+											<p><strong>Conseillère municipale </strong></p>
+											<p>Subdéléguée <br>• à la famille<br>• au social en charge de l’emploi et de l’insertion </p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/CHEVALLET-ok_140x140.jpg" alt="" width="140" height="140"></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Pierre CHEVALLET </strong></p>
+											<p><strong>Conseiller municipal </strong></p>
+											<p>Subdélégué <br>• aux cultes</p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even">
+										<td style="text-align: left;vertical-align: top;width: 149px;"><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/BONNET.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/BONNET_140x140.jpg" alt="" width="140" height="140"></a></span> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Suzanne BONNET </strong></p>
+											<p><strong>Conseillère municipale</strong></p>
+											<p>Subdéléguée <br>• à la relance commerciale et au développement de La Bocca<br>• à la qualité de vie de La Bocca<em> </em></p>
+										</td>
+									</tr>
+									<tr class="odd">
+										<td style="text-align: left;vertical-align: top;width: 149px;"> </td>
+										<td style="text-align: left;vertical-align: top;width: 481px;"> </td>
+									</tr>
+									<tr class="even last">
+										<td style="text-align: left;vertical-align: top;width: 149px;">
+											<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><a title="" rel="single" class="pirobox" href="/_resources/Images/Mairie/Conseil%2520municipal%25202020-2026/DUBBIOSI.jpg"><img src="/_resources-images/Images/Mairie/Conseil%2520municipal%25202020-2026/DUBBIOSI_140x140.jpg" alt="" width="140" height="140"></a></span> </p>
+										</td>
+										<td style="text-align: left;vertical-align: top;width: 481px;">
+											<p><strong>Gilbert DUBBIOSI </strong><br><strong>Conseiller municipal</strong></p>
+											<p>Subdélégué <br>• à la mer </p>
+										</td>
+									</tr>
+								</table>
+								<p> </p>
+								<p>Liste sous réserve de modification</p>
+								<div class="content-richtext-end">
+									<!--empty-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sharethis">
+						<div class="sharethis-wrapper">
+							<script type="text/javascript"><!--
+
+			var switchTo5x=true; // Multi Post
+			$j(document).ready(function() 
+			{
+				$j.getScript("http://w.sharethis.com/button/buttons.js", function(data, textStatus) {stLight.options({publisher:'7fcfec1e-16ef-41a0-8902-67b9f511c6ba', lang:'fr', fbLang:'fr_FR'}); });
+			});
+		
+-->
+							</script>
+							<script type="text/javascript"><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+-->
+							</script>
+							<script type="text/javascript"><!--
+
+			document.write("<span class='st_fblike_hcount' displayText='Facebook : j'aime'>");
+			document.write("<span class='st_plusone_hcount' displayText='Google +1'>");
+			//document.write("<span class='st_twitter_hcount' displayText='Tweet'>");
+			var title=document.title;
+			title = title.replace("'"," ");
+			title = title.replace("- Mairie de Cannes"," ");			
+			document.write("<span style='width: 75px;display: inline-block;margin-top: 3px;vertical-align: middle;margin-left: 3px;margin-right: 8px;position: relative;' ><a href='https://twitter.com/share?hashtags=MairiedeCannes&count=horizontal&size=60px&text="+title+"' class='twitter-share-button'  data-related='jasoncosta' data-lang='en' data-size='large' data-count='none'>Tweet");			
+			document.write("<span class='st_pinterest_hcount' displayText='Pinterest'>");
+			document.write("<span class='st_sharethis_hcount' displayText='Partager'>");
+		
+-->
+							</script>
+							<script type="text/javascript"><!--
+
+			document.write("<div class='print'><a href=\"javascript:window.print();\" title=\"Imprimer la page\"><img alt=\"Imprimer la page\" src=\"/skins/cannes/resources/img/print.png\"/>
+							</script>
+						</div>"); --></div>
+				</div>
+				<div class="feedback">
+					<script type="text/javascript"><!--
+
+					$j(document).ready(function() {
+						$j("#feedback-form").hide();
+						$j("#feedback-link").html('<a href="javascript:showHideFeedback();">Signaler !');
+					});
+					
+					function showHideFeedback()
+					{
+						var form = $j("#feedback-form");
+						if (form.is(":visible"))
+						{
+							$j(form).hide({duration : 800});
+						}
+						else
+						{
+							$j(form).show({duration : 800});
+						}
+					}
+				
+-->
+					</script>
+					<div class="text"><span class="strong">Vous souhaitez nous signaler une erreur sur cette page :</span><span class="italic"> </span>
+						<p id="feedback-link"></p>
+					</div>
+					<form id="feedback-form" action="/fr/_plugins/cannes/page/feedback.html" method="post">
+						<div>
+							<p>Merci de nous permettre d’améliorer la qualité du site cannes.com <br>(Attention : aucune réponse ne sera apportée à votre commentaire).<br><br>Vous avez besoin de contacter la Mairie de Cannes ? <a onclick="window.open(this.href); return false;" href="http://www.cannes.com/fr/index/contact.html">C'est par ici...</a></p><input value="/fr/mairie/conseil-municipal.html" id="path-9853864562620105" name="path" type="hidden">
+							<div class="field">
+								<div class="label"><label for="mail-9853864562620105">Email (facultatif) :</label></div>
+								<div class="input"><input id="mail-9853864562620105" name="mail" type="text"></div>
+							</div>
+							<div class="field">
+								<div class="label"><label for="comment-9853864562620105">Commentaire :</label></div>
+								<div class="input"><textarea cols="10" rows="3" id="comment-9853864562620105" name="comment"></textarea></div>
+							</div><span clas="button-wrapper"><input onclick="javascript:showHideFeedback()" value="Annuler" type="reset" name="cancel" class="button cancel"></span><span clas="button-wrapper"><input value="Envoyer" type="submit" name="submit" class="button"></span></div>
+					</form>
+				</div>
+			</div>
+			<div class="sidebar">
+				<div class="vertical-menu" id="vertical-menu">
+					<div class="vertical-menu-header">
+						<!--empty-->
+					</div><a name="vertical-menu"></a><a href="/fr/mairie/conseil-municipal.html" class="title">Conseil municipal</a>
+					<ul>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-16-dec-2019.html"><span>Conseil municipal du 16 déc. 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-18-nov-2019.html"><span>Conseil municipal du 18 nov. 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-30-sept-2019.html"><span>Conseil municipal du 30 sept. 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-17-juin-2019.html"><span>Conseil municipal du 17 juin 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-29-avril-2019.html"><span>Conseil municipal du 29 avril 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-11-fevrier-2019.html"><span>Conseil municipal du 11 février 2019</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-17-decembre-2018.html"><span>Conseil municipal du 17 décembre 2018</span></a></li>
+						<li><a href="/fr/mairie/conseil-municipal/conseil-municipal-du-12-nov-2018.html"><span>Conseil municipal du 12 nov. 2018</span></a></li>
+					</ul>
+				</div>
+				<div id="tabs" class="tabs"></div>
+				<div id="ametys-cms-zone-sidebar">
+					<div id="ametys-cms-zone-sidebar-item-N10C86" class="first ">
+						<div class="ametys-cms-content article view-main wrapper">
+							<h2 class="postheader"><span class="content-title">Délibérations en ligne</span></h2><a name="N1001A"></a>
+							<h3><a href="http://deliberations.ville-cannes.fr" class="invisible">Les délibérations du conseil municipal</a></h3>
+							<p><a href="http://deliberations.ville-cannes.fr" class="invisible"><span class="image-wrapper simple floatleft" style="display: inline-block; text-align: center"><img src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/conseil-municipal-article/_metadata/content/_data/recherche-bonhomme-blanc.png_132x114" alt="" width="114" height="132"></span></a>Consultez en ligne les délibérations exécutoires des conseils municipaux de la Mairie de Cannes.</p>
+							<p><a href="http://deliberations.ville-cannes.fr" class="external"><strong>CONSULTER</strong></a></p>
+							<div class="content-richtext-end">
+								<!--empty-->
+							</div>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-sidebar-item-N10DE7" class="even last">
+						<div class="ametys-cms-content article view-main wrapper without-title">
+							<p><span class="image-wrapper simple" style="display: inline-block; text-align: center"><img src="/_contents-images/ametys-internal%253Asites/mairiecannes/ametys-internal%253Acontents/inondations-intemperies-informations-de-la-mairie-de-cannes-article-2/_metadata/content/_data/espace-blanc.jpg_20x96" alt="" width="96" height="20"></span></p>
+							<div class="content-richtext-end">
+								<!--empty-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="innertube">
+				<p><a class="backtop" href="#top-of-page"><span>Retour en haut de page</span></a></p>
+				<div class="links">
+					<ul class="footer-primary">
+						<li class=" "><a href="/fr/decouvrir-cannes.html">Découvrir Cannes</a>
+							<ul>
+								<li><a href="/fr/decouvrir-cannes/cannes-et-le-cinema.html">Cannes et le cinéma</a></li>
+								<li><a href="/fr/decouvrir-cannes/venir-a-cannes.html">Venir à Cannes</a></li>
+								<li><a href="/fr/decouvrir-cannes/reserver-un-hotel-a-cannes.html">Réserver un hôtel à Cannes</a></li>
+								<li><a href="/fr/decouvrir-cannes/reserver-vos-activites-de-loisirs.html">Réserver vos activités de loisirs</a></li>
+								<li><a href="/fr/decouvrir-cannes/cannes-greeters.html">Cannes Greeters</a></li>
+								<li><a href="/fr/decouvrir-cannes/visiter-cannes.html">Visiter Cannes</a></li>
+								<li><a href="/fr/decouvrir-cannes/cannes-en-images.html">Cannes en images</a></li>
+								<li><a href="/fr/decouvrir-cannes/cannes-en-chiffres.html">Cannes en chiffres</a></li>
+								<li><a href="/fr/decouvrir-cannes/nouveaux-cannois.html">Nouveaux Cannois</a></li>
+								<li><a href="/fr/decouvrir-cannes/grands-rendez-vous-cannois-1.html">Grands rendez-vous cannois</a></li>
+								<li><a href="/fr/decouvrir-cannes/marches-provencaux-et-brocantes.html">Marchés provençaux et brocantes</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/evenements.html">Événements</a>
+							<ul>
+								<li><a href="/fr/evenements/cannes-agenda-tout-l-evenementiel.html">Cannes Agenda : tout l'événementiel…</a></li>
+								<li><a href="/fr/evenements/que-faire-aujourd-hui-demain-ce-week-end.html">Que faire aujourd'hui, demain, ce week-end...</a></li>
+								<li><a href="/fr/evenements/grands-rendez-vous-mois-par-mois.html">Grands rendez-vous mois par mois</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/mairie.html">Mairie</a>
+							<ul>
+								<li><a href="/fr/mairie/renseignements-e-services-et-demarches-administratives.html">Renseignements, e-services et démarches administratives</a></li>
+								<li><a href="/fr/mairie/annuaire-pratique.html">Annuaire pratique</a></li>
+								<li><a href="/fr/mairie/reglementation-arretes-permanents.html">Réglementation - Arrêtés permanents</a></li>
+								<li><a href="/fr/mairie/finances.html">Finances</a></li>
+								<li><a href="/fr/mairie/emploi-recrutement-et-stages.html">Emploi, recrutement et stages</a></li>
+								<li><a href="/fr/mairie/conseil-municipal.html">Conseil municipal</a></li>
+								<li><a href="/fr/mairie/conseil-municipal-des-jeunes-cannois.html">Conseil municipal des jeunes cannois</a></li>
+								<li><a href="/fr/mairie/commissions-extra-municipales.html">Commissions extra-municipales</a></li>
+								<li><a href="/fr/mairie/politique-des-quartiers.html">Politique des quartiers</a></li>
+								<li><a href="/fr/mairie/espace-communication.html">Espace Communication</a></li>
+								<li><a href="/fr/mairie/jumelages-pactes-d-amitie.html">Jumelages - Pactes d'amitié</a></li>
+								<li><a href="/fr/mairie/intercommunalite.html">Intercommunalité</a></li>
+								<li><a href="/fr/mairie/fondation-cannes.html">Fondation Cannes</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/cadre-de-vie.html">Cadre de vie</a>
+							<ul>
+								<li><a href="/fr/cadre-de-vie/amenagements-et-travaux-en-cours.html">Aménagements et travaux en cours</a></li>
+								<li><a href="/fr/cadre-de-vie/lutte-contre-l-incivisme-1.html">Lutte contre l'incivisme</a></li>
+								<li><a href="/fr/cadre-de-vie/vie-associative.html">Vie associative</a></li>
+								<li><a href="/fr/cadre-de-vie/developpement-durable.html">Développement durable</a></li>
+								<li><a href="/fr/cadre-de-vie/proprete-tri.html">Propreté - Tri</a></li>
+								<li><a href="/fr/cadre-de-vie/hygiene-du-milieu.html">Hygiène du milieu</a></li>
+								<li><a href="/fr/cadre-de-vie/animal-citadin.html">Animal citadin</a></li>
+								<li><a href="/fr/cadre-de-vie/espaces-verts-parcs-et-jardins.html">Espaces verts - Parcs et jardins</a></li>
+								<li><a href="/fr/cadre-de-vie/mer-nautisme.html">Mer - Nautisme</a></li>
+								<li><a href="/fr/cadre-de-vie/transports.html">Transports</a></li>
+								<li><a href="/fr/cadre-de-vie/stationnement-se-garer-a-cannes.html">Stationnement : se garer à Cannes</a></li>
+								<li><a href="/fr/cadre-de-vie/securite-prevention.html">Sécurité - Prévention</a></li>
+								<li><a href="/fr/cadre-de-vie/logement-urbanisme.html">Logement - Urbanisme</a></li>
+								<li><a href="/fr/cadre-de-vie/patrimoine.html">Patrimoine</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/culture.html">Culture</a>
+							<ul>
+								<li><a href="/fr/culture/education-artistique-et-culturelle.html">Éducation artistique et culturelle</a></li>
+								<li><a href="/fr/culture/politique-culturelle-a-cannes.html">Politique culturelle à Cannes</a></li>
+								<li><a href="/fr/culture/cannes-et-le-cinema.html">Cannes et le cinéma</a></li>
+								<li><a href="/fr/culture/musee-de-la-castre.html">Musée de la Castre</a></li>
+								<li><a href="/fr/culture/musee-de-la-mer.html">Musée de la Mer</a></li>
+								<li><a href="/fr/culture/centre-d-art-la-malmaison.html">Centre d'art La Malmaison</a></li>
+								<li><a href="/fr/culture/suquet-des-artistes.html">Suquet des Artistes</a></li>
+								<li><a href="/fr/culture/mediatheques-et-bibliotheques.html">Médiathèques et bibliothèques</a></li>
+								<li><a href="/fr/culture/conservatoire-de-musique-et-theatre.html">Conservatoire de musique et théâtre</a></li>
+								<li><a href="/fr/culture/theatre-de-la-licorne.html">Théâtre de la Licorne</a></li>
+								<li><a href="/fr/culture/archives-municipales.html">Archives municipales</a></li>
+								<li><a href="/fr/culture/associations-culturelles.html">Associations culturelles</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/economie.html">Économie</a>
+							<ul>
+								<li><a href="/fr/economie/cannes-on-air-economie-creative.html">Cannes on Air - Économie créative</a></li>
+								<li><a href="/fr/economie/entreprendre-a-cannes.html">Entreprendre à Cannes</a></li>
+								<li><a href="/fr/economie/creacannes-lerins-la-cite-des-entreprises.html">CréÀCannes Lérins : la cité des entreprises</a></li>
+								<li><a href="/fr/economie/emploi-et-insertion.html">Emploi et insertion</a></li>
+								<li><a href="/fr/economie/economie-locale-en-chiffres.html">Économie locale en chiffres</a></li>
+								<li><a href="/fr/economie/bourse-aux-locaux-vacants.html">Bourse aux locaux vacants</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/jeunesse.html">Jeunesse</a>
+							<ul>
+								<li><a href="/fr/jeunesse/bureau-d-information-jeunesse-bij.html">Bureau d'Information Jeunesse - BIJ</a></li>
+								<li><a href="/fr/jeunesse/aide-a-la-parentalite.html">Aide à la parentalité</a></li>
+								<li><a href="/fr/jeunesse/etablissements-de-la-petite-enfance.html">Établissements de la petite enfance</a></li>
+								<li><a href="/fr/jeunesse/ecoles-maternelles-et-elementaires.html">Écoles maternelles et élémentaires</a></li>
+								<li><a href="/fr/jeunesse/enseignement-secondaire-et-superieur.html">Enseignement secondaire et supérieur</a></li>
+								<li><a href="/fr/jeunesse/loisirs.html">Loisirs</a></li>
+							</ul>
+						</li>
+						<li class=" "><a href="/fr/social-sante.html">Social / Santé</a>
+							<ul>
+								<li><a href="/fr/social-sante/bel-age.html">Bel Âge</a></li>
+								<li><a href="/fr/social-sante/sante.html">Santé</a></li>
+								<li><a href="/fr/social-sante/handicap.html">Handicap</a></li>
+								<li><a href="/fr/social-sante/solidarite.html">Solidarité</a></li>
+							</ul>
+						</li>
+						<li class="last "><a href="/fr/sport.html">Sport</a>
+							<ul>
+								<li><a href="/fr/sport/cannes-capitale-du-sport-en-plein-air.html">Cannes, capitale du sport en plein air</a></li>
+								<li><a href="/fr/sport/agenda-evenementiel.html">Agenda événementiel</a></li>
+								<li><a href="/fr/sport/piscines.html">Piscines</a></li>
+								<li><a href="/fr/sport/tennis.html">Tennis</a></li>
+								<li><a href="/fr/sport/parc-montfleury.html">Parc Montfleury</a></li>
+								<li><a href="/fr/sport/le-sport-pour-les-enfants.html">Sport pour les enfants</a></li>
+								<li><a href="/fr/sport/sport-pour-les-personnes-handicapees.html">Sport pour les personnes handicapées</a></li>
+								<li><a href="/fr/sport/equipements-sportifs-municipaux.html">Équipements sportifs municipaux</a></li>
+								<li><a href="/fr/sport/centre-medico-sportif.html">Centre médico-sportif</a></li>
+								<li><a href="/fr/sport/associations-sportives.html">Associations sportives</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<address><a title="Retour sur la page d'accueil" href="/fr/index.html"><img alt="Cannes - Côte d'Azur www.cannes.com" src="/skins/cannes/resources/img/logo-coteazur.png"></a><br><strong>Mairie de Cannes</strong>1 Place Bernard Cornut-Gentille<br>CS 30140<br>06414 Cedex Cannes<br><strong>Centre d'appel</strong>Allô Mairie +<br>0 810 021 022<br>N° Magenta : service 0,06 €/min + prix appel</address>
+				<div class="social-networks">
+					<h4>Restons <span>connectés !</span></h4>
+					<ul>
+						<li><a class="twitter" href="/fr/index/reseaux-sociaux/twitter.html"><span>Twitter</span></a></li>
+						<li><a class="facebook" href="/fr/index/reseaux-sociaux/facebook-ville-de-cannes.html"><span>facebook</span></a></li>
+						<li><a class="instagram" href="/fr/index/reseaux-sociaux/instagram.html"><span>Instagram</span></a></li>
+						<li><a class="youtube" href="/fr/index/reseaux-sociaux/youtube.html"><span>YouTube</span></a></li>
+						<li><a class="pinterest" href="/fr/index/reseaux-sociaux/pinterest.html"><span>Pinterest</span></a></li>
+						<li><a class="googleplus" href="/fr/index/reseaux-sociaux/google-1.html"><span>Google+</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mentions">
+				<p class="copyright">© Copyright 2013-2020 Ville de Cannes. Tous droits réservés.</p>
+				<ul>
+					<li><a href="/fr/index/contact.html">Contact</a></li>
+					<li><a href="/fr/mairie/espace-communication/espace-presse.html">Espace Presse</a></li>
+					<li><a href="/fr/mentions-legales.html">Mentions légales</a></li>
+					<li><a href="/fr/conditions-d-utilisation.html">Conditions d'utilisation</a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript"><!--
+
+		                (function() { // anonymous function for scope purposes
+		                        // Show the information banner to the top of the page
+		                        function showBanner()
+		                        {
+		                            if (ametysCookieConsentListener.length > 0)
+		                            {
+		                                
+        var html = '<div class="cookiebanner-wrapper" id="cookie-banner">'
+        + '<div class="cookiebanner">'
+        + '<div class="cookiebanner-info">'
+        + "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins de mesure d'audience (statistiques anonymes)."
+        + ' '
+        + ''
+        + '<div class="cookiebanner-buttons">'
+        + '<a href="javascript:ametysAcceptCookieConsent()" class="cookiebanner-accept">'
+        + "Accepter"
+        + ''
+        + ' '
+        + '<a href="javascript:ametysRefuseCookieConsent()" class="cookiebanner-refuse">'
+        + "Refuser"
+        + ''
+        + ''
+        + ''
+        + '';
+    
+		                                $j(document.body).prepend(html).addClass('cookiebanner-visible');
+		                            }
+		                        }
+		                    
+		                        // Get the Internet Explorer version, return -1 if not IE
+		                        function getInternetExplorerVersion() {
+		                            var rv = -1;
+		                            if ($j.browser.msie)  
+		                            {
+		                                rv = $j.browser.version;
+		                            } 
+		                            
+		                            return rv;
+		                        }
+		                        
+		                        // Check the navigator value DoNotTrack to know if the signal is activated and equal to 1
+		                        function notToTrack() {
+		                            if ( (navigator.doNotTrack && (navigator.doNotTrack=='yes' || navigator.doNotTrack=='1'))
+		                                || ( navigator.msDoNotTrack && navigator.msDoNotTrack == '1') ) {
+		                                var isIE = (getInternetExplorerVersion()!=-1)
+		                                if (!isIE){    
+		                                     return true;
+		                                }
+		                                return false;
+		                            }
+		                        }
+		                    
+		                        // If the signal equals 0, consent is true
+		                        function isToTrack() {
+		                            if ( navigator.doNotTrack && (navigator.doNotTrack=='no' || navigator.doNotTrack==0 )) {
+		                                return true;
+		                            }
+		                        }
+		                        
+		                        
+					            var consentCookie =  $j.cookie('ametysHasConsent');
+		                        if (consentCookie == null) 
+		                        {
+		                            // The user has no cookies, we show the banner. 
+		                            if (notToTrack()) 
+		                            { 
+		                                // Internet explorer DoNotTrack is not activated. Do not ask for consent and just opt him out
+		                                ametysCallCookieConsentListener(false);
+		                            } 
+		                            else if (isToTrack()) 
+		                            { 
+		                                // Internet explorer DoNotTrack is activated. Do not ask for consent and just opt him in
+		                                ametysCallCookieConsentListener(true);
+		                            } 
+		                            else 
+		                            {
+		                                   
+		                                      ametysCallCookieConsentListener(true);
+		                                  
+		                            
+		                                // Otherwise ask the user
+		                                $j(window).on("load", showBanner);
+		                            }
+		                        } 
+		                        else 
+		                        {
+		                            ametysCallCookieConsentListener(consentCookie == 'true');
+		                        }
+		                    })();
+	               
+-->
+		</script>
+	</body>
+</html>
