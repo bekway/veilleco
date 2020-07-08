@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<title>Communauté de Communes d'Artagnan en Fezensac | Comptes rendus</title>
+		<meta name="author" content="N124 Communication">
+		<meta name="description" content="Les comptes rendus">
+		<meta name="robots" content="all NOODP noarchive">
+		<link type="text/css" href="http://dartagnanenfezensac.com/resource/css/design.css" title="Design" media="screen" rel="stylesheet">
+		<link type="text/css" href="http://dartagnanenfezensac.com/resource/css/colorbox.css" title="Design" media="screen" rel="stylesheet">
+		<link type="text/css" href="http://dartagnanenfezensac.com/resource/css/slideFullScreen.css" title="Design" media="screen" rel="stylesheet">
+		<link type="text/css" href="http://dartagnanenfezensac.com/resource/css/commun.css" title="Design" media="screen" rel="stylesheet">
+		<style>/******************************************************************************/
+/*********************       Style des pages Information   ********************/
+/******************************************************************************/
+
+/* Style des pages infos */
+.titreActu
+{
+    color: #3184BA;
+    font-size: 21px;
+    border-bottom: 1px solid #3184BA;
+}
+
+.documents a
+{
+    background-color: #a4be09;
+    border: 1px solid #a4be09;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 21px;
+    margin-right: 13px;
+    margin-top: 8px;
+    min-width: 120px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+.documents a:hover, .sousCatInfos:hover
+{
+    -moz-box-shadow: 5px 5px 8px 0px #c0c0c0;
+    -webkit-box-shadow: 5px 5px 8px 0px #c0c0c0;
+    -o-box-shadow: 5px 5px 8px 0px #c0c0c0;
+    box-shadow: 5px 5px 8px 0px #c0c0c0;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=8);
+}
+
+.documents a img
+{
+    position: relative;
+    top: 2px;
+}
+
+.boiteImages
+{
+    margin: 8px 0 8px 0;
+}
+
+.videos
+{
+    margin-top: 21px;
+}
+
+.videos div
+{
+    float: left;
+    margin-right: 13px;
+}
+
+.videos div a
+{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.videos div a:hover
+{
+    text-decoration: underline;
+}
+
+.boiteInfos p
+{
+    text-align: justify;
+    margin-right: 12px;
+}
+
+#partagez{
+    color: white;
+    font-size: 1.2em;
+}
+
+#dateActu
+{
+    background-color: #e2001a;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+}
+
+.boiteFiletActu
+{
+    height: 30px;
+    width: 100%;
+    border-top: 1px solid #e2001a;
+    border-bottom: 1px solid #e2001a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.boiteFiletActu .boiteFiletItem
+{
+    height: 30px;
+    float: left;
+    padding: 0;
+    margin: 5px 5px 0 0;
+}
+
+.boiteFiletActu a
+{
+    font-size: 0;
+}
+
+.boiteFiletActu .lienrss
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/rss_actu.png') no-repeat 0 0 transparent;
+}
+
+.boiteFiletActu .imprimer
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/imprimer_actu.png') no-repeat 0 0 transparent;
+}
+
+.boiteFiletActu .envoyer
+{
+    width: 26px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/mail_actu.png') no-repeat 0 0 transparent;
+}
+
+.listeReseauSociaux
+{
+    padding: 0;
+    list-style: none;
+    margin-top: 2px;
+}
+
+.listeReseauSociaux li
+{
+    float: left;
+}
+
+.listeReseauSociaux .reseauFacebook
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/facebook16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.listeReseauSociaux .reseauTwitter
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/twitter16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.listeReseauSociaux .reseauLinkedin
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/in16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.boiteFiletActu .titre
+{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 21px;
+    margin-top: 6px;
+}
+
+.boiteFiletActu .espaceCentre
+{
+    width: 390px;
+}
+
+.listeArticles
+{
+    padding: 0;
+    margin: 0;
+}
+
+.listeArticles li
+{
+    list-style-position: inside;
+    list-style-type: none;
+    margin-bottom: 0.6em;
+    color: #acbb09;
+}
+
+.pictures
+{
+    margin-top: 21px;
+}
+
+.pictures img
+{
+    border: 1px solid #C0C0C0;
+}
+
+.listeLiensActus
+{
+    color: #673c2e;
+    text-decoration: none;
+    font-size: 1em;
+}
+.listeLiensActus:hover
+{
+    text-decoration: underline;
+}
+
+ul#erreurs li{
+    color:red;
+    font-size: 1.2em;
+}
+
+.fb-like
+{
+    height: 33px;
+}
+
+#contenuEnvoyerMail
+{
+    margin: 0 0 13px 0;
+}
+
+.envoyerTexte
+{
+    color: #673c2e;
+    display: block;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.titrePageInfo, #debutTexte
+{
+    color: #673c2e;
+}
+
+#notificationErreur, #notificationEnvoiOk
+{
+    background-color: #C97345;
+    border-bottom: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    list-style: none outside none;
+    margin-bottom: 18px;
+    padding: 0;
+    text-indent: 8px;
+}
+
+.boutonValider
+{
+    background-color: #e2001a;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 110px;
+    margin-top: 8px;
+    text-align: center;
+    width: 111px;
+    border: none;
+}
+
+.boutonValider:hover
+{
+    -moz-box-shadow: 3px 3px 8px 0px #cfcfcf;
+    -webkit-box-shadow: 3px 3px 8px 0px #cfcfcf;
+    -o-box-shadow: 3px 3px 8px 0px #cfcfcf;
+    box-shadow: 3px 3px 8px 0px #cfcfcf;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=135, Strength=8);
+}
+
+#boiteEnvoyerActu label
+{
+    display: inline-block;
+    width: 144px;
+    color: #333;
+    font-weight: bold;
+}
+
+#boiteEnvoyerActu .formSeparateur
+{
+    width: 100%;
+    height: 5px;
+}
+
+#boiteEnvoyerActu input[type="text"], #boiteEnvoyerActu textarea
+{
+    width: 244px;
+}
+
+#boiteEnvoyerActu textarea
+{
+    height: 147px;
+}
+
+.textePrincipal
+{
+    font-size: 17px;
+    letter-spacing: 0.07em;
+    line-height: 24px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.textePrincipal a
+{
+    color: #673c2e;
+    text-decoration: underline;
+}
+.textePrincipal a:hover
+{
+    text-decoration: none;
+}
+
+.videos a
+{
+    color: #673c2e;
+}
+.videos a:hover
+{
+    text-decoration: underline;
+}
+
+/************************ Fin du style du module d'actu ***********************/
+
+h3
+{
+    color: #cc0218;
+    font-size: 18px;
+}
+
+#blocImage
+{
+    width: 330px;
+    height: 330px;
+    float: left;
+    margin-right: 21px;
+}
+
+#blocContenu
+{
+    float: left;
+    width: 580px;
+}
+
+#titreActu
+{
+    color: #673c2e;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.blocResteArticle
+{
+    box-sizing: border-box;
+    color: #606060;
+    margin-top: 13px;
+    padding: 0;
+    margin-bottom: 34px;
+}
+
+.blocResteArticle .date
+{
+    background: #acbb09 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    height: 18px;
+    margin-right: 8px;
+    padding: 3px 5px 5px 3px;
+}
+
+.blocResteArticle .titre
+{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #acbb09;
+}
+
+.blocResteArticle .texte
+{
+    background-color: #ddd;
+    margin: 0 0 5px;
+    padding: 8px 5px;
+}
+
+.blocResteArticle .lien
+{
+    color: #ACBB09;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    -o-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    -webkit-transition: color .3s ease-in;
+    -khtml-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+.blocResteArticle .lien:hover
+{
+
+}
+
+#listeAnnee
+{
+    display: block;
+    padding: 0;
+    margin: 13px 0;
+    list-style-type: none;
+}
+
+#listeAnnee li
+{
+    border-right: 1px solid #144360;
+    display: inline-block;
+    height: 18px;
+    padding: 0;
+}
+#listeAnnee li:last-child
+{
+    border: none;
+}
+
+#listeAnnee li a
+{
+    color: #673c2e;
+    display: block;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 13px;
+    font-size: 18px;
+}
+#listeAnnee li:first-child a
+{
+    padding-left: 0;
+}
+#listeAnnee li a:hover
+{
+
+}
+
+#listMore
+{
+    margin: 21px 0;
+}
+
+#titreBoxListMore
+{
+    cursor: pointer;
+    font-weight: bold;
+    background: #673c2e none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 21px;
+    margin: 13px 0 0;
+    padding: 3px 8px;
+    font-size: 15px;
+}
+
+#hiddenArticles
+{
+    display: none;
+}
+
+#separateurResteActu
+{
+    border-top: 1px solid #144360;
+    height: 0;
+    margin: 13px 0 -13px;
+    width: 100%;
+}
+
+#boxSansArticle
+{
+    font-size: 17px;
+    letter-spacing: 0.07em;
+}
+		</style>
+		<script src="/resource/js/modernizr.js"></script>
+		<script>var onJQReady=[];
+var onDocReady=[];
+var $=function(){return{ready:function(fn){onDocReady.push(fn);}}};
+$(document).ready(function(){
+    $('#loadingImg img').stop(true).hide(2000,function(){
+        $(this).css({width:'32px',height:'32px',opacity:'1'});
+    });
+	
+	    // Remplacement des adresses courriel par des liens mailto.
+        $(".textePrincipal").filter(function() {
+        var html = $(this).html();
+        var emailPattern = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/;
+        var matched_str = $(this).html().match(emailPattern);
+        if (matched_str) {
+            $(this).html(html.replace(emailPattern, "<a href='mailto:" + matched_str + "'>" + matched_str + ""));
+            return $(this)
+        }
+    });
+});
+onJQReady.push(function(){
+    $('#loadingImg img').show(300);
+    onJQReady.push=function(){arguments[0]();};
+    var doc=$(document);
+    onDocReady.push=doc.ready;
+    var onDocReady2=onDocReady.slice(0);
+    for(var fct in onDocReady2)
+            doc.ready(onDocReady2[fct]);
+});
+yepnope([{
+    load: '/resource/js/jquery-1.8.2.js',//'timeout=300!http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js',
+    complete: function () {
+        var JQready = function(){
+            for(var fct in onJQReady)
+                    onJQReady[fct]();
+        };
+        if ( !window.jQuery ) {
+            yepnope({
+                load: '/resource/js/jquery-1.8.2.js',
+                complete: function () {
+                    JQready();
+                }
+            });
+        }else
+                JQready();
+    }
+}
+,{load:{'jquery.colorbox':'http://dartagnanenfezensac.com/resource/js/jquery.colorbox.js','jquery.cycle.all':'http://dartagnanenfezensac.com/resource/js/jquery.cycle.all.js','jquery.sharrre-1.3.4':'http://dartagnanenfezensac.com/resource/js/jquery.sharrre-1.3.4.js','jquery.dotdotdot':'http://dartagnanenfezensac.com/resource/js/jquery.dotdotdot.js','slideFullScreen':'http://dartagnanenfezensac.com/resource/js/slideFullScreen.js'},callback:{'jquery.colorbox':function(url, result, key){$(document).ready(function(){ $("#validite").colorbox({iframe:true, width:"45%", height:"67%"});$(".actuPict").colorbox({rel:"actuPict", maxWidth:"45%", maxHeight:"60%"});if(typeof cbReady=="function")cbReady();});},'jquery.cycle.all':function(url, result, key){$(document).ready(function(){ $("#slider").cycle({fx:    "scrollRight",speed:  700,timeout: 5000}).css("display", "block");});},'jquery.sharrre-1.3.4':function(url, result, key){$(document).ready(function(){ onShareReady();});},'jquery.dotdotdot':function(url, result, key){$(document).ready(function(){ onDotReady();});},'slideFullScreen':function(url, result, key){$(document).ready(function(){ onSlideFullScreenReady();});}}}]);
+
+function onShareReady(){
+    $('#Twitter').sharrre({
+        share: {
+            twitter: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('twitter');
+        }
+    });
+    $('#Facebook').sharrre({
+        share: {
+            facebook: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('facebook');
+        }
+    });
+    $('#Google').sharrre({
+        share: {
+            googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('googlePlus');
+        }
+    });
+}
+
+function onDotReady()
+{
+    	$(".dotdot").dotdotdot();
+}
+
+function onSlideFullScreenReady()
+{
+    $('#fullWidthSlide').slideShow({
+        timeOut: 3000,
+        showNavigation: true,
+        pauseOnHover: false,
+        swipeNavigation: false
+    });
+}
+		</script>
+		<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+	</head>
+	<body>
+		<header id="mainHeader">
+			<div id="boxTopSite"><img id="logo" src="/resource/pict/logo2.jpg" width="264" height="264" alt="Communauté de commune d'Artagnan en Fezensac"> <img id="phraseHaut" src="/resource/pict/header.jpg" width="600" alt="d'Artagnan en Fezensac"></div>
+			<div id="boxSlider"><img id="fullWidthSlide" src="/resource/pict/slide/slide1.jpg" data-slideshow="/resource/pict/slide/slide2.jpg|/resource/pict/slide/slide3.jpg|/resource/pict/slide/slide4.jpg|/resource/pict/slide/slide5.jpg|/resource/pict/slide/slide6.jpg" alt="Inline pictures"></div>
+		</header>
+		<nav id="mainNav">
+			<ul id="menuHaut">
+				<li id="itemPictoAccueil"><span><a class="cache" href="accueil" id="pictoAccueilMenu">Accueil du site</a></span></li>
+				<li class="separateurHaut">
+				<li><a href="/information/actualites">Actualités</a></li>
+				<li class="separateurHaut">
+				<li><a href="#">La communauté de communes</a>
+					<ul class="subItems">
+						<li class="chapeau">
+						<li><span>C.C.A.F.</span>
+							<ul>
+								<li><a href="/ConseillersCommunautaires">Conseillers communautaires</a></li>
+								<li><a href="/CommunauteCommunes">La Communauté de Communes</a></li>
+								<li><a href="/SiteCordeliers">Le site des Cordeliers</a></li>
+								<li><a href="/Statut">Statuts</a></li>
+								<li><a href="/elements?arg1=3">Comptes rendus</a></li>
+								<li><a href="/elements?arg1=4">Appels d'offre</a></li>
+							</ul>
+						</li>
+						<li class="itemLarge"><span>Les commissions</span>
+							<ul>
+								<li><a href="/CommissionDevEco">Commission développement économique</a></li>
+								<li><a href="/CommissionAmenagementEspaceEnvironnement">Commission Aménagement Espace et Environnement</a></li>
+								<li><a href="/CommissionCulture">Commission culture</a></li>
+								<li><a href="/CommissionFinance">Commission finances</a></li>
+								<li><a href="/CommissionLogementCadreVieSocial">Commission logement, cadre de vie et social</a></li>
+								<li><a href="/CommissionTourismeLoisirs">Commission tourisme et loisirs</a></li>
+								<li><a href="/CommissionAppelOffres">Commission d'appel d'offres</a></li>
+							</ul>
+						</li>
+						<li> </li>
+					</ul>
+				</li>
+				<li class="separateurHaut">
+				<li><a href="#">Les missions</a>
+					<ul class="subItems">
+						<li class="chapeau">
+						<li><span>Services et action sociales</span>
+							<ul>
+								<li><a href="/RelaisServicePublic">Le Relais Services Publics</a></li>
+								<li><a href="/MaisonSanteFezensac">La Maison de Santé du Fezensac</a></li>
+								<li><a href="/TransportDemande">Transport à la demande</a></li>
+								<!-- <li><a href="/Pec">Pacte d'Économie Cohésive</a></li> -->
+							</ul>
+						</li>
+						<li><span>Développement économique</span>
+							<ul>
+								<li><a href="/PartenariatCCI">Partenariat chambre des métiers</a></li>
+								<li><a href="/ZoneActiviteCarget">Zone d'activité Carget</a></li>
+							</ul>
+						</li>
+						<li class="sepMenu">
+						<li><span>Tourisme</span>
+							<ul>
+								<!-- <li><a href="/OfficeTourisme">Office du Tourisme</a></li> -->
+								<li><a href="/RandonneesGRPays">Randonnées GR pays</a></li>
+							</ul>
+						</li>
+						<li><span>Vie culturelle et associatives</span>
+							<ul>
+								<li><a href="/SoutienTissusAssociatif">Soutien tissus associatif</a></li>
+								<li><a href="/Mediatheque">Médiathèque Intercommunale</a></li>
+							</ul>
+						</li>
+						<!-- <li class="sepMenu"></li>
+
+            <li><span>Cadre de vie et habitat</span>
+                <ul>
+                    <li><a href="/HabiterMieux">Habiter mieux</a></li>
+                </ul>
+            </li> -->
+						<li><span>Numérique</span>
+							<ul>
+								<li><a href="/GersNumerique">Gers Numérique</a></li>
+							</ul>
+						</li>
+						<li> </li>
+					</ul>
+				</li>
+				<li class="separateurHaut">
+				<li><a href="#">25 communes</a>
+					<ul class="subItems">
+						<li class="chapeau">
+						<li style="width: 550px;"><span>La Communauté de Communes</span>
+							<ul id="menuCommunesGauche">
+								<li><a href="/information/communes/commune-de-bazian">Commune de Bazian</a></li>
+								<li><a href="/information/communes/commune-de-belmont">Commune de Belmont</a></li>
+								<li><a href="/information/communes/commune-de-bezolles">Commune de Bezolles</a></li>
+								<li><a href="/information/communes/commune-de-caillavet">Commune de Caillavet</a></li>
+								<li><a href="/information/communes/commune-de-callian">Commune de Callian</a></li>
+								<li><a href="/information/communes/commune-de-castillon-debats">Commune de Castillon Debats</a></li>
+								<li><a href="/information/communes/commune-de-cazaux-d-angles">Commune de Cazaux d'Angles</a></li>
+								<li><a href="/information/communes/commune-de-gazax-et-baccarisse">Commune de Gazax et Baccarisse</a></li>
+								<li><a href="/information/communes/commune-de-justian">Commune de Justian</a></li>
+								<li><a href="/information/communes/commune-de-lupiac">Commune de Lupiac</a></li>
+								<li><a href="/information/communes/commune-de-marambat">Commune de Marambat</a></li>
+								<li><a href="/information/communes/commune-de-mirannes">Commune de Mirannes</a></li>
+								<li><a href="/information/communes/commune-de-mourede">Commune de Mourède</a></li>
+							</ul>
+							<ul id="menuCommunesDroite">
+								<li><a href="/information/communes/commune-de-peyrusse-grande">Commune de Peyrusse-Grande</a></li>
+								<li><a href="/information/communes/commune-de-peyrusse-vieille">Commune de Peyrusse-Vieille</a></li>
+								<li><a href="/information/communes/commune-de-preneron">Commune de Preneron</a></li>
+								<li><a href="/information/communes/commune-de-riguepeu">Commune de Riguepeu</a></li>
+								<li><a href="/information/communes/commune-de-roquebrune">Commune de Roquebrune</a></li>
+								<li><a href="/information/communes/commune-de-roques">Commune de Roques</a></li>
+								<li><a href="/information/communes/commune-de-rozes">Commune de Rozes</a></li>
+								<li><a href="/information/communes/commune-de-saint-arailles">Commune de Saint-Arailles</a></li>
+								<li><a href="/information/communes/commune-de-saint-paul-de-baise">Commune de Saint-Paul-de-Baïse</a></li>
+								<li><a href="/information/communes/commune-de-saint-pierre-d-aubezies">Commune de Saint-Pierre-d'Aubézies</a></li>
+								<li><a href="/information/communes/commune-de-tudelle">Commune de Tudelle</a></li>
+								<li><a href="/information/communes/commune-de-vic-fezensac">Commune de Vic-Fezensac</a></li>
+							</ul>
+						</li>
+						<li> </li>
+					</ul>
+				</li>
+				<li class="separateurHaut">
+				<li><a href="/liens">Liens</a></li>
+				<li class="separateurHaut">
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+			<style type="text/css" scoped="">
+    .pictures
+    {
+        margin: 0;
+    }
+			</style>
+			<div class="blocArticle">
+				<h2 class="sousTitrePuce">Comptes rendus</h2>
+				<div class="boiteInfos" id="id87">
+					<h3 class="titreElement">Séance du 26 novembre 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-neuf, le 26 novembre à 20h30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/54.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu - Séance du 26 novembre 2019</a> <a href="local/doc/55.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 26 novembre 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id86">
+					<h3 class="titreElement">Délibération - Séance du 09 octobre 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix-neuf et le neuf octobre l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18, rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/53.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 09 octobre 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id85">
+					<h3 class="titreElement">COMPTE-RENDU DU CONSEIL COMMUNAUTAIRE 8 JUILLET 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-neuf, le 8 juillet à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/52.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 8 juillet 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id84">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 29 mai 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-neuf, le 29 mai à 21 Heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/51.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 29 mai 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id83">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 11 avril 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-neuf, le 11 avril 2019 à 21 Heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/50.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 11 avril 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id82">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 5 mars 2019</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-neuf, le 5 mars à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/49.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 5 mars 2019</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id81">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 20 décembre 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-huit, le 20 décembre 2018 à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/48.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 20 décembre 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id80">
+					<h3 class="titreElement">Délibération - Séance du 20 décembre 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix-huit et le vingt décembre l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18, rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/47.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 20 décembre 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id79">
+					<h3 class="titreElement">Délibération - Séance du 27 novembre 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix-huit et le vingt-sept novembre l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18, rue des Cordeliers Vic-Fezensac.<br><br></div>
+					<div class="documents"><a href="local/doc/46.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 27 novembre 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id78">
+					<h3 class="titreElement">Délibération - Séance du 25 septembre 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix-huit et le vingt-cinq septembre l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18, rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/45.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 25 septembre 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id76">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 25 Septembre 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-huit, le 25 septembre 2018 à 21 Heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président. <br></div>
+					<div class="documents"><a href="local/doc/43.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 25 Septembre 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id77">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 28 juin 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-huit, le 28 juin à 21 Heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/44.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 28 juin 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id72">
+					<h3 class="titreElement">Délibération - Séance du 28 juin 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix-huit et le vingt-huit juin l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18, rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/41.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 28 juin 2018</a> <a href="local/doc/42.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération - Séance du 28 juin 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id71">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 29 mars 2018</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-huit, le 29 mars à 21 Heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/40.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 29 mars 2018</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id70">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 27 décembre 2017</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-sept, le 27 décembre à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du cinéma de Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/39.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 27 décembre 2017</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id69">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 14 décembre 2017</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-sept, le 14 décembre à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du cinéma de Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/38.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 14 décembre 2017</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id64">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 15 juin 2017</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-sept, le  15 juin, l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18 rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/36.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 15 juin 2017</a> <a href="local/doc/37.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> 2017_Etude_socio-économique-CCAF</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id63">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 3 avril 2017</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille dix-sept, le 3 avril à 19 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du cinéma de Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/35.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 3 avril 2017</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id57">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 21 février 2017</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L'an deux mille dix sept et le vingt-et-un février l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet 18 rue des Cordeliers Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/33.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 21 février 2017.</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id53">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 5 décembre 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille seize, le 5 décembre à 20h30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du Cinéma de Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/31.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 5 décembre 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id51">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 26 octobre 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille seize, le 26 octobre à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du Complexe des Cordeliers à Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/26.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 26 octobre 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id50">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 12 juillet 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille seize, le 12 juillet à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle des Fêtes de Caillavet, conformément à la convocation qui leur avait été adressée par le Président et M. DUFRECHOU, Président de la commission Tourisme et Loisirs.<br></div>
+					<div class="documents"><a href="local/doc/25.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 12 juillet 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id52">
+					<h3 class="titreElement">Compte rendu et délibération du 22 juin 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille seize et le vingt-deux juin l'assemblée régulièrement convoquée, s'est réunie sous la présidence de Monsieur Robert Frairet au 18, rue des Cordeliers à Vic-Fezensac.<br></div>
+					<div class="documents"><a href="local/doc/29.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du 22 juin 2016</a> <a href="local/doc/30.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Délibération du 22 juin 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id46">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 7 avril 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille seize, le 7 avril à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers à Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président. <br></div>
+					<div class="documents"><a href="local/doc/20.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 7 avril 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id45">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 16 février 2016</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">
+						<div>L’an deux mille seize, le 16 février à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle du complexe des Cordeliers à Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.</div>
+					</div>
+					<div class="documents"><a href="local/doc/19.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du 16 février 2016</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id44">
+					<h3 class="titreElement">Compte rendu du conseil communautaire du 9 décembre 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille quinze, le 9 décembre à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle des fêtes de Castillon Debats, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/18.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du conseil communautaire du du 9 décembre 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id39">
+					<h3 class="titreElement">Compte rendu du Conseil Communautaire du 9 novembre 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille quinze, le 9 novembre 20 heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle Simone Castex à Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.</div>
+					<div class="documents"><a href="local/doc/16.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du Conseil Communautaire du 9 novembre 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id35">
+					<h3 class="titreElement">Compte rendu du Conseil Communautaire du 24 septembre 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille quinze, le 24 septembre à 21 heures, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis à la salle des fêtes de Riguepeu, conformément à la convocation qui leur avait été adressée par le Président.<br></div>
+					<div class="documents"><a href="local/doc/15.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du Conseil Communautaire du 24 septembre 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id38">
+					<h3 class="titreElement">Compte rendu du Conseil Communautaire du 17 juin 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille quinze, le 17 juin à 20 H 45, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis au cinéma de Vic-Fezensac, conformément à la convocation qui leur avait été adressée par le Président.</div>
+					<div class="documents"><a href="local/doc/12.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du Conseil Communautaire du 17 juin 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id37">
+					<h3 class="titreElement">Compte rendu du Conseil Communautaire du 19 mai 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">
+						<div>L’an deux mille quinze, le 19 mai à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis dans la salle des fêtes de Marambat, conformément à la convocation qui leur avait été adressée par le Président.</div>
+					</div>
+					<div class="documents"><a href="local/doc/13.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du Conseil Communautaire du 19 mai 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div>
+				<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+				<div class="boiteInfos" id="id34">
+					<h3 class="titreElement">Compte rendu du Conseil Communautaire du 22 janvier 2015</h3>
+					<div class="pictures">
+						<div class="stopFloat"></div>
+					</div>
+					<div class="textePrincipal">L’an deux mille quinze, le 22 janvier à 20 H 30, les membres du conseil communautaire, représentant les communes adhérentes à la communauté, se sont réunis dans la salle des fêtes de Roquebrune, conformément à la convocation qui leur avait été adressée par le Président.<br><br></div>
+					<div class="documents"><a href="local/doc/14.pdf" class="docActu" target="_blank"><img src="admin/resource/pict/IconExtension/pdf.png" alt="icone" title="icone"> Compte rendu du Conseil Communautaire du 22 janvier 2015</a></div>
+					<div class="videos"></div>
+					<div class="stopFloat"></div>
+				</div><br></div>
+		</div>
+		<footer id="mainFooter">
+			<!-- <div id="footerSignature">
+    <a href="http://www.n124.net/blocAccessibilite/blocAccessibilite.html" id="validite">Accessibilité et validité</a> - Réalisation : <a href="http://n124.net" target="_blank">N124 agence de communication</a>
+</div> -->
+			<div id="centerFooter">
+				<ul id="agregateurs">
+					<li><a data-url="http://dartagnanenfezensac.com/elements?arg1=3" data-text="" data-title="" class="cache" id="Facebook" href="#">Bouton Facebook</a></li>
+					<li><a data-url="http://dartagnanenfezensac.com/elements?arg1=3" data-text="" data-title="" class="cache" id="Twitter" href="#">Bouton Twitter</a></li>
+					<li><a target="_blank" class="cache" id="Rss" href="fluxrss">Rss</a></li>
+				</ul><span id="adresseFooter">Communauté de Communes d'Artagnan en Fezensac - Complexe Intercommunal des Cordeliers - 32190 Vic Fezensac</span>
+				<div id="footerSignature"><a href="mentionsLegales">Mentions légales</a> - <a href="http://www.n124.net/blocAccessibilite/blocAccessibilite.html" id="validite">Accessibilité et validité</a> - Réalisation : <a href="http://n124.net" target="_blank">N124 agence de communication</a></div>
+			</div>
+		</footer>
+		<script>
+    onDocReady.push(function() {
+        // Gestion du menu déroulant.
+        $('#menuHaut li').hover(function() {
+                $(this).addClass('selected');
+                $(this).find('ul:first').slideDown('slow');
+            },
+                    function(){$(this).removeClass('selected'); $(this).find('ul.subItems').hide()}
+            );
+        });
+		</script>
+	</body>
+</html>
