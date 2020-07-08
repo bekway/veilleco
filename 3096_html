@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.cc-berryloirepuisaye.fr/default/">
+		<title>Comptes-rendus - Communauté de Communes Berry Loire Puisaye - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#ceccc6
+}
+.couleur_main, .cl_main {color:#2d358c}
+.couleur_main_bg, .bg_main {background-color:#2d358c !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #2d358c;
+}
+.couleur_police, .cl_font {color:#50a4db}
+.couleur_police_bg, .bg_font {background-color:#50a4db !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #50a4db;
+}
+.couleur_fond_bg {background-color:#ceccc6}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #ceccc6 100%);
+	background: -webkit-linear-gradient(top, transparent, #ceccc6 100%);
+	background: linear-gradient(to bottom, transparent, #ceccc6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#ceccc6",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #2d358c transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #2d358c;}
+a.lien_couleur {color: #50a4db;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #3286BD;}
+.couleur {color: #50a4db;}
+#head .retour {background: #50a4db url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #50a4db;}
+#tribune a.postvisit, #tribune span.postvisit{color: #50a4db;}
+#information .tree1, #information .tree1 a {color: #50a4db;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#50a4db; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/111/banner/8VBVBCIfD5cG299.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.cc-berryloirepuisaye.fr"> <img src="http://static.reseaudesintercoms.fr/cities/111/logo/3sxPJW91piRFAYj.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://cc-berryloirepuisaye.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#ec2027 !important;
+	border-color:#ec2027 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #ec2027;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#ec2027 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #ec2027;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#ffc111 !important;
+	border-color:#ffc111 !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #ffc111;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#ffc111 !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #ffc111;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#f16723 !important;
+	border-color:#f16723 !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #f16723;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#f16723 !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #f16723;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#9bca3b !important;
+	border-color:#9bca3b !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #9bca3b;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#9bca3b !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #9bca3b;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#8f298c !important;
+	border-color:#8f298c !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #8f298c;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#8f298c !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #8f298c;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#50a4db !important;
+	border-color:#50a4db !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #50a4db;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#50a4db !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #50a4db;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#ec2027;"><a class="menu-a" href="/fr/rubrique/1/institution">Institution</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/3c6mjcsxjqoahhp.JPG" alt=""></li>
+								<li><a href="/fr/elus" class="icon-arrow-right"> Élus communautaires </a></li>
+								<li><a href="/fr/information/7424/elus-suppleants" class="icon-arrow-right"> Elus suppléants </a></li>
+								<li><a href="/fr/comptes-rendus" class="icon-arrow-right"> Comptes-rendus </a></li>
+								<li><a href="/fr/publications" class="icon-arrow-right"> Publications </a></li>
+								<li><a href="/fr/information/7587/offres-emploi" class="icon-arrow-right"> Offres d'emploi </a></li>
+								<li><a href="/fr/information/8401/finances" class="icon-arrow-right"> Finances </a></li>
+								<li><a href="/fr/information/8685/communication" class="icon-arrow-right"> Communication </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#ffc111;"><a class="menu-a" href="/fr/rubrique/2/services">Services</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/t9cs87an4em8k68.jpg" alt=""></li>
+								<li><a href="/fr/information/7667/organigramme" class="icon-arrow-right"> Organigramme </a></li>
+								<li><a href="/fr/information/6832/instruction-urbanisme" class="icon-arrow-right"> Instruction d'urbanisme </a></li>
+								<li><a href="/fr/information/6833/assainissement" class="icon-arrow-right"> Assainissement </a></li>
+								<li><a href="/fr/information/6919/batiments-sportifs" class="icon-arrow-right"> Bâtiments sportifs </a></li>
+								<li><a href="/fr/information/6925/transports" class="icon-arrow-right"> Transports </a></li>
+								<li><a href="/fr/information/7315/salles-louer" class="icon-arrow-right"> Salles à louer </a></li>
+								<li><a href="/fr/information/9024/espace-services-publics-itinerant" class="icon-arrow-right"> Espace de Services Publics Itinérant </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#f16723;"><a class="menu-a" href="/fr/rubrique/3/social-sante">Social et santé</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/2lnpgex9pzeltl5.JPG" alt=""></li>
+								<li><a href="/fr/information/6920/residence-autonomie-myosotis" class="icon-arrow-right"> Résidence autonomie Les Myosotis </a></li>
+								<li><a href="/fr/information/6921/accueil-gens-voyage" class="icon-arrow-right"> Accueil des Gens du Voyage </a></li>
+								<li><a href="/fr/information/6924/centre-medico-social" class="icon-arrow-right"> Centre médico-social </a></li>
+								<li><a href="/fr/information/7369/maison-sante" class="icon-arrow-right"> Maison de santé </a></li>
+								<li><a href="/fr/information/8795/petite-enfance" class="icon-arrow-right"> Petite Enfance </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#9bca3b;"><a class="menu-a" href="/fr/rubrique/4/cadre-vie">Cadre de vie</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/rg384f9wfl1tntp.jpg" alt=""></li>
+								<li><a href="/fr/information/6909/urbanisme-plui" class="icon-arrow-right"> Urbanisme : le PLUI </a></li>
+								<li><a href="/fr/information/6910/habitat-aides-ameliorer-logement" class="icon-arrow-right"> Habitat : des aides pour améliorer votre logement </a></li>
+								<li><a href="/fr/information/6911/les-dechets" class="icon-arrow-right"> Les déchets </a></li>
+								<li><a href="/fr/information/6916/coeurs-villages" class="icon-arrow-right"> Coeurs de Villages </a></li>
+								<li><a href="/fr/information/6917/voirie-communautaire" class="icon-arrow-right"> Voirie communautaire </a></li>
+								<li><a href="/fr/information/6923/centre-aquatique" class="icon-arrow-right"> Centre aquatique </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#8f298c;"><a class="menu-a" href="/fr/rubrique/5/tourisme-culture">Tourisme Culture</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/hm67g75v70ixi.jpg" alt=""></li>
+								<li><a href="/fr/information/6922/office-tourisme-terres-loire-canaux" class="icon-arrow-right"> Office de tourisme Terres de Loire et Canaux </a></li>
+								<li><a href="/fr/information/7034/saison-culturelle" class="icon-arrow-right"> Saison culturelle </a></li>
+								<li><a href="/fr/information/8853/taxe-sejour" class="icon-arrow-right"> Taxe de séjour </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#50a4db;"><a class="menu-a" href="/fr/rubrique/6/vie-economique">Vie économique</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/111/180x120/eelx9yb9v52xcb3.JPG" alt=""></li>
+								<li><a href="/fr/marches-publics" class="icon-arrow-right"> Marchés publics </a></li>
+								<li><a href="/fr/information/6914/zones-activites" class="icon-arrow-right"> Zones d'activités </a></li>
+								<li><a href="/fr/information/8141/aides-entreprises" class="icon-arrow-right"> Aides aux entreprises </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<div class="socialblck"><a href="https://www.facebook.com/Communaut%C3%A9-de-communes-Berry-Loire-Puisaye-1591579064222631/" title="https://www.facebook.com/Communaut%C3%A9-de-communes-Berry-Loire-Puisaye-1591579064222631/" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/fb_right.png" alt="https://www.facebook.com/Communaut%C3%A9-de-communes-Berry-Loire-Puisaye-1591579064222631/"> </a></div>
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/institution" title="Institution">Institution</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">24/03/2020</td>
+									<td><a href="/fr/compte-rendu/2404/conseil-communautaire-12-mars-2020" title="Conseil communautaire du 12 mars 2020"><b>Conseil communautaire du 12 mars 2020</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/tzj3papsllkavd.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">14/02/2020</td>
+									<td><a href="/fr/compte-rendu/2383/conseil-communautaire-11-fevrier-2020" title="Conseil communautaire du 11 février 2020"><b>Conseil communautaire du 11 février 2020</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/x4f4ir2htxqkqd.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">16/12/2019</td>
+									<td><a href="/fr/compte-rendu/2360/conseil-communautaire-10-decembre-2019" title="Conseil communautaire du 10 décembre 2019"><b>Conseil communautaire du 10 décembre 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/rj4zphnbnaoi0w3.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/11/2019</td>
+									<td><a href="/fr/compte-rendu/2342/conseil-communautaire-19-novembre-2019" title="Conseil communautaire du 19 novembre 2019"><b>Conseil communautaire du 19 novembre 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/dl9lv1oqpreyzv0.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">18/10/2019</td>
+									<td><a href="/fr/compte-rendu/2321/conseil-communautaire-14-octobre-2019" title="Conseil communautaire du 14 octobre 2019"><b>Conseil communautaire du 14 octobre 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/yazw12rougs0y1x.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/09/2019</td>
+									<td><a href="/fr/compte-rendu/2299/conseil-communautaire-10-septembre-2019" title="Conseil communautaire du 10 septembre 2019"><b>Conseil communautaire du 10 septembre 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/786sf4chq3kwndm.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">23/07/2019</td>
+									<td><a href="/fr/compte-rendu/2288/conseil-communautaire-16-juillet-2019" title="Conseil communautaire du 16 juillet 2019"><b>Conseil communautaire du 16 juillet 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/loyuk4kdbzvy5w.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">17/06/2019</td>
+									<td><a href="/fr/compte-rendu/2258/conseil-communautaire-11-juin-2019" title="Conseil communautaire du 11 juin 2019"><b>Conseil communautaire du 11 juin 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/ycz2uhi0mahzzzv.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">15/04/2019</td>
+									<td><a href="/fr/compte-rendu/2207/conseil-communautaire-8-avril-2019" title="Conseil communautaire du 8 avril 2019"><b>Conseil communautaire du 8 avril 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/jiwet5b4but8p7.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">13/03/2019</td>
+									<td><a href="/fr/compte-rendu/2182/conseil-communautaire-11-mars-2019" title="Conseil communautaire du 11 mars 2019"><b>Conseil communautaire du 11 mars 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/v6pt6yt101us0ge.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/03/2019</td>
+									<td><a href="/fr/compte-rendu/2196/debat-orientations-budgetaires" title="Débat sur les orientations budgétaires"><b>Débat sur les orientations budgétaires</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/jyem9oo8v3waqp1.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">30/01/2019</td>
+									<td><a href="/fr/compte-rendu/2153/conseil-communautaire-29-janvier-2019" title="Conseil communautaire du 29 janvier 2019"><b>Conseil communautaire du 29 janvier 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/q3x1lycn2t0943k.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/01/2019</td>
+									<td><a href="/fr/compte-rendu/2147/conseil-communautaire-15-janvier-2019" title="Conseil communautaire du 15 janvier 2019"><b>Conseil communautaire du 15 janvier 2019</b></a> <br>
+										<p>Compte-rendu</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/fetfdmhjxo243uy.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">01/01/2019</td>
+									<td><a href="/fr/compte-rendu/2143/statuts-cc-berry-loire-puisaye-1er-janvier-2019" title="Statuts de la CC Berry Loire Puisaye au 1er janvier 2019"><b>Statuts de la CC Berry Loire Puisaye au 1er janvier 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/5gy3j6w1vfat.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">01/01/2018</td>
+									<td><a href="/fr/compte-rendu/1903/nouveaux-statuts-cc-berry-loire-puisaye-1er-janvier-2018" title="Nouveaux statuts de la CC Berry Loire Puisaye au 1er janvier 2018"><b>Nouveaux statuts de la CC Berry Loire Puisaye au 1er janvier 2018</b></a> <br>
+										<p>La communauté de communes Berry Loire Puisaye, un an après la fusion des communautés de communes de Briare et de Châtillon-sur-Loire, s'est...</p>
+									</td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/rwqcvjh1c6i338e.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/12/2017</td>
+									<td><a href="/fr/compte-rendu/1894/conseil-communautaire-14-decembre-2017" title="Conseil communautaire du 14 décembre 2017"><b>Conseil communautaire du 14 décembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/o14q56j0q300b0h.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">24/11/2017</td>
+									<td><a href="/fr/compte-rendu/1880/conseil-communautaire-17-novembre-2017" title="Conseil communautaire du 17 novembre 2017"><b>Conseil communautaire du 17 novembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"></td>
+								</tr>
+								<tr>
+									<td align="center">22/09/2017</td>
+									<td><a href="/fr/compte-rendu/1821/conseil-communautaire-22-septembre-2017" title="Conseil communautaire du 22 septembre 2017"><b>Conseil communautaire du 22 septembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/ck1074rwdx81zk7.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">27/07/2017</td>
+									<td><a href="/fr/compte-rendu/1790/conseil-communautaire-27-juillet-2017" title="Conseil communautaire du 27 juillet 2017"><b>Conseil communautaire du 27 juillet 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/1ziq2kmhzv662a.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">15/06/2017</td>
+									<td><a href="/fr/compte-rendu/1753/conseil-communautaire-15-juin-2017" title="Conseil communautaire du 15 juin 2017"><b>Conseil communautaire du 15 juin 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/111/documents/cqiwysiq9mfn5k.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/25.png');"></div><a href="/fr/information/8795/petite-enfance" title="Petite Enfance"> Petite Enfance </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/02.png');"></div><a href="/fr/information/9024/espace-services-publics-itinerant" title="Espace de Services Publics Itinérant"> Espace de Services Publics Itinérant </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/28.png');"></div><a href="/fr/information/6920/residence-autonomie-myosotis" title="Résidence autonomie Les Myosotis"> Résidence autonomie Les Myosotis </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/09.png');"></div><a href="/fr/information/6922/office-tourisme-terres-loire-canaux" title="Office de tourisme Terres de Loire et Canaux"> Office de tourisme Terres de Loire et Canaux </a></li>
+						</ul>
+					</div>
+				</div>
+				<style>
+#interactivemap svg {
+	background-color:#e5e9ec;
+	margin:0;
+	background-image: url(http://static.reseaudesintercoms.fr/cities/111/interactive/point_geoloc.png);
+	background-repeat:no-repeat;
+	
+	/* Position à modifier */
+	background-position: 5px 8px;
+}
+
+#map-tip {
+	text-align: center;
+	font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+	display: none;
+	border: none;
+	color: #ffffff;
+	z-index: 1000;
+	float: left;
+	position: absolute;
+	background-color:#2d358c;
+	border-radius:4px;
+	padding:6px 8px;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+#map-tip p {
+	margin: 0!important;
+}
+				</style>
+				<div id="mini-map">
+					<div id="interactivemap">
+						<!--<svg version="1.1"  viewBox="0 0 1000 500" xml:space="preserve">-->
+						<svg version="1.1" viewbox="1 0 300 220" xml:space="preserve">
+							<g id="countries">
+								<!-- 1 --><a href="/fr/territoire/1421/adon" xlink:href="/fr/territoire/1421/adon"> <path id="map_1" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M200.57,14.75h0c0-.12.77-2.77.77-3.31s.23-3.54.25-3.79.08-1.12.06-1.25a9.17,9.17,0,0,0-2.19-.71c-.62-.12-5.33-.73-6.23-.87S187.54,4,187.17,4s-1.1.37-1.54.4a6.5,6.5,0,0,0-1.44.27c-.4.12-.71.17-1,.23s-4.81,4.58-5.48,5.15c-.81,0-4,.21-4.37.23a18.66,18.66,0,0,1-2.5.19,20.48,20.48,0,0,1-1.08-1.79,9,9,0,0,0-.73,1.81c-.08.27-7.1,8.25-7.29,8.46l-.15.13c3,2,9.26,6.05,9.59,6.5s5.54,10,6.08,10.58,7.21,6.67,7.46,6.92,1,.92,1,1.15a16.1,16.1,0,0,1-.67,1.83,51.22,51.22,0,0,0,5.25-2.94c.15-.27,4.15-11.92,4.19-12.23A7,7,0,0,1,195,29.6c.08-.17,2.81-3.25,2.92-3.6s-.5-4.29-.48-4.65,3-6.21,3.1-6.54Z"></path> </a>
+								<!-- 2 --><a href="/fr/territoire/1424/la-bussiere" xlink:href="/fr/territoire/1424/la-bussiere"> <path id="map_2" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M185.09,46h0s.48-1.15.62-1.64v-.34a7.39,7.39,0,0,0-.92-1c-.25-.25-6.92-6.33-7.46-6.92s-5.71-10.08-6.08-10.58-6.58-4.52-9.59-6.5c-.26.2-.74.46-1.2.77a45.43,45.43,0,0,0-3.23,3.35,8.28,8.28,0,0,1-.81.64c-1.41.5-10.81,5.63-11.41,5.78s-3.69-.41-4.16-.37c-.31.25-4.06,10.46-4.23,10.83s4.17,8.33,4.42,8.83,6.08,8.29,6.83,9.21c1,.25,9.71,2.67,10.5,2.88a19.29,19.29,0,0,0,2.88.25A11.93,11.93,0,0,0,162,60a8.94,8.94,0,0,1,1.58-2.46c.25,0,8.79-.37,9.08-.29s3.92,1.88,4.25,1.88,5-2.71,5.08-2.79.88-.62.83-.75a33.9,33.9,0,0,1-.87-4.08C182.05,51.42,184.05,47.89,185.09,46Z"></path> </a>
+								<!-- 3 --><a href="/fr/territoire/1427/feins-en-gatinais" xlink:href="/fr/territoire/1427/feins-en-gatinais"> <path id="map_3" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M193.4,44.27c1.65.54,11.63,4.35,12,4.31s1.4-.42,2.39-.76h0c-.12-.34,1.78-1.84,1.94-2.12s.09-.47.13-1.06,2.31-11,2.44-12.28c-.09-.5-2.07-7.07-2.07-7.3s.85-1.42.88-1.94c0,0-1.52-.31-1.94-.48s-4.37-6.54-4.6-6.75a10.87,10.87,0,0,0-2.4-.75,8.2,8.2,0,0,1-1.58-.37l0,.06c-.08.33-3.08,6.19-3.1,6.54s.58,4.29.48,4.65-2.83,3.44-2.92,3.6a7,7,0,0,0-.48,1.29c0,.31-4,12-4.19,12.23l0,0C191.28,43.56,192.3,43.91,193.4,44.27Z"></path> </a>
+								<!-- 4 --><a href="/fr/territoire/1425/escrignelles" xlink:href="/fr/territoire/1425/escrignelles"> <path id="map_4" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M203.44,64.69c.16-.25,4.06-10.5,4.28-10.69l.37-.23a9.33,9.33,0,0,0,.88-2c0-.34-1-3.54-1.18-3.93-1,.34-2.16.73-2.39.76s-10.35-3.77-12-4.31c-1.1-.36-2.11-.71-3.13-1.1A56.82,56.82,0,0,1,185.09,46c-1,1.84-3,5.37-3.13,5.49a33.9,33.9,0,0,0,.88,4.08s0,0,0,0a1.39,1.39,0,0,1,.23.61c0,.56,1.53,9.53,1.72,10a41.56,41.56,0,0,0,2.72,4.22c1.16.56,4.19,1.59,4.19,1.59C193.59,70.94,203.28,64.94,203.44,64.69Z"></path> </a>
+								<!-- 5 --><a href="/fr/territoire/1428/ouzouer-sur-trezee" xlink:href="/fr/territoire/1428/ouzouer-sur-trezee"> <path id="map_5" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M222.78,62.94a1.53,1.53,0,0,1-.47-.59c-.06-.25,1.59-6.06,1.59-6.34a26.08,26.08,0,0,0-2.66-3.53c-.22-.16-5.28,3.59-6.16,4.28s-1.34,1.06-1.69.94-4.87-3.53-5.34-3.87l0,0-.37.23c-.22.19-4.12,10.44-4.28,10.69s-9.84,6.25-11.75,7.41c0,0-3-1-4.19-1.59a41.56,41.56,0,0,1-2.72-4.22c-.19-.5-1.72-9.47-1.72-10a1.39,1.39,0,0,0-.23-.61c0,.15-.71.65-.83.73s-4.75,2.79-5.08,2.79-4-1.79-4.25-1.87-8.83.29-9.08.29A8.94,8.94,0,0,0,162,60a11.93,11.93,0,0,1-.79,1.21h0c.13.08-.46,5.54-.62,7.29s-.67,6.21-.67,6.58c0,.07-.07.12-.16.15a4,4,0,0,1,.11.76c0,.63-.44,3.75-.34,4.09s3.84,5.59,4.16,5.88,7.44,4.84,7.53,5.13,1.13,8.38,1.13,8.84a3.35,3.35,0,0,0,.31,1.06,8.58,8.58,0,0,0,1.19,1.69c.47.5,5.31,3.94,6.16,4.63s1.22.94,1.38,1.31.78,3.56,1.09,4.78.78,4.25,1.13,4.47a36.05,36.05,0,0,0,3.91,1.34,24.15,24.15,0,0,0,2.59-.06,13.58,13.58,0,0,0,2.47-2.28c.66-.75,15.41-20.16,15.66-20.34a10.38,10.38,0,0,1,2.66-.91c1.5-.37,5.94-1.66,6.44-1.91s1.91-1,1.91-1.34-4.41-4.81-5-5.44-2.91-2.81-2.87-3.12,1.53-4.56,1.69-5.09,1.65-5.79,2-6,7.75-4.12,8-4.42a4.36,4.36,0,0,0,.38-1.46l.76-3C223.56,63.45,222.85,63,222.78,62.94Z"></path> </a>
+								<!-- 6 --><a href="/fr/territoire/1423/briare" xlink:href="/fr/territoire/1423/briare"> <path id="map_6" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M190.13,119.19a24.15,24.15,0,0,1-2.59.06,36.05,36.05,0,0,1-3.91-1.34c-.34-.22-.81-3.25-1.12-4.47s-.94-4.41-1.09-4.78-.53-.62-1.37-1.31-5.69-4.12-6.16-4.62a8.58,8.58,0,0,1-1.19-1.69,3.35,3.35,0,0,1-.31-1.06c0-.47-1-8.56-1.12-8.84S164,86.28,163.72,86s-4.06-5.53-4.16-5.87.31-3.47.34-4.09a4,4,0,0,0-.11-.76,6.46,6.46,0,0,1-1.84-.15c-.58-.08-8.83-2.12-9.21-2.21s-2.75,2.5-3,2.63-8.62,1.29-9.08,1.42-7.29,5.38-7.62,5.75a47,47,0,0,0-2,6.5c0,.54,11.79,4.63,12.25,4.83s5,6,5.5,6.62,1.21,2.08,1.42,2.42a.22.22,0,0,1,0,.13c.26.18.47.33.62.46.63.5,9.5,8.5,9.5,8.79s.88,9.21,1,10a7.15,7.15,0,0,0,.38,1.67c.13.21,4.42,4.67,5.08,5.33s6.5,6.92,7.21,7.75a7.85,7.85,0,0,0,1.46,1.5c.13,0,4.25-3.37,5.5-4.37s9.71-7.92,10.29-8.38a2,2,0,0,0,.92-1.25c.06-.35,1.47-4,2.13-5.71Z"></path> </a>
+								<!-- 7 --><a href="/fr/territoire/1422/breteau" xlink:href="/fr/territoire/1422/breteau"> <path id="map_7" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M242.81,77.34c0-.37-.31-.66-.59-.84s-12.37-9.41-13.28-10.09a23.1,23.1,0,0,0-3.66-2,8.37,8.37,0,0,1-1.07-.55l-.76,3a4.36,4.36,0,0,1-.37,1.46c-.25.29-7.62,4.17-8,4.42s-1.86,5.51-2,6-1.66,4.78-1.69,5.09,2.28,2.5,2.88,3.13,4.84,5,5,5.41a2.29,2.29,0,0,1,.47.21c.63.42,5.92,4.21,6.25,4.33a25.2,25.2,0,0,0,2.83-.67c.38,0,1.75-.25,2.17-.25s1.33.42,1.46.17S236.21,84,236.5,84s2.22.93,3.8,1.67C240.52,84.6,242.78,77.7,242.81,77.34Z"></path> </a>
+								<!-- 8 --><a href="/fr/territoire/1429/champoulet" xlink:href="/fr/territoire/1429/champoulet"> <path id="map_8" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M248.6,108.77c.18-.41,7.65-6,8.27-6.71-.44-.53-5.44-7.53-5.81-7.84a9.87,9.87,0,0,0-1.78-.94c-.31-.12-3.91.34-4.09.34A35.45,35.45,0,0,1,242.78,90c-.28-.5-2.41-3.81-2.5-4.25a.45.45,0,0,1,0-.12c-1.58-.74-3.62-1.67-3.8-1.67s-4,12-4.08,12.21c0,.06-.11.08-.21.08,0,.38,0,.66,0,.72a20.08,20.08,0,0,0-.5,3.5,14.55,14.55,0,0,0,1.25,1.75c.38.53,2.31,2.94,2.41,3.31s.66,1.47.72,1.72c.69.13,9.25,1.88,10.06,1.84C246.5,109.08,247.54,108.93,248.6,108.77Z"></path> </a>
+								<!-- 9 --><a href="/fr/territoire/1431/dammarie-en-puisaye" xlink:href="/fr/territoire/1431/dammarie-en-puisaye"> <path id="map_9" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M236.19,109.53a15,15,0,0,1-.14-2.41c-.15-.38-.59-1.26-.67-1.59s-2-2.78-2.41-3.31a14.55,14.55,0,0,1-1.25-1.75,20.08,20.08,0,0,1,.5-3.5c0-.07,0-.34,0-.72-.33,0-.93-.24-1.25-.24s-1.79.25-2.17.25a25.2,25.2,0,0,1-2.83.67c-.33-.12-5.62-3.92-6.25-4.33a2.29,2.29,0,0,0-.47-.21v0c0,.31-1.41,1.09-1.91,1.34s-4.94,1.53-6.44,1.91a10.38,10.38,0,0,0-2.66.91c-.25.19-15,19.59-15.66,20.34l-.13.15a4.84,4.84,0,0,1,.54,1.2,7.91,7.91,0,0,0,.63,2c.22.5.94,1.25,1.09,1.69a13.27,13.27,0,0,1,.44,2c.13.78.41,2.5.53,2.81s3,2.59,3.41,3.16a6.72,6.72,0,0,0,2.44,1.44,15.76,15.76,0,0,0,1.78.19,35.46,35.46,0,0,1,3.5-3.62c.47-.31,8.66-4.31,9.56-4.72s10.06-5.06,10.84-5.5S235.72,109.84,236.19,109.53Z"></path> </a>
+								<!-- 10 --><a href="/fr/territoire/1435/saint-firmin-sur-loire" xlink:href="/fr/territoire/1435/saint-firmin-sur-loire"> <path id="map_10" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M157.71,123.91a12,12,0,0,1-.29-1.45c-.12-.79-1-9.71-1-10s-8.87-8.29-9.5-8.79c-.15-.12-.36-.28-.62-.46-.07.5-1.38,2-1.92,3s-7,13.21-7.17,13.46-4,3.58-4.71,4.33-10.21,9.25-11.25,10.17-3.23,2.77-3.61,3c.49,1.28,1,2.54,1.23,3,.38.83,3.21,6.25,3.08,6.54s-1.54,1.79-1.21,1.79c.17.08,2.38.33,2.88.38s1.13-.17,1.42,0,3.25,2.08,3.79,2.46a19.44,19.44,0,0,1,2.38,1.58,13.43,13.43,0,0,1,.88,1.71c1-.62,7.67-5.83,8.29-6.46s1.21-.79,1.33-1.17,1.58-6.25,2-6.75,8.25-9.79,9.08-10.75Z"></path> </a>
+								<!-- 11 --><a href="/fr/territoire/1436/ousson-sur-loire" xlink:href="/fr/territoire/1436/ousson-sur-loire"> <path id="map_11" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M188.16,128.53c.34-.25,4.59-3.81,5-4.31.19-.22.93-1,1.7-1.71a6.15,6.15,0,0,0-.17-.6c-.16-.44-.87-1.19-1.09-1.69a7.91,7.91,0,0,1-.62-2,4.84,4.84,0,0,0-.54-1.2,13.77,13.77,0,0,1-2.08,1.94c-.65,1.73-2.06,5.36-2.13,5.71a2,2,0,0,1-.92,1.25c-.58.46-9,7.38-10.29,8.38-1.08.86-4.28,3.48-5.23,4.19a2.62,2.62,0,0,0,.56.79c.41.28,13.13,6.78,13.25,6.72a2.93,2.93,0,0,0,.19-1.12c0-.31-.44-4.94-.28-5.25s2.88-3.06,2.91-3.41-1.59-6.16-1.56-6.37A5.6,5.6,0,0,1,188.16,128.53Z"></path> </a>
+								<!-- 12 --><a href="/fr/territoire/1437/autry-le-chatel" xlink:href="/fr/territoire/1437/autry-le-chatel"> <path id="map_12" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M120.72,148.59c-.08-.19,1.12-1.48,1.24-1.75s-2.71-5.71-3.08-6.54c-.23-.51-.74-1.76-1.23-3l-.06,0a5.33,5.33,0,0,1-2.08-.92c-.25-.25-5.29-10.08-5.46-10.42s-1.08-.46-1.79-.71c-.29-.33-3.46-5.08-3.75-5.37s-1.71-.79-2.29-1.17-10.54-6.79-11.5-7.46c-.58-.54-2.25-3.29-2.67-3.67s-6.21.79-7.46,1-3.42.58-4,.63-1.37.92-2.42,2.37c-.5.71-5.12,10.29-5.67,11.42,0,.38,5.75,7.33,6.21,7.88s6,12.58,6,12.79-2.75,5.63-2.92,6,1.42,3.58,2,4.5c0,.21-1.33,1.63-1.54,2s2.88,5.88,3.17,6.13,8.08.71,8.54.83,3.83,4.13,4.38,4.63a9.13,9.13,0,0,0,2.11,1.42,50.3,50.3,0,0,0,6.51-2.49c.81-1.25,2.81-5.87,3.09-6.12s7.09-5.72,7.81-6.34S119,150,120.72,148.59Z"></path> </a>
+								<!-- 13 --><a href="/fr/territoire/1434/cernoy-en-berry" xlink:href="/fr/territoire/1434/cernoy-en-berry"> <path id="map_13" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M138.92,176.5s-.5-1.17-.67-1.67-5.42-17.42-5.75-19a10.83,10.83,0,0,1-.18-1.21l-.24.16a13.43,13.43,0,0,0-.87-1.71,19.44,19.44,0,0,0-2.37-1.58c-.54-.37-3.5-2.25-3.79-2.46s-.92,0-1.42,0-2.71-.29-2.87-.37,0,0,0,0c-1.75,1.42-6.33,5.13-6.91,5.63s-7.53,6.09-7.81,6.34-2.28,4.88-3.09,6.13a50.3,50.3,0,0,1-6.51,2.49l.14.08a75.65,75.65,0,0,1,4.38,7.33c.21.38-2,7.79-2,8.21s7.75,4.29,8.5,4.67,10.23,5.44,11.79,6.33c.47-2.56,1.11-6.09,1.19-6.6.13-.81,4.81-6.69,5.31-7.25a9.12,9.12,0,0,1,1.38-1.12c.38-.31,9.29-3.9,9.79-4.06A12.63,12.63,0,0,1,138.92,176.5Z"></path> </a>
+								<!-- 14 --><a href="/fr/territoire/1440/chatillon-sur-loire" xlink:href="/fr/territoire/1440/chatillon-sur-loire"> <path id="map_14" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M168.59,164c.5-.5,7.88-6.94,8.53-7.56s8.13-7.31,8.66-7.75a7.28,7.28,0,0,0,1.44-1.53c-.16-.17-.82-.84-1.48-1.51a1.83,1.83,0,0,1-.12.38c-.12.06-12.84-6.44-13.25-6.72a2.62,2.62,0,0,1-.56-.79,1.65,1.65,0,0,1-.27.18,7.85,7.85,0,0,1-1.46-1.5c-.71-.83-6.54-7.08-7.21-7.75s-5-5.13-5.08-5.33a1.1,1.1,0,0,1-.09-.22l-5,5.76c-.83,1-8.71,10.25-9.08,10.75s-1.83,6.38-2,6.75-.71.54-1.33,1.17-6.53,5.21-8.05,6.29a10.83,10.83,0,0,0,.18,1.21c.33,1.58,5.58,18.5,5.75,19s.67,1.67.67,1.67l.22,0c.66.07,1.58.09,2.32.09,1.21,0,7.25-.33,7.63-.37s1.33-.29,1.62-.12a20,20,0,0,1,1.63,1.91c.16-.36.57-.56,2-1.54l.19.3c.42-.49.75-.87.88-1,.47-.44,6.38-5.66,7.5-6.66S168.09,164.5,168.59,164Z"></path> </a>
+								<!-- 15 --><a href="/fr/territoire/1439/bonny-sur-loire" xlink:href="/fr/territoire/1439/bonny-sur-loire"> <path id="map_15" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M207,171.65c.14-.34,4.62-3.74,5.2-4.19.67-.25,4.71,3,5.67,3.42,0,0,4-4.21,4.38-4.54s.66-.1,2.43-.2c0-.38-.08-.81-.12-1.32-.12-1.62-.81-9.87-1.19-10.25s-5.56-3.06-5.69-3.37-2.31-6.25-2.25-6.44,1.19-1.75,1.19-1.75c-.62-.37-11.69-6.62-12-7.25-.15-.3-.74-2.29-1.3-4.26h0a15.76,15.76,0,0,1-1.78-.19,6.72,6.72,0,0,1-2.44-1.44c-.41-.56-3.28-2.84-3.41-3.16s-.41-2-.53-2.81c-.08-.5-.17-1-.27-1.4-.77.76-1.51,1.49-1.7,1.71-.44.5-4.69,4.06-5,4.31a5.6,5.6,0,0,0-1.28,1.34c0,.22,1.59,6,1.56,6.38s-2.75,3.09-2.91,3.41.28,4.94.28,5.25a3.79,3.79,0,0,1-.07.74c.66.66,1.32,1.33,1.48,1.51a.22.22,0,0,1,0,.08,10.4,10.4,0,0,1,1.11.89c.58.58,7.79,8.38,8.38,8.92a37.09,37.09,0,0,1,3.13,3.17c.33.54,1.88,6.46,2,6.79a12.54,12.54,0,0,0,1.79,2c.42.38,2,1.71,3,2.46A2.94,2.94,0,0,0,207,171.65Z"></path> </a>
+								<!-- 16 --><a href="/fr/territoire/1430/batilly-en-puisaye" xlink:href="/fr/territoire/1430/batilly-en-puisaye"> <path id="map_16" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M244.88,114.54l2.11.36c.21-.75,1.09-2.84,1.14-3.3s.34-2.44.47-2.81h0c-1.06.16-2.1.31-2.44.32-.81,0-9.37-1.72-10.06-1.84l0-.13a15,15,0,0,0,.14,2.41c-.47.31-8.19,7.69-9,8.13s-9.94,5.09-10.84,5.5-9.09,4.41-9.56,4.72a35.54,35.54,0,0,0-3.49,3.61c.57,2,1.15,4,1.3,4.26.3.6,10.4,6.32,11.85,7.16a29.57,29.57,0,0,0,3.61-2c1.13-.67,11-6.67,11.58-7.33a16.34,16.34,0,0,0,1.83-3.5c.63-1.5,3-7,3.38-7s1.88.71,2.08.38,1.67-6,2-6.37S244.33,114.46,244.88,114.54Z"></path> </a>
+								<!-- 17 --><a href="/fr/territoire/1432/thou" xlink:href="/fr/territoire/1432/thou"> <path id="map_17" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M242.13,145c.09-.31.22-.5.13-.72s-3.87-6.59-4-7.34.75-10.44.75-11.81c0-.4,0-1-.06-1.57-.24.3-1.74-.38-2.07-.38s-2.75,5.46-3.37,7a16.34,16.34,0,0,1-1.83,3.5c-.54.67-10.46,6.67-11.58,7.33a29.57,29.57,0,0,1-3.61,2l.15.09s-1.12,1.56-1.19,1.75,2.13,6.13,2.25,6.44,5.31,3,5.69,3.38,1.06,8.63,1.19,10.25c0,.51.08.94.12,1.32h.19c.5-.17,9.21-2.87,9.79-3.12a8.79,8.79,0,0,0,2.08-1.81c.5-.56,1.88-3.81,2.25-4.12h.09l-.9-4.24C238.13,152.53,242,145.31,242.13,145Z"></path> </a>
+								<!-- 18 --><a href="/fr/territoire/1426/faverelles" xlink:href="/fr/territoire/1426/faverelles"> <path id="map_18" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M266.88,152.25c-.37-.56-4-.94-4.37-1.31s-2.5-7.81-2.69-8.44-5.75-3.19-6.47-3.91c-.25-.25-3.19-5.81-3.19-6s2.19-4.12,2.19-4.44-5.41-12.69-5.41-13.06a1,1,0,0,1,0-.23l-2.11-.36c-.54-.08-3.58,2.29-3.92,2.63s-1.79,6-2,6.37h0c0,.62.06,1.18.06,1.57,0,1.38-.87,11.06-.75,11.81s3.91,7.13,4,7.34,0,.41-.12.72-4,7.53-3.94,7.81l.9,4.24c1.45,0,19.2,5.22,20.54,5.7.59-.59,5.31-6.5,5.69-7.06s2.31-1.44,2.31-1.62A6.13,6.13,0,0,0,266.88,152.25Z"></path> </a>
+								<!-- 19 --><a href="/fr/territoire/1433/pierrefitte-es-bois" xlink:href="/fr/territoire/1433/pierrefitte-es-bois"> <path id="map_19" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M152.25,203.21c0-.33-2.17-3.08-2.29-3.5s1.17-2.58,1.37-3.37a7.44,7.44,0,0,0,.17-2.12c0-.75-.79-7.25-.79-7.67s1.46-7.92,1.58-8.37a.91.91,0,0,1,0-.13,20,20,0,0,0-1.63-1.91c-.29-.17-1.25.08-1.62.13s-6.42.38-7.63.38a20.56,20.56,0,0,1-2.59-.12,11.86,11.86,0,0,0-2,.25c-.5.17-9.42,3.75-9.79,4.06a9.12,9.12,0,0,0-1.37,1.13c-.5.56-5.19,6.44-5.31,7.25-.08.51-.72,4-1.19,6.6l.21.13c.33.25-.17,4.46-.12,5.46s.08,4.88.21,5.71,2.58,3.92,3.25,4.71a3.81,3.81,0,0,0,1.33,1.21c.38.17,7.67,1.38,9.21,1.54.75-.33,12.54-4,13.08-4.33a60.87,60.87,0,0,0,5.38-4.87A7,7,0,0,0,152.25,203.21Z"></path> </a>
+								<!-- 20 --><a href="/fr/territoire/1438/beaulieu-sur-loire" xlink:href="/fr/territoire/1438/beaulieu-sur-loire"> <path id="map_20" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M207,171.67v0a2.94,2.94,0,0,1-.39-.23c-1-.75-2.62-2.08-3-2.46a12.54,12.54,0,0,1-1.79-2c-.12-.33-1.67-6.25-2-6.79a37.09,37.09,0,0,0-3.12-3.17c-.58-.54-7.79-8.33-8.37-8.92a10.4,10.4,0,0,0-1.11-.89,9.17,9.17,0,0,1-1.4,1.45c-.53.44-8,7.13-8.66,7.75s-8,7.06-8.53,7.56-4.56,4.16-5.69,5.16-7,6.22-7.5,6.66c-.13.12-.45.49-.88,1,.82,1.28,4,6.26,4.64,7.2s1.17.75,1.63.75,3,.25,4,.33,3,.38,3.83.38c.58.29,7,4.67,8.29,5.58,1,.69,1.54,1,1.92,1.71,1.42,3.29,5.92,11.29,6.46,11.67,2.75-.12,3.46,1.67,3.88,1.88s8.46-2.08,9.25-2.58,6.27-8.69,6.92-9.33,12.58-4.17,13.13-4.37,2-1.5,2-2-11.92-13.21-12.75-14.21A13.33,13.33,0,0,0,207,171.67Z"></path> </a></g>
+							<g id="map_points"></g>
+						</svg><span id="map-tip"></span>
+						<script src="http://static.reseaudesintercoms.fr/default/scripts/interactive_map.js"></script>
+						<script>
+			var map_cities = [
+				'Adon',
+				'La Bussière',
+				'Feins-en-Gâtinais',
+				'Escrignelles',
+				'Ouzouer-sur-Trézée',
+				'Briare',
+				'Breteau',
+				'Champoulet',
+				'Dammarie-en-Puisaye',
+				'Saint-Firmin-sur-Loire',
+				'Ousson-sur-Loire',
+				'Autry-le-Châtel',
+				'Cernoy-en-Berry',
+				'Châtillon-sur-Loire',
+				'Bonny-sur-Loire',
+				'Batilly-en-Puisaye',
+				'Thou',
+				'Faverelles',
+				'Pierrefitte-ès-Bois',
+				'Beaulieu-sur-Loire'
+			];
+			
+			var map_config = {
+				'default':{
+					'borderColor': '#BEC4CB',
+					'mapShadow':'#fff',
+					'shadowOpacity':'35',
+					'hoverShadow':'#666666',
+					'lakesColor':'#66CCFF',
+					'namesColor':'#919191'
+				},
+			};
+			
+			for (var i = 1, max = map_cities.length; i <= max; i++) {
+				map_config['map_' + i] = {
+					'hover': map_cities[i-1],
+					'upColor':'#ffffff',
+					'overColor':'#50a4db', /* MODIF-couleurs regions survol */
+					'downColor':'#50a4db', /* MODIF-couleurs regions survol */
+					'enable':true,
+				};
+				addEvent('map_' + i);
+			}
+			
+			var pin_config = {
+				'default':{
+					'pinShadow':'#000',
+					'pinShadowOpacity':'50',
+				},
+				'points':[]
+			}
+		
+						</script>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/1421/adon"> Adon </a></li>
+						<li><a href="/fr/territoire/1437/autry-le-chatel"> Autry-le-Châtel </a></li>
+						<li><a href="/fr/territoire/1430/batilly-en-puisaye"> Batilly-en-Puisaye </a></li>
+						<li><a href="/fr/territoire/1438/beaulieu-sur-loire"> Beaulieu-sur-Loire </a></li>
+						<li><a href="/fr/territoire/1439/bonny-sur-loire"> Bonny-sur-Loire </a></li>
+						<li><a href="/fr/territoire/1422/breteau"> Breteau </a></li>
+						<li><a href="/fr/territoire/1423/briare"> Briare </a></li>
+						<li><a href="/fr/territoire/1434/cernoy-en-berry"> Cernoy-en-Berry </a></li>
+						<li><a href="/fr/territoire/1429/champoulet"> Champoulet </a></li>
+						<li><a href="/fr/territoire/1440/chatillon-sur-loire"> Châtillon-sur-Loire </a></li>
+						<li><a href="/fr/territoire/1431/dammarie-en-puisaye"> Dammarie-en-Puisaye </a></li>
+						<li><a href="/fr/territoire/1425/escrignelles"> Escrignelles </a></li>
+						<li><a href="/fr/territoire/1426/faverelles"> Faverelles </a></li>
+						<li><a href="/fr/territoire/1427/feins-en-gatinais"> Feins-en-Gâtinais </a></li>
+						<li><a href="/fr/territoire/1424/la-bussiere"> La Bussière </a></li>
+						<li><a href="/fr/territoire/1436/ousson-sur-loire"> Ousson-sur-Loire </a></li>
+						<li><a href="/fr/territoire/1428/ouzouer-sur-trezee"> Ouzouer-sur-Trézée </a></li>
+						<li><a href="/fr/territoire/1433/pierrefitte-es-bois"> Pierrefitte-ès-Bois </a></li>
+						<li><a href="/fr/territoire/1435/saint-firmin-sur-loire"> Saint-Firmin-sur-Loire </a></li>
+						<li><a href="/fr/territoire/1432/thou"> Thou </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/111/logo/npEXcltQ7fqsZiL.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Alain BERTRAND </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 42, rue des Prés Gris, 45 250 Briare </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 02 38 37 03 84 / 02 38 31 26 11 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> Lundi au jeudi<br> 9 h - 12 h et 14 h - 17 h <br> Vendredi<br> 9 h - 12 h et 14 h - 16 h 30 </span></p>
+						<p id="f_social"><span class="colLeft">En réseau :</span> <span class="colRight"> <a class="sl_facebook couleur_main_bg" href="https://www.facebook.com/Communaut%C3%A9-de-communes-Berry-Loire-Puisaye-1591579064222631/" title="https://www.facebook.com/Communaut%C3%A9-de-communes-Berry-Loire-Puisaye-1591579064222631/" onclick="this.target='_blank'"></a> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft">
+					<div id="f_newsletter">
+						<div class="titre">Newsletter</div>
+						<form action="/fr/newsletter/subscribe" method="post" name="newsletter">
+							<p>Pour vous inscrire à notre lettre d'actualités, veuillez indiquer votre adresse courriel.</p>
+							<p><input name="email" type="text" class="email" placeholder="Adresse email"></p>
+							<div id="newsletterCaptcha" class="g-recaptcha" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+							<p class="center"><input type="submit" value="Souscrire" class="submit bg_main"></p>
+						</form>
+					</div>
+				</div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/institution">Institution</a></li>
+									<li><a href="/fr/elus">Élus communautaires</a></li>
+									<li><a href="/fr/information/7424/elus-suppleants">Elus suppléants</a></li>
+									<li><a href="/fr/comptes-rendus">Comptes-rendus</a></li>
+									<li><a href="/fr/publications">Publications</a></li>
+									<li><a href="/fr/information/7587/offres-emploi">Offres d'emploi</a></li>
+									<li><a href="/fr/information/8401/finances">Finances</a></li>
+									<li><a href="/fr/information/8685/communication">Communication</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/services">Services</a></li>
+									<li><a href="/fr/information/7667/organigramme">Organigramme</a></li>
+									<li><a href="/fr/information/6832/instruction-urbanisme">Instruction d'urbanisme</a></li>
+									<li><a href="/fr/information/6833/assainissement">Assainissement</a></li>
+									<li><a href="/fr/information/6919/batiments-sportifs">Bâtiments sportifs</a></li>
+									<li><a href="/fr/information/6925/transports">Transports</a></li>
+									<li><a href="/fr/information/7315/salles-louer">Salles à louer</a></li>
+									<li><a href="/fr/information/9024/espace-services-publics-itinerant">Espace de Services Publics Itinérant</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/social-sante">Social et santé</a></li>
+									<li><a href="/fr/information/6920/residence-autonomie-myosotis">Résidence autonomie Les Myosotis</a></li>
+									<li><a href="/fr/information/6921/accueil-gens-voyage">Accueil des Gens du Voyage</a></li>
+									<li><a href="/fr/information/6924/centre-medico-social">Centre médico-social</a></li>
+									<li><a href="/fr/information/7369/maison-sante">Maison de santé</a></li>
+									<li><a href="/fr/information/8795/petite-enfance">Petite Enfance</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/cadre-vie">Cadre de vie</a></li>
+									<li><a href="/fr/information/6909/urbanisme-plui">Urbanisme : le PLUI</a></li>
+									<li><a href="/fr/information/6910/habitat-aides-ameliorer-logement">Habitat : des aides pour améliorer votre logement</a></li>
+									<li><a href="/fr/information/6911/les-dechets">Les déchets</a></li>
+									<li><a href="/fr/information/6916/coeurs-villages">Coeurs de Villages</a></li>
+									<li><a href="/fr/information/6917/voirie-communautaire">Voirie communautaire</a></li>
+									<li><a href="/fr/information/6923/centre-aquatique">Centre aquatique</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/tourisme-culture">Tourisme Culture</a></li>
+									<li><a href="/fr/information/6922/office-tourisme-terres-loire-canaux">Office de tourisme Terres de Loire et Canaux</a></li>
+									<li><a href="/fr/information/7034/saison-culturelle">Saison culturelle</a></li>
+									<li><a href="/fr/information/8853/taxe-sejour">Taxe de séjour</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/vie-economique">Vie économique</a></li>
+									<li><a href="/fr/marches-publics">Marchés publics</a></li>
+									<li><a href="/fr/information/6914/zones-activites">Zones d'activités</a></li>
+									<li><a href="/fr/information/8141/aides-entreprises">Aides aux entreprises</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.loiret.fr/" title="Département du Loiret" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/45.jpg" alt="Département du Loiret" style="width:100%"></a></td>
+							<td><a href="http://www.regioncentre-valdeloire.fr/" title="Conseil régional du Centre - Val de Loire" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/7.jpg" alt="Conseil régional du Centre - Val de Loire" style="width:100%"></a></td>
+							<td><a href="http://www.loiret.pref.gouv.fr/" title="Préfecture du Loiret" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/45.jpg" alt="Préfecture du Loiret" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p class="f_sep">|</p>
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/credits-et-remerciements" title="Crédits">Crédits</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="http://cnil.fr" onclick="this.target='_blank'" title="Le site officiel de la commune  a été déclaré à  la CNIL numéro DPO-27046">Déclaration CNIL n° DPO-27046</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cc-berryloirepuisaye.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site cc-berryloirepuisaye.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #2d358c;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #2d358c; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #ceccc6;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-34026804-45");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
