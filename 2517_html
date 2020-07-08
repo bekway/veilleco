@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" dir="ltr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	Based on the TYPO3 Bootstrap Package by Benjamin Kott - http://www.bk2k.info
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2017 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="http://www.quercycaussadais.fr/">
+		<link rel="shortcut icon" href="/typo3conf/ext/bootstrap_package/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+		<title>Les délibérations: Site officiel de la Communauté de Communes Quercy Caussadais</title>
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index,follow">
+		<meta name="google" content="notranslate">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:title" content="Les délibérations">
+		<meta property="og:site_name" content="Site officiel de la Communauté de Communes  Quercy Caussadais">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600italic,700,700italic,600,100,100italic,300,300italic" media="all">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/Assets/989718155c.css?1469007253" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/bootstrappackage/lessphp_bc4f65744d5687d6a14738ffb53828cd951728e5.css?1532338004" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/bootstrappackage/lessphp_cc02c8a2e21f5246218f63325e6880339f98c3ba.css?1532338004" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/bootstrappackage/lessphp_9fa3ec2450261a406f7ce12c07222c50abee1720.css?1574701241" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/collectivites/Lespinasse/extension/Resources/Public/Less/font-awesome-animation.min.css?1491313690" media="all">
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/modernizr-2.8.3.min.js?1469007214" type="text/javascript" async="async"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/windowsphone-viewportfix.min.js?1469007214" type="text/javascript" async="async"></script>
+		<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,-1);
+		}
+		
+
+/*TS_inlineJS*/
+
+window.cookieconsent_options = {
+	message: 'Ce site utilise des cookies pour vous assurer la meilleure expérience sur notre site.',
+	learnMore: 'En savoir Plus',
+	dismiss: 'Continuer!',
+	container: 'body',
+	path: '/',
+	expiryDays: 365,
+	
+	theme: 'dark-bottom',
+	
+};
+
+
+
+/*]]>*/
+		</script>
+		<link rel="prev" href="/la-communaute/le-conseil-communautaire/">
+		<link rel="next" href="/la-communaute/le-bureau/">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" type="text/css" media="all">
+		<link rel="stylesheet" href="https://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all">
+	</head>
+	<body class="rpid508">
+		<div class="body-bg"><a class="sr-only sr-only-focusable" href="/la-communaute/les-deliberations/#content"> Aller au contenu principal </a>
+			<header class="navbar navbar-default navbar-has-image navbar-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 logo"><a href="#"><img src="/fileadmin/collectivites/CDC-Caussade/Graphisme/logo_header_color.png" class="img-responsive"></a></div>
+						<div class="col-md-4 recherche">
+							<form id="tx_indexedsearch" action="/recherche/?tx_indexedsearch_pi2%5Baction%5D=search&tx_indexedsearch_pi2%5Bcontroller%5D=Search" method="post" role="search">
+								<div class="input-group"><label for="search"></label><input name="tx_indexedsearch_pi2[search][sword]" value="" class="searchField form-control" placeholder="Saisir votre recherche" type="text" required="required"> <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[pointer]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[ext]" value="0"> <span class="input-group-btn"><button type="submit" name="tx_indexedsearch_pi2[search][submitButton]" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+							</form>
+						</div>
+					</div>
+					<div class="navbar-header navbar-header-main"><a class="navbar-brand" href="#"><img src="http://typo7.devcdg82.fr/fileadmin/collectivites/CDC-Caussade/Graphisme/home.png"></a> <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <span class="navbar-header-border-bottom"></span></div>
+					<nav class="navbar-collapse collapse" role="navigation">
+						<ul class="nav navbar-nav navbar-main">
+							<li class="active dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> La Communauté <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Les communes" href="/la-communaute/les-communes/"> Les communes </a></li>
+									<li class=""><a title="Les compétences" href="/la-communaute/les-competences/"> Les compétences </a></li>
+									<li class=""><a title="Le mot du président" href="/la-communaute/le-mot-du-president/"> Le mot du président </a></li>
+									<li class=""><a title="Le conseil communautaire" href="/la-communaute/le-conseil-communautaire/"> Le conseil communautaire </a></li>
+									<li class="active"><a title="Les délibérations" href="/la-communaute/les-deliberations/"> Les délibérations </a></li>
+									<li class=""><a title="Le bureau" href="/la-communaute/le-bureau/"> Le bureau </a></li>
+									<li class=""><a title="Les commissions" href="/la-communaute/les-commissions/"> Les commissions </a></li>
+									<li class=""><a title="Demande de subvention" href="/la-communaute/demande-de-subvention/"> Demande de subvention </a></li>
+								</ul>
+							</li>
+							<li class=" dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Environnement - Territoire <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Habitat" href="/environnement-territoire/habitat/"> Habitat </a></li>
+									<li class=""><a title="Urbanisme - Droit des sols" href="/environnement-territoire/urbanisme-droit-des-sols/"> Urbanisme - Droit des sols </a></li>
+									<li class=""><a title="Service Rivière" href="/environnement-territoire/service-riviere/"> Service Rivière </a></li>
+									<li class=""><a title="Collecte et Valorisation des déchets" href="/environnement-territoire/collecte-et-valorisation-des-dechets/"> Collecte et Valorisation des déchets </a></li>
+									<li class=""><a title="Les déchetteries" href="/environnement-territoire/les-dechetteries/"> Les déchetteries </a></li>
+									<li class=""><a title="Assainissement Non Collectif" href="/environnement-territoire/assainissement-non-collectif/"> Assainissement Non Collectif </a></li>
+								</ul>
+							</li>
+							<li class=" dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Emploi - Solidarité <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Espace Rural Emploi Formation - EREF" href="/emploi-solidarite/espace-rural-emploi-formation-eref/"> Espace Rural Emploi Formation - EREF </a></li>
+									<li class=""><a title="Espace Public Numérique" href="/emploi-solidarite/espace-public-numerique/"> Espace Public Numérique </a></li>
+									<li class=""><a title="Transport à la demande" href="/emploi-solidarite/transport-a-la-demande/"> Transport à la demande </a></li>
+									<li class=""><a title="Portage des repas" href="/emploi-solidarite/portage-des-repas/"> Portage des repas </a></li>
+									<li class=""><a title="Téléassistance" href="/emploi-solidarite/teleassistance/"> Téléassistance </a></li>
+									<li class=""><a title="Aire d'accueil des gens du voyage" href="/emploi-solidarite/aire-daccueil-des-gens-du-voyage/"> Aire d'accueil des gens du voyage </a></li>
+								</ul>
+							</li>
+							<li class=" dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Développement éco <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Valorisation des Bourgs Centres" href="/developpement-eco/valorisation-des-bourgs-centres/"> Valorisation des Bourgs Centres </a></li>
+									<li class=""><a title="Commerces de proximité" href="/developpement-eco/commerces-de-proximite/"> Commerces de proximité </a></li>
+									<li class=""><a title="Appui aux porteurs de projets" href="/developpement-eco/appui-aux-porteurs-de-projets/"> Appui aux porteurs de projets </a></li>
+									<li class=""><a title="Appui aux entreprises" href="/developpement-eco/appui-aux-entreprises/"> Appui aux entreprises </a></li>
+									<li class=""><a title="Annuaire Local" href="/developpement-eco/annuaire-local/"> Annuaire Local </a></li>
+								</ul>
+							</li>
+							<li class=" dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Sport - Jeunesse <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Petite Enfance" href="/sport-jeunesse/petite-enfance/"> Petite Enfance </a></li>
+									<li class=""><a title="Enfance Jeunesse" href="/sport-jeunesse/enfance-jeunesse/"> Enfance Jeunesse </a></li>
+									<li class=""><a title="Point information jeunesse" href="/sport-jeunesse/point-information-jeunesse/"> Point information jeunesse </a></li>
+									<li class=""><a title="Sport" href="/sport-jeunesse/sport/"> Sport </a></li>
+									<li class=""><a title="Actions Scolaires" href="/sport-jeunesse/actions-scolaires/"> Actions Scolaires </a></li>
+									<li class=""><a title="Espace aquatique intercommunal" href="/sport-jeunesse/espace-aquatique-intercommunal/"> Espace aquatique intercommunal </a></li>
+								</ul>
+							</li>
+							<li class=" dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Culture - Tourisme <b class="caret"></b> <span class="bar"></span> </a>
+								<ul class="dropdown-menu">
+									<li class=""><a title="Médiathèques/Ludothèque" href="/culture-tourisme/mediathequesludotheque/"> Médiathèques/Ludothèque </a></li>
+									<li class=""><a title="Ecole de musique" href="/culture-tourisme/ecole-de-musique/"> Ecole de musique </a></li>
+									<li class=""><a title="Sentiers de randonnées" href="/culture-tourisme/sentiers-de-randonnees/"> Sentiers de randonnées </a></li>
+									<li class=""><a title="Office de tourisme intercommunal" href="/culture-tourisme/office-de-tourisme-intercommunal/"> Office de tourisme intercommunal </a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div id="content" class="main-section">
+				<!--TYPO3SEARCH_begin-->
+				<section id="p3531" class="page-3531 pagelevel-2 language-0 backendlayout-pagets__default_2_columns layout-0">
+					<div class="container bgimage">
+						<div class="col-md-12 image_cat bgimage">
+							<div class="bgimage-inside"></div>
+						</div>
+					</div>
+					<div class="breadcrumb-section hidden-xs hidden-sm">
+						<div class="container">
+							<ol class="breadcrumb">
+								<li class=""><a title="Communauté de communes Quercy Caussadais" href="/"> Communauté de communes Quercy Caussadais </a></li>
+								<li class=""><a title="La Communauté" href="/la-communaute/"> La Communauté </a></li>
+								<li class="active">Les délibérations</li>
+							</ol>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row centrepage">
+							<main class="col-md-9 left" role="main">
+								<div id="c10000" class="frame default">
+									<h1 class="">Les délibérations du Conseil Communautaire</h1>
+									<p>Le Conseil communautaire est l’organe décisionnel de la Communauté de Communes. Il est composé de 39 membres titulaires désignés par fléchage lors des élections municipales.</p>
+									<p>Il y a en moyenne 10 conseils communautaires par an.</p>
+									<p>Ci-dessous, vous pouvez télécharger les comptes rendus des conseils communautaires.</p>
+								</div>
+								<div id="c10359" class="frame default">
+									<h4 class="">Les délibérations de l'année 2020</h4>
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-24-fevrier-2020.pdf" title="conseil communautaire du 24 février 2020"> conseil communautaire du 24 février 2020 </a> <small class="text-muted"> 455 Ko </small></h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div id="c10360" class="frame default">
+									<h4 class="">Le débat d'orientation budgétaire 2020</h4>
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/debat-orientation-budgetaire-2020.pdf" title="débat d'orientation budgétaire 2020"> débat d'orientation budgétaire 2020 </a> <small class="text-muted"> 2 Mo </small></h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div id="c10001" class="frame default">
+									<h4 class="">Les délibérations de l'année 2019</h4>
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-2-decembre-2019.pdf"> conseil-communautaire-2-decembre-2019.pdf </a> <small class="text-muted"> 793 Ko </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-3-juin-2019.pdf"> conseil-communautaire-3-juin-2019.pdf </a> <small class="text-muted"> 896 Ko </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-7-octobre-2019.pdf"> conseil-communautaire-7-octobre-2019.pdf </a> <small class="text-muted"> 1 Mo </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-8-juillet-2019.pdf"> conseil-communautaire-8-juillet-2019.pdf </a> <small class="text-muted"> 1,011 Ko </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil-communautaire-18-03-2019.pdf"> conseil-communautaire-18-03-2019.pdf </a> <small class="text-muted"> 1 Mo </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/conseil_communautaire_11-04-2019.pdf"> conseil_communautaire_11-04-2019.pdf </a> <small class="text-muted"> 974 Ko </small></h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div id="c10010" class="frame default">
+									<h4 class="">Le budget de l'année 2019</h4>
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/budget_primitif_2019_presentation_breve.pdf"> budget_primitif_2019_presentation_breve.pdf </a> <small class="text-muted"> 656 Ko </small></h4>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-body">
+												<h4 class="media-heading"><a href="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/compte_administratif_2018_presentation_synthetique.pdf"> compte_administratif_2018_presentation_synthetique.pdf </a> <small class="text-muted"> 445 Ko </small></h4>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</main>
+							<div class="col-md-3 right subcontent-wrap">
+								<div id="c9999" class="frame default">
+									<div class="col-md-12 droite contact violet">
+										<div class="row ligne">
+											<div class="col-md-12 icones"><i class="fa fa-home" aria-hidden="true"><span class="icotitre">adresse</span></i></div>
+										</div>
+										<div class="row ligne">
+											<div class="col-md-12 texte_droite">Communauté de Communes<br> du Quercy Caussadais<br> 264 route de Treilhou<br> 82300 Caussade</div>
+										</div>
+										<!-- <div class="row ligne">
+    <div class="col-md-12 icones">
+      <i class="fa fa-user" aria-hidden="true"><span class="icotitre">contact</span></i>
+    </div>
+    <div class="col-md-12 texte_droite">
+      Directrice Générale des Services :<br />Marie-Line FABRE
+      <br /><br />Directeur Général Adjoint : Olivier Saib
+    </div>
+  </div> -->
+										<div class="row ligne">
+											<div class="col-md-12 icones"><i class="fa fa-calendar" aria-hidden="true"><span class="icotitre">horaires</span></i></div>
+											<div class="col-md-12 texte_droite">du Lundi au Vendredi<br> de 8H30 à 12H30 <br>et de 13H30 à 17H30</div>
+										</div>
+										<div class="row ligne">
+											<div class="col-md-12 icones"><i class="fa fa-phone" aria-hidden="true"><span class="icotitre">téléphone</span></i></div>
+											<div class="col-md-12 texte_droite">05 63 93 28 66</div>
+										</div>
+										<div class="row ligne">
+											<div class="col-md-12 icones"><i class="fa fa-envelope" aria-hidden="true"><span class="icotitre">courriel</span></i></div>
+											<div class="col-md-12 texte_droite"><a href="/menu-bas/nous-contacter">Formulaire de contact</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--TYPO3SEARCH_end-->
+			</div>
+			<footer>
+				<section class="footer-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<div id="c833" class="frame default">
+									<div class="row" data-equalheight="container">
+										<div class="col-sm-6" data-equalheight="item">
+											<figure class="image"><img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/collectivites/CDC-Caussade/Fichiers/Logo_divers/logo-quercy-caussadais.png" data-bigger="/fileadmin/collectivites/CDC-Caussade/Fichiers/Logo_divers/logo-quercy-caussadais.png" data-large="/fileadmin/collectivites/CDC-Caussade/Fichiers/Logo_divers/logo-quercy-caussadais.png" data-medium="/fileadmin/collectivites/CDC-Caussade/Fichiers/Logo_divers/logo-quercy-caussadais.png" data-small="/fileadmin/_processed_/d/d/csm_logo-quercy-caussadais_0b6ab2e66d.png" title="" alt="" class="lazyload" data-preload="false">
+												<noscript><img src="/fileadmin/collectivites/CDC-Caussade/Fichiers/Logo_divers/logo-quercy-caussadais.png" title="" alt=""></noscript>
+												<figcaption class="caption"></figcaption>
+											</figure>
+										</div>
+										<div class="col-sm-6" data-equalheight="item">
+											<figure class="image"><a href="https://goo.gl/maps/Gw1EH5yHDKP2" target="_blank"> <img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/carte-CCQC.png" data-bigger="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/carte-CCQC.png" data-large="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/carte-CCQC.png" data-medium="/fileadmin/_processed_/e/0/csm_carte-CCQC_7f089a26fd.png" data-small="/fileadmin/_processed_/e/0/csm_carte-CCQC_c980962fb6.png" title="" alt="" class="lazyload" data-preload="false"> <noscript><img src="/fileadmin/collectivites/CDC-Caussade/Fichiers/01_communaute/carte-CCQC.png" title="" alt=""></noscript> </a>
+												<figcaption class="caption"></figcaption>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div id="c834" class="frame default">
+									<h4 class="text-center">COORDONNEES</h4>
+									<p class="text-center">264 route de Treilhou<br>82300 CAUSSADE<br>Fax : 05 63 93 29 54<br> Tél : 05 63 93 28 66</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div id="c9709" class="frame default">
+									<h4 class="text-center">ON VOUS ACCUEILLE</h4>
+									<p class="text-center">Du lundi au vendredi<br>8h30 à 12H30<br>et de 13H30 à 17H30</p>
+									<p class="text-center"><a href="/menu-bas/nous-contacter/">Nous envoyer un email</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="meta-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 menubas">
+								<nav class="navbar-collapse collapse shortcuts navbar-center" role="shortcuts">
+									<ul class="nav navbar-nav">
+										<li><a href="/menu-bas/plan-du-site/">Plan du site</a></li>
+										<li><a href="/menu-bas/mentions-legales/">Mentions légales</a></li>
+										<li><a href="/menu-bas/nous-contacter/">Nous Contacter</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="col-md-12 copyright" role="contentinfo">
+								<p>Site officiel de la Communauté de Communes Quercy Caussadais, réalisé en collaboration avec le : © <a href="http://www.cdg82.fr">CDG82</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</footer>
+			<div class="KW_progressContainer">
+				<div class="KW_progressBar"> </div>
+			</div>
+		</div>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/jquery.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/jquery.responsiveimages.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/jquery.equalheight.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/bootstrap.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe-ui-default.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/hammer.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.swipe.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.popover.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.lightbox.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.navbartoggle.min.js?1469007214" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/initialisation.js?1481207016" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/vticker.min.js?1480668573" type="text/javascript"></script>
+		<script src="/fileadmin/collectivites/CDC-Caussade/extension/Resources/Public/JavaScript/fadeinpage.js?1493199356" type="text/javascript"></script>
+		<script src="/fileadmin/collectivites/CDC-Caussade/extension/Resources/Public/JavaScript/scrollprogress.js?1493127295" type="text/javascript"></script>
+		<script src="/fileadmin/collectivites/CDC-Caussade/extension/Resources/Public/JavaScript/jquery.totemticker.min.js?1480671776" type="text/javascript"></script>
+		<script src="/fileadmin/collectivites/CDC-Caussade/extension/Resources/Public/JavaScript/jquery.imageLens.js?1484321958" type="text/javascript"></script>
+		<script src="/typo3conf/ext/cookieconsent2/Resources/Public/JavaScripts/cookieconsent.min.js?1480668220" type="text/javascript"></script>
+		<script type="text/javascript">
+/*<![CDATA[*/
+/*TS_inlineFooter*/
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-131024087-1', 'auto');
+    ga('send', 'pageview');
+
+/*]]>*/
+		</script>
+	</body>
+</html>
