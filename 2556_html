@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.cca800.fr/default/">
+		<title>Communauté de Communes Altitude 800 (CCA800) - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#ceccc6
+}
+.couleur_main, .cl_main {color:#2ca9d6}
+.couleur_main_bg, .bg_main {background-color:#2ca9d6 !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #2ca9d6;
+}
+.couleur_police, .cl_font {color:#ea8c27}
+.couleur_police_bg, .bg_font {background-color:#ea8c27 !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ea8c27;
+}
+.couleur_fond_bg {background-color:#ceccc6}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #ceccc6 100%);
+	background: -webkit-linear-gradient(top, transparent, #ceccc6 100%);
+	background: linear-gradient(to bottom, transparent, #ceccc6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#ceccc6",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #2ca9d6 transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #2ca9d6;}
+a.lien_couleur {color: #ea8c27;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #CC6E09;}
+.couleur {color: #ea8c27;}
+#head .retour {background: #ea8c27 url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #ea8c27;}
+#tribune a.postvisit, #tribune span.postvisit{color: #ea8c27;}
+#information .tree1, #information .tree1 a {color: #ea8c27;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#ea8c27; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/index.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/63/banner/WJHaJt38KvaxcKa.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.cca800.fr"> <img src="http://static.reseaudesintercoms.fr/cities/63/logo/Vi7mytl6LyyFHIA.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://cca800.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#ce3423 !important;
+	border-color:#ce3423 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #ce3423;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#ce3423 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #ce3423;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#3fa5c6 !important;
+	border-color:#3fa5c6 !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #3fa5c6;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#3fa5c6 !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #3fa5c6;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#8dc540 !important;
+	border-color:#8dc540 !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #8dc540;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#8dc540 !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #8dc540;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#3f8787 !important;
+	border-color:#3f8787 !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #3f8787;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#3f8787 !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #3f8787;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#d86c1a !important;
+	border-color:#d86c1a !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #d86c1a;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#d86c1a !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #d86c1a;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#dd9821 !important;
+	border-color:#dd9821 !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #dd9821;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#dd9821 !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #dd9821;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#ce3423;"><a class="menu-a" href="/fr/rubrique/1/la-communaute">La communauté</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3534/presentation" class="icon-arrow-right"> Présentation </a></li>
+								<li><a href="/fr/elus" class="icon-arrow-right"> Élus communautaires </a></li>
+								<li><a href="/fr/information/3536/les-commissions" class="icon-arrow-right"> Les commissions </a></li>
+								<li><a href="/fr/espace-presse" class="icon-arrow-right"> Espace presse </a></li>
+								<li><a href="/fr/comptes-rendus" class="icon-arrow-right"> Comptes-rendus </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#3fa5c6;"><a class="menu-a" href="/fr/rubrique/5/vie-economique">Vie économique</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3552/zones-activites" class="icon-arrow-right"> Zones d'activités </a></li>
+								<li><a href="/fr/marches-publics" class="icon-arrow-right"> Marchés publics </a></li>
+								<li><a href="/fr/entreprises" class="icon-arrow-right"> Entreprises </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#8dc540;"><a class="menu-a" href="/fr/rubrique/4/environnement">Environnement</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3548/ordures-menageres" class="icon-arrow-right"> Ordures Ménagères </a></li>
+								<li><a href="/fr/information/3549/les-decheteries" class="icon-arrow-right"> Les déchèteries </a></li>
+								<li><a href="/fr/information/3550/spanc" class="icon-arrow-right"> SPANC </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#3f8787;"><a class="menu-a" href="/fr/rubrique/2/jeunesse">Jeunesse</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/5471/bians-usiers" class="icon-arrow-right"> Bians les Usiers </a></li>
+								<li><a href="/fr/information/5472/goux-usiers" class="icon-arrow-right"> Goux les Usiers </a></li>
+								<li><a href="/fr/information/5473/sombacour" class="icon-arrow-right"> Sombacour </a></li>
+								<li><a href="/fr/information/5474/levier" class="icon-arrow-right"> Levier </a></li>
+								<li><a href="/fr/information/5475/arc-sous-montenot" class="icon-arrow-right"> Arc sous Montenot </a></li>
+								<li><a href="/fr/information/5476/villeneuve-amont" class="icon-arrow-right"> Villeneuve d'Amont </a></li>
+								<li><a href="/fr/information/5477/villers-sous-chalamont" class="icon-arrow-right"> Villers sous Chalamont </a></li>
+								<li><a href="/fr/information/5478/chapelle-huin" class="icon-arrow-right"> Chapelle d'Huin </a></li>
+								<li><a href="/fr/information/5479/evillers" class="icon-arrow-right"> Evillers </a></li>
+								<li><a href="/fr/information/5480/septfontaine" class="icon-arrow-right"> Septfontaine </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#d86c1a;"><a class="menu-a" href="/fr/rubrique/6/tourisme">Tourisme</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3557/musee-cheval" class="icon-arrow-right"> Musée du cheval </a></li>
+								<li><a href="/fr/information/3560/le-ronde" class="icon-arrow-right"> Le rondé </a></li>
+								<li><a href="/fr/information/3606/les-hebergements-touristiques" class="icon-arrow-right"> Les Hébergements touristiques </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#dd9821;"><a class="menu-a" href="/fr/rubrique/3/animations">Animations</a>
+							<ul class="submenu">
+								<li><a href="/fr/associations" class="icon-arrow-right"> Associations </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+				<div id="r_meteo" class="bg_main sunshine">
+					<div class="temperature fleft">22<span>°C</span></div>
+					<div class="ville fright">
+						<div class="city">Levier</div>
+						<div class="date">Mercredi 08/07/2020</div>
+					</div>
+					<div class="clear"></div>
+					<div class="infos"><span class="meteotext">Nuageux</span> <a href="/fr/previsions-meteo" class="icon-arrow-right" title="Les prévisions météo"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<div class="socialblck"><a href="https://www.facebook.com/cca800/?fref=ts" title="https://www.facebook.com/cca800/?fref=ts" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/fb_right.png" alt="https://www.facebook.com/cca800/?fref=ts"> </a></div>
+			<div class="hometop">
+				<div id="newsScroll">
+					<div id="newsScroll-slide">
+						<div class="newsScroll_block">
+							<div class="newsScroll_thumb"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/630x290/p6q8ha85i93xvx4.png" alt=""></div><a class="newsScroll_infos" href="/fr/actualite/7785"> <span class="newsScroll_title">Inscriptions aux transports scolaires</span> <span class="newsScroll_text">Ouverture des inscriptions aux transports scolaires...</span> </a></div>
+						<div class="newsScroll_block">
+							<div class="newsScroll_thumb"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/630x290/cs26qi00c2fwpd.jpg" alt=""></div><a class="newsScroll_infos" href=""> <span class="newsScroll_title">Permanences du Relais Petite Enfance sur RDV</span> <span class="newsScroll_text">Les permanences du relais reprennent sur RDV !</span> </a></div>
+						<div class="newsScroll_block">
+							<div class="newsScroll_thumb"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/630x290/fdgcazi86pf7t93.png" alt=""></div><a class="newsScroll_infos" href="/fr/actualite/7710"> <span class="newsScroll_title">Ouverture des déchèteries_ Du nouveau !!</span> <span class="newsScroll_text">Nouvelles dispositions des ouvertures des déchèteries à partir du 22 juin 2020</span> </a></div>
+					</div>
+				</div>
+				<script type="text/javascript">
+	$(document).ready(function() {
+		$('#newsScroll-slide').rdcSlider({ 
+			easing:'fade',
+			itemstodisplay: 1,
+			autoscroll: true,
+			navigation:{
+				type: 'circle'
+			}
+		});
+	});
+				</script>
+				<div class="homeZoom">
+					<div class="r_zoom r_mod">
+						<div class="zoom_title cl_main br_main">Accès directs</div>
+						<div class="zoom_txt"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="r_flashinfo r_mod bg_main">
+				<div id="flashinfo_slider">
+					<div class="r_flashinfo_item">
+						<p class="title">Offre d'emploi à la Mairie de Levier</p>
+						<p class="text"><span class="innerText">La mairie recherche un(e) secrétaire pour un remplacement maladie. Poste à pourvoir le plus rapidement possible (31.5 heures par semaine). ca</span> <a href="http://www.cca800.fr/fr/actualite/7841/offre-emploi-mairie-levier" target="_blank"> <span class="link icon-picto-acceder-au-front"></span> </a></p>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="agenda">
+					<div class="readMore"><a class="cl_font" href="/fr/evenements" title="Tous les évènements"> Tous les évènements <i class="icon-arrow-right"></i> </a></div>
+					<div class="bloc_title br_font"><a class="inner_title cl_font" href="/fr/evenements" title="Tous les évènements"> Agenda </a></div>
+					<div id="agenda_txt">
+						<div id="agenda_list">
+							<div id="agenda-slider">
+								<div class="agenda-item">
+									<div class="inner-item bg_font sunshine">
+										<div class="agenda-date"><span class="day cl_font br_font">12</span> <span class="month cl_font">06</span></div>
+										<div class="agenda-day">
+											<p class="event-title"><a href="/fr/evenement/15595/permanences-relais-petite-enfance-rdv" title="Permanences du Relais Petite Enfance sur RDV"> Permanences du Relais Petite Enfance sur RDV </a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="actu">
+					<div class="readMore"><a class="cl_font" href="/fr/actualites" title="Toutes les actualités"> Toutes les actualités <i class="icon-arrow-right"></i> </a></div>
+					<div class="bloc_title br_font"><a class="inner_title cl_font" href="/fr/actualites" title="Toutes les actualités"> Actualités </a></div>
+					<div class="actu_blck">
+						<div class="actu_item">
+							<div class="actu_img"><a href="/fr/actualite/7841/offre-emploi-mairie-levier" title="Offre d'emploi à la Mairie de Levier"> <img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/305x140/botx6lw9qlfgv.jpg" alt=""> </a></div>
+							<h4 class="actu_title"><a href="/fr/actualite/7841/offre-emploi-mairie-levier" title="Offre d'emploi à la Mairie de Levier" class="lien_couleur">Offre d'emploi à la Mairie de Levier</a></h4>
+							<p class="actu_desc">La Mairie de Levier recherche un(e) secrétaire de Mairie pour un remplacement maladie. Poste à pourvoir le plus rapidement possible (31.5 heures par semaine). Merci d'envoyer vos candidatures à...</p>
+						</div>
+						<div class="actu_item">
+							<div class="actu_img"><a href="/fr/actualite/7710/re-ouverture-decheteries_dispositions-22-06-2020" title="Ré-ouverture des déchèteries_Dispositions du 22/06/2020"> <img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/305x140/fdgcazi86pf7t93.png" alt=""> </a></div>
+							<h4 class="actu_title"><a href="/fr/actualite/7710/re-ouverture-decheteries_dispositions-22-06-2020" title="Ré-ouverture des déchèteries_Dispositions du 22/06/2020" class="lien_couleur">Ré-ouverture des déchèteries_Dispositions du 22/06/2020</a></h4>
+							<p class="actu_desc">À partir du 22 juin 2020 : nouvelles dispositions pour l'accès aux déchèteries de Frasne, Gilley, Levier, Saint Gorgon Main, Maisons du Bois Lièvremont.  </p>
+						</div>
+						<div class="actu_item">
+							<div class="actu_img"><a href="/fr/actualite/7785/inscriptions-transports-scolaires" title="Inscriptions aux transports scolaires"> <img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/305x140/p6q8ha85i93xvx4.png" alt=""> </a></div>
+							<h4 class="actu_title"><a href="/fr/actualite/7785/inscriptions-transports-scolaires" title="Inscriptions aux transports scolaires" class="lien_couleur">Inscriptions aux transports scolaires</a></h4>
+							<p class="actu_desc">  Ouverture du site d'inscription aux transports scolaires pour l'année 2020/2021 le 2 juin 2020. Que ce soit pour une première demande ou un renouvellement, il est obligatoire que les...</p>
+						</div>
+						<div class="actu_item">
+							<div class="actu_img"><a href="/fr/actualite/7709/j-veux-local" title="J'veux du local !"> <img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/305x140/3hcmiwwmcjqad1.png" alt=""> </a></div>
+							<h4 class="actu_title"><a href="/fr/actualite/7709/j-veux-local" title="J'veux du local !" class="lien_couleur">J'veux du local !</a></h4>
+							<p class="actu_desc">La Chambre Interdépartementale d'Agriculture 25/90, avec le soutien du Département du Doubs et du Territoire de Belfort, a récemment créé un site Internet pour favoriser l'accès des consommateurs...</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<style>
+#interactivemap svg {
+	background-color:#e5e9ec;
+	margin:0;
+	background-image: url(http://static.reseaudesintercoms.fr/cities/63/interactive/point_geoloc.png);
+	background-repeat:no-repeat;
+	
+	/* Position à modifier */
+	background-position: 206px 132px;
+}
+
+#map-tip {
+	text-align: center;
+	font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+	display: none;
+	border: none;
+	color: #ffffff;
+	z-index: 1000;
+	float: left;
+	position: absolute;
+	background-color:#2ca9d6;
+	border-radius:4px;
+	padding:6px 8px;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+#map-tip p {
+	margin: 0!important;
+}
+				</style>
+				<div id="mini-map">
+					<div id="interactivemap">
+						<!--<svg version="1.1"  viewBox="0 0 1000 500" xml:space="preserve">-->
+						<svg version="1.1" viewbox="1 1 300 220" xml:space="preserve">
+							<g id="countries">
+								<!-- 1 --><a href="/fr/territoire/795/gevresin" xlink:href="/fr/territoire/795/gevresin"> <path id="map_1" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M78.69,89.25s-6.12-11.5-6.5-11.62-7.5-1.5-8.37-2-3.87.13-3.87.13L48.19,74.13S42.44,79,42.44,79.38s1.13,3.5,1.13,4.25c-.42,1-.83,1.46-.83,1.88s.33,2.67.33,3.17S42,93,41.9,93.33a28.82,28.82,0,0,0,1,6.71c7.67-1,30.07-4,30.69-4.29s3.67-4.26,5.9-7.13Z"></path> </a>
+								<!-- 2 --><a href="/fr/territoire/801/villers-sous-chalamont" xlink:href="/fr/territoire/801/villers-sous-chalamont"> <path id="map_2" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M73.73,124.75l4.58,1.92.83,1.17,2.33-.5L79.23,110.5,74.12,95.23a3.1,3.1,0,0,1-.55.52c-.62.31-23,3.28-30.69,4.29l.11.38c.26.53-13.17,12.25-13.17,12.25l-4.75-.5s-.83,2.42-1.17,3.33c-.11.29-1.53,2.68-3.43,5.83a39.07,39.07,0,0,1,5.43-.17c.25.25,2.75,5.5,2.75,5.5l8.5-2.75,2.67,3.58-1.33,2.33a23.86,23.86,0,0,0,3.58,1.08c.67,0,8.17.42,8.42.42S73.73,124.75,73.73,124.75Z"></path> </a>
+								<!-- 3 --><a href="/fr/territoire/800/villeneuve-d-amont" xlink:href="/fr/territoire/800/villeneuve-d-amont"> <path id="map_3" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M50.48,131.33c-.25,0-7.75-.42-8.42-.42a23.86,23.86,0,0,1-3.58-1.08l1.33-2.33-2.67-3.58-8.5,2.75s-2.5-5.25-2.75-5.5a39.07,39.07,0,0,0-5.43.17c-4.13,6.84-10.54,17.25-10.65,17.42a9,9,0,0,1,1.58,2.58c0,.25-.5,10.83-.08,11.25s6.92,4.17,6.92,4.17S25,165,25.65,165.42s5.3-.09,6.33,0l10.71-14.09a16,16,0,0,0,1-2.87c.25-1.25.88-4.62,1-5s3.61-7.22,6.16-12.26Z"></path> </a>
+								<!-- 4 --><a href="/fr/territoire/791/arc-sous-montenot" xlink:href="/fr/territoire/791/arc-sous-montenot"> <path id="map_4" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M101.62,140.83A102,102,0,0,1,91.23,140c-.58-.25-5.67-3.75-5.75-4.17s-1.83-7.67-1.83-7.67l-2.18-1,0,.13-2.33.5-.83-1.17-4.58-1.92s-20,5.71-22.88,6.49c-2.55,5-6.08,12-6.16,12.26s-.75,3.75-1,5a16,16,0,0,1-1,2.88L32,165.46l.17,0c.5.25,2.17,4.42,2.17,4.42s-1,5.17-.92,5.58,1.17,2.08,1.17,2.67S31,185.25,31,185.25l-.67,4.92s9.67.67,9.67,1A23.65,23.65,0,0,1,38.73,194l3.67,1.17L45.23,190l-2-2.92s5.83.75,6.25,1.25,1.75,2.75,1.75,2.75a2.77,2.77,0,0,0,1.17.17c.75-.67,18.25-24.33,18.25-24.33a42.51,42.51,0,0,0,4.08-3.33c.17-.42.92-3.58.92-3.58s11.25-11.08,11.92-11.58,11-5.92,12.08-6.42C99.94,141.87,100.68,141.43,101.62,140.83Z"></path> </a>
+								<!-- 5 --><a href="/fr/territoire/797/levier" xlink:href="/fr/territoire/797/levier"> <path id="map_5" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M143.4,89.33s.92-1.17.92-1.67.17-3.33.17-3.33l-2.17-3.67-4.17-.25s-4-4.33-4.25-4.42-4.08-.17-4.08-.17a18.91,18.91,0,0,1-1.08-2.75c0-.42,5.25-4.67,5.58-5.17a12.34,12.34,0,0,0,1.08-2.58c0-.25-6.25-5.25-6.25-5.25l-.25-2s6.17-1.83,6.5-1.92,1.25-2.42,1.25-2.42l-1.5-1.33c1.49-.83,11.7-6.25,21.06-11.2-.35-1.32-.73-2.9-1-2.9s-1.19-1.06-1.19-1.06,1.94-.81,2.44-.94,5-2.06,5-2.06c-.5-.62-2.06-3.75-2.06-3.75,1.25-.31,2.31-.5,2.31-.5L157,21l-5.37.38,2.88,6-6.94,2.81s-1.19,1.06-1.19,1.31a10.08,10.08,0,0,1-.62,1.56s-3.87-1.31-4.25-1.31-.62.69-.62.69a36.31,36.31,0,0,1,2.38,3.81c-.06.25-4.31,5.31-4.31,5.5s2.81,1.25,2.75,1.63a5.38,5.38,0,0,1-1.44,1.75,7.46,7.46,0,0,1-1.87,1.13c-.37,0-15.81,5.25-17.44,6.13s-13.62,7-14.25,7.38-9,7.25-9,7.25-.5,3.88-.12,3.88,5.12,2.5,5.75,2.63a7.41,7.41,0,0,1,2,1.5s-5,1.13-5.62,1.38-4.25,2.88-5.37,3.5-6.62,2.5-7.5,3c-.7.4-5.46,4.22-7.35,5.75-1.81,2.32-4.23,5.39-5.35,6.6l5.12,15.27,2.23,16.7,2.18,1s1.75,7.25,1.83,7.67,5.17,3.92,5.75,4.17a102,102,0,0,0,10.39.83c2.61-1.66,6.84-4.59,7.94-6,1.5-1.92,4.33-4.75,4.83-10.08.08-.83.58-.83.58-.83l.35.17L121,115.5c.33-.5,2.33-1.5,2.33-1.92a20.53,20.53,0,0,1,.75-2.58l15.08-15.5c.33-.33,3.25.08,3.25.08l2.75-5.67Z"></path> </a>
+								<!-- 6 --><a href="/fr/territoire/798/septfontaines" xlink:href="/fr/territoire/798/septfontaines"> <path id="map_6" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M184.32,80.63l1-.12-.75-6.5s2-5,2.13-5.37-8.12-1.75-8.12-1.75l-3-4.87,1-1.62-7.08-8.12s1.58-.25,1.58-.5S169.15,47,169.15,47l2.08-.92-1.92-2.5-2.67.17-2.94-5.69c-1.4.62-7.39,3.57-7.39,3.57l-.11-.41c-9.36,5-19.57,10.37-21.06,11.2l1.5,1.33s-.92,2.33-1.25,2.42-6.5,1.92-6.5,1.92l.25,2s6.25,5,6.25,5.25a12.34,12.34,0,0,1-1.08,2.58c-.33.5-5.58,4.75-5.58,5.17a18.91,18.91,0,0,0,1.08,2.75s3.83.08,4.08.17,4.25,4.42,4.25,4.42l4.17.25,2.17,3.67s-.17,2.83-.17,3.33a3.4,3.4,0,0,1-.67,1.33l3.92,1.38s5.88,1.88,6.63,2.5,14-1.12,14-1.12L174.32,83s2.5-1,2.88-.5,1,1.88,1.63,1.88S184.32,80.63,184.32,80.63Z"></path> </a>
+								<!-- 7 --><a href="/fr/territoire/793/chapelle-d-huin" xlink:href="/fr/territoire/793/chapelle-d-huin"> <path id="map_7" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M192.69,108.88l-1.69.19.06-5.31s-1.5-2.81-1.56-3-4.81-5.31-5-5.31a16.75,16.75,0,0,0-.12,3.06l-4.25.19s.13-1.44.13-1.62-7.74-3.5-12-5.36l0,0s-13.25,1.75-14,1.13-6.62-2.5-6.62-2.5L143.65,89l-.25.34,1.75.58-2.75,5.67s-2.92-.42-3.25-.08L124.07,111a20.53,20.53,0,0,0-.75,2.58c0,.42-2,1.42-2.33,1.92l-5.65,8.59c.89.44,3.15,1.61,3.15,2.08s-3.5,13.92-3.25,14.17,9.5,5.17,9.5,5.17,9.08-6.25,9.58-6.25,5.25,2.83,5.67,2.83,4.17-.08,4.42-.42S166,124.33,166.23,124s1.08-3.75,1.67-3.75,1.33-.08,1.58.17a5.84,5.84,0,0,0,5.33,2.58c3.58-.25,5.42-3.83,5.58-4.42s.75-1.42,1.33-1.42a92.37,92.37,0,0,0,11.2-2.64Z"></path> </a>
+								<!-- 8 --><a href="/fr/territoire/794/evillers" xlink:href="/fr/territoire/794/evillers"> <path id="map_8" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M211.73,36.5c0-.25,3.46-9.19,3.46-9.37a24.72,24.72,0,0,0-2.25-4.44,30,30,0,0,0-4-.75c-.37,0-10.5,4.25-10.81,4.25L187.69,26s-5.81,4-7.31,5.19-3.75,3.69-4.19,3.75-3.94.19-4.37.19-7.5,2.75-7.81,2.81l-.29.12,2.94,5.69,2.67-.17,1.92,2.5-2.08.92s1.92,4.5,1.92,4.75-1.58.5-1.58.5l7.08,8.13-1,1.63,3,4.88s8.25,1.38,8.13,1.75S184.57,74,184.57,74l.69,5.95.44.05,5.25-12.87v-.75l3.63-5.62,6.63-8.5V50.5l2-.37L206.32,46s-.25-.62-.75-2.37c.2-.34,3.42-3.77,6.3-6.81A1,1,0,0,1,211.73,36.5Z"></path> </a>
+								<!-- 9 --><a href="/fr/territoire/799/sombacour" xlink:href="/fr/territoire/799/sombacour"> <path id="map_9" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M236.82,115.42c.59-.29,6.81-6.22,8.73-8l-7-6-1.67,1.17-1.42-.58,2.42-5.42-6.58-9.33L223.73,94l-.92-.58L227.65,86l-7.42-5.92,2.75-.42-.17-1.5-10.08,2,1.5-3.17s-7.25-3.92-7.5-3.92l-6.5-.08s-5.78-3.37-9.44-5.52L185.69,80l-.44-.05.06.55-1,.13s-4.87,3.75-5.5,3.75-1.25-1.37-1.62-1.87-2.87.5-2.87.5l-6.09,8.7c4.29,1.86,12,5.22,12,5.36s-.12,1.63-.12,1.63l4.25-.19a16.75,16.75,0,0,1,.13-3.06c.19,0,4.94,5.13,5,5.31s1.56,3,1.56,3l-.06,5.31,1.69-.19.24,5.65a1.08,1.08,0,0,0,.47-.27c.33-.67.67-1.83,1.25-1.83s2.5-.08,3.42,0,6,1.5,8.33,1.67S236.15,115.75,236.82,115.42Z"></path> </a>
+								<!-- 10 -->
+								<path id="map_10" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M246.07,106.92c.67-.58,11.25-13.25,12.42-13.92s4-2.75,4-3.17a23.47,23.47,0,0,1-.17-3.5c.17-.58,5-12.5,5.5-12.75a2.26,2.26,0,0,1,.66-.17l-3.66-2-6,1.13,1,7.63-1.62,3.63-3.38-1-6.37-7.5,3.63-5.62-4.5-.87-4.12,1.75a33.93,33.93,0,0,1-2.87,5.5c-1,.13-5,.13-5,.13S216.32,59.5,214.19,57.75c-.62,0-4.25.75-4.62.75s-4.22-4.82-7-8.25l-1.36.25v1.75l-6.62,8.5-3.62,5.63v.75l-.14.35c3.66,2.15,9.44,5.52,9.44,5.52l6.5.08c.25,0,7.5,3.92,7.5,3.92l-1.5,3.17,10.08-2,.17,1.5-2.75.42L227.65,86l-4.83,7.42.92.58,7.58-6.75,6.58,9.33L235.48,102l1.42.58,1.67-1.17,7,6Z"></path>
+								<!-- 11 --><a href="/fr/territoire/796/goux-les-usiers" xlink:href="/fr/territoire/796/goux-les-usiers"> <path id="map_11" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M290,50.17c-.33-.83-7.83-7.75-8.42-7.75s-1.83,1.17-2.75,1.17-2.08-.83-2.42-.83-16.33,6-16.33,6a13.85,13.85,0,0,1-1.58,1.58c-.42.25-1.58-1.58-2-1.25s-4.25,3.83-4.67,3.83-7.42-.25-8.83-.58-8.75-2-9.5-2.5-6.42-6.25-7-6.25-3.42.08-3.42.08L219,38.25l-5.92.08c-.2,0-.91-1-1.2-1.52-2.88,3-6.1,6.47-6.3,6.81.5,1.75.75,2.38.75,2.38l-3.12,4.13-.64.12c2.8,3.43,6.77,8.25,7,8.25s4-.75,4.63-.75c2.13,1.75,21.38,18.38,21.38,18.38s4,0,5-.12a33.93,33.93,0,0,0,2.88-5.5l4.13-1.75,4.5.88-3.62,5.63,6.38,7.5,3.38,1,1.63-3.62-1-7.62,6-1.12,3.66,2c.44-.06.9-.09,1-.25s8.5-11.25,9.83-12.08S290,55,290.07,54.33A14.07,14.07,0,0,0,290,50.17Z"></path> </a></g>
+							<g id="map_points"></g>
+						</svg><span id="map-tip"></span>
+						<script src="http://static.reseaudesintercoms.fr/default/scripts/interactive_map.js"></script>
+						<script>
+			var map_cities = [
+				'Gevresin',
+				'Villers-sous-Chalamont',
+				'Villeneuve-d-Amont',
+				'Arc-sous-Montenot',
+				'Levier',
+				'Septfontaines',
+				'Chapelle-d-Huin',
+				'Évillers',
+				'Sombacour',
+				'Bians-les-Usiers',
+				'Goux-les-Usiers'
+			];
+			
+			var map_config = {
+				'default':{
+					'borderColor': '#BEC4CB',
+					'mapShadow':'#fff',
+					'shadowOpacity':'35',
+					'hoverShadow':'#666666',
+					'lakesColor':'#66CCFF',
+					'namesColor':'#919191'
+				},
+			};
+			
+			for (var i = 1, max = map_cities.length; i <= max; i++) {
+				map_config['map_' + i] = {
+					'hover': map_cities[i-1],
+					'upColor':'#ffffff',
+					'overColor':'#007072', /* MODIF-couleurs regions survol */
+					'downColor':'#007072', /* MODIF-couleurs regions survol */
+					'enable':true,
+				};
+				addEvent('map_' + i);
+			}
+			
+			var pin_config = {
+				'default':{
+					'pinShadow':'#000',
+					'pinShadowOpacity':'50',
+				},
+				'points':[]
+			}
+		
+						</script>
+					</div>
+				</div>
+				<div class="r_social">
+					<div class="social_content"><a class="social_titre" href="https://www.facebook.com/cca800/" title="Rejoignez-nous sur facebook !" onclick="this.target='_blank'"> <img src="/admin/images/rdc/rdc_fb.png" width="30" height="30"> </a>
+						<div class="facebook_content">
+							<div id="fb-root"></div>
+							<script type="text/javascript">
+					(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				
+							</script>
+							<like-box href="https://www.facebook.com/cca800/" width="300" height="200" colorscheme="light" show_faces="true" header="false" stream="false" show_border="false"></like-box>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/791/arc-sous-montenot"> Arc-sous-Montenot </a></li>
+						<li><a href="/fr/territoire/792/bians-les-usiers"> Bians-les-Usiers </a></li>
+						<li><a href="/fr/territoire/793/chapelle-d-huin"> Chapelle-d'Huin </a></li>
+						<li><a href="/fr/territoire/795/gevresin"> Gevresin </a></li>
+						<li><a href="/fr/territoire/796/goux-les-usiers"> Goux-les-Usiers </a></li>
+						<li><a href="/fr/territoire/797/levier"> Levier </a></li>
+						<li><a href="/fr/territoire/798/septfontaines"> Septfontaines </a></li>
+						<li><a href="/fr/territoire/799/sombacour"> Sombacour </a></li>
+						<li><a href="/fr/territoire/800/villeneuve-d-amont"> Villeneuve-d'Amont </a></li>
+						<li><a href="/fr/territoire/801/villers-sous-chalamont"> Villers-sous-Chalamont </a></li>
+						<li><a href="/fr/territoire/794/evillers"> Évillers </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/63/logo/LdEb4a979EQlXkl.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Christian RATTE </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 9 Place de Verdun, BP 21, 25 270 Levier </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 03 81 38 27 50 / 03 81 38 27 50 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> Lundi 8h - 16h<br> Mardi 8h - 16h<br> Mercredi 9h - 12h<br> Jeudi 8h- 16h<br> Vendredi 8h - 12h<br> </span></p>
+						<p id="f_social"><span class="colLeft">En réseau :</span> <span class="colRight"> <a class="sl_facebook couleur_main_bg" href="https://www.facebook.com/cca800/?fref=ts" title="https://www.facebook.com/cca800/?fref=ts" onclick="this.target='_blank'"></a> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft">
+					<div id="f_publication">
+						<div class="titre">Publication</div>
+						<div id="f_publication_txt">
+							<div id="f_publication_photo"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/63/80x110/hnmcx6ddbex87c.jpg" alt=""></div>
+							<div id="f_publication_infos">
+								<div class="f_publication_type">Guide</div>
+								<div class="f_publication_titre"><a href="/fr/publication/277/zone-activites-champs-begaud">Zone d'activités Champs Begaud - 07/01/2019</a></div>
+								<div class="publication_text"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="readMore"><a class="cl_font" href="/fr/publications" title="Toutes les publications"> Toutes les publications <i class="icon-arrow-right"></i> </a></div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/la-communaute">La communauté</a></li>
+									<li><a href="/fr/information/3534/presentation">Présentation</a></li>
+									<li><a href="/fr/elus">Élus communautaires</a></li>
+									<li><a href="/fr/information/3536/les-commissions">Les commissions</a></li>
+									<li><a href="/fr/espace-presse">Espace presse</a></li>
+									<li><a href="/fr/comptes-rendus">Comptes-rendus</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/vie-economique">Vie économique</a></li>
+									<li><a href="/fr/information/3552/zones-activites">Zones d'activités</a></li>
+									<li><a href="/fr/marches-publics">Marchés publics</a></li>
+									<li><a href="/fr/entreprises">Entreprises</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/environnement">Environnement</a></li>
+									<li><a href="/fr/information/3548/ordures-menageres">Ordures Ménagères</a></li>
+									<li><a href="/fr/information/3549/les-decheteries">Les déchèteries</a></li>
+									<li><a href="/fr/information/3550/spanc">SPANC</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/jeunesse">Jeunesse</a></li>
+									<li><a href="/fr/information/5471/bians-usiers">Bians les Usiers</a></li>
+									<li><a href="/fr/information/5472/goux-usiers">Goux les Usiers</a></li>
+									<li><a href="/fr/information/5473/sombacour">Sombacour</a></li>
+									<li><a href="/fr/information/5474/levier">Levier</a></li>
+									<li><a href="/fr/information/5475/arc-sous-montenot">Arc sous Montenot</a></li>
+									<li><a href="/fr/information/5476/villeneuve-amont">Villeneuve d'Amont</a></li>
+									<li><a href="/fr/information/5477/villers-sous-chalamont">Villers sous Chalamont</a></li>
+									<li><a href="/fr/information/5478/chapelle-huin">Chapelle d'Huin</a></li>
+									<li><a href="/fr/information/5479/evillers">Evillers</a></li>
+									<li><a href="/fr/information/5480/septfontaine">Septfontaine</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/tourisme">Tourisme</a></li>
+									<li><a href="/fr/information/3557/musee-cheval">Musée du cheval</a></li>
+									<li><a href="/fr/information/3560/le-ronde">Le rondé</a></li>
+									<li><a href="/fr/information/3606/les-hebergements-touristiques">Les Hébergements touristiques</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/animations">Animations</a></li>
+									<li><a href="/fr/associations">Associations</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.doubs.fr/" title="Département du Doubs" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/25.jpg" alt="Département du Doubs" style="width:100%"></a></td>
+							<td><a href="https://www.bourgognefranchecomte.fr/" title="Conseil régional de Bourgogne Franche-Comté" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/5.jpg" alt="Conseil régional de Bourgogne Franche-Comté" style="width:100%"></a></td>
+							<td><a href="http://www.doubs.pref.gouv.fr/" title="Préfecture du Doubs" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/25.jpg" alt="Préfecture du Doubs" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/credits-et-remerciements" title="Crédits">Crédits</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cca800.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site cca800.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #2ca9d6;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #2ca9d6; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #ceccc6;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/modules/v2/index.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-34026804-22");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
