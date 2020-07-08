@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<base href="http://www.ville-charmes.fr/default/">
+		<title>Comptes rendus - Charmes - Site officiel de la commune</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/png">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/x-icon">
+		<link href="http://cdn1_3.reseaudesvilles.fr/generation_temporaire/256/styles.css" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://cdn1_3.reseaudesvilles.fr/default/styles/modules/municipalreport.css" media="screen, print" rel="stylesheet" type="text/css">
+		<!-- chargement de jquery 1.3.2 -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<style type="text/css">
+			body {
+				background: url('http://cdn1_3.reseaudesvilles.fr/cities/256/banner/NANc2NDVaGNEBMb.jpg') no-repeat center top fixed;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div id="window">
+			<div id="header">
+				<div id="head_barre">
+					<div id="head_txt">
+						<div class="separateur"><a href="#">Aller au contenu</a></div>
+						<div class="separateur">|</div>
+						<div class="separateur"><a href="#">Aller au menu</a></div>
+						<div class="separateur"><strong>Site officiel</strong> : <a href="http://ville-charmes.fr" title="ville-charmes.fr" accesskey="1">ville-charmes.fr</a></div>
+						<div class="clear"></div>
+						<div class="separateur"><a class="head_icon head_contact" href="/fr/contact" title="Contactez-nous par email" accesskey="5">Contact</a></div>
+						<div class="separateur"><a class="head_icon head_account" href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a></div>
+						<div class="separateur"><a class="head_icon head_mobile" href="/mobile">Version Mobile</a></div>
+						<div class="separateur"><a class="head_icon head_access" href="/fr/accessibilite" accesskey="0">Accessibilité</a></div>
+						<div class="separateur"><a href="javascript:void(0)" id="typoplus">A+<span class="cache">Augmenter la taille de la police</span></a></div>
+						<div class="separateur"><a href="javascript:void(0)" id="typomoins">A-<span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+				</div>
+				<div id="head_search">
+					<form action="/fr/search" method="get"><input type="text" class="texte" value="Recherche" name="query" accesskey="4"> <input type="submit" class="submit" value="" title="Rechercher"></form>
+				</div>
+				<div class="clear"></div>
+				<div id="site_logo"><a href="http://www.ville-charmes.fr"> <img src="http://cdn1_3.reseaudesvilles.fr/cities/256/logo/BLc9rrmXg9ESzaZ.png" alt=""> </a></div>
+				<div class="clear"></div>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-home"><a class="menu-a" href="http://ville-charmes.fr"><span class="ico-home"></span></a></li>
+						<li class="menu-li"><a class="menu-a menu-active" href="/fr/rubrique/2/vie-municipale"> Vie municipale </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/slrwgq6vuuz87i3.jpg" alt="" class="img"></li>
+								<li><a href="/fr/conseil-municipal">Conseil municipal</a></li>
+								<li><a href="/fr/information/87009/services-municipaux">Services Municipaux</a></li>
+								<li><a href="/fr/information/87146/commissions-municipales">Commissions municipales</a></li>
+								<li><a href="/fr/comptes-rendus">Comptes rendus</a></li>
+								<li><a href="/fr/information/90216/deliberations">Délibérations</a></li>
+								<li><a href="/fr/information/92549/finances">Finances</a></li>
+								<li><a href="/fr/salles-municipales">Salles municipales</a></li>
+								<li><a href="/fr/publications">Publications</a></li>
+								<li><a href="/fr/information/87168/pole-marcel-goulette">Pôle Marcel Goulette</a></li>
+								<li><a href="/fr/intercommunalite">Intercommunalité</a></li>
+								<li><a href="/fr/marches-publics">Marchés publics</a></li>
+								<li><a href="/fr/information/90692/liste-marches">Liste des marchés</a></li>
+								<li><a href="/fr/plan-de-ville">Plan de ville</a></li>
+								<li><a href="/fr/information/110559/crise-sanitaire-etat-urgence">CRISE SANITAIRE - ETAT D'URGENCE</a></li>
+							</ul>
+						</li>
+						<li class="menu-li"><a class="menu-a " href="/fr/rubrique/3/vie-quotidienne"> Vie quotidienne </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/5899zikut43m92.jpg" alt="" class="img"></li>
+								<li><a href="/fr/information/87127/civilites">Civilités</a></li>
+								<li><a href="/fr/information/87135/travaux-cours-subventions">Travaux en cours - subventions</a></li>
+								<li><a href="/fr/information/87136/la-gestion-dechets">La gestion des déchets</a></li>
+								<li><a href="/fr/information/93318/la-gestion-services">La gestion des services</a></li>
+								<li><a href="/fr/information/87172/le-marche">Le marché</a></li>
+								<li><a href="/fr/information/87182/stationnement">Stationnement</a></li>
+								<li><a href="/fr/information/87492/gare-sncf">Gare SNCF</a></li>
+								<li><a href="/fr/demarches-en-ligne">Démarches en ligne</a></li>
+								<li><a href="/fr/numeros-utiles">Numéros utiles</a></li>
+								<li><a href="/fr/information/87449/publier-annonce">Publier une annonce</a></li>
+								<li><a href="/fr/information/101022/velo-assistance-electrique">Vélo à assistance électrique</a></li>
+								<li><a href="/fr/information/87126/maison-services-public">Maison de Services au Public</a></li>
+							</ul>
+						</li>
+						<li class="menu-li"><a class="menu-a " href="/fr/rubrique/4/vie-sociale"> Vie sociale </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/x5n7keoy595m1m.jpg" alt="" class="img"></li>
+								<li><a href="/fr/associations">Associations</a></li>
+								<li><a href="/fr/information/87161/c-c-a-s">C. C. A. S. </a></li>
+								<li><a href="/fr/information/87448/l-association-folies">L'Association Les Folies</a></li>
+							</ul>
+						</li>
+						<li class="menu-li"><a class="menu-a " href="/fr/rubrique/5/vie-economique"> Vie économique </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/hkaop3odluarkc3.jpg" alt="" class="img"></li>
+								<li><a href="/fr/offres-d-emploi">Emploi</a></li>
+								<li><a href="/fr/information/87130/developpement-durable">Développement Durable</a></li>
+								<li><a href="/fr/information/87142/plan-local-urbanisme">Plan Local d'Urbanisme</a></li>
+								<li><a href="/fr/information/88886/aides-proprietaires">Aides aux propriétaires</a></li>
+							</ul>
+						</li>
+						<li class="menu-li"><a class="menu-a " href="/fr/rubrique/1/culture-loisirs"> Culture/Loisirs </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/78z4nfode6tbc7.jpg" alt="" class="img"></li>
+								<li><a href="/fr/information/87163/histoire-ville">Histoire de la ville</a></li>
+								<li><a href="/fr/information/87178/maison-livre-culture">Maison du Livre et de la Culture</a></li>
+								<li><a href="/fr/information/87177/bassin-hermitage">Bassin de l'Hermitage</a></li>
+								<li><a href="/fr/information/87183/patrimoine">Patrimoine</a></li>
+								<li><a href="/fr/information/87184/festivites">Festivités</a></li>
+								<li><a href="/fr/information/87171/programme-animations">Programme des animations</a></li>
+								<li><a href="/fr/information/97766/pass-communautaire">Pass communautaire</a></li>
+								<li><a href="/fr/information/97773/patinoire">Patinoire</a></li>
+								<li><a href="/fr/information/110611/tourisme">Tourisme</a></li>
+								<li><a href="/fr/information/110654/chasse">Chasse</a></li>
+							</ul>
+						</li>
+						<li class="menu-li"><a class="menu-a " href="/fr/rubrique/6/jeunesse-sports"> Jeunesse/Sports </a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesvilles.fr/thumbs/256/168x115/f090vzl92xu02.jpg" alt="" class="img"></li>
+								<li><a href="/fr/information/87131/creche">Crèche</a></li>
+								<li><a href="/fr/information/87132/ecoles">Ecoles</a></li>
+								<li><a href="/fr/information/87160/inscriptions">Inscriptions</a></li>
+								<li><a href="/fr/information/87133/restaurant-scolaire">Restaurant scolaire</a></li>
+								<li><a href="/fr/information/88887/relais-assistants-maternels">Relais Assistants Maternels</a></li>
+								<li><a href="/fr/information/87159/carte-zap">Carte ZAP</a></li>
+								<li><a href="/fr/information/87158/complexe-simonin">Complexe Simonin</a></li>
+								<li><a href="/fr/information/87487/gymnase-barres">Gymnase Barrès</a></li>
+								<li><a href="/fr/information/100781/centre-aere-accueil-loisirs">Centre aéré / Accueil de loisirs </a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+			</div>
+			<div id="window_content">
+				<div id="social_links"><a class="sl_facebook" href="https://www.facebook.com/mairiedecharmes/" title="https://www.facebook.com/mairiedecharmes/" onclick="this.target='_blank'"></a></div>
+				<div id="page">
+					<div id="col_center">
+						<div id="head">
+							<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/2/vie-municipale" title="Vie municipale">Vie municipale</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes rendus">Comptes rendus</a></div>
+							<div class="addthis_toolbox addthis_default_style">
+								<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+							</div>
+							<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+							<div class="clear"></div>
+							<h1 class="titre couleur_police">Comptes rendus</h1>
+						</div>
+						<div id="page_content">
+							<div id="municipalreport">
+								<div id="liste">
+									<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+										<col width="20%">
+										<col width="65%">
+										<col width="15%">
+										<thead>
+											<tr class="couleur">
+												<th>Date</th>
+												<th>Ordre du jour</th>
+												<th>Document</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td align="center">04/07/2020</td>
+												<td><a href="/fr/compte-rendu/61244/compte-rendu-conseil-municipal-4-juillet-2020" title="Compte-rendu du Conseil Municipal du 4 juillet 2020"><b class="couleur">Compte-rendu du Conseil Municipal du 4 juillet 2020</b></a> <br>
+													<p>Compte-rendu joint</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/w1d5d30f984o2t3.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">12/06/2020</td>
+												<td><a href="/fr/compte-rendu/61003/compte-rendu-conseil-municipal-12-juin-2020" title="Compte-rendu du Conseil Municipal du 12 juin 2020"><b class="couleur">Compte-rendu du Conseil Municipal du 12 juin 2020</b></a> <br>
+													<p>Compte-rendu joint</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/1ylhcwm9kqqywy1.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">24/02/2020</td>
+												<td><a href="/fr/compte-rendu/60524/compte-rendu-conseil-municipal-24-fevrier-2020" title="Compte-rendu du Conseil Municipal du 24 février 2020"><b class="couleur">Compte-rendu du Conseil Municipal du 24 février 2020</b></a> <br>
+													<p>Compte-rendu joint</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/s8i5p8u0kqetiit.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">20/01/2020</td>
+												<td><a href="/fr/compte-rendu/60281/compte-rendu-conseil-municipal-20-janvier-2020" title="Compte-rendu du Conseil Municipal du 20 janvier 2020"><b class="couleur">Compte-rendu du Conseil Municipal du 20 janvier 2020</b></a> <br>
+													<p>Compte-rendu joint</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/0oo9gh34l8pjnur.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">16/12/2019</td>
+												<td><a href="/fr/compte-rendu/60117/compte-rendu-conseil-municipal-16-decembre-2019" title="Compte-rendu du conseil municipal du 16 décembre 2019"><b class="couleur">Compte-rendu du conseil municipal du 16 décembre 2019</b></a> <br>
+													<p>Compte-rendu joint</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/zpbw9jzj0ymn3re.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">19/11/2019</td>
+												<td><a href="/fr/compte-rendu/59879/compte-rendu-conseil-municipal-19-novembre-2019" title="Compte-rendu du Conseil Municipal du 19 novembre 2019"><b class="couleur">Compte-rendu du Conseil Municipal du 19 novembre 2019</b></a> <br>
+													<p>Compte-rendu du conseil municipal du 19 novembre 2019</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/xwga0kak3sl0ypg.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">01/10/2019</td>
+												<td><a href="/fr/compte-rendu/59598/compte-rendu-conseil-municipal-1er-octobre-2019" title="Compte-rendu du conseil municipal du 1er octobre 2019"><b class="couleur">Compte-rendu du conseil municipal du 1er octobre 2019</b></a> <br>
+													<p>Compte-rendu du conseil municipal du 1er octobre 2019</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/76cjeby52u9kl7l.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">17/06/2019</td>
+												<td><a href="/fr/compte-rendu/59114/compte-rendu-conseil-municipal-date-17-juin-2019" title="Compte rendu du Conseil Municipal en date du 17 juin 2019"><b class="couleur">Compte rendu du Conseil Municipal en date du 17 juin 2019</b></a> <br>
+													<p>Compte rendu du Conseil Municipal du 17 juin 2019</p>
+												</td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/24c4rcx1azh70bc.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">10/04/2019</td>
+												<td><a href="/fr/compte-rendu/58708/compte-rendu-conseil-municipal-10-avril-2019" title="Compte Rendu du Conseil Municipal du 10 avril 2019"><b class="couleur">Compte Rendu du Conseil Municipal du 10 avril 2019</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/b8emf7t7ftgs6uy.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">14/03/2019</td>
+												<td><a href="/fr/compte-rendu/58362/compte-rendu-conseil-municipal-14-mars-2019" title="Compte Rendu du Conseil Municipal du 14 mars 2019"><b class="couleur">Compte Rendu du Conseil Municipal du 14 mars 2019</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/dce2pi39vibooh.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">13/02/2019</td>
+												<td><a href="/fr/compte-rendu/58154/compte-rendu-conseil-municipal-13-fevrier-2019" title="Compte Rendu du Conseil Municipal du 13 février 2019"><b class="couleur">Compte Rendu du Conseil Municipal du 13 février 2019</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/orxsli996z7py9r.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">12/12/2018</td>
+												<td><a href="/fr/compte-rendu/57980/compte-rendu-conseil-municipal-12-decembre-2018" title="Compte Rendu du Conseil Municipal du 12 décembre 2018"><b class="couleur">Compte Rendu du Conseil Municipal du 12 décembre 2018</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/5ashzjk4hf04ns2.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">19/11/2018</td>
+												<td><a href="/fr/compte-rendu/57564/compte-rendu-conseil-municipal-19-novembre-2018" title="Compte Rendu du Conseil Municipal du 19 novembre 2018"><b class="couleur">Compte Rendu du Conseil Municipal du 19 novembre 2018</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/mvlmoxb2zsyikl6.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">09/10/2018</td>
+												<td><a href="/fr/compte-rendu/57379/compte-rendu-conseil-municipal-09-octobre-2018" title="Compte Rendu du Conseil Municipal du 09 octobre 2018"><b class="couleur">Compte Rendu du Conseil Municipal du 09 octobre 2018</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/0zqkxygec3lsbgv.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">24/09/2018</td>
+												<td><a href="/fr/compte-rendu/57186/compte-rendu-conseil-municipal-24-septembre-2018" title="Compte Rendu du Conseil Municipal du 24 septembre 2018"><b class="couleur">Compte Rendu du Conseil Municipal du 24 septembre 2018</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/ompzv5b0kbc3sm.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">08/02/2018</td>
+												<td><a href="/fr/compte-rendu/55330/compte-rendu-conseil-municipal-08-fevrier-2018" title="Compte Rendu du Conseil Municipal du 08 février 2018"><b class="couleur">Compte Rendu du Conseil Municipal du 08 février 2018</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/t0c3dv2l4ckpa1d.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">27/11/2017</td>
+												<td><a href="/fr/compte-rendu/54664/compte-rendu-conseil-municipal-27-novembre-2017" title="Compte Rendu du Conseil Municipal du 27 novembre 2017 "><b class="couleur">Compte Rendu du Conseil Municipal du 27 novembre 2017 </b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/3uyd28lijg4n91f.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">03/07/2017</td>
+												<td><a href="/fr/compte-rendu/53577/compte-rendu-conseil-municipal-03-juillet-2017" title="Compte Rendu du Conseil Municipal du 03 juillet 2017"><b class="couleur">Compte Rendu du Conseil Municipal du 03 juillet 2017</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/2qphzq1d0of9ks7.PDF" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">29/05/2017</td>
+												<td><a href="/fr/compte-rendu/53576/compte-rendu-conseil-municipal-29-mai-2017" title="Compte Rendu du Conseil Municipal du 29 mai 2017"><b class="couleur">Compte Rendu du Conseil Municipal du 29 mai 2017</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/s3g0x5zmtq5vssh.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+											<tr>
+												<td align="center">27/04/2017</td>
+												<td><a href="/fr/compte-rendu/52832/compte-rendu-conseil-municipal-27-avril-2017" title="Compte Rendu du Conseil Municipal du 27 avril 2017"><b class="couleur">Compte Rendu du Conseil Municipal du 27 avril 2017</b></a> <br></td>
+												<td align="center"><a href="http://cdn1_3.reseaudesvilles.fr/cities/256/documents/jy1a7ma11marl0d.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div id="paginator">
+									<ul>
+										<li class="current"><span class="couleur_menu">1</span></li>
+										<li><a class="couleur_menu" href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+										<li><a class="couleur_menu" href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="col_right">
+						<div id="tipiandmsp"><a href="/fr/demarches_en_ligne" class="tipiandmsp-link couleur_police_bg"> <img src="http://static.reseaudesvilles.fr/default/images/design/demarches_en_ligne.png" height="40px" width="300px" alt="Démarche en ligne"> </a>
+							<div class="clear"></div>
+						</div>
+						<div id="r_zoom" style="background-color:#86c9be">
+							<div class="r_zoom_block couleur_menu_bg">
+								<div class="enun">En un</div>
+								<div class="clic">clic</div>
+							</div>
+							<div class="r_zoom_block" style="background-color:#2f9181"><a class="r_zoom_link" href="/fr/information/110559/crise-sanitaire-etat-urgence" title="CRISE SANITAIRE - ETAT D'URGENCE"> <span class="r_zoom_img"><img src="http://static.reseaudesvilles.fr/default/images/clic_icons/01.png" alt=""></span> <span class="r_zoom_intitule">CRISE SANITAIRE</span> </a></div>
+							<div class="r_zoom_block" style="background-color:#f49b00"><a class="r_zoom_link" href="/fr/information/87136/la-gestion-dechets" title="La gestion des déchets"> <span class="r_zoom_img"><img src="http://static.reseaudesvilles.fr/default/images/clic_icons/06.png" alt=""></span> <span class="r_zoom_intitule">Déchets</span> </a></div>
+							<div class="r_zoom_block" style="background-color:#36a2d1"><a class="r_zoom_link" href="/fr/information/87172/le-marche" title="Le marché"> <span class="r_zoom_img"><img src="http://static.reseaudesvilles.fr/default/images/clic_icons/03.png" alt=""></span> <span class="r_zoom_intitule">Marché</span> </a></div>
+							<div class="r_zoom_block" style="background-color:#42779e"><a class="r_zoom_link" href="/fr/nous-contacter" title="Contactez nous"> <span class="r_zoom_img"><img src="http://static.reseaudesvilles.fr/default/images/clic_icons/02.png" alt=""></span> <span class="r_zoom_intitule">Contact</span> </a></div>
+							<div class="clear"></div>
+						</div>
+						<div style="max-height:300px; margin-bottom: 10px;"><a href="http://www.ville-charmes.fr/fr/information/87449/publier-annonce"> <img src="http://cdn1_3.reseaudesvilles.fr/cities/256/annonce/t6e3nqbpRC5BWl4.png" alt="Publier une annonce"> </a></div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="footer">
+					<div id="footer-top">
+						<div class="column">
+							<div class="column-content">
+								<div id="infospratiques">
+									<div class="footer-title">Contactez-nous</div>
+									<div id="infospratiques_txt">
+										<p class="nom_mairie">Mairie de Charmes</p>
+										<div class="infos">
+											<table>
+												<tr>
+													<td><span class="icone adress"></span></td>
+													<td>Place Henri Breton, BP30<br> 88 130 Charmes<br></td>
+												</tr>
+												<tr>
+													<td><span class="icone phone"></span></td>
+													<td>03 29 38 85 85<br> 03 29 38 21 50 (fax.)</td>
+												</tr>
+												<tr>
+													<td><span class="icone mail"></span></td>
+													<td><a href="/fr/nous-contacter" title="Nous contacter">Cliquez ici pour nous contacter</a><br></td>
+												</tr>
+												<tr>
+													<td><span class="icone calendar"></span></td>
+													<td>Du lundi au jeudi : 8h00-12h00/13h30-17h00<br> Le vendredi : 8h00-12h00/13h30-16h30</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="column-content">
+								<div id="newsletter">
+									<div class="footer-title">Newsletter</div>
+									<div id="newsletter_txt">
+										<p>Pour vous inscrire veuillez indiquer votre adresse email.</p><br>
+										<form action="/fr/newsletter/subscribe" method="post">
+											<p><input name="email" type="text" title="Email" class="email"></p><br>
+											<div id="newsletterCaptcha" class="g-recaptcha" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+											<p style="text-align:center"><input type="submit" value="Souscrire" class="submit"></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="column-content">
+								<div id="externallinks">
+									<div class="footer-title">Liens</div>
+									<div class="content">
+										<div id="liens_txt">
+											<p class="link"><span class="link-icone"></span><a href="http://www.tourisme-charmes.fr/" title="Office du Tourisme du Pays de Charmes" onclick="this.target='_blank'">Office du Tourisme du Pays de Charmes</a></p>
+											<p class="lien"><a href="/fr/liens-externes" class="lien_suite" title="Tous les liens externes"><span class="ico"></span>Tous les liens externes</a></p>
+										</div>
+									</div>
+								</div>
+								<div id="twin">
+									<div class="footer-title">Jumelage</div>
+									<div id="twin_txt" class="twin_content">
+										<div><a href="http://www.bertrix.be/fr" title="Bertrix" onclick="this.target='_blank'"> <img class="flag" src="http://static.reseaudesvilles.fr/default/images/flag/be.gif" alt="Bertrix"> <span class="bold">Bertrix</span>, Belgique </a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div id="labels">
+								<div class="footer-title">Nos labels</div>
+								<div id="labels_txt">
+									<div style="display:inline-block;text-align:center"><a href="http://www.stationverte.com/" onclick="this.target='_blank'" title="Station verte"><img class="logo" src="http://static.reseaudescommunes.fr/default/images/label/logo-stationverte.jpg" alt="Station verte"></a></div>
+									<div style="display:inline-block;text-align:center"><a href="http://www.villes-et-villages-fleuris.com/" onclick="this.target='_blank'" title="Villes et villages fleuris"><img class="logo" src="http://static.reseaudescommunes.fr/default/images/label/qjuing9yt6d0vf.jpg" alt="Villes et villages fleuris"></a> <br> <a href="http://www.villes-et-villages-fleuris.com/" onclick="this.target='_blank'" title="Villes et villages fleuris"><img class="rank" src="http://static.reseaudescommunes.fr/default/images/label/grtc8tmyccifpcw.jpg" alt=""></a> <a href="http://www.villes-et-villages-fleuris.com/" onclick="this.target='_blank'" title="Villes et villages fleuris"><img class="rank" src="http://static.reseaudescommunes.fr/default/images/label/grtc8tmyccifpcw.jpg" alt=""></a></div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="institutionlink">
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td><a href="http://www.agglo-epinal.fr/" title="Communauté d'agglomération d'Épinal" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/intercommunalite/ob5u2n3bccdksni.jpg" alt="Communauté d'agglomération d'Épinal"> </a></td>
+										<td><a href="http://www.vosges.fr/" title="Département des Vosges" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/88.jpg" alt="Département des Vosges"> </a></td>
+										<td><a href="http://www.alsacechampagneardennelorraine.eu/" title="Conseil régional d’Alsace Champagne-Ardenne Lorraine" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/1.jpg" alt="Conseil régional d’Alsace Champagne-Ardenne Lorraine"> </a></td>
+										<td><a href="http://www.vosges.pref.gouv.fr/" title="Préfecture des Vosges" onclick="this.target='_blank'"> <img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/88.jpg" alt="Préfecture des Vosges"> </a></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div id="footer-bottom">
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/2/vie-municipale">Vie municipale</a></li>
+							<li><a href="/fr/conseil-municipal">Conseil municipal</a></li>
+							<li><a href="/fr/information/87009/services-municipaux">Services Municipaux</a></li>
+							<li><a href="/fr/information/87146/commissions-municipales">Commissions municipales</a></li>
+							<li><a href="/fr/comptes-rendus">Comptes rendus</a></li>
+							<li><a href="/fr/information/90216/deliberations">Délibérations</a></li>
+							<li><a href="/fr/information/92549/finances">Finances</a></li>
+							<li><a href="/fr/salles-municipales">Salles municipales</a></li>
+							<li><a href="/fr/publications">Publications</a></li>
+							<li><a href="/fr/information/87168/pole-marcel-goulette">Pôle Marcel Goulette</a></li>
+							<li><a href="/fr/intercommunalite">Intercommunalité</a></li>
+							<li><a href="/fr/marches-publics">Marchés publics</a></li>
+							<li><a href="/fr/information/90692/liste-marches">Liste des marchés</a></li>
+							<li><a href="/fr/plan-de-ville">Plan de ville</a></li>
+							<li><a href="/fr/information/110559/crise-sanitaire-etat-urgence">CRISE SANITAIRE - ETAT D'URGENCE</a></li>
+						</ul>
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/3/vie-quotidienne">Vie quotidienne</a></li>
+							<li><a href="/fr/information/87127/civilites">Civilités</a></li>
+							<li><a href="/fr/information/87135/travaux-cours-subventions">Travaux en cours - subventions</a></li>
+							<li><a href="/fr/information/87136/la-gestion-dechets">La gestion des déchets</a></li>
+							<li><a href="/fr/information/93318/la-gestion-services">La gestion des services</a></li>
+							<li><a href="/fr/information/87172/le-marche">Le marché</a></li>
+							<li><a href="/fr/information/87182/stationnement">Stationnement</a></li>
+							<li><a href="/fr/information/87492/gare-sncf">Gare SNCF</a></li>
+							<li><a href="/fr/demarches-en-ligne">Démarches en ligne</a></li>
+							<li><a href="/fr/numeros-utiles">Numéros utiles</a></li>
+							<li><a href="/fr/information/87449/publier-annonce">Publier une annonce</a></li>
+							<li><a href="/fr/information/101022/velo-assistance-electrique">Vélo à assistance électrique</a></li>
+							<li><a href="/fr/information/87126/maison-services-public">Maison de Services au Public</a></li>
+						</ul>
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/4/vie-sociale">Vie sociale</a></li>
+							<li><a href="/fr/associations">Associations</a></li>
+							<li><a href="/fr/information/87161/c-c-a-s">C. C. A. S. </a></li>
+							<li><a href="/fr/information/87448/l-association-folies">L'Association Les Folies</a></li>
+						</ul>
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/5/vie-economique">Vie économique</a></li>
+							<li><a href="/fr/offres-d-emploi">Emploi</a></li>
+							<li><a href="/fr/information/87130/developpement-durable">Développement Durable</a></li>
+							<li><a href="/fr/information/87142/plan-local-urbanisme">Plan Local d'Urbanisme</a></li>
+							<li><a href="/fr/information/88886/aides-proprietaires">Aides aux propriétaires</a></li>
+						</ul>
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/1/culture-loisirs">Culture/Loisirs</a></li>
+							<li><a href="/fr/information/87163/histoire-ville">Histoire de la ville</a></li>
+							<li><a href="/fr/information/87178/maison-livre-culture">Maison du Livre et de la Culture</a></li>
+							<li><a href="/fr/information/87177/bassin-hermitage">Bassin de l'Hermitage</a></li>
+							<li><a href="/fr/information/87183/patrimoine">Patrimoine</a></li>
+							<li><a href="/fr/information/87184/festivites">Festivités</a></li>
+							<li><a href="/fr/information/87171/programme-animations">Programme des animations</a></li>
+							<li><a href="/fr/information/97766/pass-communautaire">Pass communautaire</a></li>
+							<li><a href="/fr/information/97773/patinoire">Patinoire</a></li>
+							<li><a href="/fr/information/110611/tourisme">Tourisme</a></li>
+							<li><a href="/fr/information/110654/chasse">Chasse</a></li>
+						</ul>
+						<ul class="mf_block">
+							<li class="main-menu"><a href="/fr/rubrique/6/jeunesse-sports">Jeunesse/Sports</a></li>
+							<li><a href="/fr/information/87131/creche">Crèche</a></li>
+							<li><a href="/fr/information/87132/ecoles">Ecoles</a></li>
+							<li><a href="/fr/information/87160/inscriptions">Inscriptions</a></li>
+							<li><a href="/fr/information/87133/restaurant-scolaire">Restaurant scolaire</a></li>
+							<li><a href="/fr/information/88887/relais-assistants-maternels">Relais Assistants Maternels</a></li>
+							<li><a href="/fr/information/87159/carte-zap">Carte ZAP</a></li>
+							<li><a href="/fr/information/87158/complexe-simonin">Complexe Simonin</a></li>
+							<li><a href="/fr/information/87487/gymnase-barres">Gymnase Barrès</a></li>
+							<li><a href="/fr/information/100781/centre-aere-accueil-loisirs">Centre aéré / Accueil de loisirs </a></li>
+						</ul>
+						<div id="footer_right">
+							<div id="footer_citymap"><a href="/fr/plan-de-ville" title="Plan de ville"> <img height="80px" src="http://cdn1_3.reseaudesvilles.fr/cities/256/logo/uVKUzNKduagLXYx.jpg" alt="de Charmes"> </a></div>
+							<div id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" onclick="this.target='_blank'"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.ville-charmes.fr&profile=css3&usermedium=all&warning=1&vextwarning=" title="W3C Validator CSS" class="css" onclick="this.target='_blank'"><span class="cache">W3C Validator CSS</span></a></div>
+						</div>
+						<div id="footer_links">
+							<table>
+								<tr>
+									<td class="left">Pratique</td>
+									<td>
+										<p><a href="/fr/evenements" title="Agenda">Agenda</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/actualites" title="Actualités">Actualités</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/edito" title="Agenda">Mot de la mairie</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/en-images" title="Photos">Photos</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/en-videos" title="Vidéos">Vidéos</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/previsions-meteo" title="Météo">Météo</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/credits-et-remerciements" title="Crédits">Crédits</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td class="left">Divers</td>
+									<td>
+										<p><a href="/fr/plan-du-site" title="Plan du site" accesskey="3">Plan du site</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+										<p class="footer_sep">|</p>
+										<p><a href="/fr/accessibilite" title="Accessibilité">Accessibilité</a></p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="subfooter"><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+					<style>
+        .subfooter {
+            padding: 10px 15px;
+            background-color: #1a2025;
+            text-align:center;
+        }
+        .subfooter a {
+            color: #fff;
+            font-size: 11px;
+        }
+        .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            margin: 0px 0px 0 0;
+            display: inline-block;
+            vertical-align: baseline;
+        }
+        .logo-rdc .red-square { background-color: #ff3038; }
+        .logo-rdc .yellow-square { background-color: #ffb42e; }
+        .logo-rdc .green-square { background-color: #a3bf00; }
+    
+					</style>
+				</div>
+				<div id="cookies-warning" style="
+								display:none;
+  								background-color: rgba(0,0,0,0.82);
+							    font-size:small;
+							    position: fixed;
+							    width: 100%;
+								height: 48px;
+							    margin: 0px;
+							    text-align: left;
+							    color: white;
+							    padding-left: 160px;
+							    padding-top: 15px;
+							    left: 0;
+							    bottom: 0;
+							    z-index: 1;">
+					<div>En poursuivant votre navigation sur le site de Charmes (ville-charmes.fr), <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+					<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+							background-color: #f49b00;
+							font-size: small;
+						    font-weight: bold;
+							color:#fff;
+							width: 102px;
+							height: 24px;
+						    cursor: pointer;
+							"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+					 		color : #f49b00; 
+					 		font-size: small;     
+				 		    font-weight: bold;
+					 		text-decoration: underline; 
+					 		cursor: pointer;
+					 		padding-left: 20px;
+					 		padding-top: 5px;
+					 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+						    color : #dfdfdf;
+						    font-size: 26px;
+						    cursor: pointer;
+						    padding-left: 20px;
+					 		padding-top: 5px;
+						    "> X </a></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/generation_temporaire/256/scripts.js"></script>
+		<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-62702294-44', 'auto');
+				ga('send', 'pageview');
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
