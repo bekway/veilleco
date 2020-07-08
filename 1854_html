@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<!--[if lt IE 7]>     <html lang="fr" class="no-js lt-ie9 lt-ie8 lt-ie7 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 7]>        <html lang="fr" class="no-js lt-ie9 lt-ie8 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 8]>        <html lang="fr" class="no-js lt-ie9 all-ie" lang="fr-FR"> <![endif]-->
+	<!--[if IE 9]> 	  	  <html lang="fr" class="no-js ie9" lang="fr-FR"> <![endif]-->
+	<!--[if gt IE 8]><!-->
+	<!--<html class="no-js" >-->
+	<!--<![endif]-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<title>C'est voté !</title>
+		<meta name="description" content="Relevés de décisions">
+		<link rel="shortcut icon" type="image/png" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/images/favicon.png">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/images/favicon.ico">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="dns-prefetch" href="//www.cc-paysviganais.fr">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="stylesheet" id="colorbox-theme2-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/jquery-colorbox/themes/theme2/colorbox.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="leaflet-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.cc-paysviganais.fr/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="context-actualites-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-actualites/css/style-context-actualites.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="creasit-agenda-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-agenda/public/css/creasit-agenda-public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="context-agenda-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-agenda/public/css/style-context-agenda.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="context-annuaire-contacts-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-annuaire-contacts/css/style-context-annuaire-contacts.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-info-bulle-plan-interactif-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-plan-interactif/css/style-info-bulle.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="plan-interactif-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-plan-interactif/css/style-plan-interactif.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="gdrf-public-styles-css" href="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-rgpd/public/css/public.css" type="text/css" media="all">
+		<link rel="stylesheet" id="reset-css" href="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/css/creasit-reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="dashicons-css" href="https://www.cc-paysviganais.fr/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="dflip-css" href="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/css/ReaderPDF/dflip.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="themify-icons-css" href="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/css/ReaderPDF/themify-icons.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="style-recherche-css" href="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/css/style-recherche.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="solution-css" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/css/styles.css" type="text/css" media="screen">
+		<link rel="stylesheet" id="1260-css" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/css/responsive-1260.css" type="text/css" media="screen and (max-width: 1260px)">
+		<link rel="stylesheet" id="940-css" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/css/responsive-940.css" type="text/css" media="screen and (max-width: 940px)">
+		<link rel="stylesheet" id="580-css" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/css/responsive-580.css" type="text/css" media="screen and (max-width: 580px)">
+		<link rel="stylesheet" id="print-css" href="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/css/print.css" type="text/css" media="print">
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6.2","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"true","colorboxPreloading":"false","colorboxOverlayClose":"true","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"fermer","colorboxNext":"suivant","colorboxPrevious":"pr\u00e9c\u00e9dent","colorboxSlideshowStart":"commencer le diaporama","colorboxSlideshowStop":"arr\u00eater le diaporama","colorboxCurrent":"{current} sur {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"Image non trouv\u00e9e.","colorboxImageMaxWidth":"90%","colorboxImageMaxHeight":"90%","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"true","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-agenda/public/js/creasit-agenda-public.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var gdrf_localize = {"gdrf_ajax_url":"https:\/\/www.cc-paysviganais.fr\/wp-admin\/admin-ajax.php","gdrf_success":"Votre demande a bien \u00e9t\u00e9 prise en compte, v\u00e9rifiez votre messagerie pour la confirmer..","gdrf_errors":"Des erreurs ont \u00e9t\u00e9 d\u00e9tect\u00e9es :"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-rgpd/public/js/gdrf-public.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/Admin/script-checkbox-rgpd-gf.js"></script>
+		<link rel="https://api.w.org/" href="https://www.cc-paysviganais.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cc-paysviganais.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cc-paysviganais.fr/wp-includes/wlwmanifest.xml">
+		<link rel="canonical" href="https://www.cc-paysviganais.fr/cest-vote/">
+		<link rel="shortlink" href="https://www.cc-paysviganais.fr/?p=6864">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cc-paysviganais.fr/feed/?post_type=post" title="Flux RSS des actualités">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cc-paysviganais.fr/feed/?post_type=affichage_liste" title="Flux RSS des affichages listes">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cc-paysviganais.fr/feed/?post_type=agenda" title="Flux RSS de l'agenda">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cc-paysviganais.fr/feed/?post_type=contacts" title="Flux RSS de l'annuaire de contact">
+		<link rel="alternate" type="application/rss+xml" href="https://www.cc-paysviganais.fr/feed/?post_type=navigation_profils" title="Flux RSS des différents profils">
+		<script type="application/javascript">
+            var ajaxurl_website = "https:\/\/www.cc-paysviganais.fr\/wp-admin\/admin-ajax.php";
+            var ajaxnonce = "744c6e52a4";
+        
+		</script>
+		<script type="application/javascript">
+			var dFlipLocation = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/";
+			var dFlipLocation_css = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/css/ReaderPDF/";
+			var dFlipLocation_js = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/ReaderPDF/";
+			var dFlipLocation_images = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/images/TinyMCE/ReaderPDF/";
+			var dFlipLocation_fonts = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/fonts/ReaderPDF/";
+			var dFlipLocation_sounds = "https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/sounds/ReaderPDF/";
+		
+		</script>
+		<script type="application/javascript">
+                      jQuery(function ($)
+                      {
+                        $('#secondary .relations-bloc-context').each(function ()
+                        {
+                          // Récupération du ul
+                          var relation_bloccontext_ul = $(this).find('> ul')
+
+                          var countLi = relation_bloccontext_ul.find('> li').length
+                          if (countLi > 1) {
+
+                            var widthLi = relation_bloccontext_ul.find('> li').outerWidth(true)
+                            var marginLi = relation_bloccontext_ul.find('> li:first-child').css('marginRight')
+                            marginLi = marginLi.replace('px', '')
+                            var widthSlider = countLi * widthLi
+
+                            // Définir la width du ul avec la taille totale de widthSlider
+                            relation_bloccontext_ul.css('width', widthSlider)
+
+                            var item_width = relation_bloccontext_ul.find('> li').outerWidth()
+                            var left_value = (item_width * (-1)) - marginLi
+
+                            relation_bloccontext_ul.find('> li:first').before(relation_bloccontext_ul.find('> li:last'))
+                            relation_bloccontext_ul.css({ 'left': left_value })
+                          } else {
+                            $(this).prev().remove()
+                          }
+                        })
+
+                        //  Au clic sur suivant
+                        $('.nav-defaut-sidebar .next').click(function ()
+                        {
+
+                          // Récupération de la div qui slide
+                          var relation_bloc_context = $(this).parent().parent().find('.relations-bloc-context ul')
+                          relation_bloc_context.stop()
+
+                          var widthLi = relation_bloc_context.find('> li').outerWidth(true)
+                          var marginLi = relation_bloc_context.find('> li:first-child').css('marginRight')
+                          marginLi = marginLi.replace('px', '')
+                          var item_width = relation_bloc_context.find('> li').outerWidth()
+                          var left_value = (item_width * (-1)) - marginLi
+                          var left_indent = parseInt(relation_bloc_context.css('left')) - widthLi
+
+                          relation_bloc_context.animate({ 'left': left_indent }, 500, function ()
+                          {
+                            relation_bloc_context.find('li:last').after(relation_bloc_context.find('li:first'))
+                            relation_bloc_context.css('left', left_value)
+                          })
+                        })
+
+                        //  Au clic sur précédent
+                        $('.nav-defaut-sidebar .prev').click(function ()
+                        {
+
+                          // Récupération de la div qui slide
+                          var relation_bloc_context = $(this).parent().parent().find('.relations-bloc-context ul')
+                          relation_bloc_context.stop()
+
+                          var widthLi = relation_bloc_context.find('> li').outerWidth(true)
+                          var marginLi = relation_bloc_context.find('> li:first-child').css('marginRight')
+                          marginLi = marginLi.replace('px', '')
+                          var item_width = relation_bloc_context.find('> li').outerWidth()
+                          var left_value = (item_width * (-1)) - marginLi
+                          var left_indent = parseInt(relation_bloc_context.css('left')) + widthLi
+
+                          relation_bloc_context.animate({ 'left': left_indent }, 500, function ()
+                          {
+                            relation_bloc_context.find('li:first').before(relation_bloc_context.find('li:last'))
+                            relation_bloc_context.css({ 'left': left_value })
+                          })
+                        })
+                      })
+                    
+		</script>
+		<meta property="og:title" content="C’est voté ! ">
+		<meta property="og:description" content="Retrouvez les relevés de décisions des Assemblées délibérantes de la Communauté de Communes du Pays Viganais, du SIVOM du Pays Viganais et du Syndicat Mixte Ganges-Le Vigan pour l'année 2020.">
+		<meta property="og:url" content="https://www.cc-paysviganais.fr/cest-vote/">
+		<meta property="og:image" content="https://www.cc-paysviganais.fr/medias/2017/07/vote.jpg">
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<!--[if LTE IE 9]>
+<script type='text/javascript' src='https://www.cc-paysviganais.fr/wp-content/themes/noyau/js/html5shiv.js'></script>
+<![endif]-->
+	</head>
+	<body class="page-template-default page page-id-6864 unknown">
+		<header id="header">
+			<div class="top-header">
+				<div class="center">
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="center menu-search">
+				<div class="menu-wrapper"><button class="menu-toggle"> <span class="toggleMenu"> <span class="icon-menu"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18.4px" height="13.1px" viewbox="0 0 18.4 13.1" style="overflow:scroll;enable-background:new 0 0 18.4 13.1;" xml:space="preserve"><path d="M9.2,2.7c-2.8,0-5.7,0-8.5,0C0,2.7,0,2.7,0,1.9c0-0.4,0-0.7,0-1.1C0,0,0,0,0.8,0
+								c2.3,0,4.7,0,7,0c3.3,0,6.6,0,9.8,0c0.7,0,0.7,0,0.7,0.7c0,0.4,0,0.7,0,1.1c0,0.9,0,0.9-0.8,0.9C14.8,2.7,12,2.7,9.2,2.7z M17.7,7.9
+								c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.2c0-0.7,0-0.7-0.7-0.7c-3,0-6,0-9,0c-2.6,0-5.3,0-7.9,0C0,5.2,0,5.2,0,6c0,0.4,0,0.8,0,1.2
+								c0,0.7,0,0.7,0.7,0.7c2.8,0,5.6,0,8.4,0C12,7.9,14.8,7.9,17.7,7.9z M17.7,13.1c0.7,0,0.7,0,0.7-0.7c0-0.4,0-0.8,0-1.1
+								c0-0.8,0-0.8-0.8-0.8c-3.1,0-6.1,0-9.2,0c-2.6,0-5.1,0-7.7,0c-0.7,0-0.7,0-0.7,0.7c0,0.4,0,0.8,0,1.1c0,0.8,0,0.8,0.8,0.8
+								c2.8,0,5.6,0,8.4,0C12,13.1,14.8,13.1,17.7,13.1z"></path></svg> </span> <span class="text-menu">Menu</span> </span> </button>
+					<nav class="main-navigation">
+						<!--cdlNav partie="1"-->
+						<div class="menu-menu-principal-container">
+							<ul id="menu-menu-principal" class="main-menu clearfix">
+								<li id="menu-item-3225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3225 item-1"><span title="Pays Viganais">Pays Viganais</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3230" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3230 item-2"><a title="La CCPV" href="https://www.cc-paysviganais.fr/listes/la-ccpv/">La CCPV</a></li>
+											<li id="menu-item-3231" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3231 item-2"><a title="Les Communes" href="https://www.cc-paysviganais.fr/listes/les-communes/">Les Communes</a></li>
+											<li id="menu-item-3235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3235 item-2"><a title="Marchés Publics" href="https://www.cc-paysviganais.fr/marches-publics/">Marchés Publics</a></li>
+											<li id="menu-item-5868" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5868 item-2"><a title="Urbanisme" href="https://www.cc-paysviganais.fr/urbanisme/">Urbanisme</a></li>
+											<li id="menu-item-3238" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3238 item-2"><a title="Plan interactif du territoire" href="https://www.cc-paysviganais.fr/systeme/plan-interactif/">Plan interactif du territoire</a></li>
+											<li id="menu-item-8452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8452 item-2"><a title="PETR Causses et Cévennes" href="https://www.cc-paysviganais.fr/petr/">PETR Causses et Cévennes</a></li>
+											<li id="menu-item-3232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3232 item-2"><a title="Documents et publications" href="https://www.cc-paysviganais.fr/documents-et-publications/">Documents et publications</a></li>
+											<li id="menu-item-3237" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3237 item-2"><a title="Nous contacter" href="https://www.cc-paysviganais.fr/systeme/nous-contacter/">Nous contacter</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3226 item-2"><span title="Vivre">Vivre</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3241" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3241 item-3"><a title="Les Enfants/Les ados/La famille" href="https://www.cc-paysviganais.fr/listes/les-enfants/">Les Enfants/Les ados/La famille</a></li>
+											<li id="menu-item-3239" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3239 item-3"><a title="L’Action Sociale" href="https://www.cc-paysviganais.fr/listes/laction-sociale/">L’Action Sociale</a></li>
+											<li id="menu-item-3240" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3240 item-3"><a title="L’Environnement" href="https://www.cc-paysviganais.fr/listes/lenvironnement/">L’Environnement</a></li>
+											<li id="menu-item-3242" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3242 item-3"><a title="Se Déplacer" href="https://www.cc-paysviganais.fr/listes/se-deplacer/">Se Déplacer</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3227 item-3"><span title="Que faire ?">Que faire ?</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3244 item-4"><a title="Envie de Culture" href="https://www.cc-paysviganais.fr/listes/envie-de-culture/">Envie de Culture</a></li>
+											<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3243 item-4"><a title="Envie de Sport" href="https://www.cc-paysviganais.fr/listes/envie-de-sport/">Envie de Sport</a></li>
+											<li id="menu-item-3245" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3245 item-4"><a title="Envie de sortir" href="https://www.cc-paysviganais.fr/systeme/agenda/">Envie de sortir</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3228 item-4"><span title="Entreprendre">Entreprendre</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-3248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3248 item-5"><a title="S'implanter, se développer" href="https://www.cc-paysviganais.fr/zones-dactivites/">S’implanter, se développer</a></li>
+											<li id="menu-item-3249" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3249 item-5"><a title="Les filières" href="https://www.cc-paysviganais.fr/listes/les-filieres/">Les filières</a></li>
+											<li id="menu-item-4089" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-4089 item-5"><a title="Maison de la Formation et des Entreprises" href="https://www.cc-paysviganais.fr/listes/formation/">Maison de la Formation et des Entreprises</a></li>
+											<li id="menu-item-3251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3251 item-5"><a title="Marchés Publics" href="https://www.cc-paysviganais.fr/marches-publics/">Marchés Publics</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+								<li id="menu-item-3229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3229 item-5"><span title="Valoriser">Valoriser</span>
+									<div class="sub-menu">
+										<ul class="bloc-menu-left">
+											<li id="menu-item-4240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4240 item-6"><a title="Terroir" href="https://www.cc-paysviganais.fr/terroir/">Terroir</a></li>
+											<li id="menu-item-3255" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3255 item-6"><a title="Patrimoine" href="https://www.cc-paysviganais.fr/listes/patrimoine/">Patrimoine</a></li>
+											<li id="menu-item-3253" class="menu-item menu-item-type-post_type menu-item-object-affichage_liste menu-item-3253 item-6"><a title="Tourisme" href="https://www.cc-paysviganais.fr/listes/tourisme/">Tourisme</a></li>
+										</ul>
+										<ul class="bloc-menu-middle"></ul>
+										<ul class="bloc-menu-right"></ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--/cdlNav-->
+					</nav>
+				</div>
+				<div id="button"><button id="button_search"> <span class="toggle-search c-search-form_open" title="Rechercher dans le site"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="70px" viewbox="0 0 14.4 14.4" style="overflow:scroll;enable-background:new 0 0 14.4 14.4;" xml:space="preserve"><defs></defs><path id="search_1_" d="M14.1,12.2l-3.4-3.4c0.5-0.9,0.8-1.9,0.8-2.9C11.4,2.7,8.7,0,5.6,0C2.5,0,0,2.5,0,5.6s2.7,5.8,5.8,5.8
+						c1,0,2-0.3,2.8-0.8l3.5,3.5c0.3,0.3,0.9,0.3,1.2,0l0.9-0.9C14.5,12.9,14.4,12.5,14.1,12.2z M1.7,5.6c0-2.2,1.7-3.9,3.9-3.9
+						c2.2,0,4.1,1.9,4.1,4.1S8,9.7,5.8,9.7C3.7,9.7,1.7,7.8,1.7,5.6z"></path></svg> </span> </button> <a href="https://www.facebook.com/ccpaysviganais.fr/" target="_blank"> <button id="button_facebook"> <span class="toggle-facebook"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="70px" viewbox="0 0 4.2 8.3" style="overflow:scroll;enable-background:new 0 0 4.2 8.3; " xml:space="preserve"><style type="text/css">
+									.st0{fill:#4D4D4D;}
+								</style><defs></defs><path id="Facebook_1_" d="M4,2.9H2.8V2c0.1-0.8,1.4-0.6,1.4-0.6l0-0.1l0,0V0.1h0v0h0c0,0-2.5-0.6-3,1.3l0,0c0,0,0,0,0,0
+									C1.1,1.6,1.1,2.7,1.1,2.9H0v1.5h1.1v3.9h1.6V4.3H4l0.1-1.5L4,2.9z"></path></svg> </span> </button> </a></div>
+				<div class="clearfix"></div>
+			</div>
+		</header>
+		<div class="c-search-main recherche-autocompletion">
+			<!-- <h2>Recherche</h2> --><button class="c-search-form_close o-toggle" type="button"></button>
+			<div class="c-search-main_container">
+				<form action="/" class="c-search-form">
+					<div class="c-search-form_wrap">
+						<div class="c-search-form_input-wrap">
+							<div id="searchform">
+								<div><input type="text" class="rechercher" placeholder="Rechercher" name="s" id="s"> <button type="submit" id="searchsubmit">OK</button></div>
+							</div>
+						</div>
+						<div class="c-search-loader">
+							<div class="c-search-loader_line"></div>
+						</div>
+					</div>
+				</form>
+				<div class="c-search-results"></div>
+			</div>
+		</div>
+		<div class="center">
+			<div id="breadcrumbs">
+				<!--cdlPosition-->
+				<div class="vous-etes-ici">Vous êtes ici :</div>
+				<div><span><a title="Accueil" href="https://www.cc-paysviganais.fr" class="lien-accueil-breadcrumb">Accueil</a></span><span class="sep">></span><span class="post-title">C’est voté !</span></div>
+				<!--/cdlPosition-->
+			</div>
+		</div>
+		<!--[if lt IE 7]>
+	<p class="navigateur-obosolete">
+		Vous utilisé un navigateur très ancien. <a href="http://browsehappy.com/">Mettre à jour votre navigateur aujourd'hui</a> ou installer <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">Google Chrome</a> ou <a href="https://www.mozilla.org/fr/firefox/new/" target="_blank">Firefox</a> pour la meilleure expérience utilisateur sur ce site.
+	</p>
+	<![endif]-->
+		<div id="wrapper">
+			<!--cdlBloc ordre="3"-->
+			<div class="center"><a class="lien_logo" href="https://www.cc-paysviganais.fr"> <div class="titre_pays"><h1>Pays Viganais</h1><h3><span class="off">Bienvenue sur le </span>site officiel de votre communauté de communes</h3></div> </a>
+				<div class="top-publication">
+					<section class="header-page avec-imagealaune">
+						<h1 class="entry-title">C’est voté !</h1>
+						<div class="introduction">
+							<p>Retrouvez les relevés de décisions des Assemblées délibérantes de la Communauté de Communes du Pays Viganais, du SIVOM du Pays Viganais et du Syndicat Mixte Ganges-Le Vigan pour l'année 2020.</p>
+						</div>
+					</section><a href="https://www.cc-paysviganais.fr/medias/2017/07/vote.jpg" class="imagealaune"> <img width="570" height="354" src="https://www.cc-paysviganais.fr/medias/2017/07/vote-570x354.jpg" class="attachment-imagealaune size-imagealaune colorbox-6864  wp-post-image" alt=""> </a>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="center">
+				<div id="primary" role="main" class="contextualites-on">
+					<article id="post-6864" class="post-6864 page type-page status-publish has-post-thumbnail hentry">
+						<div class="entry-content">
+							<h2>CC Pays Viganais</h2>
+							<p><a href="https://www.cc-paysviganais.fr/medias/2020/02/Releve-de-decisions-05-02-20.pdf" target="_blank" rel="noopener noreferrer">Relevé de Décisions CC du 05 février 2020</a><br> <a href="https://www.cc-paysviganais.fr/medias/2020/06/200610-Releve-de-Decisions.pdf" target="_blank" rel="noopener noreferrer">Relevé de Décisions CC du 10 juin 2020</a></p>
+							<p> </p>
+							<div class="clearBoth"></div>
+							<div class="clearBoth"></div>
+							<h2>SIVOM du Pays Viganais</h2>
+							<p><a href="https://www.cc-paysviganais.fr/medias/2020/02/Releve-de-decisions-du-03-fevrier-20-1.pdf" target="_blank" rel="noopener noreferrer">Relevé de décisions du 03 février 2020</a><br> Relevé de décisions du 22 juin 2020 à venir</p>
+							<p> </p>
+							<h2>Syndicat Mixte Ganges-Le Vigan (SMGLV)</h2>
+							<p><a href="https://www.cc-paysviganais.fr/medias/2020/07/Releve-de-Decisions-12.06.2020.pdf" target="_blank" rel="noopener noreferrer">Relevé de décisions du 12 juin 2020</a></p>
+							<p> </p>
+							<div class="clearfix"></div>
+						</div>
+						<script src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&language=fr&key=AIzaSyCcABhfKR9Bl-yahvDeN2MBxv02hyf5aBA"></script>
+						<script src="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-plan-interactif/js/MarkerClusterer.js"></script>
+					</article>
+					<div class="partage-social-media">
+						<div class="partage">
+							<ul class="liste-reseaux">
+								<li><a class="rs-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.cc-paysviganais.fr/cest-vote/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Facebook"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" title="Facebook" alt="Facebook" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg> </a></li>
+								<li><a class="rs-twitter" href="https://twitter.com/share?url=https://www.cc-paysviganais.fr/cest-vote/&text=C%E2%80%99est%20vot%C3%A9%20!" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" title="Partager sur Twitter"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" title="Twitter" alt="Twitter" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg> </a></li>
+								<li><a class="rs-mail" href="mailto:?subject=C%E2%80%99est%20vot%C3%A9%20!%20-%20Communaut%C3%A9%20de%20Communes%20du%20Pays%20Viganais&body=https://www.cc-paysviganais.fr/cest-vote/" title="Envoyer par mail"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11.7px" height="8px" viewbox="0 0 11.7 8" style="overflow:scroll;enable-background:new 0 0 	11.7 8;" xml:space="preserve"><path id="mail_1_" d="M7.8,4.2l3.9-3.7v7.1L7.8,4.2z M11.2,0H0.5l5.4,5.1L11.2,0z M0,0.4v7.1l3.9-3.4L0,0.4z 	M5.8,6L4.4,4.6L0.5,8 h10.7L7.3,4.6L5.8,6z"></path></svg> </a></li>
+								<li><a class="rs-imprimer" href="javascript:window.print()" title="Imprimer"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-print-4" title="Imprimer" alt="Imprimer" class="at-icon at-icon-print"><title id="at-svg-print-4">Imprimer</title><g><path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path></g></svg> </a></li>
+							</ul>
+						</div>
+						<p>Partager cette publication sur :</p>
+					</div>
+				</div>
+				<div id="secondary" role="complementary">
+					<section>
+						<div class="bloc-context ensavoirplu">
+							<h3>En savoir plus</h3>
+							<div>
+								<ul>
+									<li><strong>CC Pays Viganais<br> </strong>Rapports sur les orientations budgétaires 2020<br> > <a href="https://www.cc-paysviganais.fr/medias/2020/06/20061005a-Rapport-DOB-2020-BG-CCPV-web.pdf" target="_blank" rel="noopener">Budget Général</a><br> > <a href="https://www.cc-paysviganais.fr/medias/2020/06/20061006a-Rapport-DOB-2020-ZAE-web.pdf" target="_blank" rel="noopener">Budget ZAE « La Plaine »</a></li>
+								</ul>
+								<p> </p>
+								<ul>
+									<li><strong>SIVOM Pays Viganais<br> </strong>Rapports sur les orientations budgétaires 2019<br> > <a href="https://www.cc-paysviganais.fr/medias/2019/02/19020701a-ROB-SIVOM-BG-2019-web.pdf" target="_blank" rel="noopener">Budget Général</a><br> > <a href="https://www.cc-paysviganais.fr/medias/2019/02/19020702a-ROB-ASS-2019-web.pdf" target="_blank" rel="noopener">Budget Assainissement</a><br> <a href="https://www.cc-paysviganais.fr/medias/2018/04/18031902-DOB-ASS-2018-v2.pdf" target="_blank" rel="noopener"><br> </a></li>
+									<li><strong>SM Ganges-Le Vigan<br> </strong>> <a href="https://www.cc-paysviganais.fr/medias/2020/07/20061201a-Presentation-DOB-SMGLV-2020-web.pdf" target="_blank" rel="noopener">Rapport Orientations Budgétaires 2020</a><br> > <a href="https://www.cc-paysviganais.fr/medias/2020/07/20061204Aa-Presentation-CA-2019-SM-GANGES-web.pdf" target="_blank" rel="noopener">Présentation Compte Administratif 2019</a><br> > <a href="https://www.cc-paysviganais.fr/medias/2020/07/20061206a-Presentation-BP-2020-SMGLV-web.pdf" target="_blank" rel="noopener">Présentation Budget Primitif 2020</a></li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="bloc-context retrouvezaussi">
+							<h3>Retrouvez aussi</h3>
+							<div>
+								<ul>
+									<li><a href="https://www.cc-paysviganais.fr/__trashed/">C’est voté ! 2017</a></li>
+									<li><a href="https://www.cc-paysviganais.fr/releves-de-decisions/">C’est voté ! 2018</a></li>
+									<li><a href="https://www.cc-paysviganais.fr/cest-vote-2019/">C’est voté ! 2019</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bloc-context actualitelie">
+							<h3>Actualités</h3>
+							<div class="nav-defaut-sidebar nav-actualitelie"><span class="prev"> <!--[if gte IE 9]><!--> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.1px" height="19.8px" viewbox="0 0 12.1 19.8" style="overflow:scroll;enable-background:new 0 0 12.1 19.8;" xml:space="preserve"><polygon points="0,9.9 9.6,0 12.1,2.4 4.8,9.9 12.1,17.4 9.6,19.8 "></polygon></svg> <!--<![endif]--> <!--[if lte IE 8]>
+						    <span class="ie9-tools">Précédent</span>
+						<![endif]--> </span> <span class="next"> <!--[if gte IE 9]><!--> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.1px" height="19.8px" viewbox="0 0 12.1 19.8" style="overflow:scroll;enable-background:new 0 0 12.1 19.8;" xml:space="preserve"><polygon points="12.1,9.9 2.5,19.8 0,17.4 7.3,9.9 0,2.4 2.5,0 "></polygon></svg> <!--<![endif]--> <!--[if lte IE 8]>
+						    <span class="ie9-tools">Suivant</span>
+						<![endif]--> </span></div>
+							<div class="relation-actualites relations-bloc-context">
+								<ul>
+									<li><img width="104" height="104" src="https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-104x104.jpg" class="attachment-sidebar-publication-actualite-slider size-sidebar-publication-actualite-slider colorbox-5074  wp-post-image" alt="" srcset="https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-104x104.jpg 104w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-150x150.jpg 150w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-180x180.jpg 180w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-400x400.jpg 400w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-75x75.jpg 75w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-102x102.jpg 102w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-55x55.jpg 55w, https://www.cc-paysviganais.fr/medias/2017/07/eau-sivom-960x960.jpg 960w" sizes="(max-width: 104px) 100vw, 104px">
+										<p class="titre-actualite">SIVOM – Réunion du 10 juillet 2020</p><a href="https://www.cc-paysviganais.fr/actualites/sivom-reunion-du-11decembre-2017/" class="hover-context hover-actualitelie" title="Voir la fiche"> <span class="background-link"></span> <!--[if gte IE 9]><!--> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.5px" height="12.5px" viewbox="0 0 12.5 12.5" style="overflow:scroll;enable-background:new 0 0 12.5 12.5;" xml:space="preserve"><g><g><polygon points="6.8,3.1 6.8,5.7 9.3,5.7 9.3,6.8 6.8,6.8 6.8,9.4 5.7,9.4 5.7,6.8 3.1,6.8 3.1,5.7 5.7,5.7 5.7,3.1   "></polygon></g></g><path d="M6.2,12.5C2.8,12.5,0,9.7,0,6.2C0,2.8,2.8,0,6.2,0s6.2,2.8,6.2,6.2C12.5,9.7,9.7,12.5,6.2,12.5z M6.2,1C3.4,1,1,3.4,1,6.2 c0,2.9,2.4,5.2,5.2,5.2s5.2-2.4,5.2-5.2C11.5,3.4,9.1,1,6.2,1z"></path></svg> <!--<![endif]--> <!--[if lte IE 8]>
+								    <span class="lire-suite-ie">Lire la suite</span>
+								<![endif]--> </a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!--/cdlBloc-->
+		<footer class="site-footer">
+			<div class="center">
+				<div class="img_logo"><img src="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/images/footerlogo1200.jpg" alt=""></div>
+				<div class="adresse_footer">
+					<h2>Communauté de Communes du Pays Viganais</h2>
+					<p>Maison de l'Intercommunalité</p>
+					<p>3, Avenue Sergent Triaire</p>
+					<p>30120 Le Vigan</p>
+					<p>Tél: 04 99 54 27 00</p>
+				</div><a href="https://www.facebook.com/ccpaysviganais.fr/" class="bloc_facebook" target="_blank"> <div id="svg-facebook"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="45px" viewbox="0 0 4.2 8.3" style="overflow:scroll;enable-background:new 0 0 4.2 8.3;" xml:space="preserve"><style type="text/css"> .st0{fill:#4D4D4D;} </style><defs></defs><path id="svg-fb" class="st0" d="M4,2.9H2.8V2c0.1-0.8,1.4-0.6,1.4-0.6l0-0.1l0,0V0.1h0v0h0c0,0-2.5-0.6-3,1.3l0,0c0,0,0,0,0,0
+									C1.1,1.6,1.1,2.7,1.1,2.9H0v1.5h1.1v3.9h1.6V4.3H4l0.1-1.5L4,2.9z"></path></svg></div> <h2>Retrouvez-nous <br> sur Facebook !</h2> </a>
+				<div id="contact"><a href="https://www.cc-paysviganais.fr/systeme/nous-contacter/" class="contact"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.9px" height="12.3px" viewbox="0 0 17.9 12.3" style="overflow:scroll;enable-background:new 0 0 17.9 12.3;" xml:space="preserve"><style type="text/css"> .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><defs></defs><path id="mail_1_" class="st0" d="M9,10.6l3.3-3.4l5.1,5.1h-17l5.1-5.1L9,10.6z M0,10.3V2l4.5,4.2L0,10.3z M0,0h17.9L9,8.3L0,0zM13.4,6.2L17.9,2v8.2L13.4,6.2z"></path></svg> <span>Nous contacter</span> </a> <a href="https://www.cc-paysviganais.fr/nos-labels-et-partenaires/" class="label"> <span>Nos labels et partenaires</span> </a></div>
+			</div>
+		</footer>
+		<div class="liens_footer">
+			<div id="menu_footer">
+				<div class="menu-menu-footer-container">
+					<ul id="menu-menu-footer" class="footer-menu">
+						<li id="menu-item-3774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3774 item-1"><a title="Accueil" href="https://www.cc-paysviganais.fr/">Accueil</a></li>
+						<li id="menu-item-3775" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3775 item-2"><a title="Accessibilité" href="https://www.cc-paysviganais.fr/systeme/accessibilite/">Accessibilité</a></li>
+						<li id="menu-item-3776" class="imprimer menu-item menu-item-type-custom menu-item-object-custom menu-item-3776 item-3"><a href="javascript:window.print()" title="Imprimer">Imprimer</a></li>
+						<li id="menu-item-3777" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3777 item-4"><a title="Flux RSS" href="https://www.cc-paysviganais.fr/systeme/flux-rss/">Flux RSS</a></li>
+						<li id="menu-item-3778" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3778 item-5"><a title="Plan du site" href="https://www.cc-paysviganais.fr/systeme/plan-du-site/">Plan du site</a></li>
+						<li id="menu-item-3779" class="menu-item menu-item-type-post_type menu-item-object-page-systeme menu-item-3779 item-6"><a title="Mentions légales" href="https://www.cc-paysviganais.fr/systeme/mentions-legales/">Mentions légales</a></li>
+						<li id="menu-item-3780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3780 item-7"><a title="© Creasit" target="_blank" href="http://www.creasit.fr/">© Creasit</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- METTRE CLASS scroll-top POUR REMONTER AU DEBUT DE LA PAGE-->
+			<div class="back-to-top float-right scroll-top"><a href="#">Retour en haut de page</a>
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9px" height="6px" viewbox="0 0 18.3 10.2" style="overflow:scroll;enable-background:new 0 0 18.3 10.2;" xml:space="preserve">
+					<defs></defs>
+					<polygon id="top_1_footer" points="18.3,7.9 16.3,10.2 9.2,4.1 2,10.2 0,7.9 9.2,0 "></polygon>
+				</svg>
+			</div>
+		</div>
+		<script type="application/javascript">
+				jQuery(document).bind("gform_confirmation_loaded", function(){
+				    jQuery(".entry-content p.champs-obligatoires").remove();
+				});
+		
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/plugins/creasit-plan-interactif/js/infobubble.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/ui/core.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/ui/widget.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/ui/position.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/ui/menu.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+		<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-url.min.js">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.cc-paysviganais.fr/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js">' + 'ipt>' );
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/dist/dom-ready.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/dist/a11y.min.js"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"Aucun r\u00e9sultat.","oneResult":"Un r\u00e9sultat trouv\u00e9. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir. ","manyResults":"%d r\u00e9sultats trouv\u00e9s. Utilisez les fl\u00e8ches haut et bas du clavier pour les parcourir.","itemSelected":"\u00c9l\u00e9ment s\u00e9lectionn\u00e9."};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-includes/js/jquery/ui/autocomplete.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/scripts-noyau.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/recherche.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/class_externe_svg.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/jquery.inputmask.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/ReaderPDF/liseuse.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/noyau/assets/js/ReaderPDF/dflip.min.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+		<script type="text/javascript" src="https://www.cc-paysviganais.fr/wp-content/themes/ccpv/js/scripts.js"></script>
+		<!-- Matomo -->
+		<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://www.cc-paysviganais.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+		</script>
+		<!-- End Matomo Code -->
+		<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+	}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</body>
+</html>
