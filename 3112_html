@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<!-- Title -->
+		<title>Comptes-rendus - Communauté de communes des 2 Morin</title>
+		<!-- Metas -->
+		<link rel="shortcut icon" type="image/png" href="/public/images/favicon.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="Description" content="">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<!-- Layout -/- effects -->
+		<script type="text/javascript" src="/sematic/i18n/messages.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery-ui-1.8.6.custom.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="/public/stylesheets/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="/public/yepnope/yepnope.1.0.2-min.js"></script>
+		<script type="text/javascript" src="/public/javascripts/zenexity/tools/utils.js"></script>
+		<script type="text/javascript" src="/sematic/routes.js"></script>
+		<!-- Google Maps & Microdata -->
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic/tools/microdata-polyfill.js"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic/tools/async.js"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic-front.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/albums/autoload/slides.min.jquery.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/albums/autoload/slideshow.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/map/autoload/map.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/culturalagenda/autoload/ca-front.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/home2/autoload/carrousel.js"></script>
+		<script type="text/javascript" src="/public/javascript/scripts.js"></script>
+		<script type="text/javascript" src="/public/fancybox/jquery.fancybox-1.3.0.js"></script>
+		<script type="text/javascript" src="/public/flowplayer/flowplayer-3.1.4.js"></script>
+		<script type="text/javascript" src="/public/javascripts/jqCarousel3D.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery.ui.datepicker-fr.js"></script>
+		<script type="text/javascript">
+						$(document).ready(function () {
+				$(".gotoPage").bind('change',function (event) {
+					if (event.target.value)
+						document.location=event.target.value;
+				});
+				if ("Bandeau-CC2M-logo" != "") {
+					$(".img_font").css('background', "url('/library/Bandeau-CC2M-logo') no-repeat")
+				} else {
+					$(".img_font").css('background', "url('/public/images/template-images/img_font.png') no-repeat")
+				}
+			});
+		
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				formValues_ini();
+				legend_floatimage();
+				function formValues_ini() {
+					form_a=document.getElementsByTagName("form");
+					for(i=0;i<form_a.length;i++) {
+						if(!form_a[i].className||form_a[i].className.toLowerCase().indexOf("defaultvalues")<0) continue;
+						for(j=0;j<form_a[i].elements.length;j++) {
+							if(!form_a[i].elements[j].tagName||(form_a[i].elements[j].tagName.toLowerCase()!="textarea" && (!form_a[i].elements[j].type||form_a[i].elements[j].type.toLowerCase()!="text"))) continue;
+							form_a[i].elements[j].onfocus=function() {if(this.value==this.defaultValue) this.value="";};
+							form_a[i].elements[j].onblur=function() {if(!this.value) this.value=this.defaultValue;};
+					}}}
+				function legend_floatimage() {
+					var box_img = $(".rightbox,.leftbox,.centerbox,.photo-float-right,.photo-float-left")
+					box_img.each(function (i) {
+						elm = $(this);
+						img = $("img", $(this)).get(0);
+						p = $("p", $(this)).get(0);
+						if(img && p) {
+							w = parseInt(img.offsetWidth,10);
+							$(p).attr("style", function (arr) {
+							return 'width:'+w +'px';});
+						};
+					});
+				}
+				$(function() {
+					//Expandable List - Rewrite tree
+					$(".list-block ul li").filter(":has(>ul)").each(function() {
+						var isHomePage = $(this).parents('.secondary-col').length ? true : false;
+						var depth = $(this).parents("ul").length;
+						var node = this.firstChild;
+						this.removeChild(this.firstChild);
+						var newNode = document.createElement ("div");
+						if (isHomePage)
+							newNode.className = "list-header expandable level00"+depth;
+						else
+							newNode.className = "list-header-2 expanded level00"+depth;
+						newNode.appendChild (node);
+						$(this).contents().not("ul").appendTo(newNode);
+						$(this).prepend (newNode);
+						if(isHomePage)
+							$(newNode).siblings().hide();
+					});
+				})
+				$(function() {
+					 //Expandable List - Rewrite tree without children
+					 $("#main-container .list-block ul li").filter(":not(>ul)").each(function() {
+						var depth = $(this).parents("ul").length;
+						if(depth==1) {
+							var node = this.firstChild;
+							this.removeChild(this.firstChild);
+							var newNode = document.createElement ("div");
+							newNode.className = "list-header expanded level0"+depth;
+							newNode.appendChild (node);
+							$(this).prepend (newNode);
+						};
+					 });
+				})
+				$(document).ready(function () {
+					/* Expandable List - Eye candy on list documents */
+					$(".list-header").bind ("click",function (ev) {
+						if (ev.target.tagName == "A" )
+							return true;
+						
+						if ($(this).is(".expanded")) {
+							$(this).siblings("").slideUp();
+							$(this).removeClass("expanded").addClass("expandable");
+						} 
+						else {
+							$(this).siblings("").slideDown();
+							$(this).removeClass("expandable").addClass("expanded");
+						}
+					});
+					$("#tree-collapse-all").bind ("click",function () {
+						$(".list-header.expanded").trigger('click');
+						return false;
+					});
+					$("#tree-expand-all").bind ("click",function () {
+						$(".list-header.expandable").trigger('click');
+						return false;
+					});
+
+				});
+
+				//Culturalagenda - Date picker
+				var date = $('#agenda-date-final-input').val();
+				$('#agenda-date-clear').hide();
+				if(date)
+					date = new Date(parseInt(date, 10))
+				if ($.fn.datepicker) {
+					$('input.page-date').datepicker({
+						defaultDate: date,
+						dateFormat: 'dd/mm/yy',
+						onSelect: function() {
+							$('input.page-date').val($.datepicker.formatDate('dd/mm/yy',$(this).datepicker('getDate')))
+							$('#agenda-date-clear').show()
+						}
+					});
+				}
+				$('#agenda-date-image').click(function() {
+					$('#agenda-date').datepicker('show');
+				});
+				$('#events-search').submit(function() {	
+				});
+				$('#agenda-date-clear').click(function() {
+					$('input.page-date').val('');
+					$('#agenda-date-clear').hide();
+				});
+				$('#sitesSlides').carousel3D({
+					speed: 900,
+					perspectiveZoom: 70,
+					sideOffset: 40,
+					secondaryOpacity: .35,
+					emClass:'slideImage'
+					});
+			}
+		
+		</script>
+		<link rel="stylesheet" href="/public/stylesheets/site.css" type="text/css" media="all">
+		<link rel="stylesheet" href="/public/stylesheets/sematic-front.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/spl/autoload/spl.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/slideshow.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/slides.jquery.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/singlemedia.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/map/autoload/map.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/annuaire/autoload/facebox/facebox.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/annuaire/autoload/annuaire.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/culturalagenda/autoload/culturalagenda.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/formulaire/autoload/formulaire.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/home2/autoload/mainNews.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/home2/autoload/home2.css" media="all">
+		<link rel="stylesheet" href="/public/fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen">
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" type="text/css" href="/public/stylesheets/ie8.css" />
+		<![endif]-->
+	</head>
+	<body id="comptes-rendus" class="content-ContentPage">
+		<!-- Accessibility -->
+		<ul id="accessibility">
+			<li><a href="#content">Aller au contenu</a></li>
+			<li><a href="#menu">Aller au menu</a></li>
+			<li><a href="#submenu">Aller au sous-menu</a></li>
+			<li><a href="#search">Faire une recherche</a></li>
+		</ul>
+		<div id="site">
+			<div id="topnav">
+				<div class="wrapper">
+					<ul id="menu1">
+						<li><a href="/accueil"><span>Accueil</span></a></li>
+						<li><a href="/toute-l-actu"><span>Toute l'actu</span></a></li>
+						<li><a href="/agenda"><span>Agenda</span></a></li>
+						<li><a href="/page-facebook" class="open-popup"><span>Facebook</span></a></li>
+					</ul>
+					<div id="toptools">
+						<form id="subscribeNewsLetter" class="defaultvalues">
+							<fieldset><label for="newsEmailTop">Newsletter</label> <input type="text" class="text" name="user.emailUser" id="newsEmailTop" value="Votre Email"> <button type="submit" class="button" value="Valider"><span>Ok</span></button></fieldset>
+						</form>
+					</div>
+					<p class="login"><span class="login-anonymous"><a href="/sematic/login?returnTo=http%3A%2F%2Fwww.cc2morin.fr%2Fcomptes-rendus">Accès partenaire</a></span></p>
+				</div>
+			</div>
+			<div class="img_font">
+				<!-- Header -->
+				<div id="help">
+					<form action="/search" method="post"><input type="text" class="text" name="query" id="search" placeholder="Recherche"> <input type="submit" class="button" value=""></form>
+				</div>
+				<div id="header">
+					<div class="wrapper">
+						<div id="top_header">
+							<h1 id="logo"><a href="/root"><img src="/public/images/logo-site.png" alt="Communauté de communes des 2 Morin"><span>Communauté de communes des 2 Morin</span></a></h1>
+						</div>
+						<ul id="menu">
+							<li><a href="/le-territoire">Territoire</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/presentation">Présentation</a></li>
+									<li><a href="/acces-situation">Accès & situation</a></li>
+									<li><a href="/plan">Communes</a>
+										<ul>
+											<li><a href="/bellot">Bellot</a></li>
+											<li><a href="/boitron">Boitron</a></li>
+											<li><a href="/chartronges">Chartronges</a></li>
+											<li><a href="/choisy-en-brie">Choisy-en-Brie</a></li>
+											<li><a href="/la-chapelle-moutils">La Chapelle-Moutils</a></li>
+											<li><a href="/doue">Doue</a></li>
+											<li><a href="/la-ferte-gaucher">La Ferté-Gaucher</a></li>
+											<li><a href="/hondevilliers">Hondevilliers</a></li>
+											<li><a href="/jouy-sur-morin">Jouy-sur-Morin</a></li>
+											<li><a href="/lescherolles">Lescherolles</a></li>
+											<li><a href="/leudon-en-brie">Leudon-en-Brie</a></li>
+											<li><a href="/meilleray">Meilleray</a></li>
+											<li><a href="/saint-mars-vieux-maisons">Saint-Mars-Vieux-Maisons</a></li>
+											<li><a href="/saint-martin-des-champs">Saint-Martin-des-Champs</a></li>
+											<li><a href="/saint-remy-de-la-vanne">Saint-Rémy-de-la-Vanne</a></li>
+											<li><a href="/la-tretoire">La Trétoire</a></li>
+											<li><a href="/montdauphin">Montdauphin</a></li>
+											<li><a href="/montenils">Montenils</a></li>
+											<li><a href="/montolivet">Montolivet</a></li>
+											<li><a href="/orly-sur-morin">Orly-sur-Morin</a></li>
+											<li><a href="/rebais">Rebais</a></li>
+											<li><a href="/sablonniere">Sablonnières</a></li>
+											<li><a href="/saint-barthelemy">Saint-Barthélémy</a></li>
+											<li><a href="/saint-cyr-sur-morin">Saint-Cyr-sur-Morin</a></li>
+											<li><a href="/saint-denis-les-rebais">Saint-Denis-lès-Rebais</a></li>
+											<li><a href="/saint-germain-sous-doue">Saint-Germain-sous-Doue</a></li>
+											<li><a href="/saint-leger">Saint-Léger</a></li>
+											<li><a href="/saint-ouen-sur-morin">Saint-Ouen-sur-Morin</a></li>
+											<li><a href="/saint-simeon">Saint-Siméon</a></li>
+											<li><a href="/verdelot">Verdelot</a></li>
+											<li><a href="/villeneuve-sur-bellot">Villeneuve-sur-Bellot</a></li>
+										</ul>
+									</li>
+									<li><a href="/le-c-ur-de-la-brie-en-images">Les 2 Morin en images</a></li>
+								</ul>
+							</li>
+							<li><a href="/la-communaute-de-communes">Communauté de communes</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/competences">Compétences</a></li>
+									<li><a href="/vos-elus">Vos élus</a></li>
+									<li><a href="/conseil-communautaire">Conseil communautaire</a>
+										<ul>
+											<li><a href="/comptes-rendus">Comptes-rendus</a></li>
+										</ul>
+									</li>
+									<li><a href="/les-projets">Les projets</a></li>
+									<li><a href="/le-c-a-r-p">Le C.A.R.P.</a></li>
+									<li><a href="/journal-des-2-morin">Journal des 2 Morin</a></li>
+									<li><a href="/services-contacts">Services & contacts</a></li>
+								</ul>
+							</li>
+							<li><a href="/vie-quotidienne">Vie quotidienne</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/enfance-jeunesse">Petite enfance</a>
+										<ul>
+											<li><a href="/halte-garderie">Multi-accueil des 2 Morin</a></li>
+											<li><a href="/le-ram-des-2-morin">Le RAM des 2 Morin</a></li>
+											<li><a href="/lieu-d-accueil-enfants-parents-le-tilleuls">Lieu d'accueil enfants-parents "le Tilleul"</a></li>
+											<li><a href="/des-histoires-en-balade">Des Histoires en Balade</a></li>
+											<li><a href="/la-bulle-chantee">La bulle chantée</a></li>
+										</ul>
+									</li>
+									<li><a href="/action-sociale">Action sociale</a>
+										<ul>
+											<li><a href="/maison-des-services-publics">Maison de Services au Public</a></li>
+										</ul>
+									</li>
+									<li><a href="/sante">Santé</a>
+										<ul>
+											<li><a href="/professionnels-du-territoire">Professionnels du territoire</a></li>
+											<li><a href="/la-maison-de-sante">La Maison de Santé</a></li>
+										</ul>
+									</li>
+									<li><a href="/urbanisme">Urbanisme</a>
+										<ul>
+											<li><a href="/plu-carte-communale-rnu">PLU / Carte communale / RNU</a></li>
+											<li><a href="/enquetes-publiques">Enquêtes publiques</a></li>
+											<li><a href="/publicites-des-actes-administratifs">Publicités des actes administratifs</a></li>
+										</ul>
+									</li>
+									<li><a href="/vie-locale">Transports</a>
+										<ul>
+											<li><a href="/transport-a-la-demande-tad">Transport à la demande (TAD)</a></li>
+											<li><a href="/transport-a-la-personne-tap">Transport "Mobilité Séniors"</a></li>
+											<li><a href="/transports">Transports en commun</a></li>
+											<li><a href="/transport-scolaire">Transport Scolaire</a></li>
+										</ul>
+									</li>
+									<li><a href="/seniors">Séniors</a>
+										<ul>
+											<li><a href="/annuaire-seniors">Annuaire séniors</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="/culture-loisirs">Sports - Loisirs - Culture</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/sports">Sports</a>
+										<ul>
+											<li><a href="/ecole-multisports">Ecole multisports</a></li>
+											<li><a href="/ateliers-sportifs">Ateliers sportifs</a></li>
+											<li><a href="/piscine-de-bellot-la-saison-2017">Piscine intercommunale </a></li>
+											<li><a href="/comite-departemental-du-sport-en-milieu-rural">Comité Départemental du Sport en Milieu Rural</a></li>
+											<li><a href="/associations-sportives-du-territoire">Associations sportives du territoire</a></li>
+										</ul>
+									</li>
+									<li><a href="/culture">Culture</a>
+										<ul>
+											<li><a href="/la-culture-au-sein-des-2-morin">La Culture au sein des 2 Morin</a></li>
+											<li><a href="/musique-et-theatre">Ecole de musique</a></li>
+											<li><a href="/ecole-de-theatre">Ecole de théâtre</a></li>
+											<li><a href="/residence-mission">Résidence mission 2019-2020</a></li>
+											<li><a href="/musee-de-la-seine-et-marne">Musée de la Seine-et-Marne</a></li>
+										</ul>
+									</li>
+									<li><a href="/les-evenements">Les événements</a>
+										<ul>
+											<li><a href="/festival-paroles-de-plantes">Festival Paroles de Plantes</a></li>
+											<li><a href="/trails-de-la-brie-des-morin">Trails de la Brie des Morin</a></li>
+											<li><a href="/printemps-des-poetes">Printemps des 2 Morin</a></li>
+											<li><a href="/scenes-des-2-morin">Scènes des 2 Morin</a></li>
+										</ul>
+									</li>
+									<li><a href="/pole-de-loisirs-mecaniques">Pôle de loisirs mécaniques</a></li>
+								</ul>
+							</li>
+							<li><a href="/economie">Economie</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/developpement-economique">Développement économique</a></li>
+									<li><a href="/technologies-information-communication">Aménagement numérique</a>
+										<ul>
+											<li><a href="/la-fibre-optique-sur-le-territoire">La fibre optique sur le territoire</a></li>
+										</ul>
+									</li>
+									<li><a href="/tourisme">Tourisme</a>
+										<ul>
+											<li><a href="/office-de-tourisme-intercommunautaire">Office de tourisme intercommunautaire</a></li>
+										</ul>
+									</li>
+									<li><a href="/marches-publics">Marchés publics</a></li>
+								</ul>
+							</li>
+							<li><a href="/cadre-de-vie">Cadre de vie</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/environnement">Environnement</a>
+										<ul>
+											<li><a href="/ordures-menageres">Ordures ménagères</a></li>
+											<li><a href="/la-biodiversite">La biodiversité</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="/vie-associative">Vie associative</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/subventions-associations-sportives">Subventions associations sportives</a></li>
+									<li><a href="/subventions">Subventions associations culturelles</a></li>
+									<li><a href="/agenda-associatif">Agenda associatif</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Main container -->
+			<div id="container">
+				<div class="wrapper">
+					<!-- SubMenu -->
+					<div id="submenu">
+						<div class="topSection">
+							<h2>Communauté de communes</h2>
+						</div>
+						<ul class="submenulist">
+							<li><a href="/competences">Compétences</a></li>
+							<li><a href="/vos-elus">Vos élus</a></li>
+							<li class="selected"><a href="/conseil-communautaire">Conseil communautaire</a>
+								<ul>
+									<li class="selected"><a href="/comptes-rendus">Comptes-rendus</a></li>
+								</ul>
+							</li>
+							<li><a href="/les-projets">Les projets</a></li>
+							<li><a href="/le-c-a-r-p">Le C.A.R.P.</a></li>
+							<li><a href="/journal-des-2-morin">Journal des 2 Morin</a></li>
+							<li><a href="/services-contacts">Services & contacts</a></li>
+						</ul>
+					</div>
+					<!-- Content -->
+					<div id="content_subpage">
+						<div id="acces_direct">
+							<h2>Accès direct<span><img src="/public/images/template-icons/ico_acces_direct.png"></span></h2>
+							<ul id="menu_acces_direct">
+								<li><a href="/pratique">Pratique</a>
+									<!--<ul>
+                        	                                <li><a href="/lien-transports">Transports</a>
+                                                </li>
+                                              </ul>-->
+								</li>
+								<li><a href="/liens-annuaires">Annuaires</a>
+									<!--<ul>
+                        	                                <li><a href="/lien-sante">Santé</a>
+                                                </li>
+                        	                                <li><a href="/lien-hebergement-restauration">Hébergement & restauration</a>
+                                                </li>
+                        	                                <li><a href="/associations">Associations</a>
+                                                </li>
+                        	                                <li><a href="/lien-commercants">Commerçants</a>
+                                                </li>
+                        	                                <li><a href="/lien-artisans-industriels">Artisans & industriels</a>
+                                                </li>
+                        	                                <li><a href="/lien-services">Services</a>
+                                                </li>
+                                              </ul>-->
+								</li>
+							</ul>
+						</div>
+						<div id="pageButtons"><span id="printPage"><a href="/export/print/comptes-rendus?" onclick="popup('/export/print/comptes-rendus?', true, 800, 600); return false;" title="Imprimer (nouvelle fenêtre)"></a></span></div>
+						<ul id="path">
+							<li><a href="/root">Accueil</a> /</li>
+							<li><a href="/la-communaute-de-communes" class="first">Communauté de communes</a> /</li>
+							<li><a href="/conseil-communautaire">Conseil communautaire</a> /</li>
+							<li><a href="/comptes-rendus" class="last">Comptes-rendus</a></li>
+						</ul>
+						<!-- Page Title -->
+						<h2 id="title">Comptes-rendus</h2>
+						<!-- /Page Title -->
+						<div class="template article-bloc">
+							<div class="block-container wide" id="main-container">
+								<div class="block block-heading" style>
+									<p class="chapeau">Consultez ici les procès-verbaux des réunions du Conseil Communautaire.</p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-heading" style>
+									<p class="chapeau"></p>
+									<h3>Année 2020 - CC2M</h3>
+									<p></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-text" style>
+									<h4>Consultez les documents relatifs au Débat d'Orientation Budgetaire (DOB) : </h4>
+									<p></p>
+									<ul>
+										<li><a href="/library/Deliberation-DOB" type="application/pdf">Délibération n°01 2020 - objet finances</a> <span class="size-helper">(662 Ko)</span></li>
+										<li><a href="/library/Rapport-du-DOB" type="application/pdf">Rapport du DOB</a> <span class="size-helper">(1 Mo)</span></li>
+									</ul>
+									<p></p>
+									<p><br></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-text" style>
+									<h4><span style="font-size: 1.333em;">Compte-rendus</span></h4>
+									<p></p>
+									<ul>
+										<li><a href="/library/CR-du-Conseil-du-5-mars-2020" type="application/pdf">Compte-rendu du Conseil du 5 mars 2020</a> <span class="size-helper">(610 Ko)</span></li>
+										<li><a href="/library/CR-du-Conseil-06-02-2020" type="application/pdf">Compte-rendu du Conseil du 6 février 2020</a> <span class="size-helper">(356 Ko)</span></li>
+										<li><span class="size-helper"><a href="/library/CR-du-23-01-2020" type="application/pdf">Compte-rendu du Conseil du 23 janvier 2020</a> <span class="size-helper">(286 Ko)</span> </span></li>
+									</ul>
+									<p></p>
+									<p><br></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-encart-droite" style>
+									<p></p>
+									<h3>Année 2019 - CC2M</h3>
+									<p></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-encart-droite" style>
+									<p></p>
+									<ul>
+										<li><a href="/library/CR-du-19-12-19" type="application/pdf">Compte-rendu du Conseil du 19 décembre 2019</a> <span class="size-helper">(396 Ko)</span></li>
+										<li><a href="/library/CR-du-21-novembre-2019" type="application/pdf">Compte-rendu du Conseil du 21 novembre 2019</a> <span class="size-helper">(353 Ko)</span></li>
+										<li><a href="/library/CR-du-24-octobre-2019" type="application/pdf">Compte-rendu du Conseil du 24 octobre 2019</a> <span class="size-helper">(416 Ko)</span></li>
+										<li><a href="/library/CR-du-19-septembre-2019" type="application/pdf">Compte-rendu du Conseil du 19 septembre 2019</a> <span class="size-helper">(824 Ko)</span></li>
+										<li><a href="/library/CR-du-27-juin-2019" type="application/pdf">Compte-rendu du Conseil du 27 juin 2019</a> <span class="size-helper">(2 Mo)</span></li>
+										<li><a href="/library/CR-23-mai-2019" type="application/pdf">Compte-rendu du Conseil du 23 mai 2019</a> <span class="size-helper">(471 Ko)</span></li>
+										<li><a href="/library/CR-du-18-avril-2019" type="application/pdf">Compte-rendu du Conseil du 18 avril 2019</a> <span class="size-helper">(359 Ko)</span></li>
+										<li><a href="/library/CR-du-4-avril-2019" type="application/pdf" style="font-size: 12px;">Compte-rendu du Conseil du 4 avril 2019</a> <span style="background-color: initial; font-size: 12px;"></span> <span class="size-helper" style="background-color: initial; font-size: 12px;">(353 Ko)</span></li>
+										<li><a href="/library/CR-du-28-02-19" type="application/pdf">Compte-rendu du Conseil du 28 février 2019</a> <span class="size-helper">(2 Mo)</span></li>
+									</ul>
+									<div><br></div>
+									<p></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-text" style>
+									<h4></h4>
+									<h3><span style="font-style: normal;">Année 2018 - CC2M</span></h3>
+									<div></div>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-text" style>
+									<p></p>
+									<ul>
+										<li><a href="/library/CR-du-21-12-2018" type="application/pdf">Compte-rendu du Conseil du 21 décembre 2018</a> <span class="size-helper">(402 Ko)</span></li>
+										<li><a href="/library/CR-du-15-11-2018" type="application/pdf">Compte-rendu du Conseil du 15 novembre 2018</a> <span class="size-helper">(498 Ko)</span></li>
+										<li><a href="/library/CR-du-27-09-2018" type="application/pdf">Compte-rendu du Conseil du 27 septembre 2018</a> <span class="size-helper">(3 Mo)</span></li>
+										<li><a href="/library/CR-du-12-juillet-2018" type="application/pdf">Compte-rendu du Conseil du 12 juillet 2018</a> <span class="size-helper">(522 Ko)</span></li>
+										<li><a href="/library/CR-du-17-mai-2018" type="application/pdf">Compte-rendu du Conseil du 17 mai 2018</a> <span class="size-helper">(500 Ko)</span></li>
+										<li><a href="/library/CR-du-22-mars-2018" type="application/pdf">Compte-rendu du Conseil du 22 mars 2018</a> <span class="size-helper">(1016 Ko)</span></li>
+										<li><a href="/library/CR-du-15-fevrier-2018" type="application/pdf">Compte-rendu du Conseil du 15 février 2018</a> <span class="size-helper">(1 Mo)</span></li>
+									</ul>
+									<div><br></div>
+									<p></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-heading" style>
+									<p class="chapeau"></p>
+									<h3>Année 2017 - CC2M</h3>
+									<p></p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-text" style>
+									<ul>
+										<li><a href="/library/CR-du-16-novembre-2017" type="application/pdf">Compte-rendu du Conseil du 16 novembre 2017</a> <span class="size-helper">(582 Ko)</span></li>
+										<li><a href="/library/CR-du-28-septembre-2017" type="application/pdf">Compte-rendu du Conseil du 28 septembre 2017</a> <span class="size-helper">(738 Ko)</span></li>
+										<li><a href="/library/CR-du-29-juin-2017" type="application/pdf">Compte-rendu du Conseil du 29 juin 2017</a> <span class="size-helper">(765 Ko)</span> <br></li>
+										<li>
+										<li><a href="/library/CR-du-1er-juin-2017" type="application/pdf">Compte-rendu du Conseil du 1er juin 2017</a> <span class="size-helper">(507 Ko)</span> <br></li>
+										<li><a href="/library/CR-du-27-avril-2017" type="application/pdf">Compte-rendu du Conseil du 27 avril 2017</a> <span class="size-helper">(518 Ko)</span> <br></li>
+										<li><a href="/library/CR-du-23-mars-2017" type="application/pdf">Compte-rendu du Conseil du 23 mars 2017 </a> <span class="size-helper">(1 Mo)</span> <br></li>
+										<li><a href="/library/CR-du-26-janvier" type="application/pdf">Compte-rendu du Conseil du 26 janvier 2017</a> <span class="size-helper">(567 Ko)</span> <br></li>
+										<li><a href="/library/CR-du-4-janvier-2017" type="application/pdf">Compte-rendu du Conseil du 4 janvier 2017</a> <span class="size-helper">(332 Ko)</span> <br></li>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+								<div class="end-container"></div>
+							</div>
+							<div class="block-container narrow" id="secondary-container">
+								<div class="end-container"></div>
+								<div class="block block-enplus">
+									<h3>Conseils communautaires <br></h3>
+									<div style="text-align: justify;">Le conseil communautaire est composé pour la CC2M de 50 délégués communautaires représentant les 31 communes. Le 4 janvier 2017, le premier conseil communautaire de la Communauté de Communes des 2 Morin (CC2M) s'est réuni au Foyer rural de Rebais. Le conseil a notamment procédé à l'élection du Président, des vice-présidents et des membres du bureau. Monsieur José DERVIN, Maire de La Trétoire a été élu Président de la CC2M.  </div>
+									<div style="text-align: justify;"><br></div>
+									<div style="text-align: justify;">Le 4 avril 2019, Monsieur Jean-François DELESALLE succède à Monsieur José DERVIN.                                               <br> <br> <b>Les réunions du Conseil communautaire sont publiques</b> <br></div>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-enplus">
+									<h3>Les dates <br></h3>
+									<h4>Les prochains conseils communautaires auront lieu aux dates suivantes : <br></h4>
+									<ul>
+										<ul>
+											<li><b style="background-color: initial; font-size: 12px;">Le jeudi 18 juin à 19h30 -</b> <span style="background-color: initial; font-size: 12px;"></span> <i style="background-color: initial; font-size: 12px;"> A la salle Henri Forgeard à La Ferté-Gaucher</i></li>
+											<li><span style="background-color: initial; font-size: 12px;"> <b>Le jeudi 16 juillet à 19h </b> <i>- Lieu en attente de confirmation</i> </span></li>
+										</ul>
+										<ul></ul>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+							</div>
+							<div class="end-template"></div>
+						</div>
+					</div>
+				</div>
+				<div class="end-template"></div>
+			</div>
+			<!-- Footer -->
+			<div id="footer">
+				<div class="colonne">
+					<ul>
+						<li><a href="/contactez-nous">Contactez-nous</a></li>
+						<li><a href="/plan-du-site">Plan du site</a></li>
+						<li><a href="/mentions-legales">Mentions légales</a></li>
+					</ul>
+					<p>© Communauté de communes des 2 Morin - 2017</p>
+				</div>
+				<div class="colonne">
+					<h2>Siège social de la Communauté de Communes des 2 Morin</h2>
+					<p>1 rue Robert Legraverend<br> 77320 La Ferté-Gaucher<br> Tél. : 01 64 03 25 80<br> E-mail : <a href="mailto:accueil@cc2m.fr">accueil@cc2m.fr</a></p>
+					<h3>Horaires d'ouverture</h3>
+					<ul>
+						<li><strong>Du lundi au vendredi :</strong><br>9h – 12h / 14h – 17h</li>
+					</ul>
+				</div>
+				<div class="colonne logos">
+					<div class="partenaires"><a href="http://www.seine-et-marne.fr" title="Site du Conseil départemental de Seine-et-Marne" target="_blank"><img src="/public/images/logo-cg77.png" alt="Logo du Conseil départemental de Seine-et-Marne" width="80" height="90"></a> <img src="/public/images/logo-cccb.png" alt="Logo de la Communauté de communes des 2 Morin" width="120" height="77"> <a href="http://www.service-public.fr" title="Site : Service-Public.fr" target="_blank"><img src="/public/images/logo-spl.png" alt="Logo Service-Public.fr" width="165" height="37"></a></div>
+				</div>
+			</div>
+		</div>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4743082-24', 'auto');
+  ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+		$("#subscribeNewsLetter").submit( function() {
+			$.ajax({
+				url: "/newsletter",
+				type: "post",
+				data: {
+					"user.emailUser": $("#newsEmailTop").val(),
+					"newsletter_144": true
+				},
+				success: function() {
+					return false;
+				}
+			})
+			alert("Votre inscription à la newsletter a bien été prise en compte");
+			return false;
+		})
+		</script>
+	</body>
+</html>
