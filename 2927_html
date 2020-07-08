@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title>Communauté de Communes De l'Aire à l'Argonne</title>
+		<meta name="description" content="La Communauté de Communes De l'Aire à l'Argonne est issue de la fusion de la Communauté de Communes Entre Aire et Meuse et Triaucourt-Vaubécourt.">
+		<meta property="og:site_name" content="www.cc-aireargonne.fr">
+		<meta property="og:title" content="Communauté de Communes De l'Aire à l'Argonne">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="La Communauté de Communes De l'Aire à l'Argonne est issue de la fusion de la Communauté de Communes Entre Aire et Meuse et Triaucourt-Vaubécourt.">
+		<meta property="og:url" content="//www.cc-aireargonne.fr/accueil_fr.html">
+		<link rel="stylesheet" href="/js/nivo-slider/themes/default/default.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/nivo-slider/themes/bar/bar.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/nivo-slider/nivo-slider.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/jssor/css/skin-arrow.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/jssor/css/skin-bullet.css" type="text/css" media="screen">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/logo_cdc.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/logo_cdc.png">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-1").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-1").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-1 ul").css("display","block");		
+		$(".menu-principal-vertical-item-1").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-1").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/template/cyclo/global.css" rel="stylesheet">
+		<link type="text/css" href="/css/template/cyclo/rose.css" rel="stylesheet">
+		<link href="/css/css_0_fr.css?1582038611" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1582038611" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-1 body-groupe-1"><input type="hidden" id="token" value="2e0363261543b47a46cada0b9aaa8c89">
+		<ul class="menu-topscreen">
+			<li class="menu-topscreen-item menu-topscreen-item-2 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-2');" id="menu-topscreen-item-titre-2" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-2">La CODECOM</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-2">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-2 "><a href="/presentation_fr.html" class="menu-topscreen-submenu-item-titre">Présentation</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-35 "><a href="/les-communes_fr.html" class="menu-topscreen-submenu-item-titre">Les communes</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-85 "><a href="/conseil-communautaire_fr.html" class="menu-topscreen-submenu-item-titre">Conseil Communautaire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-86 "><a href="/journal-intercommunal_fr.html" class="menu-topscreen-submenu-item-titre">Journal intercommunal</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-91 "><a href="/nouvel-habitant_fr.html" class="menu-topscreen-submenu-item-titre">S'installer</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-74 "><a href="/logement-a-louer_fr.html" class="menu-topscreen-submenu-item-titre">Logements à louer</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-55 "><a href="/petr-coeur-de-lorraine_fr.html" class="menu-topscreen-submenu-item-titre">PETR Coeur de Lorraine</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-56 "><a href="/marches-publics_fr.html" class="menu-topscreen-submenu-item-titre">Marché public</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-81 "><a href="/enquete-publique_fr.html" class="menu-topscreen-submenu-item-titre">Enquête Publique</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-3 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-3');" id="menu-topscreen-item-titre-3" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-3">Environnement</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-3">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-58 "><a href="/assainissement_fr.html" class="menu-topscreen-submenu-item-titre">Assainissement</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-111 "><a href="/page-en-construction---dechetteries_fr.html" class="menu-topscreen-submenu-item-titre">Déchetteries</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-92 "><a href="/ordures-menageres-1_fr.html" class="menu-topscreen-submenu-item-titre">Ordures ménagères</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-93 "><a href="/tri-selectif-1_fr.html" class="menu-topscreen-submenu-item-titre">Tri sélectif </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-120 "><a href="/page-en-construction---compostage_fr.html" class="menu-topscreen-submenu-item-titre">Compostage</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-59 "><a href="/redevance-ordures-menageres_fr.html" class="menu-topscreen-submenu-item-titre">Redevance Ordures Ménagères</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-83 "><a href="/parcs-eoliens_fr.html" class="menu-topscreen-submenu-item-titre">Parcs éoliens</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-87 "><a href="/natura-2000_fr.html" class="menu-topscreen-submenu-item-titre">Natura 2000</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-12 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-12');" id="menu-topscreen-item-titre-12" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-12">Scolaire et Périscolaire</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-12">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-109 "><a href="/page-en-construction_fr.html" class="menu-topscreen-submenu-item-titre">Scolaire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-25 "><a href="/territoire-ex-triaucourt-vaubecourt_fr.html" class="menu-topscreen-submenu-item-titre">Périscolaire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-19 "><a href="/restauration-scolaire_fr.html" class="menu-topscreen-submenu-item-titre">Restauration scolaire</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-15 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-15');" id="menu-topscreen-item-titre-15" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-15">CIAS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-15">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-65 "><a href="/ram_fr.html" class="menu-topscreen-submenu-item-titre">Petite enfance</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-43 "><a href="/jeunesse_fr.html" class="menu-topscreen-submenu-item-titre">Jeunesse</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-29 "><a href="/seniors_fr.html" class="menu-topscreen-submenu-item-titre">Seniors</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-90 "><a href="/conseil-d-administration_fr.html" class="menu-topscreen-submenu-item-titre">Conseil d'Administration</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-19 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-19');" id="menu-topscreen-item-titre-19" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-19">Culture</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-19">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-39 "><a href="/associations_fr.html" class="menu-topscreen-submenu-item-titre">Associations</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-98 "><a href="/annuaire-des-associations_fr.html" class="menu-topscreen-submenu-item-titre">Annuaire des associations</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-20 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-20');" id="menu-topscreen-item-titre-20" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-20">Tourisme</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-20">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-41 "><a href="/manifestations_fr.html" class="menu-topscreen-submenu-item-titre">A voir / A faire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-40 "><a href="/tourisme-hebergement_fr.html" class="menu-topscreen-submenu-item-titre">Hébergements</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-54 "><a href="/restaurants_fr.html" class="menu-topscreen-submenu-item-titre">Restaurants</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-53 "><a href="/itineraires-randonnees_fr.html" class="menu-topscreen-submenu-item-titre">Itinéraires / Randonnées</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-52 "><a href="/produits-locaux_fr.html" class="menu-topscreen-submenu-item-titre">Produits locaux</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-84 "><a href="/brochures_fr.html" class="menu-topscreen-submenu-item-titre">Brochures</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-23 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-23');" id="menu-topscreen-item-titre-23" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-23">Aménagement et Habitat</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-23">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-46 "><a href="/habitat_fr.html" class="menu-topscreen-submenu-item-titre">OPAH</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-49 "><a href="/aides-au-ravalement-de-facades_fr.html" class="menu-topscreen-submenu-item-titre">Aide au ravalement des façades</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-80 "><a href="/logement---informations_fr.html" class="menu-topscreen-submenu-item-titre">Logement : Informations</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-94 "><a href="/internet---la-fibre_fr.html" class="menu-topscreen-submenu-item-titre">Internet : La fibre</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-97 "><a href="/plui_fr.html" class="menu-topscreen-submenu-item-titre">Plan Local d'Urbanisme intercommunal </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-22 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-22');" id="menu-topscreen-item-titre-22" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-22">Développement économique</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-22">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-51 "><a href="/aides-aux-entreprises_fr.html" class="menu-topscreen-submenu-item-titre">Aides aux entreprises</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-45 "><a href="/entreprendre_fr.html" class="menu-topscreen-submenu-item-titre">Partenaires</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-63 "><a href="/entreprises-du-territoire_fr.html" class="menu-topscreen-submenu-item-titre">Entreprises du territoire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-73 "><a href="/reprise-entreprises_fr.html" class="menu-topscreen-submenu-item-titre">Reprise d'entreprise</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone">
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-2 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-2');" id="menu-topscreen-smartphone-item-titre-2" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-2">La CODECOM</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-2">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-2 "><a href="/presentation_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Présentation</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-35 "><a href="/les-communes_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les communes</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-85 "><a href="/conseil-communautaire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Conseil Communautaire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-86 "><a href="/journal-intercommunal_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Journal intercommunal</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-91 "><a href="/nouvel-habitant_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">S'installer</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-74 "><a href="/logement-a-louer_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Logements à louer</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-55 "><a href="/petr-coeur-de-lorraine_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">PETR Coeur de Lorraine</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-56 "><a href="/marches-publics_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Marché public</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-81 "><a href="/enquete-publique_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Enquête Publique</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-3 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-3');" id="menu-topscreen-smartphone-item-titre-3" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-3">Environnement</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-3">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-58 "><a href="/assainissement_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Assainissement</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-111 "><a href="/page-en-construction---dechetteries_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Déchetteries</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-92 "><a href="/ordures-menageres-1_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Ordures ménagères</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-93 "><a href="/tri-selectif-1_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Tri sélectif </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-120 "><a href="/page-en-construction---compostage_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Compostage</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-59 "><a href="/redevance-ordures-menageres_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Redevance Ordures Ménagères</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-83 "><a href="/parcs-eoliens_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Parcs éoliens</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-87 "><a href="/natura-2000_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Natura 2000</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-12 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-12');" id="menu-topscreen-smartphone-item-titre-12" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-12">Scolaire et Périscolaire</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-12">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-109 "><a href="/page-en-construction_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Scolaire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-25 "><a href="/territoire-ex-triaucourt-vaubecourt_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Périscolaire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-19 "><a href="/restauration-scolaire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Restauration scolaire</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-15 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-15');" id="menu-topscreen-smartphone-item-titre-15" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-15">CIAS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-15">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-65 "><a href="/ram_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Petite enfance</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-43 "><a href="/jeunesse_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Jeunesse</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-29 "><a href="/seniors_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Seniors</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-90 "><a href="/conseil-d-administration_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Conseil d'Administration</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-19 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-19');" id="menu-topscreen-smartphone-item-titre-19" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-19">Culture</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-19">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-39 "><a href="/associations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Associations</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-98 "><a href="/annuaire-des-associations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Annuaire des associations</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-20 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-20');" id="menu-topscreen-smartphone-item-titre-20" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-20">Tourisme</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-20">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-41 "><a href="/manifestations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">A voir / A faire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-40 "><a href="/tourisme-hebergement_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Hébergements</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-54 "><a href="/restaurants_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Restaurants</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-53 "><a href="/itineraires-randonnees_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Itinéraires / Randonnées</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-52 "><a href="/produits-locaux_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Produits locaux</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-84 "><a href="/brochures_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Brochures</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-23 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-23');" id="menu-topscreen-smartphone-item-titre-23" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-23">Aménagement et Habitat</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-23">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-46 "><a href="/habitat_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">OPAH</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-49 "><a href="/aides-au-ravalement-de-facades_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Aide au ravalement des façades</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-80 "><a href="/logement---informations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Logement : Informations</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-94 "><a href="/internet---la-fibre_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Internet : La fibre</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-97 "><a href="/plui_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Plan Local d'Urbanisme intercommunal </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-22 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-22');" id="menu-topscreen-smartphone-item-titre-22" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-22">Développement économique</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-22">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-51 "><a href="/aides-aux-entreprises_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Aides aux entreprises</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-45 "><a href="/entreprendre_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Partenaires</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-63 "><a href="/entreprises-du-territoire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Entreprises du territoire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-73 "><a href="/reprise-entreprises_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Reprise d'entreprise</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<style>
+#facebook-scroll {z-index:99999;position: fixed;right: -350px;width: 350px;height: 500px;top: 20%;
+-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#facebook-scroll::before {content:url(/images/social/fb_scroll.png);position:absolute;margin-left:-50px;}
+		</style>
+		<div id="facebook-scroll">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+			</script>
+			<div class="fb-page" data-href="https://www.facebook.com/Communaut%C3%A9-de-Communes-De-lAire-%C3%A0-lArgonne-287442978764670/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+		</div>
+		<script>
+$("#facebook-scroll").click(function(){
+
+var position = $("#facebook-scroll").css("right");
+console.log(position);
+
+if(position == "0px")
+   position = "-350px";
+else
+   position = "0px";
+
+$("#facebook-scroll").css("right",position);
+});
+		</script>
+		<div class="template-header">
+			<div class="template-header-content  template-contents">
+				<div class="bloc-1200"><a class="logo-essentiel" href="accueil_fr.html"><img src="/userfile/img-template-maker/logo/codecom-aire-argonne-logo.png"></a>
+					<div class="bloc-texte">
+						<div class="recherche">
+							<form name="recherche_1594220443" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594220443.submit();" class="recherche-submit"></a></form>
+						</div>
+					</div>
+				</div>
+				<style>
+			#slider_12_container .caption-text-defaut { background-color: rgba(0, 0, 0, 0.5); }
+		    #slider_12_container .caption-text-defaut-titre {color:#ffffff ;}
+		    #slider_12_container .caption-text-defaut-texte {color:#ffffff ;}
+				</style>
+				<script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions_12 = [];
+           
+           	_CaptionTransitions_12["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
+           		
+			var _SlideshowTransitions_12 = [
+            	{$Duration:700,$Opacity:2,$Brother:{$Duration:1000,$Opacity:2}}	
+            ];
+            		
+            var options_12 = {
+                $FillMode: 0,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 12000,                  //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 0,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                //$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                //$SlideEasing: $JssorEasing$.$EaseOutQuad,           //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                //$SlideDuration: 1000,                     			//[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                //$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                //$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                //$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                //$DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+               	 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions_12,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },           
+                   	
+                   $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions_12,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+                    		              
+                   
+	  
+	 
+	  
+                
+            };
+
+        if($("#slider_12_container").length > 0)
+            var jssor_slider_12 = new $JssorSlider$("slider_12_container", options_12);
+
+           
+            function ScaleSlider_12() {
+     	
+            	$(".caption-images-12").css("display","block");
+            	$(".caption-texts-12").css("display","block");
+     	
+            	$("#slider_12_container").css("display","none");
+				var parentwidth = $("#responsive-container-12").width();
+     	
+				$("#slider_12_container").css("display","block");
+     	
+				var max_width = 	1920;					
+				if(max_width < $(window).width()){					
+					max_width = $(window).width();					
+				}				
+						
+                if (parentwidth != undefined)
+                    jssor_slider_12.$ScaleWidth(Math.min(parentwidth, max_width));
+                else
+                    window.setTimeout(ScaleSlider_12, 30);
+            }
+        
+            //ScaleSlider_12();
+            if($("#slider_12_container").length > 0){
+            $(window).bind("load", ScaleSlider_12);
+            $(window).bind("resize", ScaleSlider_12);
+            $(window).bind("orientationchange", ScaleSlider_12);
+            //responsive code end
+            }
+        });            		
+          		
+    
+				</script>
+				<div class="responsive-container" id="responsive-container-12">
+					<div class="module_diaporama" id="slider_12_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 450px; overflow: hidden;">
+						<!-- Loading Screen -->
+						<div u="loading" style="position: absolute; top: 0px; left: 0px;z-index:9999;">
+							<div style="position: absolute; display: block;background-color:white;top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+							<div style="position: absolute; display: block; background: url(/js/jssor/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						</div>
+						<!-- Loading Screen End -->
+						<!-- Slides Container -->
+						<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 450px; overflow: hidden;">
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1580370449_20200122_172715.jpg" alt="Communauté de Communes De l'Aire à l'Argonne"></div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1580370286_paysages-Argonne-Michel-Petit-8.jpg" alt="Communauté de Communes De l'Aire à l'Argonne"></div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1580370613_aerodrome-2.jpg" alt="Communauté de Communes De l'Aire à l'Argonne"></div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1580372402_paysages-Argonne-Michel-Petit-16.jpg" alt="Communauté de Communes De l'Aire à l'Argonne"></div>
+						</div>
+						<!-- Slides Container End-->
+					</div><a class="anchor-bottom-contenu anchor-bottom-contenu-12" href="javascript:goToContentBody();"></a></div>
+				<!-- Jssor Slider End -->
+				<div class="bloc-1200">
+					<ul class="menu-principal-horizontal">
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-2 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-2');" id="menu-principal-horizontal-item-titre-2" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-2">La CODECOM</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-2">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-2 "><a href="/presentation_fr.html" class="menu-principal-horizontal-submenu-item-titre">Présentation</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-35 "><a href="/les-communes_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les communes</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-85 "><a href="/conseil-communautaire_fr.html" class="menu-principal-horizontal-submenu-item-titre">Conseil Communautaire</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-86 "><a href="/journal-intercommunal_fr.html" class="menu-principal-horizontal-submenu-item-titre">Journal intercommunal</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-91 "><a href="/nouvel-habitant_fr.html" class="menu-principal-horizontal-submenu-item-titre">S'installer</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-74 "><a href="/logement-a-louer_fr.html" class="menu-principal-horizontal-submenu-item-titre">Logements à louer</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-55 "><a href="/petr-coeur-de-lorraine_fr.html" class="menu-principal-horizontal-submenu-item-titre">PETR Coeur de Lorraine</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-56 "><a href="/marches-publics_fr.html" class="menu-principal-horizontal-submenu-item-titre">Marché public</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-81 "><a href="/enquete-publique_fr.html" class="menu-principal-horizontal-submenu-item-titre">Enquête Publique</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-3 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-3');" id="menu-principal-horizontal-item-titre-3" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-3">Environnement</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-3">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-58 "><a href="/assainissement_fr.html" class="menu-principal-horizontal-submenu-item-titre">Assainissement</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-111 "><a href="/page-en-construction---dechetteries_fr.html" class="menu-principal-horizontal-submenu-item-titre">Déchetteries</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-92 "><a href="/ordures-menageres-1_fr.html" class="menu-principal-horizontal-submenu-item-titre">Ordures ménagères</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-93 "><a href="/tri-selectif-1_fr.html" class="menu-principal-horizontal-submenu-item-titre">Tri sélectif </a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-120 "><a href="/page-en-construction---compostage_fr.html" class="menu-principal-horizontal-submenu-item-titre">Compostage</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-59 "><a href="/redevance-ordures-menageres_fr.html" class="menu-principal-horizontal-submenu-item-titre">Redevance Ordures Ménagères</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-83 "><a href="/parcs-eoliens_fr.html" class="menu-principal-horizontal-submenu-item-titre">Parcs éoliens</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-87 "><a href="/natura-2000_fr.html" class="menu-principal-horizontal-submenu-item-titre">Natura 2000</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-12 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-12');" id="menu-principal-horizontal-item-titre-12" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-12">Scolaire et Périscolaire</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-12">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-109 "><a href="/page-en-construction_fr.html" class="menu-principal-horizontal-submenu-item-titre">Scolaire</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-25 "><a href="/territoire-ex-triaucourt-vaubecourt_fr.html" class="menu-principal-horizontal-submenu-item-titre">Périscolaire</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-19 "><a href="/restauration-scolaire_fr.html" class="menu-principal-horizontal-submenu-item-titre">Restauration scolaire</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-15 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-15');" id="menu-principal-horizontal-item-titre-15" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-15">CIAS</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-15">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-65 "><a href="/ram_fr.html" class="menu-principal-horizontal-submenu-item-titre">Petite enfance</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-43 "><a href="/jeunesse_fr.html" class="menu-principal-horizontal-submenu-item-titre">Jeunesse</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-29 "><a href="/seniors_fr.html" class="menu-principal-horizontal-submenu-item-titre">Seniors</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-90 "><a href="/conseil-d-administration_fr.html" class="menu-principal-horizontal-submenu-item-titre">Conseil d'Administration</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-19 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-19');" id="menu-principal-horizontal-item-titre-19" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-19">Culture</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-19">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-39 "><a href="/associations_fr.html" class="menu-principal-horizontal-submenu-item-titre">Associations</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-98 "><a href="/annuaire-des-associations_fr.html" class="menu-principal-horizontal-submenu-item-titre">Annuaire des associations</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-20 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-20');" id="menu-principal-horizontal-item-titre-20" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-20">Tourisme</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-20">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-41 "><a href="/manifestations_fr.html" class="menu-principal-horizontal-submenu-item-titre">A voir / A faire</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-40 "><a href="/tourisme-hebergement_fr.html" class="menu-principal-horizontal-submenu-item-titre">Hébergements</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-54 "><a href="/restaurants_fr.html" class="menu-principal-horizontal-submenu-item-titre">Restaurants</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-53 "><a href="/itineraires-randonnees_fr.html" class="menu-principal-horizontal-submenu-item-titre">Itinéraires / Randonnées</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-52 "><a href="/produits-locaux_fr.html" class="menu-principal-horizontal-submenu-item-titre">Produits locaux</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-84 "><a href="/brochures_fr.html" class="menu-principal-horizontal-submenu-item-titre">Brochures</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-23 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-23');" id="menu-principal-horizontal-item-titre-23" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-23">Aménagement et Habitat</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-23">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-46 "><a href="/habitat_fr.html" class="menu-principal-horizontal-submenu-item-titre">OPAH</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-49 "><a href="/aides-au-ravalement-de-facades_fr.html" class="menu-principal-horizontal-submenu-item-titre">Aide au ravalement des façades</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-80 "><a href="/logement---informations_fr.html" class="menu-principal-horizontal-submenu-item-titre">Logement : Informations</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-94 "><a href="/internet---la-fibre_fr.html" class="menu-principal-horizontal-submenu-item-titre">Internet : La fibre</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-97 "><a href="/plui_fr.html" class="menu-principal-horizontal-submenu-item-titre">Plan Local d'Urbanisme intercommunal </a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-horizontal-item menu-principal-horizontal-item-22 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-22');" id="menu-principal-horizontal-item-titre-22" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-22">Développement économique</a>
+							<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-22">
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-51 "><a href="/aides-aux-entreprises_fr.html" class="menu-principal-horizontal-submenu-item-titre">Aides aux entreprises</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-45 "><a href="/entreprendre_fr.html" class="menu-principal-horizontal-submenu-item-titre">Partenaires</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-63 "><a href="/entreprises-du-territoire_fr.html" class="menu-principal-horizontal-submenu-item-titre">Entreprises du territoire</a></li>
+								<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-73 "><a href="/reprise-entreprises_fr.html" class="menu-principal-horizontal-submenu-item-titre">Reprise d'entreprise</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="menu-principal-smartphone-menu"><a class="menu-principal-smartphone-menu-dropdown">Menu</a>
+						<ul class="menu-principal-smartphone">
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-2 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-2');" id="menu-principal-smartphone-item-titre-2" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-2">La CODECOM</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-2">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-2 "><a href="/presentation_fr.html" class="menu-principal-smartphone-submenu-item-titre">Présentation</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-35 "><a href="/les-communes_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les communes</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-85 "><a href="/conseil-communautaire_fr.html" class="menu-principal-smartphone-submenu-item-titre">Conseil Communautaire</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-86 "><a href="/journal-intercommunal_fr.html" class="menu-principal-smartphone-submenu-item-titre">Journal intercommunal</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-91 "><a href="/nouvel-habitant_fr.html" class="menu-principal-smartphone-submenu-item-titre">S'installer</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-74 "><a href="/logement-a-louer_fr.html" class="menu-principal-smartphone-submenu-item-titre">Logements à louer</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-55 "><a href="/petr-coeur-de-lorraine_fr.html" class="menu-principal-smartphone-submenu-item-titre">PETR Coeur de Lorraine</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-56 "><a href="/marches-publics_fr.html" class="menu-principal-smartphone-submenu-item-titre">Marché public</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-81 "><a href="/enquete-publique_fr.html" class="menu-principal-smartphone-submenu-item-titre">Enquête Publique</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-3 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-3');" id="menu-principal-smartphone-item-titre-3" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-3">Environnement</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-3">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-58 "><a href="/assainissement_fr.html" class="menu-principal-smartphone-submenu-item-titre">Assainissement</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-111 "><a href="/page-en-construction---dechetteries_fr.html" class="menu-principal-smartphone-submenu-item-titre">Déchetteries</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-92 "><a href="/ordures-menageres-1_fr.html" class="menu-principal-smartphone-submenu-item-titre">Ordures ménagères</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-93 "><a href="/tri-selectif-1_fr.html" class="menu-principal-smartphone-submenu-item-titre">Tri sélectif </a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-120 "><a href="/page-en-construction---compostage_fr.html" class="menu-principal-smartphone-submenu-item-titre">Compostage</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-59 "><a href="/redevance-ordures-menageres_fr.html" class="menu-principal-smartphone-submenu-item-titre">Redevance Ordures Ménagères</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-83 "><a href="/parcs-eoliens_fr.html" class="menu-principal-smartphone-submenu-item-titre">Parcs éoliens</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-87 "><a href="/natura-2000_fr.html" class="menu-principal-smartphone-submenu-item-titre">Natura 2000</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-12 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-12');" id="menu-principal-smartphone-item-titre-12" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-12">Scolaire et Périscolaire</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-12">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-109 "><a href="/page-en-construction_fr.html" class="menu-principal-smartphone-submenu-item-titre">Scolaire</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-25 "><a href="/territoire-ex-triaucourt-vaubecourt_fr.html" class="menu-principal-smartphone-submenu-item-titre">Périscolaire</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-19 "><a href="/restauration-scolaire_fr.html" class="menu-principal-smartphone-submenu-item-titre">Restauration scolaire</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-15 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-15');" id="menu-principal-smartphone-item-titre-15" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-15">CIAS</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-15">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-65 "><a href="/ram_fr.html" class="menu-principal-smartphone-submenu-item-titre">Petite enfance</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-43 "><a href="/jeunesse_fr.html" class="menu-principal-smartphone-submenu-item-titre">Jeunesse</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-29 "><a href="/seniors_fr.html" class="menu-principal-smartphone-submenu-item-titre">Seniors</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-90 "><a href="/conseil-d-administration_fr.html" class="menu-principal-smartphone-submenu-item-titre">Conseil d'Administration</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-19 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-19');" id="menu-principal-smartphone-item-titre-19" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-19">Culture</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-19">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-39 "><a href="/associations_fr.html" class="menu-principal-smartphone-submenu-item-titre">Associations</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-98 "><a href="/annuaire-des-associations_fr.html" class="menu-principal-smartphone-submenu-item-titre">Annuaire des associations</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-20 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-20');" id="menu-principal-smartphone-item-titre-20" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-20">Tourisme</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-20">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-41 "><a href="/manifestations_fr.html" class="menu-principal-smartphone-submenu-item-titre">A voir / A faire</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-40 "><a href="/tourisme-hebergement_fr.html" class="menu-principal-smartphone-submenu-item-titre">Hébergements</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-54 "><a href="/restaurants_fr.html" class="menu-principal-smartphone-submenu-item-titre">Restaurants</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-53 "><a href="/itineraires-randonnees_fr.html" class="menu-principal-smartphone-submenu-item-titre">Itinéraires / Randonnées</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-52 "><a href="/produits-locaux_fr.html" class="menu-principal-smartphone-submenu-item-titre">Produits locaux</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-84 "><a href="/brochures_fr.html" class="menu-principal-smartphone-submenu-item-titre">Brochures</a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-23 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-23');" id="menu-principal-smartphone-item-titre-23" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-23">Aménagement et Habitat</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-23">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-46 "><a href="/habitat_fr.html" class="menu-principal-smartphone-submenu-item-titre">OPAH</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-49 "><a href="/aides-au-ravalement-de-facades_fr.html" class="menu-principal-smartphone-submenu-item-titre">Aide au ravalement des façades</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-80 "><a href="/logement---informations_fr.html" class="menu-principal-smartphone-submenu-item-titre">Logement : Informations</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-94 "><a href="/internet---la-fibre_fr.html" class="menu-principal-smartphone-submenu-item-titre">Internet : La fibre</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-97 "><a href="/plui_fr.html" class="menu-principal-smartphone-submenu-item-titre">Plan Local d'Urbanisme intercommunal </a></li>
+								</ul>
+							</li>
+							<li class="menu-principal-smartphone-item menu-principal-smartphone-item-22 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-22');" id="menu-principal-smartphone-item-titre-22" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-22">Développement économique</a>
+								<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-22">
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-51 "><a href="/aides-aux-entreprises_fr.html" class="menu-principal-smartphone-submenu-item-titre">Aides aux entreprises</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-45 "><a href="/entreprendre_fr.html" class="menu-principal-smartphone-submenu-item-titre">Partenaires</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-63 "><a href="/entreprises-du-territoire_fr.html" class="menu-principal-smartphone-submenu-item-titre">Entreprises du territoire</a></li>
+									<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-73 "><a href="/reprise-entreprises_fr.html" class="menu-principal-smartphone-submenu-item-titre">Reprise d'entreprise</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<script>
+				var menu_ul_smartphone = $(".menu-principal-smartphone-submenu"),
+       				 menu_a_smartphone  = $(".menu-principal-smartphone-item-with-sub a");
+				
+				menu_ul_smartphone.hide();
+				
+				$(".menu-principal-smartphone").hide();
+			
+				menu_a_smartphone.click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+						
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+				$(".menu-principal-smartphone-menu-dropdown").click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix"></div>
+				</div>
+				<div class="wrapper-page-1 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<table class="responsive-table" style="width: 100%;" cellspacing="9" cellpadding="3">
+									<tbody>
+										<tr>
+											<td style="width: 75%; vertical-align: top;">
+												<table style="width: 100%; margin-left: auto; margin-right: auto;">
+													<tbody>
+														<tr>
+															<td>
+																<table style="width: 100%;">
+																	<tbody>
+																		<tr>
+																			<td style="width: 25%; text-align: center; vertical-align: middle;"><img src="../../resolution/haute/images/en%20un%20clic.jpg" class="fit-to-original"></td>
+																			<td style="text-align: center; vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><span style="color: #000000; font-size: 13px;"><span style="color: #000000; font-size: 13px;"><a href="/contact_fr.html"><img src="../../resolution/haute/images/accueil%20contact.png" class="element-100"></a><br></span></span>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/contact_fr.html">Nous contacter</a></div>
+																								<div>  </div>
+																								<div>  </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="text-align: center; vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><span style="color: #000000; font-size: 13px;"><span style="color: #000000; font-size: 13px;"><a href="/menu-cantine_fr.html"><img src="../../resolution/haute/images/cantine.png" alt="" class="element-100"></a><br></span></span>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/menu-cantine_fr.html">Menu</a></div>
+																								<div>  </div>
+																								<div>  </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><a href="/ordures-menageres-1_fr.html"><img src="../../resolution/haute/images/dechet.png" class="fit-to-original"></a><a href="/ordures-menageres-1_fr.html"></a></div>
+																					<div>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/ordures-menageres-1_fr.html">Collecte déchets</a></div>
+																								<div> </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div>
+																						<div id="rond_menu_titre"><a href="/tipi_fr.html"><img src="../../resolution/haute/images/paiement.png" class="fit-to-original"></a>
+																							<div>
+																								<div id="rond_menu_titre">
+																									<div id="liens_menu"><a href="/tipi_fr.html">Payer vos factures</a></div>
+																									<div> </div>
+																									<div> </div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><a href="/habitat_fr.html"><img src="../../resolution/haute/images/OPAH.png" class="fit-to-original"></a>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/habitat_fr.html">OPAH</a></div>
+																								<div> </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><span style="color: #000000; font-size: 13px;"><span style="color: #000000; font-size: 13px;"><a href="/logement-a-louer_fr.html"><img src="../../resolution/haute/images/a%20louer.png" alt="" class="element-100"></a><br></span></span>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/logement-a-louer_fr.html">A Louer</a></div>
+																								<div>  </div>
+																								<div>  </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																			<td style="vertical-align: middle;">
+																				<div id="rond_menu">
+																					<div id="rond_menu_titre"><span style="color: #000000; font-size: 13px;"><span style="color: #000000; font-size: 13px;"><a href="/entreprises-du-territoire_fr.html"><img src="../../resolution/haute/images/annuaire%20entreprise.png" alt="" class="element-100"></a><br></span></span>
+																						<div>
+																							<div id="rond_menu_titre">
+																								<div id="liens_menu"><a href="/entreprises-du-territoire_fr.html">Annuaire Entreprises</a></div>
+																								<div>  </div>
+																								<div>  </div>
+																								<div> </div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<table style="width: 100%;">
+													<tbody>
+														<tr>
+															<td>
+																<style>
+	
+	#slider-14, .nivo-controlNav-14 {
+		width:100%;
+	}
+	
+	#slider-14 .nivo-caption {
+		background:#000000;	
+		color : #ffffff;
+	}
+	
+	#slider-14 .nivo-caption strong {
+		color : #ffffff;	
+	}
+	
+	
+																</style>
+																<div class="slider-wrapper theme-default">
+																	<div id="slider-14" class="nivoSlider"><a href="article_618_1_prelevement-automatique_fr.html"><img src="/userfile/img-actu/slide/1593500759-Prelevement-Automatique.jpg" data-thumb="/userfile/img-actu/slide/1593500759-Prelevement-Automatique.jpg" alt="Prélèvement automatique" title="#htmlcaption-14-1"></a><a href="article_617_1_prelevement-automatique_fr.html"><img src="/userfile/img-actu/slide/1593500575-Prelevement-Automatique.jpg" data-thumb="/userfile/img-actu/slide/1593500575-Prelevement-Automatique.jpg" alt="Prélèvement automatique" title="#htmlcaption-14-2"></a><a href="article_616_1_prelevement-automatique_fr.html"><img src="/userfile/img-actu/slide/1593500559-Prelevement-Automatique.jpg" data-thumb="/userfile/img-actu/slide/1593500559-Prelevement-Automatique.jpg" alt="Prélèvement automatique" title="#htmlcaption-14-3"></a><a href="article_612_1_sylvotherapie---beaulieu-en-argonne_fr.html"><img src="/userfile/img-actu/slide/1593069005-affiche-sylvotherapie-2020.jpg" data-thumb="/userfile/img-actu/slide/1593069005-affiche-sylvotherapie-2020.jpg" alt="Sylvothérapie : Beaulieu-en-Argonne" title="#htmlcaption-14-4"></a><a href="article_611_1_depistage-gratuit_fr.html"><img src="/userfile/img-actu/slide/1592912699-Depistage-Covid-19.jpg" data-thumb="/userfile/img-actu/slide/1592912699-Depistage-Covid-19.jpg" alt="Dépistage gratuit" title="#htmlcaption-14-5"></a><a href="article_615_1_prelevement-automatique_fr.html"><img src="/userfile/img-actu/slide/1593499544-Prelevement-Automatique.jpg" data-thumb="/userfile/img-actu/slide/1593499544-Prelevement-Automatique.jpg" alt="Prélèvement automatique" title="#htmlcaption-14-6"></a><a href="article_609_1_communication---prelevement-cantine-2020_fr.html"><img src="/userfile/img-actu/slide/1592212847-prelevement-cantine.png" data-thumb="/userfile/img-actu/slide/1592212847-prelevement-cantine.png" alt="Communication : prélèvement cantine 2020" title="#htmlcaption-14-7"></a><a href="article_605_1_information-dechetteries_fr.html"><img src="/userfile/img-actu/slide/1589795748-information.jpg" data-thumb="/userfile/img-actu/slide/1589795748-information.jpg" alt="Information déchetteries" title="#htmlcaption-14-8"></a><a href="article_604_1_reouverture-des-5-groupes-scolaires_fr.html"><img src="/userfile/img-actu/slide/1589372539-reouverture-ecole.jpg" data-thumb="/userfile/img-actu/slide/1589372539-reouverture-ecole.jpg" alt="Réouverture des 5 groupes scolaires" title="#htmlcaption-14-9"></a><a href="article_602_1_votre-etablissement-est-ouvert---faites-le-savoir--_fr.html"><img src="/userfile/img-actu/slide/1586433359-actu-site.png" data-thumb="/userfile/img-actu/slide/1586433359-actu-site.png" alt="VOTRE ETABLISSEMENT EST OUVERT ? FAITES-LE SAVOIR !" title="#htmlcaption-14-10"></a><a href="article_601_1_prefecture-meuse---flash-info-n--4-_fr.html"><img src="/userfile/img-actu/slide/1585838381-fabrication-masque.jpg" data-thumb="/userfile/img-actu/slide/1585838381-fabrication-masque.jpg" alt="Préfecture Meuse : Flash info n°4 " title="#htmlcaption-14-11"></a><a href="article_600_1_communique-de-presse-24-03-2020---mise-en-place-de-la-veille-sociale_fr.html"><img src="/userfile/img-actu/slide/1585039469-communique-de-presse-24-03-20.png" data-thumb="/userfile/img-actu/slide/1585039469-communique-de-presse-24-03-20.png" alt="Communiqué de presse 24/03/2020 : Mise en place de la veille sociale" title="#htmlcaption-14-12"></a><a href="article_599_1_communique-de-presse-n--2-19-03-2020_fr.html"><img src="/userfile/img-actu/slide/1584628846-communique-de-presse-2-19-03-20.png" data-thumb="/userfile/img-actu/slide/1584628846-communique-de-presse-2-19-03-20.png" alt="Communiqué de presse n°2 19/03/2020" title="#htmlcaption-14-13"></a><a href="article_598_1_communique-de-presse-19-03-2020_fr.html"><img src="/userfile/img-actu/slide/1584628388-communique-de-presse-19-03-20.png" data-thumb="/userfile/img-actu/slide/1584628388-communique-de-presse-19-03-20.png" alt="Communiqué de presse 19/03/2020" title="#htmlcaption-14-14"></a><a href="article_595_1_communique-de-presse_fr.html"><img src="/userfile/img-actu/slide/1584367400-Communique-de-presse-coronavirus.png" data-thumb="/userfile/img-actu/slide/1584367400-Communique-de-presse-coronavirus.png" alt="Communiqué de presse" title="#htmlcaption-14-15"></a><a href="article_593_1_caue---atelier-technique--l-humidite-dans-les-maisons--_fr.html"><img src="/userfile/img-actu/slide/1583843245-CAUE-actu.png" data-thumb="/userfile/img-actu/slide/1583843245-CAUE-actu.png" alt="CAUE : Atelier technique l'humidité dans les maisons " title="#htmlcaption-14-16"></a><a href="article_591_1_service-entretien---vidange-2020-2021-_fr.html"><img src="/userfile/img-actu/slide/1583745048-Actu-vidange-2019-2021.png" data-thumb="/userfile/img-actu/slide/1583745048-Actu-vidange-2019-2021.png" alt="Service entretien : vidange 2020-2021 " title="#htmlcaption-14-17"></a><a href="article_315_1_fisac---aides-aux-entreprise_fr.html"><img src="/userfile/img-actu/slide/1541595857-fisac.png" data-thumb="/userfile/img-actu/slide/1541595857-fisac.png" alt="FISAC : Aides aux entreprise" title="#htmlcaption-14-18"></a><a href="article_10_1_operation-programmee-d---amelioration-de-l---habitat-de-l---aire-a-l---argonne_fr.html"><img src="/userfile/img-actu/slide/1512642637-OPAH.png" data-thumb="/userfile/img-actu/slide/1512642637-OPAH.png" alt="Opération Programmée d’Amélioration de l’Habitat De l’Aire à l’Argonne" title="#htmlcaption-14-19"></a></div>
+																	<div id="htmlcaption-14-1" class="nivo-html-caption"><a href="article_618_1_prelevement-automatique_fr.html"><strong>Prélèvement automatique</strong><br></a></div>
+																	<div id="htmlcaption-14-2" class="nivo-html-caption"><a href="article_617_1_prelevement-automatique_fr.html"><strong>Prélèvement automatique</strong><br></a></div>
+																	<div id="htmlcaption-14-3" class="nivo-html-caption"><a href="article_616_1_prelevement-automatique_fr.html"><strong>Prélèvement automatique</strong><br></a></div>
+																	<div id="htmlcaption-14-4" class="nivo-html-caption"><a href="article_612_1_sylvotherapie---beaulieu-en-argonne_fr.html"><strong>Sylvothérapie : Beaulieu-en-Argonne</strong><br></a></div>
+																	<div id="htmlcaption-14-5" class="nivo-html-caption"><a href="article_611_1_depistage-gratuit_fr.html"><strong>Dépistage gratuit</strong><br></a></div>
+																	<div id="htmlcaption-14-6" class="nivo-html-caption"><a href="article_615_1_prelevement-automatique_fr.html"><strong>Prélèvement automatique</strong><br></a></div>
+																	<div id="htmlcaption-14-7" class="nivo-html-caption"><a href="article_609_1_communication---prelevement-cantine-2020_fr.html"><strong>Communication : prélèvement cantine 2020</strong><br></a></div>
+																	<div id="htmlcaption-14-8" class="nivo-html-caption"><a href="article_605_1_information-dechetteries_fr.html"><strong>Information déchetteries</strong><br></a></div>
+																	<div id="htmlcaption-14-9" class="nivo-html-caption"><a href="article_604_1_reouverture-des-5-groupes-scolaires_fr.html"><strong>Réouverture des 5 groupes scolaires</strong><br></a></div>
+																	<div id="htmlcaption-14-10" class="nivo-html-caption"><a href="article_602_1_votre-etablissement-est-ouvert---faites-le-savoir--_fr.html"><strong>VOTRE ETABLISSEMENT EST OUVERT ? FAITES-LE SAVOIR !</strong><br></a></div>
+																	<div id="htmlcaption-14-11" class="nivo-html-caption"><a href="article_601_1_prefecture-meuse---flash-info-n--4-_fr.html"><strong>Préfecture Meuse : Flash info n°4 </strong><br></a></div>
+																	<div id="htmlcaption-14-12" class="nivo-html-caption"><a href="article_600_1_communique-de-presse-24-03-2020---mise-en-place-de-la-veille-sociale_fr.html"><strong>Communiqué de presse 24/03/2020 : Mise en place de la veille sociale</strong><br></a></div>
+																	<div id="htmlcaption-14-13" class="nivo-html-caption"><a href="article_599_1_communique-de-presse-n--2-19-03-2020_fr.html"><strong>Communiqué de presse n°2 19/03/2020</strong><br></a></div>
+																	<div id="htmlcaption-14-14" class="nivo-html-caption"><a href="article_598_1_communique-de-presse-19-03-2020_fr.html"><strong>Communiqué de presse 19/03/2020</strong><br></a></div>
+																	<div id="htmlcaption-14-15" class="nivo-html-caption"><a href="article_595_1_communique-de-presse_fr.html"><strong>Communiqué de presse</strong><br></a></div>
+																	<div id="htmlcaption-14-16" class="nivo-html-caption"><a href="article_593_1_caue---atelier-technique--l-humidite-dans-les-maisons--_fr.html"><div class="caption-date"><span class="caption-date-jour">24</span><span class="caption-date-mois">Mars</span></div><strong>CAUE : Atelier technique "l'humidité dans les maisons" </strong><br></a></div>
+																	<div id="htmlcaption-14-17" class="nivo-html-caption"><a href="article_591_1_service-entretien---vidange-2020-2021-_fr.html"><strong>Service entretien : vidange 2020-2021 </strong><br></a></div>
+																	<div id="htmlcaption-14-18" class="nivo-html-caption"><a href="article_315_1_fisac---aides-aux-entreprise_fr.html"><strong>FISAC : Aides aux entreprise</strong><br></a></div>
+																	<div id="htmlcaption-14-19" class="nivo-html-caption"><a href="article_10_1_operation-programmee-d---amelioration-de-l---habitat-de-l---aire-a-l---argonne_fr.html"><strong>Opération Programmée d’Amélioration de l’Habitat De l’Aire à l’Argonne</strong><br>Vous souhaitez réduire votre facture de chauffage, adapter votre logement à votre état de santé ou celui d’un proche, faire d’autres travaux d’amélioration plus conséquents dans votre logement …</a></div>
+																</div>
+																<script type="text/javascript">
+    $(window).load(function() {
+        $("#slider-14").nivoSlider({
+	        effect: "sliceDown", // Specify sets like: fold,fade,sliceDown
+	        slices: 15, // For slice animations
+	        boxCols: 8, // For box animations
+	        boxRows: 4, // For box animations
+	        animSpeed: 500, // Slide transition speed
+	        pauseTime: 6000, // How long each slide will show
+	        startSlide: 0, // Set starting Slide (0 index)
+	        directionNav: true, // Next & Prev navigation
+	        controlNav: false, // 1,2,3... navigation
+	        controlNavThumbs: false, // Use thumbnails for Control Nav
+	        pauseOnHover: false, // Stop animation while hovering
+	        manualAdvance: false, // Force manual transitions
+	        prevText: "", // Prev directionNav text
+	        nextText: "", // Next directionNav text
+	        randomStart: false
+   		 });
+    });
+    
+																</script>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+											<td style="text-align: center; vertical-align: top;">
+												<div class="calendrier-liste calendrier-defile calendrier-defile-13">
+													<div class="calendar-liste" id="defile-E574B1E1D81045B3983E5C7815DE55D2">
+														<ul>
+															<li class="li-une-date-agenda" id="li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-1"><a class="fancybox-article" href="/modules/calendrier/calendrier_view.php?id-template=1&id=613"> <div class="calendar-liste-une-date-agenda"><div class="calendar-liste-date-agenda calendar-liste-date-double"><span class="calendar-liste-jour">5</span> <span class="calendar-liste-mois">Juil</span><div class="calendar-liste-separation"></div><span class="calendar-liste-jour">13</span> <span class="calendar-liste-mois">Sept</span></div><div class="calendar-liste-contenu-agenda"><span class="calendar-liste-contenu-texte">Sylvothérapie : Beaulieu-en-Argonne</span> <span class="calendar-liste-lire-la-suite"></span></div></div></a>
+																<div class="calendar-liste-une-date-image">
+																	<div class="calendar-liste-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></div><img src="/userfile/img-actu/sm/1593069033-affiche-sylvotherapie-2020.jpg" alt="Sylvothérapie : Beaulieu-en-Argonne">
+																	<div class="calendar-liste-suiv"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+																</div>
+															</li>
+															<li class="li-une-date-agenda" id="li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-2"><a class="fancybox-article" href="/modules/calendrier/calendrier_view.php?id-template=1&id=580"> <div class="calendar-liste-une-date-agenda"><div class="calendar-liste-date-agenda"><span class="calendar-liste-jour">15</span> <span class="calendar-liste-mois">Juil</span></div><div class="calendar-liste-contenu-agenda"><span class="calendar-liste-contenu-texte">Permanence CMAL à Villotte sur Aire</span> <span class="calendar-liste-lire-la-suite"></span></div></div></a>
+																<div class="calendar-liste-une-date-image">
+																	<div class="calendar-liste-prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></div><img src="/userfile/img-actu/sm/1578574957-logo-CMAL.png" alt="Permanence CMAL à Villotte sur Aire">
+																	<div class="calendar-liste-suiv"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<script>
+			var index_calendar_E574B1E1D81045B3983E5C7815DE55D2 = 0;
+			var index_calendar_max_E574B1E1D81045B3983E5C7815DE55D2 = 2;
+			var isHover_defile_E574B1E1D81045B3983E5C7815DE55D2 = false;
+			
+			
+			$( document ).ready(function() {
+					
+				$(".calendar-liste-suiv").click(function() {
+					$("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+					index_calendar_E574B1E1D81045B3983E5C7815DE55D2++;
+				  		
+				  if(index_calendar_E574B1E1D81045B3983E5C7815DE55D2 > index_calendar_max_E574B1E1D81045B3983E5C7815DE55D2)
+						index_calendar_E574B1E1D81045B3983E5C7815DE55D2 = 1;					
+							
+				  $("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+				});	
+					
+				$(".calendar-liste-prev").click(function() {
+				  $("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+					index_calendar_E574B1E1D81045B3983E5C7815DE55D2--;
+				  	
+				  if(index_calendar_E574B1E1D81045B3983E5C7815DE55D2 < 1 )
+						index_calendar_E574B1E1D81045B3983E5C7815DE55D2 = index_calendar_max_E574B1E1D81045B3983E5C7815DE55D2;
+					$("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+				});
+					
+				$("#defile-E574B1E1D81045B3983E5C7815DE55D2").hover(
+				  function() {
+				    isHover_defile_E574B1E1D81045B3983E5C7815DE55D2 = true;
+				  }, function() {
+				    isHover_defile_E574B1E1D81045B3983E5C7815DE55D2 = false;
+				  }
+				);	show_calendar_E574B1E1D81045B3983E5C7815DE55D2();
+    			setInterval("show_calendar_E574B1E1D81045B3983E5C7815DE55D2()", 5000);
+   				
+			});
+			function show_calendar_E574B1E1D81045B3983E5C7815DE55D2(){
+					if(isHover_defile_E574B1E1D81045B3983E5C7815DE55D2)
+						return;
+					
+					$("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+					
+					index_calendar_E574B1E1D81045B3983E5C7815DE55D2++;
+										
+					if(index_calendar_E574B1E1D81045B3983E5C7815DE55D2 > index_calendar_max_E574B1E1D81045B3983E5C7815DE55D2)
+						index_calendar_E574B1E1D81045B3983E5C7815DE55D2 = 1;
+										
+					$("#li-une-date-agenda-E574B1E1D81045B3983E5C7815DE55D2-"+index_calendar_E574B1E1D81045B3983E5C7815DE55D2).slideToggle( {duration:1000});
+					
+				}
+													</script>
+												</div><span style="font-size: 30px;"><span style="font-size: 30px;"><strong></strong></span></span><img src="../../resolution/haute/images/calendrier.jpg" alt="" class="fit-to-original"><br><br><br>
+												<div class="meteo-light"><img src="/images/meteo/Best/sunny.png" title="Ensoleillé">Beausite, Mercredi 08 Juillet 2020, 27 °C, Ensoleillé</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+							</div>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-2">
+							<div class="wrapper-contents clearfix" id="wrapper-content-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-footer">
+			<div class="template-footer-content  template-contents">
+				<div class="footer-template">
+					<table class="responsive-table" style="width: 100%;">
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td style="width: 30%;"><a href="/intranet_fr.html"><span style="color: #ffffff;">Intranet</span> </a>- <span style="color: #ffffff;"><a href="/mentions-legales_fr.html"><span style="color: #ffffff;">Mentions légales</span></a></span> - <span style="color: #ffffff;"><a href="/contact_fr.html"><span style="color: #ffffff;">Contact</span></a></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">Réalisation, Hébergement Internet par lenumeripole.fr, Site administrable CMS propulsé par WebSee <a href="copyright.php"> - (En savoir plus)</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script type="text/javascript" src="/js/nivo-slider/jquery.nivo.slider.js"></script>
+		<script type="text/javascript" src="/js/jssor/jssor.js"></script>
+		<script type="text/javascript" src="/js/jssor/jssor.slider.js"></script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594042191"></script>
+		<script src="/js/responsive.min.js?1594042191"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
