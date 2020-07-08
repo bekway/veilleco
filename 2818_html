@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html class="no-js" lang="fr">
+	<head>
+		<title>CC Rives de Moselle</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Optimized mobile viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Place favicon.ico and apple-touch-icon.png in root directory -->
+		<!--[if IE]><![endif]-->
+		<meta charset="utf-8">
+		<meta name="generator" content="SPIP 3.0.25">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+		<meta name="msapplication-TileColor" content="#ff0000">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<link rel="alternate" type="application/rss+xml" title="Syndiquer tout le site" href="spip.php?page=backend">
+		<link href="squelettes/css/style.css" rel="stylesheet">
+		<link href="" rel="stylesheet">
+		<link href="spip.php?page=stylesecteur.css&secteur=1" rel="stylesheet">
+		<script type="text/javascript">/* <![CDATA[ */
+var box_settings = {tt_img:true,sel_g:"#documents_portfolio a[type='image/jpeg'],#documents_portfolio a[type='image/png'],#documents_portfolio a[type='image/gif']",sel_c:".mediabox",trans:"elastic",speed:"200",ssSpeed:"2500",maxW:"90%",maxH:"90%",minW:"400px",minH:"",opa:"0.9",str_ssStart:"Diaporama",str_ssStop:"Arrêter",str_cur:"{current}/{total}",str_prev:"Précédent",str_next:"Suivant",str_close:"Fermer",splash_url:""};
+/* ]]> */
+		</script>
+		<!-- insert_head_css -->
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/jquery.ui.core.css">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/jquery.ui.datepicker.css">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/jquery.ui.slider.css">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/jquery.ui.button.css">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/jquery_ui/css/jquery.ui.theme.css">
+		<link rel="stylesheet" href="plugins-dist/mediabox/colorbox/black-striped/colorbox.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins-dist/porte_plume/css/barre_outils.css">
+		<link rel="stylesheet" type="text/css" media="all" href="spip.php?page=barre_outils_icones.css">
+		<link rel="stylesheet" type="text/css" media="all" href="plugins/auto/timepicker/v1.4.4/css/jquery-timepicker.css">
+		<link rel="stylesheet" href="plugins/auto/boutonstexte/v2.0.6/css/boutonstexte.css" type="text/css" media="all">
+		<style type="text/css">div.onlytext {text-align:right;}</style>
+		<link rel="stylesheet" href="plugins/auto/gis/v4.47.2/lib/leaflet/dist/leaflet.css">
+		<link rel="stylesheet" href="plugins/auto/gis/v4.47.2/lib/leaflet/plugins/leaflet-plugins.css">
+		<link rel="stylesheet" href="plugins/auto/gis/v4.47.2/lib/leaflet/plugins/leaflet.markercluster.css">
+		<link rel="stylesheet" href="plugins/auto/gis/v4.47.2/css/leaflet_nodirection.css">
+		<link rel="stylesheet" href="plugins/auto/media/v1.4.10/css/media.css" type="text/css" media="all">
+		<link rel="stylesheet" href="plugins/auto/cvtupload/v1.17.2/css/cvtupload.css?1528287542" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" href="plugins/auto/contacts/v3.2.0/contacts.css" media="all">
+		<script src="prive/javascript/jquery.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.form.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.autosave.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.placeholder-label.js" type="text/javascript"></script>
+		<script src="prive/javascript/ajaxCallback.js" type="text/javascript"></script>
+		<script src="prive/javascript/jquery.cookie.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.core.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.datepicker.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/i18n/jquery.ui.datepicker-fr.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.widget.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.mouse.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.slider.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.button.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.sortable.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.draggable.js" type="text/javascript"></script>
+		<script src="plugins-dist/jquery_ui/prive/javascript/ui/jquery.ui.droppable.js" type="text/javascript"></script>
+		<script src="plugins/auto/timepicker/v1.4.4/js/jquery-ui-timepicker.js" type="text/javascript"></script>
+		<script src="plugins/auto/timepicker/v1.4.4/js/jquery-ui-sliderAccess.js" type="text/javascript"></script>
+		<script src="plugins/auto/timepicker/v1.4.4/js/i18n/jquery-ui-timepicker-fr.js" type="text/javascript"></script>
+		<!-- insert_head -->
+		<script src="plugins-dist/mediabox/javascript/jquery.colorbox.js?1489138481" type="text/javascript"></script>
+		<script src="plugins-dist/mediabox/javascript/spip.mediabox.js?1489138481" type="text/javascript"></script>
+		<!--[if lt IE 8]>
+	<script type='text/javascript'>//<![CDATA[
+		var IE7_PNG_SUFFIX = '.png'; 
+	//]]></script>
+	<script src='plugins-dist/msie_compat/javascript/IE8.js'></script>
+	<script src='plugins-dist/msie_compat/javascript/ie7-squish.js'></script>
+<![endif]-->
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.markitup_pour_spip.js"></script>
+		<script type="text/javascript" src="plugins-dist/porte_plume/javascript/jquery.previsu_spip.js"></script>
+		<script type="text/javascript" src="spip.php?page=porte_plume_start.js&lang=fr"></script>
+		<link rel="stylesheet" href="plugins/auto/typoenluminee/v3.5.13/css/enluminurestypo.css" type="text/css" media="all">
+		<script type="text/javascript">
+    $(document).ready(function(){
+        jQuery(".datetimepicker").datetimepicker({
+            addSliderAccess: true,
+            sliderAccessArgs: { touchonly: false }
+        });
+        jQuery(".timepicker").timepicker({
+            addSliderAccess: true,
+            sliderAccessArgs: { touchonly: false }
+        });
+    });
+    
+		</script>
+		<!-- Debut CS -->
+		<link rel="stylesheet" href="local/couteau-suisse/header.css" type="text/css" media="all">
+		<!-- Fin CS -->
+		<!-- Debut CS -->
+		<script src="local/couteau-suisse/header.js" type="text/javascript"></script>
+		<!-- Fin CS -->
+		<script src="plugins/auto/boutonstexte/v2.0.6/javascript/boutonstexte.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+	var boutonstexte_options = {
+		'selector':'#content',
+		'imgPath':'plugins/auto/boutonstexte/v2.0.6/boutonstexte/themes/zoom/',
+		'txtOnly':'Texte seulement',
+		'txtBackSpip':'Retour à la page complète',
+		'txtSizeUp':'Augmenter police',
+		'txtSizeDown':'Diminuer police'
+	};
+//-->
+		</script>
+		<script type="text/javascript" src="plugins/auto/inserer_modeles/v1.3.4/javascript/autosize.min.js"></script>
+		<!-- Decembre 2019  suite à bug de la vidéo  -Futur-equipement-aquatique-206-.html Ajout des balises jquery ici car directement dans l'article ça ne fonctionne pas-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.monsuividechantier.com/assets/plugins/live_cam_v7/live_cam_v7.js" defer></script>
+		<script src="squelettes/js/interface.js"></script>
+		<script src="squelettes/js/jquery.flexslider-min.js"></script>
+		<script src="squelettes/js/fullcalendar.min.js"></script>
+		<script src="squelettes/js/jcarousellite.js"></script>
+		<script src="squelettes/js/modernizr-2.0.6.js"></script>
+		<script src="squelettes/js/slides.min.jquery.js"></script>
+		<script src="squelettes/js/menu.js"></script>
+		<script src="squelettes/js/jquery.featureList.js"></script>
+		<script src="squelettes/js/jquery.dimensions.js"></script>
+		<script src="squelettes/js/jquery.tipTip.minified.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+		<!--[if IE]><script src="squelettes/js/html5-ie.js"></script><![endif]-->
+		<!--[if lt IE 7 ]>
+<style type="text/css">
+body {
+	font-size: 74%;;
+}
+</style>
+<![endif]-->
+		<!--[if IE 7 ]>
+<style type="text/css">
+body {
+	font-size: 74%;;
+}
+</style>
+<![endif]-->
+	</head>
+	<body class="sommaire">
+		<div class="secteur_1"><a href="#" id="top" name="top"></a>
+			<header id="entete" class="g3">
+				<div id="logos" class="g2">
+					<div id="logo" role="banner"><a href="https://www.rivesdemoselle.fr" title="Accueil"><img src="squelettes/habillage/logo_ccrm_280.png" alt="CC Rives de Moselle" class="img_png"></a></div>
+				</div>
+				<!-- #logo -->
+				<div id="utilitaires" class="g1">
+					<div id="evitement"><a href="#contenu">Contenu principal</a> | <a href="#menu">Menu</a>
+						<!--	<span class="drapos">
+			// MD 19 mars 2019 suite à demande client
+				<ul id="langues">
+				<li><a href="https://www.rivesdemoselle.fr?lang=fr"><img src="squelettes/habillage/flag_fr.png" alt="Français" lang="fr"  class="on" /></a></li>
+				<li><a href="-Welcome-.html?lang=en"><img src="squelettes/habillage/flag_en.png" alt="English" lang="en" /></a></li>
+				<li><a href="-Willkommen,106-.html?lang=de"><img src="squelettes/habillage/flag_de.png" alt="Deutsch" lang="de" /></a></li>
+				</ul>
+				</span>-->
+					</div>
+					<!-- #evitement -->
+					<div id="rechercher" role="search">
+						<div class="formulaire_spip formulaire_recherche" id="formulaire_recherche">
+							<form action="spip.php?page=recherche" method="get">
+								<div><input name="page" value="recherche" type="hidden"> <label for="recherche">Rechercher :</label> <input type="text" class="text" size="10" name="recherche" id="recherche"><input type="image" src="squelettes/habillage/ok.png" name="ok" id="ok" class="submit" alt="Rechercher" title="Rechercher"></div>
+							</form>
+						</div>
+					</div>
+					<!-- #rechercher -->
+				</div>
+				<!-- #utilitaires -->
+			</header>
+			<div id="corps"><a href="#" id="contenu" name="contenu"></a>
+				<section id="content" class="g2">
+					<section id="page" class="g3" role="main">
+						<h1 class="decale">CC Rives de Moselle</h1>
+						<section id="centre" class="g3">
+							<div id="Une" class="pave">
+								<h2 class="titraille"><span class="intitule">A la Une</span></h2>
+								<div class="contenu_pave">
+									<div id="featureList">
+										<ul id="output">
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/4e5ece0dd92a4130109c044dfaf769e4.png" class="img_png" alt="Suivez le Conseil Communautaire du 9 juillet en direct !"></div>
+													</div>
+													<div class="g1">
+														<h3>Suivez le Conseil Communautaire du 9 juillet en direct !</h3>
+														<div class="descriptif">Soyez au cœur des débats !...
+															<p><a href="Suivez-le-Conseil-Communautaire-du-4-juin-en-direct.html" class="suite" title="lire Suivez le Conseil Communautaire du 9 juillet en direct !">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/8e53004d22ae747eb857b27b6a4cceca.png" class="img_png" alt="L'échappée bleue fil bleu de l'Orne"></div>
+													</div>
+													<div class="g1">
+														<h3>L’échappée bleue fil bleu de l’Orne</h3>
+														<div class="descriptif">Depuis le 25 mai 2020, date de l’ordre de service N°4 et suite aux différents aléas administratifs, techniques, et sanitaires, les travaux (...)
+															<p><a href="L-echappee-bleue-fil-bleu-de-l-Orne.html" class="suite" title="lire L'échappée bleue fil bleu de l'Orne">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/7e743915764996a5b403519f58eb464d.png" class="img_png" alt="INFORMATION RÉ-INSCRIPTIONS 2020/2021"></div>
+													</div>
+													<div class="g1">
+														<h3>INFORMATION RÉ-INSCRIPTIONS 2020/2021</h3>
+														<div class="descriptif">Piscine "plein soleil"
+															<p><a href="INFORMATION-RE-INSCRIPTIONS-2020-2021.html" class="suite" title="lire INFORMATION RÉ-INSCRIPTIONS 2020/2021">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/79989d938380bf1fc1d5ebebb13e9cb0.jpg" class="img_png" alt="Réélection de Monsieur Julien FREYBURGER à la Présidence de Rives de (...)"></div>
+													</div>
+													<div class="g1">
+														<h3>Réélection de Monsieur Julien FREYBURGER à la Présidence de Rives de Moselle</h3>
+														<div class="descriptif">Lors du Conseil communautaire du Jeudi 4 juin 2020 qui s’est tenu à la salle Maurice Baquet à Talange, les 49 Conseillers communautaires (...)
+															<p><a href="Reelection-de-Monsieur-Julien-FREYBURGER-a-la-Presidence-de-Rives-de-Moselle.html" class="suite" title="lire Réélection de Monsieur Julien FREYBURGER à la Présidence de Rives de (...)">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/fc79499523175d89d686c3a5f9ca103a.jpg" class="img_png" alt="CONSIGNES d'ouverture de la PISCINE mercredi 01 juillet"></div>
+													</div>
+													<div class="g1">
+														<h3>CONSIGNES d’ouverture de la PISCINE mercredi 01 juillet</h3>
+														<div class="descriptif">La piscine "Plein Soleil" ouvrira à nouveau ses portes le mercredi 1<sup class="typo_exposants">er</sup> juillet 2020
+															<p><a href="CONSIGNES-d-ouverture-de-la-PISCINE-mercredi-01-juillet.html" class="suite" title="lire CONSIGNES d'ouverture de la PISCINE mercredi 01 juillet">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/39d01a3f2b4886718c3a6c9cb8a2673b.jpg" class="img_png" alt="REOUVERTURE DES LOCAUX"></div>
+													</div>
+													<div class="g1">
+														<h3>REOUVERTURE DES LOCAUX</h3>
+														<div class="descriptif">A compter de lundi 11 mai 2020, la Communauté de Communes « Rives de Moselle » rouvrira ses portes au public aux horaires habituels : 9 h (...)
+															<p><a href="REOUVERTURE-DES-LOCAUX-DE-RIVES-DE-MOSELLE-LUNDI-11-MAI-2020.html" class="suite" title="lire REOUVERTURE DES LOCAUX">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/ceea04ab52ed68251a2123b52c016ab7.jpg" class="img_png" alt="Vous êtes artisans de la réparation ? Devenez Repar'Acteurs !"></div>
+													</div>
+													<div class="g1">
+														<h3>Vous êtes artisans de la réparation ? Devenez Repar’Acteurs !</h3>
+														<div class="descriptif">La Chambre de Métiers et de l’Artisanat de la Moselle, en partenariat avec l’ADEME et la Région Grand Est, a lancé le label Répar’Acteurs (...)
+															<p><a href="Vous-etes-artisans-de-la-reparation-Devenez-Repar-Acteurs.html" class="suite" title="lire Vous êtes artisans de la réparation ? Devenez Repar'Acteurs !">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g1">
+														<h3>Réouverture des déchèteries - Précisions de M. le Président</h3>
+														<div class="descriptif">Tout d’abord, suite à la mise en place du confinement, l’ensemble des filières d’évacuation et de revalorisation dites filières "aval" se (...)
+															<p><a href="Reouverture-des-decheteries-Precisions-de-M-le-President.html" class="suite" title="lire Réouverture des déchèteries - Précisions de M. le Président">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/ec32b05ce884956d4c0a4134326ff7b9.jpg" class="img_png" alt='Fonds "RESISTANCE"'></div>
+													</div>
+													<div class="g1">
+														<h3>Fonds "RESISTANCE"</h3>
+														<div class="descriptif">La Région Grand Est, les Départements et les intercommunalités, soutenus par la Banque des territoires ont créé le fonds « Résistance » pour (...)
+															<p><a href="Fonds-RESISTANCE.html" class="suite" title='lire Fonds "RESISTANCE"'>Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/5eb026c23003a71a8be5a1c2a7467e1c.jpg" class="img_png" alt="Mesures complémentaires aux dispositifs pour les Entreprises"></div>
+													</div>
+													<div class="g1">
+														<h3>Mesures complémentaires aux dispositifs pour les Entreprises</h3>
+														<div class="descriptif">La situation que nous connaissons est bien sûr et avant tout une crise sanitaire majeure, lutter contre la propagation du Covid-19 doit (...)
+															<p><a href="Mesures-complementaires-aux-dispositifs-pour-les-Entreprises.html" class="suite" title="lire Mesures complémentaires aux dispositifs pour les Entreprises">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/224ef5c0ea384905131ee28770312fde.jpg" class="img_png" alt="Visite du futur Centre aquatique par le Président Patrick WEITEN"></div>
+													</div>
+													<div class="g1">
+														<h3>Visite du futur Centre aquatique par le Président Patrick WEITEN</h3>
+														<div class="descriptif">Dans le cadre de la convention protocolaire AMITER (Aide Mosellane à l’Investissement des Territoires), qui vise à conforter (...)
+															<p><a href="Visite-du-futur-Centre-aquatique-par-le-President-Patrick-WEITEN.html" class="suite" title="lire Visite du futur Centre aquatique par le Président Patrick WEITEN">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+											<li>
+												<div class="art_une">
+													<div class="g2">
+														<div class="logo_une"><img src="local/cache-gd2/2495ed8c12127c52b75f8078bd395686.jpg" class="img_png" alt="Schéma Communautaire des Voies Vertes"></div>
+													</div>
+													<div class="g1">
+														<h3>Schéma Communautaire des Voies Vertes</h3>
+														<div class="descriptif">Le fil bleu de l’Orne (Échappée Bleue) de Gandrange à Richemont d’une distance de 5900 ml et qui relira la voie verte Charles le téméraire , (...)
+															<p><a href="Schema-Communautaire-des-Voies-Vertes.html" class="suite" title="lire Schéma Communautaire des Voies Vertes">Lire la suite</a></p>
+														</div>
+													</div>
+												</div>
+												<!-- /.texte_une -->
+											</li>
+											<!-- /.slide -->
+										</ul>
+										<ul id="nums">
+											<li><a href="javascript:;" class="numero" title="Suivez le Conseil Communautaire du 9 juillet en direct !"> <span class="compteur">1</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="L’échappée bleue fil bleu de l’Orne"> <span class="compteur">2</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="INFORMATION RÉ-INSCRIPTIONS 2020/2021"> <span class="compteur">3</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Réélection de Monsieur Julien FREYBURGER à la Présidence de Rives de Moselle"> <span class="compteur">4</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="CONSIGNES d’ouverture de la PISCINE mercredi 01 juillet"> <span class="compteur">5</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="REOUVERTURE DES LOCAUX"> <span class="compteur">6</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Vous êtes artisans de la réparation ? Devenez Repar’Acteurs !"> <span class="compteur">7</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Réouverture des déchèteries - Précisions de M. le Président"> <span class="compteur">8</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Fonds " resistance> <span class="compteur">9</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Mesures complémentaires aux dispositifs pour les Entreprises"> <span class="compteur">10</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Visite du futur Centre aquatique par le Président Patrick WEITEN"> <span class="compteur">11</span> </a></li>
+											<li><a href="javascript:;" class="numero" title="Schéma Communautaire des Voies Vertes "> <span class="compteur">12</span> </a></li>
+										</ul>
+									</div>
+									<!-- #featureList -->
+									<div class="bouton"><a href="-Toute-l-actualite-.html" class="url">Voir toute l’actualité</a></div>
+								</div>
+								<!-- .contenu_pave -->
+							</div>
+							<!-- .pave -->
+							<div id="breves" class="pave">
+								<h2 class="titraille"><span class="intitule">En bref</span></h2>
+								<div class="contenu_pave">
+									<article class="intro">
+										<div class="header">
+											<h3>Report de la collecte des déchets du 14 juillet 2020</h3>
+											<div class="logo"><img src="local/cache-gd2/f41a0d2d6ecf7584c6f6a0b2773f4c21.jpg" class="img_png" alt="Report de la collecte des déchets du 14 juillet 2020"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">Report de la collecte des déchets ménagers du mardi 14 juillet 2020 : La collecte des déchets ménagers du mardi 14 juillet 2020 est reportée au (...)</div>
+											<p class="suite"><a href="Report-de-la-collecte-des-dechets-du-14juillet-2020.html" title="lire Report de la collecte des déchets du 14 juillet 2020">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Arrêt de la collecte des textiles</h3>
+											<div class="logo"><img src="local/cache-gd2/5d6b6846118ce5e62587d3c332fddc34.png" class="img_png" alt="Arrêt de la collecte des textiles"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">En raison des difficultés rencontrées par la filière de valorisation des textiles, les bornes d’apport volontaires présentes sur le territoire de (...)</div>
+											<p class="suite"><a href="Arret-de-la-collecte-des-textiles.html" title="lire Arrêt de la collecte des textiles">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>DECONFINEMENT : HORAIRES D’OUVERTURE DES DECHETERIES ELARGIS A COMPTER DU 25 MAI</h3>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">A compter du lundi 25 mai 2020, les horaires des 3 déchèteries (Maizières-lès-Metz, Richemont et Ennery) seront élargis. Il convient toujours de (...)</div>
+											<p class="suite"><a href="DECONFINEMENT-HORAIRES-D-OUVERTURE-DES-DECHETERIES-ELARGIS-A-COMPTER-DU-18-MAI.html" title="lire DECONFINEMENT : HORAIRES D'OUVERTURE DES DECHETERIES ELARGIS A COMPTER DU 25 (...)">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Vous êtes artisans de la réparation ? Devenez Repar’Acteurs !</h3>
+											<div class="logo"><img src="local/cache-gd2/b82cafd830f6df111404989f1bece1c1.jpg" class="img_png" alt="Vous êtes artisans de la réparation ? Devenez Repar'Acteurs !"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">La Chambre de Métiers et de l’Artisanat de la Moselle, en partenariat avec l’ADEME et la Région Grand Est, a lancé le label Répar’Acteurs afin de (...)</div>
+											<p class="suite"><a href="Vous-etes-artisans-de-la-reparation-Devenez-Repar-Acteurs.html" title="lire Vous êtes artisans de la réparation ? Devenez Repar'Acteurs !">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Déconfinement : Point sur la collecte des déchets</h3>
+											<div class="logo"><img src="local/cache-gd2/12b3a3ffa90484cd01804d0093cc1bb7.jpg" class="img_png" alt="Déconfinement : Point sur la collecte des déchets"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">Suite au déconfinement, le service de collecte des déchets reprend progressivement son activité, à savoir : L’ensemble des déchèteries (...)</div>
+											<p class="suite"><a href="Deconfinement-Point-sur-la-collecte-des-dechets.html" title="lire Déconfinement : Point sur la collecte des déchets">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>COVID-19 Accompagnement des entreprises</h3>
+											<div class="logo"><img src="local/cache-gd2/cf15c55f31bb438ff24b6114b7f0328b.jpg" class="img_png" alt="COVID-19 Accompagnement des entreprises"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">Face à l’épidémie du coronavirus COVID-19, l’Etat, BPI France, la Région Grand Est et les banques françaises se sont mobilisés pour apporter des (...)</div>
+											<p class="suite"><a href="COVID-19-Accompagnement-des-entreprises.html" title="lire COVID-19 Accompagnement des entreprises">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Défi familles zéro déchet - saison 3 : c’est parti !</h3>
+											<div class="logo"><img src="local/cache-gd2/29acf18c8eb1636809c7a3ed222e9b2a.jpg" class="img_png" alt="Défi familles zéro déchet - saison 3 : c'est parti !"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">Le 13 février 2020 s’est déroulé le premier atelier de la saison 3 du défi familles zéro déchet. 10 personnes ont répondu à l’appel et se sont (...)</div>
+											<p class="suite"><a href="Defi-familles-zero-dechet-saison-3-c-est-parti.html" title="lire Défi familles zéro déchet - saison 3 : c'est parti !">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Réaménagement de la déchèterie de Talange</h3>
+											<div class="logo"><img src="local/cache-gd2/360b1bd11be933955218f73d61c34c7e.png" class="img_png" alt="Réaménagement de la déchèterie de Talange"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">A compter du 1er janvier 2020 et ce pour une période d’environ 4 mois la déchèterie de Talange sera fermée pour cause de travaux. En raison de la (...)</div>
+											<p class="suite"><a href="Reamenagement-de-la-decheterie-de-Talange.html" title="lire Réaménagement de la déchèterie de Talange">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<article class="intro">
+										<div class="header">
+											<h3>Travaux voie verte Plesnois / Norroy le veneur</h3>
+											<div class="logo"><img src="local/cache-gd2/3ebfc102618998beef5fdf0de18b9d24.jpg" class="img_png" alt="Travaux voie verte Plesnois / Norroy le veneur"></div>
+										</div>
+										<div class="bloc">
+											<div class="descriptif">Des travaux auront lieu sur la voie verte du mardi 24 septembre 2019 au jeudi 3 octobre 2019. Du fait de la présence d’engins de chantier, les (...)</div>
+											<p class="suite"><a href="Travaux-voie-verte-Plesnois-Norroy-le-veneur.html" title="lire Travaux voie verte Plesnois / Norroy le veneur">Lire la suite</a></p>
+										</div>
+										<!-- /bloc -->
+									</article>
+									<!-- /.intro -->
+									<div class="bouton"><a href="-En-bref-88-.html" class="url">Voir tout</a></div>
+								</div>
+								<!-- contenu_pave -->
+							</div>
+							<!-- pave -->
+						</section>
+						<section id="extra" class="g3"></section>
+					</section>
+					<!-- #page -->
+				</section>
+				<!-- #content -->
+				<nav class="g1" id="navigation" role="navigation"><a href="#" name="menu" id="menu"></a>
+					<ul id="themes" class="menu_1">
+						<li id="rub_2" class="theme"><a href="-Communaute-de-Communes-.html" class="theme">Communauté de Communes</a></li>
+						<li id="rub_3" class="theme"><a href="-Economie-.html" class="theme">Economie</a></li>
+						<li id="rub_175" class="theme"><a href="-Equipements-Aquatiques-.html" class="theme">Equipements Aquatiques</a></li>
+						<li id="rub_57" class="theme"><a href="-Assainissement-.html" class="theme">Gestion de l’eau</a></li>
+						<li id="rub_61" class="theme"><a href="-Dechets-.html" class="theme">Gestion des déchets</a></li>
+						<li id="rub_4" class="theme"><a href="-Habitat-et-cadre-de-vie-.html" class="theme">Habitat et cadre de vie</a></li>
+						<li id="rub_240" class="theme"><a href="-Urbanisme-.html" class="theme">Urbanisme</a></li>
+						<li id="rub_233" class="theme"><a href="-Petite-Enfance-.html" class="theme">Petite Enfance</a></li>
+						<li id="rub_56" class="theme"><a href="-Tourisme-et-Voies-Vertes-.html" class="theme">Tourisme et Voies Vertes</a></li>
+						<li id="rub_142" class="theme"><a href="-Tres-Haut-Debit,142-.html" class="theme">Très Haut Débit</a></li>
+						<li id="rub_6" class="theme"><a href="-Nos-Offres-Locatives-.html" class="theme">Nos Offres Locatives</a></li>
+					</ul>
+					<!-- #themes -->
+					<div id="liens_directs" class="pave">
+						<h2 class="titraille"><span class="intitule">En 1 clic</span></h2>
+						<div class="contenu_pave">
+							<ul class="tablo">
+								<li class="case"><a href="Mise-en-place-d-un-controle-d,827.html"> <span class="picto"><img src="local/cache-vignettes/L63xH60/arton827-3bcbb.jpg" alt=""></span><span class="intitule">Mise en place d’un contrôle d’accès par badge sur les déchèteries</span></a></li>
+								<li class="case"><a href="Toutes-nos-aides-pour-vos-projets.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton218-1301f.png" alt=""></span><span class="intitule">Toutes nos aides pour vos projets !</span></a></li>
+								<li class="case"><a href="Marches-Publics.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton119-80ee5.png" alt=""></span><span class="intitule">Marchés Publics</span></a></li>
+								<li class="case"><a href="Adresses-utiles.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton108-a2675.png" alt=""></span><span class="intitule">Adresses utiles</span></a></li>
+								<li class="case"><a href="Tous-les-rendez-vous.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton115-d93ea.png" alt=""></span><span class="intitule">Tous les rendez-vous</span></a></li>
+								<li class="case"><a href="Nous-contacter.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton155-f0d7d.png" alt=""></span><span class="intitule">Nous contacter</span></a></li>
+								<li class="case"><a href="Nos-sondages.html"> <span class="picto"><img src="local/cache-vignettes/L24xH24/arton316-52de4.png" alt=""></span><span class="intitule">Annuaire des entreprises</span></a></li>
+							</ul>
+						</div>
+						<!-- .contenu_pave -->
+					</div>
+					<!-- .pave -->
+					<div id="medias" class="pave">
+						<h2 class="titraille"><span class="intitule">Médiathèque</span></h2>
+						<div class="contenu_pave">
+							<div id="tabs">
+								<ul>
+									<li><a href="#tabs-1"><p><span class="spip_document_1363 spip_documents"> <img src="IMG/png/pix_mag.png" alt="Magazines" title="Magazines"></span></p></a></li>
+									<li><a href="#tabs-2"><p><span class="spip_document_1364 spip_documents"> <img src="IMG/png/pix_photos.png" alt="Photos" title="Photos"></span></p></a></li>
+									<li><a href="#tabs-3"><p><span class="spip_document_1365 spip_documents"> <img src="IMG/png/pix_videos.png" alt="Vidéos" title="Vidéos"></span></p></a></li>
+									<li><a href="#tabs-4"><p><span class="spip_document_1366 spip_documents"> <img src="IMG/png/pix_docdiv.png" alt="Documents divers" title="Documents divers"></span></p></a></li>
+								</ul>
+								<div id="tabs-1">
+									<div id="docatel">
+										<dl class="doc_liste clear">
+											<dt class="doc_item g1"><a href="IMG/pdf/div14-web.pdf" title="Diverscités N° 14 - Rives de Moselle-PDF-1.6 Mo" target="_blank"> <div class="logo"><img src="local/cache-vignettes/L400xH566/div14-300e3.png" class="img_png" alt="Diverscités N° 14 - Rives de Moselle"></div> </a></dt>
+											<dd class="doc_des g2"><span class="doc_titre">Diverscités N° 14 - Rives de Moselle</span> <span class="doc_date">juin 2020</span> <span class="doc_infos">PDF - 1.6 Mo<br><a href="IMG/pdf/div14-web.pdf" title="Diverscités N° 14 - Rives de Moselle-PDF-1.6 Mo" class="telechargement"><strong>Télécharger</strong></a></span></dd>
+										</dl><br class="nettoyeur"></div>
+								</div>
+								<div id="tabs-2">
+									<div id="docatel">
+										<dl class="doc_liste clear">
+											<dt class="doc_item"><a href="IMG/jpg/trombinoscope-elus_ccrm.jpg" title="-JPEG-701.3 ko" class="mediabox"> <div class="logo"><img src="local/cache-vignettes/L33xH150/trombinoscope-elus_ccrm-cb1d1-0aab0.jpg" class="img_png" alt="" style="width:100%;height=auto;"></div> </a></dt>
+											<dd class="doc_des"></dd>
+										</dl><br class="nettoyeur"></div>
+								</div>
+								<div id="tabs-3">
+									<div id="docatel">
+										<dl class="doc_liste clear">
+											<dt class="doc_item g1"><a href="IMG/mp4/velo_gourmand_deuxieme_edition.mp4" title="Vélo Gourmand - Deuxième édition-MPEG4-13.7 Mo" target="_blank"> <div class="logo"><img src="local/cache-vignettes/L400xH316/velo_gourmand_deuxieme_edition-dca19.png" class="img_png" alt="Vélo Gourmand - Deuxième édition"></div> </a></dt>
+											<dd class="doc_des g2"><span class="doc_titre">Vélo Gourmand - Deuxième édition</span> <span class="doc_date">juin 2017</span> <span class="doc_des"><p>Une nouvelle fois, plus de 200 participants étaient présents pour cette deuxième édition organisée par la Communauté de Communes Rives de Moselle.</p></span> <span class="doc_infos">MPEG4 - 13.7 Mo<br><a href="IMG/mp4/velo_gourmand_deuxieme_edition.mp4" title="Vélo Gourmand - Deuxième édition-MPEG4-13.7 Mo" class="telechargement"><strong>Télécharger</strong></a></span></dd>
+										</dl><br class="nettoyeur"></div>
+								</div>
+								<div id="tabs-4">
+									<div id="docatel">
+										<dl class="doc_liste clear">
+											<dt class="doc_item g1"><a href="IMG/pdf/budgets_primitifs_2020-2.pdf" title="-PDF-1.1 Mo" target="_blank"> <div class="logo"><img src="local/cache-vignettes/L52xH52/pdf-39070.png" class="img_png" alt=""></div> </a></dt>
+											<dd class="doc_des g2"><span class="doc_date">juillet 2020</span> <span class="doc_infos">PDF - 1.1 Mo<br><a href="IMG/pdf/budgets_primitifs_2020-2.pdf" title="-PDF-1.1 Mo" class="telechargement"><strong>Télécharger</strong></a></span></dd>
+										</dl><br class="nettoyeur"></div>
+								</div>
+							</div>
+							<!-- #tabs -->
+							<div class="bouton"><a href="-Bibliotheque-multimedia-.html" class="url">Toute la médiathèque</a></div>
+						</div>
+						<!-- .contenu_pave -->
+					</div>
+					<!-- .pave -->
+					<script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+					</script>
+					<div id="webtv" class="pave">
+						<h2 class="titraille"><span class="intitule">Web TV</span></h2>
+						<div class="contenu_pave">
+							<p><strong>Découvrez le reportage vidéo de l’événement "Vélo Vin Chaud" édition 2018 :</strong></p>
+							<iframe width="100%" height="240" src="https://www.youtube.com/embed/-Rs33oWFE3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div id="connexion">
+						<div class="login_off"><span class="decale">Vous n'êtes pas connecté : </span><a href="Article-technique-10.html">Se connecter</a></div>
+					</div>
+					<!-- #connexion -->
+				</nav>
+				<div class="cf"></div>
+				<section id="acces_direct" class="g3" role="complementary">
+					<section id="services" class="g2">
+						<aside id="direct1" class="g1">
+							<div class="pave">
+								<h2 class="titraille"><span class="intitule">Présentation</span></h2>
+								<div class="contenu_pave">
+									<p>Forte d’un peu plus de 50 146 habitants, la nouvelle Communauté de Communes « Rives de Moselle » est née le 1<sup class="typo_exposants">er</sup> janvier 2014 de la fusion de la Communauté de Communes de Maizières-les-Metz et de la Communauté de Communes du Sillon Mosellan. <br class="manualbr">Ses compétences actuelles sont le développement économique, l’aménagement de l’espace, les déchets, l’assainissement, l’habitat et le cadre de vie, le tourisme et les voies vertes, la politique en faveur des séniors, le nettoiement des voiries, la viabilité hivernale et les communications électroniques.<br class="manualbr"><a href="-Communaute-de-Communes-.html" class="spip_in">En savoir plus</a></p>
+								</div>
+							</div>
+						</aside>
+						<aside id="direct2" class="g2">
+							<div class="pave">
+								<h2 class="decale"><span class="intitule">Bas contenu</span></h2>
+								<div class="contenu_pave"><img src="squelettes/habillage/carte_ccrm.png" width="360" height="280" alt="Carte des communes" id="carte_coms" usemap="#communesmap"> <map name="communesmap"> <area id="com1" shape="poly" coords="120,0,195,0,195,38,130,38" href="-Richemont-.html" alt="Richemont"> <area id="com2" shape="poly" coords="96,38,160,38,160,78,96,78" href="-Gandrange-.html" alt="Gandrange"> <area id="com3" shape="poly" coords="160,38,230,38,230,78,160,78" href="-Mondelange-.html" alt="Mondelange"> <area id="com4" shape="poly" coords="96,78,180,78,180,103,96,103" href="-Hagondange-.html" alt="Hangondange"> <area id="com5" shape="poly" coords="180,78,268,78,268,103,180,103" href="-Ay-sur-Moselle-.html" alt="Ay-sur-Moselle"> <area id="com6" shape="poly" coords="138,103,201,103,201,145,138,145" href="-Talange-.html" alt="Talange"> <area id="com7" shape="poly" coords="201,103,268,103,268,120,201,120" href="-Tremery-.html" alt="Trémery"> <area id="com8" shape="poly" coords="268,103,320,103,320,145,268,145" href="-Flevy-.html" alt="Flévy"> <area id="com9" shape="poly" coords="201,120,268,120,268,145,201,145" href="-Ennery-.html" alt="Ennery"> <area id="com10" shape="poly" coords="55,145,162,145,162,180,55,180" href="-Maizieres-les-Metz-.html" alt="Maizières-lès-Metz"> <area id="com11" shape="poly" coords="162,145,242,145,242,180,162,180" href="-Hauconcourt-.html" alt="Hauconcourt"> <area id="com12" shape="poly" coords="242,145,352,145,352,180,242,180" href="-Chailly-les-Ennery-.html" alt="Chailly-lès-Ennery"> <area id="com13" shape="poly" coords="95,180,175,180,175,199,95,199" href="-Semecourt-.html" alt="Semécourt"> <area id="com14" shape="poly" coords="65,199,125,199,125,214,65,214" href="-Feves-.html" alt="Fèves"> <area id="com15" shape="poly" coords="175,180,242,180,242,199,175,199" href="-Argancy-.html" alt="Argancy"> <area id="com16" shape="poly" coords="242,180,312,180,312,199,242,199" href="-Antilly-.html" alt="Antilly"> <area id="com17" shape="poly" coords="65,214,200,214,200,240,65,240" href="-Norroy-le-Veneur-.html" alt="Norroy-le-Veneur"> <area id="com18" shape="poly" coords="200,214,250,214,250,240,200,240" href="-Malroy-.html" alt="Malroy"> <area id="com19" shape="poly" coords="250,214,350,214,350,240,250,240" href="-Charly-Oradour-.html" alt="Charly-Oradour"> <area id="com20" shape="poly" coords="65,240,135,240,135,260,65,260" href="-Plesnois-.html" alt="Plesnois"> </map></div>
+							</div>
+						</aside>
+					</section>
+					<aside id="direct3" class="g1">
+						<div class="pave">
+							<h2 class="titraille"><span class="intitule">Coordonnées</span></h2>
+							<div class="contenu_pave">
+								<p>Communauté de Communes Rives de Moselle<br class="manualbr">1, place de la Gare - CS 40303<br class="manualbr">57280 Maizières-les-Metz<br class="manualbr">Tél. : 03.87.51.77.02<br class="manualbr">du lundi au vendredi : 9h-12h /14h-17h<br class="manualbr"><a href="mailto:accueil@rivesdemoselle.fr" class="spip_mail">accueil@rivesdemoselle.fr</a></p>
+							</div>
+						</div>
+					</aside>
+				</section>
+				<div class="cf"></div>
+			</div>
+			<!-- #corps -->
+			<footer class="g3">
+				<ul class="liens_pied">
+					<li><a href="https://www.rivesdemoselle.fr">Accueil</a> |</li>
+					<li><a href="Mentions-legales.html">Mentions légales</a> |</li>
+					<li><a href="Plan-du-site.html">Plan du site</a> |</li>
+					<li><a href="Presentation.html">Présentation</a> |</li>
+					<li><a href="Webmail.html">Webmail</a> |</li>
+					<li><a href="https://www.rivesdemoselle.fr/ecrire/">Espace privé</a> |</li>
+					<li><a href="http://www.mandibul.fr/" target="_blank" title="Conception & développement">©</a></li>
+				</ul>
+				<!-- /.liens_pied -->
+				<script src="squelettes/js/jquery.lettering-0.6.1.min.js"></script>
+				<script>
+          $(document).ready(function() {
+                        $("h1").lettering('words');
+                        $("h2").lettering('words');
+                        $("h3").lettering('words');
+                        $("ul#themes li.theme a").lettering('words');
+                        $("ul#themes li.theme_on a").lettering('words');
+                });
+				</script>
+				<script type="text/javascript" charset="utf-8"><!--
+   $(window).load(function() {
+     $( "#accordion" ).accordion();
+   });
+ -->
+				</script>
+				<script type="text/javascript"><!--
+$(document).ready(function(){
+	
+	var open_item=$('empty');
+	$('dd.ouvre').hide();
+	$('dt.ouvre').click(function(){
+		var dl = $(this.parentNode);
+		if ($('dd.ouvre',dl).is(':hidden')){
+			$('dd.ouvre',open_item).slideUp('slow');
+			$('dd.ouvre',dl).slideDown("slow");
+			open_item=dl;
+		}
+		else{
+			$('dd.ouvre',open_item).slideUp('slow');
+			open_item=$('empty');
+		}
+		return false;
+		});
+		
+		 
+				
+				$.featureList(
+					$("#nums li a"),
+					$("#output li"), {
+						start_item	:	0,
+						pause_on_hover : true,
+						transition_interval : 5000
+					}
+				);
+		
+				$(".numero").tipTip({maxWidth: "auto", edgeOffset: 12});
+		
+		
+	 
+});
+//fonction addEvent
+function addEvent(oElem, sEvType, fn, bCapture)
+{
+   return oElem.addEventListener?
+      oElem.addEventListener(sEvType, fn, bCapture):
+      oElem.attachEvent?
+         oElem.attachEvent('on' + sEvType, fn):
+         oElem['on' + sEvType] = fn;
+}
+
+
+//fonction addInputValue
+function addInputValue()
+{
+	// si les méthodes n'existent pas, on sort...
+	if(!document.getElementById || !document.getElementsByTagName)
+	{
+		return;
+	}
+
+	// Alimentation du value
+	var oElem = document.getElementById("recherche");
+	oElem.value = 'Rechercher...';
+
+	// addEventListener sur le onfocus
+	addEvent(oElem, 'focus', addInputFocus, false);
+
+	// addEventListener sur le onblur
+	addEvent(oElem, 'blur', addInputBlur, false);
+}
+	
+	
+//fonction addInputFocus 
+function addInputFocus(event)
+{
+		var oElem = document.getElementById("recherche");
+		if (oElem.value == 'Rechercher...') {
+			oElem.value = '';
+		}
+}
+
+//fonction addInputBlur 
+function addInputBlur(event)
+{
+		var oElem = document.getElementById("recherche");
+		if (oElem.value == '') {
+			oElem.value = 'Rechercher...';
+		}
+}
+
+
+// Initialisation
+addEvent(window, 'load', addInputValue, false);
+-->
+				</script>
+				<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46721933-1', 'rivesdemoselle.fr');
+  ga('send', 'pageview');
+				</script>
+			</footer><a href="#top" class="remonter">Haut de page</a>
+			<!-- CSS3 Media Queries -->
+			<script src="squelettes/js/respond.min.js"></script>
+		</div>
+		<!-- .secteur -->
+		<script type="text/javascript" src="//static.adserver.pm/position/SITES_COLLECTIVITES/%0AP43301/footer/campaign_id=48152/cid=CL974032/c5=CL974032/%0Acampaign_token=b51f523e514a7902c67665b59aa67bf6/?%0Aclick=%5BCLICK_COMMAND%5D"></script>
+	</body>
+</html>
