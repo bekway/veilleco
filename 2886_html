@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Communauté de communes Coeur du Pays Haut</title>
+		<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/js/plugins/colorbox/colorbox.css" rel="stylesheet">
+		<link href="/css/commun.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+            <script src="/js/html5shiv.min.js"></script>
+        <![endif]-->
+		<script src="/js/jquery-2.2.1.min.js"></script>
+		<script src="/js/analytics.js"></script>
+	</head>
+	<body>
+		<div class="scroll-top-wrapper "><span class="scroll-top-inner"> <i class="glyphicon glyphicon-circle-arrow-up"></i> </span></div>
+		<div id="fondSite">
+			<div id="blocFondEntete"></div>
+			<div class="container">
+				<header id="header">
+					<div class="row">
+						<div class="col-xs-6 col-sm-4 col-lg-8">
+							<div id="logo" onclick="window.location.href = '/'"></div>
+							<h1 class="titreSite">Coeur du Pays Haut</h1>
+						</div>
+						<div class="col-sm-3 col-sm-offset-1 col-lg-1 col-lg-offset-0"></div>
+						<div class="col-xs-6  col-sm-4 col-lg-3">
+							<div id="blocRecherche">
+								<form id="formRecherche" action="/recherche/resultat" method="POST"><input type="hidden" name="rechercheHeader" id="rechercheHeader" value="1">
+									<div class="input-group"><input type="text" name="recherche" id="recherche" class="form-control" placeholder="Rechercher"> <span class="input-group-btn"> <button class="btn" type="submit"><span class="glyphicon glyphicon-search"></span></button> </span></div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<nav class="navbar" id="menuPrincipal">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header visible-xs"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Menu</a></div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-menu">
+								<ul class="nav navbar-nav navbar-right">
+									<li id="menuItem1" class="dropdown "><a class="dropdown-toggle" href="#">Cœur du Pays Haut</a>
+										<ul class="dropdown-menu">
+											<li class=""><a href="/Mot-du-President" title="Notre Engagement">Notre Engagement</a></li>
+											<li class=""><a href="/territoire-intercommunal" title="Notre Territoire">Notre Territoire</a></li>
+											<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="#" title="L'intercommunalité">L'intercommunalité</a>
+												<ul class="dropdown-menu">
+													<li class=""><a href="/Notre-Conseil-Communautaire" title="Le Conseil Communautaire">Le Conseil Communautaire</a></li>
+													<li class=""><a href="/Nos-Elus" title="Les Commissions">Les Commissions</a></li>
+													<li class=""><a href="/competences-intercommuales" title="Les Compétences">Les Compétences</a></li>
+												</ul>
+											</li>
+											<li class=""><a href="/Deliberations" title="Nos décisions">Nos décisions</a></li>
+											<li class=""><a href="/Nos-Cooperations" title="Nos Coopérations">Nos Coopérations</a></li>
+											<li class=""><a href="/Notre-Equipe" title="Notre Equipe">Notre Equipe</a></li>
+										</ul>
+									</li>
+									<li id="menuItem9" class="dropdown "><a class="dropdown-toggle" href="#">Vivre</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="#" title="Enfance Jeunesse">Enfance Jeunesse</a>
+												<ul class="dropdown-menu">
+													<li class=""><a href="/Petite-Enfance" title="Enfance">Enfance</a></li>
+													<li class=""><a href="/Jeunesse" title="Jeunesse">Jeunesse</a></li>
+												</ul>
+											</li>
+											<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="#" title="Culture et Tourisme">Culture et Tourisme</a>
+												<ul class="dropdown-menu">
+													<li class=""><a href="/Culture" title="Culture">Culture</a></li>
+													<li class=""><a href="/Tourisme" title="Tourisme">Tourisme</a></li>
+													<li class=""><a href="/Chemins-de-Randonnee" title="Chemins de Randonnée">Chemins de Randonnée</a></li>
+												</ul>
+											</li>
+											<li class=""><a href="/Sports" title="Sport et Infrastructures">Sport et Infrastructures</a></li>
+											<li class=""><a href="/La-Sante" title="La Santé">La Santé</a></li>
+											<li class=""><a href="/Le-Social" title="Le Social">Le Social</a></li>
+											<li class=""><a href="/associations" title="Associations">Associations</a></li>
+										</ul>
+									</li>
+									<li id="menuItem45" class="dropdown "><a class="dropdown-toggle" href="#">Entreprendre</a>
+										<ul class="dropdown-menu">
+											<li class=""><a href="/S-installer" title="S'installer">S'installer</a></li>
+											<li class=""><a href="/S-informer" title="S'informer">S'informer</a></li>
+											<li class=""><a href="/Se-faire-connaitre" title="Se faire connaitre">Se faire connaitre</a></li>
+											<li class=""><a href="/marchePublic/liste" title="Marchés publics">Marchés publics</a></li>
+										</ul>
+									</li>
+									<li id="menuItem43" class="dropdown "><a class="dropdown-toggle" href="#">Habiter</a>
+										<ul class="dropdown-menu">
+											<li class=""><a href="/construire" title="Construire">Construire</a></li>
+											<li class=""><a href="/Louer-ou-Acheter" title="Louer ou Acheter">Louer ou Acheter</a></li>
+											<li class=""><a href="/Ameliorer" title="Améliorer">Améliorer</a></li>
+											<li class=""><a href="/PLU" title="Les PLU">Les PLU</a></li>
+											<li class=""><a href="/Les-services-de-Syndicats" title="Services des Syndicats">Services des Syndicats</a></li>
+										</ul>
+									</li>
+									<li id="menuItem46" class="dropdown "><a class="dropdown-toggle" href="#">Se déplacer</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="#" title="Bornes électriques">Bornes électriques</a>
+												<ul class="dropdown-menu">
+													<li class=""><a href="/bornes-electriques" title="Se recharger">Se recharger</a></li>
+													<li class=""><a href="/localisation-borne-electrique" title="Localiser">Localiser</a></li>
+												</ul>
+											</li>
+											<li class=""><a href="/Transport-en-commun" title="Transport en commun">Transport en commun</a></li>
+										</ul>
+									</li>
+									<li class=" active"><a href="/" title="Retour sur la page d'accueil" class="iconeAccueil"></a></li>
+								</ul>
+							</div>
+							<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container-fluid -->
+					</nav>
+				</header>
+				<div id="filAriane">
+					<ol class="breadcrumb">
+						<li><a class="breadcrumb-item" href="/">Accueil</a></li>
+					</ol>
+				</div>
+			</div>
+			<div class="container">
+				<div class="fondBlocContenu">
+					<div class="blocContenu">
+						<div class="row" id="ligne1Accueil">
+							<div class="col-md-7">
+								<h2>Actualités</h2>
+								<div id="blocActu">
+									<article class="fondBlanc">
+										<div id="carouselActualite" class="carousel slide" data-ride="carousel" data-interval="false">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselActualite" data-slide-to="0" class="active">
+											</ol>
+											<div class="carousel-inner" role="listbox">
+												<article class="item  active">
+													<div class="row">
+														<div class="col-sm-6 col-md-6">
+															<div class="imgActu" style="background-image:url(/gedExt/actualites/87/1024x768_Fonds_Resistance-CPH.jpg) "></div>
+														</div>
+														<div class="col-sm-6 col-md-6 descrActu avecImg">
+															<h2>Covid-19/Economie : Vademecum des aides, Fonds Résistance</h2>
+															<p>Entreprises, indépendants, associations employeurs... vous pouvez bénéficier d'aides !   Dans le contexte inédit lié à la pandémie de Covid-19, l'Etat et les... <a href="/actualites/article/87/Covid-19-Economie---Vademecum-des-aides--Fonds-Resistance">Lire la suite</a></p>
+														</div><a href="/actualites/liste" title="Voir toutes les actualités de Coeur du Pays Haut" class="lienTtActu">Voir toutes les actualités ></a></div>
+												</article>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div id="blocAgenda">
+									<h2>Vos prochains rendez-vous</h2>
+									<ul class="list-unstyled fondBlanc" id="listeAgenda">
+										<li><span class="dateAgenda">23/04/2020</span><br>Loc’Halles Grand Est : UNE APPLICATION Web gratuite concernant les PRODUCTIONS AGRICOLES... <a href="/actualites/article/88/Loc-Halles-Grand-Est---UNE-APPLICATION-Web-gratuite-concernant-les-PRODUCTIONS-AGRICOLES-ALIMENTAIRES-du-Grand-Est" title="Lire l'article">Voir ></a></li>
+										<li><span class="dateAgenda">18/05/2020 au 30/09/2020</span><br>COVID-19 : CONSIGNES SANITAIRES à respecter strictement au sein des locaux de l'intercommunalité... <a href="/actualites/article/89/COVID-19---CONSIGNES-SANITAIRES-a-respecter-strictement-au-sein%C2%A0des-locaux-de-la-Communaute-de-Communes-Coeur-du-Pays-Haut" title="Lire l'article">Voir ></a></li>
+										<li><span class="dateAgenda">24/06/2020 au 31/12/2020</span><br>Covid-19/Economie : Vademecum des aides, Fonds Résistance - Entreprises, indépendants,... <a href="/actualites/article/85/Economie---Vademecum-des-aides---Fonds-Resistance" title="Lire l'article">Voir ></a></li>
+										<li><a href="/actualites/agenda/2" title="Voir tous les rendez-vous de Coeur du Pays Haut" id="lienTousRdv">Voir tous les rendez-vous ></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<h4>Recherchez votre ville</h4>
+								<div id="blocCarteCC"><img src="/design/carte-coeur-du-pays-haut.png" usemap="#imageMap" id="carteCC"> <map name="imageMap"> <area shape="poly" coords="21,177,33,203,37,213,28,220,17,217,15,210,9,186" href="/commune/fiche/1/AVILLERS" alt="Avillers" title="Avillers"> <area shape="poly" coords="39,210,65,209,70,186,55,177,22,173,22,177" href="/commune/fiche/2/DOMPRIX" alt="DOMPRIX" title="DOMPRIX"> <area shape="poly" coords="16,273,8,245,29,220,39,211,49,211,53,231,47,261" href="/commune/fiche/2/BOULIGNY" alt="BOULIGNY" title="BOULIGNY"> <area shape="poly" coords="63,209,83,219,82,231,77,235,53,230,48,211,48,210" href="/commune/fiche/19/PIENNES" alt="PIENNES" title="PIENNES"> <area shape="poly" coords="53,231,77,236,77,236,63,266,47,261" href="/commune/fiche/11/JOUDREVILLE" alt="JOUDREVILLE" title="JOUDREVILLE"> <area shape="poly" coords="85,179,97,187,103,215,99,231,84,230,84,218,66,208,71,186" href="/commune/fiche/12/LANDRES" alt="LANDRES" title="LANDRES"> <area shape="poly" coords="178,188,178,188,177,197,152,203,141,239,116,249,100,232,104,214,129,202,144,196,167,190" href="/commune/fiche/13/MAIRY-MAINVILLE" alt="MAIRY-MAINVILLE" title="MAIRY-MAINVILLE"> <area shape="poly" coords="213,168,215,168,242,211,227,216,217,200,190,203,187,179,189,171" href="/commune/fiche/22/TRIEUX" alt="TRIEUX" title="TRIEUX"> <area shape="poly" coords="179,179,186,180,189,203,171,224,171,240,155,243,142,239,153,204,178,197" href="/commune/fiche/23/TUCQUEGNIEUX" alt="TUCQUEGNIEUX" title="TUCQUEGNIEUX"> <area shape="poly" coords="151,153,160,162,163,162,178,187,129,201,128,192,134,189,129,174,135,163" href="/commune/fiche/4/ANDERNY" alt="ANDERNY" title="ANDERNY"> <area shape="poly" coords="120,153,123,163,103,181,96,186,85,178,97,156" href="/commune/fiche/18/MURVILLE" alt="MURVILLE" title="MURVILLE"> <area shape="poly" coords="55,177,71,186,86,178,97,155,71,144" href="/commune/fiche/20/PREUTIN-HIGNY" alt="PREUTIN-HIGNY" title="PREUTIN-HIGNY"> <area shape="poly" coords="59,93,83,93,112,106,119,119,113,122,108,114,62,115,52,104,46,96,46,96" href="/commune/fiche/10/JOPPECOURT" alt="JOPPECOURT" title="JOPPECOURT"> <area shape="poly" coords="132,163,134,164,128,175,133,189,128,202,103,215,97,188,123,164" href="/commune/fiche/17/MONT-BONVILLERS" alt="MONT-BONVILLERS" title="MONT-BONVILLERS"> <area shape="poly" coords="60,127,60,127,69,143,53,177,21,173,17,146,33,135" href="/commune/fiche/24/XIVRY_CIRCOURT" alt="XIVRY_CIRCOURT" title="XIVRY_CIRCOURT"> <area shape="poly" coords="62,116,108,115,113,123,119,120,133,127,120,152,96,156,83,150,70,144,61,127" href="/commune/fiche/16/MERCY%20LE%20HAUT" alt="MERCY LE HAUT" title="MERCY LE HAUT"> <area shape="poly" coords="139,126,150,152,124,163,121,153,134,127" href="/commune/fiche/15/MALAVILLERS" alt="MALAVILLERS" title="MALAVILLERS"> <area shape="poly" coords="190,126,204,131,220,138,237,160,237,161,216,167,188,171,186,180,183,180,178,179,163,161,167,153,167,145" href="/commune/fiche/21/SANCY" alt="SANCY" title="SANCY"> <area shape="poly" coords="165,111,189,125,167,145,161,161,151,153,140,125" href="/commune/fiche/5/AUDUN%20LE%20ROMAN" alt="AUDUN LE ROMAN" title="AUDUN LE ROMAN"> <area shape="poly" coords="186,84,196,86,198,119,190,125,167,111" href="/commune/fiche/6/BEUVILLERS" alt="BEUVILLERS" title="BEUVILLERS"> <area shape="poly" coords="138,68,153,72,175,78,185,84,166,110,149,120,133,127,119,119,111,106,112,105" href="/commune/fiche/25/SEROUVILLE" alt="SEROUVILLE" title="SEROUVILLE"> <area shape="poly" coords="163,47,182,58,175,77,139,68,138,56" href="/commune/fiche/9/ERROUVILLE" alt="ERROUVILLE" title="ERROUVILLE"> <area shape="poly" coords="183,13,196,34,198,41,182,57,165,47,167,33,175,23,177,16" href="/commune/fiche/8/CRUSNES" alt="CRUSNES" title="CRUSNES"> <area shape="poly" coords="163,7,176,15,175,22,167,34,163,46,137,55,133,40,120,37,116,27,125,16,126,17,137,26,138,25" href="/commune/fiche/7/BREHAIN-LA-VILLE" alt="BREHAIN LA VILLE" title="BREHAIN LA VILLE"> <area shape="poly" coords="33,135,61,126,62,116,46,96,32,94,23,90,11,94,12,104,25,119" href="/commune/fiche/14/MERCY-LE-BAS" alt="MERCY LE BAS" title="MERCY LE BAS"> </map></div>
+							</div>
+							<div class="col-md-2">
+								<div id="blocAnnuaire">
+									<p>RETROUVEZ ICI</p>
+									<div class="row">
+										<div class="col-sm-2 col-md-12"><img alt="Nos annuaires" src="/design/icone-carnet.png"></div>
+										<div class="col-sm-5 col-md-12"><a href="/annuaire/adresse/4/Associations/">Annuaire des associations</a></div>
+										<div class="col-sm-5 col-md-12 "><a href="/annuaire/adresse/2/Entreprises/" class="lignePointille">Annuaire des commerces et entreprises</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<ul class="lienRaccourci">
+									<li><a href="/bulletin" id="lienBulletin">Bulletin</a></li>
+									<li><a href="/Piscine" id="lienPiscine">Piscine</a></li>
+									<li><a href="/Petite-Enfance" id="lienPetitEnfance">Petite enfance</a></li>
+									<li><a href="/document/listeDocuments" id="lienDocuments">Documents en lignes</a></li>
+									<li><a href="/Les-communes-et-leurs-documents-d-urbanisme" id="lienUrbanisme">Urbanisme</a></li>
+									<li><a href="/Nous-contacter" id="lienContact">Nous contacter</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div id="blocContactAcces">
+					<div class="row">
+						<div class="col-sm-6 col-md-3 col-lg-2 ">
+							<adresse>CC Cœur du Pays-Haut</adresse>
+							<p>Siège : 71 route de Briey<br> 54560 AUDUN LE ROMAN</p>
+						</div>
+						<div class="col-sm-6 col-md-3 col-lg-3">
+							<p>Courriel : <a href="mailTo:secretariat@coeurdupayshaut.fr" title="Envoyer un e-mail à secretariat@coeurdupayshaut.fr">secretariat@coeurdupayshaut.fr</a><br> tel : 03 82 21 59 00<br> fax : 03 82 21 60 00</p>
+						</div>
+						<div class="col-sm-12 col-md-7" id="blocSlogan"><img src="/design/terre-de-vie-terre-d-energies.png" alt="Terre de vie terre d'énergies" id="slogan" class="img-responsive"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div id="blocFooter2">
+					<ul class="list-unstyled list-inline">
+						<li>© 2020 CC.CPH</li>
+						<li>Site réalisé par <a href="http://nivalys.fr/" target="_blank" title="Conception Nivalys"><img src="/design/logo-nivalys.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/js/plugins/colorbox/jquery.colorbox-min.js"></script>
+		<script src="/js/commun.min.js"></script>
+		<script src="/js/plugins/maphilight/jquery.maphilight.min.js" type="text/javascript"></script>
+		<script src="/page/js/accueil.min.js" type="text/javascript"></script>
+	</body>
+</html>
