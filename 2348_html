@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr-FR">
+	<head>
+		<script>
+
+
+var tagAnalyticsCNIL = {}
+
+tagAnalyticsCNIL.CookieConsent = function() {
+	// Remplacez la valeur UA-44400092-1 par l'identifiant analytics de votre site.
+	var gaProperty = 'UA-44400092-1 '
+	// Désactive le tracking si le cookie d’Opt-out existe déjà.
+	var disableStr = 'ga-disable-' + gaProperty;
+	var firstCall = false;
+	var domaineName = '';
+
+	//Cette fonction retourne la date d’expiration du cookie de consentement 
+
+	function getCookieExpireDate() { 
+	 var cookieTimeout = 33696000000;// Le nombre de millisecondes que font 13 mois 
+	 var date = new Date();
+	 date.setTime(date.getTime()+cookieTimeout);
+	 var expires = "; expires="+date.toGMTString();
+	 return expires;
+	}
+	
+	function getDomainName() {
+		if (domaineName != '') {
+			return domaineName;
+		} else {
+			var hostname = document.location.hostname;
+			if (hostname.indexOf("www.") === 0)
+				hostname = hostname.substring(4);
+			return hostname;
+		}
+	}
+	
+	//Cette fonction définie le périmétre du consentement ou de l'opposition  (en fonction du domaine)
+    //Par défaut nous considérons que le domaine est tout ce qu'il y'a aprés  "www"	
+	function getCookieDomainName() {
+		var hostname = getDomainName();
+		var domain = "domain=" + "."+hostname;
+		return domain;
+	}
+
+
+	//Cette fonction vérifie si on  a déjà obtenu le consentement de la personne qui visite le site
+	function checkFirstVisit() {
+	   var consentCookie =  getCookie('hasConsent'); 
+	   if ( !consentCookie ) return true;
+	}
+
+	//Affiche une  banniére d'information en haut de la page
+	 function showBanner(){
+		var bodytag = document.getElementsByTagName('body')[0];
+		var div = document.createElement('div');
+		div.setAttribute('id','cookie-banner');
+		div.setAttribute('width','70%');
+		// Le code HTML de la demande de consentement
+		// Vous pouvez modifier le contenu ainsi que le style
+		div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding:5px;font-size:12px;border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google Analytics.\
+		En continuant à naviguer, vous nous autorisez à déposer un cookie à des fins de \
+		mesure d\'audience. \
+		<a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" style="text-decoration:underline;"> En savoir plus ou s\'opposer.';
+		bodytag.insertBefore(div,bodytag.firstChild); // Ajoute la banniére juste au début de la page 
+		document.getElementsByTagName('body')[0].className+=' cookiebanner';	
+		createInformAndAskDiv();
+	 }
+		  
+		  
+	// Fonction utile pour récupérer un cookie a partire de son nom
+	function getCookie(NameOfCookie)  {
+		if (document.cookie.length > 0) {        
+			begin = document.cookie.indexOf(NameOfCookie+"=");
+			if (begin != -1)  {
+				begin += NameOfCookie.length+1;
+				end = document.cookie.indexOf(";", begin);
+				if (end == -1) end = document.cookie.length;
+				return unescape(document.cookie.substring(begin, end)); 
+			}
+		 }
+		return null;
+	}
+
+	//Récupère la version d'Internet Explorer, si c'est un autre navigateur la fonction renvoie -1
+	function getInternetExplorerVersion() {
+	  var rv = -1;
+	  if (navigator.appName == 'Microsoft Internet Explorer')  {
+		var ua = navigator.userAgent;
+		var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }  else if (navigator.appName == 'Netscape')  {
+		var ua = navigator.userAgent;
+		var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+		if (re.exec(ua) != null)
+		  rv = parseFloat( RegExp.$1 );
+	  }
+	  return rv;
+	}
+
+	//Effectue une demande de confirmation de DNT pour les utilisateurs d'IE
+	function askDNTConfirmation() {
+		var r = confirm("La signal DoNotTrack de votre navigateur est activé, confirmez vous activer la fonction DoNotTrack?")
+		return r;
+	}
+
+	//Vérifie la valeur de navigator.DoNotTrack pour savoir si le signal est activé et est à 1
+	function notToTrack() {
+		if ( (navigator.doNotTrack && (navigator.doNotTrack=='yes' || navigator.doNotTrack=='1')) || ( navigator.msDoNotTrack && navigator.msDoNotTrack == '1') ) {
+			var isIE = (getInternetExplorerVersion()!=-1)
+			if (!isIE){	
+				 return true;
+			}else {
+				return askDNTConfirmation();
+			}
+			return false;
+		}
+	}
+
+	//Si le signal est à 0 on considére que le consentement a déjà été obtenu
+	function isToTrack() {
+		if ( navigator.doNotTrack && (navigator.doNotTrack=='no' || navigator.doNotTrack==0 )) {
+			return true;
+		}
+	}
+	   
+	// Fonction d'effacement des cookies   
+	function delCookie(name )   {
+		var path = ";path=" + "/";
+
+
+
+
+		var expiration = "Thu, 01-Jan-1970 00:00:01 GMT";       
+		document.cookie = name + "=" + path +" ; "+ getCookieDomainName() + ";expires=" + expiration;
+	}
+	  
+	// Efface tous les types de cookies utilisés par Google Analytics    
+	function deleteAnalyticsCookies() {
+		var cookieNames = ["__utma","__utmb","__utmc","__utmz","_ga","_gat"]
+		for (var i=0; i<cookieNames.length; i++)
+			delCookie(cookieNames[i])
+	}
+
+	//La fonction qui informe et demande le consentement. Il s'agit d'un div qui apparait au centre de la page
+	function createInformAndAskDiv() {
+		var bodytag = document.getElementsByTagName('body')[0];
+		var div = document.createElement('div');
+		div.setAttribute('id','inform-and-ask');
+		div.style.width= window.innerWidth+"px" ;
+		div.style.height= window.innerHeight+"px";
+		div.style.display= "none";
+		div.style.position= "fixed";
+		div.style.zIndex= "100000";
+		// Le code HTML de la demande de consentement
+		// Vous pouvez modifier le contenu ainsi que le style
+		div.innerHTML =  '<div style="width: 300px; background-color: white; repeat scroll 0% 0% white; border: 1px solid #cccccc; padding :10px 10px;text-align:center; position: fixed; top:30px; left:50%; margin-top:0px; margin-left:-150px; z-index:100000; opacity:1" id="inform-and-consent">\
+		<div><span><b>Les cookies Google Analytics<br><div>Ce site utilise  des cookies de Google Analytics,\
+		ces cookies nous aident à identifier le contenu qui vous interesse le plus ainsi qu\'à repérer certains \
+		dysfonctionnements. Vos données de navigations sur ce site sont envoyées à Google Inc<div style="padding :10px 10px;text-align:center;"><button style="margin-right:50px;text-decoration:underline;" \
+		name="S\'opposer" onclick="tagAnalyticsCNIL.CookieConsent.gaOptout();tagAnalyticsCNIL.CookieConsent.hideInform();" id="optout-button" >S\'opposer<button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()" >Accepter';
+		bodytag.insertBefore(div,bodytag.firstChild); // Ajoute la banniére juste au début de la page 
+	}
+
+	  
+
+	function isClickOnOptOut( evt) { // Si le noeud parent ou le noeud parent du parent est la banniére, on ignore le clic
+		return(evt.target.parentNode.id == 'cookie-banner' || evt.target.parentNode.parentNode.id =='cookie-banner' || evt.target.id == 'optout-button')
+	}
+
+	function consent(evt) {
+		if (!isClickOnOptOut(evt) ) { // On vérifie qu'il ne s'agit pas d'un clic sur la banniére
+			if ( !clickprocessed) {
+				evt.preventDefault();
+				document.cookie = 'hasConsent=true; '+ getCookieExpireDate() +' ; ' +  getCookieDomainName() + ' ; path=/'; 
+				callGoogleAnalytics();
+				clickprocessed = true;
+				window.setTimeout(function() {evt.target.click();}, 1000)
+			} 
+		}
+	}
+
+	// Cette fonction en test permet de faire une call GA  afin de pouvoir compter le nombre de visite sans faire de suivi des utilisateurs (fonction en cours de test)
+	// Cela crée un evenement page qui est consultable depuis le panneau evenement de GA
+	// Potentiellement cette méthode pourrait être utilisé pour comptabiliser les click sur l'opt-out
+	function callGABeforeConsent() {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+		// Ici on desactive les cookie
+		__gaTracker('create', gaProperty, { 'storage': 'none', 'clientId': '0'});
+		__gaTracker('send', 'event', 'page', 'load', {'nonInteraction': 1});
+	}
+
+
+	// Tag Google Analytics, cette version est avec le tag Universal Analytics
+	function callGoogleAnalytics() {
+		if (firstCall) return;
+		else firstCall = true;
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', gaProperty, 'auto');  // Replace with your property ID.
+		ga('send', 'pageview');
+	}
+
+	return {
+		
+			// La fonction d'opt-out   
+		 gaOptout: function() {
+			document.cookie = disableStr + '=true;'+ getCookieExpireDate() + ' ; ' +  getCookieDomainName() +' ; path=/';       
+			document.cookie = 'hasConsent=false;'+ getCookieExpireDate() + ' ; ' +  getCookieDomainName() + ' ; path=/';
+			var div = document.getElementById('cookie-banner');
+			// on considère que le site a été visité
+			clickprocessed = true;
+			// Ci dessous le code de la bannière affichée une fois que l'utilisateur s'est opposé au dépot
+			// Vous pouvez modifier le contenu et le style
+			if ( div!= null ) div.innerHTML = '<div style="background-color:#fff;text-align:center;padding:5px;font-size:12px;border-bottom:1px solid #eeeeee;" id="cookie-message"> Vous vous êtes opposé \
+			au dépôt de cookies de mesures d\'audience dans votre navigateur '
+			window[disableStr] = true;
+			deleteAnalyticsCookies();
+		},
+
+		
+		 showInform: function() {
+			var div = document.getElementById("inform-and-ask");
+			div.style.display = "";
+		},
+		  
+		  
+		 hideInform: function() {
+			var div = document.getElementById("inform-and-ask");
+			div.style.display = "none";
+			var div = document.getElementById("cookie-banner");
+			div.style.display = "none";
+		},
+		
+		
+		start: function() {
+			//Ce bout de code vérifie que le consentement n'a pas déjà été obtenu avant d'afficher
+			// la bannière
+			var consentCookie =  getCookie('hasConsent');
+			clickprocessed = false; 
+			if (!consentCookie) {//L'utilisateur n'a pas encore de cookie, on affiche la banniére et si il clique sur un autre élément que la banniére, on enregistre le consentement
+				if ( notToTrack() ) { //L'utilisateur a activé DoNotTrack. Do not ask for consent and just opt him out
+					tagAnalyticsCNIL.CookieConsent.gaOptout()
+					alert("You've enabled DNT, we're respecting your choice")
+				} else {
+					if (isToTrack() ) { //DNT is set to 0, no need to ask for consent just set cookies
+						consent();
+					} else {
+						if (window.addEventListener) { // See note https://github.com/CNILlab/Cookie-consent_Google-Analytics/commit/e323b3be2c4a4d05300e35cdc11102841abdcbc9
+						  // Standard browsers
+						  window.addEventListener("load", showBanner, false);
+						  document.addEventListener("click", consent, false);
+						} else {
+						  window.attachEvent("onload", showBanner);
+						  document.attachEvent("onclick", consent);
+						}
+						callGABeforeConsent()
+					}
+				}
+			} else {
+				if (document.cookie.indexOf('hasConsent=false') > -1) 
+					window[disableStr] = true;
+				else 
+					callGoogleAnalytics();
+			}
+		}
+	}
+
+}();
+
+tagAnalyticsCNIL.CookieConsent.start();
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44400092-1', 'auto');
+  ga('send', 'pageview');
+		
+		</script>
+		<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+		<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "LocalBusiness",
+  "name" : "Communauté de Communes Val de Gers",
+  "image" : "http://www.cc-valdegers.fr/wp-content/uploads/site/logoVdG_quadri.jpg",
+  "telephone" : "05 62 05 99 64",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "Maison de l'intercommunalité 1 Place Carnot",
+    "addressLocality" : "SEISSAN",
+    "postalCode" : "32260"
+  },
+  "openingHoursSpecification" : {
+    "@type" : "OpeningHoursSpecification",
+    "dayOfWeek" : {
+      "@type" : "DayOfWeek",
+      "name" : "Lundi au vendredi"
+    },
+    "opens" : "Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30"
+  }
+}
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://www.cc-valdegers.fr/xmlrpc.php">
+		<title>conseil communautaire | Communauté de Communes Val de Gers</title>
+		<!-- All In One SEO Pack 3.5.2[13308,13411] -->
+		<meta name="robots" content="noindex,follow">
+		<script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.cc-valdegers.fr/#organization","url":"https://www.cc-valdegers.fr/","name":"Communauté de Communes Val de Gers","sameAs":[]},{"@type":"WebSite","@id":"https://www.cc-valdegers.fr/#website","url":"https://www.cc-valdegers.fr/","name":"Communauté de Communes Val de Gers","publisher":{"@id":"https://www.cc-valdegers.fr/#organization"}},{"@type":"SearchResultsPage","@id":"https://www.cc-valdegers.fr/search/conseil+communautaire/#searchresultspage","url":"https://www.cc-valdegers.fr/search/conseil+communautaire/","inLanguage":"fr-FR","name":"Search results for 'conseil communautaire'","isPartOf":{"@id":"https://www.cc-valdegers.fr/#website"},"breadcrumb":{"@id":"https://www.cc-valdegers.fr/search/conseil+communautaire/#breadcrumblist"}},{"@type":"BreadcrumbList","@id":"https://www.cc-valdegers.fr/search/conseil+communautaire/#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.cc-valdegers.fr/","url":"https://www.cc-valdegers.fr/","name":"Communauté de Communes Val de Gers"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.cc-valdegers.fr/search/conseil+communautaire/","url":"https://www.cc-valdegers.fr/search/conseil+communautaire/","name":"Search results for 'conseil communautaire'"}}]}]}</script>
+		<script type="text/javascript">
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', 'UA-44400092-1', 'auto');
+				// Plugins
+				
+				ga('send', 'pageview');
+			
+		</script>
+		<script async src="https://www.google-analytics.com/analytics.js"></script>
+		<!-- All In One SEO Pack -->
+		<link rel="dns-prefetch" href="//netdna.bootstrapcdn.com">
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="alternate" type="application/rss+xml" title="Communauté de Communes Val de Gers » Flux" href="https://www.cc-valdegers.fr/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Communauté de Communes Val de Gers » Flux des commentaires" href="https://www.cc-valdegers.fr/comments/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Communauté de Communes Val de Gers » Flux de résultats de la recherche pour « conseil communautaire »" href="https://www.cc-valdegers.fr/search/conseil+communautaire/feed/rss2/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.cc-valdegers.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+		</style>
+		<link rel="stylesheet" id="leaflet-css" href="https://www.cc-valdegers.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.min.css?ver=1.4.0" type="text/css" media="all">
+		<link rel="stylesheet" id="comarquage-css" href="https://www.cc-valdegers.fr/wp-content/plugins/co-marquage-service-public/assets/css/comarquage.css?ver=0.5.52" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="https://www.cc-valdegers.fr/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="default-icon-styles-css" href="https://www.cc-valdegers.fr/wp-content/plugins/svg-vector-icon-plugin/public/../admin/css/wordpress-svg-icon-plugin-style.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.1.0" type="text/css" media="all">
+		<link rel="stylesheet" id="owl-carousel-css" href="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/css/owl.carousel.css?ver=2.2.1" type="text/css" media="all">
+		<link rel="stylesheet" id="owl-carousel-transitions-css" href="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/css/owl.transitions.css?ver=1.3.2" type="text/css" media="all">
+		<link rel="stylesheet" id="colorbox-css" href="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/css/colorbox.css?ver=1.5.14" type="text/css" media="all">
+		<link rel="stylesheet" id="animate-css" href="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/css/animate.css?ver=3.5.1" type="text/css" media="all">
+		<link rel="stylesheet" id="tx-style-css" href="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/css/tx-style.css?ver=1.01" type="text/css" media="all">
+		<link rel="stylesheet" id="qtip2css-css" href="https://www.cc-valdegers.fr/wp-content/plugins/wordpress-tooltips/js/qtip2/jquery.qtip.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="directorycss-css" href="https://www.cc-valdegers.fr/wp-content/plugins/wordpress-tooltips/js/jdirectory/directory.min.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="dlm-frontend-css" href="https://www.cc-valdegers.fr/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="parent-style-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/style.css?ver=5.4.2" type="text/css" media="all">
+		<link rel="stylesheet" id="itransform-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CRoboto%3A300%2C400%2C700&subset=latin%2Clatin-ext" type="text/css" media="all">
+		<link rel="stylesheet" id="genericons-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/fonts/genericons.css?ver=2.09" type="text/css" media="all">
+		<link rel="stylesheet" id="side-menu-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/css/jquery.sidr.dark.css?ver=2015-01-12" type="text/css" media="all">
+		<link rel="stylesheet" id="itrans-slider-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/css/itrans-slider.css?ver=2015-01-12" type="text/css" media="all">
+		<link rel="stylesheet" id="itransform-style-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform%20child/style.css?ver=2016-09-26" type="text/css" media="all">
+		<!--[if lt IE 9]>
+<link rel='stylesheet' id='itransform-ie-css'  href='https://www.cc-valdegers.fr/wp-content/themes/i-transform/css/ie.css?ver=2016-07-18' type='text/css' media='all' />
+<![endif]-->
+		<link rel="stylesheet" id="itrans-extra-stylesheet-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/css/extra-style.css?ver=2016-03-11" type="text/css" media="all">
+		<style id="itrans-extra-stylesheet-inline-css" type="text/css">
+ .site { max-width: 1200px; } 
+		</style>
+		<link rel="stylesheet" id="kirki-styles-css" href="https://www.cc-valdegers.fr/wp-content/themes/i-transform/inc/kirki/assets/css/kirki-styles.css" type="text/css" media="all">
+		<style id="kirki-styles-inline-css" type="text/css">
+body{background-color:rgba(224,224,224,1);background-image:url("");background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:left top;-webkit-background-size:cover;-moz-background-size:cover;-ms-background-size:cover;-o-background-size:cover;}.ibanner{background-image:url("https://www.cc-valdegers.fr/wp-content/uploads/2020/04/logo_arrondi-03.png");background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:left top;-webkit-background-size:cover;-moz-background-size:cover;-ms-background-size:cover;-o-background-size:cover;}
+		</style>
+		<link rel="stylesheet" id="abel-css" href="//fonts.googleapis.com/css?family=Abel%3Aregular&subset=latin&ver=2.9.5" type="text/css" media="all">
+		<link rel="stylesheet" id="yanone-kaffeesatz-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2Cregular%2C700&subset=cyrillic%2Clatin-ext%2Cvietnamese%2Clatin&ver=2.9.5" type="text/css" media="all">
+		<link rel="stylesheet" id="satisfy-css" href="//fonts.googleapis.com/css?family=Satisfy%3Aregular&subset=latin&ver=2.9.5" type="text/css" media="all">
+		<link rel="stylesheet" id="kc-general-css" href="https://www.cc-valdegers.fr/wp-content/plugins/kingcomposer/assets/frontend/css/kingcomposer.min.css?ver=2.9.5" type="text/css" media="all">
+		<link rel="stylesheet" id="kc-animate-css" href="https://www.cc-valdegers.fr/wp-content/plugins/kingcomposer/assets/css/animate.css?ver=2.9.5" type="text/css" media="all">
+		<link rel="stylesheet" id="kc-icon-1-css" href="https://www.cc-valdegers.fr/wp-content/plugins/kingcomposer/assets/css/icons.css?ver=2.9.5" type="text/css" media="all">
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/wordpress-tooltips/js/qtip2/jquery.qtip.min.js?ver=5.4.2"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/wordpress-tooltips/js/jdirectory/jquery.directory.min.js?ver=5.4.2"></script>
+		<link rel="https://api.w.org/" href="https://www.cc-valdegers.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cc-valdegers.fr/xmlrpc.php?rsd">
+		<meta name="generator" content="WordPress 5.4.2">
+		<script type="text/javascript">var kc_script_data={ajax_url:"https://www.cc-valdegers.fr/wp-admin/admin-ajax.php"}</script>
+		<style type="text/css">
+	.tooltips_table .tooltipsall
+	{
+		border-bottom:none !important;
+	}
+	.tooltips_table span {
+    color: inherit !important;
+	}
+	.qtip-content .tooltipsall
+	{
+		border-bottom:none !important;
+		color: inherit !important;
+	}
+	
+		.tooltipsincontent
+	{
+		border-bottom:2px dotted #888;	
+	}
+
+	.tooltipsPopupCreditLink a
+	{
+		color:gray;
+	}	
+		</style>
+		<script type="text/javascript">	
+	if(typeof jQuery=='undefined')
+	{
+		document.write('<'+'script src="http://www.cc-valdegers.fr/wp-content/plugins//wordpress-tooltips/js/qtip/jquery.js" type="text/javascript"></'+'script>');
+	}
+		</script>
+		<script type="text/javascript">
+
+	function toolTips(whichID,theTipContent)
+	{
+			jQuery(whichID).qtip
+			(
+				{
+					content:
+					{
+						text:theTipContent,
+												
+					},
+   					style:
+   					{
+   						classes:' qtip-dark wordpress-tooltip-free qtip-rounded qtip-shadow '
+    				},
+    				position:
+    				{
+    					viewport: jQuery(window),
+    					my: 'bottom center',
+    					at: 'top center'
+    				},
+					show:'mouseover',
+					hide: { fixed: true, delay: 200 }
+				}
+			)
+	}
+		</script>
+		<style type="text/css" id="custom-style">
+a { color: #009bcd;}a:visited { color: #009bcd;}input:focus, textarea:focus {border: 1px solid #009bcd;}button,input[type="submit"],input[type="button"],input[type="reset"] {background: #009bcd; }.nav-container .current_page_item > a > span,.nav-container .current_page_ancestor > a > span,.nav-container .current-menu-item > a span,.nav-container .current-menu-ancestor > a > span,.nav-container li a:hover span {	background-color: #009bcd; /* variable color */}.nav-container li:hover > a,.nav-container li a:hover {	color: #009bcd;}.nav-container .sub-menu,.nav-container .children {	border: 1px solid #e7e7e7;	border-top: 2px solid #009bcd; /* variable color */}.ibanner {	background-color: #009bcd;}.ibanner,.tx-folio-img .folio-links .folio-linkico, .tx-folio-img .folio-links .folio-zoomico {	background-color: #009bcd;}.da-dots span.da-dots-current { background-color: #009bcd;}div#ft-post div.entry-thumbnail:hover > div.comments-link { background-color: #009bcd;}.entry-header h1.entry-title a:hover { color: #009bcd; }.entry-header > div.entry-meta a:hover { color: #009bcd; }.featured-area div.entry-summary > p > a.moretag:hover {	background-color: #009bcd;}.site-content .post div.meta-img div.entry-thumbnail img {	border-top: 2px solid #009bcd;}.site-content div.entry-thumbnail .stickyonimg,.site-content div.entry-thumbnail .dateonimg {	background-color: #009bcd;}.site-content div.entry-nothumb .stickyonimg,.site-content div.entry-nothumb .dateonimg {	background-color: #009bcd;}.entry-meta a {	color: #009bcd;}.entry-content a,.comment-content a {	color: #009bcd;}.format-status .entry-content .page-links a,.format-gallery .entry-content .page-links a,.format-chat .entry-content .page-links a,.format-quote .entry-content .page-links a,.page-links a {	background: #009bcd;	border: 1px solid #009bcd;	color: #ffffff;}.format-gallery .entry-content .page-links a:hover,.format-audio .entry-content .page-links a:hover,.format-status .entry-content .page-links a:hover,.format-video .entry-content .page-links a:hover,.format-chat .entry-content .page-links a:hover,.format-quote .entry-content .page-links a:hover,.page-links a:hover {	color: #009bcd;}.iheader {background-color: #009bcd;}.iheader.front { background-color: #009bcd;}.navigation a { color: #009bcd;}.paging-navigation div.navigation > ul > li a:hover,.paging-navigation div.navigation > ul > li.active > a {	color: #009bcd;	border-color: #009bcd;}.comment-author .fn,.comment-author .url,.comment-reply-link,.comment-reply-login {	color: #009bcd;}.comment-body a,.comment-meta,.comment-meta a {	color: #009bcd;}.widget a:hover {	color: #009bcd;}.widget_calendar a:hover {	background-color: #009bcd;	color: #ffffff;	}.widget_calendar td#next a:hover,.widget_calendar td#prev a:hover {	background-color: #009bcd;	color: #ffffff;	}.site-footer div.widget-area .widget a:hover {	color: #009bcd;}.site-main div.widget-area .widget_calendar a:hover,.site-footer div.widget-area .widget_calendar a:hover {	background-color: #009bcd;	color: #ffffff;	}.da-dots > span > span {background-color: #009bcd;}.widget a:visited,.entry-header h1.entry-title a:visited {	color: #474747;}.widget a:hover,.entry-header h1.entry-title a:hover {	color: #009bcd;}.error404 .page-title:before {	color: #009bcd;}.format-status {	background-color: #009bcd;}.content-area .tx-service .tx-service-icon span {	color: #009bcd;	border-color:  #009bcd;}.content-area .tx-service:hover .tx-service-icon span {	background-color: #009bcd;}.content-area .tx-service .tx-service-icon span i {	color: #009bcd;	}.content-area .tx-service:hover .tx-service-icon span i {	color: #FFFFFF;	}.post .post-mainpart .entry-summary a.moretag {color: #FFFFFF; background-color: #009bcd;}
+		</style>
+		<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}
+		</style>
+		<link rel="icon" href="https://www.cc-valdegers.fr/wp-content/uploads/site/logoVdG_quadri_mini-150x150.jpg" sizes="32x32">
+		<link rel="icon" href="https://www.cc-valdegers.fr/wp-content/uploads/site/logoVdG_quadri_mini.jpg" sizes="192x192">
+		<link rel="apple-touch-icon" href="https://www.cc-valdegers.fr/wp-content/uploads/site/logoVdG_quadri_mini.jpg">
+		<meta name="msapplication-TileImage" content="https://www.cc-valdegers.fr/wp-content/uploads/site/logoVdG_quadri_mini.jpg">
+	</head>
+	<body class="search search-results kc-css-system onecol-blog sidebar">
+		<div id="page" class="hfeed site">
+			<div class="headerwrap">
+				<header id="masthead" class="site-header" role="banner">
+					<div class="headerinnerwrap"><a class="home-link" href="https://www.cc-valdegers.fr/" title="Communauté de Communes Val de Gers" rel="home"> <span><img src="https://www.cc-valdegers.fr/wp-content/uploads/site/entete_homepage-06.png" alt="Communauté de Communes Val de Gers"></span> </a>
+						<div id="navbar" class="navbar">
+							<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+								<h3 class="menu-toggle">Menu</h3><a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+								<div class="nav-container">
+									<ul id="menu-menu-principal" class="nav-menu">
+										<li id="menu-item-4779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4779"><a href="http://www.cc-valdegers.fr">Accueil</a></li>
+										<li id="menu-item-4866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4866"><a href="#">Val de Gers</a>
+											<ul class="sub-menu">
+												<li id="menu-item-2296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"><a href="https://www.cc-valdegers.fr/communaute-communes/presentation/">Présentation</a></li>
+												<li id="menu-item-2294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2294"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/">Communes membres</a></li>
+												<li id="menu-item-2452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2452"><a href="https://www.cc-valdegers.fr/communaute-communes/delegues-communautaires/">Délégués communautaires</a></li>
+												<li id="menu-item-2295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2295"><a href="https://www.cc-valdegers.fr/communaute-communes/gouvernance/">Gouvernance</a></li>
+												<li id="menu-item-2759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2759"><a href="https://www.cc-valdegers.fr/publications/">Publications</a></li>
+												<li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2303"><a href="https://www.cc-valdegers.fr/communaute-communes/recrutement/">Recrutement</a></li>
+												<li id="menu-item-2288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2288"><a href="https://www.cc-valdegers.fr/annuaire-services/">Annuaire des Services</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-2289" class="sub-menu1 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2289"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/">Les 45 Communes</a>
+											<ul class="sub-menu">
+												<li id="menu-item-3712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3712"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/arrouede/">Arrouède</a></li>
+												<li id="menu-item-2367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2367"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/aujan-mournede/">Aujan-Mournède</a></li>
+												<li id="menu-item-3711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3711"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/aussos/">Aussos</a></li>
+												<li id="menu-item-2368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2368"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/barran/">Barran</a></li>
+												<li id="menu-item-2369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2369"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/bellegarde-adoulins/">Bellegarde-Adoulins</a></li>
+												<li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/bezues-bajon/">Bézues-Bajon</a></li>
+												<li id="menu-item-2371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2371"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/boucagneres/">Boucagnères</a></li>
+												<li id="menu-item-3710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3710"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/cabas-loumasses/">Cabas-Loumassès</a></li>
+												<li id="menu-item-2374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2374"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/chelan/">Chélan</a></li>
+												<li id="menu-item-2375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2375"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/cuelas/">Cuélas</a></li>
+												<li id="menu-item-2376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2376"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/durban/">Durban</a></li>
+												<li id="menu-item-2377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2377"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/esclassan-labastide/">Esclassan-Labastide</a></li>
+												<li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/faget-abbatial/">Faget-Abbatial</a></li>
+												<li id="menu-item-2379" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2379"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/haulies/">Haulies</a></li>
+												<li id="menu-item-2380" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2380"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/labarthe/">Labarthe</a></li>
+												<li id="menu-item-3709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3709"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/lalanne-arque/">Lalanne-Arqué</a></li>
+												<li id="menu-item-2382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2382"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/lamaguere/">Lamaguère</a></li>
+												<li id="menu-item-2383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2383"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/lasseran/">Lasséran</a></li>
+												<li id="menu-item-2384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2384"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/lasseube-propre/">Lasseube-Propre</a></li>
+												<li id="menu-item-2372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2372"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/le-brouilh-monbert/">Le Brouilh-Monbert</a></li>
+												<li id="menu-item-2386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2386"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/lourties-monbrun/">Lourties-Monbrun</a></li>
+												<li id="menu-item-3708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3708"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/manent-montane/">Manent-Montané</a></li>
+												<li id="menu-item-2388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2388"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/masseube/">Masseube</a></li>
+												<li id="menu-item-2390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2390"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/meilhan/">Meilhan</a></li>
+												<li id="menu-item-3707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3707"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/monbardon/">Monbardon</a></li>
+												<li id="menu-item-2404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/moncorneil-grazan/">Moncorneil-Grazan</a></li>
+												<li id="menu-item-2405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2405"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/monferran-plaves/">Monferran-Plavès</a></li>
+												<li id="menu-item-2406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2406"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/monlaur-bernet/">Monlaur-Bernet</a></li>
+												<li id="menu-item-2407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2407"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/mont-astarac/">Mont d’Astarac</a></li>
+												<li id="menu-item-3706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3706"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/monties/">Monties</a></li>
+												<li id="menu-item-2408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2408"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/orbessan/">Orbessan</a></li>
+												<li id="menu-item-2409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2409"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/ornezan/">Ornézan</a></li>
+												<li id="menu-item-2410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2410"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/panassac/">Panassac</a></li>
+												<li id="menu-item-2411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2411"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/ponsan-soubiran/">Ponsan-Soubiran</a></li>
+												<li id="menu-item-2412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/pouyloubrin/">Pouyloubrin</a></li>
+												<li id="menu-item-3705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3705"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/saint-blancard/">Saint Blancard</a></li>
+												<li id="menu-item-2414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2414"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/saint-arroman/">Saint Arroman</a></li>
+												<li id="menu-item-2413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2413"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/saint-jean-le-comtal/">Saint Jean Le Comtal</a></li>
+												<li id="menu-item-2415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2415"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/samaran/">Samaran</a></li>
+												<li id="menu-item-2416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2416"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/sansan/">Sansan</a></li>
+												<li id="menu-item-3704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/sarcos/">Sarcos</a></li>
+												<li id="menu-item-2417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2417"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/seissan/">Seissan</a></li>
+												<li id="menu-item-2418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2418"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/sere/">Sère</a></li>
+												<li id="menu-item-2419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2419"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/tachoires/">Tachoires</a></li>
+												<li id="menu-item-2420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2420"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/traverseres/">Traversères</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-4867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4867"><a href="#">Vivre au quotidien</a>
+											<ul class="sub-menu">
+												<li id="menu-item-2301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2301"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/">Enfance & Jeunesse ></a>
+													<ul class="sub-menu">
+														<li id="menu-item-2299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/services-petite-enfance/">Petite Enfance 0-6 ans</a></li>
+														<li id="menu-item-2298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/services-enfance/">Enfance 3-12 ans</a></li>
+														<li id="menu-item-2297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2297"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/services-jeunesse/">Jeunesse 12-17 ans</a></li>
+														<li id="menu-item-2603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2603"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/ludotheque/">Ludothèque</a></li>
+														<li id="menu-item-3716" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3716"><a href="https://www.cc-valdegers.fr/actu/programmes-enfance/">Programmes des services enfance & jeunesse</a></li>
+													</ul>
+												</li>
+												<li id="menu-item-2302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2302"><a href="https://www.cc-valdegers.fr/services-a-la-population/action-sociale/">Personnes âgées ></a>
+													<ul class="sub-menu">
+														<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://www.cc-valdegers.fr/services-a-la-population/action-sociale/le-service-de-portage-de-repas-a-domicile-sprad/">Portage de repas</a></li>
+														<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://www.cc-valdegers.fr/services-a-la-population/action-sociale/le-service-daide-et-daccompagnement-a-domicile-saad/">Aide à domicile</a></li>
+														<li id="menu-item-3245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3245"><a href="https://www.cc-valdegers.fr/services-a-la-population/action-sociale/lehpad-val-de-gers-a-masseube/">EHPAD</a></li>
+													</ul>
+												</li>
+												<li id="menu-item-9470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9470"><a href="https://www.cc-valdegers.fr/services-a-la-population/espace-ressources/">Espace RESSOURCES</a></li>
+												<li id="menu-item-9273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9273"><a href="https://www.cc-valdegers.fr/services-a-la-population/logement/">Logement</a></li>
+												<li id="menu-item-7845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7845"><a href="https://www.cc-valdegers.fr/services-a-la-population/maison-medicale/">Maison médicale</a></li>
+												<li id="menu-item-2442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2442"><a href="https://www.cc-valdegers.fr/services-a-la-population/plan-tres-haut-debit/">Très Haut Débit</a></li>
+												<li id="menu-item-4427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4427"><a href="https://www.cc-valdegers.fr/services-a-la-population/demarches-administratives/">Service-public.fr</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-4868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4868"><a href="#">Entreprendre</a>
+											<ul class="sub-menu">
+												<li id="menu-item-2569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2569"><a href="https://www.cc-valdegers.fr/economie/">Action économique</a></li>
+											</ul>
+										</li>
+										<li id="menu-item-4869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4869"><a href="#">Découvrir</a>
+											<ul class="sub-menu">
+												<li id="menu-item-2570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2570"><a href="https://www.cc-valdegers.fr/tourisme/">Tourisme</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<!-- #site-navigation -->
+							<div class="topsearch">
+								<form role="search" method="get" class="search-form" action="https://www.cc-valdegers.fr/"><label> <span class="screen-reader-text">Rechercher :</span> <input type="search" class="search-field" placeholder="Rechercher…" value="conseil communautaire" name="s"> </label> <input type="submit" class="search-submit" value="Rechercher"></form>
+							</div>
+						</div>
+						<!-- #navbar -->
+						<div class="clear"></div>
+					</div>
+				</header>
+				<!-- #masthead -->
+			</div>
+			<!-- #Banner -->
+			<div class="iheader">
+				<div class="titlebar">
+					<h1></h1>
+				</div>
+			</div>
+			<div id="main" class="site-main">
+				<div id="primary" class="content-area">
+					<div id="content" class="site-content" role="main">
+						<header class="page-header">
+							<h1 class="page-title">Search Results for: conseil communautaire</h1>
+						</header>
+						<article id="post-10169" class="post-10169 post type-post status-publish format-standard hentry category-conseil">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">06</span><span class="pmonth">Mar/20</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet/intranet-elus/conseil/conseils-communautaires-2020/" rel="bookmark">CONSEILS COMMUNAUTAIRES 2020</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-8519" class="post-8519 post type-post status-publish format-standard hentry category-conseil">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">05</span><span class="pmonth">Mar/19</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet/intranet-elus/conseil/conseils-communautaires-2019/" rel="bookmark">CONSEILS COMMUNAUTAIRES 2019</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-6152" class="post-6152 post type-post status-publish format-standard hentry category-conseil">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">09</span><span class="pmonth">Fév/18</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet/intranet-elus/conseil/conseils-communautaires-2018/" rel="bookmark">CONSEILS COMMUNAUTAIRES 2018</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-5715" class="post-5715 post type-post status-publish format-standard hentry category-conseil">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">13</span><span class="pmonth">Nov/17</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet/intranet-elus/conseil/conseils-communautaires-2017/" rel="bookmark">Conseils Communautaires 2017</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-5745" class="post-5745 page type-page status-publish hentry">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">13</span><span class="pmonth">Nov/17</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet-elus/intranet-documentation/" rel="bookmark">Documentation</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-5613" class="post-5613 page type-page status-publish hentry">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">10</span><span class="pmonth">Nov/17</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet-elus/intranet-assemblees/" rel="bookmark">Assemblées</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-5591" class="post-5591 page type-page status-publish hentry">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">06</span><span class="pmonth">Nov/17</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/intranet-elus/" rel="bookmark">Intranet Élus</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<div class="members-access-error">
+										<h4 style="padding-left: 60px"><span style="color: #0f97d6"><strong><span style="color: #333333">Nous sommes désolés, vous n’êtes pas autorisé à voir ce contenu…</span><em> <br> </em></strong></span></h4>
+										<p> </p>
+										<hr style="padding-left: 60px">
+										<p style="padding-left: 60px">Accès INTRANET ÉLUS :</p>
+										<p style="padding-left: 60px"><a class="tx-button" href="http://www.cc-valdegers.fr/login-intranet-elus/" target="_self" style="color: white; background-color: #82bc3a">Connexion</a></p>
+									</div>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-2242" class="post-2242 page type-page status-publish hentry">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">26</span><span class="pmonth">Mar/15</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/communaute-communes/gouvernance/" rel="bookmark">Gouvernance</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary">
+									<p>Le Président : François RIVIÈRE • Chef de l’exécutif, il met en œuvre les décisions du Conseil Communautaire et du Bureau. Il est le chef du personnel de la collectivité. • Il s’appuie sur les 3<a class="moretag" href="https://www.cc-valdegers.fr/communaute-communes/gouvernance/">Read More…</a></p>
+								</div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-6441" class="post-6441 post type-post status-publish format-standard hentry category-actu">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">28</span><span class="pmonth">Fév/18</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/actu/publications/" rel="bookmark">Publications</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary"></div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+						<article id="post-271" class="post-271 page type-page status-publish hentry">
+							<div class="meta-img">
+								<div class="entry-nothumb">
+									<div class="noimg-bg"></div>
+									<div class="dateonimg"><span class="pdate">28</span><span class="pmonth">Juin/08</span></div>
+								</div>
+							</div>
+							<div class="post-mainpart">
+								<header class="entry-header">
+									<h1 class="entry-title"><a href="https://www.cc-valdegers.fr/" rel="bookmark">Bienvenue sur le site de la Communauté de Communes Val de Gers</a></h1>
+								</header>
+								<!-- .entry-header -->
+								<div class="entry-summary"></div>
+								<!-- .entry-summary -->
+								<footer class="entry-meta"></footer>
+								<!-- .entry-meta -->
+							</div>
+						</article>
+						<!-- #post -->
+					</div>
+					<!-- #content -->
+					<div id="tertiary" class="sidebar-container" role="complementary">
+						<div class="sidebar-inner">
+							<div class="widget-area">
+								<aside id="custom_html-3" class="widget_text widget widget_custom_html">
+									<h3 class="widget-title">Prochainement…</h3>
+									<div class="textwidget custom-html-widget"><a title="Portail Famille Val de Gers"> <span><img src="https://www.cc-valdegers.fr/wp-content/uploads/site/portail-famille.png" alt="Portail Famille"></span> </a></div>
+								</aside>
+								<aside id="custom_html-5" class="widget_text widget widget_custom_html">
+									<h3 class="widget-title">Actualités</h3>
+									<div class="textwidget custom-html-widget"><a href="https://www.cc-valdegers.fr/services-a-la-population/espace-ressources/">- Nouveau service : l'Espace RESSOURCES Val de Gers vous accompagne dans vos démarches</a> <br> <br><a href="https://www.cc-valdegers.fr/services-a-la-population/logement/">- Opération Programmée d'Amélioration de l'Habitat en Astarac</a> <br> <br><a href="https://www.cc-valdegers.fr/#pnr">- Vers un Parc Naturel Régional Astarac</a> <br> <br> <a href="https://www.cc-valdegers.fr/actu/programmes-enfance/">- Tous les programmes des Services Enfance et Jeunesse</a> <br> <br> <a href="https://www.cc-valdegers.fr/wp-content/uploads/2019/02/ludo-pixel_fev2019-01.png">- Agenda de la la ludothèque</a> <br> <br></div>
+								</aside>
+								<aside id="widget-nx-image-3" class="widget widget-nx-image">
+									<h3 class="widget-title">Les 45 Communes</h3>
+									<div class="sidebar-ad-grid">
+										<ul class="clearfix">
+											<li><a href="https://www.cc-valdegers.fr/communaute-communes/commune/?customize_changeset_uuid=1daac749-1dad-4273-a384-112e45fce6de" target="_blank"><img src="https://www.cc-valdegers.fr/wp-content/uploads/site/carte_vdg.png" alt="advert"></a></li>
+										</ul>
+									</div>
+								</aside>
+								<aside id="search-4" class="widget widget_search">
+									<form role="search" method="get" class="search-form" action="https://www.cc-valdegers.fr/"><label> <span class="screen-reader-text">Rechercher :</span> <input type="search" class="search-field" placeholder="Rechercher…" value="conseil communautaire" name="s"> </label> <input type="submit" class="search-submit" value="Rechercher"></form>
+								</aside>
+							</div>
+							<!-- .widget-area -->
+						</div>
+						<!-- .sidebar-inner -->
+					</div>
+					<!-- #tertiary -->
+				</div>
+				<!-- #primary -->
+			</div>
+			<!-- #main -->
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="secondary" class="sidebar-container" role="complementary">
+					<div class="widget-area">
+						<aside id="nav_menu-9" class="widget widget_nav_menu">
+							<h3 class="widget-title">Accès direct :</h3>
+							<div class="menu-footer-container">
+								<ul id="menu-footer" class="menu">
+									<li id="menu-item-3560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3560"><a href="https://www.cc-valdegers.fr/actualites/">Actualités</a></li>
+									<li id="menu-item-3561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3561"><a href="https://www.cc-valdegers.fr/communaute-communes/commune/">Communes membres</a></li>
+									<li id="menu-item-3562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3562"><a href="https://www.cc-valdegers.fr/services-a-la-population/services-enfance/">Services à l’enfance</a></li>
+									<li id="menu-item-3564" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3564"><a href="https://www.cc-valdegers.fr/actu/programmes-enfance/">Programmes enfance jeunesse</a></li>
+									<li id="menu-item-3563" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3563"><a href="https://www.cc-valdegers.fr/services-a-la-population/action-sociale/">Services aux Personnes-Âgées</a></li>
+									<li id="menu-item-3565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3565"><a href="https://www.cc-valdegers.fr/tourisme/">Office de Tourisme</a></li>
+									<li id="menu-item-3566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3566"><a href="https://www.cc-valdegers.fr/publications/">Publications</a></li>
+								</ul>
+							</div>
+						</aside>
+						<aside id="text-17" class="widget widget_text">
+							<div class="textwidget"></div>
+						</aside>
+						<aside id="text-19" class="widget widget_text">
+							<div class="textwidget"></div>
+						</aside>
+						<aside id="text-15" class="widget widget_text">
+							<h3 class="widget-title">Communauté de Communes Val de Gers</h3>
+							<div class="textwidget">
+								<p>Maison de l’intercommunalité<br> 1 Place Carnot – 32260 SEISSAN<br> tel: 05 62 05 99 64<br> fax: 05 62 61 84 49</p>
+								<p>Horaires d’ouverture<br> Lundi au vendredi :<br> 9h00/12h00 et 13h30/17h30</p>
+							</div>
+						</aside>
+					</div>
+					<!-- .widget-area -->
+				</div>
+				<!-- #secondary -->
+				<div class="site-info">
+					<div class="credit-info"><a href="http://www.cc-valdegers.fr/annuaire-services/">Contact</a> | <a href="http://www.cc-valdegers.fr/mentions-legales/">Mentions légales</a> | <a href="http://www.cc-valdegers.fr/plan-du-site/">Plan du site</a> | <a href="http://www.cc-valdegers.fr/partenaires/">Espace Partenaires</a> | <a href="http://www.cc-valdegers.fr/login-intranet-elus/">Intranet élus</a></div>
+				</div>
+				<!-- .site-info -->
+			</footer>
+			<!-- #colophon -->
+		</div>
+		<!-- #page -->
+		<script type="text/javascript">
+jQuery("document").ready(function()
+{
+	jQuery("body img").each(function()
+	{
+		if ((jQuery(this).parent("a").attr('title') != '' )  && (jQuery(this).parent("a").attr('title') != undefined ))
+		{
+			toolTips(jQuery(this).parent("a"),jQuery(this).parent("a").attr('title'));
+		}
+		else
+		{
+			var tempAlt = jQuery(this).attr('alt');
+			if (typeof(tempAlt) !== "undefined")
+			{
+				tempAlt = tempAlt.replace(' ', '');
+				if (tempAlt == '')
+				{
+
+				}
+				else
+				{
+					toolTips(jQuery(this),jQuery(this).attr('alt'));
+				}
+			}
+		}
+	}
+
+	);
+})
+		</script>
+		<script type="text/javascript">
+var inboxs = new Array();
+inboxs['language'] = "en";
+inboxs['navitemselectedsize'] = '18px';
+inboxs['selectors'] = '.tooltips_list > span';
+inboxs['number'] = 'yes';
+jQuery('.tooltips_directory').directory(inboxs);
+		</script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/co-marquage-service-public/modules/leaflet/leaflet.js?ver=1.4.0"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/co-marquage-service-public/assets/js/comarquage.js?ver=0.5.52"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/imagesloaded.min.js?ver=3.2.0"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/masonry.min.js?ver=3.3.2"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/js/owl.carousel.min.js?ver=1.3.2"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/js/jquery.colorbox-min.js?ver=1.5.14"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/js/jquery.inview.min.js?ver=1.0.0"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/templatesnext-toolkit/js/tx-script.js?ver=2013-07-18"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/themes/i-transform/js/modernizr.custom.js?ver=2014-01-13"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/themes/i-transform/js/waypoints.min.js?ver=2014-01-13"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/themes/i-transform/js/jquery.sidr.min.js?ver=2014-01-13"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/themes/i-transform/js/functions.js?ver=2016-10-18"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-content/plugins/kingcomposer/assets/frontend/js/kingcomposer.min.js?ver=2.9.5"></script>
+		<script type="text/javascript" src="https://www.cc-valdegers.fr/wp-includes/js/wp-embed.min.js?ver=5.4.2"></script>
+	</body>
+</html>
