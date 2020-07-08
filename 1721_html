@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Pays de Maurienne - (Site du Syndicat du Pays de Maurienne)</title>
+		<meta name="Description" content="Site de la vallée de la Maurienne : agenda, annuaires, hébergement, informations, culture, santé, social, commerces, artisanat, missions du Syndicat du Pays de Maurienne... La vallée de Maurienne se compose de 56 communes regroupées en 5 communautés de communes.">
+		<meta name="Author" content="Alliance Réseaux">
+		<meta name="Date-Creation-yyyymmdd" content="20181001">
+		<meta name="Identifier-URL" content="www.maurienne.fr">
+		<meta name="Publisher" content="Alliance Réseaux">
+		<meta name="Copyright" content="Syndicat du Pays de Maurienne">
+		<link rel="icon" href="../images/favicon.png" type="image/png">
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		<script type="text/javascript" src="http://gadget.open-system.fr/jquery.lightbox.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../script/lightbox/jquery.lightbox-0.5.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../script/ui/jquery.ui.datepicker-fr.js"></script>
+		<link rel="stylesheet" type="text/css" href="../script/ui/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="../script/ui/ui.tabs.css">
+		<script type="text/javascript" src="../script/jcarousellite/jcarousellite_1.0.1.min.js"></script>
+		<script type="text/javascript" src="../script/jcarousellite/jquery.mousewheel.min.js"></script>
+		<link type="text/css" href="../script/galleryview/galleryview.css" rel="stylesheet">
+		<script type="text/javascript" src="../script/galleryview/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../script/galleryview/jquery.galleryview-1.1.js"></script>
+		<script type="text/javascript" src="../script/galleryview/jquery.timers-1.1.2.js"></script>
+		<script type="text/javascript" src="../script/flash/jquery.flash.js"></script>
+		<script type="text/JavaScript" src="../script/utils.js"></script>
+		<script type="text/javascript" src="../script/agenda/widget-agenda.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://js.for-system.com/osscript/prettyphoto/prettyPhoto.css">
+		<script type="text/javascript" src="https://js.for-system.com/osscript/prettyphoto/jquery.prettyPhoto.js"></script>
+		<!-- Slick -->
+		<link rel="stylesheet" type="text/css" href="../script/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="../script/slick/slick-theme.css">
+		<script type="text/javascript" src="../script/slick/slick.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet" type="text/css">
+		<script src="../script/bxslider/jquery.bxslider.js"></script>
+		<link href="../script/bxslider/jquery.bxslider.css" rel="stylesheet">
+		<script type="text/javascript" src="../script/jquery.easing.1.3.js"></script>
+		<!--Inclure lib leaflet-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+		<style>
+#mapid { width:100%; height: 320px; }
+#DetailAnnuaire #mapid { width:100%; height: 300px; }
+.leaflet-popup-content {margin: 10px 20px 37px;}
+.leaflet-touch .leaflet-bar a {width: 30px;height: 30px;line-height: 30px;color: #000!important;text-decoration: none!important;}
+.leaflet-control-attribution a {text-decoration: none!important; color: #000!important;}
+.leaflet-popup-content h4 {font-family: 'Roboto', sans-serif;color: #2182c0;font-size: 19px;margin-bottom: 2px!important;}
+.leaflet-popup-content .commune {font-weight:bold;}
+.leaflet-popup-content .bouton.plusdinfos {background-color: #2182c0;bottom: 6%;color: #fff;font-size: 10px;padding: 5px 7px;position: absolute;right: 2%;text-decoration: none;text-transform: uppercase;z-index: 101;display: inline-block;}
+#DetailAnnuaire .leaflet-popup-content {margin: 10px 20px;box-sizing:border-box;}
+#DetailAnnuaire .leaflet-popup-content .bouton.plusdinfos {display: none;}
+.leaflet-top {right: 10px;left:auto;}
+
+@media screen and (max-width: 950px) {
+#DetailAnnuaire #mapid {height: 300px;}
+}
+		</style>
+		<!--
+<script type="text/javascript" src="http://gadget.open-system.fr/widgets-libs/rel/carto/carto-v2v3-1.0.min.js"></script> 
+<script type="text/javascript" src="http://gadget.open-system.fr/widgets-libs/rel/carto/carto-utils-v2v3-1.0.min.js"></script> 
+-->
+		<script type="text/javascript">
+var LatitudeDefaut=45.283737599999995;
+var LongitudeDefaut=6.3488;
+var ZoomDefaut=13;	
+		</script>
+		<!--[if IE 6]>
+<script src="../script/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('.png');
+</script>
+<![endif]-->
+		<script type="text/javascript">
+$(function(){
+	$('a.ActiveLightBox').lightBox();
+	$("a[rel^='prettyPhoto']").prettyPhoto({deeplinking:false});	
+	
+});
+	
+		</script>
+		<script type="text/javascript">
+	var BaseUrl="http://www.maurienne.fr/";
+		</script>
+		<link rel="stylesheet" type="text/css" href="../css/surcharge-accueil.css">
+		<link rel="stylesheet" type="text/css" href="../css/style_infolive.css">
+	</head>
+	<body class="pageaccueil">
+		<div id="Header">
+			<div id="Entete"><a id="logoSPM" href="index.aspx" alt="Syndicat du Pays de Maurienne, Savoie - France" title="Syndicat du Pays de Maurienne, Savoie - France">Syndicat du Pays de Maurienne, Savoie - France</a>
+				<div id="outils"><a href="mailto:web@maurienne.fr" id="contactMaurienne" alt="Contacter le Syndicat du Pays de Maurienne" title="Contacter le Syndicat du Pays de Maurienne">Contacter le Syndicat du Pays de Maurienne</a> <a href="https://www.facebook.com/maurienne73" target="_blank" id="facebookMaurienne" alt="Suivez-nous sur Facebook" title="Suivez-nous sur Facebook">Suivez-nous sur Facebook</a>
+					<div id="blocMoteur">
+						<div id="MoteurRecherche">
+							<!-- Google CSE Search Box Begins -->
+							<form action="page-resultats.aspx" id="cse-search-box">
+								<div><input type="hidden" name="cx" value="006910338974245943240:fjk6stq6q1g"><input type="hidden" name="cof" value="FORID:10"><input type="hidden" name="ie" value="UTF-8"><input name="q" type="text" onclick="this.value=''" class="ChampRecherche" value="Recherchez sur le site" size="15" height="14"><input type="submit" name="sa" value="" class="InputOk"></div>
+							</form>
+							<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=fr"></script>
+							<!-- Google CSE Search Box Ends -->
+						</div>
+					</div>
+				</div><a href="http://www.maurienne-tourisme.com" target="_blank" id="lienMaurienneTourisme" alt="Lien vers Maurienne Tourisme" title="Lien vers Maurienne Tourisme">Maurienne Tourisme</a>
+				<div class="clear"></div>
+			</div>
+			<div id="navigation">
+				<div id="menu" class="png" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+					<ul id="imenus0" class="menu png">
+						<li id="SousMenu16" class="MenuN1 menu-agendas ">
+							<h2><a target="" href="il4-maurienne_p16-agendas.aspx" shape="rect"><span>Agendas</span></a></h2>
+							<div>
+								<ul style="">
+									<li class=""><a target="" href="http://www.maurienne.fr/fr/il4-annuaire,agenda_p260-agenda-maurienne.aspx" shape="rect"><span> Agenda Maurienne</span></a></li>
+									<li class=""><a target="" href="il4-agendaculturel.aspx" shape="rect"><span> Agenda Culturel</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li id="SousMenu255" class="MenuN1 menu-services ">
+							<h2><a target="" href="il4-annuaire_p255-services.aspx" shape="rect"><span>Services </span></a></h2>
+							<div>
+								<ul style="">
+									<li class=""><a target="" href="il4-annuaire_p278-collectivites.aspx" shape="rect"><span> Collectivités</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p289-culture-et-patrimoine.aspx" shape="rect"><span> Culture et Patrimoine</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p290-economie-commerce.aspx" shape="rect"><span> Economie / Commerce</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p276-emploi-formation.aspx" shape="rect"><span> Emploi / Formation</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p297-energie.aspx" shape="rect"><span> Energie</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p284-enfance-jeunesse.aspx" shape="rect"><span> Enfance / Jeunesse</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p287-enseignement-formation.aspx" shape="rect"><span> Enseignement / Formation</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p884-handicap.aspx" shape="rect"><span> Handicap</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p285-logement.aspx" shape="rect"><span> Logement</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p288-media.aspx" shape="rect"><span> Média</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p291-secours-securite.aspx" shape="rect"><span> Secours / Sécurité</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p294-seniors.aspx" shape="rect"><span> Séniors</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p274-services-au-public.aspx" shape="rect"><span> Services au public</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p295-services-de-sante.aspx" shape="rect"><span> Services de Santé</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p292-spiritualite-culte.aspx" shape="rect"><span> Spiritualité / Culte</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p293-sports-loisirs.aspx" shape="rect"><span> Sports / Loisirs</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p277-tourisme.aspx" shape="rect"><span> Tourisme</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p286-transport.aspx" shape="rect"><span> Transport</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p275-autres-equipements.aspx" shape="rect"><span> Autres équipements</span></a></li>
+									<li class=""><a target="" href="il4-annuaire_p296-autres.aspx" shape="rect"><span> Autres</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li id="SousMenu402" class="MenuN1 menu-vivre ">
+							<h2><a target="" href="il4-maurienne_p402-vivre-en-maurienne.aspx" shape="rect"><span>Vivre en Maurienne</span></a></h2>
+							<div>
+								<ul style="">
+									<li class=""><a target="" href="il4-maurienne_p403-au-quotidien.aspx" shape="rect"><span> Au quotidien </span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p407-travailler-en-maurienne.aspx" shape="rect"><span> Travailler en Maurienne</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p410-en-cas-de-pepin.aspx" shape="rect"><span> En cas de pépin</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p475-valoriser-mon-temps-libre.aspx" shape="rect"><span> Valoriser mon temps libre</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p412-investir-le-territoire.aspx" shape="rect"><span> Investir le territoire</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p467-connaitre-mon-territoire.aspx" shape="rect"><span> Connaître mon territoire</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p225-sante-social.aspx" shape="rect"><span> Santé - Social</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li id="SousMenu789" class="MenuN1 menu-accueil ">
+							<h2><a target="" href="http://www.maurienne.fr/fr/index.aspx" shape="rect"><span>Accueil</span></a></h2>
+						</li>
+						<li id="SousMenu786" class="MenuN1 menu-yatou ">
+							<h2><a target="_blank" href="http://www.yatou-en-maurienne.fr/fr/index.aspx" shape="rect"><span>Yatou en Maurienne</span></a></h2>
+						</li>
+						<li id="SousMenu17" class="MenuN1 menu-fil ">
+							<h2><a target="" href="il4-filmaurienne_p17-se-loger-en-maurienne.aspx" shape="rect"><span>Se loger en Maurienne</span></a></h2>
+						</li>
+						<li id="SousMenu4" class="MenuN1 menu-spm ">
+							<h2><a target="" href="il4-maurienne_p4-syndicat-du-pays-de-maurienne.aspx" shape="rect"><span>Syndicat du Pays de Maurienne</span></a></h2>
+							<div>
+								<ul style="">
+									<li class=""><a target="" href="il4-maurienne_p21-presentation.aspx" shape="rect"><span> Présentation</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p215-leader-circuits-courts.aspx" shape="rect"><span> LEADER - Circuits courts</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p22-contrats-territoriaux.aspx" shape="rect"><span> Contrats territoriaux</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p23-cooperation-transfrontaliere.aspx" shape="rect"><span> Coopération transfrontalière</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p924-piter-coeuralp.aspx" shape="rect"><span> PITer CœurAlp</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p163-scot-du-pays-de-maurienne.aspx" shape="rect"><span> SCoT du Pays de Maurienne</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p217-tepos-cv.aspx" shape="rect"><span> TEPoS-CV</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p204-schema-de-services.aspx" shape="rect"><span> Schéma de Services</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p24-commerce-et-artisanat.aspx" shape="rect"><span> Commerce et artisanat</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p25-developpement-culturel.aspx" shape="rect"><span> Développement culturel</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p790-etablissement-d-enseignement-artistique-maurienne.aspx" shape="rect"><span> Etablissement d'Enseignement Artistique Maurienne</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p219-pays-d-art-et-d-histoire.aspx" shape="rect"><span> Pays d'Art et d'Histoire</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p26-gestion-de-l-arc-et-de-ses-affluents.aspx" shape="rect"><span> Gestion de l'Arc et de ses affluents</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p27-gestion-des-risques.aspx" shape="rect"><span> Gestion des risques</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p28-transports-scolaires.aspx" shape="rect"><span> Transports scolaires</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p220-developpement-numerique.aspx" shape="rect"><span> Développement numérique</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p216-demarche-grand-chantier-lyon-turin.aspx" shape="rect"><span> Démarche Grand Chantier Lyon-Turin</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p813-eco-mobilite.aspx" shape="rect"><span> Éco-Mobilité</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p60-marches-publics-appels-a-projets.aspx" shape="rect"><span> Marchés publics / Appels à projets</span></a></li>
+									<li class=""><a target="" href="il4-maurienne_p29-etudes-communication.aspx" shape="rect"><span> Etudes / Communication</span></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<script type="text/javascript" xml:space="preserve" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+<!--
+$(function(){
+	$('#menu ul.menu li:has(ul)>a').addClass('parent');
+	$('#menu ul.menu li.MenuN1:last').addClass('last');
+
+});
+//-->	
+				</script>
+			</div>
+			<div id="BlocBandeau">
+				<div id="Bandeau">
+					<div id="bandeauslideshow" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/lac.jpg);" class="Background"></div>
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/fromage.jpg);" class="Background"></div>
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/rando.jpg);" class="Background"></div>
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/aiguilles-d-arves.jpg);" class="Background"></div>
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/alpage.jpg);" class="Background"></div>
+						<div style="background-image:url(http://www.maurienne.fr/InfoliveImages/bandeaux/general/bouquetins.jpg);" class="Background"></div>
+					</div>
+					<script language="JavaScript" type="text/JavaScript" xml:space="preserve" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+var nba=6;	
+<!--
+$(function(){
+    $('#bandeauslideshow').bxSlider({
+		auto:(nba>1)?true:false,
+		speed:(nba>1)?1300:0,
+		pause:4000,
+		controls:false,
+		pager: false,
+		mode: 'fade',
+		swipeThreshold:50,
+		touchEnabled:true
+	});
+});
+//-->
+					</script>
+					<script type="text/javascript" xml:space="preserve" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+<!--
+$(function(){
+	$('body').addClass('bandeaupresent');
+});
+-->	
+					</script>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="Contenu">
+			<div id="BlocActusDefilantesAccueil" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+				<div class="BlocTitreActus">
+					<h2 class="TitreActus">Actualités</h2><a href="il4-maurienne_p401-toutes-les-actualites.aspx" class="LienToutesLesActus" shape="rect">Toutes les actus</a></div>
+				<div class="Marge">
+					<div class="ActusDefilantesAccueil">
+						<div class="item Page1087  "><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p248-offres-d-emploi.aspx" title="Les offres d'emploi de la semaine" shape="rect"> <div style="background-image:url(http://proxy-img4.for-system.com/img.aspx?src=http://www.maurienne.fr/InfoliveImages/actus/181001-bandeau-actus-pole-emploi.jpg&lmax=450)" class="photo"></div> <div class="DateInfo"></div> <h3><span>Les offres d'emploi de la semaine</span></h3> <div class="Resume">Toutes les semaines Pôle Emploi diffuse les nouvelles offres pour le secteur de la Maurienne</div> <div class="EnSavoirPlus">En savoir plus</div> <div class="clear"></div> </a></div>
+						<div class="item Page1125  "><a target="" href="http://www.maurienne.fr/fr/il4-actualite,accueil_i1125_p31-la-e-letter-du-pole-emploi.aspx" title="La e-letter du Pôle Emploi " shape="rect"> <div style="background-image:url(http://proxy-img4.for-system.com/img.aspx?src=http://www.maurienne.fr/InfoliveImages/emploi/newsletter_pe_sjm_juillet2020-1.jpg&lmax=450)" class="photo"></div> <div class="DateInfo">juillet 2020</div> <h3><span>La e-letter du Pôle Emploi </span></h3> <div class="SsTitre">juillet 2020</div> <div class="Resume"></div> <div class="EnSavoirPlus">En savoir plus</div> <div class="clear"></div> </a></div>
+						<div class="item Page1254  "><a target="" href="http://www.maurienne.fr/fr/il4-actualite,accueil_i1254_p31-transport-scolaire-accueil-du-public.aspx" title="Transport Scolaire - Accueil du public" shape="rect"> <div style="background-image:url(http://proxy-img4.for-system.com/img.aspx?src=http://www.maurienne.fr/InfoliveImages/documents/transport-scolaire/reception-public-transports-scolaires.jpg&lmax=450)" class="photo"></div> <div class="DateInfo">juillet 2020</div> <h3><span>Transport Scolaire - Accueil du public</span></h3> <div class="Resume"></div> <div class="EnSavoirPlus">En savoir plus</div> <div class="clear"></div> </a></div>
+						<div class="item Page1255  "><a target="_blank" href="http://www.yatou-en-maurienne.fr" title="Je consomme local !" shape="rect"> <div style="background-image:url(http://proxy-img4.for-system.com/img.aspx?src=http://www.maurienne.fr/InfoliveImages/actus/flyer-relance-economique.jpg&lmax=450)" class="photo"></div> <div class="DateInfo"></div> <h3><span>Je consomme local !</span></h3> <div class="SsTitre">Les commerces de proximité, c'est ma priorité !</div> <div class="Resume">Consommer local, c'est préserver des emplois et<br>maintenir le dynamisme de sa ville ou de son village.<br>www.yatou-en-maurienne.fr</div> <div class="EnSavoirPlus">En savoir plus</div> <div class="clear"></div> </a></div>
+						<div class="item Page1257  "><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p790-etablissement-d-enseignements-artistiques-maurienne.aspx" title="Les inscriptions à l'EEA Maurienne sont ouvertes !" shape="rect"> <div style="background-image:url(http://proxy-img4.for-system.com/img.aspx?src=http://www.maurienne.fr/InfoliveImages/documents/eea/plaquette-eea2021-web-1.jpg&lmax=450)" class="photo"></div> <div class="DateInfo">à partir du 20 mai 2020</div> <h3><span>Les inscriptions à l'EEA Maurienne sont ouvertes !</span></h3> <div class="SsTitre">Plaquette 2020/2021 à télécharger dès maintenant</div> <div class="Resume"></div> <div class="EnSavoirPlus">En savoir plus</div> <div class="clear"></div> </a></div>
+					</div>
+				</div>
+				<script language="JavaScript" type="text/JavaScript" xml:space="preserve">
+var nbactus=5;
+<!--
+$(function(){
+    $('#BlocActusDefilantesAccueil .ActusDefilantesAccueil').bxSlider({
+		slideWidth:380,
+   		minSlides: 1,
+   		maxSlides: 3,
+   		slideMargin: 10,
+		responsive:true,
+		displaySlideQty:1,
+		speed:1500,
+		pause:5000,
+		mode:'horizontal',
+		auto:(nbactus>3)?true:false,
+		infiniteLoop:true,
+		controls:(nbactus>3)?true:false,
+		pager:false,
+		touchEnabled:true,
+		autoHover:true,
+		swipeThreshold:50
+		});
+});
+//-->
+				</script>
+			</div><br>
+			<!--55372 Agenda Maurienne - A la Une - -->
+			<div id="BlocAlauneAccueil" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+				<div class="BlocTitreActus">
+					<h2 class="TitreActus">Agenda</h2><a href="il4-annuaire,agenda_p260-agenda-maurienne.aspx" class="LienToutesLesActus" shape="rect">Tout l'agenda</a></div>
+				<div class="Marge">
+					<div class="AlauneAccueil">
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i5409838-cafe-itinerant-des-hurtieres.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">17</span><span class="date-mois">déc.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">17</span><span class="date-mois">déc.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Saint-Alban-d'Hurtières</div><h3><div class="item-titre">Café itinérant des Hurtières</div></h3><div class="bloccontact"><div>17/12, le dernier dimanche du mois de 15h à 17h. <br>Une fois par mois le dernier dimanche de 15h à 17h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f212%2f57%2f7092692.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i5400197-cafe-itinerant-des-villards.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">17</span><span class="date-mois">déc.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">17</span><span class="date-mois">déc.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Saint-Colomban-des-Villards</div><h3><div class="item-titre">Café itinérant des Villards</div></h3><div class="bloccontact"><div>17/12, le 1er mercredi du mois de 10h à 12h. <br>Une fois par mois le 1er mercredi du mois de 10h à 12h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f171%2f57%2f7092651.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i603153-13e-journee-nationale-de-la-telegraphie-chappe-mollard-fleury.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">dim.</span><span class="date-numjour">07</span><span class="date-mois">juin</span></div> <div class="item-descriptif"><div class="bloclieu">Val Cenis</div><h3><div class="item-titre">13e Journée nationale de la télégraphie Chappe - Mollard Fleury</div></h3><div class="bloccontact"><div>Dimanche 7 juin 2020 de 10h à 16h. <br> <br>Lundi 20 juillet 2020 de 10h à 17h. <br> <br>Vendredi 7 août 2020 de 10h à 17h. <br> <br>A 10h30 et 14h30 :</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f3%2f147%2f1610499.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4657460-boom-des-enfants.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">04</span><span class="date-mois">juil.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">29</span><span class="date-mois">août</span></div></div> <div class="item-descriptif"><div class="bloclieu">Saint-Jean-d'Arves</div><h3><div class="item-titre">Boom des enfants</div></h3><div class="bloccontact"><div>Du 04/07 au 29/08, tous les vendredis.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f246%2f143%2f3444726.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i740653-laissez-vous-conter-saint-sorlin-d-arves-visite-guidee.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">08</span><span class="date-mois">juil.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">15</span><span class="date-mois">juil.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Saint-Sorlin-d'Arves</div><h3><div class="item-titre">Laissez-vous conter Saint-Sorlin-d'Arves : Visite guidée</div></h3><div class="bloccontact"><div>Du 08/07 au 15/07/2020, tous les mercredis de 14h30 à 16h. <br> <br>Jeudi 23 juillet 2020 de 14h30 à 16h. <br> <br>Jeudi 6 août 2020 de 14h30 à 16h. <br> <br>Du</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f26%2f132%2f1147930.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i5310558-30e-fetes-musicales-de-savoie-aussois.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">lun.</span><span class="date-numjour">27</span><span class="date-mois">juil.</span></div> <div class="item-descriptif"><div class="bloclieu">Aussois</div><h3><div class="item-titre">30e Fêtes Musicales de Savoie - Aussois</div></h3><div class="bloccontact"><div>Lundi 27 juillet 2020 de 18h30 à 19h30.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f17%2f252%2f7994385.jpeg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4939661-surprise-baroque-visite-scenarisee-a-valfrejus.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">mer.</span><span class="date-numjour">29</span><span class="date-mois">juil.</span></div> <div class="item-descriptif"><div class="bloclieu">Valfréjus</div><h3><div class="item-titre">Surprise baroque : visite scénarisée à Valfréjus</div></h3><div class="bloccontact"><div>Mercredi 29 juillet 2020 de 18h30 à 19h30. <br> <br>Mercredi 12 août 2020 de 18h30 à 19h30.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f130%2f16%2f3805314.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i508084-alpage-en-fete.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">mer.</span><span class="date-numjour">05</span><span class="date-mois">août</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Jean-d'Arves</div><h3><div class="item-titre">Alpage en fête</div></h3><div class="bloccontact"><div>Mercredi 5 août 2020.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f34%2f9%2f7211298.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4713537-4eme-edition-du-festival-le-spectacle-est-dans-la-rue.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">08</span><span class="date-mois">août</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">14</span><span class="date-mois">août</span></div></div> <div class="item-descriptif"><div class="bloclieu">La Toussuire</div><h3><div class="item-titre">4ème édition du Festival "Le Spectacle est dans la rue"</div></h3><div class="bloccontact"><div>Du samedi 8 au vendredi 14 août 2020. <br>Fermé le samedi.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f160%2f174%2f7450272.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i814402-animathlon.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">ven.</span><span class="date-numjour">21</span><span class="date-mois">août</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-François-Longchamp</div><h3><div class="item-titre">Animathlon</div></h3><div class="bloccontact"><div>Vendredi 21 août 2020 à 17h30.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f18%2f101%2f8021266.png?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i5453199-andiamo-2-performance-highline-les-traceurs.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">mar.</span><span class="date-numjour">25</span><span class="date-mois">août</span></div> <div class="item-descriptif"><div class="bloclieu">Aussois</div><h3><div class="item-titre">Andiamo! #2 - Performance highline "Les Traceurs"</div></h3><div class="bloccontact"><div>Mardi 25 août 2020 de 17h à 19h. <br> <br>Annulé en cas de mauvais temps.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f98%2f8%2f8063074.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4898917-forum-des-associations.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">dim.</span><span class="date-numjour">06</span><span class="date-mois">sept.</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Rémy-de-Maurienne</div><h3><div class="item-titre">Forum des Associations</div></h3><div class="bloccontact"><div>Dimanche 6 septembre 2020 de 14h à 18h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i876200-vide-grenier.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">dim.</span><span class="date-numjour">20</span><span class="date-mois">sept.</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Martin-sur-la-Chambre</div><h3><div class="item-titre">Vide Grenier</div></h3><div class="bloccontact"><div>Dimanche 20 septembre 2020 de 6h30 à 17h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i663944-foire-aux-momes.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">dim.</span><span class="date-numjour">27</span><span class="date-mois">sept.</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Etienne-de-Cuines</div><h3><div class="item-titre">Foire aux Mômes</div></h3><div class="bloccontact"><div>Dimanche 27 septembre 2020 de 9h à 17h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i770395-brocante-vide-greniers.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">dim.</span><span class="date-numjour">04</span><span class="date-mois">oct.</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Etienne-de-Cuines</div><h3><div class="item-titre">Brocante/Vide -Greniers</div></h3><div class="bloccontact"><div>Dimanche 4 octobre 2020 de 6h à 18h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4966354-salon-du-livre.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">10</span><span class="date-mois">oct.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">11</span><span class="date-mois">oct.</span></div></div> <div class="item-descriptif"><div class="bloclieu">La Tour-en-Maurienne (Hermillon)</div><h3><div class="item-titre">Salon du livre</div></h3><div class="bloccontact"><div>Du samedi 10 au dimanche 11 octobre 2020.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f232%2f115%2f6779880.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4852518-theatre-les-uns-chez-les-autres.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">sam.</span><span class="date-numjour">31</span><span class="date-mois">oct.</span></div> <div class="item-descriptif"><div class="bloclieu">Saint-Rémy-de-Maurienne</div><h3><div class="item-titre">Théâtre - Les uns chez les autres</div></h3><div class="bloccontact"><div>Samedi 31 octobre 2020 à 20h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f220%2f67%2f8078300.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i665426-marche-de-noel.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">28</span><span class="date-mois">nov.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">29</span><span class="date-mois">nov.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Saint-Rémy-de-Maurienne</div><h3><div class="item-titre">Marché de Noël</div></h3><div class="bloccontact"><div>Du samedi 28 au dimanche 29 novembre 2020 de 10h à 18h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4799038-le-noel-magique-de-valloire.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">20</span><span class="date-mois">déc.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">25</span><span class="date-mois">déc.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">Le Noël magique de Valloire !</div></h3><div class="bloccontact"><div>Du dimanche 20 au vendredi 25 décembre 2020.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f236%2f124%2f2522348.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i437187-30e-concours-de-sculpture-sur-glace.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">12</span><span class="date-mois">janv.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">15</span><span class="date-mois">janv.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">30e concours de Sculpture sur Glace</div></h3><div class="bloccontact"><div>Du mardi 12 au vendredi 15 janvier 2021.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f226%2f39%2f7219170.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i351137-38e-concours-international-de-sculpture-sur-neige.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">19</span><span class="date-mois">janv.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">22</span><span class="date-mois">janv.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">38e concours International de Sculpture sur Neige</div></h3><div class="bloccontact"><div>Du mardi 19 au vendredi 22 janvier 2021.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f76%2f141%2f7245132.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i4779681-expo-d-art-contemporain-jean-claude-ruggirello.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">04</span><span class="date-mois">févr.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">15</span><span class="date-mois">mars</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">Expo d'Art Contemporain - Jean-Claude Ruggirello</div></h3><div class="bloccontact"><div>Du 04/02 au 15/03/2021, tous les jours. <br>Aux horaires d'ouverture de l'église. <br>Visite accompagnée les mardis et jeudis de 16h à 18h.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-annuaire-sansphoto"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i218594-ski-alpin-la-jb-cup-2021.aspx" shape="rect"> <div class="item-date datedebut"><span class="date-nomjour">sam.</span><span class="date-numjour">10</span><span class="date-mois">avr.</span></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">Ski Alpin - La JB Cup 2021</div></h3><div class="bloccontact"><div>Samedi 10 avril 2021. Date à confirmer.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f26%2f118%2f8091162.png?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i351140-la-montagne-aux-enfants.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">11</span><span class="date-mois">avr.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">17</span><span class="date-mois">avr.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">La Montagne aux Enfants !</div></h3><div class="bloccontact"><div>Du dimanche 11 au samedi 17 avril 2021.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f45%2f125%2f2194733.jpg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+						<div class="Item"><a href="http://www.maurienne.fr/fr/il4-evenement_i5395489-80e-anniversaire-de-la-bataille-des-alpes-juin-1940.aspx" shape="rect"> <div class="item-date"><div class="item-sousdate datedebut"><!--<span class="date-nomjour"><for:champ nom="dateDebut" type="date" format="ddd"/></span>--><span class="date-numjour">10</span><span class="date-mois">juil.</span></div><div class="item-sousdate datefin"><!--<span class="date-nomjour"><for:champ nom="dateFin" type="date" format="ddd"/></span>--><span class="date-numjour">11</span><span class="date-mois">juil.</span></div></div> <div class="item-descriptif"><div class="bloclieu">Valloire</div><h3><div class="item-titre">80e anniversaire de la Bataille des Alpes - Juin 1940</div></h3><div class="bloccontact"><div>Du samedi 10 au dimanche 11 juillet 2021. Dates à confirmer.</div><div class="clear"></div></div><div class="plusdinfos"></div></div> <div class="item-visuel IMAGE" style="background-image:url(http://resize.op6m.fr/remote/static.apidae-tourisme.com%2ffilestore%2fobjets-touristiques%2fimages%2f193%2f162%2f6988481.jpeg?mode=pad&width=300&height=300&scale=both)"></div> </a></div>
+					</div>
+				</div>
+				<script type="text/javascript" xml:space="preserve">	
+		var nbactusalaune=25;
+		<!--
+		$(function(){
+			$('#BlocAlauneAccueil .AlauneAccueil').bxSlider({
+		slideWidth:292,
+   		minSlides: 1,
+   		maxSlides: 4,
+   		slideMargin: 10,
+		responsive:true,
+		displaySlideQty:1,
+		speed:1200,
+		pause:8000,
+		mode:'horizontal',
+		auto:(nbactusalaune>4)?true:false,
+		infiniteLoop:true,
+		controls:(nbactusalaune>4)?true:false,
+		pager:false,
+		touchEnabled:true,
+		autoHover:true,
+		swipeThreshold:50
+				}
+			);
+		});
+		//-->
+		
+				</script>
+			</div><br>
+			<div class="BlocMenuAccueil">
+				<div class="BlocTitre">
+					<h2 class="titrebleu">Vivre en Maurienne</h2><span class="traittitre"></span></div>
+				<div class="bloc50">
+					<div class="MenuAccueil bloc bleu" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>Au quotidien</h3>
+						<ul>
+							<li><a target="" href="il4-maurienne_p435-mes-demarches-administratives.aspx" shape="rect"><span> Mes démarches administratives</span></a></li>
+							<li><a target="" href="il4-maurienne_p560-je-suis-un-jeune-de-moins-de-26-ans.aspx" shape="rect"><span> Je suis un jeune de moins de 26 ans</span></a></li>
+							<li><a target="" href="il4-maurienne_p579-je-suis-ou-je-vais-etre-parent.aspx" shape="rect"><span> Je suis ou je vais être parent</span></a></li>
+							<li><a target="" href="il4-maurienne_p591-je-suis-eleve-ou-parent-d-un-eleve.aspx" shape="rect"><span> Je suis élève ou parent d'un élève</span></a></li>
+							<li><a target="" href="il4-maurienne_p433-bien-vieillir-en-maurienne.aspx" shape="rect"><span> Bien vieillir en Maurienne</span></a></li>
+							<li><a target="" href="il4-maurienne_p434-je-suis-en-situation-de-handicap.aspx" shape="rect"><span> Je suis en situation de handicap</span></a></li>
+							<li><a target="" href="il4-maurienne_p404-me-loger-habiter.aspx" shape="rect"><span> Me loger, habiter</span></a></li>
+							<li><a target="" href="il4-maurienne_p406-acheter-offrir-ou-faire-des-travaux.aspx" shape="rect"><span> Acheter, offrir ou faire des travaux</span></a></li>
+							<li><a target="" href="il4-maurienne_p405-me-deplacer-me-faire-transporter.aspx" shape="rect"><span> Me déplacer, me faire transporter</span></a></li>
+							<li><a target="" href="il4-maurienne_p429-pratiquer-ma-religion.aspx" shape="rect"><span> Pratiquer ma religion</span></a></li>
+							<li><a target="" href="il4-maurienne_p423-maitriser-mon-empreinte-energetique.aspx" shape="rect"><span> Maîtriser mon empreinte énergétique</span></a></li>
+							<li><a target="" href="il4-maurienne_p430-respirer-l-air-mauriennais.aspx" shape="rect"><span> Respirer l'air Mauriennais</span></a></li>
+							<li><a target="" href="il4-maurienne_p431-trier-mes-dechets.aspx" shape="rect"><span> Trier mes déchets</span></a></li>
+							<li><a target="" href="il4-maurienne_p565-louer-une-salle.aspx" shape="rect"><span> Louer une salle</span></a></li>
+							<li><a target="" href="il4-maurienne_p689-j-ai-ou-je-veux-un-animal-de-compagnie.aspx" shape="rect"><span> J'ai ou je veux un animal de compagnie</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil bloc rose" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>Travailler en Maurienne</h3>
+						<ul>
+							<li><a target="" href="il4-maurienne_p408-je-cherche-un-emploi.aspx" shape="rect"><span> Je cherche un emploi</span></a></li>
+							<li><a target="" href="il4-maurienne_p495-je-souhaite-me-former.aspx" shape="rect"><span> Je souhaite me former</span></a></li>
+							<li><a target="" href="il4-maurienne_p516-je-souhaite-m-orienter-evoluer-professionnellement.aspx" shape="rect"><span> Je souhaite m'orienter, évoluer professionnellement</span></a></li>
+							<li><a target="" href="il4-maurienne_p517-je-suis-saisonnier.aspx" shape="rect"><span> Je suis saisonnier</span></a></li>
+							<li><a target="" href="il4-maurienne_p520-je-suis-en-situation-de-handicap-reconnu.aspx" shape="rect"><span> Je suis en situation de Handicap reconnu</span></a></li>
+							<li><a target="" href="il4-maurienne_p667-je-souhaite-creer-ou-developper-mon-entreprise.aspx" shape="rect"><span> Je souhaite créer ou développer mon entreprise</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil " xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<ul>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil bloc violetfonce" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>Investir le territoire</h3>
+						<ul>
+							<li><a target="" href="il4-maurienne_p413-m-informer.aspx" shape="rect"><span> M'informer</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p10-conseil-local-de-developpement.aspx" shape="rect"><span> Participer aux décisions et à la vie de mon territoire</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="bloc50">
+					<div class="MenuAccueil bloc vert" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>En cas de pépin</h3>
+						<ul>
+							<li><a target="" href="il4-maurienne_p411-j-ai-besoin-des-services-d-urgences-et-de-secours.aspx" shape="rect"><span> J'ai besoin des services d'urgences et de secours</span></a></li>
+							<li><a target="" href="il4-maurienne_p465-me-soigner.aspx" shape="rect"><span> Me soigner</span></a></li>
+							<li><a target="" href="il4-maurienne_p466-me-faire-aider-me-faire-accompagner.aspx" shape="rect"><span> Me faire aider, me faire accompagner</span></a></li>
+							<li><a target="" href="il4-maurienne_p514-j-ai-des-difficultes-a-acceder-a-mes-droits.aspx" shape="rect"><span> J'ai des difficultés à accéder à mes droits</span></a></li>
+							<li><a target="" href="il4-maurienne_p550-je-suis-victime-ou-temoin-de-maltraitance.aspx" shape="rect"><span> Je suis victime ou témoin de maltraitance</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p612-de-harcelement.aspx" shape="rect"><span> Je suis victime ou témoin d'harcèlement</span></a></li>
+							<li><a target="" href="il4-maurienne_p698-je-cherche-une-association-autour-de-la-sante-et-du-bien-etre.aspx" shape="rect"><span> Je cherche une association autour de la santé et du bien-être</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil bloc orange" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>Valoriser mon temps libre</h3>
+						<ul>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-annuaire,agenda_p260-agenda-maurienne.aspx" shape="rect"><span> Qu'est-ce que je peux faire ce soir ou demain ?</span></a></li>
+							<li><a target="" href="il4-maurienne_p239-les-prochaines-seances-cinema.aspx" shape="rect"><span> Les prochaines séances Cinéma</span></a></li>
+							<li><a target="" href="il4-maurienne_p424-je-souhaite-pratiquer-une-activite-sportive.aspx" shape="rect"><span> Je souhaite pratiquer une activité sportive</span></a></li>
+							<li><a target="" href="il4-maurienne_p712-je-recherche-une-activite-culturelle.aspx" shape="rect"><span> Je recherche une activité culturelle</span></a></li>
+							<li><a target="" href="il4-maurienne_p715-je-cherche-une-activite-de-loisir.aspx" shape="rect"><span> Je cherche une activité de loisir</span></a></li>
+							<li><a target="" href="il4-maurienne_p721-je-souhaite-m-impliquer-dans-la-sauvegarde-de-notre-patrimoine.aspx" shape="rect"><span> Je souhaite m'impliquer dans la sauvegarde de notre patrimoine</span></a></li>
+							<li><a target="" href="il4-maurienne_p722-je-souhaite-rejoindre-une-association-du-souvenir.aspx" shape="rect"><span> Je souhaite rejoindre une association du Souvenir</span></a></li>
+							<li><a target="" href="il4-maurienne_p725-je-souhaite-connaitre-les-equipements-de-loisirs.aspx" shape="rect"><span> Je souhaite connaître les équipements de loisirs</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil bloc bleufonce" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<h3>Connaître mon territoire</h3>
+						<ul>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p9-carte-d-identite.aspx" shape="rect"><span> Carte d'identité</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p31-communes.aspx" shape="rect"><span> Les Communes</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-intercommunalites_p30-communautes-de-communes.aspx" shape="rect"><span> Les Communautés de Communes</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p11-agriculture.aspx" shape="rect"><span> Agriculture en Maurienne</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p13-environnement.aspx" shape="rect"><span> Environnement</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p14-patrimoine.aspx" shape="rect"><span> Patrimoine</span></a></li>
+							<li><a target="" href="http://www.maurienne.fr/fr/il4-maurienne_p15-voies-de-communications.aspx" shape="rect"><span> Voies de communications</span></a></li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+					<div class="MenuAccueil " xmlns:for="http://www.open-system.fr/def-maquette/v1">
+						<ul>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<iframe frameborder="0" height="600" src="https://www.juicer.io/api/feeds/maurienne73/iframe?per-1" style="display:block;margin:0 auto;" width="1200"></iframe>
+		<div id="partenaire"><img src="../images/IconePAysMaurienne.png" height="57" alt="Pays de maurienne" style="margin-right:10px;"> <a href="https://www.savoie.fr/" target="_blank"><img src="../images/IconeConseilGSAvoie.png" height="57" width="66" alt="CG73"></a> <a href="https://www.auvergnerhonealpes.fr/" target="_blank"><img src="../images/logo-auvergne-rhone-alpes.png" height="50" alt="région Auvergne Rhône Alpes"></a> <a href="http://www.maurienne.tv" target="_blank"><img src="../images/logo-maurienne-tv.png" height="50" alt="Maurienne TV"></a> <a href="https://www.apidae-tourisme.com/" target="_blank"><img src="../images/IconeApidae.jpg" height="45" alt="Apidae"></a> <a href="http://www.adrets-asso.fr/" target="_blank"><img src="../images/IconeAdrets.jpg" height="45" alt="Adrets"></a> <a href="http://www.alpine-space.eu/" target="_blank"><img src="../images/IconeInterreg.jpg" height="70" alt="Europe" style="margin-bottom:10px;"></a>
+			<div class="clear"></div>
+		</div>
+		<div id="Footer">
+			<div id="lignehaut">
+				<div id="MenuBas" xmlns:for="http://www.open-system.fr/def-maquette/v1"><a target="" href="plan-du-site.aspx" shape="rect"><span> Plan du site</span></a> | <a target="" href="page-contact.aspx" shape="rect"><span> Contactez-nous</span></a> | <a target="" href="il4-maurienne_p40-plan-d-acces.aspx" shape="rect"><span> Plan d'accès</span></a> | <a target="" href="il4-maurienne_p51-mentions-legales.aspx" shape="rect"><span> Mentions légales</span></a> | <a target="" href="il4-maurienne_p401-toutes-les-actualites.aspx" shape="rect"><span> Toutes les actualités</span></a></div>
+			</div>
+			<div id="MenuBasPage">
+				<div id="menufootercommunes" style="" xmlns:for="http://www.open-system.fr/def-maquette/v1">
+					<div id="ListeCommunes">
+						<div class="bloccommunes">
+							<h3><a target="" href="il4-maurienne_p393-porte-de-maurienne.aspx" shape="rect"><span> Porte de Maurienne</span></a></h3>
+							<div><span class="Item"> <a target="" href="il4-commerces,services_i488930-mairie-d-aiton.aspx" shape="rect"><span> Aiton</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i464972-mairie-d-argentine.aspx" shape="rect"><span> Argentine</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i488927-mairie-de-bonvillaret.aspx" shape="rect"><span> Bonvillaret</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i488936-mairie-d-epierre.aspx" shape="rect"><span> Épierre</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i488933-mairie-de-montgilbert.aspx" shape="rect"><span> Montgilbert</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i464809-mairie-de-montsapey.aspx" shape="rect"><span> Montsapey</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i461678-mairie-de-saint-alban-d-hurtieres.aspx" shape="rect"><span> Saint-Alban d'Hurtières</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i461215-mairie-de-saint-georges-d-hurtieres.aspx" shape="rect"><span> Saint-Georges d'Hurtières</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449649-mairie-de-saint-leger.aspx" shape="rect"><span> Saint-Léger</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i485550-mairie-de-saint-pierre-de-belleville.aspx" shape="rect"><span> Saint-Pierre-de-Belleville</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449526-mairie-du-val-d-arc-aiguebelle.aspx" shape="rect"><span> Val d'Arc (Aiguebelle)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i488939-mairie-du-val-d-arc-randens.aspx" shape="rect"><span> Val d'Arc (Randens)</span></a> </span></div>
+						</div>
+						<div class="bloccommunes">
+							<h3><a target="" href="il4-maurienne_p394-4-c.aspx" shape="rect"><span> 4 C</span></a></h3>
+							<div><span class="Item"> <a target="" href="il4-commerces,services_i449621-mairie-de-la-chambre.aspx" shape="rect"><span> La Chambre</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4978935-mairie-de-la-chapelle.aspx" shape="rect"><span> La Chapelle</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4978737-mairie-de-les-chavannes-en-maurienne.aspx" shape="rect"><span> Les Chavannes-en-Maurienne</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4978704-mairie-de-notre-dame-du-cruet.aspx" shape="rect"><span> Notre-Dame-du-Cruet</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4978910-mairie-de-saint-alban-des-villards.aspx" shape="rect"><span> Saint-Alban-des-Villards</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449630-mairie-de-saint-avre.aspx" shape="rect"><span> Saint-Avre</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449626-mairie-de-saint-colomban-des-villards.aspx" shape="rect"><span> Saint-Colomban-des-Villards</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449644-mairie-de-sainte-marie-de-cuines.aspx" shape="rect"><span> Sainte-Marie-de-Cuines</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4978677-mairie-de-saint-etienne-de-cuines.aspx" shape="rect"><span> Saint-Etienne-de-Cuines</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449646-mairie-de-saint-francois-longchamp.aspx" shape="rect"><span> Saint-François-Longchamp</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i462583-mairie-de-montaimont.aspx" shape="rect"><span> Saint-François-Longchamp (Montaimont)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i483521-mairie-de-montgellafrey.aspx" shape="rect"><span> Saint-François-Longchamp (Montgellafrey)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i5021585-mairie-de-saint-martin-sur-la-chambre.aspx" shape="rect"><span> Saint-Martin-sur-la-Chambre</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449584-mairie-de-saint-remy-de-maurienne.aspx" shape="rect"><span> Saint-Rémy-de-Maurienne</span></a> </span></div>
+						</div>
+						<div class="bloccommunes">
+							<h3><a target="" href="il4-maurienne_p395-coeur-de-maurienne-arvan.aspx" shape="rect"><span> Coeur de Maurienne Arvan</span></a></h3>
+							<div><span class="Item"> <a target="" href="il4-commerces,services_i483879-mairie-d-albiez-le-jeune.aspx" shape="rect"><span> Albiez-le-Jeune</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i453769-mairie-d-albiez-montrond.aspx" shape="rect"><span> Albiez-Montrond</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i484582-mairie-de-fontcouverte-la-toussuire.aspx" shape="rect"><span> Fontcouverte-La Toussuire</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4956029-mairie-de-jarrier.aspx" shape="rect"><span> Jarrier</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i462116-mairie-de-la-tour-en-maurienne-hermillon.aspx" shape="rect"><span> La Tour-en-Maurienne (Hermillon)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i488778-mairie-de-la-tour-en-maurienne-le-chatel.aspx" shape="rect"><span> La Tour-en-Maurienne (Le Châtel)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449647-mairie-de-la-tour-en-maurienne-pontamafrey-montpascal.aspx" shape="rect"><span> La Tour-en-Maurienne (Pontamafrey-Montpascal)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i465080-mairie-de-montricher-albanne.aspx" shape="rect"><span> Montricher-Albanne</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4956162-mairie-de-montvernier.aspx" shape="rect"><span> Montvernier</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i486437-mairie-de-saint-jean-d-arves.aspx" shape="rect"><span> Saint-Jean d'Arves</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449640-mairie-de-saint-jean-de-maurienne.aspx" shape="rect"><span> Saint-Jean-de-Maurienne</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449624-mairie-de-saint-julien-mont-denis.aspx" shape="rect"><span> Saint-Julien-Montdenis</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4956515-mairie-de-saint-pancrace.aspx" shape="rect"><span> Saint-Pancrace</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449507-mairie-de-saint-sorlin-d-arves.aspx" shape="rect"><span> Saint-Sorlin d'Arves</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i392888-mairie-de-villarembert-le-corbier.aspx" shape="rect"><span> Villarembert-Le Corbier</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i466207-mairie-de-villargondran.aspx" shape="rect"><span> Villargondran</span></a> </span></div>
+						</div>
+						<div class="bloccommunes">
+							<h3><a target="" href="il4-maurienne_p396-maurienne-galibier.aspx" shape="rect"><span> Maurienne Galibier</span></a></h3>
+							<div><span class="Item"> <a target="" href="il4-commerces,services_i449003-mairie-d-orelle.aspx" shape="rect"><span> Orelle</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4980818-mairie-de-saint-martin-d-arc.aspx" shape="rect"><span> Saint-Martin d'Arc</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449623-mairie-de-saint-martin-de-la-porte.aspx" shape="rect"><span> Saint-Martin-La-Porte</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i458554-mairie-de-saint-michel-de-maurienne.aspx" shape="rect"><span> Saint-Michel-de-Maurienne</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i450928-mairie-de-valloire.aspx" shape="rect"><span> Valloire</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449517-mairie-de-valmeinier.aspx" shape="rect"><span> Valmeinier</span></a> </span></div>
+						</div>
+						<div class="bloccommunes">
+							<h3><a target="" href="il4-maurienne_p397-haute-maurienne-vanoise.aspx" shape="rect"><span> Haute Maurienne Vanoise</span></a></h3>
+							<div><span class="Item"> <a target="" href="il4-commerces,services_i449592-mairie-d-aussois.aspx" shape="rect"><span> Aussois</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i448695-mairie-d-avrieux.aspx" shape="rect"><span> Avrieux</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449618-mairie-de-bessans.aspx" shape="rect"><span> Bessans</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449615-mairie-de-bonneval-sur-arc.aspx" shape="rect"><span> Bonneval-sur-Arc</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i485461-mairie-de-fourneaux.aspx" shape="rect"><span> Fourneaux</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i553579-mairie-du-freney.aspx" shape="rect"><span> Le Freney</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i462161-mairie-de-modane.aspx" shape="rect"><span> Modane</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i553585-mairie-de-st-andre.aspx" shape="rect"><span> Saint-André</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4846415-mairie-deleguee-de-val-cenis-bramans.aspx" shape="rect"><span> Val-Cenis (Bramans)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4846409-mairie-deleguee-de-val-cenis-lanslebourg-mont-cenis.aspx" shape="rect"><span> Val-Cenis (Lanslebourg)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4846403-mairie-deleguee-de-val-cenis-lanslevillard.aspx" shape="rect"><span> Val-Cenis (Lanslevillard)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i4846413-mairie-deleguee-de-val-cenis-sollieres-sardieres.aspx" shape="rect"><span> Val-Cenis (Sollières-Sardières)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i476203-mairie-siege-val-cenis-mairie-deleguee-de-termignon.aspx" shape="rect"><span> Val-Cenis (Termignon)</span></a> </span> <span class="Item"> <a target="" href="il4-commerces,services_i449570-mairie-de-villarodin-bourget.aspx" shape="rect"><span> Villarodin-Bourget</span></a> </span></div>
+						</div>
+						<!--FIN MENUN0-->
+					</div>
+				</div>
+				<!--FIN PRINCIPAL-->
+			</div><br clear="all">
+			<p id="signature">Site édité par le Syndicat de Pays de Maurienne - <a href="http://www.alliance-reseaux.com">Réalisation © Alliance Réseaux</a></p>
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aa94e09cd102482"></script>
+		</div>
+		<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4755097-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+		</script>
+	</body>
+</html>
