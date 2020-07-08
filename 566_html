@@ -1,0 +1,1093 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link rel="stylesheet" href="./css/menu.css" type="text/css">
+		<!-- <link rel="stylesheet" href="./slider_accueil/nivo-slider.css" type="text/css" media="screen" /> -->
+		<!-- <link rel="stylesheet" href="./slider_accueil/style.css" type="text/css" media="screen" /> -->
+		<link rel="icon" type="image/png" href="faviconfigeaccommunaute.ico">
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="faviconfigeaccommunaute.ico" /><![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta http-equiv="Content-Language" content="fr">
+		<meta name="google-site-verification" content="cf53IOs0A0NZpaZJ-RvzoSuxBQUF_ArDGy3de8rZm10">
+		<meta name="Robots" content="all">
+		<meta name="Description" content="Site officiel de la Communauté de communes du Grand Figeac.">
+		<meta name="Keywords" content="communaute de communes, grand figeac, grand-figeac, malvy, figeac, lot, quercy, pepiniere d'entreprise, parc, zone d'activite, immobilier d'entreprise, tourisme, culture, cias, creche, relais assistante maternelle, espaces jeunes, sport, piscines, spanc, cele, riviere, randonnees, fourriere, opah, coeur de village, amenagement, habitat.">
+		<meta name="Identifier-URL" content="http://www.grand-figeac.fr">
+		<meta name="Category" content="collectivités">
+		<meta name="copyright" content="Copyright © 2014 Grand-Figeac">
+		<meta name="distribution" content="Global">
+		<meta name="MSSmartTagsPreventParsing" content="TRUE">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<title>Grand-Figeac site officiel</title>
+		<script language="javascript" type="text/javascript" src="inc/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="inc/thickbox.js"></script>
+		<link rel="stylesheet" type="text/css" href="inc/thickbox.css">
+		<link href="css/menu.css" rel="stylesheet" type="text/css">
+		<link href="css/agrandir_diminuer_texte.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+		 $(document).ready(function () {
+		 
+				 var taille = 12;
+				 var augmentation = 3;
+				 var tailleMax = 20;
+				 var tailleMin= 12;
+				 
+				 $('#agrandir').click(function () {
+				 taille +=augmentation;
+				 if (taille >= tailleMax)
+				 {
+				 taille = tailleMax;
+				 }
+				 $('#motdupresident').stop().animate({fontSize: taille+"px"},300);
+				 });
+				 $('#diminuer').click(function () {
+				 taille -=augmentation;
+				 if (taille <= tailleMin)
+				 {
+				 taille = tailleMin;
+				 }
+				 $('#motdupresident').stop().animate({fontSize: taille+"px"},300);
+				 });
+		 
+		 });
+	
+	 
+		</script>
+		<style type="text/css"> 
+
+.Style9 {font-family: Arial, Helvetica, sans-serif; font-size: 9px; }
+.Style10 {font-family: Arial, Helvetica, sans-serif; color: #1C61AB; }
+.Style11 {font-size: 36px}
+.Style12 {font-size: 24px; }
+.Style13 {font-family: Arial, Helvetica, sans-serif}
+.Style14 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.Style15 {color: #1c61ab; font-size: 16px; }
+.Style16 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #0DA2A0;
+	}
+.Style17 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #0DA2A0;
+	}	
+.Style18 {color: #1c61ab; font-size: 14px; }
+.Style19 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	}	
+.Style20 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #DF5442;
+	}
+.Style21 {font-family: Arial, Helvetica, sans-serif; color: #FF4021; }	
+.Style22 {font-family: Arial, Helvetica, sans-serif; color: #8064A2; }	
+.Style23 {color: #FF0000; }
+.Style24 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #DF5442;
+	}
+.Style44 {font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.Style46 {font-size: 14px; }
+.Style50 {color: #1c61ab}
+.Style51 {color: #1c61ab; font-weight: bold; }
+.Style52 {color: #1c61ab; font-size: 18px; }
+.Style53 {color: #8064A2; font-size: 18px; }
+
+/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+		
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+		
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+		</style>
+		<script language="JavaScript" type="text/javascript">
+<!--
+//PLF/
+function menuderoulant(selection){
+window.location=selection.options[selection.selectedIndex].value;
+}
+//-->
+		</script>
+		<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+		<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+		</script>
+		<script src="AC_OETags.js" language="javascript"></script>
+		<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 8;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 0;
+// -----------------------------------------------------------------------------
+// -->
+		</script>
+		<!-- Masquer le lecteur audio -->
+		<script> 
+function visibilite(thingId) 
+{ 
+var targetElement; 
+targetElement = document.getElementById(thingId) ; 
+if (targetElement.style.display == "none") 
+{ 
+targetElement.style.display = "" ; 
+} else { 
+targetElement.style.display = "none" ; 
+} 
+} 
+		</script>
+		<!-- load fenêtre splash
+
+<script src="popup_inauguration_l_astrolabe/jquery.min.js"></script>
+<script src="popup_inauguration_l_astrolabe/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="popup_inauguration_l_astrolabe/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="popup_inauguration_l_astrolabe/jquery.fancybox.css" media="screen" />
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.fancybox(
+             $("#jrntepos").html(),
+             {
+                type : 'iframe',
+                href : 'http://www.grand-figeac.fr/pub.html', // url vers notre page html qui sera chargée dans la popup en mode iframe
+                maxWidth : 610,
+        maxHeight : 487,
+        fitToView : false,
+        width : '610px',
+        height : '487px',
+        autoSize : false
+
+        }
+        );setTimeout("parent.$.fancybox.close()", 10000); // temps en milliseconde avant fermeture de la popup
+    });
+</script>
+
+fenêtre splash -->
+	</head>
+	<body onload="preloadImages();">
+		<!-- <body id="home"> -->
+		<tr>
+			<td height="300" colspan="4" valign="top">
+				<div align="center"></div>
+				<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 995px; height: 160px; overflow: hidden; visibility: hidden;">
+					<!-- Loading Screen -->
+					<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+						<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						<div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+					</div>
+					<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 995px; height: 160px; overflow: hidden;">
+						<div data-p="112.50" style="display: none;"><img data-u="image" src="images/bandeau1.png"></div>
+						<div data-p="112.50" style="display: none;"><img data-u="image" src="images/bandeau2.png"></div>
+						<div data-p="112.50" style="display: none;"><img data-u="image" src="images/bandeau3.png"></div>
+					</div>
+					<!-- Bullet Navigator -->
+					<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+						<!-- bullet navigator item prototype -->
+						<div data-u="prototype" style="width:16px;height:16px;"></div>
+					</div>
+					<!-- Arrow Navigator --><span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span> <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span> <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a></div>
+				<!-- #endregion Jssor Slider End -->
+				<div class="container">
+					<!-- <div id="header"></div> -->
+					<div id="nav_wrapper"><span id="menu_start"><a href="index.html" class="home">Home</a></span>
+						<ul id="topnav">
+							<li class="single_wrapper"><a href="#"> <span class="single_wrapper"> La collectivitÉ <span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="un_peu_d_histoire.html">Historique</a></li>
+										<li><a href="statuts_communautaires.html">Les statuts</a></li>
+										<li><a href="elus_communautaires.php">Les élus communautaires</a></li>
+										<li><a href="organigramme_des_services.html">Organigramme des services</a></li>
+										<li><a href="calendrier_conseils_communautaires/ordre_du_jour_du_conseil_communautaire.html">Calendrier des conseils</a></li>
+										<li><a href="deliberations_des_conseils_communautaires.html">Délibérations des conseils</a></li>
+										<li><a href="budget_et_finances.html">Budget et Finances</a></li>
+										<li><a href="Rendez_Vous_Communaux_du_Grand_Figeac.html">Rendez-Vous Communaux du Grand-Figeac</a></li>
+										<li><a href="expression_des_conseillers_communautaires_visionneuse.html">Expression des Conseillers communautaires</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper"> Économie et Tourisme <span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="pepiniere_d_entreprises.html">Pépinière d'entreprises</a></li>
+										<li><a href="les_parcs_d_activites.html">Les parcs d'activités</a></li>
+										<li><a href="hotel_d_entreprises.html">Hôtel d&#8217;entreprises</a></li>
+										<li><a href="maison_de_la_formation.html">Maison de la Formation</a></li>
+										<li><a href="accueil_et_emploi.html">Accueil et Emploi</a></li>
+										<li><a href="fiscalite.html">Fiscalité</a></li>
+										<li><a href="fonds_aide_tourisme_commerce_artisanat.html"><span class="Style23">Fonds aide tourisme commerce artisanat</span></a></li>
+										<li><a href="aides_sur_l_immobilier_d_entreprise.html">Aides immobilier d'entreprise</a></li>
+										<li><a href="https://grandfigeac.taxesejour.fr/" target="_blank">Taxe de séjour</a></li>
+										<li><a href="Office_de_Tourisme_du_Grand_Figeac.html">Office de Tourisme du Grand-Figeac</a></li>
+										<li><a href="https://www.grands-sites-occitanie.fr/grand-site/figeac/" target="_blank">Grands Sites Occitanie</a></li>
+										<li><a href="chemins_de_randonnees.html">Chemins de randonnées</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper">Culture<span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="http://www.astrolabe-grand-figeac.fr/rendez-vous/2" target="_blank">Cinémas</a></li>
+										<li><a href="http://www.mediatheques-grand-figeac.fr/" target="_blank">Médiathèques</a></li>
+										<li><a href="ecole_de_musique.html">École de musique</a></li>
+										<li><a href="http://www.astrolabe-grand-figeac.fr" target="_blank">Programmation culturelle</a></li>
+										<li><a href="patrimoine.html">Patrimoine</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper">Enfance Jeunesse SantÉ<span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="CIAS.html">Centre d'Action Sociale</a></li>
+										<li><a href="structures_petite_enfance.html">Structures petite enfance</a></li>
+										<li><a href="relais_assistantes_maternelles.html">Relais assistantes maternelles</a></li>
+										<li><a href="espaces_jeunes.html">Espaces jeunes</a></li>
+										<li><a href="contrat_local_de_sante.html">Contrat Local de Santé</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper">Sport<span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="http://www.oisgrandfigeac.com/" target="_blank">Office Intercommunal du Sport</a></li>
+										<li><a href="pole_piscines.html">Pôle piscines</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper">Environnement<span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="transition_energetique.html">Transition énergétique</a></li>
+										<li><a href="developpement_durable.html">Développement durable</a></li>
+										<li><a href="contrat_de_riviere.html">Contrat de rivière</a></li>
+										<li><a href="SPANC.html">Assainissement non collectif</a></li>
+										<li><a href="collecte_ordures_menageres.html">Service de collecte des ordures ménagères</a></li>
+										<li><a href="chenil.html">Chenil</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="liSub"><a href="#"> <span class="single_wrapper">Urbanisme Habitat AmÉnagement<span class="dd_action"><img src="images/arrow.png" alt=""></span> </span> </a>
+								<div style="opacity: 0; display: none; width: 300px;" class="sub">
+									<ul>
+										<li><a href="https://plui-grandfigeac.fr/" target="_blank">PLUi - Grand Figeac</a></li>
+										<li><a href="service_urbanisme.html">Service urbanisme</a></li>
+										<li><a href="documents_d_urbanisme.html">Documents d'urbanisme</a></li>
+										<li><a href="habiter_le_Grand_Figeac.html">Habiter le Grand Figeac</a></li>
+										<li><a href="coeurs_de_villages.html">C&#339;urs de Villages</a></li>
+										<li><a href="amenagement_numerique.html">Plan Très Haut Débit</a></li>
+										<li><a href="programmes_en_cours.html">Programmes en cours</a></li>
+										<li><a href="formulaire_administration_generale.html">Nous contacter...</a></li>
+									</ul>
+								</div>
+							</li>
+							<li id="last-li"><a href="ressources.html?height=310&width=640" title="Ressources" class="thickbox"> <span class="single_wrapper">   +   </span> </a></li>
+						</ul><span id="menu_end"><img src="images/last_li.png" width="5" height="46" alt=""></span></div>
+				</div>
+				<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+				<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+				<!-- use jssor.slider.debug.js instead for debug -->
+				<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 995);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    
+				</script>
+				<script type="text/javascript" src="jcoverflip/jquery.min.js"></script>
+				<script type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script>
+				<script type="text/javascript"> 
+	
+/*
+ * jQuery Mega Drop Down Menu script by Soh Tanaka
+ * http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/
+ * 
+ */
+$(document).ready(function(){
+		
+	function megaHoverOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 1).show();
+			
+		//Calculate width of all ul's
+		(function($) {
+			jQuery.fn.calcSubWidth = function() {
+				rowWidth = 0;
+				//Calculate row
+				$(this).find("ul").each(function() {					
+					rowWidth += $(this).width(); 
+				});	
+			};
+		})(jQuery); 
+		
+		if ( $(this).find(".row").length > 0 ) { //If row exists...
+			var biggestRow = 0;	
+			//Calculate each row
+			$(this).find(".row").each(function() {							   
+				$(this).calcSubWidth();
+				//Find biggest row
+				if(rowWidth > biggestRow) {
+					biggestRow = rowWidth;
+				}
+			});
+			//Set width
+			$(this).find(".sub").css({'width' :biggestRow});
+			$(this).find(".row:last").css({'margin':'0'});
+			
+		} else { //If row does not exist...
+			
+			$(this).calcSubWidth();
+			//Set Width
+			$(this).find(".sub").css({'width' : rowWidth});
+			
+		}
+	}
+	
+	function megaHoverOut(){
+	 $(this).find(".sub").stop().fadeTo('fast', 0, function() {
+		  $(this).hide();
+	  });
+	}
+ 
+ 
+	var config = {
+		 sensitivity: 2,		// number = sensitivity threshold (must be 1 or higher)    
+		 interval: 0, 			// number = milliseconds for onMouseOver polling interval    
+		 over: megaHoverOver,   // function = onMouseOver callback (REQUIRED)    
+		 timeout: 0, 			// number = milliseconds delay before onMouseOut    
+		 out: megaHoverOut 		// function = onMouseOut callback (REQUIRED)    
+	};
+ 
+	$("ul#topnav li .sub").css({'opacity':'0'});
+	$("ul#topnav li").hoverIntent(config);
+	
+	// Add class to the current element
+	$("ul#topnav li").click(function(){
+		$("ul#topnav").find("li.current").removeClass().removeAttr("class");
+		$(this).addClass("current");
+	});
+	
+	// Change arrow on hover
+	$("li.liSub").hover(function(){
+		$(this).find("span img").attr("src", "images/arrow_hover.png");
+	},function(){
+		$(this).find("span img").attr("src", "images/arrow.png");
+	});
+	
+	// Delete the border for the last li of the submenu
+	$("ul#topnav .sub ul li:last-child a").css("border", "none");
+ 
+});
+				</script>
+				<?php include_once '../../common/stats.php'; ?>
+				<table width="995" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+					<tr>
+						<td width="220" rowspan="10" align="center" valign="top" lang="fr" backgroung-repeat:no-repeat xml:lang="fr">
+							<table width="220" border="0" cellspacing="0" cellpadding="0">
+								<!--DWLayoutTable-->
+								<tr>
+									<td width="220" height="25"></td>
+								</tr>
+								<tr>
+									<td height="200">
+										<div align="center">
+											<iframe width="220" height="263" noresize frameborder="NO" scrolling="NO" marginheight="0" marginwidth="0" src="slider_accueil/slider03072020_1.html"></iframe>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"></td>
+								</tr>
+								<tr></tr>
+								<tr></tr>
+								<tr>
+									<!-- <td height="88" valign="middle"><a href="http://www.francetvinfo.fr/economie/entreprises/emploi-le-secret-de-cette-france-rurale-qui-a-du-travail_1521721.html" target="_blank"><img src="images_page_d_accueil/vu_a_la_tele.png" width="220" height="170" alt="Reportage vu Ã  la tÃ©lÃ©" longdesc="http://www.grand-figeac.fr/" /></a>     	   </tr> -->
+								</tr>
+								<tr>
+									<td align="center" valign="middle">
+										<div align="center"><a href="http://www.service-public.fr/" target="_blank"></a><a href="images_page_d_accueil/Plaquette_equipements_services_intercommunaux_012020.pdf" target="_blank"><img src="images_page_d_accueil/plaquette_gf_services_2.jpg" alt="Plaquette services à la population du Grand-Figeac" width="220" height="374" border="0" longdesc="https://www.grand-figeac.fr"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33" valign="top"></td>
+								</tr>
+								<tr>
+									<td height="192" align="center" valign="middle"><a href="accueil_et_emploi.html"><img src="images_page_d_accueil/logo_Oh_my_Lot!.png" width="196" height="257" alt="Logotype Oh my Lot !" longdesc="https://www.grand-figeac.fr/"></a> <br> <br> Vous venez d'arriver sur le territoire ? Vous prévoyez de vous y installer ?<br> Vous avez besoin d'un appui pour avoir les bons contacts en termes de logement, d'inscriptions aux écoles ou clubs sportifs ?<br> La mission d'accueil des nouveaux arrivants est faite pour vous !<br> <b>Contactez Lydie au 05.65.38.30.07</b> ou<br> <b><a href="mailto:choisirlelot@grand-figeac.fr" target="_blank">choisirlelot@grand-figeac.fr</a></b></td>
+								</tr>
+								<tr>
+									<td height="33" valign="top"></td>
+								</tr>
+								<tr>
+									<td height="192" valign="top">
+										<div align="center">
+											<script language="javascript">
+function OuvrirPopup(page,nom,option) {
+window.open(page,nom,option);
+}
+            
+											</script><a href="javascript:OuvrirPopup('http://maps.google.fr/maps?q=FIGEAC+COMMUNAUTE,+Figeac&hl=fr&ved=0CBcQpQY&ei=yJziTI65FMvhjgeQo7X-AQ&sll=44.607502,2.031876&sspn=0.006295,0.014609&ie=UTF8&view=map&cid=9026577049126974360&hq=FIGEAC+COMMUNAUTE,+Figeac&hnear=&ll=44.606327,2.036548&spn=0.002521,0.004699&z=16&iwloc=A&source=embed','','resizable=no,location=no,width=900,height=600,menubar=no,status=no,scrollbars=no,menubar=no')"><img src="images_page_d_accueil/fond_de_carte.gif" alt="Localisation de la Maison des Services Publics Intercommunaux" width="220" height="165" border="0" align="middle" longdesc="https://www.grand-figeac.fr/"></a></div>
+										<div align="center">
+											<p><br> <small><a href="javascript:OuvrirPopup('http://maps.google.fr/maps?q=FIGEAC+COMMUNAUTE,+Figeac&hl=fr&ved=0CBcQpQY&ei=yJziTI65FMvhjgeQo7X-AQ&sll=44.607502,2.031876&sspn=0.006295,0.014609&ie=UTF8&view=map&cid=9026577049126974360&hq=FIGEAC+COMMUNAUTE,+Figeac&hnear=&ll=44.606327,2.036548&spn=0.002521,0.004699&z=16&iwloc=A&source=embed','','resizable=no,location=no,width=900,height=600,menubar=no,status=no,scrollbars=no,menubar=no')" class="Style9 Style13">Agrandir l'image</a></small></p>
+											<p> </p>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<p> </p>
+						</td>
+						<td width="10" rowspan="4"> </td>
+						<td align="center" valign="top">
+							<p> </p>
+							<p> </p>
+						</td>
+						<td width="120" rowspan="10" valign="top">
+							<table width="120" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td>
+										<p> </p>
+										<!-- <iframe  width="120" height="97" scrolling="no" frameborder="0" src="http://www.meteoservices.be/meteo/hptool/index.php?cid=33X10674&cityName=Figeac&l=fr&style=14&v=be&ver=2&c1=ffffff&c2=ffffff&c3=1c61ab&c4=ffffff&c5=1c61ab&c6=ffffff&c7=ffffff&f1a=1&f1b=1&f2a=1&f2b=1&f3a=1&f3b=1&ct1=1&ct2=0&ct3=6&ct4=0&ct5=8&fcd=0"></iframe>	-->
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<!--  <td><div align="center"><a href="https://www.grands-sites-occitanie.fr/grand-site/figeac/" target="_blank"><img src="images_page_d_accueil/logo_grands_sites_occitanie.jpg" alt="logo grands sites Occitanie Sud de France" width="100" height="166" border="0" title="EmblÃ©matiques, grandioses ou intimistes, les grands sites de Midi-PyrÃ©nÃ©es sont les portes naturelles et culturelles d'un territoire de partage et de plaisir ..." longdesc="https://www.grand-figeac.fr/" /></a></div></td>  -->
+									<td>
+										<div align="center"><a href="https://www.grand-figeac.fr/mon-voisin-solidaire/" target="_blank"><img src="images_page_d_accueil/logo_mon_voisin_solidaire.jpg" alt="logo Mon-voisin-solidaire" width="100" height="192" border="0" title="Accès à la plateforme gratuite de partage de services Mon-Voisin-Solidaire" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="offres_d_emploi.html"><img src="images_page_d_accueil/bouton_offres_d_emploi_2.jpg" alt="Offres d'emploi pour les services communautaires" width="93" height="90" border="0" title="Offres d'emploi pour les services communautaires" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="contrat_local_de_sante.html#cds_gf"><img src="images_page_d_accueil/bouton_centre_de_sante_2.jpg" alt="Centre de Santé intercommunal" width="93" height="90" border="0" title="Centre de Santé intercommunal" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="enquetes_publiques.html"><img src="images_page_d_accueil/bouton_enquetes_publiques_2.jpg" alt="Enquêtes publiques Grand-Figeac" width="93" height="90" border="0" title="Enquêtes publiques réalisées sur le territoire communautaire" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="journal_communautaire.html"><img src="images_page_d_accueil/bouton_journal_communaute_de_communes_2.jpg" alt="Téléchargement journal Communauté de Communes" width="93" height="90" border="0" title="Téléchargement des journaux de la Communauté de Communes au format pdf" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="marches_publics.html"><img src="images_page_d_accueil/bouton_marches_publics_2.jpg" alt="Accès marchés publics" width="93" height="90" border="0" title="Accès aux marchés publics" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="catalogue_tad.php"><img src="images_page_d_accueil/bouton_transport_a_la_demande_2.png" alt="Transport à la demande" width="93" height="90" border="0" title="Transport à la demande" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="espace_presse.html"><img src="images_page_d_accueil/bouton_espace_presse_2.png" alt="Espace presse" width="93" height="90" border="0" title="Espace presse" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="charte_graphique_Grand_Figeac.html"><img src="images_page_d_accueil/bouton_charte_graphique_2.png" alt="Charte graphique Grand-Figeac" width="93" height="90" border="0" title="Charte graphique Grand-Figeac" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+								<tr>
+									<td height="33"> </td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center"><a href="paiements_en_ligne.html"><img src="images_page_d_accueil/bouton%20paiement%20en%20ligne%202.png" alt="Paiement en ligne" width="93" height="90" border="0" title="Paiement en ligne sécurisé TIPI" longdesc="https://www.grand-figeac.fr/"></a></div>
+									</td>
+								</tr>
+							</table>
+							<p align="center"> </p>
+							<p align="center"> </p>
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td width="629" height="183" align="center" valign="top">
+							<blockquote>
+								<div id="agrandir"><img src="css/agrandir.png" alt="icône augmenter la taille de la police" longdesc="https://www.grand-figeac.fr/" title="Augmenter la taille de la police"></div>
+								<div id="diminuer"><img src="css/diminuer.png" alt="icône diminuer la taille de la police" longdesc="https://www.grand-figeac.fr/" title="Diminuer la taille de la police"></div>
+								<p>
+									<!-- <div id="lire"><a href="" onClick="javascript:visibilite('id_div_1'); return false;" 
+ ><img src="css/fichier_audio.png" alt="bouton lecture fichier audio" width="26" height="19" border="0" longdesc="http://www.grand-figeac.fr/" title="Lire le fichier audio de l'article" /></a> 
+            <div id="id_div_1" style="display:none;">
+              <br />
+              <object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_mini.swf" width="95" height="40"> <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_mini.swf" /> <param name="bgcolor" value="#A3ABFB" /> <param name="FlashVars" value="mp3=https://www.grand-figeac.fr/fichiers son/editorial du journal communautaire automne 2018.mp3" /> </object>
+            </div> </div>    --><br></p>
+								<table width="450" border="0">
+									<tr>
+										<td colspan="2" align="center"><span class="Style24">Dans le respect des réglementations adoptées sur recommandation<br> des autorités sanitaires, <b>l'accès à la réunion est interdit au public.</b></span><br> <br></td>
+									</tr>
+									<tr>
+										<td align="center"><a href="https://www.youtube.com/channel/UCSn0uU41MOkbLr4-xSzbD-g/live" target="_blank"><img src="images%20page%20liens%20utiles/Webradio_GF.png" width="209" height="61" alt="Webradio Grand-Figeac" longdesc="https://www.grand-figeac.fr/"><br> </a><span class="Style20">Bienvenue sur notre plateforme d'écoute</span></td>
+										<td align="center" bgcolor="#CCCCCC"><span class="Style46"><b>Mercredi 15 juillet 2020 - 10h</b><br> Écoutez le direct de la réunion d'installation du nouveau<br> Conseil Communautaire</span></td>
+									</tr>
+								</table>
+								<p> </p>
+								<p><br style="clear:both;"></p>
+								<div id="motdupresident">
+									<p align="center"><span class="Style52"><u><img src="images_page_d_accueil/photo_Vincent_Labarthe_bureau_2.jpg" alt="Photo Vincent Labarthe" width="210" height="186" hspace="10" vspace="5" border="0" align="left" longdesc="https://www.grand-figeac.fr/"></u></span></p>
+									<p align="center"><span class="Style52">Piscines, les réouvertures<br> se poursuivent !</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Vendredi 3 juillet 2020</u>
+									</p>
+									<p align="justify"><br> <b>La LocÔ, centre aquatique du Grand-Figeac à Capdenac-Gare, ouverte jusqu'au 10 juillet</b></p>
+									<p align="justify">Ouverte depuis le 19 juin, la Locô sera en fonction jusqu'au 10 juillet.</p>
+									<p align="justify">Les conditions d'accueil du public restent inchangées et sont très bien acceptées et respectées par les usagers :</p>
+									<blockquote>
+										<p align="justify">- Jauge abaissée à 50 nageurs présents simultanément sur les 2 bassins,<br> - Sens de circulation,<br> - Consignes sanitaires obligatoires,<br> - Accès réservés à la nage et à l'apprentissage ; pas d'accès à l'espace balnéo,<br> - Accès possible pour les clubs sous condition de respecter les règles de sécurité.</p>
+									</blockquote>
+									<p align="justify">Les <b>séances d'aquagym</b> devraient reprendre pour la dernière semaine de fonctionnement. Les cours ont repris depuis la réouverture.<br> L'établissement est ainsi <b>ouvert du lundi au samedi de 12h à 14h et de 15h30 à 18h30.</b></p>
+									<p align="justify">Afin de respecter les capacités d'accueil autorisées, les inscriptions sont à effectuées au 05 65 64 70 26. Les usagers qui se présenteront sans réservation ne pourront accéder aux bassins que si la capacité d'accueil le permet.</p>
+									<p align="justify"><b>Le Surgié à Figeac, ouverture le 6 juillet</b></p>
+									<p align="justify">Les bassins sont prêts ! Les 2 bassins du Surgié ouvriront donc leurs portes à partir du 6 juillet :</p>
+									<blockquote>
+										<p align="justify">- Du 6 au 10 juillet, les après midi de 15h à 18h30<br> - À partir du 12 juillet, de 9h30 à 13h30 et de 14h30 à 18h30<br> - Les cours seront dispensés de 18h45 à 19h15</p>
+									</blockquote>
+									<p align="justify">Comme pour la LocÔ, la capacité maximale d'accueil a dû être réduite à 100 personnes maximum simultanées. L'accès sera possible sur réservation, toutefois l'accès sans réservation sera possible dans la limite des places maximum autorisées (100).</p>
+									<p align="justify"><b>Les reprises des autres bassins prévues pour le 12 juillet</b></p>
+									<p align="justify">Les bassins de Bagnac-sur-Célé, Cajarc, Causse-et-Diège, Lacapelle-Marival, et Saint-Sulpice sont en cours de préparation et les équipes en cours de recrutement. Les conditions d'accueil du public seront également revues pour chaque bassin en fonction de leur capacité maximum révisée selon les recommandations sanitaires.</p>
+									<p align="center"> </p>
+									<p align="center"><span class="Style53">Réouverture des médiathèques au public à partir du 1<sup>er</sup> juillet</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Lundi 29 juin 2020</u>
+									</p>
+									<p align="justify"><br> Après une période de fermeture imposée par la crise sanitaire, l'Astrolabe et <b><span class="Style22">les médiathèques du Grand-Figeac rouvrent au public le mercredi 1<sup>er</sup> juillet !</span></b></p>
+									<p align="justify">Nous serons heureux de vous accueillir à nouveau, aux horaires d'ouverture habituels, dès le 1<sup>er</sup> juillet, à l'exception de la médiathèque de Leyme qui rouvrira le 15 juillet.</p>
+									<p align="justify">Pour la sécurité de chacun, le lavage des mains au gel hydro-alcoolique est obligatoire pour tous et le port du masque est obligatoire à partir de 11 ans.</p>
+									<p align="justify">C'est l'occasion de vous concocter un été riche en lecture, musique et films !!</p>
+									<p align="justify"><b><span class="Style22">Jusqu'au mois de septembre vous pouvez emprunter deux fois plus.</span></b> C'est le moment d'en profiter !</p>
+									<p align="justify">Découvrez les nombreuses nouveautés en bande dessinée adulte et jeunesse, romans, romans policiers, ouvrages documentaires, albums ou romans pour la jeunesse. Il y en a pour tous les âges et pour tous les goûts !</p>
+									<p align="justify">Au plaisir de vous retrouver dans les médiathèques du Grand-Figeac !</p>
+									<table width="100%" border="0" align="center">
+										<tr>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque d'Assier</u></b></span></p>
+											</td>
+											<td> </td>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque de Capdenac-Gare</u></b></span></p>
+											</td>
+										</tr>
+										<tr>
+											<td>Lundi</td>
+											<td align="center">10h - 12h</td>
+											<td align="center"> </td>
+											<td> </td>
+											<td>Mercredi</td>
+											<td align="center">9h30 - 12h30</td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Mercredi</td>
+											<td align="center">10h - 12h</td>
+											<td align="center">14h - 18h</td>
+											<td> </td>
+											<td>Jeudi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h</td>
+											<td> </td>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Samedi</td>
+											<td align="center">10h - 12h</td>
+											<td align="center"> </td>
+											<td> </td>
+											<td>Samedi</td>
+											<td align="center">9h30 - 12h30</td>
+											<td align="center"> </td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque de Bagnac-sur-Célé</u></b></span></p>
+											</td>
+											<td> </td>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque de Figeac</u></b></span></p>
+											</td>
+										</tr>
+										<tr>
+											<td>Mercredi</td>
+											<td align="center">9h - 12h</td>
+											<td align="center"> 14h - 18h</td>
+											<td> </td>
+											<td>Mardi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h</td>
+											<td> </td>
+											<td>Mercredi</td>
+											<td align="center">10h - 12h30</td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Samedi</td>
+											<td align="center">9h - 12h</td>
+											<td align="center"> </td>
+											<td> </td>
+											<td>Jeudi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td>Samedi</td>
+											<td colspan="2" align="center">10h - 17h30</td>
+										</tr>
+										<tr>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque de Cajarc</u></b></span></p>
+											</td>
+											<td> </td>
+											<td colspan="3">
+												<p align="center"><span class="Style22"><b><u>Médiathèque de Leyme</u></b></span></p>
+											</td>
+										</tr>
+										<tr>
+											<td>Mercredi</td>
+											<td align="center">9h30 - 12h</td>
+											<td align="center">14h30 - 18h30</td>
+											<td> </td>
+											<td>Mardi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h30 - 18h30</td>
+											<td> </td>
+											<td>Mercredi</td>
+											<td align="center">10h - 12h30</td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+										<tr>
+											<td>Samedi</td>
+											<td align="center"> </td>
+											<td align="center">15h - 17h</td>
+											<td> </td>
+											<td>Vendredi</td>
+											<td align="center"> </td>
+											<td align="center">14h - 18h30</td>
+										</tr>
+									</table>
+									<p align="justify"> </p>
+									<p align="justify"> </p>
+									<p align="center"><span class="Style52">Piscines, les réouvertures<br> sont engagées !</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Jeudi 18 juin 2020</u>
+									</p>
+									<p align="justify"><br> <b>Réouverture de la LocÔ, centre aquatique du Grand-Figeac à Capdenac-Gare</b></p>
+									<p align="justify">Ouverture attendue de tous, le Grand-Figeac a tout mis en &#339;uvre depuis plusieurs semaines pour préparer la réouverture des piscines.</p>
+									<p align="justify">En dépit des annonces des autorités nationales, la possibilité de redonner l'accès aux bassins s'avère complexe. Le guide des recommandations des équipements sportifs, sites et espaces de pratiques sportives post confinement COVID19 édité par le Ministère des Sports a permis à la collectivité de définir les conditions de sécurité pour les nageurs et les agents. Les autorisations sanitaires et préfectorales ont été sollicitées.</p>
+									<p align="justify">La LocÔ, dont les bassins ont été maintenus en service durant tout le confinement, <b>ouvrira ainsi ses portes vendredi 19 juin :</b></p>
+									<p align="justify"><b> - Jauge abaissée à 50 nageurs présents simultanément sur les 2 bassins,<br> - Sens de circulation,<br> - Consignes sanitaires obligatoires,<br> - Accès réservés à la nage et à l'apprentissage ; pas d'accès à l'espace balnéo,<br> - Accès possible pour les clubs sous condition de respecter les règles de sécurité.</b></p>
+									<p align="justify">Tout est mis en &#339;uvre pour vous permettre de nager en toute sécurité.</p>
+									<p align="justify">L'accès aux bassins a dû être revu, l'établissement sera ainsi <b>ouvert du lundi au samedi de 12h à 14h et de 15h30 à 18h30. </b></p>
+									<p align="justify">Afin de respecter les capacités d'accueil autorisées, <b>vous devez vous inscrire avant votre venue, par téléphone au 05 65 64 70 26</b>. Les usagers qui se présenteront sans réservation ne pourront accéder aux bassins que si la capacité d'accueil le permet.</p>
+									<p align="justify"><b> Le Surgié à Figeac en préparation</b></p>
+									<p align="justify">Les équipes sont en pleine préparation du bassin et les recrutements saisonniers sont en cours, la date d'ouverture sera fixée prochainement dès les autorisations sanitaires reçues.</p>
+									<p align="justify"><b> Les reprises des autres bassins prévues pour la mi juillet</b></p>
+									<p align="justify">Sous réserve de la possibilité d'appliquer les recommandations sanitaires aux bassins de Bagnac-sur-célé, Cajarc, Causse-et-Diège, Lacapelle-Marival, et Saint-Sulpice, les équipes sont en train de préparer les bassins pour envisager des ouvertures à partir de la mi juillet.</p>
+									<p align="justify">La confirmation et les dates d'ouverture seront précisées ultérieurement.</p>
+									<p align="center"> </p>
+									<p align="center"><span class="Style52">Les Espaces Jeunes du Grand-Figeac sont ouverts !</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Lundi 15 juin 2020</u>
+									</p>
+									<p align="justify"><br> <b>Depuis la fermeture des collèges et des lycées, les Espaces jeunes du Grand-Figeac avaient fermés leurs portes.</b></p>
+									<p align="justify">Suite aux annonces de reprise progressive de l'accueil des collégiens et des lycées, les services publics vont également pouvoir accueillir à nouveau les jeunes, sous conditions ! Pour le moment cela ne concerne que les Espaces Jeunes de Figeac et Capdenac-Gare.</p>
+									<p align="justify"><b>L'Espace Jeunes Intercommunal de Figeac accueillera de nouveau le public dès le lundi 15 juin.</b></p>
+									<p align="justify">Afin de respecter le nécessaire protocole sanitaire, l'accueil se fera uniquement sur inscription. Les différents espaces comme l'accueil jeux, la salle musique, l'espace public multimédia et Point Information Jeunesse ayant un nombre de places limités, les temps de présence des utilisateurs pourront varier en fonction de la demande afin de pouvoir accueillir le plus grand nombre. Le port du masque sera obligatoire, il devra être fourni par les familles.</p>
+									<p align="justify">Au-delà de cette contrainte, le fonctionnement demeure identique. Les jeunes auront accès aux activités habituelles et l'accompagnement de projet de jeunes est maintenu.</p>
+									<p align="justify">Les vacances d'été sont en préparation pour des vacances ludiques et conviviales.</p>
+									<p align="center"><b>Renseignements et inscriptions</b> 05.65.11.09.43 / <a href="mailto:espacejeunes6@wanadoo.fr" target="_blank">espacejeunes6@wanadoo.fr</a></p>
+									<p align="justify"> </p>
+									<p align="center"><span class="Style52">Les services publics du Grand-Figeac prêts pour<br> le « déconfinement » progressif à partir du 11 mai</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Dimanche 10 mai 2020</u>
+									</p>
+									<p align="center"> </p>
+									<p align="justify"><b>Le Grand-Figeac a maintenu en fonctionnement l'essentiel de ses services à la population (dont la collecte des déchets ménagers) et est resté en contact avec les usagers depuis le déclenchement de « l'état d'urgence sanitaire » à la mi mars.</b> <br><br> <b>L'annonce gouvernementale d'un « déconfinement » progressif, répondant à un cadre national en cours de définition et dans un contexte de prolongation de « l'état d'urgence sanitaire » jusqu'à la mi-juillet, amorce une nouvelle phase dans l'organisation des services du Grand-Figeac à compter du 11 mai.</b> <br><br> <b>Un Plan de « Reprise d'Activité » a ainsi été élaboré et diffusé dans l'ensemble des services du Grand-Figeac, avec pour objectif de continuer à assurer, autant que faire se peut, la protection sanitaire des 220 agents de la Collectivité et du public.</b> <br> <br> <b>Ce plan est élaboré au regard des recommandations d'autorités nationales, dont celles du Haut Conseil de la Santé Publique, disponibles à ce jour ; Il évoluera nécessairement au fur et à mesure des cadrages apportés par l'Etat au niveau national et départemental.</b> <br><br> <b><u>Services fermés à l'accueil (physique) du public et services essentiels maintenus</u></b> <br><br> Depuis le 17 mars, les services du Grand-Figeac ont été organisés selon un plan de continuité d'activité (PCA) général permettant le maintien des services publics essentiels (collecte des déchets ménagers, accueil des enfants de personnels prioritaire dans les crèches, centre de santé intercommunal, service urbanisme, CIAS). Tous les services ont poursuivi leur activité en télétravail et sont restés accessibles au public, par téléphone ou courriel. <br><br> <b>À partir du 11 mai, de nouvelles dispositions sont mises en place. Elles sont valables pour le moment jusqu'au 2 juin.</b> <br><br> <b>Durant cette période, les services ne seront accessibles au public que par téléphone ou bien par voie dématérialisée.</b> <br><br> <b>Aucun accueil physique du public ne sera possible, sauf en ce qui concerne les services ci-après.</b> <br><br> 4 principes guident ce plan de reprise : <br>      - appliquer les gestes barrières, <br>      - respecter les distanciations physiques, <br>      - mettre à disposition des équipements de protection individuelle, <br>      - mettre en place la communication auprès des agents et du public. <br><br><br> <b><u>Ouverture au public de certains services, sous conditions</u></b> <br><br> <b>CRÈCHES :</b> L'accueil des enfants de 0 à 3 ans des personnels prioritaires continue à être assuré à FIGEAC. La capacité est de 5 en section « bébés », 7 en section « moyens » et 8 en section « grands ». Les mesures sanitaires sont renforcées avec l'accueil des enfants, par les professionnelles, à l'extérieur de la crèche et prise de température. Les parents ne sont plus autorisés à entrer dans l'établissement. La crèche de CAPDENAC-GARE accueillera les enfants dans les mêmes conditions. Les crèches associatives de LABATHUDE et LATRONQUIERE (Association Ségala Limargue) sont également ouvertes. <br><br> <b>Collecte des déchets ménagers :</b> Les services du Grand-Figeac poursuivent la collecte des déchets ménagers comme depuis le début de l'épidémie. Ils disposent de toutes les protections nécessaires. Afin de préserver la sécurité des agents de collecte et de tri, il est demandé à chacun de porter une attention particulière aux déchets qui ont été en contact étroit avec le corps (mouchoirs, masques jetables, lingettes, gants, etc.). Ils sont à jeter dans <b>les ordures ménagères dans un double sac fermé et en aucun cas dans le bac des recyclables. Pensons à celles et ceux qui trient manuellement nos déchets.</b> <br><br> <b>Chenil et fourrière :</b> Le service minimal sera assuré pour les soins indispensables à donner aux animaux mais aucun accueil pour adoption ou accueil de nouveaux animaux n'est encore possible à ce jour. Les conditions de reprise sont à l'étude. <br><br> <b>Centre intercommunal de santé :</b> Les 4 sites de LACAPELLE-MARIVAL, LEYME, AYNAC et LATRONQUIÈRE poursuivent leur activité pour assurer les consultations. Toutes les précautions sanitaires sont prises pour la sécurité des médecins, secrétaires médicales et patients. Il est important que tous ceux qui suivent des traitements pour des maladies chroniques puissent poursuivre le suivi avec leur médecin traitant. <br><br> <b>Urbanisme :</b> Le service reste fermé au public mais poursuit le suivi des actes (permis de construire, déclaration de travaux, déclaration d'intention d'aliéner), il est joignable par mail<br> <a href="mailto:urbanisme@grand-figeac.fr" target="_blank">urbanisme@grand-figeac.fr</a> et par téléphone au 05 65 11 47 60. <br><br> <b>Services techniques :</b> Les services d'intervention voirie, fauchage et de contrôles des installations d'assainissement non collectif reprendront progressivement leur activité à compter du 11 mai. <br><br> <b>Services Culturels :</b> Pour le moment, aucun spectacle ne peut être organisé. Tous les lieux culturels resteront fermés au public : cinémas de FIGEAC et CAPDENAC-GARE, médiathèques d'ASSIER, BAGNAC SUR CELE, CAJARC, CAPDENAC-GARE, FIGEAC, LEYME. <br><br> Un service de « lecture à emporter » garantissant de bonnes conditions sanitaires est à l'étude. <br><br> <b>Espaces Jeunes, Piscines, Cyberbase et Maison de la Formation</b> resteront fermés au public. <br><br><br> <b>Maintien de l'accueil téléphonique</b> <br><br> Un service d'accueil téléphonique aux horaires habituels d'ouverture est maintenu sur le siège de la communauté (05 65 11 22 76), sur le site de Lacapelle-Marival (05 65 11 08 08) et sur le site de Latronquière (05 65 11 61 97).</p><br> <b> </b>
+									<p align="center">Toutes les indications sanitaires sur : <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">www.gouvernement.fr/info-coronavirus</a></p><br><br>
+									<p align="center"><span class="Style52">Retour à la normale pour la collecte des déchets recyclables</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Mardi 5 mai 2020</u>
+									</p>
+									<p align="justify"><br> Depuis le début du confinement, comme dans la plupart des territoires français, le SYDED avait du mettre en pause ses centres de tri, ne pouvant assurer dans de bonnes conditions sanitaires la sécurité de ses agents.</p>
+									<p align="justify">La conséquence directe sur le Grand-Figeac a été de demander à chacun de limiter au maximum le remplissage des bacs de recyclables (jaunes ou verts) et de les stocker chez soi. Le maintien des tournées de collecte de ces bacs avait toutefois été décidé pour permettre à tous les habitants ne pouvant stocker de pouvoir conserver leur geste de tri et déposer ainsi leurs recyclables.</p>
+									<p align="justify"><span class="Style22"><b>Le comportement citoyen des habitants du Grand-Figeac a permis de limiter grandement le flux de déchets recyclables collectés durant cette période, le SYDED a ainsi pu compresser ces déchets et les stocker afin de les trier plus tard.</b></span> Ces déchets n'ont donc pas été incinérés et seront bien valorisés. Le geste et la vertu du tri ont été préservés !</p>
+									<p align="justify"><span class="Style22"><b>Une reprise progressive</b></span></p>
+									<p align="justify">Après plusieurs semaines de tests et d'adaptation de l'organisation dans des conditions compatibles avec les règles sanitaires, le SYDED a progressivement remis en service ses 3 centres de tri.</p>
+									<p align="justify">Depuis une semaine, le centre de tri de Figeac a repris son activité et peut désormais reprendre pleinement le rythme de traitement des recyclables.</p>
+									<p align="justify">Aussi, les habitants peuvent désormais poursuivre leurs bonnes habitudes de tri et déstocker leurs granges et garages !</p>
+									<p align="justify">Les équipes de collecte du Grand-Figeac, qui n'ont jamais cessé leurs tournées, assureront les collectes nécessaires à la gestion de ce déstockage sur les <b>quatre prochaines semaines.</b></p>
+									<p align="justify"><span class="Style22"><b>Pour faciliter cela et éviter les débordements de bacs, il est demandé si possible à chacun de <u>délester progressivement son stock sur les quatre prochaines semaines</u>, soit du 4 au 29 mai 2020.</b></span><br> <span class="Style22">Les sacs ne devront, par ailleurs, pas être déposés à même le sol mais dans les bacs à déchets. En cas de bacs pleins, ils devront être présentés lors des collectes suivantes. Les conteneurs enterrés ou semi-enterrés seront eux aussi collectés normalement.</span></p>
+									<p align="justify"><span class="Style22"><b>Nous remercions grandement tous les habitants du Grand-Figeac qui par leur comportement citoyen ont réussi à poursuivre le tri sélectif de leurs déchets et éviter de cette manière de les reporter sur les déchets incinérés.</b></span></p>
+									<p align="center"><span class="Style22"><b>Poursuivons l'effort collectif : jetons moins, compostons et trions !</b></span></p>
+									<p align="justify"><span class="Style22"><b>Quelques précautions pour les déchets à risques (gants, masques&#8230;)</b></span></p>
+									<p align="justify">Afin de préserver la sécurité des agents de collecte et de tri, il est demandé à chacun de porter une attention particulière aux déchets qui ont été en contact étroit avec le corps (mouchoirs, masques jetables, lingettes, gants, etc). Ils sont à jeter dans les ordures ménagères dans un double sac fermé et en aucun cas dans le bac des recyclables. Pensons à celles et ceux qui trient manuellement nos déchets.</p>
+									<p align="justify">Toutes les indications sanitaires sur : <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">www.gouvernement.fr/info-coronavirus</a></p>
+									<p align="center">
+										<!-- <img src="images_page_d_accueil/photo_Martin_Malvy.png" alt="Photo Martin Malvy" width="92" height="123" hspace="10" vspace="10" align="left" longdesc="http://www.grand-figeac.fr/" /> --><br></p>
+									<p align="center"><span class="Style52">Masques Made in Grand-Figeac<br> Couturières et couturiers, nous avons encore besoin de vous !</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Samedi 2 mai 2020</u>
+									</p>
+									<p align="center"> </p>
+									<p align="justify">Plus de 330 couturières nous ont déjà rejoints, MERCI ! Plus vous serez nombreux plus l'opération sera facilitée et accelérée, alors n'hésitez pas si vous avez des talents de couturiers à vous inscrire sur <a href="https://www.grand-figeac.fr/mon-voisin-solidaire" target="_blank">www.grand-figeac.fr/mon-voisin-solidaire</a> pour que nous vous intégrions dans le groupe et vous fournissions dans les prochains jours les lots prêts à assembler !</p>
+									<p align="justify">&#8230;et si vous avez des talents de bricoleurs, vous pouvez également rejoindre l'aventure en vous inscrivant sur le site dans la catégorie « Je propose mon aide - dépannage de machine à coudre » !</p>
+									<p align="justify"><b>La campagne de collecte participative toujours en cours</b></p>
+									<p align="justify">Afin de faciliter la fabrication de ces masques, une collecte en ligne a été ouverte sur la plateforme nationale de financement participatif KissKissBankBank. Le Grand-Figeac assure ainsi un rôle d'organisateur dans un but d'intérêt général.</p>
+									<p align="justify"><b>Pour 1 &#8364; collecté le Grand-Figeac ajoutera 1 &#8364;</b> et amplifiera ainsi la production de masques en tissus. Il complétera le financement nécessaire pour produire ces masques, estimé aujourd'hui à 70 000 &#8364;.</p>
+									<p align="justify">La collecte, dont l'objectif minimum était fixé à 5 000 &#8364;, sera exclusivement dédiée à l'achat de tissus, la découpe et les matériaux nécessaires à la confection des masques. Elle a déjà dépassé son objectif à plus de 200 % mais elle se poursuit sur les prochaines semaines !</p>
+									<p align="center">Accéder à la collecte : <a href="https://www.kisskissbankbank.com/fr/projects/masques-made-in-grandfigeac-covid19" target="_blank">www.kisskissbankbank.com/fr/projects/masques-made-in-grandfigeac-covid19</a></p>
+									<p align="justify"><b><span class="Style21">Retrouvez toutes les informations techniques sur les masques</span></b> <a href="communique_de_presse.html" target="_blank">[</a> <a href="communique_de_presse.html" target="_blank">cliquez ici</a> <a href="communique_de_presse.html" target="_blank">]</a></p>
+									<p align="justify"><b>SVP - la fabrication prendra au moins 4 semaines, alors ne nous demandez pas de masques tout de suite ! Nous devons les fabriquer et vous tiendrons au courant de leur disponibilité dans vos communes.</b></p>
+									<p align="center"> </p>
+									<p align="center"><span class="Style52">Mon Voisin Solidaire : service public<br> d'entraide territoriale du Grand-Figeac</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Lundi 30 mars 2020</u>
+									</p>
+									<p align="justify"><br> Suite à l'ouverture de la plateforme d'entraide <i>Mon Voisin Solidaire</i>, vendredi dernier.<br> <b>Un numéro d'appel</b> a été mis en place <b>pour accéder aux services de celle-ci</b> : <b>05 65 11 61 97</b>.</p>
+									<p align="justify">Tout l'enjeu est maintenant de faire connaitre ce service auprès des personnes en ayant besoin.</p>
+									<p align="justify">Diffusez ce numéro aux personnes qui ne sont pas connectées.</p>
+									<p align="justify">Mode d'emploi : <a href="images%20page%20communique%20de%20presse/NOTICE_MonVoisinSolidaire.pdf" target="_blank">[cliquez_ici]</a>    Accès à la plateforme : <a href="https://www.grand-figeac.fr/mon-voisin-solidaire/" target="_blank">www.grand-figeac.fr/mon-voisin-solidaire/</a></p>
+									<p align="center"><br></p>
+									<p align="center"><span class="Style52">Continuité du Service de Collecte des déchets ménagers</span></p>
+									<p align="center"> </p>
+									<p align="justify">
+										<u>Mercredi 25 mars 2020</u>
+									</p>
+									<p align="justify"><br> Les services du Grand-Figeac poursuivent la collecte des déchets ménagers. En fonction du personnel présent, les tournées pourront néanmoins être adaptées, mais à ce jour, tout le personnel mobilisable est en activité.</p>
+									<p align="justify">Concernant les <b>tournées des déchets ménagers</b> (bacs marron), elles ne sont pas modifiées et <b>sont assurées normalement</b>.</p>
+									<p align="justify">Concernant les <b>tournées de recyclables</b>, suite à l'annonce de la fermeture des centres de tri par le SYDED, il a été demandé aux citoyens, par voie de presse, de conserver autant que possible chez eux les déchets recyclables. Il s'agit avant tout de ne pas interrompre le réflexe de tri, qui serait très long à réinstaller, d'autant que nous avions collectivement progressé en la matière.</p>
+									<p align="justify">Pour autant, plusieurs raisons nous obligent à <b>maintenir les tournées de recyclables à l'identique</b> tant que cela sera possible :</p>
+									<p align="justify">- Collecter les bacs jaunes ou verts qui étaient déjà pleins,</p>
+									<p align="justify">- Maintenir la collecte des points sensibles ne pouvant stocker leurs recyclables (entreprises, établissements de santé, ESAT, EHPAD, etc.),</p>
+									<p align="justify">- Permettre aux habitants ne pouvant stocker, de poursuivre le tri en leur laissant des bacs dédiés à disposition.</p>
+									<p align="justify"><b>Il est donc demandé aux habitants du Grand-Figeac :</b></p>
+									<p align="justify">- De stocker le recyclable chez eux s'ils le peuvent, afin d'envoyer au minimum les recyclables avec les déchets ménagers,</p>
+									<p align="justify">- S'ils ne peuvent pas stocker, ils doivent continuer d'utiliser les bacs jaunes ou verts pour le recyclable. Même si en bout de chaine ces déchets ne seront pas triés, ils ne doivent pas être transférés dans les bacs marron pour 2 raisons : ne pas casser l'acte de tri et ne pas alourdir la collecte des déchets ménagers.</p>
+									<p align="center"> </p>
+									<p align="center"><span class="Style52">Grand-Figeac : mesures appliquées aux services communautaires<br> pour limiter la propagation du Coronavirus COVID-19</span></p>
+									<p align="center"></p><br>
+									<p align="justify">
+										<u>Mardi 17 mars 2020</u>
+									</p>
+									<p align="justify"><br> Les services du Grand-Figeac s'organisent en fonction des mesures actuellement en vigueur au stade 3 de l'épidémie de coronavirus COVID-19. Suite aux dernières consignes gouvernementales, le Président du Grand-Figeac met en place les mesures qui s'imposent.</p>
+									<p align="justify"><b>Services fermés à l'accueil du public et services essentiels maintenus</b></p>
+									<p align="justify">Au stade 3 de l'épidémie déclarée actuellement, les mesures de limitation de la propagation du virus permettant d'éviter les conséquences sur les services de soins et les personnes les plus fragiles sont obligatoires.</p>
+									<p align="justify">Ainsi, <b>tous les services publics non essentiels et indispensables à la population sont fermés</b> au public et organisent un roulement pour assurer la continuité du service public.</p>
+									<p align="justify">Le Président du Grand-Figeac a donc décidé, en accord avec la Préfecture, le CIAS, la Ville de Figeac, l'Office du Tourisme, l'Office Intercommunal des Sports, d'organiser ces permanences pour une durée d'au moins 15 jours et jusqu'à nouvel ordre à l'exception des services suivants :</p>
+									<p align="justify">- <b>CRÈCHES</b> : À l'attention des enfants de 0 à 3 ans des personnels prioritaires définis par arrêté (soignants et personnels prioritaires) : la crèche de FIGEAC, la crèche de LABATHUDE et la crèche de LATRONQUIÈRE seront ouvertes dès le mardi 17 mars pour accueillir exclusivement les enfants concernés. Le Grand-Figeac, l'Association Ségala Limargue et Les Ballons Rouges de Cardaillac ont organisé la permanence de l'accueil en mutualisant les effectifs et en regroupant les lieux d'accueil afin de libérer les personnels soignants.</p>
+									<p align="justify">- <b>CIAS</b> : l'accueil d'urgence de nuit (115), le portage de repas à domicile, l'épicerie sociale seront maintenus grâce à la mobilisation des travailleurs sociaux du CIAS. Les services de suivi de domiciliation et de déclaration RSA et primes d'activité seront maintenus en accès limité.</p>
+									<p align="justify">- <b>Collecte des déchets ménagers</b> : les services du Grand-Figeac assureront la collecte des déchets ménagers. En fonction du personnel mobilisable, les tournées pourront néanmoins être adaptées.</p>
+									<p align="justify">- <b>Chenil et fourrière</b> : le service minimal sera assuré pour les soins indispensables à donner aux animaux, mais aucun accueil pour adoption ou accueil de nouveaux animaux ne sera possible.</p>
+									<p align="justify">- <b>Centre intercommunal de santé</b> : les 4 sites de LACAPELLE-MARIVAL, LEYME, AYNAC et LATRONQUIÈRE resteront ouverts pour assurer les consultations.</p>
+									<p align="justify">- <b>Urbanisme</b> : le service sera fermé au public, mais assurera le suivi des actes urgents, il sera joignable exclusivement par mail
+										<script type="text/javascript">
+var name = "urbanisme" ;
+var domain = "grand-figeac.fr" ;
+var subject = "subject=Demande de renseignements" ;
+document.write('<a href=\"mailto:' + name + '@' + domain + ' ?' + subject + '\">') ;
+document.write(name + '@' + domain + '') ;
+										</script>
+									</p>
+									<p align="justify">- <b>Transport à la Demande</b> : Ce service sera maintenu étant indispensable pour certaines personnes pour assurer les déplacements essentiels (alimentaires et santé), sous réserve de la capacité des transporteurs à mettre en &#339;uvre les conditions de distanciation dans les véhicules et en limitant le nombre de personnes transportées.</p>
+									<p align="justify"><br></p>
+									<p align="justify">
+										<u>Par ailleurs, en dehors des services précités.</u>
+									</p>
+									<p align="justify">- un service d'accueil téléphonique sera mis en place tous les matins sur le siège de la communauté (05 65 11 22 76), sur le site de Lacapelle-Marival (05 65 11 08 08) et sur le site de Latronquière (05 65 11 61 97)</p>
+									<p align="justify">- un service d'intervention d'urgence pour les bâtiments ou la voirie communautaire est également mis en service afin d'assurer les interventions nécessaires pour ne pas entraver la circulation ou des questions de sécurité</p>
+									<p align="justify">- les services communautaires seront autant que possible placés en télétravail et joignables par mail.</p>
+									<p align="justify"></p>
+									<p align="justify">Les contacts et informations sur cette organisation permettant d'assurer la continuité de l'activité sur www.grand-figeac.fr</p>
+									<p align="justify"><br></p>
+									<p align="justify"><b>Rappel des mesures de précaution à observer</b></p>
+									<p align="justify">Selon les recommandations formulées par les autorités de santé publique, pour les services restant en fonctionnement, les précautions suivantes sont obligatoirement mises en place :</p>
+									<p align="justify">- Application des mesures communiquées par les autorités sanitaires : se laver les mains, éternuer dans son coude, respecter des distances minimales d'1 m, ne pas serrer la main et éviter les embrassades,</p>
+									<p align="justify">- Rester confiné et limiter ses déplacements au strict nécessaire.</p>
+									<p align="justify"></p>
+									<p align="justify">Toutes les indications sanitaires sur : <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">https://www.gouvernement.fr/info-coronavirus</a><br></p>
+									<p align="justify"><br> <br></p>
+									<p align="right"><b>Vincent LABARTHE</b><br> Président du Grand-Figeac<br></p>
+								</div>
+							</blockquote>
+						</td>
+						<td width="6"> </td>
+					</tr>
+					<tr>
+						<td height="154" valign="middle">
+							<div align="center" class="Style10 Style12">
+								<p class="Style12"> </p>
+								<p class="Style12"><span class="Style12"> <script language="javascript">
+	      </script> </span> <span class="Style12"> <script language="javascript"></script> </span><span class="Style11"> <script language="javascript"></script> </span>
+									<script language="javascript">function OuvrirPopup(page,nom,option) {
+	window.open(page,nom,option);
+	}
+	      
+									</script><a href="javascript:OuvrirPopup('carte_communaute_de_communes.htm','','resizable=no,location=no,width=1009,height=700,menubar=no,status=no,scrollbars=no,menubar=no')" class="Style46"><img src="images_page_d_accueil/logo%20info.gif" alt="logotype info" width="25" height="25" align="absmiddle" longdesc="https://www.grand-figeac.fr"></a> <a href="javascript:OuvrirPopup('carte_communaute_de_communes.htm','','resizable=no,location=no,width=1009,height=700,menubar=no,status=no,scrollbars=no,menubar=no')" class="Style46">Voir la carte détaillée</a>      <img src="images_page_d_accueil/secteurs.png" alt="Illustration découpe en secteurs territoriaux" width="40" height="38" align="absmiddle" longdesc="https://www.grand-figeac.fr/"> <a href="https://www.grand-figeac.fr/videos/visionneuse_carte_animee_grand_figeac_2017.html?height=642&width=547" title="Ressources" class="thickbox Style46">Voir le découpage des secteurs territoriaux</a></p>
+								<p> </p>
+							</div>
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="64" valign="top">
+							<!-- animation -->
+							<iframe width="640" height="206" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" src="replace_flash/cartes_accueil_5.html"></iframe>
+							<!-- fin animation -->
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="40"> </td>
+						<td>
+							<!-- <a id="jrntepos" style="display:none;"></a> -->
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="203"> </td>
+						<td valign="middle" background="images_page_d_accueil/post_it_vierge.jpg">
+							<p align="center" class="Style10"><span class="Style14">GRAND - FIGEAC<br> Maison des Services Publics Intercommunaux</span><br> <br> <span class="Style46">35-35 bis, allées Victor Hugo - BP 118 - 46103 FIGEAC Cedex<br> accueil général <img src="images_page_d_accueil/telephone.jpg" alt="icône téléphone" width="25" height="25" align="absmiddle" longdesc="https://www.grand-figeac.fr/"> 05 65 11 22 76</span><br> <br> <span class="Style46">Les bureaux sont ouverts au public : du lundi au vendredi<br> de 8h30 à 12h30 et de 14h à 17h30 </span></p>
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="42"> </td>
+						<td>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+							<p> </p>
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="30"></td>
+						<td align="center" valign="middle" background="images_page_d_accueil/bandeau_bas_court.jpg">
+							<div align="center"><span class="Style44"><b>© </b>COMMUNAUTÉ DE COMMUNES DU GRAND - FIGEAC - 2019   |   <a href="plan_du_site.html">Plan du site</a>   |   <a href="mentions_legales.html">Mentions</a>   |   <a href="information_sur_la_protection_des_donnees.html">Protection des données</a></span></div>
+						</td>
+						<td> </td>
+					</tr>
+					<tr>
+						<td height="1"></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td height="5"></td>
+						<td valign="top">
+							<!--DWLayoutEmptyCell--> </td>
+						<td> </td>
+					</tr>
+				</table>
+				<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49849174-1', 'grand-figeac.fr');
+  ga('send', 'pageview');
+				</script>
+			</td>
+		</tr>
+	</body>
+</html>
