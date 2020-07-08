@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic" rel="stylesheet" type="text/css">
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="/css/styles.css?6">
+		<!--<![endif]-->
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/images/favicons/apple-touch-startup-image-1182x2208.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/images/favicons/apple-touch-startup-image-1242x2148.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/images/favicons/apple-touch-startup-image-1496x2048.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/images/favicons/apple-touch-startup-image-1536x2008.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/images/favicons/apple-touch-startup-image-320x460.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/images/favicons/apple-touch-startup-image-640x1096.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/images/favicons/apple-touch-startup-image-640x920.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/images/favicons/apple-touch-startup-image-748x1024.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/images/favicons/apple-touch-startup-image-750x1294.png">
+		<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/images/favicons/apple-touch-startup-image-768x1004.png">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-230x230.png" sizes="230x230">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicons/coast-228x228.png" sizes="228x228">
+		<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/images/favicons/manifest.json">
+		<link rel="shortcut icon" href="/images/favicons/favicon.ico">
+		<link rel="yandex-tableau-widget" href="/images/favicons/yandex-browser-manifest.json">
+		<meta property="og:image" content="/images/favicons/open-graph.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="/css/ie.css?6" />
+        <script type="text/javascript" src="/js/head.js?6"></script>
+        <![endif]-->
+		<title>Portes du Luxembourg</title>
+		<meta name="description" content="Site Internet des Portes du Luxembourg, Douzy, Carignan, Mouzon, Raucourt">
+		<meta name="keywords" content="communauté,communes,portes du luxembourg,carignan,mouzon,raucourt,douzy,ardennes,sommer,feutre,espace famille">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://www.portesduluxembourg.fr/search/opensearch.xml" title="Rechercher dans les portes du luxembourg">
+	</head>
+	<body>
+		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-11791470-24', 'auto'); ga('send', 'pageview');</script><a class="link-to-content smooth" href="#main"> <span class="link-to-content-text">Accéder au contenu</span> </a>
+		<div id="body-container" class="body-container">
+			<div class="body-content">
+				<header id="header" class="header extend-home-header" role="banner">
+					<div class="header-container month-07">
+						<h1 class="main-title" role="heading" aria-level="1"><a href="/" class="main-title-link" tabindex="0"><span class="main-title-name">Portes du Luxembourg</span></a></h1><a href="#main-nav" class="open-menu-link" data-menu-slide>Menu</a>
+						<div class="search-widget-container" role="search"><a id="#open-search" class="open-search" href="#form-search" data-open-close="#search-widget" title="ouvrir le formulaire de recherche" aria-haspopup="true" aria-controls="form-search" aria-expanded="false"> Rechercher </a>
+							<div id="search-widget" class="search-widget" aria-hidden="true" aria-labelledby="open-search">
+								<div class="search-widget-inner">
+									<form class="form-search" method="GET" action="/search">
+										<div class="form-search-inner">
+											<div class="form-search-row" data-float-form><label data-float-label="" for="q" class="control-label">Rechercher</label> <input type="search" id="q" name="q" required="required" data-float-input="" class="search-query input-small"></div><button class="search-submit" type="submit">Rechercher</button></div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<nav id="main-nav" class="main-nav  extend-home-menu" role="navigation" data-home-main-nav data-open-close-container>
+							<!--
+            -->
+							<h3 class="main-menu-title" role="heading" aria-level="2">Menu principal</h3>
+							<!--
+            -->
+							<div class="main-nav-container">
+								<ul class="main-menu-root main-menu-list-1">
+									<li data-node-id="4" class="main-node main-node-5 node node-level-1 decouvrir"><a href="/terre-de.html" data-open-close="#dropdown-4" aria-haspopup="true" aria-controls="dropdown-4" aria-expanded="false" id="main-node-link-4" class="main-node-link node-link node-link-level-1" tabindex="0" data-home-target-scroll-to="[data-home-main-nav]"> <span class="main-node-link-content">découvrir</span> </a>
+										<div id="dropdown-4" class="dropdown-menu" role="group" aria-hidden="true" aria-labelledby="main-node-link-4">
+											<div class="main-menu-submenu main-menu-list-2">
+												<div class="submenu-column submenu-lead-column">
+													<h4 class="dropdown-menu-title  decouvrir" aria-level="3"><span class="dropdown-menu-title-content"> découvrir </span></h4>
+													<ul class="submenu-list">
+														<li data-node-id="44" class="node node-level-2">
+															<ul class="main-menu-list-3">
+																<li data-node-id="49" class="node node-level-3"><a href="/les-fortifications.html" class="node-link node-link-level-3"> Les sites incontournables </a></li>
+																<li data-node-id="77" class="node node-level-3"><a href="/points-de-vue.html" class="node-link node-link-level-3"> A voir absolument ! </a></li>
+																<li data-node-id="78" class="node node-level-3"><a href="/idees-de-week-end.html" class="node-link node-link-level-3"> Où sortir ? </a></li>
+																<li data-node-id="134" class="node node-level-3"><a href="/annuaire/restaurants.html" class="node-link node-link-level-3"> Où manger et où dormir ? </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="7" class="node node-level-2"><a href="/terre-de.html" class="node-link node-link-level-2"> Présentation du Territoire </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="25" class="node node-level-3"><a href="/terre-de.html" class="node-link node-link-level-3"> Vivez les plus belles rencontres ! </a></li>
+																<li data-node-id="48" class="node node-level-3"><a href="/le-tourisme-a-votre-porte.html" class="node-link node-link-level-3"> Le Tourisme à votre porte </a></li>
+															</ul>
+														</li>
+														<li data-node-id="8" class="node node-level-2"><a href="/respirer.html" class="node-link node-link-level-2"> Nature </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="50" class="node node-level-3"><a href="/respirer.html" class="node-link node-link-level-3"> Respirer ! </a></li>
+																<li data-node-id="28" class="node node-level-3"><a href="/points-de-vue.html" class="node-link node-link-level-3"> Points de vue remarquables </a></li>
+																<li data-node-id="29" class="node node-level-3"><a href="/a-cheval-a-pied-ou-a-velo.html" class="node-link node-link-level-3"> A cheval, à pied ou à vélo </a></li>
+																<li data-node-id="30" class="node node-level-3"><a href="/les-vallees-et-forets.html" class="node-link node-link-level-3"> Les Vallées et Forêts de caractères </a></li>
+																<li data-node-id="31" class="node node-level-3"><a href="/les-chemins-de-randonnee.html" class="node-link node-link-level-3"> Les Chemins de randonnée </a></li>
+															</ul>
+														</li>
+														<li data-node-id="9" class="node node-level-2"><a href="/sensations-fortes.html" class="node-link node-link-level-2"> Loisirs & Sorties </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="32" class="node node-level-3"><a href="/sensations-fortes.html" class="node-link node-link-level-3"> Se ressourcer et vivre des sensations fortes </a></li>
+																<li data-node-id="33" class="node node-level-3"><a href="/apprendre-en-s-amusant.html" class="node-link node-link-level-3"> Apprendre en s'amusant </a></li>
+																<li data-node-id="34" class="node node-level-3"><a href="/idees-de-week-end.html" class="node-link node-link-level-3"> Idées de week-end </a></li>
+																<li data-node-id="168" class="node node-level-3"><a href="/au-dela-des-frontieres.html" class="node-link node-link-level-3"> Au-delà des frontières... </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="10" class="node node-level-2"><a href="/du-bati-ancien.html" class="node-link node-link-level-2"> Patrimoines </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="35" class="node node-level-3"><a href="/du-bati-ancien.html" class="node-link node-link-level-3"> Du bâti ancien... </a></li>
+																<li data-node-id="36" class="node node-level-3"><a href="/a-l-art-sacre-contemporain.html" class="node-link node-link-level-3"> à l'Art sacré contemporain </a></li>
+																<li data-node-id="37" class="node node-level-3"><a href="/art-de-vivre.html" class="node-link node-link-level-3"> Art de vivre </a></li>
+															</ul>
+														</li>
+														<li data-node-id="11" class="node node-level-2"><a href="/les-fortifications.html" class="node-link node-link-level-2"> Histoire </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="40" class="node node-level-3"><a href="/les-fortifications.html" class="node-link node-link-level-3"> Les fortifications </a></li>
+																<li data-node-id="39" class="node node-level-3"><a href="/les-sites-gallo-romains.html" class="node-link node-link-level-3"> Les sites gallo-romains </a></li>
+																<li data-node-id="41" class="node node-level-3"><a href="/traces-de-guerre.html" class="node-link node-link-level-3"> Traces de guerre & Lieux de mémoire </a></li>
+																<li data-node-id="51" class="node node-level-3"><a href="/aller-plus-loin.html" class="node-link node-link-level-3"> Aller plus loin </a></li>
+															</ul>
+														</li>
+														<li data-node-id="12" class="node node-level-2"><a href="/annuaire/restaurants.html" class="node-link node-link-level-2"> Prestataires et Acteurs touristiques </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="133" class="node node-level-3"><a href="/annuaire/restaurants.html" class="node-link node-link-level-3"> Les Bonnes tables </a></li>
+																<li data-node-id="140" class="node node-level-3"><a href="/annuaire/hebergements.html" class="node-link node-link-level-3"> Les hébergements </a></li>
+																<li data-node-id="146" class="node node-level-3"><a href="/annuaire/camping.html" class="node-link node-link-level-3"> Les Campings </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list"></ul>
+												</div>
+												<div class="submenu-column submenu-news-column">
+													<h4 class="submenu-column-title">Actualités <span class="submenu-column-subtitle">touristiques</span></h4>
+													<section class="lead-blog-post">
+														<div class="lead-blog-post-inner"><a href="/article/clip-video-le-tourisme-aux-portes-du-luxembourg.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Clip Vidéo : le Tourisme aux Portes du Luxembourg"> <h5 class="lead-blog-post-title"><div class="lead-blog-post-media"><iframe width="100%" height="auto" src="//www.youtube.com/embed/Mqa2cRs2xoM" frameborder="0" allowfullscreen></iframe></div><time class="blog-post-date week-09" datetime="2020-02-26T15:23:00+01:00"><span class="day"> 26 </span><span class="month"> févr. </span></time><span class="lead-blog-post-title-content"> Clip Vidéo : le Tourisme aux Portes du Luxembourg </span></h5> </a></div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li data-node-id="6" class="main-node main-node-5 node node-level-1 entreprendre"><a href="/presentation-et-chiffres-cles.html" data-open-close="#dropdown-6" aria-haspopup="true" aria-controls="dropdown-6" aria-expanded="false" id="main-node-link-6" class="main-node-link node-link node-link-level-1" tabindex="0" data-home-target-scroll-to="[data-home-main-nav]"> <span class="main-node-link-content">entreprendre</span> </a>
+										<div id="dropdown-6" class="dropdown-menu" role="group" aria-hidden="true" aria-labelledby="main-node-link-6">
+											<div class="main-menu-submenu main-menu-list-2">
+												<div class="submenu-column submenu-lead-column">
+													<h4 class="dropdown-menu-title  entreprendre" aria-level="3"><span class="dropdown-menu-title-content"> entreprendre </span></h4>
+													<ul class="submenu-list">
+														<li data-node-id="45" class="node node-level-2">
+															<ul class="main-menu-list-3">
+																<li data-node-id="147" class="node node-level-3"><a href="/synergie-ardennes.html" class="node-link node-link-level-3"> Synergie Ardennes </a></li>
+																<li data-node-id="155" class="node node-level-3"><a href="/annuaire/offre-immobiliere-du-territoire.html" class="node-link node-link-level-3"> Offre immobilière du Territoire </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="63" class="node node-level-2"><a href="/presentation-et-chiffres-cles.html" class="node-link node-link-level-2"> Les Atouts du Territoire </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="64" class="node node-level-3"><a href="/presentation-et-chiffres-cles.html" class="node-link node-link-level-3"> Présentation et Chiffres clés </a></li>
+															</ul>
+														</li>
+														<li data-node-id="17" class="node node-level-2"><a href="/l-accompagnement-de-votre-projet.html" class="node-link node-link-level-2"> S'implanter / Se développer </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="70" class="node node-level-3"><a href="/l-accompagnement-de-votre-projet.html" class="node-link node-link-level-3"> L'accompagnement de votre projet </a></li>
+																<li data-node-id="71" class="node node-level-3"><a href="/l-aide-au-financement-de-votre-projet.html" class="node-link node-link-level-3"> L'aide au financement de votre projet </a></li>
+																<li data-node-id="74" class="node node-level-3"><a href="/temoignages.html" class="node-link node-link-level-3"> Témoignages </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="14" class="node node-level-2"><a href="/zone-d-activites-de-douzy.html" class="node-link node-link-level-2"> Zones d'Activités </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="65" class="node node-level-3"><a href="/zone-d-activites-de-douzy.html" class="node-link node-link-level-3"> Zone d'Activité de Douzy </a></li>
+																<li data-node-id="67" class="node node-level-3"><a href="/zone-d-activite-de-we-carignan.html" class="node-link node-link-level-3"> Zone d'Activité de Wé - Carignan </a></li>
+																<li data-node-id="66" class="node node-level-3"><a href="/zone-d-activite-industrielle-de-mouzon.html" class="node-link node-link-level-3"> Zone d'Activité industrielle de Mouzon </a></li>
+															</ul>
+														</li>
+														<li data-node-id="16" class="node node-level-2"><a href="/annuaire/village-pme-de-douzy.html" class="node-link node-link-level-2"> Offre immobilière </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="73" class="node node-level-3"><a href="/annuaire/village-pme-de-douzy.html" class="node-link node-link-level-3"> Village PME de Douzy </a></li>
+																<li data-node-id="80" class="node node-level-3"><a href="/annuaire/village-pme-de-mouzon.html" class="node-link node-link-level-3"> Village PME de Mouzon </a></li>
+																<li data-node-id="154" class="node node-level-3"><a href="/annuaire/offre-immobiliere-du-territoire.html" class="node-link node-link-level-3"> Offre immobilière du territoire </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list"></ul>
+												</div>
+												<div class="submenu-column submenu-news-column">
+													<h4 class="submenu-column-title">Actualités <span class="submenu-column-subtitle">des entreprises</span></h4>
+													<section class="lead-blog-post">
+														<div class="lead-blog-post-inner"><a href="/article/covid-19-mesures-d-accompagnement-aux-entreprises.html" class="last-blog-post-link readmore" title="Lire la suite de l’article COVID - 19 Mesures d'accompagnement aux entreprises"> <h5 class="lead-blog-post-title"><div class="lead-blog-post-media"><img src="/media/cache/menu_post_thumbnail/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div><time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time><span class="lead-blog-post-title-content"> COVID - 19 Mesures d'accompagnement aux entreprises </span></h5> </a></div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li data-node-id="5" class="main-node main-node-5 node node-level-1 vivre"><a href="/le-territoire.html" data-open-close="#dropdown-5" aria-haspopup="true" aria-controls="dropdown-5" aria-expanded="false" id="main-node-link-5" class="main-node-link node-link node-link-level-1" tabindex="0" data-home-target-scroll-to="[data-home-main-nav]"> <span class="main-node-link-content">vivre</span> </a>
+										<div id="dropdown-5" class="dropdown-menu" role="group" aria-hidden="true" aria-labelledby="main-node-link-5">
+											<div class="main-menu-submenu main-menu-list-2">
+												<div class="submenu-column submenu-lead-column">
+													<h4 class="dropdown-menu-title  vivre" aria-level="3"><span class="dropdown-menu-title-content"> vivre </span></h4>
+													<ul class="submenu-list">
+														<li data-node-id="46" class="node node-level-2">
+															<ul class="main-menu-list-3">
+																<li data-node-id="110" class="node node-level-3"><a href="/spb/espace-famille.html" class="node-link node-link-level-3"> Espace Famille </a></li>
+																<li data-node-id="183" class="node node-level-3"><a href="/document/category/prog-culturelle.html" class="node-link node-link-level-3"> Programmation culturelle du territoire </a></li>
+																<li data-node-id="127" class="node node-level-3"><a href="/document/category/magazine.html" class="node-link node-link-level-3"> Le Mag' </a></li>
+																<li data-node-id="150" class="node node-level-3"><a href="/infos-pratiques.html" class="node-link node-link-level-3"> Infos pratiques </a></li>
+																<li data-node-id="151" class="node node-level-3"><a href="/document/category/marches-publics.html" class="node-link node-link-level-3"> Les marchés publics </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="19" class="node node-level-2"><a href="/le-territoire.html" class="node-link node-link-level-2"> La Communauté de Communes </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="88" class="node node-level-3"><a href="/le-territoire.html" class="node-link node-link-level-3"> Le Territoire </a></li>
+																<li data-node-id="106" class="node node-level-3"><a href="/annuaire/les-elus-et-le-conseil.html" class="node-link node-link-level-3"> Les élus et le Conseil </a></li>
+																<li data-node-id="192" class="node node-level-3"><a href="/document/category/rapport-conseils-communautaires.html" class="node-link node-link-level-3"> Le conseil communautaire </a></li>
+																<li data-node-id="90" class="node node-level-3"><a href="/le-personnel-et-les-services.html" class="node-link node-link-level-3"> Les Compétences et les Services </a></li>
+																<li data-node-id="125" class="node node-level-3"><a href="/document/category/magazine.html" class="node-link node-link-level-3"> Les Publications </a></li>
+																<li data-node-id="84" class="node node-level-3"><a href="/annuaire/communes.html" class="node-link node-link-level-3"> Les Communes </a></li>
+																<li data-node-id="138" class="node node-level-3"><a href="/infos-pratiques.html" class="node-link node-link-level-3"> Infos pratiques </a></li>
+															</ul>
+														</li>
+														<li data-node-id="20" class="node node-level-2"><a href="/presentation-du-service.html" class="node-link node-link-level-2"> SICOM </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="85" class="node node-level-3"><a href="/presentation-du-service.html" class="node-link node-link-level-3"> Présentation du service </a></li>
+																<li data-node-id="93" class="node node-level-3"><a href="/le-tri-selectif.html" class="node-link node-link-level-3"> Le Tri sélectif </a></li>
+																<li data-node-id="94" class="node node-level-3"><a href="/les-differentes-collectes.html" class="node-link node-link-level-3"> Les différentes collectes </a></li>
+																<li data-node-id="143" class="node node-level-3"><a href="/regler-vos-factures.html" class="node-link node-link-level-3"> Régler vos factures </a></li>
+																<li data-node-id="175" class="node node-level-3"><a href="/consommer-durablement.html" class="node-link node-link-level-3"> Consommer durablement </a></li>
+															</ul>
+														</li>
+														<li data-node-id="98" class="node node-level-2"><a href="/presentation-de-la-cellule.html" class="node-link node-link-level-2"> La Cellule Emploi </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="99" class="node node-level-3"><a href="/presentation-de-la-cellule.html" class="node-link node-link-level-3"> Présentation de la Cellule </a></li>
+																<li data-node-id="199" class="node node-level-3"><a href="/annuaire/offres-d-emploi.html" class="node-link node-link-level-3"> Annuaire des offres d'emploi </a></li>
+																<li data-node-id="174" class="node node-level-3"><a href="/les-offres-d-emplois.html" class="node-link node-link-level-3"> Les offres d'emplois </a></li>
+																<li data-node-id="100" class="node node-level-3"><a href="/relais-de-services-publics.html" class="node-link node-link-level-3"> Maison de Services au Public </a></li>
+															</ul>
+														</li>
+														<li data-node-id="170" class="node node-level-2"><a href="/le-plan-local-d-urbanisme-intercommunal.html" class="node-link node-link-level-2"> Urbanisme </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="172" class="node node-level-3"><a href="/le-plan-local-d-urbanisme-intercommunal.html" class="node-link node-link-level-3"> PLU Intercommunal </a></li>
+																<li data-node-id="171" class="node node-level-3"><a href="/le-droit-des-sols.html" class="node-link node-link-level-3"> Demander une autorisation d'urbanisme </a></li>
+																<li data-node-id="173" class="node node-level-3"><a href="/documents-d-urbanisme-applicables.html" class="node-link node-link-level-3"> Documents d'urbanisme </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-classic-column">
+													<ul class="submenu-list">
+														<li data-node-id="176" class="node node-level-2"><a href="/habitat.html" class="node-link node-link-level-2"> Nos Aides à l'habitat </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="177" class="node node-level-3"><a href="/habiter-mieux-en-ardennes.html" class="node-link node-link-level-3"> Habiter Mieux en Ardennes </a></li>
+																<li data-node-id="178" class="node node-level-3"><a href="/aide-a-la-renovation-de-facades-anciennes.html" class="node-link node-link-level-3"> Aide à la rénovation de façades anciennes </a></li>
+																<li data-node-id="180" class="node node-level-3"><a href="/aide-a-la-demolition-de-ruines.html" class="node-link node-link-level-3"> Aide à la démolition de ruines </a></li>
+																<li data-node-id="193" class="node node-level-3"><a href="/aide-aux-travaux-d-isolation-thermique-par-l-exterieur.html" class="node-link node-link-level-3"> Aide aux travaux d'isolation thermique par l'extérieur </a></li>
+															</ul>
+														</li>
+														<li data-node-id="184" class="node node-level-2"><a href="/politique-culturelle.html" class="node-link node-link-level-2"> Culture </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="185" class="node node-level-3"><a href="/politique-culturelle.html" class="node-link node-link-level-3"> Politique Culturelle </a></li>
+																<li data-node-id="194" class="node node-level-3"><a href="/annuaire/reseau-des-bibliotheques.html" class="node-link node-link-level-3"> Réseau des bibliothèques </a></li>
+																<li data-node-id="195" class="node node-level-3"><a href="/annuaire/autres-bibliotheques-et-point-lecture.html" class="node-link node-link-level-3"> Autres bibliothèques et point lecture </a></li>
+															</ul>
+														</li>
+														<li data-node-id="23" class="node node-level-2"><a href="/centre-aquatique-camourau.html" class="node-link node-link-level-2"> Équipements </a>
+															<ul class="main-menu-list-3">
+																<li data-node-id="101" class="node node-level-3"><a href="/centre-aquatique-camourau.html" class="node-link node-link-level-3"> Centre Aquatique CAMOURAU </a></li>
+																<li data-node-id="102" class="node node-level-3"><a href="/base-de-loisirs-de-douzy.html" class="node-link node-link-level-3"> Base de Loisirs de Douzy </a></li>
+																<li data-node-id="107" class="node node-level-3"><a href="/les-maisons-de-sante.html" class="node-link node-link-level-3"> Les Maisons de santé </a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="submenu-column submenu-news-column">
+													<h4 class="submenu-column-title">Actualités <span class="submenu-column-subtitle">du territoire</span></h4>
+													<section class="lead-blog-post">
+														<div class="lead-blog-post-inner"><a href="/article/covid-19.html" class="last-blog-post-link readmore" title="Lire la suite de l’article COVID - 19"> <h5 class="lead-blog-post-title"><div class="lead-blog-post-media"><img src="/media/cache/menu_post_thumbnail/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div><time class="blog-post-date week-11" datetime="2020-03-13T14:41:00+01:00"><span class="day"> 13 </span><span class="month"> mars </span></time><span class="lead-blog-post-title-content"> COVID - 19 </span></h5> </a></div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--
+        -->
+						</nav>
+						<nav id="home-header-anchors" class="home-header-anchors">
+							<div class="home-header-anchors-inner">
+								<div class="home-header-anchor-blog"><a href="#last-blog-post-list" class="home-header-anchor-blog-link header-anchor-link" data-smooth-scroll> <span class="home-header-anchor-blog-title header-anchor-title"> Actualités </span> <span> <span class="home-header-anchor-blog-last-post-date header-anchor-date" id="home-header-anchor-blog-last-post-date">   </span> <span class="header-anchor-last-post-title" id="header-anchor-last-post-title">   </span> </span> </a></div>
+								<div class="home-header-anchor-event"><a href="#upcoming-event-list" class="home-header-anchor-event-link header-anchor-link" data-smooth-scroll> <span class="home-header-anchor-event-title header-anchor-title"> Prochainement </span> <span> <span class="home-header-anchor-upcoming-event-date header-anchor-date"> <span class="month" id="header-anchor-upcoming-event-month"> </span> <span class="day" id="header-anchor-upcoming-event-day"> </span> </span> <span class="header-anchor-upcoming-event header-anchor-article-title" id="header-anchor-upcoming-event">   </span> </span> </a></div>
+							</div>
+						</nav>
+					</div>
+				</header>
+				<div class="main-container ">
+					<main class="main" id="main" role="main" data-slick-box>
+						<section class="homepage-block" id="homepage-blocks">
+							<div class="block homepage-upcoming_events">
+								<div class="block-inner"></div>
+							</div>
+							<div class="block homepage-last_news">
+								<div class="block-inner">
+									<section class="last-blog-post-list" id="last-blog-post-list">
+										<div class="last-blog-post-list-inner" data-open-close-container>
+											<header class="last-blog-post-list-header">
+												<h2 class="last-blog-post-list-title">Actualités <span class="last-blog-post-list-subtitle">du territoire</span></h2>
+											</header>
+											<div class="last-blog-posts">
+												<section class="last-blog-post visible" id="last-blog-post-1" aria-hidden="false" aria-labelledby="main-node-link-1">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/covid-19-mesures-d-accompagnement-aux-entreprises.html" class="last-blog-post-link readmore" title="Lire la suite de l’article COVID - 19 Mesures d'accompagnement aux entreprises"> <header class="last-blog-post-header"><span data-cloned-into="#home-header-anchor-blog-last-post-date"> <time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title" data-cloned-into="#header-anchor-last-post-title">COVID - 19 Mesures d'accompagnement aux entreprises</h3></header> <p class="last-blog-post-lead-content">Bien conscient de la situation dans laquelle vous trouvez et afin de vous accompagner au mieux, veuillez trouver ci-joints les différents dispositifs mis en place pour vous aider ainsi que le dossier à...</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-2" aria-hidden="true" aria-labelledby="main-node-link-2">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/changement-d-horaires-a-la-dechetterie-de-carignan.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Changement d'horaires à la Déchetterie de Carignan"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Changement d'horaires à la Déchetterie de Carignan</h3></header> <p class="last-blog-post-lead-content">Attention, à la compter du 2 juin 2020, les horaires de la déchetterie de Carignan sont modifiées.</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-3" aria-hidden="true" aria-labelledby="main-node-link-3">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/ramassage-des-om-et-du-tri-selectif-suite-au-lundi-ferie-1er-juin.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Ramassage des OM et du tri sélectif suite au lundi férié 1er juin"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Ramassage des OM et du tri sélectif suite au lundi férié 1er juin</h3></header> <p class="last-blog-post-lead-content">Ramassage des Ordures Ménagères et du Tri Sélectif</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-4" aria-hidden="true" aria-labelledby="main-node-link-4">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/actualit__s/vitrine___mise_en_situation-5475dbe003c28.jpeg" alt="PL - Vitrine"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/reouverture-progressive-des-services-de-la-communaute-de-communes.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Réouverture progressive des services  de la Communauté de Communes"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-20" datetime="2020-05-11T17:14:00+02:00"><span class="day"> 11 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Réouverture progressive des services de la Communauté de Communes</h3></header> <p class="last-blog-post-lead-content">Retrouvez les services ouverts à partir du 11 mai, puis à partir du 18 mai</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+											</div>
+											<nav class="last-blog-post-menu">
+												<ul class="last-blog-post-menu-links">
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-1" class="last-post-menu-link btn-visible" data-open="#last-blog-post-1" aria-haspopup="true" aria-controls="last-blog-post-1" aria-expanded="true"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> COVID - 19 Mesures d'accompagnement aux entreprises </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-2" class="last-post-menu-link " data-open="#last-blog-post-2" aria-haspopup="true" aria-controls="last-blog-post-2" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Changement d'horaires à la Déchetterie de Carignan </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-3" class="last-post-menu-link " data-open="#last-blog-post-3" aria-haspopup="true" aria-controls="last-blog-post-3" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Ramassage des OM et du tri sélectif suite au lundi férié 1er juin </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-4" class="last-post-menu-link " data-open="#last-blog-post-4" aria-haspopup="true" aria-controls="last-blog-post-4" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Réouverture progressive des services de la Communauté de Communes </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-20" datetime="2020-05-11T17:14:00+02:00"><span class="day"> 11 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/actualit__s/vitrine___mise_en_situation-5475dbe003c28.jpeg" alt="PL - Vitrine"></div> </a></li>
+													<li class="last-post-menu-allactu-item"><a href="/articles-1.html" class="last-post-menu-link-all" title="Accèder aux actualités"> Toutes les actualités </a></li>
+												</ul>
+											</nav>
+										</div>
+									</section>
+								</div>
+							</div>
+							<div class="block homepage-template">
+								<div class="block-inner">
+									<div class="home-comcom">
+										<div class="home-comcom-container">
+											<div class="home-comcom-inner" data-equalizer>
+												<div class="home-mag-block" data-equalizer-watch><a href="/document/category/magazine.html" class="home-mag-link"> <h2 class="home-mage-title"><span class="home-mage-title-read"> Lire </span> <img src="/images/lemag.png" alt="le mag"></h2> </a></div>
+												<div class="home-newsletter-block" data-equalizer-watch>
+													<h2 class="home-newsletter-block-title">Restez informé,</h2>
+													<p class="home-newsletter-block-description">inscrivez-vous à la <strong>newsletter</strong></p>
+													<div class="newsletter-registration">
+														<form method="POST" action="/newsletter/register" class="newsletter-registration-inner" data-newsletter-registration-form>
+															<div data-newsletter-registration-messages></div>
+															<div class="newsletter-form-row" data-float-form><label data-float-label="" for="soloist_newsletter_register_email" class="control-label">Email</label> <input type="email" id="soloist_newsletter_register_email" name="soloist_newsletter_register[email]" required="required" data-float-input="" class="float-input"></div><input type="hidden" id="soloist_newsletter_register__token" name="soloist_newsletter_register[_token]" value="kL2PBFtLuTwrZBpYFP75VoPjNWdjhPNzb0M0Ufvxgf0"> <button class="newsletter-submit" type="submit">S’inscrire</button></form>
+													</div>
+												</div>
+												<div class="home-comcom-block" data-equalizer-watch>
+													<h2 class="home-comcom-block-title">Les Portes du Luxembourg</h2>
+													<nav class="home-comcom-block-menu">
+														<nav>
+															<h3 class="show-part-menu-title current"><a class="show-part-menu-title-link" href="/le-territoire.html"> Raccourcis Page Accueil </a></h3>
+															<ul class="node-list-level-2">
+																<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/le-territoire.html"> La Communauté et son histoire </a></li>
+																<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/annuaire/les-elus-et-le-conseil.html"> Les élus et le conseil </a></li>
+																<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/le-personnel-et-les-services.html"> Compétences & Services </a></li>
+																<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/spb/espace-famille.html"> Espace FAMILLE </a></li>
+																<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/formulaire/donnez-votre-avis.html"> Donnez votre avis </a></li>
+															</ul>
+														</nav>
+													</nav>
+													<div class="home-comcom-block-directory-link"><a href="/annuaire/communes.html" class="home-comcom-directory-link"> Annuaire des Communes </a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block homepage-embed_page_block">
+								<div class="block-inner">
+									<div class="page-block-shortcuts">
+										<div class="page-block-shortcuts-inner">
+											<div class="page-block-shortcuts-table table-5th">
+												<div class="page-block-shortcuts-row">
+													<div class="block-shortcut homepage-page_shortcut"><a class="shortcut-link shortcut-link-camourau" href="/centre-aquatique-camourau.html"> <span class="shortcut-link-inner"> <h3 class="shortcut-title">Camourau</h3> <p class="shortcut-description"><!--
+            --><span class="shortcut-description-content"> Centre Aquatique des Portes du Luxembourg </span><!--
+        --></p> <div class="shortcut-picture"><img src="/media/cache/short_cut_image/uploads/pictos/eau-54903a1b66142.png" alt="Eau"></div> </span> </a></div>
+													<div class="block-shortcut homepage-page_shortcut"><a class="shortcut-link shortcut-link-sicom" href="/regler-vos-factures.html"> <span class="shortcut-link-inner"> <h3 class="shortcut-title">SICOM</h3> <p class="shortcut-description"><!--
+            --><span class="shortcut-description-content"> Collecte des Ordures Ménagères </span><!--
+        --></p> <div class="shortcut-picture"><img src="/media/cache/short_cut_image/uploads/pictos/poubelle-54903a4225496.png" alt="Poubelle"></div> </span> </a></div>
+													<div class="block-shortcut homepage-page_shortcut"><a class="shortcut-link shortcut-link-entrepre" href="/l-accompagnement-de-votre-projet.html"> <span class="shortcut-link-inner"> <h3 class="shortcut-title">Entreprendre</h3> <p class="shortcut-description"><!--
+            --><span class="shortcut-description-content"> S'implanter / Se développer </span><!--
+        --></p> <div class="shortcut-picture"><img src="/media/cache/short_cut_image/uploads/pictos/engrenage-54903a2ab2629.png" alt="Engrenage"></div> </span> </a></div>
+													<div class="block-shortcut homepage-page_shortcut"><a class="shortcut-link shortcut-link-douzy" href="/sensations-fortes.html"> <span class="shortcut-link-inner"> <h3 class="shortcut-title">Douzy</h3> <p class="shortcut-description"><!--
+            --><span class="shortcut-description-content"> Base de Loisirs </span><!--
+        --></p> <div class="shortcut-picture"><img src="/media/cache/short_cut_image/uploads/pictos/ancre-54903a01c1f59.png" alt="Ancre"></div> </span> </a></div>
+													<div class="block-shortcut homepage-page_shortcut"><a class="shortcut-link shortcut-link-ram" href="/spb/espace-famille.html"> <span class="shortcut-link-inner"> <h3 class="shortcut-title">RAM</h3> <p class="shortcut-description"><!--
+            --><span class="shortcut-description-content"> Relais d'Assistants Maternels </span><!--
+        --></p> <div class="shortcut-picture"><img src="/media/cache/short_cut_image/uploads/pictos/cloche-54903a0e139a8.png" alt="Cloche"></div> </span> </a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="block homepage-last_news">
+								<div class="block-inner">
+									<section class="last-blog-post-list" id="last-blog-post-list">
+										<div class="last-blog-post-list-inner" data-open-close-container>
+											<header class="last-blog-post-list-header">
+												<h2 class="last-blog-post-list-title">Actualités <span class="last-blog-post-list-subtitle">du territoire</span></h2>
+											</header>
+											<div class="last-blog-posts">
+												<section class="last-blog-post visible" id="last-blog-post-1" aria-hidden="false" aria-labelledby="main-node-link-1">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/covid-19-mesures-d-accompagnement-aux-entreprises.html" class="last-blog-post-link readmore" title="Lire la suite de l’article COVID - 19 Mesures d'accompagnement aux entreprises"> <header class="last-blog-post-header"><span data-cloned-into="#home-header-anchor-blog-last-post-date"> <time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title" data-cloned-into="#header-anchor-last-post-title">COVID - 19 Mesures d'accompagnement aux entreprises</h3></header> <p class="last-blog-post-lead-content">Bien conscient de la situation dans laquelle vous trouvez et afin de vous accompagner au mieux, veuillez trouver ci-joints les différents dispositifs mis en place pour vous aider ainsi que le dossier à...</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-2" aria-hidden="true" aria-labelledby="main-node-link-2">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/changement-d-horaires-a-la-dechetterie-de-carignan.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Changement d'horaires à la Déchetterie de Carignan"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Changement d'horaires à la Déchetterie de Carignan</h3></header> <p class="last-blog-post-lead-content">Attention, à la compter du 2 juin 2020, les horaires de la déchetterie de Carignan sont modifiées.</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-3" aria-hidden="true" aria-labelledby="main-node-link-3">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/ramassage-des-om-et-du-tri-selectif-suite-au-lundi-ferie-1er-juin.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Ramassage des OM et du tri sélectif suite au lundi férié 1er juin"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Ramassage des OM et du tri sélectif suite au lundi férié 1er juin</h3></header> <p class="last-blog-post-lead-content">Ramassage des Ordures Ménagères et du Tri Sélectif</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+											</div>
+											<nav class="last-blog-post-menu">
+												<ul class="last-blog-post-menu-links">
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-1" class="last-post-menu-link btn-visible" data-open="#last-blog-post-1" aria-haspopup="true" aria-controls="last-blog-post-1" aria-expanded="true"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> COVID - 19 Mesures d'accompagnement aux entreprises </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-2" class="last-post-menu-link " data-open="#last-blog-post-2" aria-haspopup="true" aria-controls="last-blog-post-2" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Changement d'horaires à la Déchetterie de Carignan </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-3" class="last-post-menu-link " data-open="#last-blog-post-3" aria-haspopup="true" aria-controls="last-blog-post-3" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Ramassage des OM et du tri sélectif suite au lundi férié 1er juin </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div> </a></li>
+													<li class="last-post-menu-allactu-item"><a href="/articles-1.html" class="last-post-menu-link-all" title="Accèder aux actualités"> Toutes les actualités </a></li>
+												</ul>
+											</nav>
+										</div>
+									</section>
+								</div>
+							</div>
+							<div class="block homepage-last_news">
+								<div class="block-inner">
+									<section class="last-blog-post-list" id="last-blog-post-list">
+										<div class="last-blog-post-list-inner" data-open-close-container>
+											<header class="last-blog-post-list-header">
+												<h2 class="last-blog-post-list-title">Actualités <span class="last-blog-post-list-subtitle">du territoire</span></h2>
+											</header>
+											<div class="last-blog-posts">
+												<section class="last-blog-post visible" id="last-blog-post-1" aria-hidden="false" aria-labelledby="main-node-link-1">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/covid-19-mesures-d-accompagnement-aux-entreprises.html" class="last-blog-post-link readmore" title="Lire la suite de l’article COVID - 19 Mesures d'accompagnement aux entreprises"> <header class="last-blog-post-header"><span data-cloned-into="#home-header-anchor-blog-last-post-date"> <time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title" data-cloned-into="#header-anchor-last-post-title">COVID - 19 Mesures d'accompagnement aux entreprises</h3></header> <p class="last-blog-post-lead-content">Bien conscient de la situation dans laquelle vous trouvez et afin de vous accompagner au mieux, veuillez trouver ci-joints les différents dispositifs mis en place pour vous aider ainsi que le dossier à...</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-2" aria-hidden="true" aria-labelledby="main-node-link-2">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/changement-d-horaires-a-la-dechetterie-de-carignan.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Changement d'horaires à la Déchetterie de Carignan"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Changement d'horaires à la Déchetterie de Carignan</h3></header> <p class="last-blog-post-lead-content">Attention, à la compter du 2 juin 2020, les horaires de la déchetterie de Carignan sont modifiées.</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+												<section class="last-blog-post " id="last-blog-post-3" aria-hidden="true" aria-labelledby="main-node-link-3">
+													<div class="last-blog-post-inner">
+														<div class="last-blog-post-media"><img src="/media/cache/home_post_picture/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div>
+														<div class="last-blog-post-content with-media">
+															<!--
+                                --><a href="/article/ramassage-des-om-et-du-tri-selectif-suite-au-lundi-ferie-1er-juin.html" class="last-blog-post-link readmore" title="Lire la suite de l’article Ramassage des OM et du tri sélectif suite au lundi férié 1er juin"> <header class="last-blog-post-header"><span> <time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time> </span><h3 class="last-blog-post-title">Ramassage des OM et du tri sélectif suite au lundi férié 1er juin</h3></header> <p class="last-blog-post-lead-content">Ramassage des Ordures Ménagères et du Tri Sélectif</p> </a>
+															<!--
+                          -->
+														</div>
+													</div>
+												</section>
+											</div>
+											<nav class="last-blog-post-menu">
+												<ul class="last-blog-post-menu-links">
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-1" class="last-post-menu-link btn-visible" data-open="#last-blog-post-1" aria-haspopup="true" aria-controls="last-blog-post-1" aria-expanded="true"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> COVID - 19 Mesures d'accompagnement aux entreprises </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:54:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/actualit__s/info_covid19-5e6b8dc747642.jpeg" alt="covid 19"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-2" class="last-post-menu-link " data-open="#last-blog-post-2" aria-haspopup="true" aria-controls="last-blog-post-2" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Changement d'horaires à la Déchetterie de Carignan </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-27T13:52:00+02:00"><span class="day"> 27 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/d__ch__terie-5494066b62fbf.jpeg" alt="De&#769;che&#768;terie"></div> </a></li>
+													<li class="last-post-menu-links-item"><a href="#last-blog-post-list" id="last-post-menu-link-3" class="last-post-menu-link " data-open="#last-blog-post-3" aria-haspopup="true" aria-controls="last-blog-post-3" aria-expanded="false"> <div class="last-post-menu-link-title"><!--
+                                 --><span class="last-post-menu-link-title-content"> Ramassage des OM et du tri sélectif suite au lundi férié 1er juin </span><!--
+                             --></div> <div class="last-post-menu-link-date"><time class="blog-post-date week-22" datetime="2020-05-26T16:15:00+02:00"><span class="day"> 26 </span><span class="month"> mai </span></time></div> <div class="last-post-menu-link-picture"><img src="/media/cache/home_post_thumbnail/uploads/sicom/72870991_531211130789622_7077109873258790912_n-5da98bbeb4980.png" alt="OM"></div> </a></li>
+													<li class="last-post-menu-allactu-item"><a href="/articles-1.html" class="last-post-menu-link-all" title="Accèder aux actualités"> Toutes les actualités </a></li>
+												</ul>
+											</nav>
+										</div>
+									</section>
+								</div>
+							</div>
+						</section>
+					</main>
+					<footer class="footer" id="footer">
+						<div class="footer-container">
+							<div class="footer-inner">
+								<div class="footer-address">
+									<h3 class="footer-address-title">Portes du Luxembourg</h3>
+									<address class="footer-address-content">Communauté de Communes <span class="footer-address-content-street"> 37 Ter avenue du Général de Gaulle </span> 08110 Carignan</address>
+									<p class="footer-address-phone">03 24 27 90 98</p>
+								</div>
+								<div class="footer-shortcuts-nav">
+									<nav>
+										<h3 class="show-part-menu-title current"><a class="show-part-menu-title-link" href="/plan-du-site.html"> Menu Footer </a></h3>
+										<ul class="node-list-level-2">
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/plan-du-site.html"> Plan du site </a></li>
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/le-territoire.html"> La Communauté de Communes </a></li>
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/articles-1.html"> Toutes les actualités </a></li>
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/calendrier/calendrier-des-portes-du-luxembourg.html"> Calendrier des événements </a></li>
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/mentions-legales.html"> Mentions légales </a></li>
+											<li class="node-level-2
+            "><a class="node-link node-link-level-2" href="/document/category/marches-publics.html"> Les marchés publics </a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="creation-sign">Une création <a class="horsserie-link" href="http://www.horsserie.fr/" title="lien vers le site de l'Agence de Communication Hors Serie"> Hors Serie </a></div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/js/scripts.js?6" async></script>
+	</body>
+</html>
