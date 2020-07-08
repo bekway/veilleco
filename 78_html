@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" dir="ltr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!-- Based on the TYPO3 Bootstrap Package by Benjamin Kott - http://www.bk2k.infoThis website is powered by TYPO3 - inspiring people to share!TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.Information and contribution at https://typo3.org/-->
+		<link rel="shortcut icon" href="/typo3conf/ext/bootstrap_package/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index,follow">
+		<meta name="google" content="notranslate">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="keywords" content="ville, courbevoie, mairie,">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Services en ligne, sports, évènements, actualités : tout savoir pour bien vivre à Courbevoie à tout âge.">
+		<meta property="og:description" content="Services en ligne, sports, évènements, actualités : tout savoir pour bien vivre à Courbevoie à tout âge.">
+		<meta property="og:title" content="Site officiel de la Ville de Courbevoie">
+		<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-b075604a5918c2066885d9c20152948f-f150933032d4fc32eeb2cb6eb00bf872.css?1593810045" media="all">
+		<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-3c82d104a2419a573254e0c534d7887e-0b93d0eb01e1c848ad2d44ebc2f9305e.css?1593810045" media="all">
+		<script src="/typo3temp/assets/compressed/merged-e6b0c7a350a7c9bd4e45a0f4919a655f-3061a1d444d34469dc9eab600ebafb43.js?1593810045"></script>
+		<title>Site officiel de la Ville de Courbevoie | Ville de Courbevoie Site officiel</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#00A07B">
+		<meta name="msapplication-TileImage" content="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#00A07B">
+		<meta name="google-site-verification" content="Cl3d7SEF3E07fqaA4KJSTn1ZLSe_N9ocsTR40wO37_A">
+		<style> .extbase-debugger {display:none !important;} </style>
+		<script> window.cookieConsent.addOption('showTiers', false); window.cookieConsent.addOption('txtToKnowMore', 'Pour en savoir plus, consultez les <span>mentions légales, disponible à tout moment en bas de page du site.'); </script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N748MQZ');</script>
+		<!-- End Google Tag Manager -->
+		<link rel="stylesheet" media="print" href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Css/print.css">
+		<link rel="stylesheet" href="https://core.xvox.fr/clients/courbevoie/design/player_maj.css" media="none" onload="if(media!='all')media='all'">
+		<script src="https://core.xvox.fr/clients/courbevoie/core/xvox_maj.min.js"></script>
+		<link rel="canonical" href="https://www.ville-courbevoie.fr/5/accueil.htm">
+		<link rel="alternate" type="application/rss+xml" title="Ville de Courbevoie Site officiel : Flux RSS des actualités" href="https://www.ville-courbevoie.fr/500/flux-rss-des-actualites.xml">
+		<link rel="alternate" type="application/rss+xml" title="Ville de Courbevoie Site officiel : Flux RSS de l'agenda" href="https://www.ville-courbevoie.fr/515/flux-rss-de-l-agenda.xml">
+		<script>/*<![CDATA[*/var TYPO3 = TYPO3 || {settings: {"TS":{"googleMap":"AIzaSyB9GIpZZnkWxHtRgxg0s87Qf3LkyvGErnA","ice":"zcw47jqaxgmb6dtksoheu0fi58vylpnr","ws":"lio4hfv7edjs5yg9qtwmk2ubpxaznc30","language":"0"}}};/*]]>*/</script>
+	</head>
+	<body id="p5" class="page-5 pagelevel-1 language-0 backendlayout-pagets__accueil layout-default homepage">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N748MQZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<header class="siteHeader hidden-print">
+			<div class="container">
+				<ul class="skiplink" id="topAnchor">
+					<li class="liens_skip"><a tabindex="0" accesskey="1" href="#navPrincipal">Accéder au menu</a></li>
+					<li class="liens_skip"><a tabindex="1" accesskey="2" href="#content">Accéder au contenu</a></li>
+					<li class="liens_skip"><a tabindex="2" accesskey="3" href="#searchmenu">Accéder à la recherche</a></li>
+					<li class="liens_skip"><a accesskey="4" tabindex="3" href="https://www.ville-courbevoie.fr/237/contact.htm">Accéder à la page de contact</a></li>
+				</ul>
+				<h1 class="logo-banner"><span class="sr-only">Site de la ville de Courbevoie</span><a class="logo" title="Retour à l'accueil du site" href="https://www.ville-courbevoie.fr/5/accueil.htm"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-logo-tiny.svg" width="60" height="72" alt="Ville de Courbevoie" class="img-responsive"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-motto-essentiel.png" width="293" height="63" alt="L'essentiel du mois" class="img-responsive title essentiel"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-motto-temoignages.png" width="295" height="58" alt="Témoignages" class="img-responsive title temoignages-logo"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-motto.png" width="293" height="58" alt="Une ville naturellement urbaine" class="img-responsive title"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-motto-expos.png" width="294" height="58" alt="Ville de Courbevoie, expo photo" class="img-responsive title expos"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/logo-print.png" alt="" class="visible-print-block"></a></h1>
+				<nav class="megamenu dropdown" id="navPrincipal"><button id="megamenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon icon-tool-close"></span><span class="icon icon-tool-menu"></span><span class="letter letter1">M</span><span class="letter letter2">e</span><span class="letter letter3">n</span><span class="letter letter4">u</span></button>
+					<div class="dropdown-menu" aria-labelledby="megamenu">
+						<div class="container">
+							<ul class="list-unstyled level1-list">
+								<li class="level1-item hover"><a href="https://www.ville-courbevoie.fr/26/votre-mairie.htm" class="level1-link"> Votre mairie </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-26">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/50/informations-pratiques.htm" class="level2-link ">Informations pratiques</a>
+											<ul class="list-unstyled level3-list level3-50">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/89/mairies-et-horaires.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Mairies et horaires</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/88/annuaire-des-services.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Annuaire téléphonique et email des services de la Ville de Courbevoie</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/821/demarche-qualite-de-l-accueil.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Démarche qualité de l'accueil</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1732/distribution-du-courbevoie-mag.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Distribution du Courbevoie Mag</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/51/conseil-municipal.htm" class="level2-link ">Découvrez le conseil municipal de la ville de Courbevoie</a>
+											<ul class="list-unstyled level3-list level3-51">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/90/le-maire.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Le maire</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/92/ordres-du-jour-et-comptes-rendus.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Ordres du jour et comptes rendus</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/897/vie-municipale.htm" class="level2-link ">Vie municipale</a>
+											<ul class="list-unstyled level3-list level3-897">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/52/conseil-municipal-des-jeunes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conseil municipal des jeunes</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1294/conseil-consultatif-de-la-jeunesse.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conseil consultatif de la jeunesse</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/54/elections.htm" class="level2-link ">Elections</a>
+											<ul class="list-unstyled level3-list level3-54">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/712/dans-quel-bureau-voter.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Dans quel bureau voter ?</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/97/le-vote-par-procuration.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Le vote par procuration</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/98/resultats-des-elections.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Résultat(s) des élections</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1859/elections-municipales-2020-premier-tour.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Elections municipales 2020 - Premier tour</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/2026/elections-municipales-2020-deuxieme-tour.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Elections municipales 2020 - Deuxième tour</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1483/pold.htm" class="level2-link ">POLD</a>
+											<ul class="list-unstyled level3-list level3-1483">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1481/presentation-de-pold.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Présentation de POLD</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1480/projet-de-territoire.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Projet de territoire</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1796/agence-locale-de-l-energie-et-du-climat-de-pold.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Agence locale de l’energie et du climat de POLD</a></li>
+												<li class="level3-item"><a href="http://parisouestladefense.fr/pold/index.php?p=actu&ida=39" class="level3-link "><span class="icon icon-chevron-right"></span>Règlement local de publicité</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/328/recrutement.htm" class="level2-link ">Recrutement</a>
+											<ul class="list-unstyled level3-list level3-328">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1827/emplois-a-pourvoir.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Emplois à pourvoir</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/332/candidature-spontanee.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Candidature spontanée</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/2047/dix-plus-hautes-remunerations.htm" class="level2-link ">Dix plus hautes rémunérations</a></li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/27/vivre-a-courbevoie.htm" class="level1-link"> Vivre à Courbevoie </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-27">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/56/cadre-de-vie.htm" class="level2-link ">Cadre de vie</a>
+											<ul class="list-unstyled level3-list level3-56">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1867/temoignages-confinement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Témoignages confinement</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/101/courbevoie-en-chiffres.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Courbevoie en chiffres</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1866/quiz-testez-vos-connaissances-pendant-le-confinement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Quiz : testez vos connaissances pendant le confinement !</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/102/espaces-verts-et-environnement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Espaces verts et environnement</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/111/developpement-durable.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Développement durable</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/113/les-quartiers-de-courbevoie.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Les quartiers de Courbevoie</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/114/histoire-et-patrimoine.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Histoire et patrimoine</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/119/prevention-et-securite.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Prévention et sécurité</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1325/hygiene-et-sante.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Hygiène et santé</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/57/economie.htm" class="level2-link ">Economie</a>
+											<ul class="list-unstyled level3-list level3-57">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/120/la-defense.htm" class="level3-link "><span class="icon icon-chevron-right"></span>La Défense</a></li>
+												<li class="level3-item"><a href="http://developpementeconomie.courbevoie.fr/pages/accueil.php?page=accueil" class="level3-link "><span class="icon icon-chevron-right"></span>Developpement économique</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/435/travailler.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Travailler</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/436/entreprendre.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Entreprendre</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/122/s-informer.htm" class="level3-link "><span class="icon icon-chevron-right"></span>S'informer</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/715/marches-publics.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Marchés publics</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/58/urbanisme-et-habitat.htm" class="level2-link ">Urbanisme et habitat</a>
+											<ul class="list-unstyled level3-list level3-58">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/127/plan-local-d-urbanisme.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Plan Local d'Urbanisme</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1499/revision-du-plan-local-d-urbanisme.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Révision du Plan Local d'Urbanisme</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1500/revision-du-reglement-local-de-publicite.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Révision du Règlement Local de Publicité</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1374/enquetes-publiques.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Enquêtes publiques</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1776/conclusions-du-commissaire-enqueteur.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conclusions du commissaire-enquêteur</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1775/reglement-de-voirie.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Règlement de voirie</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/286/risques-naturels-miniers-et-technologiques.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Risques naturels, miniers et technologiques</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/75/logement-social.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Logement social</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1795/declarer-son-meuble-de-tourisme.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Déclarer son meublé de tourisme</a></li>
+												<li class="level3-item"><a href="http://www.projetsdecourbevoie.fr/" class="level3-link "><span class="icon icon-chevron-right"></span>Projets Urbains</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/59/courbevoie-pratique.htm" class="level2-link ">Courbevoie pratique</a>
+											<ul class="list-unstyled level3-list level3-59">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/138/transport-et-stationnement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Transport et stationnement</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1824/courbevoie-a-velo.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Courbevoie à vélo</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/129/proprete-et-dechets.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Propreté et déchets</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/135/brocantes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Brocantes</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1696/commerces.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Commerces</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1647/marches.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Marchés</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/139/sejourner-a-courbevoie.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Séjourner à Courbevoie</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/60/vie-associative.htm" class="level2-link ">Vie associative</a>
+											<ul class="list-unstyled level3-list level3-60">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1602/les-missions-de-la-vie-associative.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Les missions de la Vie Associative</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/140/les-cinq-espaces-d-accueil.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Les cinq espaces d'accueil</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1603/les-evenements-de-la-vie-associative.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Les événements de la Vie Associative</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/141/annuaire-des-associations.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Annuaire des associations</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1106/associations-demande-de-subventions-2020.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de subventions</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Les_guides/COURBEVOIE_GUIDE_2018-2019-0708.pdf" class="level3-link "><span class="icon icon-chevron-right"></span>Découvrez le guide des associations 2018-2019</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1648/demande-de-publication-dans-l-agenda-de-la-ville.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de publication dans l'agenda de la ville</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1232/democratie-locale.htm" class="level2-link ">Démocratie locale</a>
+											<ul class="list-unstyled level3-list level3-1232">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1468/democratie-locale-a-courbevoie.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Démocratie locale à Courbevoie</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1230/conseils-de-quartier-et-vie-de-quartier.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conseils de quartier et Vie de quartier</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1233/concertation-et-participation-citoyenne.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Concertation et participation citoyenne</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1760/reunions-publiques.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Réunions publiques</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1235/comptes-rendus-des-conseils-de-quartier.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Comptes-rendus des conseils de quartier</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/145/tribunes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Tribunes</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/28/a-tout-age.htm" class="level1-link"> A tout âge </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-28">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/47/petite-enfance.htm" class="level2-link ">Petite Enfance</a>
+											<ul class="list-unstyled level3-list level3-47">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1675/role-et-missions.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Rôle et missions</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1674/projet-educatif.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Projet éducatif</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1694/reglement-de-fonctionnement-des-etablissements.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Règlement de fonctionnement des établissements</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1774/charte-alimentation.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Charte alimentation</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/147/multi-accueil-collectif.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Multi Accueil Collectif</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1676/multi-accueil-familial.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Multi Accueil Familial</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1229/maison-de-la-famille.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Maison de la famille</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/217/relais-assistantes-maternelles.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Relais Assistantes Maternelles</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/49/protection-maternelle-et-infantile-pmi.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Protection Maternelle et Infantile (PMI)</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/48/allocations-municipales.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Allocations municipales</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1449/enfance-jeunesse.htm" class="level2-link ">Enfance-jeunesse</a>
+											<ul class="list-unstyled level3-list level3-1449">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1450/inscriptions.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Inscriptions</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/150/a-l-ecole.htm" class="level3-link "><span class="icon icon-chevron-right"></span>A l'école</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/154/apres-l-ecole.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Après l'école</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/159/vacances.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Vacances</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1452/maisons-du-val.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Maisons du VAL</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1464/pole-handicap-val.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Pôle Handicap VAL</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1793/ecollectif-briand.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Écollectif Briand</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/169/bureau-information-jeunesse.htm" class="level2-link ">Bureau Information Jeunesse</a>
+											<ul class="list-unstyled level3-list level3-169">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1471/presentation-du-bij.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Présentation du B.I.J.</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/295/nos-dispositifs.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Nos dispositifs</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1764/nos-partenaires.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Nos partenaires</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/266/aines.htm" class="level2-link ">Ainés</a>
+											<ul class="list-unstyled level3-list level3-266">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/297/sorties-et-activites.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Sorties et activités</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/299/etre-aide.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Etre aidé</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/306/bien-vieillir-vivre-ensemble.htm" class="level3-link "><span class="icon icon-chevron-right"></span>"Bien vieillir, vivre ensemble"</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/64/annuaire-des-etablissements-equipements.htm" class="level2-link ">Annuaire des établissements / équipements</a></li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/31/sante-solidarite.htm" class="level1-link"> Santé & solidarité </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-31">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1884/appel-a-volontaires-benevoles.htm" class="level2-link ">Appel à volontaires bénévoles</a></li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/440/aides-sociales.htm" class="level2-link ">Aides sociales</a>
+											<ul class="list-unstyled level3-list level3-440">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/441/aides-financieres.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aides financières</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/442/aides-du-conseil-departemental.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aides du Conseil Départemental</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/443/aides-aux-seniors.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aides aux seniors</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/448/insertion-avec-la-maison-d-accueil-l-escale.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Insertion avec la maison d'accueil "L'Escale"</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/74/sante.htm" class="level2-link ">Santé</a>
+											<ul class="list-unstyled level3-list level3-74">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1730/pharmacies-de-garde.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Pharmacies de garde</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1209/complementaire-sante-communale-accessible-a-tous.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Complémentaire santé communale accessible à tous !</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/329/centre-hospitalier-rives-de-seine.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Centre hospitalier Rives de Seine</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1615/moustique-tigre.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Moustique Tigre</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/77/handicap.htm" class="level2-link ">Handicap</a>
+											<ul class="list-unstyled level3-list level3-77">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/444/aides-au-transport.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aides au transport</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/445/aides-quotidiennes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aides quotidiennes</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/447/courbevoie-se-mobilise-pour-le-handicap.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Courbevoie se mobilise pour le handicap</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/78/point-d-acces-au-droit.htm" class="level2-link ">Point d'accès au droit</a></li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/79/espaces-d-ecoute.htm" class="level2-link ">Espaces d'écoute</a>
+											<ul class="list-unstyled level3-list level3-79">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/193/espace-sante-jeunes-simone-veil.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Espace santé jeunes Simone Veil</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1821/les-violences-faites-aux-femmes.htm" class="level2-link ">Les violences faites aux femmes</a></li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/29/sport.htm" class="level1-link"> Sport </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-29">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/66/annuaire-des-clubs-sportifs.htm" class="level2-link ">Annuaire des clubs sportifs</a>
+											<ul class="list-unstyled level3-list level3-66">
+												<li class="level3-item"><a href="https://www.calameo.com/read/003155904acabdbfc712d" class="level3-link "><span class="icon icon-chevron-right"></span>Guide des sports</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/68/sport-pour-les-jeunes.htm" class="level2-link ">Sport pour les jeunes</a>
+											<ul class="list-unstyled level3-list level3-68">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/180/vasco-vacances-sport-courbevoie.htm" class="level3-link "><span class="icon icon-chevron-right"></span>VASCO : Vacances Sport Courbevoie</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1204/aide-aux-jeunes-sportifs.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aide aux jeunes sportifs</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/65/equipements-sportifs.htm" class="level2-link ">Equipements sportifs</a>
+											<ul class="list-unstyled level3-list level3-65">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/170/espace-jean-pierre-rives.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Espace Jean-Pierre Rives</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/171/centre-omnisports-docteur-jean-blot.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Centre omnisports docteur Jean Blot</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/172/gymnases-et-stade.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Gymnases et stade</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/173/piscine-municipale.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Piscine municipale</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/174/patinoire-thierry-monier.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Patinoire Thierry Monier</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/175/tennis-jean-borotra.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Tennis Jean Borotra</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/176/skate-park.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Skate-Park</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/270/aires-de-sport.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Aires de sport</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/177/terrains-de-petanque.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Terrains de pétanque</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1066/parcours-sportif-de-sante.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Parcours sportif de santé</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/655/handisport.htm" class="level2-link ">Handisport</a></li>
+										<li class="level2-item"><a href="http://www.ville-courbevoie.fr/lagenda-de-vos-evenements.htm?&category=4" class="level2-link ">Agenda sportif</a></li>
+										<li class="level2-item"><a href="https://www.calameo.com/read/003155904acabdbfc712d" class="level2-link ">Guide des sports 2019 / 2020</a></li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/30/culture-loisirs.htm" class="level1-link"> Culture & loisirs </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-30">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1876/expositions.htm" class="level2-link ">Expositions</a>
+											<ul class="list-unstyled level3-list level3-1876">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/2029/portraits-d-agentes-en-premiere-ligne.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Portraits d'agent.e.s en première ligne</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1985/courbevoie-au-temps-du-confinement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Courbevoie au temps du confinement…</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1861/transformation-autour-de-gambetta.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Transformation autour de Gambetta</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1877/printemps-des-artistes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Printemps des artistes</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/69/equipements.htm" class="level2-link ">Equipements</a>
+											<ul class="list-unstyled level3-list level3-69">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/745/atelier-d-artiste.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Atelier d'artiste</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/182/bibliotheques.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Bibliothèques</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/183/centre-culturel.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Centre Culturel</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/833/centre-evenementiel.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Centre Evénementiel</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/185/cinema-abel-gance.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Cinéma Abel Gance</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/184/conservatoire-de-musique.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conservatoire de musique</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1793/ecollectif-briand.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Écollectif Briand</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/186/espace-carpeaux.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Espace Carpeaux</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/187/musee-roybet-fould.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Musée Roybet Fould</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/663/pavillon-des-indes.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Pavillon des Indes</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/141/annuaire-des-associations.htm" class="level2-link ">Annuaire des associations</a></li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1718/residence-d-artiste.htm" class="level2-link ">Résidence d’artiste</a></li>
+									</ul>
+								</li>
+								<li class="level1-item "><a href="https://www.ville-courbevoie.fr/32/services-en-ligne.htm" class="level1-link"> Services en ligne </a>
+									<ul class="list-unstyled level2-list mainnavigation-sublevel level2-32">
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/81/etat-civil.htm" class="level2-link ">Etat civil</a>
+											<ul class="list-unstyled level3-list level3-81">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1662/demande-d-actes-d-etat-civil.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande d'actes d'état civil</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1484/demande-de-pacs.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de PACS</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/346/demande-de-carte-d-identite.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de carte d'identité</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/347/demande-de-passeport-biometrique.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de passeport biométrique</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/859/prise-de-rendez-vous-pour-une-demande-de-passeport-carte-d-identite.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Prise de rendez-vous pour une demande de passeport / carte d'identité</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1616/prise-de-rendez-vous-le-samedi-matin-attestation-d-accueil-ou-dossier-de-mariage.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Prise de rendez-vous le samedi matin - attestation d'accueil ou dossier de mariage</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/341/etat-civil-guide-des-droits-et-demarches.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Etat Civil - Guide des droits et démarches</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/363/demande-de-recensement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Demande de recensement</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/96/inscription-sur-les-listes-electorales.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription sur les listes électorales</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/82/jeunesse.htm" class="level2-link ">Jeunesse</a>
+											<ul class="list-unstyled level3-list level3-82">
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Courbevoie Chez Moi</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Calcul du quotient familial</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription accueils de loisirs du mercredi après-midi</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription VASCO : Vacances Sport Courbevoie</a></li>
+												<li class="level3-item"><a href="http://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription restauration scolaire</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription garderies NAP et étude surveillée</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscriptions activités postscolaires (danse, anglais,...)</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription aux accueils de loisirs et séjours vacances</a></li>
+												<li class="level3-item"><a href="https://www.courbevoie-chez-moi.fr" class="level3-link "><span class="icon icon-chevron-right"></span>Régler les prestations du compte famille</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1452/maisons-du-val.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Pré-inscription à l'aide aux devoirs</a></li>
+												<li class="level3-item"><a href="http://www.ville-courbevoie.fr/1452/maisons-du-val.htm" class="level3-link "><span class="icon icon-chevron-right"></span>S'inscrire aux maisons du VAL</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/342/famille-guide-des-droits-et-demarches.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Famille - Guide des droits et démarches</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/83/culture.htm" class="level2-link ">Culture</a>
+											<ul class="list-unstyled level3-list level3-83">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1106/associations-demande-de-subventions-2020.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Associations - Demande de subventions 2020</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/628/associations-guide-des-droits-et-demarches.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Associations - Guide des droits et démarches</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/280/inscriptions.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Pré-inscription au Conservatoire de musique</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/338/inscription-au-kiosque-en-scene.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription au kiosque en scène</a></li>
+												<li class="level3-item"><a href="https://bibliotheque.courbevoie.fr/iguana/www.main.cls?surl=home/" class="level3-link "><span class="icon icon-chevron-right"></span>Portail des bibliothèques</a></li>
+												<li class="level3-item"><a href="http://www.sortiracourbevoie.com/" class="level3-link "><span class="icon icon-chevron-right"></span>Réserver des places de spectacle</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1649/permanence-culture-du-coeur.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Permanence Culture du Coeur</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/84/voirie-travaux-et-stationnement.htm" class="level2-link ">Voirie, travaux et stationnement</a>
+											<ul class="list-unstyled level3-list level3-84">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/130/allo-proprete.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Allo propreté</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/208/chantiers.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Chantiers</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/209/ravalement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Ravalement</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/362/demarches-d-urbanisme.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Démarches d'urbanisme</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1520/forfait-post-stationnement-fps.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Forfait post-stationnement - FPS</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/343/aines.htm" class="level2-link ">Ainés</a>
+											<ul class="list-unstyled level3-list level3-343">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/344/inscription-au-fichier-canicule.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Inscription au fichier canicule</a></li>
+												<li class="level3-item"><a href="https://curviabus.viacitis.net/Curviabus/" class="level3-link "><span class="icon icon-chevron-right"></span>Curvia Bus</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1297/hygiene-et-sante.htm" class="level2-link ">Hygiène et santé</a>
+											<ul class="list-unstyled level3-list level3-1297">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1298/chiens-dangereux-permis-de-detention.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Chiens dangereux : permis de détention</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1299/hygiene-alimentaire.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Hygiène alimentaire</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1304/habitat-degrade-ou-insalubre.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Habitat dégradé ou insalubre</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1123/bruit-du-voisinage.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Bruit du voisinage</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1306/mesure-des-ondes-electromagnetiques.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Mesure des ondes electromagnétiques</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1373/conseils-en-environnement-interieur.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Conseils en Environnement Intérieur</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1135/urbanisme.htm" class="level2-link ">Urbanisme</a>
+											<ul class="list-unstyled level3-list level3-1135">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1150/autres-demandes-liees-aux-renseignements-communaux.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Autres demandes liées aux renseignements communaux</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1151/arretes-de-peril.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Arrêtés de péril</a></li>
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1215/la-taxe-d-amenagement.htm" class="level3-link "><span class="icon icon-chevron-right"></span>La taxe d'aménagement</a></li>
+											</ul>
+										</li>
+										<li class="level2-item"><a href="https://www.ville-courbevoie.fr/1512/tresor-public.htm" class="level2-link ">Trésor Public</a>
+											<ul class="list-unstyled level3-list level3-1512">
+												<li class="level3-item"><a href="https://www.ville-courbevoie.fr/1513/paiement-en-ligne.htm" class="level3-link "><span class="icon icon-chevron-right"></span>Paiement en ligne</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<aside class="recordsListMegamenu hidden-xs hidden-sm">
+								<article class="item"><a href="https://www.ville-courbevoie.fr/89/mairies-et-horaires.htm" class="link"><img class="picture" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/1/1/csm_mairie-de-courbevoie_13a46d7487.jpg" width="372" height="180" alt=""><span class="title">Mairies et horaires</span></a></article>
+								<article class="item"><a href="https://www.ville-courbevoie.fr/32/services-en-ligne.htm" class="link"><img class="picture" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/b/f/csm_services-ligne_a1b266077f.jpg" width="372" height="180" alt=""><span class="title">Services en ligne</span></a></article>
+								<article class="item"><a href="https://www.courbevoie-chez-moi.fr/" class="link" target="_blank"><img class="picture" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/5/f/csm_ccm_4400889c89.jpg" width="372" height="180" alt=""><span class="title">Courbevoie chez Moi</span></a></article>
+							</aside>
+						</div>
+					</div>
+				</nav>
+				<div id="c5003" class="frame frame-default frame-type-list frame-layout-0 frame-space-before-none frame-space-after-none">
+					<div class="dropdown"><button id="searchmenu" type="button"><!-- data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" --><span class="icon icon-tool-search"></span><span class="sr-only">Accès à la recherche</span></button>
+						<div class="dropdown-menu">
+							<!-- aria-labelledby="searchmenu" -->
+							<form action="https://www.ville-courbevoie.fr/46/resultats-de-recherche.htm" method="get" class="searchForm form-inline">
+								<fieldset class="form-group"><label class="sr-only" for="sword">Moteur de recherche</label><input type="text" name="q" class="form-control" id="sword" maxlength="50" accesskey="4" autocomplete="off" value="" placeholder="Recherche..."></fieldset><button type="submit" class="btn btn-primary"><span class="icon icon-tool-search"></span><span class="sr-only">Rechercher</span></button></form>
+							<div class="background-clic"></div>
+						</div>
+					</div>
+				</div>
+				<ul class="list-unstyled list-link">
+					<li><a class="expo" title="Voir toutes les expositions" href="https://www.ville-courbevoie.fr/1876/expositions.htm"><span class="img img-expo"></span><span class="text">Expositions</span></a></li>
+					<li><a class="actu" title="Voir toutes nos actualités" href="https://www.ville-courbevoie.fr/10/toutes-les-actualites.htm"><span class="img img-actu"></span><span class="text">Actualités</span></a></li>
+					<li><a class="event" title="Voir tous nos événements" href="https://www.ville-courbevoie.fr/11/l-agenda-de-vos-evenements.htm"><span class="img img-event"></span><span class="text">Agenda</span></a></li>
+					<!--<li><a class="diapo" href="https://www.ville-courbevoie.fr/1415/en-images.htm"><span class="img img-diapo"></span><span class="text">En images</span></a></li>-->
+					<li><a class="services" title="Voir tous nos services en ligne" href="https://www.ville-courbevoie.fr/32/services-en-ligne.htm"><span class="img img-services"></span><span class="text">Services<br>en ligne</span></a></li>
+				</ul>
+				<div class="enUnClic"><a class="button">vos services en 1 clic<span class="icon icon-tool-close"></span><span class="hand-mobile"></span></a>
+					<div class="services-list">
+						<h2>Services en lignes</h2>
+						<div id="c7565" class="frame frame-default">
+							<ul class="list-unstyled">
+								<li class="page-item-1867"><a href="https://www.ville-courbevoie.fr/1867/temoignages-confinement.htm"> Témoignages confinement </a></li>
+								<li class="page-item-1232"><a href="https://www.ville-courbevoie.fr/1232/democratie-locale.htm"> Démocratie locale </a></li>
+								<li class="page-item-105"><a href="https://www.ville-courbevoie.fr/105/label-ville-fleurie.htm"> Label ville fleurie </a></li>
+								<li class="page-item-1295"><a href="https://www.ville-courbevoie.fr/1295/rejoignez-le-conseil-consultatif-de-la-jeunesse.htm"> Rejoignez le Conseil... </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="services-list">
+						<h2>Infos pratiques</h2>
+						<div id="c7566" class="frame frame-default">
+							<ul class="list-unstyled">
+								<li class="page-item-1866"><a href="https://www.ville-courbevoie.fr/1866/quiz-testez-vos-connaissances-pendant-le-confinement.htm"> Quiz : testez vos... </a></li>
+								<li class="page-item-130"><a href="https://www.ville-courbevoie.fr/130/allo-proprete.htm"> Allo propreté </a></li>
+								<li class="page-item-284"><a href="https://www.ville-courbevoie.fr/284/l-histoire-de-courbevoie.htm"> L'histoire de... </a></li>
+								<li class="page-item-318"><a href="https://www.ville-courbevoie.fr/318/un-site-touristique-incontournable.htm"> Un site touristique... </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main id="content" class="content home">
+			<section id="carouselUne" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carouselUne" data-slide-to="0" class="active">
+					<li data-target="#carouselUne" data-slide-to="1">
+					<li data-target="#carouselUne" data-slide-to="2">
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><a href="https://www.ville-courbevoie.fr/10-5177/fiche/voila-l-ete-a-courbevoie.htm"><img src="/fileadmin/_processed_/2/f/csm_site_carroussel_2a488b69f3.jpg" width="1920" height="510" alt=""><div class="carousel-caption"><h2 class="title">Voilà l’été à Courbevoie</h2><p class="abstract">L'été s'annonce joyeux et animé dans tous les quartiers de Courbevoie. Pour les petits et les grands, les sportifs ou les amateurs de lecture, la Ville a conçu, du 11 juillet au 23 août, "Voilà l'été !", un programme d'animations gratuites pour satisfaire toutes les envies. de quoi refaire le plein d'énergie et de bonne humeur !</p></div></a></div>
+					<div class="item"><a href="https://www.ville-courbevoie.fr/10-5156/fiche/operation-tranquillite-vacances.htm"><img src="/fileadmin/_processed_/b/f/csm_otv1_f98c3bf2cd.jpg" width="1920" height="510" alt=""><div class="carousel-caption"><h2 class="title">Opération Tranquillité vacances</h2><p class="abstract">Inscrivez-vous à l’opération tranquillité vacances pour bénéficier des passages réguliers de la police municipale devant votre domicile pendant votre absence.</p></div></a></div>
+					<div class="item"><a href="https://www.ville-courbevoie.fr/10-5184/fiche/budget-participatif-installations-de-defibrillateurs-et-de-boxes-a-velos.htm"><img src="/fileadmin/_processed_/0/3/csm_boxevelo_3c7f2f2bb5.jpg" width="1920" height="510" alt=""><div class="carousel-caption"><h2 class="title">Budget participatif : installations de défibrillateurs et de...</h2><p class="abstract">Plébiscités par vos votes parmi près de 140 propositions, deux projets lauréats du budget participatif se concrétisent aujourd’hui dans les parcs et les rues de Courbevoie.</p></div></a></div>
+				</div>
+				<!-- Controls --><a class="left carousel-control icon-ic-arrow_left" href="#carouselUne" role="button" data-slide="prev"><span class="sr-only">Previous</span></a><a class="right carousel-control icon-ic-arrow_right" href="#carouselUne" role="button" data-slide="next"><span class="sr-only">Next</span></a></section>
+			<div id="c5020" class="frame frame-default frame-type-artificarecords_pi3 frame-layout-0 frame-space-before-none frame-space-after-none">
+				<section class="listActusHome">
+					<div class="container">
+						<div class="row">
+							<header class="headerActus">
+								<h2 class="title">Actualités</h2><a class="event-all hidden-xs" href="https://www.ville-courbevoie.fr/10/toutes-les-actualites.htm">Toutes les actualités</a></header>
+							<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 firstActu">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/10-5206/fiche/cultivons-ensemble-notre-creativite-a-la-maison-de-la-famille.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/2/2/csm_maison_famille_ec0ba532fc.jpg" width="568" height="498" alt=""></div></a><span class="category"> À tout âge </span>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/10-5206/fiche/cultivons-ensemble-notre-creativite-a-la-maison-de-la-famille.htm" target="_self">Cultivons ensemble notre créativité à la Maison de la...</a></h3>
+											<p class="abstract">L’Art en Famille : Ateliers Danse, Théâtre et activités...</p>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/10-5202/fiche/conseil-d-administration-du-ccas-appel-a-candidature.htm" target="_self"><div class="picture"><img class="img-responsive" alt="Image élection commité" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/c/e/csm_image_comite___1c825b7b81.jpg" width="568" height="237" title="Image élection commité"></div></a><span class="category"> Votre mairie </span>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/10-5202/fiche/conseil-d-administration-du-ccas-appel-a-candidature.htm" target="_self">Conseil d’Administration du CCAS : Appel à candidature</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/10-5195/fiche/la-piscine-ouverte-sans-reservation.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/7/9/csm_piscine072020_8c08b73de3.jpg" width="568" height="237" alt=""></div></a><span class="category"> Vivre à Courbevoie </span>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/10-5195/fiche/la-piscine-ouverte-sans-reservation.htm" target="_self">La piscine ouverte sans réservation</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article><a class="event-all hidden-lg hidden-md hidden-sm" href="https://www.ville-courbevoie.fr/10/toutes-les-actualites.htm">Toutes les actualités</a></div>
+					</div>
+				</section>
+			</div>
+			<div id="c5021" class="frame frame-default frame-type-artificarecords_pi3 frame-layout-0 frame-space-before-none frame-space-after-none">
+				<section class="listEventsHome">
+					<div class="container">
+						<div class="row">
+							<header class="headerAgenda">
+								<h2 class="title">Agenda</h2><a class="event-all hidden-xs" href="https://www.ville-courbevoie.fr/11/l-agenda-de-vos-evenements.htm">Tout l'agenda</a></header>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5193/fiche/cinema-en-plein-air-le-grand-bain.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/5/e/csm_le_grand_bain_45ff3a5d29.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">11</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5193/fiche/cinema-en-plein-air-le-grand-bain.htm" target="_self">Cinéma en plein air : Le Grand Bain</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5165/fiche/contes-surprises.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/c/f/csm_contes-bibli_3fa2967ba1.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">11</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5165/fiche/contes-surprises.htm" target="_self">Contes surprises</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5181/fiche/marionnettes-dans-les-parcs.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/3/2/csm_marionnettes_ccaea16447.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">11</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5181/fiche/marionnettes-dans-les-parcs.htm" target="_self">Marionnettes dans les parcs</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5188/fiche/concert-celt-n-ka.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/d/2/csm_concertceltzoom_5599d5220a.png" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">11</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5188/fiche/concert-celt-n-ka.htm" target="_self">Concert Celt'n Ka </a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5166/fiche/atelier-origami.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/c/e/csm_origamibibli_b8c1a45fe9.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">15</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5166/fiche/atelier-origami.htm" target="_self">Atelier origami</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5190/fiche/notre-dame-de-paris.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/2/3/csm_notre-dame-de-paris_4ad00e9636.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">15</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5190/fiche/notre-dame-de-paris.htm" target="_self">Notre-Dame de Paris</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5181/fiche/marionnettes-dans-les-parcs.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/3/2/csm_marionnettes_ccaea16447.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">18</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5181/fiche/marionnettes-dans-les-parcs.htm" target="_self">Marionnettes dans les parcs</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5194/fiche/cinema-en-plein-air-pierre-lapin.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/6/6/csm_pierre_lapin_2480c1a362.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">18</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5194/fiche/cinema-en-plein-air-pierre-lapin.htm" target="_self">Cinéma en plein air : Pierre Lapin</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article>
+							<article class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item">
+									<figure class="thumbnail"><a href="https://www.ville-courbevoie.fr/11-5191/fiche/les-animaux-dans-l-art.htm" target="_self"><div class="picture"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/e/6/csm_les_animaux_dans_l_art-min__1__f72b4c3bb1.jpg" width="744" height="428" alt=""></div><span class="datePeriod"><span class="time dateStart"><span class="day">22</span><span class="month">juil.</span></span></span></a>
+										<figcaption class="caption">
+											<h3 class="title"><a href="https://www.ville-courbevoie.fr/11-5191/fiche/les-animaux-dans-l-art.htm" target="_self">Les animaux dans l'art</a></h3>
+										</figcaption>
+									</figure>
+								</div>
+							</article><a class="event-all hidden-lg hidden-md hidden-sm" href="https://www.ville-courbevoie.fr/11/l-agenda-de-vos-evenements.htm">Tout l'agenda</a></div>
+					</div>
+				</section>
+			</div>
+			<div id="c5019" class="frame frame-default frame-type-artificarecords_pi3 frame-layout-0 frame-space-before-none frame-space-after-none">
+				<section class="listImagesHome">
+					<div class="container">
+						<div class="row">
+							<header class="headerImages">
+								<h2 class="title">En images</h2><a class="event-all hidden-xs" href="https://www.ville-courbevoie.fr/1415/en-images.htm">Toutes les photos et vidéos</a></header>
+						</div>
+					</div>
+					<div class="grid">
+						<article class="item itemFirst"><a href="https://www.ville-courbevoie.fr/1415-299/resource/intervention-de-m-le-maire-depuis-la-manufacture-solidaire-a-courbevoie.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/c/2/csm_vid1904_19c6a766df.jpg" width="770" height="520" alt=""><div class="caption video"><h3 class="title">Intervention de M. le Maire depuis la Manufacture Solidaire à Courbevoie</h3></div></a></article>
+						<article class="item item-2"><a href="https://www.ville-courbevoie.fr/1415-298/resource/rendez-vous-de-l-emploi-2020.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/9/9/csm_rdvemploi2_88c01e0a8e.jpg" width="770" height="431" alt=""><div class="caption video"><h3 class="title">Rendez-vous de l’Emploi 2020</h3></div></a></article>
+						<article class="item item-3"><a href="https://www.ville-courbevoie.fr/1415-297/resource/crise-du-covid-19-jacques-kossowski-vous-informe.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/b/4/csm_covid-JK_18905f405b.jpg" width="770" height="506" alt=""><div class="caption video"><h3 class="title">Crise du Covid-19 : Jacques Kossowski vous informe</h3></div></a></article>
+						<article class="item item-4"><a href="https://www.ville-courbevoie.fr/1415-296/resource/voeux-2020-de-jacques-kossowski.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/3/4/csm_v2020b_b43fb56e2e.jpg" width="770" height="443" alt=""><div class="caption video"><h3 class="title">Voeux 2020 de Jacques Kossowski</h3></div></a></article>
+						<article class="item item-5"><a href="https://www.ville-courbevoie.fr/1415-295/resource/rencontre-des-nouvelles-entreprises-2019.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/1/3/csm_nouvelles-ent_7ef3378d9d.jpg" width="770" height="418" alt=""><div class="caption video"><h3 class="title">Rencontre des nouvelles entreprises 2019</h3></div></a></article>
+						<article class="item item-6"><a href="https://www.ville-courbevoie.fr/1415-294/resource/sportifs-de-courbevoie.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/f/4/csm_vid-sports_8bbe00da62.jpg" width="770" height="432" alt=""><div class="caption video"><h3 class="title">Sportifs de Courbevoie</h3></div></a></article>
+						<article class="item item-7"><a href="https://www.ville-courbevoie.fr/1415-293/resource/les-defis-eole-comment-evacuer-plus-d-un-million-de-tonnes-de-deblais-sans-camion.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/6/9/csm_boues_29d42286b6.jpg" width="770" height="444" alt=""><div class="caption video"><h3 class="title">Les défis Eole : Comment évacuer plus d’un million de tonnes de déblais sans camion ?</h3></div></a></article>
+						<article class="item item-8"><a href="https://www.ville-courbevoie.fr/1415-292/resource/au-coeur-du-plus-gros-tunnelier-d-ile-de-france.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/e/f/csm_tunnelier_e4de288328.jpg" width="770" height="444" alt=""><div class="caption video"><h3 class="title">Au cœur du plus gros tunnelier d'Île-de-France</h3></div></a></article>
+						<article class="item item-9"><a href="https://www.ville-courbevoie.fr/1415-291/resource/handi-partage-2019.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/1/b/csm_handi-partage_04448ef5c1.jpg" width="770" height="444" alt=""><div class="caption video"><h3 class="title">Handi-partage 2019</h3></div></a></article>
+						<article class="item item-10"><a href="https://www.ville-courbevoie.fr/1415-290/resource/festival-atmospheres-2019.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/e/f/csm_atmo19_969d9962ec.jpg" width="770" height="444" alt=""><div class="caption video"><h3 class="title">Festival Atmosphères 2019</h3></div></a></article>
+						<article class="item item-11"><a href="https://www.ville-courbevoie.fr/1415-289/resource/un-trophee-d-or-pour-courbevoie.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/3/c/csm_fimbacte_deedef53e3.jpg" width="770" height="483" alt=""><div class="caption video"><h3 class="title">Un trophée d’or pour Courbevoie</h3></div></a></article>
+						<article class="item item-12"><a href="https://www.ville-courbevoie.fr/1415-288/resource/yes-we-run-2019.htm"><img class="img-responsive" src="https://www.ville-courbevoie.fr/typo3temp/assets/_processed_/0/e/csm_YWR2019_747b601456.jpg" width="770" height="434" alt=""><div class="caption video"><h3 class="title">Yes We Run 2019</h3></div></a></article>
+					</div>
+					<!-- .grid --><a class="event-all hidden-lg hidden-md hidden-ms" href="https://www.ville-courbevoie.fr/1415/en-images.htm">Toutes les photos et vidéos</a></section>
+			</div>
+			<section class="homeKiosque">
+				<div class="container">
+					<div class="row">
+						<header class="headerKiosque">
+							<h2 class="title">À feuilleter</h2><a class="kiosque-all hidden-sm hidden-xs" href="https://www.ville-courbevoie.fr/256/a-feuilleter.htm">Toutes les publications</a></header>
+						<article class="home-magazine col-lg-8 col-sm-12"><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Courbevoie_Mag/2020/MAG_162_WEB.pdf" target="_blank" title="Cliquer pour télécharger le pdf."><figure class="boxShadow"><img class="img-responsive" src="/fileadmin/_processed_/f/0/csm_MAG_162_WEB_66aad5bc3c.png" width="470" height="641" alt="" title="Courbevoie Mag n°162"></figure></a>
+							<div class="text">
+								<h3 class="title"><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Courbevoie_Mag/2020/MAG_162_WEB.pdf" target="_blank">Courbevoie MAG</a></h3>
+								<h4 class="title-magazine">Courbevoie Mag n°162</h4><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Courbevoie_Mag/2020/MAG_162_WEB.pdf" target="_blank" class="btn hidden-xs">Visualiser</a></div>
+						</article>
+						<article class="home-brochure col-lg-4 hidden-md hidden-sm hidden-xs"><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Courbevoie_Mag/2020/Courbevoie_161_WEB.pdf" target="_blank" title="Cliquer pour télécharger le pdf."><figure class="boxShadow"><img class="img" src="/fileadmin/_processed_/a/2/csm_Courbevoie_161_WEB_34c4d98e5e.png" width="330" height="450" alt="" title="Courbevoie Mag n°161"></figure></a>
+							<div class="text">
+								<h3 class="title"><a href="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Magazines/Courbevoie_Mag/2020/Courbevoie_161_WEB.pdf" target="_blank">Courbevoie Mag n°161</a></h3>
+							</div>
+						</article><a class="kiosque-all hidden-lg hidden-md hidden-sm" href="https://www.ville-courbevoie.fr/1416/publications.htm">Toutes les publications</a></div>
+				</div>
+			</section>
+			<div id="c7318" class="frame frame-default frame-type-html frame-layout-0 frame-space-before-none frame-space-after-none">
+				<script src="//cdn.gogowego.com/wegobot_inject.js" charset="UTF-8"></script>
+				<script>injectWegobot({ "botId": "kSBriX0vMQ", "primaryColor": "#00ad87", "secondaryColor": "#00ad87", "fullscreen": false, "apiCredentials": { "parse": { "APP_ID": "lrzrR2WoKff6oXTyZaQUUHY2KPkf4dkxizs8oAm4", "SESSION_TOKEN_KEY": "SESSION_GOGOWEGO_TOKEN_KEY", "API_BASE_URL": "https://api.obs.gogowego.com/parse/1" } }});</script>
+			</div>
+			<section class="homeSection homeReseaux">
+				<div class="container">
+					<header class="headerReseaux">
+						<h2 class="title">Réseaux sociaux</h2>
+					</header>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 widgetExt loading" data-type="twitter" data-mode="followers" data-content="span">
+							<div class="background twitter">
+								<div class="icon-title"><i class="icon icon-twitter" aria-hidden="true"></i>
+									<h3 class="title"><a href="https://twitter.com/VilleCourbevoie" target="_blank">Twitter</a></h3>
+								</div>
+								<div class="number"><span></span><b class="subscriber">abonnés</b></div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 widgetExt loading" data-type="facebook" data-mode="followers" data-content="span">
+							<div class="background facebook">
+								<div class="icon-title"><i class="icon icon-facebook"></i>
+									<h3 class="title"><a href="https://www.facebook.com/villecourbevoie" target="_blank">Facebook</a></h3>
+								</div>
+								<div class="number"><span></span><b class="subscriber">fans</b></div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 widgetExt loading" data-type="instagram" data-mode="followers" data-content="span">
+							<div class="background instagram">
+								<div class="icon-title"><i class="icon icon-instagram"></i>
+									<h3 class="title"><a href="https://www.instagram.com/villecourbevoie/" target="_blank">Instagram</a></h3>
+								</div>
+								<div class="number"><span></span><b class="subscriber">abonnés</b></div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 widgetExt loading" data-type="youtube" data-mode="followers" data-content="span">
+							<div class="background youtube">
+								<div class="icon-title"><i class="icon icon-youtube"></i>
+									<h3 class="title"><a href="https://www.youtube.com/user/villedecourbevoie" target="_blank">Youtube</a></h3>
+								</div>
+								<div class="number"><span></span><b class="subscriber">abonnés</b></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="homeSection homeThematique">
+				<div class="container">
+					<header class="headerThematique">
+						<h2 class="title">Les sites par thématique</h2>
+					</header>
+					<ul class="list-unstyled row listThematique">
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item item-odd"><a href="https://www.courbevoieetmoi.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/c/2/csm_CBVetmoi_25620ab9d5.jpg" width="246" height="197" alt=""></a><a href="https://www.courbevoieetmoi.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/courbevoieetmoi.png" width="229" height="72" alt=""><span class="text">Le blog Lifestyle</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item "><a href="http://www.projetsdecourbevoie.fr" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/7/f/csm_projetscourbevoie_94b8d70980.jpg" width="246" height="197" alt=""></a><a href="http://www.projetsdecourbevoie.fr" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/projetscourbevoie.png" width="155" height="50" alt=""><span class="text">Les projets urbains</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item item-odd"><a href="https://www.sortiracourbevoie.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/2/2/csm_sortiracourbevoie_0700907841.jpg" width="246" height="197" alt=""></a><a href="https://www.sortiracourbevoie.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/sortiracourbevoie.png" width="229" height="72" alt=""><span class="text">Sortir à Courbevoie</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item "><a href="https://developpementeconomie.courbevoie.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/e/f/csm_deveco_43812213ee.jpg" width="246" height="197" alt=""></a><a href="https://developpementeconomie.courbevoie.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/deveco.png" width="229" height="72" alt=""><span class="text">Developpement Economique</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item item-odd"><a href="https://www.courbevoie-chez-moi.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/5/f/csm_ccm_b1064c76d7.jpg" width="246" height="197" alt=""></a><a href="https://www.courbevoie-chez-moi.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/ccm.png" width="229" height="72" alt=""><span class="text">Courbevoie chez Moi</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item "><a href="https://bibliotheque.courbevoie.fr" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/d/d/csm_bibliotheque_82e0f928b5.jpg" width="246" height="197" alt=""></a><a href="https://bibliotheque.courbevoie.fr" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/biblotheque.png" width="229" height="72" alt=""><span class="text">Portail des bibliothèques</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item item-odd"><a href="https://www.museeroybetfould.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/6/d/csm_musee_d972650aff.jpg" width="246" height="197" alt=""></a><a href="https://www.museeroybetfould.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/musee.png" width="229" height="72" alt=""><span class="text">Musée Roybet Fould</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item "><a href="https://courbevoie.plan-interactif.com" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/4/2/csm_plan-interactif-courbevoie_31405f0caa.jpg" width="246" height="197" alt=""></a><a href="https://courbevoie.plan-interactif.com" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/vignette-plan-interactif-courbevoie.png" width="229" height="72" alt=""><span class="text">Plan interactif de Courbevoie</span></a></li>
+						<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item item-odd"><a href="https://jeparticipe.courbevoie.fr/" target="_blank"><img class="illustration" src="https://www.ville-courbevoie.fr/fileadmin/_processed_/d/5/csm_je-participe-courbevoie_03c084b77f.jpg" width="246" height="197" alt=""></a><a href="https://jeparticipe.courbevoie.fr/" target="_blank" class="title"><img class="img-responsive" src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/MEDIA/Thematique/vignette-je-participe-courbevoie.png" width="229" height="72" alt=""><span class="text">Je participe Courbevoie</span></a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="homeSection homeConnectes">
+				<div class="container">
+					<header class="headerConnectes">
+						<h2 class="title">Restez connectés</h2>
+					</header>
+					<div id="c5032" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-before-none frame-space-after-none">
+						<h3>Application “Courbevoie, Ma Ville”</h3>
+						<p>Découvrez l'application de la Ville de Courbevoie : actualités, agenda, services en ligne... </p>
+						<ul>
+							<li><a href="https://itunes.apple.com/fr/app/courbevoie-ma-ville/id1179723884?mt=8" title="Lien vers l'application de Courbevoie sur Apple iTunes" target="_blank">AppStore</a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.courbevoie.smartphone&hl=fr" title="Lien vers l'application de Courbevoie sur Google Play" target="_blank">Google Play</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="siteFooter hidden-print xvox_skip_voc">
+			<div class="footerInfos">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div id="c4999" class="frame frame-default frame-type-textmedia frame-layout-0 frame-space-before-none frame-space-after-none">
+								<header>
+									<h2 class="">Coordonnées</h2>
+								</header>
+								<p><strong>MAIRIE PRINCIPALE DE COURBEVOIE</strong><br><a href="https://courbevoie.plan-interactif.com/#!/go/pUZ" title="Localiser la Mairie Principale de Courbevoie" target="_blank">2, place de l’Hôtel de ville</a><br><span class="tel">01 71 05 70 00</span></p>
+								<p><strong>MAIRIE DE QUARTIER DE BÉCON</strong><br><a href="https://courbevoie.plan-interactif.com/#!/go/poo" title="Localiser la Mairie de Quartier de Bécon à Courbevoie" target="_blank">86, rue Armand Silvestre</a><br><span class="tel">01 71 05 71 35</span></p>
+								<p><strong>MAIRIE DE QUARTIER DU FAUBOURG DE L’ARCHE</strong><br><a href="https://courbevoie.plan-interactif.com/#!/go/pWi" title="Localiser la Mairie de Quartier du Faubourg de l'Arche à Courbevoie" target="_blank">40, avenue de l’Arche</a><br><span class="tel">01 71 05 76 26</span></p>
+								<div class="gallery-row row">
+									<div class="gallery-item col-xs-12">
+										<figure class="image"><a href="https://www.ville-courbevoie.fr/1814/acceo.htm" title="Baisse d’audition ? Sourd ou malentendant ?"><img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" data-large="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" data-medium="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" data-small="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" data-extrasmall="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" title="Baisse d’audition ? Sourd ou malentendant ?" alt="" class="lazyload" data-preload="false"><noscript><img src="/fileadmin/www.ville-courbevoie.fr/MEDIA/banners/picto_oreille2.png" title="Baisse d’audition ? Sourd ou malentendant ?" alt=""></noscript></a></figure>
+									</div>
+								</div>
+							</div><a class="btn btn-success" href="https://www.ville-courbevoie.fr/89/mairies-et-horaires.htm">Voir les horaires</a></div>
+						<div class="col-xs-12 col-sm-6">
+							<h2 class="title-plan">Plan interactif</h2><a href="https://courbevoie.plan-interactif.com" target="_blank" title="Ouverture dans un nouvel onglet"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/placeholder_planinteractif.png" width="578" height="384" alt="Plan interactif de la ville de Courbevoie" class="img-responsive"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="footerLiens1">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-4 text-center"><a href="https://www.ville-courbevoie.fr/5/accueil.htm"><img src="https://www.ville-courbevoie.fr/fileadmin/www.ville-courbevoie.fr/templates/Img/site-logo.svg" alt="Ville de Courbevoie" class="logo img-responsive"></a></div>
+						<div class="footerAutresSites col-xs-12 col-sm-6 col-md-4">
+							<div id="c5000" class="frame frame-default frame-type-menu_subpages frame-layout-0 frame-space-before-none frame-space-after-none">
+								<header>
+									<h2 class="">Les autres sites de la ville de Courbevoie</h2>
+								</header>
+								<ul class="list-unstyled">
+									<li class="item "><a href="https://www.courbevoie-chez-moi.fr/" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Courbevoie chez Moi</span></a></li>
+									<li class="item "><a href="https://www.sortiracourbevoie.fr/" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Sortir à Courbevoie</span></a></li>
+									<li class="item "><a href="http://www.projetsdecourbevoie.fr/" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Projets de Courbevoie</span></a></li>
+									<li class="item "><a href="https://developpementeconomie.courbevoie.fr/pages/accueil.php?page=accueil" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Développement économique et emploi</span></a></li>
+									<li class="item "><a href="https://bibliotheque.courbevoie.fr" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Portail des bibliothèques</span></a></li>
+									<li class="item "><a href="https://www.museeroybetfould.fr/" class="link"><span class="title">Musée Roybet Fould</span></a></li>
+									<li class="item "><a href="https://courbevoie.plan-interactif.com" class="link"><span class="title">Plan interactif de Courbevoie</span></a></li>
+									<li class="item "><a href="https://www.courbevoieetmoi.fr/" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="title">Courbevoie et moi</span></a></li>
+									<li class="item "><a href="https://jeparticipe.courbevoie.fr" class="link"><span class="title">Je participe Courbevoie</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footerLiensSociaux col-xs-12 col-sm-6 col-md-4">
+							<div id="c5001" class="frame frame-default frame-type-menu_subpages frame-layout-0 frame-space-before-none frame-space-after-none">
+								<header>
+									<h2 class="">Suivez-nous</h2>
+								</header>
+								<ul class="list-unstyled">
+									<li class="item "><a href="https://twitter.com/VilleCourbevoie" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="icon icon-social-twitter" aria-hidden="true"></span><span class="title">Twitter</span></a></li>
+									<li class="item "><a href="https://www.facebook.com/villecourbevoie" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="icon icon-social-facebook" aria-hidden="true"></span><span class="title">Facebook</span></a></li>
+									<li class="item "><a href="http://instagram.com/villecourbevoie" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="icon icon-social-instagram" aria-hidden="true"></span><span class="title">Instagram</span></a></li>
+									<li class="item "><a href="http://www.youtube.com/channel/UChrJPA_KIK6_oUFrYcRi4fg" class="link" target="_blank" title="Ouverture dans un nouvel onglet"><span class="icon icon-social-youtube2" aria-hidden="true"></span><span class="title">Youtube</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/501/flux-rss.htm" class="link"><span class="icon icon-social-rss" aria-hidden="true"></span><span class="title">Suivre notre flux RSS</span></a></li>
+								</ul>
+							</div>
+							<div class="frame frame-default">
+								<h2>Inscription à la newsletter</h2>
+								<form action="https://www.ville-courbevoie.fr/18/inscription-a-la-newsletter.htm" method="get" class="form-inline">
+									<fieldset class="form-group"><label for="emailaddress" class="sr-only">Adresse e-mail</label><input name="email" type="email" class="form-control" id="emailaddress" placeholder="Adresse e-mail"></fieldset><button type="submit" class="btn btn-default">S'inscrire</button></form>
+							</div>
+							<div class="frame frame-default">
+								<h2>Inscription à Info-SMS</h2>
+								<form action="https://www.ville-courbevoie.fr/1176/s-abonner-aux-alertes-sms.htm" method="get" class="form-inline">
+									<fieldset class="form-group"><label for="phonenumber" class="sr-only">Numéro de téléphone</label><input name="mobile" type="text" class="form-control" id="phonenumber" placeholder="Numéro de téléphone"></fieldset><button type="submit" class="btn btn-default">S'inscrire</button></form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerLiens2">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<div id="c5002" class="frame frame-default frame-type-menu_subpages frame-layout-0 frame-space-before-none frame-space-after-none">
+								<ul class="list-unstyled">
+									<li class="item "><a href="https://www.ville-courbevoie.fr/328/recrutement.htm" class="link"><span class="title">Recrutement</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/232/espace-presse.htm" class="link"><span class="title">Espace Presse</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/229/accessibilite.htm" class="link"><span class="title">Accessibilité</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/230/mentions-legales.htm" class="link"><span class="title">Mentions légales</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/231/credits.htm" class="link"><span class="title">Crédits</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/715/marches-publics.htm" class="link"><span class="title">Marchés Publics</span></a></li>
+									<li class="item "><a href="https://www.ville-courbevoie.fr/1608/rgpd.htm" class="link"><span class="title">RGPD</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- blueimp lightbox // modal // #galerie .gallery-link -->
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+			<div class="slides transitionAll"></div>
+			<div class="logo control transitionAll"><i class="ico ico-logo"></i></div><a class="prev fa control transitionAll"></a><a class="next fa control transitionAll"></a><a class="close fa control transitionAll"></a><a class="play-pause fa control transitionAll"></a>
+			<ol class="indicator control transitionAll"></ol>
+		</div>
+		<!-- modal -->
+		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<iframe src="" style="overflow:visible;" frameborder="0" width="100%" height="250"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal envoyer à un ami (OBLIGATOIRE !) -->
+		<div id="modalSendTo" class="modal fade hidden-print" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header"><button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="icon icon-tool-close"></span><span class="sr-only">Fermer cette modale</span></button>
+						<h1 class="pull-left">Partager par email</h1>
+					</div>
+					<div class="modal-body">
+						<iframe src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" frameborder="0" width="100%" height="320" style="overflow:visible;"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+					<div class="modal-body"></div>
+					<div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button></div>
+				</div>
+			</div>
+		</div>
+		<div id="partagerModal" class="modal fade hidden-print" tabindex="-1" role="dialog" aria-labelledby="partagerModal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="exampleModalLabel">Accueil</h4>
+					</div>
+					<div class="modal-body">
+						<div class="modal-list-item hidden">
+							<p class="legend">Sélectionnez une date</p>
+							<ul></ul>
+						</div>
+						<div class="modal-date hidden">
+							<p class="legend">Importer dans un agenda personnel</p>
+							<div class="btn-adds"><a class="btn btn-default googleCalendar" href="javascript:;">Google Calendar</a><a class="btn btn-default windowsLive" href="javascript:;">Windows Live</a><a class="btn btn-default yahooCalendar" href="javascript:;">Yahoo! Calendar</a></div>
+						</div>
+					</div>
+					<div class="modal-footer"><a href="" class="btn-return-list hidden">Retour à la liste des dates</a><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
+				</div>
+			</div>
+		</div>
+		<script src="/typo3temp/assets/compressed/merged-0ea3bb3745935a237b9bfcf48a6b9206-6d891df94199ae16caf636ab255a39a9.js?1593810045"></script>
+		<!-- javascripts -->
+		<script src="//cdn.gogowego.com/wegobot_inject.js" charset="UTF-8"></script>
+		<script>injectWegobot({ "botId": "kSBriX0vMQ", "primaryColor": "#00ad87", "secondaryColor": "#00ad87", "fullscreen": false, "apiCredentials": { "parse": { "APP_ID": "lrzrR2WoKff6oXTyZaQUUHY2KPkf4dkxizs8oAm4", "SESSION_TOKEN_KEY": "SESSION_GOGOWEGO_TOKEN_KEY", "API_BASE_URL": "https://api.obs.gogowego.com/parse/1" } }});</script>
+	</body>
+</html>
