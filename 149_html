@@ -1,0 +1,909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<meta content="text/html; charset=Windows-1252" http-equiv="Content-Type">
+		<meta name="description" content="">
+		<meta name="keywords" content=" ">
+		<meta http-equiv="robots" content="all">
+		<meta name="robots" content="index,follow">
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta name="post-it" content="">
+		<meta name="en-bref" content="">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon_ie.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<title>Administration - Ville de Grasse</title>
+		<script type="text/javascript" src="/js/jquery/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/js/jquery.browser.min.js"></script>
+		<script type="text/javascript" src="/js/shadowbox/shadowbox.js"></script>
+		<script async="" type="text/javascript" src="/js/comos.js"></script>
+		<script async="" type="text/javascript" src="validSearch.js"></script>
+		<script async="" type="text/javascript" src="setLanguage.js"></script>
+		<script async="" type="text/javascript" src="formValid.js"></script>
+		<script async="" type="text/javascript" src="pollScript.js"></script>
+		<script async="" type="text/javascript" src="menuFlipFlap.js"></script>
+		<script async="" type="text/javascript" src="jqueryCookie.js"></script>
+		<script async="" type="text/javascript" src="redirmobile.js"></script>
+		<script type="text/javascript" src="functionJquery.js"></script>
+		<script async="" type="text/javascript" src="partage.js"></script>
+		<script type="text/javascript" src="analytics.js"></script>
+		<link rel="stylesheet" type="text/css" href="/js/jquery/css/custom-theme/jquery-ui.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/js/bootstrap/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/js/shadowbox/shadowbox.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesDefaut.css">
+		<link rel="stylesheet" type="text/css" href="stylesEdition.css">
+		<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="menuStyles.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesimprim.css" media="print">
+		<!--[if lt IE 9]>
+    <link href="stylesie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+		<!--[if lt IE 8]>
+    <link href="stylesie7.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+		<meta name="revisit-after" content="8 days">
+		<link href="/js/jquery/css/custom-theme/jquery-ui.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="/js/shadowbox/shadowbox.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="fisheyecss.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="style_switch.css" rel="stylesheet" type="text/css" media="print">
+		<script type="text/javascript"><!--
+			gaProperty = "UA-61482560-1";
+			var disableStr = "ga-disable-" + gaProperty;
+
+			if (document.cookie.indexOf("hasConsent=false") > -1) {
+				window[disableStr] = true;
+			}
+
+			function getCookieExpireDate() { 
+				var cookieTimeout = 34214400000;
+				var date = new Date();
+				date.setTime(date.getTime() + cookieTimeout);
+				var expires = "; expires=" + date.toGMTString();
+				return expires;
+			}
+
+			function askConsent() {
+				var bodytag = document.getElementsByTagName("body")[0];
+				var div = document.createElement("div");
+				div.setAttribute("id", "cookie-banner");
+				div.setAttribute("width", "70%");
+				div.innerHTML = '<div class="analytics-warning">Ce site utilise Google Analytics.\
+				En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de \
+				mesure d\'audience. Pour s\'opposer à ce dépôt vous pouvez cliquer \
+				<a href="javascript:gaOptout()">ici.';          
+				bodytag.insertBefore(div, bodytag.firstChild);
+				document.getElementsByTagName("body")[0].className += " cookiebanner";
+			}
+			
+			function getCookie(NomDuCookie) {
+				if (document.cookie.length > 0) {
+					begin = document.cookie.indexOf(NomDuCookie + "=");
+					if (begin != -1) {
+						begin += NomDuCookie.length + 1;
+						end = document.cookie.indexOf(";", begin);
+						if (end == -1) end = document.cookie.length;
+						return unescape(document.cookie.substring(begin, end)); 
+					}
+				}
+				return null;
+			}
+			
+			function delCookie(name ) {
+				path = ";path=" + "/";
+				domain = ";domain=" + "." + document.location.hostname;
+				var expiration = "Thu, 01-Jan-1970 00:00:01 GMT";
+				document.cookie = name + "=" + path + domain + ";expires=" + expiration;
+			}
+			
+			function deleteAnalyticsCookies() {
+				var cookieNames = ["__utma", "__utmb", "__utmc", "__utmz", "_ga"];
+				for (var i = 0; i < cookieNames.length; i++)
+					delCookie(cookieNames[i]);
+			}
+			
+			function gaOptout() {
+				document.cookie = disableStr + "=true;" + getCookieExpireDate() + " ; path=/";
+				document.cookie = "hasConsent=false;" + getCookieExpireDate() + ";path=/";
+				var div = document.getElementById("cookie-banner");
+				if (div != null) div.innerHTML = '<div class="analytics-warning">Vous vous êtes opposé au dépôt de cookies de mesures d\'audience de Google Analytics dans votre navigateur';
+				window[disableStr] = true;
+				deleteAnalyticsCookies();
+			}
+			
+			var consentCookie = getCookie("hasConsent");
+			if (!consentCookie) {
+				var referrer_host = document.referrer.split("/")[2]; 
+				if (referrer_host != document.location.hostname) {
+					window[disableStr] = true;
+					window[disableStr] = true;
+					window.onload = askConsent;
+				} else {
+					document.cookie = "hasConsent=true; " + getCookieExpireDate() + " ; path=/"; 
+				}
+			}
+
+			var _gaq = _gaq || [];
+			_gaq.push(["_setAccount", gaProperty]);
+			_gaq.push(["_trackPageview"]);
+
+			(function() {
+				var ga = document.createElement("script");
+				ga.type = "text/javascript";
+				ga.async = true;
+				ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+			//-->
+		</script>
+	</head>
+	<body class="body01 bodygenerique ">
+		<noscript>
+			<p>Votre navigateur ne prend pas en compte javacsript, vous risquez d'avoir des difficultés de navigation !</p>
+		</noscript>
+		<div class="background">
+			<div class="total">
+				<div class="wrapper-extra-header">
+					<div class="masque-header">
+						<div class="autre-masque-header">
+							<div class="wrapper-header container">
+								<div id="header" role="banner">
+									<h1 class="logo"><a title="Ville de Grasse - Retour à l'accueil" accesskey="0" href="accueil.html"><img width="225" height="116" alt=" " src="images/logo_grasse_1.gif"></a></h1>
+									<div id="navigDirect" class="navigDirect">
+										<ul>
+											<li class="racnavig"><a accesskey="1" href="#menu"><span class="hidden">Accéder directement à la navigation principale du site</span></a></li>
+											<li class="raccontenu"><a accesskey="2" href="#wrapperInter"><span class="hidden">Accéder directement au contenu de la page</span></a></li>
+											<li class="racrecherche"><a href="#recherche"><span class="hidden">Accéder directement au moteur de recherche du site</span></a></li>
+											<li class="racplan"><a accesskey="4" href="plan.html"><span>Plan du site</span></a></li>
+											<li class="racaide"><a accesskey="5" href="aide.html"><span>Aide à la navigation et accessibilité</span></a></li>
+											<li class="raccontraste"><a accesskey="6" href="changecolor.html"><span>Paramètres des contrastes</span></a></li>
+											<li class="raccontact"><a accesskey="7" href="contact.html"><span>Contactez-nous</span></a></li>
+										</ul>
+									</div>
+									<div id="recherche" class="recherche" role="search">
+										<form id="fSearch" onsubmit="return verifySearch(this);" method="get" action="resultat_de_recherche.htm">
+											<div><label for="search">Rechercher :</label> <input accesskey="3" id="search" class="saisie" onfocus="this.select()" title="Champ de recherche principal" onclick="this.value='';" value="Recherche" name="mot_cle"><label for="valideSearch">Valider le formulaire</label><button id="valideSearch" title="ok, je valide ma recherche" type="submit">ok</button></div>
+										</form>
+									</div>
+									<div class="menu" role="navigation">
+										<div class="com-menu" id="menu">
+											<ul class="on">
+												<li class="lien_accueil"><a accesskey="1" class="on" href="index.html" title="Accueil - Rubrique en cours de consultation"><span>Accueil</span></a></li>
+												<li class="lien01 on"><a href="bienvenue.html" title="Votre mairie - Rubrique en cours de consultation"><span>Votre mairie</span></a>
+													<ul class="on">
+														<li class="lien01"><a href="bienvenue.html" title="Bienvenue - Rubrique en cours de consultation"><span>Bienvenue</span></a></li>
+														<li class="lien02"><a href="grasse_est_un_voyage.html"><span>Centre et quartiers</span></a>
+															<ul>
+																<li class="lien02"><a href="centre_historique.html"><span>Centre historique</span></a></li>
+																<li class="lien03"><a href="quartier_saint_jacques_sainte_anne.html"><span>Quartier Saint-Jacques / Sainte Anne</span></a></li>
+																<li class="lien04"><a href="quartier_saint_francois.html"><span>Quartier Saint-François / Saint-Sauveur les Ribes</span></a></li>
+																<li class="lien05"><a href="les_marronniers.html"><span>Quartier les Marronniers</span></a></li>
+																<li class="lien06"><a href="quartier_saint_antoine.html"><span>Quartier Saint-Antoine</span></a></li>
+																<li class="lien07"><a href="quartier_saint_claude.html"><span>Quartier Saint-Claude</span></a></li>
+																<li class="lien08"><a href="quartier_saint_mathieu.html"><span>Quartier Saint-Mathieu</span></a></li>
+																<li class="lien09"><a href="hameau_plascassier.html"><span>Hameau Plascassier</span></a></li>
+																<li class="lien10"><a href="quartier_magagnosc.html"><span>Quartier Magagnosc</span></a></li>
+																<li class="lien11"><a href="quartier_des_aspres.html"><span>Quartier des Aspres</span></a></li>
+																<li class="lien12"><a href="quartier_du_plan.html"><span>Quartier du Plan</span></a></li>
+															</ul>
+														</li>
+														<li class="lien03 on"><a href="organisation_et_gouvernance.html" title="Organisation et gouvernance - Rubrique en cours de consultation"><span>Organisation et gouvernance</span></a>
+															<ul class="on">
+																<li class="lien02"><a href="les_elus.html"><span>Les élus</span></a></li>
+																<li class="lien03 on"><a class="on" href="administration.html" title="Administration - Page en cours de consultation"><span>Administration</span></a></li>
+																<li class="lien04"><a href="CAPG.html"><span>CAPG</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="securite_copie.html"><span>Sécurité / Sureté</span></a>
+															<ul>
+																<li class="lien03"><a href="police_municipale.html"><span>Police municipale</span></a></li>
+																<li class="lien04"><a href="police_nationale.html"><span>Police Nationale</span></a></li>
+																<li class="lien05"><a href="gendarmerie_nationale.html"><span>Gendarmerie nationale</span></a></li>
+																<li class="lien06"><a href="prevention_des_risques.html"><span>Prévention des Risques</span></a></li>
+																<li class="lien07"><a href="sapeurs_pompiers.html"><span>Sapeurs Pompiers</span></a></li>
+																<li class="lien08"><a href="securite_civile.html"><span>Sécurité Civile</span></a></li>
+															</ul>
+														</li>
+														<li class="lien05"><a href="jumelages.html"><span>Jumelages</span></a>
+															<ul>
+																<li class="lien02"><a href="carrare_italie.html"><span>Carrare - Italie</span></a></li>
+																<li class="lien03"><a href="ville_Ingolstadt.html"><span>Ingolstadt - Allemagne</span></a></li>
+																<li class="lien04"><a href="kazanlak_bulgarie.html"><span>Kazanlak - Bulgarie</span></a></li>
+																<li class="lien05"><a href="murcia_espagne.html"><span>Murcia - Espagne</span></a></li>
+																<li class="lien06"><a href="marblehead_usa.html"><span>Marblehead - USA</span></a></li>
+																<li class="lien07"><a href="opole_pologne.html"><span>Opole - Pologne</span></a></li>
+																<li class="lien08"><a href="pardess_hanna_karkur_israel.html"><span>Pardess Hanna Karkur Israël</span></a></li>
+																<li class="lien09"><a href="Vila-Real-Portugal.html"><span>Vila Real - Portugal</span></a></li>
+															</ul>
+														</li>
+														<li class="lien06"><a href="ville_labellisee.html"><span>Ville labellisée</span></a>
+															<ul>
+																<li class="lien02"><a href="grasse_ville_art_histoire.html"><span>Grasse Ville Art Histoire</span></a></li>
+																<li class="lien03"><a href="ville_fleurie.html"><span>Ville fleurie</span></a></li>
+																<li class="lien05"><a href="agenda_21.html"><span>Agenda 21</span></a></li>
+																<li class="lien06"><a href="ville_internet_eric.html"><span>Ville internet / ERIC</span></a></li>
+															</ul>
+														</li>
+														<li class="lien08"><a href="projets_et_grands_travaux.html"><span>Projets et grands travaux</span></a></li>
+														<li class="lien09"><a href="candidature_patrimoine_de_l_humanite_unesco.html"><span>Candidature Patrimoine de l'Humanité UNESCO</span></a></li>
+														<li class="lien10"><a href="offres_d_emploi.html"><span>Offres d'emploi</span></a></li>
+													</ul>
+												</li>
+												<li class="lien02"><a href="vie_quotidienne.html"><span>Vie quotidienne</span></a>
+													<ul>
+														<li class="lien01"><a href="seniors_handicap.html"><span>Seniors / Handicap</span></a></li>
+														<li class="lien02"><a href="vie_associative.html"><span>Vie associative</span></a></li>
+														<li class="lien03"><a href="action_sociale.html"><span>Action Sociale</span></a></li>
+														<li class="lien04"><a href="stationnement.html"><span>Stationnement</span></a></li>
+														<li class="lien05"><a href="transport.html"><span>Transport</span></a></li>
+														<li class="lien06"><a href="logement.html"><span>Logement</span></a></li>
+														<li class="lien08"><a href="cultes.html"><span>Cultes</span></a></li>
+														<li class="lien09"><a href="arretes_municipaux02.html"><span>Arrêtés Municipaux</span></a></li>
+														<li class="lien10"><a href="le_cadre_de_vie.html"><span>Cadre de vie</span></a>
+															<ul>
+																<li class="lien01"><a href="service_communal_hygiene_sante.html"><span>Service Communal Hygiène Santé</span></a></li>
+																<li class="lien03"><a href="jardins_partages.html"><span>Jardins partagés</span></a></li>
+																<li class="lien04"><a href="proximite_et_cadre_de_vie.html"><span>Proximité et cadre de vie</span></a></li>
+																<li class="lien05"><a href="espaces_verts.html"><span>Espaces verts</span></a></li>
+																<li class="lien06"><a href="eau_et_assainissement.html"><span>Eau et assainissement</span></a></li>
+																<li class="lien07"><a href="traitement_des_dechets.html"><span>Traitement des déchets</span></a></li>
+																<li class="lien08"><a href="Explication_agenda_21.html"><span>Agenda 21</span></a></li>
+																<li class="lien09"><a href="energies_et_climat.html"><span>Energies et Climat</span></a></li>
+																<li class="lien10"><a href="developpement_durable.html"><span>Développement Durable</span></a></li>
+																<li class="lien11"><a href="telephonie_mobile.html"><span>Téléphonie mobile</span></a></li>
+															</ul>
+														</li>
+														<li class="lien12"><a href="monde_combattant.html"><span>Monde Combattant</span></a>
+															<ul>
+																<li class="lien01"><a href="les_monuments_aux_morts.html"><span>Les Monuments aux Morts</span></a></li>
+																<li class="lien02"><a href="arme_et_nation.html"><span>Armée et Nation</span></a></li>
+																<li class="lien03"><a href="les_associations_militaires.html"><span>Les associations militaires</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="lien03"><a href="vos_demarches.html"><span>Vos démarches</span></a>
+													<ul>
+														<li class="lien03"><a href="services.html"><span>Services</span></a>
+															<ul>
+																<li class="lien02"><a href="poste_et_agences_postales.html"><span>Poste et agences postales</span></a></li>
+																<li class="lien03"><a href="Mairie_et_annexes.html"><span>Mairie et Annexes</span></a></li>
+																<li class="lien04"><a href="services_municipaux.html"><span>Services municipaux</span></a></li>
+																<li class="lien05"><a href="guide_des_droits_et_demarches_administratives.html"><span>Toutes vos démarches</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="gestion_du_domaine_public_routier.html"><span>Gestion de l'Espace Communal</span></a></li>
+														<li class="lien05"><a href="marches.html"><span>Marchés publics</span></a>
+															<ul>
+																<li class="lien01"><a href="marches_publics.html"><span>Marchés publics</span></a></li>
+																<li class="lien02"><a href="ventes_aux_encheres.html"><span>Ventes aux enchères</span></a></li>
+															</ul>
+														</li>
+														<li class="lien06"><a href="urbanisme.html"><span>Urbanisme</span></a></li>
+														<li class="lien07"><a href="etablissements_de_sante.html"><span>Etablissements de Santé</span></a></li>
+														<li class="lien08"><a href="etat_civil.html"><span>Etat Civil</span></a>
+															<ul>
+																<li class="lien02"><a href="acte_naissance.html"><span>Actes d'état civil</span></a></li>
+																<li class="lien03"><a href="service_cimetieres.html"><span>Service Cimetières</span></a></li>
+																<li class="lien04"><a href="guide_des_droits_et_demarches_administratives_copie.html"><span>Toutes vos démarches Numériques</span></a></li>
+															</ul>
+														</li>
+														<li class="lien09"><a href="cni.html"><span>C.N.I. / Passeport</span></a>
+															<ul>
+																<li class="lien01"><a href="c_n_i_passeport.html"><span>C.N.I / Passeport</span></a></li>
+															</ul>
+														</li>
+														<li class="lien10"><a href="elections-demarches-recensement-militaire.html"><span>Elections et démarches/recensement militaire</span></a>
+															<ul>
+																<li class="lien02"><a href="inscription_radiation.html"><span>Inscription/radiation des listes électorales</span></a></li>
+																<li class="lien03"><a href="bureaux_de_vote.html"><span>Bureaux de vote</span></a></li>
+																<li class="lien04"><a href="recensement_militaire_periode.html"><span>Recensement militaire</span></a></li>
+																<li class="lien05"><a href="permis_de_chasse.html"><span>Permis de chasse</span></a></li>
+																<li class="lien06"><a href="medailles_d_honneur_du_travail.html"><span>Médailles d'honneur du travail</span></a></li>
+															</ul>
+														</li>
+														<li class="lien11"><a href="demarches_electroniques.html"><span>Paiement en ligne</span></a>
+															<ul>
+																<li class="lien01"><a href="paiement_en_ligne.html"><span>Paiement en ligne</span></a></li>
+															</ul>
+														</li>
+														<li class="lien12"><a href="liste_des_salles_municipales.html"><span>Location de salle</span></a>
+															<ul>
+																<li class="lien01"><a href="location_de_salle.html"><span>Location de salle</span></a></li>
+															</ul>
+														</li>
+														<li class="lien13"><a href="la_maison_des_associations.html"><span>Subventions</span></a>
+															<ul>
+																<li class="lien01"><a href="subvention.html"><span>Subventions</span></a></li>
+															</ul>
+														</li>
+														<li class="lien14"><a href="ccas_page.html"><span>CCAS</span></a>
+															<ul>
+																<li class="lien01"><a href="ccas_accueil.html"><span>CCAS Accueil</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="lien04"><a href="economie.html"><span>Économie</span></a>
+													<ul>
+														<li class="lien01"><a href="actualites_coronavirus.html"><span>Actualités Coronavirus - Soutien Entreprises et Commerces</span></a></li>
+														<li class="lien02"><a href="transmission_de_facture_dematerialisee.html"><span>Transmission de Facture dématérialisée</span></a></li>
+														<li class="lien03"><a href="alimentation_durable.html"><span>Alimentation durable</span></a></li>
+														<li class="lien04"><a href="commerce.html"><span>Commerce et Marchés</span></a></li>
+														<li class="lien05"><a href="amenagement_commercial.html"><span>Aménagement commercial</span></a></li>
+														<li class="lien06"><a href="aromes_et_parfums.html"><span>Arômes et Parfums</span></a></li>
+														<li class="lien07"><a href="entreprenariat.html"><span>Entreprenariat</span></a></li>
+														<li class="lien08"><a href="emploi.html"><span>Emploi</span></a></li>
+													</ul>
+												</li>
+												<li class="lien05"><a href="loisirs_et_culture.html"><span>Sports, Loisirs et Culture</span></a>
+													<ul>
+														<li class="lien02"><a href="culture.html"><span>Culture</span></a>
+															<ul>
+																<li class="lien02"><a href="archives_communales.html"><span>Archives communales</span></a></li>
+																<li class="lien03"><a href="bibliotheque.html"><span></span></a></li>
+																<li class="lien04"><a href="chapelle_victoria_page.html"><span>Amis de la Chapelle Victoria</span></a></li>
+																<li class="lien05"><a href="conservatoire.html"><span>Conservatoire</span></a></li>
+																<li class="lien06"><a href="le_coin_des_artistes02.html"><span>Le Coin des Artistes</span></a></li>
+																<li class="lien07"><a href="eca_500.html"><span>ECA 500</span></a></li>
+																<li class="lien08"><a href="espace_napoleon_anern.html"><span>Espace Napoléon - ANERN</span></a></li>
+																<li class="lien09"><a href="maison_du_patrimoine.html"><span>Maison du patrimoine</span></a></li>
+																<li class="lien10"><a href="musees.html"><span>Musées</span></a></li>
+																<li class="lien11"><a href="service_culturel.html"><span>Service Culturel</span></a></li>
+																<li class="lien12"><a href="service_evenementiel.html"><span>Service Evénementiel</span></a></li>
+																<li class="lien13"><a href="theatre_de_grasse.html"><span>Théâtre de Grasse</span></a></li>
+															</ul>
+														</li>
+														<li class="lien03"><a href="sports.html"><span>Sports</span></a>
+															<ul>
+																<li class="lien01"><a href="#"><span>Evenements sportifs</span></a></li>
+																<li class="lien03"><a href="service_des_sports.html"><span>Guide des Sports</span></a></li>
+																<li class="lien04"><a href="sport.html"><span></span></a></li>
+																<li class="lien05"><a href="installations_sportives.html"><span>Installations sportives</span></a></li>
+																<li class="lien06"><a href="evenements_sportifs.html"><span>Evénements sportifs</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="cinema.html"><span>Cinéma Le Studio</span></a></li>
+														<li class="lien05"><a href="ludotheque02.html"><span>Ludothèque</span></a></li>
+													</ul>
+												</li>
+												<li class="lien06"><a href="jeunesse_accueil.html"><span>Petite enfance et jeunesse</span></a>
+													<ul>
+														<li class="lien02"><a href="petite_enfance.html"><span>Petite enfance</span></a>
+															<ul>
+																<li class="lien02"><a href="jardins_d_enfants.html"><span>Jardins d'enfants</span></a></li>
+																<li class="lien03"><a href="petite_enfance02.html"><span>Petite enfance</span></a></li>
+																<li class="lien04"><a href="creches.html"><span>Multi accueils</span></a></li>
+																<li class="lien05"><a href="service_d_accompagnement_aux_familles.html"><span>Accompagnement familles</span></a></li>
+																<li class="lien06"><a href="ludotheque.html"><span>Ludothèque</span></a></li>
+															</ul>
+														</li>
+														<li class="lien03"><a href="ecoles.html"><span>Ecoles</span></a>
+															<ul>
+																<li class="lien02"><a href="ecoles_grasse.html"><span>Les écoles de Grasse</span></a></li>
+																<li class="lien03"><a href="rythmes_scolaires.html"><span>Rythmes scolaires</span></a></li>
+																<li class="lien04"><a href="services_vie_scolaire.html"><span>Service Vie scolaire</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="colleges.html"><span>Collèges</span></a></li>
+														<li class="lien05"><a href="lycees.html"><span>Lycées</span></a></li>
+														<li class="lien06"><a href="enseignement_superieur.html"><span>Enseignement supérieur</span></a></li>
+														<li class="lien07"><a href="service_jeunesse2.html"><span>Service jeunesse</span></a></li>
+														<li class="lien08"><a href="jeunesse_pratique.html"><span>Jeunesse pratique</span></a></li>
+													</ul>
+												</li>
+												<li class="lien07"><a href="evenements_et_projets.html"><span>Événements et projets</span></a>
+													<ul>
+														<li class="lien01"><a href="grasse_en_vues_accueil.html"><span>Grasse en vues</span></a></li>
+														<li class="lien03"><a href="manifestations_annuelles.html"><span>Manifestations annuelles</span></a>
+															<ul>
+																<li class="lien01"><a href="journees_du_parfum.html"><span>Journées du Parfum</span></a></li>
+																<li class="lien02"><a href="miss_grasse.html"><span>Miss Grasse</span></a></li>
+																<li class="lien03"><a href="festival_des_jardins_de_la_cote_d_azur.html"><span>Festival des Jardins de la Côte d'Azur</span></a></li>
+																<li class="lien04"><a href="exporose.html"><span>ExpoRose</span></a></li>
+																<li class="lien05"><a href="fete_de_la_rose_centifolia_grasse.html"><span>Fête de la Centifolia</span></a></li>
+																<li class="lien06"><a href="trail_du_pays_de_grasse_manifannuelle.html"><span>Grasse Running Days</span></a></li>
+																<li class="lien07"><a href="esprit_campagne_passion_terroir_manifannuelle.html"><span>Esprit Campagne, passion terroir</span></a></li>
+																<li class="lien08"><a href="fete_espagnole_a_grasse.html"><span>Fête Espagnole à Grasse</span></a></li>
+																<li class="lien09"><a href="fete_de_la_musique_manifestation_annuelle.html"><span>Fête de la Musique</span></a></li>
+																<li class="lien10"><a href="instants_de_grasse_musique_de_chambre.html"><span>Instants de Grasse</span></a></li>
+																<li class="lien11"><a href="fete_du_2_roues_actu.html"><span>Fête du 2 roues</span></a></li>
+																<li class="lien12"><a href="les_promeneurs_du_temps2019.html"><span>LES PROMENEURS DU TEMPS</span></a></li>
+																<li class="lien13"><a href="grasse_au_pays_des_merveilles_event.html"><span>Grasse au Pays des Merveilles</span></a></li>
+																<li class="lien14"><a href="fete_a_l_hippodrome.html"><span>Fête à l'hippodrome</span></a></li>
+																<li class="lien15"><a href="marche_italien.html"><span>Marché Italien</span></a></li>
+																<li class="lien16"><a href="fete_du_jasmin.html"><span>Fête du jasmin</span></a></li>
+																<li class="lien18"><a href="anniversaire_de_la_liberation_de_la_ville_de_grasse.html"><span>Anniversaire de la Libération de la ville de Grasse</span></a></li>
+																<li class="lien19"><a href="fete_de_la_biere.html"><span>Fête de la bière</span></a></li>
+																<li class="lien20"><a href="forum_des_associations_pays_de_grasse.html"><span>Forum des associations - Pays de Grasse</span></a></li>
+																<li class="lien21"><a href="les_journees_du_patrimoine.html"><span>Les Journées du Patrimoine</span></a></li>
+																<li class="lien23"><a href="fete_des_vendanges_libres_grasse.html"><span>Fête des Vendanges Libres</span></a></li>
+																<li class="lien24"><a href="phytarom.html"><span>Phyt'Arom Grasse</span></a></li>
+																<li class="lien25"><a href="noel_au_coeur_de_grasse_ev.html"><span>Noël gourmand à Grasse</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="palais_des_congres_grasse.html"><span>Palais des Congrès</span></a></li>
+														<li class="lien05"><a href="revue_de_presse.html"><span>Reportages</span></a>
+															<ul>
+																<li class="lien01"><a href="reportages_radio.html"><span>Reportages Radio</span></a></li>
+																<li class="lien02"><a href="reportages_tv.html"><span>Reportages TV</span></a></li>
+																<li class="lien05"><a href="presse_locale.html"><span>Presse Locale</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div id="reseaux-sociaux" class="cacher">
+										<ul class="no-margin no-padding list-sociaux">
+											<li class="icone-sociaux icone-fb"><a title="Nouvelle fenêtre" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="https://www.facebook.com/grasse.actualites" target="_blank"><span class="hidden">Facebook</span></a></li>
+											<li class="icone-sociaux icone-t"><a title="Nouvelle fenêtre" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="https://twitter.com/villedegrasse" target="_blank"><span class="hidden">Twitter</span></a></li>
+											<li class="icone-sociaux icone-gplus"><a title="Nouvelle fenêtre" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="https://plus.google.com/101839321108747557730" target="_blank"><span class="hidden">Google Plus</span></a></li>
+											<li class="icone-sociaux icone-v"><a title="Nouvelle fenêtre" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="https://vimeo.com/villedegrasse" target="_blank"><span class="hidden">Vimeo</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content container">
+					<div class="row">
+						<div class="wrapperInter col-md-9" role="main">
+							<div id="filariane" class=""><a href="accueil.html" title="Retour à l'accueil">Accueil</a><span class="separator">></span><a href="bienvenue.html">Votre mairie</a><span class="separator">></span><a href="organisation_et_gouvernance.html" title="Organisation et gouvernance">Organisation et gouvernance</a><span class="separator">></span><span class="last">Administration</span></div>
+							<div class="wrapper-h1">
+								<h1><span>Administration</span></h1>
+								<div id="add-to-reseaux-sociaux">
+									<ul class="list-item">
+										<li><a title="Ouverture dans une nouvelle fenêtre" class="fb_share_link" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="return fbs_click(); if (!this.isContentEditable) return !window.open(this.href,'blank');" href="//www.facebook.com/share.php?u=//monsite.fr"><img alt=" " src="picto_facebook.png"></a></li>
+										<li><a title="Ouverture dans une nouvelle fenêtre" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="return tw_click(); if (!this.isContentEditable) return !window.open(this.href,'blank');" href="https://twitter.com/share" target="blank"><img alt=" " src="picto_twitter.png"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="inter">
+								<p>/////</p>
+								<p>#Organigramme de l’administration <br></p>
+								<p><a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="organigramme_general_mars_2019.jpeg">Consultez l'organigramme</a>.</p>
+								<p>/////</p>
+								<p>/////</p>
+								<p>#Arrêtés municipaux</p>
+								<p>Retrouvez l'ensemble des Arrêtés municipaux dans la rubrique Actualité en page d'accueil. <a href="http://www.grasse.fr/arretes_municipaux02.html">Consulter</a>. </p>
+								<p>/////</p>
+								<p>/////</p>
+								<p>#Les délibérations du Conseil Municipal (les télécharger)</p>
+								<p> </p>
+								<p>PS : Si vous ne parvenez pas à ouvrir les fichiers compressés des Délibérations des Conseils Municipaux, télécharger le logiciel gratuit et libre "WinRar v.5.71 Fr" <a title="Télécharger le logiciel WinRar v5.7.1 Fr" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.win-rar.com/fileadmin/winrar-versions/winrar/wrar571fr.exe">ICI</a>.<br><br></p>
+								<h3><span>2020  </span></h3>
+								<p>Conseils Municipaux prévisionnels dans l'année 2020 <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2020.pdf">ICI</a>.<br>Consulter les ordres du jour des Conseils Municipaux 2020.<br><br>Prochain Conseil Municipal : Mardi 7 juillet 2020.<br><br>Conseil Municipal du Jeudi 28 Mai 2020<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1">Jeudi 28 Mai </span></span>. Consulter <a title="Ordre du jour du C.M du 28 Mai 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_28mai2020.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">Jeudi 28 Mai 2020 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 28 Mai 2020 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_28mai2020.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">Jeudi 28 Mai 2020</span>. Consulter <a title="Liste des arrêtés du C.M du 28 Mai 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_28mai2020.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">Jeudi 28 Mai 2020</span>. Consulter <a title="Compte-rendu du C.M du Jeudi 28 Mai 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_28mai2020.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">Jeudi 28 Mai 2020</span>.</span> A venir.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 11 Février 2020<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1">11 Février 2020</span></span>. Consulter <a title="Ordre du jour du C.M du 11 Février 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_11fevrier2020.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">11 Février 2020 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 11 février 2020 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_11fevrier2020.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">11 Février 2020</span>. Consulter <a title="Liste des arrêtés du C.M du 11 Février 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_11fevrier2020.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">11 Février 2020</span>. Consulter <a title="Compte-rendu du C.M du 11 Février 2020" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_11fevrier2020.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">11 Février 2020</span>. A venir.</li>
+								</ul>
+								<h3><span>2019  </span></h3>
+								<p>Ordres du jour des Conseils Municipaux de janvier à décembre l'année 2019 <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2019.pdf">ICI</a>.<br><br>Conseil Municipal du Mardi 10 Décembre 2019<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1"><span id="part1">10 Décembre </span>2019</span></span>. Consulter <a title="Ordre du jour du C.M du 10 décembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_10decembre2019.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">10 Décembre 2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 10 décembre 2019 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_10decembre2019.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">10 Décembre 2019</span>. Consulter <a title="Liste des arrêtés du C.M du 10 décembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_10decembre2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">10 Décembre 2019</span>. Consulter <a title="Compte-rendu du C.M du 10 décembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_10decembre2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">10 Décembre </span>2019</span>. Consulter. <a title="Procès verbal du C.M. du 10 Décembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_10decembre2019.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 12 Novembre 2019<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1"><span id="part1">12 Novembre </span>2019</span></span>. Consulter <a title="Ordre du jour du C.M du 12 Novembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_12novembre2019.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">12 Novembre 2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 12 Novembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_12novembre2019.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">12 Novembre 2019</span>. Consulter <a title="Liste des arrêtés du C.M du 12 Novembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_12novembre2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 12 Novembre <span id="part1">2019</span>. Consulter <a title="Compte-rendu du C.M du 12 Novembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_12novembre2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">12 Novembre <span id="part1"></span></span>2019</span>. Consulter <a title="Procès verbal du C.M. du 12 Novembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_12novembre2019.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 24 Septembre 2019<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1"><span id="part1">24 Septembre </span>2019</span></span>. Consulter <a title="Ordre du jour du C.M du 24 Septembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_24septembre2019.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">24 Septembre 2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 24 Septembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_24septembre2019.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">24 Septembre 2019</span>. Consulter <a title="Liste des arrêtés du C.M du 24 Septembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_24septembre2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 24 Septembre 2019. Consulter <a title="Compte-rendu du C.M du 24 Septembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_24septembre2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">24 Septembre </span>2019</span>. Consulter <a title="Procès Verbal du C.M. du 24 Septembre 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_24septembre2019.pdf">ICI</a>.</li>
+								</ul>
+								<p> </p>
+								<li>
+									<p>Conseil Municipal du Mardi 25 Juin 2019<br></p>
+								</li>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1"><span id="part1">25 Juin </span>2019</span></span>. Consulter <a title="Ordre du jour du C.M du 25 Juin 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_26juin2019.pdf">ICI</a> </li>
+									<li>Délibérations du C.M du <span id="part1"><span id="part1">25 Juin </span>2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 25 Juin 2019 " onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_25juin2019.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M du <span id="part1"><span id="part1">25 Juin </span>2019</span>. Consulter <a title="Liste des arrêtés du C.M du 25 Juin 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_26juin2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1"><span id="part1">25 Juin </span>2019</span>. Consulter <a title="Compte-rendu du C.M du 25 Juin 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_26juin2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">25 Juin </span>2019</span>. Consulter <a title="Procès Verbal du C.M. du 25 Juin 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_26juin2019.pdf">ICI</a>.</li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du Mardi <span id="part1">26 Mars 2019</span><br></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1"><span id="part1">26 Mars</span> 2019</span></span>. Consulter <a title="Ordre du jour du C.M du 26 Mars 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_26mars2019.pdf">ICI</a>. </li>
+									<li>Délibérations du C.M du <span id="part1"><span id="part1">26 Mars </span>2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 26 Mars 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_26mars2019.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1"><span id="part1">26 Mars </span>2019</span>. Consulter <a title="Liste des arrêtés du C.M du 26 Mars 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_26mars2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1"><span id="part1">26 Mars </span>2019</span>. Consulter <a title="Compte-rendu du C.M du 26 Mars 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_26mars2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1"><span id="part1">26 Mars</span> </span>2019. Consulter <a title="Procès Verbal du C.M. du 26 Mars 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_26mars2019.pdf">ICI</a>. <br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">19 Février 2019</span></p>
+								<ul>
+									<li>Ordre du jour du C.M du<span id="part1"> <span id="part1">19 Février 2019</span></span>. Consulter <a title="Ordre du jour du C.M du 19 Février 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_19fevrier2019.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">19 Février 2019 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 19 Février 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_19fevrier2019.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">19 Février 2019</span>. Consulter <a title="Liste des arrêtés du C.M du 19 Février 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_19fevrier2019.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">19 Février 2019</span>. Consulter <a title="Compte-rendu du C.M du 19 Février 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_19fevrier2019.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">19 Février 2019</span>. Consulter <a title="Procès Verbal du C.M. du 19 Février 2019" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_19fevrier2019.pdf">ICI</a>.</li>
+								</ul>
+								<h3><span>2018<br></span></h3>
+								<p>Ordres du jour des Conseils Municipaux de janvier à décembre l'année 2018 : Consulter <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="ordre_du_jour_conseils_municipaux_annee_2018.pdf">ICI</a>.<br><br>Conseil Municipal du Mardi <span id="part1">11 Décembre 2018 </span>:<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1">11 Décembre </span>2018</span>. Consulter <a title="Ordre du jour du C.M du 11 décembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_11decembre2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">11 Décembre </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 11 décembre 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_11decembre2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">11 Décembre 2018</span>. Consulter <a title="Liste des arrêtés du C.M du 11 décembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_11decembre2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 11 Décembre <span id="part1">2018</span>. Consulter <a title="Compte-rendu du C.M du 11 décembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_11decembre2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du 11 Décembre 2018. Consulter <a title="Procès verbal du C.M. du 11 Décembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_11decembre2018.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">6 Novembre 2018 </span>:<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1">6 Novembre </span>2018</span>. Consulter <a title="Ordre du jour du C.M du 6 novembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_11novembre2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">6 Novembre </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 6 novembre 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_6novembre2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">6 Novembre </span>. Consulter <a title="Liste des arrêtés du C.M du 6 novembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_11novembre2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1"><span id="part1">6 Novembre </span>2018</span>. Consulter <a title="Compte-rendu du C.M du 6 novembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_11novembre2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du 6 Novembre 2018. Consulter <a title="Procès verbal du C.M. du 11 novembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_11novembre2018.pdf">ICI</a>.</li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du Mardi <span id="part1">25 Septembre 2018 </span>:<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1">25 Septembre </span>2018</span>. Consulter <a title="Ordre du jour du C.M du 25 septembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_25septembre2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">25 Septembre </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 25 septembre 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_25septembre2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">26 Juin</span>. Consulter <a title="Liste des arrêtés du C.M du 25 septembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_25septembre2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du<span id="part1"> <span id="part1">25 Septembre </span>2018</span>. Consulter <a title="Compte-rendu du C.M du 25 septembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_25septembre2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">25 Septembre 2018</span>. Consulter <a title="Procès verbal du C.M. du 25 septembre 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_25septembre2018.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">26 Juin 2018 </span>:<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1"><span id="part1">26 Juin</span> </span>2018</span>. Consulter <a title="Ordre du jour du C.M du 26 juin 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_26juin2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1"><span id="part1">26 Juin </span>2018 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 26 Juin 2018 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_26juin2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">26 Juin</span>. Consulter <a title="Liste des arrêtés du C.M du 26 juin 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_26juin2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du<span id="part1"> <span id="part1">26 Juin </span>2018</span>. Consulter <a title="Compte-rendu du C.M du 26 juin 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_26juin2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">26 Juin 2018</span>. Consulter <a title="Procès verbal du C.M. du 26 juin 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_26juin2018.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">27 Mars 2018 </span>:<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1">27 Mars </span>2018</span>. Consulter <a title="Ordre du jour du C.M du 27 Mars 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_27mars2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1"><span id="part1">27 Mars </span>2018 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 27 Mars 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_27mars2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">27 Mars</span>. Consulter <a title="Liste des arrêtés du C.M du 27 Mars 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_27mars2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du<span id="part1"> <span id="part1">27 Mars </span>2018</span>. Consulter <a title="Compte-rendu du C.M du 27 Mars 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_27mars2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">27 Mars</span>. Consulter <a title="Procès verbal du C.M. du 27 Mars 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_27mars2018.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">20 Février 2018</span>: <br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1">20 Février 2018</span>. Consulter <a title="Ordre du jour du C.M du 20 Février 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_20fevrier2018.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">20 Février 2018 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 20 Février 2018 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20fevrier2018.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">20 Février 2018</span>. Consulter <a title="Liste des arrêtés du C.M du 20 Février 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_20fevrier2018.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du<span id="part1"> 20 Février 2018</span>. Consulter <a title="Compte-rendu du C.M du 20 Février 2018 " onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_20fevrier2018.pdf">ICI</a>.</li>
+									<li>Procès Verbal du C.M. du <span id="part1">20 Février 2018</span>. Consulter <a title="Procès verbal du C.M. du 20 Février 2018" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20fevrier2018.pdf">ICI</a>.<br></li>
+								</ul>
+								<h3><span>2017</span></h3>
+								<p>Ordres du jour des Conseils Municipaux de janvier à décembre 2017. Consulter <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2017.pdf">ICI</a>.<br><br>Conseil Municipal du Mardi <span id="part1">12 Décembre </span>2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1">12 Décembre 2017</span>. Consulter <a title="Ordre du jour du C.M du 12 Décembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_12decembre2017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">12 Décembre 2017</span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 12 Décembre 2017(fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://www.ville-grasse.info/telechargements/site/deliberations_cm_12decembre2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">12 Décembre </span> 2017. Consulter <a title="Liste des arrêtés du C.M du 12 Décembre  2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_12decembre2017.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">12 Décembre </span>2017. Consulter <a title="Compte-rendu du C.M du 12 Décembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_12decembre2017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du <span id="part1">12 Décembre </span>2017. Consulter <a title="Procès verbal du C.M. du 12 Décembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_12decembre2017.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi <span id="part1">7 Novembre</span> 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1"><span id="part1">7 Novembre</span> 2017</span>. Consulter <a title="Ordre du jour du C.M du 7 Novembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_07112017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1"><span id="part1">7 Novembre</span> 2017 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 7 Novembre 2017 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_7novembre2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1"><span id="part1">7 Novembre</span> </span>. Consulter <a title="Liste des arrêtés du C.M du 7 novembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_19092017.pdf">ICI</a>. <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1"><span id="part1">7 Novembre</span> </span> 2017. Consulter <a title="Compte-rendu du C.M du 7 Novembre  2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_07112017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du <span id="part1"><span id="part1">7 Novembre</span> </span>2017. Consulter <a title="Procès verbal du C.M. du 7 Novembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_07112017.pdf">ICI</a>.</li>
+								</ul>
+								<p><br>Conseil Municipal du Mardi <span id="part1">19 Septembre</span> 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du <span id="part1">19 Septembre 2017</span>. Consulter <a title="Ordre du jour du C.M du 19 Septembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_19092017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du <span id="part1">19 Septembre 2017 </span>(fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 19 Septembre 2017 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_19septembre2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du <span id="part1">19 Septembre</span> 2017. Consulter <a title="Liste des arrêtés du C.M du 19 Septembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_19092017.pdf">ICI</a>. <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du <span id="part1">19 Septembre</span> 2017. Consulter <a title="Compte-rendu du C.M du 19 Septembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_19092017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du <span id="part1">19 Septembre </span>2017.Consulter <a title="Procès verbal du C.M. du 19 Septembre 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_19092017.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 27 juin 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 27 juin 2017. Consulter <a title="Ordre du jour du C.M du 27 juin 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_27062017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du 27 juin 2017 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 27 juin 2017 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_27juin2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du 27 juin 2017. Consulter <a title="Liste des arrêtés du C.M du 27 juin 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_27062017.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 27 juin 2017. Consulter <a title="Compte-rendu du C.M du 27 juin 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_27062017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du 27 juin 2017. Consulter <a title="Procès verbal du C.M. du 27 juin " onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_27062017.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 28 mars 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 28 mars 2017. Consulter <a title="Ordre du jour du C.M du 28 mars 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_28032017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du 28 mars 2017 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 28 mars 2017 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_28mars2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du 28 mars 2017. Consulter <a title="Liste des arrêtés du C.M du 28 mars 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_28032017.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 28 mars 2017. Consulter <a title="Compte-rendu du C.M du 28 mars 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_28032017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du 28 mars 2017. Consulter <a title="Procès verbal du C.M. du 28 mars 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_28032017.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 28 février 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 28 février 2017. Consulter <a title="Ordre du jour du C.M du 28 février 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_28022017.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du 28 février 2017 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 28 février 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_28fevrier2017.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du 28 février 2017. Consulter <a title="Liste des arrêtés du C.M du 28 février 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_28022017.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 28 février 2017. Consulter <a title="Compte-rendu du C.M du 28 février 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_28022017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du 28 février 2017. Consulter <a title="Procès verbal du C.M. du 28 février 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_28022017.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 17 janvier 2017 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 17 janvier 2017. Consulter <a title="Ordre du jour du C.M du 17 janvier 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="ordre_du_jour_conseils_municipaux_annee_2017_1.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du 17 janvier 2017 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 17 janvier 2017 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_17janvier2017.zip">ICI</a><a title="Ordre du jour du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_1312016.pdf"></a>.</li>
+									<li>Liste des arrêtés du C.M du 17 janvier 2017. Consulter <a title="Liste des arrêtés du C.M du 17 janvier 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_17012017.pdf">ICI</a><a title="Ordre du jour du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_1312016.pdf"></a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 17 janvier 2017. Consulter <a title="Ordre du jour du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_1312016.pdf"></a><a title="Compte-rendu du C.M du 17 janvier 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_17012017.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du 17 janvier 2017. Consulter <a title="Procès verbal du C.M. du 17 janvier 2017" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_17012017.pdf">ICI</a>.</li>
+								</ul>
+								<h3><span>2016</span></h3>
+								<p><br>Ordres du jour des Conseils Municipaux de janvier à décembre 2016. Consulter <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2016.pdf">ICI</a>.<br>Conseil Municipal du Mardi 13 Décembre  2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 13 Décembre 2016. Consulter <a title="Ordre du jour du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_1312016.pdf">ICI</a>.</li>
+									<li>Délibérations du C.M du 13 Décembre 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 13 Décembre 2016 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_13decembre2016.zip">ICI</a>.</li>
+									<li>Liste des arrêtés du C.M du 13 Décembre 2016. Consulter <a title="Liste des arrêtés du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_13122016.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 13 Décembre 2016. Consulter <a title="Compte-rendu du C.M du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_1312016.pdf">ICI</a>.</li>
+									<li>Procès verbal du C.M. du 13 Décembre 2016. Consulter <a title="Procès verbal du C.M. du 13 Décembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_1312016_1.pdf">ICI</a>.</li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du Mardi 20 Septembre 2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 20 Septembre 2016. Consulter <a title="Ordre du jour du C.M du 20 Septembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_20092016.pdf">ICI</a></li>
+									<li>Délibérations du C.M du 20 Septembre 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 20 Septembre 2016 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20septembre2016.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M du 20 Septembre 2016. Consulter <a title="Liste des arrêtés du C.M du 20 Septembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_20092016.pdf">ICI</a><br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 20 Septembre 2016. Consulter <a title="Compte-rendu du C.M du 20 Septembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_20092016.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 20 Septembre 2016. Consulter <a title="Procès verbal du C.M. du 20 Septembre 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20092016_v2.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 28 Juin  2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 28 Juin 2016. Consulter <a title="Ordre du jour du C.M. du 28 Juin 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_28juin2016.pdf">ICI</a></li>
+									<li>Délibérations du C.M du 28 Juin 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 28 Juin 2016 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_28juin2016.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M du 28 Juin 2016. Consulter <a title="Liste des arrêtés du C.M du 28 Juin 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_28juin2016.pdf">ICI</a><br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 28 Juin 2016. Consulter <a title="Compte-rendu du C.M. du 28 Juin 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_28juin2016.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 28 Juin 2016. Consulter <a title="Procès verbal du C.M. du 28 Juin 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_28juin2016.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 29 Mars 2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 29 mars 2016. Consulter <a title="Ordre du jour du C.M. du 29 mars 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_29mars2016.pdf">ICI</a></li>
+									<li>Délibérations du C.M du 29 mars 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 29 mars 2016 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_29mars2016.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M du 29 mars 2016. Consulter <a title="Liste des arrêtés du C.M du 29 mars 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_29mars2016.pdf">ICI</a><br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 29 mars 2016. Consulter <a title="Compte-rendu du C.M. du 29 mars 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_29mars2016.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 29 mars 2016. Consulter <a title="Procès verbal du C.M. du 29 mars 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_29mars2016.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du Mardi 23 février 2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M du 23 février 2016. Consulter <a title="Ordre du jour du C.M du 23 février 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_23fevrier2016.pdf">ICI</a></li>
+									<li>Délibérations du C.M du 23 février 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M du 23 février 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_23fevrier2016.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M du 23 février 2016. Consulter <a title="Liste des arrêtés du C.M du 23 février 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_23fevrier2016.pdf">ICI</a><br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M du 23 février 2016. Consulter <a title="Compte-rendu du C.M du 23 février 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_23fevrier2016.pdf">ICI</a></li>
+									<li>Débat d'Orientation Budgétaire (D.O.B.). Consulter <a title="Débat d'Orientation Budgétaire 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="debat_orientation_budget_cm_23022016.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 23 février 2016. Consulter <a title="Procès verbal du C.M. du 23 février 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_23fevrier2016.pdf">ICI</a>.<br></li>
+								</ul>
+								<p>Conseil Municipal du 19 janvier 2016 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 19 janvier 2016 . Consulter <a title="Ordre du jour du C.M. du 19 janvier 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_19janvier2016.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 19 janvier 2016 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 19 janvier 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_19janvier2016.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 19 janvier 2016 . En attente.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M. du 19 janvier 2016 . Consulter <a title="Compte-rendu du C.M. du  19 janvier 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_1901_2016.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 19 janvier 2016 . Consulter <a title="Procès verbal du C.M. du 19 janvier 2016" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_19janvier2016.pdf">ICI</a>. <br></li>
+								</ul>
+								<p> </p>
+								<h3><span>2015</span></h3>
+								<p> </p>
+								<p>Ordres du jour des Conseils Municipaux de janvier à décembre 2015. Consulter <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2015.pdf">ICI</a>.<br><br>Conseil Municipal du 8 décembre 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 8 décembre 2015. Consulter <a title="Ordre du jour du C.M. du 8 décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_8decembre2015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 8 décembre 2015 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 8 décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_8decembre2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 8 décembre 2015. Consulter <a title="Liste des arrêtés du C.M. du 8 décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_8decembre2015.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M. du 8 décembre 2015. Consulter <a title="Compte-rendu du C.M. du  8 décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="compte_rendu_cm_8decembre2015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 8 décembre 2015. Consulter <a title="Procès verbal du C.M. du 8 décembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_8decembre2015.pdf">ICI</a> <br></li>
+								</ul>
+								<p>Conseil Municipal du 22 septembre 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 22 septembre 2015. Consulter <a title="Ordre du jour du C.M. du 22 septembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_22septembre2015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 22 septembre 2015 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 22 septembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_22septembre2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 22 septembre 2015. Consulter <a title="Liste des arrêtés du C.M. du 22 septembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_22septembre2015.pdf">ICI</a>.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse</li>
+									<li>Compte-rendu du C.M. du 22 septembre 2015. Consulter <a title="Compte-rendu du C.M. du 22 septembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="compte_rendu_cm_22septembre2015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 22 septembre 2015. Consulter <a title="Procès verbal du C.M. du 22 septembre 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_22septembre2015.pdf">ICI</a> <br></li>
+								</ul>
+								<p>Conseil Municipal du 20 juillet 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 20 juillet 2015. Consulter <a title="Ordre du jour du C.M. du 20 juillet 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_20juillet2015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 20 juillet 2015 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 20 juillet 2015 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20juillet2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 20 juillet 2015. Pas d'arrêtés.</li>
+									<li>Compte-rendu du C.M. du 20 juillet 2015. Consulter <a title="Compte-rendu du C.M. du 20 juillet 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_20juillet2015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 20 juillet 2015. Consulter <a title="Procès verbal du C.M. du 20 juillet 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20juillet2015.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du 30 juin 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 30 juin 2015. Consulter <a title="Ordre du jour du C.M. du 30 juin 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_30062015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 30 juin 2015 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 30 juin 2015 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_30juin2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 30 juin  2015. Consulter <a title="Liste des arrêtés du C.M. du 30 juin  2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_30062015.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 30 juin 2015. Consulter <a title="Compte-rendu du C.M. du 30 juin 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_30juin2015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 30 juin 2015. Consulter <a title="Procès verbal du C.M. du 30 juin 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_30juin2015.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du 14 avril 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 14 avril 2015. Consulter <a title="Ordre du jour du C.M. du 14 avril 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_14_avril_2015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 14 avril 2015 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 14 avril 2015 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_14_avril_2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 14 avril 2015. Consulter <a title="Liste des arrêtés du C.M. du 14 avril 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_14042015.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 14 avril 2015. Consulter <a title="Compte-rendu du C.M. du 14 avril 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_14_avril_2015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 14 avril 2015. Consulter <a title="Procès verbal du C.M. du 14 avril 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_14_avril_2015.pdf">ICI</a><br></li>
+								</ul>
+								<p>Conseil Municipal du 17 février 2015 :<br></p>
+								<ul>
+									<li>Ordre du jour du C.M. du 17 février 2015. Consulter <a title="Ordre du jour du C.M. du 17 février 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_17022015.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 17 février 2015 (fichiers pdf compressés au format "zip").  Consulter <a title="Délibérations du C.M. du 17 février 2015 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_17fevrier2015.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 17 février 2015. Consulter <a title="Liste des arrêtés du C.M. du 17 février 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_des_arretes_cm_17022015.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 17 février 2015. Consulter <a title="Compte-rendu du C.M. du 17 février 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_17022015.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 17 février 2015. Consulter <a title="Procès verbal du C.M. du 17 février 2015" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_17022015.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<h3><span>2014</span></h3>
+								<h3><span></span> </h3>
+								<p>Ordres du jour des Conseils Municipaux de janvier à décembre 2014. Consulter <a title="Ordres du jour des Conseils Municipaux de janvier à décembre 2014" onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/ordre_du_jour_conseils_municipaux_annee_2014.pdf">ICI</a>.<br><br>Conseil Municipal du 9 décembre 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 9 décembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_09_12_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 9 décembre 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 9 décembre 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_09decembre2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. 9 décembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_09_12_2014.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 9 décembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_09122014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 9 décembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_09122014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 4 novembre 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 4 novembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_04_11_2014_1.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 4 novembre 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 4 novembre 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_04novembre2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. 4 novembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_04_11_2014_1.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 4 novembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_4_11_2014_1.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 4 novembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_04_11_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 23 septembre 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 23 septembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_23_septembre_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 23 septembre 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 23 septembre 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberation_cm_23septembre2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. 23 septembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_23_09_2014.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 23 septembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_23_09_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 23 septembre 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_23_09_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 1er juillet 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 1er juillet 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_01_07_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 1er juillet 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 1er juillet 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_01juillet2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. 1er juillet 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_cm_01_07_2014.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 1er juillet 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_01_07_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 1er juillet 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_01_juillet_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 20 juin 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 20 juin 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_20_juin_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 20 juin 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 20 juin 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20juin2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 20 juin 2014. <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 20 juin 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_20_juin_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 20 juin 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20_juin_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 20 mai 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 20 mai 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_20_05_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 20 mai 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 20 mai 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20mai2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 20 mai 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_20_05_2014.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 20 mai 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_20_05_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 20 mai 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20_mai_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 24 avril 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 24 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_24042014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 24 avril 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 24 avril 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_24avril2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 24 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_des_arretes_cm_24_avril_2014.pdf">ICI</a> <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 24 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_24_04_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 24 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_24_04_2014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 6 avril 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 6 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_cm_06082014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 6 avril 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 6 avril 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_06avril2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 6 avril 2014.<br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 6 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_cm_06042014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 6 avril 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_06042014.pdf">ICI</a></li>
+								</ul>
+								<p> </p>
+								<p>Conseil Municipal du 20 février 2014 :</p>
+								<ul>
+									<li>Ordre du jour du C.M. du 20 février 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="odj_20_02_2014.pdf">ICI</a></li>
+									<li>Délibérations du C.M. du 20 février 2014 (fichiers pdf compressés au format "zip"). Consulter <a title="Délibérations du C.M. du 20 février 2014 (fichiers pdf compressés au format " zip onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="http://ville-grasse.info/telechargements/site/deliberations_cm_20fevrier2014.zip">ICI</a></li>
+									<li>Liste des arrêtés du C.M. du 20 février 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="liste_arretes_20_02_2014.pdf">ICI</a>  <br>N.B.: Les arrêtés sont disponibles au : Service des Assemblées - Hôtel de Ville - Place du petit puy - 06130 Grasse.</li>
+									<li>Compte-rendu du C.M. du 20 février 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="cr_20_02_2014.pdf">ICI</a></li>
+									<li>Procès verbal du C.M. du 20 février 2014. Consulter <a onkeypress="if (!this.isContentEditable) return !window.open(this.href,'blank');" onclick="if (!this.isContentEditable) return !window.open(this.href,'blank');" href="pv_cm_20_02_2014.pdf">ICI</a></li>
+								</ul>
+								<p> /////</p>
+								<p><br> </p>
+							</div>
+							<div id="menu-inter"></div>
+							<div id="a-lire-aussi"></div>
+						</div>
+						<div class="wrapper-right col-md-3">
+							<div id="right">
+								<ul>
+									<li>
+										<div class="shadow">
+											<p class="btn"><a href="actualites.html"><span class="icon icon-actu"></span><span class="text-uppercase">Accéder aux actus</span><span class="icon icon-arrow"></span></a></p>
+										</div>
+									</li>
+									<li>
+										<div class="shadow">
+											<p class="btn"><a href="agenda.html"><span class="icon icon-agenda"></span><span class="text-uppercase">Accéder à l'agenda</span><span class="icon icon-arrow"></span></a></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-footer">
+					<div id="footer" role="contentinfo">
+						<ul class="list-inline text-center">
+							<li><a href="aide.html">Accessibilité</a></li>
+							<li><a href="informations_legales.html">Mentions légales</a></li>
+							<li><a href="credits.html">Crédits</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<div id="getcolor"></div>
+						<!--
+ Piwik Image Tracker--><img alt="" src="http://piwik.com6-interactive.com/piwik.php?idsite=11&rec=1">
+						<!-- End Piwik -->
+					</div>
+				</div>
+				<div class="wrapper-pied-page">
+					<div class="container">
+						<div id="pied-page">
+							<div class="row">
+								<div class="col-xs-3">
+									<p class="map logo-footer no-margin"><a href="carte_interactive.html"><strong>Carte interactive<span class="icon icon-arrow"></span></strong> <img width="102" height="58" alt=" " src="images/btn-map.png"></a></p>
+								</div>
+								<div class="col-xs-3">
+									<div id="horaires-mairie">
+										<p class="text-uppercase"><strong>Horaires de la Mairie</strong></p>
+										<p><strong>du Lundi au Vendredi :</strong> de 08h15 à 16h30<br><strong>le Samedi :</strong> de 09h00 à 12h00<br><strong>Fermé le dimanche.</strong></p>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<div id="coordonnees-mairie">
+										<p class="text-uppercase"><strong>Coordonnées</strong></p>
+										<p><strong>Mairie centrale, Place du Petit Puy<br>BP 12069 - 06130 Grasse - FRANCE</strong><br>Tél : +33(0)4 97 05 50 00<br>Tél2 : +33(0)4 97 05 50 07</p>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<p class="logo-footer no-margin"><a href="historique_du_logo.html"><strong>Historique du logo<span class="icon icon-arrow"></span></strong><img width="95" height="108" alt="Le goût de l'essentiel" src="images/logo-grasse-footer.png"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
