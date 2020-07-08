@@ -1,0 +1,1257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9">
+		<meta content="Ametys CMS Open source (http://www.ametys.org)" name="generator">
+		<link href="/kernel/resources/img/runtime_favico.gif" type="image/gif" rel="icon">
+		<link href="/kernel/resources/img/runtime_favico.ico" type="image/x-icon" rel="shortcut icon">
+		<script src="/plugins/jquery/resources/js/jquery.min.js" type="text/javascript"></script>
+		<script src="/plugins/jquery-ui/resources/js/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="/plugins/jquery-ui/resources/js/i18n/jquery.ui.datepicker-fr.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+              	$j = jQuery.noConflict();
+		
+-->
+		</script>
+		<script src="/plugins/web/resources/js/jquery.cookie.js" type="text/javascript"></script>
+		<script src="/plugins/pirobox_ext/resources/pirobox_extended_min.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+                $j(document).ready(function() {
+                    $j().piroBox_ext({
+                        piro_speed: 600,
+                        bg_alpha: 0.5,
+                        piro_scroll: true,
+                        prev_label: 'Précédent',
+                        next_label: 'Suivant',
+                        close_label: 'Fermer'
+                    });
+                });
+	        
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+            ametysFOUser = null;
+            
+            
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+	       ametysCookieConsentListener = [];
+	        
+           
+		        function ametysCallCookieConsentListener(accept)
+		        {
+		            for (var i = 0; i < ametysCookieConsentListener.length; i++)
+		            {
+		               ametysCookieConsentListener[i].apply(window, [accept]);
+		            }
+		        }
+
+		        
+-->
+		</script>
+		<link media="screen" type="text/css" href="/skins/sicoval/resources/css/jquery/jquery-ui-1.9.1.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" title="black" media="screen" href="/plugins/pirobox_ext/resources/css/style_2/style.css">
+		<meta content="width=480" name="viewport">
+		<title>Consulter les décisions - Sicoval</title>
+		<meta content="Sicoval" name="author">
+		<meta content="Sicoval" name="copyright">
+		<meta content="fr" name="language">
+		<meta content="15 days" name="revisit-aftert">
+		<meta content="conseil de communauté, recueil, actes administratifs, décisions, délibérations, bureau, conseil communautaire, sicoval, sud-est toulousain, calendrier, ordre du jour" name="subject">
+		<meta content="Consulter les décisions" name="DC.title">
+		<meta content="juliette.neau" name="DC.creator">
+		<meta content="sylvain.oury" name="DC.contributor">
+		<meta content="2020-06-28" name="DC.date">
+		<meta content="Text" name="DC.type">
+		<meta content="text/html" name="DC.format">
+		<meta content="defaultWebContent://13e7e9ca-7f63-4626-9883-87e64b379bcf" name="DC.identifier">
+		<meta content="fr" name="DC.language">
+		<meta content="fr" name="DC.coverage">
+		<meta name="DC.subject" content="conseil de communauté, recueil, actes administratifs, décisions, délibérations, bureau, conseil communautaire, sicoval, sud-est toulousain, calendrier, ordre du jour">
+		<meta content="sebastien.nardot" name="DC.creator">
+		<meta content="juliette.neau" name="DC.contributor">
+		<meta content="2020-05-05" name="DC.date">
+		<meta content="Text" name="DC.type">
+		<meta content="text/html" name="DC.format">
+		<meta content="defaultWebContent://ea3a412d-9dcf-4bac-be2d-19333c761826" name="DC.identifier">
+		<meta content="fr" name="DC.language">
+		<meta content="fr" name="DC.coverage">
+		<meta content="romain.lortal" name="DC.creator">
+		<meta content="romain.lortal" name="DC.contributor">
+		<meta content="2018-05-14" name="DC.date">
+		<meta content="Text" name="DC.type">
+		<meta content="text/html" name="DC.format">
+		<meta content="defaultWebContent://3a6ed632-5ede-4b59-9d1f-c409b2f78458" name="DC.identifier">
+		<meta content="fr" name="DC.language">
+		<meta content="fr" name="DC.coverage">
+		<meta content="romain.lortal" name="DC.creator">
+		<meta content="romain.lortal" name="DC.contributor">
+		<meta content="2018-05-14" name="DC.date">
+		<meta content="Text" name="DC.type">
+		<meta content="text/html" name="DC.format">
+		<meta content="defaultWebContent://99b7dc75-eafc-4da5-a898-b888132cdbdc" name="DC.identifier">
+		<meta content="fr" name="DC.language">
+		<meta content="fr" name="DC.coverage">
+		<!---->
+		<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700italic,700">
+		<link href="/skins/sicoval/resources/css/normalize.min.css" type="text/css" rel="stylesheet">
+		<link href="/skins/sicoval/resources/css/main.css" type="text/css" rel="stylesheet">
+		<link type="text/css" href="/skins/sicoval/resources/css/ametys.css" rel="stylesheet">
+		<link media="screen,print,handheld" href="/skins/sicoval/resources/css/form.css" type="text/css" rel="stylesheet">
+		<link href="/skins/sicoval/resources/css/wSelect.css" type="text/css" rel="stylesheet">
+		<link media="print" href="/skins/sicoval/resources/css/print.css" type="text/css" rel="stylesheet">
+		<link href="/_plugins/web/sicoval/fr/filter/events/rss.xml" title="News RSS feed for site Sicoval" type="application/rss+xml" rel="alternate">
+		<link href="/_plugins/web/sicoval/fr/filter/org.ametys.web.article.RSS/rss.xml" title="Articles RSS feed for site Sicoval" type="application/rss+xml" rel="alternate">
+		<script src="/skins/sicoval/resources/js/ametys.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+   					_artStyleUrlCached = "http://www.sicoval.fr/skins/sicoval/resources/";
+   					contextPath = ""; 
+   				
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/history.js" type="text/javascript"></script>
+		<script src="/skins/sicoval/resources/js/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
+		<script src="/skins/sicoval/resources/js/wSelect.min.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+    			$j.fn.wSelect.defaults = {
+				    theme: 'classic',
+				    size: '10',
+				    labelPosition: 'left',
+				    highlight: true 
+				};
+    			
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/main.js" type="text/javascript"></script>
+		<script src="/skins/sicoval/resources/js/jquery.carousel.min.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/jquery.touchwipe.modified.1.1.1.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/trunk8.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+            
+		            $j(document).ready( function() {
+		            
+		            	
+		            	$j(".ametys-cms-content.view-abstract").each(function(){$j(this).find('.content-title').trunk8({ lines: 4 })});
+		            	$j(".ametys-cms-content.view-abstract").each(function(){$j(this).find('.content-subtitle').trunk8()});
+		            	
+		                $j('#carousel-45220694540595974').carousel( {
+		                 
+		                    // Is pagination available
+		                    pagination: false,
+		                    // The position of the pagination : outsite or inside
+		                    paginationPosition : "inside",
+		                    // The position of next/previous buttons in the html code : pagination, outsite or inside
+		                    btnsPosition : "inside",
+		                    // Enable the touch transition (mouse drag or finger)
+		                    enableTouch: true,
+		                    // Authorize keys to travel between items. If all your items have links you should disable this to avoid to muck focus
+		                    arrowKey: false,
+		                    
+		                    // Effect between no, slidein or fade.
+		                    effect: "slidein",
+		                    // Direction of the transitions : horizontal or vertical.
+		                    direction: "horizontal",
+		                    // Duration of the transitions in ms
+		                    animSpeed: 300,   
+		                    
+		                                        
+		                    // Automatic startup (autoplay)
+		                    autoSlide: false, 
+		                    // Interval between auto transitions in ms
+		                    autoSlideInterval: 4000,
+		                    // Display a play/pause button (and associated texts)                                 
+		                    stopSlideBtn: false,
+		                    stopSlideTextPause: "Pause",
+		                    stopSlideTextPlay: "Lecture", 
+		                    // Next and previous buttons
+		                    nextBtnText: "Suivant",
+		                    prevBtnText: "Précédent",
+		                   
+		                    // add an internal attribute on links for ametys purposes 
+		                    setInternalAttribute: false
+		                });
+		            });
+		        
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/jquery.placeholder.min.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+			$j().ready(function() { $j("#search-field-45220694540595974").placeholder(); });
+		
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+			$j().ready(function() 
+			{
+				function parseXML(data) 
+				{
+					var results = [];
+					var branches = $j(data).find('item');
+					$j(branches).each(function() {
+					  var text = $j.trim($j(this).text());
+					  results[results.length] = {'data': [text, text], 'result': text, 'value': text};
+					});
+					return results;
+				}
+					
+				$j("#search-field-45220694540595974").autocomplete({
+					source: function(request, response) {
+								$j.ajax({ url: "/plugins/web/service/search/auto-completion/sicoval/fr.xml?q=" + request.term, 
+									  dataType: "xml",
+									  success: function(xmlResponse) { response(parseXML (xmlResponse)); } });
+							},
+					minLength: 2,
+					delay: 500
+				});
+			});
+		
+-->
+		</script>
+		<script src="/skins/sicoval/resources/js/jquery.highlight-3.yui.js" type="text/javascript"></script>
+		<script type="text/javascript"><!--
+
+            $j().ready(function()
+            {
+                var hlRegexp = new RegExp('[\?\&]search-keywords=([^\?\&#;]+)', 'i');
+                var result = hlRegexp.exec(location.search);
+                if (result != null && result.length > 1)
+                {
+                    var keywords = result[1].split(',');
+                    for (var x = 0; x < keywords.length; x++)
+                    {
+                        if (keywords[x] != '')
+                        {
+                        
+                            $j('#ametys-cms-zone-default').highlight($j.trim(keywords[x]));
+                        
+                            $j('#ametys-cms-zone-sidebar').highlight($j.trim(keywords[x]));
+                         
+                        }
+                    }
+                }
+            });
+        
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+                
+                ametysCookieConsentListener.push(function(accept) {
+                    if (accept)
+                    {
+		                var gaProperty = 'UA-52857928-1';
+		                
+		                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+						(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+						m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+						})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+						
+						ga('create', gaProperty, 'auto');
+						ga('send', 'pageview');
+                    }
+                    else
+                    {
+                        // Delete Google Analytics cookies    
+                        var cookieNames = ["__utma","__utmb","__utmc","__utmt","__utmv","__utmz","_ga","_gat"];
+                        for (var i=0; i<cookieNames.length; i++)
+                        {
+                            $j.removeCookie(cookieNames[i], { path: '' || '/'});
+                        }
+                    }
+                });
+            
+-->
+		</script>
+		<script type="text/javascript"><!--
+var accesskey='3289';
+-->
+		</script>
+		<script charset="UTF-8" src="https://www.numanis.net/accessedition.js" type="text/javascript"></script>
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://13e7e9ca-7f63-4626-9883-87e64b379bcf" rel="meta">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://ea3a412d-9dcf-4bac-be2d-19333c761826" rel="meta">
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/sicoval/resources/css/services/tree.ie7.css" type="text/css" /><![endif]-->
+		<script src="/plugins/web/resources/js/jquery.treeview.min.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+            $j(document).ready(function(){
+                $j("#attachment_4794716972467573").treeview({ collapsed: true });
+            });
+        
+-->
+		</script>
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://3a6ed632-5ede-4b59-9d1f-c409b2f78458" rel="meta">
+		<link media="screen, print, handheld" href="/skins/sicoval/resources/css/services/attach.css" rel="stylesheet" type="text/css">
+		<link media="screen, print, handheld" href="/skins/sicoval/resources/css/services/tree.css" rel="stylesheet" type="text/css">
+		<!--[if IE 7]><link rel="stylesheet" href="/skins/sicoval/resources/css/services/tree.ie7.css" type="text/css" /><![endif]-->
+		<script src="/plugins/web/resources/js/jquery.treeview.min.js" type="text/javascript"><!--
+empty
+-->
+		</script>
+		<script type="text/javascript"><!--
+
+            $j(document).ready(function(){
+                $j("#attachment_18415815838859806").treeview({ collapsed: true });
+            });
+        
+-->
+		</script>
+		<link media="screen, print, handheld" href="/skins/sicoval/resources/css/content/content.css" type="text/css" rel="stylesheet">
+		<link href="/plugins/cms/dublincore/content.rdf?contentId=defaultWebContent://99b7dc75-eafc-4da5-a898-b888132cdbdc" rel="meta">
+	</head>
+	<body class="js-off">
+		<script type="text/javascript"><!--
+
+						if (document.body.getAttribute("className"))
+							document.body.removeAttribute("className");
+						else if (document.body.getAttribute("class"))
+							document.body.removeAttribute("class");
+					
+-->
+		</script>
+		<div class="page-wai-links" id="page-wai-links"><a href="#content">Aller au contenu</a><a href="#search">Aller à la recherche</a><a href="#menu">Aller au menu</a></div>
+		<div class="header">
+			<div class="top">
+				<div class="container">
+					<div class="links-jaune">
+						<ul>
+							<li><a href="http://www.sicoval.fr/fr/nous-connaitre.html"><span>Nous connaître</span></a></li>
+							<li><a href="http://www.sicoval.fr/fr/nos-grands-projets.html"><span>Nos grands projets</span></a></li>
+							<li><a href="http://www.sicoval.fr/fr/s-impliquer/codev.html"><span>Codev</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="logo"><a href="/fr/index.html"><img alt="Sicoval" src="/skins/sicoval/resources/img/logo.png"></a></div>
+				<div class="slogan">
+					<p>Le portail de l'agglo du sud-est toulousain</p>
+				</div>
+			</div>
+			<div class="nav">
+				<div>
+					<ul>
+						<li class="link-menu"><a name="menu"></a><span>Menu</span>
+							<div class="content-menu">
+								<ul class="hmenu">
+									<li class="first"><a href="/fr/economie.html">Économie</a></li>
+									<li class="first-menu"><span>Ma famille</span>
+										<div class="submenu">
+											<ul class="first-column">
+												<li><a href="/fr/ma-famille/une-offre-de-services-pour-tous.html">Une offre de services pour tous</a></li>
+												<li><a href="/fr/ma-famille/trouver-un-equipement-un-service.html">Trouver un équipement, un service</a></li>
+												<li><a href="/fr/ma-famille/petite-enfance.html">Petite enfance [0-4 ans]</a></li>
+												<li><a href="/fr/ma-famille/enfance.html">Enfance [3-12 ans]</a></li>
+												<li><a href="/fr/ma-famille/portail-jeunes.html">Jeunesse</a></li>
+												<li><a href="/fr/ma-famille/mediation-familiale.html">Médiation familiale</a></li>
+											</ul>
+											<ul class="">
+												<li><a href="/fr/ma-famille/personnes-en-perte-d-autonomie.html">Personnes en perte d'autonomie</a></li>
+												<li><a href="/fr/ma-famille/enseignement-superieur.html">Enseignement supérieur</a></li>
+												<li><a href="/fr/ma-famille/emploi.html">Emploi</a></li>
+												<li><a href="/fr/ma-famille/acces-au-droit.html">Accès au droit</a></li>
+												<li><a href="/fr/ma-famille/service-commun-de-restauration.html">Service commun de restauration</a></li>
+												<li><a href="/fr/ma-famille/accompagnement-des-victimes-de-violences-conjugales.html">Accompagnement des victimes de violences conjugales</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span>Mon logement</span>
+										<div class="submenu">
+											<ul class="first-column">
+												<li><a href="/fr/mon-logement/se-loger-au-sicoval.html">Se loger au Sicoval</a></li>
+												<li><a href="/fr/mon-logement/assainissement.html">Assainissement</a></li>
+												<li><a href="/fr/mon-logement/eau-potable.html">Eau potable</a></li>
+												<li><a href="/fr/mon-logement/dechets.html">Déchets</a></li>
+											</ul>
+											<ul class="">
+												<li><a href="/fr/mon-logement/especes-nuisibles.html">Espèces nuisibles</a></li>
+												<li><a href="/fr/mon-logement/renover.html">Rénover</a></li>
+												<li><a href="/fr/mon-logement/qualite-de-l-air.html">Qualité de l'air</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span>Se déplacer</span>
+										<div class="submenu">
+											<ul class="first-column">
+												<li><a href="/fr/se-deplacer/l-offre-de-transport.html">L'offre de transport</a></li>
+												<li><a href="/fr/se-deplacer/calculer-son-itineraire.html">Calculer son itinéraire</a></li>
+												<li><a href="/fr/se-deplacer/en-transport-en-commun.html">En transport en commun</a></li>
+												<li><a href="/fr/se-deplacer/a-velo.html">A vélo</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><span>Participer</span>
+										<div class="submenu">
+											<ul class="first-column">
+												<li><a href="/fr/s-impliquer/la-participation-citoyenne-le-sicoval-s-engage.html">La participation citoyenne : le Sicoval s'engage</a></li>
+												<li><a href="/fr/s-impliquer/calendrier-des-conseils-de-communaute.html">Calendrier des conseils de communauté</a></li>
+												<li><a href="/fr/s-impliquer/consulter-les-decisions.html">Consulter les décisions</a></li>
+												<li><a href="/fr/s-impliquer/codev.html">Codev</a></li>
+											</ul>
+											<ul class="">
+												<li><a href="/fr/s-impliquer/concertations-et-enquetes-publiques.html">Concertations et enquêtes publiques</a></li>
+												<li><a href="/fr/s-impliquer/commission-consultative-des-services-publics-locaux.html">Commission consultative des services publics locaux</a></li>
+												<li><a href="/fr/s-impliquer/cooperation-et-solidarite-internationales.html">Coopération et solidarité internationales</a></li>
+												<li><a href="/fr/s-impliquer/communaute-des-modes-actifs.html">Communauté des Modes Actifs </a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="last"><span>Se divertir</span>
+										<div class="submenu">
+											<ul class="first-column">
+												<li><a href="/fr/sortir/agenda-en-ligne.html">Agenda en ligne</a></li>
+												<li><a href="/fr/sortir/manger-local.html">Manger local</a></li>
+												<li><a href="/fr/sortir/promenades-et-randonnees.html">Promenades et randonnées</a></li>
+												<li><a href="/fr/sortir/partir-a-la-decouverte.html">Partir à la découverte</a></li>
+											</ul>
+											<ul class="">
+												<li><a href="/fr/sortir/nouvelle-page.html">Sortir</a></li>
+												<li><a href="/fr/sortir/faire-du-sport.html">Faire du sport</a></li>
+												<li><a href="/fr/sortir/les-toiles-de-l-hers.html">Les Toiles de l'Hers</a></li>
+												<li><a href="/fr/sortir/place-des-saveurs.html">Place des saveurs</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="top-links">
+									<ul>
+										<li class="first"><a href="http://www.sicoval.fr/fr/infolettre.html">Infolettre</a></li>
+										<li><a href="http://www.sicoval.fr/fr/nous-contacter.html">Nous contacter</a></li>
+										<li class="last"><a href="http://www.sicoval.fr/fr/recrutement.html">Recrutement</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="subheader container">
+			<div class="breadcrumb"><a name="breadcrumb"></a>
+				<ul>
+					<li>/ <a href="/fr/s-impliquer.html">Participer</a></li>
+					<li class="current">/ <span>Consulter les décisions</span></li>
+				</ul>
+			</div>
+			<div class="search"><a name="search"></a>
+				<form method="post" action="/fr/recherche.html" class="hmenu-form">
+					<div><label class="hidden-L" for="search-field-45220694540595974">Rechercher</label><input title="Saisissez le mots-clefs pour lancer la recherche" id="search-field-45220694540595974" name="textfield" class="input-text" type="text">
+						<script type="text/javascript"><!--
+
+			    			$j('#search-field-45220694540595974').attr('placeholder', "Rechercher");
+			    		
+-->
+						</script><input name="submit-form" type="hidden"><input value="Ok" type="submit" name="" class="hmenu-form-button"></div>
+				</form>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="col-left container">
+				<div class="secondary-menu"><a name="vertical-menu"></a>
+					<h2>Participer</h2>
+					<ul class="active">
+						<li><a href="/fr/s-impliquer/la-participation-citoyenne-le-sicoval-s-engage.html">La participation citoyenne : le Sicoval s'engage</a></li>
+						<li><a href="/fr/s-impliquer/calendrier-des-conseils-de-communaute.html">Calendrier des conseils de communauté</a></li>
+						<li><a href="/fr/s-impliquer/consulter-les-decisions.html" class="active">Consulter les décisions</a></li>
+						<li><a href="/fr/s-impliquer/codev.html">Codev</a></li>
+						<li><a href="/fr/s-impliquer/concertations-et-enquetes-publiques.html">Concertations et enquêtes publiques</a></li>
+						<li><a href="/fr/s-impliquer/commission-consultative-des-services-publics-locaux.html">Commission consultative des services publics locaux</a></li>
+						<li><a href="/fr/s-impliquer/cooperation-et-solidarite-internationales.html">Coopération et solidarité internationales</a></li>
+						<li><a href="/fr/s-impliquer/communaute-des-modes-actifs.html">Communauté des Modes Actifs </a></li>
+					</ul>
+				</div>
+				<div class="direct-access">
+					<ul>
+						<li><span>En un clic</span>
+							<ul>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/payer-mes-factures.html" class="direct-access-1">Payer mes factures</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/demarches-en-ligne.html" class="direct-access-2">Démarches en ligne</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/cartes-interactives.html" class="direct-access-3">Cartes interactives</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/alerte-sms.html" class="direct-access-4">Alerte SMS</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/infos-jeunesse.html" class="direct-access-5">Infos jeunesse </a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/proposer-un-evenement.html" class="direct-access-7">Proposer un événement</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/consulter-les-decisions.html" class="direct-access-8">Consulter les décisions</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/marches-publics.html" class="direct-access-9">Marchés publics</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/nos-donnees.html" class="direct-access-11">Nos données</a></li>
+								<li><a href="http://www.sicoval.fr/fr/en-un-clic/tourisme.html" class="direct-access-13">Tourisme</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="ametys-cms-zone-sidebar"></div>
+			</div>
+			<div class="col-content container"><a name="content"></a>
+				<div id="ametys-cms-zone-default">
+					<div id="ametys-cms-zone-default-item-N10079" class="first ">
+						<div class="ametys-cms-content article view-main wrapper">
+							<h1 class="postheader"><span class="content-title summary">Consulter les décisions</span></h1>
+							<div><a name="N1001A"></a>
+								<h2 class="postheader"><span class="image-wrapper invisible" style="display: inline-block; text-align: center"><img src="/_contents-images/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/_metadata/content/_data/consulterlesdecisions-banniere.jpg_308x700.jpg_308x700" alt="" width="700" height="308"></span></h2><a name="N10026"></a>
+								<h2 class="postheader">ÉTAT D’URGENCE SANITAIRE : LES DÉCISIONS DU PRÉSIDENT</h2>
+								<p>Vous trouverez ci-dessous les différentes décisions prises par le Président du Sicoval dans le cadre légal de l’état d'urgence sanitaire.</p>
+								<p> </p>
+								<ul class="custom">
+									<li><a href="/_plugins/flipbook/sicoval/_resource-flipbook/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202004002.pdf/book.html" title="D202004002.pdf" class="simple" onclick="window.open(this.href); return false;">Décision D202004002 - Subvention aux associations</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202004003.pdf?download=true" class="simple">Décision D202004003 Compensation financière SPL Enova Evenements</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202004004.pdf?download=true" class="simple">Décision D20204004 - Création de postes</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202004005.pdf?download=true" class="simple">Décision D20204005 - Création de postes résorption précarité<br></a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005001.pdf?download=true" class="simple">Décision D202005001 - Programme local de l'habitat - Délégation des aides à la pierre : règles de financement 2020 pour le parc social public</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005002.pdf?download=true" class="simple" onclick="window.open(this.href); return false;">Décision D202005002 - Programme local de l'habitat - Délégation des aides à la pierre : avenants 2020</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005003.pdf?download=true" class="simple" onclick="window.open(this.href); return false;">Décision D202005003 - Programme local de l'habitat - Délégation des aides à la pierre : programmation initiale 2020 pour le parc social public</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005004.pdf?download=true" class="simple" onclick="window.open(this.href); return false;">Décision D202005004 - Portant sur la tarification des accueils de loisirs sans hébergement dans le cadre du service minimum pour l'accueil des enfants des personnels prioritaires</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005005.pdf?download=true" class="simple" onclick="window.open(this.href); return false;">Décision D202005005 - Portant sur le renouvellement de la convention avec ECO TLC (soutien financier)</a></li>
+								</ul>
+								<ul class="custom">
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005006.pdf?download=true" class="simple">Décision D202005006 - Signature de la convention de mise à disposition de locaux Sicoval / association maison du vélo</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005007.pdf?download=true" class="simple">Décision D202005007 - Attribution du marché 20012M relatif à la démolition d'installation de traitement des eaux usées - Ayguesvives et Baziège</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005008.pdf?download=true" class="simple">Décision D202005008 - Attribution d'une subvention à Mme Boyer sur avis de la commission locale d'amélioration de l'habitat du Sicoval</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005009.pdf?download=true" class="simple">Décision D202005009 - Signature de l'avenant à la convention d'occupation précaire à Prologue Biotech avec la société ENEAPHARM</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005010.pdf?download=true" class="simple">Décision D202005010 - Signature de la convention d'occupation précaire à Prologue avec la société 3D Synergie</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005011.pdf?download=true" class="simple">Décision D202005011 - Signature de la convention d'occupation précaire à Theogone avec la société Asystom</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005012.pdf?download=true" class="simple">Décision D202005012 - Signature de l'avenant à la convention d'occupation précaire à Prologue avec la société Medexprim</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005013.pdf?download=true" class="simple">Décision D202005013 - Signature de l'avenant à la convention d'occupation précaire à Prologue avec la société The Seed Crew</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202005014.pdf?download=true" class="simple">Décision D202005014 - Signature de l'avenant à la convention d'occupation précaire à Prologue avec la Fédération des acteurs de la solidarité Occitanie</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006001.pdf?download=true" class="simple">D202006001 - Odars - amendes de police - mise en place d'avaloir</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006002.pdf?download=true" class="simple">D202006002 - Avenant à la convention de déversement des eaux usées de la commune de Lauzerville</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006003.pdf?download=true" class="simple">D202006003 - Demande de subvention à l'agence de l'eau pour le programme de gestion des cours d'eau </a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006004.pdf?download=true" class="simple">D202006004 - Demande de subvention à la région Occitanie pour le programme de gestion des cours d'eau 2020</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006005.pdf?download=true" class="simple">D202006005 - Demande de subvention par l'agence locale de l'énergie et du climat Soleval</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006006.pdf?download=true" class="simple">D202006006 - Plan de relance économique : exonération pour les structures associatives du PTCE</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006007.pdf?download=true" class="simple">D202006007 - Ratios d'avancement de grade</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006008.pdf?download=true" class="simple">D202006008 - Attribution du marché relatif à la maintenance et vérification périodiques des équipements de protection et de lutte contre l'incendie du Sicoval</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006009.pdf?download=true" class="simple">D202006009 - Développement du Bio GNV sur le territoire du Sicoval</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006010.pdf?download=true" class="simple">D202006010 Stratégie de développement d'attractivité d'aménagement économique</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006011.pdf?download=true" class="simple">D202006011 Signature de la convention de prestation de service Sicoval / Société ID2 Loisirs</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006012.pdf?download=true" class="simple">D202006012 Cession d'un terrain à la SCI Place du Canal</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006013.pdf?download=true" class="simple">D202006013 Prime exceptionnelle COVID-19</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006014.pdf?download=true" class="simple">D202006014 COVID-19 modifications des contrats d'accueil en EAJE</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006015.pdf?download=true" class="simple">D202006015 Signature d'un avenant à la convention d'occupation précaire à Hotel Telecom avec la société Fullsave</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006016.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006016.pdf/book.html" title="D202006016.pdf" class="simple" onclick="window.open(this.href); return false;">D202006016 Dérogation au repos dominical dans les commerces de détail accordée par le maire pour 2020 - soldes d'été</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006017.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006017.pdf/book.html" title="D202006017.pdf" class="simple" onclick="window.open(this.href); return false;">D202006017 Création d'emploi</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/-D202006018.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/-D202006018.pdf/book.html" title="-D202006018.pdf" class="simple" onclick="window.open(this.href); return false;">D202006018 Plan de relance économique : exonération pour les entreprises hébergées en pépinières et en hôtels d'entreprises, structures associatives et food trucks</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006018BIS.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006018BIS.pdf/book.html" title="D202006018BIS.pdf" class="simple" onclick="window.open(this.href); return false;">D202006018BIS Lancement du projet de réalistion d'une boucle d'eau géothermale pour les bâtiments de la séquence numérique sur e quartier ENOVA</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006020_C01.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006020_C01.pdf/book.html" title="D202006020_C01.pdf" class="simple" onclick="window.open(this.href); return false;">D202006019 Signature de la prise en charge des remboursements des frais liés aux déplacements des élus</a></li>
+									<li><a href="/_resources/D%25C3%25A9cisions%2520Pr%25C3%25A9sident/D202006020.pdf?download=true" class="simple">D202006020 Convention de servitude de passage de canalisation gaz</a></li>
+									<li><a href="/_attachments/consulter-les-decisions-article-4/D202006021.pdf?download=true" class="simple">D202006021 - Portant Convention de servitude de passage de réseau électrique</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006020_C01.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006020_C01.pdf/book.html" title="D202006020_C01.pdf" class="simple" onclick="window.open(this.href); return false;">D202006020_C01 Constitution de servitude de passage de canalisations</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006022.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006022.pdf/book.html" title="D202006022.pdf" class="simple" onclick="window.open(this.href); return false;">D202006022 Dispositif sport, santé, culture, civisme (2S2C)</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006023.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006023.pdf/book.html" title="D202006023.pdf" class="simple" onclick="window.open(this.href); return false;">D202006023 Signature de l'avenant à la convention d'occupation précaire à prologue Biotech avec la société VIBIOSPHEN</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006024.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006024.pdf/book.html" title="D202006024.pdf" class="simple" onclick="window.open(this.href); return false;">D202006024 Protocole transactionnel Sicoval / Escala-Cousin</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006035.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006035.pdf/book.html" title="D202006035.pdf" class="simple" onclick="window.open(this.href); return false;">D202006035 Modification exceptionnelle des tarifs de la piscine intercommunale pendant la période 2019</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006036.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006036.pdf/book.html" title="D202006036.pdf" class="simple" onclick="window.open(this.href); return false;">D202006036 Tarification des ALSH dans le cadre de l'accueil des enfants prioritaires pendant les périodes de dé-confinement</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006037.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006037.pdf/book.html" title="D202006037.pdf" class="simple" onclick="window.open(this.href); return false;">D202006037 Vente de terrain à la société Vivelec commune Auzevile Tolosane - ZAC du Pont de bois</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006038.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006038.pdf/book.html" title="D202006038.pdf" class="simple" onclick="window.open(this.href); return false;">D202006038 Cession d'un terrain à la société Gamitel commune Deyme - Parc d'activité des Monges</a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006039.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006039.pdf/book.html" title="D202006039.pdf" class="simple" onclick="window.open(this.href); return false;">D202006039 Étude d'opportunité pour la réutilisation des eaux usées traitées sur le territoire du Sicoval </a></li>
+									<li><a href="/_plugins/flipbook/sicoval/_attachments-flipbook/consulter-les-decisions-article-4/D202006040.pdf/_contents/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-4/ametys-internal%253Aattachments/D202006040.pdf/book.html" title="D202006040.pdf" class="simple" onclick="window.open(this.href); return false;">D202006040 Distribution eau potable - demande d'attribution programme départemental 2019</a></li>
+								</ul>
+								<div class="content-richtext-end">
+									<!--empty-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-default-item-N10241" class="even ">
+						<div class="ametys-cms-content article view-main wrapper">
+							<h1 class="postheader"><span class="content-title summary"> </span></h1>
+							<div><a name="N1001C"></a>
+								<h2>LES COMPTES-RENDUS DE SÉANCE</h2>
+								<p class="important">Les comptes-rendus des conseils de communautés regroupent les décisions prisent lors des séances <strong>de la communauté d'Agglomération. </strong>Sa parution est mensuelle. Le compte-rendu de la séance précédente est validé lors de la séance du mois suivant et publié par la suite.</p>
+								<div class="content-richtext-end">
+									<!--empty-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-default-item-N102D6" class="">
+						<div class="ametys-cms-service attachments attachments-tree explorer-folder explorer-folder-tree  wrapper">
+							<ul class="attachment-list" id="attachment_4794716972467573">
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2015</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Avril 2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/01%2520-%2520Avril%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Avril 2015.pdf</a><span class="size">345 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Mai 2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/02%2520-%2520Mai%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Mai 2015.pdf</a><span class="size">492 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Juillet 2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/03%2520-%2520Juillet%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Juillet 2015.pdf</a><span class="size">828 Ko</span></span></li>
+										<li><span class="file"><a title="04 - Octobre 2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/04%2520-%2520Octobre%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Octobre 2015.pdf</a><span class="size">405 Ko</span></span></li>
+										<li><span class="file"><a title="05 - Novembre 2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/05%2520-%2520Novembre%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Novembre 2015.pdf</a><span class="size">448 Ko</span></span></li>
+										<li><span class="file"><a title="06 - Décembre2015.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2015/06%2520-%2520D%25C3%25A9cembre2015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Décembre2015.pdf</a><span class="size">367 Ko</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2016</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/01%2520-%2520Janvier%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2016.pdf</a><span class="size">286 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Février 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/02%2520-%2520F%25C3%25A9vrier%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2016.pdf</a><span class="size">222 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/03%2520-%2520Mars%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2016.pdf</a><span class="size">538 Ko</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/04%2520-%2520Avril%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2016.pdf</a><span class="size">322 Ko</span></span></li>
+										<li><span class="file"><a title="05 - Mai 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/05%2520-%2520Mai%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Mai 2016.pdf</a><span class="size">602 Ko</span></span></li>
+										<li><span class="file"><a title="06 - Juin 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/06%2520-%2520Juin%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juin 2016.pdf</a><span class="size">336 Ko</span></span></li>
+										<li><span class="file"><a title="07 - Juillet 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/07%2520-%2520Juillet%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Juillet 2016.pdf</a><span class="size">391 Ko</span></span></li>
+										<li><span class="file"><a title="08 - Octobre 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/08%2520-%2520Octobre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Octobre 2016.pdf</a><span class="size">1 Mo</span></span></li>
+										<li><span class="file"><a title="09 - Octobre 2016 - 18h30.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/09%2520-%2520Octobre%25202016%2520-%252018h30.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Octobre 2016 - 18h30.pdf</a><span class="size">246 Ko</span></span></li>
+										<li><span class="file"><a title="10 - Novembre 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/10%2520-%2520Novembre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Novembre 2016.pdf</a><span class="size">254 Ko</span></span></li>
+										<li><span class="file"><a title="11 - Décembre 2016.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2016/11%2520-%2520D%25C3%25A9cembre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Décembre 2016.pdf</a><span class="size">354 Ko</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2017</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/01%2520-%2520Janvier%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2017.pdf</a><span class="size">233 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Février 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/02%2520-%2520F%25C3%25A9vrier%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2017.pdf</a><span class="size">340 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/03%2520-%2520Mars%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2017.pdf</a><span class="size">440 Ko</span></span></li>
+										<li><span class="file"><a title="04 - Mai 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/04%2520-%2520Mai%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Mai 2017.pdf</a><span class="size">247 Ko</span></span></li>
+										<li><span class="file"><a title="05 - Juin 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/05%2520-%2520Juin%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Juin 2017.pdf</a><span class="size">345 Ko</span></span></li>
+										<li><span class="file"><a title="06 - Juillet 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/06%2520-%2520Juillet%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juillet 2017.pdf</a><span class="size">515 Ko</span></span></li>
+										<li><span class="file"><a title="07 - Septembre 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/07%2520-%2520Septembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Septembre 2017.pdf</a><span class="size">400 Ko</span></span></li>
+										<li><span class="file"><a title="08 - Octobre 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/08%2520-%2520Octobre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Octobre 2017.pdf</a><span class="size">515 Ko</span></span></li>
+										<li><span class="file"><a title="09 - Novembre 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/09%2520-%2520Novembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Novembre 2017.pdf</a><span class="size">283 Ko</span></span></li>
+										<li><span class="file"><a title="10 - Decembre 2017.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2017/10%2520-%2520Decembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Decembre 2017.pdf</a><span class="size">528 Ko</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2018</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/01%2520-%2520Janvier%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2018.pdf</a><span class="size">269 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Février 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/02%2520-%2520F%25C3%25A9vrier%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2018.pdf</a><span class="size">224 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/03%2520-%2520Mars%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2018.pdf</a><span class="size">715 Ko</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/04%2520-%2520Avril%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2018.pdf</a><span class="size">833 Ko</span></span></li>
+										<li><span class="file"><a title="05 - Juin 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/05%2520-%2520Juin%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Juin 2018.pdf</a><span class="size">546 Ko</span></span></li>
+										<li><span class="file"><a title="06 - Juin 2018 - 2.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/06%2520-%2520Juin%25202018%2520-%25202.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juin 2018 - 2.pdf</a><span class="size">939 Ko</span></span></li>
+										<li><span class="file"><a title="07 -  Juillet 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/07%2520-%2520%2520Juillet%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Juillet 2018.pdf</a><span class="size">448 Ko</span></span></li>
+										<li><span class="file"><a title="08 - Septembre 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/08%2520-%2520Septembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Septembre 2018.pdf</a><span class="size">364 Ko</span></span></li>
+										<li><span class="file"><a title="09 - Octobre 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/09%2520-%2520Octobre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Octobre 2018.pdf</a><span class="size">560 Ko</span></span></li>
+										<li><span class="file"><a title="10 - Novembre 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/10%2520-%2520Novembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Novembre 2018.pdf</a><span class="size">597 Ko</span></span></li>
+										<li><span class="file"><a title="11 - Décembre 2018.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2018/11%2520-%2520D%25C3%25A9cembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Décembre 2018.pdf</a><span class="size">2 Mo</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2019</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/01%2520-%2520Janvier%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2019.pdf</a><span class="size">686 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Février 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/02%2520-%2520F%25C3%25A9vrier%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2019.pdf</a><span class="size">562 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/03%2520-%2520Mars%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2019.pdf</a><span class="size">539 Ko</span></span></li>
+										<li><span class="file"><a title="04 - 8 avril 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/04%2520-%25208%2520avril%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - 8 avril 2019.pdf</a><span class="size">1 Mo</span></span></li>
+										<li><span class="file"><a title="05 - 9 avril 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/05%2520-%25209%2520avril%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - 9 avril 2019.pdf</a><span class="size">365 Ko</span></span></li>
+										<li><span class="file"><a title="06 - 6 mai 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/06%2520-%25206%2520mai%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - 6 mai 2019.pdf</a><span class="size">355 Ko</span></span></li>
+										<li><span class="file"><a title="07 - 3 juin 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/07%2520-%25203%2520juin%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - 3 juin 2019.pdf</a><span class="size">685 Ko</span></span></li>
+										<li><span class="file"><a title="08 - Juillet 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/08%2520-%2520Juillet%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Juillet 2019.pdf</a><span class="size">306 Ko</span></span></li>
+										<li><span class="file"><a title="09 - Septembre 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/09%2520-%2520Septembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Septembre 2019.pdf</a><span class="size">803 Ko</span></span></li>
+										<li><span class="file"><a title="10 - Octobre 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/10%2520-%2520Octobre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Octobre 2019.pdf</a><span class="size">589 Ko</span></span></li>
+										<li><span class="file"><a title="11 - Novembre 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/11%2520-%2520Novembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Novembre 2019.pdf</a><span class="size">823 Ko</span></span></li>
+										<li><span class="file"><a title="12 - Décembre 2019.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2019/12%2520-%2520D%25C3%25A9cembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">12 - Décembre 2019.pdf</a><span class="size">482 Ko</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2020</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2020.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2020/01%2520-%2520Janvier%25202020.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2020.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="02 - Fevrier 2020.pdf" href="/_resources/Conseils%2520de%2520communaut%25C3%25A9/2020/02%2520-%2520Fevrier%25202020.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Fevrier 2020.pdf</a><span class="size">453 Ko</span></span></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-default-item-N10626" class="even ">
+						<div class="ametys-cms-content article view-main wrapper">
+							<div><a name="N1001A"></a>
+								<h1>LES RECUEILS DES ACTES ADMINISTRATIFS</h1>
+								<p>Les recueils des actes administratifs (RAA) constituent les <strong>bulletins officiels de la communauté d'Agglomération</strong>. Il rassemble les actes réglementaires adoptés par le conseil communautaire et son bureau. Sa parution est mensuelle. Les actes administratifs peuvent être consultés en ligne ou <strong>d</strong><strong>irectement au siège du Sicoval.</strong></p>
+								<div class="content-richtext-end">
+									<!--empty-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-default-item-N106B9" class="">
+						<div class="ametys-cms-service attachments attachments-tree explorer-folder explorer-folder-tree  wrapper">
+							<ul class="attachment-list" id="attachment_18415815838859806">
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2014</span><br>
+									<ul>
+										<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">Centre intercommunal d'action sociale (CIAS)</span><br>
+											<ul>
+												<li><span class="file"><a title="01 - CIAS - Février 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Centre%2520intercommunal%2520d'action%2520sociale%2520(CIAS)/01%2520-%2520CIAS%2520-%2520F%25C3%25A9vrier%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - CIAS - Février 2014.pdf</a><span class="size">76 Ko</span></span></li>
+												<li><span class="file"><a title="02 - CIAS - Juin 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Centre%2520intercommunal%2520d'action%2520sociale%2520(CIAS)/02%2520-%2520CIAS%2520-%2520Juin%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - CIAS - Juin 2014.pdf</a><span class="size">561 Ko</span></span></li>
+												<li><span class="file"><a title="03 - CIAS - Juillet 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Centre%2520intercommunal%2520d'action%2520sociale%2520(CIAS)/03%2520-%2520CIAS%2520-%2520Juillet%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - CIAS - Juillet 2014.pdf</a><span class="size">64 Ko</span></span></li>
+												<li><span class="file"><a title="04 - CIAS - Octobre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Centre%2520intercommunal%2520d'action%2520sociale%2520(CIAS)/04%2520-%2520CIAS%2520-%2520Octobre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - CIAS - Octobre 2014.pdf</a><span class="size">424 Ko</span></span></li>
+												<li><span class="file"><a title="05 - CIAS - Décembre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Centre%2520intercommunal%2520d'action%2520sociale%2520(CIAS)/05%2520-%2520CIAS%2520-%2520D%25C3%25A9cembre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - CIAS - Décembre 2014.pdf</a><span class="size">204 Ko</span></span></li>
+											</ul>
+										</li>
+										<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">Sicoval</span><br>
+											<ul>
+												<li><span class="file"><a title="01 - Février 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/01%2520-%2520F%25C3%25A9vrier%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Février 2014.pdf</a><span class="size">96 Ko</span></span></li>
+												<li><span class="file"><a title="02 - Mars 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/02%2520-%2520Mars%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Mars 2014.pdf</a><span class="size">259 Ko</span></span></li>
+												<li><span class="file"><a title="03 - Avril 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/03%2520-%2520Avril%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Avril 2014.pdf</a><span class="size">3 Mo</span></span></li>
+												<li><span class="file"><a title="04 - Mai 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/04%2520-%2520Mai%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Mai 2014.pdf</a><span class="size">82 Ko</span></span></li>
+												<li><span class="file"><a title="05 - Septembre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/05%2520-%2520Septembre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Septembre 2014.pdf</a><span class="size">82 Ko</span></span></li>
+												<li><span class="file"><a title="06 - Octobre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/06%2520-%2520Octobre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Octobre 2014.pdf</a><span class="size">512 Ko</span></span></li>
+												<li><span class="file"><a title="07 - Novembre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/07%2520-%2520Novembre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Novembre 2014.pdf</a><span class="size">119 Ko</span></span></li>
+												<li><span class="file"><a title="08 - Décembre 2014.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2014/Sicoval/08%2520-%2520D%25C3%25A9cembre%25202014.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Décembre 2014.pdf</a><span class="size">657 Ko</span></span></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2015</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/01%2520-%2520Janvier%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2015.pdf</a><span class="size">215 Ko</span></span></li>
+										<li><span class="file"><a title="02 - Février 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/02%2520-%2520F%25C3%25A9vrier%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2015.pdf</a><span class="size">279 Ko</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/03%2520-%2520Mars%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2015.pdf</a><span class="size">151 Ko</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/04%2520-%2520Avril%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2015.pdf</a><span class="size">94 Ko</span></span></li>
+										<li><span class="file"><a title="05 - Juin 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/05%2520-%2520Juin%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Juin 2015.pdf</a><span class="size">439 Ko</span></span></li>
+										<li><span class="file"><a title="06 - Juillet 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/06%2520-%2520Juillet%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juillet 2015.pdf</a><span class="size">1 Mo</span></span></li>
+										<li><span class="file"><a title="07 - Septembre 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/07%2520-%2520Septembre%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Septembre 2015.pdf</a><span class="size">590 Ko</span></span></li>
+										<li><span class="file"><a title="08 - Décembre 2015.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2015/08%2520-%2520D%25C3%25A9cembre%25202015.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Décembre 2015.pdf</a><span class="size">899 Ko</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2016</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/01%2520-%2520Janvier%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2016.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="02 - Février 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/02%2520-%2520F%25C3%25A9vrier%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2016.pdf</a><span class="size">1 Mo</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/03%2520-%2520Mars%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2016.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/04%2520-%2520Avril%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2016.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="05 - Mai 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/05%2520-%2520Mai%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Mai 2016.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="06 - Juin 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/06%2520-%2520Juin%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juin 2016.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="07 - Juillet 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/07%2520-%2520Juillet%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Juillet 2016.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="09 - Septembre 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/09%2520-%2520Septembre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Septembre 2016.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="10 - Octobre 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/10%2520-%2520Octobre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Octobre 2016.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="11 - Novembre 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/11%2520-%2520Novembre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Novembre 2016.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="12 - Décembre 2016.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2016/12%2520-%2520D%25C3%25A9cembre%25202016.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">12 - Décembre 2016.pdf</a><span class="size">3 Mo</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2017</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/01%2520-%2520Janvier%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2017.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="02 - Février 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/02%2520-%2520F%25C3%25A9vrier%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2017.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/03%2520-%2520Mars%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2017.pdf</a><span class="size">7 Mo</span></span></li>
+										<li><span class="file"><a title="04 - Mai 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/04%2520-%2520Mai%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Mai 2017.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="05 - Juin 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/05%2520-%2520Juin%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Juin 2017.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="06 - Juillet 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/06%2520-%2520Juillet%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juillet 2017.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="07 - Septembre 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/07%2520-%2520Septembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Septembre 2017.pdf</a><span class="size">7 Mo</span></span></li>
+										<li><span class="file"><a title="08 - Octobre 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/08%2520-%2520Octobre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Octobre 2017.pdf</a><span class="size">5 Mo</span></span></li>
+										<li><span class="file"><a title="09 - Novembre 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/09%2520-%2520Novembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Novembre 2017.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="10 - Décembre 2017.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2017/10%2520-%2520D%25C3%25A9cembre%25202017.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Décembre 2017.pdf</a><span class="size">4 Mo</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2018</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/01%2520-%2520Janvier%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2018.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="02 - Février 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/02%2520-%2520F%25C3%25A9vrier%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2018.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/03%2520-%2520Mars%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2018.pdf</a><span class="size">5 Mo</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/04%2520-%2520Avril%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2018.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="05 - Mai 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/05%2520-%2520Mai%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Mai 2018.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="06 - Juin 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/06%2520-%2520Juin%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juin 2018.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="07 - Juillet 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/07%2520-%2520Juillet%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Juillet 2018.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="08 - Septembre 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/08%2520-%2520Septembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Septembre 2018.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="09 - Octobre 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/09%2520-%2520Octobre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Octobre 2018.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="10 - Novembre 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/10%2520-%2520Novembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Novembre 2018.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="11 - Décembre 2018.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2018/11%2520-%2520D%25C3%25A9cembre%25202018.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Décembre 2018.pdf</a><span class="size">3 Mo</span></span></li>
+									</ul>
+								</li>
+								<li><img alt="" style="vertical-align: middle" class="icon" src="/plugins/web/resources/img/service/folder_empty_16.png"><span class="folder">2019</span><br>
+									<ul>
+										<li><span class="file"><a title="01 - Janvier 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/01%2520-%2520Janvier%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">01 - Janvier 2019.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="02 - Février 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/02%2520-%2520F%25C3%25A9vrier%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">02 - Février 2019.pdf</a><span class="size">2 Mo</span></span></li>
+										<li><span class="file"><a title="03 - Mars 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/03%2520-%2520Mars%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">03 - Mars 2019.pdf</a><span class="size">3 Mo</span></span></li>
+										<li><span class="file"><a title="04 - Avril 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/04%2520-%2520Avril%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">04 - Avril 2019.pdf</a><span class="size">8 Mo</span></span></li>
+										<li><span class="file"><a title="05 - Mai 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/05%2520-%2520Mai%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">05 - Mai 2019.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="06 - Juin 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/06%2520-%2520Juin%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">06 - Juin 2019.pdf</a><span class="size">5 Mo</span></span></li>
+										<li><span class="file"><a title="07 - Juillet 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/07%2520-%2520Juillet%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">07 - Juillet 2019.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="08 - Septembre 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/08%2520-%2520Septembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">08 - Septembre 2019.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="09 - Octobre 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/09%2520-%2520Octobre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">09 - Octobre 2019.pdf</a><span class="size">4 Mo</span></span></li>
+										<li><span class="file"><a title="10 - Novembre 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/10%2520-%2520Novembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">10 - Novembre 2019.pdf</a><span class="size">5 Mo</span></span></li>
+										<li><span class="file"><a title="11 - Décembre 2019.pdf" href="/_resources/Recueil%2520des%2520actes%2520administratifs/2019/11%2520-%2520D%25C3%25A9cembre%25202019.pdf?download=true"><img alt="" class="icon" src="/plugins/explorer/icon/pdf.png">11 - Décembre 2019.pdf</a><span class="size">3 Mo</span></span></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="ametys-cms-zone-default-item-N10AC7" class="even last">
+						<div class="ametys-cms-content article view-main wrapper">
+							<div>
+								<p><span class="image-wrapper invisible" style="display: inline-block; text-align: center"><img src="/_contents-images/ametys-internal%253Asites/sicoval/ametys-internal%253Acontents/consulter-les-decisions-article-2/_metadata/content/_data/calendar.png_25x25" alt="" width="25" height="25"></span> Voir <a href="http://www.sicoval.fr/fr/s-impliquer/calendrier-des-conseils-de-communaute.html" class="simple">le calendrier des conseils de communauté</a></p>
+								<div class="content-richtext-end">
+									<!--empty-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sharethis">
+					<div class="sharethis-wrapper">
+						<p class="first">
+							<script type="text/javascript"><!--
+
+			$j(document).ready(function() 
+			{
+				var baseUrl = document.location.protocol == 'https:' ? 'https://ws.' : 'http://w.';
+				$j.getScript(baseUrl + "sharethis.com/button/buttons.js", function(data, textStatus) {stLight.options({publisher:'b299fc82-0763-4a04-83c5-d534bff5f8a7'}); });
+			});
+		
+-->
+							</script>
+							<script type="text/javascript"><!--
+
+			document.write("<span class='st_facebook_hcount' displayText='Facebook'>");
+			document.write("<span class='st_twitter_hcount' displayText='Tweet'>");
+			document.write("<span class='st_pinterest_hcount' displayText='Pinterest'>");
+			document.write("<span class='st_googleplus_hcount' displayText='Google +'>");
+			document.write("<span class='st_linkedin_hcount' displayText='LinkedIn'>");
+		
+-->
+							</script>
+						</p>
+						<div class="sendByMail">
+							<p id="sendByMailHeader-45220694540595974"><img alt="Envoyer par mail" title="Envoyer par mail" src="/skins/sicoval/resources/img/st_email_counter.png"></p>
+							<script type="text/javascript"><!--
+
+                    $j("#sendByMailHeader-45220694540595974").wrapInner("<a class='mailto' href='javascript: sendByMail_form_popup_45220694540595974()'>")
+				
+-->
+							</script>
+							<form method="post" action="/fr/_plugins/socialnetworking/page/send-mail" id="sendByMail-45220694540595974">
+								<div class="sendByMail-form" id="sendByMail-form-45220694540595974"><input value="page://027fe786-6aac-46f2-b19d-31a37716610d" id="sendByMail-45220694540595974-id" name="page-id" type="hidden">
+									<p>Les champs suivis d'une astérisque <span class="mandatory">*</span> sont obligatoires</p>
+									<div class="field">
+										<div class="label"><label for="sendByMail-45220694540595974-name">Votre nom<span class="mandatory"> *</span></label></div>
+										<div class="input"><input id="sendByMail-45220694540595974-name" name="name" type="text"></div>
+										<div class="field-end"></div>
+									</div>
+									<div class="field">
+										<div class="label"><label for="sendByMail-45220694540595974-email-by">Votre email<span class="mandatory"> *</span></label></div>
+										<div class="input"><input id="sendByMail-45220694540595974-email-by" name="email" type="text"></div>
+										<div class="field-end"></div>
+									</div>
+									<div class="field">
+										<div class="label"><label for="sendByMail-45220694540595974-email-to">Destinataire(s)<span class="mandatory"> *</span></label></div>
+										<div class="input"><input id="sendByMail-45220694540595974-email-to" name="emailTo" type="text"><br><span class="hint">Séparés par des virgules</span></div>
+										<div class="field-end"></div>
+									</div>
+									<div class="field">
+										<div class="label"><label for="sendByMail-45220694540595974-text">Message</label></div>
+										<div class="input"><textarea rows="3" cols="20" id="sendByMail-45220694540595974-text" name="text"></textarea></div>
+										<div class="field-end"></div>
+									</div>
+									<div class="field">
+										<div class="input">
+											<noscript>
+												<div style="width: 302px; height: 462px;">
+													<div style="width: 302px; height: 422px; position: relative;">
+														<div style="width: 302px; height: 422px;">
+															<iframe style="width: 302px; height:422px; border-style: none;" scrolling="no" frameborder="0" src="https://www.google.com/recaptcha/api/fallback?k=6Ldy7hgTAAAAAOkExUou3vkxUj5y1ziR6IE2N_tp"></iframe>
+														</div>
+														<div style="width: 300px; height: 60px; border-style: none;                           bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;                           background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;"><textarea style="width: 250px; height: 40px; border: 1px solid #c1c1c1;                                  margin: 10px 25px; padding: 0px; resize: none;" class="g-recaptcha-response" name="captcha-value" id="g-recaptcha-response"></textarea><input name="captcha-key" type="hidden"></div>
+													</div>
+												</div>
+											</noscript>
+											<script type="text/javascript"><!--
+
+            document.write("<input type=\"hidden\" name=\"captcha-key\" id=\"sendByMail-45220694540595974-captcha-key\"/>")
+            document.write("<input type=\"hidden\" name=\"captcha-value\" id=\"sendByMail-45220694540595974-captcha\"/>")
+            document.write("<div class=\"g-recaptcha\" id=\"captcha6629199680382127\">
+											</script>
+										</div>") function loadValueToSend_captcha6629199680382127(value) { document.getElementById("sendByMail-45220694540595974-captcha").value = value; } function ReCaptchaCallback_captcha6629199680382127 () { recaptchaLoaded = true; for (var i = 0; i "); } else if (!recaptchaLoaded) { // The recaptcha script is loading but not ready. recaptchaFieldsToLoad.push({ 'captchaId' : "captcha6629199680382127", 'callback' : loadValueToSend_captcha6629199680382127 , 'theme' : 'light', 'size' : 'normal' }) } else { // the recaptcha script is loaded and ready grecaptcha.render("captcha6629199680382127", { 'sitekey' : '6Ldy7hgTAAAAAOkExUou3vkxUj5y1ziR6IE2N_tp', 'callback' : loadValueToSend_captcha6629199680382127, 'theme' : 'light', 'size' : 'normal' }); } function refresh_sendByMail_45220694540595974(focusNow) { // No refresh } --></div>
+									<div class="field-end"></div>
+								</div>
+								<div id="sendByMail-submit-45220694540595974"><input type="submit" class="button" value="Envoyer" onclick="return sendByMail_form_submit_45220694540595974();" title=""></div>
+							</form>
+						</div>
+						<script type="text/javascript"><!--
+
+				function sendByMail_form_switch_45220694540595974()
+				{
+					var form = document.getElementById('sendByMail-45220694540595974');
+					var submit = document.getElementById('sendByMail-submit-45220694540595974');
+					form.style.display = (form.style.display == 'none') ? '' : 'none';
+					submit.style.display = (submit.style.display == 'none') ? '' : 'none';
+				}
+				sendByMail_form_switch_45220694540595974();
+				
+				function sendByMail_form_popup_45220694540595974()
+				{
+					refresh_sendByMail_45220694540595974();
+					$j("#sendByMail-form-45220694540595974 script").remove();
+					$j("#sendByMail-form-45220694540595974").dialog({
+				      resizable: false,
+				      height:'auto',
+				      width: 'auto',
+				      modal: true,
+				      title: 'Envoyer par mail',
+				      buttons: {
+				        Envoyer: function() {
+				          sendByMail_form_submit_45220694540595974();
+				        },
+				        Annuler: function() {
+				          $j( this ).dialog( "close" );
+				        }
+				      }
+				    });
+				    
+					$j('#sendByMail-45220694540595974-email-to').val('');
+					$j('#sendByMail-45220694540595974-text').val('');
+					$j('#sendByMail-45220694540595974-captcha').val('');
+				}
+				
+				function sendByMail_form_submit_45220694540595974()
+				{
+					var form = document.getElementById('sendByMail-45220694540595974');
+					
+					var pageId =  $j('#sendByMail-45220694540595974-id');
+					var nameInput = $j('#sendByMail-45220694540595974-name');
+					var emailInputBy = $j('#sendByMail-45220694540595974-email-by');
+					var emailInputTo = $j('#sendByMail-45220694540595974-email-to');
+					var contentInput = $j('#sendByMail-45220694540595974-text');
+					var captchaKey = $j('#sendByMail-45220694540595974-captcha-key');
+					var captchaInput = $j('#sendByMail-45220694540595974-captcha');
+					
+					var errors = false;
+					
+					if (/^\s*$/.test(nameInput.val()))
+					{
+						errors = true;
+						nameInput.parentsUntil('.field').parent().addClass('error');
+					}
+					else
+					{
+						nameInput.parentsUntil('.field').parent().removeClass('error');
+					}
+					
+					if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?$/.test(emailInputBy.val()) || /^\s*$/.test(emailInputBy.val()))
+					{
+						errors = true;
+						emailInputBy.parentsUntil('.field').parent().addClass('error');
+					}
+					else
+					{
+						emailInputBy.parentsUntil('.field').parent().removeClass('error');
+					}
+					
+					if (!/^([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?(\s*,\s*([a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,})?)*$/.test(emailInputTo.val()) || /^\s*$/.test(emailInputTo.val()))
+					{
+						errors = true;
+						emailInputTo.parentsUntil('.field').parent().addClass('error');
+					}
+					else
+					{
+						emailInputTo.parentsUntil('.field').parent().removeClass('error');
+					}
+					
+                    
+                    
+					if (!errors)
+					{
+						// send it in ajax
+						var data = {
+							"page-id": pageId.val(),
+							"name": nameInput.val(),
+							"email": emailInputBy.val(),
+							"emailTo": emailInputTo.val(),
+							"text": contentInput.val(),
+							"captcha-key": captchaKey.val(),
+							"captcha-value": captchaInput.val(),
+							"ajax": "true"
+						};
+
+						function result(data)
+						{
+							var s = "";
+							$j('errors error', data).each(function () { s += $j(this).text() + "\n"; });
+							
+							if (s == "")
+							{
+								var errors = $j('error', data);
+                                var mailErrors = $j('mailError', data);
+                                
+								if (errors.size() == 0 && mailErrors.size() == 0)
+								{
+									$j("#sendByMail-form-45220694540595974").dialog("close");
+									alert("Le mail a bien été envoyé");
+								}
+								else if (errors.size() > 0)
+								{
+                                    var m = '';
+                                    $j('error', data).each(function () { 
+                                        m += "\n*" + $j(this).text();
+                                    });
+									alert("Votre formulaire contient les erreurs suivantes :" + m);
+                                    refresh_sendByMail_45220694540595974();
+								}
+                                else if (mailErrors.size() > 0)
+                                {
+                                    var m = '';
+                                    $j('mailError', data).each(function () { 
+                                        m += "\n" + $j(this).text();
+                                    });
+                                    
+                                    alert("L'envoi du mail a échoué pour les adresses email suivantes :" + m);
+                                    refresh_sendByMail_45220694540595974();
+                                }
+							}
+							else
+							{
+                                // Could really append ??
+								alert(s);
+								refresh_sendByMail_45220694540595974();
+							}
+						}
+                        
+                        
+                        function handleError(jqXHR, textStatus, errorThrown)
+                        {
+                            alert("Une erreur inattendue est survenue: l'envoi de mail a échoué.");
+                        }
+						
+                        $j.ajax({
+                            url: "/plugins/socialnetworking/send-mail",
+                            data: data,
+                            type: 'post',
+                            success: result,
+                            error: handleError
+                        });
+					}
+
+					return false;
+				}
+			
+-->
+						</script>
+					</div>
+					<p class="last">
+						<script type="text/javascript"><!--
+
+			document.write("<a href=\"javascript:window.print();\" title=\"Imprimer la page\"><img alt=\"Imprimer la page\" src=\"/skins/sicoval/resources/img/Print.png\"/>");
+		
+-->
+						</script>
+					</p>
+				</div>
+			</div>
+			<div class="feedback-form">
+				<p><strong>Vous souhaitez nous signaler une erreur sur cette page ?</strong><br></p>
+				<script type="text/javascript"><!--
+
+	                document.write("<p class='feedback' ><a href='javascript: feedback_form_switch_9006025647666256()'>Exprimez-vous")
+	            
+-->
+				</script>
+				<form method="post" action="/fr/_plugins/user-feedback/page/send-feedback" id="feedback-9006025647666256">
+					<div><input value="http://www.sicoval.fr/fr/s-impliquer/consulter-les-decisions.html" id="path-9006025647666256" name="path" type="hidden"><input value="sicoval" id="feedback-9006025647666256-site" name="site" type="hidden">
+						<div class="field boolean">
+							<div class="label"><label for="feedback-9006025647666256-boolean">Avez-vous trouvé l'information que vous recherchiez ?</label></div>
+							<div class="input"><input checked value="yes" id="feedback-9006025647666256-boolean" name="boolean" type="radio"><label for="feedback-9006025647666256-boolean">Oui</label><input value="no" id="feedback-9006025647666256-boolean" name="boolean" type="radio"><label for="feedback-9006025647666256-boolean">Non</label></div>
+							<div class="field-end"></div>
+						</div>
+						<div class="field">
+							<div class="label"><label for="feedback-9006025647666256-email">Email (facultatif):</label></div>
+							<div class="input"><input id="feedback-9006025647666256-email" name="mail" type="text"></div>
+							<div class="field-end"></div>
+						</div>
+						<div class="field">
+							<div class="label"><label for="feedback-9006025647666256-text">Commentaire :</label></div>
+							<div class="input"><textarea rows="3" cols="20" id="feedback-9006025647666256-text" name="comment"></textarea></div>
+							<div class="field-end"></div>
+						</div><input type="submit" class="button" value="Envoyer" onclick="return feedback_form_submit_9006025647666256();" title="">
+						<script type="text/javascript"><!--
+
+	          document.write("<a class='button cancel' href='javascript: feedback_form_switch_9006025647666256()'>Annulez")
+	      
+-->
+						</script>
+						<div class="feedback-form-bottom"></div>
+					</div>
+				</form>
+				<div class="clear"></div>
+				<script type="text/javascript"><!--
+
+                function feedback_form_switch_9006025647666256()
+                {
+                	var form = $j("#feedback-9006025647666256");
+                    if (form.is(":visible"))
+					{
+						$j(form).hide(800,function(){$j(form).css('overflow','visible');});
+					}
+					else
+					{
+						$j(form).show(800,function(){$j(form).css('overflow','visible');});
+					}
+                }
+                feedback_form_switch_9006025647666256();
+                
+                function feedback_form_clear_9006025647666256()
+                {
+                    var form = document.getElementById('feedback-9006025647666256');
+                    $j(form).find(':input').each(function () { 
+                        switch(this.type) {
+                            case 'password':
+                            case 'select-multiple':
+                            case 'select-one':
+                            case 'text':
+                            case 'textarea':
+                                $j(this).val('');
+                                break;
+                            case 'checkbox':
+                            case 'radio':
+                                this.checked = false;
+                        }
+                    });
+                }
+                
+                function feedback_form_submit_9006025647666256()
+                {
+                    var form = document.getElementById('feedback-9006025647666256');
+                    
+                    var pageId =  $j('#path-9006025647666256');
+                    var nameInput = $j('#feedback-9006025647666256-name');
+                    var emailInput = $j('#feedback-9006025647666256-email');
+                    var contentInput = $j('#feedback-9006025647666256-text');
+                    var site = $j('#feedback-9006025647666256-site');
+                    
+                    var errors = false;
+                    if (!/^[a-z0-9._-]+@[a-z0-9.-]{2,}[.][a-z]{2,3}$/.test(emailInput.val()) && emailInput.val() != "")
+                    {
+                        errors = true;
+                        emailInput.parentsUntil('.field').parent().addClass('error');
+                    }
+                    else
+                    {
+                        emailInput.parentsUntil('.field').parent().removeClass('error');
+                    }
+                    
+                    if (/^\s*$/.test(contentInput.val()))
+                    {
+                        errors = true;
+                        contentInput.parentsUntil('.field').parent().addClass('error');
+                    }
+                    else
+                    {
+                        contentInput.parentsUntil('.field').parent().removeClass('error');
+                    }
+                    
+                    if (!errors)
+                    {
+                        // send it in ajax
+                        var data = {
+                            "path": pageId.val(),
+                            "name": nameInput.val(),
+                            "mail": emailInput.val(),
+                            "boolean":  $j("input:radio[name=boolean]:checked" ).val(),
+                            "comment": contentInput.val(),
+                            "site": site.val(),
+                            "ajax": "true"
+                        };
+                        
+                        function result(data)
+                        {
+                            var s = "";
+                            $j('errors error', data).each(function () { s += $j(this).text() + "\n"; });
+                            if (s == "")
+                            {
+	                            var errors = $j('error', data);
+	                            if (errors.size() == 0)
+	                            {
+	                                alert("Retour d'information soumis\nVotre retour a bien été envoyé et sera pris en compte par un webmaster.\nMerci pour votre contribution.")
+    	                            feedback_form_switch_9006025647666256();
+    	                            refresh_feedback_9006025647666256();
+	                                feedback_form_clear_9006025647666256();
+	                            }
+	                            else
+	                            {
+	                                var errorInfo = "";
+	                                $j.each(errors, function(i) {
+	                                    errorInfo += "\n* " + $j(errors[i]).text();
+	                                }); 
+	                                alert("Une erreur est survenue :" + errorInfo)
+	                                refresh_feedback_9006025647666256();
+	                            }
+	                            
+                            }
+                            else
+                            {
+                                alert(s);
+                                refresh_feedback_9006025647666256();
+                            }
+                        }
+                        
+                        function handleError(jqXHR, textStatus, errorThrown)
+	                    {
+	                        alert("Une erreur est survenue lors de l'envois de votre message. Veuillez réessayer ou contacter l'administrateur.");
+	                        refresh_feedback_9006025647666256();
+	                    }
+	
+	                    $j.ajax({
+	                        url: "/plugins/user-feedback/send-feedback",
+	                        data: data,
+	                        type: 'post',
+	                        success: result,
+	                        error: handleError
+	                    });
+                    }
+
+                    return false;
+                }
+            
+-->
+				</script>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-right ">
+				<div class="follow-us">
+					<h2><span class="service-title">Suivez-nous</span></h2>
+					<ul>
+						<li><a href="http://www.sicoval.fr/fr/suivez-nous/instagram.html"><img alt="Instagram" src="/skins/sicoval/resources/img/followus/instagram.png"></a></li>
+						<li><a href="http://www.sicoval.fr/fr/suivez-nous/youtube-1.html"><img alt="Youtube" src="/skins/sicoval/resources/img/followus/youtube.png"></a></li>
+						<li><a href="http://www.sicoval.fr/fr/suivez-nous/facebook.html"><img alt="Facebook" src="/skins/sicoval/resources/img/followus/facebook.jpg"></a></li>
+						<li><a href="http://www.sicoval.fr/fr/suivez-nous/twitter.html"><img alt="Twitter" src="/skins/sicoval/resources/img/followus/twitter.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="footer-menu">
+					<div class="footer-menu-content container">
+						<ul>
+							<li><a href="http://www.sicoval.fr/fr/nous-contacter/nous-contacter.html">Nous contacter</a></li>
+							<li><a href="http://www.sicoval.fr/fr/mentions-legales.html">Mentions légales</a></li>
+							<li><a href="http://www.sicoval.fr/fr/espace-presse.html">Espace presse</a></li>
+							<li><a href="http://www.sicoval.fr/fr/plan-du-site-1.html">Plan du site</a></li>
+							<li><a href="http://www.sicoval.fr/fr/publications.html">Publications</a></li>
+						</ul>
+						<ul>
+							<li><a href="http://www.sicoval.fr/fr/charte-d-accueil.html">Charte d'accueil</a></li>
+							<li><a href="http://www.sicoval.fr/fr/recherche-1.html">Recherche</a></li>
+							<li><a href="http://www.sicoval.fr/fr/recherche-1/aide-en-ligne.html">Aide en ligne</a></li>
+							<li><a href="http://www.sicoval.fr/fr/accessibilite-1.html">Accessibilité</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content">
+				<h2><span class="service-title">Nous contacter</span></h2>
+				<div class="location container">
+					<iframe class="map" frameborder="0" height="185" width="232" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5784.347552086364!2d1.5217419997400847!3d43.540419387449035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2adff24b1f25d34c!2sCommunaut%C3%A9+d'Agglom%C3%A9ration+du+Sicoval!5e0!3m2!1sfr!2sus!4v1453454529195"></iframe>
+					<div>
+						<p class="adresse">65 rue du Chêne Vert 31670 Labège</p>
+						<p class="tel">Tél : <span>05 62 24 02 02</span><br><a title="" href="mailto:info@sicoval.fr">Nous contacter par e-mail</a></p>
+					</div>
+				</div>
+				<div class="contact-us container"><img alt="" src="/skins/sicoval/resources/img/signature.png">
+					<h3>Horaires d’ouverture :</h3>
+					<p>Du lundi au vendredi de <b>9h00</b> à <b>12h00</b> et de <b>14h</b> à <b>17h00</b><br>RDV obligatoire pour les démarches déchets, eau et assainissement.</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript"><!--
+
+	                   ametysCallCookieConsentListener(true);
+	               
+-->
+		</script>
+	</body>
+</html>
