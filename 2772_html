@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<!-- Meta Tags -->
+		<title>Communauté de Communes du Rouillacais > 2018</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />-->
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//bootstrap/bootstrap.min.css" media="screen">
+		<style type="text/css" rel="stylesheet">
+	body{background-color: #ffffff;color: #000000;}
+	a{color: #519155;}
+	a:focus, a:hover {color: #36773b;}
+	h1{color: #519155;}
+	h2{color: #519155;}
+	h3{color: #000;}
+	h4{color: #333;}
+	h5{color: #333;}
+	
+	#header{background-color: #ffffff;color: #000000;}
+	#header a{color: #519155;}
+	
+	#menu, #search{background-color: #ffffff;color: #030303;}
+	#menu a, #search a{color: #519155;}
+	#menu li{background-color: #ffffff;}
+	#menu li a{color: #030303;}
+	#menu li:hover, #menu li:focus, #menu li:active{background-color: #eaf2f5;}
+	#menu li:hover a, #menu li:focus a, #menu li:active a{color: #030303;}
+	#menu li li{background-color: #eaf2f5;}
+	#menu li li a{color: #030303;}
+	#menu li li:hover, #menu li li:focus, #menu li li:active{background-color: #eaf2f5;}
+	#menu li li:hover a, #menu li li:focus a, #menu li li:active a{color: #030303;}
+	#menu .navbar-default .navbar-toggle:focus, #menu .navbar-default .navbar-toggle:hover{background-color: #eaf2f5;}
+	#contenu{background-color: #ffffff;color: #000000;}
+	#contenu a{color: #519155;}
+	
+	#footer{background-color: #519155;color: #ffffff;}
+	#footer a{color: #ffffff;}
+	
+	/* Global colors */
+	input:focus, textarea:focus, select:focus {border: 2px solid #519155;}
+	#content .sheet .image img {border: 1px solid #519155;}
+	.adminmsg{color: #519155;}
+		</style>
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/template/cdc_rouillacais_rwd/styles/template.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/template/cdc_rouillacais_rwd/styles/layout/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/template/cdc_rouillacais_rwd/styles/layout/style.php" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/template/cdc_rouillacais_rwd/styles/admin/style.php" media="screen">
+		<!-- RSS Feeds -->
+		<link rel="alternate" type="application/rss+xml" title="Toutes les dernieres nouveautés" href="rss/fr//news/news.xml">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css/lightbox/lightbox.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css/font_awesome/font-awesome.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/core.css" media="screen" />
+    
+    <link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/datepicker.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/theme.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/sortable.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/autocomplete.css" media="screen" />-->
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/ui/jquery-ui-1.9.2.custom.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/diapo.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/magnific-popup.css" media="screen">
+		<!--    <link rel="stylesheet" type="text/css" href="http://www.cdcrouillacais.fr/css//jquery/easyslider/screen.css" media="screen" /> -->
+		<!-- JavaScript -->
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/html5.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/respond.js"></script>
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/orki.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/calendar.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/paragraphe.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/swfobject.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/diapo.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/cookie.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/cycle.js"></script>
+		<!--	<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/tooltip.js"></script>-->
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/lightbox.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/lang.php?module=orki&admin="></script>
+		<!--    <script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/jquery/easySlider1.7.js"></script>-->
+		<!-- JSCook  -->
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/menu/JQueryMenu.js"></script>
+		<!--<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/menu/JSCookMenuResponsive.js"></script>
+	<script type="text/javascript" src="http://www.cdcrouillacais.fr/template/cdc_rouillacais_rwd/javascript/menu.php"></script>
+	<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/menu/menu.php"></script>-->
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://www.cdcrouillacais.fr/javascript/orkiResponsive.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){ 
+			$('.pics img').slice(0, $.cookie('cycle')).appendTo('.pics');
+			
+			$('.pics').cycle({
+				fx: 'fade',
+				timeout: 5000,
+				before: function(){ $.cookie('cycle', this.id) }
+			});
+			
+			/*$('a.lightbox').lightBox({
+				overlayBgColor: '#000',
+				overlayOpacity: 0.6,
+				imageLoading: 'http://www.cdcrouillacais.fr/css/lightbox/images/fr/loading.gif',
+				imageBtnClose: 'http://www.cdcrouillacais.fr/css/lightbox/images/fr/close.gif',
+				imageBtnPrev: 'http://www.cdcrouillacais.fr/css/lightbox/images/fr/prev.gif',
+				imageBtnNext: 'http://www.cdcrouillacais.fr/css/lightbox/images/fr/next.gif',
+				imageBlank: 'http://www.cdcrouillacais.fr/css/lightbox/images/fr/blank.gif',
+				containerResizeSpeed: 350,
+				txtImage: 'Image N°',
+				txtOf: 'sur'
+			});*/
+			
+			$('.magnific').magnificPopup({type:'image'});
+			// Tous les liens qui ont la class commencant par gallery-magnific
+			$('a[class^="gallery-magnific"]').magnificPopup({
+			  type: 'image',
+			  gallery:{
+				enabled:true
+			  }
+			});
+			
+						/*
+			$(function() {
+				$('img').tooltip({
+					track: true,
+					delay: 0,
+					showURL: false,
+					showBody: " - ",
+					fade: 250
+				});
+				$('.tooltip').tooltip({
+					track: true,
+					delay: 0,
+					showURL: false,
+					showBody: " - ",
+					fade: 50
+				});
+			});*/
+		
+		});
+		</script>
+	</head>
+	<body id="main">
+		<script type="text/javascript">
+	$(document).ready(function(){
+		$('#c-admin h2').on('click',function(){
+			changeClass('','adminDiv');
+			var adminMenu = 0;
+			if($('#adminDiv').is(':visible')){
+				adminMenu = 1;
+			}
+			
+			$.ajax({
+				type: "post",
+				url: "/admin/ajaxAction.php",
+				data: "adminMenu="+adminMenu,
+				async: true
+			});
+		});
+		
+		changeClass('','adminDiv');	});
+		</script>
+		<div class="container layout" id="headerBlock">
+			<div class="row">
+				<div class="col-sm-3 col-xs-11" id="header">
+					<h1><a href="/"> <img id="logo_normal" src="/images/maquette/logo.jpg" alt="Logo Orki"> </a></h1>
+				</div>
+				<div class="col-sm-9 col-xs-1" id="menu">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuID" aria-expanded="false"> <span class="sr-only">Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div>
+						<div class="collapse navbar-collapse" id="menuID">
+							<ul class="nav navbar-nav" id="menuNiv1">
+								<li id="menuSearch"><a href="javascript:void(0);"><img src="/images/maquette/search.png"></a></li>
+								<li class="menuNiv1 n0" id="389"><a href="/index-module-orki-page-view-id-389.html">Paiement en ligne : Payfip</a></li>
+								<li class="menuNiv1 n1" id="386"><a href="/index-module-orki-page-view-id-386.html">Crise Sanitaire - COVID-19</a></li>
+								<li class="menuNiv1 n2" id="364"><a href="/index-module-orki-page-view-id-364.html">MOBIL'27</a></li>
+								<li class="menuNiv1 n3" id="1"><a href="/index-module-orki-page-view-id-1.html">La Communauté<br> de Communes</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="371"><a href="/index-module-orki-page-view-id-371.html">Archives</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="366"><a href="/index-module-orki-page-view-id-366.html">Réunions publiques</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n1" id="299"><a href="/index-module-orki-page-view-id-299.html">Projet de territoire</a></li>
+										<li class="menuNiv2 n2" id="12"><a href="/index-module-orki-page-view-id-12.html">Le mot du Président</a></li>
+										<li class="menuNiv2 n3" id="190"><a href="/index-module-orki-page-view-id-190.html">Le Conseil Communautaire</a></li>
+										<li class="menuNiv2 n4" id="62"><a href="/index-module-orki-page-view-id-62.html">Situation géographique</a></li>
+										<li class="menuNiv2 n5" id="63"><a href="/index-module-orki-page-view-id-63.html">Cadre de vie</a></li>
+										<li class="menuNiv2 n6" id="15"><a href="/index-module-orki-page-view-id-15.html">Mentions légales</a></li>
+										<li class="menuNiv2 n7" id="344"><a href="/index-module-orki-page-view-id-344.html">Rapport d'activités</a></li>
+										<li class="menuNiv2 n8" id="4"><a href="/index-module-orki-page-view-id-4.html">Annonces<br> légales</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="70"><a href="/index-module-orki-page-view-id-70.html">Notes sur les marchés publics</a></li>
+												<li class="menuNiv3 n1" id="152"><a href="/index-module-orki-page-view-id-152.html">Avis d'attributions</a></li>
+												<li class="menuNiv3 n2" id="218"><a href="/index-module-orki-page-view-id-218.html">Annonces légales 2014</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="219"><a href="/index-module-orki-page-view-id-219.html">Février 2014</a></li>
+														<li class="menuNiv4 n1" id="220"><a href="/index-module-orki-page-view-id-220.html">Mars 2014</a></li>
+														<li class="menuNiv4 n2" id="222"><a href="/index-module-orki-page-view-id-222.html">Avril 2014</a></li>
+														<li class="menuNiv4 n3" id="225"><a href="/index-module-orki-page-view-id-225.html">Mai 2014</a></li>
+														<li class="menuNiv4 n4" id="228"><a href="/index-module-orki-page-view-id-228.html">Juillet 2014</a></li>
+														<li class="menuNiv4 n5" id="229"><a href="/index-module-orki-page-view-id-229.html">Août 2014</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n3" id="240"><a href="/index-module-orki-page-view-id-240.html">Annonces légales 2015</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="241"><a href="/index-module-orki-page-view-id-241.html">Juin 2015</a></li>
+														<li class="menuNiv4 n1" id="243"><a href="/index-module-orki-page-view-id-243.html">Septembre 2015</a></li>
+														<li class="menuNiv4 n2" id="246"><a href="/index-module-orki-page-view-id-246.html">Octobre 2015</a></li>
+														<li class="menuNiv4 n3" id="249"><a href="/index-module-orki-page-view-id-249.html">Novembre 2015</a></li>
+														<li class="menuNiv4 n4" id="251"><a href="/index-module-orki-page-view-id-251.html">Décembre 2015</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n4" id="253"><a href="/index-module-orki-page-view-id-253.html">Annonces légales 2016</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="280"><a href="/index-module-orki-page-view-id-280.html">Octobre 2016</a></li>
+														<li class="menuNiv4 n1" id="274"><a href="/index-module-orki-page-view-id-274.html">Septembre 2016</a></li>
+														<li class="menuNiv4 n2" id="254"><a href="/index-module-orki-page-view-id-254.html">Février 2016</a></li>
+														<li class="menuNiv4 n3" id="255"><a href="/index-module-orki-page-view-id-255.html">Mars 2016</a></li>
+														<li class="menuNiv4 n4" id="262"><a href="/index-module-orki-page-view-id-262.html">Mai 2016</a></li>
+														<li class="menuNiv4 n5" id="265"><a href="/index-module-orki-page-view-id-265.html">Juillet 2016</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n5" id="296"><a href="/index-module-orki-page-view-id-296.html">Annonces légales 2017</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="312"><a href="/index-module-orki-page-view-id-312.html">Novembre 2017</a></li>
+														<li class="menuNiv4 n1" id="311"><a href="/index-module-orki-page-view-id-311.html">Octobre 2017</a></li>
+														<li class="menuNiv4 n2" id="308"><a href="/index-module-orki-page-view-id-308.html">Septembre 2017</a></li>
+														<li class="menuNiv4 n3" id="300"><a href="/index-module-orki-page-view-id-300.html">Juin 2017</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n6" id="330"><a href="/index-module-orki-page-view-id-330.html">Annonces légales 2018</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="347"><a href="/index-module-orki-page-view-id-347.html">Septembre 2018</a></li>
+														<li class="menuNiv4 n1" id="343"><a href="/index-module-orki-page-view-id-343.html">Juin 2018</a></li>
+														<li class="menuNiv4 n2" id="341"><a href="/index-module-orki-page-view-id-341.html">Mai 2018</a></li>
+														<li class="menuNiv4 n3" id="331"><a href="/index-module-orki-page-view-id-331.html">Janvier 2018</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n9" id="383"><a href="/index-module-orki-page-view-id-383.html">Enquête Publique </a></li>
+									</ul>
+								</li>
+								<li class="menuNiv1 n4" id="2"><a href="/index-module-orki-page-view-id-2.html">Nos <br>Missions</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="287"><a href="/index-module-orki-page-view-id-287.html">Eau</a></li>
+										<li class="menuNiv2 n1" id="277"><a href="/index-module-orki-page-view-id-277.html">Actions sociales</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="140"><a href="/index-module-orki-page-view-id-140.html">Handicap</a></li>
+												<li class="menuNiv3 n1" id="141"><a href="/index-module-orki-page-view-id-141.html">Insertion</a></li>
+												<li class="menuNiv3 n2" id="176"><a href="/index-module-orki-page-view-id-176.html">Maison de Services au Public</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n2" id="59"><a href="/index-module-orki-page-view-id-59.html">Développement économique</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="379"><a href="/index-module-orki-page-view-id-379.html">Dispositif d'aide à l'entrepreunariat</a></li>
+												<li class="menuNiv3 n1" id="373"><a href="/index-module-orki-page-view-id-373.html">Concours : Talents de l'Artisanat Charentais</a></li>
+												<li class="menuNiv3 n2" id="111"><a href="/index-module-orki-page-view-id-111.html">LEADER</a></li>
+												<li class="menuNiv3 n3" id="348"><a href="/index-module-orki-page-view-id-348.html">Projet Photovoltaïque aux Villairs, Rouillac</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n3" id="54"><a href="/index-module-orki-page-view-id-54.html">Assainissement</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="56"><a href="/index-module-orki-page-view-id-56.html">Assainissement Non Collectif</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="233"><a href="/index-module-orki-page-view-id-233.html">Règlement du SPANC</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n1" id="64"><a href="/index-module-orki-page-view-id-64.html">Assainissement collectif</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n4" id="55"><a href="/index-module-orki-page-view-id-55.html">Habitat</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="372"><a href="/index-module-orki-page-view-id-372.html">L'ANAH - Agence Nationale de l'Habitat</a></li>
+												<li class="menuNiv3 n1" id="336"><a href="/index-module-orki-page-view-id-336.html">ADIL 16</a></li>
+												<li class="menuNiv3 n2" id="65"><a href="/index-module-orki-page-view-id-65.html">Notre parc locatif</a></li>
+												<li class="menuNiv3 n3" id="66"><a href="/index-module-orki-page-view-id-66.html">Vos démarches, nos réponses</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n5" id="57"><a href="/index-module-orki-page-view-id-57.html">Déchets ménagers</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="382"><a href="/index-module-orki-page-view-id-382.html">Le comité -20 %</a></li>
+												<li class="menuNiv3 n1" id="283"><a href="/index-module-orki-page-view-id-283.html">Les DDS : Déchets Diffus Spécifiques</a></li>
+												<li class="menuNiv3 n2" id="80"><a href="/index-module-orki-page-view-id-80.html">La collecte</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="256"><a href="/index-module-orki-page-view-id-256.html">Collecte des lampes usagées</a></li>
+													</ul>
+												</li>
+												<li class="menuNiv3 n3" id="81"><a href="/index-module-orki-page-view-id-81.html">La déchetterie</a></li>
+												<li class="menuNiv3 n4" id="185"><a href="/index-module-orki-page-view-id-185.html">Point d'apport verre</a></li>
+												<li class="menuNiv3 n5" id="82"><a href="/index-module-orki-page-view-id-82.html">Les défis du développement durable : l'affaire de tous</a></li>
+												<li class="menuNiv3 n6" id="169"><a href="/index-module-orki-page-view-id-169.html">Compostage à domicile</a>
+													<ul class="menuChild" id="menuNiv4">
+														<li class="menuNiv4 n0" id="170"><a href="/index-module-orki-page-view-id-170.html">Quelques règles simples pour faire son compost</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n6" id="61"><a href="/index-module-orki-page-view-id-61.html">Développement culturel</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="198"><a href="/index-module-orki-page-view-id-198.html">Médiathèque</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n7" id="112"><a href="/index-module-orki-page-view-id-112.html">Enfance / Jeunesse</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="113"><a href="/index-module-orki-page-view-id-113.html">L'ALPR</a></li>
+												<li class="menuNiv3 n1" id="197"><a href="/index-module-orki-page-view-id-197.html">Relais Assistants Maternels</a></li>
+												<li class="menuNiv3 n2" id="335"><a href="/index-module-orki-page-view-id-335.html">Schéma local services aux familles</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n8" id="58"><a href="/index-module-orki-page-view-id-58.html">Tourisme</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="276"><a href="/index-module-orki-page-view-id-276.html">La Voie Verte</a></li>
+												<li class="menuNiv3 n1" id="73"><a href="/index-module-orki-page-view-id-73.html">Visites chez les producteurs</a></li>
+												<li class="menuNiv3 n2" id="74"><a href="/index-module-orki-page-view-id-74.html">Les sites archéologiques</a></li>
+												<li class="menuNiv3 n3" id="75"><a href="/index-module-orki-page-view-id-75.html">Les églises romanes</a></li>
+												<li class="menuNiv3 n4" id="76"><a href="/index-module-orki-page-view-id-76.html">Les métiers d'art</a></li>
+												<li class="menuNiv3 n5" id="77"><a href="/index-module-orki-page-view-id-77.html">Les hébergements</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n9" id="116"><a href="/index-module-orki-page-view-id-116.html">Piscine</a></li>
+									</ul>
+								</li>
+								<li class="menuNiv1 n5" id="3"><a href="/index-module-orki-page-view-id-3.html">Nos communes</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="358"><a href="/index-module-orki-page-view-id-358.html">Val d'Auge</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="362"><a href="/index-module-orki-page-view-id-362.html">Plantations</a></li>
+												<li class="menuNiv3 n1" id="361"><a href="/index-module-orki-page-view-id-361.html">Vie locale</a></li>
+												<li class="menuNiv3 n2" id="360"><a href="/index-module-orki-page-view-id-360.html">Description</a></li>
+												<li class="menuNiv3 n3" id="359"><a href="/index-module-orki-page-view-id-359.html">Conseil municipal</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n1" id="33"><a href="/index-module-orki-page-view-id-33.html">Courbillac</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="108"><a href="/index-module-orki-page-view-id-108.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="109"><a href="/index-module-orki-page-view-id-109.html">Description</a></li>
+												<li class="menuNiv3 n2" id="110"><a href="/index-module-orki-page-view-id-110.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n2" id="34"><a href="/index-module-orki-page-view-id-34.html">Douzat</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="129"><a href="/index-module-orki-page-view-id-129.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="145"><a href="/index-module-orki-page-view-id-145.html">Description</a></li>
+												<li class="menuNiv3 n2" id="146"><a href="/index-module-orki-page-view-id-146.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n3" id="35"><a href="/index-module-orki-page-view-id-35.html">Echallat</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="315"><a href="/index-module-orki-page-view-id-315.html">Vie locale</a></li>
+												<li class="menuNiv3 n1" id="305"><a href="/index-module-orki-page-view-id-305.html">Description</a></li>
+												<li class="menuNiv3 n2" id="130"><a href="/index-module-orki-page-view-id-130.html">Conseil municipal</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n4" id="36"><a href="/index-module-orki-page-view-id-36.html">Genac-Bignac</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="96"><a href="/index-module-orki-page-view-id-96.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="97"><a href="/index-module-orki-page-view-id-97.html">Description</a></li>
+												<li class="menuNiv3 n2" id="98"><a href="/index-module-orki-page-view-id-98.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n5" id="37"><a href="/index-module-orki-page-view-id-37.html">Gourville - Commune déléguée (ROUILLAC)</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="317"><a href="/index-module-orki-page-view-id-317.html">Vie locale</a></li>
+												<li class="menuNiv3 n1" id="316"><a href="/index-module-orki-page-view-id-316.html">Description</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n6" id="38"><a href="/index-module-orki-page-view-id-38.html">Marcillac-Lanville</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="318"><a href="/index-module-orki-page-view-id-318.html">Description</a></li>
+												<li class="menuNiv3 n1" id="132"><a href="/index-module-orki-page-view-id-132.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n2" id="319"><a href="/index-module-orki-page-view-id-319.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n7" id="39"><a href="/index-module-orki-page-view-id-39.html">Mareuil</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="320"><a href="/index-module-orki-page-view-id-320.html">Vie locale</a></li>
+												<li class="menuNiv3 n1" id="306"><a href="/index-module-orki-page-view-id-306.html">Description</a></li>
+												<li class="menuNiv3 n2" id="133"><a href="/index-module-orki-page-view-id-133.html">Conseil municipal</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n8" id="40"><a href="/index-module-orki-page-view-id-40.html">Mons</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="322"><a href="/index-module-orki-page-view-id-322.html">Vie locale</a></li>
+												<li class="menuNiv3 n1" id="321"><a href="/index-module-orki-page-view-id-321.html">Description</a></li>
+												<li class="menuNiv3 n2" id="134"><a href="/index-module-orki-page-view-id-134.html">Conseil municipal</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n9" id="43"><a href="/index-module-orki-page-view-id-43.html">Rouillac</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="324"><a href="/index-module-orki-page-view-id-324.html">Vie locale</a></li>
+												<li class="menuNiv3 n1" id="323"><a href="/index-module-orki-page-view-id-323.html">Description</a></li>
+												<li class="menuNiv3 n2" id="135"><a href="/index-module-orki-page-view-id-135.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n3" id="143"><a href="http://www.ville-rouillac.fr" target="_blank">Site internet de la Commune</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n10" id="44"><a href="/index-module-orki-page-view-id-44.html">Saint-Amant-de-Nouère</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="136"><a href="/index-module-orki-page-view-id-136.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="166"><a href="/index-module-orki-page-view-id-166.html">Description</a></li>
+												<li class="menuNiv3 n2" id="167"><a href="/index-module-orki-page-view-id-167.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n11" id="45"><a href="/index-module-orki-page-view-id-45.html">Saint-Cybardeaux</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="325"><a href="/index-module-orki-page-view-id-325.html">Description</a></li>
+												<li class="menuNiv3 n1" id="137"><a href="/index-module-orki-page-view-id-137.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n2" id="290"><a href="/index-module-orki-page-view-id-290.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n12" id="46"><a href="/index-module-orki-page-view-id-46.html">Saint-Genis-d'Hiersac</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="102"><a href="/index-module-orki-page-view-id-102.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="103"><a href="/index-module-orki-page-view-id-103.html">Description</a></li>
+												<li class="menuNiv3 n2" id="104"><a href="/index-module-orki-page-view-id-104.html">Vie locale</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n13" id="48"><a href="/index-module-orki-page-view-id-48.html">Vaux-Rouillac</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="138"><a href="/index-module-orki-page-view-id-138.html">Conseil municipal</a></li>
+												<li class="menuNiv3 n1" id="119"><a href="/index-module-orki-page-view-id-119.html">Description</a></li>
+												<li class="menuNiv3 n2" id="121"><a href="/index-module-orki-page-view-id-121.html">Vie locale</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menuNiv1 n6" id="5"><a href="/index-module-orki-page-view-id-5.html">Les Conseils<br>Communautaires</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="384"><a href="/index-module-orki-page-view-id-384.html">2020</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="385"><a href="/index-module-orki-page-view-id-385.html">Février</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n1" id="355"><a href="/index-module-orki-page-view-id-355.html">2019</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="380"><a href="/index-module-orki-page-view-id-380.html">Décembre</a></li>
+												<li class="menuNiv3 n1" id="378"><a href="/index-module-orki-page-view-id-378.html">Novembre</a></li>
+												<li class="menuNiv3 n2" id="377"><a href="/index-module-orki-page-view-id-377.html">Octobre</a></li>
+												<li class="menuNiv3 n3" id="376"><a href="/index-module-orki-page-view-id-376.html">Septembre</a></li>
+												<li class="menuNiv3 n4" id="375"><a href="/index-module-orki-page-view-id-375.html">Juin</a></li>
+												<li class="menuNiv3 n5" id="374"><a href="/index-module-orki-page-view-id-374.html">Juillet</a></li>
+												<li class="menuNiv3 n6" id="369"><a href="/index-module-orki-page-view-id-369.html">Mai</a></li>
+												<li class="menuNiv3 n7" id="368"><a href="/index-module-orki-page-view-id-368.html">Avril</a></li>
+												<li class="menuNiv3 n8" id="367"><a href="/index-module-orki-page-view-id-367.html">Mars</a></li>
+												<li class="menuNiv3 n9" id="357"><a href="/index-module-orki-page-view-id-357.html">Janvier</a></li>
+												<li class="menuNiv3 n10" id="356"><a href="/index-module-orki-page-view-id-356.html">Février</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n2" id="328"><a href="/index-module-orki-page-view-id-328.html">2018</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="353"><a href="/index-module-orki-page-view-id-353.html">Décembre</a></li>
+												<li class="menuNiv3 n1" id="352"><a href="/index-module-orki-page-view-id-352.html">Novembre</a></li>
+												<li class="menuNiv3 n2" id="351"><a href="/index-module-orki-page-view-id-351.html">Octobre</a></li>
+												<li class="menuNiv3 n3" id="350"><a href="/index-module-orki-page-view-id-350.html">Septembre</a></li>
+												<li class="menuNiv3 n4" id="349"><a href="/index-module-orki-page-view-id-349.html">Juin</a></li>
+												<li class="menuNiv3 n5" id="342"><a href="/index-module-orki-page-view-id-342.html">Mai</a></li>
+												<li class="menuNiv3 n6" id="340"><a href="/index-module-orki-page-view-id-340.html">Avril</a></li>
+												<li class="menuNiv3 n7" id="339"><a href="/index-module-orki-page-view-id-339.html">Mars</a></li>
+												<li class="menuNiv3 n8" id="334"><a href="/index-module-orki-page-view-id-334.html">Février</a></li>
+												<li class="menuNiv3 n9" id="329"><a href="/index-module-orki-page-view-id-329.html">Janvier</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n3" id="284"><a href="/index-module-orki-page-view-id-284.html">2017</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="326"><a href="/index-module-orki-page-view-id-326.html">Décembre</a></li>
+												<li class="menuNiv3 n1" id="310"><a href="/index-module-orki-page-view-id-310.html">Novembre</a></li>
+												<li class="menuNiv3 n2" id="309"><a href="/index-module-orki-page-view-id-309.html">Octobre</a></li>
+												<li class="menuNiv3 n3" id="307"><a href="/index-module-orki-page-view-id-307.html">Septembre</a></li>
+												<li class="menuNiv3 n4" id="304"><a href="/index-module-orki-page-view-id-304.html">Juillet</a></li>
+												<li class="menuNiv3 n5" id="302"><a href="/index-module-orki-page-view-id-302.html">Juin</a></li>
+												<li class="menuNiv3 n6" id="298"><a href="/index-module-orki-page-view-id-298.html">Mai</a></li>
+												<li class="menuNiv3 n7" id="294"><a href="/index-module-orki-page-view-id-294.html">Avril</a></li>
+												<li class="menuNiv3 n8" id="293"><a href="/index-module-orki-page-view-id-293.html">Février</a></li>
+												<li class="menuNiv3 n9" id="285"><a href="/index-module-orki-page-view-id-285.html">Janvier</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n4" id="216"><a href="/index-module-orki-page-view-id-216.html">2014</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="217"><a href="/index-module-orki-page-view-id-217.html">Février 2014</a></li>
+												<li class="menuNiv3 n1" id="221"><a href="/index-module-orki-page-view-id-221.html">Mars 2014</a></li>
+												<li class="menuNiv3 n2" id="223"><a href="/index-module-orki-page-view-id-223.html">Avril 2014</a></li>
+												<li class="menuNiv3 n3" id="224"><a href="/index-module-orki-page-view-id-224.html">Mai 2014</a></li>
+												<li class="menuNiv3 n4" id="226"><a href="/index-module-orki-page-view-id-226.html">Juin 2014</a></li>
+												<li class="menuNiv3 n5" id="227"><a href="/index-module-orki-page-view-id-227.html">Juillet 2014</a></li>
+												<li class="menuNiv3 n6" id="230"><a href="/index-module-orki-page-view-id-230.html">Novembre 2014</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n5" id="231"><a href="/index-module-orki-page-view-id-231.html">2015</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="232"><a href="/index-module-orki-page-view-id-232.html">Janvier 2015</a></li>
+												<li class="menuNiv3 n1" id="235"><a href="/index-module-orki-page-view-id-235.html">Février 2015</a></li>
+												<li class="menuNiv3 n2" id="236"><a href="/index-module-orki-page-view-id-236.html">Mars 2015</a></li>
+												<li class="menuNiv3 n3" id="237"><a href="/index-module-orki-page-view-id-237.html">Avril 2015</a></li>
+												<li class="menuNiv3 n4" id="238"><a href="/index-module-orki-page-view-id-238.html">Mai 2015</a></li>
+												<li class="menuNiv3 n5" id="239"><a href="/index-module-orki-page-view-id-239.html">Juin 2015</a></li>
+												<li class="menuNiv3 n6" id="245"><a href="/index-module-orki-page-view-id-245.html">Septembre 2015</a></li>
+												<li class="menuNiv3 n7" id="247"><a href="/index-module-orki-page-view-id-247.html">Octobre 2015</a></li>
+												<li class="menuNiv3 n8" id="248"><a href="/index-module-orki-page-view-id-248.html">Novembre 2015</a></li>
+											</ul>
+										</li>
+										<li class="menuNiv2 n6" id="257"><a href="/index-module-orki-page-view-id-257.html">2016</a>
+											<ul class="menuChild" id="menuNiv3">
+												<li class="menuNiv3 n0" id="286"><a href="/index-module-orki-page-view-id-286.html">Décembre 2016</a></li>
+												<li class="menuNiv3 n1" id="281"><a href="/index-module-orki-page-view-id-281.html">Novembre 2016</a></li>
+												<li class="menuNiv3 n2" id="279"><a href="/index-module-orki-page-view-id-279.html">Septembre 2016</a></li>
+												<li class="menuNiv3 n3" id="278"><a href="/index-module-orki-page-view-id-278.html">Juillet 2016</a></li>
+												<li class="menuNiv3 n4" id="258"><a href="/index-module-orki-page-view-id-258.html">Février 2016</a></li>
+												<li class="menuNiv3 n5" id="259"><a href="/index-module-orki-page-view-id-259.html">Mars 2016</a></li>
+												<li class="menuNiv3 n6" id="264"><a href="/index-module-orki-page-view-id-264.html">Mai 2016</a></li>
+												<li class="menuNiv3 n7" id="263"><a href="/index-module-orki-page-view-id-263.html">Juin 2016</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="menuNiv1 n7" id="6"><a href="/index-module-orki-page-view-id-6.html">La <br>Lorgnette</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="387"><a href="/index-module-orki-page-view-id-387.html">Mai 2020</a></li>
+										<li class="menuNiv2 n1" id="381"><a href="/index-module-orki-page-view-id-381.html">Décembre 2019</a></li>
+										<li class="menuNiv2 n2" id="370"><a href="/index-module-orki-page-view-id-370.html">Juin 2019</a></li>
+										<li class="menuNiv2 n3" id="363"><a href="/index-module-orki-page-view-id-363.html">Avril 2019</a></li>
+										<li class="menuNiv2 n4" id="354"><a href="/index-module-orki-page-view-id-354.html">Décembre 2018</a></li>
+										<li class="menuNiv2 n5" id="346"><a href="/index-module-orki-page-view-id-346.html">Août 2018</a></li>
+										<li class="menuNiv2 n6" id="337"><a href="/index-module-orki-page-view-id-337.html">Avril 2018</a></li>
+										<li class="menuNiv2 n7" id="327"><a href="/index-module-orki-page-view-id-327.html">Décembre 2017</a></li>
+										<li class="menuNiv2 n8" id="215"><a href="/index-module-orki-page-view-id-215.html">Janvier 2014</a></li>
+										<li class="menuNiv2 n9" id="234"><a href="/index-module-orki-page-view-id-234.html">Décembre 2014</a></li>
+										<li class="menuNiv2 n10" id="244"><a href="/index-module-orki-page-view-id-244.html">Septembre 2015</a></li>
+										<li class="menuNiv2 n11" id="250"><a href="/index-module-orki-page-view-id-250.html">Décembre 2015</a></li>
+										<li class="menuNiv2 n12" id="260"><a href="/index-module-orki-page-view-id-260.html">Mars 2016</a></li>
+										<li class="menuNiv2 n13" id="269"><a href="/index-module-orki-page-view-id-269.html">Juillet 2016</a></li>
+										<li class="menuNiv2 n14" id="282"><a href="/index-module-orki-page-view-id-282.html">Décembre 2016</a></li>
+										<li class="menuNiv2 n15" id="295"><a href="/index-module-orki-page-view-id-295.html">Avril 2017</a></li>
+										<li class="menuNiv2 n16" id="303"><a href="/index-module-orki-page-view-id-303.html">Août 2017</a></li>
+									</ul>
+								</li>
+								<li class="menuNiv1 n8" id="7"><a href="/index-module-orki-page-view-id-7.html">Nous <br>contacter</a>
+									<ul class="menuChild" id="menuNiv2">
+										<li class="menuNiv2 n0" id="314"><a href="/index-module-orki-page-view-id-314.html">Page Facebook</a></li>
+										<li class="menuNiv2 n1" id="292"><a href="/index-module-orki-page-view-id-292.html">Téléprocédure : Saisine par Voie Electronique</a></li>
+										<li class="menuNiv2 n2" id="49"><a href="/index-module-orki-page-view-id-49.html">Directeur Général des Services</a></li>
+										<li class="menuNiv2 n3" id="50"><a href="/index-module-orki-page-view-id-50.html">Comptabilité / Ressources humaines</a></li>
+										<li class="menuNiv2 n4" id="199"><a href="/index-module-orki-page-view-id-199.html">Chargée de missions</a></li>
+										<li class="menuNiv2 n5" id="51"><a href="/index-module-orki-page-view-id-51.html">Assainissement / Eau Potable</a></li>
+										<li class="menuNiv2 n6" id="52"><a href="/index-module-orki-page-view-id-52.html">Habitat</a></li>
+										<li class="menuNiv2 n7" id="53"><a href="/index-module-orki-page-view-id-53.html">Déchets ménagers</a></li>
+										<li class="menuNiv2 n8" id="268"><a href="/index-module-orki-page-view-id-268.html">Patrimoine</a></li>
+										<li class="menuNiv2 n9" id="214"><a href="/index-module-orki-page-view-id-214.html">Médiathèque Intercommunale</a></li>
+										<li class="menuNiv2 n10" id="266"><a href="/index-module-orki-page-view-id-266.html">Relais Assistants Maternels</a></li>
+										<li class="menuNiv2 n11" id="267"><a href="/index-module-orki-page-view-id-267.html">Maison de Services Au Public</a></li>
+										<li class="menuNiv2 n12" id="333"><a href="/index-module-orki-page-view-id-333.html">Liens utiles</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="searchingBlock">
+			<div class="container widthFixed">
+				<div class="row">
+					<div class="col-md-12" id="search">
+						<div class="pageBlock">
+							<div id="c-search">
+								<div class="c-header">
+									<h2 class="title"><span>Rechercher</span></h2>
+								</div>
+								<div class="content">
+									<form name="frmSearch" method="post" action="/index-module-search.html" id="frmSearch"><input type="text" class="keywords" name="keywords" id="labelRecherche" value="Rechercher dans le site" onfocus="if(this.value=='Rechercher dans le site')this.value= '';" onblur="if(this.value=='')this.value= 'Rechercher dans le site';"> <input type="submit" class="submit" value=""></form>
+								</div>
+								<div class="c-footer"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bgTaupe" id="block2">
+			<div class="container widthFixed pageBlock" id="contenu">
+				<div class="row">
+					<div class="col-sm-9" id="main">
+						<div id="s-orki" class="sheet">
+							<div class="o6"><a name="top"></a>
+								<div class="filAriane">
+									<ul>
+										<li class="first"><a href="/?">Accueil</a></li>
+										<li><a href="/index-module-orki-page-view-id-5.html">Les Conseils<br>Communautaires</a></li>
+										<li><a href="/index-module-orki-page-view-id-328.html">2018</a></li>
+									</ul>
+								</div>
+								<div class="content"><a href="javascript:MM_openBrWindow('/index-module-orki-page-view-id-328-id_newsletter--cmd--print-1-deploy-1-admin-0.html','print','scrollbars=yes,resizable=yes,width=600,height=600')" class="print" title="Imprimer"> </a>
+									<h2><span>2018</span></h2>
+								</div>
+							</div>
+						</div>
+						<ul id="nextLevel6" class="nl6 nextLevel">
+							<li><a href="/index-module-orki-page-view-id-353.html">Décembre</a></li>
+							<li><a href="/index-module-orki-page-view-id-352.html">Novembre</a></li>
+							<li><a href="/index-module-orki-page-view-id-351.html">Octobre</a></li>
+							<li><a href="/index-module-orki-page-view-id-350.html">Septembre</a></li>
+							<li><a href="/index-module-orki-page-view-id-349.html">Juin</a></li>
+							<li><a href="/index-module-orki-page-view-id-342.html">Mai</a></li>
+							<li><a href="/index-module-orki-page-view-id-340.html">Avril</a></li>
+							<li><a href="/index-module-orki-page-view-id-339.html">Mars</a></li>
+							<li><a href="/index-module-orki-page-view-id-334.html">Février</a></li>
+							<li><a href="/index-module-orki-page-view-id-329.html">Janvier</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3" id="rightColumn">
+						<div id="rightColumnContent">
+							<div id="modules">
+								<div class="cont" id="c-agenda">
+									<div class="c-header">
+										<h2><a href="/agenda/"><span>Agenda</span></a></h2>
+									</div>
+									<div class="c-content">
+										<ul>
+											<li>
+												<div class="date">Tous les 27 de l'année | 7h-17h</div>
+												<div class="subject"><a href="/agenda/view/459/foire-de-rouillac.html">FOIRE DE ROUILLAC</a></div>
+												<div class="clear"></div>
+											</li>
+										</ul>
+									</div>
+									<div class="c-footer"><a href="/agenda/">Voir tous les événements</a></div>
+								</div>
+								<div class="cont" id="c-calendar">
+									<div class="c-header">
+										<h2><a href="/agenda/"><span>Calendrier</span></a></h2>
+									</div>
+									<div class="c-content">
+										<div id="cal">
+											<h2><a class="cal-prev" href="/index-module-orki-page-view-id-328-date-20200608.html#calendar"><span>‹</span></a> Juillet 2020<a class="cal-next" href="/index-module-orki-page-view-id-328-date-20200808.html#calendar"><span>›</span></a></h2>
+											<table align="center" cellspacing="0" cellpadding="0">
+												<tr class="cal-week" align="center">
+													<td><b>L</b></td>
+													<td><b>M</b></td>
+													<td><b>M</b></td>
+													<td><b>J</b></td>
+													<td><b>V</b></td>
+													<td><b>S</b></td>
+													<td><b>D</b></td>
+												</tr>
+												<tr align="center" class="cal-days">
+													<td class="cal-none"> </td>
+													<td class="cal-none"> </td>
+													<td class="cal-day">1</td>
+													<td class="cal-day">2</td>
+													<td class="cal-day">3</td>
+													<td class="cal-day">4</td>
+													<td class="cal-day">5</td>
+												</tr>
+												<tr align="center" class="cal-days">
+													<td class="cal-day">6</td>
+													<td class="cal-day">7</td>
+													<td class="cal-day">8</td>
+													<td class="cal-day">9</td>
+													<td class="cal-day">10</td>
+													<td class="cal-day">11</td>
+													<td class="cal-day">12</td>
+												</tr>
+												<tr align="center" class="cal-days">
+													<td class="cal-day">13</td>
+													<td class="cal-day">14</td>
+													<td class="cal-day">15</td>
+													<td class="cal-day">16</td>
+													<td class="cal-day">17</td>
+													<td class="cal-day">18</td>
+													<td class="cal-day">19</td>
+												</tr>
+												<tr align="center" class="cal-days">
+													<td class="cal-day">20</td>
+													<td class="cal-day">21</td>
+													<td class="cal-day">22</td>
+													<td class="cal-day">23</td>
+													<td class="cal-day">24</td>
+													<td class="cal-day">25</td>
+													<td class="cal-day">26</td>
+												</tr>
+												<tr align="center" class="cal-days">
+													<td class="cal-day">27</td>
+													<td class="cal-day">28</td>
+													<td class="cal-day">29</td>
+													<td class="cal-day">30</td>
+													<td class="cal-day">31</td>
+													<td class="cal-none"> </td>
+													<td class="cal-none"> </td>
+												</tr>
+											</table>
+										</div>
+										<!--
+                            -->
+									</div>
+									<div class="c-footer"><a href="/agenda/">Voir tous les événements</a></div>
+								</div>
+								<div class="cont" id="c-doc">
+									<div class="c-header">
+										<h2><a href="/doc/"><span>Téléchargements</span></a></h2>
+									</div>
+									<div class="c-content">
+										<ul>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=494"> CR Conseil octobre 2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=490"> CR septembre 2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=489"> CR Juin 2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=455"> Conseil communautaire 14052018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=448"> CR du 09/04/2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=447"> CR Conseil du 12/03/2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=443"> CR réunion communautaire 12/02/2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+											<li>
+												<div class="fichier">
+													<div class="img"><i class="fa fa-file-pdf-o"></i></div>
+													<div class="texte"><a href="/modules/doc/public/get.php?idDoc=441"> Conseil communautaire 08 01 2018 </a></div>
+													<div class="clear"></div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="c-footer"><a class="more" href="/doc/">Voir tous les téléchargements</a></div>
+								</div>
+								<div id="c-poll" class="cont">
+									<div class="c-header">
+										<h2><a href="/index-module-poll.html">Sondages</a></h2>
+									</div>
+									<div class="c-content">
+										<form name="frmPoll" action="" method="post"><input type="hidden" name="id_question" value="5"> <input type="hidden" name="nom_sondage" value="Pensez-vous que notre site est :">
+											<h2>Pensez-vous que notre site est :</h2>
+											<ul>
+												<li><input type="radio" name="choix_sondage" id="poll19" value="19" onclick="document.frmPoll.submit();"> <label for="poll19">Attractif</label></li>
+												<li><input type="radio" name="choix_sondage" id="poll20" value="20" onclick="document.frmPoll.submit();"> <label for="poll20">Peu attractif</label></li>
+												<li><input type="radio" name="choix_sondage" id="poll21" value="21" onclick="document.frmPoll.submit();"> <label for="poll21">A améliorer</label></li>
+											</ul><input type="hidden" name="id_sondage" value="5"> <input type="hidden" name="id" value="328"> <input type="hidden" name="action" value="action_sondage"></form><a class="seeLink" href="/index-module-poll-page-view.html">Voir les résultats</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" id="footerImg"></div>
+			</div>
+		</div>
+		<div class="container-fluid" id="footer">
+			<div class="container widthFixed pageBlock">
+				<div class="row">
+					<div class="col-md-6 col-sm-8 col-xs-12" id="footerLeft"><img src="/images/maquette/cdc_rouillacais.png"><br><br><br>
+						<p>Les bureaux de la Communauté de Communes du Rouillacais sont ouverts du lundi au vendredi de 8h45 à 12h30 - et de 13h30 à 17h30<br><br> <span>Secrétariat général : <br><br> 314 avenue Jean Monnet BP16 - 16170 ROUILLAC<br> <img src="/images/maquette/tel.png" width="16" height="13"> <a href="tel:+335%2045%2096%2099%2041">05 45 96 99 41</a><br> <img src="/images/maquette/enveloppe.png" width="13" height="13">  <a href="mailto:administration@ccrouillacais.fr">administration@ccrouillacais.fr</a></span></p>
+					</div>
+					<div class="col-md-2 col-sm-1 col-xs-12"></div>
+					<div class="col-md-4 col-sm-3 col-xs-12" id="footerRight">
+						<p>Plus d’informations sur la CDC du Rouillacais :<br><br></p>
+						<ul>
+							<li><a href="/sitemap/">Plan du site</a></li>
+							<li>Liens et contacts</li>
+							<li>Mentions légales</li>
+							<li><a href="javascript:print();">Imprimer la page</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+	$(document).ready(function(){
+		$('#menuSearch a').on('click',function(){
+			console.log('ha');
+			$('#searchingBlock').slideToggle();
+		});
+	});
+		</script>
+	</body>
+</html>
