@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.cc-hautvaldoise.fr/default/">
+		<title>Comptes-rendus - Communauté de Communes du Haut Val d'Oise (CCHVO) - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:#c9c3b7
+}
+.couleur_main, .cl_main {color:#3b912f}
+.couleur_main_bg, .bg_main {background-color:#3b912f !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #3b912f;
+}
+.couleur_police, .cl_font {color:#0a5893}
+.couleur_police_bg, .bg_font {background-color:#0a5893 !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0a5893;
+}
+.couleur_fond_bg {background-color:#c9c3b7}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #c9c3b7 100%);
+	background: -webkit-linear-gradient(top, transparent, #c9c3b7 100%);
+	background: linear-gradient(to bottom, transparent, #c9c3b7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#c9c3b7",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #3b912f transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #3b912f;}
+a.lien_couleur {color: #0a5893;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #003A75;}
+.couleur {color: #0a5893;}
+#head .retour {background: #0a5893 url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #0a5893;}
+#tribune a.postvisit, #tribune span.postvisit{color: #0a5893;}
+#information .tree1, #information .tree1 a {color: #0a5893;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#0a5893; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/77/banner/ZMpjREpr6t7glA1.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.cc-hautvaldoise.fr"> <img src="http://static.reseaudesintercoms.fr/cities/77/logo/9xQnsvqr6NNQeZS.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://cc-hautvaldoise.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#fabb00 !important;
+	border-color:#fabb00 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #fabb00;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#fabb00 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #fabb00;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#427bb6 !important;
+	border-color:#427bb6 !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #427bb6;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#427bb6 !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #427bb6;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#52af46 !important;
+	border-color:#52af46 !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #52af46;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#52af46 !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #52af46;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#e0792a !important;
+	border-color:#e0792a !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #e0792a;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#e0792a !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #e0792a;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#e83c44 !important;
+	border-color:#e83c44 !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #e83c44;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#e83c44 !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #e83c44;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#505d9e !important;
+	border-color:#505d9e !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #505d9e;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#505d9e !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #505d9e;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#fabb00;"><a class="menu-a" href="/fr/rubrique/1/vie-communautaire">Vie communautaire</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3323/presentation" class="icon-arrow-right"> Présentation </a></li>
+								<li><a href="/fr/information/7732/nos-competences" class="icon-arrow-right"> Nos compétences </a></li>
+								<li><a href="/fr/elus" class="icon-arrow-right"> Élus communautaires </a></li>
+								<li><a href="/fr/comptes-rendus" class="icon-arrow-right"> Comptes-rendus </a></li>
+								<li><a href="/fr/publications" class="icon-arrow-right"> Publications </a></li>
+								<li><a href="/fr/information/7684/les-marches-publics" class="icon-arrow-right"> Les marchés publics </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#427bb6;"><a class="menu-a" href="/fr/rubrique/2/entreprendre">Entreprendre</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/8068/les-zones-activites-economiques" class="icon-arrow-right"> Les zones d'activités économiques </a></li>
+								<li><a href="/fr/information/3327/aide-entreprenariat" class="icon-arrow-right"> Aide à l'entreprenariat </a></li>
+								<li><a href="/fr/information/3328/le-commerce" class="icon-arrow-right"> Le commerce </a></li>
+								<li><a href="/fr/information/3329/les-initiatives-emploi" class="icon-arrow-right"> Les initiatives pour l'emploi </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#52af46;"><a class="menu-a" href="/fr/rubrique/3/au-quotidien">Au quotidien</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/8066/le-centre-aquatique" class="icon-arrow-right"> Le centre aquatique </a></li>
+								<li><a href="/fr/information/3330/urbanisme" class="icon-arrow-right"> Urbanisme </a></li>
+								<li><a href="/fr/information/3331/securite-justice" class="icon-arrow-right"> Sécurité et justice </a></li>
+								<li><a href="/fr/information/5752/prevention-sante" class="icon-arrow-right"> Prévention santé </a></li>
+								<li><a href="/fr/information/3333/sport-culture" class="icon-arrow-right"> Sport et culture </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#e0792a;"><a class="menu-a" href="/fr/rubrique/4/vie-pratique">Vie pratique</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3334/se-deplacer-dans-haut-val-oise" class="icon-arrow-right"> Se déplacer dans le Haut Val d'Oise </a></li>
+								<li><a href="/fr/information/3338/les-structures-sociales-territoire" class="icon-arrow-right"> Les structures sociales du territoire </a></li>
+								<li><a href="/fr/information/3372/le-service-detagage" class="icon-arrow-right"> Le service de détagage </a></li>
+								<li><a href="/fr/information/3495/la-dechetterie" class="icon-arrow-right"> La Déchetterie </a></li>
+								<li><a href="/fr/information/3340/la-fourriere-animale-val-oise" class="icon-arrow-right"> La fourrière animale du Val d'Oise </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#e83c44;"><a class="menu-a" href="/fr/rubrique/5/nos-services">Nos services</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3611/nos-coordonnees" class="icon-arrow-right"> Nos coordonnées </a></li>
+								<li><a href="/fr/information/8069/les-coordonnees-centre-aquatique" class="icon-arrow-right"> Les coordonnées du centre aquatique </a></li>
+								<li><a href="/fr/information/8070/les-coordonnees-aires-gens-voyage" class="icon-arrow-right"> Les coordonnées des aires pour les gens du voyage </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#505d9e;"><a class="menu-a" href="/fr/rubrique/6/tourisme">Tourisme</a>
+							<ul class="submenu">
+								<li><a href="/fr/information/3593/notre-patrimoine-photos" class="icon-arrow-right"> Notre patrimoine en photos </a></li>
+								<li><a href="/fr/information/8067/les-berges-oise" class="icon-arrow-right"> Les berges de l'Oise </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+				<div id="r_meteo" class="bg_main sunshine">
+					<div class="temperature fleft">21<span>°C</span></div>
+					<div class="ville fright">
+						<div class="city">Beaumont-sur-Oise</div>
+						<div class="date">Mercredi 08/07/2020</div>
+					</div>
+					<div class="clear"></div>
+					<div class="infos"><span class="meteotext"></span> <a href="/fr/previsions-meteo" class="icon-arrow-right" title="Les prévisions météo"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/vie-communautaire" title="Vie communautaire">Vie communautaire</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">30/06/2020</td>
+									<td><a href="/fr/compte-rendu/2418/compte-rendu-conseil-communautaire-15-juin-2020" title="Compte rendu du Conseil Communautaire du 15 juin 2020"><b>Compte rendu du Conseil Communautaire du 15 juin 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/ugm3kl32g68v23y.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">17/03/2020</td>
+									<td><a href="/fr/compte-rendu/2408/compte-rendu-conseil-communautaire-09-mars-2020" title="Compte rendu du conseil communautaire du 09 mars 2020"><b>Compte rendu du conseil communautaire du 09 mars 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/q9f2jfrsclqq57b.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">08/03/2020</td>
+									<td><a href="/fr/compte-rendu/2398/compte-rendu-conseil-communautaire-26-fevrier-2020" title="Compte rendu du Conseil Communautaire du 26 février 2020"><b>Compte rendu du Conseil Communautaire du 26 février 2020</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/f0l3w5ey3y9p77j.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">21/12/2019</td>
+									<td><a href="/fr/compte-rendu/2369/compte-rendu-conseil-communautaire-07-decembre-2019" title="Compte rendu du Conseil Communautaire du 07 décembre 2019"><b>Compte rendu du Conseil Communautaire du 07 décembre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/3hivmgjqj6pxbo.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">10/10/2019</td>
+									<td><a href="/fr/compte-rendu/2316/compte-rendu-conseil-communautaire-07-octobre-2019" title="Compte rendu du Conseil Communautaire du 07 octobre 2019"><b>Compte rendu du Conseil Communautaire du 07 octobre 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/nr7ibs294khujo2.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">09/07/2019</td>
+									<td><a href="/fr/compte-rendu/2272/compte-rendu-conseil-communautaire-24-juin-2019" title="Compte rendu du Conseil Communautaire du 24 juin 2019"><b>Compte rendu du Conseil Communautaire du 24 juin 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/cu0jg15g263as6.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">29/04/2019</td>
+									<td><a href="/fr/compte-rendu/2229/compte-rendu-conseil-communautaire-15-avril-2019" title="Compte rendu du Conseil Communautaire du 15 avril 2019"><b>Compte rendu du Conseil Communautaire du 15 avril 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/46151ar0ld2rrvc.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/03/2019</td>
+									<td><a href="/fr/compte-rendu/2185/compte-rendu-conseil-communautaire-11-mars-2019" title="Compte rendu du Conseil Communautaire du 11 mars 2019"><b>Compte rendu du Conseil Communautaire du 11 mars 2019</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/l6lc01q2v05yke.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/12/2018</td>
+									<td><a href="/fr/compte-rendu/2129/compte-rendu-conseil-communautaire-10-decembre-2018" title="Compte rendu du Conseil Communautaire du 10 décembre 2018"><b>Compte rendu du Conseil Communautaire du 10 décembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/4e877520adk9n23.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">01/10/2018</td>
+									<td><a href="/fr/compte-rendu/2128/compte-rendu-conseil-communautaire-24-septembre-2018" title="Compte rendu du Conseil Communautaire du 24 septembre 2018"><b>Compte rendu du Conseil Communautaire du 24 septembre 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/cxwuosd84nmwa8y.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">06/05/2018</td>
+									<td><a href="/fr/compte-rendu/2003/compte-rendu-conseil-communautaire-09-avril-2018" title="Compte rendu du Conseil Communautaire du 09 avril 2018"><b>Compte rendu du Conseil Communautaire du 09 avril 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/dwyhoz8vsylazvl.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">05/05/2018</td>
+									<td><a href="/fr/compte-rendu/2002/compte-rendu-conseil-communautaire-05-mars-2018" title="Compte rendu du Conseil Communautaire du 05 mars 2018"><b>Compte rendu du Conseil Communautaire du 05 mars 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/5ah6yfkztlpqtia.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">26/02/2018</td>
+									<td><a href="/fr/compte-rendu/1945/compte-rendu-conseil-communautaire-05-fevrier-2018" title="Compte rendu du Conseil Communautaire du 05 février 2018"><b>Compte rendu du Conseil Communautaire du 05 février 2018</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/5gu3gbyorr8u4p.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">23/12/2017</td>
+									<td><a href="/fr/compte-rendu/1900/compte-rendu-conseil-communautaire-11-decembre-2017" title="Compte rendu du Conseil Communautaire du 11 décembre 2017"><b>Compte rendu du Conseil Communautaire du 11 décembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/vpaluhkzzkijueb.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">23/10/2017</td>
+									<td><a href="/fr/compte-rendu/1881/compte-rendu-conseil-communautaire-23-octobre-2017" title="Compte rendu du Conseil Communautaire du 23 octobre 2017"><b>Compte rendu du Conseil Communautaire du 23 octobre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/aj9wasfu2m93997.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/09/2017</td>
+									<td><a href="/fr/compte-rendu/1883/compte-rendu-conseil-communautaire-25-septembre-2017" title="Compte rendu du Conseil Communautaire du 25 septembre 2017"><b>Compte rendu du Conseil Communautaire du 25 septembre 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/o9q0xax6yudbd9q.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">28/07/2017</td>
+									<td><a href="/fr/compte-rendu/1787/compte-rendu-conseil-communautaire-28-juin-2017" title="Compte rendu du Conseil Communautaire du 28 juin 2017"><b>Compte rendu du Conseil Communautaire du 28 juin 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/ry3rbt3p0377b4c.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/04/2017</td>
+									<td><a href="/fr/compte-rendu/1725/presentation-budget-2017" title="Présentation du budget 2017"><b>Présentation du budget 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/fows85qbqwkaoog.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/04/2017</td>
+									<td><a href="/fr/compte-rendu/1727/compte-rendu-n2-conseil-communautaire-27-fevrier-2017" title="Compte rendu n°2 du Conseil Communautaire du 27 février 2017"><b>Compte rendu n°2 du Conseil Communautaire du 27 février 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/jgt3gjzg765hxs.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/04/2017</td>
+									<td><a href="/fr/compte-rendu/1726/compte-rendu-conseil-communautaire-27-fevrier-2017" title="Compte rendu du Conseil Communautaire du 27 février 2017"><b>Compte rendu du Conseil Communautaire du 27 février 2017</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/77/documents/480o3rw0kox1t1.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/3" title="Page 3"><span>3</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/17.png');"></div><a href="/fr/information/8066/le-centre-aquatique" title="Le centre aquatique"> Le centre aquatique </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/05.png');"></div><a href="/fr/information/3330/urbanisme" title="Urbanisme "> Urbanisme </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/12.png');"></div><a href="/fr/information/3507/la-bourse-locaux" title="La bourse aux locaux"> La bourse aux locaux </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/20.png');"></div><a href="/fr/information/3366/bus-haut-val-oise" title="Bus du Haut Val d'Oise "> Bus du Haut Val d'Oise </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/22.png');"></div><a href="/fr/publications" title="Publications"> Publications </a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="r_advert"><a href="http://" target="_blank"> <img src="http://static.reseaudesintercoms.fr/cities/77/advertising/IyDVz6zk338gVky.jpg" alt="Le centre aquatique"> </a></div>
+				<style>
+#interactivemap svg {
+	background-color:#e5e9ec;
+	margin:0;
+	background-image: url(http://static.reseaudesintercoms.fr/cities/77/interactive/point_geoloc.png);
+	background-repeat:no-repeat;
+	
+	/* Position à modifier */
+	background-position: -1px 138px;
+}
+
+#map-tip {
+	text-align: center;
+	font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+	display: none;
+	border: none;
+	color: #ffffff;
+	z-index: 1000;
+	float: left;
+	position: absolute;
+	background-color:#0a5893;
+	border-radius:4px;
+	padding:6px 8px;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+#map-tip p {
+	margin: 0!important;
+}
+				</style>
+				<div id="mini-map">
+					<div id="interactivemap">
+						<!--<svg version="1.1"  viewBox="0 0 1000 500" xml:space="preserve">-->
+						<svg version="1.1" viewbox="-5 6 300 220" xml:space="preserve">
+							<g id="countries">
+								<!-- 1 --><a href="/fr/territoire/743/ronquerolles" xlink:href="/fr/territoire/743/ronquerolles"> <path id="map_1" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M43.82,72.68c1.21,1,3.08,1.38,5.26,2.43,1.48.71,6.54,3.2,10.19,5.11.4-1.3,9.16-9.85,10-10.77S71.42,63,72,62.53,78.7,60.95,79.91,60s7.53-5.95,8.38-7.77c-.24-.36-3.4-4.73-4.37-6.43s-4-3.64-5.22-4.25a59.56,59.56,0,0,1-7.65-5.58c-.36-.61-5.58-11.53-6.07-12.14s-2.06-2.55-2.67-2.67-10.07,10.92-11.9,11-8.86,3.28-9.59,3.28-4.73.36-5.7,0-2.55-1.82-3.52-2.18-5,3.76-5.95,4.25-2.91-.36-4.61-.85-3.88.49-5,.85a13,13,0,0,1-4-.12c-.12.79-.06.55.18,1.64s2.67,7.65,4.19,9.16,4.13.55,4.86.55.73.06,1.21.67.67,1.7,1.52,1.82S28.27,48,28.69,48s.49.79.3,1.52c-.12.48-1.57,1.75-2.84,2.83a38.58,38.58,0,0,1,3.91.48c.81.24.65,2.18.89,2.75S31.85,59,32.74,60s2.35,1.7,2.59,2.18,2.1,1.38,3,2.83S42.61,71.71,43.82,72.68Z"></path> </a>
+								<!-- 2 --><a href="/fr/territoire/739/champagne-sur-oise" xlink:href="/fr/territoire/739/champagne-sur-oise"> <path id="map_2" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M131.3,121.88a6.14,6.14,0,0,1-2.43-1.86c-.16-.32-.73-1.78-1-2.35a46.77,46.77,0,0,1-1.13-5.66c0-.57.08-2,.08-2.67s-1.46-.89-2.27-1.05-2.35-3.4-2.59-3.8-1.7,0-2.27,0a.83.83,0,0,1-.89-.65c-.08-.32-2.14-3.32-2.39-3.68a10.47,10.47,0,0,1-.24-3c0-1-7-2.31-8-2.31S98.49,92.75,98,92.51c-.21-.1-.26-2.51-.25-5.22-2.77.14-9.23.15-9.82-.24a5.8,5.8,0,0,0-2.79-1.21c-1,0-2.43,1.82-3,1.82s-8.25-.12-10.56-.85a73.6,73.6,0,0,1-8.74-3.4,33.6,33.6,0,0,1-3.52-3s0-.08,0-.15c-3.65-1.91-8.71-4.4-10.19-5.11-2.18-1.05-4-1.46-5.26-2.43s-4.61-6.23-5.5-7.69-2.75-2.35-3-2.83-1.7-1.21-2.59-2.18S31.2,56.17,31,55.61s-.08-2.51-.89-2.75a38.58,38.58,0,0,0-3.91-.48c-.64.55-1.24,1-1.59,1.38-1.05,1-4.21,2.35-4.53,2.67s.49,2.43,1.54,5.66,2.83,5.26,5.1,8.9,8.09,11.75,9.85,15,.42.36,3.1,5.28,10.92,13.17,11.65,14.2,1.09,4.67,1.21,5.52-1.76,5.4-2,6.19a8.34,8.34,0,0,0,.24,3.7c.3.61.12,2.43.12,3.4s-.36,3.88-.36,4.55a45.75,45.75,0,0,0-.12,5.1,7.15,7.15,0,0,0,3.58,3.82,2.76,2.76,0,0,1,1.64,3.52,33.53,33.53,0,0,1-3,5.4c-.18.24,6,3,6.74,3s3.58-4.61,4.61-5.7,3.64-2.18,6.07-3.1,5.83-1.94,6.74-2.18,5.71-.79,6.74-1,3.1-1.27,4.07-1.27h.05a12,12,0,0,1,4.58-1.71c2-.08,3.8.57,6.07.57s5.1-.16,5.83-.65,7.44-.16,9.55-.73,9.31-.32,11.33-.49,6.39-3.8,6.88-4.45,3.24-6.07,3.24-6.07a1.87,1.87,0,0,1-.73-.16C134,122.61,132.19,122.13,131.3,121.88Z"></path> </a>
+								<!-- 3 --><a href="/fr/territoire/742/persan" xlink:href="/fr/territoire/742/persan"> <path id="map_3" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M176.78,77.54c-1.78-2.83-2.18-3.48-2.43-3.48s-1.58.36-1.58-.36a25,25,0,0,0-.42-2.85l-.93-.9c-.64.35-3.51,0-4.47,0s-1.46,1.46-2.06,1.58-7.77-.24-9.23.12-3.4,1.7-4.13,1.94a15.65,15.65,0,0,1-3.76.85c-1.09,0-5.95,3.76-6.55,3.76s-7.77-5.46-8.5-5.46-4.49,3.76-4.49,3.76l.55,1.89c-.1-.26-.41-.69-1.28-.43-1.21.36-9,7-9.35,7.16s-4.61-1.58-5.46-1.58-12.38.12-12.75.24-.36,3.16-1,3.4a6.84,6.84,0,0,1-1.22.12c0,2.7,0,5.11.25,5.22.49.24,9.23,2.31,10.2,2.31s8,1.34,8,2.31a10.47,10.47,0,0,0,.24,3c.24.36,2.31,3.36,2.39,3.68a.83.83,0,0,0,.89.65c.57,0,2-.4,2.27,0s1.78,3.64,2.59,3.8,2.27.4,2.27,1.05-.08,2.1-.08,2.67a46.77,46.77,0,0,0,1.13,5.66c.24.57.81,2,1,2.35a6.14,6.14,0,0,0,2.43,1.86c.89.24,2.67.73,3,.89l.23.09a21.42,21.42,0,0,0,1.89-2.07,24.05,24.05,0,0,1,6.37-5.7c2.31-1.15,11.23-4.43,12.75-5.1a30.6,30.6,0,0,0,4.73-3.28,35.31,35.31,0,0,1,8-2.91c2-2.12,6.21-6.68,7.75-8.54s5.83-6,7.2-6.55C182.44,87.09,178.56,80.37,176.78,77.54Z"></path> </a>
+								<!-- 4 --><a href="/fr/territoire/737/bernes-sur-oise" xlink:href="/fr/territoire/737/bernes-sur-oise"> <path id="map_4" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M213.25,30.24a15.47,15.47,0,0,0-2.73-5.46c-1.86-2.35-1.86-3.48-1.38-4.21s4.69-5.26,4.77-5.75a21.87,21.87,0,0,0-2.65-3.46l0,.31H204c-.36,0-.73,3-.73,3s-.49,1.21-1,.24-4.37-.85-5.1-.85-2.43,1.82-2.67,2.79-1.46,15.78-1.82,15.9-4.13,0-4.49.61-3.64,9-4.37,9h-5.34c-.73,0-1.82,2.18-2.31,2.67s-.36,2.31-.36,3.52.12,1.82-1.09,2.06-1.46,3.64-1.7,4.61-2.79.73-3.28.73-.12,6.43,0,8.86,1,2.91,1.7,5.1h0l.93.9a25,25,0,0,1,.42,2.85c0,.73,1.34.36,1.58.36s.65.65,2.43,3.48,5.59,9.42,6.37,11.12a5.07,5.07,0,0,0,1.34-.09c.85-.3,6.86-.18,8.38-.06s17.54,2.18,18.39,2.43a14.83,14.83,0,0,0,1.64.36c.67-3,1.58-7.71,1.88-8.62a68,68,0,0,0,.67-10.07c-.18-1.15-1-1.34-1-2.06s.06-21.85.12-22.52c1.09,0,1.88.18,1.88-.3s-1.34-10.92-1.64-12.38A50.81,50.81,0,0,0,213.25,30.24Z"></path> </a>
+								<!-- 5 --><a href="/fr/territoire/738/bruyeres-sur-oise" xlink:href="/fr/territoire/738/bruyeres-sur-oise"> <path id="map_5" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M286.87,98A56.14,56.14,0,0,1,281,93.11c-.49-.73-2.43-3.16-1.34-3.4s1.7-1.58,2.06-2.55a3.57,3.57,0,0,0-.73-2.91c-.49-.73-13-19.3-14.44-20.51s-5.95-4.49-6.92-5.7-5-7.28-5.46-8.25-15.17-16.63-15.78-17-2.06-4-2.67-4.49-4.61-4.73-5.1-5.1-4-4.37-4.49-4.73,1.34-3.52,2.06-4.49-.85-2.18-1.7-2.43-10.8-.61-11.17-1.7-3.88-1.58-3.88-1.58l-.22,3.09a21.87,21.87,0,0,1,2.65,3.46c-.08.49-4.29,5-4.77,5.75s-.49,1.86,1.38,4.21a15.47,15.47,0,0,1,2.73,5.46,50.81,50.81,0,0,1,1.52,5.1c.3,1.46,1.64,11.9,1.64,12.38s-.79.3-1.88.3c-.06.67-.12,21.79-.12,22.52s.85.91,1,2.06a68,68,0,0,1-.67,10.07c-.3.91-1.21,5.58-1.88,8.62l-.33-.06a19,19,0,0,0,2.17,1c1,.24,7.93.57,9.79,1.78s4.86,4.61,5.26,6.64,5.91,9.87,7.36,10.2,6,.4,6.8-.32,11.33-9.47,13.92-8.25c1.21-.12,16.14,3.76,17.72,3.76s11.41-5.83,12.14-6.07S287.6,98.46,286.87,98Z"></path> </a>
+								<!-- 6 --><a href="/fr/territoire/740/mours" xlink:href="/fr/territoire/740/mours"> <path id="map_6" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M158.19,148.08c-.47-.75-.92-1.49-1.08-1.8a5.15,5.15,0,0,1-.24-2.67c.12-.61-.49-1.82-.79-2.67s-.55-7.53-.61-8.86,1.52-4.73,2.12-6.55a18.57,18.57,0,0,0-3.88,1.82c-.24-.24-4.49-4.31-5.16-5.28s-4.79-4-5.64-4.67a13.43,13.43,0,0,0-2-1.1,26.56,26.56,0,0,0-4.53,4.5,21.42,21.42,0,0,1-1.89,2.07,2.09,2.09,0,0,0,.5.08s-2.75,5.42-3.24,6.07-4.86,4.29-6.88,4.45-9.23-.08-11.33.49-8.82.24-9.55.73-3.56.65-5.83.65-4-.65-6.07-.57a12,12,0,0,0-4.58,1.71c.94.06,1.65,1.75,1.83,2s2.55.3,3.94.12c.91-.36,1.76-.79,2.25-.91s.61.67,1,.85,7.71.73,8.19.73,1.27,1.58,1.94,3.1,2.06,3.58,3.34,3.82,3.16.55,3.88.24a4.45,4.45,0,0,1,2.43-.67c7.28,4.43,11.53,5.95,12.56,5.83s5.71-2,7.1-2,8.68.79,11.77.85,7-1.46,8.38-1.76C156.6,148.55,157.35,148.33,158.19,148.08Z"></path> </a>
+								<!-- 7 --><a href="/fr/territoire/736/beaumont-sur-oise" xlink:href="/fr/territoire/736/beaumont-sur-oise"> <path id="map_7" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M219.34,141.55a7.6,7.6,0,0,1-.73-2.51c-.08-.81,2.67-3.72,2.75-4a5,5,0,0,0-.81-3.56c-1.05-1.38-2.59-5.1-2.59-6.47s1.13-5.18,1.13-6.07-1.54-4.94-2.1-5.26a11.09,11.09,0,0,1-2-1.21,6.68,6.68,0,0,1-.08-3.16c.24-.81,5.26-2.75,5.5-2.91s5.18-1.78,6.07-2.18c.6-.27,2.2-2.57,3.2-4.06-.68-2-3.41-5.08-5.15-6.22s-8.82-1.54-9.79-1.78a19,19,0,0,1-2.17-1,12.48,12.48,0,0,1-1.31-.3c-.85-.24-16.87-2.31-18.39-2.43s-7.53-.24-8.38.06a5.07,5.07,0,0,1-1.34.09l0,.05c-1.38.57-5.66,4.69-7.2,6.55s-5.75,6.41-7.75,8.54a35.31,35.31,0,0,0-8,2.91,30.6,30.6,0,0,1-4.73,3.28c-1.52.67-10.44,3.94-12.75,5.1a11.72,11.72,0,0,0-1.84,1.2,13.43,13.43,0,0,1,2,1.1c.85.67,5,3.7,5.64,4.67s4.92,5,5.16,5.28a18.57,18.57,0,0,1,3.88-1.82l-.07.21c1.3-1.14,2.43-2.11,2.68-2.27.67-.42,1.46-1.15,1.94-.91s1.58,1.7,2.55,1.7,4.43-1.15,7.22-1.09a27.8,27.8,0,0,1,3-.06c.24.12,0,2.06.91,2.06s1.52-1,2-1a15.5,15.5,0,0,1,3.4.06c.18.18,2.37,2.73,3.1,2.85s2.12.12,2.25-.24,2.29-5.73,2.61-6,2-1.86,2.35-1.7,5.34,6.88,5.91,7.61,4.53,4.86,4.45,5.26c-1.13,1-3.24,2-3,2.27a22.77,22.77,0,0,1,3.24,3.16c.51.88,8.87,13,12.34,17.57a111.7,111.7,0,0,1,10.61-4.47C223,147.32,219.58,142,219.34,141.55Z"></path> </a>
+								<!-- 8 --><a href="/fr/territoire/741/nointel" xlink:href="/fr/territoire/741/nointel"> <path id="map_8" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M214.44,154.91c-3.46-4.6-11.83-16.69-12.34-17.57a22.77,22.77,0,0,0-3.24-3.16c-.24-.24,1.86-1.29,3-2.27.08-.4-3.88-4.53-4.45-5.26s-5.58-7.44-5.91-7.61-2,1.38-2.35,1.7-2.49,5.68-2.61,6-1.52.36-2.25.24-2.91-2.67-3.1-2.85a15.5,15.5,0,0,0-3.4-.06c-.49.06-1.09,1-2,1s-.67-1.94-.91-2.06a27.8,27.8,0,0,0-3,.06c-2.79-.06-6.25,1.09-7.22,1.09s-2.06-1.46-2.55-1.7-1.27.49-1.94.91c-.25.16-1.38,1.13-2.68,2.27-.65,1.86-2.11,5.06-2.05,6.35s.3,8,.61,8.86.91,2.06.79,2.67a5.15,5.15,0,0,0,.24,2.67c.16.31.61,1,1.08,1.8a41.18,41.18,0,0,0,4.39-1.55,7.08,7.08,0,0,1,1.82-.61s.12,1.46.12,4.73c1.82-.36,2.79-1.82,4-1.94,1,.61,7.4,7.16,7.4,7.16h2.91c.61,0,2.18-1.09,2.91-1.21s18.45,5.7,19.66,5.83C202.08,160.55,208.44,157.63,214.44,154.91Z"></path> </a>
+								<!-- 9 --><a href="/fr/territoire/1323/noisy-sur-oise" xlink:href="/fr/territoire/1323/noisy-sur-oise"> <path id="map_9" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M243.94,110.47c-.81.73-5.34.65-6.8.32s-7-8.17-7.36-10.2a3.51,3.51,0,0,0-.11-.42c-1,1.49-2.61,3.79-3.2,4.06-.89.4-5.83,2-6.07,2.18s-5.26,2.1-5.5,2.91a6.68,6.68,0,0,0,.08,3.16,11.09,11.09,0,0,0,2,1.21c.57.32,2.1,4.37,2.1,5.26S218,123.66,218,125s1.54,5.1,2.59,6.47a5,5,0,0,1,.81,3.56c-.08.24-2.83,3.16-2.75,4a7.6,7.6,0,0,0,.73,2.51c.24.41,3.65,5.77,5.71,8.89l.16,0c2.55,1,27.43,5.22,27.8,5.22s-.36-5.58-.24-7,7-14.08,7.16-15.42-1.82-20.39-2.06-31C255.27,101,244.75,109.74,243.94,110.47Z"></path> </a></g>
+							<g id="map_points"></g>
+						</svg><span id="map-tip"></span>
+						<script src="http://static.reseaudesintercoms.fr/default/scripts/interactive_map.js"></script>
+						<script>
+			var map_cities = [
+				'Ronquerolles',
+				'Champagne-sur-Oise',
+				'Persan',
+				'Bernes-sur-Oise',
+				'Bruyères-sur-Oise',
+				'Mours',
+				'Beaumont-sur-Oise',
+				'Nointel',
+				'Noisy-sur-Oise'
+			];
+			
+			var map_config = {
+				'default':{
+					'borderColor': '#BEC4CB',
+					'mapShadow':'#fff',
+					'shadowOpacity':'35',
+					'hoverShadow':'#666666',
+					'lakesColor':'#66CCFF',
+					'namesColor':'#919191'
+				},
+			};
+			
+			for (var i = 1, max = map_cities.length; i <= max; i++) {
+				map_config['map_' + i] = {
+					'hover': map_cities[i-1],
+					'upColor':'#ffffff',
+					'overColor':'#3b912f',
+					'downColor':'#3b912f',
+					'enable':true,
+				};
+				addEvent('map_' + i);
+			}
+			
+			var pin_config = {
+				'default':{
+					'pinShadow':'#000',
+					'pinShadowOpacity':'50',
+				},
+				'points':[]
+			}
+		
+						</script>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/decouvrir-territoire"> Découvrir le territoire </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/736/beaumont-sur-oise"> Beaumont-sur-Oise </a></li>
+						<li><a href="/fr/territoire/737/bernes-sur-oise"> Bernes-sur-Oise </a></li>
+						<li><a href="/fr/territoire/738/bruyeres-sur-oise"> Bruyères-sur-Oise </a></li>
+						<li><a href="/fr/territoire/739/champagne-sur-oise"> Champagne-sur-Oise </a></li>
+						<li><a href="/fr/territoire/740/mours"> Mours </a></li>
+						<li><a href="/fr/territoire/741/nointel"> Nointel </a></li>
+						<li><a href="/fr/territoire/1323/noisy-sur-oise"> Noisy-sur-Oise </a></li>
+						<li><a href="/fr/territoire/742/persan"> Persan </a></li>
+						<li><a href="/fr/territoire/743/ronquerolles"> Ronquerolles </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/77/logo/33ILc3Y8WAz3SwX.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Président :</span> <span class="colRight"> Catherine BORGNE </span></p>
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 16 Rue Nationale - CS 10600, 95 260 Beaumont-sur-Oise </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 01 39 37 59 70 / 01 39 37 94 14 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft">
+					<div id="f_publication">
+						<div class="titre">Publication</div>
+						<div id="f_publication_txt">
+							<div id="f_publication_photo"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/77/80x110/ih1xn0j2ooe7he.jpg" alt=""></div>
+							<div id="f_publication_infos">
+								<div class="f_publication_type">Bulletin</div>
+								<div class="f_publication_titre"><a href="/fr/publication/284/le-mag-n29">Le mag' n°29 - 27/04/2019</a></div>
+								<div class="publication_text"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="readMore"><a class="cl_font" href="/fr/publications" title="Toutes les publications"> Toutes les publications <i class="icon-arrow-right"></i> </a></div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/vie-communautaire">Vie communautaire</a></li>
+									<li><a href="/fr/information/3323/presentation">Présentation</a></li>
+									<li><a href="/fr/information/7732/nos-competences">Nos compétences</a></li>
+									<li><a href="/fr/elus">Élus communautaires</a></li>
+									<li><a href="/fr/comptes-rendus">Comptes-rendus</a></li>
+									<li><a href="/fr/publications">Publications</a></li>
+									<li><a href="/fr/information/7684/les-marches-publics">Les marchés publics</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/entreprendre">Entreprendre</a></li>
+									<li><a href="/fr/information/8068/les-zones-activites-economiques">Les zones d'activités économiques</a></li>
+									<li><a href="/fr/information/3327/aide-entreprenariat">Aide à l'entreprenariat</a></li>
+									<li><a href="/fr/information/3328/le-commerce">Le commerce </a></li>
+									<li><a href="/fr/information/3329/les-initiatives-emploi">Les initiatives pour l'emploi</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/au-quotidien">Au quotidien</a></li>
+									<li><a href="/fr/information/8066/le-centre-aquatique">Le centre aquatique</a></li>
+									<li><a href="/fr/information/3330/urbanisme">Urbanisme </a></li>
+									<li><a href="/fr/information/3331/securite-justice">Sécurité et justice</a></li>
+									<li><a href="/fr/information/5752/prevention-sante">Prévention santé</a></li>
+									<li><a href="/fr/information/3333/sport-culture">Sport et culture</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/vie-pratique">Vie pratique</a></li>
+									<li><a href="/fr/information/3334/se-deplacer-dans-haut-val-oise">Se déplacer dans le Haut Val d'Oise</a></li>
+									<li><a href="/fr/information/3338/les-structures-sociales-territoire">Les structures sociales du territoire</a></li>
+									<li><a href="/fr/information/3372/le-service-detagage">Le service de détagage</a></li>
+									<li><a href="/fr/information/3495/la-dechetterie">La Déchetterie</a></li>
+									<li><a href="/fr/information/3340/la-fourriere-animale-val-oise">La fourrière animale du Val d'Oise</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/nos-services">Nos services</a></li>
+									<li><a href="/fr/information/3611/nos-coordonnees">Nos coordonnées</a></li>
+									<li><a href="/fr/information/8069/les-coordonnees-centre-aquatique">Les coordonnées du centre aquatique</a></li>
+									<li><a href="/fr/information/8070/les-coordonnees-aires-gens-voyage">Les coordonnées des aires pour les gens du voyage</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/tourisme">Tourisme</a></li>
+									<li><a href="/fr/information/3593/notre-patrimoine-photos">Notre patrimoine en photos </a></li>
+									<li><a href="/fr/information/8067/les-berges-oise">Les berges de l'Oise</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<div id="f_external_link">
+						<div class="titre">Liens externes</div>
+						<p class="link"><a class="icon-arrow-right" href="http://www.lyc-galois-beaumont.ac-versailles.fr/" title="Lycée Evariste Galois" target="_blank"> Lycée Evariste Galois </a></p>
+					</div>
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.valdoise.fr/" title="Département du Val-d'Oise" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/95.jpg" alt="Département du Val-d'Oise" style="width:100%"></a></td>
+							<td><a href="http://www.iledefrance.fr/" title="Conseil régional d'Ile-de-France" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/14.jpg" alt="Conseil régional d'Ile-de-France" style="width:100%"></a></td>
+							<td><a href="http://www.val-doise.pref.gouv.fr/" title="Préfecture du Val-d'Oise" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/95.jpg" alt="Préfecture du Val-d'Oise" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cc-hautvaldoise.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site cc-hautvaldoise.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #3b912f;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #3b912f; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #c9c3b7;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-34026804-15");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
