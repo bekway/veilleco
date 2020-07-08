@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<meta content="text/html; charset=Windows-1252" http-equiv="Content-Type">
+		<meta name="description" content="">
+		<meta name="keywords" content=" ">
+		<meta http-equiv="robots" content="all">
+		<meta name="robots" content="index,follow">
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta name="post-it" content="">
+		<meta name="en-bref" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon_ie.ico">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple_touch_icon_57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple_touch_icon_60x60.png">
+		<link rel="stylesheet" type="text/css" href="/js/jquery/css/custom-theme/jquery-ui.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/js/shadowbox/shadowbox.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="bootstrap_min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="menuStyles.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesDefaut.css">
+		<link rel="stylesheet" type="text/css" href="stylesEdition.css">
+		<link rel="stylesheet" type="text/css" href="stylesimprim.css" media="print">
+		<title>Conseils communautaires - Haut-Bugey Agglomération</title>
+		<script type="text/javascript" src="/js/jquery/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery/js/jquery-ui.min.js"></script>
+		<script defer type="text/javascript" src="/js/shadowbox/shadowbox.js"></script>
+		<script defer type="text/javascript" src="/js/comos.js"></script>
+		<script defer type="text/javascript" src="validSearch.js"></script>
+		<script defer type="text/javascript" src="setLanguage.js"></script>
+		<script defer type="text/javascript" src="formValid.js"></script>
+		<script defer type="text/javascript" src="popup.js"></script>
+		<script defer type="text/javascript" src="pollScript.js"></script>
+		<script defer type="text/javascript" src="menuFlipFlap.js"></script>
+		<script type="text/javascript" src="functionJquery.js"></script>
+		<!-- function jquery -->
+		<script defer type="text/javascript" src="analytics.js"></script>
+		<script defer type="text/javascript" src="jqueryCookie.js"></script>
+		<meta name="revisit-after" content="8 days">
+		<link rel="stylesheet" type="text/css" href="/js/jquery/css/custom-theme/jquery-ui.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="/js/shadowbox/shadowbox.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="fisheyecss.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="style_switch.css" media="print">
+		<script type="text/javascript"><!--
+			gaProperty = "UA-163315708-1";
+			var disableStr = "ga-disable-" + gaProperty;
+
+			if (document.cookie.indexOf("hasConsent=false") > -1) {
+				window[disableStr] = true;
+			}
+
+			function getCookieExpireDate() { 
+				var cookieTimeout = 34214400000;
+				var date = new Date();
+				date.setTime(date.getTime() + cookieTimeout);
+				var expires = "; expires=" + date.toGMTString();
+				return expires;
+			}
+
+			function askConsent() {
+				var bodytag = document.getElementsByTagName("body")[0];
+				var div = document.createElement("div");
+				div.setAttribute("id", "cookie-banner");
+				div.setAttribute("width", "70%");
+				div.innerHTML = '<div class="analytics-warning">Ce site utilise Google Analytics.\
+				En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de \
+				mesure d\'audience. Pour s\'opposer à ce dépôt vous pouvez cliquer \
+				<a href="javascript:gaOptout()">ici.';          
+				bodytag.insertBefore(div, bodytag.firstChild);
+				document.getElementsByTagName("body")[0].className += " cookiebanner";
+			}
+			
+			function getCookie(NomDuCookie) {
+				if (document.cookie.length > 0) {
+					begin = document.cookie.indexOf(NomDuCookie + "=");
+					if (begin != -1) {
+						begin += NomDuCookie.length + 1;
+						end = document.cookie.indexOf(";", begin);
+						if (end == -1) end = document.cookie.length;
+						return unescape(document.cookie.substring(begin, end)); 
+					}
+				}
+				return null;
+			}
+			
+			function delCookie(name ) {
+				path = ";path=" + "/";
+				domain = ";domain=" + "." + document.location.hostname;
+				var expiration = "Thu, 01-Jan-1970 00:00:01 GMT";
+				document.cookie = name + "=" + path + domain + ";expires=" + expiration;
+			}
+			
+			function deleteAnalyticsCookies() {
+				var cookieNames = ["__utma", "__utmb", "__utmc", "__utmz", "_ga"];
+				for (var i = 0; i < cookieNames.length; i++)
+					delCookie(cookieNames[i]);
+			}
+			
+			function gaOptout() {
+				document.cookie = disableStr + "=true;" + getCookieExpireDate() + " ; path=/";
+				document.cookie = "hasConsent=false;" + getCookieExpireDate() + ";path=/";
+				var div = document.getElementById("cookie-banner");
+				if (div != null) div.innerHTML = '<div class="analytics-warning">Vous vous êtes opposé au dépôt de cookies de mesures d\'audience de Google Analytics dans votre navigateur';
+				window[disableStr] = true;
+				deleteAnalyticsCookies();
+			}
+			
+			var consentCookie = getCookie("hasConsent");
+			if (!consentCookie) {
+				var referrer_host = document.referrer.split("/")[2]; 
+				if (referrer_host != document.location.hostname) {
+					window[disableStr] = true;
+					window[disableStr] = true;
+					window.onload = askConsent;
+				} else {
+					document.cookie = "hasConsent=true; " + getCookieExpireDate() + " ; path=/"; 
+				}
+			}
+
+			var _gaq = _gaq || [];
+			_gaq.push(["_setAccount", gaProperty]);
+			_gaq.push(["_trackPageview"]);
+
+			(function() {
+				var ga = document.createElement("script");
+				ga.type = "text/javascript";
+				ga.async = true;
+				ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+			//-->
+		</script>
+	</head>
+	<body class="bodygenerique ">
+		<noscript>Votre navigateur ne prend pas en compte javacsript, vous risquez d'avoir des difficultés de navigation!</noscript>
+		<!--[if lt IE 9]>
+   <link href="stylesie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+		<div id="background">
+			<div id="total">
+				<div role="banner" id="header">
+					<div id="enteteHeader">
+						<div class="container">
+							<ul class="list-unstyled pull-right text-uppercase">
+								<li class="pull-right">
+									<div id="recherche" class="recherche">
+										<form id="fSearch" onsubmit="return verifySearch(this);" method="get" action="resultat_de_recherche.htm">
+											<div><label for="search">Rechercher :</label> <input onclick="this.value='';" onfocus="this.select()" id="search" title="Champ de recherche principal" class="saisie" accesskey="3" value="Recherche" name="mot_cle"><label for="valideSearch">Valider le formulaire</label><button id="valideSearch" title="ok, je valide ma recherche" type="submit">ok</button></div>
+										</form>
+									</div>
+								</li>
+								<li class="pull-right meteo hidden-xs hidden-sm"><a href="meteo.html">Météo</a></li>
+								<li class="pull-right social hidden-xs hidden-sm">
+									<ul class="list-unstyled list-social">
+										<li class="facebook"><a href="https://www.facebook.com/pages/Haut-Bugey-Communaut%C3%A9-de-communes/683550608457588?ref=profile" target="_blank"><span class="hidden">Facebook</span></a></li>
+										<!--
+li class=twitter><a href="//twitter.com/?lang=fr" target=_blank><span class=hidden>Twitter</span></a> </li-->
+										<li class="youtube"><a href="https://www.youtube.com/channel/UCITIJEdvE4pNRCTt2I7fvLQ" target="_blank"><span class="hidden">Youtube</span></a></li>
+										<li class="google-plus"><a href="//plus.google.com/u/0/b/108227735660386417258/108227735660386417258/posts" target="_blank"><span class="hidden">Googe plus</span></a></li>
+									</ul>
+								</li>
+								<li class="pull-right identify"><a href="accueil_extranet.html">S'identifier</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="container">
+						<h1 id="logo"><a title="Haut-Bugey Agglomération - Retour à l'accueil" accesskey="0" href="index.html"><img alt=" " src="images/logos_hba_pantone.jpg" width="202" height="164"></a></h1>
+						<div id="navigDirect" class="navigDirect">
+							<ul>
+								<li class="racnavig"><a accesskey="1" href="#menu"><span class="hidden">Accéder directement à la navigation principale du site</span></a></li>
+								<li class="raccontenu"><a accesskey="2" href="#wrapperInter"><span class="hidden">Accéder directement au contenu de la page</span></a></li>
+								<li class="racrecherche"><a href="#recherche"><span class="hidden">Accéder directement au moteur de recherche du site</span></a></li>
+								<li class="racplan"><a accesskey="4" href="plan.html"><span>Plan du site</span></a></li>
+								<li class="racaide"><a accesskey="5" href="aide.html"><span>Aide à la navigation et accessibilité</span></a></li>
+								<li class="raccontraste"><a accesskey="6" href="changecolor.html"><span>Paramètres des contrastes</span></a></li>
+								<li class="raccontact"><a accesskey="7" href="contact.html"><span>Contactez-nous</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="content" class="clearfix">
+					<div class="container">
+						<div id="filariane"><a href="accueil.html" title="Retour à l'accueil">Accueil</a><span class="separator">></span><a href="l_intercommunalite.html">L'Intercommunalité</a><span class="separator">></span><span class="last">Conseils communautaires</span></div>
+						<div id="wrapperInter" class="row">
+							<div class="wrapperLeft col-sm-3 pull-left">
+								<div id="left" role="navigation">
+									<div id="wrapMenu">
+										<div id="toggle_menu"><a title="Ouvrir le menu" href="#">Menu</a></div>
+										<div class="com-menu" id="menu">
+											<ul class="on">
+												<li class="lien_accueil"><a accesskey="1" class="on" href="index.html" title="Accueil - Rubrique en cours de consultation"><span>Accueil</span></a></li>
+												<li class="lien02 on"><a href="l_intercommunalite.html" title="L'Intercommunalité - Rubrique en cours de consultation"><span>L'Intercommunalité</span></a>
+													<ul class="on">
+														<li class="lien03"><a href="le_haut_bugey.html"><span>Le Haut-Bugey</span></a></li>
+														<li class="lien04"><a href="les_communes.html"><span>Les communes</span></a>
+															<ul>
+																<li class="lien01"><a href="apremont.html"><span>Apremont</span></a></li>
+																<li class="lien02"><a href="aranc.html"><span>Aranc</span></a></li>
+																<li class="lien03"><a href="arbent.html"><span>Arbent</span></a></li>
+																<li class="lien04"><a href="beard_geovreissiat.html"><span>Béard-Géovreissiat</span></a></li>
+																<li class="lien05"><a href="belleydoux.html"><span>Belleydoux</span></a></li>
+																<li class="lien06"><a href="bellignat.html"><span>Bellignat</span></a></li>
+																<li class="lien07"><a href="bolozon.html"><span>Bolozon</span></a></li>
+																<li class="lien08"><a href="brenod.html"><span>Brénod</span></a></li>
+																<li class="lien09"><a href="brion.html"><span>Brion</span></a></li>
+																<li class="lien10"><a href="ceignes.html"><span>Ceignes</span></a></li>
+																<li class="lien11"><a href="champdor_corcelles.html"><span>Champdor-Corcelles</span></a></li>
+																<li class="lien12"><a href="charix.html"><span>Charix</span></a></li>
+																<li class="lien13"><a href="chevillard.html"><span>Chevillard</span></a></li>
+																<li class="lien14"><a href="condamine.html"><span>Condamine</span></a></li>
+																<li class="lien15"><a href="corlier.html"><span>Corlier</span></a></li>
+																<li class="lien16"><a href="dortan.html"><span>Dortan</span></a></li>
+																<li class="lien17"><a href="echallon.html"><span>Échallon</span></a></li>
+																<li class="lien18"><a href="evosges.html"><span>Evosges</span></a></li>
+																<li class="lien19"><a href="geovreisset.html"><span>Géovreisset</span></a></li>
+																<li class="lien20"><a href="groissiat.html"><span>Groissiat</span></a></li>
+																<li class="lien21"><a href="izenave.html"><span>Izenave</span></a></li>
+																<li class="lien22"><a href="izernore.html"><span>Izernore</span></a></li>
+																<li class="lien23"><a href="lantenay.html"><span>Lantenay</span></a></li>
+																<li class="lien24"><a href="lalleyriat.html"><span>Le Poizat-Lalleyriat</span></a></li>
+																<li class="lien25"><a href="les_neyrolles.html"><span>Les Neyrolles</span></a></li>
+																<li class="lien26"><a href="leyssard.html"><span>Leyssard</span></a></li>
+																<li class="lien27"><a href="maillat.html"><span>Maillat</span></a></li>
+																<li class="lien28"><a href="martignat.html"><span>Martignat</span></a></li>
+																<li class="lien29"><a href="matafelon_granges.html"><span>Matafelon-Granges</span></a></li>
+																<li class="lien30"><a href="montreal_la_cluse.html"><span>Montréal-la-Cluse</span></a></li>
+																<li class="lien31"><a href="nantua.html"><span>Nantua</span></a></li>
+																<li class="lien32"><a href="nurieux_volognat.html"><span>Nurieux-Volognat</span></a></li>
+																<li class="lien33"><a href="outriaz.html"><span>Outriaz</span></a></li>
+																<li class="lien35"><a href="oyonnax.html"><span>Oyonnax</span></a></li>
+																<li class="lien36"><a href="peyriat.html"><span>Peyriat</span></a></li>
+																<li class="lien37"><a href="plateau_d_hauteville.html"><span>Plateau d'Hauteville</span></a></li>
+																<li class="lien38"><a href="port.html"><span>Port</span></a></li>
+																<li class="lien39"><a href="premillieu.html"><span>Premillieu</span></a></li>
+																<li class="lien40"><a href="saint_martin_du_fresne.html"><span>Saint-Martin-du-Fresne</span></a></li>
+																<li class="lien41"><a href="samognat.html"><span>Samognat</span></a></li>
+																<li class="lien42"><a href="sonthonnax_la_montagne.html"><span>Sonthonnax-la-Montagne</span></a></li>
+																<li class="lien44"><a href="vieu_d_izenave.html"><span>Vieu-d'Izenave</span></a></li>
+															</ul>
+														</li>
+														<li class="lien05"><a href="les_elus.html"><span>Les élus</span></a></li>
+														<li class="lien07"><a href="les_competences.html"><span>Les compétences</span></a></li>
+														<li class="lien08 on"><a class="on" href="conseils_communautaires.html" title="Les conseils communautaires - Page en cours de consultation"><span>Les conseils communautaires</span></a>
+															<ul class="on">
+																<li class="lien02"><a href="comptes_rendus_des_conseils_communautaires.html"><span>Comptes-rendus</span></a></li>
+																<li class="lien03"><a href="proces_verbaux_1.html"><span>Procès-verbaux</span></a></li>
+															</ul>
+														</li>
+														<li class="lien10"><a href="les_services_communautaires.html"><span>Les services communautaires</span></a></li>
+													</ul>
+												</li>
+												<li class="lien03"><a href="au-quotidien.html"><span>Au quotidien</span></a>
+													<ul>
+														<li class="lien08"><a href="msap_du_haut_bugey.html"><span>Maison de Services Au Public</span></a>
+															<ul>
+																<li class="lien02"><a href="msap_plateau_d_hauteville.html"><span>MSAP Plateau d'Hauteville</span></a></li>
+															</ul>
+														</li>
+														<li class="lien09"><a href="gens_du_voyage.html"><span>Gens du voyage</span></a></li>
+														<li class="lien10"><a href="lasante.html"><span>Santé</span></a>
+															<ul>
+																<li class="lien02"><a href="maisons_de_sante.html"><span>Maisons de santé</span></a></li>
+																<li class="lien03"><a href="centre_hospitalier_du_haut_bugey.html"><span>Centre Hospitalier du Haut-Bugey</span></a></li>
+																<li class="lien04"><a href="pole_sante_du_plateau_d_hauteville.html"><span>Pôle santé du Plateau d'Hauteville</span></a></li>
+															</ul>
+														</li>
+														<li class="lien11"><a href="pa.html"><span>Personnes âgées</span></a>
+															<ul>
+																<li class="lien01"><a href="portage_des_repas.html"><span>Portage de repas</span></a></li>
+																<li class="lien02"><a href="CLIC_du_haut_bugey_ok.html"><span>CLIC du Haut-Bugey</span></a></li>
+																<li class="lien03"><a href="ehpad_de_groissiat_.html"><span>EHPAD de Groissiat</span></a></li>
+															</ul>
+														</li>
+														<li class="lien13"><a href="service_de_l_eau_ok.html"><span>Service de l'eau</span></a>
+															<ul>
+																<li class="lien03"><a href="informations_pratiques_ok.html"><span>Informations pratiques</span></a>
+																	<ul>
+																		<li class="lien01"><a href="j_emmenage.html"><span>J'emménage</span></a></li>
+																		<li class="lien02"><a href="je_demenage.html"><span>Je déménage</span></a></li>
+																		<li class="lien03"><a href="souscrire_mon_abonnement.html"><span>Souscrire mon abonnement</span></a></li>
+																		<li class="lien04"><a href="resilier_mon_abonnement.html"><span>Résilier mon abonnement</span></a></li>
+																		<li class="lien05"><a href="payer_mes_factures_d_eau.html"><span>Payer mes factures d'eau</span></a></li>
+																		<li class="lien06"><a href="comprendre_ma_facture_d_eau.html"><span>Comprendre ma facture d'eau</span></a></li>
+																		<li class="lien07"><a href="tarifs.html"><span>Tarifs</span></a></li>
+																		<li class="lien08"><a href="comment_contacter_mon_service_de_l_eau.html"><span>Comment contacter mon service de l'eau ?</span></a></li>
+																		<li class="lien09"><a href="branchements_d_eau_et_d_assainissement.html"><span>Branchements d'eau et d'assainissement</span></a></li>
+																		<li class="lien10"><a href="droits_des_consommateurs.html"><span>Droits des consommateurs</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien04"><a href="tout_savoir_sur_l_eau_ok.html"><span>Tout savoir sur l'eau</span></a>
+																	<ul>
+																		<li class="lien01"><a href="connaitre_la_qualite_de_l_eau.html"><span>Connaître la qualité de l'eau</span></a></li>
+																		<li class="lien02"><a href="un_travail_au_quotidien.html"><span>Un travail au quotidien</span></a></li>
+																		<li class="lien03"><a href="les_bons_gestes_fuites.html"><span>Les bons gestes/fuites</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien05"><a href="tout_savoir_sur_l_assainissement_ok.html"><span>Tout savoir sur l'assainissement</span></a>
+																	<ul>
+																		<li class="lien01"><a href="les_bons_gestes.html"><span>Les bons gestes</span></a></li>
+																		<li class="lien02"><a href="l_assainissement_non_collectif.html"><span>L'assainissement non collectif</span></a></li>
+																		<li class="lien03"><a href="les_stations_d_epuration.html"><span>Les stations d'épuration</span></a></li>
+																		<li class="lien04"><a href="le_reseau_de_collecte.html"><span>Le réseau de collecte</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien06"><a href="actualites_ok.html"><span>Actualités</span></a>
+																	<ul>
+																		<li class="lien01"><a href="perturbations_a_venir.html"><span>Perturbations à venir</span></a></li>
+																		<li class="lien02"><a href="travaux.html"><span>Travaux</span></a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														<li class="lien14"><a href="gestion_des_dechets.html"><span>Gestion des déchets</span></a>
+															<ul>
+																<li class="lien01"><a href="carte_des_points_de_tri.html"><span>Carte des points d'apport volontaire</span></a></li>
+																<li class="lien02"><a href="compostage.html"><span>Compostage</span></a></li>
+																<li class="lien03"><a href="dechetteries.html"><span>Déchetteries</span></a></li>
+																<li class="lien04"><a href="collecte_des_ordures_menageres.html"><span>Collecte des ordures ménagères</span></a></li>
+																<li class="lien05"><a href="recyclages_des_lampes_usagees.html"><span>Collecte et recyclage des lampes usagées</span></a></li>
+																<li class="lien07"><a href="les_textiles.html"><span>Les textiles</span></a></li>
+															</ul>
+														</li>
+														<li class="lien15"><a href="centre_d_informations_au_droit.html"><span>Centre d'information au droit</span></a></li>
+														<li class="lien16"><a href="plan_climat_air_energie_territorial.html"><span>PCAET</span></a>
+															<ul>
+																<li class="lien02"><a href="la_demarche_cit_ergie.html"><span>La démarche Cit'ergie</span></a></li>
+															</ul>
+														</li>
+														<li class="lien17"><a href="transport_mobilite.html"><span>Transport et mobilité</span></a>
+															<ul>
+																<li class="lien01"><a href="train-car.html"><span>Train et car</span></a></li>
+																<li class="lien02"><a href="transport_scolaire.html"><span>Transport scolaire</span></a></li>
+																<li class="lien03"><a href="Reseaux_urbains.html"><span>Réseaux urbains</span></a></li>
+																<li class="lien04"><a href="modes_actifs_ok.html"><span>Modes actifs</span></a></li>
+																<li class="lien05"><a href="covoiturage-.html"><span>Covoiturage</span></a></li>
+																<li class="lien06"><a href="taxis_loueurs_de_voitures.html"><span>Taxis - loueurs de voitures</span></a></li>
+																<li class="lien07"><a href="wimoov_ok.html"><span>Wimoov</span></a></li>
+															</ul>
+														</li>
+														<li class="lien18"><a href="fourriere_et_refuge_animaliers.html"><span>Fourrière et refuge animaliers</span></a>
+															<ul>
+																<li class="lien02"><a href="presentation.html"><span>Présentation</span></a>
+																	<ul>
+																		<li class="lien02"><a href="actualites_refuge_animalier.html"><span>Actualités</span></a></li>
+																		<li class="lien03"><a href="nos_installations.html"><span>Nos installations</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien03"><a href="nos_services.html"><span>Nos services</span></a>
+																	<ul>
+																		<li class="lien02"><a href="fourriere.html"><span>Fourrière</span></a></li>
+																		<li class="lien03"><a href="refuge.html"><span>Refuge</span></a></li>
+																		<li class="lien04"><a href="tarifs_adoptions_abandons_fourriere.html"><span>Tarifs adoptions/abandons/fourrière</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien04"><a href="adoptions.html"><span>Adoptions</span></a>
+																	<ul>
+																		<li class="lien02"><a href="chiens.html"><span>Chiens</span></a></li>
+																		<li class="lien03"><a href="chats.html"><span>Chats</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien05"><a href="conseils.html"><span>Conseils</span></a>
+																	<ul>
+																		<li class="lien02"><a href="choisir_un_animal.html"><span>Choisir un animal</span></a></li>
+																		<li class="lien03"><a href="accueillir_un_chat.html"><span>Accueillir un chat</span></a></li>
+																		<li class="lien04"><a href="accueillir_et_eduquer_un_chien.html"><span>Accueillir et éduquer un chien</span></a></li>
+																		<li class="lien05"><a href="FAQ.html"><span>FAQ</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien07"><a href="contact_refuge_animalier.html"><span>Contact</span></a>
+																	<ul>
+																		<li class="lien02"><a href="liens_utiles.html"><span>Liens utiles</span></a></li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+														<li class="lien19"><a href="logement_social.html"><span>Logement social</span></a>
+															<ul>
+																<li class="lien02"><a href="s_informer.html"><span>S'informer</span></a></li>
+																<li class="lien03"><a href="faire_une_demande.html"><span>Faire une demande</span></a></li>
+																<li class="lien04"><a href="deposer_sa_demande.html"><span>Déposer sa demande</span></a></li>
+																<li class="lien05"><a href="attribution_d_un_logement.html"><span>Attribution d'un logement</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="lien04"><a href="amenager.html"><span>Aménager</span></a>
+													<ul>
+														<li class="lien02"><a href="qu_est_ce_qu_un_document_d_urbanisme.html"><span>DOCUMENTS D'URBANISME APPLICABLES</span></a>
+															<ul>
+																<li class="lien02"><a href="consulter_les_documents.html"><span>Consulter les documents</span></a></li>
+																<li class="lien03"><a href="formalites_d_urbanisme_ok.html"><span>Formalités d'urbanisme</span></a></li>
+															</ul>
+														</li>
+														<li class="lien04"><a href="planification_scot_et_plui_.html"><span>SCoT, PLUI-H et autres procédures</span></a>
+															<ul>
+																<li class="lien02"><a href="Le_pluih_est_executoire.html"><span>Le PLUIH est exécutoire</span></a></li>
+																<li class="lien03"><a href="schema_de_coherence_territoriale.html"><span>Schéma de Cohérence Territoriale (SCoT)</span></a></li>
+																<li class="lien13"><a href="autres_procedures_d_urbanisme.html"><span>Autres procédures d'urbanisme</span></a></li>
+															</ul>
+														</li>
+														<li class="lien07"><a href="agriculture_.html"><span>Agriculture</span></a>
+															<ul>
+																<li class="lien02"><a href="etat_des_lieux.html"><span>Etat des lieux</span></a></li>
+																<li class="lien04"><a href="nos_actions.html"><span>Nos actions</span></a></li>
+															</ul>
+														</li>
+														<li class="lien08"><a href="foret_et_filiere_bois.html"><span>Forêt et Filière bois</span></a>
+															<ul>
+																<li class="lien02"><a href="etat_des_lieux_.html"><span>Etat des lieux</span></a></li>
+																<li class="lien03"><a href="politiques_forestieres.html"><span>Politiques forestières</span></a></li>
+																<li class="lien04"><a href="nos_actions_.html"><span>Nos actions</span></a></li>
+															</ul>
+														</li>
+														<li class="lien11"><a href="politiques_contractuelles.html"><span>Politiques territoriales</span></a></li>
+														<li class="lien12"><a href="contrat_de_riviere.html"><span>Contrat de rivière</span></a></li>
+														<li class="lien13"><a href="le_leader.html"><span>LEADER</span></a>
+															<ul>
+																<li class="lien02"><a href="deposer_un_dossier.html"><span>Déposer un projet</span></a></li>
+																<li class="lien03"><a href="selection.html"><span>La sélection des projets</span></a></li>
+																<li class="lien04"><a href="le_mecanisme_europeen.html"><span>Le mécanisme européen : le principe du 1 pour 4</span></a></li>
+																<li class="lien05"><a href="qui_contacter.html"><span>L'équipe LEADER, qui contacter ?</span></a></li>
+																<li class="lien06"><a href="stratiegie_du.html"><span>Stratégie du territoire et fiches actions</span></a></li>
+															</ul>
+														</li>
+														<li class="lien14"><a href="les_competences_de_HBA_en_matiere_d_habitat.html"><span>Habitat</span></a>
+															<ul>
+																<li class="lien00"><a href="renovez_en_haut_bugey_2.html"><span>Rénovez en Haut-Bugey</span></a>
+																	<ul>
+																		<li class="lien02"><a href="l_accompagnement.html"><span>L'accompagnement</span></a></li>
+																		<li class="lien03"><a href="les_aides_financieres.html"><span>Les aides financières</span></a></li>
+																		<li class="lien04"><a href="l_operation_facades_et_devantures_professionnelles.html"><span>L'opération façades et devantures professionnelles</span></a></li>
+																	</ul>
+																</li>
+																<li class="lien01"><a href="permis_de_louer.html"><span>Permis de louer</span></a></li>
+																<li class="lien03"><a href="lutte_contre_l_habitat_indigne.html"><span>Lutte contre l'habitat indigne</span></a></li>
+																<li class="lien04"><a href="le_npnru_ok.html"><span>Le NPNRU</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="lien05"><a href="se_divertir.html"><span>Se divertir</span></a>
+													<ul>
+														<li class="lien01"><a href="haut_bugey_tourisme.html"><span>Haut-Bugey Tourisme</span></a></li>
+														<li class="lien03"><a href="annuaire_des_equipements.html?req=1&mots_cle=Mots+cl%E9&theme_de_la_geolocalisation=Equipements+sportifs"><span>Annuaire des équipements sportifs</span></a></li>
+														<li class="lien04"><a href="centre_nautique_intercommunal_oyonnax.html"><span>Centre nautique intercommunal Oyonnax</span></a>
+															<ul>
+																<li class="lien02"><a href="informations_tarifaires_suite_au_covid_19_cnrs.html"><span>Informations tarifaires suite au COVID-19</span></a></li>
+															</ul>
+														</li>
+														<li class="lien05"><a href="golf_du_haut_bugey.html"><span>Golf du Haut-Bugey</span></a>
+															<ul>
+																<li class="lien02"><a href="informations_tarifaires_suite_au_covid_19.html"><span>Informations tarifaires suite au COVID-19</span></a></li>
+																<li class="lien03"><a href="actualites_golf.html"><span>Actualités</span></a></li>
+																<li class="lien04"><a href="entreprises_associations.html"><span>Entreprises, associations</span></a></li>
+																<li class="lien05"><a href="les_tarifs.html"><span>Les tarifs</span></a></li>
+																<li class="lien06"><a href="calendrier_des_competitions.html"><span>Calendrier des compétitions</span></a></li>
+																<li class="lien07"><a href="le_pro_shop.html"><span>Le Pro Shop</span></a></li>
+																<li class="lien08"><a href="restauration_et_bar.html"><span>Restauration et bar</span></a></li>
+																<li class="lien09"><a href="informations_pratiques.html"><span>Informations pratiques</span></a></li>
+															</ul>
+														</li>
+														<li class="lien06"><a href="rugby.html"><span>Oyonnax Rugby</span></a></li>
+														<li class="lien07"><a href="piscine_plateau_d_hauteville.html"><span>Piscine intercommunale Plateau d'Hauteville</span></a>
+															<ul>
+																<li class="lien06"><a href="informations_tarifaires_suite_au_covid_19_piscine.html"><span>Informations tarifaires suite au COVID-19</span></a></li>
+															</ul>
+														</li>
+														<li class="lien08"><a href="bike_park_cormaranche.html"><span>Bike Park Cormaranche</span></a></li>
+														<li class="lien10"><a href="trottin_herb_et_deval_kart.html"><span>Trottin'herb et Déval'kart</span></a></li>
+														<li class="lien11"><a href="sports_d_hiver.html"><span>Sports d'hiver</span></a></li>
+														<li class="lien12"><a href="conservatoire_a_rayonnement_departemental_a_oyonnax.html"><span>Conservatoire à rayonnement départemental Oyonnax</span></a>
+															<ul>
+																<li class="lien02"><a href="informations_tarifaires_suite_au_covid_19_crd.html"><span>Informations tarifaires suite au COVID-19</span></a></li>
+																<li class="lien03"><a href="actualites_conservatoire_haut_bugey.html"><span>Actualités</span></a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="lien06"><a href="Presentation_eco.html"><span>Entreprendre</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="intraWrapperInter col-sm-9 no-padding pull-right avecRight">
+								<div class="row">
+									<div class="wrapInter col-sm-9 pull-left">
+										<div id="inter">
+											<h1><span>Conseils communautaires</span></h1>
+											<p><a href="comptes_rendus_des_conseils_communautaires.html">Comptes-rendus des conseils communautaires</a></p><a href="proces_verbaux_1.html"> <p>Procès-verbaux des conseils communautaires</p> <p></p></a>
+											<p> </p>
+										</div>
+									</div>
+									<div class="wrapperRight col-sm-3 pull-right">
+										<div id="right">
+											<ul class="list-unstyled list-totem-droit">
+												<li class="block block-log">
+													<div id="loguer"></div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="outilsFooter">
+					<div class="container">
+						<div id="hautpage" class="hautpage"><a title="Retour en haut de page" href="#header">Haut de page</a></div>
+						<h2 class="sous-titre"><span class="inline-block">Les accès directs de HBA</span></h2>
+						<ul class="list-unstyled zone-outils">
+							<li class="outils"><a href="mes_services_en_ligne.html"> <span class="icon"> <span> <img src="picto_mes_services.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Mes services en ligne</span></strong> </a></li>
+							<li class="outils"><a href="http://www.plasticsvallee.fr/"> <span class="icon"> <span> <img src="picto_annuaire_pro.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Plastics Vallée</span></strong> </a></li>
+							<li class="outils"><a href="infos_pratiques.html"> <span class="icon"> <span> <img src="picto_infos_pratiques.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Infos pratiques</span></strong> </a></li>
+							<li class="outils"><a href="Carte_transport_et_mobilite.html"> <span class="icon"> <span> <img src="picto_transport_3.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Carte transport et mobilité</span></strong> </a></li>
+							<li class="outils"><a href="annuaire_des_equipements.html"> <span class="icon"> <span> <img src="picto_outils_annuaire_eqpmts_1.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Annuaire des équipements</span></strong> </a></li>
+							<li class="outils"><a href="marches_publics.html"> <span class="icon"> <span> <img src="picto_marches_publics.png" alt=""> </span> </span> <strong class="text-uppercase"><span>Commande Publique</span></strong> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div role="contentinfo" id="footer" class="clearfix">
+					<div class="container">
+						<div class="interOutilsFooter clearfix">
+							<ul class="list-unstyled row">
+								<li class="logo-footer col-sm-4 col-md-2">
+									<div class="table-element">
+										<div class="table-cell"><img alt=" Logo Haut-Bugey Agglomeration" src="images/logos_hba_filigrane.png" width="120" height="96"></div>
+									</div>
+								</li>
+								<li class="col-sm-4 col-md-4 col-md-offset-1 address">
+									<div class="table-element">
+										<div class="table-cell">Haut-Bugey Agglomération<br>57 rue René Nicod - CS 80502 - 01117<br>OYONNAX CEDEX<br>+33 4 74 81 23 70</div>
+									</div>
+								</li>
+								<li class="col-sm-4 col-md-3 contact">
+									<div class="table-element">
+										<div class="table-cell">Pôle du Plateau d'Hauteville<br>320 rue de la République - BP 21 - 01110<br>HAUTEVILLE-LOMPNES - PLATEAU D'HAUTEVILLE<br>+33 4 74 35 19 52</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<ul class="list-unstyled row">
+							<li class="col-sm-4 col-md-2 contact-link">
+								<div class="table-cell"><a href="contact.html">Nous écrire</a></div>
+								<div class="table-cell"><a href="inscriptionNewsletter.html">e-letter</a></div>
+							</li>
+							<li class="col-sm-4 col-md-3 hidden-md hidden-lg pull-left social">
+								<div class="table-element">
+									<div class="table-cell">
+										<ul class="list-unstyled list-social"><a href="http://www.facebook.com/" target="_blank"><span class="hidden">Facebook</span></a>
+											<li class="twitter"><a href="http://twitter.com/?lang=fr" target="_blank"><span class="hidden">Twitter</span></a></li>
+											<li class="google-plus"><a href="http://plus.google.com/u/0/b/108227735660386417258/108227735660386417258/posts" target="_blank"><span class="hidden">Google plus</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="col-sm-4 col-md-3 hidden-md hidden-lg pull-left meteo text-uppercase">
+								<div class="table-element">
+									<div class="table-cell"><a href="meteo.html">Météo</a></div>
+								</div>
+							</li>
+						</ul>
+						<ul class="clearfix">
+							<li><a href="aide.html">Aide à la navigation et accessibilité</a></li>
+							<li>-</li>
+							<li><a href="plan.html">Plan du site</a></li>
+							<li>-</li>
+							<li><a href="informations_legales.html">Mentions légales</a></li>
+							<li>-</li>
+							<li><a href="credits.html">Crédits</a></li>
+						</ul>
+						<div id="getcolor"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Piwik Image Tracker--><img src="http://piwik.com6-interactive.com/piwik.php?idsite=12&rec=1" style="border:0" alt="">
+		<!-- End Piwik -->
+	</body>
+</html>
