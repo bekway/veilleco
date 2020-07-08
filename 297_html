@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2018 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="/">
+		<title>Conseils communautaires</title>
+		<meta name="generator" content="TYPO3 CMS">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/css/d42b6e1bdf.css?1536828565" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/bootstrap.css?1487666903" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/font_agglo.css?1487666902" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/font-awesome.css?1565965095" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/style.css?1566308968" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/carte_agglo_interact.css?1519741120" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/jquery-eu-cookie-law-popup.css?1494947113" media="all">
+		<link rel="stylesheet" type="text/css" href="/fileadmin/templates/LA/css/cookies_popup.css?1495003863" media="all">
+		<script src="/fileadmin/templates/LA/js/jquery.js?1490085412" type="text/javascript"></script>
+		<script src="/fileadmin/templates/LA/js/bootstrap.js?1487666917" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/LA/js/myscript.js?1573739585" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/Public/JavaScript/Dist/jquery.responsiveimages.min.js?1487667044" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/LA/js/class_body_descente.js?1487687621" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/LA/js/audio/audio.min.js?1493307777" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/LA/js/jquery-eu-cookie-law-popup.js?1499069047" type="text/javascript" async="async"></script>
+		<script src="/fileadmin/templates/LA/js/js.cookie.js?1509639438" type="text/javascript" async="async"></script>
+		<link rel="alternate" href="https://www.lorient-agglo.bzh/" hreflang="fr">
+		<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+		<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<![endif]-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109721963-1"></script>
+		<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109721963-1');
+		</script>
+		<meta name="google-site-verification" content="glDDlfcON_MUY-Ny4uCGVZ-Hfh-hhd1HAeiL0loXFcY">
+		<!-- Facebook Pixel Code -->
+		<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '361213401341770');
+  fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=361213401341770&ev=PageView&noscript=1"></noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+	<body>
+		<div id="c3158" class="frame default" data-type="html">
+			<script type="text/javascript">
+  $( document ).ready(function() {
+  $('a[href$="/portail/boite-mail-agglo/"]').attr("target", "_blank");
+   });
+			</script>
+		</div>
+		<div id="c1436" class="frame default" data-type="list">
+			<!--f:debug title='pugOBJ List ext' >Array</f:debug-->
+			<script>
+ var general_param = {
+    // ---
+    // --- Nom du territoire
+    // ---
+    Commune: "Lorient Agglomération",
+    // ---
+    // --- Code INSEE du territoire
+    // ---
+    INSEE: 118,
+    // ---
+    // --- Coordonnées au centre de la carte par défaut
+    // ---
+    CenterWebCarto : [-373553,6062648],
+
+    CartoZoom : 12,
+
+    CodeCom : null
+ };
+			</script>
+		</div>
+		<div id="c977" class="frame default" data-type="list">
+			<!--f:debug title='pugOBJ List ext' >Array</f:debug-->
+			<script language="javascript">
+
+  var global_set_insee = '';
+  var global_set_insee_secret = '';
+
+  function changeCurrentINSEE(a)
+  {
+    var local_secret = Array();
+    local_secret[56021] = '1af50756577fba2df0028b12';
+    local_secret[56026] = '21fbb096703fc401dae8f056';
+    local_secret[56029] = 'c42c90754524dd9f8b119093';
+    local_secret[56036] = '8d621c780f635236d6adda4b';
+    local_secret[56040] = '677fef48a85ad1e043d99b48';
+    local_secret[56062] = '3873a58b80b5467b7121bf87';
+    local_secret[56063] = '00bb471240f987f122779cf0';
+    local_secret[56069] = 'edf8fd9a3b07cce540566197';
+    local_secret[56078] = '59040cab8591e9de32f3da9a';
+    local_secret[56083] = 'ac04db7d5ea792ed1ca03c0e';
+    local_secret[56089] = 'a4dcfdf6063f976686746be5';
+    local_secret[56090] = 'd72547c12178fbb0ccf2b069';
+    local_secret[56094] = 'b13d4747ee2bcb446deb61ff';
+    local_secret[56098] = '1c13f3ee9bc5d861047eae37';
+    local_secret[56101] = '5e960ffc0160b5c0b45da2a0';
+    local_secret[56104] = 'aadc35590c55c30a95b5d6f9';
+    local_secret[56107] = '5e890b6e0fe520ba07e042eb';
+    local_secret[56118] = 'aa81e84f5de06e03d105a4f3';
+    local_secret[56121] = '485761f04ca4bcaf50409ef8';
+    local_secret[56130] = 'c5c1209f38566d49faeb6e7c';
+    local_secret[56148] = '0171f96f48375d1581a34a79';
+    local_secret[56162] = '89a0b2eb99ddb253bab8fc3f';
+    local_secret[56166] = 'ecad6830d8a13a79e55f0dfe';
+    local_secret[56169] = 'eaa3a2c90626aa12a3f07b7a';
+    local_secret[56179] = '64ea446f7b1ee27930695011';
+    local_secret[56181] = '86407a433ab340e040fab394';
+    local_secret[56185] = 'b6a474015adc7f4f93ea40fe';
+    local_secret[56188] = '38d6e094dea87dfb9aedaa04';
+    local_secret[56193] = '9f9af43e520a1d0e2e831946';
+    local_secret[56220] = '05374c3ede5ce63bcdf0577c';
+
+    global_set_insee = (a.value || a.options[a.selectedIndex].value);
+    global_set_insee_secret = local_secret[global_set_insee];
+
+    return true;
+  }
+			</script>
+		</div>
+		<link href="/fileadmin/templates/LA/lightbox/css/lightbox.css" rel="stylesheet">
+		<script src="/fileadmin/templates/LA/lightbox/js/lightbox.js"></script>
+		<!-- Piwik -->
+		<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://www.lorient-agglo.bzh/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+		</script>
+		<!-- End Piwik Code -->
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top" id="navBarLA" role="navigation">
+				<style>
+      .plus::before {
+        content: "A+";
+      }
+      .moins::before {
+        content: "A-";
+      }
+      
+				</style>
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header"><button id="button_mobile" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="visibility:hidden !important;"> <span class="sr-only">Toggle navigation</span> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button> <a href="/" title="Lorient Agglomération" class="navbar-brand navbar-brand-image"> <img src="/fileadmin/templates/LA/images/logo_lorient_agglo_ok.png" alt="Lorient Agglomération"> </a></div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="sur-header">
+						<ul class="icones-mob hidden-lg">
+							<li>| <a class="declenchement_collapse recherchelink" data-cible="#recherche" href="javascript:;" style="cursor: pointer;"> <i class="fa fa-search" aria-hidden="true"></i> </a></li>
+							<li>| <a onclick="$('body').css('font-size','180%');" href="javascript:;" class="plus"></a></li>
+							<li><a onclick="$('body').css('font-size','1.55rem');" href="javascript:;" class="moins"></a></li>
+							<li>| <a class="declenchement_collapse connexionlink" data-cible="#connexion" href="javascript:;" style="cursor: pointer;" title="Se connecter"> <i class="fa fa-user" aria-hidden="true"></i> </a></li>
+						</ul>
+						<p><a href="/actualites/e-brezhoneg/">Brezhoneg</a>|<a href="/lagglomeration/25-communes/">25 communes</a></p>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li data=""><button class="declenchement_collapse agglomerationlink" data-cible="#LA_nav_menu_41"> <span class="item-menu-txt">L’AGGLOMÉRATION</span> <span class="item-menu-img"></span> </button></li>
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li data=""><button class="declenchement_collapse agglomerationlink" data-cible="#LA_nav_menu_39"> <span class="item-menu-txt">VOS SERVICES</span> <span class="item-menu-img"></span> </button></li>
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li data=""><button class="declenchement_collapse agglomerationlink" data-cible="#LA_nav_menu_38"> <span class="item-menu-txt">EN ACTIONS</span> <span class="item-menu-img"></span> </button></li>
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li data=""><button class="declenchement_collapse agglomerationlink" data-cible="#LA_nav_menu_40"> <span class="item-menu-txt">À VIVRE</span> <span class="item-menu-img"></span> </button></li>
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li data=""><button class="declenchement_collapse agglomerationlink" data-cible="#LA_nav_menu_42"> <span class="item-menu-txt">ACTUALITÉS</span> <span class="item-menu-img"></span> </button></li>
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<!-- Permet de ne pas prendre en compte 'VOS SERVICES' et FOOTER -->
+							<li class="visible-xs visible-sm"><a class="declenchement_collapse recherchelink" data-cible="#recherche" href="javascript:;" style="cursor: pointer;" title="Rechercher sur le site"> <i class="fa fa-search" aria-hidden="true"></i> <span class="item-menu-txt" style="margin-left: 30px;">Rechercher</span> </a></li>
+							<li class="visible-xs visible-sm"><a class="declenchement_collapse connexionlink" data-cible="#connexion" href="javascript:;" style="cursor: pointer;" title="Se connecter"> <i class="fa fa-user" aria-hidden="true"></i> <span class="item-menu-txt" style="margin-left: 30px;">Se connecter</span> </a></li>
+						</ul>
+						<ul class="nav navbar-nav icones visible-lg">
+							<!--li style='visibility : hidden !important'-->
+							<li><a class="declenchement_collapse recherchelink" data-cible="#recherche" href="javascript:;" style="cursor: pointer;" title="Rechercher sur le site"> <i class="fa fa-search" aria-hidden="true"></i> </a></li>
+							<li><a onclick="$('body').css('font-size','180%');" href="javascript:;" class="plus" title="Augmenter la taille du texte"></a></li>
+							<!--li>
+          <a onclick="$('body').css('font-size','100%');"><i class="fa fa-font a-norm" aria-hidden="true"> </i></a>
+        </li-->
+							<li><a onclick="$('body').css('font-size','1.55rem');" href="javascript:;" class="moins" title="Réduire la taille du texte"></a></li>
+							<li><a class="declenchement_collapse connexionlink" data-cible="#connexion" href="javascript:;" style="cursor: pointer;" title="Se connecter"> <i class="fa fa-user" aria-hidden="true"></i> </a></li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+				<div class="to_collapse" id="LA_nav_menu_41">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Présentation" href="/lagglomeration/presentation/"> Présentation </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="25 communes" href="/lagglomeration/25-communes/"> 25 communes </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Maison de l'Agglomération" href="/lagglomeration/maison-de-lagglomeration/"> Maison de l'Agglomération </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Contact" href="/lagglomeration/contact/"> Contact </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Elus communautaires" href="/lagglomeration/elus-communautaires/"> Elus communautaires </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Commissions" href="/lagglomeration/commissions/"> Commissions </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Conseils communautaires" href="/lagglomeration/conseils-communautaires/"> Conseils communautaires </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Compétences" href="/lagglomeration/competences/"> Compétences </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Services" href="/lagglomeration/services/"> Services </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Partenaires" href="/lagglomeration/partenaires/"> Partenaires </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Recrutements" href="/lagglomeration/recrutements/"> Recrutements </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Budget" href="/lagglomeration/budget/"> Budget </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Documents officiels" href="/lagglomeration/documents-officiels/"> Documents officiels </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Pays de Lorient" href="/lagglomeration/pays-de-lorient/"> Pays de Lorient </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_41" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_39">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Covid-19" href="/vos-services/covid-19/"> Covid-19 </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Tous vos services" href="/vos-services/tous-vos-services/"> Tous vos services </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Tous les formulaires" href="/vos-services/tous-les-formulaires/"> Tous les formulaires </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Déchets" href="/vos-services/dechets/"> Déchets </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="FAQ Déchets Covid-19" href="/vos-services/faq-covid-19/"> FAQ Déchets Covid-19 </a></li>
+											<li><a title="Collecte et tri des déchets" href="/vos-services/dechets/collecte-et-tri-des-dechets/"> Collecte et tri des déchets </a></li>
+											<li><a title="Déchèteries" href="/vos-services/dechets/decheteries/"> Déchèteries </a></li>
+											<li><a title="Réduire ses déchets" href="/vos-services/dechets/reduire-ses-dechets/"> Réduire ses déchets </a></li>
+											<li><a title="Jardinage au naturel" href="/vos-services/dechets/jardinage-au-naturel/"> Jardinage au naturel </a></li>
+											<li><a title="Comptoir du réemploi" href="/vos-services/dechets/comptoir-du-reemploi/"> Comptoir du réemploi </a></li>
+											<li><a title="Demande de bacs et guides" href="/vos-services/dechets/demande-de-bacs-et-guides/"> Demande de bacs et guides </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Eau" href="/vos-services/eau/"> Eau </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="FAQ Eau Covid-19" href="/vos-services/eau/faq-eau-covid-19/"> FAQ Eau Covid-19 </a></li>
+											<li><a title="Eau et assainissement" href="/vos-services/eau/eau-et-assainissement/"> Eau et assainissement </a></li>
+											<li><a title="Vos démarches" href="/vos-services/eau/vos-demarches/"> Vos démarches </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Habitat et urbanisme" href="/vos-services/habitat-et-urbanisme/"> Habitat et urbanisme </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="FAQ Habitat Covid-19" href="/vos-services/habitat-et-urbanisme/faq-habitat-covid-19/"> FAQ Habitat Covid-19 </a></li>
+											<li><a title="FAQ Urbanisme Covid-19" href="/vos-services/habitat-et-urbanisme/faq-urbanisme-covid-19/"> FAQ Urbanisme Covid-19 </a></li>
+											<li><a title="Espace info habitat" href="/vos-services/habitat-et-urbanisme/espace-info-habitat/"> Espace info habitat </a></li>
+											<li><a title="Vos démarches d'urbanisme" href="/vos-services/habitat-et-urbanisme/vos-demarches-durbanisme/"> Vos démarches d'urbanisme </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Déplacements" href="/vos-services/deplacements/"> Déplacements </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Transports" href="/vos-services/transports/"> Transports </a></li>
+											<li><a title="Ecomobilité" href="/vos-services/deplacements/ecomobilite/"> Ecomobilité </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Emploi" href="/vos-services/emploi/"> Emploi </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Mission locale" href="/vos-services/emploi/mission-locale/"> Mission locale </a></li>
+											<li><a title="Dispositifs d'insertion" href="/vos-services/emploi/dispositifs-dinsertion/"> Dispositifs d'insertion </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Marchés publics" href="/vos-services/marches-publics/"> Marchés publics </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Programme Leader" href="/vos-services/programme-leader/"> Programme Leader </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Animations scolaires" href="/vos-services/animations-developpement-durable/"> Animations scolaires </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Accessibilité et handicap" href="/vos-services/accessibilite-et-handicap/"> Accessibilité et handicap </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Studios de répétition" href="/vos-services/studios-de-repetition/"> Studios de répétition </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Taxe de séjour" href="/vos-services/taxe-de-sejour/"> Taxe de séjour </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Fourrière animale" href="/vos-services/fourriere-animale/"> Fourrière animale </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Gens du voyage" href="/vos-services/gens-du-voyage/"> Gens du voyage </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Boutique de droit" href="/vos-services/boutique-de-droit/"> Boutique de droit </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Cartes de bruit stratégiques" href="/vos-services/cartes-de-bruit-strategiques/"> Cartes de bruit stratégiques </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_39" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_38">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Gare de Lorient Bretagne Sud" href="/en-actions/gare-de-lorient-bretagne-sud/"> Gare de Lorient Bretagne Sud </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Nouvelle gare" href="/en-actions/gare-de-lorient-bretagne-sud/nouvelle-gare/"> Nouvelle gare </a></li>
+											<li><a title="Effet BGV" href="/en-actions/gare-de-lorient-bretagne-sud/effet-bgv/"> Effet BGV </a></li>
+											<li><a title="Pôle d'échanges multimodal" href="/en-actions/gare-de-lorient-bretagne-sud/pole-dechanges-multimodal/"> Pôle d'échanges multimodal </a></li>
+											<li><a title="Quartier Lorient Odyssée" href="/en-actions/gare-de-lorient-bretagne-sud/quartier-lorient-odyssee/"> Quartier Lorient Odyssée </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Transition énergétique" href="/en-actions/transition-energetique/"> Transition énergétique </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Plan climat air énergie" href="/en-actions/transition-energetique/plan-climat-air-energie/"> Plan climat air énergie </a></li>
+											<li><a title="Eoliennes flottantes de Groix" href="/en-actions/eoliennes-flottantes-de-groix/"> Eoliennes flottantes de Groix </a></li>
+											<li><a title="Agenda 21" href="/en-actions/agenda-21-et-plan-climat/"> Agenda 21 </a></li>
+											<li><a title="SOLENN" href="/en-actions/solenn/"> SOLENN </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Handicap Innovation Territoire" href="/en-actions/handicap-innovation-territoire/"> Handicap Innovation Territoire </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Dragages" href="/en-actions/dragages/"> Dragages </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Hydrophone" href="/en-actions/hydrophone/"> Hydrophone </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Programme local de l'habitat" href="/en-actions/programme-local-de-lhabitat/"> Programme local de l'habitat </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Charte agriculture & alimentation" href="/en-actions/charte-de-lagriculture/"> Charte agriculture & alimentation </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Natura 2000" href="/en-actions/natura-2000/"> Natura 2000 </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Triskell" href="/en-actions/triskell/"> Triskell </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Politique numérique" href="/en-actions/politique-numerique/"> Politique numérique </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Schéma territorial du numérique" href="/en-actions/politique-numerique/schema-territorial-du-numerique/"> Schéma territorial du numérique </a></li>
+											<li><a title="Applications mobiles" href="/en-actions/politique-numerique/appli-mobile/"> Applications mobiles </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Certification des convocations" href="/en-actions/certification-des-convocations-aux-seances/"> Certification des convocations </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Enquêtes publiques" href="/en-actions/enquetes-publiques/"> Enquêtes publiques </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Appels à projets" href="/en-actions/appels-a-projets/"> Appels à projets </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Prix et labels" href="/en-actions/prix-et-labels/"> Prix et labels </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_38" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_40">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Lorient Bretagne Sud" href="/a-vivre/lorient-bretagne-sud/"> Lorient Bretagne Sud </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Nautisme" href="/a-vivre/nautisme/"> Nautisme </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Lorient La Base" href="/a-vivre/nautisme/lorient-la-base/"> Lorient La Base </a></li>
+											<li><a title="Pôle course au large" href="/a-vivre/nautisme/pole-course-au-large/"> Pôle course au large </a></li>
+											<li><a title="Lorient-Les Bermudes-Lorient" href="/a-vivre/nautisme/lorient-les-bremudes-lorient/"> Lorient-Les Bermudes-Lorient </a></li>
+											<li><a title="Tara" href="/a-vivre/nautisme/tara/"> Tara </a></li>
+											<li><a title="Team Jolokia" href="/a-vivre/nautisme/team-jolokia/"> Team Jolokia </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Développement économique" href="/a-vivre/developpement-economique/"> Développement économique </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Covid-19 - Mesures de soutien" href="/a-vivre/developpement-economique/covid-19-mesures-de-soutien/"> Covid-19 - Mesures de soutien </a></li>
+											<li><a title="Pass commerce et artisanat" href="/a-vivre/developpement-economique/pass-commerce-et-artisanat/"> Pass commerce et artisanat </a></li>
+											<li><a title="Appui aux entreprises" href="/a-vivre/developpement-economique/appui-aux-entreprises/"> Appui aux entreprises </a></li>
+											<li><a title="Pépinières d’entreprises" href="/a-vivre/developpement-economique/pepinieres-dentreprises/"> Pépinières d’entreprises </a></li>
+											<li><a title="Soutien à l’innovation" href="/a-vivre/developpement-economique/soutien-a-linnovation/"> Soutien à l’innovation </a></li>
+											<li><a title="Aide aux projets touristiques" href="/a-vivre/developpement-economique/aide-aux-projets-touristiques/"> Aide aux projets touristiques </a></li>
+											<li><a title="Rencontres des acteurs du tourisme" href="/a-vivre/developpement-economique/rencontres-des-acteurs-du-tourisme/"> Rencontres des acteurs du tourisme </a></li>
+											<li><a title="Parcs d'activités communautaires" href="/a-vivre/developpement-economique/parcs-dactivites-communautaires/"> Parcs d'activités communautaires </a></li>
+											<li><a title="Avis d'occupation du domaine public" href="/a-vivre/developpement-economique/avis-doccupation-du-domaine-public/"> Avis d'occupation du domaine public </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Lorient Odyssée" href="/a-vivre/lorient-odyssee/"> Lorient Odyssée </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Enseignement supérieur et recherche" href="/a-vivre/enseignement-superieur-et-recherche/"> Enseignement supérieur et recherche </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Port de pêche Lorient-Keroman" href="/a-vivre/port-de-peche-lorient-keroman/"> Port de pêche Lorient-Keroman </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Espaces naturels et littoraux" href="/a-vivre/espaces-naturels-et-littoraux/"> Espaces naturels et littoraux </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Quartiers d’habitat durable" href="/a-vivre/quartiers-dhabitat-durable/"> Quartiers d’habitat durable </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Equipes sportives" href="/a-vivre/equipes-sportives/"> Equipes sportives </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Tourisme et loisirs" href="/a-vivre/tourisme-et-loisirs/"> Tourisme et loisirs </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Evénements" href="/a-vivre/tourisme-et-loisirs/evenements/"> Evénements </a></li>
+											<li><a title="16 plages surveillées" href="/a-vivre/tourisme-et-loisirs/16-plages-surveillees/"> 16 plages surveillées </a></li>
+											<li><a title="Espaces muséographiques" href="/a-vivre/tourisme-et-loisirs/espaces-museographiques/"> Espaces muséographiques </a></li>
+											<li><a title="Ports de plaisance" href="/a-vivre/tourisme-et-loisirs/ports-de-plaisance/"> Ports de plaisance </a></li>
+											<li><a title="Centres nautiques" href="/a-vivre/tourisme-et-loisirs/centres-nautiques/"> Centres nautiques </a></li>
+											<li><a title="Loisirs sportifs" href="/a-vivre/tourisme-et-loisirs/loisirs-sportifs/"> Loisirs sportifs </a></li>
+											<li><a title="Expos-Congrès" href="/a-vivre/tourisme-et-loisirs/expos-congres/"> Expos-Congrès </a></li>
+											<li><a title="Hébergements" href="/a-vivre/tourisme-et-loisirs/hebergements/"> Hébergements </a></li>
+											<li><a title="Marchés" href="/a-vivre/tourisme-et-loisirs/marches/"> Marchés </a></li>
+											<li><a title="Randonnées" href="/a-vivre/tourisme-et-loisirs/randonnees/"> Randonnées </a></li>
+											<li><a title="Plan vélo" href="/a-vivre/tourisme-et-loisirs/plan-velo/"> Plan vélo </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_40" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_42">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Toutes les actualités" href="/actualites/toutes-les-actualites/?no_cache=1"> Toutes les actualités </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Agenda" href="/actualites/agenda/"> Agenda </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Vidéos" href="/actualites/videos/"> Vidéos </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Webcams" href="/actualites/webcams/"> Webcams </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Indice de qualité de l'air" href="/actualites/indice-de-qualite-de-lair/"> Indice de qualité de l'air </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Magazine les Nouvelles" href="/actualites/magazine-les-nouvelles/"> Magazine les Nouvelles </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Tous les articles" href="/actualites/magazine-les-nouvelles/tous-les-articles/"> Tous les articles </a></li>
+											<li><a title="Les Nouvelles n°49" href="/actualites/magazine-les-nouvelles/les-nouvelles-n49/"> Les Nouvelles n°49 </a></li>
+											<li><a title="Les Nouvelles n°48" href="/actualites/magazine-les-nouvelles/les-nouvelles-n48/"> Les Nouvelles n°48 </a></li>
+											<li><a title="Les Nouvelles n°47" href="/actualites/magazine-les-nouvelles/les-nouvelles-n47/"> Les Nouvelles n°47 </a></li>
+											<li><a title="Mon Agglomération et moi" href="/actualites/magazine-les-nouvelles/mon-agglomeration-et-moi/"> Mon Agglomération et moi </a></li>
+											<li><a title="Les Nouvelles : archives" href="/actualites/magazine-les-nouvelles/les-nouvelles-archives/"> Les Nouvelles : archives </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Lorient Agglomération Express" href="/actualites/lorient-agglomeration-express/"> Lorient Agglomération Express </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Photos 360°" href="/actualites/photos-360/"> Photos 360° </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Capteurs Maison de l'Agglomération" href="/actualites/capteurs-maison-de-lagglomeration/"> Capteurs Maison de l'Agglomération </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="E brezhoneg" href="/actualites/e-brezhoneg/"> E brezhoneg </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Professionnels" href="/actualites/professionnels/"> Professionnels </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Espace presse" href="/actualites/espace-presse/"> Espace presse </a></li>
+											<li><a title="Téléchargements" href="/actualites/espace-pro/"> Téléchargements </a></li>
+											<li><a title="Notaires" href="/actualites/espace-pro/notaires/"> Notaires </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Newsletter" href="/actualites/newsletter/"> Newsletter </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_42" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_209">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Déchèteries" href="/vos-services/decheteries/"> Déchèteries </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Collecte des déchets" href="/vos-services/collecte-des-dechets/"> Collecte des déchets </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Eau" href="/vos-services/eau/"> Eau </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Transport" href="/vos-services/transport/"> Transport </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Habitat (E.I.H)" href="/vos-services/habitat-eih/"> Habitat (E.I.H) </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Entreprendre" href="/vos-services/entreprendre/"> Entreprendre </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Ports de plaisance" href="/vos-services/ports-de-plaisance/"> Ports de plaisance </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Handicap" href="/vos-services/handicap/"> Handicap </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Délibérations" href="/vos-services/deliberations/"> Délibérations </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Contact" href="/vos-services/contact/"> Contact </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Fourrière" href="/vos-services/fourriere/"> Fourrière </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Espace presse" href="/vos-services/espace-presse/"> Espace presse </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Boutique de droit" href="/boutique-de-droit/"> Boutique de droit </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Agriculture" href="/vos-services/agriculture/"> Agriculture </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Agenda" href="/vos-services/agenda/"> Agenda </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Enquêtes publiques" href="/vos-services/enquetes-publiques/"> Enquêtes publiques </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Réduire ses déchets" href="/vos-services/reduire-ses-dechets/"> Réduire ses déchets </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Gens du voyage" href="/gens-du-voyage/"> Gens du voyage </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Marchés publics" href="/marches-publics/"> Marchés publics </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Newsletter" href="/vos-services/newsletter/"> Newsletter </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Offres d'emploi" href="/vos-services/offres-demploi/"> Offres d'emploi </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="SOLENN" href="/vos-services/solenn/"> SOLENN </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Studios de répétition" href="/studios-de-repetition/"> Studios de répétition </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Taxe de séjour" href="/taxe-de-sejour/"> Taxe de séjour </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Tourisme" href="/vos-services/tourisme/"> Tourisme </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_209" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_245">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="La Cité de la Voile Eric Tabarly" href="/les-autres-sites-de-lagglomeration/la-cite-de-la-voile-eric-tabarly/"> La Cité de la Voile Eric Tabarly </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Le haras national d’Hennebont" href="/les-autres-sites-de-lagglomeration/le-haras-national-dhennebont/"> Le haras national d’Hennebont </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Palais des congrès et Parc des expositions" href="/les-autres-sites-de-lagglomeration/palais-des-congres-et-parc-des-expositions/"> Palais des congrès et Parc des expositions </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Salle de concert et espace de création, de production et de diffusion des musiques actuelles" href="/les-autres-sites-de-lagglomeration/salle-de-concert-et-espace-de-creation-de-production-et-de-diffusion-des-musiques-actuelles/"> Salle de concert et espace de création, de production et de diffusion des musiques actuelles </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Sellor, ports de plaisance" href="/les-autres-sites-de-lagglomeration/sellor-ports-de-plaisance/"> Sellor, ports de plaisance </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Patinoire du Scorff Lorient Bretagne Sud" href="/les-autres-sites-de-lagglomeration/patinoire-du-scorff-lorient-bretagne-sud/"> Patinoire du Scorff Lorient Bretagne Sud </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Office de tourisme de Lorient Bretagne Sud" href="/les-autres-sites-de-lagglomeration/office-de-tourisme-de-lorient-bretagne-sud/"> Office de tourisme de Lorient Bretagne Sud </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Le réseau des transports collectifs de Lorient Agglomération" href="/les-autres-sites-de-lagglomeration/le-reseau-des-transports-collectifs-de-lorient-agglomeration/"> Le réseau des transports collectifs de Lorient Agglomération </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Sellor, ports de plaisance et équipements nautiques" href="/les-autres-sites-de-lagglomeration/sellor-ports-de-plaisance-et-equipements-nautiques/"> Sellor, ports de plaisance et équipements nautiques </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Agence d'urbanisme, de développement économique et Technopôle du Pays de Lorient" href="/les-autres-sites-de-lagglomeration/agence-durbanisme-de-developpement-economique-et-technopole-du-pays-de-lorient/"> Agence d'urbanisme, de développement économique et Technopôle du Pays de Lorient </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Port de pêche de Lorient - Keroman" href="/les-autres-sites-de-lagglomeration/port-de-peche-de-lorient-keroman/"> Port de pêche de Lorient - Keroman </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Mission locale Réseaux pour l'emploi" href="/les-autres-sites-de-lagglomeration/mission-locale-reseaux-pour-lemploi/"> Mission locale Réseaux pour l'emploi </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Espace Info Habitat" href="/les-autres-sites-de-lagglomeration/espace-info-habitat/"> Espace Info Habitat </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Pôle course et événements nautiques" href="/les-autres-sites-de-lagglomeration/pole-course-et-evenements-nautiques/"> Pôle course et événements nautiques </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Schéma de Cohérence Territoriale du Pays de Lorient" href="/les-autres-sites-de-lagglomeration/schema-de-coherence-territoriale-du-pays-de-lorient/"> Schéma de Cohérence Territoriale du Pays de Lorient </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_245" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="LA_nav_menu_227">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-3 module">
+								<ul class="sous-menu">
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Infos légales" href="/footer/infos-legales/"> Infos légales </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Contact" href="/footer/infos-legales/contact/"> Contact </a></li>
+											<li><a title="Mentions légales" href="/footer/infos-legales/mentions-legales/"> Mentions légales </a></li>
+											<li><a title="Protection des données" href="/footer/infos-legales/politique-de-protection-des-donnees/"> Protection des données </a></li>
+											<li><a title="Plan de site" href="/footer/infos-legales/plan-de-site/"> Plan de site </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="Professionnels" href="/footer/professionnel/"> Professionnels </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="Espace presse" href="/footer/professionnel/espace-presse/"> Espace presse </a></li>
+											<li><a title="Téléchargements" href="/footer/professionnel/espace-pro/"> Téléchargements </a></li>
+											<li><a title="Notaires" href="/footer/professionnels/notaires/"> Notaires </a></li>
+											<li><a title="Intranet" href="/footer/professionnel/intranet/"> Intranet </a></li>
+										</ul>
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="NEWSLETTER" href="/footer/newsletter/"> NEWSLETTER </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+									</li>
+									<li>
+										<!-- Désactiver les liens de la page niveau 1 lorsqu'elle a des sous pages --><a title="RÉSEAUX" href="/footer/reseaux/"> RÉSEAUX </a>
+										<!-- Liste des sous pages de niveau 2 si elles existent -->
+										<ul class="sous-sous-menu">
+											<li><a title="facebook-f" href="/footer/reseaux/facebook/"> facebook-f </a></li>
+											<li><a title="twitter" href="/footer/reseaux/twitter/"> twitter </a></li>
+											<li><a title="youtube" href="/footer/reseaux/dailymotion/"> youtube </a></li>
+											<li><a title="instagram" href="/footer/reseaux/instagram/"> instagram </a></li>
+											<li><a title="linkedin-in" href="/footer/reseaux/linkedin/"> linkedin-in </a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_227" href="javascript:;"> <img class="hidden-sm hidden-xs" src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="recherche">
+					<div class="texte_dropdown">
+						<div class="row">
+							<!--div class="col-md-12">
+                <form class="subscribe-form">
+                  <input id="texte-rechercher" name="rechercher" placeholder="Rechercher dans le site" autocomplete="off" type="text">
+                  <input id="ok-rechercher" name="submit" value="> Recherche" type="submit">
+                </form>
+              </div-->
+							<div class="col-md-12">
+								<div id="c1152" class="frame default" data-type="list">
+									<!--f:debug title='pugOBJ List ext' >Array</f:debug-->
+									<form method="post" class="subscribe-form" id="tx_indexedsearch_LA" action="/recherche/?tx_indexedsearch_pi2%5Baction%5D=search&tx_indexedsearch_pi2%5Bcontroller%5D=Search&cHash=ac73d1c804cbbdca91896009ec8a17cc">
+										<div><input type="hidden" name="tx_indexedsearch_pi2[__referrer][@extension]" value="LaParam"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@vendor]" value="LorientAgglo"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@controller]" value="Module"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@action]" value="list"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][arguments]" value="YTowOnt9eeeaa09ddc5acb9cdcaf8e9517d1c8a3de0abcc2"> <input type="hidden" name="tx_indexedsearch_pi2[__referrer][@request]" value='a:4:{s:10:"@extension";s:7:"LaParam";s:11:"@controller";s:6:"Module";s:7:"@action";s:4:"list";s:7:"@vendor";s:12:"LorientAgglo";}032aec568bdd1ddb4138747740af3351e10bb5d1'> <input type="hidden" name="tx_indexedsearch_pi2[__trustedProperties]" value='a:1:{s:6:"search";a:15:{s:9:"_sections";i:1;s:13:"_freeIndexUid";i:1;s:3:"ext";i:1;s:10:"searchType";i:1;s:14:"defaultOperand";i:1;s:9:"mediaType";i:1;s:9:"sortOrder";i:1;s:5:"group";i:1;s:11:"languageUid";i:1;s:4:"desc";i:1;s:15:"numberOfResults";i:1;s:14:"extendedSearch";i:1;s:4:"test";i:1;s:5:"sword";i:1;s:12:"submitButton";i:1;}}86325112af52346970b67145daa34edd30db1e46'></div>
+										<div class="tx-indexedsearch-hidden-fields"><input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0"> <input id="tx_indexedsearch_freeIndexUid" type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_"> <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][searchType]" value="1"> <input type="hidden" name="tx_indexedsearch_pi2[search][defaultOperand]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[search][mediaType]" value="-1"> <input type="hidden" name="tx_indexedsearch_pi2[search][sortOrder]" value="rank_flag"> <input type="hidden" name="tx_indexedsearch_pi2[search][group]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="-1"> <input type="hidden" name="tx_indexedsearch_pi2[search][desc]" value=""> <input type="hidden" name="tx_indexedsearch_pi2[search][numberOfResults]" value="20"> <input type="hidden" name="tx_indexedsearch_pi2[search][extendedSearch]" value="0"> <input type="hidden" name="tx_indexedsearch_pi2[search][test]" value="LaFormHarlem"></div><input placeholder="Rechercher dans le site" class="globalsearch-searchbox-text" id="texte-rechercher" type="text" name="tx_indexedsearch_pi2[search][sword]"> <input id="ok-rechercher" type="submit" value="> Recherche" name="tx_indexedsearch_pi2[search][submitButton]"></form>
+									<script type="text_javascript">
+
+	$('#ok-rechercher').on('submit', function() {
+		console.log('test form');
+	});
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_" href="javascript:;"><img src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+				<div class="to_collapse" id="connexion">
+					<div class="texte_dropdown">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="c1165" class="frame frame-default frame-type-login frame-layout-0">
+									<!--
+
+		BEGIN: Content of extension "felogin", plugin "tx_felogin_pi1"
+
+	-->
+									<div class="tx-felogin-pi1">
+										<!--<h3>Bienvenue</h3>-->
+										<!--<div>Connectez vous pour accéder à l'intranet</div>-->
+										<!-- ###LOGIN_FORM### -->
+										<form action="/lagglomeration/conseils-communautaires/" target="_top" method="post" onsubmit="; return true;" class="centered-form">
+											<fieldset>
+												<!--legend>Identification</legend-->
+												<div class="form-group"><label for="user">Nom d'utilisateur</label> <input class="form-control" type="text" id="user" name="user" value=""></div>
+												<div class="form-group"><label for="pass">Mot de passe</label> <input class="form-control" type="password" id="pass" name="pass" value="" data-rsa-encryption=""></div>
+												<div class="form-group">
+													<!--input class="btn btn-default submit-styled" type="submit" name="submit" value="Identification" /--><input class="btn btn-default submit-styled" type="submit" name="submit" value="Se connecter"></div>
+												<div class="felogin-hidden"><input type="hidden" name="logintype" value="login"> <input type="hidden" name="pid" value="294,295,296,297,298,299,305,287,294,295,296,297,298,299,288,294,295,296,297,298,299,305,287,288,285"> <input type="hidden" name="redirect_url" value="/"> <input type="hidden" name="tx_felogin_pi1[noredirect]" value="0"></div>
+											</fieldset>
+										</form>
+										<!-- ###LOGIN_FORM### -->
+									</div>
+									<!-- END: Content of extension "felogin", plugin "tx_felogin_pi1" -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fermer_dropdown"><a data-cible="#LA_nav_menu_" href="javascript:;"><img src="/fileadmin/templates/LA/images/remonter-gr-blanc.png" alt=""> <span class="sous-menu-mob visible-sm visible-xs"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </span> </a></div>
+				</div>
+			</nav>
+		</header>
+		<!--TYPO3SEARCH_begin-->
+		<!-- Page Content -->
+		<div class="contenu">
+			<div class="col-md-8 col-sm-push-4 contenu-droite">
+				<!-- /.Haut Nouvelles et Webcam -->
+				<div class="container-fluid">
+					<!-- Projects Row -->
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Fil d'Ariane -->
+							<!--TYPO3SEARCH_end-->
+							<p class="ariane">
+								<!-- Permet de ne pas afficher les pages type "L'AGGLOMERATION", "LES SERVICES" ... : -->
+								<!--f:if condition="0 != 1">
+                <f:then--><a title="Accueil" href="/"> Accueil </a>
+								<!--/f:then>
+            </f:if-->
+								<!-- Permet de ne pas afficher les pages type "L'AGGLOMERATION", "LES SERVICES" ... : -->
+								<!--f:if condition="1 != 1">
+                <f:then--><a title="L’AGGLOMÉRATION" href="/lagglomeration/"> > L’agglomération </a>
+								<!--/f:then>
+            </f:if-->
+								<!-- Permet de ne pas afficher les pages type "L'AGGLOMERATION", "LES SERVICES" ... : -->
+								<!--f:if condition="2 != 1">
+                <f:then-->
+								<!-- Avec cette méthode on perd les majuscule des titres -->> Conseils communautaires
+								<!--/f:then>
+            </f:if-->
+							</p>
+							<!--TYPO3SEARCH_begin-->
+							<h1 class="h1-droite">Conseils communautaires</h1>
+							<!--  -->
+							<div id="c2955" class="frame default" data-type="image">
+								<div class="image-center image-above">
+									<!--f:debug title="Gallery">Array</f:debug-->
+									<div class="row gallery" data-equalheight="container">
+										<figure class="image"><img src="/fileadmin/user_upload/Actualites/2020/En-tete_COVID-19_Information_au_public.PNG" data-src="/fileadmin/user_upload/Actualites/2020/En-tete_COVID-19_Information_au_public.PNG" data-bigger="/fileadmin/user_upload/Actualites/2020/En-tete_COVID-19_Information_au_public.PNG" data-large="/fileadmin/user_upload/Actualites/2020/En-tete_COVID-19_Information_au_public.PNG" data-medium="/fileadmin/_processed_/c/f/csm_En-tete_COVID-19_Information_au_public_0f5a1132d3.png" data-small="/fileadmin/_processed_/c/f/csm_En-tete_COVID-19_Information_au_public_9b8f9c5e79.png" title="" alt="En-tête COVID-19_Information au public" class="lazyload  img-responsive" data-preload="true" style="max-width:100%;" itemprop="image">
+											<figcaption class="caption"></figcaption>
+										</figure>
+										<!--class="lightbox" class qui était dans le a -->
+									</div>
+								</div>
+							</div>
+							<div id="c2956" class="frame default" data-type="text">
+								<p><strong>/!\ [Coronavirus - COVID 19] Accès aux actes de Lorient Agglomération</strong></p>
+								<p>Conformément aux dispositions de l’article 7 de l’ordonnance n° 2020-391 du 1er avril 2020 visant à assurer la continuité du fonctionnement des institutions locales et de l'exercice des compétences des collectivités territoriales et des établissements publics locaux afin de faire face à l'épidémie de covid-19, pendant l’état d’urgence sanitaire, la publicité des actes de Lorient Agglomération est non seulement assurée par voie d’affichage au siège de la maison de l’agglomération mais également sous forme électronique, sur son site internet.</p>
+							</div>
+							<div id="c2965" class="frame default" data-type="list">
+								<!--f:debug title='pugOBJ List ext' >Array</f:debug-->
+								<link rel="stylesheet" type="text/css" href="/ressources/jqwidgets/styles/jqx.base.css">
+								<style>
+	.jqx-grid-column-header div div{
+		position : relative;
+		bottom : 6px;
+	}
+								</style>
+								<script type="text/javascript" defer src="/ressources/jqwidgets/jqx-all.js"></script>
+								<script type="text/javascript">
+	var acte_code_magic = 'cd593f4ebce3f28bc1458028';
+	var urlListDelib = '/apps/portail_ged/liste_acte.php?collectivite=AGGLO&type=DELIB&CODEMAGIC='+acte_code_magic;
+	var urlGetFichier = '/apps/portail_ged/download_acte.php?collectivite=AGGLO&type=DELIB&uid=--uid--&CODEMAGIC=cd593f4ebce3f28bc1458028';
+	var mode_acte = "delib";
+	var collectivite = "AGGLO";
+var localizationobj;
+
+var getLocalization = function () {
+	return localizationobj;
+};
+
+// Fonction de formatage des données ("format" JQX avant passation au tableau)
+function FormatListeActes(liste_acte){
+	var listeOK = Array();
+	for(ii=0; ii<liste_acte.length; ii++){
+		var acte_en_cours = liste_acte[ii];
+		
+		var urlLienActe = urlGetFichier.replace("--uid--", acte_en_cours.uid);
+		acte_en_cours.lien_acte = "<a target='_blank' href='"+urlLienActe+"'><img src='/ressources//portail_ao_delib/images/fileicons/pdf.png' class='icon_rh_acte' />";
+			if(acte_en_cours.collectivite == collectivite){
+			listeOK[listeOK.length] = acte_en_cours;
+		}
+	}
+	
+	
+	var JQsource =
+	{
+		root: "actes",
+		localData: listeOK,
+		dataType: "array",   
+		dataFields:
+		[
+			{ name: 'numero_acte', type: 'string' },
+			{ name: 'uid', type: 'string' },
+			{ name: 'uidsecret', type: 'string' },
+			{ name: 'lien_acte', type: 'string' },
+			{ name: 'objet_acte', type: 'string' },
+			{ name: 'transfert_controle', type: 'date', format: "yyyy-MM-dd"}
+		],
+		sortcolumn: 'transfert_controle',
+		sortdirection: 'desc'
+	};
+		
+	return JQsource;
+}
+
+
+function afficheDataActes(liste_acte){
+	JQsource = FormatListeActes(liste_acte);
+	
+	$("#liste_acte").jqxDataTable(
+	{
+		width: "100%",
+		pageable: true,
+		autoRowHeight: true,             
+		sortable: false,
+		localization: getLocalization(),
+		rowDetails: false,
+		// initRowDetails: initRowActeDetails,         
+		pagerButtonsCount: 20,
+		pageSize: 20,
+		source: JQsource,                   
+		filterable: false,             
+		filtermode: 'advanced',
+		columnsResize: true,
+		ready: function () {
+			// expand the first details.
+		},
+		columns: [
+		  { text: "N° Acte", dataField: 'numero_acte',  cellClassName: ''  ,  width: 130},
+		  { text: "Objet", dataField: 'objet_acte',  cellClassName: ''  ,  width: "auto"},
+		  { text: 'Date d\'affichage', dataField: 'transfert_controle',  cellClassName: ''  ,  cellsFormat: 'dd-MM-yyyy', width: 130},
+		  { text: 'Télécharger', dataField: 'lien_acte',  cellClassName: 'align_center'  ,  width: 130}
+		]
+	});
+	
+	// $('#liste_acte').on('rowDoubleClick', detailDocument);
+	
+}
+
+	
+function getListeDelib(){
+	
+	console.log("test");
+	
+	$("#liste_acte").remove();
+	$(".rebuild_liste_acte").after($("<div id='liste_acte'>
+								</script>
+							</div>")); $.ajax({ url: urlListDelib, context: document.body , dataType: 'json', // what to expect back from the PHP script, if anything success : function(liste_acte, statut){ console.log("test"); afficheDataActes(liste_acte); return true; }, error : function(resultat, statut, erreur){ // On n'affiche aucun résultat if(statut == "parsererror"){ // Parseerror sur résultat vide afficheDataActes([]); } return false; } }); } $(document).ready(function (){ getListeDelib(); });
+							<div class="rebuild_liste_acte"></div>
+							<div id="liste_acte"></div>
+						</div>
+						<div id="c1183" class="frame default" data-type="textpic">
+							<h2 class="">Prochain conseil communautaire</h2>
+							<p>Le prochain conseil communautaire se tiendra <strong>: date à venir.</strong></p>
+						</div>
+						<div id="c281" class="frame default" data-type="textpic">
+							<h2 class="">Consultez les délibérations du Conseil</h2>
+							<p class="chapeau">Vous pouvez accéder aux délibérations ci-dessous par deux moyens :</p>
+							<ul>
+								<li>soit par l'ordre du jour des séances</li>
+								<li>soit par le moteur de recherche</li>
+							</ul>
+						</div>
+						<div id="c935" class="frame default" data-type="list">
+							<!--f:debug title='pugOBJ List ext' >Array</f:debug-->
+							<link rel="stylesheet" type="text/css" href="/fileadmin/templates/ext/la_param/Partials/AoDelib/css/AO_Delib.css">
+							<script type="text/javascript" src="/ressources/jqwidgets/jqxcore.js"></script>
+							<script type="text/javascript" src="/ressources/jqwidgets/jqxtabs.js"></script>
+							<link rel="stylesheet" type="text/css" href="/ressources/jqwidgets/styles/jqx.custom-LA.css">
+							<link rel="stylesheet" type="text/css" href="/ressources/jqwidgets/styles/jqx.base.css">
+							<script type="text/javascript">
+	var withoutReload = true;
+	var DelibUserMagic = "cd593f4ebce3f28bc1458028";
+							</script>
+							<div class="tx-caplparam">
+								<div class="menuHautDelib" id="SETCLASSMENU"></div>
+								<h2 id="titre_page_delib"></h2>
+								<div class="to_hide"><br> Choix de la collectivité : <span id="CollecReload"> <select name="collectivite_ajax" id="collectivite_ajax" onchange="Afficher_Listeservice()" autocomplete="off"> <option value="CAPLORIENTP" selected>Lorient Agglomération   </option> </select> </span></div>
+								<div class="connexion_actes">
+									<form name="myform" id="myform" target="aoweb" action="" method="POST"><input type="hidden" name="typeAction" value="login"> <span class="to_hide">L'instance de actes-office que vous souhaitez ouvrir : <span id="collectiviteConnexion"></span></span> <a href="javascript:;" id="lien_app_actes_office" onclick="" style="display : none;">Lancer l'application Actes-Office</a> <input type="hidden" name="magicKey" id="magicKey" value="cd593f4ebce3f28bc1458028"> <input type="hidden" name="userName" id="userNameHC" value="ccaudan"> <input type="hidden" name="password" id="passwordHC" value="deliberation"><br></form>
+									<div id="hardCode"></div>
+								</div>
+								<div class="clearBoth"></div>
+								<div style="color : #C00; font-weight : bold; text-align : center; margin : 5px; display : none;">Attention ! <br> L'application sera indisponible entre 12h00 et 13h30 (ce 07/09/2016) pour assurer la maintenance du logiciel. <br> Merci de votre compréhension.</div>
+								<div id="mes_convocations" style="display : none;">
+									<h1>Vos convocations</h1>
+									<p>Vous pouvez télécharger ici l'ensemble des rapports de la séance en collant le code qui vous à été communiqué sur votre convocation.</p>
+									<div id="DynConvoc"></div>
+								</div>
+								<div id="jqxTabs">
+									<ul>
+										<li><a href="javascript:;" title="Listes des assemblées">Assemblée</a></li>
+										<li><a href="javascript:;" title="Filtre de recherche">Recherche</a></li>
+										<!-- li><a href='javascript:;'  title='Statistiques'>Statistiques</a></li -->
+									</ul>
+									<div id="selection">
+										<div id="assemblee"></div>
+										<div id="seances"></div>
+									</div>
+									<div id="recherche_delib" style="display : none;">
+										<fieldset>
+											<legend>Rechercher une délibération : </legend><input type="hidden" name="UserService" id="UserService" value="-1"> <input type="hidden" name="UserServiceSon" id="UserServiceSon" value="-1">
+											<!-- 
+					etatTestDelib = 
+						0 : On affiche uniquement les délib de son service 
+						1 : On affiche toutes les délib 
+						2 : On affiche toutes les délib mais on test les rapports
+				--><input type="hidden" name="etatTestDelib" id="etatTestDelib" value=""> <label for="rechDelib">Mots-Clés : </label><input type="text" id="rechDelib" name="rechDelib"> (Trois caractères minimum)
+											<div id="assembleeRech"></div>
+											<div id="seancesRech"><label for="select_seances">Séances : </label><select id="select_seances_r" name="select_seances_r" onchange=""><option value="0">--- Toutes les séances ---</option></select></div>
+											<div id="service"></div>
+											<div id="servRecursif">   <input checked autocomplete="off" onclick="if(this.checked){if(confirm("Attention !\r\n Vous avez demandé d'activer le mode reccursif.\r\n Les traitements peuvent être grandement ralentis.\r\n Êtes-vous sur de vouloir valider ?")){this.checked = true;}else{this.checked = false;}}" type="checkbox" name="service_recursif" id="service_recursif"> <label style="width : 90%;" for="service_recursif"> Recherchez pour le service et tous les autres services en dessous dans l'organigramme </label></div><br>
+											<div class="centerSub"><input type="button" onclick="Afficher_Listedeliberation()" value="Rechercher"></div>
+										</fieldset>
+									</div>
+									<!--div id='statistique' style='display : none;'>
+		</div-->
+									<!-- <div id='connexion' style='display : none;'>
+				<fieldset>
+					<legend>Connexion à l'application</legend> -->
+									<!-- <center id='hardCode'></center> -->
+									<iframe id="lienN" style="display:none;" src="https://deliberation.caplorient.fr/Aoweb/?typeAction=logout"></iframe>
+									<!-- 
+				<br/><br/>
+				</fieldset>
+				
+				</li>
+			</ul>
+		</div> -->
+								</div>
+								<div class="clearBoth"></div>
+								<div id="DynHTML"></div>
+								<div id="statistiques">
+									<div class="affichGraph" id="graphservice"></div>
+									<div class="affichGraph" id="graphcategorie"></div>
+									<div class="affichGraph" id="graphdate"></div>
+								</div>
+								<div id="listingDataStat"></div><dfn>Données directement connectées sur le logiciel Actes-Office de Berger-Levrault<br>Application hébergée sur l'infrastructure de Lorient agglomération<br><br></dfn>
+								<div class="clearBoth"></div>
+								<div id="traductionJS" style="display : none;"></div><input type="hidden" name="select_assemblee" id="select_assemblee">
+								<!-- /**** SCRIPT  ****/ -->
+								<!-- <script language="javascript" type='text/javascript' src ='http://www.lorient-agglo.fr/fileadmin/template/portail_cap/js/script_agglo.js'></script> -->
+								<script language="javascript" type="text/javascript" src="/ressources/portail_ao_delib/script_agglo.js"></script>
+								<script language="javascript" type="text/javascript" src="/ressources/portail_ao_delib/ajax_deliberation.js"></script>
+								<!--  --><input type="hidden" name="currentAnnee" id="currentAnnee" value="">
+								<!-- /**** GESTION DES STATISTIQUES ****/ -->
+								<script language="javascript" type="text/javascript">
+	// Quand le document est pret
+	function handleTab(event){
+		switch(event.args.item){
+			case 0 : setMode("selection"); break;
+			case 1 : setMode("recherche_delib"); break;
+			case 2 : setMode("statistiques"); break;
+			default : setMode("selection"); break;
+		}
+	}
+	$(document).ready(function () {
+		$('#jqxTabs').jqxTabs({ width: '99%', height: "auto", position: 'top',  selectionTracker: true });
+		$('#jqxTabs').on('selected', function (event) { handleTab(event); });
+		
+		
+	$(".menuLateralDelib").css('display', 'none');
+	
+	$("#CollecReload").html("<select name='collectivite_ajax' id='collectivite_ajax'><option value='CAPLORIENTP' selected='selected'>CAPLORIENTP<select>");
+	$("#collectiviteConnexion").html('<input type="hidden" value="CAPLORIENTP" name="collectivite">CAPLORIENTP');
+	$("#titre_page_delib").html('Délibérations - Lorient Agglomération');
+	
+	var contenuMenu = $(".SubMenuRight").html();
+	// $(".SubMenuRight").html(contenuMenu + "<div id='hardCode'>
+								</script>
+							</div>"); Afficher_Listeservice(); $(".menuLateralDelib").css('display', 'block'); });</div>
+					</div>
+					<div class="rs">
+						<p>Partagez sur les réseaux sociaux :</p>
+						<p><a id="facebookSharer" target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.lorient-agglo.bzh/lagglomeration/conseils-communautaires/" title="Partagez sur Facebook"><i class="fab fa-3x fa-facebook-square picto-share"></i></a>    <a href="https://twitter.com/share" target="_blank" data-via="lorientagglo" data-size="large" data-related="lorientagglo" data-hashtags="#lorientagglo" title="Partagez sur Twitter"><i class="fab fa-3x fa-twitter-square picto-share"></i></a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</p>
+					</div>
+				</div>
+				<script>
+    var currentUrl = window.location.href;
+    $('#facebookSharer').attr('href', 'http://www.facebook.com/sharer.php?u='+currentUrl);
+    
+				</script>
+				<!-- /.Bas Nouvelles et Webcam -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!--  -->
+		<div class="col-md-4 col-sm-pull-8 contenu-gauche">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="c1054" class="frame breton" data-type="text">
+						<h5 class="">Dico Bzh -> Fr</h5>
+						<p><a href="/actualites/e-brezhoneg/" title="conseil communautaire / délibérations">kuzul-kumuniezh / divizadegoù</a></p>
+					</div>
+					<div id="c587" class="frame col_gauche" data-type="list">
+						<h3 class="text-left"><a href="/actualites/toutes-les-actualites/?no_cache=1">Actualités</a></h3>
+						<!--TYPO3SEARCH_end-->
+						<!-- 40 = Liste colonne -->
+						<ul>
+							<!--
+   
+  
+  
+
+
+      le haut
+      -->
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="Programme régional Breizh Bocage : recensement des haies et talus" href="/actualites/toutes-les-actualites/actualite/news/programme-regional-breizh-bocage-recensement-des-haies-et-talus/"> Programme régional Breizh Bocage : recensement des haies et talus </a></li>
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="A la découverte de la biodiversité du Scorff et de la petite mer de Gâvres" href="/actualites/toutes-les-actualites/actualite/news/a-la-decouverte-de-la-biodiversite-du-scorff-et-de-la-petite-mer-de-gavres-2/"> A la découverte de la biodiversité du Scorff et de la petite mer de Gâvres </a></li>
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="Les habitants sont invités à participer au recensement des goélands" href="/actualites/toutes-les-actualites/actualite/news/les-habitants-sont-invites-a-participer-au-recensement-des-goelands/"> Les habitants sont invités à participer au recensement des goélands </a></li>
+						</ul><a title="Toutes les actus" href="/actualites/toutes-les-actualites/?no_cache=1"> <h5 class="all">> Toutes les actus</h5> </a>
+						<!-- 95 = List Last Related News -->
+						<!--TYPO3SEARCH_begin-->
+					</div>
+					<div id="c590" class="frame col_gauche" data-type="list">
+						<h3 class="text-left"><a href="/actualites/magazine-les-nouvelles/tous-les-articles/">Les nouvelles</a></h3>
+						<!--TYPO3SEARCH_end-->
+						<!-- 42 = Liste colonne Nouvelles -->
+						<ul>
+							<!--
+   
+  
+  
+
+
+      le haut
+      -->
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="Keroman est resté en activité" href="/actualites/magazine-les-nouvelles/tous-les-articles/article-des-nouvelles/news/keroman-est-reste-en-activite/"> Keroman est resté en activité </a></li>
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="André le Moustader, le documentariste amoureux du monde" href="/actualites/magazine-les-nouvelles/tous-les-articles/article-des-nouvelles/news/andre-le-moustader-le-documentariste-amoureux-du-monde/"> André le Moustader, le documentariste amoureux du monde </a></li>
+							<!--
+  =====================
+    Partials/List/Item.html
+-->
+							<li><a title="Ils vendent leurs produits sur internet" href="/actualites/magazine-les-nouvelles/tous-les-articles/article-des-nouvelles/news/ils-vendent-leurs-produits-sur-internet/"> Ils vendent leurs produits sur internet </a></li>
+						</ul><a title="Tous les articles" href="/actualites/magazine-les-nouvelles/tous-les-articles/"> <h5 class="all">> Tous les articles</h5> </a>
+						<!-- 95 = List Last Related News -->
+						<!--TYPO3SEARCH_begin-->
+					</div>
+					<div id="c1529" class="frame default" data-type="html">
+						<div id="dessous_menu_gauche"></div>
+					</div>
+					<!-- </section>  -->
+				</div>
+			</div>
+		</div>
+		<!-- /.contenu -->
+		<div class="col-md-12"></div>
+		<!--TYPO3SEARCH_end-->
+		<!-- Modal -->
+		<style type="text/css">
+.la_pop_up{
+	z-index : 2000000000;
+}
+.la_pop_up ul li{
+	color : #172370;
+}
+.la_pop_up ul ul li{
+	color : #777777;
+}
+.la_pop_up .modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.la_pop_up .modal-dialog {
+    position: fixed;
+	top : 3%;
+	bottom : 3%;
+	left : 3%;
+	right : 3%;
+    margin: 0%;
+    padding: 0;
+    height: 94%;
+    width: 94%;
+	z-index : 2000000001;
+    border-radius: 5;
+}
+.la_pop_up .modal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+}
+.la_pop_up .modal-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*border-radius: 0;
+    box-shadow: none;*/
+}
+.la_pop_up .modal-body {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    font-size: 15px;
+    overflow: auto;
+    margin-top: 7px;
+    margin-bottom: 60px;
+    padding: 0 15px 0;
+    width: 100%;
+}
+.la_pop_up .modal-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding: 10px;
+    background: #f1f3f5;
+}
+.la_pop_up .modal-title{
+	text-align :  right;
+    margin-right: 40px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+
+
+.mission_1 .modal-header{
+	background-color : #DBB22C;
+}
+.mission_1 .modal-title{
+	color : white;
+}
+
+
+
+ul.liste_app_popup, ol.liste_app_popup  {
+  list-style-type: none;
+  margin: 0;
+  margin-left : 25px;
+  margin-bottom : 25px;
+  padding: 0;
+}
+
+.liste_app_popup li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px dashed #ccc;
+  margin-left : 25px;
+  width : 95%;
+}
+
+.liste_app_popup li:last-child {
+  border: none;
+}
+
+.liste_app_popup li  {
+  text-decoration: none;
+  color: #000;
+
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  display: block;
+  
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.liste_app_popup ol li:hover, .liste_app_popup ul li:hover {
+  cursor : pointer;
+  font-size: 22px;
+  background: #f6f6f6;
+  color : #172370 !important;
+}
+
+#corps_popup .icon_liste{
+	display : inline-block; 
+	margin-left : 7px;
+	margin-right : 8px;
+}
+
+#corps_popup .liste_app_popup:first-child {
+	/*margin-right : 0px !important;*/
+}
+
+.clear{
+	clear:both;
+}
+.iconfitTobox{
+    font-size: 8.5vw !important;
+    color:grey;
+	  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+	  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+	  -o-transition: color 0.3s ease, background-color 0.3s ease;
+	  -ms-transition: color 0.3s ease, background-color 0.3s ease;
+	  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.iconfitTobox:hover{
+    font-size: 8.5vw !important;
+	color : #172370 !important;
+}
+		</style>
+		<div id="la_pop_up" class=" mission_1 modal fade la_pop_up" role="dialog">
+			<div class="modal-dialog modal-lg" style="">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header"><button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title" id="titrePopUpLa"></h4>
+					</div>
+					<div class="modal-body" style="overflow-y: auto;">
+						<div class="row" id="en_tete_popup"></div>
+						<div class="row" id="corps_popup"></div>
+					</div>
+					<div class="modal-footer" id="action_pop_up"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+	function affiche_pop_up_la(contenu_en_tete_popup, contenu_corps_popup, contenu_action_popup, titre){
+		$("#titrePopUpLa").html(titre);
+		$("#en_tete_popup").html(contenu_en_tete_popup);
+		$("#corps_popup").html(contenu_corps_popup);
+		$("#action_pop_up").html(contenu_action_popup);
+		
+		 $("#la_pop_up").modal({backdrop: true});
+		
+	}
+		</script>
+		<!-- Footer -->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 footer">
+						<div id="c418" class="frame default" data-type="menu_subpages">
+							<h3>INFOS LÉGALES</h3>
+							<p><a title="Contact" href="/footer/infos-legales/contact/"> Contact </a></p>
+							<p><a title="Mentions légales" href="/footer/infos-legales/mentions-legales/"> Mentions légales </a></p>
+							<p><a title="Protection des données" href="/footer/infos-legales/politique-de-protection-des-donnees/"> Protection des données </a></p>
+							<p><a title="Plan de site" href="/footer/infos-legales/plan-de-site/"> Plan de site </a></p>
+						</div>
+					</div>
+					<div class="col-md-3 footer">
+						<div id="c419" class="frame default" data-type="menu_subpages">
+							<h3>PROFESSIONNEL</h3>
+							<p><a title="Espace presse" href="/footer/professionnel/espace-presse/"> Espace presse </a></p>
+							<p><a title="Téléchargements" href="/footer/professionnel/espace-pro/"> Téléchargements </a></p>
+							<p><a title="Notaires" href="/footer/professionnels/notaires/"> Notaires </a></p>
+							<p><a title="Intranet" href="/footer/professionnel/intranet/"> Intranet </a></p>
+						</div>
+					</div>
+					<div class="col-md-3 footer">
+						<div id="c1127" class="frame frame-default frame-type-form_formframework frame-layout-0">
+							<header>
+								<h3 class="">NEWSLETTER</h3>
+							</header>
+							<!--  -->
+							<script type="text/javascript">
+
+			if(typeof localStorage!='undefined') {
+				console.log("use of localstorage");
+				var StorageSet = function(a,b,c){ localStorage.setItem(a,b); }
+				var StorageGet = function(a){ return localStorage.getItem(a); }
+				var StorageRemove = function(a){ localStorage.removeItem(a); }
+			} else {
+				console.log("use of cookies");
+				var StorageSet = function(a,b,c){ Cookies.set(a,b,c); }
+				var StorageGet = function(a){ return Cookies.get(a); }
+				var StorageRemove = function(a){ Cookies.remove(a); }
+			}
+
+			function isLaSpecForm(myForm){
+				StorageSet($(myForm).attr('id')+'_completed',  Date.now(), { expires: 120 });
+
+				//if($(myForm).attr('id') == "testDSI") return true;
+				console.log($(myForm).attr('id'));
+
+				var isLaForm = $(myForm).find("[value='LaForm'][type='hidden']").val() || $(myForm).find("[value='LaFormEz'][type='hidden']").val();
+				var isNextHtml = $(myForm).find(".submit [type='submit']").html();
+				console.log("isLaForm : "+isLaForm);
+				if(isLaForm == "LaForm"){
+					// alert("Form Agglo");
+
+					console.log("laform");
+
+					var idForm = $(myForm).attr('id');
+					StorageSet(idForm+'_completed',  Date.now(), { expires: 120 });
+					// alert(StorageGet(idForm+'_completed'))
+					if(isNextHtml != undefined){
+						$(myForm).find("[type='submit']").prop("name", "submit");
+						$(myForm).find("[tabindex='-1']").prop("name", "MrRobot");
+						$(myForm).attr("action" , "/fileadmin/templates/ext/form/gestion_form_agglo/resultat-form.php");
+						return true;
+					}else{
+						// alert("Form Page");
+						return true;
+					}
+
+
+				}else if(isLaForm == "LaFormEz") {
+					$(myForm).find("[type='submit']").prop("name", "submit");
+					$(myForm).find("[tabindex='-1']").prop("name", "MrRobot");
+					$(myForm).attr("action" , "/fileadmin/templates/ext/form/gestion_form_agglo/debug.php");
+					return true;
+				}else{
+					console.log("form classique");
+					console.log(document.forms[myForm]);
+					console.log($(myForm).attr('action'));
+					//alert("Form Classique");
+					return true;
+				}
+			}
+
+			function simpleIsLaForm(myForm, ident){
+				return ($("#"+myForm).find("[value='LaForm'][type='hidden']").val() == ident);
+			}
+
+			
+
+		
+							</script>
+							<form enctype="multipart/form-data" method="post" onsubmit="return isLaSpecForm(this)" id="lA-Inscriptionlanewsletter" action="/lagglomeration/conseils-communautaires/?tx_form_formframework%5Baction%5D=perform&cHash=c7aa8bfd831577f6b698ba38467bbc3d#lA-Inscriptionlanewsletter">
+								<div><input type="hidden" name="tx_form_formframework[lA-Inscriptionlanewsletter][__state]" value="TzozOToiVFlQTzNcQ01TXEZvcm1cRG9tYWluXFJ1bnRpbWVcRm9ybVN0YXRlIjoyOntzOjI1OiIAKgBsYXN0RGlzcGxheWVkUGFnZUluZGV4IjtpOjA7czoxMzoiACoAZm9ybVZhbHVlcyI7YTowOnt9fQ==bdeb5912856578568d31c22bea4c6f088bbf3584"><input type="hidden" name="tx_form_formframework[__trustedProperties]" value='a:1:{s:26:"lA-Inscriptionlanewsletter";a:3:{s:6:"text-2";i:1;s:12:"p1hjeMobuZCA";i:1;s:13:"__currentPage";i:1;}}c05c4dc1e007722bd94aa3723befb055e5d106d1'></div>
+								<div class="form-group"><label class="control-label" for="lA-Inscriptionlanewsletter-text-2">e-mail <span class="required">*</span></label>
+									<div class="input"><input placeholder="" required="required" class=" form-control" id="lA-Inscriptionlanewsletter-text-2" type="email" name="tx_form_formframework[lA-Inscriptionlanewsletter][text-2]" value=""></div>
+								</div><input autocomplete="off" id="lA-Inscriptionlanewsletter-p1hjeMobuZCA" style="position:absolute; margin:0 0 0 -999em;" tabindex="-1" type="text" name="tx_form_formframework[lA-Inscriptionlanewsletter][p1hjeMobuZCA]">
+								<div class="actions test">
+									<nav class="form-navigation">
+										<div class="btn-toolbar" role="toolbar">
+											<div class="btn-group" role="group"><span class="next submit"><button class="btn btn-primary" type="submit" name="tx_form_formframework[lA-Inscriptionlanewsletter][__currentPage]" value="1"> Envoyer </button></span></div>
+										</div>
+									</nav>
+								</div>
+							</form>
+							<script type="text/javascript">
+		//console.log("FAR four");
+		// var alreadyPassed = false;
+		if(typeof alreadyPassed == "undefined" || !alreadyPassed)	{
+			
+			var alreadyPassed = true;
+			function $_GET(param) {
+				var vars = {};
+				window.location.href.replace( location.hash, '' ).replace( 
+					/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+					function( m, key, value ) { // callback
+						vars[key] = value !== undefined ? value : '';
+					}
+				);
+
+				if ( param ) {
+					return vars[param] ? vars[param] : null;
+				}
+				return vars;
+			}
+			var idFormInit = "lA-Inscriptionlanewsletter";
+			var idForm = idFormInit;
+			var textareaLimit = 1400;
+			console.log(idFormInit);
+			$(function() {
+
+				
+				//var idForm = "lA-Inscriptionlanewsletter";
+				
+
+				var isLaForm = $('#'+idForm).find("[value='LaForm'][type='hidden']").val();
+				var isNextHtml = $('#'+idForm).find(".submit [type='submit']").html();
+				
+
+				//console.log("112 Test  "+simpleIsLaForm(idFormInit, "LaForm"));
+				if(simpleIsLaForm(idFormInit, "LaForm")){
+					idForm = idFormInit;
+					console.log(idForm);
+					$(document).on("keypress", ":input:not(textarea)", function(event) {
+						if (event.keyCode == 13) {
+							event.preventDefault();
+						}
+					});
+					
+					if(idForm == "visitesEnergiesolairedessitesdeLorientAgglooct2018") {
+						$("#"+idForm+"-text-2").attr("type", "email");
+					}
+					
+					if($_GET("cookieComplete") == "complete"){
+						console.log(idForm);
+						StorageSet(idForm+'_completed',  Date.now(), { expires: 120 });
+					}
+					if($_GET("reinit") == "complete"){
+						console.log("reinit");
+						StorageRemove(idForm+'_completed');
+						
+						StorageRemove(idForm+'_inputs_text');
+						StorageRemove(idForm+'_inputs_textarea');
+						StorageRemove(idForm+'_inputs_radio');
+						
+						
+						var inputs = getInputsTextArea(idForm);
+						inputs.each(function(index, element) {
+							var inputName = getShortName(element);
+							StorageRemove(idForm+'_'+inputName);
+						});
+						window.location.replace(window.location.href.split("?")[0]);
+						
+					} else {
+						console.log("no reinit");
+					}
+					var oneTimeOnly = $('#'+idForm).find("[data-label='oneTimeOnly'][type='hidden']").val();
+					if(StorageGet(idForm+'_completed') != undefined && StorageGet(idForm+'_completed') !== null && StorageGet(idForm+'_completed') != "" && oneTimeOnly != "FALSE") {
+						console.log(idForm+'_completed', StorageGet(idForm+'_completed'));
+						var today = new Date();
+						var dateLimit = new Date(parseFloat(StorageGet(idForm+'_completed')));
+						dateLimit.setMonth(dateLimit.getMonth() + 6);
+						if(dateLimit > today) {
+							$('#'+idForm).parent().html("<h2 style='color:red; text-align:center;'>Vous avez déjà rempli ce formulaire");
+						} else {
+							StorageRemove(idForm+'_completed');
+						}
+					}
+					
+					var inputs = getInputsOfForm(idForm);
+					var sessionStarted = false;
+
+					var cookieInputsText = {};
+					var cookieInputsRadio = {};
+
+
+					if(StorageGet(idForm+'_inputs_text')) cookieInputsText = JSON.parse(StorageGet(idForm+'_inputs_text'));
+					if(StorageGet(idForm+'_inputs_radio')) cookieInputsRadio = JSON.parse(StorageGet(idForm+'_inputs_radio'));
+
+					console.log(Cookies.get(idForm+'_inputs_text'));
+					console.log("idForm : " + idForm);
+					for(var tupleCookie in cookieInputsText){
+						var inputName = tupleCookie;
+						inputNameCor = 'text-' + inputName;
+						element = $('#'+idForm+' input[name="tx_form_formframework['+idForm+']['+inputNameCor+']"]');
+						$(element).val(cookieInputsText[inputName]);
+						sessionStarted = true;		
+					}
+
+					for(var tupleCookie in cookieInputsRadio){
+						var inputName = tupleCookie;
+						inputNameCor = 'radiobutton-' + inputName;
+						element = $('#'+idForm+' input[name="tx_form_formframework['+idForm+']['+inputNameCor+']"][value="'+cookieInputsRadio[inputName]+'"]');
+
+						$(element).attr('checked', 'checked');
+						sessionStarted = true;		
+					}
+
+					var inputsTextarea = getInputsTextArea(idForm);
+					inputsTextarea.each(function(index, element) {
+						var inputName = getShortName(element);
+						var cookie = StorageGet(idForm+'_'+inputName);
+						$(element).val(cookie);
+						initSizeLimit(element);
+					});
+
+
+					if(sessionStarted == true) {
+						$('#'+idForm).find('h2:first').append('<input type="button" class="btn btn-danger" id="reinit_'+idForm+'" data-idForm="'+idForm+'" style="float:right;margin-top:3px;" value="X Réinitialiser le formulaire"/>');
+						$('#reinit_'+idForm).click({idForm: idForm}, reinitForm);
+
+					}
+
+					var timer;
+        			var delay = 600;
+					console.log(inputs);
+					inputs.each(function(index, element) {
+						$(element).on('change', function() {
+							//console.log('input');
+							window.clearTimeout(timer);
+							timer = window.setTimeout(function(){
+								//console.log("generate cookie");
+								generateCookies(idForm);
+							}, delay);						
+						});
+					});
+
+					$("button[type='submit']").on('click', function(){
+						$(this).attr("disabled", true);
+					});
+
+
+				}
+			});
+
+			function generateCookies(idForm) {
+				var JSONText = generateJSONinputText(idForm);
+				var JSONRadio = generateJSONinputRadio(idForm);
+				var ArrayTextarea = generateArrayInputTextarea(idForm);
+				StorageSet(idForm+'_inputs_text', JSONText , { expires: 1200 });
+				StorageSet(idForm+'_inputs_radio', JSONRadio , { expires: 1200 });
+				for(var textArea in ArrayTextarea) {
+					StorageSet(idForm+'_'+textArea, ArrayTextarea[textArea] , { expires: 1200 });
+				}
+				
+			}
+
+			function generateJSONinputText(idForm) {
+				var inputs = getInputsText(idForm);
+				var arrayReturn = {};
+				inputs.each(function(index, element) {
+					var inputName = getShortName(element);
+					inputName = inputName.split('-')[1];
+					if ($(element).val() != "" && $(element).val() != " ") {
+						arrayReturn[inputName] = $(element).val();
+					}
+				});
+				//console.log(JSON.stringify(arrayReturn));
+				return JSON.stringify(arrayReturn);	
+			}
+
+			function generateJSONinputRadio(idForm) {
+				var inputs = getInputsRadio(idForm);
+				var arrayReturn = {};
+				inputs.each(function(index, element) {
+					var inputName = getShortName(element);
+					inputName = inputName.split('-')[1];
+					if($(element).is(':checked')) {
+						arrayReturn[inputName] = $(element).val();
+					}
+
+				});
+				//console.log(JSON.stringify(arrayReturn));
+				return JSON.stringify(arrayReturn);
+			}
+
+			function generateArrayInputTextarea(idForm) {
+				var inputs = getInputsTextArea(idForm);
+				var arrayReturn = [];
+				inputs.each(function(index, element) {
+					var inputName = getShortName(element);
+					var cookie = StorageGet(idForm+'_'+inputName);
+					if ( ($(element).val() != "" && $(element).val() != " ") || cookie ) {
+						arrayReturn[inputName] = $(element).val();
+					}
+				});
+				return arrayReturn;
+			}
+
+			function reinitForm(event) {
+				var idForm = event.data.idForm;
+
+				var inputs = getInputsOfForm(idForm);
+				if(confirm("Attention ceci va supprimer les enregistrements en cours et rafraichrir la page.\r\nContinuer ?")){
+					
+					StorageRemove(idForm+'_inputs_text');
+					StorageRemove(idForm+'_inputs_textarea');
+					StorageRemove(idForm+'_inputs_radio');
+					var inputs = getInputsTextArea(idForm);
+					inputs.each(function(index, element) {
+						var inputName = getShortName(element);
+						StorageRemove(idForm+'_'+inputName);
+					});
+
+					window.location.replace(window.location.href);
+				}
+
+			}
+
+			function getInputsText(idForm) {
+				return $('#'+idForm+' input:text');
+			}
+			function getInputsTextArea(idForm) {
+				return $('#'+idForm+' textarea');
+			}
+			function getInputsRadio(idForm) {
+				//console.log('#'+idForm+' input:radio');
+				return $('#'+idForm+' input:radio');
+			}
+
+			function getInputsOfForm(idForm) {
+				return $('#'+idForm+' input, #'+idForm+' textarea');
+			}
+
+			function getShortName(element) {
+				var inputName = $(element).attr('name').split('][')[1];
+				inputName = inputName.substring(0, inputName.length - 1);
+				return inputName;
+			}
+
+			function initSizeLimit(element) {
+				var control = $(element);
+				var idCount = idForm+'_'+getShortName(element)+'_remaining';
+				$(element).after("<p id='"+idCount+"' class='remaining' style='text-align: right;'>");
+				var remaining = $('#'+idCount);
+				var textLimit = ((control.attr('maxlength')) ? parseInt(control.attr('maxlength'), 10) : textareaLimit);
+				//remaining.text(textLimit - control.val().length);
+				remaining.text(control.val().length + '/' + textLimit);
+				control.on('keyup keydown paste', function () {
+					if(control.val().length >= textLimit){
+						control.val(control.val().substring(0, textLimit));
+						//remaining.text(textLimit - parseInt(control.val().length, 10));
+					}
+						remaining.text(control.val().length + '/' + textLimit);
+					
+					
+				});
+			}
+		}
+
+		
+							</script>
+							<script type="text/javascript"></script>
+						</div>
+					</div>
+					<div class="col-md-3 footer picto-share">
+						<div id="c421" class="frame default" data-type="menu_subpages">
+							<h3>RÉSEAUX</h3>
+							<p><a href="https://www.facebook.com/lorientagglo/" title="facebook-f" target="_blank"><i class="fab fa-2x fa-facebook-f"></i></a> <a href="https://twitter.com/LorientAgglo" title="twitter" target="_blank"><i class="fab fa-2x fa-twitter"></i></a> <a href="https://www.youtube.com/c/LorientAgglom%C3%A9ration" title="youtube" target="_blank"><i class="fab fa-2x fa-youtube"></i></a> <a href="https://www.instagram.com/lorientagglo/" title="instagram" target="_blank"><i class="fab fa-2x fa-instagram"></i></a> <a href="https://www.linkedin.com/company/lorient-agglomeration/" title="linkedin-in" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a></p>
+						</div>
+					</div>
+				</div>
+				<!-- /.row -->
+			</div>
+		</footer>
+		<section class="descente bandeau pictos treemap-fixed">
+			<div class="container-fluid">
+				<div class="row">
+					<script type="text/javascript">
+      function affiche(id, b) {
+        document.getElementById(id).style.display = b ? '' : 'none';
+      }
+    
+					</script>
+					<div class="col-md-3 descente-services" style="z-index: 2147483647;">
+						<div id="service1" style="display:block;">
+							<h3>VOS SERVICES</h3>
+						</div>
+						<div class="services-change" id="service2" style="display:none;">
+							<h3>Tous vos services</h3>
+						</div>
+						<div class="services-change" id="decheterie" style="display:none;">
+							<h3>Déchèteries</h3>
+						</div>
+						<div class="services-change" id="trash" style="display:none;">
+							<h3>Collecte des déchets</h3>
+						</div>
+						<div class="services-change" id="tint" style="display:none;">
+							<h3>Eau</h3>
+						</div>
+						<div class="services-change" id="bus" style="display:none;">
+							<h3>Transport</h3>
+						</div>
+						<div class="services-change" id="home" style="display:none;">
+							<h3>Habitat (E.I.H)</h3>
+						</div>
+						<div class="services-change" id="lightbulb" style="display:none;">
+							<h3>Entreprendre</h3>
+						</div>
+						<div class="services-change" id="voilier" style="display:none;">
+							<h3>Ports de plaisance</h3>
+						</div>
+						<div class="services-change" id="wheelchair" style="display:none;">
+							<h3>Handicap</h3>
+						</div>
+						<div class="services-change" id="gavel" style="display:none;">
+							<h3>Délibérations</h3>
+						</div>
+						<div class="services-change" id="envelope" style="display:none;">
+							<h3>Contact</h3>
+						</div>
+						<div class="services-change" id="paw" style="display:none;">
+							<h3>Fourrière</h3>
+						</div>
+						<div class="services-change" id="newspaper" style="display:none;">
+							<h3>Espace presse</h3>
+						</div>
+						<div class="services-change" id="balance-scale" style="display:none;">
+							<h3>Boutique de droit</h3>
+						</div>
+						<div class="services-change" id="leaf" style="display:none;">
+							<h3>Agriculture</h3>
+						</div>
+						<div class="services-change" id="calendar" style="display:none;">
+							<h3>Agenda</h3>
+						</div>
+						<div class="services-change" id="users" style="display:none;">
+							<h3>Enquêtes publiques</h3>
+						</div>
+						<div class="services-change" id="recycle" style="display:none;">
+							<h3>Réduire ses déchets</h3>
+						</div>
+						<div class="services-change" id="caravane" style="display:none;">
+							<h3>Gens du voyage</h3>
+						</div>
+						<div class="services-change" id="grue" style="display:none;">
+							<h3>Marchés publics</h3>
+						</div>
+						<div class="services-change" id="paper-plane" style="display:none;">
+							<h3>Newsletter</h3>
+						</div>
+						<div class="services-change" id="handshake" style="display:none;">
+							<h3>Offres d'emploi</h3>
+						</div>
+						<div class="services-change" id="solenn" style="display:none;">
+							<h3>SOLENN</h3>
+						</div>
+						<div class="services-change" id="music" style="display:none;">
+							<h3>Studios de répétition</h3>
+						</div>
+						<div class="services-change" id="bed" style="display:none;">
+							<h3>Taxe de séjour</h3>
+						</div>
+						<div class="services-change" id="suitcase" style="display:none;">
+							<h3>Tourisme</h3>
+						</div><button class="ico-services"> <i class="fa fa-wrench visible-sm visible-xs" aria-hidden="true"></i> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button></div>
+					<div class="col-md-9 pratique">
+						<ul onmouseover="affiche('service1',false)" onmouseout="affiche('service1',true)" class="pratique">
+							<li onmouseover="affiche('decheterie',true)" onmouseout="affiche('decheterie',false)"><a title="Déchèteries" href="/vos-services/decheteries/"> <i class="fa fa-decheterie" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Déchèteries</h2> </a></li>
+							<li onmouseover="affiche('trash',true)" onmouseout="affiche('trash',false)"><a title="Collecte des déchets" href="/vos-services/collecte-des-dechets/"> <i class="fa fa-trash" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Collecte des déchets</h2> </a></li>
+							<li onmouseover="affiche('tint',true)" onmouseout="affiche('tint',false)"><a title="Eau" href="/vos-services/eau/"> <i class="fa fa-tint" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Eau</h2> </a></li>
+							<li onmouseover="affiche('bus',true)" onmouseout="affiche('bus',false)"><a title="Transport" href="/vos-services/transport/"> <i class="fa fa-bus" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Transport</h2> </a></li>
+							<li onmouseover="affiche('home',true)" onmouseout="affiche('home',false)"><a title="Habitat (E.I.H)" href="/vos-services/habitat-eih/"> <i class="fa fa-home" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Habitat (E.I.H)</h2> </a></li>
+							<li onmouseover="affiche('lightbulb',true)" onmouseout="affiche('lightbulb',false)"><a title="Entreprendre" href="/vos-services/entreprendre/"> <i class="fa fa-lightbulb" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Entreprendre</h2> </a></li>
+							<li onmouseover="affiche('voilier',true)" onmouseout="affiche('voilier',false)"><a title="Ports de plaisance" href="/vos-services/ports-de-plaisance/"> <i class="fa fa-voilier" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Ports de plaisance</h2> </a></li>
+							<li onmouseover="affiche('wheelchair',true)" onmouseout="affiche('wheelchair',false)"><a title="Handicap" href="/vos-services/handicap/"> <i class="fa fa-wheelchair" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Handicap</h2> </a></li>
+							<li onmouseover="affiche('gavel',true)" onmouseout="affiche('gavel',false)"><a title="Délibérations" href="/vos-services/deliberations/"> <i class="fa fa-gavel" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Délibérations</h2> </a></li>
+							<li onmouseover="affiche('envelope',true)" onmouseout="affiche('envelope',false)"><a title="Contact" href="/vos-services/contact/"> <i class="fa fa-envelope" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>Contact</h2> </a></li>
+							<li onmouseover="affiche('service2',true)" onmouseout="affiche('service2',false)"><a title="Tous vos services" href="/vos-services/"> <i class="fa fa-plus" aria-hidden="true" style="padding: 0px; height:auto; width: auto;"></i> <h2>VOS SERVICES</h2> </a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.Pictos Treemap -->
+				<!-- /.Pictos Treemap -->
+				<script>
+	
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var forappli = url.searchParams.get("forappli");
+		console.log(forappli);
+		
+		if(forappli == "true") {
+			$("header, footer, section.bandeau, .ariane, .contenu-gauche, .rs, h1").remove();
+			$("body").css("padding-top", "0");
+			$(".contenu-droite").css("padding", "0");
+		}
+	
+				</script>
+			</div>
+		</section>
+	</body>
+</html>
