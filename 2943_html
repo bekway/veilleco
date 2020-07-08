@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="generator" content="WebSee (imaweb.fr)">
+		<script src="/js/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js" type="text/javascript"></script>
+		<link type="text/css" href="/js/jquery-ui-1.9.2.custom/css/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/js/highslide/highslide-full.js"></script>
+		<link href="/css/style2.css?1594220368" rel="stylesheet" type="text/css">
+		<link href="/css/charte_1.css?1594220368" rel="stylesheet" type="text/css">
+		<link href="/css/font_style_1.css?1594220368" rel="stylesheet" type="text/css">
+		<script src="/js/websee.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css">
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+	
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}		
+		</style>
+		<title>Site de la Communauté de Communes du Sammiellois</title>
+		<meta property="og:title" content="Site de la Communauté de Communes du Sammiellois">
+		<meta name="description" content="La Codecom du Sammiellois compte à ce jour 19 communes">
+		<meta property="og:description" content="La Codecom du Sammiellois compte à ce jour 19 communes">
+		<link type="text/css" href="/template/visuel/menu-vertical.css" rel="stylesheet">
+		<script src="/js/menu/menu-vertical.js" type="text/javascript"></script>
+		<script type="text/javascript">
+$(document).ready(function() {
+  $("#sousmenu-4").css('display','block');
+});
+		</script>
+		<script type="text/javascript">
+							
+							 var preloadArr = new Array();
+							 var currImg = 1; 	
+							$(document).ready(
+							    function()
+							    {
+							    	var imgArr = ["1410360428_IMG_4254.JPG","1410360000_Eglise-KLP.JPG","1410360096_Monument-des-Paroches.JPG","1410358848_Copie-2-de-Enseigne-19.09.13-1.JPG","1410359050_Primaire2.JPG","1488451386_IMG_8934.JPG","1488451601_IMG_8955.JPG","1488451904_IMG_8971.JPG","1568296296_ecole-halle.jpg","1568296486_20190418_112829.jpg","1568297027_IMG_1471.JPG","1568297209_20190413_163721.jpg","1568375579_20190912_174817.jpg"]
+									 
+									
+									 var i;
+									 
+									 /* preload images */
+									 for(i=0; i < imgArr.length; i++){
+									 preloadArr[i] = new Image();
+									 preloadArr[i].src = '/template/generated/bandeau_'+imgArr[i];
+									 }
+									 
+
+									 $('#header-bandeau').css('background','url(' + preloadArr[0].src +') top center no-repeat');
+									 
+									 intID = setInterval(changeImg, 4000);
+								});
+							
+							function changeImg(){
+								$('#header-bandeau').animate({opacity: 0}, 1000, function(){
+									$(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+								}).animate({opacity: 1}, 1000);
+								
+							}
+							
+		</script>
+		<style>
+						#header-bandeau {width:749px;height:220px}
+						
+		</style>
+	</head>
+	<body>
+		<div class="template-header">
+			<div class="template-header-content template-contents">
+				<div id="bandeau">
+					<div id="header-bandeau"></div>
+				</div>
+				<div class="template-header-goodies"></div>
+				<div class="header-text">Site de la Communauté de Communes du Sammiellois</div>
+				<div id="header-logo"><a href="actualites_fr.html"><div style="background-image:url('/template/generated/logo_CC-Sammiellois-LEFEVRE.jpg');background-position:center center;;background-repeat:no-repeat;height: 100%;width: 100%;"></div></a></div>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content template-contents">
+				<div class="body-left">
+					<div class="body-left-start"></div>
+					<div class="body-left-repeat">
+						<div class="body-left-content">
+							<div class="module-colonne-titre">Bienvenue</div>
+							<div class="module-colonne-separateur"></div>
+							<div class="menu-principal">
+								<ul>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-4')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-4">La Codecom</div></a>
+										<ul class="sousmenu" id="sousmenu-4">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-90-1"><a href="actualites_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-90">Accueil</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-11-2"><a href="accueil-2_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-11">Actualités</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-121-3"><a href="fonctionnement_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-121">Fonctionnement</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-91-4"><a href="les-communes-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-91">Communes membres</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-136-5"><a href="budget_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-136">Budget</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-38-6"><a href="commissions_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-38">Commissions</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-16-7"><a href="conseil-communautaire-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-16">Conseil Communautaire</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-17-8"><a href="membres_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-17">Délégués de la Codecom</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-67-9"><a href="l-equipe-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-67">L'équipe</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-58-10"><a href="l-echo-de-l-interco_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-4" id="sousmenu-4-page-58">Presse Echo de l'Interco'</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-2"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-5')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-5">Economie</div></a>
+										<ul class="sousmenu" id="sousmenu-5">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-154-1"><a href="covid-19-aide-aux-entreprises-et-aux-associations-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-154">COVID-19 : Aide aux entreprises et aux associations</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-62-2"><a href="zone-industrielle-de-chau_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-62">Zone d'activités de Chauvoncourt</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-66-3"><a href="economie_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-66">Aide aux entreprises - Programme FISAC</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-93-4"><a href="ucia_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-93">L'UCIA de Saint-Mihiel et du Sammiellois</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-129-5"><a href="petr_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-129">Pôle d'Equilibre Territorial et Rural</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-65-6"><a href="commission-d-art-sacre_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-5" id="sousmenu-5-page-65">Commission d'Art Sacré</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-3"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-11')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-11">Santé</div></a>
+										<ul class="sousmenu" id="sousmenu-11">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-132-1"><a href="cls_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-11" id="sousmenu-11-page-132">Le Contrat Local de Santé</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-134-2"><a href="msp_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-11" id="sousmenu-11-page-134">Les Maisons de Santé</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-133-3"><a href="professionnels_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-11" id="sousmenu-11-page-133">Les professionnels de santé</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-4"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-14')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-14">Vie scolaire</div></a>
+										<ul class="sousmenu" id="sousmenu-14">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-153-1"><a href="actualites-ecoles-covid-19_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-153">ACTUALITES ECOLES COVID 19</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-152-2"><a href="inscriptions_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-152">Inscriptions</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-142-3"><a href="adresses-utiles_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-142">Adresses utiles</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-143-4"><a href="cantine-et-garderie_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-143">Cantine et garderie</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-144-5"><a href="rythmes-scolaires_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-144">Rythmes scolaires</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-145-6"><a href="transports-scolaires_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-145">Transports scolaires</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-148-7"><a href="one-ent_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-148">ONE Espace Numérique de Travail (ENT)</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-149-8"><a href="classe-passserelle_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-14" id="sousmenu-14-page-149">Classe passerelle</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-5"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-15')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-15">Petite enfance</div></a>
+										<ul class="sousmenu" id="sousmenu-15">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-150-1"><a href="les-creches_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-15" id="sousmenu-15-page-150">Les crèches</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-151-2"><a href="ram_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-15" id="sousmenu-15-page-151">Réseau Assistantes Maternelles</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-6"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-7')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-7">Vie Pratique</div></a>
+										<ul class="sousmenu" id="sousmenu-7">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-20-1"><a href="piscine-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-20">Piscine</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-21-2"><a href="gens-du-voyage-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-21">Gens du voyage</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-26-3"><a href="pub_association_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-26">Associations</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-39-4"><a href="aide-aux-associations-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-39">Aide aux associations</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-40-5"><a href="pret-de-materiel-scenique_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-40">Matériel scénique et Panneaux</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-64-6"><a href="teleassistance-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-64">Médaillon pour les personnes âgées</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-130-7"><a href="transport_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-7" id="sousmenu-7-page-130">Transport</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-7"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-13')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-13">Urbanisme</div></a>
+										<ul class="sousmenu" id="sousmenu-13">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-138-1"><a href="httpwww.cc-sammiellois.frws-gestionediteurcontenu.phplang1id130_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-13" id="sousmenu-13-page-138">Ravalement de façade</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-139-2"><a href="caue_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-13" id="sousmenu-13-page-139">Conseil Architecture Urbanisme et Environnement</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-140-3"><a href="adil_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-13" id="sousmenu-13-page-140">Agence D Information sur le Logement</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-8"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-6')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-6">Environnement</div></a>
+										<ul class="sousmenu" id="sousmenu-6">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-101-1"><a href="gestion-des-dechets_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-6" id="sousmenu-6-page-101">Gestion des déchets</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-104-2"><a href="prevention-des-dechets_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-6" id="sousmenu-6-page-104">Prévention des déchets</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-59-3"><a href="le-spanc_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-6" id="sousmenu-6-page-59">Le SPANC</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-18-4"><a href="hydraulique-_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-6" id="sousmenu-6-page-18">Hydraulique</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-89-5"><a href="culture-du-chanvre_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-6" id="sousmenu-6-page-89">Culture du chanvre</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-9"></div>
+									<li class="sousmenu-item sousmenu-extend"><a href="javascript:open_submenu('sousmenu-8')"><div class="sousmenu-titre sousmenu-item-extend" id="sousmenu-titre-8">Tourisme et Hébergement</div></a>
+										<ul class="sousmenu" id="sousmenu-8">
+											<div class="sousmenu-header"></div>
+											<li id="sousmenu-item-95-1"><a href="sortir-en-lorraine_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-8" id="sousmenu-8-page-95">Office de Tourisme Coeur de Lorraine</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-123-2"><a href="la-route-du-saillant-de-saint-mihiel_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-8" id="sousmenu-8-page-123">La Route du Saillant de Saint-Mihiel</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-32-3"><a href="pub_commerce_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-8" id="sousmenu-8-page-32">Hébergements et Restaurants</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-88-4"><a href="voies-vertes-et-veloroute_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-8" id="sousmenu-8-page-88">Voies Vertes et Véloroutes de Lorraine</div></a></li>
+											<div class="sousmenu-separateur"></div>
+											<li id="sousmenu-item-60-5"><a href="aides-creation-d-hebergem_fr.html"><div class="sousmenu-item-data menu-groupe-item-data-8" id="sousmenu-8-page-60">Aides création d'hébergements touristiques</div></a></li>
+											<div class="sousmenu-footer"></div>
+										</ul>
+									</li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-10"></div>
+									<li class="sousmenu-item"><a href="nous-ecrire_fr.html"><div class="sousmenu-titre" id="sousmenu-titre-10">Nous contacter</div></a></li>
+									<div class="menu-principal-separateur" id="menu-principal-separateur-11"></div>
+									<li class="sousmenu-item"><a href="mentions-legales-_fr.html"><div class="sousmenu-titre" id="sousmenu-titre-9">Mentions légales</div></a></li>
+								</ul>
+							</div>
+							<div class="module-colonne">
+								<div class="module-colonne-titre">Météo</div>
+								<div class="module-colonne-separateur"></div>
+								<div class="module-colonne-content">
+									<div class="meteo">
+										<h2>Météo à SAINT-MIHIEL</h2>
+										<div class="meteo-now">
+											<div class="icon"><img src="/images/meteo/Bubble/sunny.png"></div>
+											<div class="meteo-today">26 °C / EnsoleilléVent: N de 11 km/h<br>Humidité: 34%<br></div>
+										</div>
+										<div class="meteo-separation"></div>
+										<div class="meteo-jours">
+											<div class="meteo-prevision">
+												<div class="meteo-prevision-jour">Auj</div>
+												<div class="meteo-prevision-icon"><img src="/images/meteo/Bubble/mostly_sunny.png" title="Globalement Ensoleillé"></div>
+												<div class="meteo-prevision-temperature">14/24 °C</div>
+											</div>
+											<div class="meteo-prevision">
+												<div class="meteo-prevision-jour">Jeu</div>
+												<div class="meteo-prevision-icon"><img src="/images/meteo/Bubble/mostly_sunny.png" title="Globalement Ensoleillé"></div>
+												<div class="meteo-prevision-temperature">14/27 °C</div>
+											</div>
+											<div class="meteo-prevision">
+												<div class="meteo-prevision-jour">Ven</div>
+												<div class="meteo-prevision-icon"><img src="/images/meteo/Bubble/thunderstorm.png" title="Risque d Orages"></div>
+												<div class="meteo-prevision-temperature">13/20 °C</div>
+											</div>
+											<div class="meteo-prevision">
+												<div class="meteo-prevision-jour">Sam</div>
+												<div class="meteo-prevision-icon"><img src="/images/meteo/Bubble/sunny.png" title="Ensoleillé"></div>
+												<div class="meteo-prevision-temperature">7/21 °C</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="module-colonne">
+								<div class="module-colonne-titre">Calendrier</div>
+								<div class="module-colonne-separateur"></div>
+								<div class="module-colonne-content">
+									<script type="text/javascript">
+		var hsgetCalendrier = hs;
+		
+		hsgetCalendrier.graphicsDir = '/js/highslide/graphics/';
+		hsgetCalendrier.outlineType = 'rounded-white';
+		hsgetCalendrier.outlineWhileAnimating = true;
+		hsgetCalendrier.minWidth = 760;
+		hsgetCalendrier.align = 'center';
+		hsgetCalendrier.enableKeyListener = false;
+		hsgetCalendrier.moveText = 'Déplacer';
+		hsgetCalendrier.closeText = 'Fermer';
+		hsgetCalendrier.closeTitle = 'Cliquez ici pour fermer';
+		
+		
+									</script>
+									<style type="text/css">
+				
+			
+					
+		
+									</style>
+									<script type="text/javascript">
+		
+			var articles = [
+		[04,05,2014,5,'Foire de printemps - Foire de printemps'],[18,09,2014,6,'Changement de date repas des Cheveux d\'argent - Changement de date repas des Cheveux d\'argent'],[23,09,2014,7,'Repas des Cheveux d\'argent - Repas des Cheveux d\'argent'],[21,03,2014,10,'Cinéma - Cinéma'],[20,09,2014,15,'Fort de Troyon - Centenaire 1914-2014 - Fort de Troyon - Centenaire 1914-2014'],[21,09,2014,15,'Fort de Troyon - Centenaire 1914-2014 - Fort de Troyon - Centenaire 1914-2014'],[29,06,2014,16,'Concert classique - Concert classique'],[29,06,2014,17,'Vide grenier et fête patronale - Vide grenier et fête patronale'],[29,06,2014,18,'Sortie VTT - Sortie VTT'],[29,06,2014,19,'La Grenouillade - La Grenouillade'],[27,06,2014,20,'Gala de danse - Gala de danse'],[28,06,2014,20,'Gala de danse - Gala de danse'],[22,06,2014,21,'Concours de pêche - Concours de pêche'],[22,06,2014,22,'Bourse déchanges philatéliques - Bourse déchanges philatéliques'],[22,06,2014,23,'Découverte aviron - Découverte aviron'],[21,06,2014,24,'Fête de la musique - Fête de la musique'],[18,06,2014,25,'Cérémonie de commémoration de l\'Appel du 18 juin - Cérémonie de commémoration de l\'Appel du 18 juin'],[15,06,2014,26,'Marche pour vaincre les maladies rares - Marche pour vaincre les maladies rares'],[15,06,2014,27,'Repas de l\'Amitié - Repas de l\'Amitié'],[14,06,2014,28,'Marche nocturne - Marche nocturne'],[13,10,2018,42,'Concert de l\'APEAC - Ballade autour du Monde'],[14,06,2014,30,'Fête de la musique - Fête de la musique'],[12,06,2014,31,'Don du sang - Don du sang'],[08,06,2014,32,'Festival Africain Solidaire (FASo) - Festival Africain Solidaire (FASo)'],[07,06,2014,33,'Découverte aviron - Découverte aviron'],[01,06,2014,34,'Trail - Trail'],[01,06,2014,35,'Course cycliste - Course cycliste'],[01,06,2014,36,'Fête du pâté Lorrain - Fête du pâté Lorrain'],[02,04,2014,38,'Animations Semaine du Développement Durable 2014 - Animations Semaine du Développement Durable 2014'],[08,10,2018,43,'Remise à niveau du Permis de conduire'],[13,10,2018,44,'Soirée théâtre humour'],[17,11,2018,45,'Atelier confection de cosmétique naturels'],[24,11,2018,46,'Sortie à Reims'],];
+						
+				setDays = function(day, month, year) {
+					
+					var result = [true, "", ""];	//par défaut, on affiche la date
+					var boolArticles = false;
+					var rl = 0;
+					var i = 0;
+					
+					if (articles != null) {
+						rl = articles.length;
+					
+						for (i = 0; i < rl; i++) {
+							var unArticle = articles[i];
+							if(unArticle != null){
+								if ((day == unArticle[0]) && (month == (unArticle[1] - 1)) && (year == unArticle[2])) {
+									if(boolArticles){
+										result = [true, "specialDayM", unArticle[4]];
+									} else {
+										result = [true, "specialDay", unArticle[4]];
+										boolArticles = true;
+									}
+									
+									
+									/*break;*/
+								}
+							}
+						}
+					}
+																
+					return result;
+				}
+				
+				selectedDay = function(month,day, year) {
+					var boolArticles = false;
+					var rl = 0;
+					var i = 0;
+						
+					var idArticle = 0;				
+					if (articles != null) {
+						rl = articles.length;			
+						for (i = 0; i < rl; i++) {
+							var unArticle = articles[i];
+							if(unArticle != null){
+								if ((day == unArticle[0]) && (month == (unArticle[1])) && (year == unArticle[2])) {			
+									idArticle = articles[i][3];
+									break;
+								}
+							}
+						}
+					}			
+					
+					if(idArticle > 0){					
+						return hsgetCalendrier.htmlExpand(null,{objectType: "iframe", src:"/modules/calendrier/calendrier_view.php?id-template=1&date="+year+(month < 10 ? "0"+month : month)+(day < 10 ? "0"+day : day)});
+				}
+					
+				}
+						
+				$(document).ready(function(){
+					
+					$("#datepicker").datepicker({
+						numberOfMonths: 1,
+						stepMonths: 1,		
+						nextText: "Suivant",
+						prevText: "Précédent",	
+						dayNamesMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
+						monthNames: ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],
+						firstDay: 1,				
+						beforeShowDay: function(date) {											
+							return setDays(date.getDate(), date.getMonth(), date.getFullYear());						
+						},
+						onSelect: function(dateText) {						
+							selectedDay(
+								parseInt(dateText.slice(0,2),10),
+								parseInt(dateText.slice(3,5),10),
+								parseInt(dateText.slice(6),10)
+							);
+						}
+						
+					});
+					
+					/*
+					* Bricolage indispensable pour colorer les dates choisies
+					* chaque fois que le datepicker se redessine !
+					*/
+					$("#datepicker").bind("mouseenter", function(){
+						if ($("td.important > a", this).eq(0).css("color") != "#FF0000") {
+							$("td.important > a", this).css("color","#FF0000");
+							
+						}
+					});
+				});	//fin document ready
+				
+				$(window).load(function(){
+					$("#datepicker").mouseenter();
+				});	//fin window ready
+			
+			
+									</script>
+									<div id="datepicker"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-left-end"></div>
+				</div>
+				<div class="body-right">
+					<div class="body-right-start"></div>
+					<div class="body-right-repeat">
+						<script type="text/javascript">
+		function on_clique_k() {
+			if (document.rechercheForm.keywords.value=="Recherche ..."){
+				document.rechercheForm.keywords.value="";
+			}
+		}
+		function on_sortie_k() {
+			if (document.rechercheForm.keywords.value==""){	
+				document.rechercheForm.keywords.value="Recherche ...";
+			}
+		}
+		
+						</script>
+						<div id="recherche">
+							<form name="rechercheForm" action="recherche_fr.html" method="post"><input type="text" name="keywords" value="Recherche ..." onblur="javascript:on_sortie_k();" onfocus="javascript:on_clique_k();" id="inputRecherche"> <input type="submit" value="" id="submitRecherche"></form>
+						</div>
+						<div class="social">
+							<script type="text/javascript">var addthis_config = {     ui_language: "fr"}</script>
+							<div class="addthis_toolbox addthis_default_style "><a class="addthis_button_facebook" title="Facebook"></a> <a class="addthis_button_twitter" title="Twitter">></a> <a class="addthis_button_email" title="Envoyer le lien à un ami"></a> <a class="addthis_button_print" title="Imprimer la page"></a> <a class="addthis_button_favorites" title="Ajouter aux favoris"></a> <a class="addthis_button_google_plusone" title="Google +"></a></div>
+							<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4de398d34a11365f"></script>
+						</div>
+						<div style="clear:both;"></div>
+						<div class="nom-page nom-page-90 nom-page-groupe-4">
+							<div class="nom-page-texte">Accueil</div>
+						</div>
+						<div class="rendu-contenu">
+							<p class="MsoNormal" style="line-height: normal; text-align: center;" align="center"><img style="float: left;" src="../../userfile/image/Communes/Localisation_generale_CC_Sammiellois_en_Meuse.png" alt="" width="365" height="804"></p>
+							<p style="text-align: center;"> </p>
+							<p style="text-align: center;"> </p>
+							<p style="text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px; color: #333333;">Bannoncourt</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Bislée<br></span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-size: 16px; font-family: Verdana,Geneva;">Chauvoncourt</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Dompcevrin</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Dompierre-aux-Bois</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Han-sur-Meuse</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Koeur-la-Petite<br> </span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Koeur-la-Grande <br> </span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Lacroix-sur-Meuse</span></p>
+							<p style="text-align: center;"><span style="color: #333333; font-family: Verdana,Geneva; font-size: 16px;">Les Paroches<br> </span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Ménil-aux-Bois</span><br> </span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Maizey</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Ranzières</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Rouvrois-sur-Meuse</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Saint-Mihiel</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Sampigny</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Seuzey</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;">Troyon</span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"><span style="font-family: Verdana,Geneva; font-size: 16px;"><span style="color: #333333;"><span style="color: #333333;">Vaux les Palameix </span></span></span></p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"> </p>
+							<p class="MsoNormal" style="line-height: normal; text-align: center;"> </p>
+							<p> </p>
+							<script type="text/javascript">
+				if ( document.getElementById('ss_menu4') ) {
+					document.getElementById('ss_menu4').style.display='block';
+				}	
+			
+							</script>
+						</div>
+					</div>
+					<div class="body-right-end"></div>
+				</div>
+			</div>
+		</div>
+		<div class="template-body-footer"></div>
+		<div class="template-footer">
+			<div class="template-footer-content template-contents">
+				<div class="agedi">
+					<div id="agedi"><a href="http://www.agedi.fr/" title="AGEDI" target="_blank"><img src="/images/agedi/agedi.gif"></a> <a href="http://www.marches-info.fr" title="Portail AGEDI des marchés publics" target="_blank"><img src="/images/agedi/marches.gif"></a></div>
+				</div>
+				<div class="footer-menu"></div>
+			</div>
+		</div>
+		<p align="center" class="copyright"><a href="http://www.agedi.fr" target="_blank">Réalisation AGEDI, </a>, Hébergement par Net15, Site administrable CMS propulsé par WebSee <a href="index.php?action=en-savoir-plus"> - (En savoir plus)</a></p>
+	</body>
+</html>
