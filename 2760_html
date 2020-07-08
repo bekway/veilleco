@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" dir="ltr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is based on t3_gabarit_basic
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="https://www.lotettolzac.fr">
+		<link rel="shortcut icon" href="/typo3conf/ext/t3_cclt/Resources/Public/Icons/favicon.ico" type="image/x-icon">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index,follow">
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="google" content="notranslate">
+		<meta property="og:title" content="Comptes-rendus des conseils communautaires">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/bootstrap_package/Resources/Public/Css/ionicons.min.css?1529061949" media="all">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_fecc4237e271f1e4713556eb40726df38c72bdba.css?1560864361" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_b71c5508f726ea8b18161fdc6bb8b604403e7342.css?1560864361" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_8c65304076c8decafa2d499a06ec634e04b25f94.css?1560864362" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/rx_shariff/Resources/Public/Css/shariff.complete.css?1528365253" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/bootstrappackage/lessphp_04217adc5935fa0b8fa320d6ada31c419e5fe55a.css?1560864362" media="all">
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/modernizr.min.js?1529061949" type="text/javascript" async="async"></script>
+		<script src="/typo3conf/ext/tarteaucitron/Resources/Public/Javascript/tarteaucitron/tarteaucitron.js?1540383178" type="text/javascript"></script>
+		<script src="/typo3conf/ext/tarteaucitron/Resources/Public/Javascript/tarteaucitron-init.js?1540383178" type="text/javascript"></script>
+		<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,-2);
+		}
+		
+
+/*TS_inlineJS*/
+
+var tarteaucitronForceLanguage = 'fr';var tarteaucitronHeaderContent ='\u000A\u003Cdiv\u0020id=\u0022c773\u0022\u0020class=\u0022frame\u0020frame-default\u0020frame-type-text\u0020frame-background-none\u0020frame-no-backgroundimage\u0020frame-space-before-none\u0020frame-space-after-none\u0022\u003E\u003Cdiv\u0020class=\u0022frame-container\u0022\u003E\u003Cdiv\u0020class=\u0022frame-inner\u0022\u003E\u003Cheader\u003E\u003Ch2\u0020class=\u0022element-header\u0020\u0022\u003E\u000A\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Gestion\u0020de\u0020vos\u0020pr\u00e9f\u00e9rences\u0020sur\u0020les\u0020cookies\u000A\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u003C\/h2\u003E\u003C\/header\u003E\u003Cdiv\u0020class=\u0022tarteaucitronInfoBox\u0022\u003E\u003Cp\u003ECertaines\u0020fonctionnalit\u00e9s\u0020de\u0020ce\u0020site\u0020(partage\u0020de\u0020contenus\u0020sur\u0020les\u0020r\u00e9seaux\u0020sociaux,\u0020lecture\u0020directe\u0020de\u0020vid\u00e9os)\u0020s\u2019appuient\u0020sur\u0020des\u0020services\u0020propos\u00e9s\u0020par\u0020des\u0020sites\u0020tiers.\u0020Ces\u0020fonctionnalit\u00e9s\u0020d\u00e9posent\u0020des\u0020cookies\u0020permettant\u0020notamment\u0020\u00e0\u0020ces\u0020sites\u0020de\u0020tracer\u0020votre\u0020navigation.\u0020Ces\u0020cookies\u0020ne\u0020sont\u0020d\u00e9pos\u00e9s\u0020que\u0020si\u0020vous\u0020donnez\u0020votre\u0020accord.\u0020Vous\u0020pouvez\u0020vous\u0020informer\u0020sur\u0020la\u0020nature\u0020des\u0020cookies\u0020d\u00e9pos\u00e9s,\u0020les\u0020accepter\u0020ou\u0020les\u0020refuser\u0020soit\u0020globalement\u0020pour\u0020l\u2019ensemble\u0020du\u0020site\u0020et\u0020l\u2019ensemble\u0020des\u0020services,\u0020soit\u0020service\u0020par\u0020service.\u003C\/p\u003E\u003C\/div\u003E\u003C\/div\u003E\u003C\/div\u003E\u003C\/div\u003E\u000A\u000A';
+
+
+/*]]>*/
+		</script>
+		<link rel="prev" href="/la-communaute/bulletins-communautaires-et-rapports-dactivites/">
+		<title>Comptes-rendus des conseils communautaires |</title>
+		<meta name="description" content="">
+		<link rel="canonical" href="https://www.lotettolzac.fr/la-communaute/comptes-rendus-des-conseils-communautaires/?L=0">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Comptes-rendus des conseils communautaires">
+		<meta property="og:url" content="https://www.lotettolzac.fr/la-communaute/comptes-rendus-des-conseils-communautaires/?L=0">
+		<meta property="og:site_name" content="">
+		<meta name="twitter:card" content="summary">
+		<link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/">
+		<link rel="search" type="application/opensearchdescription+xml" href="https://www.lotettolzac.fr/?type=7567" title="Website Search">
+	</head>
+	<body id="p131" class="page-131 pagelevel-2 language-0 backendlayout-default layout-default">
+		<meta name="format-detection" content="telephone=no">
+		<div id="wrapper">
+			<div class="overlay"></div>
+			<div id="top"></div>
+			<div class="body-bg body-bg-top">
+				<div id="page-content-wrapper"><a class="sr-only sr-only-focusable" href="#content"><span>Aller au contenu principal</span></a>
+					<header class="navbar navbar-default navbar-static-top">
+						<div class="container-fluid">
+							<div class="navbar-header navbar-header-main navbar-fixed-top">
+								<div class="bandeau"><a class="img-responsive" href="/"><img class="navbar-brand-logo-normal" src="/typo3conf/ext/t3_cclt/Resources/Public/Images/Logo-Lot_Tolzac_small.jpg" alt=" logo" height="173" width="300"></a>
+									<h1 style="position:absolute; left: -9000px; font-size:0.6em">Comptes-rendus des conseils communautaires</h1>
+								</div><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="navbar-header-border-bottom"></span>
+								<nav class="navbar-collapse collapse" role="navigation">
+									<ul class="nav navbar-nav navbar-main">
+										<li class=" "><a href="/" title="Accueil"><span class="navbar-item-text">Accueil</span><span class="bar"></span></a></li>
+										<li class="active dropdown dropdown-hover"><a href="/la-communaute/territoire/" title="La communauté" class="dropdown-link"><span class="navbar-item-text">La communauté</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="Présentation et communes membres" href="/la-communaute/territoire/"><span class="navbar-item-text">Présentation et communes membres</span></a></li>
+												<li class=" "><a title="Les compétences" href="/la-communaute/competences/"><span class="navbar-item-text">Les compétences</span></a></li>
+												<li class=" "><a title="Les finances de la Communauté" href="/la-communaute/budget/"><span class="navbar-item-text">Les finances de la Communauté</span></a></li>
+												<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Les élus</span></a>
+													<ul class="dropdown-menu">
+														<li class=""><a title="Le Bureau" href="/la-communaute/les-elus/le-bureau/"><span class="navbar-item-text">Le Bureau</span></a></li>
+														<li class=""><a title="Le Conseil Communautaire" href="/la-communaute/les-elus/le-conseil-communautaire/"><span class="navbar-item-text">Le Conseil Communautaire</span></a></li>
+														<li class=""><a title="Les Commissions" href="/la-communaute/les-elus/les-commissions/"><span class="navbar-item-text">Les Commissions</span></a></li>
+													</ul>
+												</li>
+												<li class=" dropdown-submenu"><a href="#" class="dropdown-toggle level3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="navbar-item-text">Les Services</span></a>
+													<ul class="dropdown-menu">
+														<li class=""><a title="Pôle Administratif et Développement" href="/la-communaute/services/lequipe-administrative/"><span class="navbar-item-text">Pôle Administratif et Développement</span></a></li>
+														<li class=""><a title="Pôle Technique" href="/la-communaute/services/lequipe-technique/"><span class="navbar-item-text">Pôle Technique</span></a></li>
+													</ul>
+												</li>
+												<li class=" "><a title="Bulletins communautaires et rapports d’activités" href="/la-communaute/bulletins-communautaires-et-rapports-dactivites/"><span class="navbar-item-text">Bulletins communautaires et rapports d’activités</span></a></li>
+												<li class="active "><a title="Comptes-rendus des conseils communautaires" href="/la-communaute/comptes-rendus-des-conseils-communautaires/"><span class="navbar-item-text">Comptes-rendus des conseils communautaires <span class="sr-only">(current)</span></span></a></li>
+											</ul>
+										</li>
+										<li class=" dropdown dropdown-hover"><a href="/developpement-economique/zae-gouneau/" title="Développement économique" class="dropdown-link"><span class="navbar-item-text">Développement économique</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="La Zone d'Activités Economiques" href="/developpement-economique/zae-gouneau/"><span class="navbar-item-text">La Zone d'Activités Economiques</span></a></li>
+												<li class=" "><a title="Le Village d’Entreprises et d’Artisans" href="/developpement-economique/coworking/"><span class="navbar-item-text">Le Village d’Entreprises et d’Artisans</span></a></li>
+												<li class=" "><a title="L’agriculture" href="/developpement-economique/agriculture/"><span class="navbar-item-text">L’agriculture</span></a></li>
+												<li class=" "><a title="L'artisanat, les commerces et les services" href="/developpement-economique/commerce-artisanat/"><span class="navbar-item-text">L'artisanat, les commerces et les services</span></a></li>
+											</ul>
+										</li>
+										<li class=" dropdown dropdown-hover"><a href="/urbanisme/urbanisme-amenagement/" title="Urbanisme" class="dropdown-link"><span class="navbar-item-text">Urbanisme</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="Le PLUi" href="/urbanisme/urbanisme-amenagement/"><span class="navbar-item-text">Le PLUi</span></a></li>
+												<li class=" "><a title="Le diagnostic de territoire" href="/urbanisme/le-diagnostic-de-territoire/"><span class="navbar-item-text">Le diagnostic de territoire</span></a></li>
+											</ul>
+										</li>
+										<li class=" "><a href="/tourisme/" title="Tourisme"><span class="navbar-item-text">Tourisme</span><span class="bar"></span></a></li>
+										<li class=" dropdown dropdown-hover"><a href="/petite-enfance-et-jeunesse/atelier-parents/" title="Petite enfance et jeunesse" class="dropdown-link"><span class="navbar-item-text">Petite enfance et jeunesse</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="L'Atelier des Parents" href="/petite-enfance-et-jeunesse/atelier-parents/"><span class="navbar-item-text">L'Atelier des Parents</span></a></li>
+												<li class=" "><a title="Le Rampe" href="/petite-enfance-et-jeunesse/rampe/"><span class="navbar-item-text">Le Rampe</span></a></li>
+												<li class=" "><a title="La crèche" href="/petite-enfance-et-jeunesse/creche-nuage-rose/"><span class="navbar-item-text">La crèche</span></a></li>
+												<li class=" "><a title="Le centre de loisirs" href="/petite-enfance-et-jeunesse/centre-loisirs/"><span class="navbar-item-text">Le centre de loisirs</span></a></li>
+												<li class=" "><a title="Animations jeunesse" href="/petite-enfance-et-jeunesse/animations-jeunesse/"><span class="navbar-item-text">Animations jeunesse</span></a></li>
+												<li class=" "><a title="Aide aux jeunes" href="/petite-enfance-et-jeunesse/aide-bafa/"><span class="navbar-item-text">Aide aux jeunes</span></a></li>
+											</ul>
+										</li>
+										<li class=" dropdown dropdown-hover"><a href="/environnement/collecte-dechets/" title="Environnement" class="dropdown-link"><span class="navbar-item-text">Environnement</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="La collecte des déchets" href="/environnement/collecte-dechets/"><span class="navbar-item-text">La collecte des déchets</span></a></li>
+												<li class=" "><a title="Le tri des déchets" href="/environnement/tri-dechets/"><span class="navbar-item-text">Le tri des déchets</span></a></li>
+												<li class=" "><a title="Le compostage des déchets" href="/environnement/le-compostage-des-dechets/"><span class="navbar-item-text">Le compostage des déchets</span></a></li>
+												<li class=" "><a title="Déchèterie" href="/environnement/decheterie/"><span class="navbar-item-text">Déchèterie</span></a></li>
+											</ul>
+										</li>
+										<li class=" dropdown dropdown-hover"><a href="/vie-pratique/annuaire-des-communes/" title="Vie pratique" class="dropdown-link"><span class="navbar-item-text">Vie pratique</span><b class="caret"></b><span class="bar"></span></a>
+											<ul class="dropdown-menu">
+												<li class=" "><a title="Annuaire des communes" href="/vie-pratique/annuaire-des-communes/"><span class="navbar-item-text">Annuaire des communes</span></a></li>
+												<li class=" "><a title="Liste des associations du Lot-et-Tolzac" href="/vie-pratique/liste-des-associations-du-lot-et-tolzac/"><span class="navbar-item-text">Liste des associations du Lot-et-Tolzac</span></a></li>
+												<li class=" "><a title="Santé / Numéros d’urgence" href="/vie-pratique/sante-numeros-durgence/"><span class="navbar-item-text">Santé / Numéros d’urgence</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</header>
+					<div aria-labelledby="breadcrumb" role="navigation" class="breadcrumb-section hidden-xs hidden-sm">
+						<div class="container">
+							<p class="sr-only" id="breadcrumb">You are here:</p>
+							<ol class="breadcrumb">
+								<li class=""><a href="/" title="Accueil"><span>Accueil</span></a></li>
+								<li class=""><a href="/la-communaute/territoire/" title="La communauté"><span>La communauté</span></a></li>
+								<li class="active"><span>Comptes-rendus des conseils communautaires</span></li>
+							</ol>
+						</div>
+					</div>
+					<div id="content" class="main-section">
+						<!--TYPO3SEARCH_begin-->
+						<div class="section section-default">
+							<div class="container">
+								<div id="c2000" class="frame frame-default frame-type-textpic frame-background- frame-no-backgroundimage frame-space-before-none frame-space-after-none">
+									<div class="frame-container">
+										<div class="frame-inner">
+											<header>
+												<h2 class="element-header ">Comptes-rendus des conseils communautaires</h2>
+											</header>
+										</div>
+									</div>
+								</div>
+								<div id="c2427" class="frame frame-default frame-type-accordion frame-background- frame-no-backgroundimage frame-space-before-small frame-space-after-small">
+									<div class="frame-container">
+										<div class="frame-inner">
+											<header>
+												<h3 class="element-header ">Conseils communautaires de 2020</h3>
+											</header>
+											<div class="panel-group" id="accordion-2427" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-2427-452">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-2427" href="#accordion-2427-452" aria-expanded="false" aria-controls="accordion-2427-452"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 28 janvier 2020</span></a></h4>
+													</div>
+													<div id="accordion-2427-452" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-2427-452">
+														<div class="panel-body">
+															<p class="MsoBodyText"><strong>Ordre du jour :</strong></p>
+															<p class="MsoBodyText"><em><strong>Urbanisme :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText"> Approbation du PLU Intercommunal (délibération)</li>
+																<li class="MsoBodyText">
+																	<p> Avis sur le projet de modification mineure du règlement du PPR Inondation Lot du département permettant la réalisation et l'extension de serres en zone rouge foncée (délibération) - communes concernées CCLT : Le Temple-sur-Lot, Castelmoron-sur-Lot, Pinel-Hauterive, Laparade. </p>
+																</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Base omnisport :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Acquisition de 2/3 des actions de la commune de le Temple-sur-Lot (délibération)</li>
+																<li class="MsoBodyText">Désignation de 7 représentants pour siéger au conseil d'administration de la SEML la BASE Omnisport (délibération)</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Environnement :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Contrat de reprise du PAPIER/CARTON issu de la déchèterie et des colonnes de tri (délibération)</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Développement économique:</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">ZAE : Engagement de travaux de voirie et réseaux pour commercialisation de nouveaux lots + Convention d'assistance à maîtrise d'ouvrage (délibération)</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Questions diverses </strong></em></p>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/deliberations_du_conseil_communautaire_du_28_janvier_2020.pdf">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="c1999" class="frame frame-default frame-type-accordion frame-background- frame-no-backgroundimage frame-space-before-small frame-space-after-small">
+									<div class="frame-container">
+										<div class="frame-inner">
+											<header>
+												<h3 class="element-header ">Conseils communautaires de 2019</h3>
+											</header>
+											<div class="panel-group" id="accordion-1999" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1999-289">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1999" href="#accordion-1999-289" aria-expanded="false" aria-controls="accordion-1999-289"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 21 mars 2019</span></a></h4>
+													</div>
+													<div id="accordion-1999-289" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1999-289">
+														<div class="panel-body">
+															<p class="MsoBodyText"><strong>Ordre du jour :</strong></p>
+															<p class="MsoBodyText"><em><strong>Administration générale et finances :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText"> Approbation du procès-verbal de La séance du 12 décembre 2018</li>
+																<li class="MsoBodyText"> Election du Président de séance pour les débats et Les votes des comptes 2018 </li>
+																<li class="MsoBodyText">Vote des comptes de gestion 2018 et des comptes administratifs 2018 (budget principal, office du tourisme, ZAE et Pôle d'entreprises économiques)</li>
+																<li class="MsoBodyText">Affectations des résultats de l’exercice 2018</li>
+																<li class="MsoBodyText">Création régie de recette pour la vente des composteurs</li>
+																<li class="MsoBodyText">Fonds de concours entre l’EPCI et la commune de Castelmoron-sur-Lot pour la participation à l'achat d’un panneau d’information numérique</li>
+																<li class="MsoBodyText">Fonds de concours entre l’EPCI et La commune de Le Temple-sur-Lot pour la participation à l'achat d’un panneau d’information numérique</li>
+																<li class="MsoBodyText">Fonds de concours entre l’EPCI et La commune de Tombeboeuf pour la participation à l’achat d’un panneau d’information numérique</li>
+																<li class="MsoBodyText">Autorisation au Président d’entrer en justice</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Enfance ef jeunesse :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Renouvellement de la convention de partenariat avec la Communauté d’Agglomération Val de Garonne pour la participation aux frais de fonctionnement des centres de loisirs</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Economie :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Point sur la commission de février 2019</li>
+																<li class="MsoBodyText">Renouvellement du partenariat avec le Service Remplacement 47</li>
+																<li class="MsoBodyText">Convention de partenariat avec la Région Nouvelle Aquitaine (SRDEII)</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Déchets ménagers / tric sélectif :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Proposition de réaliser Etude ValOrizon Bio déchets</li>
+																<li class="MsoBodyText">Point sur La commission de février 2019</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Energie :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Candidature au marché d'achat d'électricité proposé par le groupement de commandes du SDEE pour tt l'achat d'énergies, de fournitures et de services en matière d'efficacité et d'exploitation énergétique»</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Numérique :</strong></em></p>
+															<ul class="list-normal">
+																<li class="MsoBodyText">Conventionnement Fonds de Concours avec le Syndicat Départemental du Numérique pour Le déploiement de la fibre Informations par commission</li>
+															</ul>
+															<p class="MsoBodyText"><em><strong>Questions diverses</strong></em></p>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_21.03.2019.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1999-291">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1999" href="#accordion-1999-291" aria-expanded="false" aria-controls="accordion-1999-291"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 11 avril 2019</span></a></h4>
+													</div>
+													<div id="accordion-1999-291" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1999-291">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><strong><em>Administration générale et finances :</em></strong></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de la séance du 21 mars 2019</li>
+																<li>Vote des taux d’imposition 2019 : TH, TFB, TFNB, CFE, TEOM</li>
+																<li>Vote des budgets primitifs 2019: Budget général, ZAE, Office du tourisme, Pôle d’entreprises économiques</li>
+																<li>Fonds de solidarité / fonds de concours 2019</li>
+															</ul>
+															<p><strong><em>Compétence :</em></strong></p>
+															<ul class="list-normal">
+																<li>Etude de faisabilité sur transfert de la compétence  « création et gestion de la base de loisirs à vocation touristique et sportive » du Temple sur Lot  à la Communauté de Communes Lot et Tolzac</li>
+															</ul>
+															<p><strong><em>GEMAPI:</em></strong></p>
+															<ul class="list-normal">
+																<li>Nouveaux statuts Syndicat Trec, Gupie, Médier</li>
+																<li>Extension de périmètre du syndicat</li>
+																<li>Transfert de compétence GEMAPI au syndicat</li>
+																<li>Désignation des délégués</li>
+															</ul>
+															<p><strong><em>Demandes de subvention :</em></strong></p>
+															<p><strong><em>Questions diverses</em></strong></p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_11.04.2019.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1999-295">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1999" href="#accordion-1999-295" aria-expanded="false" aria-controls="accordion-1999-295"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 27 juin 2019</span></a></h4>
+													</div>
+													<div id="accordion-1999-295" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1999-295">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><strong><em>Administration générale et finances </em></strong></p>
+															<ul class="list-normal">
+																<li>Information concernant les marchés à procédure adaptés conclus (émulsion, gravillons, granulats)</li>
+																<li>Délibération portant recomposition de l’organe délibérant préalablement au renouvellement de mandat</li>
+																<li>Répartition du FPIC 2019</li>
+																<li>Budget : décision modificative n°1 relative FPIC</li>
+																<li>Point étude transfert de compétence « BASE du Temple sur Lot »</li>
+															</ul>
+															<p><strong><em>Ressources humaines </em></strong></p>
+															<ul class="list-normal">
+																<li>Création d’un poste d’adjoint administratif (poste agent d’accueil) à 21h00 et suppression du poste d’adjoint administratif à 17h50 (délibération)</li>
+																<li>Création d’un poste contractuel d’agent d’animation tourisme pour accroissement saisonnier d’activité à l’office du tourisme (juillet et août) à 25h00 (délibération)</li>
+																<li>Création d’un poste contractuel d’agent d’animation tourisme pour accroissement temporaire d’activité à l’office du tourisme pour 21h pour une durée de 6 mois (août 2019 à février 2020) (délibération)</li>
+																<li>Modification du tableau des emplois (délibération)</li>
+																<li>Modification de la délibération du RIFSEEP pourtant ajout des cadres d’emploi suivants : adjoint administratif  et d’animation (délibération)</li>
+																<li>Fixation des nouvelles horaires du gardien de la déchèterie suite aux nouvelles  amplitudes horaires (en attente avis CT) (délibération)</li>
+																<li>Fixation des nouvelles horaires du service PAV (en attente avis CT) (délibération)</li>
+																<li>Délibération générale précisant l’organisation du temps de travail des services techniques</li>
+															</ul>
+															<p><strong><em>Demandes de subvention</em></strong></p>
+															<ul class="list-normal">
+																<li>Demande de la MFR  de Castelmoron sur Lot  pour de l’équipement mobilier (délibération)</li>
+																<li>Demande de l’association de sauvegarde de matériel des sapeurs pompiers (délibération)</li>
+																<li>Demande de subvention de l’OCP de Verteuil d’Agenais (délibération)</li>
+															</ul>
+															<p><strong><em>Informations relatives à la fête de la CC Lot et Tolzac le samedi 13 juillet à Verteuil d’Agenais</em></strong></p>
+															<p><strong>Développement économique</strong></p>
+															<ul class="list-normal">
+																<li>Vente d’une parcelle de 2 630 m² sur la ZAE à  la SCI PASERICO (entreprise SERVI MAT - vente et location de matériel de TP) (délibération)</li>
+																<li>Signature du Contrat de Dynamisation avec la Région Nouvelle Aquitaine (délibération)</li>
+																<li>Point sur les rencontres relatives à la création d’une Maison de Santé</li>
+															</ul>
+															<p><strong><em>Urbanisme</em></strong></p>
+															<p>- information PLUI</p>
+															<p><strong><em>Questions diverses</em></strong></p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_27.06.2019.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1999-332">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1999" href="#accordion-1999-332" aria-expanded="false" aria-controls="accordion-1999-332"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 25 septembre 2019</span></a></h4>
+													</div>
+													<div id="accordion-1999-332" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1999-332">
+														<div class="panel-body">
+															<p><strong>Ordre du Jour :</strong></p>
+															<p><strong><em>Administration générale et finances </em></strong></p>
+															<ul class="list-normal">
+																<li>Modification des statuts de la CC Lot et Tolzac (voir projet de statuts en pièce jointe) intégrant de nouvelles compétences obligatoires (eau, assainissement …) et facultatives (gestion Base Le Temple sur Lot) (délibération)</li>
+																<li>Transfert de la compétence eau et assainissement au syndicat départemental EAU 47(délibération)</li>
+																<li>Désignation des délégués titulaires et suppléants au syndicat départemental EAU 47(délibération)</li>
+															</ul>
+															<p> </p>
+															<p><strong><em>Ressources humaines </em></strong></p>
+															<ul class="list-normal">
+																<li>Modification du taux de cotisation pour 2020 – contrat groupe assurance des risques statutaires 2017-2020 avec le CDG 47 (délibération)</li>
+																<li>Création d’un poste de technicien territorial 1<sup>er</sup> classe  (délibération)</li>
+																<li>Fixation du ratio d’avancement de grade à 100 % (délibération)</li>
+															</ul>
+															<p><strong><em>Demandes de subvention</em></strong></p>
+															<ul class="list-normal">
+																<li>Demande de subvention de l’association Musiques en Vallée du Lot pour l’organisation des Folkloriades en juillet 2019 (délibération)</li>
+															</ul>
+															<p><strong>Développement économique</strong></p>
+															<ul class="list-normal">
+																<li>Vente d’une parcelle de 2 500 m² sur la ZAE à  M. LONGHI Eric (entreprise de réalisation de préfabriqué béton)  (délibération)</li>
+																<li>Vente d’une parcelle de 2 250 m² sur la ZAE à  SAS BATEAUX POUR LA PLANETE (entreprise de construction navale)  (délibération)</li>
+																<li>Vente d’une parcelle de 2000 m² sur la ZAE à M. CABAS</li>
+																<li>Signature convention SDEE 47 maintenance éclairage public sur la ZAE</li>
+															</ul>
+															<p><strong><em>Tourisme</em></strong></p>
+															<ul class="list-normal">
+																<li>Tarif taxe de séjour 2020 (délibération)</li>
+															</ul>
+															<p><strong><em>Questions diverses</em></strong></p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_25.09.2019.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1999-446">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1999" href="#accordion-1999-446" aria-expanded="false" aria-controls="accordion-1999-446"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 18 décembre 2019</span></a></h4>
+													</div>
+													<div id="accordion-1999-446" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1999-446">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><strong><em>Administration générale et finances </em></strong></p>
+															<ul class="list-normal">
+																<li>Election Vice-président commission « Voirie et Environnement » (délibération)</li>
+																<li>Désignation des délégués titulaires au syndicat départemental VALORIZON (délibération)</li>
+																<li>Information sur modification statutaire en cours</li>
+																<li>Indemnité au trésorier (délibération)</li>
+																<li>Décision modificative : vente du mini bus (délibération)</li>
+																<li>Décision modificative : achat pompes à carburant (délibération)</li>
+																<li>Renouvellement convention retraite 2020-2022 avec le CGD47 (délibération)</li>
+																<li>Assurance risques statutaires : autorisation à donner au CDG 47 pour lancer la consultation (délibération)</li>
+															</ul>
+															<p><strong><em>Ressources humaines </em></strong></p>
+															<ul class="list-normal">
+																<li>Recrutement en CDD 1 an de M. Etienne Soumet-Dutertre au poste d’agent de développement à compter du 6.01.2020 (délibération)</li>
+															</ul>
+															<p><strong><em>Urbanisme</em></strong></p>
+															<ul class="list-normal">
+																<li>Avis à donner sur la suppression du site de Griffoul au Temple sur Lot du réseau des Sites Natura 2000</li>
+																<li>Engagement de principe de la CC dans la réflexion portant mise en place d’un service instructeur (délibération)</li>
+																<li>Information état avancement PLUI (délibération)</li>
+															</ul>
+															<p><strong>Agriculture / Développement économique</strong></p>
+															<ul class="list-normal">
+																<li>Aide aux jeunes agriculteurs 2019 (4) (délibération)</li>
+																<li>Aide aux artisans et commerçants (1 dossier) (délibération)</li>
+																<li>Echanges sur Zones de Non Traitement en matière agricole</li>
+																<li>Vente d’une parcelle de 5000 m² sur la ZAE à l’entreprise LALANNE (délibération)</li>
+																<li>Proposition de modification des loyers au sein du Village Entreprises et Artisans (délibération)</li>
+															</ul>
+															<p><strong><em>Culture, jeunesse et sport</em></strong></p>
+															<ul class="list-normal">
+																<li>Aide aux troupes culturelles amateur : demande Théâtre La Poudre aux Yeux (délibération)</li>
+																<li>Marché public ALSH 2020-2021-2022 : choix du gestionnaire (délibération)</li>
+																<li>Info labellisation CCLT « Terres de jeux JO 2024 »</li>
+															</ul>
+															<p><strong><em>Autres informations diverses par commission</em></strong></p>
+															<p><strong><em>Questions diverses</em></strong></p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_18.12.2019.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="c1834" class="frame frame-default frame-type-accordion frame-background- frame-no-backgroundimage frame-space-before-small frame-space-after-small">
+									<div class="frame-container">
+										<div class="frame-inner">
+											<header>
+												<h3 class="element-header ">Conseils communautaires de 2018</h3>
+											</header>
+											<div class="panel-group" id="accordion-1834" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-282">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-282" aria-expanded="false" aria-controls="accordion-1834-282"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 15 février 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-282" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-282">
+														<div class="panel-body">
+															<p><strong>Ordre du Jour :</strong></p>
+															<p><strong><em>Finances et administration générale :</em></strong></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de séance</li>
+																<li>Autorisation à engager des dépenses d’investissement avant le vote du budget primitif 2018 (pour le paiement de la facture d’achat de colonnes de tri sélectif)</li>
+																<li>Débat d’Orientations budgétaires 2018</li>
+																<li>CDG 47 : convention « accompagnement numérique »</li>
+															</ul>
+															<p><em><strong>Urbanisme PLUI :</strong></em></p>
+															<ul class="list-normal">
+																<li>Nouveau débat sur le PADD suite des évolutions</li>
+															</ul>
+															<p><em><strong>Ressources humaines :</strong></em></p>
+															<ul class="list-normal">
+																<li>Plan de formation mutualisé</li>
+															</ul>
+															<p><strong><em>Numérique :</em></strong></p>
+															<ul class="list-normal">
+																<li>Convention avec le syndicat départemental Lot-et-Garonne Numérique pour le déploiement de la fibre sur le territoire</li>
+															</ul>
+															<p><em><strong>Enfance-jeunesse :</strong></em></p>
+															<ul class="list-normal">
+																<li>Renouvellement de la convention avec Val de Garonne pour le centre de loisirs</li>
+															</ul>
+															<p><em><strong>Voirie :</strong></em></p>
+															<ul class="list-normal">
+																<li> redéfinition de la notion d’intérêt communautaire en matière de voirie</li>
+															</ul>
+															<p><em><strong>Déchets ménagers :</strong></em></p>
+															<ul class="list-normal">
+																<li>Point sur le service de collecte</li>
+																<li>Choix des repreneurs pour les déchets issus de la déchèterie (le bois, le fer, le carton, les cartouches d’encre, les huiles alimentaires)</li>
+																<li>Choix du repreneur pour la reprise des matériaux issus du tri sélectif (verre, emballages, journaux-revues-magasines)</li>
+															</ul>
+															<p><em><strong>GEMAPI :</strong></em></p>
+															<ul class="list-normal">
+																<li>Avis sur les statuts syndicat mixte Dropt Aval et désignation des délégués // Syndicat du Tolzat</li>
+															</ul>
+															<p><em><strong>Panneaux d’information numérique :</strong></em></p>
+															<ul class="list-normal">
+																<li>Point sur les modalités d’achat</li>
+																<li>Demande de subventions FISAC et Région</li>
+															</ul>
+															<p><em><strong>Information diverses par commission</strong></em></p>
+															<p><br><em><strong>Questions diverses</strong></em></p>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_15.02.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-283">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-283" aria-expanded="false" aria-controls="accordion-1834-283"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 22 mars 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-283" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-283">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><em><strong>Administration générale et finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de la séance du 15 février 2018</li>
+																<li>Vote des comptes de gestion 2017 et des comptes administratifs 2017 (budget principal, office du tourisme, ZAE et Pôle d’entreprises économiques)</li>
+																<li>Affectations des résultats de l’exercice 2017</li>
+															</ul>
+															<p><em><strong>Informations par commission</strong></em></p>
+															<p><br><em><strong>Questions diverses</strong></em></p>
+															<p><br><em><strong>Proposition d’ajouter à l’ordre du jour :</strong></em></p>
+															<ul class="list-normal">
+																<li>la modification de 2 délibérations en matière de reprise des déchets ménagers</li>
+																<li>une délibération désignant les délégués au syndicat du Tolzac</li>
+															</ul>
+															<p>Les membres présents acceptent d’ajouter ces éléments à l’ordre du jour.</p>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Proces_verbal_CC_22.03.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire le procès verbal</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-284">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-284" aria-expanded="false" aria-controls="accordion-1834-284"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 11 avril 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-284" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-284">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><em><strong>Administration générale et finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de la séance du 22 mars 2018</li>
+																<li>Vote des taux d’imposition 2018 : TH, TFB, TFNB, CFE, TEOM</li>
+																<li>Vote des budgets primitifs 2018: Budget général, ZAE, Office du tourisme, Pôle d’entreprises économiques</li>
+																<li>Fonds de solidarité / fonds de concours 2018</li>
+															</ul>
+															<p><em><strong>Urbanisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Modification simplifiée du PLU du Temple su Lot concernant la ZAE de Gouneau</li>
+															</ul>
+															<p><em><strong>Tourisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Convention de prestation de services «Sirtaqui et site internet » avec la CC du Confluent et des Coteaux de Prayssas</li>
+															</ul>
+															<p><em><strong>Informations par commission</strong></em></p>
+															<p><em><strong>Questions diverses</strong></em></p>
+															<p><em><strong>Il est proposé d’ajouter les éléments suivants à l’ordre du jour :</strong></em></p>
+															<ul class="list-normal">
+																<li>Modification de l’affectation des résultats de la ZAE</li>
+																<li>Election des délégués titulaires et suppléants au SMAVLOT (3 / 3)</li>
+															</ul>
+															<p>Autorisation du Président d’ester en justice dans le cadre du recours porté contre l’arrêté Préfectoral de dissolution du SMIDEM</p>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Proces_verbal_CC_11.04.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire le procès verbal</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-285">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-285" aria-expanded="false" aria-controls="accordion-1834-285"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 14 juin 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-285" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-285">
+														<div class="panel-body">
+															<p><strong>Ordre du jour : </strong></p>
+															<p><em><strong>Administration générale et finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation procès verbal de séance du 11 avril 2018</li>
+																<li>Fonds de Péréquation des ressources Intercommunales et Communales (délibération)</li>
+																<li>Fonds de concours (fonds de solidarité) (délibération)</li>
+																<li>Fixant les tarifs reprographie pour les villages entreprises (délibération)</li>
+																<li>Adhésion à l’association Interco Rurales 47 (délibération)</li>
+																<li>Pays de la Vallée : transfert de la compétence GEMAPI +</li>
+																<li>Pays de la Vallée : désignation de 3 délégués titulaires et de 3 suppléants - Carte 1 développement local (délibération)</li>
+																<li>Pays de la Vallée : désignation de 3 délégués titulaires et de 3 suppléants - Carte 2 GEMAPI</li>
+															</ul>
+															<p><em><strong>Ressources humaines :</strong></em></p>
+															<ul class="list-normal">
+																<li>Information candidatures en cours poste agent de développement + agent service technique</li>
+															</ul>
+															<p><em><strong>Voirie :</strong></em></p>
+															<ul class="list-normal">
+																<li>Convention de mise à disposition des voies d’intérêt communautaire (délibération)</li>
+																<li>Convention de prestation de service pour les travaux hors programme (délibération)</li>
+															</ul>
+															<p><em><strong>Culture :</strong></em></p>
+															<ul class="list-normal">
+																<li>Aide aux troupes professionnelles : demande de l’OCP de Verteuil (délibération)</li>
+																<li>Aide aux troupes amateurs : demande du Théâtre Altitude 182 et de la troupe La Poudre aux Yeux (délibération)</li>
+																<li>Fête de la Communauté de Communes : Subvention au Comité de Fête pour l’organisation de la fête (délibération)</li>
+															</ul>
+															<p><em><strong>Enfance jeunesse :</strong></em></p>
+															<ul class="list-normal">
+																<li>Crèche Le Nuage Rose convention 2018 (+5% subvention) (délibération)</li>
+																<li>Fonctionnement des chantiers jeunes + création d’une régie de recette chantier jeunes pour remise d’un chèque récompense (délibérations)</li>
+															</ul>
+															<p><em><strong>Tourisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Taxe de séjour 2019 : Vote du barème applicable aux hébergements non classés (délibération)</li>
+															</ul>
+															<p><em><strong>Développement économique :</strong></em></p>
+															<ul class="list-normal">
+																<li>Travaux des chemins verts de l’emploi (financement 40%/50% des travaux par la CC) (délibération)</li>
+																<li>Convention Service de Remplacement 47 (délibération)</li>
+																<li>Partenariat Chambre des Métiers 47 (délibération)</li>
+																<li>Partenariat Chambre des Commerces et d’Industrie</li>
+																<li>Communication ZAE / Village entreprises artisans</li>
+															</ul>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_14.06.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-290">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-290" aria-expanded="false" aria-controls="accordion-1834-290"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 7 août 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-290" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-290">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><em><strong>Administration générale et finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation du procès verbal de la séance du 14 juin 2018 (délibération)</li>
+																<li>Finances : décision modificative pour l’achat de colonnes de tri sélectif et de composteurs (délibération)</li>
+															</ul>
+															<p><em><strong>Urbanisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Arrêt du projet de PLUI (délibération)</li>
+																<li>Approbation de la modification simplifiée du PLU du Temple sur Lot concernant la ZAE  (délibération)</li>
+															</ul>
+															<p><em><strong>Ressources humaines :</strong></em></p>
+															<ul class="list-normal">
+																<li>Recrutement d’un agent contractuel au poste d’agent polyvalent au service voirie (délibération)</li>
+																<li>Création d’un emploi d’adjoint administratif afin de recruter un agent d’accueil à mi-temps (délibération)</li>
+																<li>Création d’un emploi d’agent de maîtrise pour nomination de M. Potier Francis suite à sa promotion interne (délibération)</li>
+																<li>Informations diverses RH</li>
+															</ul>
+															<p><em><strong>Voirie et déchets ménagers :</strong></em></p>
+															<ul class="list-normal">
+																<li>Point travaux voirie</li>
+																<li>Point sur le service déchets ménagers</li>
+																<li>Renouvellement du contrat Corepile (collecte piles à la déchèterie) (délibération)</li>
+																<li>Signature d’une convention-cadre avec l’éco-organisme DASTRI pour la collecte des déchets d’activités de soins à risques infectieux perforants des particuliers sur la déchèterie de Monclar d’Agenais (délibération)</li>
+															</ul>
+															<p><em><strong>Développement économique :</strong></em></p>
+															<ul class="list-normal">
+																<li>Contribution au SRADDET (délibération)</li>
+																<li>Proposition technique et financière de la SEM 47 : travaux d’extension VRD sur la ZAE de Gouneau</li>
+																<li>Village entreprises : souscription contrat de télésurveillance (délibération)</li>
+															</ul>
+															<p><em><strong>Culture :</strong></em></p>
+															<ul class="list-normal">
+																<li>Demande de subvention de « Musique en Vallée du Lot » pour les Flokloriades (délibération)</li>
+															</ul>
+															<p><em><strong>Tourisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Information sur la réflexion menée autour de l’aménagement des abords du lac du Magre à Monclar</li>
+																<li>Information sur la réflexion menée autour d’une boucle voie-verte/véloroute Le Temple sur Lot / Castelmoron sur Lot</li>
+																<li>Information sur le projet privé de parcours dans les arbres</li>
+															</ul>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_7.08.2018.pdf">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-286">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-286" aria-expanded="false" aria-controls="accordion-1834-286"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 16 octobre 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-286" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-286">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><em><strong>Administration générale :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de la séance du 7 août 2018</li>
+																<li>Règlement Général de Protection des Données : proposition de conventionner avec le CDG 47</li>
+															</ul>
+															<p><em><strong>Ressources Humaines :</strong></em></p>
+															<ul class="list-normal">
+																<li>Proposition de titulariser Mme Marion Debet-Lespiau (responsable service tourisme de la CCLT), création de poste nécessaire (catégorie C)</li>
+																<li>Proposition de titulariser M. Rémy Rivière (poste de ripeur service déchets ménagers), création de poste nécessaire (catégorie C)</li>
+															</ul>
+															<p><em><strong>Info :</strong></em></p>
+															<ul class="list-normal">
+																<li>Poste d’agent de développement (Environnement-Déchets ménagers, soutien urbanisme, développement durable, Gemapi)</li>
+															</ul>
+															<p><em><strong>Environnement / Finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Présentation de l’analyse des offres réceptionnées pour l’achat du camion benne OM</li>
+																<li>Proposition d’achat d’une benne avec grue auxiliaire pour la collecte des bennes de la déchèterie et la collecte des colonnes de tri sélectif et l’achat de deux bennes pour la déchèterie</li>
+																<li>Proposition de réalisation d’un emprunt afin de financer les investissements ci-dessus présentés</li>
+																<li>Ajout de deux redevables à la redevance spéciale pour 2019</li>
+															</ul>
+															<p><em><strong>Développement économique :</strong></em></p>
+															<ul class="list-normal">
+																<li>Village entreprise : information tableau financier définitif de l’opération soldée.</li>
+																<li>Partenariat avec la Chambre des Métiers et de l’Artisanat</li>
+															</ul>
+															<p><em><strong>Santé – désertification médicale :</strong></em></p>
+															<ul class="list-normal">
+																<li>Proposition d’acquisition d’un bâtiment à Tombeboeuf</li>
+															</ul>
+															<p><em><strong>GEMAPI :</strong></em></p>
+															<ul class="list-normal">
+																<li>Changement statutaire du Syndicat mixte du Tolzac et extension du périmètre</li>
+															</ul>
+															<p><em><strong>Jeunesse :</strong></em></p>
+															<ul class="list-normal">
+																<li>Elaboration d’un PEDT Intercommunal</li>
+																<li>Convention Territoriale Globale avec la CAF</li>
+															</ul>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_16.10.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="accordion-heading-1834-287">
+														<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-1834" href="#accordion-1834-287" aria-expanded="false" aria-controls="accordion-1834-287"><span class="glyphicon icon-indicator"></span><span>Conseil communautaire du 12 décembre 2018</span></a></h4>
+													</div>
+													<div id="accordion-1834-287" class="panel-collapse collapse " role="tabpanel" aria-labelledby="accordion-heading-1834-287">
+														<div class="panel-body">
+															<p><strong>Ordre du jour :</strong></p>
+															<p><em><strong> Administration générale :</strong></em></p>
+															<ul class="list-normal">
+																<li>Approbation du procès-verbal de la séance du 16/10/2018 <em>(délibération)</em></li>
+																<li>RGPD : précision à apporter à la délibération du 16/10/2018 sur le forfait choisit auprès du DCG 47 <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong> Finances :</strong></em></p>
+															<ul class="list-normal">
+																<li>Proposition de réaliser un emprunt de 165 000 € pour l’achat du bâtiment à Tombeboeuf abritant la pharmacie et le cabinet médical, choix de l’organisme bancaire  <em>(délibération)</em></li>
+																<li>Décision budgétaire modificative relative à la dépense de 165 000 €  et au prêt correspondant <em>(délibération)</em></li>
+																<li>Décision budgétaire modificative relative à l’emprunt pour le camion de collecte des déchets ménagers <em>(délibération)</em></li>
+																<li>Indemnité au comptable public <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Développement économique :</strong></em></p>
+															<ul class="list-normal">
+																<li>Proposition de mise en place d’un régime d’aides aux artisans et aux commerçants  <em>(délibération)</em></li>
+																<li>Modification statutaire à réaliser pour pouvoir intervenir   <em>(délibération)</em></li>
+																<li>Aide à l’installation des nouveaux installés en agriculture <em>(délibération)</em></li>
+																<li>Vente d’une parcelle de 2000 m² sur la ZAE de Gouneau <em>(délibération)</em></li>
+																<li>Vente d’une parcelle de 1650 m² sur la ZAE de Gouneau <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Jeunesse :</strong></em></p>
+															<ul class="list-normal">
+																<li>Signature Convention Territoriale Globale avec la CAF<em>  </em><em>(délibération)</em></li>
+																<li>Mise en place d’une aide BAFA dans le cadre l’aide à la formation des acteurs culturels.<em></em><em>(délibération)</em></li>
+																<li>Information acteurs culturels et sportifs aidés sur 2018</li>
+																<li>Partenariat avec le Comité Départemental de Basket <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Environnement  Déchets :</strong></em></p>
+															<ul class="list-normal">
+																<li>Information sur le tonnage des déchets ménagers et tri sélectif</li>
+																<li>Proposition d’engager avec ValOrizon une étude sur la Tarification Incitative<em></em><em>(délibération)</em></li>
+																<li>Avis sur le Règlement d’intervention de ValOrizon <em>(délibération)</em></li>
+																<li>Nouveaux redevables redevance spéciale 2019 : Camping Le Charmant Verteuil, Latour-Marliac Le Temple sur Lot, Grand Bleu à Castelmoron  <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Tourisme :</strong></em></p>
+															<ul class="list-normal">
+																<li>Projet véloroute voie verte (Le Temple –Castelmoron – Granges sur Lot), plan de financement  <em>(délibération)</em></li>
+																<li>Taxe de séjour 2019 : précision à apporter sur les tarifs 2019<em></em><em>(délibération)</em></li>
+																<li>Information concernant les aménagements des abords du Lac du Magre à Monclar</li>
+																<li>Appel à candidature Recrutement agent contractuel 2019 remplacement congé maternité Mme Debet-Lespiau <em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Voirie :</strong></em></p>
+															<ul class="list-normal">
+																<li>Précision à apporter à la délibération concernant les travaux hors programme réalisés par la CC Lot et Tolzac sur les communes membres <em>(délibération)</em></li>
+															</ul>
+															<p><strong><em>GEMAPI :</em></strong></p>
+															<ul class="list-normal">
+																<li>Avis sur la fusion du Syndicat Trec Canaule Gupie avec le syndicat du bassin versant du Médier<em></em><em>(délibération)</em></li>
+																<li>Avis sur les statuts du syndicat<em></em><em>(délibération)</em></li>
+																<li>Transfert compétence item 1.2.5 et 8 GEMAPI et 12 animation<em></em><em>(délibération)</em></li>
+																<li>Désignation des délégués<em></em><em>(délibération)</em></li>
+															</ul>
+															<p><em><strong>Développement durable :</strong></em></p>
+															<ul class="list-normal">
+																<li>Information Plan Climat Air Energie Territorial (Sdee 47)</li>
+																<li>Information Projet de méthaniseurs de territoire (Sdee 47)</li>
+															</ul>
+															<p> </p>
+															<p><a href="/fileadmin/Collectivites/CC_LotetTolzac/Documents/2_La_Communaute/Les_Conseils_communautaires/Deliberations_12.12.2018.pdf" title="(nouvelle fenêtre)" target="_blank">Lire les délibérations</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--TYPO3SEARCH_end-->
+					</div>
+					<footer>
+						<section class="section footer-section footer-section-content">
+							<div class="container">
+								<div class="section-row">
+									<div class="section-column footer-section-content-column-left">
+										<div id="c1298" class="frame frame-default frame-type-image frame-background-none frame-no-backgroundimage frame-space-before-none frame-space-after-none">
+											<div class="frame-container">
+												<div class="frame-inner">
+													<div class="gallery-row row">
+														<div class="gallery-item col-sm-6 col-xs-12">
+															<figure class="image"><img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/Collectivites/CC_LotetTolzac/Documents/1_Accueil/CCLT.png" data-large="/fileadmin/Collectivites/CC_LotetTolzac/Documents/1_Accueil/CCLT.png" data-medium="/fileadmin/Collectivites/CC_LotetTolzac/Documents/1_Accueil/CCLT.png" data-small="/fileadmin/_processed_/f/e/csm_CCLT_78c6247ac4.png" data-extrasmall="/fileadmin/_processed_/f/e/csm_CCLT_8eb72fd3fd.png" title="" alt="Carte du territoire" class="lazyload" data-preload="false">
+																<noscript><img src="/fileadmin/Collectivites/CC_LotetTolzac/Documents/1_Accueil/CCLT.png" title="" alt="Carte du territoire"></noscript>
+															</figure>
+														</div>
+														<div class="gallery-item col-sm-6 col-xs-12">
+															<figure class="image"><a href="https://terredejeux.paris2024.org/" title="Site Internet Terre de Jeux Paris 2024 (nouvelle fenêtre)" target="_blank"><img src="/typo3conf/ext/bootstrap_package/Resources/Public/Images/blank.gif" data-src="/fileadmin/user_upload/Terre_de_Jeux_2024_-_Logo.jpg" data-large="/fileadmin/_processed_/9/d/csm_Terre_de_Jeux_2024_-_Logo_dd00ee8fec.jpg" data-medium="/fileadmin/_processed_/9/d/csm_Terre_de_Jeux_2024_-_Logo_75e4b07dcf.jpg" data-small="/fileadmin/_processed_/9/d/csm_Terre_de_Jeux_2024_-_Logo_128bc6f3e0.jpg" data-extrasmall="/fileadmin/_processed_/9/d/csm_Terre_de_Jeux_2024_-_Logo_f3c440fff2.jpg" title="" alt="" class="lazyload" data-preload="false"><noscript><img src="/fileadmin/user_upload/Terre_de_Jeux_2024_-_Logo.jpg" title="" alt=""></noscript></a></figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="section-column footer-section-content-column-middle">
+										<div id="c1300" class="frame frame-default frame-type-text frame-background-none frame-no-backgroundimage frame-space-before-extra-small frame-space-after-none">
+											<div class="frame-container">
+												<div class="frame-inner">
+													<p><strong>Communauté de communes du Lot et Tolzac</strong><br> Avenue de comarque<br> 47260 Castelmoron sur Lot<br> Tél: +33(0)5 53 84 82 48<br> Email: <a href="javascript:linkTo_UnCryptMailto('ocknvq,eqpvcevBeenv0ht');" target="_blank">contact@<span style="display:none;">remove-this.</span>cclt.<span style="display:none;">remove-this.</span>fr</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="section-column footer-section-content-column-right">
+										<div id="c1335" class="frame frame-default frame-type-text frame-background-none frame-no-backgroundimage frame-space-before-extra-small frame-space-after-none">
+											<div class="frame-container">
+												<div class="frame-inner">
+													<p>Horaires:</p>
+													<ul class="list-normal">
+														<li>du lundi au jeudi, de 9h à 12h30 et de 13h à 18h</li>
+														<li>le vendredi de 9h à 12h30 et de 13h à 17h</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="section section-small footer-section footer-section-meta">
+							<div class="container">
+								<div class="frame frame-small default meta">
+									<ul id="meta_menu" class="meta-menu">
+										<li><a href="/l/plan-site/" title="Plan du site"><span>Plan du site</span></a></li>
+										<li><a href="/l/mentions-legales/" title="Mentions légales"><span>Mentions légales</span></a></li>
+										<li><a href="/l/donnees-personnelles/" title="Données personnelles"><span>Données personnelles</span></a></li>
+										<li><a href="/l/accessibilite/" title="Accessibilité"><span>Accessibilité</span></a></li>
+									</ul>
+								</div><img class="siteresponsive" src="/typo3conf/ext/t3_gabarit_basic/Resources/Public/Images/responsive.png" alt="Ce site web s'adapte aux différents supports." height="64" width="64">
+								<div class="frame frame-small default copyright">
+									<p><span>© <a href="http://www.cdg47.fr" target="_blank">CDG47</a>  2020</span></p>
+								</div>
+							</div>
+						</section>
+					</footer>
+					<script type="text/javascript"><!-- Matomo --><script type="text/javascript">
+		  var _paq = _paq || [];
+		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+			var u="//admin.numerique47.fr/analytics/";
+			_paq.push(['setTrackerUrl', u+'piwik.php']);
+			_paq.push(['setSiteId', '80']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		
+					</script>
+					<!-- End Matomo Code --><a class="scroll-top" id="toTop" style="display: block;" title="Scroll to top" href="/la-communaute/comptes-rendus-des-conseils-communautaires/#top"><span class="scroll-top-icon" id="toTopHover" style="opacity: 1;"></span></a></div>
+			</div>
+		</div>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/jquery.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/initialisation.js?1531827183" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_news/Resources/Public/Js/vticker.min.js?1531827183" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/jquery.responsiveimages.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/bootstrap.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/photoswipe-ui-default.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Libs/hammer.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.swipe.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.popover.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.stickyheader.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.smoothscroll.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.lightbox.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/bootstrap_package/Resources/Public/JavaScript/Dist/bootstrap.navbar.min.js?1529061949" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_conceit/Resources/Public/Js/addon.js?1547454456" type="text/javascript"></script>
+		<script src="/typo3conf/ext/rx_shariff/Resources/Public/JavaScript/shariff.min.js?1528365253" type="text/javascript"></script>
+		<script src="/typo3conf/ext/t3_gabarit_basic/Resources/Public/js/weather.js" type="text/javascript"></script>
+		<!-- TARTE AU CITRON - Start -->
+		<script type="text/javascript">tarteaucitron.user.googlemapsKey = 'API KEY';(tarteaucitron.job = tarteaucitron.job || []).push('googlemaps');</script>
+		<script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('facebook');</script>
+		<script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('twitter');</script>
+		<script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('calameo');</script>
+		<script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('vimeo');</script>
+		<script type="text/javascript">tarteaucitron.user.matomoId = '80';tarteaucitron.user.matomoHost = '//admin.numerique47.fr/analytics/';(tarteaucitron.job = tarteaucitron.job || []).push('matomo');</script>
+		<!-- TARTE AU CITRON - End -->
+	</body>
+</html>
