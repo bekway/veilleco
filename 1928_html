@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112739413-1"></script>
+		<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112739413-1');
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Communauté de communes du Thouarsais - Comptes rendus</title>
+		<meta name="Description" content="Bienvenue sur le site de la Communauté de communes du Thouarsais" lang="fr" xml:lang="fr">
+		<meta name="Keywords" content="Communauté de communes du Thouarsais" lang="fr" xml:lang="fr">
+		<meta name="language" content="FR">
+		<meta name="site-languages" content="French">
+		<meta name="Content-Language" content="fr-FR">
+		<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+		<link href="soweb-bo/css/global.css" rel="stylesheet" type="text/css">
+		<link href="css/global.css" rel="stylesheet" type="text/css">
+		<link href="css/slideshow.css" rel="stylesheet" type="text/css">
+		<link href="soweb-bo/css/tiny.css" rel="stylesheet" type="text/css">
+		<script src="soweb-bo/js/jquery-2.1.1.min.js"></script>
+		<script src="soweb-bo/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+		<script src="js/slideshow.js"></script>
+		<script src="js/drapeaux.js"></script>
+		<link href="css/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.cct.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.colorsCCT.js" type="text/javascript"></script>
+		<link href="css/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.cct.js" type="text/javascript"></script>
+		<script src="js/jquery.vmap.colorsCCT.js" type="text/javascript"></script>
+		<style>
+#page-conteneur-contenu a {
+	text-decoration: none;
+	color:#267f84}
+		</style>
+	</head>
+	<body>
+		<header role="banner">
+			<div id="logobar">
+				<h1><a href="/"><img id="logo" src="/Fichiers/logo.png" title="La communauté de communes du Thouarsais" alt="La communauté de communes du Thouarsais"></a></h1>
+			</div>
+			<div id="slideshow">
+				<div id="drapeaux-carre"><a href="/carte"><div class="drapeau-carre drapeau-carre-carte"></div></a> <a class="scrollto" href="#contact"><div class="drapeau-carre drapeau-carre-contact"></div></a> <a href="/Accessibilite-Handicap"><div class="drapeau-carre drapeau-carre-handicap"></div></a></div>
+				<div id="tabs-1" class="slide slideshow-slide" style="left:0px;z-index:4"><img src="/Fichiers/Accueil/slide1.png">
+					<div style="position:relative;z-index:900000"></div>
+				</div>
+				<div id="tabs-2" class="slide slideshow-slide" style="left:0px;z-index:3;"><img src="/Fichiers/Accueil/slide2.png">
+					<div style="position:relative;z-index:900000"></div>
+				</div>
+				<div id="tabs-3" class="slide slideshow-slide" style="left:0px;z-index:2;"><img src="/Fichiers/Accueil/slide3.png">
+					<div style="position:relative;z-index:900000"></div>
+				</div>
+				<div id="tabs-4" class="slide slideshow-slide" style="left:0px;z-index:1;"><img src="/Fichiers/Accueil/slide4.png">
+					<div style="position:relative;z-index:900000"></div>
+				</div>
+				<div id="slideshowmenu">
+					<ul></ul>
+				</div>
+				<form id="searchForm" name="moteurSubmit" method="GET" action="/recherche.php"><input type="text" placeholder="Rechercher" value="" name="moteur" id="moteur"> <input id="searchOK" type="submit" value="OK"></form>
+			</div>
+			<div id="menuresponsive">
+				<div id="menuresponsivebouton"><img src="/Fichiers/menu.png"><span id="menuresponsivetitre"> MENU</span></div>
+				<div id="reseaubar">
+					<div id="reseau"><a class="google" href="https://plus.google.com" target="_blank"></a><a class="linkedin" href="https://fr.linkedin.com/" target="_blank"></a><a class="tweeter" href="https://twitter.com" target="_blank"></a><a class="facebook" href="https://www.facebook.com/" target="_blank"></a></div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("#alethouarsais").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+
+					$("#aauquotidien").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+					$("#aeconomie").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+					$("#aenvironnement").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+					$("#aamenagement").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+					$("#atourisme").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+					$("#aculturesports").click(function (){
+						if ($(this).parent().hasClass("active"))
+						{
+							$(".menu-niv-1").removeClass("active");
+						}
+						else
+						{
+							$(".menu-niv-1").removeClass("active");
+							$(this).parent().addClass("active");	
+						}
+					});
+				});
+			
+			</script>
+			<div id="menuglobal" class="front-menubar-large">
+				<nav id="menu-constructeur-menu" class="menubar">
+					<ul class="menubar-niv-1">
+						<li id="lethouarsais" class="menu-niv-1"><a id="alethouarsais"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Le Thouarsais</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Le thouarsais</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="lethouarsais-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../presentation-communautes-communes-thouarsais">Présentation</a></li>
+													<li><a href="../le-territoire-thouarsais">le territoire</a></li>
+													<li><a href="../competences">compétences</a></li>
+													<li><a href="../elus-thouarsais">élus</a></li>
+													<li><a href="../services-thouarsais">services</a></li>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="lethouarsais-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../projets-cc-thouarsais">projets</a></li>
+													<li><a href="../comptes-rendus">Comptes Rendus</a></li>
+													<li><a href="../budgets-thouarsais">Budgets</a></li>
+													<li><a href="../enquetes-publiques">enquêtes publiques</a></li>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="lethouarsais-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../centre-intercommunal-action-sociale-thouarsais">présentation du cias</a></li>
+													<li><a href="../le-thouarsais-service-public">service public</a></li>
+													<li><a href="../le-thouarsais-marque-territoire">Marque de Territoire</a></li>
+													<li><a href="../programmes-aides">Programmes d'aides</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="auquotidien" class="menu-niv-1"><a id="aauquotidien"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Au quotidien</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Au quotidien</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="auquotidien-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../quotidien-covid19">Information COVID 19</a></li>
+													<li>Petite enfance</li>
+													<ul>
+														<li><a href="../pole-petite-enfance-amalthee">Pôle Petite Enfance Amalthée</a></li>
+														<li><a href="../coleg-ram">Guichet d'inscription</a></li>
+														<li><a href="../micro-creche-amalthee">Micro-crèche</a></li>
+														<li><a href="../multi-accueil">Multi-accueil</a></li>
+														<li><a href="../Jardin-enfants">Jardin d'enfants</a></li>
+														<li><a href="../petite-enfance-nos-partenaires-belles-histhouars">autres structures d'accueil</a></li>
+														<li><a href="../Relais-assistants-maternels-colegram">Relais Assistants Maternels COLEG'RAM</a></li>
+														<li><a href="../couches-lavables">service de couches lavables</a></li>
+													</ul>
+												</ul>
+												<ul>
+													<li>services à la personne / senior</li>
+													<ul>
+														<li><a href="../pole-seniors">Pôle Seniors</a></li>
+														<li><a href="../service-aide-domicile">Aide à domicile</a></li>
+														<li><a href="../soins-infirmiers-a-domicile">Soins infirmiers à domicile</a></li>
+														<li><a href="../comm-generations">Animations Comm'Gé</a></li>
+														<li><a href="../marpa-les-cerisiers-blancs">Résidence autonomie</a></li>
+														<li><a href="CLIC-Thouars">CLIC Thouars</a></li>
+														<li><a href="../servce-a-la-personne-seniors-portage-repas">portage des repas</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="auquotidien-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../jeunesse-centres-socioculturels">Jeunesse</a></li>
+													<li>déchets ménagers</li>
+													<ul>
+														<li><a href="../dechets-menagers-actualites">nouveau service de collecte</a></li>
+														<li><a href="../dechets-menagers-dechets-du-quotidien">déchets du quotidien</a></li>
+														<li><a href="../dechets-menagers-decheteries">déchèteries</a></li>
+														<li><a href="../dechets-menagers-dechets-professionnels">professionnels</a></li>
+														<li><a href="../dechets-menagers-reduction">réduction des déchets</a></li>
+														<li><a href="../dechets-menagers-animations-visites-equipements">animations</a></li>
+														<li><a href="../dechets-menagers-manifestations-ecoresponsables">manifestations éco-responsables</a></li>
+													</ul>
+													<li>Transports & mobilité<a href="../dechets-menagers-decheteries"><br></a></li>
+													<ul>
+														<li><a href="../se-deplacer-comm-bus">Se déplacer en Comm'bus</a> </li>
+														<li><a href="../se-deplacer-velo">Se déplacer à vélo</a> </li>
+														<li><a href="../plan-marchabilite">Plan de marchabilité</a></li>
+														<li><a href="../la_maison_des_mobilites">Maison des mobilités</a></li>
+														<li><a href="../TER-RDS-Covoiturage">Transport en commun et covoiturage</a></li>
+														<li><a href="schema_directeur_des_mobilites_durables">Shéma directeur des mobilités durables</a></li>
+														<li><a href="des_carburants_alternatifs">Des carburants alternatifs</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="auquotidien-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>accessibilité & handicap</li>
+													<ul>
+														<li><a href="../au-quotidien-accessibilite-vie-pratique">vie pratique</a></li>
+														<li><a href="../sports-accessibilite">sports</a></li>
+														<li><a href="../trophees-handi-thouarsais">Trophées Handi'Thouarsais</a></li>
+														<li><a href="../accessibilite-handicap-loisirs-culture-tourisme">loisirs/culture/tourisme</a></li>
+														<li><a href="../Reglementation-accessibilite">Réglementation</a></li>
+														<li><a href="../actualite-projets-accessibilite">Actualité & Projets</a></li>
+														<li><a href="../accessibilite-handicap-contacts">contacts</a></li>
+													</ul>
+													<li>santé</li>
+													<ul>
+														<li><a href="../contrat-local-sante">contrat local de santé</a></li>
+														<li><a href="../poles-sante">Pôles de santé</a></li>
+														<li><a href="../mutuelle-solidaire-intercommunale">Mutuelle Intercommunale</a></li>
+													</ul>
+													<li><a href="../fourriere-animale">fourrière animale</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="economie" class="menu-niv-1"><a id="aeconomie"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Economie</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Economie</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="economie-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="economie-maison-entrepreneuriat" target="_blank">Maison de l'entrepreneuriat</a></li>
+													<li>les zones d'activités économiques</li>
+													<ul>
+														<li><a href="../economie-locale">présentation de l'économie locale</a></li>
+														<li><a href="../zones-activite-economique">les 19 ZAE</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="economie-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>aides aux entreprises</li>
+													<ul>
+														<li><a href="../economie-covid19">covid19 : cellule de crise</a></li>
+														<li><a href="../economie-vente">covid19 : vente à emporter et livraison à domicile</a></li>
+														<li><a href="../economie-accompagnement-entreprises-dispositifs-aides">les dispositifs</a></li>
+														<li><a href="../economie-accompagnement-entreprises">les structures d'accompagnement</a></li>
+														<li><a href="../economie-partenaires-entreprises">nos partenaires</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="economie-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>emploi</li>
+													<ul>
+														<li><a href="../economie-emploi-pole-emploi">pôle emploi</a></li>
+														<li><a href="../economie-emploi-maison-emploi-et-formation">la maison de l'emploi et de la formation</a></li>
+														<li><a href="../economie-porte-ouverte-emplois">porte ouverte emplois</a></li>
+														<li><a href="../economie-emploi-chantiers-insertion">chantiers d'insertion</a></li>
+														<li><a href="../offres-emplois-stages">offre d'emploi CCT/CIAS</a></li>
+													</ul>
+													<li><a href="https://www.marches-securises.fr/entreprise/" target="_blank">les marchés publics</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="environnement" class="menu-niv-1"><a id="aenvironnement"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Environnement</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Environnement</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="environnement-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="..%5Cplan-climat-air-energie-thouarsais" target="_blank">Plan Climat Air Energie Territorial</a></li>
+													<li><a href="../environnement-energie-habitat">Energie dans l'habitat</a></li>
+													<ul>
+														<li><a href="../t-renov">T'Rénov</a></li>
+														<li><a href="../environnement-doremi">Doremi</a></li>
+													</ul>
+													<li>TERRITOIRE A ENERGIE POSITIVE</li>
+													<ul>
+														<li><a href="../environnement-territoire-energie-positive">La démarche TEPOS</a></li>
+														<li><a href="../environnement-tepos-energies-renouvelables">Energies renouvelables</a></li>
+														<li><a href="../environnement-territoire-a-energie-positive-accompagnement">Dispositifs d'accompagnement</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="environnement-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../environnement-nos-partenaires">nos partenaires</a></li>
+													<li>Biodiversité</li>
+													<ul>
+														<li><a href="../lutte-contre-xenope-lisse">Lutte contre le xénope lisse</a></li>
+														<li><a href="../espaces-naturels-sensibles">Espaces naturels sensibles</a></li>
+													</ul>
+													<li><a href="../dechets-menagers-reduction">Territoire Zéro Déchet</a></li>
+													<li><a href="../circuits-courts-thouarsais">circuits courts</a></li>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="environnement-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>Assainissement</li>
+													<ul>
+														<li><a href="../assainissement-collectif">collectif</a></li>
+														<li><a href="../environnement-assainissement-non-collectif">non collectif</a></li>
+													</ul>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="amenagement" class="menu-niv-1"><a id="aamenagement"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Aménagement</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Aménagement</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="amenagement-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>urbanisme</li>
+													<ul>
+														<li><a href="../amenagement-urbanisme-documents-en-vigueur">Documents d'urbanisme en vigueur et leurs évolutions</a></li>
+														<li><a href="../amenagement-urbanisme-documents-en-cours">Documents d'urbanisme en cours d'élaboration</a> </li>
+														<li><a href="../amenagement-urbanisme-application-droit-des-sols">les démarches</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="amenagement-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>habitat</li>
+													<ul>
+														<li><a href="../amenagement-habitat-aides-a-lhabitat-opah-ru">aides à l'habitat / OPAH-RU</a></li>
+														<li><a href="../amenagement-habitat-aire-d-accueil-gens-du-voyage">aire d'accueil des gens du voyag</a>e</li>
+														<li><a href="../amenagement-habitat-residence-habitat-jeunes">résidence habitat jeunes</a></li>
+														<li><a href="../amenagement-paysage">paysage</a></li>
+														<li><a href="../amenagement-habitat-nos-partenaires">nos partenaires</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="amenagement-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="tourisme" class="menu-niv-1"><a id="atourisme"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Tourisme</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Tourisme</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="tourisme-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li><a href="../la-maison-du-Thouarsais">maison du Thouarsais</a></li>
+													<li><a href="../tourisme-base-loisirs-camping-chalets-adillons-vacances">base de loisirs & camping & chalets "adillons vacances"</a></li>
+													<li><a href="../tourisme-gite-de-groupe-le-chatelier">hébergement "le chatelier"</a></li>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="tourisme-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>valorisation du patrimoine</li>
+													<ul>
+														<li><a href="../adoptez-votre-patrimoine">adoptez votre patrimoine</a></li>
+													</ul>
+													<li>le thouarsais à pied et à vélo</li>
+													<ul>
+														<li><a href="../se-deplacer-velo" target="_blank">t'vélos</a></li>
+														<li><a href="../tourisme-le-thouarsais-a-pied-et-a-velo-les-circuits">les circuits</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="tourisme-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>sites</li>
+													<ul>
+														<li><a href="../reserve-naturelle-france-Toarcien">Réserve Naturelle du Toarcien</a></li>
+														<li><a href="../megalithes-neodyssee-thouarsais">Les mégalithes - Néodyssée</a></li>
+													</ul>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li id="culturesports" class="menu-niv-1"><a id="aculturesports"><div class="menu-niv-1-menu-picto"></div><div class="menu-niv-1-menu-texte">Culture & Sports</div><div class="menu-niv-1-menu-couleur"><div class="menu-niv-1-menu-triangle"></div></div></a>
+							<div>
+								<ul class="menubar-niv-2">
+									<li class="menu-niv-2-photo">
+										<div class="menu-niv-2-img"></div>
+										<div class="menu-niv-2-titre">Culture & Sports</div>
+									</li>
+									<li class="menu-niv-2-menu">
+										<div class="menu-niv-2-menu-table">
+											<div id="culturesports-menu-niv-2-menu-tablecell-1" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>sports</li>
+													<ul>
+														<li><a href="../culture-sport-assises-sport">Les assises du sport</a></li>
+														<li><a href="../sport-equipements-sportifs">les équipements</a></li>
+														<li><a href="../sport-espaces-aquatiques">les espaces aquatiques</a></li>
+														<li><a href="../sports-activites-pour-tous">Activités pour tous</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="culturesports-menu-niv-2-menu-tablecell-2" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>culture</li>
+													<ul>
+														<li><a href="../conservatoire-thouarsais-tyndo">Conservatoire de musiques & de danses/Régie du matériel Tyndo</a></li>
+														<li><a href="../culture-reseau-lecture-mediatheque">le réseau lecture/médiathèque</a></li>
+														<li><a href="../culture-futur-cinema">le futur cinéma</a></li>
+														<li><a href="../culture-promotion-culturelle">développement culturel</a></li>
+													</ul>
+												</ul>
+											</div>
+											<div class="menu-niv-2-menu-tablecell-sep"></div>
+											<div id="culturesports-menu-niv-2-menu-tablecell-3" class="menu-niv-2-menu-tablecell">
+												<ul>
+													<li>inventaire du patrimoine</li>
+													<ul>
+														<li><a href="copie-culture-patrimoine-inventaire" target="_blank">Présentation générale</a></li>
+														<li><a href="inventaire-du-thouarsais" target="_blank">Inventaire du Thouarsais</a></li>
+													</ul>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="page-conteneur">
+			<div id="page-conteneur-titre-vertical"><span>Le Thouarsais</span></div>
+			<div id="page-conteneur-contenu">
+				<h2 class="page-titre" style="color:#48bbc1">Comptes rendus</h2>
+				<div id="page-constructeur-table-2" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-2-0" class="page-constructeur-table-contenu" style="padding: 0px 20px 0px 0px;">
+						<div><br><img style="display: block; margin-left: auto; margin-right: auto;" src="../Fichiers/Le%20Thouarsais/Comptes-rendus/comptes_rendus.jpg" alt="" width="980" height="495"></div>
+					</div>
+				</div>
+				<div id="page-constructeur-table-4" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-4-0" class="page-constructeur-table-contenu" style=""><strong><br></strong><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="../Fichiers/Le%20Thouarsais/LOGO_CC_THOUARSAIS.png" alt="" width="260" height="90"></strong></div>
+				</div>
+				<div id="page-constructeur-table-1" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-1-0" class="page-constructeur-table-contenu" style="width: 50%;"><span style="font-size: 14pt;"><strong><br>Rapports des Conseils Communautaires</strong></span><br><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_11_SEPTEMBRE_2018.pdf" target="_blank"><br></a>
+						<ul>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc2020/PV_du_4_f%C3%A9vrier_2020_Site_inte.pdf" target="_blank">4 février 2020</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc2020/PV_du_14_janvier_2020_site_inte.pdf" target="_blank">14 janvier 2020</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/PV_du_3_d%C3%A9cembre_2019_site_inte.pdf" target="_blank">3 décembre 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/PV_du_5_novembre_2019_site_inte.pdf" target="_blank">5 novembre 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_1er_octobre_2019_site_in.pdf" target="_blank">1er octobre 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_10_septembre_2019_site_in.pdf" target="_blank">10 septembre 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_2_juillet_2019_site_inter.pdf" target="_blank">2 juillet 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_4_juin_2019_site_internet.pdf" target="_blank">4 juin 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_7_mai_2019_site_internet_.pdf" target="_blank">7 mai 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_2_avril_2019_site_interne.pdf" target="_blank">2 avril 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_5_mars_2019_site_internet.pdf" target="_blank">5 mars 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_5_f%C3%A9vrier_2019_site_inter.pdf" target="_blank">5 février 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_22_janvier_2019_site_inte.pdf" target="_blank">22 janvier 2019</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/PV_du_4_d%C3%A9cembre_2018_pour_site_.pdf" target="_blank">4 décembre 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc%202019/PV_du_2_octobre_2018_pour_site_i.pdf" target="_blank">2 octobre 2018</a></strong></li>
+							<li><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_11_SEPTEMBRE_2018.pdf" target="_blank">11 septembre 2018</a></strong></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_3_JUILLET_2018.pdf" target="_blank">3 juillet 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/PV_du_5_juin_2018_pour_site_inte.pdf" target="_blank">5 juin 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_2_MAI_18.pdf">2 mail 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc_3avril_2018.pdf">3 avril 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/PV_du_6_mars_2018_Site_interne.pdf">6 mars 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_06_02_FEVRIER_2018.pdf" target="_blank">6 février 2018</a></strong></li>
+							<li><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/cc_9_janvier_2018.pdf" target="_blank">9 janvier 2018</a></strong></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_5_12_2017.pdf" target="_blank">5 décembre 2017</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_7_11_2017.pdf" target="_blank">7 novembre 2017</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_3_10_2017.pdf" target="_blank">3 octobre 2017</a></strong></li>
+						</ul>
+						<div><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20Communautaire/CC_3_10_2017.pdf" target="_blank"> </a></strong></div>
+					</div>
+					<div id="page-constructeur-table-contenu-1-1" class="page-constructeur-table-contenu" style="width: 50%; padding: 0px 20px 0px 0px;"><span style="font-size: 14pt;"><strong><br>Rapports des Bureaux Communautaires<br><br></strong></span>
+						<ul>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/2020/CR_du_Bureau_du_18_f%C3%A9vrier_2020_.pdf" target="_blank">18 février 2020</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/2020/CR_du_Bureau_du_21_janvier_2020_.pdf" target="_blank">21 janvier 2020</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/CR_du_Bureau_du_17_d%C3%A9cembre_2019.pdf" target="_blank">17 décembre 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202%20SEM%20-2019/CR_du_Bureau_du_26_novembre_2019.pdf" target="_blank">26 novembre 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202%20SEM%20-2019/CR_du_Bureau_du_22_octobre_2019_.pdf" target="_blank">22 octobre 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202%20SEM%20-2019/CR_du_Bureau_du_24_septembre_201.pdf" target="_blank">24 septembre 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202%20SEM%20-2019/CR_du_Bureau_du_9_juillet_2019_.pdf" target="_blank">9 juillet 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202%20SEM%20-2019/CR_du_Bureau_du_18_juin_2019_s.pdf" target="_blank">18 juin 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/CR_du_Bureau_du_21_mai_2019_si.pdf" target="_blank">21 mai 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/CR_du_Bureau_du_9_avril_2019_s.pdf" target="_blank">09 avril 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202019/CR_du_Bureau_du_19_mars_2019_s.pdf" target="_blank">19 mars 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC%202019/CR_du_Bureau_du_19_f%C3%A9vrier_2019_.pdf" target="_blank">19 février 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/CR_du_Bureau_du_29_janvier_2019_.pdf" target="_blank">29 janvier 2019</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/CR_du_Bureau_du_18_d%C3%A9cembre_2018%20-%20Copy%201.pdf" target="_blank"><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>18 décembre 2018</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></a></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/Compte_rendu_du_Bureau_du_15_11_%20-%20Copy%201.pdf" target="_blank">15 novembre 2018</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/Compte_rendu_du_Bureau_du_16_10_.pdf" target="_blank">16 octobre 2018</a></strong></strong></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/Compte_rendu_du_Bureau_du_18_9_2.pdf">18 septembre 2018</a></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_10_JUILLET_2018.pdf" target="_blank">10 juillet 2018</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/Compte_rendu_du_Bureau_du_19_jui.pdf" target="_blank">19 juin 2018</a></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></li>
+							<li><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_15_mai_2018_Site_internet.pdf">15 mai 2018</a></strong></strong></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_17_avril_2018_Site_internet.pdf">17 avril 2018</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_20_mars_2018_Site_internet.pdf">20 mars 2018</a></strong></li>
+							<li><strong><strong><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_27_02_18.pdf" target="_blank">27 février 2018</a></strong></strong></strong></strong></li>
+							<li><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_16_janvier_18.pdf" target="_blank">16 janvier 2018</a></strong></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_19_12_2017.pdf" target="_blank">19 décembre 2017</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_21_11_2017.pdf" target="_blank">21 novembre 2017</a></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_17_10_2017.pdf" target="_blank">17 octobre 2017</a> <br></strong></li>
+							<li><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_19_09_17.pdf" target="_blank">19 septembre 2017</a></strong></li>
+						</ul>
+						<div><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bureau%20Communautaire/BC_19_09_17.pdf" target="_blank"><br><br></a></strong></div>
+					</div>
+				</div>
+				<div id="page-constructeur-table-3" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-3-0" class="page-constructeur-table-contenu" style="width: 50%;"><span style="font-size: 18.6667px;"><strong>Rapports d'activités</strong></span><br><br>
+						<ul>
+							<li> <strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Rapports%20activites/RA_2016_CCT_web.pdf" target="_blank">Année 2016</a></strong></li>
+							<li><strong> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Rapports%20activites/RAPPORT_D_ACTIVITE_REDUIT.pdf" target="_blank"><strong>Année 2017</strong></a></strong></li>
+							<li><strong><strong> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Rapports%20activites/rapport_d_activite_2018_reduit.pdf" target="_blank">Année 2018</a></strong></strong></li>
+						</ul><strong><br></strong></div>
+					<div id="page-constructeur-table-contenu-3-1" class="page-constructeur-table-contenu" style="width:50%"><span style="font-size: 18.6667px;"><strong>Rapports d'activités déchets ménagers</strong></span><br><br>
+						<ul>
+							<li><strong> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Dechets%20menagers/RAPPORT_ACTIVITES_DECHETS_2016.pdf" target="_blank">Année 2016</a></strong></li>
+							<li><strong> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Dechets%20menagers/rapport_activit%C3%A9s_dechets_menage.pdf" target="_blank">Année 2017</a></strong></li>
+						</ul>
+					</div>
+				</div>
+				<div id="page-constructeur-table-6" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-6-0" class="page-constructeur-table-contenu" style=""><strong><br><br><br><img style="display: block; margin-left: auto; margin-right: auto;" src="../Fichiers/Le%20Thouarsais/LOGO_CIAS_THOUARSAIS.png" alt="" width="279" height="108"><br></strong></div>
+				</div>
+				<div id="page-constructeur-table-8" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-8-0" class="page-constructeur-table-contenu" style="width: 50%;"><span style="font-size: 18.6667px;"><strong><br>Sommaire Conseil d'Administration</strong></span><br><br><strong>> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank">Bureau du 12 décembre 2017</a><br></strong><br><strong>> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_24_OCTOBRE_2017.pdf">Bureau du 24 octobre 2017</a></strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank"><br></a><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank"><br></a><strong>> <strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_19_SEPTEMBRE_2017.pdf"><strong>Bureau du 19 septembre 2017</strong><br><br></a></strong></strong>> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CA_CIAS_15_03_2018.pdf" target="_blank">Bureau du 15 mars 2018</a><strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank"><br></a></strong></strong></strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank"><br></a><strong><strong><strong>> <strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CA_du_10_avril_2018.pdf">Bureau du 10 avril 2018</a><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Conseil%20d'Administration%20CIAS/CR_SOMMAIRE_DU_12_DECEMBRE_2017.pdf" target="_blank"><br></a></strong></strong></strong></strong></div>
+					<div id="page-constructeur-table-contenu-8-1" class="page-constructeur-table-contenu" style="width:50%"><span style="font-size: 18.6667px;"><strong><br>Bilans d'activités CLS</strong></span><br><br><strong>> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bilan%20d'activit%C3%A9s%20CIAS/BILAN_CLS_2016.pdf" target="_blank"><strong>Bilan d'activités de l'année 2016<br><br><br></strong></a></strong><span style="font-size: 18.6667px;"><strong><br>Bilans d'activités CIAS</strong></span><br><br><strong>> <a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bilan%20d'activit%C3%A9s%20CIAS/BILAN_ACTIVITE_CIAS_2016_sans_.pdf" target="_blank"><strong>Bilan d'activités de l'année 2016</strong></a></strong><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bilan%20d'activit%C3%A9s%20CIAS/BILAN_CLS_2016.pdf" target="_blank"><br></a></strong></div>
+				</div>
+				<div id="page-constructeur-table-7" class="page-constructeur-table" style="">
+					<div id="page-constructeur-table-contenu-7-0" class="page-constructeur-table-contenu" style="width: 50%;"><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Bilan%20d'activit%C3%A9s%20CIAS/BILAN_ACTIVITE_CIAS_2016_sans_.pdf" target="_blank"><br><br></a></strong></div>
+					<div id="page-constructeur-table-contenu-7-1" class="page-constructeur-table-contenu" style="width:50%"><strong><a href="../Fichiers/Le%20Thouarsais/Comptes-rendus/Dechets%20menagers/RAPPORT_ACTIVITES_DECHETS_2016.pdf" target="_blank"> </a></strong></div>
+				</div>
+			</div>
+		</div>
+		<script src="/js/nav.js"></script>
+		<div id="drapeaux"><a href="/Accessibilite-Handicap"><div class="drapeau drapeau-handicap"></div></a> <a class="scrollto" href="#contact"><div class="drapeau drapeau-contact"></div></a> <br><br> <a href="/carte"><div class="drapeau drapeau-carte"></div></a></div>
+		<script>
+
+	$(document).ready(function(){
+		//Fermeture de la pop-pup et du fond
+		$('body').on('click', '#fade', function() { //Au clic sur le bouton ou sur le calque
+			$('#fade, .popup_contact').fadeOut(function() {
+				$('#fade, a.close').remove(); //..ils disparaissent ensemble
+			});
+			return false;
+
+		});
+	});
+
+	function envoiFormulaire()
+	{
+
+		if (window.XMLHttpRequest)
+		{
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+
+		xmlhttp.onreadystatechange = function()
+		{
+			
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				document.getElementById("popup_contact").style.display = 'table';
+				$('#popup_contact').fadeIn().css({'z-index' : '9999', 'height': "100px", 'width': "300px", 'top' : "20%", 'margin-left' : -popMargLeft}).prepend('');
+
+				//Effet fade-in du fond opaque
+				$('body').append('<div id="fade">'); //Ajout du fond opaque noir
+				//Apparition du fond - .css({'filter' : 'alpha(opacity=80)'}) pour corriger les bogues de IE
+				$('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn();
+
+				var popMargLeft = ($('#popup_contact').width() + 80) / 2;
+				//Apply Margin to Popup
+				$('#popup_contact').css({
+					'margin-left' : -popMargLeft
+				});
+
+				var Reponse = xmlhttp.responseText.trim();
+				
+				if (Reponse == "ok")
+				{
+					document.getElementById("txtResultEnvoi").innerHTML="Votre message a été transmis...";						
+				}
+				else
+				{
+					document.getElementById("txtResultEnvoi").innerHTML="Un problème est survenu pendant l'envoi du mail, merci d'essayer à nouveau dans quelques intants ou contactez-nous par téléphone.";
+				}
+			}
+		}
+
+		var fd = new FormData();
+		fd.append('contactnom', document.getElementById("contactnom").value);
+		fd.append('contactprenom', document.getElementById("contactprenom").value);
+		fd.append('contactmail', document.getElementById("contactmail").value);
+		fd.append('contacttel', document.getElementById("contacttel").value);
+		fd.append('contactmessage', document.getElementById("contactmessage").value);
+		fd.append('g-recaptcha-response', document.getElementById("g-recaptcha-response").value);
+
+		xmlhttp.open("POST", '/inc/sendmail.php');
+		xmlhttp.send(fd);
+		
+
+
+	}
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<div id="contact">
+			<div id="contact-titre-vertical"><span>Contact</span></div>
+			<form id="contactform">
+				<div id="contactform-colg"><input type="text" placeholder="Nom" value="" name="contactnom" id="contactnom"> <input type="text" placeholder="Prénom" value="" name="contactprenom" id="contactprenom"> <input type="text" placeholder="Mail" value="" name="contactmail" id="contactmail"> <input type="text" placeholder="Téléphone" value="" name="contacttel" id="contacttel">
+					<div class="g-recaptcha" data-sitekey="6LcbzT0UAAAAAKqz31T95VJ1SX3OCEvnv4QLjd64"></div>
+				</div>
+				<div class="contactform-colsep"></div>
+				<div id="contactform-colc"><textarea id="contactmessage" name="contactmessage" required placeholder="Description"></textarea> <input class="contactbtnenvoi" type="button" name="Submit" value="Envoyer" onclick="envoiFormulaire()"></div>
+				<div class="contactform-colsep"></div>
+				<div id="contactform-cold">
+					<div id="adresse-coordonnees-bloc">
+						<div id="adresse-titre-vertical"><span>Adresse</span></div>
+						<div id="adresse-coordonnees">Communauté de Communes<br> <span class="bluethouarsais">du Thouarsais</span><br> Hôtel des Communes<br>4 rue de la Trémoïlle<br>CS 10160<br> 79104 THOUARS CEDEX<br> <br> 05 49 66 77 00</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="popup_contact" class="popup_contact">
+			<div id="popup_scrollContact">
+				<div id="txtResultEnvoi"></div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-blueline"></div>
+			<div id="footer-infos">Création graphique : <a href="http://www.studio-universelles.fr/" target="_blank">©Univers’elles</a> // Développement : <a href="https://www.soged.fr" target="_blank">Soged</a> - <a href="/mentions-legales">Mentions légales</a> - <a href="/espace-presse">Espace presse</a></div>
+		</footer>
+	</body>
+</html>
