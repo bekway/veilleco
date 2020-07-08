@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+	<head>
+		<base href="https://www.ville-draguignan.fr/index.php">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Willy SWENDRA">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Portail officiel de la ville de Draguignan. Démarches en ligne, agenda évènementiel, actualités...">
+		<meta name="generator" content="Joomla! - Open Source Content Management">
+		<title>Ville de Draguignan</title>
+		<link href="/templates/ville-draguignan/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="/plugins/system/jce/css/content.css?be97f434d28702fb06b081066a29a1b1" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/css/jcemediabox.css?1d12bb5a40100bbd1841bfc0e498ce7b" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/jcemediabox/themes/standard/css/style.css?50fba48f56052a048c5cf30829163e4d" rel="stylesheet" type="text/css">
+		<link href="/media/plg_system_imageeffectck/css/imageeffectck.css?ver=2.2.4" rel="stylesheet" type="text/css">
+		<link href="/plugins/system/mediabox_ck/assets/mediaboxck.css" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_maximenuck/themes/blank/css/maximenuck.php?monid=maximenuck245" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_maximenuck/templatelayers/beez3-position1.css" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_maximenuck/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="/media/jui/css/chosen.css?be97f434d28702fb06b081066a29a1b1" rel="stylesheet" type="text/css">
+		<link href="/media/com_finder/css/finder.css?be97f434d28702fb06b081066a29a1b1" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_maximenuck/themes/blank/css/maximenuck.php?monid=maximenuck138" rel="stylesheet" type="text/css">
+		<link href="https://www.ville-draguignan.fr/modules/mod_ext_css_panel_module_position/css/style.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+
+			#cookiesck {
+				position:fixed;
+				left:0;
+				right: 0;
+				bottom: 0;
+				z-index: 99;
+				min-height: 30px;
+				color: #eeeeee;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			#cookiesck_text {
+				padding: 10px 0;
+				display: inline-block;
+			}
+			#cookiesck_buttons {
+				float: right;
+			}
+			#cookiesck_accept,
+			#cookiesck_decline,
+			#cookiesck_readmore {
+				float:left;
+				padding:10px;
+				margin: 5px;
+				border-radius: 3px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}
+			#cookiesck_readmore {
+				float:right;
+				color: #fff;
+				border: 2px solid transparent;
+				transition: all 0.2s ease;
+			}
+			#cookiesck_readmore:hover {
+				border: 2px solid #fff;
+			}
+			#cookiesck_accept {
+				background: #1176a6;
+				border: 2px solid #1176a6;
+				color: #f5f5f5;
+			}
+			#cookiesck_accept:hover {
+				background: transparent;
+				border: 2px solid darkturquoise;
+				color: darkturquoise;
+			}
+			#cookiesck_decline {
+				background: #000;
+				border: 2px solid #000;
+				color: #f5f5f5;
+			}
+			#cookiesck_decline:hover {
+				background: transparent;
+				border: 2px solid #fff;
+				color: #fff;
+			}
+			#cookiesck_options {
+				display: none;
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				box-sizing: border-box;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				margin: 10px;
+				border: 1px solid #ccc;
+				cursor: pointer;
+				background: #fff url(/plugins/system/cookiesck/assets/cookies-icon.svg) center center no-repeat;
+				background-size: 80% auto;
+			}
+			#cookiesck_options > .inner {
+				display: none;
+				width: max-content;
+				margin-top: -40px;
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				font-size: 14px;
+				color: #fff;
+				padding: 4px 7px;
+				border-radius: 3px;
+			}
+			#cookiesck_options:hover > .inner {
+				display: block;
+			}
+		/* Mobile Menu CK - https://www.joomlack.fr */
+/* Automatic styles */
+
+.mobilemenuck-bar {display:none;position:relative;left:0;top:0;right:0;z-index:100;}
+.mobilemenuck-bar-title {display: block;}
+.mobilemenuck-bar-button {cursor:pointer;box-sizing: border-box;position:absolute; top: 0; right: 0;line-height:0.8em;font-family:Segoe UI;text-align: center;}
+.mobilemenuck {box-sizing: border-box;width: 100%;}
+.mobilemenuck-topbar {position:relative;}
+.mobilemenuck-title {display: block;}
+.mobilemenuck-button {cursor:pointer;box-sizing: border-box;position:absolute; top: 0; right: 0;line-height:0.8em;font-family:Segoe UI;text-align: center;}
+.mobilemenuck a {display:block;}
+.mobilemenuck a:hover {text-decoration: none;}
+.mobilemenuck .mobilemenuck-item > div {position:relative;}
+/* for accordion */
+.mobilemenuck-togglericon:after {cursor:pointer;text-align:center;display:block;position: absolute;right: 0;top: 0;content:"+";}
+.mobilemenuck .open .mobilemenuck-togglericon:after {content:"-";}
+
+[data-id="maximenuck138"] .mobilemenuck-bar-title {
+	background: #464646;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-bar-title a {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-bar-button {
+	background: #333333;
+	height: 43px;
+	width: 43px;
+	color: #FFFFFF;
+	padding-top: 8px;
+	font-size: 1.8em;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-bar-button a {
+	color: #FFFFFF;
+	font-size: 1.8em;
+}
+
+[data-id="maximenuck138"].mobilemenuck {
+	background: #464646;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+[data-id="maximenuck138"].mobilemenuck a {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-title {
+	background: #464646;
+	height: 43px;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-title a {
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-button {
+	height: 35px;
+	width: 45px;
+	line-height: 35px;
+	font-size: 1.8em;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-button a {
+	line-height: 35px;
+	font-size: 1.8em;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-item > .level1 {
+	background: #027EA6;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 15px;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-item > .level1 a {
+	color: #FFFFFF;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-item > .level2 {
+	background: #FFFFFF;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #000000;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 25px;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-item > .level2 a {
+	color: #000000;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .level2 + .mobilemenuck-submenu .mobilemenuck-item > div {
+	background: #689332;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 35px;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .level2 + .mobilemenuck-submenu .mobilemenuck-item > div a {
+	color: #FFFFFF;
+	line-height: 35px;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-togglericon:after {
+	background: #000000;
+	background: rgba(0,0,0,0.25);
+	-pie-background: rgba(0,0,0,0.25);
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+	height: 35px;
+	width: 35px;
+	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 35px;
+	font-size: 1.7em;
+}
+
+[data-id="maximenuck138"] .mobilemenuck-togglericon:after a {
+	line-height: 35px;
+	font-size: 1.7em;
+}
+.mobilemaximenuck div span.descck {
+    padding-left: 10px;
+    font-size: 12px;
+}
+/* Mobile Menu CK - https://www.joomlack.fr */
+/* Automatic styles */
+
+.mobilemenuck-bar {display:none;position:relative;left:0;top:0;right:0;z-index:100;}
+.mobilemenuck-bar-title {display: block;}
+.mobilemenuck-bar-button {cursor:pointer;box-sizing: border-box;position:absolute; top: 0; right: 0;line-height:0.8em;font-family:Segoe UI;text-align: center;}
+.mobilemenuck {box-sizing: border-box;width: 100%;}
+.mobilemenuck-topbar {position:relative;}
+.mobilemenuck-title {display: block;}
+.mobilemenuck-button {cursor:pointer;box-sizing: border-box;position:absolute; top: 0; right: 0;line-height:0.8em;font-family:Segoe UI;text-align: center;}
+.mobilemenuck a {display:block;}
+.mobilemenuck a:hover {text-decoration: none;}
+.mobilemenuck .mobilemenuck-item > div {position:relative;}
+/* for accordion */
+.mobilemenuck-togglericon:after {cursor:pointer;text-align:center;display:block;position: absolute;right: 0;top: 0;content:"+";}
+.mobilemenuck .open .mobilemenuck-togglericon:after {content:"-";}
+
+[data-id="menu_site_extranet"] .mobilemenuck-bar-title {
+	background: #464646;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-bar-title a {
+	color: #FFFFFF;
+	font-weight: bold;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-bar-button {
+	background: #333333;
+	height: 43px;
+	width: 43px;
+	color: #FFFFFF;
+	padding-top: 8px;
+	font-size: 1.8em;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-bar-button a {
+	color: #FFFFFF;
+	font-size: 1.8em;
+}
+
+[data-id="menu_site_extranet"].mobilemenuck {
+	background: #464646;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+[data-id="menu_site_extranet"].mobilemenuck a {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-title {
+	background: #464646;
+	height: 43px;
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-title a {
+	text-indent: 20px;
+	line-height: 43px;
+	font-size: 20px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-button {
+	height: 35px;
+	width: 45px;
+	line-height: 35px;
+	font-size: 1.8em;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-button a {
+	line-height: 35px;
+	font-size: 1.8em;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-item > .level1 {
+	background: #027EA6;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 15px;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-item > .level1 a {
+	color: #FFFFFF;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-item > .level2 {
+	background: #FFFFFF;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #000000;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 25px;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-item > .level2 a {
+	color: #000000;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .level2 + .mobilemenuck-submenu .mobilemenuck-item > div {
+	background: #689332;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-left: 4px;
+	padding-left: 35px;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .level2 + .mobilemenuck-submenu .mobilemenuck-item > div a {
+	color: #FFFFFF;
+	line-height: 35px;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-togglericon:after {
+	background: #000000;
+	background: rgba(0,0,0,0.25);
+	-pie-background: rgba(0,0,0,0.25);
+	-moz-border-radius: 0px 5px 5px 0px;
+	-o-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+	height: 35px;
+	width: 35px;
+	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 35px;
+	font-size: 1.7em;
+}
+
+[data-id="menu_site_extranet"] .mobilemenuck-togglericon:after a {
+	line-height: 35px;
+	font-size: 1.7em;
+}
+.mobilemaximenuck div span.descck {
+    padding-left: 10px;
+    font-size: 12px;
+}
+			#mbCenter, #mbToolbar {
+	background-color: #d6d3d3;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-khtml-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000');
+	}
+	
+	#mbOverlay {
+		background-color: #000000;
+	}
+	
+	#mbCenter.mbLoading {
+		background-color: #d6d3d3;
+	}
+	
+	#mbBottom {
+		color: #999999;
+	}
+	
+	#mbTitle, #mbPrevLink, #mbNextLink, #mbCloseLink, #mbPlayLink, #mbPauseLink, #mbZoomMinus, #mbZoomValue, #mbZoomPlus {
+		color: #ffffff;
+	}
+		a.mediaboxck_link figure.mediaboxck:not(.imageeffectck):hover:after {background-color: rgba(0,0,0,0.7);}.scrollToTop {
+			padding: 10px;
+			margin: 20px;
+			text-align: center; 
+			font-weight: bold;
+			text-decoration: none;
+			position:fixed;
+			bottom: 0;
+			right: 0;
+			display: none;
+			z-index: 100;
+			width: 100px;
+			height: 100px;
+			color: inherit;
+			font-size: inheritpx;
+			font-family: inherit;
+			opacity: 1;
+			background-color: none;
+			background-image: url(/plugins/system/scrolltock/images/arrow_up.png);
+			background-position: center center ;
+			background-repeat: no-repeat;
+			border: 0px transparent solid;
+			border-radius: 0px;
+			box-shadow: transparent 0 0 0px;
+		}
+		.scrollToTop:hover {
+			text-decoration:none;
+			color: ;
+		}
+div#maximenuck245.maximenuckv ul.maximenuck2 li.maximenuck.level1 > a span.titreck, div#maximenuck245.maximenuckv ul.maximenuck2 li.maximenuck.level1 > span.separator span.titreck { font-size: 9px; } @media screen and (max-width: 640px) {div#maximenuck245 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck245 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }}@media screen and (min-width: 641px) {div#maximenuck245 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck245 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }}#' . maximenuck245 . ' .maximenuck-toggler-anchor {
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	display: none;
+}
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item187:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item187:hover > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item187.active > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item187.active > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1, 
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1{ border-right: #cc0000 1px solid  !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item187.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item187.level1.headingck > .nav-header span.titreck { font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1:hover { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1:hover > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.active,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1.active { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item187.level1.active > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item187.level1.active > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item188:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item188:hover > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item188.active > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item188.active > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1, 
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1{ border-right: #cc0000 1px solid  !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item188.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item188.level1.headingck > .nav-header span.titreck { font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1:hover { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1:hover > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.active,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1.active { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item188.level1.active > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item188.level1.active > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item189:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item189:hover > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item189.active > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item189.active > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1, 
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1{ border-right: #cc0000 1px solid  !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item189.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item189.level1.headingck > .nav-header span.titreck { font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1:hover { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1:hover > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.active,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1.active { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item189.level1.active > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item189.level1.active > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item190:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item190:hover > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item190.active > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item190.active > span.separator:after { border-top-color: #E60000 !important;color: #E60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1, 
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1{ border-right: #cc0000 1px solid  !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item190.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item190.level1.headingck > .nav-header span.titreck { font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1:hover { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1:hover > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.active,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1.active { background: #EBEBEB !important;background-color: #EBEBEB !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item190.level1.active > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item190.level1.active > span.nav-header span.titreck { color: #E60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item191:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item191:hover > span.separator:after { border-top-color: #e60000 !important;color: #e60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item191.active > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item191.active > span.separator:after { border-top-color: #e60000 !important;color: #e60000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1, 
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1{ border-right: #cc0000 1px solid  !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item191.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item191.level1.headingck > .nav-header span.titreck { font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1:hover { background: #ebebeb !important;background-color: #ebebeb !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1:hover > span.nav-header span.titreck { color: #e60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.active,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1.active { background: #ebebeb !important;background-color: #ebebeb !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item191.level1.active > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1.active > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1.active > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item191.level1.active > span.nav-header span.titreck { color: #e60000 !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item1812 > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item1812 > span.separator:after { border-top-color: #cc0000 !important;color: #cc0000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.parent.item1812:hover > a:after, div#maximenuck138 ul.maximenuck li.maximenuck.parent.item1812:hover > span.separator:after { border-top-color: #cc0000 !important;color: #cc0000 !important;display:block;position:absolute;} 
+div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1 > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1.headingck > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1.headingck > .nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item1812.level1 > a.maximenuck span.titreck, div#maximenuck138 li.maximenuck.item1812.level1.headingck > span.separator span.titreck, div#maximenuck138 li.maximenuck.item1812.level1.headingck > .nav-header span.titreck { color: #cc0000 !important;font-size: 16px !important;font-weight: bold !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1:hover,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item1812.level1:hover { background: #ebebeb !important;background-color: #ebebeb !important; } 
+div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck li.maximenuck.item1812.level1:hover > span.nav-header span.titreck,
+div#maximenuck138 ul.maximenuck2 li.maximenuck.item1812.level1:hover > a.maximenuck span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item1812.level1:hover > span.separator span.titreck, div#maximenuck138 ul.maximenuck2 li.maximenuck.item1812.level1:hover > span.nav-header span.titreck { color: #cc0000 !important; } div#maximenuck138.maximenufixed {
+	position: fixed !important;
+	left: 0 !important;
+	top: 0 !important;
+	right: 0 !important;
+	z-index: 1000 !important;
+	margin: 0 auto;
+	width: 100%;
+	
+}div#maximenuck138.maximenufixed ul.maximenuck {
+            top: 0 !important;
+        }
+@media screen and (max-width: 760px) {div#maximenuck138 ul.maximenuck li.maximenuck.nomobileck, div#maximenuck138 .maxipushdownck ul.maximenuck2 li.maximenuck.nomobileck { display: none !important; }
+	div#maximenuck138.maximenuckh {
+        height: auto !important;
+    }
+	
+	div#maximenuck138.maximenuckh li.maxiFancybackground {
+		display: none !important;
+	}
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) {
+        height: auto !important;
+        padding-left: 0 !important;
+        /*padding-right: 0 !important;*/
+    }
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) li {
+        float :none !important;
+        width: 100% !important;
+		box-sizing: border-box;
+        /*padding-right: 0 !important;*/
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) li > div.floatck {
+        width: 100% !important;
+		box-sizing: border-box;
+		right: 0 !important;
+		left: 0 !important;
+		margin-left: 0 !important;
+		position: relative !important;
+		/*display: none;
+		height: auto !important;*/
+    }
+	
+	div#maximenuck138.maximenuckh ul:not(.noresponsive) li:hover > div.floatck {
+		/*display: block !important;*/
+		position: relative !important;
+		margin-left: 0 !important;
+    }
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) div.floatck div.maximenuck2 {
+        width: 100% !important;
+    }
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) div.floatck div.floatck {
+        width: 100% !important;
+        margin: 20px 0 0 0 !important;
+    }
+	
+	div#maximenuck138.maximenuckh ul:not(.noresponsive) div.floatck div.maxidrop-main {
+        width: 100% !important;
+    }
+
+    div#maximenuck138.maximenuckh ul:not(.noresponsive) li.maximenucklogo img {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+    }
+	
+	
+	/* for vertical menu  */
+	div#maximenuck138.maximenuckv {
+        height: auto !important;
+    }
+	
+	div#maximenuck138.maximenuckh li.maxiFancybackground {
+		display: none !important;
+	}
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) {
+        height: auto !important;
+        padding-left: 0 !important;
+        /*padding-right: 0 !important;*/
+    }
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) li {
+        float :none !important;
+        width: 100% !important;
+        /*padding-right: 0 !important;*/
+		padding-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) li > div.floatck {
+        width: 100% !important;
+		right: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		position: relative !important;
+		left: 0 !important;
+		/*display: none;
+		height: auto !important;*/
+    }
+	
+	div#maximenuck138.maximenuckv ul:not(.noresponsive) li:hover > div.floatck {
+		/*display: block !important;*/
+		position: relative !important;
+		margin-left: 0 !important;
+    }
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) div.floatck div.maximenuck2 {
+        width: 100% !important;
+    }
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) div.floatck div.floatck {
+        width: 100% !important;
+        margin: 20px 0 0 0 !important;
+    }
+	
+	div#maximenuck138.maximenuckv ul:not(.noresponsive) div.floatck div.maxidrop-main {
+        width: 100% !important;
+    }
+
+    div#maximenuck138.maximenuckv ul:not(.noresponsive) li.maximenucklogo img {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+    }
+}
+	
+@media screen and (min-width: 761px) {
+	div#maximenuck138 ul.maximenuck li.maximenuck.nodesktopck, div#maximenuck138 .maxipushdownck ul.maximenuck2 li.maximenuck.nodesktopck { display: none !important; }
+}/*---------------------------------------------
+---	 WCAG				                ---
+----------------------------------------------*/
+#maximenuck138.maximenuck-wcag-active .maximenuck-toggler-anchor ~ ul {
+    display: block !important;
+}
+
+#maximenuck138 .maximenuck-toggler-anchor {
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	display: none;
+}#maximenuck138-mobile-bar { display: none; }
+	@media only screen and (max-width:760px){
+	#maximenuck138 { display: none !important; }
+	#maximenuck138-mobile-bar { display: block; }
+	.mobilemenuck-hide {display: none !important;}
+    body { padding-top: 40px !important; } }.pbck-container { max-width: 1000px}@media only screen and (min-width:801px){
+.ckhide5 { display: none !important; } 
+.ckstack5 > .inner { display: block; }
+.ckstack5 .blockck { float: none !important; width: auto !important; display: block; margin-left: 0 !important;}
+}@media only screen and (max-width:800px) and (min-width:641px){
+.ckhide4 { display: none !important; } 
+.ckstack4 > .inner { display: block; }
+.ckstack4 .blockck { float: none !important; width: auto !important; display: block; margin-left: 0 !important;}
+}@media only screen and (max-width:640px) and (min-width:481px){
+.ckhide3 { display: none !important; } 
+.ckstack3 > .inner { display: block; }
+.ckstack3 .blockck { float: none !important; width: auto !important; display: block; margin-left: 0 !important;}
+}@media only screen and (max-width:480px) and (min-width:321px){
+.ckhide2 { display: none !important; } 
+.ckstack2 > .inner { display: block; }
+.ckstack2 .blockck { float: none !important; width: auto !important; display: block; margin-left: 0 !important;}
+}@media only screen and (max-width:320px){
+.ckhide1 { display: none !important; } 
+.ckstack1 > .inner { display: block; }
+.ckstack1 .blockck { float: none !important; width: auto !important; display: block; margin-left: 0 !important;}
+}
+		</style>
+		<script type="application/json" class="joomla-script-options new">{"csrf.token":"a6373623cfe723574a613297307149ec","system.paths":{"root":"","base":""}}</script>
+		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-noconflict.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery-migrate.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/system/js/caption.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/jui/js/bootstrap.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/system/js/core.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/plugins/system/jcemediabox/js/jcemediabox.js?0c56fee23edfcb9fbdfe257623c5280e" type="text/javascript"></script>
+		<script src="/plugins/system/maximenuckmobile/assets/maximenuckmobile.js" type="text/javascript"></script>
+		<script src="/media/plg_system_imageeffectck/js/imageeffectck.js" type="text/javascript"></script>
+		<script src="/plugins/system/mediabox_ck/assets/mediaboxck.js?ver=2.3.3" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery.ui.core.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/jui/js/chosen.jquery.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="/media/jui/js/jquery.autocomplete.min.js?be97f434d28702fb06b081066a29a1b1" type="text/javascript"></script>
+		<script src="https://www.ville-draguignan.fr/media/juloalib/js/jquery.min.js" type="text/javascript"></script>
+		<script src="https://www.ville-draguignan.fr/media/juloalib/js/fullnoconflict.js" type="text/javascript"></script>
+		<script src="/modules/mod_maximenuck/assets/maximenuck.min.js" type="text/javascript"></script>
+		<script src="/media/plg_system_mobilemenuck/assets/mobilemenuck.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+										  var OneSignal = window.OneSignal || [];
+										  OneSignal.push(function() {
+											OneSignal.init({
+											  appId: "57c8936b-56cb-46b3-96e7-e1313778bdc6",
+											});
+										  });
+										jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});jQuery(document).ready(function($){
+				$("#cookiesck").remove();
+				$("body").append("<div id=\"cookiesck\" data-layout=\"layout1\"/>");
+				$("body").append("<div id=\"cookiesck_overlay\" />");
+				$("body").append("<div id=\"cookiesck_options\" />");
+				
+				$("#cookiesck").append("<div class=\"inner\">");
+				$("#cookiesck > .inner").append("<span id=\"cookiesck_text\">En visitant ce site, vous acceptez l'utilisation de cookies afin de vous proposer les meilleurs services possibles.")
+					.append("<span id=\"cookiesck_buttons\">");
+				$("#cookiesck_buttons").append("<a class=\"cookiesck_button\" id=\"cookiesck_accept\">Accepter")
+					.append("<a class=\"cookiesck_button\" id=\"cookiesck_decline\">Décliner")
+					
+					.append("<div style=\"clear:both;\">")
+					;
+				$("#cookiesck_options").append("<div class=\"inner\">Options des cookies");
+
+			function ckSetCookie(c_name,value,exdays) {
+				var exdate=new Date();
+				exdate.setDate(exdate.getDate() + exdays);
+				var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString()) + "; path=/";
+				document.cookie=c_name + "=" + c_value;
+			}
+
+			function ckReadCookie(name) {
+				var nameEQ = name + "=";
+				var cooks = document.cookie.split(';');
+				for(var i=0;i < cooks.length;i++) {
+					var c = cooks[i];
+					while (c.charAt(0)==' ') c = c.substring(1,c.length);
+						if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+					}
+				return null;
+			}
+
+			var $cookieck = jQuery('#cookiesck');
+			var $cookiesck_accept = jQuery('#cookiesck_accept');
+			var cookiesck = ckReadCookie('cookiesck');
+			$cookieck.hide();
+			$("#cookiesck_overlay").hide();
+			if(!(cookiesck == "yes") && !(cookiesck == "no")){
+				// $cookieck.delay(1000).slideDown('fast'); 
+				$cookieck.show(); 
+				$("#cookiesck_overlay").show();
+			}
+
+			$cookiesck_accept.click(function(){
+				ckSetCookie("cookiesck","yes",365);
+				jQuery.post('https://www.ville-draguignan.fr/index.php', 'set_cookieck=1', function(){
+					// si blocage ressources externes, il faut reloader la page
+					// si blockingpolicy == 2
+				});
+				$cookieck.slideUp('slow');
+				jQuery('#cookiesck_options').show('slow');
+				jQuery('#cookiesck_overlay').hide();
+			});
+			jQuery('#cookiesck_decline').click(function(){
+				ckSetCookie("cookiesck","no",365);
+				jQuery.post('https://www.ville-draguignan.fr/index.php', 'set_cookieck=0', function(){});
+				$cookieck.slideUp('slow');
+				jQuery('#cookiesck_options').show('slow');
+				jQuery('#cookiesck_overlay').hide();
+			});
+			// add management button to update the decision
+			jQuery('#cookiesck_options').click(function(){
+				jQuery('#cookiesck').show(); 
+			});
+
+			function ckBlockCookies(){
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = cookies[i];
+					var pos = cookie.indexOf('=');
+					var name = '';
+					if (pos > -1) {
+						name = cookie.substr(0, pos);
+					} else {
+						name = cookie;
+					}
+
+					if(! name.match(/cookiesck/)) {
+						document.cookie = name+'=; Max-Age=0; path=/; domain=' + location.host;
+						// document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+					}
+				}
+				if (! document.__defineGetter__) {
+					Object.defineProperty(document, 'cookie',{
+						get: function g(){ return ''; },
+						set: function h(){ return true;}
+					});
+				} else {
+					var oldSetter = document.__lookupSetter__('cookie');
+					if (oldSetter) {
+						Object.defineProperty(document, 'cookie', {
+							get: function g(){ return ''; },
+							set: function h(v){
+								if(v.match(/cookiesck\=/)) {
+									oldSetter.call(document, v);
+								}
+								return true;
+							}
+						});
+					}
+				}
+			}
+
+			// if the consent has not yet been clicked, then block the cookies
+			if(!(cookiesck == "yes")) ckBlockCookies();
+		});
+
+		jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+						Mediabox.scanPage = function() {
+							var links = jQuery('a').filter(function(i) {
+								if ( jQuery(this).attr('rel') 
+										&& jQuery(this).data('mediaboxck_done') != '1') {
+									var patt = new RegExp(/^lightbox/i);
+									return patt.test(jQuery(this).attr('rel'));
+								}
+							});
+							if (! links.length) return false;
+
+							new Mediaboxck(links, {
+								overlayOpacity : 	0.7,
+								resizeOpening : 	1,
+								resizeDuration : 	240,
+								initialWidth : 		320,
+								initialHeight : 	180,
+								fullWidth : 		'0',
+								defaultWidth : 		'360',
+								defaultHeight : 	'360',
+								showCaption : 		1,
+								showCounter : 		1,
+								loop : 				0,
+								isMobileEnable: 	1,
+								// mobileDetection: 	'resolution',
+								isMobile: 			false,
+								mobileResolution: 	'640',
+								attribType :		'rel',
+								showToolbar :		'0',
+								diapoTime :			'3000',
+								diapoAutoplay :		'0',
+								medialoop :		false,
+								showZoom :		0,
+								counterText: '({x} de {y})',
+								playerpath: '/plugins/system/mediabox_ck/assets/NonverBlaster.swf'
+							}, null, function(curlink, el) {
+								var rel0 = curlink.rel.replace(/[[]|]/gi," ");
+								var relsize = rel0.split(" ");
+								return (curlink == el) || ((curlink.rel.length > 8) && el.rel.match(relsize[1]));
+							});
+						};
+					jQuery(document).ready(function(){
+						Mediabox.scanPage();
+					});
+
+	var Scrolltock = function(container) {
+				if (! container) container = jQuery(document);
+				jQuery('a.scrollTo', container).click( function(event) {
+					var pageurl = window.location.href.split('#');
+					var linkurl = jQuery(this).attr('href').split('#');
+
+					if ( jQuery(this).attr('href').indexOf('#') != 0
+						&& ( ( jQuery(this).attr('href').indexOf('http') == 0 && pageurl[0] != linkurl[0] )
+						|| jQuery(this).attr('href').indexOf('http') != 0 && pageurl[0] != 'https://www.ville-draguignan.fr/' + linkurl[0].replace('/', '') )
+						) {
+						// here action is the natural redirection of the link to the page
+					} else {
+						event.preventDefault();
+						jQuery(this).scrolltock();
+					}
+				});
+			}
+			jQuery(document).ready(function($){$(document.body).append('<a href="#" class="scrollToTop">');
+					//Check to see if the window is top if not then display button
+					$(window).scroll(function(){
+						if ($(this).scrollTop() > 100) {
+							$('.scrollToTop').fadeIn();
+						} else {
+							$('.scrollToTop').fadeOut();
+						}
+					});
+
+					//Click event to scroll to top
+					$('.scrollToTop').click(function(){
+						$('html, body').animate({scrollTop : 0},1000);
+						return false;
+					});
+				Scrolltock();
+
+				$.fn.scrolltock = function() {
+					var link = $(this);
+					var page = jQuery(this).attr('href');
+					var pattern = /#(.*)/;
+					var targetEl = page.match(pattern);
+					if (! targetEl.length) return;
+					if (! jQuery(targetEl[0]).length) return;
+
+					// close the menu hamburger
+					if (link.parents('ul.nav,ul.menu,ul.maximenuck').length) {
+						var menu = $(link.parents('ul.nav,ul.menu,ul.maximenuck')[0]);
+						if (menu.parent().find('> .mobileckhambuger_toggler').length && menu.parent().find('> .mobileckhambuger_toggler').attr('checked') == 'checked') {
+							menu.animate({'opacity' : '0'}, function() { menu.parent().find('> .mobileckhambuger_toggler').attr('checked', false); menu.css('opacity', '1'); });
+						}
+					}
+
+					var speed = link.attr('data-speed') ? link.attr('data-speed') : 1000;
+					var isMobile = ($(window).width() <= 0);
+					if (isMobile) {
+						var offsety = link.attr('data-mobile-offset') ? parseInt(link.attr('data-mobile-offset')) : 0;
+					} else {
+						var offsety = link.attr('data-offset') ? parseInt(link.attr('data-offset')) : 0;
+					}
+					jQuery('html, body').animate( { scrollTop: jQuery(targetEl[0]).offset().top + offsety }, speed, scrolltock_setActiveItem() );
+					return false;
+				}
+				// Cache selectors
+				var lastId,
+				baseItems = jQuery('a.scrollTo');
+				// Anchors corresponding to menu items
+				scrollItems = baseItems.map(function(){
+					// if (! jQuery(jQuery(this).attr('href')).length) return;
+					var pattern = /#(.*)/;
+					var targetEl = jQuery(this).attr('href').match(pattern);
+
+						if (targetEl == null ) return;
+						if (! targetEl[0]) return;
+						if (! jQuery(targetEl[0]).length) return;
+						var item = jQuery(targetEl[0]);
+					if (item.length) { return item; }
+				});
+				// Bind to scroll
+				jQuery(window).scroll(function(){
+					scrolltock_setActiveItem();
+				});
+				
+				function scrolltock_setActiveItem() {
+					var isMobile = ($(window).width() <= 0);
+					if (isMobile) {
+						var offsety = 0;
+					} else {
+						var offsety = 0;
+					}
+					// Get container scroll position
+					var fromTop = jQuery(this).scrollTop()- (offsety) + 2;
+
+					// Get id of current scroll item
+					var cur = scrollItems.map(function(){
+						if (jQuery(this).offset().top < fromTop)
+							return this;
+					});
+					if (cur.length) {
+						// Get the id of the current element
+						cur = cur[cur.length-1];
+						var id = cur && cur.length ? cur[0].id : '';
+						var targetParent = baseItems.end().filter('[href$="#'+id+'"]').parent();
+
+						if (lastId !== id || !targetParent.hasClass('active')) {
+						   lastId = id;
+						   // Set/remove active class
+							baseItems.parent().parent().find('.active').removeClass('active');
+							baseItems
+							 .parent().removeClass('active')
+							 .end().filter('[href$="#'+id+'"]').parent().addClass('active');
+						}
+					} else {
+						baseItems.parent().parent().find('.active').removeClass('active');
+						baseItems.parent().removeClass('active');
+					}                  
+				}
+			}); // end of dom ready
+
+			jQuery(window).load(function(){
+				// loop through the scrolling links to check if the scroll to anchor is needed on the page load
+				jQuery('a.scrollTo').each( function() {
+					var pageurl = window.location.href;
+					var linkurl = jQuery(this).attr('href');
+					var pattern = /#(.*)/;
+					var targetLink = linkurl.match(pattern);
+					var targetPage = pageurl.match(pattern);
+
+					if (targetLink == null ) return;
+					if (targetPage == null ) return;
+					if (! targetLink.length) return;
+					if (! jQuery(targetLink[0]).length) return;
+
+					if (jQuery(targetPage[0]).length && targetLink[0] == targetPage[0]) {
+						jQuery(this).scrolltock();
+					}
+				});
+			});
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find(".advancedSelect").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Saisir ou choisir des options","placeholder_text_single":"S\u00e9lectionnez une option","no_results_text":"Aucun r\u00e9sultat correspondant"});
+		}
+	});
+	
+jQuery(document).ready(function() {
+	var value, searchword = jQuery('#mod-finder-searchword125');
+
+		// Get the current value.
+		value = searchword.val();
+
+		// If the current value equals the default value, clear it.
+		searchword.on('focus', function ()
+		{
+			var el = jQuery(this);
+
+			if (el.val() === 'Recherche...')
+			{
+				el.val('');
+			}
+		});
+
+		// If the current value is empty, set the previous value.
+		searchword.on('blur', function ()
+		{
+			var el = jQuery(this);
+
+			if (!el.val())
+			{
+				el.val(value);
+			}
+		});
+
+		jQuery('#mod-finder-searchform125').on('submit', function (e)
+		{
+			e.stopPropagation();
+			var advanced = jQuery('#mod-finder-advanced125');
+
+			// Disable select boxes with no value selected.
+			if (advanced.length)
+			{
+				advanced.find('select').each(function (index, el)
+				{
+					var el = jQuery(el);
+
+					if (!el.val())
+					{
+						el.attr('disabled', 'disabled');
+					}
+				});
+			}
+		});
+	var suggest = jQuery('#mod-finder-searchword125').autocomplete({
+		serviceUrl: '/component/finder/?task=suggestions.suggest&format=json&tmpl=component',
+		paramName: 'q',
+		minChars: 1,
+		maxHeight: 400,
+		width: 300,
+		zIndex: 9999,
+		deferRequestBy: 500
+	});});jQuery(document).ready(function(){new Maximenuck('#maximenuck138', {fxtransition : 'linear',dureeIn : 0,dureeOut : 0,menuID : 'maximenuck138',testoverflow : '0',orientation : 'horizontal',behavior : 'mouseover',opentype : 'noeffect',offcanvaswidth : '300px',offcanvasbacktext : 'Retour',fxdirection : 'normal',directionoffset1 : '30',directionoffset2 : '30',showactivesubitems : '0',ismobile : 0,menuposition : 'topfixed',effecttype : 'dropdown',topfixedeffect : '1',topfixedoffset : '',clickclose : '0',closeclickoutside : '0',fxduration : 0});});jQuery(window).load(function(){new FancyMaximenuck('#maximenuck138', {fancyTransition : 'linear',fancyDuree : 500});});jQuery(document).ready(function(){ new MobileMenuCK(jQuery('#maximenuck138'), {menubarbuttoncontent : '&#x2261;',topbarbuttoncontent : '×',showmobilemenutext : 'default',mobilemenutext : 'Menu',container : 'topfixed',detectiontype : 'resolution',resolution : '760',usemodules : '0',useimages : '0',showlogo : '1',showdesc : '0',displaytype : 'accordion',displayeffect : 'topfixed',menuwidth : '300',openedonactiveitem : '0',mobilebackbuttontext : 'Retour',menuselector : 'ul.maximenuck',uriroot : '',menuid : 'maximenuck138',merge : '',beforetext : '',aftertext : '',mergeorder : '',}); });
+		</script>
+		<link rel="manifest" href="/manifest.json">
+		<style type="text/css">
+#ext_slideout_id12 { 
+	right: 0;
+	top: 100px;
+}
+#ext_slideout_inner_id12 {
+	width: 230px;
+	right: -282px;
+	top: 100px;
+	height: 410px;
+}
+#ext_slideout_id12:hover {
+	right: 280px;
+}
+#ext_slideout_id12:hover #ext_slideout_inner_id12 {
+	right: 0;
+}
+		</style>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+		<link href="/components/com_pagebuilderck/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/template.css" type="text/css">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/maximenuck.css" type="text/css">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/fullwidth2.css" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/custom.css" type="text/css">
+		<link rel="stylesheet" href="/templates/ville-draguignan/css/mobile.css" type="text/css">
+		<script type="text/javascript">var accesskey='3411';// var screenpos='L';</script>
+		<script type="text/javascript" src="https://www.numanis.net/accessedition.js" charset="UTF-8"></script>
+		<!--[if lte IE 7]>
+<style type="text/css">
+#block3 ul.menu > li {
+	display: inline !important;
+	zoom: 1;
+}
+</style>
+<![endif]-->
+		<!--[if lt IE 9]>
+	<script src="/media/jui/js/html5.js"></script>
+<![endif]-->
+	</head>
+	<body class="com_content view-article no-layout no-task ltr">
+		<div class="tck-module moduletable">
+			<div class="tck-module-text">
+				<div class="mod_ext_css_panel ">
+					<div id="ext_slideout_id12" class="ext_slideout"><img alt="SERVICES EN LIGNE" src="/images/service-en-ligne-bleu.png">
+						<div id="ext_slideout_inner_id12" class="ext_slideout_inner">
+							<ul class="nav menu mod-list">
+								<li class="item-379 divider"><span class="separator ">ÉTAT CIVIL</span></li>
+								<li class="item-380"><a href="/actes-de-naissance-et-de-deces">> Actes de naissance et de décès</a></li>
+								<li class="item-378"><a href="/carte-d-identite-passeport">> Carte d'identité - Passeport</a></li>
+								<li class="item-381"><a href="/declaration-de-naissance">> Déclaration de naissance</a></li>
+								<li class="item-382 divider"><span class="separator ">ÉLECTIONS</span></li>
+								<li class="item-383"><a href="/inscriptions-listes-electorales">> Inscriptions listes électorales</a></li>
+								<li class="item-384 divider"><span class="separator ">SÉCURITÉ</span></li>
+								<li class="item-386"><a href="/alerte-sms-risques-majeurs">> Alerte SMS - risques majeurs</a></li>
+								<li class="item-385"><a href="https://www.voisinsvigilants.org/ville/Draguignan" target="_blank" rel="noopener noreferrer">> Voisins vigilants</a></li>
+								<li class="item-521 divider"><span class="separator ">STATIONNEMENT</span></li>
+								<li class="item-522"><a href="https://my.flowbirdapp.com/embed/fps" target="_blank" rel="noopener noreferrer">> Payer FPS</a></li>
+								<li class="item-578 divider"><span class="separator ">ENFANCE - ÉDUCATION</span></li>
+								<li class="item-2192"><a href="/retour-a-l-ecole">> Retour à l'école</a></li>
+								<li class="item-579"><a href="https://portail-familles.net/draguignan" target="_blank" rel="noopener noreferrer">> Portail guichet familles</a></li>
+								<li class="item-1831"><a href="/inscription-scolaire">> Inscription scolaire</a></li>
+								<li class="item-387 divider"><span class="separator ">ANIMATIONS</span></li>
+								<li class="item-388"><a href="/dossier-unique-de-demande-d-organisation-d-un-evenement">> Dossier Unique de demande d'organisation d'un évènement</a></li>
+								<li class="item-389"><a href="/subventions-aux-associations">> Subventions aux associations</a></li>
+								<li class="item-390 divider"><span class="separator ">SOCIAL</span></li>
+								<li class="item-391"><a href="https://ccas-draguignan.fr/ccas-de-draguignan/">> Registre des personnes fragiles</a></li>
+								<li class="item-520 divider"><span class="separator ">URBANISME</span></li>
+								<li class="item-519"><a href="/urbanismeethabitat">> Urbanisme & habitat</a></li>
+								<li class="item-392 divider"><span class="separator ">CONTACTS</span></li>
+								<li class="item-394"><a href="/contact-services">> Contacter les services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper" class="tck-wrapper">
+			<div class="inner tck-container-fluid">
+				<nav id="block3">
+					<div class="inner clearfix " data-position="position-2"><label for="position-2-mobileck" class="mobileckhambuger_togglerlabel" style="display:none;">≡</label> <input id="position-2-mobileck" class="mobileckhambuger_toggler" type="checkbox" style="display:none;">
+						<div class="tck-module moduletable">
+							<div class="tck-module-text">
+								<!-- debut Maximenu CK -->
+								<div class="maximenuckh ltr" id="maximenuck138" style="z-index:10;">
+									<ul class=" maximenuck">
+										<li data-level="1" class="maximenuck item2193 first level1 " style="z-index : 12000;"><a data-hover="ACCUEIL" class="maximenuck " href="/"><img src="/images/logos/logo-ville-draguignan-entete-incline-160.png" alt="ACCUEIL" style="display: block; margin: 0 auto;"><span class="titreck" data-hover="ACCUEIL"><span class="titreck-text"><span class="titreck-title">ACCUEIL</span></span></span> </a></li>
+										<li data-level="1" class="maximenuck item187 parent level1 fullwidth" style="z-index : 11999;"><a data-hover="LA VILLE" class="maximenuck " href="/laville"><span class="titreck" data-hover="LA VILLE"><span class="titreck-text"><span class="titreck-title">LA VILLE</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="width:560px;">
+													<div class="maximenuck2 first " style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1382 first level2 " style="z-index : 11998;"><a data-hover="Historique" class="maximenuck " href="/laville/historique"><span class="titreck" data-hover="Historique"><span class="titreck-text"><span class="titreck-title">Historique</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1383 level2 " style="z-index : 11997;"><a data-hover="Le maire, le conseil municipal" class="maximenuck " href="/laville/le-maire-le-conseil-municipal"><span class="titreck" data-hover="Le maire, le conseil municipal"><span class="titreck-text"><span class="titreck-title">Le maire, le conseil municipal</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1384 level2 " style="z-index : 11996;"><a data-hover="Les services municipaux" class="maximenuck " href="/laville/les-services-municipaux"><span class="titreck" data-hover="Les services municipaux"><span class="titreck-text"><span class="titreck-title">Les services municipaux</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1385 level2 " style="z-index : 11995;"><a data-hover="Budget 2020" class="maximenuck " href="/laville/budget-2020"><span class="titreck" data-hover="Budget 2020"><span class="titreck-text"><span class="titreck-title">Budget 2020</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1386 level2 " style="z-index : 11994;"><a data-hover="Les comptes administratifs" class="maximenuck " href="/laville/les-comptes-administratifs"><span class="titreck" data-hover="Les comptes administratifs"><span class="titreck-text"><span class="titreck-title">Les comptes administratifs</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1387 level2 " style="z-index : 11993;"><a data-hover="Marché et domaines publics" class="maximenuck " href="/laville/marche-et-domaines-publics"><span class="titreck" data-hover="Marché et domaines publics"><span class="titreck-text"><span class="titreck-title">Marché et domaines publics</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1388 level2 " style="z-index : 11992;"><a data-hover="Les relations extérieures" class="maximenuck " href="/laville/les-relations-exterieures"><span class="titreck" data-hover="Les relations extérieures"><span class="titreck-text"><span class="titreck-title">Les relations extérieures</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1389 level2 " style="z-index : 11991;"><a data-hover="Délibérations, décisions et arrêtés" class="maximenuck " href="/laville/deliberations-decisions-et-arretes"><span class="titreck" data-hover="Délibérations, décisions et arrêtés"><span class="titreck-text"><span class="titreck-title">Délibérations, décisions et arrêtés</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1390 level2 " style="z-index : 11990;"><a data-hover="Venir à Draguignan" class="maximenuck " href="/laville/venir-a-draguignan"><span class="titreck" data-hover="Venir à Draguignan"><span class="titreck-text"><span class="titreck-title">Venir à Draguignan</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1372 level2 " style="z-index : 11989;"><a data-hover="Publications municipales" class="maximenuck " href="/laville/publications-municipales"><span class="titreck" data-hover="Publications municipales"><span class="titreck-text"><span class="titreck-title">Publications municipales</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2354 last level2 " style="z-index : 11988;"><a data-hover="Offres d\'emploi" class="maximenuck " href="/laville/offres-d-emploi"><span class="titreck" data-hover="Offres d\'emploi"><span class="titreck-text"><span class="titreck-title">Offres d'emploi</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li data-level="1" class="maximenuck item188 parent level1 fullwidth" style="z-index : 11987;"><a data-hover="ACTION MUNICIPALE" class="maximenuck " href="/actionmunicipale"><span class="titreck" data-hover="ACTION MUNICIPALE"><span class="titreck-text"><span class="titreck-title">ACTION MUNICIPALE</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="width:780px;">
+													<div class="maximenuck2 first " style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1391 first level2 " style="z-index : 11986;"><a data-hover="Action cœur de ville" class="maximenuck " href="/actionmunicipale/action-coeur-de-ville"><span class="titreck" data-hover="Action cœur de ville"><span class="titreck-text"><span class="titreck-title">Action cœur de ville</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1392 level2 " style="z-index : 11985;"><a data-hover="Action sociale" class="maximenuck " href="/actionmunicipale/action-sociale"><span class="titreck" data-hover="Action sociale"><span class="titreck-text"><span class="titreck-title">Action sociale</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1393 level2 " style="z-index : 11984;"><a data-hover="Affaires scolaires" class="maximenuck " href="/actionmunicipale/affaires-scolaires"><span class="titreck" data-hover="Affaires scolaires"><span class="titreck-text"><span class="titreck-title">Affaires scolaires</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1394 level2 " style="z-index : 11983;"><a data-hover="Armée - Vie patriotique" class="maximenuck " href="/actionmunicipale/armee-vie-patriotique"><span class="titreck" data-hover="Armée - Vie patriotique"><span class="titreck-text"><span class="titreck-title">Armée - Vie patriotique</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1395 level2 " style="z-index : 11982;"><a data-hover="Culture" class="maximenuck " href="/actionmunicipale/culture2020"><span class="titreck" data-hover="Culture"><span class="titreck-text"><span class="titreck-title">Culture</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1396 level2 " style="z-index : 11981;"><a data-hover="Démocratie participative" class="maximenuck " href="/actionmunicipale/democratie-participative"><span class="titreck" data-hover="Démocratie participative"><span class="titreck-text"><span class="titreck-title">Démocratie participative</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1397 level2 " style="z-index : 11980;"><a data-hover="Développement économique" class="maximenuck " href="/actionmunicipale/developpement-economique"><span class="titreck" data-hover="Développement économique"><span class="titreck-text"><span class="titreck-title">Développement économique</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1398 level2 " style="z-index : 11979;"><a data-hover="Eau et assainissement" class="maximenuck " href="/actionmunicipale/eau-et-assainissement"><span class="titreck" data-hover="Eau et assainissement"><span class="titreck-text"><span class="titreck-title">Eau et assainissement</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1399 level2 " style="z-index : 11978;"><a data-hover="Environnement" class="maximenuck " href="/actionmunicipale/environnement"><span class="titreck" data-hover="Environnement"><span class="titreck-text"><span class="titreck-title">Environnement</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1400 level2 " style="z-index : 11977;"><a data-hover="Finances" class="maximenuck " href="/actionmunicipale/finances"><span class="titreck" data-hover="Finances"><span class="titreck-text"><span class="titreck-title">Finances</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1401 level2 " style="z-index : 11976;"><a data-hover="Handicap" class="maximenuck " href="/actionmunicipale/handicap"><span class="titreck" data-hover="Handicap"><span class="titreck-text"><span class="titreck-title">Handicap</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2335 level2 " style="z-index : 11975;"><a data-hover="Habitat" class="maximenuck " href="/actionmunicipale/habitat"><span class="titreck" data-hover="Habitat"><span class="titreck-text"><span class="titreck-title">Habitat</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1402 level2 " style="z-index : 11974;"><a data-hover="Jeunesse" class="maximenuck " href="/actionmunicipale/jeunesse"><span class="titreck" data-hover="Jeunesse"><span class="titreck-text"><span class="titreck-title">Jeunesse</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1403 level2 " style="z-index : 11973;"><a data-hover="Petite enfance" class="maximenuck " href="/actionmunicipale/petite-enfance"><span class="titreck" data-hover="Petite enfance"><span class="titreck-text"><span class="titreck-title">Petite enfance</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1404 level2 " style="z-index : 11972;"><a data-hover="Politique de la ville" class="maximenuck " href="/actionmunicipale/politique-de-la-ville"><span class="titreck" data-hover="Politique de la ville"><span class="titreck-text"><span class="titreck-title">Politique de la ville</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2332 level2 " style="z-index : 11971;"><a data-hover="Projet éducatif territorial" class="maximenuck " href="/actionmunicipale/projet-educatif-territorial"><span class="titreck" data-hover="Projet éducatif territorial"><span class="titreck-text"><span class="titreck-title">Projet éducatif territorial</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1405 level2 " style="z-index : 11970;"><a data-hover="Revitalisation commerciale" class="maximenuck " href="/actionmunicipale/revitalisation-commerciale"><span class="titreck" data-hover="Revitalisation commerciale"><span class="titreck-text"><span class="titreck-title">Revitalisation commerciale</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1406 parent level2 " style="z-index : 11969;"><a data-hover="Santé" class="maximenuck " href="/actionmunicipale/sante"><span class="titreck" data-hover="Santé"><span class="titreck-text"><span class="titreck-title">Santé</span></span></span></a>
+																<div class="floatck" style="">
+																	<div class="maxidrop-main" style="">
+																		<div class="maximenuck2 first ">
+																			<ul class="maximenuck2">
+																				<li data-level="3" class="maximenuck item1731 first last level3 " style="z-index : 11968;"><a data-hover="Carte des défibrillateurs " class="maximenuck " href="/actionmunicipale/sante/carte-des-defibrillateurs"><span class="titreck" data-hover="Carte des défibrillateurs "><span class="titreck-text"><span class="titreck-title">Carte des défibrillateurs </span></span></span></a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</li>
+															<li data-level="2" class="maximenuck item1407 level2 " style="z-index : 11967;"><a data-hover="Sécurité civile" class="maximenuck " href="/actionmunicipale/securite"><span class="titreck" data-hover="Sécurité civile"><span class="titreck-text"><span class="titreck-title">Sécurité civile</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2334 level2 " style="z-index : 11966;"><a data-hover="Sécurité publique" class="maximenuck " href="/actionmunicipale/securite-publique"><span class="titreck" data-hover="Sécurité publique"><span class="titreck-text"><span class="titreck-title">Sécurité publique</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1408 level2 " style="z-index : 11965;"><a data-hover="Service à la population" class="maximenuck " href="/actionmunicipale/service-a-la-population"><span class="titreck" data-hover="Service à la population"><span class="titreck-text"><span class="titreck-title">Service à la population</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1409 level2 " style="z-index : 11964;"><a data-hover="Sport" class="maximenuck " href="/actionmunicipale/sport"><span class="titreck" data-hover="Sport"><span class="titreck-text"><span class="titreck-title">Sport</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1410 level2 " style="z-index : 11963;"><a data-hover="Voirie & pluvial" class="maximenuck " href="/actionmunicipale/voirie-pluvial"><span class="titreck" data-hover="Voirie & pluvial"><span class="titreck-text"><span class="titreck-title">Voirie & pluvial</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1411 last level2 " style="z-index : 11962;"><a data-hover="Urbanisme" class="maximenuck " href="/actionmunicipale/urbanisme"><span class="titreck" data-hover="Urbanisme"><span class="titreck-text"><span class="titreck-title">Urbanisme</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li data-level="1" class="maximenuck item189 parent level1 fullwidth" style="z-index : 11961;"><a data-hover="ACTIVITÉS" class="maximenuck " href="/activ"><span class="titreck" data-hover="ACTIVITÉS"><span class="titreck-text"><span class="titreck-title">ACTIVITÉS</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="width:800px;">
+													<div class="maximenuck2 first " style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item2237 first parent level2 nodropdown" style="z-index : 11960;"><a data-hover="Activités pour les enfants et les jeunes" class="maximenuck " href="/activ/activites-jeunesse2020"><span class="titreck" data-hover="Activités pour les enfants et les jeunes"><span class="titreck-text"><span class="titreck-title">Activités pour les enfants et les jeunes</span></span></span></a>
+																<div class="floatck" style="">
+																	<div class="maxidrop-main" style="width:277px;">
+																		<div class="maximenuck2 first ">
+																			<ul class="maximenuck2">
+																				<li data-level="3" class="maximenuck item1415 first level3 " style="z-index : 11959;"><a data-hover="Centres de loisirs" class="maximenuck " href="/activ/activites-jeunesse2020/centres-de-loisirs"><span class="titreck" data-hover="Centres de loisirs"><span class="titreck-text"><span class="titreck-title">Centres de loisirs</span></span></span></a></li>
+																			</ul>
+																		</div>
+																		<div class="maximenuck2" style="width:277px;float:left;">
+																			<ul class="maximenuck2">
+																				<li data-level="3" class="maximenuck item1412 level3 " style="z-index : 11958;"><a data-hover="Activités adaptées" class="maximenuck " href="/activ/activites-jeunesse2020/activites-adaptees"><span class="titreck" data-hover="Activités adaptées"><span class="titreck-text"><span class="titreck-title">Activités adaptées</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2234 level3 " style="z-index : 11957;"><a data-hover="Activités à la journée" class="maximenuck " href="/activ/activites-jeunesse2020/sorties-a-la-journee"><span class="titreck" data-hover="Activités à la journée"><span class="titreck-text"><span class="titreck-title">Activités à la journée</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2236 level3 " style="z-index : 11956;"><a data-hover="Animations de proximité" class="maximenuck " href="/activ/activites-jeunesse2020/animations-de-proximite"><span class="titreck" data-hover="Animations de proximité"><span class="titreck-text"><span class="titreck-title">Animations de proximité</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item1413 level3 " style="z-index : 11955;"><a data-hover="Ateliers découverte" class="maximenuck " href="/activ/activites-jeunesse2020/ateliers-decouverte"><span class="titreck" data-hover="Ateliers découverte"><span class="titreck-text"><span class="titreck-title">Ateliers découverte</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2239 level3 " style="z-index : 11954;"><a data-hover="Chantiers jeunes" class="maximenuck " href="/activ/activites-jeunesse2020/chantiers-jeunes"><span class="titreck" data-hover="Chantiers jeunes"><span class="titreck-text"><span class="titreck-title">Chantiers jeunes</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2233 level3 " style="z-index : 11953;"><a data-hover="Séjours courts" class="maximenuck " href="/activ/activites-jeunesse2020/sejours-courts"><span class="titreck" data-hover="Séjours courts"><span class="titreck-text"><span class="titreck-title">Séjours courts</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2232 level3 " style="z-index : 11952;"><a data-hover="Séjours longs" class="maximenuck " href="/activ/activites-jeunesse2020/sejours-longs"><span class="titreck" data-hover="Séjours longs"><span class="titreck-text"><span class="titreck-title">Séjours longs</span></span></span></a></li>
+																				<li data-level="3" class="maximenuck item2333 last level3 " style="z-index : 11951;"><a data-hover="Quartiers d\'été" class="maximenuck " href="/activ/activites-jeunesse2020/quartiers-d-ete"><span class="titreck" data-hover="Quartiers d\'été"><span class="titreck-text"><span class="titreck-title">Quartiers d'été</span></span></span></a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1414 level2 " style="z-index : 11950;"><a data-hover="Animations" class="maximenuck " href="/activ/animations"><span class="titreck" data-hover="Animations"><span class="titreck-text"><span class="titreck-title">Animations</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1417 level2 " style="z-index : 11949;"><a data-hover="Culture" class="maximenuck " href="/activ/culture"><span class="titreck" data-hover="Culture"><span class="titreck-text"><span class="titreck-title">Culture</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1424 level2 " style="z-index : 11948;"><a data-hover="Les associations" class="maximenuck " href="/activ/les-associations"><span class="titreck" data-hover="Les associations"><span class="titreck-text"><span class="titreck-title">Les associations</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1553 level2 " style="z-index : 11947;"><a data-hover="Parcs et jardins" class="maximenuck " href="/activ/parcs-et-jardins"><span class="titreck" data-hover="Parcs et jardins"><span class="titreck-text"><span class="titreck-title">Parcs et jardins</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1420 level2 " style="z-index : 11946;"><a data-hover="Santé" class="maximenuck " href="/activ/sante"><span class="titreck" data-hover="Santé"><span class="titreck-text"><span class="titreck-title">Santé</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1421 level2 " style="z-index : 11945;"><a data-hover="Se promener" class="maximenuck " href="/activ/se-promener"><span class="titreck" data-hover="Se promener"><span class="titreck-text"><span class="titreck-title">Se promener</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1422 level2 " style="z-index : 11944;"><a data-hover="Seniors" class="maximenuck " href="/activ/seniors"><span class="titreck" data-hover="Seniors"><span class="titreck-text"><span class="titreck-title">Seniors</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1423 last level2 " style="z-index : 11943;"><a data-hover="Sports" class="maximenuck " href="/activ/sports"><span class="titreck" data-hover="Sports"><span class="titreck-text"><span class="titreck-title">Sports</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li data-level="1" class="maximenuck item190 parent level1 fullwidth" style="z-index : 11942;"><a data-hover="VOS DÉMARCHES" class="maximenuck " href="/vosdemarches"><span class="titreck" data-hover="VOS DÉMARCHES"><span class="titreck-text"><span class="titreck-title">VOS DÉMARCHES</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="width:780px;">
+													<div class="maximenuck2 first " style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1425 first level2 " style="z-index : 11941;"><a data-hover="Affaires générales" class="maximenuck " href="/vosdemarches/affaires-generales"><span class="titreck" data-hover="Affaires générales"><span class="titreck-text"><span class="titreck-title">Affaires générales</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1426 level2 " style="z-index : 11940;"><a data-hover="Affaires scolaires" class="maximenuck " href="/vosdemarches/affaires-scolaires"><span class="titreck" data-hover="Affaires scolaires"><span class="titreck-text"><span class="titreck-title">Affaires scolaires</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1427 level2 " style="z-index : 11939;"><a data-hover="Contactez les services" class="maximenuck " href="/vosdemarches/contacter-les-services"><span class="titreck" data-hover="Contactez les services"><span class="titreck-text"><span class="titreck-title">Contactez les services</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1428 level2 " style="z-index : 11938;"><a data-hover="Environnement" class="maximenuck " href="/vosdemarches/environnement"><span class="titreck" data-hover="Environnement"><span class="titreck-text"><span class="titreck-title">Environnement</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1418 level2 " style="z-index : 11937;"><a data-hover="Inscription activités pour les enfants et les jeunes" class="maximenuck " href="/vosdemarches/inscription-activites-jeunesse"><span class="titreck" data-hover="Inscription activités pour les enfants et les jeunes"><span class="titreck-text"><span class="titreck-title">Inscription activités pour les enfants et les jeunes</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1429 level2 " style="z-index : 11936;"><a data-hover="Guichet unique social handicap" class="maximenuck " href="/vosdemarches/guichet-unique-social-handicap"><span class="titreck" data-hover="Guichet unique social handicap"><span class="titreck-text"><span class="titreck-title">Guichet unique social handicap</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1430 level2 " style="z-index : 11935;"><a data-hover="Le CLIC" class="maximenuck " href="/vosdemarches/le-clic"><span class="titreck" data-hover="Le CLIC"><span class="titreck-text"><span class="titreck-title">Le CLIC</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1431 level2 " style="z-index : 11934;"><a data-hover="Les conseils de quartier" class="maximenuck " href="/vosdemarches/les-conseils-de-quartier"><span class="titreck" data-hover="Les conseils de quartier"><span class="titreck-text"><span class="titreck-title">Les conseils de quartier</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1432 level2 " style="z-index : 11933;"><a data-hover="Maison de l\'étudiant" class="maximenuck " href="/vosdemarches/maisons-de-l-etudiant"><span class="titreck" data-hover="Maison de l\'étudiant"><span class="titreck-text"><span class="titreck-title">Maison de l'étudiant</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1433 level2 " style="z-index : 11932;"><a data-hover="Parking et stationnement" class="maximenuck " href="/vosdemarches/parking-et-stationnement"><span class="titreck" data-hover="Parking et stationnement"><span class="titreck-text"><span class="titreck-title">Parking et stationnement</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:260px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1434 level2 " style="z-index : 11931;"><a data-hover="Petite enfance" class="maximenuck " href="/vosdemarches/vos-demarches-petite-enfance"><span class="titreck" data-hover="Petite enfance"><span class="titreck-text"><span class="titreck-title">Petite enfance</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1435 level2 " style="z-index : 11930;"><a data-hover="Qualité de l\'air et de l\'eau" class="maximenuck " href="/vosdemarches/qualite-de-l-air-et-de-l-eau"><span class="titreck" data-hover="Qualité de l\'air et de l\'eau"><span class="titreck-text"><span class="titreck-title">Qualité de l'air et de l'eau</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1436 level2 " style="z-index : 11929;"><a data-hover="Urbanisme & habitat" class="maximenuck " href="/vosdemarches/urbanisme-habitat"><span class="titreck" data-hover="Urbanisme & habitat"><span class="titreck-text"><span class="titreck-title">Urbanisme & habitat</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1437 level2 " style="z-index : 11928;"><a data-hover="Sécurité & risques majeurs" class="maximenuck " href="/vosdemarches/securite-risques-majeurs"><span class="titreck" data-hover="Sécurité & risques majeurs"><span class="titreck-text"><span class="titreck-title">Sécurité & risques majeurs</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1438 last level2 " style="z-index : 11927;"><a data-hover="Vie associative" class="maximenuck " href="/vosdemarches/vie-associative"><span class="titreck" data-hover="Vie associative"><span class="titreck-text"><span class="titreck-title">Vie associative</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li data-level="1" class="maximenuck item191 parent level1 fullwidth" style="z-index : 11926;"><a data-hover="AGENDA" class="maximenuck " href="/agenda"><span class="titreck" data-hover="AGENDA"><span class="titreck-text"><span class="titreck-title">AGENDA</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="">
+													<div class="maximenuck2 first ">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1554 first level2 " style="z-index : 11925;"><a data-hover="Agenda évènementiel" class="maximenuck " href="/agenda/agenda-evenementiel"><span class="titreck" data-hover="Agenda évènementiel"><span class="titreck-text"><span class="titreck-title">Agenda évènementiel</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1355 last level2 " style="z-index : 11924;"><a data-hover="Agenda des travaux et modification de circulation" class="maximenuck " href="/agenda/agenda-des-travaux"><span class="titreck" data-hover="Agenda des travaux et modification de circulation"><span class="titreck-text"><span class="titreck-title">Agenda des travaux et modification de circulation</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li data-level="1" class="maximenuck item1812 parent level1 fullwidth" style="z-index : 11923;"><a data-hover="COVID-19" class="maximenuck " href="/codiv-19"><span class="titreck" data-hover="COVID-19"><span class="titreck-text"><span class="titreck-title">COVID-19</span></span></span></a>
+											<div class="floatck" style="">
+												<div class="maxidrop-main" style="width:840px;">
+													<div class="maximenuck2 first " style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1820 first level2 " style="z-index : 11922;"><a data-hover="Accueil des enfants" class="maximenuck " href="/codiv-19/enfants-de-soignants"><span class="titreck" data-hover="Accueil des enfants"><span class="titreck-text"><span class="titreck-title">Accueil des enfants</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1814 level2 " style="z-index : 11921;"><a data-hover="Aides aux entreprises" class="maximenuck " href="/codiv-19/entreprises"><span class="titreck" data-hover="Aides aux entreprises"><span class="titreck-text"><span class="titreck-title">Aides aux entreprises</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1870 level2 " style="z-index : 11920;"><a data-hover="Aides aux particuliers" class="maximenuck " href="/codiv-19/aides-aux-particuliers"><span class="titreck" data-hover="Aides aux particuliers"><span class="titreck-text"><span class="titreck-title">Aides aux particuliers</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1869 level2 " style="z-index : 11919;"><a data-hover="Aide psychologique" class="maximenuck " href="/codiv-19/aide-psychologique"><span class="titreck" data-hover="Aide psychologique"><span class="titreck-text"><span class="titreck-title">Aide psychologique</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1905 level2 " style="z-index : 11918;"><a data-hover="Annuaire des commerces ouverts" class="maximenuck " href="/codiv-19/annuaire-des-commerces-ouverts/joomlannuaire/blog/9-commerces-ouverts"><span class="titreck" data-hover="Annuaire des commerces ouverts"><span class="titreck-text"><span class="titreck-title">Annuaire des commerces ouverts</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item2188 level2 " style="z-index : 11917;"><a data-hover="Annuaire - protection sanitaire" class="maximenuck " href="/codiv-19/annuaire-protection-sanitaire/joomlannuaire/blog/11-protections-sanitaires"><span class="titreck" data-hover="Annuaire - protection sanitaire"><span class="titreck-text"><span class="titreck-title">Annuaire - protection sanitaire</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1816 level2 " style="z-index : 11916;"><a data-hover="Centre Communal d\'Action Sociale" class="maximenuck " href="/codiv-19/ccas"><span class="titreck" data-hover="Centre Communal d\'Action Sociale"><span class="titreck-text"><span class="titreck-title">Centre Communal d'Action Sociale</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2130 level2 " style="z-index : 11915;"><a data-hover="Lutte contre les violences" class="maximenuck " href="/codiv-19/lutte-contre-les-violences"><span class="titreck" data-hover="Lutte contre les violences"><span class="titreck-text"><span class="titreck-title">Lutte contre les violences</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1893 level2 " style="z-index : 11914;"><a data-hover="Inscrire un commerce" class="maximenuck " href="/codiv-19/inscription-annuaire-des-commercants"><span class="titreck" data-hover="Inscrire un commerce"><span class="titreck-text"><span class="titreck-title">Inscrire un commerce</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item2189 level2 " style="z-index : 11913;"><a data-hover="Inscrire un commerce - protection sanitaire" class="maximenuck " href="/codiv-19/inscrire-commerce-protection-sanitaire"><span class="titreck" data-hover="Inscrire un commerce - protection sanitaire"><span class="titreck-text"><span class="titreck-title">Inscrire un commerce - protection sanitaire</span></span></span></a></li>
+														</ul>
+													</div>
+													<div class="maximenuck2" style="width:280px;float:left;">
+														<ul class="maximenuck2">
+															<li data-level="2" class="maximenuck item1813 level2 " style="z-index : 11912;"><a data-hover="Points de situation" class="maximenuck " href="/codiv-19/particuliers"><span class="titreck" data-hover="Points de situation"><span class="titreck-text"><span class="titreck-title">Points de situation</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1822 level2 " style="z-index : 11911;"><a data-hover="Services ouverts à Draguignan" class="maximenuck " href="/codiv-19/services-ouverts-a-draguignan"><span class="titreck" data-hover="Services ouverts à Draguignan"><span class="titreck-text"><span class="titreck-title">Services ouverts à Draguignan</span></span></span></a></li>
+															<li data-level="2" class="maximenuck item1856 last level2 " style="z-index : 11910;"><a data-hover="Solidarités" class="maximenuck " href="/codiv-19/solidarites"><span class="titreck" data-hover="Solidarités"><span class="titreck-text"><span class="titreck-title">Solidarités</span></span></span></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- fin maximenuCK -->
+							</div>
+						</div>
+					</div>
+				</nav>
+				<section id="entete">
+					<div class="inner clearfix">
+						<div class="flexiblecolumn valign-top" id="entetecolumn1" style="width:calc(50 / 100 * (100% - (1 * 0px)));">
+							<div id="module-recherche">
+								<div class="inner clearfix " data-position="position-1">
+									<div class="tck-module moduletable">
+										<div class="tck-module-text">
+											<div class="finder">
+												<form id="mod-finder-searchform125" action="/recherche-avancee" method="get" class="form-search" role="search"><label for="mod-finder-searchword125" class="element-invisible finder"> </label><input type="text" name="q" id="mod-finder-searchword125" class="search-query input-medium" size="50" value="" placeholder="Recherche..."><button class="btn btn-primary hasTooltip  finder" type="submit" title="Aller"><span class="icon-search icon-white"></span> </button></form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flexiblecolumn " id="entetecolumn2" style="width:calc(50 / 100 * (100% - (1 * 0px)));"></div>
+						<div class="clr"></div>
+					</div>
+				</section>
+				<div id="maincontent" class="maincontent noleft noright">
+					<div id="menu-accueil">
+						<div class="inner clearfix " data-position="position-0">
+							<div class="tck-module moduletable">
+								<div class="tck-module-text">
+									<div aria-label="Fil Ariane" role="navigation">
+										<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+											<li class="active"><span class="divider icon-location"></span></li>
+											<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active"><span itemprop="name"> Accueil </span>
+												<meta itemprop="position" content="1">
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="inner clearfix">
+						<div id="main" class="column main row-fluid">
+							<div class="inner clearfix">
+								<div id="system-message-container"></div>
+								<div class="tck-article item-page" itemscope itemtype="https://schema.org/Article">
+									<meta itemprop="inLanguage" content="fr-FR">
+									<div class="page-header">
+										<h1 itemprop="headline" class="tck-article-title">Page non trouvée</h1>
+									</div>
+									<div itemprop="articleBody" class="tck-article-body">
+										<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/articles/actualites/404-voiture.jpg" alt="404 voiture"></p>
+										<p></p>
+										<p>La page que vous recherchez n'est pas disponible ou a été déplacé.</p>
+										<p>Essayez d'utiliser le menu de navigation ou le moteur de recherche.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clr"></div>
+					</div>
+				</div>
+				<div id="footer">
+					<div class="inner clearfix " data-position="position-3">
+						<div class="tck-module moduletablefooter_module">
+							<div class="tck-module-text">
+								<!--[if lte IE 7]>
+			<link href="/modules/mod_maximenuck/themes/blank/css/ie7.css" rel="stylesheet" type="text/css" />
+			<![endif]-->
+								<!-- debut maximenu CK -->
+								<div class="maximenuckv ltr" id="maximenuck245">
+									<div class="maximenuck2" style="width:25%;float:left;">
+										<ul class="maximenuck2 footer_module">
+											<li class="maximenuck maximenuflatlistck  item1709 first level1 " style="z-index : 12000;" data-level="1"><a data-hover="Logo" class="maximenuck " href="https://www.ville-draguignan.fr/"><img src="/images/logos/logo-blanc-effet.png" alt="Logo" width="115" height="115"></a></li>
+										</ul>
+										<div class="ckclr"></div>
+									</div>
+									<div class="maximenuck2" style="width:25%;float:left;">
+										<ul class="maximenuck2">
+											<li class="maximenuck maximenuflatlistck  item1698 level1 " style="z-index : 11999;" data-level="1"><span data-hover="Mairie de Draguignan" class="separator "><span class="titreck" data-hover="Mairie de Draguignan"><span class="titreck-text"><span class="titreck-title">Mairie de Draguignan</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1699 level1 " style="z-index : 11998;" data-level="1"><span data-hover="28, rue Georges Cisson" class="separator "><span class="titreck" data-hover="28, rue Georges Cisson"><span class="titreck-text"><span class="titreck-title">28, rue Georges Cisson</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1700 level1 " style="z-index : 11997;" data-level="1"><span data-hover="83300 Draguignan" class="separator "><span class="titreck" data-hover="83300 Draguignan"><span class="titreck-text"><span class="titreck-title">83300 Draguignan</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1701 level1 " style="z-index : 11996;" data-level="1"><a data-hover="Tél. 04 94 60 31 31" class="maximenuck " href="tel:0494603131"><span class="titreck" data-hover="Tél. 04 94 60 31 31"><span class="titreck-text"><span class="titreck-title">Tél. 04 94 60 31 31</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1711 level1 " style="z-index : 11995;" data-level="1"><span data-hover="Horaires d\'ouverture :" class="separator "><span class="titreck" data-hover="Horaires d\'ouverture :"><span class="titreck-text"><span class="titreck-title">Horaires d'ouverture :</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1713 level1 " style="z-index : 11994;" data-level="1"><span data-hover="du lundi au vendredi" class="separator "><span class="titreck" data-hover="du lundi au vendredi"><span class="titreck-text"><span class="titreck-title">du lundi au vendredi</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1712 level1 " style="z-index : 11993;" data-level="1"><span data-hover="De 8h à 17h" class="separator "><span class="titreck" data-hover="De 8h à 17h"><span class="titreck-text"><span class="titreck-title">De 8h à 17h</span></span></span></span></li>
+											<li class="maximenuck maximenuflatlistck  item1714 level1 " style="z-index : 11992;" data-level="1"><span data-hover="Également, l\'état civil le samedi 9h-12h" class="separator "><span class="titreck" data-hover="Également, l\'état civil le samedi 9h-12h"><span class="titreck-text"><span class="titreck-title">Également, l'état civil le samedi 9h-12h</span></span></span></span></li>
+										</ul>
+										<div class="ckclr"></div>
+									</div>
+									<div class="maximenuck2" style="width:25%;float:left;">
+										<ul class="maximenuck2">
+											<li class="maximenuck maximenuflatlistck  item1689 level1 " style="z-index : 11991;" data-level="1"><a data-hover="Facebook" class="maximenuck " href="https://www.facebook.com/ville.draguignan/" target="_blank"><span class="titreck" data-hover="Facebook"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">Facebook</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1815 level1 " style="z-index : 11990;" data-level="1"><a data-hover="Youtube" class="maximenuck " href="https://www.youtube.com/channel/UCY4DxgCUS0ukLFJw2WtmF6A" target="_blank"><span class="titreck" data-hover="Youtube"><span class="maximenuiconck fab fa-youtube"></span><span class="titreck-text"><span class="titreck-title">Youtube</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1691 level1 " style="z-index : 11989;" data-level="1"><a data-hover="Twitter" class="maximenuck " href="https://twitter.com/VilleDraguignan?lang=fr" target="_blank"><span class="titreck" data-hover="Twitter"><span class="maximenuiconck fab fa-twitter"></span><span class="titreck-text"><span class="titreck-title">Twitter</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1692 level1 " style="z-index : 11988;" data-level="1"><a data-hover="Musée des Beaux-Arts" class="maximenuck " href="https://www.facebook.com/mbadraguignan/" target="_blank"><span class="titreck" data-hover="Musée des Beaux-Arts"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">Musée des Beaux-Arts</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1693 level1 " style="z-index : 11987;" data-level="1"><a data-hover="Chapelle de l\'Observance" class="maximenuck " href="https://www.facebook.com/chapelledelobservance/" target="_blank"><span class="titreck" data-hover="Chapelle de l\'Observance"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">Chapelle de l'Observance</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1694 level1 " style="z-index : 11986;" data-level="1"><a data-hover="Service jeunesse" class="maximenuck " href="https://www.facebook.com/ServiceJeunesseDraguignan" target="_blank"><span class="titreck" data-hover="Service jeunesse"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">Service jeunesse</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1695 level1 " style="z-index : 11985;" data-level="1"><a data-hover="BIJ" class="maximenuck " href="https://www.facebook.com/Bureau-Information-Jeunesse-Draguignan-113783882030586" target="_blank"><span class="titreck" data-hover="BIJ"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">BIJ</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1696 level1 " style="z-index : 11984;" data-level="1"><a data-hover="Maison de l\'étudiant" class="maximenuck " href="https://www.facebook.com/maison.deletudiant.35" target="_blank"><span class="titreck" data-hover="Maison de l\'étudiant"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">Maison de l'étudiant</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1697 level1 " style="z-index : 11983;" data-level="1"><a data-hover="CMJD" class="maximenuck " href="https://www.facebook.com/CMJD-263863357372767/" target="_blank"><span class="titreck" data-hover="CMJD"><span class="maximenuiconck fa fa-facebook-official"></span><span class="titreck-text"><span class="titreck-title">CMJD</span></span></span></a></li>
+										</ul>
+										<div class="ckclr"></div>
+									</div>
+									<div class="maximenuck2" style="width:25%;float:left;">
+										<ul class="maximenuck2">
+											<li class="maximenuck maximenuflatlistck  item1688 level1 " style="z-index : 11982;" data-level="1"><a data-hover="FPS" class="maximenuck " href="https://my.flowbirdapp.com/embed/fps" target="_blank"><img src="/images/fps.png" alt="FPS"></a></li>
+											<li class="maximenuck maximenuflatlistck  item1704 level1 " style="z-index : 11981;" data-level="1"><a data-hover="Action Cœur de Ville" class="maximenuck " href="http://www.acv-draguignan.fr/" target="_blank" title="Action cœur de ville"><img src="/images/action-coeur-de-ville16a.png" alt="Action Cœur de Ville" align="middle"><span class="titreck" data-hover="Action Cœur de Ville"><span class="titreck-text"><span class="titreck-title">Action Cœur de Ville</span></span></span> </a></li>
+											<li class="maximenuck maximenuflatlistck  item1702 level1 " style="z-index : 11980;" data-level="1"><a data-hover="Portail Guichet Familles" class="maximenuck " href="https://portail-familles.net/draguignan" target="_blank"><img src="/images/icones-menu-bas/pgf.jpg" alt="Portail Guichet Familles" align="middle"><span class="titreck" data-hover="Portail Guichet Familles"><span class="titreck-text"><span class="titreck-title">Portail Guichet Familles</span></span></span> </a></li>
+											<li class="maximenuck maximenuflatlistck  item1703 level1 " style="z-index : 11979;" data-level="1"><a data-hover="Kiosque famille" class="maximenuck " href="https://draguignan.kiosquefamille.fr" target="_blank"><img src="/images/icones-menu-bas/kf.jpg" alt="Kiosque famille" align="middle"><span class="titreck" data-hover="Kiosque famille"><span class="titreck-text"><span class="titreck-title">Kiosque famille</span></span></span> </a></li>
+											<li class="maximenuck maximenuflatlistck  item1707 level1 " style="z-index : 11978;" data-level="1"><a data-hover="Contactez le Webmaster" class="maximenuck " href="/footer-contact"><span class="titreck" data-hover="Contactez le Webmaster"><span class="maximenuiconck fa fa-envelope"></span><span class="titreck-text"><span class="titreck-title">Contactez le Webmaster</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1708 level1 " style="z-index : 11977;" data-level="1"><a data-hover="Mentions légales" class="maximenuck " href="/footer-mentions-legales"><span class="titreck" data-hover="Mentions légales"><span class="maximenuiconck fa fa-copyright"></span><span class="titreck-text"><span class="titreck-title">Mentions légales</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1706 level1 " style="z-index : 11976;" data-level="1"><a data-hover="Open data" class="maximenuck " href="/footer-open-data"><span class="titreck" data-hover="Open data"><span class="maximenuiconck fa fa-rss"></span><span class="titreck-text"><span class="titreck-title">Open data</span></span></span></a></li>
+											<li class="maximenuck maximenuflatlistck  item1759 last level1 " style="z-index : 11975;" data-level="1"><a data-hover="Contactez les services municipaux" class="maximenuck " href="/contactez-les-services-municipaux-footer"><span class="titreck" data-hover="Contactez les services municipaux"><span class="maximenuiconck fas fa-envelope"></span><span class="titreck-text"><span class="titreck-title">Contactez les services municipaux</span></span></span></a></li>
+										</ul>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								<!-- fin maximenuCK -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44011222-1"></script>
+		<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-44011222-1');
+		</script>
+	</body>
+</html>
