@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<!-- Title -->
+		<title>Comptes-rendus - Communauté de communes Bassée-Montois</title>
+		<!-- Metas -->
+		<link rel="shortcut icon" type="image/png" href="/public/images/favicon.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="Description" content="">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<!-- Layout -/- effects -->
+		<script type="text/javascript" src="/sematic/i18n/messages.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery-ui-1.8.6.custom.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="/public/stylesheets/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="/public/yepnope/yepnope.1.0.2-min.js"></script>
+		<script type="text/javascript" src="/public/javascripts/zenexity/tools/utils.js"></script>
+		<script type="text/javascript" src="/sematic/routes.js"></script>
+		<!-- Google Maps & Microdata -->
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic/tools/microdata-polyfill.js"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic/tools/async.js"></script>
+		<script type="text/javascript" src="/public/javascripts/sematic-front.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/albums/autoload/slides.min.jquery.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/albums/autoload/slideshow.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/map/autoload/map.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/culturalagenda/autoload/ca-front.js"></script>
+		<script type="text/javascript" src="/public/javascripts/modules/home2/autoload/carrousel.js"></script>
+		<script type="text/javascript" src="/public/javascript/scripts.js"></script>
+		<script type="text/javascript" src="/public/fancybox/jquery.fancybox-1.3.0.js"></script>
+		<script type="text/javascript" src="/public/flowplayer/flowplayer-3.1.4.js"></script>
+		<script type="text/javascript" src="/public/javascripts/jqCarousel3D.js"></script>
+		<script type="text/javascript" src="/public/jquery/jquery.ui.datepicker-fr.js"></script>
+		<script type="text/javascript">
+                $(document).ready(function () {
+          $(".gotoPage").bind('change',function (event) {
+            if (event.target.value)
+              document.location=event.target.value;
+          });
+          if ("Bandeau-Home-page" != "") {
+            $(".img_font").css('background', "url('/library/Bandeau-Home-page') no-repeat")
+          } else {
+            $(".img_font").css('background', "url('/public/images/template-images/img_font.png') no-repeat")
+          }
+        });
+      
+		</script>
+		<script type="text/javascript">
+		window.onload = function() {
+			$('#sitesSlides').carousel3D({
+				speed: 900,
+				perspectiveZoom: 70,
+				sideOffset: 40,
+				secondaryOpacity: .35,
+				emClass:'slideImage'
+				});
+		}
+		</script>
+		<link rel="stylesheet" href="/public/stylesheets/site.css" type="text/css" media="all">
+		<link rel="stylesheet" href="/public/stylesheets/sematic-front.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/spl/autoload/spl.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/slideshow.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/slides.jquery.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/albums/autoload/singlemedia.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/map/autoload/map.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/annuaire/autoload/facebox/facebox.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/annuaire/autoload/annuaire.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/culturalagenda/autoload/culturalagenda.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/formulaire/autoload/formulaire.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/home2/autoload/mainNews.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/modules/home2/autoload/home2.css" media="all">
+		<link rel="stylesheet" href="/public/fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen">
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" type="text/css" href="/public/stylesheets/ie8.css" />
+		<![endif]-->
+	</head>
+	<body id="compte-rendus" class="content-ContentPage">
+		<!-- Accessibility -->
+		<ul id="accessibility">
+			<li><a href="#content">Aller au contenu</a></li>
+			<li><a href="#menu">Aller au menu</a></li>
+			<li><a href="#submenu">Aller au sous-menu</a></li>
+			<li><a href="#search">Faire une recherche</a></li>
+		</ul>
+		<div id="site">
+			<div id="topnav">
+				<div class="wrapper">
+					<ul id="menu1">
+						<li><a href="/accueil"><span>Accueil</span></a></li>
+						<li><a href="/toute-l-actu"><span>Toute l'actu</span></a></li>
+						<li><a href="/agenda"><span>Agenda</span></a></li>
+						<li><a href="/plan-de-la-c-c"><span>Plan de la C.C</span></a></li>
+						<li><a href="/adresses-numeros-utiles"><span>Adresses & numéros utiles</span></a></li>
+					</ul>
+					<div id="toptools">
+						<form id="subscribeNewsLetter" class="defaultvalues">
+							<fieldset><label for="newsEmailTop">Newsletter</label> <input type="text" class="text" name="user.emailUser" id="newsEmailTop" value="Votre Email"> <button type="submit" class="button" value="Valider"><span>Ok</span></button></fieldset>
+						</form>
+					</div>
+					<p class="login"><span class="login-anonymous"><a href="/sematic/login?returnTo=http%3A%2F%2Fwww.cc-basseemontois.fr%2Fcompte-rendus">Accès partenaire</a></span></p>
+				</div>
+			</div>
+			<div class="img_font">
+				<!-- Header -->
+				<div id="help">
+					<form action="/search" method="post"><input type="text" class="text" name="query" id="search" placeholder="Recherche"> <input type="submit" class="button" value=""></form>
+				</div>
+				<div id="header">
+					<div class="wrapper">
+						<div id="top_header">
+							<h1 id="logo"><a href="/root"><img src="/public/images/template-images/logo-site.png"><span>Communauté de communes Bassée-Montois</span></a></h1>
+						</div>
+						<ul id="menu">
+							<li><a href="/le-territoire">Territoire</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/presentation-chiffres-cles">Présentation & chiffres clés</a></li>
+									<li><a href="/acces-situation">Accès & situation</a></li>
+									<li><a href="/plan">Plan</a></li>
+									<li><a href="/communes">Communes</a>
+										<ul>
+											<li><a href="/baby">Baby</a></li>
+											<li><a href="/balloy">Balloy</a></li>
+											<li><a href="/bazoches-les-bray">Bazoches-les-Bray</a></li>
+											<li><a href="/bray-sur-seine">Bray-sur-Seine</a></li>
+											<li><a href="/cessoy-en-montois">Cessoy-en-Montois</a></li>
+											<li><a href="/chalmaison">Chalmaison</a></li>
+											<li><a href="/chatenay-sur-seine">Châtenay-sur-Seine</a></li>
+											<li><a href="/coutencon">Coutençon</a></li>
+											<li><a href="/donnemari-dontilly">Donnemarie-Dontilly</a></li>
+											<li><a href="/egligny">Egligny</a></li>
+											<li><a href="/everly">Everly</a></li>
+											<li><a href="/fontaine-fourches">Fontaine-Fourches</a></li>
+											<li><a href="/gouaix">Gouaix</a></li>
+											<li><a href="/gravon">Gravon</a></li>
+											<li><a href="/grisy-sur-seine">Grisy-sur-Seine</a></li>
+											<li><a href="/gurcy-le-chatel">Gurcy-le-Châtel</a></li>
+											<li><a href="/herme">Hermé</a></li>
+											<li><a href="/jaulnes">Jaulnes</a></li>
+											<li><a href="/jutigny">Jutigny</a></li>
+											<li><a href="/lizines">Lizines</a></li>
+											<li><a href="/luisetaines">Luisetaines</a></li>
+											<li><a href="/meigneux">Meigneux</a></li>
+											<li><a href="/mons-en-montois">Mons en Montois</a></li>
+											<li><a href="/montigny-le-guesdier">Montigny-le-Guesdier</a></li>
+											<li><a href="/montigny-lencoup">Montigny-Lencoup</a></li>
+											<li><a href="/mousseaux-les-bray">Mousseaux-les-Bray</a></li>
+											<li><a href="/mouy-sur-seine">Mouy-sur-Seine</a></li>
+											<li><a href="/noyen-sur-seine">Noyen-sur-Seine</a></li>
+											<li><a href="/paroy">Paroy</a></li>
+											<li><a href="/passy-sur-seine">Passy-sur-Seine</a></li>
+											<li><a href="/les-ormes-sur-voulzie">Les-Ormes-sur-Voulzie</a></li>
+											<li><a href="/saint-sauveur-les-bray">Saint-Sauveur-les-Bray</a></li>
+											<li><a href="/savins">Savins</a></li>
+											<li><a href="/sigy">Sigy</a></li>
+											<li><a href="/sognolles-en-montois">Sognolles en Montois</a></li>
+											<li><a href="/thenisy">Thenisy</a></li>
+											<li><a href="/la-tombe">La Tombe</a></li>
+											<li><a href="/villenauxe-la-petite">Villenauxe-la-Petite</a></li>
+											<li><a href="/villeneuve-les-bordes">Villeneuve les Bordes</a></li>
+											<li><a href="/villiers-sur-seine">Villiers-sur-Seine</a></li>
+											<li><a href="/villuis">Villuis</a></li>
+											<li><a href="/vimpelles">Vimpelles</a></li>
+											<li><a href="/forum-de-l-eau">Forum de l'eau</a></li>
+										</ul>
+									</li>
+									<li><a href="/la-bassee-en-photos">Bassée-Montois en photos</a></li>
+									<li><a href="/la-bassee-en-videos">Bassée-Montois en vidéos</a></li>
+									<li><a href="/faune-et-flore-en-bassee">Faune et flore</a></li>
+								</ul>
+							</li>
+							<li><a href="/la-collectivite">Communauté de communes</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/competences">Compétences</a></li>
+									<li><a href="/organisation">Organisation</a></li>
+									<li><a href="/avis-de-conseil">Avis de conseil</a></li>
+									<li><a href="/compte-rendus">Comptes-rendus</a></li>
+									<li><a href="/services-contacts">Services & contacts</a></li>
+									<li><a href="/les-projets">Projets</a>
+										<ul>
+											<li><a href="/projet-de-territoire">Projet de territoire</a></li>
+											<li><a href="/projet-de-seine">Projets de Seine</a></li>
+											<li><a href="/batiments-et-travaux">Bâtiments et travaux</a></li>
+										</ul>
+									</li>
+									<li><a href="/Services-et-Contacts">Registre public d'accessibilité</a></li>
+									<li><a href="/marches-publics">Marchés publics</a></li>
+								</ul>
+							</li>
+							<li><a href="/tourisme">Tourisme</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/les-syndicats-d-initiatives">Offices de tourisme</a></li>
+									<li><a href="/le-patrimoine-de-la-bassee">Patrimoine</a>
+										<ul>
+											<li><a href="/patrimoine-rural">Patrimoine rural</a></li>
+											<li><a href="/patrimoine-hydraulique">Patrimoine hydraulique</a></li>
+											<li><a href="/patrimoine-religieux">Patrimoine religieux</a></li>
+										</ul>
+									</li>
+									<li><a href="/les-sites-classes">Sites classés</a>
+										<ul>
+											<li><a href="/arbres-remarquables">Arbres remarquables</a></li>
+											<li><a href="/natura-2000">Natura 2000</a></li>
+										</ul>
+									</li>
+									<li><a href="/la-reserve-naturelle">Réserve naturelle</a></li>
+									<li><a href="/hebergement-restauration">Hébergement & restauration</a></li>
+									<li><a href="/randonnees-pedestres">Randonnées pédestres</a></li>
+									<li><a href="/taxe-de-sejour">Taxe de séjour</a></li>
+								</ul>
+							</li>
+							<li><a href="/culture-et-loisirs">Sport, culture, loisirs</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/culture">Culture</a>
+										<ul>
+											<li><a href="/cinema">Cinémas</a></li>
+											<li><a href="/musee-du-montois">Musée du Montois</a></li>
+											<li><a href="/musee-de-la-vie-d-autrefois">Musée de la Vie d'Autrefois</a></li>
+											<li><a href="/week-end-ateliers-d-artistes">Ateliers d'artistes</a></li>
+											<li><a href="/week-end-expositions-d-artistes">Week-end expositions d'artistes</a></li>
+										</ul>
+									</li>
+									<li><a href="/sports">Sports</a>
+										<ul>
+											<li><a href="/annuaire-des-sports">Annuaire des sports</a></li>
+											<li><a href="/ecole-multisports">Informations</a></li>
+										</ul>
+									</li>
+									<li><a href="/chasse-peche">Chasse, pêche</a>
+										<ul>
+											<li><a href="/chasse">Chasse</a></li>
+											<li><a href="/peche">Pêche</a></li>
+										</ul>
+									</li>
+									<li><a href="/vie-associative">Vie associative</a>
+										<ul>
+											<li><a href="/criteres-attribution-de-subvention">Partenariat avec les associations</a></li>
+											<li><a href="/associations">Associations</a></li>
+										</ul>
+									</li>
+									<li><a href="/accueils-de-loisirs">Jeunesse</a>
+										<ul>
+											<li><a href="/minis-stages">Mini-stages</a></li>
+											<li><a href="/accueil-3-a-6-ans">Séjours</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="/vie-pratique">Vie quotidienne</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/enfance">Enfance, jeunesse & famille</a>
+										<ul>
+											<li><a href="/multi-accueil-intercommunal">Crèche</a></li>
+											<li><a href="/halte-garderie">Halte-garderie Mil' Mouch</a></li>
+											<li><a href="/relais-d-assistantes-maternelles">RAM</a></li>
+											<li><a href="/assitantes-maternelles">Assistantes Maternelles</a></li>
+										</ul>
+									</li>
+									<li><a href="/sante">Santé</a>
+										<ul>
+											<li><a href="/espace-de-sante">Espace de santé</a></li>
+										</ul>
+									</li>
+									<li><a href="/seniors">Séniors</a></li>
+									<li><a href="/transports">Mobilités</a>
+										<ul>
+											<li><a href="/transport-a-la-demande">Transport à la demande</a></li>
+											<li><a href="/transports-scolaires">Transports scolaires</a></li>
+											<li><a href="/lignes-regulieres">Lignes régulières</a></li>
+											<li><a href="/autres">Autres</a></li>
+											<li><a href="/velo">Vélo</a></li>
+										</ul>
+									</li>
+									<li><a href="/location-salle-des-fetes">Location salle des fêtes</a></li>
+									<li><a href="/service-urbanisme">Service Urbanisme</a>
+										<ul>
+											<li><a href="/service-d-instruction">Service d'instruction</a></li>
+											<li><a href="/plan-local-d-urbanisme-intercommunal">Plan local d'urbanisme intercommunal</a></li>
+											<li><a href="/schema-de-coherence-territoriale">Schéma de cohérence territoriale</a></li>
+										</ul>
+									</li>
+									<li><a href="/environnement">Environnement</a>
+										<ul>
+											<li><a href="/dechets">Déchets</a></li>
+											<li><a href="/programme-de-recherche-sur-la-seine">Programme de recherche sur la Seine</a></li>
+										</ul>
+									</li>
+									<li><a href="/enquetes-publiques">Enquêtes publiques</a></li>
+									<li><a href="/action-sociale">Action sociale</a></li>
+								</ul>
+							</li>
+							<li><a href="/vie-economique">Economie</a>
+								<ul><img src="/public/images/template-images/narow_top_menu.png">
+									<li><a href="/commerces">Commerces & artisans</a></li>
+									<li><a href="/marches-et-foires">Marchés & foires</a></li>
+									<li><a href="/amenagements-numeriques">Aménagement numérique</a>
+										<ul>
+											<li><a href="/le-deploiement-du-tres-haut-debit">Le déploiement de la fibre</a></li>
+											<li><a href="/le-raccordement-des-particuliers">Le raccordement des particuliers</a></li>
+											<li><a href="/faq-numerique">FAQ numérique</a></li>
+										</ul>
+									</li>
+									<li><a href="/zone-d-activite">Entreprises</a>
+										<ul>
+											<li><a href="/zone-d-activite-economique">Zone d'activité économique</a></li>
+											<li><a href="/hotel-d-entreprise">Télécentre Bassée-Montois</a></li>
+											<li><a href="/initiative">Initiative</a></li>
+											<li><a href="/aides-aux-entreprises">Aides aux entreprises</a></li>
+										</ul>
+									</li>
+									<li><a href="/agriculture">Agriculture</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Main container -->
+			<div id="container">
+				<div class="wrapper">
+					<!-- SubMenu -->
+					<div id="submenu">
+						<div class="topSection">
+							<h3>Communauté de communes</h3>
+						</div>
+						<ul class="submenulist">
+							<li><a href="/competences">Compétences</a></li>
+							<li><a href="/organisation">Organisation</a></li>
+							<li><a href="/avis-de-conseil">Avis de conseil</a></li>
+							<li class="selected"><a href="/compte-rendus">Comptes-rendus</a></li>
+							<li><a href="/services-contacts">Services & contacts</a></li>
+							<li><a href="/les-projets">Projets</a></li>
+							<li><a href="/Services-et-Contacts">Registre public d'accessibilité</a></li>
+							<li><a href="/marches-publics">Marchés publics</a></li>
+						</ul>
+					</div>
+					<!-- Content -->
+					<div id="content_subpage">
+						<div id="acces_direct">
+							<h2>ACCES DIRECT<span><img src="/public/images/template-icons/ico_acces_direct.png"></span></h2>
+							<ul id="menu_acces_direct">
+								<li><a href="/pratique">Pratique</a>
+									<!--<ul>
+                        	                                <li><a href="/lien-acces-situation">Accès & situation</a>
+                                                </li>
+                        	                                <li><a href="/lien-transports">Transports</a>
+                                                </li>
+                                              </ul>-->
+								</li>
+								<li><a href="/annuaires">Annuaires</a>
+									<!--<ul>
+                        	                                <li><a href="/lien-hebergement-restauration">Hébergement & restauration</a>
+                                                </li>
+                        	                                <li><a href="/lien-sante">Santé</a>
+                                                </li>
+                        	                                <li><a href="/commerces-artisans">Commerces & artisans</a>
+                                                </li>
+                        	                                <li><a href="/inaturipathe-psychologue-sophorologue-osteophathe">Naturopathe, psychologue, sophorologue, ostéophathe</a>
+                                                </li>
+                                              </ul>-->
+								</li>
+							</ul>
+						</div>
+						<div id="pageButtons"><span id="printPage"><a href="/export/print/compte-rendus?" onclick="popup('/export/print/compte-rendus?', true, 800, 600); return false;" title="Imprimer (nouvelle fenêtre)"></a></span></div>
+						<ul id="path">
+							<li><a href="/root">Accueil</a> /</li>
+							<li><a href="/la-collectivite" class="first">Communauté de communes</a> /</li>
+							<li><a href="/compte-rendus" class="last">Comptes-rendus</a></li>
+						</ul>
+						<!-- Page Title -->
+						<div id="title">
+							<h2>Comptes-rendus</h2>
+						</div>
+						<div class="template article">
+							<div class="block-container" id="main-container">
+								<div class="block block-heading">
+									<p class="chapeau">Retrouvez ci-dessous tous les comptes-rendus de séance du Conseil de la Communauté de communes Bassée-Montois.</p>
+									<div class="end-block"></div>
+								</div>
+								<div class="block list-block-controller not-editable">
+									<div id="treecontrol"><a id="tree-collapse-all" href="#" title="Tout réduire">Tout réduire</a><a id="tree-expand-all" href="#" title="Tout déplier">Tout déplier</a></div>
+									<div class="end-block"></div>
+								</div>
+								<div class="block list-block" style>
+									<ul>
+										<li>
+											<h5>2020</h5>
+										</li>
+										<li>
+											<div><a href="/library/CR-conseil-4-fevrier-2020" class="open-popup" type="application/pdf">- Conseil communautaire du 4 février 2020</a></div>
+										</li>
+										<li>
+											<div>- <a href="/library/CR-25-fevrier-2020" class="open-popup" type="application/pdf">Conseil communautaire du 25 février 2020</a> <span class="size-helper">(2 Mo)</span></div>
+										</li>
+										<li>
+											<div><span class="size-helper">-<a href="/library/CR-25-juin-2020" class="open-popup" type="application/pdf"> Conseil communautaire du 25 juin 2020</a> <span class="size-helper">(3 Mo)</span> </span></div>
+										</li>
+										<li>
+											<h3></h3>
+											<h3></h3>
+											<h4></h4>
+											<h4></h4>
+											<h5>2019</h5>
+										</li>
+										<li>
+											<div><a href="/library/deliberation-Plan-Climat-Air-Energie-Territorial" class="open-popup" type="application/pdf">délibération sur le plan Climat Air Energie Territorial</a></div>
+										</li>
+										<li>-<a href="/library/Compte-rendu-du-12-mars-2019" class="open-popup" type="application/pdf"> conseil communautaire du 12 mars 2019</a></li>
+										<li>- <a href="/library/CR-du-28-03-19" class="open-popup" type="application/pdf">conseil communautaire du 28 mars 2019</a></li>
+										<li>- <a href="/library/CR-du-14-mai-2019" class="open-popup" type="application/pdf">conseil communautaire du 14 mai 2019</a> <span class="size-helper">(1 Mo)</span></li>
+										<li><span class="size-helper">-<a href="/library/CR-du-25-06-19" class="open-popup" type="application/pdf"> conseil communautaire du 25 juin 2019</a> <span class="size-helper">(1 Mo)</span> </span></li>
+										<li><span class="size-helper"> <span class="size-helper">-<a href="/library/CR-du-02-juillet-2019" class="open-popup" type="application/pdf"> conseil communautaire du 02 juillet 2019</a> <span class="size-helper">(2 Mo)</span> </span> </span></li>
+										<li><span class="size-helper"> <span class="size-helper"> <span class="size-helper">- <a href="/library/CR-du-26-09-2019" class="open-popup" type="application/pdf">conseil communautaire du 26 septembre 2019</a> <span class="size-helper">(2 Mo)</span> </span> </span> </span></li>
+										<li><span class="size-helper"> <span class="size-helper"> <span class="size-helper"> <span class="size-helper">-<a href="/library/CR-du-26-11-2019" class="open-popup" type="application/pdf"> conseil communautaire du 26 novembre 2019</a> <span class="size-helper">(790 Ko)</span> </span> </span> </span> </span></li>
+										<li><span class="size-helper"> <span class="size-helper"> <span class="size-helper"> <span class="size-helper"> <span class="size-helper">- <a href="/library/CR-du-16-12-2019" class="open-popup" type="application/pdf">conseil communautaire du 16 décembre 2019</a> <span class="size-helper">(2 Mo)</span> </span> </span> </span> </span> </span></li>
+										<li>
+											<h5>2018</h5>
+										</li>
+										<ul>
+											<li><a href="/library/CR23012018" class="open-popup" type="application/pdf">Conseil communautaire du 23 janvier 2018</a></li>
+											<li><a href="/library/CR-8-03-18" class="open-popup" type="application/pdf">Conseil communautaire du 8 mars 2018</a></li>
+											<li><a href="/library/CR9-04-18" class="open-popup" type="application/pdf">Conseil communautaire du 9 avril 2018</a></li>
+											<li><span class="size-helper"><a href="/library/CR-DU-3-05-18" class="open-popup" type="application/pdf">Conseil communautaire du 3 mai 2018</a> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"><a href="/library/CR11062018" class="open-popup" type="application/pdf">Conseil communautaire 11 juin 2018</a> </span> </span></li>
+											<li><span class="size-helper"><a href="/library/CR030718" class="open-popup" type="application/pdf">Conseil communautaire 3 juillet 2018</a> </span></li>
+											<li><a href="/library/Conseil-communautaire-24-09-18" class="open-popup" type="application/pdf">Conseil communautaire 24 septembre 2018</a> <span class="size-helper">(2 Mo)</span></li>
+											<li><a href="/library/CR-du-15-10-18" class="open-popup" type="application/pdf">Conseil communautaire 15 octobre 2018</a> <span class="size-helper">(2 Mo)</span></li>
+											<li><span class="size-helper"><a href="/library/CR041218" class="open-popup" type="application/pdf">Conseil communautaire 4 décembre 2018</a> </span></li>
+											<li><a href="/library/CR-Conseil-18-12-2018" class="open-popup" type="application/pdf">Conseil communautaire 18 décembre 2018</a></li>
+										</ul>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+								<div class="block block-separator">
+									<h5>2017 </h5>
+									<hr>
+									<ul>
+										<li><span class="yui-non"><a href="/library/CR-21-02-2017" type="application/pdf">Conseil Communautaire du 21 février</a> <span class="size-helper">(3 Mo)</span> </span><a href="/library/CR-21-02-2017" type="application/pdf"></a></li>
+										<li><span class="yui-non"><a href="/library/CR-28032017" class="open-popup" type="application/pdf">Conseil Communautaire du 28 mars</a> <span class="size-helper">(2 Mo)</span> </span></li>
+										<li><span class="yui-non"><a href="/library/CR11042017" class="open-popup" type="application/pdf">Conseil Communautaire du 11 avril</a> <span class="size-helper">(2 Mo)</span> </span></li>
+										<li><span class="yui-non"> <span class="size-helper"><a href="/library/CR-2-mai-2017" class="open-popup" type="application/pdf">Conseil Communautaire du 2 mai </a> <span class="size-helper">(1 Mo)</span> </span> </span></li>
+										<li><span class="yui-non"> <span class="size-helper"> <span class="size-helper"><a href="/library/Compte-rendu-conseil-23-mai-2017" class="open-popup" type="application/pdf">Conseil Communautaire du 23 mai</a> <span class="size-helper">(2 Mo)</span> </span> </span> </span></li>
+										<li><a href="/library/CR-22--juin-2017" class="open-popup" type="application/pdf">Conseil Communautaire 22 juin</a> <span class="size-helper">(1 Mo)</span></li>
+										<li><span class="yui-non"> <span class="size-helper"> <span class="size-helper"> <span class="size-helper"></span><a href="/library/Conseil-Communautaire-27-septembre" class="open-popup" type="application/pdf">Conseil Communautaire du 27 septembre </a> <span class="size-helper">(2 Mo)</span> <br> </span> </span> </span></li>
+										<li><span class="yui-non"> <span class="size-helper"> <span class="size-helper"><a href="/library/CR-151117" class="open-popup" type="application/pdf">Conseil Communautaire du 15 novembre</a> <span class="size-helper">(2 Mo)</span> </span> </span> </span></li>
+										<li><a href="/library/CR-19-12-17" class="open-popup" type="application/pdf">Conseil Communautaire du 19 décembre</a> <span class="size-helper">(2 Mo)</span></li>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+								<div class="block list-block">
+									<ul>
+										<li>
+											<h5>2016</h5>
+										</li>
+										<ul>
+											<li><a href="/library/CR-26-01-16" class="open-popup" type="application/pdf">Conseil Communautaire du 26 janvier</a> <span class="size-helper">(943 Ko)</span></li>
+											<li><span class="size-helper"><a href="/library/CR-4fev16" class="open-popup" type="application/pdf">Conseil Communautaire du 4 février</a> <span class="size-helper">(2 Mo)</span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"><a href="/library/CR-14-03-16" class="open-popup" type="application/pdf">Conseil Communautaire du 14 mars </a> <span class="size-helper">(2 Mo)</span> </span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"><a type="application/pdf" class="open-popup" href="/library/CR-29-mars-2016">Conseil Communautaire du 29 mars </a> <span class="size-helper">(1 Mo)</span> </span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"><a type="application/pdf" class="open-popup" href="/library/-Conseil-communautaire-31-mai-2016">Conseil Communautaire du 31 mai</a> <span class="size-helper">(1 Mo)</span> </span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"> <span class="size-helper"></span><a type="application/pdf" class="open-popup" href="/library/CR-conseil-communautaire-15062016">Conseil Communautaire du 15 juin </a> <span class="size-helper">(2 Mo)</span> </span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"> <span class="size-helper"></span><a href="/library/conseil-communautaire-22092016" type="application/pdf">Conseil Communautaire du 22 septembre</a> <span class="size-helper">(3 Mo)</span> <br> </span> </span></li>
+											<li><span class="size-helper"> <span class="size-helper"><a href="/library/CR-decembre-2016" class="open-popup" type="application/pdf">Conseil communautaire du 12 décembre</a> <span class="size-helper">(2 Mo)</span> </span> </span></li>
+										</ul>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+								<div class="end-container"></div>
+								<div class="block list-block">
+									<ul>
+										<li>
+											<h5>2015</h5>
+										</li>
+										<ul>
+											<li><a type="application/pdf" class="open-popup" href="/library/CR-3-mars-2015">Conseil Communautaire du 3 mars 2015</a> <span class="size-helper">(3 Mo)</span></li>
+											<li><a type="application/pdf" class="open-popup" href="/library/CR-9-avril-2015">Conseil Communautaire du 9 avril 2015</a> <span class="size-helper">(2 Mo)</span></li>
+											<li><span class="size-helper"><a type="application/pdf" class="open-popup" href="/library/CR-26-mai-2015">Conseil Communautaire du 26 mai 2015</a> <span class="size-helper">(3 Mo)</span> </span></li>
+											<li><a type="application/pdf" class="open-popup" href="/library/CR-30-juin-2015">Conseil Communautaire du 30 juin 2015</a> <span class="size-helper">(2 Mo)</span></li>
+											<li><span class="size-helper"><a class="open-popup" href="/library/CR-conseil-14-09-15">Conseil Communautaire du 14 septembre 2015</a> </span></li>
+											<li><a href="/library/CR-13-10-2015" class="open-popup" type="application/pdf">Conseil Communautaire du 13 octobre 2015</a> <span class="size-helper">(2 Mo)</span></li>
+											<li><span class="size-helper"><a href="/library/CR-1dec2015" class="open-popup" type="application/pdf">Conseil Communautaire du 1er décembre 2015</a> <span class="size-helper">(3 Mo)</span> <br> </span></li>
+										</ul>
+									</ul>
+									<div class="end-block"></div>
+								</div>
+							</div>
+							<div class="end-template"></div>
+						</div>
+					</div>
+				</div>
+				<div class="end-template"></div>
+			</div>
+			<!-- Footer -->
+			<div id="footer">
+				<div class="colonne">
+					<h2>Communauté</h2>
+					<ul>
+						<li><a href="/contactez-nous">Contactez-nous</a></li>
+						<li><a href="/voir-plan-du-site">Plan du site</a></li>
+						<li><a href="/mentions-legales">Mentions légales</a></li>
+					</ul>
+					<p>© Le Bassée Montois - 2014</p>
+				</div>
+				<div class="colonne">
+					<h2>Horaires</h2>
+					<p>du lundi au jeudi :</p>
+					<p></p>
+					<p>de 9h à 12h et de 14h à 17h</p>
+					<p>le vendredi :</p>
+					<p>de 9h à 12h</p>
+				</div>
+				<div class="colonne">
+					<h2>Adresse</h2>
+					<p>80 rue de la Fontaine</p>
+					<p>77480 BRAY SUR SEINE</p><br>
+					<p>Tél.: 01 60 67 09 10</p>
+					<p>Fax: 01 60 67 17 88</p>
+					<p><a href="mailto:ccbasseemontois@orange.fr">ccbasseemontois@orange.fr</a></p>
+				</div>
+				<div class="colonne">
+					<div class="partenaires"><a href="http://www.seine-et-marne.fr" alt="Portail internet du Conseil départemental" target="_blank"><img src="/public/images/template-images/logo-cg77.png" alt=""></a> <a href="http://www.cc-bassee-montois.fr" alt="Portail internet de la Communauté de communes de Le Bassée Montois" target="_blank"><img src="/public/images/template-images/logo-cclabassee.png" alt=""></a> <a href="http://www.service-public.fr" alt="Site du Service public.fr" target="_blank"><img src="/public/images/template-images/logo-spl.png" alt=""></a></div>
+				</div>
+			</div>
+		</div>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4743082-25', 'auto');
+  ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+		$("#subscribeNewsLetter").submit( function() {
+			$.ajax({
+				url: "/newsletter",
+				type: "post",
+				data: {
+					"user.emailUser": $("#newsEmailTop").val(),
+					"newsletter_361": true
+				},
+				success: function() {
+					return false;
+				}
+			})
+			alert("Votre inscription à la newsletter a bien été prise en compte");
+			return false;
+		})
+		</script>
+	</body>
+</html>
