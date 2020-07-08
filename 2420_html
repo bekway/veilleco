@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html class="" lang="fr-FR" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# og: http://ogp.me/ns#">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"baa2726117",applicationID:"576745304"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Conseils communautaires - Communauté de communes Retz En Valois</title>
+		<!-- This site is optimized with the Yoast SEO plugin v4.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+		<link rel="canonical" href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseils-communautaires/">
+		<meta property="og:locale" content="fr_FR">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Conseils communautaires - Communauté de communes Retz En Valois">
+		<meta property="og:url" content="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseils-communautaires/">
+		<meta property="og:site_name" content="Communauté de communes Retz En Valois">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Conseils communautaires - Communauté de communes Retz En Valois">
+		<!-- / Yoast SEO plugin. -->
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="alternate" type="application/rss+xml" title="Communauté de communes Retz En Valois » Flux" href="https://www.cc-retz-en-valois.fr/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Communauté de communes Retz En Valois » Flux des commentaires" href="https://www.cc-retz-en-valois.fr/comments/feed/">
+		<link rel="alternate" type="text/calendar" title="Communauté de communes Retz En Valois » Flux iCal" href="https://www.cc-retz-en-valois.fr/events/?ical=1">
+		<link rel="shortcut icon" href="//www.cc-retz-en-valois.fr/wp-content/uploads/2016/08/favicon_T1N_icon.ico" type="image/x-icon">
+		<!-- For iPhone -->
+		<link rel="apple-touch-icon-precomposed" href="//www.cc-retz-en-valois.fr/wp-content/uploads/2016/08/favicon.png">
+		<!-- For iPad Retina display -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+		<meta property="og:title" content="Conseils communautaires">
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseils-communautaires/">
+		<meta property="og:site_name" content="Communauté de communes Retz En Valois">
+		<meta property="og:description" content="Conseils communautaires">
+		<meta property="og:image" content="https://www.cc-retz-en-valois.fr/wp-content/uploads/2018/12/RETZ-EN-VALOIS-logo-communaute-RGB.jpg">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.cc-retz-en-valois.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.18"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+		</style>
+		<link rel="stylesheet" id="validate-engine-css-css" href="http://www.cc-retz-en-valois.fr/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7.10" type="text/css" media="all">
+		<link rel="stylesheet" id="rs-plugin-settings-css" href="http://www.cc-retz-en-valois.fr/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.3.0.2" type="text/css" media="all">
+		<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+		</style>
+		<link rel="stylesheet" id="dlm-frontend-css" href="http://www.cc-retz-en-valois.fr/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=4.7.18" type="text/css" media="all">
+		<link rel="stylesheet" id="avada-parent-stylesheet-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/style.css?ver=4.7.18" type="text/css" media="all">
+		<link rel="stylesheet" id="child-style-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada-Child-Theme/style.css?ver=4.7.18" type="text/css" media="all">
+		<link rel="stylesheet" id="avada-stylesheet-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/css/style.min.css?ver=5.0.6" type="text/css" media="all">
+		<!--[if lte IE 9]>
+<link rel='stylesheet' id='avada-shortcodes-css'  href='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/shortcodes.css?ver=5.0.6' type='text/css' media='all' />
+<![endif]-->
+		<link rel="stylesheet" id="fontawesome-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/fonts/fontawesome/font-awesome.css?ver=5.0.6" type="text/css" media="all">
+		<!--[if lte IE 9]>
+<link rel='stylesheet' id='avada-IE-fontawesome-css'  href='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/fonts/fontawesome/font-awesome.css?ver=5.0.6' type='text/css' media='all' />
+<![endif]-->
+		<!--[if lte IE 8]>
+<link rel='stylesheet' id='avada-IE8-css'  href='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/css/ie8.css?ver=5.0.6' type='text/css' media='all' />
+<![endif]-->
+		<!--[if IE]>
+<link rel='stylesheet' id='avada-IE-css'  href='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/css/ie.css?ver=5.0.6' type='text/css' media='all' />
+<![endif]-->
+		<link rel="stylesheet" id="avada-iLightbox-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/ilightbox.css?ver=5.0.6" type="text/css" media="all">
+		<link rel="stylesheet" id="avada-animations-css" href="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/animations.css?ver=5.0.6" type="text/css" media="all">
+		<link rel="stylesheet" id="tablepress-default-css" href="http://www.cc-retz-en-valois.fr/wp-content/tablepress-combined.min.css?ver=4" type="text/css" media="all">
+		<link rel="stylesheet" id="fusion-builder-shortcodes-css" href="http://www.cc-retz-en-valois.fr/wp-content/plugins/fusion-builder/css/fusion-shortcodes.min.css?ver=1.0.6" type="text/css" media="all">
+		<link rel="stylesheet" id="avada-dynamic-css-css" href="//www.cc-retz-en-valois.fr/wp-content/uploads/avada-styles/avada-34.css?timestamp=1591600633&ver=5.0.6" type="text/css" media="all">
+		<link rel="stylesheet" id="avada_google_fonts-css" href="https://fonts.googleapis.com/css?family=Titillium+Web%3A400%2C700%2C200%7CPT+Sans%3A400%7CAntic+Slab%3A400&subset=latin" type="text/css" media="all">
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.3.0.2"></script>
+		<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/js/html5shiv.js?ver=5.0.6'></script>
+<![endif]-->
+		<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/js/excanvas.js?ver=5.0.6'></script>
+<![endif]-->
+		<link rel="https://api.w.org/" href="https://www.cc-retz-en-valois.fr/wp-json/">
+		<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cc-retz-en-valois.fr/xmlrpc.php?rsd">
+		<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.cc-retz-en-valois.fr/wp-includes/wlwmanifest.xml">
+		<meta name="generator" content="WordPress 4.7.18">
+		<link rel="shortlink" href="https://www.cc-retz-en-valois.fr/?p=34">
+		<link rel="alternate" type="application/json+oembed" href="https://www.cc-retz-en-valois.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cc-retz-en-valois.fr%2Finstitution%2Ffonctionnement%2Fconseils-communautaires%2F">
+		<link rel="alternate" type="text/xml+oembed" href="https://www.cc-retz-en-valois.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cc-retz-en-valois.fr%2Finstitution%2Ffonctionnement%2Fconseils-communautaires%2F&format=xml">
+		<script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.cc-retz-en-valois.fr/?wordfence_lh=1&hid=18857873F7AA222C88492020543BD083');
+		</script>
+		<meta name="tec-api-version" content="v1">
+		<meta name="tec-api-origin" content="https://www.cc-retz-en-valois.fr">
+		<link rel="htt://theeventscalendar.com" href="https://www.cc-retz-en-valois.fr/wp-json/tribe/events/v1/">
+		<meta name="generator" content="Powered by Slider Revolution 5.3.0.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+		<!-- BEGIN ExactMetrics v5.3.8 Universal Analytics - https://exactmetrics.com/ -->
+		<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-145000782-1', 'auto');
+  ga('send', 'pageview');
+		</script>
+		<!-- END ExactMetrics Universal Analytics -->
+		<script type="text/javascript">
+		var doc = document.documentElement;
+		doc.setAttribute('data-useragent', navigator.userAgent);
+		</script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92005919-1', 'auto');
+  ga('send', 'pageview');
+		
+		</script>
+	</head>
+	<body class="page-template-default page page-id-34 page-child parent-pageid-20 tribe-no-js fusion-body no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar no-mobile-totop mobile-logo-pos-left layout-wide-mode has-sidebar fusion-top-header menu-text-align-center mobile-menu-design-modern fusion-image-hovers fusion-show-pagination-text">
+		<div id="wrapper" class="">
+			<div id="home" style="position:relative;top:1px;"></div>
+			<header class="fusion-header-wrapper">
+				<div class="fusion-header-v4 fusion-logo-left fusion-sticky-menu- fusion-sticky-logo-1 fusion-mobile-logo-1 fusion-mobile-menu-design-modern fusion-sticky-menu-only fusion-header-menu-align-center">
+					<div class="fusion-secondary-header">
+						<div class="fusion-row">
+							<div class="fusion-alignright">
+								<nav class="fusion-secondary-menu">
+									<ul id="menu-top-menu" class="menu">
+										<li id="menu-item-496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496"><a href="https://www.cc-retz-en-valois.fr/contact/"><span class="menu-text">Contact</span></a></li>
+										<li id="menu-item-1293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1293"><a href="https://www.cc-retz-en-valois.fr/institution/espace-presse/"><span class="menu-text">Espace presse</span></a></li>
+										<li id="menu-item-1295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1295"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/recrutements/"><span class="menu-text">Recrutements</span></a></li>
+										<li id="menu-item-1294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1294"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/marches-publics/"><span class="menu-text">Marchés publics</span></a></li>
+									</ul>
+								</nav>
+								<div class="fusion-mobile-nav-holder"></div>
+							</div>
+						</div>
+					</div>
+					<div class="fusion-header-sticky-height"></div>
+					<div class="fusion-sticky-header-wrapper">
+						<!-- start fusion sticky header wrapper -->
+						<div class="fusion-header">
+							<div class="fusion-row">
+								<div class="fusion-logo" data-margin-top="0px" data-margin-bottom="0px" data-margin-left="0px" data-margin-right="0px"><a class="fusion-logo-link" href="https://www.cc-retz-en-valois.fr/"> <img src="//www.cc-retz-en-valois.fr/wp-content/uploads/2018/12/RETZ-EN-VALOIS-logo-communaute-RGB.jpg" width="284" height="227" alt="Communauté de communes Retz En Valois" class="fusion-logo-1x fusion-standard-logo"> <img src="//www.cc-retz-en-valois.fr/wp-content/uploads/2018/12/RETZ-EN-VALOIS-logo-communaute-RGB.jpg" width="284" height="227" alt="Communauté de communes Retz En Valois" style="max-height: 227px; height: auto;" class="fusion-standard-logo fusion-logo-2x"> <!-- mobile logo --> <img src="//www.cc-retz-en-valois.fr/wp-content/uploads/2018/12/RETZ-EN-VALOIS-logo-communaute-RGB.jpg" width="284" height="227" alt="Communauté de communes Retz En Valois" class="fusion-logo-1x fusion-mobile-logo-1x"> <img src="//www.cc-retz-en-valois.fr/wp-content/uploads/2018/12/RETZ-EN-VALOIS-logo-communaute-RGB.jpg" width="284" height="227" alt="Communauté de communes Retz En Valois" class="fusion-logo-2x fusion-mobile-logo-2x"> <!-- sticky header logo --> </a>
+									<div class="fusion-header-content-3-wrapper">
+										<div class="fusion-secondary-menu-search">
+											<form role="search" class="searchform" method="get" action="https://www.cc-retz-en-valois.fr/">
+												<div class="search-table">
+													<div class="search-field"><input type="text" value="" name="s" class="s" placeholder="Rechercher..."></div>
+													<div class="search-button"><input type="submit" class="searchsubmit" value=""></div>
+												</div>
+											</form>
+										</div>
+										<h3 class="fusion-header-tagline"><a href="http://www.cc-retz-en-valois.fr/feed/" target="_blank"><img src="/wp-content/uploads/2016/07/rss-icon.png"></a></h3>
+									</div>
+								</div>
+								<div class="fusion-mobile-menu-icons"><a href="#" class="fusion-icon fusion-icon-bars"></a> <a href="#" class="fusion-icon fusion-icon-search"></a></div>
+							</div>
+						</div>
+						<div class="fusion-secondary-main-menu">
+							<div class="fusion-row">
+								<nav class="fusion-main-menu">
+									<ul id="menu-menu-principal" class="fusion-menu">
+										<li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6"><a href="https://www.cc-retz-en-valois.fr/"><span class="menu-text">Accueil</span></a></li>
+										<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-52 fusion-dropdown-menu"><a href="/institution/presentation/"><span class="menu-text">Institution</span></a>
+											<ul class="sub-menu">
+												<li id="menu-item-447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/institution/presentation/"><span class="">Présentation</span></a></li>
+												<li id="menu-item-448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/institution/communes/"><span class="">Communes</span></a></li>
+												<li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-449 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/"><span class="">Fonctionnement</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/le-bureau/"><span class="">Le bureau</span></a></li>
+														<li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseillers-communautaires/"><span class="">Les conseillers communautaires</span></a></li>
+														<li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/competences/"><span class="">Compétences</span></a></li>
+														<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/services/"><span class="">Services</span></a></li>
+														<li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-34 current_page_item menu-item-453"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseils-communautaires/"><span class="">Conseils communautaires</span></a></li>
+														<li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/marches-publics/"><span class="">Marchés publics</span></a></li>
+														<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/recrutements/"><span class="">Recrutements</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/institution/publications/"><span class="">Publications</span></a></li>
+												<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/institution/espace-presse/"><span class="">Espace presse</span></a></li>
+												<li id="menu-item-842" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-842 fusion-dropdown-submenu"><a href="https://www.tipi.budget.gouv.fr/tpa/accueilportail.web"><span class="">Paiement en ligne</span></a></li>
+											</ul>
+										</li>
+										<li id="menu-item-596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-596 fusion-dropdown-menu"><a href="/grands-projets/tres-haut-debit/"><span class="menu-text">Grands projets</span></a>
+											<ul class="sub-menu">
+												<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/grands-projets/tres-haut-debit/"><span class="">Très Haut Débit</span></a></li>
+												<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/grands-projets/observatoire-mangin/"><span class="">Observatoire Mangin</span></a></li>
+												<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/grands-projets/piscine/"><span class="">Piscine</span></a></li>
+											</ul>
+										</li>
+										<li id="menu-item-597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-597 fusion-dropdown-menu"><a href="/vie-pratique/environnement/collecte-des-dechets/"><span class="menu-text">Vie pratique</span></a>
+											<ul class="sub-menu">
+												<li id="menu-item-401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-401 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/"><span class="">Environnement</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-729"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/collecte-des-dechets/"><span class="">Collecte des déchets</span></a></li>
+														<li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/decheterie/"><span class="">Déchèteries</span></a></li>
+														<li id="menu-item-7670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7670"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/eau-potable/"><span class="">Eau potable</span></a></li>
+														<li id="menu-item-402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-402"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/assainissement-non-collectif/"><span class="">Assainissement non collectif</span></a></li>
+														<li id="menu-item-730" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-730"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/assainissement-collectif/"><span class="">Assainissement collectif</span></a></li>
+														<li id="menu-item-715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-715"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/environnement/natura-2000/"><span class="">Natura 2000</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-400 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/"><span class="">Urbanisme</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-590"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/orientations-damenagement-territoire-scot/"><span class="">Orientations d’aménagement du territoire (SCOT)</span></a></li>
+														<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/amenagements-territoire-intercommunal-plui/"><span class="">Plan Local d’Urbanisme intercommunal (PLUi)</span></a></li>
+														<li id="menu-item-5924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5924"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/servitudes-dutilites-publiques/"><span class="">Servitudes d’utilités publiques</span></a></li>
+														<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/autorisations-durbanisme-droits-sols/"><span class="">Autorisations d’urbanisme (droits des sols)</span></a></li>
+														<li id="menu-item-589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-589"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/urbanisme/cartographie/"><span class="">Cartographie</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-399 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/logement/"><span class="">Logement</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-7436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7436"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/logement/programme-local-de-lhabitat/"><span class="">Programme Local de l’Habitat</span></a></li>
+														<li id="menu-item-7453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7453"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/logement/renover_son_logement/"><span class="">Rénover son logement</span></a></li>
+														<li id="menu-item-7440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7440"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/logement/trouver_logement_adapte/"><span class="">Trouver un logement adapté</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-398 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/transport/"><span class="">Transport</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-1576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1576"><a href="http://www.villeo-retzeo.fr/"><span class="">Réseau Villéo-Retzéo</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-397 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/actions-sociales/"><span class="">Actions sociales</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/actions-sociales/chantier-dinsertion/"><span class="">Chantiers d’insertion</span></a></li>
+														<li id="menu-item-6237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6237"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/actions-sociales/service-a-population/"><span class="">Service à la population</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-850 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/petite-enfance-jeunesse/"><span class="">Petite enfance et jeunesse</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-839"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/petite-enfance-jeunesse/relais-assistants-maternels/"><span class="">Relais Assistants Maternels</span></a></li>
+														<li id="menu-item-838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-838"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/petite-enfance-jeunesse/activites-jeunes/"><span class="">Activités jeunes</span></a></li>
+														<li id="menu-item-836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-836"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/petite-enfance-jeunesse/aide_au_bafa/"><span class="">Aide au BAFA</span></a></li>
+														<li id="menu-item-7852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7852"><a href="https://www.cc-retz-en-valois.fr/vie-pratique/petite-enfance-jeunesse/junior-association/"><span class="">Junior Association</span></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li id="menu-item-600" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-600 fusion-dropdown-menu"><a href="/travailler-et-entreprendre/schema-de-developpement-economique/"><span class="menu-text">Travailler et entreprendre</span></a>
+											<ul class="sub-menu">
+												<li id="menu-item-7713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7713 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/covid-19-accompagnement-entreprises/"><span class="">COVID-19 : accompagnement des entreprises</span></a></li>
+												<li id="menu-item-835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-835 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/schema-de-developpement-economique/"><span class="">Schéma de développement économique</span></a></li>
+												<li id="menu-item-8226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8226 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/foire-expo-retz-valois/"><span class="">Foire-Expo Retz-en-Valois</span></a></li>
+												<li id="menu-item-834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-834 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/accompagnement-et-modalites/"><span class="">Accompagnement et financement</span></a></li>
+												<li id="menu-item-1016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1016 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/hotel-entreprises/"><span class="">L’Hôtel d’Entreprises</span></a></li>
+												<li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-584 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/zones-dactivites/"><span class="">Zones d’activités</span></a></li>
+												<li id="menu-item-833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-833 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/travailler-et-entreprendre/locaux/"><span class="">Bourse aux locaux</span></a></li>
+											</ul>
+										</li>
+										<li id="menu-item-604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-604 fusion-dropdown-menu"><a href="/sortir-et-decouvrir//ecole-de-musique/presentation/"><span class="menu-text">Sortir et découvrir</span></a>
+											<ul class="sub-menu">
+												<li id="menu-item-582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/ecole_musique_intercommunale/"><span class="">Ecole de Musique Intercommunale (EMI)</span></a></li>
+												<li id="menu-item-571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-571 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/sport/"><span class="">Sport</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/sport/piscine/"><span class="">Piscine</span></a></li>
+														<li id="menu-item-7976" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7976"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/sport/rando-cyclo/"><span class="">Rando-Cyclo</span></a></li>
+													</ul>
+												</li>
+												<li id="menu-item-832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-832 fusion-dropdown-submenu"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/tourisme/"><span class="">Tourisme</span></a>
+													<ul class="sub-menu">
+														<li id="menu-item-1577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1577"><a href="http://www.tourisme-villers-cotterets.fr/"><span class="">Office de tourisme</span></a></li>
+														<li id="menu-item-831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-831"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/tourisme/camping-caristes/"><span class="">Camping-caristes</span></a></li>
+														<li id="menu-item-882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-882"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/tourisme/scolaire_alsh/"><span class="">Scolaires et ALSH</span></a></li>
+														<li id="menu-item-8067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8067"><a href="https://www.cc-retz-en-valois.fr/sortir-et-decouvrir/tourisme/bois-bertrand/"><span class="">Bois Bertrand</span></a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+								<nav class="fusion-mobile-nav-holder"></nav>
+								<div class="fusion-secondary-menu-search">
+									<form role="search" class="searchform" method="get" action="https://www.cc-retz-en-valois.fr/">
+										<div class="search-table">
+											<div class="search-field"><input type="text" value="" name="s" class="s" placeholder="Rechercher..."></div>
+											<div class="search-button"><input type="submit" class="searchsubmit" value=""></div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end fusion sticky header wrapper -->
+				</div>
+				<div class="fusion-clearfix"></div>
+			</header>
+			<div id="sliders-container"></div>
+			<div id="main" class="clearfix " style="">
+				<div class="fusion-row" style="">
+					<div id="content" style="float: right;">
+						<p id="breadcrumbs"><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb"><a href="https://www.cc-retz-en-valois.fr/" rel="v:url" property="v:title">Accueil</a> > <span rel="v:child" typeof="v:Breadcrumb"><a href="https://www.cc-retz-en-valois.fr/institution/" rel="v:url" property="v:title">Institution</a> > <span rel="v:child" typeof="v:Breadcrumb"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/" rel="v:url" property="v:title">Fonctionnement</a> > <span class="breadcrumb_last">Conseils communautaires</span></span></span></span></span></p>
+						<div id="post-34" class="post-34 page type-page status-publish hentry"><span class="entry-title" style="display: none;"> Conseils communautaires </span> <span class="vcard" style="display: none;"> <span class="fn"> <a href="https://www.cc-retz-en-valois.fr/author/admin/" title="Articles par admin" rel="author">admin</a> </span> </span> <span class="updated" style="display:none;"> 2019-07-03T15:34:19+00:00 </span>
+							<div class="post-content">
+								<div class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;border-top-width:0px;border-bottom-width:0px;border-color:#eae9e9;border-top-style:solid;border-bottom-style:solid;">
+									<div class="fusion-builder-row fusion-row ">
+										<div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last list-download 1_1" style="margin-top:0px;margin-bottom:20px;">
+											<div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;" data-bg-url="">
+												<div class="fusion-title title fusion-sep-none fusion-title-size-two" style="margin-top:0px;margin-bottom:30px;">
+													<h2 class="title-heading-left">Conseils communautaires</h2>
+												</div>
+												<ul class="dlm-downloads">
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/8357/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 24 janvier (pdf - 2 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/8272/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu des décisions du Président les 29 et 30 avril 2020 (pdf - 8 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/7471/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte rendu du Conseil communautaire du 21 février 2020 (pdf - 16 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/7292/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 13 décembre 2019 (pdf - 36 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/7275/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte rendu du Conseil communautaire du 24 janvier 2020 (pdf - 4 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/7037/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès-verbal du Conseil communautaire du 22 novembre 2019 (pdf - 8 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6993/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 13 décembre 2019 (pdf - 2 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6977/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès-verbal du Conseil communautaire du 27 septembre 2019 (pdf - 5 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6874/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 22 novembre 2019 (pdf - 6 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6645/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 27 septembre 2019 (pdf - 692 KB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6647/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès-Verbal du Conseil communautaire du 28 juin 2019 (pdf - 16 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6225/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 28 juin 2019 (pdf - 952 KB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6308/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil communautaire du 24 mai 2019 (pdf - 4 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/5943/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 24 mai 2019 (pdf - 3 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/6284/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil Communautaire du 29 mars 2019 (pdf - 7 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/5624/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil communautaire du 29 mars 2019 (pdf - 16 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/5746/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil Communautaire du 1er février 2019 (pdf - 11 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/5335/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Compte-rendu du Conseil Communautaire du 1er février 2019 (pdf - 637 KB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/4846/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil Communautaire du 7 décembre 2018 (pdf - 3 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/4215/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil Communautaire du 28 septembre 2018 (pdf - 8 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/3897/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil Communautaire du 29 juin 2018 (pdf - 9 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/3445/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil Communautaire du 18 mai 2018 (pdf - 9 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/3420/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil Communautaire du 30 mars 2018 (pdf - 17 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/2830/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil Communautaire du 2 février 2018 (pdf - 8 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/2783/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès Verbal du Conseil Communautaire du 15 décembre 2017 (pdf - 13 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/2618/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 10 nov 2017 (pdf - 11 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/2568/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 22 sept 2017 (pdf - 14 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/2209/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 26 juin 2017 (pdf - 12 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/1998/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 12 mai 2017 (pdf - 9 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/1994/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 10 mars 2017 (pdf - 8 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/1942/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès verbal du Conseil communautaire du 07 avril 2017 (pdf - 15 MB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/1531/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès-verbal du Conseil communautaire du 27 janvier 2017 (pdf - 681 KB) </a></li>
+													<li><a class="download-link" title="" href="https://www.cc-retz-en-valois.fr/download/1346/" rel="nofollow"> <i class="fa fontawesome-icon fa-download"></i> Procès-verbal du Conseil communautaire du 13 janvier 2017 (pdf - 8 MB) </a></li>
+												</ul>
+												<div class="fusion-clearfix"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="sidebar" class="sidebar fusion-widget-area fusion-content-widget-area" style="float: left;">
+						<div id="nav_menu-2" class="widget widget_nav_menu">
+							<div class="heading">
+								<h4 class="widget-title">Institution</h4>
+							</div>
+							<div class="menu-institution-container">
+								<ul id="menu-institution" class="menu">
+									<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.cc-retz-en-valois.fr/institution/presentation/">Présentation</a></li>
+									<li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://www.cc-retz-en-valois.fr/institution/communes/">Communes</a></li>
+									<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-69"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/">Fonctionnement</a>
+										<ul class="sub-menu">
+											<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/le-bureau/">Le bureau</a></li>
+											<li id="menu-item-883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-883"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseillers-communautaires/">Les conseillers communautaires</a></li>
+											<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/competences/">Compétences</a></li>
+											<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/services/">Services</a></li>
+											<li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-34 current_page_item menu-item-72"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/conseils-communautaires/">Conseils communautaires</a></li>
+											<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/marches-publics/">Marchés publics</a></li>
+											<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://www.cc-retz-en-valois.fr/institution/fonctionnement/recrutements/">Recrutements</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://www.cc-retz-en-valois.fr/institution/publications/">Publications</a></li>
+									<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="https://www.cc-retz-en-valois.fr/institution/espace-presse/">Espace presse</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- fusion-row -->
+			</div>
+			<!-- #main -->
+			<div class="fusion-footer">
+				<footer class="fusion-footer-widget-area fusion-widget-area">
+					<div class="fusion-row">
+						<div class="fusion-sub-footer"></div>
+						<div class="fusion-columns fusion-columns-2 fusion-widget-area">
+							<div class="fusion-column col-lg-6 col-md-6 col-sm-6">
+								<div id="wysija-2" class="fusion-footer-widget-column widget widget_wysija">
+									<h4 class="widget-title"></h4>
+									<div class="widget_wysija_cont">
+										<div id="msg-form-wysija-2" class="wysija-msg ajax"></div>
+										<form id="form-wysija-2" method="post" action="#wysija" class="widget_wysija"><span class="title">ABONNEZ-VOUS A NOTRE NEWSLETTER</span>
+											<p class="lancement">Dès son lancement, vous recevrez régulièrement les infos et les actualités sur la Communauté de Communes.</p>
+											<p class="wysija-paragraph"><input type="text" name="wysija[user][email]" class="wysija-input validate[required,custom[email]]" title="E-mail" placeholder="E-mail" value=""> <span class="abs-req"> <input type="text" name="wysija[user][abs][email]" class="wysija-input validated[abs][email]" value=""> </span></p><input class="wysija-submit wysija-submit-field" type="submit" value="OK"> <input type="hidden" name="form_id" value="2"> <input type="hidden" name="action" value="save"> <input type="hidden" name="controller" value="subscribers"> <input type="hidden" value="1" name="wysija-page"> <input type="hidden" name="wysija[user_list][list_ids]" value="1"></form>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+							<div class="fusion-column fusion-column-last col-lg-6 col-md-6 col-sm-6">
+								<div id="text-2" class="fusion-footer-widget-column widget widget_text">
+									<div class="textwidget">
+										<p>Située au sud-ouest de l’Aisne, en Hauts-de-France, la Communauté de Communes Retz-en-Valois<br> se compose de 54 communes et comptabilise 29 594 habitants.</p>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+							<div class="fusion-clearfix"></div>
+						</div>
+						<!-- fusion-columns -->
+					</div>
+					<!-- fusion-row -->
+				</footer>
+				<!-- fusion-footer-widget-area -->
+				<footer id="footer" class="fusion-footer-copyright-area fusion-copyright-area">
+					<div class="fusion-row">
+						<div class="fusion-columns fusion-columns-2 fusion-copyright-area">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<div class="fusion-copyright-notice">
+									<div><a href="/plan-du-site">Plan du site</a> | <a href="/mentions-legales">Mentions légales</a> | <a href="/contact">Contact</a> | © 2016 - Tous droits réservés</div>
+								</div>
+								<div class="fusion-social-links-footer"></div>
+							</div>
+							<!-- fusion-fusion-copyright-content -->
+							<div class="col-lg-6 col-md-6 col-sm-6 fusion-contact-information-content">
+								<div class="footer-copyright-area-right" id="text-3">
+									<div class="textwidget">9 rue Marx Dormoy - 02600 Villers-Cotterêts<br><br> du lundi au jeudi : 8h30 - 12h15 / 13h30 - 17h00<br> le vendredi : 8h30 - 12h00 / 13h30 - 16h00<br><br> <strong> Tél. 03 23 96 13 01<br> Fax 03 23 96 28 24 </strong></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- fusion-row -->
+				</footer>
+				<!-- #footer -->
+			</div>
+			<!-- fusion-footer -->
+		</div>
+		<!-- wrapper --><a class="fusion-one-page-text-link fusion-page-load-link"></a>
+		<!-- W3TC-include-js-head -->
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		
+		</script>
+		<script type="text/javascript"> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","pagination":{"all":"All","next":"Suivant","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],"dayNamesShort":["dim","lun","mar","mer","jeu","ven","sam"],"dayNamesMin":["D","L","M","M","J","V","S"],"monthNames":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"],"monthNamesShort":["janvier","f\u00e9vrier","mars","avril","mai","juin","juillet","ao\u00fbt","septembre","octobre","novembre","d\u00e9cembre"],"nextText":"Suivant","prevText":"Pr\u00e9c\u00e9dent","currentText":"Aujourd\u2019hui ","closeText":"Termin\u00e9"}};/* ]]> */ </script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada-Child-Theme/script.js?ver=0.0.1"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-includes/js/comment-reply.min.js?ver=4.7.18"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var toTopscreenReaderText = {"label":"Go to Top"};
+var avadaVars = {"admin_ajax":"https:\/\/www.cc-retz-en-valois.fr\/wp-admin\/admin-ajax.php","admin_ajax_nonce":"58fe855fc1","protocol":"","theme_url":"http:\/\/www.cc-retz-en-valois.fr\/wp-content\/themes\/Avada","dropdown_goto":"Aller \u00e0...","mobile_nav_cart":"Panier","page_smoothHeight":"false","flex_smoothHeight":"false","language_flag":"","infinite_blog_finished_msg":"<em>Articles connexes<\/em>","infinite_finished_msg":"<em>All items displayed.<\/em>","infinite_blog_text":"<em>Chargement des articles suivants...<\/em>","portfolio_loading_text":"<em>Chargement des \u00e9l\u00e9ments du portfolio...<\/em>","faqs_loading_text":"<em>Chargement des \u00e9l\u00e9ments de la FAQ...<\/em>","order_actions":"D\u00e9tails","avada_rev_styles":"0","avada_styles_dropdowns":"1","blog_grid_column_spacing":"40","blog_pagination_type":"Pagination","carousel_speed":"2500","counter_box_speed":"1000","content_break_point":"800","disable_mobile_animate_css":"0","disable_mobile_image_hovers":"1","portfolio_pagination_type":"Pagination","form_bg_color":"#ffffff","header_transparency":"0","header_padding_bottom":"0px","header_padding_top":"0px","header_position":"Top","header_sticky":"1","header_sticky_tablet":"0","header_sticky_mobile":"0","header_sticky_type2_layout":"menu_only","sticky_header_shrinkage":"1","is_responsive":"1","is_ssl":"false","isotope_type":"masonry","layout_mode":"wide","lightbox_animation_speed":"Normal","lightbox_arrows":"1","lightbox_autoplay":"0","lightbox_behavior":"all","lightbox_desc":"1","lightbox_deeplinking":"1","lightbox_gallery":"1","lightbox_opacity":"0.9","lightbox_path":"vertical","lightbox_post_images":"1","lightbox_skin":"metro-white","lightbox_slideshow_speed":"5000","lightbox_social":"1","lightbox_title":"1","lightbox_video_height":"720","lightbox_video_width":"1280","logo_alignment":"Left","logo_margin_bottom":"0px","logo_margin_top":"0px","megamenu_max_width":"1100","mobile_menu_design":"modern","nav_height":"40","nav_highlight_border":"3","page_title_fading":"0","pagination_video_slide":"0","related_posts_speed":"2500","submenu_slideout":"1","side_header_break_point":"800","sidenav_behavior":"Hover","site_width":"1100px","slider_position":"below","slideshow_autoplay":"1","slideshow_speed":"7000","smooth_scrolling":"0","status_lightbox":"1","status_totop_mobile":"0","status_vimeo":"1","status_yt":"1","testimonials_speed":"4000","tfes_animation":"sides","tfes_autoplay":"1","tfes_interval":"3000","tfes_speed":"800","tfes_width":"150","title_style_type":"none","title_margin_top":"0px","title_margin_bottom":"31px","typography_responsive":"0","typography_sensitivity":"0.6","typography_factor":"1.5","woocommerce_shop_page_columns":"","woocommerce_checkout_error":"Not all fields have been filled in correctly.","side_header_width":"0"};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/js/main.min.js?ver=5.0.6" async></script>
+		<!--[if IE 9]>
+<script type='text/javascript' src='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/js/avada-ie9.js?ver=5.0.6'></script>
+<![endif]-->
+		<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.cc-retz-en-valois.fr/wp-content/themes/Avada/assets/js/respond.js?ver=5.0.6'></script>
+<![endif]-->
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-includes/js/wp-embed.min.js?ver=4.7.18"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/plugins/wysija-newsletters/js/validate/languages/jquery.validationEngine-fr.js?ver=2.7.10"></script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/plugins/wysija-newsletters/js/validate/jquery.validationEngine.js?ver=2.7.10"></script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var wysijaAJAX = {"action":"wysija_ajax","controller":"subscribers","ajaxurl":"https:\/\/www.cc-retz-en-valois.fr\/wp-admin\/admin-ajax.php","loadingTrans":"Chargement...","is_rtl":""};
+/* ]]> */
+		</script>
+		<script type="text/javascript" src="http://www.cc-retz-en-valois.fr/wp-content/plugins/wysija-newsletters/js/front-subscribers.js?ver=2.7.10"></script>
+		<script type="text/css" id="tmpl-tribe_customizer_css">.tribe-events-list .tribe-events-loop .tribe-event-featured,
+				.tribe-events-list #tribe-events-day.tribe-events-loop .tribe-event-featured,
+				.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap,
+				.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap:hover {
+					background-color: #0ea0d7;
+				}
+
+				#tribe-events-content table.tribe-events-calendar .type-tribe_events.tribe-event-featured {
+					background-color: #0ea0d7;
+				}
+
+				.tribe-events-list-widget .tribe-event-featured,
+				.tribe-events-venue-widget .tribe-event-featured,
+				.tribe-mini-calendar-list-wrapper .tribe-event-featured,
+				.tribe-events-adv-list-widget .tribe-event-featured .tribe-mini-calendar-event {
+					background-color: #0ea0d7;
+				}
+
+				.tribe-grid-body .tribe-event-featured.tribe-events-week-hourly-single {
+					background-color: rgba(14,160,215, .7 );
+					border-color: #0ea0d7;
+				}
+
+				.tribe-grid-body .tribe-event-featured.tribe-events-week-hourly-single:hover {
+					background-color: #0ea0d7;
+				}
+		</script>
+		<style type="text/css" id="tribe_customizer_css">.tribe-events-list .tribe-events-loop .tribe-event-featured,
+				.tribe-events-list #tribe-events-day.tribe-events-loop .tribe-event-featured,
+				.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap,
+				.type-tribe_events.tribe-events-photo-event.tribe-event-featured .tribe-events-photo-event-wrap:hover {
+					background-color: #0ea0d7;
+				}
+
+				#tribe-events-content table.tribe-events-calendar .type-tribe_events.tribe-event-featured {
+					background-color: #0ea0d7;
+				}
+
+				.tribe-events-list-widget .tribe-event-featured,
+				.tribe-events-venue-widget .tribe-event-featured,
+				.tribe-mini-calendar-list-wrapper .tribe-event-featured,
+				.tribe-events-adv-list-widget .tribe-event-featured .tribe-mini-calendar-event {
+					background-color: #0ea0d7;
+				}
+
+				.tribe-grid-body .tribe-event-featured.tribe-events-week-hourly-single {
+					background-color: rgba(14,160,215, .7 );
+					border-color: #0ea0d7;
+				}
+
+				.tribe-grid-body .tribe-event-featured.tribe-events-week-hourly-single:hover {
+					background-color: #0ea0d7;
+				}
+		</style>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"baa2726117","applicationID":"576745304","transactionName":"ZVcHYEJZVkBQBhBQV1wdJFdEUVddHhUFXl0=","queueTime":0,"applicationTime":925,"atts":"SRAEFgpDRU4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+	</body>
+</html>
