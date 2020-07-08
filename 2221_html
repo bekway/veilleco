@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title></title>
+		<meta name="description" content="">
+		<meta property="og:site_name" content="www.cc-auzon.fr">
+		<meta property="og:title" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="//www.cc-auzon.fr/les-decisions_fr.html">
+		<link rel="stylesheet" href="/js/jssor/css/skin-arrow.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/jssor/css/skin-bullet.css" type="text/css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Lato%7CPoiret+One" rel="stylesheet" type="text/css">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/favicon.ico">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-2").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-2").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-2 ul").css("display","block");		
+		$(".menu-principal-vertical-item-2").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-50").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/global/animate_viewport.css" rel="stylesheet">
+		<link type="text/css" href="/template/cc-auzon.css" rel="stylesheet">
+		<script src="/js/jquery.viewportchecker.js"></script>
+		<link type="text/css" href="/js/cdtop/cdtop.css" rel="stylesheet">
+		<script src="/js/modernizr.js"></script>
+		<script>var gmapToShow = null;
+$( document ).ready(function() {
+$(".template-map").toggle();
+gmapToShow = $(".template-map").find(".google-map-bloc");
+gmapToShow = gmapToShow.attr("id").replace("map", "initialize_")+"();";
+});
+
+function show_map(){
+$(".template-map").toggle("slow",function(){eval(gmapToShow);});
+} $(window).load(function(){   
+add_image(2);
+add_image(3);
+add_image(4);
+add_image(5);
+add_image(6);
+add_image(7);
+add_image(8);
+
+$("a.lien-meteo").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 300,
+			maxHeight: 300
+		});
+
+});
+
+
+function add_image(index){   
+var width_t = $("#menu-principal-horizontal-submenu-"+index).width();
+var height_t = $("#menu-principal-horizontal-submenu-"+index).height();
+
+$("#menu-principal-horizontal-submenu-"+index).width(width_t + 250);
+$("#menu-principal-horizontal-submenu-"+index).prepend( "<div class='menu-img-deco-"+index+"'>" );
+$("#menu-principal-horizontal-submenu-"+index+" .menu-principal-horizontal-submenu-item").css({float:'left', clear:'left', width: (width_t+5)+'px'});
+$(".menu-img-deco-"+index).height(height_t-25);
+}
+
+$(document).ready(function() {
+               $('.wrapper-global-0 #wrapper-bloc-6').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInUp',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-2').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInLeft',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-3').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInRight',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-4').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInUp',
+                        offset: 100       });
+               $('.wrapper-global-0 #wrapper-bloc-5').addClass("hidden").viewportChecker({
+                        classToAdd: 'visible animated fadeInLeft',
+                        offset: 100       });
+});
+		</script>
+		<link href="/css/css_0_fr.css?1561563133" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1561563133" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-50 body-groupe-2"><input type="hidden" id="token" value="82d1d03c3e1e7eb641bad071b47920ab">
+		<ul class="websee-barre-flottante-smartphone-list clearfix">
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-smartphone-icone-recherche"></span></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-2" onclick="javascript:websee_barre_flottante_show_container_from_top(2);"><span class="websee-barre-flottante-smartphone-icone-calendrier"></span></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-3" onclick="javascript:websee_barre_flottante_show_container(3);"><img src="/images/social/facebook.jpg" style="width:100%;height:auto;"></li>
+		</ul>
+		<div class="websee-barre-flottante">
+			<ul class="websee-barre-flottante-list clearfix">
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-1" onclick="javascript:websee_barre_flottante_show_container_from_top(1);"><span class="websee-barre-flottante-icone-recherche"></span></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-2" onclick="javascript:websee_barre_flottante_show_container_from_top(2);"><span class="websee-barre-flottante-icone-calendrier"></span></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-3" onclick="javascript:websee_barre_flottante_show_container(3);"><img src="/images/social/facebook.jpg" style="width:100%;height:auto;"></li>
+			</ul>
+			<div class="websee-barre-flottante-master-container clearfix">
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-recherche" id="websee-barre-flottante-container-1">
+					<div class="recherche">
+						<form name="recherche_1594218458" action="recherche_fr.html" method="GET"><input type="text" name="keywords" placeholder="Recherche ..." class="recherche-text"> <a href="javascript:recherche_1594218458.submit();" class="recherche-submit"></a></form>
+					</div>
+				</div>
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-calendrier" id="websee-barre-flottante-container-2">
+					<div class="calendrier clearfix">
+						<script type="text/javascript">
+				
+			var events_BEE5723F186B4639B5C3D85036580DE7 = undefined;	
+					
+			function getEvent_BEE5723F186B4639B5C3D85036580DE7(day, month,year){	
+					var empty = ["false","",""];
+					if(events_BEE5723F186B4639B5C3D85036580DE7 != undefined)			
+						return events_BEE5723F186B4639B5C3D85036580DE7[year][month+1][day];		
+					else 
+						return empty; 										
+				}
+		
+				selectedDay_BEE5723F186B4639B5C3D85036580DE7 = function(month,day, year) {					
+						return "/modules/calendrier/calendrier_view.php?id-template=1&date="+year+(month < 10 ? "0"+month : month)+(day < 10 ? "0"+day : day)
+				}
+		
+				function load_month_BEE5723F186B4639B5C3D85036580DE7(year, month){						
+						events_BEE5723F186B4639B5C3D85036580DE7 = undefined;
+						$.ajax({
+								url: "/modules/actualite/agenda_calendrier.php",
+								type: "POST", 
+								data: {
+									action : "getMonth",
+									month : month,									
+									year : year
+									},									
+								success: function(data) {					
+									 events_BEE5723F186B4639B5C3D85036580DE7 = jQuery.parseJSON(data);	
+									 $("#almanach-BEE5723F186B4639B5C3D85036580DE7").datepicker("refresh");
+							}		 		
+					});
+				}
+								 		
+	
+				$(document).ready(function(){
+			
+								 		
+						
+					$("#almanach-BEE5723F186B4639B5C3D85036580DE7").datepicker({
+										numberOfMonths: 1,
+										stepMonths: 1,
+										nextText: "Suivant",
+										prevText: "Précédent",
+										dayNamesMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
+										monthNames: ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],
+										firstDay: 1,
+										beforeShowDay: function(date) {									 												
+											return getEvent_BEE5723F186B4639B5C3D85036580DE7(date.getDate(), date.getMonth(), date.getFullYear());							
+										},
+										onChangeMonthYear : function (year, month, inst) {
+											load_month_BEE5723F186B4639B5C3D85036580DE7(year, month);
+										},	
+										onSelect: function(dateText) {
+											var day = parseInt(dateText.slice(3,5),10);	
+         									var month = parseInt(dateText.slice(0,2),10);
+											var year = parseInt(dateText.slice(6),10);
+											
+											var href_to_open = selectedDay_BEE5723F186B4639B5C3D85036580DE7(month,	day,year);
+													
+											var event = events_BEE5723F186B4639B5C3D85036580DE7[year][month][day];
+													
+											if(event[0] == "true")
+												$.fancybox( {type : "iframe", href : href_to_open}  );
+										}
+						
+									});
+							
+									/*
+									* Bricolage indispensable pour colorer les dates choisies
+									* chaque fois que le datepicker se redessine !
+									*/
+									$("#almanach-BEE5723F186B4639B5C3D85036580DE7").bind("mouseenter", function(){
+										if ($("td.important > a", this).eq(0).css("color") != "#FF0000") {
+											$("td.important > a", this).css("color","#FF0000");
+								
+										}
+									});			
+							
+					
+				});	//fin document ready
+		
+				load_month_BEE5723F186B4639B5C3D85036580DE7(2020, 07)	;									
+													
+				$(window).load(function(){
+					$(".calendrier-test").mouseenter();
+				});	//fin window ready
+		
+			
+						</script>
+						<div class="almanach" id="almanach-BEE5723F186B4639B5C3D85036580DE7"></div>
+					</div>
+				</div>
+				<div class="websee-barre-flottante-containers" id="websee-barre-flottante-container-3">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-page" data-href="https://www.facebook.com/auzoncommunaute/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu-topscreen">
+			<li class="menu-topscreen-item menu-topscreen-item-1  "><a href="/communaute-communes-auzon-haute-loire_fr.html" id="menu-topscreen-item-titre-1" class="menu-topscreen-item-titre ">ACCUEIL</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-2 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-2');" id="menu-topscreen-item-titre-2" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-2">AUZON COMMUNAUTÉ</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-2">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-3 "><a href="/auzon_fr.html" class="menu-topscreen-submenu-item-titre">Auzon Communauté</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-47 "><a href="/les-elus_fr.html" class="menu-topscreen-submenu-item-titre">Les Élus</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-49 "><a href="/les-missions_fr.html" class="menu-topscreen-submenu-item-titre">Les Missions</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-50 "><a href="/les-decisions_fr.html" class="menu-topscreen-submenu-item-titre">Les Décisions</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-51 "><a href="/du-projet-a-l-action_fr.html" class="menu-topscreen-submenu-item-titre">Du Projet à l'Action</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-3 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-3');" id="menu-topscreen-item-titre-3" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-3">A VOTRE SERVICE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-3">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-4 "><a href="/telealarme_fr.html" class="menu-topscreen-submenu-item-titre">Téléalarme</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-5 "><a href="/colibri_fr.html" class="menu-topscreen-submenu-item-titre">Colibri</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-6 "><a href="/admr_fr.html" class="menu-topscreen-submenu-item-titre">ADMR</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-7 "><a href="/ehpad-hebergement-agees-dependantes-auzon-auvergne_fr.html" class="menu-topscreen-submenu-item-titre">EHPAD</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-8 "><a href="/annuaire-malin_fr.html" class="menu-topscreen-submenu-item-titre">Annuaire Malin</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-9 "><a href="/ecole-de-musique_fr.html" class="menu-topscreen-submenu-item-titre">École de Musique</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-10 "><a href="/reseau-des-bibliotheques_fr.html" class="menu-topscreen-submenu-item-titre">Réseau des Bibliothèques</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-11 "><a href="/programmation-culturelle-et-animations_fr.html" class="menu-topscreen-submenu-item-titre">Programmation culturelle et animations</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-4 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-4');" id="menu-topscreen-item-titre-4" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-4">NOS ENFANTS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-4">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-13 "><a href="/relai-petite-enfance_fr.html" class="menu-topscreen-submenu-item-titre">Relais Petite Enfance</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-14 "><a href="/multi-accueil_fr.html" class="menu-topscreen-submenu-item-titre">Multi Accueil Les P'tits Lutins</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-15 "><a href="/les-lutins_fr.html" class="menu-topscreen-submenu-item-titre">Accueils de Loisirs sans Hébergement </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-61 "><a href="/accueils-periscolaires_fr.html" class="menu-topscreen-submenu-item-titre">Accueils periscolaires</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-16 "><a href="/sport_fr.html" class="menu-topscreen-submenu-item-titre">Sport</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-17 "><a href="/accueil-jeunes_fr.html" class="menu-topscreen-submenu-item-titre">Accueil Jeunes</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-6 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-6');" id="menu-topscreen-item-titre-6" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-6">ENTREPRENDRE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-6">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-24 "><a href="/tissu-economique-auzon-communaute-commune_fr.html" class="menu-topscreen-submenu-item-titre">Le tissu économique </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-23 "><a href="/acteur-vie-economique-communaute-communes-auzon_fr.html" class="menu-topscreen-submenu-item-titre">Les acteurs de l'économie </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-26 "><a href="/outils-economique-aide-installation-communaute-auzon_fr.html" class="menu-topscreen-submenu-item-titre">Les outils de l'Economie </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-5 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-5');" id="menu-topscreen-item-titre-5" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-5">VISITE & DÉCOUVERTE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-5">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-18 "><a href="/collegiale_fr.html" class="menu-topscreen-submenu-item-titre">AUZON et sa collégiale</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-19 "><a href="/plan-d-eau_fr.html" class="menu-topscreen-submenu-item-titre">Le site touristique de CHAMPAGNAC LE VIEUX </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-21 "><a href="/vallee-de-l-alagnon_fr.html" class="menu-topscreen-submenu-item-titre">Lempdes sur Allagnon et sa vallée</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-7 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-7');" id="menu-topscreen-item-titre-7" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-7">NOS FORMULAIRES</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-7">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-33 "><a href="/ecole-de-musique_fr.html" class="menu-topscreen-submenu-item-titre">Ecole de Musique</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-27 "><a href="/programmation-culturelle_fr.html" class="menu-topscreen-submenu-item-titre">Programmation Culturelle</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-28 "><a href="/enfance-jeunesse_fr.html" class="menu-topscreen-submenu-item-titre">Enfance Jeunesse</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-29 "><a href="/petite-enfance_fr.html" class="menu-topscreen-submenu-item-titre">Petite Enfance</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-62 "><a href="/rgpd_fr.html" class="menu-topscreen-submenu-item-titre">RGPD</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-8  "><a href="/plan-interactif_fr.html" id="menu-topscreen-item-titre-8" class="menu-topscreen-item-titre ">ANNUAIRE MALIN</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-9 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-9');" id="menu-topscreen-item-titre-9" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-9">EN SAVOIR PLUS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-9">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-34 "><a href="/telealarme_fr.html" class="menu-topscreen-submenu-item-titre">Téléalarme</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-30 "><a href="/proces-verbaux_fr.html" class="menu-topscreen-submenu-item-titre">Procès Verbaux</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-31 "><a href="/marche-public_fr.html" class="menu-topscreen-submenu-item-titre">Marché Public</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-10 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-10');" id="menu-topscreen-item-titre-10" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-10">ACTIVITES PLEINE NATURE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-10">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-56 "><a href="/espace-randonnee_fr.html" class="menu-topscreen-submenu-item-titre">Espace Randonnée</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-57 "><a href="/espace-vtt_fr.html" class="menu-topscreen-submenu-item-titre">Espace VTT</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-58 "><a href="/rocher-escalade_fr.html" class="menu-topscreen-submenu-item-titre">Rocher d'escalade</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-63 "><a href="/espace-parcours-orientation_fr.html" class="menu-topscreen-submenu-item-titre">Espace Parcours d'orientation</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-64 "><a href="/espace-trail_fr.html" class="menu-topscreen-submenu-item-titre">Espace Trail</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-65 "><a href="/accrobranche_fr.html" class="menu-topscreen-submenu-item-titre">Accrobranche</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone">
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-1  "><a href="/communaute-communes-auzon-haute-loire_fr.html" id="menu-topscreen-smartphone-item-titre-1" class="menu-topscreen-smartphone-item-titre ">ACCUEIL</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-2 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-2');" id="menu-topscreen-smartphone-item-titre-2" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-2">AUZON COMMUNAUTÉ</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-2">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-3 "><a href="/auzon_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Auzon Communauté</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-47 "><a href="/les-elus_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Élus</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-49 "><a href="/les-missions_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Missions</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-50 "><a href="/les-decisions_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Décisions</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-51 "><a href="/du-projet-a-l-action_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Du Projet à l'Action</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-3 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-3');" id="menu-topscreen-smartphone-item-titre-3" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-3">A VOTRE SERVICE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-3">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-4 "><a href="/telealarme_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Téléalarme</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-5 "><a href="/colibri_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Colibri</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-6 "><a href="/admr_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">ADMR</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-7 "><a href="/ehpad-hebergement-agees-dependantes-auzon-auvergne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">EHPAD</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-8 "><a href="/annuaire-malin_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Annuaire Malin</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-9 "><a href="/ecole-de-musique_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">École de Musique</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-10 "><a href="/reseau-des-bibliotheques_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Réseau des Bibliothèques</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-11 "><a href="/programmation-culturelle-et-animations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Programmation culturelle et animations</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-4 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-4');" id="menu-topscreen-smartphone-item-titre-4" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-4">NOS ENFANTS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-4">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-13 "><a href="/relai-petite-enfance_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Relais Petite Enfance</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-14 "><a href="/multi-accueil_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Multi Accueil Les P'tits Lutins</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-15 "><a href="/les-lutins_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueils de Loisirs sans Hébergement </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-61 "><a href="/accueils-periscolaires_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueils periscolaires</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-16 "><a href="/sport_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Sport</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-17 "><a href="/accueil-jeunes_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil Jeunes</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-6 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-6');" id="menu-topscreen-smartphone-item-titre-6" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-6">ENTREPRENDRE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-6">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-24 "><a href="/tissu-economique-auzon-communaute-commune_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le tissu économique </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-23 "><a href="/acteur-vie-economique-communaute-communes-auzon_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les acteurs de l'économie </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-26 "><a href="/outils-economique-aide-installation-communaute-auzon_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les outils de l'Economie </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-5 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-5');" id="menu-topscreen-smartphone-item-titre-5" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-5">VISITE & DÉCOUVERTE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-5">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-18 "><a href="/collegiale_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">AUZON et sa collégiale</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-19 "><a href="/plan-d-eau_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le site touristique de CHAMPAGNAC LE VIEUX </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-21 "><a href="/vallee-de-l-alagnon_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Lempdes sur Allagnon et sa vallée</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-7 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-7');" id="menu-topscreen-smartphone-item-titre-7" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-7">NOS FORMULAIRES</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-7">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-33 "><a href="/ecole-de-musique_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Ecole de Musique</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-27 "><a href="/programmation-culturelle_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Programmation Culturelle</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-28 "><a href="/enfance-jeunesse_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Enfance Jeunesse</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-29 "><a href="/petite-enfance_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Petite Enfance</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-62 "><a href="/rgpd_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">RGPD</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-8  "><a href="/plan-interactif_fr.html" id="menu-topscreen-smartphone-item-titre-8" class="menu-topscreen-smartphone-item-titre ">ANNUAIRE MALIN</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-9 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-9');" id="menu-topscreen-smartphone-item-titre-9" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-9">EN SAVOIR PLUS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-9">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-34 "><a href="/telealarme_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Téléalarme</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-30 "><a href="/proces-verbaux_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Procès Verbaux</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-31 "><a href="/marche-public_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Marché Public</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-10 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-10');" id="menu-topscreen-smartphone-item-titre-10" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-10">ACTIVITES PLEINE NATURE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-10">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-56 "><a href="/espace-randonnee_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espace Randonnée</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-57 "><a href="/espace-vtt_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espace VTT</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-58 "><a href="/rocher-escalade_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Rocher d'escalade</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-63 "><a href="/espace-parcours-orientation_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espace Parcours d'orientation</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-64 "><a href="/espace-trail_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Espace Trail</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-65 "><a href="/accrobranche_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accrobranche</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<div class="template-menu clearfix">
+			<div class="template-menu-content template-contents clearfix"><a class="logo-essentiel" href="communaute-communes-auzon-haute-loire_fr.html"><img src="/userfile/img-template-maker/logo/accueil.png"></a>
+				<ul class="menu-principal-horizontal">
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-1  "><a href="/communaute-communes-auzon-haute-loire_fr.html" id="menu-principal-horizontal-item-titre-1" class="menu-principal-horizontal-item-titre ">ACCUEIL</a></li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-2 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-2');" id="menu-principal-horizontal-item-titre-2" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-2">AUZON COMMUNAUTÉ</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-2">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-3 "><a href="/auzon_fr.html" class="menu-principal-horizontal-submenu-item-titre">Auzon Communauté</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-47 "><a href="/les-elus_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les Élus</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-49 "><a href="/les-missions_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les Missions</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-50 "><a href="/les-decisions_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les Décisions</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-51 "><a href="/du-projet-a-l-action_fr.html" class="menu-principal-horizontal-submenu-item-titre">Du Projet à l'Action</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-3 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-3');" id="menu-principal-horizontal-item-titre-3" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-3">A VOTRE SERVICE</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-3">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-4 "><a href="/telealarme_fr.html" class="menu-principal-horizontal-submenu-item-titre">Téléalarme</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-5 "><a href="/colibri_fr.html" class="menu-principal-horizontal-submenu-item-titre">Colibri</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-6 "><a href="/admr_fr.html" class="menu-principal-horizontal-submenu-item-titre">ADMR</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-7 "><a href="/ehpad-hebergement-agees-dependantes-auzon-auvergne_fr.html" class="menu-principal-horizontal-submenu-item-titre">EHPAD</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-8 "><a href="/annuaire-malin_fr.html" class="menu-principal-horizontal-submenu-item-titre">Annuaire Malin</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-9 "><a href="/ecole-de-musique_fr.html" class="menu-principal-horizontal-submenu-item-titre">École de Musique</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-10 "><a href="/reseau-des-bibliotheques_fr.html" class="menu-principal-horizontal-submenu-item-titre">Réseau des Bibliothèques</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-11 "><a href="/programmation-culturelle-et-animations_fr.html" class="menu-principal-horizontal-submenu-item-titre">Programmation culturelle et animations</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-4 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-4');" id="menu-principal-horizontal-item-titre-4" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-4">NOS ENFANTS</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-4">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-13 "><a href="/relai-petite-enfance_fr.html" class="menu-principal-horizontal-submenu-item-titre">Relais Petite Enfance</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-14 "><a href="/multi-accueil_fr.html" class="menu-principal-horizontal-submenu-item-titre">Multi Accueil Les P'tits Lutins</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-15 "><a href="/les-lutins_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accueils de Loisirs sans Hébergement </a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-61 "><a href="/accueils-periscolaires_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accueils periscolaires</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-16 "><a href="/sport_fr.html" class="menu-principal-horizontal-submenu-item-titre">Sport</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-17 "><a href="/accueil-jeunes_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accueil Jeunes</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-6 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-6');" id="menu-principal-horizontal-item-titre-6" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-6">ENTREPRENDRE</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-6">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-24 "><a href="/tissu-economique-auzon-communaute-commune_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le tissu économique </a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-23 "><a href="/acteur-vie-economique-communaute-communes-auzon_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les acteurs de l'économie </a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-26 "><a href="/outils-economique-aide-installation-communaute-auzon_fr.html" class="menu-principal-horizontal-submenu-item-titre">Les outils de l'Economie </a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-5 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-5');" id="menu-principal-horizontal-item-titre-5" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-5">VISITE & DÉCOUVERTE</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-5">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-18 "><a href="/collegiale_fr.html" class="menu-principal-horizontal-submenu-item-titre">AUZON et sa collégiale</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-19 "><a href="/plan-d-eau_fr.html" class="menu-principal-horizontal-submenu-item-titre">Le site touristique de CHAMPAGNAC LE VIEUX </a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-21 "><a href="/vallee-de-l-alagnon_fr.html" class="menu-principal-horizontal-submenu-item-titre">Lempdes sur Allagnon et sa vallée</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-7 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-7');" id="menu-principal-horizontal-item-titre-7" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-7">NOS FORMULAIRES</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-7">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-33 "><a href="/ecole-de-musique_fr.html" class="menu-principal-horizontal-submenu-item-titre">Ecole de Musique</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-27 "><a href="/programmation-culturelle_fr.html" class="menu-principal-horizontal-submenu-item-titre">Programmation Culturelle</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-28 "><a href="/enfance-jeunesse_fr.html" class="menu-principal-horizontal-submenu-item-titre">Enfance Jeunesse</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-29 "><a href="/petite-enfance_fr.html" class="menu-principal-horizontal-submenu-item-titre">Petite Enfance</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-62 "><a href="/rgpd_fr.html" class="menu-principal-horizontal-submenu-item-titre">RGPD</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-8  "><a href="/plan-interactif_fr.html" id="menu-principal-horizontal-item-titre-8" class="menu-principal-horizontal-item-titre ">ANNUAIRE MALIN</a></li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-9 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-9');" id="menu-principal-horizontal-item-titre-9" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-9">EN SAVOIR PLUS</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-9">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-34 "><a href="/telealarme_fr.html" class="menu-principal-horizontal-submenu-item-titre">Téléalarme</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-30 "><a href="/proces-verbaux_fr.html" class="menu-principal-horizontal-submenu-item-titre">Procès Verbaux</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-31 "><a href="/marche-public_fr.html" class="menu-principal-horizontal-submenu-item-titre">Marché Public</a></li>
+						</ul>
+					</li>
+					<li class="menu-principal-horizontal-item menu-principal-horizontal-item-10 menu-principal-horizontal-item-with-sub "><a href="javascript:open_submenu('menu-principal-horizontal-submenu-10');" id="menu-principal-horizontal-item-titre-10" class="menu-principal-horizontal-item-titre" submenuof="menu-principal-horizontal-submenu-10">ACTIVITES PLEINE NATURE</a>
+						<ul class="menu-principal-horizontal-submenu" id="menu-principal-horizontal-submenu-10">
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-56 "><a href="/espace-randonnee_fr.html" class="menu-principal-horizontal-submenu-item-titre">Espace Randonnée</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-57 "><a href="/espace-vtt_fr.html" class="menu-principal-horizontal-submenu-item-titre">Espace VTT</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-58 "><a href="/rocher-escalade_fr.html" class="menu-principal-horizontal-submenu-item-titre">Rocher d'escalade</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-63 "><a href="/espace-parcours-orientation_fr.html" class="menu-principal-horizontal-submenu-item-titre">Espace Parcours d'orientation</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-64 "><a href="/espace-trail_fr.html" class="menu-principal-horizontal-submenu-item-titre">Espace Trail</a></li>
+							<li class="menu-principal-horizontal-submenu-item menu-principal-horizontal-submenu-item-65 "><a href="/accrobranche_fr.html" class="menu-principal-horizontal-submenu-item-titre">Accrobranche</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="menu-principal-smartphone-menu"><a class="menu-principal-smartphone-menu-dropdown">Menu</a>
+					<ul class="menu-principal-smartphone">
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-1  "><a href="/communaute-communes-auzon-haute-loire_fr.html" id="menu-principal-smartphone-item-titre-1" class="menu-principal-smartphone-item-titre ">ACCUEIL</a></li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-2 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-2');" id="menu-principal-smartphone-item-titre-2" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-2">AUZON COMMUNAUTÉ</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-2">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-3 "><a href="/auzon_fr.html" class="menu-principal-smartphone-submenu-item-titre">Auzon Communauté</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-47 "><a href="/les-elus_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les Élus</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-49 "><a href="/les-missions_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les Missions</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-50 "><a href="/les-decisions_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les Décisions</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-51 "><a href="/du-projet-a-l-action_fr.html" class="menu-principal-smartphone-submenu-item-titre">Du Projet à l'Action</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-3 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-3');" id="menu-principal-smartphone-item-titre-3" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-3">A VOTRE SERVICE</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-3">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-4 "><a href="/telealarme_fr.html" class="menu-principal-smartphone-submenu-item-titre">Téléalarme</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-5 "><a href="/colibri_fr.html" class="menu-principal-smartphone-submenu-item-titre">Colibri</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-6 "><a href="/admr_fr.html" class="menu-principal-smartphone-submenu-item-titre">ADMR</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-7 "><a href="/ehpad-hebergement-agees-dependantes-auzon-auvergne_fr.html" class="menu-principal-smartphone-submenu-item-titre">EHPAD</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-8 "><a href="/annuaire-malin_fr.html" class="menu-principal-smartphone-submenu-item-titre">Annuaire Malin</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-9 "><a href="/ecole-de-musique_fr.html" class="menu-principal-smartphone-submenu-item-titre">École de Musique</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-10 "><a href="/reseau-des-bibliotheques_fr.html" class="menu-principal-smartphone-submenu-item-titre">Réseau des Bibliothèques</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-11 "><a href="/programmation-culturelle-et-animations_fr.html" class="menu-principal-smartphone-submenu-item-titre">Programmation culturelle et animations</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-4 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-4');" id="menu-principal-smartphone-item-titre-4" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-4">NOS ENFANTS</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-4">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-13 "><a href="/relai-petite-enfance_fr.html" class="menu-principal-smartphone-submenu-item-titre">Relais Petite Enfance</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-14 "><a href="/multi-accueil_fr.html" class="menu-principal-smartphone-submenu-item-titre">Multi Accueil Les P'tits Lutins</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-15 "><a href="/les-lutins_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accueils de Loisirs sans Hébergement </a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-61 "><a href="/accueils-periscolaires_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accueils periscolaires</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-16 "><a href="/sport_fr.html" class="menu-principal-smartphone-submenu-item-titre">Sport</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-17 "><a href="/accueil-jeunes_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accueil Jeunes</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-6 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-6');" id="menu-principal-smartphone-item-titre-6" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-6">ENTREPRENDRE</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-6">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-24 "><a href="/tissu-economique-auzon-communaute-commune_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le tissu économique </a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-23 "><a href="/acteur-vie-economique-communaute-communes-auzon_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les acteurs de l'économie </a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-26 "><a href="/outils-economique-aide-installation-communaute-auzon_fr.html" class="menu-principal-smartphone-submenu-item-titre">Les outils de l'Economie </a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-5 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-5');" id="menu-principal-smartphone-item-titre-5" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-5">VISITE & DÉCOUVERTE</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-5">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-18 "><a href="/collegiale_fr.html" class="menu-principal-smartphone-submenu-item-titre">AUZON et sa collégiale</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-19 "><a href="/plan-d-eau_fr.html" class="menu-principal-smartphone-submenu-item-titre">Le site touristique de CHAMPAGNAC LE VIEUX </a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-21 "><a href="/vallee-de-l-alagnon_fr.html" class="menu-principal-smartphone-submenu-item-titre">Lempdes sur Allagnon et sa vallée</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-7 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-7');" id="menu-principal-smartphone-item-titre-7" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-7">NOS FORMULAIRES</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-7">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-33 "><a href="/ecole-de-musique_fr.html" class="menu-principal-smartphone-submenu-item-titre">Ecole de Musique</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-27 "><a href="/programmation-culturelle_fr.html" class="menu-principal-smartphone-submenu-item-titre">Programmation Culturelle</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-28 "><a href="/enfance-jeunesse_fr.html" class="menu-principal-smartphone-submenu-item-titre">Enfance Jeunesse</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-29 "><a href="/petite-enfance_fr.html" class="menu-principal-smartphone-submenu-item-titre">Petite Enfance</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-62 "><a href="/rgpd_fr.html" class="menu-principal-smartphone-submenu-item-titre">RGPD</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-8  "><a href="/plan-interactif_fr.html" id="menu-principal-smartphone-item-titre-8" class="menu-principal-smartphone-item-titre ">ANNUAIRE MALIN</a></li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-9 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-9');" id="menu-principal-smartphone-item-titre-9" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-9">EN SAVOIR PLUS</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-9">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-34 "><a href="/telealarme_fr.html" class="menu-principal-smartphone-submenu-item-titre">Téléalarme</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-30 "><a href="/proces-verbaux_fr.html" class="menu-principal-smartphone-submenu-item-titre">Procès Verbaux</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-31 "><a href="/marche-public_fr.html" class="menu-principal-smartphone-submenu-item-titre">Marché Public</a></li>
+							</ul>
+						</li>
+						<li class="menu-principal-smartphone-item menu-principal-smartphone-item-10 menu-principal-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-principal-smartphone-submenu-10');" id="menu-principal-smartphone-item-titre-10" class="menu-principal-smartphone-item-titre" submenuof="menu-principal-smartphone-submenu-10">ACTIVITES PLEINE NATURE</a>
+							<ul class="menu-principal-smartphone-submenu" id="menu-principal-smartphone-submenu-10">
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-56 "><a href="/espace-randonnee_fr.html" class="menu-principal-smartphone-submenu-item-titre">Espace Randonnée</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-57 "><a href="/espace-vtt_fr.html" class="menu-principal-smartphone-submenu-item-titre">Espace VTT</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-58 "><a href="/rocher-escalade_fr.html" class="menu-principal-smartphone-submenu-item-titre">Rocher d'escalade</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-63 "><a href="/espace-parcours-orientation_fr.html" class="menu-principal-smartphone-submenu-item-titre">Espace Parcours d'orientation</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-64 "><a href="/espace-trail_fr.html" class="menu-principal-smartphone-submenu-item-titre">Espace Trail</a></li>
+								<li class="menu-principal-smartphone-submenu-item menu-principal-smartphone-submenu-item-65 "><a href="/accrobranche_fr.html" class="menu-principal-smartphone-submenu-item-titre">Accrobranche</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<script>
+				var menu_ul_smartphone = $(".menu-principal-smartphone-submenu"),
+       				 menu_a_smartphone  = $(".menu-principal-smartphone-item-with-sub a");
+				
+				menu_ul_smartphone.hide();
+				
+				$(".menu-principal-smartphone").hide();
+			
+				menu_a_smartphone.click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+						
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+				$(".menu-principal-smartphone-menu-dropdown").click(function(event ){
+										
+					if(!$(this).hasClass("active")) {
+			            menu_a_smartphone.removeClass("active");
+			            menu_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }				
+					
+				});
+				
+				</script>
+			</div>
+		</div>
+		<div class="template-animation">
+			<div class="template-animation-content  template-contents">
+				<style>
+			#slider_12_container .caption-text-defaut { background-color: rgba(0, 0, 0, 0.5); }
+		    #slider_12_container .caption-text-defaut-titre {color:#ffffff ;}
+		    #slider_12_container .caption-text-defaut-texte {color:#ffffff ;}
+				</style>
+				<script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions_12 = [];
+           
+           	_CaptionTransitions_12["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
+           		
+			var _SlideshowTransitions_12 = [
+            	{$Duration:1200,$Opacity:2}	
+            ];
+            		
+            var options_12 = {
+                $FillMode: 0,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 5000,                  //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 0,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                //$ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                //$SlideEasing: $JssorEasing$.$EaseOutQuad,           //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                //$SlideDuration: 1000,                     			//[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                //$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                //$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                //$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                //$DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+               	 $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions_12,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },           
+                   	
+                   $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions_12,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+                    		              
+                   
+	  
+	 
+	  
+                
+            };
+
+            var jssor_slider_12 = new $JssorSlider$("slider_12_container", options_12);
+
+           
+            function ScaleSlider_12() {
+     	
+            	$(".caption-images-12").css("display","block");
+            	$(".caption-texts-12").css("display","block");
+     	
+            	$("#slider_12_container").css("display","none");
+				var parentwidth = $("#responsive-container-12").width();
+     	
+				$("#slider_12_container").css("display","block");
+     	
+				var max_width = 	1920;					
+				if(max_width < $(window).width()){					
+					max_width = $(window).width();					
+				}				
+						
+                if (parentwidth != undefined)
+                    jssor_slider_12.$ScaleWidth(Math.min(parentwidth, max_width));
+                else
+                    window.setTimeout(ScaleSlider_12, 30);
+            }
+        
+            //ScaleSlider_12();
+
+            $(window).bind("load", ScaleSlider_12);
+            $(window).bind("resize", ScaleSlider_12);
+            $(window).bind("orientationchange", ScaleSlider_12);
+            //responsive code end
+        });            		
+          		
+    
+				</script>
+				<div class="responsive-container" id="responsive-container-12">
+					<div class="module_diaporama" id="slider_12_container" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 600px; overflow: hidden;">
+						<!-- Loading Screen -->
+						<div u="loading" style="position: absolute; top: 0px; left: 0px;z-index:9999;">
+							<div style="position: absolute; display: block;background-color:white;top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+							<div style="position: absolute; display: block; background: url(/js/jssor/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						</div>
+						<!-- Loading Screen End -->
+						<!-- Slides Container -->
+						<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1920px; height: 600px; overflow: hidden;">
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1500989009_bandeau.jpg" alt="">
+								<div u="caption" t="t-1" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-1" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1501571865-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1507186721_Villes_sur_Auzon_-_platanes_1.jpg" alt="">
+								<div u="caption" t="t-2" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-2" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1507186828-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1507186979_Halles_de_lempdes.jpg" alt="">
+								<div u="caption" t="t-3" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-3" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1507187013-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1507187228_Azerat_eglise_clocher-1.JPG" alt="">
+								<div u="caption" t="t-4" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-4" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1507187256-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1516782207_DSC01494.JPG" alt="">
+								<div u="caption" t="t-5" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-5" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1517845184-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+							<div><img u="image" src="/userfile/img-template-maker/diaporama-12/haute/1516783289_FONTAINE-RIGOUX.JPG" alt="">
+								<div u="caption" t="t-6" t2="NO" style="position: absolute; top: 101px; left: 0px;width:0px;height:0px;z-index:100;"><img id="caption-image-6" class="caption-images caption-images-12" u="caption" src="/userfile/img-template-maker/diaporama-12/original/1517845228-effet-bandeau-vague.png" style="width:1920px;height:506px;position: absolute; top: 0px; left: 0px;"></div>
+							</div>
+						</div>
+						<!-- Slides Container End-->
+					</div><a class="anchor-bottom-contenu anchor-bottom-contenu-12" href="javascript:goToContentBody();"></a></div>
+				<!-- Jssor Slider End -->
+			</div>
+			<div class="bloc-accueil">
+				<script>
+		
+		    var timer_resize_bloc_13 = 0;
+		
+			$( window ).resize(function() {				
+				
+			    if(timer_resize_bloc_13 != 0){
+				    clearTimeout(timer_resize_bloc_13);
+				    timer_resize_bloc_13= 0;
+				}
+								
+				timer_resize_bloc_13= setTimeout(resize_bloc_13,1000);
+			    
+			});
+		
+			$(window).load(function(){				
+				resize_bloc_13();
+							
+				timer_resize_bloc_13= setTimeout(resize_bloc_13,1000);
+				
+				
+			});
+			
+			
+			function resize_bloc_13(){
+			   equalheightForAll(".module-bloc-13 .module-bloc-item-image");
+				equalheightForAll(".module-bloc-13 .module-bloc-item-titre");
+				equalheightForAll(".module-bloc-13 .module-bloc-item-commentaire");
+				equalheightForAll(".module-bloc-13 .module-bloc-item");
+			}
+			
+			
+			
+				</script>
+				<style>					
+			.module-bloc-13 .module-bloc-item {background-color: #;}		
+			.module-bloc-13 .module-bloc-item:hover {background-color: #;}				
+			.module-bloc-13 .module-bloc-item-titre {color: #ffffff;}
+			.module-bloc-13 .module-bloc-item:hover .module-bloc-item-titre {color: #FFFFFF;}
+			.module-bloc-13 .module-bloc-item-commentaire {color: #000000;}						
+			.module-bloc-13 .module-bloc-item:hover .module-bloc-item-commentaire {color: #FFFFFF;}		
+			.module-bloc-13 a.module-bloc-item-plus {background-color: #;color: #FFFFFF;}		
+			.module-bloc-13 .module-bloc-item:hover .module-bloc-item-plus {background-color: #;color: #ffffff;}		
+			
+			
+				</style>
+				<div class="module-bloc module-bloc-13">
+					<div class="module-bloc-item module-bloc-item-4" id="module-bloc-item-5"><a class="module-bloc-item-image-click" href="/agenda_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/13/5.png" alt="AGENDA"></div></a>
+						<div class="module-bloc-item-titre">
+							<p>AGENDA<br></p>
+						</div>
+						<div class="module-bloc-item-commentaire">
+							<p><br></p>
+						</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/agenda_fr.html"></a></div>
+					<div class="module-bloc-item module-bloc-item-4" id="module-bloc-item-2"><a class="module-bloc-item-image-click" href="/collegiale_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/13/2.png" alt="DÉCOUVREZ"></div></a>
+						<div class="module-bloc-item-titre">
+							<p>DÉCOUVREZ<br></p>
+						</div>
+						<div class="module-bloc-item-commentaire">
+							<p><br></p>
+						</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/collegiale_fr.html"></a></div>
+					<div class="module-bloc-item module-bloc-item-4" id="module-bloc-item-3"><a class="module-bloc-item-image-click" href="/acteur-vie-economique-communaute-communes-auzon_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/13/3.png" alt="ENTREPRENEZ"></div></a>
+						<div class="module-bloc-item-titre">
+							<p>ENTREPRENEZ<br></p>
+						</div>
+						<div class="module-bloc-item-commentaire">
+							<p><br></p>
+						</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/acteur-vie-economique-communaute-communes-auzon_fr.html"></a></div>
+					<div class="module-bloc-item module-bloc-item-4" id="module-bloc-item-4"><a class="module-bloc-item-image-click" href="/contact_fr.html"><div class="module-bloc-item-image"><img src="/userfile/blocs/13/4.png" alt="CONTACT"></div></a>
+						<div class="module-bloc-item-titre">
+							<p>CONTACT<br></p>
+						</div>
+						<div class="module-bloc-item-commentaire">
+							<p><br></p>
+						</div><a class="module-bloc-item-plus module-bloc-item-plus-fr" href="/contact_fr.html"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix">
+						<div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:googlePlusSharePage();"><span class="socicon socicon-google"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div>
+						<script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, '', '', '');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, '');
+			}
+			
+			function googlePlusSharePage(){
+				googlePlusShare(window.location.href);
+			}
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, '', '');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, '', '');
+			}
+			
+						</script>
+						<div class="nom-page nom-page-50 nom-page-groupe-2">
+							<div class="nom-page-text">Les Décisions</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-page-50 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="bloc-h1">
+							<h1 class="h1-couleur-groupe-2">Les décisions résultent de délibérations prises par l'assemblée délibérante.</h1>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<h3 style="text-align: center;">Le conseil communautaire se réunit au minimum une fois par trimestre. Les décisions sont reprises dans un procès verbal.</h3>
+								<p></p>
+								<div id="telechargement-27" class="telechargements">
+									<div class="telechargement-groupe" id="telechargement-groupe-3">
+										<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-3">Les Décisions</div>
+										<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-3">
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1594035671-2020_06_25_STEFLORINE.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 25 JUIN 2020"><b>PROCES VERBAL DU 25 JUIN 2020</b> (751Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1591798123-2020_06_05_AUZON.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 5 JUIN 2020"><b>PROCES VERBAL DU 5 JUIN 2020</b> (67Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1584612953-2020_03_05_STHILAIRE.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 5 MARS 2020 "><b>PROCES VERBAL DU 5 MARS 2020 </b> (156Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1584353336-NOTE-SYNTHETIQUE.pdf" target="_blank" title="Telecharger NOTE SYNTHETIQUE BUDGET 2020"><b>NOTE SYNTHETIQUE BUDGET 2020</b> (122Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1578918801-PV-17-decembre-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 17 DECEMBRE 2019"><b>PROCES VERBAL DU 17 DECEMBRE 2019</b> (146Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574760686-PV-14-novembre-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 14 NOVEMBRE 2019"><b>PROCES VERBAL DU 14 NOVEMBRE 2019</b> (145Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1570619915-PV-30-septembre-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 30 SEPTEMBRE 2019"><b>PROCES VERBAL DU 30 SEPTEMBRE 2019</b> (100Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1563954723-PV-27-JUIN-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 27 JUIN 2019"><b>PROCES VERBAL DU 27 JUIN 2019</b> (349Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1557737337-PV-10-AVRIL-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 10 AVRIL 2019"><b>PROCES VERBAL DU 10 AVRIL 2019</b> (114Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1557737314-PV-21-FEVRIER-2019.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 21 FEVRIER 2019"><b>PROCES VERBAL DU 21 FEVRIER 2019</b> (422Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1546418925-PV-13-decembre-2018.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 13 DECEMBRE 2018 "><b>PROCES VERBAL DU 13 DECEMBRE 2018 </b> (143Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1542204944-PV-9-OCTOBRE-2018.pdf" target="_blank" title="Telecharger PROCES VERBAL DU 9 OCTOBRE 2018"><b>PROCES VERBAL DU 9 OCTOBRE 2018</b> (487Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1532353906-PV-28-JUIN-2018.pdf" target="_blank" title="Telecharger Procès Verbal du 28 juin 2018"><b>Procès Verbal du 28 juin 2018</b> (119Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1532353882-PV-12-AVRIL-2018.pdf" target="_blank" title="Telecharger Proces verbal  du 12 avril 2018"><b>Proces verbal du 12 avril 2018</b> (84Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1532353855-PV-25-janvier-2018.pdf" target="_blank" title="Telecharger Procès Verbal du 25 janvier 2018"><b>Procès Verbal du 25 janvier 2018</b> (96Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1514984394-PV-5-Decembre-2017.pdf" target="_blank" title="Telecharger Proces verbal 5 Décembre 2017"><b>Proces verbal 5 Décembre 2017</b> (94Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380354-pv_31_juillet_2017.pdf" target="_blank" title="Telecharger PROCES VERBAL du 31 Juillet 2017"><b>PROCES VERBAL du 31 Juillet 2017</b> (110Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380329-pv_15_juin_2017.pdf" target="_blank" title="Telecharger PROCES VERBAL du 15 Juin 2017"><b>PROCES VERBAL du 15 Juin 2017</b> (102Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380286-pv_13_avril_2017.pdf" target="_blank" title="Telecharger PROCES VERBAL du 13 Avril 2017"><b>PROCES VERBAL du 13 Avril 2017</b> (38Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380236-pv_23_mars_2017.pdf" target="_blank" title="Telecharger PROCES VERBAL du 23 Mars 2017"><b>PROCES VERBAL du 23 Mars 2017</b> (62Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380202-pv_26_janvier_2017.pdf" target="_blank" title="Telecharger PROCES VERBAL 26 Janvier 2017"><b>PROCES VERBAL 26 Janvier 2017</b> (59Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380171-pv_15_decembre_2016.pdf" target="_blank" title="Telecharger PROCES VERBAL du 15 Décembre 2016"><b>PROCES VERBAL du 15 Décembre 2016</b> (77Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380140-pv_3_novembre_2016.pdf" target="_blank" title="Telecharger PROCES VERBAL du 03 Novembre 2016"><b>PROCES VERBAL du 03 Novembre 2016</b> (145Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380060-pv_21_juillet_2016.pdf" target="_blank" title="Telecharger PROCES VERBAL du 21 Juillet 2016"><b>PROCES VERBAL du 21 Juillet 2016</b> (92Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502380010-pv_26_mai_2016.pdf" target="_blank" title="Telecharger PROCES VERBAL du 26 Mai 2016"><b>PROCES VERBAL du 26 Mai 2016</b> (179Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502379920-pv_31_mars_2016.pdf" target="_blank" title="Telecharger PROCES VERBAL du 31 Mars 2016"><b>PROCES VERBAL du 31 Mars 2016</b> (133Ko) </a></li>
+											<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1502379878-pv_18_fevrier.pdf" target="_blank" title="Telecharger PROCES VERBAL du 18 Février 2016"><b>PROCES VERBAL du 18 Février 2016</b> (65Ko) </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-2">
+							<div class="wrapper-contents clearfix" id="wrapper-content-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-footer"><a class="template-button" href="javascript:show_map();"><span>Géolocalisation des Communes</span></a>
+			<div class="template-map">
+				<div class="liens-google-map" id="liens-google-map-20-1">
+					<style type="text/css">
+				  #map5f05d7da06606 {width:100%;height:500px;}
+				  
+			    
+				  	
+				  @media screen and (max-width: 980px) {
+					#map5f05d7da06606 {width:100%;height:500px;}
+				  }
+				
+					</style>
+					<script type="text/javascript">
+				var locations_5f05d7da06606 = [['<div style="height:20px;font-weight:bold">AUZON Communauté
+					</script>
+				</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Communauté de Communes Auzon</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.367849,3.320015" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.367849, 3.320015, 1, "/images/google-maps/tourisme/smallcity.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie Vézézoux</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Rue de la Mairie<br>43390 Vézézoux<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Vézézoux</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.4031078,3.3431633000000147(Rue%20de%20la%20Mairie%2043390%20V%C3%A9z%C3%A9zoux)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.4031078, 3.3431633000000147, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Chambézon</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Le Bourg<br>43410 Léotoing<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Chambézon</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.361519,3.223371(Le%20Bourg%2043410%20L%C3%A9otoing)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.361519, 3.223371, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie d\'Azérat</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Le Bourg<br>43390 Azérat<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie d\'Azérat</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.362404,3.383044(Le%20Bourg%2043390%20Az%C3%A9rat)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.362404, 3.383044, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Champagnac-le-Vieux</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Le Bourg<br>43440 Champagnac-le-Vieux<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Champagnac-le-Vieux</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.358120,3.503166(Le%20Bourg%2043440%20Champagnac-le-Vieux)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.358120, 3.503166, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Chassignolles</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Le Bourg<br>43440 Chassignolles<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Chassignolles</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.397475,3.492005(Le%20Bourg%2043440%20Chassignolles)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.397475, 3.492005, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Frugères-les-Mines</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>1 Rue de la Mairie<br>43250 Frugères-les-Mines<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Frugères-les-Mines</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.384980,3.306091(1%20Rue%20de%20la%20Mairie%2043250%20Frug%C3%A8res-les-Mines)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.384980, 3.306091, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Lempdès-sur-Allagnon</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Avenue de la Gare<br>43410 Lempdes-sur-Allagnon<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Lempdès-sur-Allagnon</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.383744,3.269568(Avenue%20de%20la%20Gare%2043410%20Lempdes-sur-Allagnon)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.383744, 3.269568, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Sainte-Florine</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Place François Mitterand<br>43250 Sainte-Florine<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Sainte-Florine</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.405138,3.319535(Place%20Fran%C3%A7ois%20Mitterand%2043250%20Sainte-Florine)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.405138, 3.319535, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Saint-Hilaire</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>43390 Saint-Hilaire<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Saint-Hilaire</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.380565,3.438687(43390%20Saint-Hilaire)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.380565, 3.438687, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Saint-Vert</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>Le Bourg<br>43440 Saint-Vert<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Saint-Vert</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.371956,3.531641(Le%20Bourg%2043440%20Saint-Vert)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.371956, 3.531641, 1, "/images/google-maps/ville-service/congress.png", "1"], ['
+				<div style="height:20px;font-weight:bold">Mairie de Vergongheon</div>
+				<table class="module_lien_groupe_carte_fiche">
+					<tr>
+						<td>1 Rue Marcel Ustachon<br>43360 Vergongheon<br></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_info_bulle">
+							<p>Mairie de Vergongheon</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="module_lien_groupe_carte_fiche_commandes"><a href="https://maps.google.com/maps?saddr=&daddr=45.370745,3.318569(1%20Rue%20Marcel%20Ustachon%2043360%20Vergongheon)" target="_blank">Itinéraire</a></td>
+					</tr>
+				</table>', 45.370745, 3.318569, 1, "/images/google-maps/ville-service/congress.png", "1"] ] var map_5f05d7da06606; var markersArray_5f05d7da06606 = []; var infowindow_5f05d7da06606 = []; // Removes the overlays from the map, but keeps them in the array function clearOverlays_5f05d7da06606() { if (markersArray_5f05d7da06606) { for (i in markersArray_5f05d7da06606) { markersArray_5f05d7da06606[i].setMap(null); } } } // Shows any overlays currently in the array function showOverlays_5f05d7da06606(type) { clearOverlays_5f05d7da06606(); if(type=="0") { if (markersArray_5f05d7da06606) { for (i in markersArray_5f05d7da06606) { markersArray_5f05d7da06606[i].setMap(map_5f05d7da06606); } } } else { switch(type){ case "1" : for (i in markersArray_5f05d7da06606) { if(markersArray_5f05d7da06606[i].couche == 1){ markersArray_5f05d7da06606[i].setMap(map_5f05d7da06606); } } break; default : break; } } } function initialize_5f05d7da06606() { map_5f05d7da06606 = new google.maps.Map( document.getElementById("map5f05d7da06606"), { center: new google.maps.LatLng(45.381629, 3.377506), zoom: 13, scrollwheel: false, styles : [], mapTypeId: google.maps.MapTypeId.ROADMAP }); var infowindow = new google.maps.InfoWindow(); var marker, i; for (i = 0; i ' + locations_5f05d7da06606[i][0] + '</div>' }); infowindow_5f05d7da06606.push(infowindow2); google.maps.event.addListener(marker, "click", (function(marker, i) { return function() { var content = '
+			<div style="font-family: Arial !important; font-weight: normal !important;">' + locations_5f05d7da06606[i][0] + '</div>'; infowindow.setContent(content); infowindow.open(map_5f05d7da06606, marker); } })(marker, i)); } var southWest_5f05d7da06606 = new google.maps.LatLng(45.358120,3.223371); var northEast_5f05d7da06606 = new google.maps.LatLng(45.405138,3.531641); var bounds_5f05d7da06606 = new google.maps.LatLngBounds(southWest_5f05d7da06606,northEast_5f05d7da06606); map_5f05d7da06606.fitBounds(bounds_5f05d7da06606); } $( document ).ready(function() { google.maps.event.addDomListener(window, "load", initialize_5f05d7da06606); });
+			<div id="map5f05d7da06606" class="google-map-bloc"></div>
+		</div>
+		<div class="template-footer-content  template-contents">
+			<div class="footer-template">
+				<table class="responsive-table" style="width: 100%;" cellpadding="10">
+					<tbody>
+						<tr>
+							<td style="width: 33%; vertical-align: top;">
+								<p style="text-align: right;"></p>
+								<div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:googlePlusSharePage();"><span class="socicon socicon-google"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div>
+								<script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, '', '', '');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, '');
+			}
+			
+			function googlePlusSharePage(){
+				googlePlusShare(window.location.href);
+			}
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, '', '');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, '', '');
+			}
+			
+								</script>
+								<p><img src="../../userfile/images/horaires.jpg" style="float: left; margin: 0 10px 10px 10px;"><span style="font-family: Lato, sans-serif; font-size: 24px;"><strong>HORAIRES <span style="color: #b1c800;">D'OUVERTURE</span></strong><br><strong>au Public :</strong></span></p>
+								<p><span class="p texte-footer" style="font-family: Lato, sans-serif; font-size: 16px;">Lundi au Jeudi</span></p>
+								<p><span class="p texte-footer" style="font-family: Lato, sans-serif; font-size: 16px;">9h00 - 12h00 / 14h00 - 17h00</span></p>
+								<p><span class="p texte-footer" style="font-family: Lato, sans-serif; font-size: 16px;"> Vendredi</span></p>
+								<p><span class="p texte-footer" style="font-family: Lato, sans-serif; font-size: 16px;">9h00 - 11h00</span></p>
+							</td>
+							<td style="width: 33%; vertical-align: top;" class="cellule-bordure--footer">
+								<p><span style="color: #000000;"><img src="../../userfile/images/logo-footer.jpg" alt="" class="" style="display: block; margin-left: auto; margin-right: auto;"></span></p>
+								<p style="text-align: center;"><span>Rue Jean Catinot</span><br><span style="color: #333333;">43 250 SAINTE FLORINE</span><br><span style="color: #333333;">Tél : 04 73 54 02 28</span></p>
+								<p style="text-align: center;"><span style="color: #333333;"> </span></p>
+								<p style="text-align: center;"><span class="bouton-animations a" style="color: #333333;"><span class="bouton-contact a" style="color: #ffffff;"><a href="/contact_fr.html" target="_parent"><span style="color: #ffffff;">NOUS ECRIRE UN EMAIL</span></a></span><br></span></p>
+							</td>
+							<td style="width: 33%; text-align: center; vertical-align: top;">
+								<p><span style="color: #333333;"><ul class="menu-pied-de-page"><li class="menu-pied-de-page-item menu-pied-de-page-item-with-sub "><a href="javascript:open_submenu('menu-pied-de-page-submenu-0');" id="menu-pied-de-page-item-titre-0" class="menu-pied-de-page-item-titre" submenuof="menu-pied-de-page-submenu-0"></a><ul class="menu-pied-de-page-submenu" id="menu-pied-de-page-submenu-0"><li class="menu-pied-de-page-submenu-item menu-pied-de-page-submenu-item-45 "><a href="/contact_fr.html" class="menu-pied-de-page-submenu-item-titre">Contact</a></li><li class="menu-pied-de-page-submenu-item menu-pied-de-page-submenu-item-46 "><a href="/extranet_fr.html" class="menu-pied-de-page-submenu-item-titre">Extranet</a></li><li class="menu-pied-de-page-submenu-item menu-pied-de-page-submenu-item-2 "><a href="/mentions-legales_fr.html" class="menu-pied-de-page-submenu-item-titre">Mentions Légales</a></li></ul></li></ul></span></p>
+								<p><strong><span style="color: #333333;"><span style="color: #6d6d59;"> </span><span style="font-family: Lato, sans-serif; font-size: 40px;"><span style="color: #6d6d59;">ESPACE</span> <span class="texte-vert-pomme">PRIVÉ</span></span></span></strong></p>
+								<p></p>
+								<table style="width: 100%;">
+									<tbody>
+										<tr>
+											<td>
+												<div class="intranet clearfix">
+													<form class="intranet-form-login clearfix" name="intranet_login_7EEE99B5B5654E0986CB9A31B72AF068" method="post" action="/modules/espace-prive/intranet-login.php">
+														<div id="intranet-utilisateur-saisie"><input type="text" name="util" size="20" maxlength="255"></div>
+														<div id="intranet-mdp-saisie"><input type="password" name="paswd" size="20" maxlength="255"></div>
+														<div class="intranet-commande"><a href="javascript:%7B%7D;" class="intranet-btn-login" onclick="intranet_login_7EEE99B5B5654E0986CB9A31B72AF068.submit();"></a></div>
+													</form>
+												</div>
+												<script>
+				$( "input:submit, a, button", ".intranet-commande" ).button();					
+			
+												</script>
+											</td>
+										</tr>
+										<tr>
+											<td><span style="font-size: 10px;"><a href="/demande-de-creation-de-compte-espace-prive_fr.html">Demander une création de compte utilisateur</a></span></td>
+										</tr>
+									</tbody>
+								</table>
+								<p style="text-align: left;"><span> </span></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><a href="#0" class="cd-top"></a>
+		<script src="/js/cdtop/cdtop.js"></script>
+		<div class="copyright"><a href="websee_en_savoir_plus_sur_la_creation_de_site_internet.html">Création de site Web administrable et hébergement Internet par Net15</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCGTKFbcV0dFxHXdPAVg3HjDRREFNEt8sk&sensor=false" type="text/javascript"></script>
+		<script src="/js/markerclusterer_compiled.js"></script>
+		<script type="text/javascript" src="/js/jssor/jssor.js"></script>
+		<script type="text/javascript" src="/js/jssor/jssor.slider.js"></script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594041985"></script>
+		<script src="/js/responsive.min.js?1594041985"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
