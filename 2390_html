@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Pays du Clermontois :</title>
+		<meta name="Keywords" content="Publications">
+		<meta name="Description" content="Publications">
+		<meta name="google-site-verification" content="A3uQrOWL0KwNvVGwkFgZRhe533-d37Xzc0xbZiyoyrg">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+		<style type="text/css">
+<!--
+
+@charset "utf-8";
+/* CSS Document */
+
+img, div { behavior: url(iepngfix/iepngfix.htc) }
+
+h1 {
+
+	color: #cc0033;
+
+}
+h2 {
+
+	color: #cc0033;
+}
+h3 {
+
+	color: #cc0033;
+}
+h4 {
+
+	color: #cc0033;
+}
+
+h5 {
+
+	color: #cc0033;
+}
+
+h6 {
+
+	color: #cc0033;
+}
+
+
+
+-->
+		</style>
+		<link href="http://www.pays-clermontois.fr/icones/favicon-PdC.ico" rel="shortcut icon" type="image/x-icon">
+		<link href="http://www.pays-clermontois.fr/icones/favicon-PdC.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="jquery/jquery.lightbox-0.4.css" media="screen">
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<script type="text/javascript" src="jquery/jquery.lightbox-0.4.pack.js"></script>
+		<script type="text/javascript">
+	  $(document).ready(function(){
+			$("#nav-one li").hover(
+				function(){ $("ul", this).fadeIn("fast"); }, 
+				function() { } 
+			);
+	  	if (document.all) {
+				$("#nav-one li").hoverClass ("sfHover");
+			}
+	  });
+	  
+		$.fn.hoverClass = function(c) {
+			return this.each(function(){
+				$(this).hover( 
+					function() { $(this).addClass(c);  },
+					function() { $(this).removeClass(c); }
+				);
+			});
+		};	  
+		</script>
+		<script type="text/javascript">
+    $(function() {
+		$('a.zoom').lightBox({
+		txtImage: 'Photo',
+	txtOf: 'sur'
+		});
+    });
+    
+		</script>
+		<script type="text/javascript">
+
+$(function(){
+
+$("a.minicine").mouseover(function(){
+
+if($(this).attr("rel")=="") return false;
+
+$("body").append('<span class="infobulle">');
+var bulle=$(".infobulle");
+//bulle.append($(this).attr("title"));
+
+bulle.append('<img src="'+$(this).attr("rel")+'" />');
+
+var postop= $(this).offset().top+$(this).height()+5;
+var posleft=$(this).offset().left-$(this).width();
+
+bulle.css({
+left:posleft,
+top:postop,
+opacity:0
+});
+
+
+bulle.animate({
+opacity:0.99
+},1000);
+
+
+});
+
+
+
+
+$(".minicine").mouseout(function(){
+
+
+var bulle=$(".infobulle").remove();;
+
+});
+
+
+
+});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="conteneur">
+				<div id="bando" style="background-image:url(bando/bando-clermontois-8.jpg)">
+					<div id="fondlogo">
+						<div id="logo"><img src="bando/logo.png" alt="Pays du Clermontois"></div>
+					</div>
+					<div id="recherche">
+						<form id="form1" name="form1" method="post" action="index.php"><label>Saisissez un ou plusieurs mots-clefs : <br> <input name="txtrecherche" type="text" id="txtrecherche" value="" size="35"> </label> <input type="submit" name="btrec" id="btrec" value="Rechercher"> <input name="page" type="hidden" id="page" value="recherche"></form>
+					</div>
+				</div>
+				<div id="menuh" style="background-color:#cc0033">
+					<ul id="nav-one" class="nav">
+						<li><a href="page-accueil_1.html" title="Accueil">Accueil</a></li>
+						<li><a href="page-pays-du-clermontois_8.html" title="Pays du Clermontois">Pays du Clermontois</a>
+							<ul>
+								<li><a href="page-Actualite_8_15.html" title="Actualité">Actualité</a></li>
+								<li><a href="page-Territoire_8_16.html" title="Territoire">Territoire</a></li>
+								<li><a href="page-Competences_8_36.html" title="Compétences">Compétences</a></li>
+								<li><a href="page-Finances_8_37.html" title="Finances">Finances</a></li>
+								<li><a href="page-Organisation_8_38.html" title="Organisation">Organisation</a></li>
+								<li><a href="http://marches.publics.ccclermontois.fr/" title="Marchés publics" target="_blank">Marchés publics</a></li>
+								<li><a href="page-Organismes-partenaires_8_40.html" title="Organismes partenaires">Organismes partenaires</a></li>
+							</ul>
+						</li>
+						<li><a href="page-developpement_11.html" title="Développement">Développement</a>
+							<ul>
+								<li><a href="page-vous-implanter_11_77.html" title="Vous implanter">Vous implanter</a></li>
+							</ul>
+						</li>
+						<li><a href="page-vie-pratique_217.html" title="Vie Pratique">Vie Pratique</a>
+							<ul>
+								<li><a href="page-dechets_217_9.html" title="Déchets">Déchets</a></li>
+								<li><a href="page-petite-enfance_217_13.html" title="Petite enfance">Petite enfance</a></li>
+								<li><a href="page-portage-de-repas_217_218.html" title="Portage de Repas">Portage de Repas</a></li>
+								<li><a href="page-eau---assainissement_217_10.html" title="Eau / Assainissement">Eau / Assainissement</a></li>
+								<li><a href="page-urbanisme_217_262.html" title="Urbanisme">Urbanisme</a></li>
+								<li><a href="page-transport---mobilites_217_310.html" title="TRANSPORT / MOBILITES">TRANSPORT / MOBILITES</a></li>
+							</ul>
+						</li>
+						<li><a href="page-culture-sports-loisirs_12.html" title="Culture Sports Loisirs">Culture Sports Loisirs</a>
+							<ul>
+								<li><a href="page-sortir---votre-agenda-des-loisirs_12_21.html" title="Sortir : votre agenda des loisirs">Sortir : votre agenda des loisirs</a></li>
+								<li><a href="page-guide-des-associations_12_20.html" title="Guide des associations">Guide des associations</a></li>
+								<li><a href="page-le-cal_12_22.html" title="Le CAL">Le CAL</a></li>
+								<li><a href="page-cinema_12_19.html" title="Cinéma">Cinéma</a></li>
+								<li><a href="page-ecole-de-musique_12_56.html" title="Ecole de musique">Ecole de musique</a></li>
+								<li><a href="page-salles-de-sports_12_96.html" title="Salles de sports">Salles de sports</a></li>
+								<li><a href="page-le-centre-aquatique_12_97.html" title="Le centre aquatique">Le centre aquatique</a></li>
+								<li><a href="page-culturebdo-newsletter_12_300.html" title="Culturebdo - newsletter">Culturebdo - newsletter</a></li>
+							</ul>
+						</li>
+						<li id="fin"><a href="page-contact_145.html" title="Contact">Contact</a></li>
+					</ul>
+				</div>
+				<div id="gauche">
+					<div style="background-color:#cc0033" class="gdtitrerub">Actualité</div>
+					<ul>
+						<li><a href="page-Agenda_8_15_26.html" title="Agenda">Agenda</a></li>
+						<li><a href="page-couleur-pays_8_15_238.html" title="Couleur Pays">Couleur Pays</a></li>
+						<li><a href="page-Publications_8_15_27.html" title="Publications">Publications</a></li>
+					</ul>
+					<div class="encart">
+						<p style="text-align: center;"><a href="medias/fichier-CCC-3075.pdf" target="_blank"><img title="Encart Jardins du PP, paniers de légumes" src="medias/fichier-CCC-3074.jpg" alt="Encart Jardins du PP, paniers de légumes" width="170" height="73"></a></p>
+					</div>
+				</div>
+				<div id="centre">
+					<div id="chemin"><span class="coul1"><a href="page-pays-du-clermontois_8.html" class="coul1">Pays du Clermontois</a></span><span class="coul2"> / <a href="page-Actualite_8_15.html" class="coul2">Actualité</a></span><span class="coul3"> / <a href="page-Publications_8_15_27.html" class="coul3">Publications</a></span></div>
+					<h1 style="color:#cc0033"></h1>
+					<h3>Rapport annuel 2018</h3>
+					<!--<span class="dateactus"></span>-->
+					<p><a href="medias/fichier-CCC-7658.pdf" target="_blank"><img title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span>Synthèse - Rapports annuels 2018</span></p>
+					<hr>
+					<h3>Comptes-rendus du Conseil communautaire</h3>
+					<!--<span class="dateactus"></span>-->
+					<p><a href="medias/fichier-CCC-8175.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="http://www.pays-clermontois.fr/medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 5 mars 2020 Sommaire<br></span></p>
+					<hr>
+					<p><a href="medias/fichier-CCC-8121.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 13 février 2020<br></span></p>
+					<hr>
+					<p><a href="medias/fichier-CCC-7985.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 15 janvier 2020<br></span></p>
+					<hr>
+					<p><a href="medias/fichier-CCC-7925.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 12 décembre 2019<br></span></p>
+					<hr>
+					<p><a href="medias/fichier-CCC-7877.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 21 novembre 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7809.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 24 octobre 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7829.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 17 octobre 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7787.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 10 octobre 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7696.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 26 septembre 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7404.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 29 août 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7538.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 27 juin 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7300.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 11 juin 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7267.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 23 mai 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7224.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 25 avril 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7179.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 28 mars 2019</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7173.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 19 mars 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-7099.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 27 février 2019<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6909.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 13 décembre 2018</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6900.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a> <span style="color: #ff2424;">Compte-rendu du conseil communautaire du 29 novembre 2018</span></p>
+					<hr>
+					<p><a href="medias/fichier-CCC-6778.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 27 septembre 2018</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6665.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 28 juin 2018<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6664.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 31 mai 2018<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6663.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 5 avril 2018<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6662.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 22 mars 2018<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-6661.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 21 février 2018<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5979.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 14 décembre 2017</span></span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><span style="color: #ff9c00;"><a title="Fichier PDF" href="medias/fichier-CCC-5978.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a>Compte-rendu du conseil communautaire du 19 octobre 2017<br></span></p>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5977.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 27 septembre 2017</span></span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5688.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 31 août 2017</span></span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><span style="color: #ff9c00;"><a title="Fichier PDF" href="medias/fichier-CCC-5687.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a>Compte-rendu du conseil communautaire du 22 juin 2017<br></span></p>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5683.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 6 avril 2017</span></span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><span style="color: #ff9c00;"><a title="Fichier PDF" href="medias/fichier-CCC-5289.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a>Compte-rendu du conseil communautaire du 23 mars 2017<br></span></p>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<hr>
+					<p><span style="color: #ff9c00;"> </span></p>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5276.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 16 mars 2017</span><br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5275.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;"><span style="color: #ff9310;">Compte-rendu du conseil communautaire du 9 février 2017</span><br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5090.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 8 décembre 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-5091.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 20 octobre 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4963.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 15 septembre 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4855.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 23 juin 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4643.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 12 mai 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4549.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 24 mars 2016</span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4548.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 10 mars 2016<br></span></p>
+					<hr>
+					<p><a title="Fichier PDF" href="medias/fichier-CCC-4481.pdf" target="_blank"><img style="margin-left: 0px; margin-right: 10px; vertical-align: middle;" title="Fichier PDF" src="medias/fichier-CCC-1109.jpg" alt="picto PDF" width="23" height="24"></a><span style="color: #ff2424;">Compte-rendu du conseil communautaire du 4 février 2016</span></p>
+					<hr>
+					<div class="spacer"> </div>
+				</div>
+				<div id="droite">
+					<div id="cinema"><a href="page-cinema_12_19.html" title="Programme du cinéma du Clermontois"><img src="cinema/cinema-clermontois.gif" alt="Programme du cinéma du Clermontois" width="170" height="66" class="titrecine"></a>
+						<h6>Du 01/7/2020 au 14/7/2020</h6>
+						<ul id="films">
+							<li><a href="index.php?page=cinema&datedeb=2020-07-01&idr=12&sousrub=19" rel="medias/fichier-CCC-8237.jpg" class="minicine">En avant</a></li>
+							<li><a href="index.php?page=cinema&datedeb=2020-07-08&idr=12&sousrub=19" rel="medias/fichier-CCC-8239.jpg" class="minicine film">Radioactive</a></li>
+							<li><a href="index.php?page=cinema&datedeb=2020-07-08&idr=12&sousrub=19" rel="medias/fichier-CCC-8240.jpg" class="minicine">La Bonne épouse</a></li>
+							<li><a href="index.php?page=cinema&datedeb=2020-07-08&idr=12&sousrub=19" rel="medias/fichier-CCC-8251.jpg" class="minicine film">En avant</a></li>
+						</ul>
+						<div class="sempre"><a href="index.php?datedeb=2020-07-01&idr=8&sousrub=15&sousrubc=27"><img src="cinema/precedent.png" alt="Semaine précédente"></a></div>
+						<div class="semsui"><a href="index.php?datedeb=2020-07-15&idr=8&sousrub=15&sousrubc=27"><img src="cinema/suivant.png" alt="Semaine suivante"> </a></div>
+						<div class="spacer"> </div>
+					</div>
+				</div>
+				<div class="spacer"> </div>
+				<div id="pied">
+					<ul>
+						<li><a href="page-identification_138.html" title="Identification">Identification</a></li>
+						<li><a href="page-plan-du-site_139.html" title="Plan du site">Plan du site</a></li>
+						<li><a href="page-mentions-legales_140.html" title="Mentions légales">Mentions légales</a></li>
+						<li><a id="fin" href="page-pour-nous-trouver_141.html" title="Pour nous trouver">Pour nous trouver</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11451955-2");
+pageTracker._trackPageview();
+} catch(err) {}
+		</script>
+	</body>
+</html>
