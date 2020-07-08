@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="http://www.paysducoquelicot.com/">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="author" content="Joomla">
+		<meta name="generator" content="Joomla! - Open Source Content Management">
+		<title>Accueil</title>
+		<link href="/templates/protostar-vivre/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="http://www.paysducoquelicot.com/component/search/?id=4&Itemid=101&format=opensearch" rel="search" title="Valider Pays du coquelicot" type="application/opensearchdescription+xml">
+		<link href="/templates/protostar-vivre/css/template.css" rel="stylesheet" type="text/css">
+		<link href="/templates/protostar-vivre/css/paysducoquelicot.css" rel="stylesheet" type="text/css">
+		<link href="/templates/protostar-vivre/css/header.css" rel="stylesheet" type="text/css">
+		<link href="/templates/protostar-vivre/css/menu-general.css" rel="stylesheet" type="text/css">
+		<link href="/templates/protostar-vivre/css/flexicontact.css" rel="stylesheet" type="text/css">
+		<link href="/modules/mod_defilement_images/style.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+div.mod_search87 input[type="search"]{ width:auto; }
+		</style>
+		<script src="//code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+		<script src="//code.jquery.com/ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="/media/eorisis-jquery/jquery-noconflict.js" type="text/javascript"></script>
+		<script src="/media/system/js/caption.js" type="text/javascript"></script>
+		<script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/templates/protostar-vivre/js/template.js" type="text/javascript"></script>
+		<script src="/media/system/js/html5fallback.js" type="text/javascript"></script>
+		<script src="/modules/mod_defilement_images/Toggle.js" type="text/javascript"></script>
+		<script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		</script>
+		<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			h1,h2,h3,h4,h5,h6,.site-title{
+				font-family: 'Open Sans', sans-serif;
+			}
+		
+		</style>
+		<style type="text/css">
+
+		
+		.navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
+		.btn-primary
+		{
+			<!--background: #08C;-->
+		}
+		.navbar-inner
+		{
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+		}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="/media/jui/js/html5.js"></script>
+	<![endif]-->
+		<script>
+        jQuery(document).ready(function() {
+            var tempseffet = jQuery('#tempseffet').html() * 1000;
+            var carrousselLib = jQuery("#carroussel-lib");
+
+            setInterval(function () {
+                carrousselLib.fadeOut({duration:"slow",easing:"linear",complete:function(){
+                    carrousselLib.fadeIn("slow");
+                }});
+                //carrousselLib.show();
+
+            }, tempseffet)
+        })
+    
+		</script>
+	</head>
+	<body class="site com_content view-article no-layout no-task itemid-101">
+		<!-- Body -->
+		<div class="body">
+			<div class="container">
+				<!-- Header -->
+				<div class="header-inner clearfix">
+					<div id="logo"><a href="/"><img src="/images/logo.png"></a></div>
+					<div style="position:absolute;top:0px;height:200px;">
+						<div class="menu-general">
+							<ul class="nav menu">
+								<li class="item-195"><a href="/entreprendre" title="entreprendre" class="entreprendre"><div class="menu-gen-title">Entreprendre</div><div class="menu-gen-lib">au Pays du Coquelicot</div></a></li>
+								<li class="item-197"><a href="http://www.tourisme-paysducoquelicot.com/"><div class="menu-gen-title">Visiter</div><div class="menu-gen-lib">le Pays du Coquelicot</div></a></li>
+								<li class="item-196"><a href="/"><div class="menu-gen-title">Vivre</div><div class="menu-gen-lib">au Pays du Coquelicot</div></a></li>
+							</ul>
+						</div>
+						<div class="img-banniere">
+							<div id="temps" style="display:none;">3</div>
+							<div id="tempseffet" style="display:none;">3</div>
+							<div id="carrousel">
+								<div id="desc" style="display:none">
+									<center></center>
+								</div>
+								<ul>
+									<li style="display:list-item;"><img src="/images/banniere/1010282_A.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/11944824_05_09_agilis_rando_A.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/4127512_C.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/429565IMG_0815o_rc.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/466421colson_B.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/499168diesel_terminus__Tatra_clich___APPEVA.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/52497017.JPG"></li>
+									<li style="display:none;"><img src="/images/banniere/573010colson_f_7.JPG"></li>
+									<li style="display:none;"><img src="/images/banniere/842704colson_B.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/868348colson_A.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/886260001.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/895619colson_c.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/91421116B.jpg"></li>
+									<li style="display:none;"><img src="/images/banniere/953570bandeau_coquelicot.jpg"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="text-banniere"><span id="carroussel-lib">Bienvenue sur le portail de la Communauté de Communes du Pays du Coquelicot</span></div>
+					</div>
+					<div class="header-search pull-right">
+						<div class="search mod_search87">
+							<form action="/" method="post" class="form-inline"><label for="mod-search-searchword" class="element-invisible">Rechercher</label> <input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" size="20" placeholder="Recherche..."> <input type="hidden" name="task" value="search"> <input type="hidden" name="option" value="com_search"> <input type="hidden" name="Itemid" value="101"></form>
+						</div>
+					</div>
+				</div>
+				<div style="position:relative;width: 976px;margin-left:1px;">
+					<nav class="navigation" role="navigation">
+						<div class="menu-horizontal">
+							<div class="navbar pull-left"><a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a></div>
+							<div class="nav-collapse">
+								<ul class="nav menu nav-pills">
+									<li class="item-101 default current active"><a href="/">Accueil</a></li>
+									<li class="item-108"><a href="/communaute-de-communes">La communauté de communes</a></li>
+									<li class="item-116"><a href="http://www.tourisme-paysducoquelicot.com/" target="_blank">Tourisme </a></li>
+									<li class="item-117"><a href="/entreprendre">Économie</a></li>
+									<li class="item-118"><a href="/jeunesse">Jeunesse</a></li>
+									<li class="item-119"><a href="/culture">Culture</a></li>
+									<li class="item-120"><a href="/transport">Transport</a></li>
+									<li class="item-133"><a href="/habitat">Habitat</a></li>
+									<li class="item-134"><a href="/voirie">Voirie</a></li>
+									<li class="item-136"><a href="/amenagement">Aménagement</a></li>
+									<li class="item-135"><a href="/environnement">Environnement</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<nav class="sous-nav" role="navigation">
+						<div class="sous-menu"></div>
+					</nav>
+					<div class="moduletable">
+						<div class="random-image"><img src="/images/banners/shop-ad-books.jpg" alt="shop-ad-books.jpg" width="468" height="60"></div>
+					</div>
+					<div class="row-fluid">
+						<!-- Begin Sidebar -->
+						<div id="sidebar" class="span3">
+							<div class="sidebar-nav">
+								<div class="moduletable">
+									<h3>accès rapide</h3>
+									<ul class="nav menu">
+										<li class="item-123"><a href="/carte-interactive-des-communes">Carte interactive des communes</a></li>
+										<li class="item-125"><a href="/espace-elus">Espace Elus</a></li>
+										<li class="item-127"><a href="/le-mag">Le Mag'</a></li>
+										<li class="item-130"><a href="/nous-contacter">Nous contacter</a></li>
+										<li class="item-128"><a href="/marches-publics">Marchés publics</a></li>
+										<li class="item-400"><a href="/commerce-local">Commerce Local</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Sidebar -->
+						<main id="content" role="main" class="span9">
+							<!-- Begin Content -->
+							<div id="system-message-container"></div>
+							<div class="item-page" itemscope itemtype="https://schema.org/Article">
+								<meta itemprop="inLanguage" content="fr-FR">
+								<div class="icons">
+									<div class="btn-group pull-right"><a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> <span class="icon-cog"></span><span class="caret"></span> </a>
+										<ul class="dropdown-menu">
+											<li class="print-icon"><a href="/?tmpl=component&print=1&page=" title="Imprimer l'article < Accueil >" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow">Imprimer</a></li>
+											<li class="email-icon"><a href="/component/mailto/?tmpl=component&template=protostar-vivre&link=0c1292d05e6a8107614544b5522f2aba1b31e0b8" title="Envoyer ce lien à un ami" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;" rel="nofollow">E-mail</a></li>
+										</ul>
+									</div>
+								</div>
+								<div itemprop="articleBody">
+									<h4 style="text-align: center;"><strong>DISTRIBUTION DE MASQUES : MODE D'EMPLOI</strong><br>  </h4>
+									<p style="text-align: justify;"><span style="font-size:16px;">La Communauté de communes a commandé 30000 masques pour les habitants du Pays du Coquelicot. L'ensemble des mairies sont chargées de leur distribution. <br> Vous souhaitez savoir comment utiliser le masque et l'adapter à votre visage ? cliquez sur ce lien : <a href="/images/stories/masque.pdf" target="_blank">mode d'emploi</a> ou consultez la vidéo ci-dessous</span><br>  </p>
+									<p align="center">
+										<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="1" height="315" src="https://www.youtube.com/embed/1EEPk8J04iE?autoplay=1&loop=1" width="560"></iframe><br>  </p>
+									<h4 style="text-align: center;"><img alt="" height="30" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/separateur_web.png" width="500"></h4> 
+									<div style="text-align: center;"></div><br> <br>  
+									<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14.8500003814697px; width: 780px;">
+										<tbody>
+											<tr>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/photo-de-la-semaine.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 12px;">Enquête habitat au Pays du Coquelicot</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/a-la-une.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 12px;">COMMUNIQUÉ DE PRESSE</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/zoom-sur.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 12px;">Première tournée des encombrants</span></td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div style="text-align: center;"></div>
+													<div style="text-align: justify;"><br> La Communauté de communes du Pays du Coquelicot a lancé une étude sur le parc de logements afin d’identifier les enjeux et de définir les besoins et les attentes des habitants en matière d’habitat. <br> Les enquêtes papier distribuer fin mai vous propose de réponde en ligne via ces liens :<br>  <br> Pour les occupants :<br> <a href="https://solihahdf.limequery.org/991471" target="_blank">https://solihahdf.limequery.org/991471</a><br>  <br> Pour les propriétaires bailleurs et de logements vacants :<br> <a href="https://solihahdf.limequery.org/952516?lang=fr" target="_blank">https://solihahdf.limequery.org/952516?lang=fr</a><br>  <br> Rappel : <br> Les réponses au questionnaire seront confidentielles et seront uniquement destinées aux besoins de l’étude.  <br> La qualité de l’étude dépendra fortement de votre coopération et du nombre de retours d’enquêtes.</div>
+													<div style="text-align: justify;"></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"></div>
+													<div style="text-align: justify;"><strong>LA COMMUNAUTÉ DE COMMUNES LANCE SES PREMIÈRES MESURES D’URGENCE POUR LES ENTREPRISES. </strong><br> <br> Afin de soutenir les entreprises du territoire durement touchées par la crise sanitaire liée à<br> l’épidémie de COVID-19, la Communauté de communes a adapté ses dispositifs.<br> La Communauté de communes du Pays du Coquelicot dispose déjà d’un plan d’aides aux entreprises articulé autour de 3 dispositifs :<br> - l’aide à l’immobilier d’entreprises et au matériel de production pour les artisans et les industriels<br> - un programme Fonds d’Intervention pour la Sauvegarde de l’Artisanat et le Commerce (FISAC) dédié au commerce de centre-ville et en milieu rural pour des travaux d’accessibilité, de sécurisation des locaux, de vitrine, de matériel commercial et numérique, etc.<br> - l’aide aux créateurs d’entreprises (conseils, prêts au créateur, participation au paiement de loyers, aide à l’investissement, etc.).<br> En raison de la crise sanitaire et des demandes d’urgence déjà reçues, la Communauté de communes a décidé d’adapter ces aides.<br> <br> <a href="/images/stories/nouvellesmesures.pdf" onclick="window.open(this.href, 'CommuniqudePresse', 'resizable=no,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=yes,dependent=no,width=600,height=700'); return false;">Lire la suite....</a></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"></div><br> La tournée d’été des encombrants dans les communes et en porte à pore débute le 2 juin. N’hésitez à consulter votre calendrier ou à le télécharger sur le site de la Communauté de communes pour retrouver les dates de passage. (Lien page calendrier)<br>  </td>
+											</tr>
+											<tr>
+												<td colspan="5" style="height:50px;"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14.8500003814697px; width: 780px;">
+										<tbody>
+											<tr>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/photo-de-la-semaine.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Entreprises du Pays du Coquelicot </span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/a-la-une.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Bibliodrive</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/zoom-sur.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-size:10px;"><span style="font-weight: bold; font-style: italic; color: rgb(255, 255, 255);">Modifications actées pour le Fonds </span></span><span style="font-size:10px;"><span style="font-weight: bold; font-style: italic; color: rgb(255, 255, 255);">de Solidarité</span></span></td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div style="width:242px; display:block;"><br>  </div>
+													<div style="text-align: justify;"></div>
+													<div style="text-align: center;"><span style="font-size:14px;"><img alt="" height="118" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/covid_19_entreprises_750x375.jpg" width="237"></span></div>
+													<div style="text-align: justify;"><br> <span style="font-size:14px;">Pour toute question relative à l’impact du COVID-19 sur votre entreprise et aux formalités à entreprendre , contacter le numéro commun État et Région : <strong>03 59 75 01 00</strong></span><br> <br> <span style="font-size:12px;">Vous pouvez télécharger la fiche pratique sur les mesures de soutien en cliquant <a href="http://www.paysducoquelicot.com/images/DP-Fonds_de_solidarite.pdf" target="_blank">ICI</a></span><span style="font-size:16px;"> </span></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"></div> 
+													<div style="text-align: center;"><span style="font-size:11px;"><strong>UN DRIVE POUR LES BIBLIOTHÈQUES</strong></span></div>
+													<div style="text-align: justify;"><span style="font-size:11px;"> </span></div>
+													<div style="text-align: center;"><span style="font-size:11px;"><img alt="" height="87" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/bibiliodrive.png" width="219"></span></div>
+													<div style="text-align: justify;"><br> <span style="font-size:11px;">Les bibliothèques du Pays du Coquelicot propose un drive à tous ses abonnés. Les réservations peuvent se faire dans toutes les bibliothèques du territoire par téléphone ou par internet</span><br>  </div>
+													<div style="text-align: center;"><a href="https://www.bibliothequepaysducoquelicot.net" target="_blank">https://www.bibliothequepaysducoquelicot.net</a></div>
+													<div style="text-align: justify;"><span style="font-size:11px;"> </span></div>
+													<div style="text-align: center;"><span style="font-size:11px;">Consultez le mode d’emploi du bibliodrive <a href="/images/stories/mode-demploi-bibliodrive.pdf" target="_blank">ici.</a></span></div>
+												</td>
+												<td valign="top">
+													<div style="text-align: justify;"><img alt="" height="160" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/fond_de_solidarite.png" width="240"><br> <br> Le fonds de solidarité mis en place par la Région Hauts de FRANCE évolue. Pour répondre aux grandes difficultés rencontrées par les petites structures dans le cadre de la crise du Covid19 le fonds s’élargit.<br> Il concerne les PME et TPE (Petites et Moyennes Entreprises et Très Petites Entreprises) de moins d’1 million d’euros de chiffre d’affaires et moins de 10 salariés.<br> Depuis le décret du 20 juin 2020, ce fonds est désormais ouvert : </div>
+													<ul>
+														<li style="text-align: justify;">aux entreprises de l’hôtellerie restauration tourisme sport culture évènementiel ayant au moins 1 salarié jusqu’à 20 salariés et 2M€ CA : volet 2 maximum porté à 10 000 € et suppression de la condition relative au prêt</li>
+														<li style="text-align: justify;">aux mêmes conditions pour les entreprises remplissant les mêmes conditions de seuil appartenant à des secteurs d’activité dépendant des secteurs précédemment mentionnés et qui ont subi une perte de chiffre d’affaires de plus de 80 % entre le 15 mars 2020 et le 15 mai 2020 : volet 2 maximum porté à 10 000 € et suppression de la condition relative au prêt.  </li>
+													</ul>
+													<div style="text-align: justify;">Il permet également aux entreprises créées entre le 1er et le 10 mars 2020 de bénéficier de l’aide au titre des pertes du mois de mai 2020 Les délais pour déposer les demandes sont repoussés au 31 juillet 2020 pour le volet 1 et au 15 août 2020 pour le volet 2.<br>  </div>
+													<ul>
+														<li style="text-align: justify;">Pour les artistes auteurs dont l’activité n’est pas domiciliée dans leur local d’habitation, les conditions d’emploi d’un salarié et de refus de prêt pour accéder au volet 2 du fonds sont supprimées  </li>
+														<li style="text-align: justify;">Les collectivités locales et les établissements publics de coopération intercommunale à fiscalité propre ont la possibilité de financer une aide complémentaire destinée aux entreprises bénéficiaires du deuxième volet situées sur leur territoire (article 10 du décret).</li>
+													</ul>
+													<div style="text-align: justify;"><br> Plus d’infos : <a href="https://aidesenligne.hautsdefrance.fr" target="_blank">https://aidesenligne.hautsdefrance.fr</a> ou au 03 59 75 01 00<br>  </div>
+													<div style="text-align: center;"></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="5" style="height:50px;"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14.8500003814697px; width: 780px;">
+										<tbody>
+											<tr>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/photo-de-la-semaine.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Informations sur l'eau</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/a-la-une.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">COVID-19 Fonds de solidarité</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/zoom-sur.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Une plateforme pour l’emploi </span></td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div style="text-align: center;"><img alt="" height="253" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/info_eau_coquelicot_web_1.png" width="192"></div>
+													<div style="text-align: justify;"><br> Le service de l’eau et de l’assainissement est un service essentiel. Pour vous assurer une continuité de service optimale, les équipes de votre service de l’eau s’organisent face à l’épidémie.<br> Vous pouvez boire l’eau du robinet en toute sécurité, et la continuité du service de production et de distribution d’eau potable est assurée.<br> Si les délais de traitement des demandes que vous adressez à nos services sont susceptibles d’être impactés, nous mettons tout en œuvre pour traiter les plus urgentes.<br> <br> Retrouvez toutes les informations i<a href="http://www.paysducoquelicot.com/images/info_eau_covid19.pdf" target="_blank">ci</a></div>
+													<div style="text-align: justify;"></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"></div> 
+													<div style="text-align: justify;">Vous avez préalablement bénéficié du volet 1 du fond de solidarité d’un montant maximum de 1500 €</div>
+													<ul>
+														<li style="text-align: justify;">Vous employez au 1er mars 2020, au moins 1 salarié en contrat à durée indéterminée ou déterminée (effectif de 1 à 10 salariés inclus)</li>
+														<li style="text-align: justify;">Votre solde de trésorerie est négatif</li>
+														<li style="text-align: justify;">Et vous vous êtes vu refuser un prêt de trésorerie d’un montant raisonnable par votre banque, ou n’avez pas obtenu de réponse de sa banque sous les 10 jours</li>
+													</ul>
+													<div style="text-align: justify;">Voici le lien vers la plateforme de demande de subvention (GALIS) permettant aux entreprises de déposer un dossier au titre du volet 2 du Fonds de Solidarité.<br> <br> <a href="https://aidesenligne.hautsdefrance.fr/sub/extranet/dispositif-consulter.sub?sigle=FSTPE" target="_blank">https://aidesenligne.hautsdefrance.fr/sub/extranet/dispositif-consulter.sub?sigle=FSTPE</a><br> <br> Les barèmes d’intervention sont encore soumis à des modifications par l’Etat .<br> Le principal étant que les entreprises puissent apporter toutes les informations nécessaires à l’instruction définitive qui aura lieu dès que l’État aura finalisé le dispositif de l’étape 2.<br>  <br> Le contact d’information et de renseignements pour les structures (entreprises, associations, indépendants,…) reste prioritairement le numéro du guichet unique de la «cellule de continuité économique » : 03 59 750 100  disponible du lundi au vendredi de 9h00 à 18h00.</div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"><img alt="" height="173" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/mob_emploi.png" width="241"></div> 
+													<div style="text-align: justify;">Depuis le 2 avril, une plateforme a été mise en place pour les demandeurs d’emploi inscrits ou non à Pôle Emploi ainsi qu’aux salariés en activité partielle. Cette plateforme vise à répondre aux besoins de renfort de main d'œuvre des entreprises appartenant aux secteurs essentiels (médico-social, agriculture, agroalimentaire, transports, logistique, aide à domicile, énergie, télécoms).<br>  </div>
+													<div style="text-align: center;"> <span style="font-size:14px;"><a href="https://mobilisationemploi.gouv.fr/#/accueil" target="_blank">mobilisationemploi.gouv.fr</a></span></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="5" style="height:50px;"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14.8500003814697px; width: 780px;">
+										<tbody>
+											<tr>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/photo-de-la-semaine.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Plan Local d'Urbanisme</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/a-la-une.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Qualité de l'eau</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<!-- 
+			<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/zoom-sur.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Rejoignez-nous sur Facebook</span></td>
+			-->
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/zoom-sur.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">Gestes Barrières COVID-19</span></td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div style="width:242px; display:block;"><img alt="" height="171" src="/images/stories/img_bandeau_urbanisme.jpg" width="242"></div> 
+													<div style="text-align: justify;">Le PLUIh (Plan Local d’Urbanisme Intercommunal, valant Programme Local de l’Habitat) a été approuvé par le conseil communautaire du 10 décembre 2018.<br> <br> Accédez au portail en <a href="https://www.geoportail-urbanisme.gouv.fr/map/#tile=1&lon=2.7753344946800764&lat=49.98103026932441&zoom=10" target="_blank">cliquant ici</a></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"><img alt="" height="343" src="/media/com_acymailing/upload/eau_2.jpg" width="242"></div> 
+													<div style="text-align: justify;"><strong>La qualité de l'eau commune par commune</strong><br> <br> L'Agence Régionale de l'Eau (ARS) effectue chaque mois des analyses de l'eau pour chaque commune du Pays du Coquelicot. Ces analyses sont disponibles sur <a href="https://orobnat.sante.gouv.fr/orobnat/afficherPage.do?methode=menu&usd=AEP&idRegion=32" target="_blank">le site du ministère chargé de la Santé</a>. </div>
+												</td>
+												<!-- 
+			<td valign="top">
+			<div style="width:242px; display:block;"><img alt="" height="171" src="/media/com_acymailing/upload/facebookpdc.JPG" width="242" /></div>
+			 
+
+			<div style="text-align: justify;">La Communauté de communes s’installe sur les réseaux sociaux, vous pouvez désormais suivre notre actu sur le <a href="https://www.facebook.com/paysducoquelicot/" target="_blank">Facebook Communauté de communes du Pays du Coquelicot</a></div>
+			</td>
+			-->
+												<td valign="top">
+													<div style="width: 242px; display: block; text-align: center;"><img alt="" height="170" src="http://www.paysducoquelicot.com/media/com_acymailing/upload/covid19.jpg" width="239"></div>
+													<div style="text-align: center;"></div>
+													<div style="text-align: justify;">Des mesures restrictives ont été mises en place par le Gouvernement pour éviter toute propagation du Coronavirus. Confinement, gestes « barrière », déplacement, point sur la maladie, retrouvez toutes les informations sur</div>
+													<div style="text-align: center;"><br> <a href="http://www.gouvernement.fr/info-coronavirus" target="_blank">www.gouvernement.fr/info-coronavirus</a></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="5" style="height:50px;"></td>
+											</tr>
+										</tbody>
+									</table>
+									<div style="text-align: justify;"></div>
+									<table border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 14.8500003814697px; width: 780px;">
+										<tbody>
+											<tr>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/photo-de-la-semaine.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">S'installer au Pays du Coquelicot</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('/images/stories/a-la-une.gif') 100% 100% no-repeat scroll transparent;" valign="middle"><span style="font-weight: bold; font-style: italic; color: #ffffff; font-size: 14px;">IZI'TRI2020</span></td>
+												<td rowspan="3" style="font-family: Arial, Helvetica, sans-serif; width:27px;"></td>
+												<td style="width: 242px; height: 26px; text-align: center; background: url('') 100% 100% no-repeat scroll transparent;" valign="middle"></td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<div style="width:242px; display:block;"><img alt="" height="345" src="/media/com_acymailing/upload/livret_accueil2019.jpg" width="242"></div> 
+													<div style="text-align: justify;"><strong>Salariés, employés, entrepreneurs, chercheurs… vous souhaitez ou vous allez vous installer au Pays du Coquelicot ?</strong><br> <br> Ce livret est conçu pour vous accueillir, faciliter vos démarches et vous accompagner dans votre nouvelle vie.<br> <br> Téléchargez le guide en <a href="/images/stories/livret_accueil2019.pdf" target="_blank">cliquant ici</a></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"><img alt="" height="344" src="/images/stories/img_izitri2020.jpg" width="242"></div> 
+													<div style="text-align: justify;"><strong>Les calendriers des collectes IZI'TRI 2020</strong> sont en ligne.<br> <br> Consultez le calendrier correspondant à votre commune en <a href="http://www.paysducoquelicot.com/calendriers-de-ramassage-2019" target="">cliquant ici</a></div>
+												</td>
+												<td valign="top">
+													<div style="width:242px; display:block;"></div> 
+													<div style="text-align: justify;"></div>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="5" style="height:50px;"></td>
+											</tr>
+										</tbody>
+									</table>
+									<p><br>  </p>
+								</div>
+							</div>
+							<!-- End Content -->
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="footer" role="contentinfo">
+			<ul class="nav menu">
+				<li class="item-190"><a href="/accueil-footer">Accueil</a></li>
+				<li class="item-191"><a href="/mentions-legales">Mentions légales</a></li>
+				<li class="item-192"><a href="/plan-du-site">Plan du site</a></li>
+				<li class="item-193"><a href="/communaute-de-communes-du-pays-du-coquelicot-06-rue-emile-zola-80300-albert-tel-03-22-64-10-30-comdecom-paysducoquelicot-com">Communauté de Communes du Pays du Coquelicot - 06, rue Émile Zola - 80300 ALBERT - Tél. 03.22.64.10.30 - comdecom@paysducoquelicot.com</a></li>
+			</ul>
+		</footer>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164232816-1"></script>
+		<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164232816-1');
+		</script>
+	</body>
+</html>
