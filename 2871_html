@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" xmlns:og="http://ogp.me/ns#">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="generator" content="WebSee (websee.eu)">
+		<script src="/js/jquery-ui-1.11.3.custom/external/jquery/jquery.min.js" type="text/javascript"></script>
+		<title>Comptes-rendus & délibérations Sauldre et Sologne</title>
+		<meta name="description" content="Située dans la Sologne du Berry,  la Communauté de Communes Sauldre et Sologne créée le 30 décembre 2005 s’étend sur un territoire de 86 446 hectares.">
+		<meta property="og:site_name" content="www.sauldre-sologne.fr">
+		<meta property="og:title" content="Comptes-rendus & délibérations Sauldre et Sologne">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Située dans la Sologne du Berry,  la Communauté de Communes Sauldre et Sologne créée le 30 décembre 2005 s’étend sur un territoire de 86 446 hectares.">
+		<meta property="og:url" content="//www.sauldre-sologne.fr/comptes-rendus-conseils-sauldre-sologne_fr.html">
+		<meta property="og:image" content="//www.sauldre-sologne.fr/userfile/img-og/logo-sauldre.png">
+		<link rel="image_src" href="//www.sauldre-sologne.fr/userfile/img-og/logo-sauldre.png">
+		<link rel="stylesheet" href="/css/global/websee-maximenu.css" type="text/css" media="screen">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu%7CVoltaire%7CNews+Cycle%7CBarlow" rel="stylesheet" type="text/css">
+		<link href="/css/global/font.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/template/ss-fav.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/template/ss-fav.png">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.theme.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+		<link type="text/css" href="/js/jquery-ui-1.11.3.custom/themes/smoothness/theme.css" rel="stylesheet">
+		<script src="/js/jquery-ui-1.11.3.custom/jquery-ui.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen">
+		<link rel="stylesheet" href="/js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen">
+		<link href="/css/global/style2.css?version=1" rel="stylesheet" type="text/css">
+		<link href="/css/global/images-width.css?version=1" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$(".menu-principal-horizontal-item-3").addClass("current-horizontal-item");
+		
+		$(".menu-topscreen-item-3").addClass("current-topscreen-item");		
+				
+		$(".menu-principal-vertical-item-3 ul").css("display","block");		
+		$(".menu-principal-vertical-item-3").addClass("current-vertical-item");
+		$(".menu-principal-vertical-submenu-item-3").addClass("current-vertical-submenu-item");
+						
+		$(".fancybox").fancybox({autoSize : true});	
+			
+		$(".fancybox-article").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			minHeight:150,
+			maxWidth: 1920,
+			maxHeight: 1080			
+		});
+
+		$(".fancybox-reservation").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".google-detail").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+				
+		$(".fancybox-liens-fiches").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : "70%",
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+				
+		$(".fancybox-teleprocedures").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 980,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});
+
+		$(".fancybox-disponibilite").fancybox({
+			type: "iframe",
+			autoSize : true,
+			width : 700,
+			maxWidth: 1920,
+			maxHeight: 1080,
+			helpers  : { "overlay" : {"closeClick": false} }
+		});		
+				
+		$(".fancybox-thumb").fancybox({
+			prevEffect	: "none",
+			nextEffect: "none",
+			helpers	: {	title	: {	type: "inside" },
+			thumbs	: {	width	: 50,height	: 50},
+			buttons	: {}
+			}});
+
+		$(".fancybox-zoom").fancybox({prevEffect : "none", nextEffect: "none"});
+
+		$(".fancybox-gmaps").fancybox({
+				type: "iframe",
+				maxWidth	: 800,
+				maxHeight	: 600,
+				fitToView	: false,
+				width		: "70%",
+				height		: "70%",
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: "none",
+				closeEffect	: "none"
+		});
+
+	});
+		</script>
+		<style>
+	body
+	{
+	    -webkit-animation-duration: 0.1s;
+		-webkit-animation-name: fontfix;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0.1s;
+	}
+
+	@-webkit-keyframes fontfix{
+		from{ 	opacity: 1; }
+		to{	opacity: 1; }
+	}
+		</style>
+		<link type="text/css" href="/css/template/sencillo/global.css" rel="stylesheet">
+		<script>
+var temp = $(".template-header").height();
+$(".template-header").height(temp);
+		</script>
+		<link type="text/css" href="/css/template/sencillo/bleu.css" rel="stylesheet">
+		<script>$(document).ready(function() {                             $('.wrapper-global-0 #wrapper-bloc-2').addClass("hidden").viewportChecker({                        classToAdd: 'visible animated fadeInLeft',                        offset: 100       });               $('.wrapper-global-0 #wrapper-bloc-3').addClass("hidden").viewportChecker({                        classToAdd: 'visible animated fadeInRight',                        offset: 100       });               $('.wrapper-global-0 #wrapper-bloc-4').addClass("hidden").viewportChecker({                        classToAdd: 'visible animated fadeInUp',                        offset: 100       });               $('.wrapper-global-0 #wrapper-bloc-5').addClass("hidden").viewportChecker({                        classToAdd: 'visible animated fadeInLeft',                        offset: 100       });});</script>
+		<link type="text/css" href="/css/global/animate_viewport.css" rel="stylesheet">
+		<script src="/js/jquery.viewportchecker.js"></script>
+		<link type="text/css" href="/js/cdtop/cdtop.css" rel="stylesheet">
+		<script src="/js/modernizr.js"></script>
+		<script src="/js/cdtop/cdtop.js"></script>
+		<link href="/css/css_0_fr.css?1589889867" rel="stylesheet" type="text/css">
+		<link href="/css/css_1_fr.css?1589889867" rel="stylesheet" type="text/css">
+	</head>
+	<body class="body-pages body-page-3 body-groupe-3"><input type="hidden" id="token" value="3f4f503a90485ab61c77436c6e89d601">
+		<ul class="websee-barre-flottante-smartphone-list clearfix">
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-1" onclick="javascript:websee_barre_flottante_show_container(1);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+			<li class="websee-barre-flottante-smartphone-items" id="websee-barre-flottante-smartphone-item-5" onclick="javascript:websee_barre_flottante_show_container_from_top(5);"><span class="websee-barre-flottante-smartphone-icone-newsletter"></span></li>
+		</ul>
+		<div class="websee-barre-flottante">
+			<ul class="websee-barre-flottante-list clearfix">
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-1" onclick="javascript:websee_barre_flottante_show_container(1);"><img src="/template/facebook.jpg" style="width:100%;height:auto;"></li>
+				<li class="websee-barre-flottante-items" id="websee-barre-flottante-item-5" onclick="javascript:websee_barre_flottante_show_container_from_top(5);"><span class="websee-barre-flottante-icone-newsletter"></span></li>
+			</ul>
+			<div class="websee-barre-flottante-master-container clearfix">
+				<div class="websee-barre-flottante-containers" id="websee-barre-flottante-container-1">
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+					  var js, fjs = d.getElementsByTagName(s)[0];
+					  if (d.getElementById(id)) return;
+					  js = d.createElement(s); js.id = id;
+					  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+					  fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<div class="fb-page" data-href="https://www.facebook.com/Communaut%C3%A9-de-communes-Sauldre-et-Sologne-744842089008737/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+				</div>
+				<div class="websee-barre-flottante-containers websee-barre-flottante-containers-newsletter" id="websee-barre-flottante-container-5">
+					<script type="text/javascript">
+		
+			function newsletter_validation_E5F1FAA8EADA41CB87842A8447988B26() {
+				var email = $("#inputNewsletter-E5F1FAA8EADA41CB87842A8447988B26").val();
+				var modele = /^[a-zA-Z0-9\.\-_]+@[a-zA-Z0-9\-]+[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}$/i;
+	
+				if (!modele.test(email))
+				{
+				custom_alert ("Veuillez saisir une adresse e-mail valide svp");
+			
+				} else {
+					//code ajax d enregistrement
+	
+				$.ajax ({
+					url: "/modules/newsletter/newsletter_client-ajax.php",
+					type: "POST",
+					data: {
+						action : "insert",
+						mail : $("#inputNewsletter-E5F1FAA8EADA41CB87842A8447988B26").val(),
+						type : $("#selectNewsletter-E5F1FAA8EADA41CB87842A8447988B26").val(),
+						token : $("#token").val()
+					},
+					success: function(data) {
+					custom_alert (data);
+						$("#inputNewsletter-E5F1FAA8EADA41CB87842A8447988B26").val("");
+					},
+				});
+	
+				}
+			}
+			
+					</script>
+					<div class="newsletter">
+						<div class="newsletter-titre"></div>
+						<div class="newsletter-content"><input type="text" class="newsletter-text" id="inputNewsletter-E5F1FAA8EADA41CB87842A8447988B26" placeholder="Votre email ..." value=""> <input type="hidden" name="groupe" id="selectNewsletter-E5F1FAA8EADA41CB87842A8447988B26" value="1">
+							<div class="newsletter-button" value="" id="submitNewsletter" onclick="javascript:newsletter_validation_E5F1FAA8EADA41CB87842A8447988B26();">OK</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu-topscreen">
+			<li class="menu-topscreen-item menu-topscreen-item-1 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-1');" id="menu-topscreen-item-titre-1" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-1">Accueil</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-1">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-1 "><a href="/cdc-sauldre-sologne-cher_fr.html" class="menu-topscreen-submenu-item-titre">Accueil</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-49 "><a href="/tout-l-agenda_fr.html" class="menu-topscreen-submenu-item-titre">Tout l'Agenda</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-2 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-2');" id="menu-topscreen-item-titre-2" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-2">PRÉSENTATION</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-2">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-52 "><a href="/comcom-sauldre-et-sologne_fr.html" class="menu-topscreen-submenu-item-titre">La CDC Sauldre et Sologne </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-2 "><a href="/territoire-sauldre-sologne-cher_fr.html" class="menu-topscreen-submenu-item-titre">Carte intéractive du Territoire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-51 "><a href="/communes-sauldre-sologne-cher_fr.html" class="menu-topscreen-submenu-item-titre">Les Communes</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-48 "><a href="/contact-cdc-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Nous contacter</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-3 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-3');" id="menu-topscreen-item-titre-3" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-3">PUBLICATIONS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-3">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-3 "><a href="/comptes-rendus-conseils-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Comptes-rendus & délibérations</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-4 "><a href="/bulletin-communutaire-cdc-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Mag Infos</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-70 "><a href="/rapports-d-activites-_fr.html" class="menu-topscreen-submenu-item-titre">Rapports d'activités </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-4 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-4');" id="menu-topscreen-item-titre-4" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-4">MARCHÉS PUBLICS</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-4">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-5 "><a href="/marches-publics-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Marchés publics</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-53 "><a href="/marches-publics-en-cours_fr.html" class="menu-topscreen-submenu-item-titre">Marchés publics en cours</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-54 "><a href="/liste-des-marches-2018_fr.html" class="menu-topscreen-submenu-item-titre">Liste des précédents marchés publics </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-5  "><a href="/offres-d-emploi-dans-la-cdc_fr.html" id="menu-topscreen-item-titre-5" class="menu-topscreen-item-titre ">RECRUTEMENT</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-6 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-6');" id="menu-topscreen-item-titre-6" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-6">ENFANCE & JEUNESSE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-6">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-7 "><a href="/faire-garder-son-enfant-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Le RAM</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-8 "><a href="/accueil-loisirs-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Accueil de Loisirs</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-9 "><a href="/espace-et-sejour-jeunes_fr.html" class="menu-topscreen-submenu-item-titre"> Séjour jeunes</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-7 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-7');" id="menu-topscreen-item-titre-7" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-7">EMPLOI, SOLIDARITÉ & SOCIAL</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-7">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-10 "><a href="/maison-de-l-emploi-pays-sancerre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">La Maison de l'Emploi</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-56 "><a href="/coworkin-aubigny-sur-nere_fr.html" class="menu-topscreen-submenu-item-titre">Cowork’in Aubigny </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-11 "><a href="/mutuelle-intercommunale_fr.html" class="menu-topscreen-submenu-item-titre">Solution Santé Mutualisée</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-8 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-8');" id="menu-topscreen-item-titre-8" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-8">PRATIQUE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-8">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-12 "><a href="/lignes-de-bus-remi_fr.html" class="menu-topscreen-submenu-item-titre">Se déplacer</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-13 "><a href="/accueil-des-gens-du-voyage_fr.html" class="menu-topscreen-submenu-item-titre">Accueil des gens du voyage</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-65 "><a href="/fibre-optique_fr.html" class="menu-topscreen-submenu-item-titre">Fibre optique</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-66 "><a href="/opah-_fr.html" class="menu-topscreen-submenu-item-titre">OPAH </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-9 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-9');" id="menu-topscreen-item-titre-9" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-9">AMÉNAGEMENT DU TERRITOIRE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-9">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-14 "><a href="/faire-des-travaux-sauldre-et-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Urbanisme</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-18 "><a href="/plan-local-d-urbanisme--plu-_fr.html" class="menu-topscreen-submenu-item-titre">Plan Local d'Urbanisme (PLU)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-17 "><a href="/schema-de-coherence-territorial--scot-_fr.html" class="menu-topscreen-submenu-item-titre">Schéma de Cohérence Territorial (SCOT)</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-16 "><a href="/contrat-de-ruralite_fr.html" class="menu-topscreen-submenu-item-titre">Contrat de ruralité</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-10 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-10');" id="menu-topscreen-item-titre-10" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-10">ORDURES MÉNAGÈRES</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-10">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-20 "><a href="/collecte-ordures-menageres-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Infos pratiques</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-21 "><a href="/redevance-enlevement-ordures-menageres-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">REOM</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-22 "><a href="/paiements-et-facturations_fr.html" class="menu-topscreen-submenu-item-titre">Paiement et facture</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-23 "><a href="/signaler-un-changement-de-situation_fr.html" class="menu-topscreen-submenu-item-titre">Signaler un changement de situation</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-11 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-11');" id="menu-topscreen-item-titre-11" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-11">RECYCLAGE, COMPOSTAGE & DÉCHÈTERIE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-11">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-24 "><a href="/tri-dechets-sauldre-et-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Pourquoi et comment trier les déchets ?</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-33 "><a href="/carte-des-points-d-apports-volontaires_fr.html" class="menu-topscreen-submenu-item-titre">Points d'Apport Volontaire</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-34 "><a href="/dechetteries-et-infos-pratiques_fr.html" class="menu-topscreen-submenu-item-titre">Déchèteries et infos pratiques</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-26 "><a href="/carte-de-localisation-des-dechetteries_fr.html" class="menu-topscreen-submenu-item-titre">Compostage domestique</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-12 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-12');" id="menu-topscreen-item-titre-12" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-12">ASSAINISSEMENT NON COLLECTIF</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-12">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-27 "><a href="/reglementation_fr.html" class="menu-topscreen-submenu-item-titre">Principes généraux</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-28 "><a href="/les-missions-du-spanc_fr.html" class="menu-topscreen-submenu-item-titre">Les missions du SPANC</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-29 "><a href="/installations-existants---diagnostic-vente_fr.html" class="menu-topscreen-submenu-item-titre">Demandes de diagnostic et formulaires de contrôle</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-32 "><a href="/regles-d-entretien_fr.html" class="menu-topscreen-submenu-item-titre">Principes d’entretien et documentation </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-13  "><a href="/gestion-des-milieux-aquatiques-et-prevention-des-inondations_fr.html" id="menu-topscreen-item-titre-13" class="menu-topscreen-item-titre ">GEMAPI</a></li>
+			<li class="menu-topscreen-item menu-topscreen-item-14 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-14');" id="menu-topscreen-item-titre-14" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-14">IMPLANTER SON ENTREPRISE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-14">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-36 "><a href="/atouts-du-territoire_fr.html" class="menu-topscreen-submenu-item-titre">Le territoire et ses atouts</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-38 "><a href="/louer--acheter--trouver-un-terrain_fr.html" class="menu-topscreen-submenu-item-titre">L’offre immobilière et foncière</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-15 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-15');" id="menu-topscreen-item-titre-15" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-15">AIDES AUX ENTREPRISES</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-15">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-41 "><a href="/aides-financieres_fr.html" class="menu-topscreen-submenu-item-titre">Les Aides financières</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-40 "><a href="/creer--developper-son-entreprise_fr.html" class="menu-topscreen-submenu-item-titre">Créer, développer son entreprise</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-39 "><a href="/connect-up_fr.html" class="menu-topscreen-submenu-item-titre">Connect'up</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-16 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-16');" id="menu-topscreen-item-titre-16" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-16">PORTRAITS & PAROLES D'ENTREPRISES</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-16">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-42 "><a href="/portraits---paroles-d-entreprises_fr.html" class="menu-topscreen-submenu-item-titre">Portraits & paroles d'entreprises</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-67 "><a href="/eco-defis_fr.html" class="menu-topscreen-submenu-item-titre">Eco-Défis</a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-17 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-17');" id="menu-topscreen-item-titre-17" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-17">CULTURE</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-17">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-43 "><a href="/saison-culturelle-intercommunale_fr.html" class="menu-topscreen-submenu-item-titre">Saison culturelle intercommunale</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-68 "><a href="/salon-du-polar-aux-chateaux_fr.html" class="menu-topscreen-submenu-item-titre">Salon Polar aux châteaux</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-44 "><a href="/equipements-culturels-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Le réseau des bibliothèques </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-55 "><a href="/ecoles-musique-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Ecoles de musique </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-18 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-18');" id="menu-topscreen-item-titre-18" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-18">TOURISME</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-18">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-45 "><a href="/office-de-tourisme-aubigny-sur-nere-cher_fr.html" class="menu-topscreen-submenu-item-titre">Office de Tourisme</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-46 "><a href="/sente-verte-et-sente-bleue_fr.html" class="menu-topscreen-submenu-item-titre">Randonner en Sauldre et Sologne</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-47 "><a href="/taxe-sejour-sauldre-sologne_fr.html" class="menu-topscreen-submenu-item-titre">Taxe de séjour</a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-61 "><a href="/balade-canal-sauldre-etang-puits_fr.html" class="menu-topscreen-submenu-item-titre">Balade au fil de l’eau </a></li>
+				</ul>
+			</li>
+			<li class="menu-topscreen-item menu-topscreen-item-20 menu-topscreen-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-submenu-20');" id="menu-topscreen-item-titre-20" class="menu-topscreen-item-titre" submenuof="menu-topscreen-submenu-20">Sous-onglets Randonner en Sauldre et Sologne</a>
+				<ul class="menu-topscreen-submenu" id="menu-topscreen-submenu-20">
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-58 "><a href="/les-sentes-verte-et-sente-bleue-_fr.html" class="menu-topscreen-submenu-item-titre">Les Sente Verte et Sente Bleue </a></li>
+					<li class="menu-topscreen-submenu-item menu-topscreen-submenu-item-59 "><a href="/sente-verte----promenade-en-sauldre---sologne-_fr.html" class="menu-topscreen-submenu-item-titre">Les autres itinéraires de randonnées</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="menu-topscreen-smartphone-menu"><a class="menu-topscreen-smartphone-menu-dropdown">Menu</a>
+			<ul class="menu-topscreen-smartphone">
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-1 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-1');" id="menu-topscreen-smartphone-item-titre-1" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-1">Accueil</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-1">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-1 "><a href="/cdc-sauldre-sologne-cher_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-49 "><a href="/tout-l-agenda_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Tout l'Agenda</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-2 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-2');" id="menu-topscreen-smartphone-item-titre-2" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-2">PRÉSENTATION</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-2">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-52 "><a href="/comcom-sauldre-et-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">La CDC Sauldre et Sologne </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-2 "><a href="/territoire-sauldre-sologne-cher_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Carte intéractive du Territoire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-51 "><a href="/communes-sauldre-sologne-cher_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Communes</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-48 "><a href="/contact-cdc-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Nous contacter</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-3 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-3');" id="menu-topscreen-smartphone-item-titre-3" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-3">PUBLICATIONS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-3">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-3 "><a href="/comptes-rendus-conseils-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Comptes-rendus & délibérations</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-4 "><a href="/bulletin-communutaire-cdc-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Mag Infos</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-70 "><a href="/rapports-d-activites-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Rapports d'activités </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-4 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-4');" id="menu-topscreen-smartphone-item-titre-4" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-4">MARCHÉS PUBLICS</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-4">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-5 "><a href="/marches-publics-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Marchés publics</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-53 "><a href="/marches-publics-en-cours_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Marchés publics en cours</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-54 "><a href="/liste-des-marches-2018_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Liste des précédents marchés publics </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-5  "><a href="/offres-d-emploi-dans-la-cdc_fr.html" id="menu-topscreen-smartphone-item-titre-5" class="menu-topscreen-smartphone-item-titre ">RECRUTEMENT</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-6 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-6');" id="menu-topscreen-smartphone-item-titre-6" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-6">ENFANCE & JEUNESSE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-6">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-7 "><a href="/faire-garder-son-enfant-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le RAM</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-8 "><a href="/accueil-loisirs-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil de Loisirs</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-9 "><a href="/espace-et-sejour-jeunes_fr.html" class="menu-topscreen-smartphone-submenu-item-titre"> Séjour jeunes</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-7 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-7');" id="menu-topscreen-smartphone-item-titre-7" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-7">EMPLOI, SOLIDARITÉ & SOCIAL</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-7">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-10 "><a href="/maison-de-l-emploi-pays-sancerre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">La Maison de l'Emploi</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-56 "><a href="/coworkin-aubigny-sur-nere_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Cowork’in Aubigny </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-11 "><a href="/mutuelle-intercommunale_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Solution Santé Mutualisée</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-8 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-8');" id="menu-topscreen-smartphone-item-titre-8" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-8">PRATIQUE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-8">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-12 "><a href="/lignes-de-bus-remi_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Se déplacer</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-13 "><a href="/accueil-des-gens-du-voyage_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Accueil des gens du voyage</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-65 "><a href="/fibre-optique_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Fibre optique</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-66 "><a href="/opah-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">OPAH </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-9 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-9');" id="menu-topscreen-smartphone-item-titre-9" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-9">AMÉNAGEMENT DU TERRITOIRE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-9">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-14 "><a href="/faire-des-travaux-sauldre-et-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Urbanisme</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-18 "><a href="/plan-local-d-urbanisme--plu-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Plan Local d'Urbanisme (PLU)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-17 "><a href="/schema-de-coherence-territorial--scot-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Schéma de Cohérence Territorial (SCOT)</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-16 "><a href="/contrat-de-ruralite_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Contrat de ruralité</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-10 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-10');" id="menu-topscreen-smartphone-item-titre-10" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-10">ORDURES MÉNAGÈRES</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-10">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-20 "><a href="/collecte-ordures-menageres-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Infos pratiques</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-21 "><a href="/redevance-enlevement-ordures-menageres-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">REOM</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-22 "><a href="/paiements-et-facturations_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Paiement et facture</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-23 "><a href="/signaler-un-changement-de-situation_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Signaler un changement de situation</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-11 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-11');" id="menu-topscreen-smartphone-item-titre-11" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-11">RECYCLAGE, COMPOSTAGE & DÉCHÈTERIE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-11">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-24 "><a href="/tri-dechets-sauldre-et-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Pourquoi et comment trier les déchets ?</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-33 "><a href="/carte-des-points-d-apports-volontaires_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Points d'Apport Volontaire</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-34 "><a href="/dechetteries-et-infos-pratiques_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Déchèteries et infos pratiques</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-26 "><a href="/carte-de-localisation-des-dechetteries_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Compostage domestique</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-12 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-12');" id="menu-topscreen-smartphone-item-titre-12" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-12">ASSAINISSEMENT NON COLLECTIF</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-12">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-27 "><a href="/reglementation_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Principes généraux</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-28 "><a href="/les-missions-du-spanc_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les missions du SPANC</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-29 "><a href="/installations-existants---diagnostic-vente_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Demandes de diagnostic et formulaires de contrôle</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-32 "><a href="/regles-d-entretien_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Principes d’entretien et documentation </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-13  "><a href="/gestion-des-milieux-aquatiques-et-prevention-des-inondations_fr.html" id="menu-topscreen-smartphone-item-titre-13" class="menu-topscreen-smartphone-item-titre ">GEMAPI</a></li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-14 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-14');" id="menu-topscreen-smartphone-item-titre-14" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-14">IMPLANTER SON ENTREPRISE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-14">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-36 "><a href="/atouts-du-territoire_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le territoire et ses atouts</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-38 "><a href="/louer--acheter--trouver-un-terrain_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">L’offre immobilière et foncière</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-15 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-15');" id="menu-topscreen-smartphone-item-titre-15" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-15">AIDES AUX ENTREPRISES</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-15">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-41 "><a href="/aides-financieres_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Aides financières</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-40 "><a href="/creer--developper-son-entreprise_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Créer, développer son entreprise</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-39 "><a href="/connect-up_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Connect'up</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-16 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-16');" id="menu-topscreen-smartphone-item-titre-16" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-16">PORTRAITS & PAROLES D'ENTREPRISES</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-16">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-42 "><a href="/portraits---paroles-d-entreprises_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Portraits & paroles d'entreprises</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-67 "><a href="/eco-defis_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Eco-Défis</a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-17 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-17');" id="menu-topscreen-smartphone-item-titre-17" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-17">CULTURE</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-17">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-43 "><a href="/saison-culturelle-intercommunale_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Saison culturelle intercommunale</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-68 "><a href="/salon-du-polar-aux-chateaux_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Salon Polar aux châteaux</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-44 "><a href="/equipements-culturels-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Le réseau des bibliothèques </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-55 "><a href="/ecoles-musique-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Ecoles de musique </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-18 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-18');" id="menu-topscreen-smartphone-item-titre-18" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-18">TOURISME</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-18">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-45 "><a href="/office-de-tourisme-aubigny-sur-nere-cher_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Office de Tourisme</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-46 "><a href="/sente-verte-et-sente-bleue_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Randonner en Sauldre et Sologne</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-47 "><a href="/taxe-sejour-sauldre-sologne_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Taxe de séjour</a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-61 "><a href="/balade-canal-sauldre-etang-puits_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Balade au fil de l’eau </a></li>
+					</ul>
+				</li>
+				<li class="menu-topscreen-smartphone-item menu-topscreen-smartphone-item-20 menu-topscreen-smartphone-item-with-sub "><a href="javascript:open_submenu('menu-topscreen-smartphone-submenu-20');" id="menu-topscreen-smartphone-item-titre-20" class="menu-topscreen-smartphone-item-titre" submenuof="menu-topscreen-smartphone-submenu-20">Sous-onglets Randonner en Sauldre et Sologne</a>
+					<ul class="menu-topscreen-smartphone-submenu" id="menu-topscreen-smartphone-submenu-20">
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-58 "><a href="/les-sentes-verte-et-sente-bleue-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les Sente Verte et Sente Bleue </a></li>
+						<li class="menu-topscreen-smartphone-submenu-item menu-topscreen-smartphone-submenu-item-59 "><a href="/sente-verte----promenade-en-sauldre---sologne-_fr.html" class="menu-topscreen-smartphone-submenu-item-titre">Les autres itinéraires de randonnées</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script>
+				var menu_topscreen_ul_smartphone = $(".menu-topscreen-smartphone-submenu"),
+       				 menu_topscreen_a_smartphone  = $(".menu-topscreen-smartphone-item-with-sub a");
+	
+				menu_topscreen_ul_smartphone.hide();
+	
+				$(".menu-topscreen-smartphone").hide();
+		
+				menu_topscreen_a_smartphone.click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+	
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+	
+				$(".menu-topscreen-smartphone-menu-dropdown").click(function(event ){
+	
+					if(!$(this).hasClass("active")) {
+			            menu_topscreen_a_smartphone.removeClass("active");
+			            menu_topscreen_ul_smartphone.filter(":visible").slideUp("normal");
+			            $(this).addClass("active").next().stop(true,true).slideDown("normal");
+			        } else {
+			            $(this).removeClass("active");
+			            $(this).next().stop(true,true).slideUp("normal");
+			        }
+			
+				});
+				
+		</script>
+		<div class="template-header">
+			<div class="template-header-content  template-contents">
+				<div class="header-left"><a class="logo-essentiel" href="cdc-sauldre-sologne-cher_fr.html"><img src="/userfile/img-template-maker/logo/logo-sauldre.png"></a></div>
+				<div class="header-right">
+					<div class="header-text">
+						<div class="contact-hp"><a href="/contact-cdc-sauldre-sologne_fr.html">NOUS CONTACTER</a></div>
+						<div class="geoloc-hp"><a href="/territoire-sauldre-sologne-cher_fr.html"> <img src="/template/picto-geoloc.png"></a></div>
+					</div>
+				</div>
+				<div class="header-center">
+					<div class="websee-megamenu-container">
+						<div class="websee-megamenu">
+							<ul class="websee-megamenu-principal">
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-1">COMMUNAUTÉ DE COMMUNES</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-1">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/1-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-2">PRÉSENTATION</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-2">
+												<li><a class="websee-megamenu-titre-3" href="/comcom-sauldre-et-sologne_fr.html">La CDC Sauldre et Sologne </a></li>
+												<li><a class="websee-megamenu-titre-3" href="/territoire-sauldre-sologne-cher_fr.html">Carte intéractive du Territoire</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/communes-sauldre-sologne-cher_fr.html">Les Communes</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/contact-cdc-sauldre-sologne_fr.html">Nous contacter</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/2-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-3">PUBLICATIONS</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-3">
+												<li><a class="websee-megamenu-titre-3" href="/comptes-rendus-conseils-sauldre-sologne_fr.html">Comptes-rendus & délibérations</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/bulletin-communutaire-cdc-sauldre-sologne_fr.html">Mag Infos</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/rapports-d-activites-_fr.html">Rapports d'activités </a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/3-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-4">MARCHÉS PUBLICS</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-4">
+												<li><a class="websee-megamenu-titre-3" href="/marches-publics-sauldre-sologne_fr.html">Marchés publics</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/marches-publics-en-cours_fr.html">Marchés publics en cours</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/liste-des-marches-2018_fr.html">Liste des précédents marchés publics </a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/4-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-5">RECRUTEMENT</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-5">
+												<li><a class="websee-megamenu-titre-3" href="/offres-d-emploi-dans-la-cdc_fr.html">Offres d'Emploi dans la CDC</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-2">AU QUOTIDIEN</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-2">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/5-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-6">ENFANCE & JEUNESSE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-6">
+												<li><a class="websee-megamenu-titre-3" href="/faire-garder-son-enfant-sauldre-sologne_fr.html">Le RAM</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/accueil-loisirs-sauldre-sologne_fr.html">Accueil de Loisirs</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/espace-et-sejour-jeunes_fr.html"> Séjour jeunes</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/6-before.JPG"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-7">EMPLOI, SOLIDARITÉ & SOCIAL</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-7">
+												<li><a class="websee-megamenu-titre-3" href="/maison-de-l-emploi-pays-sancerre-sologne_fr.html">La Maison de l'Emploi</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/coworkin-aubigny-sur-nere_fr.html">Cowork’in Aubigny </a></li>
+												<li><a class="websee-megamenu-titre-3" href="/mutuelle-intercommunale_fr.html">Solution Santé Mutualisée</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/7-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-8">PRATIQUE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-8">
+												<li><a class="websee-megamenu-titre-3" href="/lignes-de-bus-remi_fr.html">Se déplacer</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/accueil-des-gens-du-voyage_fr.html">Accueil des gens du voyage</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/fibre-optique_fr.html">Fibre optique</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/opah-_fr.html">OPAH </a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/8-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-9">AMÉNAGEMENT DU TERRITOIRE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-9">
+												<li><a class="websee-megamenu-titre-3" href="/faire-des-travaux-sauldre-et-sologne_fr.html">Urbanisme</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/plan-local-d-urbanisme--plu-_fr.html">Plan Local d'Urbanisme (PLU)</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/schema-de-coherence-territorial--scot-_fr.html">Schéma de Cohérence Territorial (SCOT)</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/contrat-de-ruralite_fr.html">Contrat de ruralité</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-3">ENVIRONNEMENT</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-3">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/9-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-10">ORDURES MÉNAGÈRES</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-10">
+												<li><a class="websee-megamenu-titre-3" href="/collecte-ordures-menageres-sauldre-sologne_fr.html">Infos pratiques</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/redevance-enlevement-ordures-menageres-sauldre-sologne_fr.html">REOM</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/paiements-et-facturations_fr.html">Paiement et facture</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/signaler-un-changement-de-situation_fr.html">Signaler un changement de situation</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/10-before.jpeg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-11">RECYCLAGE, COMPOSTAGE & DÉCHÈTERIE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-11">
+												<li><a class="websee-megamenu-titre-3" href="/tri-dechets-sauldre-et-sologne_fr.html">Pourquoi et comment trier les déchets ?</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/carte-des-points-d-apports-volontaires_fr.html">Points d'Apport Volontaire</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/dechetteries-et-infos-pratiques_fr.html">Déchèteries et infos pratiques</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/carte-de-localisation-des-dechetteries_fr.html">Compostage domestique</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/11-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-12">ASSAINISSEMENT NON COLLECTIF</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-12">
+												<li><a class="websee-megamenu-titre-3" href="/reglementation_fr.html">Principes généraux</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/les-missions-du-spanc_fr.html">Les missions du SPANC</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/installations-existants---diagnostic-vente_fr.html">Demandes de diagnostic et formulaires de contrôle</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/regles-d-entretien_fr.html">Principes d’entretien et documentation </a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/12-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-13">GEMAPI</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-13">
+												<li><a class="websee-megamenu-titre-3" href="/gestion-des-milieux-aquatiques-et-prevention-des-inondations_fr.html">Gestion des Milieux Aquatiques et Prévention des Inondations</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-4">ÉCONOMIE</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-4">
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/13-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-14">IMPLANTER SON ENTREPRISE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-14">
+												<li><a class="websee-megamenu-titre-3" href="/atouts-du-territoire_fr.html">Le territoire et ses atouts</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/louer--acheter--trouver-un-terrain_fr.html">L’offre immobilière et foncière</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/14-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-15">AIDES AUX ENTREPRISES</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-15">
+												<li><a class="websee-megamenu-titre-3" href="/aides-financieres_fr.html">Les Aides financières</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/creer--developper-son-entreprise_fr.html">Créer, développer son entreprise</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/connect-up_fr.html">Connect'up</a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/15-before.jpeg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-16">PORTRAITS & PAROLES D'ENTREPRISES</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-16">
+												<li><a class="websee-megamenu-titre-3" href="/portraits---paroles-d-entreprises_fr.html">Portraits & paroles d'entreprises</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/eco-defis_fr.html">Eco-Défis</a></li>
+											</ul>
+										</li>
+										<li>
+									</ul>
+								</li>
+								<li><a class="websee-megamenu-titre-1" id="websee-megamenu-id-titre-5">CULTURE & TOURISME</a>
+									<ul class="websee-megamenu-sub" id="websee-megamenu-sub-5">
+										<li>
+											<div class="websee-megamenu-datas websee-megamenu-data-before" id="websee-megamenu-data-before-17">
+												<p><img src="../../../userfile/images/Newsletter/bandeau%20sais.png" alt="" width="493" height="152"></p>
+											</div><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-17">CULTURE</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-17">
+												<li><a class="websee-megamenu-titre-3" href="/saison-culturelle-intercommunale_fr.html">Saison culturelle intercommunale</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/salon-du-polar-aux-chateaux_fr.html">Salon Polar aux châteaux</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/equipements-culturels-sauldre-sologne_fr.html">Le réseau des bibliothèques </a></li>
+												<li><a class="websee-megamenu-titre-3" href="/ecoles-musique-sauldre-sologne_fr.html">Ecoles de musique </a></li>
+											</ul>
+										</li>
+										<li><img class="websee-megamenu-images websee-megamenu-image-before" src="/userfile/maximenu/14/18-before.jpg"><a class="websee-megamenu-titre-2 websee-megamenu-titre-no-href" id="websee-megamenu-panel-id-titre-18">TOURISME</a>
+											<ul class="websee-megamenu-sub-2" id="websee-megamenu-sub-2-18">
+												<li><a class="websee-megamenu-titre-3" href="/office-de-tourisme-aubigny-sur-nere-cher_fr.html">Office de Tourisme</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/sente-verte-et-sente-bleue_fr.html">Randonner en Sauldre et Sologne</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/taxe-sejour-sauldre-sologne_fr.html">Taxe de séjour</a></li>
+												<li><a class="websee-megamenu-titre-3" href="/balade-canal-sauldre-etang-puits_fr.html">Balade au fil de l’eau </a></li>
+											</ul>
+										</li>
+										<li>
+										<li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-animation">
+			<div class="template-animation-content">
+				<div class="subst-bandeau"><img src="/resolution/haute/background/3_fr.jpg" alt="Comptes-rendus & délibérations Sauldre et Sologne"></div>
+			</div>
+		</div>
+		<div class="template-body">
+			<div class="template-body-content  template-contents">
+				<div class="bloc-top">
+					<div class="bloc-top-content clearfix">
+						<div class="bloc-h1">
+							<h1 class="h1-couleur-groupe-3">Comptes-rendus & délibérations des Conseils communautaires</h1>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-page-3 wrapper-global-0 clearfix">
+					<div class="rendu-contenu rendu-0-colonnes">
+						<div class="wrapper-bloc clearfix" id="wrapper-bloc-1">
+							<div class="wrapper-contents clearfix" id="wrapper-content-1">
+								<p><strong>Chaque mois le conseil de communauté se réunit pour échanger et délibérer sur les décisions, actions et ou projets en cours ou à mener.</strong></p>
+								<p>Retrouvez ci-après les comptes rendus des conseils communautaires.</p>
+								<table class="tableau-ombre-portee" style="width: 100%;">
+									<tbody>
+										<tr>
+											<td>
+												<p style="text-align: center;"><strong><span style="font-size: 30px;">Comptes-rendus</span></strong></p>
+												<div id="telechargement-23" class="telechargements">
+													<div class="telechargement-groupe" id="telechargement-groupe-14">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-14">Comptes-Rendus 2020</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-14">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1594039570-CR-conseil-communautaire-22-juin-2020.pdf" target="_blank" title="Telecharger Compte-Rendu du 22 juin 2020"><b>Compte-Rendu du 22 juin 2020</b> (286Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769595-CR-conseil-2-mars-2020.pdf" target="_blank" title="Telecharger Compte-Rendu du 2 mars 2020"><b>Compte-Rendu du 2 mars 2020</b> (687Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1580833541-CR-conseil-3-fev.-2020.pdf" target="_blank" title="Telecharger Compte-Rendu du 3 février 2020"><b>Compte-Rendu du 3 février 2020</b> (455Ko) </a></li>
+														</ul>
+													</div>
+													<div class="telechargement-groupe" id="telechargement-groupe-2">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-2">2019</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-2">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576767986-CR-conseil-16-dec-2019.pdf" target="_blank" title="Telecharger Compte-Rendu du 16.12.2019 "><b>Compte-Rendu du 16.12.2019 </b> (594Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1572874483-CR-Conseil-du-28-oct-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 28.10.2019"><b>Compte-rendu du 28.10.2019</b> (471Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1572874433-CR-CONSEIL-30-sept-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 30.09.2019"><b>Compte-rendu du 30.09.2019</b> (456Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1564993824-CR-conseil-communautaire-du-22-juil-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 22.07.2019 "><b>Compte-rendu du 22.07.2019 </b> (220Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1564993786-CR-conseil-24-juin-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 24.06.2019 "><b>Compte-rendu du 24.06.2019 </b> (559Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1560343315-CR-conseil-20-mai-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 20.05.2019 "><b>Compte-rendu du 20.05.2019 </b> (506Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1557837572-CR-conseil-20190325.pdf" target="_blank" title="Telecharger Compte-rendu du 23.03.2019"><b>Compte-rendu du 23.03.2019</b> (518Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1551953303-CR-conseil-du-25-fev-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 25.02.2019"><b>Compte-rendu du 25.02.2019</b> (355Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1551953289-CR-conseil-29-jan-2019.pdf" target="_blank" title="Telecharger Compte-rendu du 29.01.2019"><b>Compte-rendu du 29.01.2019</b> (465Ko) </a></li>
+														</ul>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p></p>
+								<p></p>
+								<table class="tableau-ombre-portee" style="width: 100%;">
+									<tbody>
+										<tr>
+											<td>
+												<p style="text-align: center;"><strong><span style="font-size: 30px;">Délibérations</span></strong></p>
+												<div id="telechargement-35" class="telechargements">
+													<div class="telechargement-groupe" id="telechargement-groupe-15">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-15">Délibérations 2020</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-15">
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1581330777-2020-02-001-Actualisation-repartition-charges-de-personnel.pdf" target="_blank" title="Telecharger 2020-02-001 Actualisation répartition charges de personnel"><b>2020-02-001 Actualisation répartition charges de personnel</b> (150Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1581330798-2020-02-002-Approbation-avenant-1-ctt-de-territoire.pdf" target="_blank" title="Telecharger 2020-02-002 Approbation avenant 1 ctt de territoire"><b>2020-02-002 Approbation avenant 1 ctt de territoire</b> (123Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1581330816-2020-02-003-DOB-2020.pdf" target="_blank" title="Telecharger 2020-02-003 DOB 2020"><b>2020-02-003 DOB 2020</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1581330836-2020-02-004-Accord-de-principe-entree-capital-SEM.pdf" target="_blank" title="Telecharger 2020-02-004 Accord de principe entrée capital SEM"><b>2020-02-004 Accord de principe entrée capital SEM</b> (182Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1581330979-2020-02-005-CEJ-2019-2022.pdf" target="_blank" title="Telecharger 2020-02-005 CEJ 2019-2022"><b>2020-02-005 CEJ 2019-2022</b> (104Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769712-2020-03-006-designation-representant-CSS-BUTAGAZ.pdf" target="_blank" title="Telecharger 2020-03-006 désignation représentant CSS BUTAGAZ"><b>2020-03-006 désignation représentant CSS BUTAGAZ</b> (122Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769736-2020-03-007-Rapport-activite-2019.pdf" target="_blank" title="Telecharger 2020-03-007 Rapport activité 2019"><b>2020-03-007 Rapport activité 2019</b> (35Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769754-2020-03-008-RPQS-OM-2019.pdf" target="_blank" title="Telecharger 2020-03-008 RPQS OM 2019"><b>2020-03-008 RPQS OM 2019</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769779-2020-03-009-RPQS-SPANC-2019.pdf" target="_blank" title="Telecharger 2020-03-009 RPQS SPANC 2019"><b>2020-03-009 RPQS SPANC 2019</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769800-2020-03-010-Plan-de-financement-SDE-ZAE-champ-des-tailles.pdf" target="_blank" title="Telecharger 2020-03-010 Plan de financement SDE ZAE champ des tailles"><b>2020-03-010 Plan de financement SDE ZAE champ des tailles</b> (123Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769820-2020-03-011-Vente-terrain-ZA-Guidon-a-isa-gpe.pdf" target="_blank" title="Telecharger 2020-03-011 Vente terrain ZA Guidon à isa gpe"><b>2020-03-011 Vente terrain ZA Guidon à isa gpe</b> (144Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769842-2020-03-012-Comptes-de-gestion-2019.pdf" target="_blank" title="Telecharger 2020-03-012 Comptes de gestion 2019"><b>2020-03-012 Comptes de gestion 2019</b> (103Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769859-2020-03-013-Comptes-administratifs-2019.pdf" target="_blank" title="Telecharger 2020-03-013 Comptes administratifs 2019"><b>2020-03-013 Comptes administratifs 2019</b> (210Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769881-2020-03-014-Affectation-resultats-2019.pdf" target="_blank" title="Telecharger 2020-03-014 Affectation résultats 2019"><b>2020-03-014 Affectation résultats 2019</b> (230Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769941-2020-03-015-Taux-fisca-add-2020.pdf" target="_blank" title="Telecharger 2020-03-015 Taux fisca add 2020"><b>2020-03-015 Taux fisca add 2020</b> (94Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769959-2020-03-016-Fiscalite-GEMAPI-2020.pdf" target="_blank" title="Telecharger 2020-03-016 Fiscalité GEMAPI 2020"><b>2020-03-016 Fiscalité GEMAPI 2020</b> (98Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583769982-2020-03-017-BP-2020-budget-ppal.pdf" target="_blank" title="Telecharger 2020-03-017 BP 2020 budget ppal"><b>2020-03-017 BP 2020 budget ppal</b> (89Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770032-2020-03-018-BP-2020-BA-OM.pdf" target="_blank" title="Telecharger 2020-03-018 BP 2020 BA OM"><b>2020-03-018 BP 2020 BA OM</b> (89Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770048-2020-03-019-BP-2020-BA-SPANC.pdf" target="_blank" title="Telecharger 2020-03-019 BP 2020 BA SPANC"><b>2020-03-019 BP 2020 BA SPANC</b> (89Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770069-2020-03-020-BP-2020-BA-ZAE.pdf" target="_blank" title="Telecharger 2020-03-020 BP 2020 BA ZAE"><b>2020-03-020 BP 2020 BA ZAE</b> (92Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770095-2020-03-021-Exoneration-redavance-ANC.pdf" target="_blank" title="Telecharger 2020-03-021 Exonération redavance ANC"><b>2020-03-021 Exonération redavance ANC</b> (120Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770118-2020-03-022-Creances-eteintes-OM.pdf" target="_blank" title="Telecharger 2020-03-022 Créances éteintes OM"><b>2020-03-022 Créances éteintes OM</b> (96Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770176-2020-03-023-Modification-RIFSEEP-ASE.pdf" target="_blank" title="Telecharger 2020-03-023 Modification RIFSEEP ASE"><b>2020-03-023 Modification RIFSEEP ASE</b> (341Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770206-2020-03-024-Conv-MAD-sejour-jeunes.pdf" target="_blank" title="Telecharger 2020-03-024 Conv° MAD séjour jeunes"><b>2020-03-024 Conv° MAD séjour jeunes</b> (211Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770231-2020-03-025-Conv-MAD-AAGV.pdf" target="_blank" title="Telecharger 2020-03-025 Conv° MAD AAGV"><b>2020-03-025 Conv° MAD AAGV</b> (123Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770256-2020-03-026-Conv-MAD-Sylvine-THIROT.pdf" target="_blank" title="Telecharger 2020-03-026 Conv° MAD Sylvine THIROT"><b>2020-03-026 Conv° MAD Sylvine THIROT</b> (137Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770289-2020-03-027-Subv-BABA-fete-du-bois-2020.pdf" target="_blank" title="Telecharger 2020-03-027 Subv° BABA fête du bois 2020"><b>2020-03-027 Subv° BABA fête du bois 2020</b> (116Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1583770314-2020-03-028-Avis-projet-extension-elevage-volailles-Oizon.pdf" target="_blank" title="Telecharger 2020-03-028 Avis projet extension élevage volailles Oizon"><b>2020-03-028 Avis projet extension élevage volailles Oizon</b> (137Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1594038982-2020-06-029-DM-1-2020-B.-ppal.pdf" target="_blank" title="Telecharger 2020-06-029 DM 1 budget principal 2020"><b>2020-06-029 DM 1 budget principal 2020</b> (148Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1594039045-2020-06-030-Creances-eteintes-BA-OM.pdf" target="_blank" title="Telecharger 2020-06-030 Créances éteintes budget annexe ordures ménagères"><b>2020-06-030 Créances éteintes budget annexe ordures ménagères</b> (103Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1594039096-2020-06-031-Autorisation-a-signer-contrat-reprise-collecte-papier.pdf" target="_blank" title="Telecharger 2020-06-031 Autorisation à signer contrat reprise collecte papier"><b>2020-06-031 Autorisation à signer contrat reprise collecte papier</b> (138Ko) </a></li>
+														</ul>
+													</div>
+													<div class="telechargement-groupe" id="telechargement-groupe-8">
+														<div class="telechargement-groupe-nom" id="telechargement-groupe-nom-8">2019</div>
+														<ul class="telechargement-groupe-liste" id="telechargement-groupe-liste-8">
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553010088-2019-01-001-Avis-sur-le-SRADDET.PDF" target="_blank" title="Telecharger Avis sur le SRADDET"><b>Avis sur le SRADDET</b> (141Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553010121-2019-01-002-Modification-du-RIFSEEP-filiere-culturelle.PDF" target="_blank" title="Telecharger Modification du régime RIFSEEP"><b>Modification du régime RIFSEEP</b> (323Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553010188-2019-01-003-Modif-statut-integration-PLUi.PDF" target="_blank" title="Telecharger Modification statut et intégration PLUi"><b>Modification statut et intégration PLUi</b> (132Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553010224-2019-01-004-Acquisition-parcelle-SDE18-La-Guidon.PDF" target="_blank" title="Telecharger Acquisition parcelle SDE 18 - Le Guidon"><b>Acquisition parcelle SDE 18 - Le Guidon</b> (109Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553010248-2019-01-005-Autorisation-signature-ctt-eco-mobilier.PDF" target="_blank" title="Telecharger Autorisation signature ctt eco mobilier"><b>Autorisation signature ctt eco mobilier</b> (127Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011662-2019-01-006-Creances-eteintes-BA-OM.PDF" target="_blank" title="Telecharger Créances éteintes Budget annexe OM"><b>Créances éteintes Budget annexe OM</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011690-2019-02-007-Conv-teletransmission-des-actes.PDF" target="_blank" title="Telecharger Convention télétransmission des actes"><b>Convention télétransmission des actes</b> (132Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011843-2019-02-008-accueil-stagiaire-enseignement-sup.PDF" target="_blank" title="Telecharger Accueil de stagiaires de l'enseignement supérieur"><b>Accueil de stagiaires de l'enseignement supérieur</b> (151Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011880-2019-02-009-Modif-tableau-effectif-suppr-redacteur.PDF" target="_blank" title="Telecharger Modification tableau des effectifs portant suppression du poste de rédacteur"><b>Modification tableau des effectifs portant suppression du poste de rédacteur</b> (242Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011920-2019-02-010-Approb-creation-EPA-OT.PDF" target="_blank" title="Telecharger Approbation de la création d'un EPA OT"><b>Approbation de la création d'un EPA OT</b> (155Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011942-2019-02-011-Composition-CA-EPA-OT.PDF" target="_blank" title="Telecharger Composition CA EPA OT"><b>Composition CA EPA OT</b> (140Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011968-2019-02-012-Autorisation-signature-marche-collecte-verre.PDF" target="_blank" title="Telecharger Autorisation signature collecte verre"><b>Autorisation signature collecte verre</b> (114Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553011999-2019-02-013-Creances-eteintes-BA-OM.PDF" target="_blank" title="Telecharger Créances éteintes - Budget annexe OM"><b>Créances éteintes - Budget annexe OM</b> (102Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553012021-2019-02-014-DOB-2019.PDF" target="_blank" title="Telecharger Débat d'Orientation Budgétaire 2019"><b>Débat d'Orientation Budgétaire 2019</b> (101Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1553012044-2019-02-015-Composition-com-culture.PDF" target="_blank" title="Telecharger Composition de commission Culture"><b>Composition de commission Culture</b> (112Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564993919-2019-03-016-Adhesion-GIP-Recia.PDF" target="_blank" title="Telecharger Adhésion GIP Recia"><b>Adhésion GIP Recia</b> (106Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564993974-2019-03-017-Comptes-de-gestion-2018.PDF" target="_blank" title="Telecharger Comptes de gestion 2018"><b>Comptes de gestion 2018</b> (107Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994010-2019-03-018-CA-2018-B.-ppal.PDF" target="_blank" title="Telecharger Compte Administratif 2018 Budget Principal"><b>Compte Administratif 2018 Budget Principal</b> (136Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994091-2019-03-019-CA-2018-BA-OM.PDF" target="_blank" title="Telecharger Compte Administratif 2018 Budget Ordures Ménagères"><b>Compte Administratif 2018 Budget Ordures Ménagères</b> (129Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994114-2019-03-020-CA-2018-BA-SPANC.PDF" target="_blank" title="Telecharger Compte Administratif 2018 Budget SPANC"><b>Compte Administratif 2018 Budget SPANC</b> (128Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994171-2019-03-021-Affectation-resultat-2018-B.-ppal.PDF" target="_blank" title="Telecharger Affectation des résultats 2018 Budget Principal"><b>Affectation des résultats 2018 Budget Principal</b> (114Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994194-2019-03-022-Affectation-resultat-2018-BA-OM.PDF" target="_blank" title="Telecharger Affectation des résultats 2018 Budget Ordures Ménagères"><b>Affectation des résultats 2018 Budget Ordures Ménagères</b> (112Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994213-2019-03-023-Affectation-resultat-2018-BA-SPANC.PDF" target="_blank" title="Telecharger Affectation des résultats 2018 Budget SPANC"><b>Affectation des résultats 2018 Budget SPANC</b> (104Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994235-2019-03-024-Taux-fiscalite-2019.PDF" target="_blank" title="Telecharger Taux fiscalité 2019"><b>Taux fiscalité 2019</b> (94Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994271-2019-03-025-Taxe-GEMAPI-2019.PDF" target="_blank" title="Telecharger Taxe GEMAPI 2019"><b>Taxe GEMAPI 2019</b> (134Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994302-2019-03-026-BUDGET-2019-B.-ppal.PDF" target="_blank" title="Telecharger Budget 2019 Budget Principal"><b>Budget 2019 Budget Principal</b> (89Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994326-2019-03-027-BUDGET-2019-BA-OM.PDF" target="_blank" title="Telecharger Budget 2019 Budget Ordures Ménagères"><b>Budget 2019 Budget Ordures Ménagères</b> (89Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994358-2019-03-028-BUDGET-2019-BA-SPANC.PDF" target="_blank" title="Telecharger Budget 2019 Budget SPANC"><b>Budget 2019 Budget SPANC</b> (88Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994393-2019-03-029-Feuille-de-route-OT.PDF" target="_blank" title="Telecharger Feuille de route Office de Tourisme"><b>Feuille de route Office de Tourisme</b> (249Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994613-2019-03-030-Modification-tableau-des-effectifs-poste-attache-direction-OT.PDF" target="_blank" title="Telecharger Modification du tableau des effectifs poste direction OT "><b>Modification du tableau des effectifs poste direction OT </b> (251Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994740-2019-03-031-Conv-MAD-personnel-OT.PDF" target="_blank" title="Telecharger Convention de MAD personnel OT"><b>Convention de MAD personnel OT</b> (117Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994771-2019-03-032-PV-MAd-batiment-OT.PDF" target="_blank" title="Telecharger PV MAD Bâtiment OT"><b>PV MAD Bâtiment OT</b> (130Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994811-2019-03-033-Subv-2019-OT.PDF" target="_blank" title="Telecharger Subvention 2019 Office de Tourisme"><b>Subvention 2019 Office de Tourisme</b> (103Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994853-2019-03-034-Modification-horaire-decheterie.PDF" target="_blank" title="Telecharger Modification des horaires de la déchèterie"><b>Modification des horaires de la déchèterie</b> (166Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994902-2019-03-035-Avenant-3-decheterie-Neuvy.PDF" target="_blank" title="Telecharger Avenant 3 Déchèterie de Neuvy sur Barangeon "><b>Avenant 3 Déchèterie de Neuvy sur Barangeon </b> (102Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994936-2019-03-036-Engagement-2nd-tranche-fibre.PDF" target="_blank" title="Telecharger Engagement seconde tranche Fibre Optique"><b>Engagement seconde tranche Fibre Optique</b> (158Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564994988-2019-03-037-Projet-de-fonction-RAM-2019-2023.PDF" target="_blank" title="Telecharger RAM Sauldre et Sologne Projet de Fonctionnement 2019-2023 "><b>RAM Sauldre et Sologne Projet de Fonctionnement 2019-2023 </b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995027-2019-03-038-Sejour-jeunes-2019-et-tarifs.PDF" target="_blank" title="Telecharger Séjour jeunes 2019 et tarifs"><b>Séjour jeunes 2019 et tarifs</b> (146Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995089-2019-03-039-Designation-VP-com-culture.PDF" target="_blank" title="Telecharger Désignation d'un Vice Président de la commission culture"><b>Désignation d'un Vice Président de la commission culture</b> (82Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995128-2019-05-040-Designation-representant-GIP-Recia.PDF" target="_blank" title="Telecharger Désignation de représentant GIP Recia"><b>Désignation de représentant GIP Recia</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995217-2019-05-041-Designation-representant-CLI-Dampierre.PDF" target="_blank" title="Telecharger Désignation de représentant CLI Dampierre"><b>Désignation de représentant CLI Dampierre</b> (110Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995645-2019-05-042-Conv-adhesion-PAYFIP-titres.PDF" target="_blank" title="Telecharger Convention d'adhésion PAYFIP titres"><b>Convention d'adhésion PAYFIP titres</b> (111Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995711-2019-05-043-Conv-AMO-CIT-pour-eau-et-asst.PDF" target="_blank" title="Telecharger Convention AMO CIT pour Eau et Assainissment "><b>Convention AMO CIT pour Eau et Assainissment </b> (114Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995753-2019-05-044-Creation-poste-saisonniers-ete-2019.PDF" target="_blank" title="Telecharger Création de poste de saisonniers été 2019"><b>Création de poste de saisonniers été 2019</b> (143Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995795-2019-05-045-Resiliation-marche-MOE-decheterie.PDF" target="_blank" title="Telecharger Résiliation du marché MOE déchèterie"><b>Résiliation du marché MOE déchèterie</b> (125Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995858-2019-05-046-Adhesion-SPL-Tri-Berry-Nivernais.PDF" target="_blank" title="Telecharger Adhésion SPL Tri Berry Nivernais"><b>Adhésion SPL Tri Berry Nivernais</b> (552Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995904-2019-05-047-Creances-eteintes-BA-OM.PDF" target="_blank" title="Telecharger Créances éteintes BA OM"><b>Créances éteintes BA OM</b> (101Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995938-2019-05-048-Modif-statuts-item-11-GEMAPI.PDF" target="_blank" title="Telecharger Modification statuts item 11 GEMAPI"><b>Modification statuts item 11 GEMAPI</b> (200Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564995974-2019-05-049-Subv-manifestations-touristiques.PDF" target="_blank" title="Telecharger Subventions manifestations touristiques"><b>Subventions manifestations touristiques</b> (106Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996014-2019-05-050-RI-2019-balade-au-fil-de-leau.PDF" target="_blank" title="Telecharger Règlement Intérieur 2019 balade au fil de l'eau"><b>Règlement Intérieur 2019 balade au fil de l'eau</b> (106Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996078-2019-05-051-Subv-excep.-comite-defense-pays-fort.PDF" target="_blank" title="Telecharger  Subvention exceptionnelle comité défense pays fort"><b> Subvention exceptionnelle comité défense pays fort</b> (119Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996183-2019-05-052-Conv-de-financement-deploiement-fibre-TR-2.PDF" target="_blank" title="Telecharger Convention de financement déploiement fibre Tranche 2"><b>Convention de financement déploiement fibre Tranche 2</b> (194Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996799-2019-05-053-Acompte-subv-CCT-2019.PDF" target="_blank" title="Telecharger Acompte subvention CCT 2019"><b>Acompte subvention CCT 2019</b> (162Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996847-2019-05-054-Conv-de-dispo-sapeur-pompier.PDF" target="_blank" title="Telecharger Convention  de dispo sapeur pompier"><b>Convention de dispo sapeur pompier</b> (98Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1564996896-2019-06-055-Voeu-integration-Nancay.pdf" target="_blank" title="Telecharger Vœu intégration Nançay"><b>Vœu intégration Nançay</b> (122Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996952-2019-06-056-Autorisation-signature-contrat-Territoire-dindustrie.PDF" target="_blank" title="Telecharger Autorisation signature contrat Territoire d'industrie"><b>Autorisation signature contrat Territoire d'industrie</b> (634Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564996993-2019-06-057-Repartition-FPIC-2019.PDF" target="_blank" title="Telecharger Répartition FPIC 2019"><b>Répartition FPIC 2019</b> (514Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997356-2019-06-058-DM-1-2019-B.-PPAL.PDF" target="_blank" title="Telecharger DM 1-2019 Budget principal"><b>DM 1-2019 Budget principal</b> (422Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997411-2019-06-059-DM-1-2019-B.-OM.PDF" target="_blank" title="Telecharger DM 1-2019 Budget Ordures Ménagères"><b>DM 1-2019 Budget Ordures Ménagères</b> (372Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997455-2019-06-060-Creances-eteintes-OM.PDF" target="_blank" title="Telecharger Créances éteintes OM"><b>Créances éteintes OM</b> (273Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997495-2019-06-061-demande-creation-SYRSA.PDF" target="_blank" title="Telecharger Demande création SYRSA"><b>Demande création SYRSA</b> (215Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997564-2019-06-062-Retrait-delib-crea-poste-et-MAD-direction-OT.PDF" target="_blank" title="Telecharger Retrait délibération  création poste et MAD direction OT"><b>Retrait délibération création poste et MAD direction OT</b> (123Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997601-2019-06-063-Modification-statuts-EPA-OT.PDF" target="_blank" title="Telecharger Modification statuts EPA OT"><b>Modification statuts EPA OT</b> (276Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997701-2019-06-064-Conv-MAD-personnel-sejour-jeunes.PDF" target="_blank" title="Telecharger Convention MAD personnel séjour jeunes"><b>Convention MAD personnel séjour jeunes</b> (173Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997743-2019-06-065-Creation-emploi-saisonnier-sejour-jeunes.PDF" target="_blank" title="Telecharger Création emploi saisonnier séjour jeunes"><b>Création emploi saisonnier séjour jeunes</b> (297Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997832-2019-06-066-Financement-PSC1-asst-mat-et-jeunes.PDF" target="_blank" title="Telecharger Financement PSC1 assistantes maternelles et jeunes"><b>Financement PSC1 assistantes maternelles et jeunes</b> (367Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564997875-2019-06-067-Acompte-de-subv-PACT-2019.PDF" target="_blank" title="Telecharger Acompte de subvention PACT 2019"><b>Acompte de subvention PACT 2019</b> (427Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998050-2019-07-068-delegation-de-pouvoir-a-la-presidente.PDF" target="_blank" title="Telecharger Délégation de pouvoir a la présidente"><b>Délégation de pouvoir a la présidente</b> (149Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998105-2019-07-069-rapport-dactivite-2018.PDF" target="_blank" title="Telecharger Rapport d’activité 2018"><b>Rapport d’activité 2018</b> (107Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998145-2019-07-070-RPQS-OM-2018.PDF" target="_blank" title="Telecharger RPQS OM 2018"><b>RPQS OM 2018</b> (105Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998248-2019-07-071-RPQS-SPANC-2018.PDF" target="_blank" title="Telecharger RPQS SPANC 2018"><b>RPQS SPANC 2018</b> (108Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998285-2019-07-072-Creances-eteintes-BA-OM.PDF" target="_blank" title="Telecharger Créances éteintes BA OM"><b>Créances éteintes BA OM</b> (95Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998345-2019-07-073-admissions-en-non-valeur.PDF" target="_blank" title="Telecharger Admissions en non valeur OM"><b>Admissions en non valeur OM</b> (111Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1564998405-2019-07-074-Conv-pret-modules-de-scene.PDF" target="_blank" title="Telecharger Convention de prêt modules de scène"><b>Convention de prêt modules de scène</b> (93Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875137-2019-09-075-Acquisition-fonciere-terrain-decheterie.PDF" target="_blank" title="Telecharger Acquisition foncière terrain déchèterie"><b>Acquisition foncière terrain déchèterie</b> (134Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875208-2019-09-076-Redevance-ANC-2020.PDF" target="_blank" title="Telecharger Redevance ANC 2020"><b>Redevance ANC 2020</b> (243Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875257-2019-09-077-Creances-eteintes-BA-OM.PDF" target="_blank" title="Telecharger Créance éteintes BA OM"><b>Créance éteintes BA OM</b> (98Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875305-2019-09-078-Nomination-JC-Turpin-pour-signature-SPL.PDF" target="_blank" title="Telecharger Nomination JC TURPIN pour signature SPL"><b>Nomination JC TURPIN pour signature SPL</b> (97Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875370-2019-09-079-Tarifs-TDS-2020.PDF" target="_blank" title="Telecharger Taxe de Séjour Tarifs 2020"><b>Taxe de Séjour Tarifs 2020</b> (252Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875420-2019-09-080-Subv-complementaire-2019-OT.PDF" target="_blank" title="Telecharger Subvention supplémentaire 2019 Office de Tourisme"><b>Subvention supplémentaire 2019 Office de Tourisme</b> (119Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875467-2019-09-081-Sollicitation-CCT-2020.PDF" target="_blank" title="Telecharger Sollicitaion CCT 2020"><b>Sollicitaion CCT 2020</b> (122Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875513-2019-09-082-Sollicitation-PACT-2020.PDF" target="_blank" title="Telecharger Sollicitation PACT 2020"><b>Sollicitation PACT 2020</b> (110Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875572-2019-09-083-Signature-conv-partenariat-PACt-CCT-2020.PDF" target="_blank" title="Telecharger Signature convention de partenariat PACT CCT 2020"><b>Signature convention de partenariat PACT CCT 2020</b> (109Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875628-2019-09-084-Instauration-CET.PDF" target="_blank" title="Telecharger Instauration CET"><b>Instauration CET</b> (121Ko) </a></li>
+															<li><a class="telechargement telechargement-PDF" href="/userfile/fichier-telechargement/1572875676-2019-09-085-Modif-tableau-effectif-adjoint-tech-pour-SPANC.PDF" target="_blank" title="Telecharger Modification tableau des effectifs techn SPANC"><b>Modification tableau des effectifs techn SPANC</b> (272Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085460-2019-10-086-Conv-teletransmission-prefet.pdf" target="_blank" title="Telecharger Convention télétransmission préfet"><b>Convention télétransmission préfet</b> (132Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085504-2019-10-087-refcaturation-abonnement-GIP-Recia.pdf" target="_blank" title="Telecharger refcaturation abonnement GIP Récia"><b>refcaturation abonnement GIP Récia</b> (122Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085551-2019-10-088-PV-MAD-AAGV.pdf" target="_blank" title="Telecharger PV MAD AAGV"><b>PV MAD AAGV</b> (145Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085593-2019-10-089-representant-COPIL-GPECT.pdf" target="_blank" title="Telecharger représentant COPIL GPECT"><b>représentant COPIL GPECT</b> (158Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085635-2019-10-090-creances-eteintes.pdf" target="_blank" title="Telecharger créances éteintes"><b>créances éteintes</b> (100Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085675-2019-10-091-Conv-COREPILE.pdf" target="_blank" title="Telecharger Conv° COREPILE"><b>Conv° COREPILE</b> (94Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085714-2019-10-092-Conv-eco-mobilier.pdf" target="_blank" title="Telecharger  Conv° éco mobilier"><b> Conv° éco mobilier</b> (131Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085757-2019-10-093-Participation-campagne-2020-marque-Sologne.pdf" target="_blank" title="Telecharger Participation campagne 2020 marque Sologne"><b>Participation campagne 2020 marque Sologne</b> (124Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085783-2019-10-094-retrait-conv-partenariat-site-web-berry-Sologne.pdf" target="_blank" title="Telecharger retrait conv° partenariat site web berry Sologne"><b>retrait conv° partenariat site web berry Sologne</b> (135Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085814-2019-10-095-Avenant-conv-partenariat-Cathedrale-etang-du-Puits.pdf" target="_blank" title="Telecharger Avenant conv° partenariat Cathédrale étang du Puits"><b>Avenant conv° partenariat Cathédrale étang du Puits</b> (117Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085838-2019-10-096-Subv-PIT-2019.pdf" target="_blank" title="Telecharger Subv° PIT 2019"><b>Subv° PIT 2019</b> (119Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085872-2019-10-097-tarifs-sejour-jeunes-fev-2020.pdf" target="_blank" title="Telecharger tarifs séjour jeunes fév 2020"><b>tarifs séjour jeunes fév 2020</b> (174Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085896-2019-10-098-Solde-subv-PACT-CCT-2018.pdf" target="_blank" title="Telecharger  Solde subv° PACT CCT 2018"><b> Solde subv° PACT CCT 2018</b> (185Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085920-2019-10-099-Sollicitation-subv-LEADER-com-culturelle.pdf" target="_blank" title="Telecharger Sollicitation subv° LEADER com° culturelle"><b>Sollicitation subv° LEADER com° culturelle</b> (161Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1574085940-2019-10-100-Transfert-actif-passif-SYRSA.pdf" target="_blank" title="Telecharger Transfert actif passif SYRSA"><b>Transfert actif passif SYRSA</b> (167Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768551-2019-12-101-Conv-partenariat-GPECT.pdf" target="_blank" title="Telecharger Convention de partenariat GPECT"><b>Convention de partenariat GPECT</b> (121Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768600-2019-12-102-Adhesion-coworkin.pdf" target="_blank" title="Telecharger Adhésion Cowork'in"><b>Adhésion Cowork'in</b> (106Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768662-2019-12-103-Tarifs-REOM-2020.pdf" target="_blank" title="Telecharger Tarif REOM 2020"><b>Tarif REOM 2020</b> (343Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768720-2019-12-104-Dde-DETR-2020-pour-decheterie.pdf" target="_blank" title="Telecharger Demande DETR 2020 Déchèterie "><b>Demande DETR 2020 Déchèterie </b> (200Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768767-2019-12-105-Creances-eteintes-BA-OM.pdf" target="_blank" title="Telecharger Créances éteintes Budget Annexe Ordures Ménagères"><b>Créances éteintes Budget Annexe Ordures Ménagères</b> (95Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768813-2019-12-106-Conv-utilisation-decheterie-Neuvy-2020.pdf" target="_blank" title="Telecharger Convention d'utilisation 2020 déchèterie de Neuvy sur Barangeon"><b>Convention d'utilisation 2020 déchèterie de Neuvy sur Barangeon</b> (103Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768856-2019-12-107-Avenant-contrat-REVIPAC.pdf" target="_blank" title="Telecharger Avenant contrat REVIPAC"><b>Avenant contrat REVIPAC</b> (125Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768892-2019-12-108-Dde-DETR-2020-VAE.pdf" target="_blank" title="Telecharger Demande DETR 2020 VAE"><b>Demande DETR 2020 VAE</b> (154Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768918-2019-12-109-Subv-2020-OT.pdf" target="_blank" title="Telecharger Subvention office de tourisme 2020"><b>Subvention office de tourisme 2020</b> (115Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576768961-2019-12-110-Approbation-et-tarifs-sejour-jeunes-juil-2020.pdf" target="_blank" title="Telecharger Approbation et tarif séjour jeunes juil 2020"><b>Approbation et tarif séjour jeunes juil 2020</b> (168Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769007-2019-12-111-Creation-poste-animateur-sejour-fev-2020-et-distributeurs.pdf" target="_blank" title="Telecharger Création poste animateur séjour fev 2020 et distributeur mag cdc"><b>Création poste animateur séjour fev 2020 et distributeur mag cdc</b> (124Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769041-2019-12-112-Tarifs-spectacles-CDC-2020.pdf" target="_blank" title="Telecharger Tarifs spectacles CDC2020"><b>Tarifs spectacles CDC2020</b> (151Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769346-2019-12-113-Tarifs-AAGV-2020.pdf" target="_blank" title="Telecharger Tarifs AAGV 2020"><b>Tarifs AAGV 2020</b> (97Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769084-2019-12-114-PV-retour-MAD-ZA-champ-des-tailles.pdf" target="_blank" title="Telecharger PV retour MAD ZA champ des tailles "><b>PV retour MAD ZA champ des tailles </b> (144Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769113-2019-12-115-DM-2-2019-B.-ppal.pdf" target="_blank" title="Telecharger DM 2 2019 Budget  principal "><b>DM 2 2019 Budget principal </b> (103Ko) </a></li>
+															<li><a class="telechargement telechargement-pdf" href="/userfile/fichier-telechargement/1576769156-2019-12-116-Autorisation-dep-invest-2020.pdf" target="_blank" title="Telecharger Autorisation dep invest 2020"><b>Autorisation dep invest 2020</b> (171Ko) </a></li>
+														</ul>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="template-footer">
+			<div class="template-footer-content  template-contents">
+				<div class="footer-template">
+					<table class="responsive-table" style="width: 100%;" cellpadding="10" cellspacing="10">
+						<tbody>
+							<tr>
+								<td style="width: 33%; vertical-align: middle;">
+									<p><img src="../../userfile/images/loc.png" alt="" class="fit-to-original" style="display: block; margin-left: auto; margin-right: auto;"></p>
+									<p style="text-align: center;"><span style="font-size: 18px; color: #23212b;">7, rue du 4 Septembre</span><br><span style="color: #23212b;"><strong><span style="font-size: 18px;">18410 ARGENT SUR SAULDRE</span></strong></span></p>
+									<p style="text-align: center;"><span style="font-size: 18px; color: #a0007a;"><strong>02.48.73.85.22 / <a href="/contact-cdc-sauldre-sologne_fr.html" class="ecrire">Nous écrire</a></strong></span></p>
+								</td>
+								<td style="width: 33%; vertical-align: top;" class="bordure-gauche">
+									<p><img src="../../userfile/images/logo-pp.png" class="element-80" style="display: block; margin-left: auto; margin-right: auto;"></p><br>
+									<table style="margin-left: auto; margin-right: auto;">
+										<tbody>
+											<tr>
+												<td style="text-align: center;"><span style="color: #333333;">A partager sur</span>
+													<div class="social-networks social-monochrome social-rond"><a href="javascript:facebookSharePage();"><span class="socicon socicon-facebook"></span></a><a href="javascript:twitterSharePage();"><span class="socicon socicon-twitter"></span></a><a href="javascript:googlePlusSharePage();"><span class="socicon socicon-google"></span></a><a href="javascript:pinterestSharePage();"><span class="socicon socicon-pinterest"></span></a><a href="javascript:linkedinSharePage();"><span class="socicon socicon-linkedin"></span></a><a href="javascript:printContenu();"><span class="fa fa-print"></span></a></div>
+													<script>			
+			function facebookSharePage(){
+				facebookShare(window.location.href, 'Comptes-rendus & délibérations Sauldre et Sologne', 'Située dans la Sologne du Berry,  la Communauté de Communes Sauldre et Sologne créée le 30 décembre 2005 s’étend sur un territoire de 86 446 hectares.', '//www.sauldre-sologne.fr/userfile/img-og/logo-sauldre.png');
+			}
+			
+			function twitterSharePage(){
+				twitterShare(window.location.href, 'Comptes-rendus & délibérations Sauldre et Sologne');
+			}
+			
+			function googlePlusSharePage(){
+				googlePlusShare(window.location.href);
+			}
+			
+			function pinterestSharePage(){
+				pinterestShare(window.location.href, 'Située dans la Sologne du Berry,  la Communauté de Communes Sauldre et Sologne créée le 30 décembre 2005 s’étend sur un territoire de 86 446 hectares.', '//www.sauldre-sologne.fr/userfile/img-og/logo-sauldre.png');
+			}
+			
+			function linkedinSharePage(){
+				linkedinShare(window.location.href, 'Comptes-rendus & délibérations Sauldre et Sologne', 'Située dans la Sologne du Berry,  la Communauté de Communes Sauldre et Sologne créée le 30 décembre 2005 s’étend sur un territoire de 86 446 hectares.');
+			}
+			
+													</script>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td style="width: 33%; vertical-align: middle;" class="bordure-gauche">
+									<p><img src="../../userfile/images/horaire.png" alt="" class="fit-to-original" style="display: block; margin-left: auto; margin-right: auto;"></p>
+									<p style="text-align: center;"><strong><span style="font-size: 18px; color: #a0007a;">Du lundi au vendredi<br></span></strong><span style="font-size: 18px; color: #a0007a;"><span style="color: #23212b;">de 9h00 à 12h00 et de 13h00 à 17h00</span></span></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p></p>
+					<ul class="menu-pied-de-page">
+						<li class="menu-pied-de-page-item  "><a href="/page-temporaire-sauldre-sologne_fr.html" id="menu-pied-de-page-item-titre-0" class="menu-pied-de-page-item-titre ">MENTIONS LÉGALES</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+//
+function msieversion() {
+
+   var ua = window.navigator.userAgent;
+   var msie = ua.indexOf("MSIE ");
+
+   if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+   {
+       return true;
+   }
+   else  // If another browser, return 0
+   {
+       return false;
+   }
+
+   return false;
+}
+$(document).ready(function() {
+           if (msieversion()) {
+               $('.svg-content-active svg').each(function() {
+                   this.style.height = "750px";
+               });
+           }
+
+           var $win = $(window);
+var $headrBloc = $('.template-header-content div.header-left');
+           $headrBloc.css('transition', "all .3s ease");
+           $win.scroll(function() {
+                       if ($win.scrollTop() >= 40) {
+                         $headrBloc.css('transform','translateY(-16%) translateX(-50px) scale(0.7)');
+                         } else {
+$headrBloc.css('transform','none');
+;}
+}
+                      )
+           ;
+});
+		</script>
+		<div class="copyright"><a href="websee_en_savoir_plus_sur_la_creation_de_site_internet.html">Création de site Web administrable et hébergement Internet par Net15</a> - <a href="/conditions-generales-d-utilisation.html">Conditions Générales d'Utilisation</a></div>
+		<script src="/css/global/websee-maximenu.js" type="text/javascript"></script>
+		<link href="/css/global/font-face.css" rel="stylesheet" type="text/css">
+		<link href="/font/font-awesome-animation.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="/js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script src="/js/jquery.printElement.js" type="text/javascript"></script>
+		<script src="/js/websee.min.js?1594041985"></script>
+		<script src="/js/responsive.min.js?1594041985"></script>
+		<div class="smartphone-menu-bottom-padding"></div>
+		<script src="/js/cookies/js.cookie.js"></script>
+		<script>
+$(document).ready(function() {
+if(Cookies.get('cookies-accept') == undefined){
+$("body").append('<div class="cookies-accept">En poursuivant votre navigation sur ce site, vous acceptez l\'utilisation de cookies <a href="javascript:cookies_accept();" class="cookies-accept-btn">OK | <a href="/conditions-generales-d-utilisation.html#cookies">En savoir plus');
+}
+});
+
+function cookies_accept(){
+Cookies.set('cookies-accept','accepted', { expires: 365 });
+$(".cookies-accept").remove();
+}
+		</script>
+	</body>
+</html>
