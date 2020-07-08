@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Réseau Chantier - L'outil parfait pour les pros du bâtiment</title>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat%7CSource+Sans+Pro" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- favicons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<main>
+			<nav class="nav-white">
+				<div class="nav-wrapper"><a href="/" class="brand-logo"><img class="logo hoverable" src="/images/rc-logo-g.svg"></a> <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="/"><i class="small material-icons">home</i></a></li>
+						<li><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="menu-select">Vous êtes <!--<i class="material-icons">arrow_drop_down</i>--></a></li>
+						<li><a href="/front/membres">Membres</a></li>
+						<li><a href="/front/aos">Appels d'offres</a></li>
+						<li><a href="#connect"><i class="material-icons left">account_circle</i>Se connecter</a></li>
+					</ul>
+				</div>
+				<ul id="menu-select" class="dropdown-content">
+					<li><a href="/front/mo">Maître d'oeuvre</a></li>
+					<li><a href="/front/be">Bureau d'étude</a></li>
+					<li><a href="/front/ar">Artisan</a></li>
+				</ul>
+				<ul id="mobile-nav" class="side-nav right-aligned">
+					<li><a href="/"><i class="small material-icons">home</i></a></li>
+					<li><a href="/front/mo">Maîtres d'oeuvre</a></li>
+					<li><a href="/front/be">Bureaux d'étude</a></li>
+					<li><a href="/front/ar">Artisans</a></li>
+					<li><a href="/front/membres">Membres</a></li>
+					<li><a href="/front/aos">Appels d'offres</a></li>
+				</ul>
+			</nav>
+			<div class="padding-2">
+				<div class="padding-5">
+					<div class="card-container">
+						<h2 class="headline rc-green-text">Appels d'offres en cours</h2>
+					</div>
+					<div class="card-container padding-5"></div>
+					<!--end container -->
+				</div>
+				<div class="padding-5">
+					<div class="card-container">
+						<h2 class="headline rc-green-text">Récemment terminés</h2>
+					</div>
+					<div class="card-container padding-5">
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/164"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/fa7cdfad1a5aaf8370ebeda47a1ff1c3/view_8%20copie.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Maison Echavidre Anglet</h3>
+									<h6>ANGLET</h6><span class="type-list"> <span class="surface">150 m<sup>2</sup></span> <span class="type">Maison individuelle</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>17-04-2020</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>14</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/164">Détails</a> <a href="/projet/164/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/70"> <img src="/images/body_backgrounds/reseau-chantier.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Cabinet dentaire Gochoa</h3>
+									<h6>SAINT-PIERRE-D'IRUBE</h6><span class="type-list"> <span class="surface">30 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>13-12-2019</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>7</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/70">Détails</a> <a href="/projet/70/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/72"> <img src="/images/body_backgrounds/reseau-chantier.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Rénovation Cuneo</h3>
+									<h6>BIARRITZ</h6><span class="type-list"> <span class="surface">10 m<sup>2</sup></span> <span class="type">Logement collectif</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>04-11-2019</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>5</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/72">Détails</a> <a href="/projet/72/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/67"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/735b90b4568125ed6c3f678819b6e058/view_1.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Marlats</h3>
+									<h6>GUETHARY</h6><span class="type-list"> <span class="surface">20 m<sup>2</sup></span> <span class="type">Logement collectif</span> <span class="type"> Extension</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>02-07-2019</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>8</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/67">Détails</a> <a href="/projet/67/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/69"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/14bfa6bb14875e45bba028a21ed38046/CLO%20PC2%20dossier%20graphique%201800803%20(gliss%C3%A9(e)s)%203.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>PROJET Clos Cadot</h3>
+									<h6>SAINT-MALO</h6><span class="type-list"> <span class="surface">255 m<sup>2</sup></span> <span class="type">Logement collectif</span> <span class="type"> Extension et rénovation</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/317/sb2a-architecture-amo">Sb2a Architecture - AMO</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>14-06-2019</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>12</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/69">Détails</a> <a href="/projet/69/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/65"> <img src="/images/body_backgrounds/reseau-chantier.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>MAISON du GARDIEN</h3>
+									<h6>BAYONNE</h6><span class="type-list"> <span class="surface">100 m<sup>2</sup></span> <span class="type">Maison individuelle</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/304/damiano-carminati-architecte">Damiano Carminati Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>14-12-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>8</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/65">Détails</a> <a href="/projet/65/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/57"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/72b32a1f754ba1c09b3695e0cb6cde7f/view_1%20copie.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Extension Billon Grand</h3>
+									<h6>BIDART</h6><span class="type-list"> <span class="surface">50 m<sup>2</sup></span> <span class="type">Maison individuelle</span> <span class="type"> Extension</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>04-05-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>8</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/57">Détails</a> <a href="/projet/57/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/56"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/9f61408e3afb633e50cdf1b20de6f466/20%2002%202.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Ehpad Les pins création d'un Nouvelle accueil</h3>
+									<h6>SAINT-PIERRE-D'IRUBE</h6><span class="type-list"> <span class="surface">16 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>06-04-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>3</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/56">Détails</a> <a href="/projet/56/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/55"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/b53b3a3d6ab90ce0268229151c9bde11/New%20Ph%20du%20Port.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Transfert de la Pharmacie du Port</h3>
+									<h6>LA GRANDE-MOTTE</h6><span class="type-list"> <span class="surface">230 m<sup>2</sup></span> <span class="type">ERP</span> <span class="type"> Extension et rénovation</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/240089633cd9c69f35e60fa1e249a8dc.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/21/sarl-florent-triaire-architecte-dplg">SARL FLORENT TRIAIRE ARCHITECTE DPLG</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>17-03-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>17</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/55">Détails</a> <a href="/projet/55/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/31"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/c16a5320fa475530d9583c34fd356ef5/ESQ%20lahonce%202017%2003%2002_view_2.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Maison Smith</h3>
+									<h6>LAHONCE</h6><span class="type-list"> <span class="surface">100 m<sup>2</sup></span> <span class="type">Maison individuelle</span> <span class="type"> Extension et rénovation</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>09-03-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>9</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/31">Détails</a> <a href="/projet/31/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/43"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/17e62166fc8586dfa4d1bc0e1742c08b/view_3copie.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Extension Martin</h3>
+									<h6>BIARRITZ</h6><span class="type-list"> <span class="surface">22 m<sup>2</sup></span> <span class="type">Maison individuelle</span> <span class="type"> Extension</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>19-02-2018</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>7</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/43">Détails</a> <a href="/projet/43/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/30"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/34173cb38f07f89ddbebc2ac9128303f/BALEA%20facade.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Hotel Balea</h3>
+									<h6>GUETHARY</h6><span class="type-list"> <span class="surface">90 m<sup>2</sup></span> <span class="type">ERP</span> <span class="type"> Extension et rénovation</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>10-11-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>11</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/30">Détails</a> <a href="/projet/30/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/23"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/37693cfc748049e45d87b8c7d8b9aacd/01%2006%202017_view_0.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Rénovation Chalet Garrigue</h3>
+									<h6>FONT-ROMEU-ODEILLO-VIA</h6><span class="type-list"> <span class="surface">125 m<sup>2</sup></span> <span class="type">Maison individuelle</span> <span class="type"> Extension et rénovation</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>23-11-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>12</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/23">Détails</a> <a href="/projet/23/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/32"> <img src="/images/body_backgrounds/reseau-chantier.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Ehpad les pins</h3>
+									<h6>SAINT-PIERRE-D'IRUBE</h6><span class="type-list"> <span class="surface">125 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>21-04-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>6</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/32">Détails</a> <a href="/projet/32/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/25"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/8e296a067a37563370ded05f5a3bf3ec/insertion.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Pharmacie des Vignes à Montpellier</h3>
+									<h6>MONTPELLIER</h6><span class="type-list"> <span class="surface">448 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/240089633cd9c69f35e60fa1e249a8dc.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/21/sarl-florent-triaire-architecte-dplg">SARL FLORENT TRIAIRE ARCHITECTE DPLG</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>07-04-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>17</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/25">Détails</a> <a href="/projet/25/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/29"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/6ea9ab1baa0efb9e19094440c317e21b/2%20projet.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Agrandissement balcon Biarritz</h3>
+									<h6>BIARRITZ</h6><span class="type-list"> <span class="surface">7 m<sup>2</sup></span> <span class="type">Logement collectif</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/cb499fb5eb444545aab69791400acc2e.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/4/ambroise-brunel-architecte">Ambroise Brunel Architecte</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>13-02-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>2</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/29">Détails</a> <a href="/projet/29/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/33"> <img src="/images/body_backgrounds/reseau-chantier.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>Rénovation de la Pharmacie du Mas Drevon</h3>
+									<h6>MONTPELLIER</h6><span class="type-list"> <span class="surface">197 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/240089633cd9c69f35e60fa1e249a8dc.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/21/sarl-florent-triaire-architecte-dplg">SARL FLORENT TRIAIRE ARCHITECTE DPLG</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>24-03-2017</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>17</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/33">Détails</a> <a href="/projet/33/afficher">Je réponds</a></div>
+						</div>
+						<div class="card ao-card">
+							<div class="ao-card-cover waves-effect waves-block waves-light"><a href="/front/ao/2"> <img src="https://www.reseauchantier.fr/media/cache/aoimage/uploads/documents/projet/c81e728d9d4c2f636f067f89cc14862c/PC%202015%2002%2003%20Pharma%20Mirepoix_view_10%20copie.jpg" alt="image-placeholder.jpg" class="img-responsive" height="150"> </a></div>
+							<div class="card-content">
+								<div class="card-part">
+									<h3>PHARMACIE CENTRALE À SOMMIÈRES</h3>
+									<h6>SOMMIERES</h6><span class="type-list"> <span class="surface">237 m<sup>2</sup></span> <span class="type">ERP</span> </span></div>
+								<div class="card-part-bottom"><span class="profile-mini"> <div class="profile-thumb"><img src="https://www.reseauchantier.fr/media/cache/square52/uploads/utilisateur/240089633cd9c69f35e60fa1e249a8dc.jpg" alt=""></div> <div class="profile-name"><span>Publié par :<br><a href="/front/membre/21/sarl-florent-triaire-architecte-dplg">SARL FLORENT TRIAIRE ARCHITECTE DPLG</a></span></div> </span>
+									<dl class="txt-li-infos">
+										<dt>Date limite réponses :</dt>
+										<dd>05-06-2015</dd>
+									</dl>
+									<dl class="txt-li-infos">
+										<dt>Nombre de lots :</dt>
+										<dd>14</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="card-action"><a href="/front/ao/2">Détails</a> <a href="/projet/2/afficher">Je réponds</a></div>
+						</div>
+					</div>
+					<!--end container -->
+				</div>
+			</div>
+			<!-- Modal Connect -->
+			<div id="connect" class="modal">
+				<div class="modal-content">
+					<h4>Connexion</h4>
+					<form class="padding-3" id="connexion" method="POST">
+						<div class="row">
+							<div class="input-field col s12"><input id="email" type="email" class="validate"> <label for="email">Votre e-mail</label></div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12"><input id="password" type="password" class="validate"> <label for="password">Mot de passe</label></div>
+						</div>
+						<div class="modal-footer"><button class="white-text rc-green btn waves-effect waves-light" type="submit" name="action">Connexion</button></div>
+					</form>
+				</div>
+			</div>
+			<!-- Modal CTA -->
+			<div id="log-subscribe" class="modal">
+				<div class="modal-content">
+					<h4 class="rc-green-text center-align">Pas encore de compte ?</h4>
+					<p class="bold-text center-align">Créez votre compte et commencez sur Réseau Chantier, c'est gratuit !</p>
+					<div class="center-align padding-2"><img class="media-single" src="/images/icons/ico-newproj.png" srcset="/images/icons/ico-newproj.png 1x, /images/icons/ico-newproj@2x.png 2x"></div>
+					<div class="cta-center padding-1"><a href="/#subscribe" class="rc-green lighten-3 white-text bold-text waves-effect waves-light btn-large">Inscription</a></div>
+					<p class="center-align">ou</p>
+					<div class="cta-center padding-1"><a href="#connect" class="white rcgrey-text bold-text waves-light btn-large">Se connecter</a></div>
+				</div>
+			</div>
+			<div id="connect" class="modal">
+				<div class="modal-content">
+					<h4>Connexion</h4>
+					<form class="padding-3" id="connexion" method="POST" action="/login_check"><input type="hidden" name="_csrf_token" value="mUMdJq_U7f0EwNSV7biWSoYUpXu5xyTZZDoUEli1qYQ">
+						<div class="row">
+							<div class="input-field col s12"><input id="email" type="email" class="validate" name="_username"> <label for="email">Votre e-mail</label></div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12"><input id="password" type="password" class="validate" name="_password"> <label for="password">Mot de passe</label></div>
+						</div>
+						<div class="modal-footer"><button class="white-text rc-green btn waves-effect waves-light" type="submit" name="action">Connexion</button></div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<!-- end page -->
+		<footer class="rcgrey flex-col">
+			<div class="flex-row-wrap footer-nav">
+				<div class="footer-col" id="brand"><a href="#" class="brand-logo"><img class="logo hoverable" src="/images/rc-logo-grey.svg"></a></div>
+				<div class="footer-col" id="contact">
+					<h5 class="footer-title rcgrey-text text-lighten-2">Nous situer</h5>
+					<p class="grey-text lighten-3">Réseau Chantier<br>18 rue d'Harausta<br>64200 Biarritz<br>Tél : 06 59 14 81 61<br>contact@reseauchantier.fr</p>
+				</div>
+				<div class="footer-col" id="footer-links">
+					<h5 class="footer-title rcgrey-text text-lighten-2">Liens utiles</h5>
+					<ul class="footer-links">
+						<li><a href="/#about" class="rc-green-text">Qui sommes-nous ?</a></li>
+						<li><a href="/front/mentions" class="rc-green-text">Mentions légales</a></li>
+						<li><a href="/front/conditions" class="rc-green-text">Conditions d'utilisation</a></li>
+					</ul>
+				</div>
+				<div class="footer-col" id="social-links">
+					<h5 class="footer-title rcgrey-text text-lighten-2">L'actu Réseau Chantier</h5><a href="https://www.facebook.com/reseauchantier"><img src="/images/ico-fb.png" class="social-icons"></a> <a href="https://twitter.com/reseau_chantier"><img src="/images/ico-twitter.png" class="social-icons"></a> <a href="https://www.linkedin.com/company/r%C3%A9seau-chantier"><img src="/images/ico-linkedin.png" class="social-icons"></a></div>
+			</div>
+			<div id="copyrights" class="rcgrey darken-1">
+				<p class="mentions grey-text lighten-3">© 2014 Réseau Chantier - Réseau Chantier - SAS au capital de 1000 € - N° SIREN 807 485 594 - Immatriculée au RCS de Bayonne - APE 6201Z</p>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="/js/5bfdfbd.js"></script>
+		<script type="text/javascript">
+    $(document).ready(function() {
+      $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                belowOrigin: false,
+                constrainWidth: false, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                alignment: 'left', // Displays dropdown with edge aligned to the left of button
+                stopPropagation: false // Stops event propagation
+              }
+      );
+      $('select').material_select();
+      $('.collapsible').collapsible();
+      $(".button-collapse").sideNav({
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true, // Choose whether you can drag to open on touch screens,
+      });
+      $('.modal').modal();
+    });
+    $('select').material_select('destroy');
+      var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5835c9a1a9a0346a521aeca6/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-66225167-1', 'auto');
+      ga('send', 'pageview');
+		</script>
+	</body>
+</html>
