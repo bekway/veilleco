@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="fr" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+		<base href="https://www.morbihan.fr/">
+		<link rel="shortcut icon" href="/typo3conf/ext/pnf_cg56/Resources/Public/img/favicon.ico" type="image/x-icon">
+		<meta name="generator" content="TYPO3 CMS">
+		<meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Les décisions du conseil départemental et de sa commission permanente prennent la forme juridique de délibérations, après avoir été proposées aux conseillers départementaux sous forme de rapports.">
+		<meta name="author" content="CD56">
+		<meta name="keywords" content="Elus, institution">
+		<meta name="robots" content="index, follow">
+		<meta name="revisit-after" content="7 days">
+		<link rel="stylesheet" type="text/css" href="/typo3temp/assets/css/af840ecae1.css?1575301237" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/cd56_annuaire_savv/Resources/Public/css/annuairesavv_formulaire.css?1562934127" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/irfaq/Resources/Public/Stylesheets/styles.css?1540304402" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/pnf_cg56/Resources/Public/css/bootstrap.min.css?1523372843" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/pnf_cg56/Resources/Public/css/all.css?1575301627" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/pnf_cg56/Resources/Public/css/main.css?1572271627" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/pnf_cg56/Resources/Public/css/jquery.jscrollpane.css?1523372843" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/pnf_cg56/Resources/Public/css/sondage.css?1523372843" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/cg56_annonces_infolocale/Resources/Public/css/cg56_annonces_infolocale.css?1543329436" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/cd56_diaporama/Resources/Public/css/slick.css?1543480019" media="all">
+		<link rel="stylesheet" type="text/css" href="/typo3conf/ext/cd56_diaporama/Resources/Public/css/slick-theme.css?1523372842" media="all">
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" media="all">
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/jquery-1.11.1.min.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/ics_gmap3/Resources/Public/JavaScript/gmap3.js?1501251356" type="text/javascript"></script>
+		<script src="/typo3conf/ext/ics_gmap3/Resources/Public/JavaScript/icsCreateElements.js?1503913626" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/main.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/cookiesCnil.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/jquery.jscrollpane.min.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/toogleFaq.js?1523372843" type="text/javascript"></script>
+		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script><![endif]-->
+		<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" type="text/javascript"></script><![endif]-->
+		<script src="/typo3conf/ext/cg56_annonces_infolocale/Resources/Public/js/infolocale.js?1523372847" type="text/javascript"></script>
+		<script src="/typo3conf/ext/cd56_diaporama/Resources/Public/js/slick.min.js?1523372842" type="text/javascript"></script>
+		<script src="/typo3temp/assets/js/dd82474708.js?1560347538" type="text/javascript"></script>
+		<script type="text/javascript">var textCnilCookies = "Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer des cookies à des fins de mesure d'audience ou pour le partage vers les réseaux sociaux. Pour s'opposer à ce dépôt vous pouvez <a href="javascript:gaOptout()">cliquer ici</a>. <a href="/mentions-legales/">En savoir plus</a><a class="close" href="#">Fermer</a>";</script>
+		<script type="text/javascript">var urlMotsClesInfoBulles = "/recherche-thematique/";</script>
+		<script type="text/javascript">
+	if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
+		var msViewportStyle = document.createElement('style');
+		msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto !important}'));
+		document.querySelector('head').appendChild(msViewportStyle);
+	}
+		</script>
+		<title>Rechercher une délibération - Conseil départemental du Morbihan</title>
+		<link rel="author" href="https://plus.google.com/105150458272734213036/">
+		<!-- Piwik -->
+		<script type="text/javascript">
+			var _paq = _paq || [];
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+			_paq.push(["setDomains", ["*.www.morbihan.fr"]]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://stats.morbihan.fr/piwik/";
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', 5]);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+			
+		</script>
+		<noscript>
+			<p><img src="https://stats.morbihan.fr/piwik/piwik.php?idsite=5" style="border:0;" alt=""></p>
+		</noscript>
+		<!-- End Piwik Code -->
+		<meta property="og:title" content="Rechercher une délibération">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.morbihan.fr/edeliberations/">
+		<meta property="og:description" content="Les décisions du conseil départemental et de sa commission permanente prennent la forme juridique de délibérations, après avoir été proposées aux conseillers départementaux sous forme de rapports.">
+		<meta property="og:locale" content="fr_FR">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+	<div id="maj_IE">Votre navigateur est obsolète ! Il semblerait que vous utilisiez une ancienne version de Internet Explorer. Pour une meilleure expérience du web, veuillez mettre à jour votre navigateur. <a href="http://browsehappy.com/">Mettre à jour maintenant !</a></div>
+<![endif]-->
+		<noscript>
+			<div>Javascript must be enabled for the correct page display</div>
+		</noscript><a class="accessibility" accesskey="s" href="#main">Skip to Content</a>
+		<div class="wrapper">
+			<header id="header" class="container">
+				<div class="row">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="header_main_nav">
+							<div class="logo_wrapper">
+								<h1 class="logo"><a href="/" title="Accueil"> Département du Morbihan </a></h1>
+							</div><a class="email header_simple_button table_vcenter_parent" href="/contactez-nous/" title="Contactez-nous" alt="" target="_top"> <div class="table_vcenter social-networks"><span class="email">Contactez-nous</span></div> </a> <a class="facebook header_simple_button table_vcenter_parent" href="http://www.facebook.com/departementdumorbihan" title="Suivez-nous" alt="Ouverture de la page facebook dans une nouvelle fenêtre" target="_blank"> <div class="table_vcenter social-networks"><span class="facebook">Suivez-nous</span></div> </a> <button class="search_form_button table_vcenter_parent" title="Recherche"><span class="table_vcenter"><span class="icon_search"></span></span></button>
+							<div class="search-form">
+								<div class="navbar_filter_bg"></div>
+								<div class="tx-solr">
+									<div class="tx-solr-searchbox">
+										<script type="text/javascript">
+				/*<![CDATA[*/
+				var tx_solr_suggestUrl = 'https://www.morbihan.fr/?eID=tx_solr_suggest&id=384';
+				/*]]>*/
+				
+										</script><a href="/recherche/?no_cache=1" accesskey="4"></a>
+										<form class="navbar-form navbar-right" role="search" id="tx-solr-search-form-pi-search" action="/recherche/?no_cache=1" method="get" accept-charset="utf-8"><input type="hidden" name="L" value="0"> <input type="hidden" name="id" value="366">
+											<div class="form-group"><input type="text" id="inputText" class="tx-solr-q form-control" name="q" title="Tapez votre recherche" placeholder="Tapez votre recherche" maxlength="100"></div><button type="submit" id="inputButton" class="btn btn-default">Rechercher</button></form>
+									</div>
+								</div>
+							</div><a class="header_button_with_icon table_vcenter_parent" href="/le-departement-mode-demploi/" title="Le Département, mode d’emploi"> <div class="table_vcenter"><img src="/typo3conf/ext/pnf_cg56/Resources/Public/images/video.png" alt="Le Département, mode d’emploi"> <span><strong>Le Département, mode d’emploi</strong><br>la vidéo</span></div> </a> <a class="header_simple_button table_vcenter_parent" href="/localiser-une-structure/" title="Localiser une structure"> <div class="table_vcenter"><span>Localiser une structure</span></div> </a> <a class="header_simple_button table_vcenter_parent" href="/#les-services" title="Les services"> <div class="table_vcenter"><span>Les services</span></div> </a>
+							<div class="navbar-header"><button type="button"> <span class="sr-only">Toggle navigation</span> <span class="nav_menu_label">Menu</span> <span class="menu_button_icon"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </span> </button></div>
+						</div>
+						<div class="collapse" id="navbar">
+							<div class="navbar_filter_bg"></div>
+							<div class="frame">
+								<div class="holder container"><a href="/#main-nav" accesskey="2"></a>
+									<div id="pre-menu-mobile"><a class="header_simple_button table_vcenter_parent" href="/localiser-une-structure/" title="Localiser une structure"> Localiser une structure </a> <a class="header_simple_button table_vcenter_parent" href="/#les-services" title="Les services"> Les services </a></div>
+									<div class="menu_left"><a class="dpt-desktop-link" href="https://www.morbihan.fr/#departement-du-morbihan">Département du Morbihan</a> <button class="dpt-mobile-link">Département du Morbihan</button>
+										<div class="clear"></div>
+										<ul class="menu">
+											<li><a href="/departement-du-morbihan/histoire-et-geographie/" title="Histoire et géographie">Histoire et géographie</a></li>
+											<li><a href="/departement-du-morbihan/les-elus-et-les-cantons/les-elus/le-president/" title="Les élus et les cantons">Les élus et les cantons</a></li>
+											<li><a href="/departement-du-morbihan/le-fonctionnement/" title="Le fonctionnement">Le fonctionnement</a></li>
+											<li><a href="/departement-du-morbihan/les-decisions/" title="Les décisions">Les décisions</a></li>
+										</ul>
+										<ul class="menu"></ul>
+									</div>
+									<div class="menu_right">
+										<ul class="menu">
+											<li><a href="/toutes-les-actualites/" title="Notre actualité">Notre actualité</a></li>
+											<li><a href="/toutes-les-sorties/" title="Les sorties">Les sorties</a></li>
+										</ul>
+										<ul class="menu">
+											<li><a href="/offres-demploi-stages/le-departement-recrute/" title="Emplois & Stages">Emplois & Stages</a></li>
+										</ul>
+									</div>
+									<div class="clearfix"></div><a class="email header_simple_button table_vcenter_parent" href="/contactez-nous/" title="Contactez-nous" alt="" target="_top"> <div class="table_vcenter social-networks"><span class="email">Contactez-nous</span></div> </a> <a class="facebook header_simple_button table_vcenter_parent" href="http://www.facebook.com/departementdumorbihan" title="Suivez-nous" alt="Ouverture de la page facebook dans une nouvelle fenêtre" target="_blank"> <div class="table_vcenter social-networks"><span class="facebook">Suivez-nous</span></div> </a>
+									<div class="clearfix"></div><a class="header_button_with_icon table_vcenter_parent" href="/le-departement-mode-demploi/" title="Le Département, mode d’emploi"> <div class="table_vcenter"><img src="/typo3conf/ext/pnf_cg56/Resources/Public/images/video.png" alt="Le Département, mode d’emploi"> <span><strong>Le Département, mode d’emploi</strong><br>la vidéo</span></div> </a></div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="banner inactive container">
+				<div class="row">
+					<div class="holder"><span data-picture data-alt=""></span></div>
+				</div>
+			</div>
+			<main id="main" class="container-fluid">
+				<div class="row">
+					<div class="container">
+						<div class="row">
+							<ul class="social-networks">
+								<li><a title="Envoyer à un ami" href="mailto:?subject=Rechercher%20une%20d%C3%A9lib%C3%A9ration%20-%20Conseil%20d%C3%A9partemental%20du%20Morbihan&body=Bonjour,%0A%0AVoici%20un%20contenu%20qui%20devrait%20t%E2%80%99int%C3%A9resser,%20provenant%20du%20Conseil%20d%C3%A9partemental%20du%20Morbihan%20:%0Ahttps://www.morbihan.fr/edeliberations/%0A%0A" class="contact"></a></li>
+								<li><a title="Partager avec facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.morbihan.fr%2Fedeliberations%2F&text=Rechercher%20une%20d%C3%A9lib%C3%A9ration" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.morbihan.fr%2Fedeliberations%2F&text=Rechercher%20une%20d%C3%A9lib%C3%A9ration', 'facebook-share-dialog', 'width=626,height=436'); return false;" class="facebook"><span class="icon-social-facebook"></span></a></li>
+								<li><a title="Partager avec Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.morbihan.fr%2Fedeliberations%2F&text=Rechercher%20une%20d%C3%A9lib%C3%A9ration" onclick="window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.morbihan.fr%2Fedeliberations%2F&text=Rechercher%20une%20d%C3%A9lib%C3%A9ration', 'twitter-share-dialog', 'width=626,height=436'); return false;" class="twitter"><span class="icon-social-twitter"></span></a></li>
+								<li><a href="javascript:window.print()" class="print" title="Imprimer">Imprimer</a></li>
+							</ul>
+							<div class="col-lg-3 col-md-4 col-xs-12 hidden-print">
+								<nav class="sidenav inactive" id="sidenav"><a data-toggle="collapse" data-parent="#sidenav" href="#collapseOne" class="visible-sm btn-menu"></a>
+									<div id="collapseOne" class="collapse holder"><strong class="title"> <a class="collapsed" data-toggle="collapse" data-parent="#sidenav" href="#collapseTwo-events">Les décisions</a> </strong> <a href="#collapseTwo-events" accesskey="8"></a>
+										<ul id="collapseTwo-events" class="collapse" role="secondnav">
+											<li class="active test_0"><a href="/departement-du-morbihan/les-decisions/deliberations-rapports-actes/" title="Délibérations, rapports, actes">Délibérations, rapports, actes</a>
+												<ul id="collapseTwo" class="collapse">
+													<li class="active"><a href="/edeliberations/" title="Rechercher une délibération, un rapport">Rechercher une délibération, un rapport</a></li>
+													<li class=""><a href="/raa/" title="Le recueil des actes administratifs">Le recueil des actes administratifs</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</nav>
+								<!---   --  --->
+							</div>
+							<div id="content" class="col-md-7 col-sm-pull-1 col-lg-offset-1 pull-right col-xs-12 col-sm-11 ">
+								<div class="has-nav-second hidden-print">
+									<!-- Breadcrumb insert after -->
+									<ol class="breadcrumb hidden-xs hidden-print">
+										<li><a href="/" title="Accueil">Accueil</a></li>
+										<li><a href="http://www.morbihan.fr/accueil#departement-du-morbihan" target="_blank" title="Département du Morbihan">Département du Morbihan</a></li>
+										<li><a href="/edeliberations/" title="Les décisions">Les décisions</a></li>
+										<li><a href="/edeliberations/" title="Délibérations, rapports, actes">Délibérations, rapports, actes</a></li>
+										<li class="active">Rechercher une délibération, un rapport</li>
+									</ol>
+								</div>
+								<!-- style for events pages -->
+								<div class="text">
+									<!--TYPO3SEARCH_begin-->
+									<h1>Rechercher une délibération</h1>
+									<p>Les décisions du conseil départemental et de sa commission permanente prennent la forme juridique de délibérations, après avoir été proposées aux conseillers départementaux sous forme de rapports.</p>
+									<!--TYPO3SEARCH_end-->
+								</div>
+								<div id="c1672" class="csc-frame csc-frame-default">
+									<!-- TYPO3SEARCH_begin -->
+									<div class="default">
+										<p>Pour retrouver un rapport ou une délibération (au format PDF) dès leur date de publication officielle : <strong>saisissez au moins un mot du titre, une année, ou une date de séance dans la boîte de recherche en bas de cette page.</strong></p>
+										<p> </p>
+									</div>
+									<!-- TYPO3SEARCH_end -->
+								</div>
+								<div id="c747" class="csc-frame csc-frame-default">
+									<!-- TYPO3SEARCH_begin -->
+									<div class="default">
+										<table cellpadding="0" cellspacing="0" class="table">
+											<thead>
+												<tr>
+													<th scope="col">2019</th>
+													<th scope="col"> </th>
+													<th scope="col">2020</th>
+													<th scope="col"> </th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><strong>Conseil départemental</strong></td>
+													<td><strong>Commission permanente</strong></td>
+													<td><strong>Conseil départemental</strong></td>
+													<td><strong>Commission permanente</strong></td>
+												</tr>
+												<tr>
+													<td>22 mars</td>
+													<td>18 janvier</td>
+													<td>31 mars</td>
+													<td>17 janvier</td>
+												</tr>
+												<tr>
+													<td>21 juin</td>
+													<td>08 février</td>
+													<td>30 juin</td>
+													<td>04 février</td>
+												</tr>
+												<tr>
+													<td>27 septembre</td>
+													<td>29 mars</td>
+													<td>18 septembre</td>
+													<td>06 mars</td>
+												</tr>
+												<tr>
+													<td>15 novembre</td>
+													<td>26 avril</td>
+													<td>13 novembre</td>
+													<td>28 avril</td>
+												</tr>
+												<tr>
+													<td>13 décembre</td>
+													<td>24 mai</td>
+													<td>11 décembre</td>
+													<td>22 mai</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>14 juin</td>
+													<td> </td>
+													<td>12 juin</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>05 juillet</td>
+													<td> </td>
+													<td>03 juillet</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>20 septembre</td>
+													<td> </td>
+													<td>25 septembre</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>18 octobre</td>
+													<td> </td>
+													<td>16 octobre</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>22 novembre</td>
+													<td> </td>
+													<td>20 novembre</td>
+												</tr>
+												<tr>
+													<td> </td>
+													<td>06 décembre</td>
+													<td> </td>
+													<td>4 décembre</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- TYPO3SEARCH_end -->
+								</div>
+								<div id="c127" class="csc-frame csc-frame-default">
+									<!-- TYPO3SEARCH_begin -->
+									<div class="default">
+										<p><span style="font-style: italic;"><br>Sont publiés à partir de janvier 2018, au format PDF, l'ensemble des rapports et délibérations du conseil départemental et de la commission permanente, ne comportant pas de données à caractère personnel. <br>Pour les délibérations antérieures, vous pouvez contacter le service de l'assemblée et des affaires juridiques au 02 97 54 82 17 ou à l'adresse suivante : <a href="javascript:linkTo_UnCryptMailto('nbjmup+tfswjdf%5C/bttfncmffAnpscjibo%5C/gs');" title="ouvre un message électronique">service.assemblee@<span style="display:none;"> </span>morbihan.fr</a>.<br></span></p>
+									</div>
+									<!-- TYPO3SEARCH_end -->
+								</div>
+								<div id="c1109" class="csc-frame csc-frame-default">
+									<!-- TYPO3SEARCH_begin -->
+									<iframe style="margin-top:0px; border:0px #fff solid; width:100%; height:2800px;" src="https://deliberations.morbihan.fr/php/afficher_recherche.php"></iframe>
+									<!-- TYPO3SEARCH_end -->
+								</div>
+								<div class="visible-md visible-lg">
+									<div class="tags"><strong class="title">Mots clés :</strong>
+										<ul>
+											<li><a href="/recherche-thematique/?tx_pnfpageslist_pageslist%5Bcategory%5D=19&tx_pnfpageslist_pageslist%5Bsearch%5D=1&tx_pnfpageslist_pageslist%5Baction%5D=result&cHash=7dd8329478d6f1373382c5096a895b3f">Elus, institution</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<aside id="sidebar" class="col-lg-3 col-md-4 col-xs-12"></aside>
+							<div class="visible-xs visible-sm col-xs-12">
+								<div class="tags"><strong class="title">Mots clés :</strong>
+									<ul>
+										<li><a href="/recherche-thematique/?tx_pnfpageslist_pageslist%5Bcategory%5D=19&tx_pnfpageslist_pageslist%5Bsearch%5D=1&tx_pnfpageslist_pageslist%5Baction%5D=result&cHash=7dd8329478d6f1373382c5096a895b3f">Elus, institution</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--f:render section="FormSatisfaction" partial="FormSatisfaction" arguments="Array"/-->
+			<footer id="footer" class="container-fluid">
+				<div class="footer-content container"><strong class="logo"> <a href="/"> Morbihan </a> </strong> <a href="#footer-nav" accesskey="9"></a>
+					<ul class="social-networks" id="footer-nav" role="footernav">
+						<li><a href="/foire-aux-questions/" title="Foire aux questions" class="faqs" accesskey="" target="">Foire aux questions</a></li>
+						<li><a href="/plan-et-coordonnees/" title="Plans et coordonnées" class="plan" accesskey="" target="">Plans et coordonnées</a></li>
+						<li><a href="tel:0297548000" title="Tél. 02 97 54 80 00" class="mobile" accesskey="" target="">Tél. 02 97 54 80 00</a></li>
+						<li><a href="/contactez-nous/" title="Contactez-nous" class="contact" accesskey="3" target="">Contactez-nous</a></li>
+						<li><a href="https://www.morbihan.fr/?type=101" title="Flux RSS" class="rss" accesskey="" target="_blank">Flux RSS</a></li>
+					</ul><strong class="logo-morbian"> <a href="/"> Morbihan </a> </strong>
+					<div class="clear"></div>
+					<nav class="fnav">
+						<ul>
+							<li><a href="/accessibilite/" title="Accessibilité" accesskey="5">Accessibilité</a></li>
+							<li><a href="/plan-du-site/" title="Plan du site" accesskey="6">Plan du site</a></li>
+							<li><a href="/mentions-legales/" title="Mentions légales" accesskey="7">Mentions légales</a></li>
+							<li><a href="https://intranet.morbihan.fr" title="Intranet" accesskey="5">Intranet</a></li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript">
+		gaProperty = 'UA-7863584-1';
+		// Désactive le tracking si le cookie d’Opt-out existe déjà.
+		var disableStr = 'ga-disable-' + gaProperty;
+				if (document.cookie.indexOf('hasConsent=false') > -1) {
+			window[disableStr] = true;
+		}
+				var consentCookie =  getCookie('hasConsent');
+		if (!consentCookie) {//L'utilisateur n'a pas encore de cookie de consentement
+			var referrer_host = document.referrer.split('/')[2]; 
+			if ( referrer_host != document.location.hostname ) { //si il vient d'un autre site
+			//on désactive le tracking et on affiche la demande de consentement            
+				window[disableStr] = true;
+				window[disableStr] = true;
+				if (!$('.wrapper').hasClass('page--bare')) {
+					window.onload = askConsent;
+				}
+			} else { //sinon on lui dépose un cookie 
+				document.cookie = 'hasConsent=true; '+ getCookieExpireDate() +' ; path=/'; 
+			}
+		}
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', gaProperty]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/bootstrap.min.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/jquery.touchSwipe.min.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/ajaxPaginate.js?1523372843" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/jquery.main.js?1544541947" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pnf_cg56/Resources/Public/js/jquery-ui-1.10.4.js?1515771144" type="text/javascript"></script>
+		<script src="/typo3conf/ext/solr/Resources/JavaScript/EidSuggest/suggest.js?1555593945" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/jquery.datetimepicker.min.js?1538730938" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/parsley.min.js?1538730938" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Tabs.min.js?1538730938" type="text/javascript"></script>
+		<script src="/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Form.min.js?1538730938" type="text/javascript"></script>
+		<script src="/typo3conf/ext/pb_social/Resources/Public/Js/main.js?1552636172" type="text/javascript"></script>
+		<script src="/typo3conf/ext/solr/Resources/JavaScript/EidSuggest/suggest.js?1555593945" type="text/javascript"></script>
+	</body>
+</html>
