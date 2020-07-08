@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<title>CCGA - Comptes rendus</title>
+		<meta name="author" content="N124 Communication">
+		<meta name="description" content="Les comptes rendus">
+		<meta name="robots" content="all NOODP noarchive">
+		<link type="text/css" href="http://grand-armagnac.fr/resource/css/design.css" title="Design" media="screen" rel="stylesheet">
+		<link type="text/css" href="http://grand-armagnac.fr/resource/css/colorbox.css" title="Design" media="screen" rel="stylesheet">
+		<link type="text/css" href="http://grand-armagnac.fr/resource/css/commun.css" title="Design" media="screen" rel="stylesheet">
+		<style>#mainHeader
+    {
+        background: url("resource/pict/bandeau/ete/ete2.jpg") no-repeat scroll 0 0 transparent;
+    }/******************************************************************************/
+/*********************       Style des pages Information   ********************/
+/******************************************************************************/
+
+/* Style des pages infos */
+.titreActu
+{
+    color: #3184BA;
+    font-size: 21px;
+    border-bottom: 1px solid #3184BA;
+}
+
+.documents a
+{
+    background-color:#eeeeee;
+    border:1px solid #e4e4e4;
+    color: #3184BA;
+    display: block;
+    float: left;
+    height: 21px;
+    margin-right: 13px;
+    min-width: 120px;
+    padding: 0 5px;
+    text-decoration: none;
+
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+.documents a:hover, .sousCatInfos:hover
+{
+    text-decoration: underline;
+}
+
+.document a.btnPdfGeneral
+{
+    margin-bottom: 8px;
+}
+
+.document
+{
+    text-align: left;
+}
+
+.documents a img
+{
+    position: relative;
+    top: 2px;
+}
+
+.boiteImages
+{
+    margin: 8px 0 8px 0;
+}
+
+.videos
+{
+    /*margin-top: 21px;*/
+}
+
+.videos div
+{
+    float: left;
+    margin-right: 13px;
+}
+
+.videos div a
+{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.videos div a:hover
+{
+    text-decoration: underline;
+}
+
+.boiteInfos p
+{
+    text-align: justify;
+    margin-right: 12px;
+}
+
+#partagez{
+    color: white;
+    font-size: 1.2em;
+}
+
+#dateActu
+{
+    display: block;
+    margin-bottom: 13px;
+}
+
+.boiteFiletActu
+{
+    height: 30px;
+    width: 100%;
+    border-top: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.boiteFiletActu .boiteFiletItem
+{
+    height: 30px;
+    float: left;
+    padding: 0;
+    margin: 5px 5px 0 0;
+}
+
+.boiteFiletActu a
+{
+    font-size: 0;
+}
+
+.boiteFiletActu .lienrss
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/rss_actu.png') no-repeat 0 0 transparent;
+}
+
+.boiteFiletActu .imprimer
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/imprimer_actu.png') no-repeat 0 0 transparent;
+}
+
+.boiteFiletActu .envoyer
+{
+    width: 26px;
+    height: 20px;
+    display: block;
+    background: url('/resource/pict/mail_actu.png') no-repeat 0 0 transparent;
+}
+
+.listeReseauSociaux
+{
+    padding: 0;
+    list-style: none;
+    margin-top: 2px;
+}
+
+.listeReseauSociaux li
+{
+    float: left;
+}
+
+.listeReseauSociaux .reseauFacebook
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/facebook16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.listeReseauSociaux .reseauTwitter
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/twitter16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.listeReseauSociaux .reseauLinkedin
+{
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url('/resource/pict/in16x16.jpg') no-repeat 0 0 transparent;
+    margin: 5px;
+}
+
+.boiteFiletActu .titre
+{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 21px;
+    margin-top: 6px;
+}
+
+.boiteFiletActu .espaceCentre
+{
+    width: 740px;
+}
+
+.listeArticles
+{
+    padding: 0;
+    margin: 0;
+}
+
+.listeArticles li
+{
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-bottom: 0.6em;
+}
+
+.pictures img
+{
+    border: 1px solid #C0C0C0;
+}
+
+.listeLiensActus
+{
+    color: #3b3b3b;
+    text-decoration: none;
+    font-size: 1em;
+}
+.listeLiensActus:hover
+{
+    text-decoration: underline;
+}
+
+ul#erreurs li{
+    color:red;
+    font-size: 1.2em;
+}
+
+.fb-like
+{
+    height: 33px;
+}
+
+#contenuEnvoyerMail
+{
+    margin: 0 0 13px 0;
+}
+
+.envoyerTexte
+{
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+#notificationErreur, #notificationEnvoiOk
+{
+    background-color: #C97345;
+    border-bottom: 1px solid #C0C0C0;
+    border-top: 1px solid #C0C0C0;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    list-style: none outside none;
+    margin-bottom: 18px;
+    padding: 0;
+    text-indent: 8px;
+}
+
+.boutonValider
+{
+    background-color: #159fd6;
+    border: 1px solid #303030;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 110px;
+    margin-top: 8px;
+    text-align: center;
+    width: 111px;
+}
+
+.boutonValider:hover
+{
+    border: 1px solid #C0C0C0;
+}
+
+#boiteEnvoyerActu label
+{
+    display: inline-block;
+    width: 144px;
+}
+
+#boiteEnvoyerActu .formSeparateur
+{
+    width: 100%;
+    height: 5px;
+}
+
+#boiteEnvoyerActu input[type="text"], #boiteEnvoyerActu textarea
+{
+    width: 244px;
+}
+
+#boiteEnvoyerActu textarea
+{
+    height: 147px;
+}
+
+.textePrincipal
+{
+    color: #3b3b3b;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.textePrincipal a
+{
+    color: #d4781d;
+    text-decoration: underline;
+}
+.textePrincipal a:hover
+{
+    text-decoration: none;
+}
+
+.videos a
+{
+    color: #d4781d;
+}
+.videos a:hover
+{
+    text-decoration: underline;
+}
+
+/************************ Fin du style du module d'actu ***********************/
+.btnPdfGeneral
+{
+    margin-bottom: 0;
+}
+		</style>
+		<script src="/resource/js/modernizr.js"></script>
+		<script>var onJQReady=[];
+var onDocReady=[];
+var $=function(){return{ready:function(fn){onDocReady.push(fn);}}};
+$(document).ready(function(){
+    $('#loadingImg img').stop(true).hide(2000,function(){
+        $(this).css({width:'32px',height:'32px',opacity:'1'});
+    });
+	
+	    // Remplacement des adresses courriel par des liens mailto.
+        $(".textePrincipal").filter(function() {
+        var html = $(this).html();
+        var emailPattern = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/;
+        var matched_str = $(this).html().match(emailPattern);
+        if (matched_str) {
+            $(this).html(html.replace(emailPattern, "<a href='mailto:" + matched_str + "'>" + matched_str + ""));
+            return $(this)
+        }
+    });
+    
+    $('#menuBloc li').hover(function() {
+        $(this).addClass('selected');
+        $(this).find('ul:first').slideDown('slow');
+    },
+        function(){$(this).removeClass('selected'); $(this).find('ul.subItems').hide()}
+    ); 
+
+});
+onJQReady.push(function(){
+    $('#loadingImg img').show(300);
+    onJQReady.push=function(){arguments[0]();};
+    var doc=$(document);
+    onDocReady.push=doc.ready;
+    var onDocReady2=onDocReady.slice(0);
+    for(var fct in onDocReady2)
+            doc.ready(onDocReady2[fct]);
+});
+yepnope([{
+    load: '/resource/js/jquery-1.8.2.js',//'timeout=300!http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js',
+    complete: function () {
+        var JQready = function(){
+            for(var fct in onJQReady)
+                    onJQReady[fct]();
+        };
+        if ( !window.jQuery ) {
+            yepnope({
+                load: '/resource/js/jquery-1.8.2.js',
+                complete: function () {
+                    JQready();
+                }
+            });
+        }else
+                JQready();
+    }
+}
+,{load:{'jquery.colorbox':'http://grand-armagnac.fr/resource/js/jquery.colorbox.js','jquery.cycle.all':'http://grand-armagnac.fr/resource/js/jquery.cycle.all.js','jquery.sharrre-1.3.4':'http://grand-armagnac.fr/resource/js/jquery.sharrre-1.3.4.js','jquery.dotdotdot':'http://grand-armagnac.fr/resource/js/jquery.dotdotdot.js','jquery.maphilight':'http://grand-armagnac.fr/resource/js/jquery.maphilight.js'},callback:{'jquery.colorbox':function(url, result, key){$(document).ready(function(){ $("#validite").colorbox({iframe:true, width:"45%", height:"67%"});$(".actuPict").colorbox({rel:"actuPict", maxWidth:"95%", maxHeight:"95%"});if(typeof cbReady=="function")cbReady();});},'jquery.cycle.all':function(url, result, key){$(document).ready(function(){ $("#slideShow").cycle({speed:  700,timeout: 7000, pager:  "#nav"}).css("display", "block");});},'jquery.sharrre-1.3.4':function(url, result, key){$(document).ready(function(){ onShareReady();});},'jquery.dotdotdot':function(url, result, key){$(document).ready(function(){ onDotReady();});},'jquery.maphilight':function(url, result, key){$(document).ready(function(){ $("img[usemap]").maphilight({strokeColor: "ffffff", strokeWidth: 3, shadow: true, shadowX: 5, shadowY: 5, shadowRadius: 6, shadowColor: "000000", shadowOpacity: 0.8, shadowPosition: "outside"});});}}}]);
+
+function onShareReady(){
+    $('#Twitter').sharrre({
+        share: {
+            twitter: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('twitter');
+        }
+    });
+    $('#Facebook').sharrre({
+        share: {
+            facebook: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('facebook');
+        }
+    });
+    $('#Google').sharrre({
+        share: {
+            googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: false,
+        urlCurl: '',
+        click: function(api, options){
+            api.openPopup('googlePlus');
+        }
+    });
+}
+
+function onDotReady()
+{
+    	$(".dotdot").dotdotdot();
+}
+		</script>
+	</head>
+	<body>
+		<header id="mainHeader">
+			<div id="centerHeader">
+				<h1><img src="resource/pict/logo.png" width="342" height="223" alt="CCGA"></h1>
+			</div>
+		</header>
+		<nav id="mainNav">
+			<ul id="menuBloc">
+				<li id="accueilLi"><a href="/accueil" id="homeItem">Accueil</a></li>
+				<li><a href="#" id="missionsServices">Missions et services de la C.C.G.A</a>
+					<ul class="subItems">
+						<li><span>La structure</span>
+							<ul>
+								<li><a href="/Territoire">Le territoire / Les communes</a></li>
+								<li><a href="/StatutsCCGA">Statuts de la CCGA</a></li>
+								<li><a href="/elements?arg1=3">Comptes rendus Conseil</a></li>
+								<li><a href="/elements?arg1=2">Marchés publics</a></li>
+							</ul>
+						</li>
+						<li><span>Petite Enfance Parentalité</span>
+							<ul>
+								<li><a href="/MultiAccueil">Multi-Accueil</a></li>
+								<li><a href="/LAEP">Lieu Accueil Enfant Parent</a></li>
+								<!-- <li><a href="/CafeDesParents">Café des parents</a></li> -->
+								<li><a href="/RAM">Relais Assistant(e)s Maternel(le)s</a></li>
+								<li><a href="/Ludotheque">Ludothèque</a></li>
+								<li><a href="/CLAS">Contrat Local d'Accompagnement à la scolarité</a></li>
+								<!-- <li><a href="/Signes2mains">Atelier "Parle avec les mains"</a></li> -->
+							</ul>
+						</li>
+						<li><span>Enfance loisirs</span>
+							<ul>
+								<li><a href="/AccueilsLoisirs">Accueils de loisirs</a></li>
+								<!-- <li><a href="/NouvellesActivitesPeriscolaire">Nouvelles activités périscolaires</a></li> -->
+								<li><a href="/SejourSki2020">Séjour ski 2020</a></li>
+								<li><a href="/SejourAvril2020">Séjour Avril 2020</a></li>
+								<!-- <li><a href="/RencontreEnfanceJeunesse2016">Rencontre enfance jeunesse 2016</a></li> -->
+							</ul>
+						</li>
+						<li class="stopFloat">
+						<li><span>Services Techniques</span>
+							<ul>
+								<li><a href="/DirectionServicesTechniques">Direction des Services Techniques</a></li>
+								<li><a href="/DomainePublicRoutier">Domaine public Routier</a></li>
+								<li><a href="/Patrimoine">Patrimoine</a></li>
+								<li><a href="/CheminsGrandesRandonnees">Chemins de Grandes Randonnées</a></li>
+								<li><a href="/SPANC">Assainissement non collectif</a></li>
+							</ul>
+						</li>
+						<li><span>Action jeunesse</span>
+							<ul>
+								<li><a href="/OperationEteJeunes">Opération été jeunes</a></li>
+								<!-- <li><a href="/Sejours">Séjours</a></li> -->
+								<li><a href="/SejourAvril2020">Séjour Avril 2020</a></li>
+								<li><a href="/SejourSki2020">Séjour ski 2020</a></li>
+								<li><a href="/ActionJeunesse">Action Jeunesse</a></li>
+								<!-- <li><a href="/RencontreEnfanceJeunesse2016">Rencontre enfance jeunesse 2016</a></li> -->
+							</ul>
+						</li>
+						<li><span>Développement économique</span>
+							<ul>
+								<li><a href="/AideImmobilierEntreprise">Aides à l'immobilier d'entreprise</a></li>
+								<li><a href="/Tourisme">Tourisme</a></li>
+								<li><a href="/TaxeDeSejour">Taxe de séjour / Hébergement</a></li>
+							</ul>
+						</li>
+						<li class="stopFloat">
+						<li><span>La protection et l'environnement</span>
+							<ul>
+								<li><a href="/OrduresMenageres">Collecte et traitement des ordures ménagères</a></li>
+							</ul>
+						</li>
+						<li><span>Projet éducatif CCGA</span>
+							<ul>
+								<li><a href="/resource/doc/ProjetEducatifCCGA.pdf" target="_blank">Télécharger en .pdf le projet éducatif de la CCGA</a></li>
+							</ul>
+						</li>
+						<li><span>COVID-19</span>
+							<ul>
+								<li><a href="/covidOrganisationServicesCCGA">Organisation des services CCGA</a></li>
+								<li><a href="/covid19AidesEntreprises">Les aides aux entreprises</a></li>
+								<li><a href="/covid19InformationsConsignes">Informations et consignes</a></li>
+							</ul>
+						</li>
+						<li class="stopFloat">
+					</ul>
+				</li>
+				<li><a href="#" id="missions">C.I.A.S</a>
+					<ul class="subItems">
+						<li><span class="deuxLignes">Présentation du Centre Intercommunal d'Action Sociale</span>
+							<ul>
+								<li><a href="/InstancesCIAS">Les instances</a></li>
+								<li><a href="/OrganisationCIAS">L’organisation du CIAS</a></li>
+								<li><a href="/MembresConseilAdministrationCIAS">Membres Conseil d'Administration CIAS</a></li>
+								<li><a href="/PointInformationCAF">Point d’information CAF</a></li>
+								<li><span class="gras souligne">Contact :</span><br><a href="ContactCIAS">CIAS - SAAD - Service de livraison repas</a></li>
+							</ul>
+						</li>
+						<li><span class="deuxLignes">Service d'Aide et d'Accompagement à Domicile</span>
+							<ul>
+								<li><a href="/SAAD">Présentation du SAAD</a></li>
+								<li><a href="/OrganisationSAAD">Organisation du SAAD</a></li>
+								<li><a href="/MissionsSAAD">Missions du SAAD</a></li>
+								<li><a href="/DroitsEtDevoirsSAAD">Droits et devoirs des bénéficiaires</a></li>
+								<li><a href="/MissionsEtObligationsSAAD">Missions et obligations des aides à domicile</a></li>
+							</ul>
+						</li>
+						<li><span class="deuxLignes">Service de livraison de repas à domicile</span>
+							<ul>
+								<li><a href="/PresentationServiceRepasDomicile">Presentation du service de repas</a></li>
+								<li><a href="/ReglementInterieurLivraisonRepasDomicile">Règlement intérieur</a></li>
+								<li><a href="/MenusLivraisonRepasDomicile">Menus</a></li>
+							</ul>
+						</li>
+						<li> </li>
+					</ul>
+				</li>
+				<li><a href="/information?arg1=1" id="actualite">Actualités</a></li>
+				<li><a href="/lien" id="liens">Liens</a></li>
+				<li><a href="/Contact" id="contact">Contact</a></li>
+				<!-- <li><a href="/inscription" id="newsletter">Newsletter</a></li> -->
+				<li style="margin-left: 5px;" class="agregateurItem"><a data-url="http://grand-armagnac.fr/elements?arg1=3" data-text="" data-title="" class="cache" id="Facebook" href="#">Bouton Facebook</a></li>
+				<li class="agregateurItem"><a data-url="http://grand-armagnac.fr/elements?arg1=3" data-text="" data-title="" class="cache" id="Twitter" href="#">Bouton Twitter</a></li>
+			</ul>
+		</nav>
+		<!-- <style>
+    #mainHeader
+    {
+        background: url("resource/pict/bandeau/ete/ete1.jpg") no-repeat scroll 0 0 transparent;
+    }
+</style> -->
+		<div id="mainContent">
+			<div id="sectionCommunes">
+				<h2 class="titrePointilles">Les communes du Grand Armagnac</h2>
+				<div id="boxListes">
+					<ul id="listeCommunesFirst" class="listeCommunes">
+						<li><a href="CommuneAyzieu">Ayzieu</a></li>
+						<li><a href="CommuneBascous">Bascous</a></li>
+						<li><a href="CommuneBretagneArmagnac">Bretagne d'Armagnac</a></li>
+						<li><a href="CommuneCampagneArmagnac">Campagne d'Armagnac</a></li>
+						<li><a href="CommuneCastelnauAuzanLabarrere">Castelnau d'Auzan Labarrère</a></li>
+					</ul>
+					<ul class="listeCommunes" style="width: 240px;">
+						<li><a href="CommuneCastexArmagnac">Castex d'Armagnac</a></li>
+						<li><a href="CommuneCazaubonBarbotanLesThermes">Cazaubon Barbotan/Thermes</a></li>
+						<li><a href="CommuneCourrensan">Courrensan</a></li>
+						<li><a href="CommuneDemu">Dému</a></li>
+						<li><a href="CommuneEauze">Eauze</a></li>
+					</ul>
+					<ul class="listeCommunes" style="width: 144px;">
+						<li><a href="CommuneEstang">Estang</a></li>
+						<li><a href="CommuneGondrin">Gondrin</a></li>
+						<li><a href="CommuneLannemaignan">Lannemaignan</a></li>
+						<li><a href="CommuneLannepax">Lannepax</a></li>
+						<li><a href="CommuneLaree">Larée</a></li>
+					</ul>
+					<ul class="listeCommunes" style="width: 190px;">
+						<li><a href="CommuneLiasArmagnac">Lias d'Armagnac</a></li>
+						<li><a href="CommuneMarguestau">Marguestau</a></li>
+						<li><a href="CommuneMauleonArmagnac">Mauléon</a></li>
+						<li><a href="CommuneMaupas">Maupas</a></li>
+						<li><a href="CommuneMonclarArmagnac">Monclar d'Armagnac</a></li>
+					</ul>
+					<ul class="listeCommunes" style="width: 120px;">
+						<li><a href="CommuneNoulens">Noulens</a></li>
+						<li><a href="CommunePanjas">Panjas</a></li>
+						<li><a href="CommuneRamouzens">Ramouzens</a></li>
+						<li><a href="CommuneReans">Réans</a></li>
+						<li><a href="CommuneSeailles">Séailles</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="boxSousCommunes">
+				<div id="blocSlider">
+					<h2 class="titrePointilles" style="width: 721px;">à la une</h2>
+					<div id="slideShow"><a href="http://grand-armagnac.fr/covidOrganisationServicesCCGA"><img class="banniere" src="local/bandeaux/5ecf93825d508.jpg" width="721" height="299" alt="CCGA 5ecf93825d508.jpg"></a></div>
+					<div id="nav"></div>
+				</div>
+				<div id="blocLienTerritoire">
+					<h2 class="titrePointilles" style="width: 233px;">Grand Armagnac</h2><a href="Territoire" id="blocTerritoire"><span></span></a></div>
+				<div class="stopFloat"></div>
+			</div>
+			<div id="blocContenu">
+				<div id="pageContenu">
+					<h2><span id="bigPuceVague"></span>Comptes rendus du Conseil Communautaire</h2><br>
+					<div class="boiteInfos" id="id13">
+						<h3 class="titreElement">Compte rendu Conseil Communautaire - Octobre 2015 -</h3>
+						<div class="pictures">
+							<div class="stopFloat"></div>
+						</div>
+						<div class="textePrincipal">L’an deux mil quinze, le 1er octobre 2015 à 21 heures, le Conseil Communautaire de la Communauté de Communes du Grand Armagnac, dûment convoqué le 24 septembre 2015, s’est réuni au Château de Moutiques à Cazaubon, sous la présidence de Monsieur Didier DUPRONT, Président.<br></div>
+						<div class="document"><a href="local/doc/40.pdf" class="btnPdfGeneral" target="_blank">Compte rendu</a></div>
+						<div class="videos"></div>
+						<div class="stopFloat"></div>
+					</div>
+					<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+					<div class="boiteInfos" id="id12">
+						<h3 class="titreElement">Compte rendu Conseil Communautaire - Août 2015 -</h3>
+						<div class="pictures">
+							<div class="stopFloat"></div>
+						</div>
+						<div class="textePrincipal">L’an deux mil quinze, le 27 août  2015 à 21 heures, le Conseil Communautaire de la Communauté de Communes du Grand Armagnac, dûment convoqué le 21 août 2015, s’est réuni au Château de Moutiques à Cazaubon, sous la présidence de Monsieur Didier DUPRONT, Président.<br></div>
+						<div class="document"><a href="local/doc/39.pdf" class="btnPdfGeneral" target="_blank">Compte rendu</a></div>
+						<div class="videos"></div>
+						<div class="stopFloat"></div>
+					</div>
+					<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+					<div class="boiteInfos" id="id7">
+						<h3 class="titreElement">Conseil Communautaire du jeudi 15 janvier 2015</h3>
+						<div class="pictures">
+							<div class="stopFloat"></div>
+						</div>
+						<div class="textePrincipal">L’an deux mil quinze, le 15 janvier 2015 à 20 heures 30, le Conseil Communautaire de la Communauté de Communes du Grand Armagnac, dûment convoqué le 9 janvier 2015, s’est réuni au foyer municipal, à CASTELNAU D’AUZAN, sous la présidence de Monsieur Didier DUPRONT, Président.<br></div>
+						<div class="document"><a href="local/doc/8.pdf" class="btnPdfGeneral" target="_blank">Conseil Communautaire du jeudi 15 janvier 2015</a></div>
+						<div class="videos"></div>
+						<div class="stopFloat"></div>
+					</div>
+					<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+					<div class="boiteInfos" id="id8">
+						<h3 class="titreElement">Conseil Communautaire du jeudi 20 novembre 2014</h3>
+						<div class="pictures">
+							<div class="stopFloat"></div>
+						</div>
+						<div class="textePrincipal">L’an deux mil quatorze, le 20 novembre 2014 à 21 heures, le Conseil Communautaire de la Communauté de Communes du Grand Armagnac, dûment convoqué le 14 novembre 2014, s’est réuni à la salle de la Kazerne, à Gondrin, sous la présidence de Monsieur Didier DUPRONT, Président.<br></div>
+						<div class="document"><a href="local/doc/10.pdf" class="btnPdfGeneral" target="_blank">Conseil Communautaire du jeudi 20 novembre 2014</a></div>
+						<div class="videos"></div>
+						<div class="stopFloat"></div>
+					</div>
+					<div style="position: relative; width: 100%; border-bottom: 1px solid rgb(182, 182, 182); margin: 28px auto 21px;"></div>
+					<div class="boiteInfos" id="id6">
+						<h3 class="titreElement">Conseil Communautaire du jeudi 18 décembre 2014</h3>
+						<div class="pictures">
+							<div class="stopFloat"></div>
+						</div>
+						<div class="textePrincipal">L’an deux mil quatorze, le 18 décembre 2014 à 21 heures, le Conseil Communautaire de la Communauté de Communes du Grand Armagnac, dûment convoqué le 12 décembre 2014, s’est réuni à la salle des fêtes à CAMPAGNE D’ARMAGNAC, sous la présidence de Monsieur Didier DUPRONT, Président.<br></div>
+						<div class="document"><a href="local/doc/7.pdf" class="btnPdfGeneral" target="_blank">Conseil Communautaire du jeudi 18 décembre 2014</a></div>
+						<div class="videos"></div>
+						<div class="stopFloat"></div>
+					</div><br></div>
+			</div>
+			<div id="blocBoitesSousContenu">
+				<article class="boxSousContenu">
+					<h2 class="titrePointilles">Le mot du président</h2>
+					<div class="paraBoxSousContenu1 dotdot">
+						<p>La mission d'une communauté de communes consiste à réaliser des projets et à mettre en œuvre des services dans un ensemble de communes qui, chacune de leur côté n'en auraient pas eu les moyens, ou d'en améliorer le fonctionnement ou le coût lorsqu'ils existaient.<br></p>
+						<p>La communauté de communes du Grand Armagnac est d'abord une communauté de services. L'enfance jeunesse et la personne âgée, aux deux extrêmes de la vie, sont les deux catégories prioritaires dans nos actions, comme vous le découvrirez sur ce site. <br></p>Composée aujourd'hui de 25 communes, nul ne sait aujourd'hui quel sera son périmètre lorsque sera déployée la loi NOTRe qui vient d'être votée. <br>
+						<p>Quelle qu'en soit l'issue, les 46 personnes que vous avez directement élues lors du dernier renouvellement des conseils municipaux pour la gérer, ainsi que les 160  agents qui y travaillent au quotidien, resteront au service de la population de ce territoire. <br></p>
+						<p><br></p>
+						<p>Didier Dupront<br></p>
+						<p> </p><br><br><br><br></div><a href="edito">Lire la suite</a></article>
+				<article class="boxSousContenu">
+					<h2 class="titrePointilles">Actualités</h2>
+					<div class="paraBoxSousContenu2 dotdot">
+						<h3>Forum Enfance Jeunesse</h3>
+						<div>Les familles dont les enfants fréquentent les différentes structures d'accueil de la CCGA sont conviées à partager un moment ludique , d'information, d'échanges et de débats avec les acteurs du Service Enfance Jeunesse.</div>
+						<div><br></div>
+						<div><b>Mardi 25 février 2020 à 18h30.</b><br>Salle des fête de Castelnau d'Auzan<br><br>Rencontre - Échanges - Jeux - Exposition.</div>
+						<div><br></div>
+					</div><a href="information?arg1=1&arg2=238">Lire la suite</a></article>
+				<article id="articlegalerieBottom" class="boxSousContenu">
+					<h2 class="titrePointilles">CIAS - Transfert de service</h2>
+					<p><span class="txtCentre"> <span class="gras"> Transfert des services administratifs</span><br> A partir du 18/06/2018, la Directrice du CIAS, les agents en charge de la comptabilité et de la régie du CIAS ainsi que les agents du service de portage de repas auront le plaisir de vous accueillir au 25, bd Saint-Blancat à Eauze... </span></p>
+					<!-- <img src="resource/pict/img_bloc_cias.jpg" width="233" height="225" alt="C.I.A.S CCGA" /> --><a id="lienGalerieBottom" href="/ciasSaintBlancat">Lire la suite</a></article>
+				<article id="boiteOTBottom" class="boxSousContenu" style="margin-right: 0;">
+					<h2 class="titrePointilles">Office de Tourisme CCGA</h2><a href="OfficeTourismeCCGA" id="spriteOT">Office de Tourisme CCGA</a></article>
+				<div class="stopFloat"></div>
+			</div>
+		</div>
+		<footer id="mainFooter">
+			<div id="footerSignature"><a href="MentionsLegales">Mentions légales</a> - <a href="http://www.n124.net/blocAccessibilite/blocAccessibilite.html" id="validite">Accessibilité et validité</a> - Réalisation : <a href="http://n124.net" target="_blank">N124 agence de communication</a></div>
+		</footer>
+	</body>
+</html>
