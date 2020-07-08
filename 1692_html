@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml encoding="utf-8" ?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+		<base href="http://www.ccsb-saonebeaujolais.fr/default/">
+		<title>Comptes-rendus - Communauté de communes Saône Beaujolais - Site officiel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="fr-FR">
+		<meta name="description" content="Communauté de Communes">
+		<meta name="keywords" content="communauté, communautés, commune, communes, intercom, intercoms, mairie, réseau, site, web, portail">
+		<meta name="robots" content="index, follow">
+		<meta name="distribution" content="global">
+		<link href="images/design/favicon.ico" rel="icon" type="image/x-icon">
+		<link href="images/design/favicon.png" rel="shortcut icon" type="image/png">
+		<!-- Open sans -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700" rel="stylesheet" type="text/css">
+		<style type="text/css">body {
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:#d9dadb
+}
+.couleur_main, .cl_main {color:#0090a9}
+.couleur_main_bg, .bg_main {background-color:#0090a9 !important}
+.couleur_main_bd, .br_main {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #0090a9;
+}
+.couleur_police, .cl_font {color:#a61545}
+.couleur_police_bg, .bg_font {background-color:#a61545 !important}
+.couleur_police_bd, .br_font {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a61545;
+}
+.couleur_fond_bg {background-color:#d9dadb}
+#banner .gradient {
+	background: -moz-linear-gradient(top, transparent, #d9dadb 100%);
+	background: -webkit-linear-gradient(top, transparent, #d9dadb 100%);
+	background: linear-gradient(to bottom, transparent, #d9dadb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#d9dadb",GradientType=0 );
+}
+.r_survey .r_resp_score:before {border-color: transparent #0090a9 transparent transparent;}
+#home_picture .tab.active_tab:before {border-color: transparent transparent #0090a9;}
+a.lien_couleur {color: #a61545;}
+a.lien_couleur:hover, a.lien_couleur:active, a.lien_couleur:focus { color: #880027;}
+.couleur {color: #a61545;}
+#head .retour {background: #a61545 url("http://static.reseaudesintercoms.fr/default/images/design/retour_transparent.png") no-repeat;}
+#tribune a.postadmin, #tribune span.postadmin{color: #a61545;}
+#tribune a.postvisit, #tribune span.postvisit{color: #a61545;}
+#information .tree1, #information .tree1 a {color: #a61545;}
+#newsScroll .rdcSlide-nav .rdcSlide-navcurrent { background-color:#a61545; }
+		</style>
+		<link href="http://static.reseaudesintercoms.fr/default/styles/global.min.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="/default/styles/font.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/modules/v2/municipalreport.css?36680" media="screen, print" rel="stylesheet" type="text/css">
+		<link href="http://static.reseaudesintercoms.fr/default/styles/contraste.css" rel="alternate stylesheet" type="text/css" title="typo_contrast">
+		<!--[if IE 7]><link type="text/css" rel="stylesheet" href="/default/styles/styles-ie.css" /><![endif]-->
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<!-- Header du site -->
+		<style type="text/css">
+#banner {
+		background: url("http://static.reseaudesintercoms.fr/cities/95/banner/gUphWzzsFvWswY9.jpg") no-repeat center;
+	}
+		</style>
+		<div id="banner">
+			<div class="gradient"></div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="wrapper">
+					<!-- Logo -->
+					<div id="logo"><a href="http://www.ccsb-saonebeaujolais.fr"> <img src="http://static.reseaudesintercoms.fr/cities/95/logo/YBXUI5QHyGeLPyd.jpg" alt="Logo de la Communauté" width="216" height="60"> </a></div>
+					<!-- Message de bienvenue -->
+					<div id="welcome"><a href="http://ccsb-saonebeaujolais.fr">Site officiel</a></div>
+					<div id="head_links"><a href="/mobile">Version Mobile</a> <span class="sepa">|</span> <a href="/fr/accessibilite">Accessibilité</a> <span class="sepa">|</span> <a href="https://moncompte.frenchglobe.fr" target="_blank">Espace Membre</a> <span class="sepa">|</span> <a href="/fr/contact">Contact</a></div>
+				</div>
+			</div>
+			<div class="header_bottom wrapper">
+				<!-- Menu dynamique -->
+				<style type="text/css">
+.menu-li.menu-cat1:hover a.menu-a, 
+.menu-li.menu-cat1.focus a.menu-a {
+	background-color:#a61545 !important;
+	border-color:#a61545 !important;
+}
+.menu-cat1 .submenu {
+	border-bottom: 2px solid #a61545;
+}
+.menu-cat1 .submenu li:hover a, 
+.menu-cat1 .submenu li.focus a {
+	background-color:#a61545 !important;
+}
+.menu-cat1 .submenu li a:before {
+	color: #a61545;
+}
+.menu-li.menu-cat2:hover a.menu-a, 
+.menu-li.menu-cat2.focus a.menu-a {
+	background-color:#60becf !important;
+	border-color:#60becf !important;
+}
+.menu-cat2 .submenu {
+	border-bottom: 2px solid #60becf;
+}
+.menu-cat2 .submenu li:hover a, 
+.menu-cat2 .submenu li.focus a {
+	background-color:#60becf !important;
+}
+.menu-cat2 .submenu li a:before {
+	color: #60becf;
+}
+.menu-li.menu-cat3:hover a.menu-a, 
+.menu-li.menu-cat3.focus a.menu-a {
+	background-color:#f6ba00 !important;
+	border-color:#f6ba00 !important;
+}
+.menu-cat3 .submenu {
+	border-bottom: 2px solid #f6ba00;
+}
+.menu-cat3 .submenu li:hover a, 
+.menu-cat3 .submenu li.focus a {
+	background-color:#f6ba00 !important;
+}
+.menu-cat3 .submenu li a:before {
+	color: #f6ba00;
+}
+.menu-li.menu-cat6:hover a.menu-a, 
+.menu-li.menu-cat6.focus a.menu-a {
+	background-color:#b95368 !important;
+	border-color:#b95368 !important;
+}
+.menu-cat6 .submenu {
+	border-bottom: 2px solid #b95368;
+}
+.menu-cat6 .submenu li:hover a, 
+.menu-cat6 .submenu li.focus a {
+	background-color:#b95368 !important;
+}
+.menu-cat6 .submenu li a:before {
+	color: #b95368;
+}
+.menu-li.menu-cat4:hover a.menu-a, 
+.menu-li.menu-cat4.focus a.menu-a {
+	background-color:#45ac39 !important;
+	border-color:#45ac39 !important;
+}
+.menu-cat4 .submenu {
+	border-bottom: 2px solid #45ac39;
+}
+.menu-cat4 .submenu li:hover a, 
+.menu-cat4 .submenu li.focus a {
+	background-color:#45ac39 !important;
+}
+.menu-cat4 .submenu li a:before {
+	color: #45ac39;
+}
+.menu-li.menu-cat5:hover a.menu-a, 
+.menu-li.menu-cat5.focus a.menu-a {
+	background-color:#01b0c4 !important;
+	border-color:#01b0c4 !important;
+}
+.menu-cat5 .submenu {
+	border-bottom: 2px solid #01b0c4;
+}
+.menu-cat5 .submenu li:hover a, 
+.menu-cat5 .submenu li.focus a {
+	background-color:#01b0c4 !important;
+}
+.menu-cat5 .submenu li a:before {
+	color: #01b0c4;
+}
+				</style>
+				<div id="menu">
+					<ul id="menu-ul">
+						<li class="menu-li menu-cat1" style="background-color:#a61545;"><a class="menu-a" href="/fr/rubrique/1/votre-communaute">Votre Communauté</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/" alt=""></li>
+								<li><a href="/fr/information/4348/editorial-president" class="icon-arrow-right"> Editorial du Président </a></li>
+								<li><a href="/fr/information/5263/les-elus-communautaires" class="icon-arrow-right"> Les élus communautaires </a></li>
+								<li><a href="/fr/information/4879/organisation-fonctionnement" class="icon-arrow-right"> Organisation et fonctionnement </a></li>
+								<li><a href="/fr/information/4350/realisations-projets" class="icon-arrow-right"> Réalisations et projets </a></li>
+								<li><a href="/fr/information/4354/competences-statuts" class="icon-arrow-right"> Compétences et statuts </a></li>
+								<li><a href="/fr/information/4907/logo-charte-graphique" class="icon-arrow-right"> Logo et charte graphique </a></li>
+								<li><a href="/fr/information/5109/les-instances" class="icon-arrow-right"> Les instances </a></li>
+								<li><a href="/fr/information/4358/offres-emploi" class="icon-arrow-right"> Offres d'emploi </a></li>
+								<li><a href="/fr/information/6265/actualites" class="icon-arrow-right"> Actualités </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat2" style="background-color:#60becf;"><a class="menu-a" href="/fr/rubrique/2/tourisme">Tourisme</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/pdep5vr2h9fq9d8.jpg" alt=""></li>
+								<li><a href="/fr/information/4594/grands-projets-equipements" class="icon-arrow-right"> Grands projets et équipements </a></li>
+								<li><a href="/fr/information/4360/office-tourisme" class="icon-arrow-right"> Office de Tourisme </a></li>
+								<li><a href="/fr/information/8201/labels-marque-territoriale" class="icon-arrow-right"> Labels et marque territoriale </a></li>
+								<li><a href="/fr/information/5108/soutien-manifestations" class="icon-arrow-right"> Soutien aux manifestations </a></li>
+								<li><a href="/fr/information/5098/taxe-sejour" class="icon-arrow-right"> Taxe de séjour </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat3" style="background-color:#f6ba00;"><a class="menu-a" href="/fr/rubrique/3/vie-pratique">Vie pratique</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/" alt=""></li>
+								<li><a href="/fr/information/4362/tous-formulaires" class="icon-arrow-right"> Tous les formulaires </a></li>
+								<li><a href="/fr/information/4365/logement-habitat" class="icon-arrow-right"> Logement habitat </a></li>
+								<li><a href="/fr/information/4905/transports" class="icon-arrow-right"> Transports </a></li>
+								<li><a href="/fr/information/4367/petit-patrimoine" class="icon-arrow-right"> Petit patrimoine </a></li>
+								<li><a href="/fr/information/4369/service-public" class="icon-arrow-right"> Service-public </a></li>
+								<li><a href="/fr/information/5110/les-permanences" class="icon-arrow-right"> Les permanences </a></li>
+								<li><a href="/fr/information/4503/services-faveur-petite-enfance" class="icon-arrow-right"> Services en faveur de la petite enfance </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat6" style="background-color:#b95368;"><a class="menu-a" href="/fr/rubrique/6/entreprendre">Entreprendre</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/" alt=""></li>
+								<li><a href="/fr/information/4536/zones-activites-economiques" class="icon-arrow-right"> Zones d'activités économiques </a></li>
+								<li><a href="/fr/marches-publics" class="icon-arrow-right"> Marchés publics </a></li>
+								<li><a href="/fr/information/4525/couveuse-entreprises" class="icon-arrow-right"> Couveuse d'entreprises </a></li>
+								<li><a href="/fr/information/5265/liens-utiles" class="icon-arrow-right"> Liens utiles </a></li>
+								<li><a href="/fr/information/6311/aides-commerce-artisanat" class="icon-arrow-right"> Aides - Commerce & artisanat </a></li>
+								<li><a href="/fr/information/7183/beaujolais-vert-avenir" class="icon-arrow-right"> Beaujolais Vert Votre Avenir </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat4" style="background-color:#45ac39;"><a class="menu-a" href="/fr/rubrique/4/environnement">Environnement</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/" alt=""></li>
+								<li><a href="/fr/information/4497/developpement-durable" class="icon-arrow-right"> Développement durable </a></li>
+								<li><a href="/fr/information/4499/gestion-dechets" class="icon-arrow-right"> Gestion des déchets </a></li>
+								<li><a href="/fr/information/4500/gestion-rivieres" class="icon-arrow-right"> Gestion des rivières </a></li>
+								<li><a href="/fr/information/4501/service-public-assainissement-non-collectif" class="icon-arrow-right"> Service Public d'Assainissement Non Collectif </a></li>
+								<li><a href="/fr/information/4741/les-espaces-naturels-sensibles" class="icon-arrow-right"> Les espaces naturels sensibles </a></li>
+								<li><a href="/fr/information/4580/voirie" class="icon-arrow-right"> Voirie </a></li>
+								<li><a href="/fr/information/6549/urbanisme" class="icon-arrow-right"> Urbanisme </a></li>
+								<li><a href="/fr/information/7843/natura-2000" class="icon-arrow-right"> Natura 2000 </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+						<li class="menu-li menu-cat5" style="background-color:#01b0c4;"><a class="menu-a" href="/fr/rubrique/5/culture-loisirs">Culture et loisirs</a>
+							<ul class="submenu">
+								<li class="first-item"><img src="http://thumbs.reseaudesintercoms.fr/thumbs/95/180x120/" alt=""></li>
+								<li><a href="/fr/information/4599/culture" class="icon-arrow-right"> Culture </a></li>
+								<li><a href="/fr/information/4600/equipements-sportifs" class="icon-arrow-right"> Equipements sportifs </a></li>
+								<li><a href="/fr/information/5466/criterium-dauphine-2018" class="icon-arrow-right"> Critérium du Dauphiné 2018 </a></li>
+							</ul><span class="submenu-bullet"></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+(function() {
+	$(document).ready(function() {
+		$('#menu-ul li').hover(function(){ $(this).addClass('focus');},
+		function(){ $(this).removeClass('focus');});
+	});
+})();
+				</script>
+				<!-- Recherche -->
+				<div id="search" class="br_main">
+					<form action="/fr/search" method="get"><input name="query" type="text" class="texte" placeholder="Recherche" accesskey="4"> <button type="submit" class="submit icon-picto-recherche bg_main"></button></form>
+				</div>
+				<!-- Meteo -->
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Contenu du site -->
+		<div id="page" class="wrapper">
+			<!-- Colonne de gauche -->
+			<!-- Colonne centrale -->
+			<div id="col_center">
+				<div id="head">
+					<div id="breadcrumb"><a class="bread-item bread-home" href="/" title="Accueil"></a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/rubrique/1/votre-communaute" title="Votre Communauté">Votre Communauté</a> <span class="bread-item"> > </span> <a class="bread-item" href="/fr/comptes-rendus" title="Comptes-rendus">Comptes-rendus</a>
+						<div class="clear"></div>
+					</div>
+					<div class="addthis_toolbox addthis_default_style">
+						<div id="accessicon"><a id="h_twitter" class="addthis_button_twitter"><span></span></a> <a id="h_facebook" class="addthis_button_facebook"><span></span></a> <a id="print"><span class="cache">Imprimer la page</span></a> <a id="h_typoplus" href="javascript:void(0)"><span class="cache">Augmenter la taille de la police</span></a> <a id="h_typomoins" href="javascript:void(0)"><span class="cache">Diminuer la taille de la police</span></a></div>
+					</div>
+					<script type="text/javascript" defer src="http://s7.addthis.com/js/250/addthis_widget.js#username=reseaudescommunes"></script>
+					<p class="clear"></p>
+					<h1 class="titre couleur">Comptes-rendus</h1>
+				</div>
+				<div id="municipalreport">
+					<div id="liste">
+						<table class="lastreports" cellpadding="0" cellspacing="0" width="100%">
+							<col width="20%">
+							<col width="65%">
+							<col width="15%">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Ordre du jour</th>
+									<th>Document</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td align="center">04/06/2020</td>
+									<td><a href="/fr/compte-rendu/2414/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/xwojk2uto6rm0.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">05/03/2020</td>
+									<td><a href="/fr/compte-rendu/2409/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/1wztv11xth7dy2.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">06/02/2020</td>
+									<td><a href="/fr/compte-rendu/2384/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/cpegkyo29vf9uc.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/12/2019</td>
+									<td><a href="/fr/compte-rendu/2373/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/4fzo80ialtm2fd5.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">07/11/2019</td>
+									<td><a href="/fr/compte-rendu/2341/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/2mq0ue02o2sy8yy.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">03/10/2019</td>
+									<td><a href="/fr/compte-rendu/2323/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/scrkv6qlyew4jgm.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">11/07/2019</td>
+									<td><a href="/fr/compte-rendu/2291/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/qozj9qmj2vpefa2.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">25/04/2019</td>
+									<td><a href="/fr/compte-rendu/2237/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/qirc7xw40vasr81.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">28/03/2019</td>
+									<td><a href="/fr/compte-rendu/2217/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/0hhpyqsczllf7kp.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">21/02/2019</td>
+									<td><a href="/fr/compte-rendu/2183/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/qsigljvzfq7rmou.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/12/2018</td>
+									<td><a href="/fr/compte-rendu/2141/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/budicj84z4ep88v.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">08/11/2018</td>
+									<td><a href="/fr/compte-rendu/2108/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/2bu8x9iue9u88l4.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">20/09/2018</td>
+									<td><a href="/fr/compte-rendu/2063/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/x1y5t37pg0h7num.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">19/07/2018</td>
+									<td><a href="/fr/compte-rendu/2048/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/vomi3wof9f4iu8.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">07/06/2018</td>
+									<td><a href="/fr/compte-rendu/2033/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/u7t7fg3fs4m5zb0.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">03/05/2018</td>
+									<td><a href="/fr/compte-rendu/2005/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/6iny5iudxv489vu.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">22/03/2018</td>
+									<td><a href="/fr/compte-rendu/1995/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/2tvc0lk05bngpl.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">15/02/2018</td>
+									<td><a href="/fr/compte-rendu/1960/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/omosb2e9t3oma.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">21/12/2017</td>
+									<td><a href="/fr/compte-rendu/1959/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/1h83n2mzj9utla.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+								<tr>
+									<td align="center">09/11/2017</td>
+									<td><a href="/fr/compte-rendu/1887/compte-rendu-sommaire" title="Compte rendu sommaire"><b>Compte rendu sommaire</b></a> <br></td>
+									<td align="center" style="vertical-align:middle"><a href="http://static.reseaudesintercoms.fr/cities/95/documents/qwo94b12lba0nfn.pdf" title="télécharger" onclick="this.target='_blank'"> <img src="images/icons/page_white_acrobat.png" alt="télécharger"> </a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="paginator">
+						<ul>
+							<li class="couleur current"><span>1</span></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page 2"><span>2</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/3" title="Page 3"><span>3</span></a></li>
+							<li class="couleur"><a href="/fr/comptes-rendus/2" title="Page suivante"><span>»</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Colonne de droite -->
+			<div id="col_right" class="rightcolumn">
+				<div class="r_zoom r_mod">
+					<div class="zoom_title cl_main br_main">Accès directs</div>
+					<div class="zoom_txt">
+						<ul>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/09.png');"></div><a href="/fr/information/9158/covid-19-informations" title="COVID 19 - INFORMATIONS"> COVID 19 - INFORMATIONS </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/03.png');"></div><a href="/fr/marches-publics" title="Marchés publics"> Marchés publics </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/10.png');"></div><a href="/fr/information/6549/urbanisme" title="Urbanisme"> Urbanisme </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/24.png');"></div><a href="/fr/information/5098/taxe-sejour" title="Taxe de séjour"> Taxe de séjour </a></li>
+							<li class="zoom_item">
+								<div style="background-image:url('http://static.reseaudescommunes.fr/default/images/enunclic/18.png');"></div><a href="/fr/information/4362/tous-formulaires" title="Tous les formulaires"> Tous les formulaires </a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="r_advert"><a href="http://www.tresbeaujolais.com/" target="_blank"> <img src="http://static.reseaudesintercoms.fr/cities/95/advertising/k7lnDaBa28S6sUW.png" alt="Très Beaujolais"> </a></div>
+				<style>
+#interactivemap svg {
+	background-color:#e5e9ec;
+	margin:0;
+	background-image: url(http://static.reseaudesintercoms.fr/cities/95/interactive/point_geoloc.png);
+	background-repeat:no-repeat;
+	
+	/* Position à modifier */
+	background-position: 5px 133px;
+}
+
+#map-tip {
+	text-align: center;
+	font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+	display: none;
+	border: none;
+	color: #ffffff;
+	z-index: 1000;
+	float: left;
+	position: absolute;
+	background-color:#02507b;
+	border-radius:4px;
+	padding:6px 8px;
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+#map-tip p {
+	margin: 0!important;
+}
+				</style>
+				<div id="mini-map">
+					<div id="interactivemap">
+						<!--<svg version="1.1"  viewBox="0 0 1000 500" xml:space="preserve">-->
+						<svg version="1.1" viewbox="8 0 300 220" xml:space="preserve">
+							<g id="countries">
+								<!-- 1 --><a href="/fr/territoire/1220/aigueperse" xlink:href="/fr/territoire/1220/aigueperse"> <polygon id="map_1" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="97.59 31.3 98.59 28.76 89.62 15.4 89.64 15.35 87.43 10.79 82.86 8.29 81.67 13.17 71.71 13.61 72.53 16.17 68.08 22.68 66.96 30.07 67.52 35.95 67.48 36.1 67.58 36.14 77.39 39.69 84.53 36.69 86.78 38.06 89.95 33.72 97.59 31.3"></polygon> </a>
+								<!-- 2 --><a href="/fr/territoire/1216/saint-clement-de-vers" xlink:href="/fr/territoire/1216/saint-clement-de-vers"> <polygon id="map_2" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="86.14 74.86 70.87 50.85 63.12 50.66 63.12 50.67 61.68 51.92 65.02 58.55 62.32 67.73 63.41 72.16 73.34 72.14 81.44 81.59 81.45 81.64 94.16 81.59 86.14 74.86"></polygon> </a>
+								<!-- 3 --><a href="/fr/territoire/1215/saint-igny-de-vers" xlink:href="/fr/territoire/1215/saint-igny-de-vers"> <polygon id="map_3" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="103.73 50.57 93.56 46.47 86.66 37.99 84.53 36.69 77.39 39.69 67.58 36.14 67.48 36.1 64.56 45.95 63.12 50.66 70.87 50.85 86.14 74.86 93.89 81.37 94.46 81.47 102.36 76.11 114.41 79.18 116 60.71 114.53 58.3 103.73 50.57"></polygon> </a>
+								<!-- 4 --><a href="/fr/territoire/1217/saint-bonnet-des-bruyeres" xlink:href="/fr/territoire/1217/saint-bonnet-des-bruyeres"> <polygon id="map_4" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="115.72 19.12 108.96 22 99.51 13.17 89.81 15.67 98.59 28.76 97.59 31.3 89.95 33.72 86.78 38.06 93.56 46.47 103.73 50.57 114.53 58.3 114.58 58.39 116.45 54.26 120.38 52.56 121.46 44.99 127.72 41.3 124.4 34.88 124.3 34.89 115.72 19.12"></polygon> </a>
+								<!-- 5 --><a href="/fr/territoire/1214/azolette" xlink:href="/fr/territoire/1214/azolette"> <polygon id="map_5" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="82.16 84.64 68.42 90.61 68.1 95.49 73.63 100.81 77.81 102.31 77.88 102.35 79.95 101.03 79.56 98.58 86.84 92.98 82.16 84.64"></polygon> </a>
+								<!-- 6 --><a href="/fr/territoire/1213/propieres" xlink:href="/fr/territoire/1213/propieres"> <polygon id="map_6" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="112.78 87.79 115.88 82.78 114.41 79.1 114.41 79.18 102.36 76.11 94.46 81.47 93.89 81.37 94.16 81.59 81.45 81.64 82.17 84.64 82.16 84.64 86.84 92.98 79.56 98.58 79.95 101.03 77.88 102.35 88.03 107.59 90.97 111.47 106.56 99.47 112.99 97.68 112.59 88.18 112.95 88.52 112.78 87.79"></polygon> </a>
+								<!-- 7 --><a href="/fr/territoire/1212/monsols" xlink:href="/fr/territoire/1212/monsols"> <polygon id="map_7" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="143.77 56.05 138.9 53.73 120.37 52.57 116.45 54.26 114.58 58.39 116 60.71 114.41 79.1 115.88 82.78 115.85 82.83 116.47 83 125.14 86.28 144.54 80.05 147.67 73.22 146.65 60.47 143.77 56.05"></polygon> </a>
+								<!-- 8 --><a href="/fr/territoire/1210/saint-christophe" xlink:href="/fr/territoire/1210/saint-christophe"> <polygon id="map_8" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="157.45 41.8 157.29 36.83 153.38 33.72 149.38 36.1 146.71 29.26 146.71 29.26 142.26 32.07 124.4 34.88 127.72 41.3 121.46 44.99 120.38 52.56 120.37 52.57 138.9 53.73 143.77 56.05 146.63 60.45 147.23 59.85 151.53 55.42 157.45 41.8"></polygon> </a>
+								<!-- 9 --><a href="/fr/territoire/1211/trades" xlink:href="/fr/territoire/1211/trades"> <polygon id="map_9" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="163.69 44.13 167.85 43.09 168.09 32.81 160.79 26.25 159.98 16.61 158.85 14.11 152.53 13.29 147.52 21.93 146.71 29.26 149.38 36.1 153.38 33.72 157.29 36.83 157.45 41.8 157.44 41.84 163.69 44.13"></polygon> </a>
+								<!-- 10 --><a href="/fr/territoire/1209/saint-mamert" xlink:href="/fr/territoire/1209/saint-mamert"> <polygon id="map_10" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="166.43 53.15 167.12 50.4 167.97 42.11 167.87 42.02 167.85 43.09 163.69 44.13 157.44 41.84 151.53 55.42 151.5 55.46 159.21 56.36 166.43 53.15"></polygon> </a>
+								<!-- 11 --><a href="/fr/territoire/1208/saint-jacques-des-arrets" xlink:href="/fr/territoire/1208/saint-jacques-des-arrets"> <polygon id="map_11" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="186.85 39.94 185.13 35.44 168.12 32.83 168.09 32.81 167.87 42.02 167.97 42.11 167.12 50.4 167.09 50.52 182.64 47.91 187.75 49.44 191.57 47.95 198.46 42.9 186.85 39.94"></polygon> </a>
+								<!-- 12 --><a href="/fr/territoire/1052/cenves" xlink:href="/fr/territoire/1052/cenves"> <polygon id="map_12" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="215.41 33.7 217.88 32.29 218.07 32.53 222.14 33.45 224.83 29.38 228.78 32.45 232.41 30.76 231.97 19.12 229.78 19.12 224.64 11.67 224.27 5.91 217.07 4.41 209.06 10.6 202.99 5.72 195.28 7.22 193.91 14.42 184.08 23.31 186.83 30.57 185.21 35.45 185.13 35.44 186.85 39.94 198.46 42.9 198.35 42.98 203.36 42.56 211.53 37.68 214.66 41.62 215.41 33.7"></polygon> </a>
+								<!-- 13 --><a href="/fr/territoire/1041/les-ardillats" xlink:href="/fr/territoire/1041/les-ardillats"> <polygon id="map_13" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="160.01 85.5 151.31 77.18 145.11 79.81 144.63 79.84 144.54 80.05 125.14 86.28 116.47 83 115.85 82.83 112.78 87.79 112.95 88.52 123.36 98.41 128.9 106.8 136.82 105.57 160.82 112.11 164.96 97.8 164.05 92.95 160.01 85.5"></polygon> </a>
+								<!-- 14 --><a href="/fr/territoire/1207/ouroux" xlink:href="/fr/territoire/1207/ouroux"> <polygon id="map_14" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="175.63 79.46 177.01 71.49 181.14 68.86 183.02 61.81 188.11 56.88 187.8 49.42 187.75 49.44 182.64 47.91 167.09 50.52 166.43 53.15 159.21 56.36 151.5 55.46 147.23 59.85 146.63 60.45 146.65 60.47 147.67 73.22 144.63 79.84 145.11 79.81 151.31 77.18 160.01 85.5 160.09 85.66 160.73 85.47 172.41 83.59 175.63 79.46"></polygon> </a>
+								<!-- 15 --><a href="/fr/territoire/1032/avenas" xlink:href="/fr/territoire/1032/avenas"> <polygon id="map_15" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="182.64 98.56 184.27 99.31 186.96 96.27 188.27 93.7 187.18 91.73 190.53 89.23 180.73 76.86 181.13 68.86 177.01 71.49 175.63 79.46 172.41 83.59 160.73 85.47 160.09 85.66 164.05 92.95 164.09 93.2 169.34 99.06 182.64 98.56"></polygon> </a>
+								<!-- 16 --><a href="/fr/territoire/1046/vauxrenard" xlink:href="/fr/territoire/1046/vauxrenard"> <polygon id="map_16" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="207.2 67.19 204.03 57.95 191.61 47.93 191.57 47.95 187.8 49.42 188.11 56.88 183.02 61.81 181.14 68.86 181.13 68.86 180.73 76.86 190.53 89.23 190.52 89.23 200.27 90.08 206.8 86.37 211.56 87.27 211.12 77.04 215.82 71.26 207.2 67.19"></polygon> </a>
+								<!-- 17 --><a href="/fr/territoire/1039/jullie" xlink:href="/fr/territoire/1039/jullie"> <polygon id="map_17" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="214.29 41.16 211.53 37.68 203.36 42.56 198.35 42.98 191.61 47.93 203.75 57.73 215.23 62.77 226.92 60.1 214.29 41.16"></polygon> </a>
+								<!-- 18 --><a href="/fr/territoire/1038/julienas" xlink:href="/fr/territoire/1038/julienas"> <polygon id="map_18" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="239.57 62.09 240.16 62.14 240.52 62.14 240.57 62.18 246.52 62.69 248.12 58.24 239.79 50.04 233.44 46.85 231.28 45.13 223.58 45.66 219.76 42.22 217.7 32.45 218.07 32.53 217.88 32.29 215.41 33.7 214.66 41.62 214.29 41.16 226.92 60.1 227.79 62.06 239.58 62.14 239.57 62.09"></polygon> </a>
+								<!-- 19 --><a href="/fr/territoire/1047/vernay" xlink:href="/fr/territoire/1047/vernay"> <polygon id="map_19" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="148.74 114.58 149.58 109.05 136.82 105.57 128.9 106.8 128.91 106.82 127.68 117.42 127.67 117.44 134.75 121.15 140.32 121.06 148.74 114.58"></polygon> </a>
+								<!-- 20 --><a href="/fr/territoire/1045/saint-didier-sur-beaujeu" xlink:href="/fr/territoire/1045/saint-didier-sur-beaujeu"> <path id="map_20" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M149.58,109l-.84,5.54-8.42,6.48-5.57.09-7.09-3.71-2.1,4,1.36,4.61L123.4,129l12.94,14.25,4,3.17v.09l.89-1s13.35-16.11,14.19-16.4c.87-2.39,4.48-13.95,5.41-16.94Z"></path> </a>
+								<!-- 21 --><a href="/fr/territoire/1033/beaujeu" xlink:href="/fr/territoire/1033/beaujeu"> <path id="map_21" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M158.18,141.18l7.68-1.71,7.8-9.81,4.72-.54,5.13-22.79-.86-7.78h0l-13.3.5-5.24-5.86L165,97.8l-4.13,14.3h0c-.93,3-4.54,14.55-5.41,16.94-.39.14-3.52,3.74-6.74,7.53Z"></path> </a>
+								<!-- 22 --><a href="/fr/territoire/1040/lantignie" xlink:href="/fr/territoire/1040/lantignie"> <polygon id="map_22" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="193.49 111.43 184.29 99.28 184.27 99.31 182.65 98.56 183.52 106.34 178.38 129.12 178.37 129.13 188.15 135.47 195.74 119.11 193.49 111.43"></polygon> </a>
+								<!-- 23 --><a href="/fr/territoire/1044/regnie-durette" xlink:href="/fr/territoire/1044/regnie-durette"> <polygon id="map_23" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="203.97 121.82 201.17 111.85 186.85 96.39 184.29 99.28 193.49 111.43 195.74 119.11 188.21 135.33 188.73 136.01 199.29 145.28 203.01 138.47 211.06 137.93 217.7 134.3 203.97 121.82"></polygon> </a>
+								<!-- 24 --><a href="/fr/territoire/1034/chiroubles" xlink:href="/fr/territoire/1034/chiroubles"> <polygon id="map_24" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="187.18 91.73 188.26 93.67 193.66 93.94 203.42 103.12 216.4 105.46 219.45 101.87 211.56 87.22 211.56 87.27 206.8 86.37 200.27 90.08 190.52 89.23 187.18 91.73"></polygon> </a>
+								<!-- 25 --><a href="/fr/territoire/1048/villie-morgon" xlink:href="/fr/territoire/1048/villie-morgon"> <polygon id="map_25" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="227.52 103.97 219.43 101.9 216.4 105.46 203.42 103.12 193.66 93.94 188.26 93.67 188.27 93.7 186.96 96.27 186.85 96.39 201.17 111.85 203.97 121.82 217.53 134.15 225.83 135.36 229.72 132.98 231.91 126.29 230.22 121.34 232.16 108.76 227.52 103.97"></polygon> </a>
+								<!-- 26 --><a href="/fr/territoire/1037/fleurie" xlink:href="/fr/territoire/1037/fleurie"> <path id="map_26" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M242.7,95.82l-.05-.08-1.72-9.39.06-.19-13.3-11.58-7.57-.13-4.79-3.63-.25.08.76.36L211.12,77l.44,10.18,7.89,14.65,0,0,8.1,2.07.09.09.51-.48,9.6-7.6Z"></path> </a>
+								<!-- 27 --><a href="/fr/territoire/1035/chenas" xlink:href="/fr/territoire/1035/chenas"> <polygon id="map_27" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="239.58 62.14 227.79 62.06 227.78 62.03 219.23 67.5 217.88 69.79 220.06 74.42 220.11 74.45 227.68 74.58 240.98 86.16 243.02 79.37 248.18 74.7 240.54 66.5 239.58 62.14"></polygon> </a>
+								<!-- 28 --><a href="/fr/territoire/1042/marchampt" xlink:href="/fr/territoire/1042/marchampt"> <path id="map_28" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M158.18,141.18l-9.54-4.62c-3.66,4.31-7.45,8.87-7.45,8.87l-.89,1,1.07,7.53L151,168.54l.83,5L159,175l6.13-3.63,4.36,1,.07.09.32-1.09,3.63-10.85-3.51-3.9-4-17.22-.1.13Z"></path> </a>
+								<!-- 29 --><a href="/fr/territoire/1043/quincie-en-beaujolais" xlink:href="/fr/territoire/1043/quincie-en-beaujolais"> <polygon id="map_29" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="202.61 154.93 203.27 148.32 199.29 145.27 199.29 145.28 199.27 145.25 198.7 144.82 198.68 144.74 188.73 136.01 188.21 135.33 188.15 135.47 178.37 129.13 173.67 129.67 165.97 139.34 170 156.56 173.5 160.47 169.87 171.32 169.55 172.41 173.67 177.56 173.76 177.62 180.45 175.65 186.93 168.73 189.9 161.87 200.14 154.27 202.61 154.93"></polygon> </a>
+								<!-- 30 --><a href="/fr/territoire/1057/saint-etienne-la-varenne" xlink:href="/fr/territoire/1057/saint-etienne-la-varenne"> <polygon id="map_30" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="186.85 168.82 180.45 175.65 173.76 177.62 192.09 190.32 202.48 180 201.79 175.11 201.98 175.17 186.85 168.82"></polygon> </a>
+								<!-- 31 --><a href="/fr/territoire/1056/odenas" xlink:href="/fr/territoire/1056/odenas"> <polygon id="map_31" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="213.33 178.61 211.59 164.16 213.78 160.09 203.2 155.21 202.63 154.72 202.61 154.93 200.14 154.27 189.9 161.87 186.93 168.73 186.85 168.82 201.98 175.17 213.25 178.49 213.33 178.61"></polygon> </a>
+								<!-- 32 --><a href="/fr/territoire/1051/cercie" xlink:href="/fr/territoire/1051/cercie"> <path id="map_32" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M229.13,138.22l-3.26-2.88,0,0-8.3-1.21.16.15-6.64,3.63-8.05.54-3.71,6.8,3.92,3,10.35-.83c.13,0,4.92-5.72,4.92-5.72l10.14-1.21Z"></path> </a>
+								<!-- 33 --><a href="/fr/territoire/1059/saint-lager" xlink:href="/fr/territoire/1059/saint-lager"> <path id="map_33" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M230.34,159.15l-2.28-7.48.57-11.15-10.13,1.21s-4.8,5.72-4.92,5.72l-10.35.83.06,0-.64,6.4.57.49,10.58,4.88,0,.06h.87l11.17.88Z"></path> </a>
+								<!-- 34 --><a href="/fr/territoire/1058/saint-jean-d-ardieres" xlink:href="/fr/territoire/1058/saint-jean-d-ardieres"> <polygon id="map_34" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="257.47 151.33 257.8 141.44 253.71 131.92 254.71 129.46 259.51 128 253.13 127.91 241.4 131.96 236.22 126.2 231.89 126.24 231.91 126.29 229.72 132.98 225.87 135.34 229.13 138.22 228.63 140.52 228.62 140.52 228.06 151.57 237.77 148.57 257.47 151.33"></polygon> </a>
+								<!-- 35 --><a href="/fr/territoire/1054/corcelles-en-beaujolais" xlink:href="/fr/territoire/1054/corcelles-en-beaujolais"> <polygon id="map_35" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="232.55 108.92 232.15 108.77 230.22 121.34 231.89 126.24 236.22 126.2 241.4 131.96 253.13 127.91 253.16 127.91 256.59 108.3 255.3 106.38 244.2 112.35 232.55 108.92"></polygon> </a>
+								<!-- 36 --><a href="/fr/territoire/1055/lancie" xlink:href="/fr/territoire/1055/lancie"> <polygon id="map_36" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="232.15 108.77 232.55 108.92 244.2 112.35 255.3 106.38 256.58 108.29 263.52 106.82 263.47 102.02 256.82 103.84 245.18 99.46 242.7 95.82 237.73 95.99 228.13 103.58 227.62 104.06 232.16 108.76 232.15 108.77"></polygon> </a>
+								<!-- 37 --><a href="/fr/territoire/1053/charentay" xlink:href="/fr/territoire/1053/charentay"> <polygon id="map_37" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="230.29 159.17 225.8 161.03 214.63 160.15 213.75 160.15 211.59 164.16 213.33 178.61 222.09 191.19 229.8 189.22 236.64 178.41 238.52 170.73 243.24 168.1 237.48 160.59 230.29 159.17"></polygon> </a>
+								<!-- 38 --><a href="/fr/territoire/1219/saint-georges-de-reneins" xlink:href="/fr/territoire/1219/saint-georges-de-reneins"> <polygon id="map_38" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="249.31 215.59 257.03 215.39 256.49 209.65 253.15 200.32 263.23 189.72 264.48 184.86 261.41 176.14 257.84 173.57 257.82 173.43 242.97 168.25 238.52 170.73 236.64 178.41 229.8 189.22 222.09 191.19 222.14 191.26 222.85 195.98 216.88 201.18 219.49 210.29 223.14 211.86 232.45 207.44 237.62 207.29 249.31 215.59"></polygon> </a>
+								<!-- 39 --><a href="/fr/territoire/1050/belleville" xlink:href="/fr/territoire/1050/belleville"> <polygon id="map_39" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="257.82 173.43 256.82 166.71 263.29 159.32 266.69 154.94 266.73 154.79 257.47 151.27 257.47 151.33 237.77 148.57 228.06 151.57 228.06 151.67 230.34 159.15 230.29 159.17 237.48 160.59 243.24 168.1 242.97 168.25 257.82 173.43"></polygon> </a>
+								<!-- 40 --><a href="/fr/territoire/1060/taponas" xlink:href="/fr/territoire/1060/taponas"> <polygon id="map_40" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="254.71 129.46 253.71 131.92 257.8 141.44 257.47 151.27 266.73 154.79 269.15 146.36 277.12 136.11 277.2 135.99 259.49 128.01 254.71 129.46"></polygon> </a>
+								<!-- 41 --><a href="/fr/territoire/1036/drace" xlink:href="/fr/territoire/1036/drace"> <polygon id="map_41" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" points="278.98 111.05 273.69 104.81 272.41 101.03 269.97 100.81 263.55 102 263.47 102.02 263.52 106.82 256.58 108.29 256.59 108.3 253.16 127.91 257.08 127.97 258.45 127.54 259.46 128 259.51 128 259.49 128.01 277.2 135.99 281.53 129.6 284.68 116.25 278.98 111.05"></polygon> </a>
+								<!-- 42 --><a href="/fr/territoire/1049/emeringes" xlink:href="/fr/territoire/1049/emeringes"> <path id="map_42" vector-effect="non-scaling-stroke" fill="#ffffff" class="cls-1" d="M217.88,69.79l1.35-2.28L227.78,62l-.87-1.94-11.69,2.67-11.48-5,.27.22,3.17,9.24,7.86,3.71.25-.08,4.74,3.59Z"></path> </a></g>
+							<g id="map_points"></g>
+						</svg><span id="map-tip"></span>
+						<script src="http://static.reseaudesintercoms.fr/default/scripts/interactive_map.js"></script>
+						<script>
+			var map_cities = [
+				'Aigueperse',
+				'Saint-Clément-de-Vers',
+				'Saint-Igny-de-Vers',
+				'Saint-Bonnet-des-Bruyères',
+				'Azolette',
+				'Propières',
+				'Monsols',
+				'Saint-Christophe',
+				'Trades',
+				'Saint-Mamert',
+				'Saint-Jacques-des-Arrêts',
+				'Cenves',
+				'Les Ardillats',
+				'Ouroux',
+				'Avenas',
+				'Vauxrenard',
+				'Jullié',
+				'Juliénas',
+				'Vernay',
+				'Saint-Didier-sur-Beaujeu',
+				'Beaujeu',
+				'Lantignié',
+				'Régnié-Durette',
+				'Chiroubles',
+				'Villié-Morgon',
+				'Fleurie',
+				'Chénas',
+				'Marchampt',
+				'Quincié-en-Beaujolais',
+				'Saint-Étienne-la-Varenne',
+				'Odenas',
+				'Cercié',
+				'Saint-Lager',
+				"Saint-Jean-d'Ardières",
+				'Corcelles-en-Beaujolais',
+				'Lancié',
+				'Charentay',
+				'Saint-Georges-de-Reneins',
+				'Belleville',
+				'Taponas',
+				'Dracé',
+				'Emeringes'
+			];
+			
+			var map_config = {
+				'default':{
+					'borderColor': '#BEC4CB',
+					'mapShadow':'#fff',
+					'shadowOpacity':'35',
+					'hoverShadow':'#666666',
+					'lakesColor':'#66CCFF',
+					'namesColor':'#919191'
+				},
+			};
+			
+			for (var i = 1, max = map_cities.length; i <= max; i++) {
+				map_config['map_' + i] = {
+					'hover': map_cities[i-1],
+					'upColor':'#ffffff',
+					'overColor':'#1d9656',
+					'downColor':'#1d9656',
+					'enable':true,
+				};
+				addEvent('map_' + i);
+			}
+			
+			var pin_config = {
+				'default':{
+					'pinShadow':'#000',
+					'pinShadowOpacity':'50',
+				},
+				'points':[]
+			}
+		
+						</script>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- Footer -->
+		<div id="f_territory" class="bg_main">
+			<div class="wrapper">
+				<div class="titre"><a href="/fr/territoire-liste/les-communes"> Les communes </a></div>
+				<div class="objet">
+					<ul>
+						<li><a href="/fr/territoire/1220/aigueperse"> Aigueperse </a></li>
+						<li><a href="/fr/territoire/1032/avenas"> Avenas </a></li>
+						<li><a href="/fr/territoire/1214/azolette"> Azolette </a></li>
+						<li><a href="/fr/territoire/1033/beaujeu"> Beaujeu </a></li>
+						<li><a href="/fr/territoire/1050/belleville"> Belleville </a></li>
+						<li><a href="/fr/territoire/1052/cenves"> Cenves </a></li>
+						<li><a href="/fr/territoire/1051/cercie"> Cercié </a></li>
+						<li><a href="/fr/territoire/1053/charentay"> Charentay </a></li>
+						<li><a href="/fr/territoire/1034/chiroubles"> Chiroubles </a></li>
+						<li><a href="/fr/territoire/1035/chenas"> Chénas </a></li>
+						<li><a href="/fr/territoire/1054/corcelles-en-beaujolais"> Corcelles-en-Beaujolais </a></li>
+						<li><a href="/fr/territoire/1036/drace"> Dracé </a></li>
+						<li><a href="/fr/territoire/1049/emeringes"> Emeringes </a></li>
+						<li><a href="/fr/territoire/1037/fleurie"> Fleurie </a></li>
+						<li><a href="/fr/territoire/1038/julienas"> Juliénas </a></li>
+						<li><a href="/fr/territoire/1039/jullie"> Jullié </a></li>
+						<li><a href="/fr/territoire/1055/lancie"> Lancié </a></li>
+						<li><a href="/fr/territoire/1040/lantignie"> Lantignié </a></li>
+						<li><a href="/fr/territoire/1041/les-ardillats"> Les Ardillats </a></li>
+						<li><a href="/fr/territoire/1042/marchampt"> Marchampt </a></li>
+						<li><a href="/fr/territoire/1212/monsols"> Monsols </a></li>
+						<li><a href="/fr/territoire/1056/odenas"> Odenas </a></li>
+						<li><a href="/fr/territoire/1207/ouroux"> Ouroux </a></li>
+						<li><a href="/fr/territoire/1213/propieres"> Propières </a></li>
+						<li><a href="/fr/territoire/1043/quincie-en-beaujolais"> Quincié-en-Beaujolais </a></li>
+						<li><a href="/fr/territoire/1044/regnie-durette"> Régnié-Durette </a></li>
+						<li><a href="/fr/territoire/1217/saint-bonnet-des-bruyeres"> Saint-Bonnet-des-Bruyères </a></li>
+						<li><a href="/fr/territoire/1210/saint-christophe"> Saint-Christophe </a></li>
+						<li><a href="/fr/territoire/1216/saint-clement-de-vers"> Saint-Clément-de-Vers </a></li>
+						<li><a href="/fr/territoire/1045/saint-didier-sur-beaujeu"> Saint-Didier-sur-Beaujeu </a></li>
+						<li><a href="/fr/territoire/1219/saint-georges-de-reneins"> Saint-Georges-de-Reneins </a></li>
+						<li><a href="/fr/territoire/1215/saint-igny-de-vers"> Saint-Igny-de-Vers </a></li>
+						<li><a href="/fr/territoire/1208/saint-jacques-des-arrets"> Saint-Jacques-des-Arrêts </a></li>
+						<li><a href="/fr/territoire/1058/saint-jean-d-ardieres"> Saint-Jean-d'Ardières </a></li>
+						<li><a href="/fr/territoire/1059/saint-lager"> Saint-Lager </a></li>
+						<li><a href="/fr/territoire/1209/saint-mamert"> Saint-Mamert </a></li>
+						<li><a href="/fr/territoire/1057/saint-etienne-la-varenne"> Saint-Étienne-la-Varenne </a></li>
+						<li><a href="/fr/territoire/1060/taponas"> Taponas </a></li>
+						<li><a href="/fr/territoire/1211/trades"> Trades </a></li>
+						<li><a href="/fr/territoire/1046/vauxrenard"> Vauxrenard </a></li>
+						<li><a href="/fr/territoire/1047/vernay"> Vernay </a></li>
+						<li><a href="/fr/territoire/1048/villie-morgon"> Villié-Morgon </a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="wrapper">
+				<div id="f_infospratiques">
+					<div class="f_logo fleft"><img src="http://static.reseaudesintercoms.fr/cities/95/logo/Rll4JtIAhiU8VKI.jpg" width="226" height="130"></div>
+					<div class="infos fleft">
+						<p><span class="colLeft">Adresse :</span> <span class="colRight"> 105, rue de la République - CS 30010, 69 220 Belleville </span></p>
+						<p><span class="colLeft">Tél. / Fax.:</span> <span class="colRight"> 04 74 66 35 98 / 04 74 66 26 40 </span></p>
+						<p><span class="colLeft">Email :</span> <span class="colRight"> <a class="underline" href="/fr/nous-contacter" title="Nous contacter"> Cliquez ici pour nous contacter </a> </span></p>
+						<p><span class="colLeft">Horaires d'ouverture :</span> <span class="colRight"> Du lundi au Jeudi : 08h30 - 12h00 / 13h30 - 17h30<br> Vendredi : 08h30 - 12h00 / 13h30 - 17h00<br> </span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="first-col fleft"></div>
+				<div class="middle-col fleft">
+					<table id="f_menu" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/1/votre-communaute">Votre Communauté</a></li>
+									<li><a href="/fr/information/4348/editorial-president">Editorial du Président</a></li>
+									<li><a href="/fr/information/5263/les-elus-communautaires">Les élus communautaires</a></li>
+									<li><a href="/fr/information/4879/organisation-fonctionnement">Organisation et fonctionnement</a></li>
+									<li><a href="/fr/information/4350/realisations-projets">Réalisations et projets</a></li>
+									<li><a href="/fr/information/4354/competences-statuts">Compétences et statuts</a></li>
+									<li><a href="/fr/information/4907/logo-charte-graphique">Logo et charte graphique</a></li>
+									<li><a href="/fr/information/5109/les-instances">Les instances</a></li>
+									<li><a href="/fr/information/4358/offres-emploi">Offres d'emploi</a></li>
+									<li><a href="/fr/information/6265/actualites">Actualités</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/2/tourisme">Tourisme</a></li>
+									<li><a href="/fr/information/4594/grands-projets-equipements">Grands projets et équipements</a></li>
+									<li><a href="/fr/information/4360/office-tourisme">Office de Tourisme</a></li>
+									<li><a href="/fr/information/8201/labels-marque-territoriale">Labels et marque territoriale</a></li>
+									<li><a href="/fr/information/5108/soutien-manifestations">Soutien aux manifestations</a></li>
+									<li><a href="/fr/information/5098/taxe-sejour">Taxe de séjour</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/3/vie-pratique">Vie pratique</a></li>
+									<li><a href="/fr/information/4362/tous-formulaires">Tous les formulaires</a></li>
+									<li><a href="/fr/information/4365/logement-habitat">Logement habitat</a></li>
+									<li><a href="/fr/information/4905/transports">Transports</a></li>
+									<li><a href="/fr/information/4367/petit-patrimoine">Petit patrimoine</a></li>
+									<li><a href="/fr/information/4369/service-public">Service-public</a></li>
+									<li><a href="/fr/information/5110/les-permanences">Les permanences</a></li>
+									<li><a href="/fr/information/4503/services-faveur-petite-enfance">Services en faveur de la petite enfance </a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/6/entreprendre">Entreprendre</a></li>
+									<li><a href="/fr/information/4536/zones-activites-economiques">Zones d'activités économiques</a></li>
+									<li><a href="/fr/marches-publics">Marchés publics</a></li>
+									<li><a href="/fr/information/4525/couveuse-entreprises">Couveuse d'entreprises</a></li>
+									<li><a href="/fr/information/5265/liens-utiles">Liens utiles</a></li>
+									<li><a href="/fr/information/6311/aides-commerce-artisanat">Aides - Commerce & artisanat</a></li>
+									<li><a href="/fr/information/7183/beaujolais-vert-avenir">Beaujolais Vert Votre Avenir</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/4/environnement">Environnement</a></li>
+									<li><a href="/fr/information/4497/developpement-durable">Développement durable</a></li>
+									<li><a href="/fr/information/4499/gestion-dechets">Gestion des déchets</a></li>
+									<li><a href="/fr/information/4500/gestion-rivieres">Gestion des rivières</a></li>
+									<li><a href="/fr/information/4501/service-public-assainissement-non-collectif">Service Public d'Assainissement Non Collectif</a></li>
+									<li><a href="/fr/information/4741/les-espaces-naturels-sensibles">Les espaces naturels sensibles</a></li>
+									<li><a href="/fr/information/4580/voirie">Voirie</a></li>
+									<li><a href="/fr/information/6549/urbanisme">Urbanisme</a></li>
+									<li><a href="/fr/information/7843/natura-2000">Natura 2000</a></li>
+								</ul>
+							</td>
+							<td>
+								<ul class="mf_block">
+									<li class="main-menu"><a href="/fr/rubrique/5/culture-loisirs">Culture et loisirs</a></li>
+									<li><a href="/fr/information/4599/culture">Culture</a></li>
+									<li><a href="/fr/information/4600/equipements-sportifs">Equipements sportifs</a></li>
+									<li><a href="/fr/information/5466/criterium-dauphine-2018">Critérium du Dauphiné 2018</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="last-col fleft">
+					<table id="institutionlink" cellpadding="0" cellspacing="5">
+						<tr>
+							<td><a href="http://www.rhone.fr/" title="Département du Rhône" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_general/69.jpg" alt="Département du Rhône" style="width:100%"></a></td>
+							<td><a href="https://www.auvergnerhonealpes.fr/" title="Conseil régional d’Auvergne Rhône-Alpes" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/conseil_regional/3.jpg" alt="Conseil régional d’Auvergne Rhône-Alpes" style="width:100%"></a></td>
+							<td><a href="http://www.rhone.gouv.fr/" title="Préfecture du Rhône" target="_blank"><img src="http://static.reseaudescommunes.fr/default/images/logo/prefecture/69.jpg" alt="Préfecture du Rhône" style="width:100%"></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear"></div>
+				<div id="footer-links">
+					<p><a href="/fr/mentions-legales" title="Mentions légales – Données personnelles">Mentions légales – Données personnelles</a></p>
+					<p class="f_sep">|</p>
+					<p><a href="/fr/plan-du-site" title="Plan du site">Plan du site</a></p>
+					<p id="w3c"><a href="http://validator.w3.org/check?uri=referer" title="W3C Validator xHTML" class="html" target="_blank"><span class="cache">W3C Validator xHTML</span></a> <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.ccsb-saonebeaujolais.fr/" title="W3C Validator CSS" class="css" target="_blank"><span class="cache">W3C Validator CSS</span></a></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter" style=""><a href="http://reseaudescommunes.fr" title="Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités" target="_blank"> <span class="logo-rdc"> <span class="red-square"></span> <span class="yellow-square"></span> <span class="green-square"></span> </span> Rejoindre le Réseau des Communes - Création Sites Internet Mairies et Collectivités </a></div>
+		<style>
+    .subfooter {
+        padding: 10px 15px;
+        background-color: #1a2025;
+        text-align:center;
+    }
+    .subfooter a {
+        color: #fff;
+        font-size: 11px;
+    }
+    .logo-rdc .red-square, .logo-rdc .yellow-square, .logo-rdc .green-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0px 0px 0 0;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+    .logo-rdc .red-square { background-color: #ff3038; }
+    .logo-rdc .yellow-square { background-color: #ffb42e; }
+    .logo-rdc .green-square { background-color: #a3bf00; }
+		</style>
+		<div id="cookies-warning" style="
+						display:none;
+						background-color: rgba(0,0,0,0.82);
+					    font-size:small;
+					    position: fixed;
+					    width: 100%;
+						height: 48px;
+					    margin: 0px;
+					    text-align: left;
+					    color: white;
+					    padding-left: 160px;
+					    padding-top: 15px;
+					    left: 0;
+					    bottom: 0;
+					    z-index: 1;">
+			<div>En poursuivant votre navigation sur le site ccsb-saonebeaujolais.fr, <br> vous acceptez l'utilisation de cookies qui permettent le bon fonctionnement du site et de ses services.</div>
+			<div style="margin-left: 100px; display:flex;"><button id="accepteCookies" style="
+					background-color: #0090a9;
+					font-size: small;
+				    font-weight: bold;
+					color:#fff;
+					width: 102px;
+					height: 24px;
+				    cursor: pointer;
+				    border: 0px;
+					"> J'accepte </button> <a target="_blank" href="/fr/mentions-legales" style="
+			 		color : #0090a9; 
+			 		font-size: small;     
+		 		    font-weight: bold;
+			 		text-decoration: underline; 
+			 		cursor: pointer;
+			 		padding-left: 20px;
+			 		padding-top: 5px;
+			 		"> En savoir plus </a> <a id="closeWarningCookie" style="
+				    color : #d9dadb;
+				    font-size: 26px;
+				    cursor: pointer;
+				    padding-left: 20px;
+				    "> X </a></div>
+		</div>
+		<script type="text/javascript" src="http://static.reseaudesintercoms.fr/default/scripts/global.min.js?36680"></script>
+		<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			
+		</script>
+		<script type="text/javascript">
+				var pageTracker = _gat._getTracker("UA-34026804-31");
+				pageTracker._initData();
+				pageTracker._trackPageview();
+			
+		</script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=initCaptchas&render=explicit"></script>
+		<script type="text/javascript">
+			var captchaKey = '6Ld85wsUAAAAAKHBaI0wJiO8IRNgpHbJhn2yhiUt';
+			var initCaptchas = function() {
+				$('.g-recaptcha').each(function(index) {
+					var _size = $(this).attr('data-size') || 'normal';
+					var _id = $(this).attr('id');
+					
+					grecaptcha.render(_id, {
+					  'sitekey' : captchaKey,
+					  'size' : _size
+					});
+				});
+			}
+		
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			    if($.cookie('acceptedCookie') == 'true' ){
+			    	$( "#cookies-warning" ).hide();
+			    }else{
+			    	$( "#cookies-warning" ).show();
+			    	$( "#cookies-warning" ).css("display" , "flex");
+			    }
+
+			    $("#closeWarningCookie" ).click(function() {
+				  $( "#cookies-warning" ).hide();
+				});
+
+				$("#accepteCookies" ).click(function() {
+
+					$.cookie('acceptedCookie', 'true');
+				  	
+				  	$("#cookies-warning" ).hide();
+				});
+			});
+		
+		</script>
+	</body>
+</html>
