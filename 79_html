@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="">
+		<meta name="robots" content="noindex, follow">
+		<link rel="icon" type="image/png" href="/favicon.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700">
+		<link rel="canonical" href="https://www.pau.fr/rechercher/comptes-rendus-des-seances-du-conseils-municipal">
+		<title>comptes-rendus-des-seances-du-conseils-municipal - Pau</title>
+		<link href="/Content/css?v=WVAqdjIxQG4il2bShmDlOfMvHGTP983lA8QKrLeSzxU1" rel="stylesheet">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131046620-1"></script>
+		<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-131046620-1');
+        //Define domain
+        document.domain = "pau.fr";
+    
+		</script>
+		<script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+		<script src="/bundles/jquery?v=LUrA-6jWBMpKCG-nFp0Zcx2hSYKl1pHaCLtkoeCVqok1"></script>
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	</head>
+	<body class="site-wrapper search-page">
+		<nav class="navbar navbar-expand"><button id="navbarButton" class="navbar-toggler" type="button"> <span class="icon navbar-toggler-icon"></span> <span class="text">Menu</span> </button> <span class="spacer"></span> <a class="navbar-brand" href="/" title="Page d’accueil"> <img src="/images/logos/pau-logo-blanc.svg" alt="Pau – Capitale humaine"> </a>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item search"><button id="searchToggler" type="button" data-toggle="collapse" data-target="#collapsibleSearch" aria-expanded="false" aria-label="Recherche"> <span class="icon loupe-icon"></span> </button></li>
+				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="profileToggler" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon profil-habitant-icon"></span><span class="text">Habitant</span> </a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileToggler"><a class="dropdown-item" href="/Home/SelectTypeUser/2"><span class="icon profil-professionnel-icon"></span><span class="text">Professionnel</span></a> <a class="dropdown-item" href="/Home/SelectTypeUser/3"><span class="icon profil-futur-habitant-icon"></span><span class="text">Futur habitant</span></a> <a class="dropdown-item" href="https://www.pau-pyrenees.com/" target="_blank"><span class="icon profil-touriste-icon"></span><span class="text">Touriste</span></a></div>
+				</li>
+			</ul>
+		</nav>
+		<nav id="megaMenu" class="mega-menu">
+			<div class="tabs-header">
+				<div class="menu-btn-container"><button id="navbarCloseButton" class="navbar-toggler" type="button"> <span class="icon close-icon"></span> <span class="text">Fermer</span> </button></div>
+				<div class="tabs-container">
+					<ul class="nav nav-tabs nav-fill" id="headerTabs" role="tablist">
+						<li class="nav-item"><a class="nav-link nav-link-menu villeHeaderTab active" data-menu-index="1" data-menu-loaded="false" id="villeHeaderTab" data-toggle="tab" href="#villeHeaderTabContent" role="tab" aria-controls="villeHeaderTabContent" aria-selected="true"> <span class="text">Ville</span> <img class="logo" src="/Images/logos/logo-ville-pau.svg" alt="Ville de Pau"> </a></li>
+						<li class="nav-item"><a class="nav-link nav-link-menu aggloHeaderTab" data-menu-index="2" data-menu-loaded="false" id="aggloHeaderTab" data-toggle="tab" href="#aggloHeaderTabContent" role="tab" aria-controls="aggloHeaderTabContent" aria-selected="false"> <span class="text">Agglo</span> <img class="logo" src="/Images/logos/logo-agglo-pau-bleu.svg" alt="Pau Béarn Pyrénées Communauté d’Agglomération"> </a></li>
+						<li class="nav-item"><a class="nav-link nav-link-menu mobilitesHeaderTab" data-menu-index="3" data-menu-loaded="false" id="MobilitesHeaderTab" data-toggle="tab" href="#MobilitesHeaderTabContent" role="tab" aria-controls="MobilitesHeaderTabContent" aria-selected="false"> <span class="text">Mobilités</span> <img class="logo" src="/Images/logos/logo-pau-mobilites.svg" alt="Pau Béarn Pyrénées Mobilités"> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tab-content" id="headerTabsContent">
+					<div class="tab-pane category-menu fade show active" id="villeHeaderTabContent" role="tabpanel" aria-labelledby="villeHeaderTab"></div>
+					<div class="tab-pane category-menu fade" id="aggloHeaderTabContent" role="tabpanel" aria-labelledby="aggloHeaderTab"></div>
+					<div class="tab-pane category-menu fade" id="MobilitesHeaderTabContent" role="tabpanel" aria-labelledby="MobilitesHeaderTab"></div>
+				</div>
+			</div>
+		</nav>
+		<div id="popinSatisfaction" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="satisfaction pauline" aria-hidden="true"></div>
+		<div id="bot" class="chatbot-container">
+			<div class="chatbot-header"><span class="icon chatbot-icon"></span> <button id="bot-close-btn" class="close-btn" type="button" aria-label="Fermer le chatbot"><span class="icon close-icon"></span></button></div>
+			<iframe id="Pauline" class="iframe-chatbot" title="Pauline"></iframe>
+		</div><button class="chatbot-btn" type="button" aria-label="Lancer le chatbot"><span class="icon chatbot-icon"></span><span class="sr-only">Lancer le chatbot</span></button>
+		<div id="collapsibleSearch" class="collapsible-search collapse show" aria-labelledby="searchToggler">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<form id="expandSearch" class="search-form">
+							<div class="input-group input-group-lg"><input id="txt-search" type="text" autocomplete="off" class="form-control form-control-lg" placeholder="Rechercher un service, une information..." aria-label="Mots-clés" aria-describedby="search-addon">
+								<div class="input-group-append btn-all"><span class="input-group-text" id="search-addon"><span class="icon loupe-icon"></span></span></div>
+							</div>
+							<div id="search-result-loader" class="is-loading" style="display:none">
+								<div class="loader">
+									<svg class="circular" viewbox="25 25 50 50">
+										<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="search-result" style="display:none">
+								<ul id="search-result-container" class="list-group"></ul>
+								<div class="search-result-count"><a class="btn-all"> Voir tous les résultats (<label class="count"></label>) </a></div>
+							</div>
+						</form>
+						<script type="text/javascript">
+    //
+    var loading = false;
+    var termSearch = "";
+    var externalSites = [{"Id":8,"Image":"visuels/Billere-VIGNETTE.gif","Url":"https://www.billere.fr","Name":"Billère","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":9,"Image":"visuels/Bougarber-VIGNETTE.gif","Url":"https://bougarber.fr","Name":"Bougarber","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":19,"Image":"visuels/aressy-VIGNETTE.gif","Url":"https://aressy.agglo-pau.fr/\r\nhttps://aressy.agglo-pau.fr/annuaires-professionnels-et-sociaux/\r\nhttps://aressy.agglo-pau.fr/aressy-vu-du-ciel/\r\nhttps://aressy.agglo-pau.fr/capitale-humaine-decouvrez-la-commune-daressy/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/cni-passeport/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/dechets/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/ecole/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/elections/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/etat-civil/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/le-comment-vivre-ensemble/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/maison-pour-tous/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/plan-local-durbanisme/\r\nhttps://aressy.agglo-pau.fr/infos-pratiques/urbanisme/\r\nhttps://aressy.agglo-pau.fr/projet-plui-lenquete-publique-est-terminee\r\nhttps://aressy.agglo-pau.fr/souvenirs-du-11-novembre/\r\nhttps://aressy.agglo-pau.fr/toutes-les-actualites/\r\nhttps://aressy.agglo-pau.fr/vie-associative/\r\nhttps://aressy.agglo-pau.fr/vie-municipale/\r\nhttps://aressy.agglo-pau.fr/vie-municipale/conseil-municipal-2/\r\nhttps://aressy.agglo-pau.fr/vie-municipale/journaux-communaux/\r\nhttps://aressy.agglo-pau.fr/vie-municipale/les-services-municipaux/\r\nhttps://aressy.agglo-pau.fr/vie-municipale/page-seances-du-conseil/","Name":"Aressy","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":23,"Image":"visuels/bosdarros-VIGNETTE.gif","Url":"http://www.mairie-bosdarros.fr","Name":"Bosdarros","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":25,"Image":"visuels/Idron-VIGNETTE.gif","Url":"http://idron.fr","Name":"Idron","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":26,"Image":"visuels/Lons-VIGNETTE.gif","Url":"http://www.mairie-lons.fr/","Name":"Lons","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":27,"Image":"visuels/Mazeres-Lezons-VIGNETTE.gif","Url":"https://www.mazeres-lezons.fr","Name":"Mazères-Lezons","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":30,"Image":"visuels/Poey-de-Lescar-VIGNETTE.gif","Url":"https://www.poeydelescar.fr/","Name":"Poey-de-Lescar","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":31,"Image":"visuels/Sendets-VIGNETTE.gif","Url":"https://sendets-64.fr/\r\nhttps://sendets-64.fr/category/infos-pratiques/\r\nhttps://sendets-64.fr/category/enfance/\r\nhttps://sendets-64.fr/category/mairie/\r\nhttps://sendets-64.fr/category/urbanisme-plu/\r\nhttps://sendets-64.fr/category/intercommunalites/\r\nhttps://sendets-64.fr/category/vie-communale/\r\nhttps://sendets-64.fr/category/action-sociale/\r\nhttps://sendets-64.fr/category/economie-locale/\r\nhttps://sendets-64.fr/category/vie-associative/\r\nhttps://sendets-64.fr/category/tourisme/","Name":"Sendets","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":32,"Image":"visuels/Siros-VIGNETTE.gif","Url":"https://siros.fr/","Name":"Siros","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":33,"Image":"visuels/Uzos-VIGNETTE.gif","Url":"http://www.mairie-uzos.fr","Name":"Uzos","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null},{"Id":36,"Image":"visuels/Artigueloutan-VIGNETTE.gif","Url":"https://artigueloutan.wordpress.com","Name":"Artigueloutan","ColorTag":"#FF9100","ColorText":"#FFFFFF","Indexation":true,"AllowQString":false,"Organization":null}];
+
+    $(".btn-all").on('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        LaunchSearch();
+    });
+
+    $('#expandSearch').on('keypress', function (e) {
+        e.stopImmediatePropagation();
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+            LaunchSearch()
+            return false;
+        }
+    });
+
+    $('#collapsibleSearch').on('shown.bs.collapse', function () {
+        $("#txt-search").focus();
+    })
+
+    function LaunchSearch() {
+        var search = $('#txt-search').val().replace(/[^\w\sÀ-ÿ-'’]/gi, ' ').trim();
+        search = search.replace(/\s\s+/g, ' ');
+        if (search && search.length >= 3) {
+            window.location.href = '/rechercher/' + search + "?_source=user";
+        }
+    }
+
+    //
+    function LoadData(data) {
+        $("#search-result-loader").hide();
+        $("#search-result-container").html('');
+        $(".count").html(data.total);
+        $.each(data.articles, function (i, item) {
+            var url;
+            var target = "_self";
+            var type = "<span>" + item.type + "";
+            switch (item.type) {
+                case "Cartes":
+                    url = "/cartes/" + item.id;
+                    break;
+                case "Association":
+                    url = "/associations/" + item.url;
+                    type = "<span style='background-color:#7f2fa5; color:#ffffff;'>" + item.type + "";
+                    break;
+                case "Site_externe":
+                    var site = externalSites.filter(function (value) { return value.Name == item.category; })[0];
+                    url = item.url;
+                    target = "_blank";
+                    type = "<span style='background-color:"+ site.ColorTag +"; color:"+site.ColorText+"; padding: 0 1rem;'>" + item.category + "";
+                    break;
+                default:
+                    url = "/article/" + item.url;
+                    break;
+            }
+            var rows = "<li class='list-group-item'>"
+                + "<a onclick='saveUserSearch(" + data.score + "," + data.median + ")' href='" + url + "' target='" + target +"'>" + item.title + ""
+            + type
+            + "";
+            $('#search-result-container').append(rows);
+            $('.search-result').show();
+        });
+    }
+
+    function saveUserSearch(score, median) {
+        if (termSearch != "") {
+            $.ajax({
+                type: "GET",
+                url: 'https://www.pau.fr/article/savesearch/' + termSearch + '/' + score + '/' + median + '/',
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                   // Console.log("OK");
+                },
+                error: function () {
+                   // Console.log("Error");
+                }
+            });
+        }
+    }
+
+    $("#txt-search").on('keyup', function () {
+        var search = $('#txt-search').val().replace(/[^\w\sÀ-ÿ-'’]/gi, ' ').trim();
+        if (search && search.length >= 3) {
+            if (termSearch != search) {
+                termSearch = search;
+                $("#search-result-loader").show();
+                $('.search-result').hide();
+                $.ajax({
+                    type: "GET",
+                    url: 'https://api.pau.fr/api/article/search/' + search,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        LoadData(data);
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+            }
+        }
+        else {
+            $('.search-result').hide('fast');
+            $(".count").html('0');
+            $("#search-result-container").html('');
+        }
+    });
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="site-content">
+			<section class="page-section padded-section search">
+				<div class="container">
+					<header class="section-header text-center">
+						<h1 class="section-title d-inline">comptes-rendus-des-seances-du-conseils-municipal</h1><span class="section-title search-result-count">(1361 résultats)</span></header>
+					<div class="d-lg-flex justify-content-lg-between">
+						<div class="section-header-module ml-sm-auto outils-accessibilite"><button type="button" class="btn btn-secondary btn-readspeaker on show"><span class="icon speaker-icon"></span> Activer la vocalisation</button>
+							<div class="readspeaker hide sticky"><button type="button" class="btn rs-play hide"><span class="icon speak-play-icon"></span></button> <button type="button" class="btn rs-pause show"><span class="icon speak-pause-icon"></span></button> <button type="button" class="btn rs-stop show"><span class="icon speak-stop-icon"></span></button> <button type="button" class="btn rs-preview show"><span class="icon speak-preview-icon"></span></button> <button type="button" class="btn rs-next show"><span class="icon speak-next-icon"></span></button> <button type="button" class="btn rs-close show"><span class="icon speak-close-icon"></span></button></div><br class="d-none d-sm-inline d-md-none"> <button type="button" class="btn btn-secondary btn-malentendant"><span class="icon malentendant-icon"></span></button> <button type="button" class="btn btn-secondary btn-minus">A-</button> <button type="button" class="btn btn-secondary btn-plus">A+</button> <button type="button" class="btn btn-reinit">A</button></div>
+						<script type="text/javascript">
+    var fontSize = 0;
+    var contrast = 0;
+    var rootUrl = '/accessibility/';
+    var canRead = false;
+    var tapped = false;
+    var indexSpeak = 0;
+    var allText, allNodeText = null;
+    var parameters = {
+        onstart: voiceStartCallback,
+        onend: voiceEndCallback,
+        rate: 1
+    }
+    responsiveVoice.setDefaultVoice("French Female");
+
+    $(document).ready(function () {
+        voiceloadData();
+
+        $(".btn.rs-play").on("click", function () {
+            if (responsiveVoice.isPlaying()) {
+                responsiveVoice.resume();
+            }
+            else {
+                launchSpeak();
+            }
+            $(".btn.rs-play").removeClass("show").addClass("hide");
+            $(".btn.rs-pause").removeClass("hide").addClass("show");
+        });
+
+        $(".btn.rs-pause").on("click", function () {
+            responsiveVoice.pause();
+            $(".btn.rs-play").removeClass("hide").addClass("show");
+            $(".btn.rs-pause").removeClass("show").addClass("hide");
+        });
+
+        $(".btn.rs-stop").on("click", function () {
+            $(allNodeText[indexSpeak]).removeClass("highlight");
+            $(".btn.rs-play").removeClass("hide").addClass("show");
+            $(".btn.rs-pause").removeClass("show").addClass("hide");
+            responsiveVoice.cancel();
+            indexSpeak = 0;
+        });
+
+        $(".btn.rs-preview").on("click", function () {
+            if (indexSpeak > 0) {
+                $(allNodeText[indexSpeak]).removeClass("highlight");
+                indexSpeak--;
+                launchSpeak();
+            }
+        });
+
+        $(".btn.rs-next").on("click", function () {
+            if (indexSpeak < allNodeText.length - 1) {
+                $(allNodeText[indexSpeak]).removeClass("highlight");
+                indexSpeak++;
+                launchSpeak();
+            }
+        });
+
+        $(".btn.rs-close").on("click", function () {
+            responsiveVoice.cancel();
+            $(allNodeText[indexSpeak]).removeClass("highlight");
+            indexSpeak = 0;
+            $(".readspeaker").removeClass("show").addClass("hide");
+            $(".btn-readspeaker.on").removeClass("hide").addClass("show");
+            responsiveVoice.cancel();
+        });
+    });
+
+    function voiceloadData() {
+        $(".btn.rs-play").removeClass("hide").addClass("show");
+        $(".btn.rs-pause").removeClass("show").addClass("hide");
+        responsiveVoice.cancel();
+        indexSpeak = 0;
+        var elementToSelect = "body.pre-home div.container p:not(.buttons), body.pre-home main div.container p.buttons a, body main section div.container p:not(.noSpeak), body main section div.container h1, body main section div.container h2, body main section div.container h3,  body main section div.container h4, body main section div.container div.content-block ul:not(.event-list) li, body main section div.container.plan-du-site ul li";
+        //
+        allText = $(elementToSelect).map(function () {
+            if (this.innerHTML != "") {
+                //Replace Html balise - \n\r -  
+                return this.innerText.replace(/<(?:.|\n)*?>/gm, '').replace(/\s+/gm, ' ').replace(/ /g, ' ').trim();
+            }
+        }).get();
+        
+        allNodeText = $(elementToSelect).map(function () {
+            if (this.innerHTML != "") {
+                return this;
+            }
+        }).get();
+    }
+
+    function voiceStartCallback() {
+        var stickyNav = $('nav.navbar');
+        var collapsibleSearch = $('.collapsibleSearch');
+        var margin = 45;
+        var element = $(allNodeText[indexSpeak]);
+        element.addClass("highlight");
+        
+        var scrollto = element.offset().top - stickyNav.outerHeight() - margin;
+        if (!stickyNav.hasClass("sticky")) {
+            scrollto = scrollto - stickyNav.outerHeight();
+        }
+        
+        if (collapsibleSearch.hasClass("sticky")) {
+            scrollto = scrollto - collapsibleSearch.outerHeight();
+        }
+
+        $('html,body').animate({
+            scrollTop: scrollto
+        }, 'slow');
+    }
+
+    function voiceEndCallback() {
+        $(allNodeText[indexSpeak]).removeClass("highlight");
+        //
+        if (indexSpeak < allNodeText.length - 1) {
+            indexSpeak++;
+            launchSpeak();
+        }
+        else {
+            responsiveVoice.cancel();
+            indexSpeak = 0;
+            $(".btn.play").removeClass("hide").addClass("show");
+            $(".btn.pause").removeClass("show").addClass("hide");
+        }
+    }
+
+    function launchSpeak() {
+        var text = allText[indexSpeak];
+        if (text != "" && text != null) {
+            setTimeout(function () {
+                responsiveVoice.cancel();
+                responsiveVoice.speak(text, "French Female", parameters);
+            }, 100);
+        }
+        else {
+            voiceEndCallback();
+        }
+    }
+
+    function saveAccessibility(btn, elem, value) {
+        if (navigator.cookieEnabled && elem != '') {
+            //disabled button
+            btn.attr("disabled", "disabled");
+            $.ajax({
+                type: "POST",
+                url: rootUrl + elem + '/' + value,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    btn.removeAttr("disabled");
+                },
+                error: function () {
+                    //alert("Error while inserting data");
+                }
+            });
+            return false;
+        }
+    }
+
+    $(".btn-readspeaker.on").on("click", function () {
+        $(".readspeaker").removeClass("hide").addClass("show");
+        $(".btn-readspeaker.on").removeClass("show").addClass("hide");
+
+        //Collapse ALL
+        $("button[data-toggle='collapse']").removeClass("collapsed");
+        $(".collapse").not(".collapsible-search").addClass("show");
+
+        //Fix bug launch one speak null;
+        setTimeout(function () {
+            responsiveVoice.cancel();
+            responsiveVoice.speak(" ", "French Female");
+            launchSpeak();
+        }, 100);
+    });
+
+    //Action Button
+    $(".btn-malentendant").on("click", function () {
+        window.location.href = "/article/le-module-daccessibilite";
+    });
+
+    $(".btn-minus").on("click", function () {
+        $("html").removeClass("s1 s2 s3 s4")
+        if (fontSize <= 1) {
+            fontSize = 0;
+            saveAccessibility($(this), "user-fontsize", fontSize);
+        }
+        else {
+            fontSize--;
+            $("html").addClass("s" + fontSize);
+            saveAccessibility($(this), "user-fontsize", fontSize);
+        }
+    });
+    $(".btn-plus").on("click", function () {
+        if (fontSize == 4) return;
+        fontSize++;
+        $("html").removeClass("s1 s2 s3 s4")
+        $("html").addClass("s" + fontSize);
+        saveAccessibility($(this), "user-fontsize", fontSize);
+    });
+    //
+    $(".btn-reinit").on("click", function () {
+        $("html").removeClass("c1 c2 c3")
+        contrast++;
+        if (contrast > 3) {
+            contrast = 0;
+        }
+        else {
+            $("html").addClass("c" + contrast);
+        }
+        saveAccessibility($(this), "user-contrast", contrast);
+    });
+						</script>
+					</div>
+					<div class="search-toolbar d-lg-flex justify-content-lg-between">
+						<div class="display-tools"><span class="search-tool-label">Affichage :</span> <button type="button" class="btn btn-grid active" id="btn-viewPicture" aria-label="Grille"><span class="icon"></span></button> <span class="separator">|</span> <button type="button" class="btn btn-list" id="btn-viewList" aria-label="Liste"><span class="icon"></span></button></div>
+						<div class="filter-tools"><span class="search-tool-label">Types :</span>
+							<div class="btn-group" role="group" aria-label="Types de contenus"><button class="btn js-type-filter" data-filter="association" style="text-transform: capitalize;">association <span>(394)</span></button> <button class="btn js-type-filter" data-filter="evènements" style="text-transform: capitalize;">evènements <span>(335)</span></button> <button class="btn js-type-filter" data-filter="site_externe" style="text-transform: capitalize;">site externe <span>(322)</span></button> <button class="btn js-type-filter" data-filter="actu" style="text-transform: capitalize;">actu <span>(134)</span></button> <button class="btn js-type-filter" data-filter="dossier" style="text-transform: capitalize;">dossier <span>(134)</span></button> <button class="btn js-type-filter" data-filter="infos" style="text-transform: capitalize;">infos <span>(28)</span></button> <button class="btn js-type-filter" data-filter="démarche" style="text-transform: capitalize;">démarche <span>(8)</span></button> <button class="btn js-type-filter" data-filter="cartes" style="text-transform: capitalize;">cartes <span>(4)</span></button> <button class="btn js-type-filter" data-filter="service" style="text-transform: capitalize;">service <span>(2)</span></button></div>
+						</div>
+					</div>
+					<div class="loader-container">
+						<div class="lds-ellipsis">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div id="ArticlesResult"><input id="terms" name="terms" type="hidden" value="comptes-rendus-des-seances-du-conseils-municipal"> <input id="findBy" name="findBy" type="hidden" value=""> <input id="typeFilter" name="typeFilter" type="hidden" value="">
+						<div class="grid-view row viewPicture">
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Dossier"><a class="card-img" href="/article/conseil-municipal-de-pau-2020--les-compte-rendus"> <img class="thumbnail" src="/allmedias/visuels/VIGNETTE-Mairie.jpg" alt="Conseil <b>Municipal</b> de Pau 2020 : les compte <b>rendus</b>"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/conseil-municipal-de-pau-2020--les-compte-rendus">Conseil <b>Municipal</b> de Pau 2020 : les compte <b>rendus</b></a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/mairie">Mairie</a></div><button data-id="4436" type="button" id="btn-like-4436" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-4436").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-4436 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-4436 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Dossier"><a class="card-img" href="/article/conseil-municipal-en-2019--les-ordres-du-jour-les-comptes-rendus-des-seances-les-deliberations"> <img class="thumbnail" src="/allmedias/visuels/Comptes-rendus-des-seances-du-Conseil-municipal-VIGNETTE.jpg" alt="Conseil <b>municipal</b> en 2019 : les ordres du jour, les <b>comptes</b> <b>rendus</b> des <b>séances</b>, les délibérations"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/conseil-municipal-en-2019--les-ordres-du-jour-les-comptes-rendus-des-seances-les-deliberations">Conseil <b>municipal</b> en 2019 : les ordres du jour, les <b>comptes</b> <b>rendus</b> des <b>séances</b>, les délibérations</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/mairie">Mairie</a></div><button data-id="1193" type="button" id="btn-like-1193" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-1193").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-1193 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-1193 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="https://bougarber.fr/mairie/comptes-rendus-conseils-municipaux/" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/Bougarber-VIGNETTE.gif" alt="<b>Comptes</b> <b>rendus</b> <b>Conseils</b> Municipaux – Commune de Bougarber"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="https://bougarber.fr/mairie/comptes-rendus-conseils-municipaux/" target="_blank"><b>Comptes</b> <b>rendus</b> <b>Conseils</b> Municipaux – Commune de Bougarber</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="https://bougarber.fr/mairie/comptes-rendus-conseils-municipaux/" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</a></div>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Infos"><a class="card-img" href="/article/comptes-rendus-des-seances-du-conseil-municipal"> <img class="thumbnail" src="/allmedias/visuels/Comptes-rendus-des-seances-du-Conseil-municipal-VIGNETTE.jpg" alt="Conseil <b>Municipal</b> : les <b>comptes</b>-<b>rendus</b> des <b>séances</b> de 2008 à 2018"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/comptes-rendus-des-seances-du-conseil-municipal">Conseil <b>Municipal</b> : les <b>comptes</b>-<b>rendus</b> des <b>séances</b> de 2008 à 2018</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/mairie">Mairie</a></div><button data-id="156" type="button" id="btn-like-156" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-156").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-156 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-156 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Evènements"><a class="card-img" href="/article/conseil-municipal-170"> <img class="thumbnail" src="/allmedias/visuels/Comptes-rendus-des-seances-du-Conseil-municipal-VIGNETTE.jpg" alt="Le Conseil <b>municipal</b> regroupe 49 élus en séance plénière"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/conseil-municipal-170">Le Conseil <b>municipal</b> regroupe 49 élus en séance plénière</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/mairie">Mairie</a></div><button data-id="532" type="button" id="btn-like-532" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-532").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-532 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-532 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="https://bougarber.fr/2019/10/21/compte-rendu-du-conseil-municipal-du-12-juillet-est-a-consulter/" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/Bougarber-VIGNETTE.gif" alt="Compte rendu du Conseil <b>Municipal</b> du 3 septembre est à consulter – Commune de Bougarber"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="https://bougarber.fr/2019/10/21/compte-rendu-du-conseil-municipal-du-12-juillet-est-a-consulter/" target="_blank">Compte rendu du Conseil <b>Municipal</b> du 3 septembre est à consulter – Commune de Bougarber</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="https://bougarber.fr/2019/10/21/compte-rendu-du-conseil-municipal-du-12-juillet-est-a-consulter/" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</a></div>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="http://www.mairie-bosdarros.fr/index.php/vie-municipale/compte-rendus-cm2" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/bosdarros-VIGNETTE.gif" alt="Compte-<b>rendus</b> des <b>conseils</b> municipaux"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="http://www.mairie-bosdarros.fr/index.php/vie-municipale/compte-rendus-cm2" target="_blank">Compte-<b>rendus</b> des <b>conseils</b> municipaux</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="http://www.mairie-bosdarros.fr/index.php/vie-municipale/compte-rendus-cm2" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bosdarros</a></div>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="https://aressy.agglo-pau.fr/vie-municipale/page-seances-du-conseil/" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/aressy-VIGNETTE.gif" alt="<b>Séances</b> du Conseil <b>Municipal</b> - Commune d'Aressy Commune d'Aressy"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="https://aressy.agglo-pau.fr/vie-municipale/page-seances-du-conseil/" target="_blank"><b>Séances</b> du Conseil <b>Municipal</b> - Commune d'Aressy Commune d'Aressy</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="https://aressy.agglo-pau.fr/vie-municipale/page-seances-du-conseil/" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Aressy</a></div>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Dossier"><a class="card-img" href="/article/en-videos--les-seances-2020-du-conseil-municipal-de-pau"> <img class="thumbnail" src="/allmedias/visuels/Comptes-rendus-des-seances-du-Conseil-municipal-VIGNETTE.jpg" alt="Conseil <b>Municipal</b> 2020 : les <b>séances</b> en vidéos"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/en-videos--les-seances-2020-du-conseil-municipal-de-pau">Conseil <b>Municipal</b> 2020 : les <b>séances</b> en vidéos</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/mairie">Mairie</a></div><button data-id="3754" type="button" id="btn-like-3754" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-3754").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-3754 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-3754 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Dossier"><a class="card-img" href="/article/en-videos--les-seances-2020-du-conseil-communautaire"> <img class="thumbnail" src="/allmedias/visuels/Conseil-communautaire-VIGNETTE-0.jpg" alt="En vidéos : les <b>séances</b> 2020 du Conseil Communautaire"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="/article/en-videos--les-seances-2020-du-conseil-communautaire">En vidéos : les <b>séances</b> 2020 du Conseil Communautaire</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="/categorie/la-communaute-d-agglomeration">La Communauté d'Agglomération</a></div><button data-id="3756" type="button" id="btn-like-3756" class="btn btn-unstyled"><span class="like-count">0</span> <span class="icon like-icon"></span></button>
+									<script type="text/javascript">
+    $(function () {
+        $("#btn-like-3756").on("click", function () {
+            var btn = $(this);
+            var articleId = btn.attr('data-id');
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled && articleId != '') {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/article/like/' + articleId,
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.total != null) {
+                            $("#btn-like-3756 .like-count").html(data.total);
+                            var icon = (data.action == "add") ? "icon liked-icon" : "icon like-icon";
+                            $("#btn-like-3756 .icon").removeClass().addClass(icon);
+                        }
+                        btn.removeAttr("disabled");           
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+									</script>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="https://siros.fr/la-mairie/les-comptes-rendus" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/Siros-VIGNETTE.gif" alt="Les <b>comptes</b> <b>rendus</b> - Siros, commune du Béarn, 64, Aquitaine"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="https://siros.fr/la-mairie/les-comptes-rendus" target="_blank">Les <b>comptes</b> <b>rendus</b> - Siros, commune du Béarn, 64, Aquitaine</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="https://siros.fr/la-mairie/les-comptes-rendus" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Siros</a></div>
+								</div>
+							</div>
+							<div class="card card-actu col-md-6 col-lg-4 js-result-list" data-type="Site_externe"><a class="card-img" href="https://bougarber.fr/mairie/composition-du-conseil-municipal/" target="_blank"> <img class="thumbnail" src="/allmedias/visuels/Bougarber-VIGNETTE.gif" alt="Composition du Conseil <b>Municipal</b> – Commune de Bougarber"> </a>
+								<div class="card-body">
+									<h3 class="card-title"><a href="https://bougarber.fr/mairie/composition-du-conseil-municipal/" target="_blank">Composition du Conseil <b>Municipal</b> – Commune de Bougarber</a></h3>
+								</div>
+								<div class="card-footer d-flex justify-content-between">
+									<div class="categories"><a href="https://bougarber.fr/mairie/composition-du-conseil-municipal/" target="_blank" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="list-view viewList" style="display:none">
+							<ul class="list-group">
+								<li class="list-group-item js-result-list" data-type="Dossier"><a href="/article/conseil-municipal-de-pau-2020--les-compte-rendus" target="_self">Conseil <b>Municipal</b> de Pau 2020 : les compte <b>rendus</b></a> <span class="category">Dossier</span></li>
+								<li class="list-group-item js-result-list" data-type="Dossier"><a href="/article/conseil-municipal-en-2019--les-ordres-du-jour-les-comptes-rendus-des-seances-les-deliberations" target="_self">Conseil <b>municipal</b> en 2019 : les ordres du jour, les <b>comptes</b> <b>rendus</b> des <b>séances</b>, les délibérations</a> <span class="category">Dossier</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="https://bougarber.fr/mairie/comptes-rendus-conseils-municipaux/" target="_blank"><b>Comptes</b> <b>rendus</b> <b>Conseils</b> Municipaux – Commune de Bougarber</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</span></li>
+								<li class="list-group-item js-result-list" data-type="Infos"><a href="/article/comptes-rendus-des-seances-du-conseil-municipal" target="_self">Conseil <b>Municipal</b> : les <b>comptes</b>-<b>rendus</b> des <b>séances</b> de 2008 à 2018</a> <span class="category">Infos</span></li>
+								<li class="list-group-item js-result-list" data-type="Evènements"><a href="/article/conseil-municipal-170" target="_self">Le Conseil <b>municipal</b> regroupe 49 élus en séance plénière</a> <span class="category">Evènements</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="https://bougarber.fr/2019/10/21/compte-rendu-du-conseil-municipal-du-12-juillet-est-a-consulter/" target="_blank">Compte rendu du Conseil <b>Municipal</b> du 3 septembre est à consulter – Commune de Bougarber</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="http://www.mairie-bosdarros.fr/index.php/vie-municipale/compte-rendus-cm2" target="_blank">Compte-<b>rendus</b> des <b>conseils</b> municipaux</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bosdarros</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="https://aressy.agglo-pau.fr/vie-municipale/page-seances-du-conseil/" target="_blank"><b>Séances</b> du Conseil <b>Municipal</b> - Commune d'Aressy Commune d'Aressy</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Aressy</span></li>
+								<li class="list-group-item js-result-list" data-type="Dossier"><a href="/article/en-videos--les-seances-2020-du-conseil-municipal-de-pau" target="_self">Conseil <b>Municipal</b> 2020 : les <b>séances</b> en vidéos</a> <span class="category">Dossier</span></li>
+								<li class="list-group-item js-result-list" data-type="Dossier"><a href="/article/en-videos--les-seances-2020-du-conseil-communautaire" target="_self">En vidéos : les <b>séances</b> 2020 du Conseil Communautaire</a> <span class="category">Dossier</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="https://siros.fr/la-mairie/les-comptes-rendus" target="_blank">Les <b>comptes</b> <b>rendus</b> - Siros, commune du Béarn, 64, Aquitaine</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Siros</span></li>
+								<li class="list-group-item js-result-list" data-type="Site_externe"><a href="https://bougarber.fr/mairie/composition-du-conseil-municipal/" target="_blank">Composition du Conseil <b>Municipal</b> – Commune de Bougarber</a> <span class="category" style="background-color:#FF9100;color:#FFFFFF;border-radius: 0.3rem;padding: 0 1rem;">Bougarber</span></li>
+							</ul>
+						</div>
+						<nav class="pagination-container d-flex justify-content-center flex-column flex-lg-row" aria-label="Pagination bottom">
+							<div class="m-auto">
+								<ul class="pagination pagination-lg ml-auto">
+									<li class="page-item arrow-item active"><a>1</a></li>
+									<li class="page-item"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=2">2</a></li>
+									<li class="page-item"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=3">3</a></li>
+									<li class="page-item"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=4">4</a></li>
+									<li class="page-item"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=5">5</a></li>
+									<li class="page-item disabled PagedList-ellipses"><a>…</a></li>
+									<li class="page-item PagedList-skipToNext"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=2" rel="next"></a></li>
+									<li class="page-item arrow-item PagedList-skipToLast"><a data-ajax="true" data-ajax-begin="onAjaxBegin" data-ajax-complete="onAjaxComplete" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-update="#ArticlesResult" href="/searchFilter/comptes-rendus-des-seances-du-conseils-municipal?page=114">»»</a></li>
+								</ul>
+							</div>
+						</nav>
+						<div class="page-count">
+							<p>1/114</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-info">
+							<div class="row">
+								<div class="sub-col col-12 col-sm-6 col-md-12"><a class="footer-logo" href="/" title="Page d’accueil"> <img src="/images/logos/logo-ville-pau.svg" alt="Ville de Pau"> </a>
+									<p class="adresse">Hôtel de ville<br> Place Royale<br> 64036 Pau Cedex</p>
+								</div>
+								<div class="sub-col col-12 col-sm-6 col-md-12">
+									<p class="info-contact"><span class="icon clock-icon"></span> <span class="text horaires"> Ouvert le lundi, mercredi,<br> vendredi de 8h30 à 16h45<br> le mardi de 10h30 à 16h45<br> le jeudi de 8h30 à 18h30 </span></p>
+									<p class="info-contact"><span class="icon phone-icon"></span> <span class="text">33 (0)5 59 27 85 80</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-info">
+							<div class="row">
+								<div class="sub-col col-12 col-sm-6 col-md-12"><a class="footer-logo" href="/" title="Page d’accueil"> <img src="/images/logos/logo-agglo-pau-blanc.svg" alt="Pau Béarn Pyrénées Agglomération"> </a>
+									<p class="adresse">Hôtel de France<br> 2 bis place Royale<br> 64000 Pau</p>
+								</div>
+								<div class="sub-col col-12 col-sm-6 col-md-12">
+									<p class="info-contact"><span class="icon clock-icon"></span> <span class="text horaires">Ouvert du lundi au vendredi<br>de 8h30 à 17h30</span></p>
+									<p class="info-contact"><span class="icon phone-icon"></span> <span class="text">33 (0)5 59 11 50 50</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-info">
+							<div class="row">
+								<div class="sub-col col-12 col-sm-6 col-md-12"><a class="footer-logo" href="/" title="Page d’accueil"> <img src="/images/logos/logo-pau-mobilites.svg" alt="Pau – Mobilités"> </a>
+									<p class="adresse">Hôtel de France<br> 2 place Royale<br> 64000 Pau</p>
+								</div>
+								<div class="sub-col col-12 col-sm-6 col-md-12">
+									<p class="info-contact"><span class="icon clock-icon"></span> <span class="text horaires">Ouvert du lundi au vendredi<br>de 8h30 à 17h30</span></p>
+									<p class="info-contact"><span class="icon phone-icon"></span> <span class="text">05 59 11 50 50</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<p><a href="/article/les-numeros-utiles" class="btn btn-blue btn-medium">Contacter la mairie</a></p>
+						</div>
+						<div class="col-md-4">
+							<p class="social-links"><a href="https://twitter.com/ville_pau" target="_blank" class="icon social-link twitter-icon" title="Le compte Twitter officiel de la #VilledePau"> <span class="sr-only">@pau sur Twitter</span> </a> <a href="https://www.facebook.com/ville2pau/" target="_blank" class="icon social-link facebook-icon" title="Page Facebook officielle de la Ville de Pau"> <span class="sr-only">@ville2pau sur Facebook</span> </a> <a href="https://www.instagram.com/ville_pau/" target="_blank" class="icon social-link instagram-icon" title="Compte Instragram officiel de la #VilledePau"> <span class="sr-only">@ville_pau sur Instagram</span> </a> <a href="https://www.youtube.com/channel/UC62CU0yy2M0hSddi9asTikg" target="_blank" class="icon social-link youtube-icon" title="Chaîne YouTube tourismepau"> <span class="sr-only">Chaîne YouTube tourismepau</span> </a> <a href="https://fr.linkedin.com/company/communaut%C3%A9-d%27agglom%C3%A9ration-pau-pyr%C3%A9n%C3%A9es" target="_blank" class="icon social-link linkedin-icon" title="Pau Béarn Pyrénées sur LinkedIn"> <span class="sr-only">Pau Béarn Pyrénées sur LinkedIn</span> </a></p>
+						</div>
+						<div class="col-md-4">
+							<p><a href="/categorie/espace-presse" class="btn btn-blue btn-medium mb-5">Espace presse</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub-footer">
+				<div class="container">
+					<ul class="nav">
+						<li class="nav-item"><a href="/contact">Contact</a></li>
+						<li class="nav-item"><a href="/credits">Crédits</a></li>
+						<li class="nav-item"><a href="/infos-legales">Infos légales</a></li>
+						<li class="nav-item"><a href="/newsletter">Newsletter</a></li>
+						<li class="nav-item"><a href="/plan-du-site">Plan du site</a></li>
+						<li class="nav-item"><a href="/politique-des-cookies">Politique des cookies</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="cookie-notice hide" id="cookieNotice">
+			<div class="container"><button id="btn-cnil" type="button" class="btn btn-blue">Accepter</button>
+				<p>Le site Pau.fr utilise des cookies permettant d'améliorer votre expérience de navigation et mesurer l'audience des pages de Pau.fr.<br> En poursuivant votre navigation sur ce site, vous acceptez leur utilisation. Pour modifier l'utilisation des cookies sur notre site, rendez-vous <a href="/politique-des-cookies">ICI</a>.</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+    $(function () {
+        $("#btn-cnil").on("click", function () {
+            var btn = $(this);
+            
+            //Si le navigateur accepte les cookies et que articleId est renseigné
+            if (navigator.cookieEnabled) {
+                //disabled button
+                btn.attr("disabled", "disabled");
+                $.ajax({
+                    type: "POST",
+                    url: '/home/acceptcnil',
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        if (data.status == 0) {
+                            $(".cookie-notice").fadeOut("fast");
+                        }
+                        btn.removeAttr("disabled");
+                    },
+                    error: function () {
+                        //alert("Error while inserting data");
+                    }
+                });
+                return false;
+            }
+        });
+    });
+		</script>
+		<script src="/bundles/bootstrap?v=cN5FlMHXNuzSFTWZZ3E8SJfEa7ehigfZufjZWFdeEtY1"></script>
+		<script src="/bundles/jquery?v=LUrA-6jWBMpKCG-nFp0Zcx2hSYKl1pHaCLtkoeCVqok1"></script>
+		<script>
+        var rootUrlFilter = "/searchFilter";
+    
+		</script>
+		<script src="/Scripts/searchResult.es5.min.js"></script>
+		<script>
+        $(function () {
+            // Accessibility
+            var fontSize = 0;
+            var contrast = 0;
+
+            if (fontSize != 0) $("html").addClass("s" + fontSize);
+            if (contrast != 0) $("html").addClass("c" + contrast);
+
+            // chat bot
+            var $chatBotButton = $('.chatbot-btn');
+
+            $chatBotButton.click(function () {
+                if ($("#Pauline").attr('src') === undefined) {
+                    $("#Pauline").attr('src', 'https://pauline.pau.fr');
+                }
+                $chatBotButton.hide();
+                $("html, body").addClass("overflow-hidden-mobile");
+                $("meta[name=viewport]").attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+                $('#bot').show();
+                $('#bot-close-btn').click(closeChat);
+            });
+
+            function closeChat() {
+                $("html, body").removeClass("overflow-hidden-mobile");
+                $("meta[name=viewport]").attr('content', 'width=device-width, initial-scale=1.0, , shrink-to-fit=no');
+                $chatBotButton.show();
+                $('#bot').hide();
+            }
+
+            // Load menu asychronously
+            $('.nav-link-menu').click(function () {
+                var url = '/Menu/GetMenu' + '/' +  $(this).attr('data-menu-index');
+                if ($(this).attr('data-menu-loaded') === 'false') {
+                    $('#' + $(this).attr('id') + 'Content').load(url, function () {
+                        // mega menu mobile accordions // ALL PAGES
+                        if (matchMedia) {
+                            var mq = window.matchMedia("(min-width: 768px)");
+                            mq.addListener(WidthChange);
+                            WidthChange(mq);
+                        }
+                    });
+                }
+            });
+
+            // mega menu show/hide // ALL PAGES
+            var $navBarButton = $('#navbarButton'),
+                $navBarCloseButton = $('#navbarCloseButton'),
+                $megaMenu = $('#megaMenu'),
+                $body = $('body');
+            $navBarButton.click(function () {
+                $body.prepend('<div class="overlay">');
+                $('.overlay').animate({
+                    width: $(window).width()
+                }, 200, 'easeOutQuad', function () {
+                    $megaMenu.show().animate({
+                        opacity: 1
+                    }, 200);
+                });
+                $body.addClass('mega-menu-open');
+                $('.nav-link-menu.active').click();
+            });
+            $navBarCloseButton.click(function () {
+                $body.removeClass('mega-menu-open');
+                $megaMenu.animate({
+                    opacity: 0
+                }, 200, 'easeOutBounce', function () {
+                    $megaMenu.hide();
+                    $('.overlay').animate({
+                        width: 0
+                    }, 200, function () {
+                        $('.overlay').remove();
+                    });
+                });
+            });
+
+            function WidthChange(mq) {
+                if (mq.matches) {
+                    $(".mega-menu h3 a").addClass('prevent-click');
+                    $(".mega-menu h3 + ul").removeClass("collapse");
+                } else {
+                    $(".mega-menu h3 a").removeClass('prevent-click');
+                    $(".mega-menu h3 + ul").addClass("collapse");
+                }
+            }
+
+            // mega menu resize on window resize // ALL PAGES
+            function resizeMegaMenu() {
+                if ($('.mega-menu-open').length) {
+                    $('.overlay').css('width', $(window).width());
+                }
+            }
+            window.addEventListener("resize", function () {
+                setTimeout(function () {
+                    resizeMegaMenu();
+                }, 50);
+            });
+
+            // sticky nav toggle // ALL PAGES
+            var $header = $('.site-header');
+            var $stickyNav = $('.navbar');
+            $(window).scroll(function (event) {
+                var scroll = $(window).scrollTop();
+                if (scroll > $stickyNav.height()) {
+                    $stickyNav.addClass('sticky');
+                        $('.nav-item.search').show();
+                } else {
+                    if (!$header.hasClass('expand')) {
+                        $stickyNav.removeClass('sticky');
+                            $('.nav-item.search').hide();
+                    }
+                }
+            });
+        });
+        function goBack() {
+            window.history.back();
+        }
+        function showSatisfactionPauline() {
+            $('#popinSatisfaction').load('/satisfactionPopin', function () {
+                $('#popinSatisfaction').modal('show');
+            });
+        }
+    
+		</script>
+	</body>
+</html>
